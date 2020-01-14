@@ -25,5 +25,5 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
       - test
       - release
-          requires:
-            - test
+        requires:
+          - test
