@@ -1,8 +1,12 @@
 # Gerwig
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0c1b8f82-9bcd-4205-8824-c12b5537b75f/deploy-status)](https://app.netlify.com/sites/gerwig/deploys)
+
 The next-gen design system for the British Film Institute.
 
 ## Demo
+
+**[Storybook is here](https://gerwig.netlify.com)**
 
 There's a living documentation powered by [storybook](https://storybook.js.org/), where you can see all the available components and their variation.
 
