@@ -41,3 +41,9 @@ We use `jest` and `react-test-renderer` to run snapshot tests on all components.
 If you make changes to the output of components, you can regenerate the snapshot files with `jest --updateSnaphots`.
 
 The snapshot test cases themselves come from the same `stories.jsx` file colocated with each component.
+
+## To-do list
+
+* Continuous depoyment to `npm`
+* Linting, especially `jsx-a11y`
+* Scoped packages?
