@@ -3,10 +3,16 @@ version: 2
 jobs:
 
   test:
-    - run: npm test
+    docker:
+      - image: circleci/node:latest
+    steps:
+      - run: npm test
 
   release:
-    - run: npx semantic-release
+    docker:
+      - image: circleci/node:latest
+    steps:
+      - run: npx semantic-release
 
   build:
     docker:
