@@ -2,7 +2,7 @@
 
 exports[`Storyshots Button With Emoji 1`] = `
 <button
-  className="sc-AykKC fCgDOC"
+  className="sc-AykKC fCXyoh"
 >
   <span
     aria-label="so cool"
@@ -15,7 +15,7 @@ exports[`Storyshots Button With Emoji 1`] = `
 
 exports[`Storyshots Button With Text 1`] = `
 <button
-  className="sc-AykKC fCgDOC"
+  className="sc-AykKC fCXyoh"
 >
   Hello Button
 </button>
