@@ -1,10 +1,10 @@
 {
   "name": "gerwig",
   "version": "1.0.0",
-  "description": "",
+  "description": "Design system for the Britith Film Institute",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "jest": "^24.9.0",
     "styled-components": "^5.0.0"
   },
   "devDependencies": {
