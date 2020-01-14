@@ -2,6 +2,8 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/0c1b8f82-9bcd-4205-8824-c12b5537b75f/deploy-status)](https://app.netlify.com/sites/gerwig/deploys)
 
+[![CircleCI](https://circleci.com/gh/bfi-digital/gerwig.svg?style=svg)](https://circleci.com/gh/bfi-digital/gerwig)
+
 The next-gen design system for the British Film Institute.
 
 ## Demo
@@ -27,7 +29,6 @@ const MyComponent = () =>
 
 1. Clone the repo and `npm i`
 2. Run storybook locally with `npm run storybook`
-3. When you make changes
 
 ## Testing
 
