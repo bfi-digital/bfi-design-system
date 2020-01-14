@@ -1,0 +1,25 @@
+{
+  "name": "gerwig",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "styled-components": "^5.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@storybook/addon-actions": "^5.3.3",
+    "@storybook/addon-links": "^5.3.3",
+    "@storybook/addons": "^5.3.3",
+    "@storybook/react": "^5.3.3",
+    "babel-loader": "^8.0.6"
+  }
+}
