@@ -1,19 +1,6 @@
 version: 2
 
 jobs:
-
-  test:
-    docker:
-      - image: circleci/node:latest
-    steps:
-      - run: npm test
-
-  release:
-    docker:
-      - image: circleci/node:latest
-    steps:
-      - run: npx semantic-release
-
   build:
     docker:
       - image: circleci/node:latest
@@ -29,7 +16,5 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-      - test
-      - release:
-          requires:
-            - test
+      - run: npm text
+      - run: npx semantic-release
