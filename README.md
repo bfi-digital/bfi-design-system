@@ -2,15 +2,15 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/0c1b8f82-9bcd-4205-8824-c12b5537b75f/deploy-status)](https://app.netlify.com/sites/gerwig/deploys) [![CircleCI](https://circleci.com/gh/bfi-digital/gerwig.svg?style=svg)](https://circleci.com/gh/bfi-digital/gerwig)
 
-The next-gen design system for the British Film Institute.
+The next-gen design system for the [British Film Institute](bfi.org.uk).
 
-## Demo
+## Demo and docs
 
-**[Storybook is here](https://gerwig.netlify.com)**
+**[Storybook is here.](https://gerwig.netlify.com)**
 
-There's a living documentation powered by [storybook](https://storybook.js.org/), where you can see all the available components and their variation.
+There's a living documentation powered by [Storybook](https://storybook.js.org/), where you can see all the available components and their variation.
 
-## Using it in an app
+## Usage
 
 1. `npm i gerwig`
 2. Import the components you'd like to use into your app. For example:
@@ -24,6 +24,8 @@ const MyComponent = () =>
 ```
 
 ## Developing
+
+You need `node` and `npm` installed.
 
 1. Clone the repo and `npm i`
 2. Run storybook locally with `npm run storybook`
