@@ -1,5 +1,5 @@
 {
-  "name": "gerwig",
+  "name": "celluloid",
   "version": "0.0.0-development",
   "description": "Design system for the Britith Film Institute",
   "main": "src/components/index.js",
