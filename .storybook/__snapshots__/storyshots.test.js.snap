@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Button With Emoji 1`] = `
+<button
+  className="sc-AykKC fCXyoh"
+>
+  <span
+    aria-label="so cool"
+    role="img"
+  >
+    😀 😎 👍 💯
+  </span>
+</button>
+`;
+
+exports[`Storyshots Button With Text 1`] = `
+<button
+  className="sc-AykKC fCXyoh"
+>
+  Hello Button
+</button>
+`;
+
+exports[`Storyshots Headline With Emoji 1`] = `
+<h1
+  className="sc-AykKD deWEKW"
+>
+  <span
+    aria-label="so cool"
+    role="img"
+  >
+    😀 😎 👍 💯
+  </span>
+</h1>
+`;
+
+exports[`Storyshots Headline With Text 1`] = `
+<h1
+  className="sc-AykKD deWEKW"
+>
+  Hello Headline
+</h1>
+`;
