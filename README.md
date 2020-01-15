@@ -35,7 +35,7 @@ You need `node` and `npm` installed.
 1. Clone the repo and `npm i`
 2. `npm run dev` will start up the Storybook playground and start `rollup` watching for changes.
 
-If you want, you can also include a this repo in another app as if it were an `npm` package using [`npm link`](https://docs.npmjs.com/cli/link). This is great for developing both side-by-side.
+If you want, you can also include this repo in another app as if it were an `npm` package using [`npm link`](https://docs.npmjs.com/cli/link). This is great for developing both side-by-side.
 
 ### Publish a new version to NPM
 
