@@ -10,7 +10,7 @@ export const Button = ({
 	children
 }) =>
 	<StyledButton>oh gosh 
-		<img src={twitter} style={{
+		<img alt="" src={twitter} style={{
 			height: "20px"
 		}}/>
 		{children}

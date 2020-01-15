@@ -6,6 +6,7 @@ exports[`Storyshots Button With Emoji 1`] = `
 >
   oh gosh
   <img
+    alt=""
     src="test-file-stub"
     style={
       Object {
@@ -28,6 +29,7 @@ exports[`Storyshots Button With Text 1`] = `
 >
   oh gosh
   <img
+    alt=""
     src="test-file-stub"
     style={
       Object {
