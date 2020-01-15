@@ -1,3 +1,7 @@
 src
 .storybook
 __mocks__
+netlify.toml
+.circleci
+.babelrc
+rollup.config.js

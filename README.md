@@ -1,18 +1,18 @@
-# Gerwig
+# Gerwig 📽
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/0c1b8f82-9bcd-4205-8824-c12b5537b75f/deploy-status)](https://app.netlify.com/sites/gerwig/deploys) [![CircleCI](https://circleci.com/gh/bfi-digital/bfi-design-system.svg?style=svg&circle-token=61b8e613e86458c621c8297aff09bd0a520ef8ad)](https://circleci.com/gh/bfi-digital/bfi-design-system)
 
 **CURRENTLY IN A PRE-ALPHA PHASE. NOT YET READY FOR USE.**
 
-The next-gen design system for the [British Film Institute](bfi.org.uk).
+The next-gen design system for the [British Film Institute](bfi.org.uk). 📽
 
-## Demo and docs
+## Demo and docs 🍿
 
-**[Storybook is here.](https://gerwig.netlify.com)**
+👉 **[Storybook is here.](https://gerwig.netlify.com)**
 
 There's a living documentation powered by [Storybook](https://storybook.js.org/), where you can see all the available components and their variations.
 
-## Usage
+## Usage 🎬
 
 ```
 npm install gerwig
@@ -28,7 +28,7 @@ const MyComponent = () =>
     <Card>My content</Card>
 ```
 
-## Developing
+## Developing 💻
 
 You need `node` and `npm` installed.
 
@@ -45,7 +45,7 @@ If you want, you can also include a this repo in another app as if it were an `n
     - Run rollup to bundle and transpile the cosde
     - Create and publish a tarball to NPM
 
-## Testing
+## Testing 🧪
 
 We use `jest` and `react-test-renderer` to run snapshot tests on all components.
 
