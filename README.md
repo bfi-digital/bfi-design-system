@@ -42,7 +42,7 @@ If you want, you can also include this repo in another app as if it were an `npm
 1. Set the next  version number in the `package.json` file.
 2. `npm publish`. This will:
     - Run the tests
-    - Run rollup to bundle and transpile the cosde
+    - Bundle and transpile the code
     - Create and publish a tarball to NPM
 
 ## 🧪 Testing
