@@ -67,8 +67,6 @@ It's a working title, because we started making this soon after the Oscar nomina
 
 We also looked at `celluloid`, but it was taken on npm!
 
-Got a better name? Let us know!
-
 ## To-do list
 
 * Add more add-ons to the Storybook playground
