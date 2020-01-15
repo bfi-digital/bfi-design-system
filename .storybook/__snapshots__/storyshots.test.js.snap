@@ -17,7 +17,7 @@ exports[`Storyshots Button With Emoji 1`] = `
     aria-label="so cool"
     role="img"
   >
-    😀 😎 👍 💯
+    😀 😎 👍 💯 blah
   </span>
 </button>
 `;

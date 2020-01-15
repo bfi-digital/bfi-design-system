@@ -9,7 +9,7 @@
     "storybook": "start-storybook",
     "build-storybook": "build-storybook",
     "test": "jest",
-    "prepare": "rollup -c"
+    "prepare": "jest && rollup -c"
   },
   "license": "ISC",
   "devDependencies": {

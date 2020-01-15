@@ -1,6 +1,6 @@
 # Gerwig
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/0c1b8f82-9bcd-4205-8824-c12b5537b75f/deploy-status)](https://app.netlify.com/sites/gerwig/deploys) [![CircleCI](https://circleci.com/gh/bfi-digital/gerwig.svg?style=svg)](https://circleci.com/gh/bfi-digital/gerwig)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0c1b8f82-9bcd-4205-8824-c12b5537b75f/deploy-status)](https://app.netlify.com/sites/gerwig/deploys) [![CircleCI](https://circleci.com/gh/bfi-digital/bfi-design-system.svg?style=svg)](https://circleci.com/gh/bfi-digital/bfi-design-system)
 
 **CURRENTLY IN A PRE-ALPHA PHASE. NOT YET READY FOR USE.**
 
@@ -36,6 +36,14 @@ You need `node` and `npm` installed.
 2. `npm run dev` will start up the Storybook playground and start `rollup` watching for changes.
 
 If you want, you can also include a this repo in another app as if it were an `npm` package using [`npm link`](https://docs.npmjs.com/cli/link). This is great for developing both side-by-side.
+
+### Publish a new version to NPM
+
+1. Set the next  version number in the `package.json` file.
+2. `npm publish`. This will:
+    - Run the tests
+    - Run rollup to bundle and transpile the cosde
+    - Create and publish a tarball to NPM
 
 ## Testing
 
