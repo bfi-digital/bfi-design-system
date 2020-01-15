@@ -8,7 +8,8 @@
     "dev": "rollup -cw & start-storybook",
     "storybook": "start-storybook",
     "build-storybook": "build-storybook",
-    "test": "jest"
+    "test": "jest",
+    "prepare": "rollup -c"
   },
   "license": "ISC",
   "devDependencies": {
