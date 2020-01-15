@@ -57,6 +57,6 @@ The snapshot test cases themselves come from the same `stories.jsx` file colocat
 
 ## To-do list
 
-* Continuous depoyment to `npm`
 * Linting, especially `jsx-a11y`
+* Add more add-ons to the Storybook playground
 * Update the `styled-components` dependency to ~5.0.0
