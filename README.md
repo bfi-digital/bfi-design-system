@@ -61,6 +61,14 @@ The snapshot test cases themselves come from the same `stories.jsx` file colocat
 
 We use `eslint` and [`jsx-a11y`](https://www.npmjs.com/package/eslint-plugin-jsx-a11y) to detect potential accessibility issues. Some code editors will automatically pick up problems, and it runs automatically with the `jest` tests, but you can also lint manually with `npm run lint`.
 
+## What's with the name?
+
+It's a working title, because we started making this soon after the Oscar nominations came out.
+
+We also looked at `celluloid`, but it was taken on npm!
+
+Got a better name? Let us know!
+
 ## To-do list
 
 * Add more add-ons to the Storybook playground
