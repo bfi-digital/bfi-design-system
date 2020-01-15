@@ -1,13 +1,17 @@
 import React from "react"
 import styled from "styled-components"
+import twitter from "./twitter.svg"
 
 const StyledButton = styled.button`
-    color: blue;
+    color: red;
 `
 
-const Button = ({
+export const Button = ({
     children
 }) =>
-    <StyledButton>{children}</StyledButton>
-
-export default Button
+    <StyledButton>oh gosh 
+        <img src={twitter} style={{
+        height: "20px"
+    }}/>
+        {children}
+    </StyledButton>

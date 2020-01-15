@@ -2,8 +2,17 @@
 
 exports[`Storyshots Button With Emoji 1`] = `
 <button
-  className="sc-AykKC fCgDOC"
+  className="sc-bdVaJa eBZPoX"
 >
+  oh gosh
+  <img
+    src="test-file-stub"
+    style={
+      Object {
+        "height": "20px",
+      }
+    }
+  />
   <span
     aria-label="so cool"
     role="img"
@@ -15,29 +24,17 @@ exports[`Storyshots Button With Emoji 1`] = `
 
 exports[`Storyshots Button With Text 1`] = `
 <button
-  className="sc-AykKC fCgDOC"
+  className="sc-bdVaJa eBZPoX"
 >
+  oh gosh
+  <img
+    src="test-file-stub"
+    style={
+      Object {
+        "height": "20px",
+      }
+    }
+  />
   Hello Button
 </button>
-`;
-
-exports[`Storyshots Headline With Emoji 1`] = `
-<h1
-  className="sc-AykKD deWEKW"
->
-  <span
-    aria-label="so cool"
-    role="img"
-  >
-    😀 😎 👍 💯
-  </span>
-</h1>
-`;
-
-exports[`Storyshots Headline With Text 1`] = `
-<h1
-  className="sc-AykKD deWEKW"
->
-  Hello Headline
-</h1>
 `;
