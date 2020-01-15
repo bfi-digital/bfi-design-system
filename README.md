@@ -1,6 +1,6 @@
 # Gerwig
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/0c1b8f82-9bcd-4205-8824-c12b5537b75f/deploy-status)](https://app.netlify.com/sites/gerwig/deploys) [![CircleCI](https://circleci.com/gh/bfi-digital/bfi-design-system.svg?style=svg)](https://circleci.com/gh/bfi-digital/bfi-design-system)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0c1b8f82-9bcd-4205-8824-c12b5537b75f/deploy-status)](https://app.netlify.com/sites/gerwig/deploys) [![CircleCI](https://circleci.com/gh/bfi-digital/bfi-design-system.svg?style=svg&circle-token=61b8e613e86458c621c8297aff09bd0a520ef8ad)](https://circleci.com/gh/bfi-digital/bfi-design-system)
 
 **CURRENTLY IN A PRE-ALPHA PHASE. NOT YET READY FOR USE.**
 
@@ -15,7 +15,7 @@ There's a living documentation powered by [Storybook](https://storybook.js.org/)
 ## Usage
 
 ```
-`npm install gerwig`
+npm install gerwig
 ```
 
 Import the components you'd like to use into your app. For example:
@@ -59,3 +59,4 @@ The snapshot test cases themselves come from the same `stories.jsx` file colocat
 
 * Continuous depoyment to `npm`
 * Linting, especially `jsx-a11y`
+* Update the `styled-components` dependency to ~5.0.0
