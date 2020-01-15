@@ -16,6 +16,8 @@ There's a living documentation powered by [Storybook](https://storybook.js.org/)
 
 ```
 npm install gerwig
+// Install peer dependencies
+npm install react react-dom styled-components
 ```
 
 Import the components you'd like to use into your app. For example:
