@@ -55,6 +55,10 @@ If you make changes to the output of components, you can regenerate the snapshot
 
 The snapshot test cases themselves come from the same `stories.jsx` file colocated with each component.
 
+### 🧼 Linting
+
+We use `eslint` and [`jsx-a11y`](https://www.npmjs.com/package/eslint-plugin-jsx-a11y) to detect potential accessibility issues. Some code editors will automatically pick up problems, and it runs automatically with the `jest` tests, but you can also lint manually with `npm run lint`.
+
 ## To-do list
 
 * Linting, especially `jsx-a11y`
