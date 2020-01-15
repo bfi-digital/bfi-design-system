@@ -1,6 +1,6 @@
 {
   "name": "gerwig",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Next-gen design system for the Britith Film Institute",
   "main": "dist/bundle.js",
   "scripts": {
