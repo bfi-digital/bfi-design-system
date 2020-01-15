@@ -1,7 +1,10 @@
 {
   "name": "gerwig",
   "version": "0.1.0",
-  "description": "Next-gen design system for the Britith Film Institute",
+  "author": "FutureGov <dev@wearefuturegov.com> (https://wearefuturegov.com)",
+  "homepage": "https://gerwig.netlify.com",
+  "description": "Next-gen design system for the British Film Institute",
+  "repository": "github:bfi-digital/bfi-design-system",
   "main": "dist/bundle.js",
   "scripts": {
     "build": "rollup -c",
@@ -42,5 +45,13 @@
     "moduleNameMapper": {
       "^.+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js"
     }
-  }
+  },
+  "keywords": [
+    "react",
+    "storybook",
+    "design system",
+    "bfi",
+    "ui",
+    "styled-components"
+  ]
 }
