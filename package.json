@@ -12,7 +12,8 @@
     "storybook": "start-storybook",
     "build-storybook": "build-storybook",
     "test": "jest",
-    "prepare": "jest && rollup -c"
+    "prepare": "jest && rollup -c",
+    "lint": "eslint src/ --ext .jsx"
   },
   "license": "ISC",
   "devDependencies": {
@@ -27,6 +28,8 @@
     "@storybook/addon-viewport": "^5.3.3",
     "@storybook/react": "^5.3.3",
     "babel-loader": "^8.0.6",
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.17.0",
     "jest": "^24.9.0",
     "react-test-renderer": "^16.12.0",
     "rollup": "^1.29.0",

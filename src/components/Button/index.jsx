@@ -7,11 +7,11 @@ const StyledButton = styled.button`
 `
 
 export const Button = ({
-    children
+	children
 }) =>
-    <StyledButton>oh gosh 
-        <img src={twitter} style={{
-        height: "20px"
-    }}/>
-        {children}
-    </StyledButton>
+	<StyledButton>oh gosh 
+		<img src={twitter} style={{
+			height: "20px"
+		}}/>
+		{children}
+	</StyledButton>
