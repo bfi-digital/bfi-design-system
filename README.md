@@ -71,4 +71,5 @@ We also looked at `celluloid`, but it was taken on npm!
 ## To-do list
 
 * Add more add-ons to the Storybook playground
+* Typescript support?
 * Update the `styled-components` dependency to ~5.0.0
