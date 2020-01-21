@@ -1,11 +1,12 @@
-import React, { useState } from "react"
+import * as React from "react"
+import { useState } from "react"
 import { Link } from "@reach/router"
 import styled from "styled-components"
 import theme from "../_theme"
 
-import logo from "./logo-black.svg"
-import menuIcon from "./menu-black.svg"
-import closeIcon from "./close-black.svg"
+import * as logo from "./logo-black.svg"
+import * as menuIcon from "./menu-black.svg"
+import * as closeIcon from "./close-black.svg"
 
 const Outer = styled.header`
     display: flex;
@@ -47,6 +48,7 @@ export const Header = ({
         <>
             <Outer>
                 <Link to="/">
+                    {console.log(logo)}
                     <Logo src={logo} alt="British Film Institute"/>
                 </Link>
                 <MenuButton onClick={() => setMobilePanel(!mobilePanel)}>
