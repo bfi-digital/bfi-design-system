@@ -40,3 +40,26 @@ exports[`Storyshots Button With Text 1`] = `
   Hello Button
 </button>
 `;
+
+exports[`Storyshots Header With Demo Data 1`] = `
+<header>
+  <li>
+    Watch
+  </li>
+  <li>
+    Explore
+  </li>
+  <li>
+    Make
+  </li>
+  <li>
+    Education
+  </li>
+  <li>
+    About
+  </li>
+  <li>
+    Support
+  </li>
+</header>
+`;

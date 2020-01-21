@@ -1,6 +1,6 @@
 {
   "name": "gerwig",
-  "version": "0.1.1",
+  "version": "0.1.3",
   "author": "FutureGov <dev@wearefuturegov.com> (https://wearefuturegov.com)",
   "homepage": "https://gerwig.netlify.com",
   "description": "Next-gen design system for the British Film Institute",
@@ -43,9 +43,11 @@
   "peerDependencies": {
     "styled-components": "^5.0.0",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "@reach/router": "^1.2.1"
   },
-  "dependencies": {},
+  "dependencies": {
+  },
   "jest": {
     "moduleNameMapper": {
       "^.+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js"
