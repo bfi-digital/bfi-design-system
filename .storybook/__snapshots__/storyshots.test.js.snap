@@ -1,65 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Button With Emoji 1`] = `
-<button
-  className="sc-bdVaJa eBZPoX"
->
-  oh gosh
-  <img
-    alt=""
-    src="test-file-stub"
-    style={
-      Object {
-        "height": "20px",
-      }
-    }
-  />
-  <span
-    aria-label="so cool"
-    role="img"
-  >
-    😀 😎 👍 💯 blah
-  </span>
-</button>
-`;
-
-exports[`Storyshots Button With Text 1`] = `
-<button
-  className="sc-bdVaJa eBZPoX"
->
-  oh gosh
-  <img
-    alt=""
-    src="test-file-stub"
-    style={
-      Object {
-        "height": "20px",
-      }
-    }
-  />
-  Hello Button
-</button>
-`;
-
 exports[`Storyshots Header With Demo Data 1`] = `
-<header>
-  <li>
-    Watch
-  </li>
-  <li>
-    Explore
-  </li>
-  <li>
-    Make
-  </li>
-  <li>
-    Education
-  </li>
-  <li>
-    About
-  </li>
-  <li>
-    Support
-  </li>
+<header
+  className="sc-bdVaJa eFepty"
+>
+  <a
+    aria-current="page"
+    href="/"
+    onClick={[Function]}
+  >
+    <img
+      alt="British Film Institute"
+      className="sc-htpNat cYoudE"
+      src="test-file-stub"
+    />
+  </a>
+  <button
+    className="sc-bwzfXH dMNuGL"
+    onClick={[Function]}
+  >
+    <img
+      alt=""
+      src="test-file-stub"
+    />
+    Menu
+  </button>
 </header>
 `;
