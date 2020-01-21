@@ -4,25 +4,31 @@ import images from "@rollup/plugin-image"
 import autoExternal from "rollup-plugin-auto-external"
 import peerDepsExternal from "rollup-plugin-peer-deps-external"
 
+const extensions = [
+    ".js", 
+    ".jsx",
+    ".ts",
+    ".tsx",
+    ".svg"
+]
+
 export default {
-	input: "src/index.js",
-	output: {
-		file: "dist/bundle.js",
-		format: "cjs",
-		globals: { "styled-components": "styled" }
-	},
-	plugins: [
-		peerDepsExternal(),
-		autoExternal(),
-		resolve({
-			extensions: [
-				".js", 
-				".jsx"
-			]
-		}),
-		images(),
-		babel({
-			exclude: "node_modules/**"
-		}),
-	],
+    input: "src/index.ts",
+    output: {
+        file: "dist/bundle.js",
+        format: "cjs",
+        globals: { "styled-components": "styled" }
+    },
+    plugins: [
+        peerDepsExternal(),
+        autoExternal(),
+        resolve({
+            extensions: extensions
+        }),
+        images(),
+        babel({
+            extensions: extensions,
+            exclude: "node_modules/**"
+        }),
+    ],
 }
