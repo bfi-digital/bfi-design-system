@@ -39,18 +39,18 @@ const Logo = styled.img`
 `
 
 interface navItem {
-    id: number,
-    title: string,
+    title: string
     url: string
 }
 
 interface Props {
     navItems: navItem[]
-    hero: boolean
+    hero?: boolean
 }
 
 export const Header: React.FC<Props> = ({
-    navItems
+    navItems,
+    hero
 }) => {
 
     const [mobilePanel, setMobilePanel] = useState(false)
@@ -59,9 +59,9 @@ export const Header: React.FC<Props> = ({
         <>
             <Outer>
                 <Link to="/">
-                    {console.log(logo)}
                     <Logo src={logo} alt="British Film Institute"/>
                 </Link>
+
                 <MenuButton onClick={() => setMobilePanel(!mobilePanel)}>
                     {mobilePanel ? 
                         <>
@@ -79,13 +79,12 @@ export const Header: React.FC<Props> = ({
 
             {mobilePanel && navItems.map((navItem, i) =>
                 <li key={i}>
+                    {navItem.url}
                     <Link to={navItem.url}>
                         {navItem.title}
                     </Link>
                 </li>
             )}
-
-
         </>
     )
 }
