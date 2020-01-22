@@ -78,7 +78,6 @@ const ChildBar = styled.div`
     position: absolute;
     background: ${theme.grey};
     top: 60px;
-    padding: 15px;
     left: 0;
     width: 100%;
     z-index: -1;
@@ -86,8 +85,8 @@ const ChildBar = styled.div`
 `
 
 const ChildList = styled.ul`
+    padding: 15px;
     max-width: 1024px;
-    padding-left: 0;
     margin: 0 auto;
     width: 100%;
     &:hover a{
