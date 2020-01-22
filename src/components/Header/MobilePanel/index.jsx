@@ -28,22 +28,24 @@ const Panel = styled.nav`
 const List = styled.ul`
     list-style: none;
     padding-left: 0px;
-    &:hover li a{
+    &:hover li button{
         color: ${theme.darkGrey};
     }
 `
 
 const Item = styled.li`
     border-bottom: 1px solid ${theme.grey};
+    transition: border-color 0.1s;
     &:last-of-type{
         border-bottom: none;
     }
-    &:hover a{
-        color: ${theme.charcoal} !important;
+    &:hover {
+        border-color: ${theme.darkGrey};
+        button{
+            color: ${theme.charcoal} !important;
+        }
     }
-    &:focus-within{
-        background-color: ${theme.lightGrey}
-    }
+
 `
 
 const ItemButton = styled.button`
@@ -56,6 +58,9 @@ const ItemButton = styled.button`
     transition: color 0.1s;
     display: block;
     padding: 15px 0px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
     &:focus{
         outline: none;
     }
@@ -64,22 +69,30 @@ const ItemButton = styled.button`
 const ChildList = styled.ul`
     list-style: none;
     padding-left: 20px;
+    &:hover a{
+        color: ${theme.darkGrey}
+    }
 `
 
 const ChildItem = styled.li`
     font-weight: normal;
-    color: ${theme.charcoal};
-    padding-bottom: 15px;
 `
 
 const ChildLink = styled(Link)`
+    display: block;
     color: ${theme.charcoal};
     text-decoration: none;
+    padding-bottom: 15px;
+    transition: color 0.1s;
+    &:hover{
+        color: ${theme.charcoal} !important;
+    }
 `
 
 const MobilePanel = ({
     navItems
 }) => {
+
     const [ selected, setSelected ] = useState(false)
 
     return(
@@ -87,24 +100,31 @@ const MobilePanel = ({
             <List>
                 {navItems.map((navItem, i) =>
                     <Item key={i}>
-                        <ItemButton onClick={() => selected === false ? setSelected(i) : setSelected(false)}>
+                        <ItemButton onClick={() => selected === i ? setSelected(false) : setSelected(i)}>
                             {navItem.title}
                         </ItemButton>
                         <ChildList>
-
-                            {selected === i && navItem.children.map((child, j) =>
-                                <ChildItem key={j}>
-                                    <ChildLink to={child.url}>
-                                        {child.title}
-                                    </ChildLink>
-                                </ChildItem>
-                            )}
+                            {selected === i &&
+                                <>
+                                    <ChildItem>
+                                        <ChildLink to={navItem.url}>
+                                            {navItem.title} home
+                                        </ChildLink>
+                                    </ChildItem>
+                                    {navItem.children.map((child, j) =>
+                                        <ChildItem key={j}>
+                                            <ChildLink to={child.url}>
+                                                {child.title}
+                                            </ChildLink>
+                                        </ChildItem>
+                                    )}
+                                </>
+                            }
                         </ChildList>
                     </Item>
                 )}
             </List>
         </Panel>
-
     )
 }
 
