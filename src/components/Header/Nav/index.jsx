@@ -25,9 +25,6 @@ const Item = styled.li`
     @media screen and (min-width: ${theme.l}){
         font-size: 1rem;
     }
-    &:hover div{
-        display: block;
-    }
 `
 
 const ItemLink = styled(Link)`
@@ -36,20 +33,6 @@ const ItemLink = styled(Link)`
     color: ${theme.charcoal};
     text-decoration: none;
     position: relative;
-    &:hover:before{
-        display: block;
-        content: "";
-        position: absolute;
-        margin: 0 auto;
-        bottom: 0px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 0; 
-        height: 0; 
-        border-left: 7px solid transparent;
-        border-right: 7px solid transparent;
-        border-bottom: 7px solid ${theme.grey};
-    }
     &:after{
         position: absolute;
         left: 15px;
@@ -62,26 +45,40 @@ const ItemLink = styled(Link)`
             bottom: 17px;
         }
     }
+    &:before{
+        display: block;
+        content: "";
+        position: absolute;
+        margin: 0 auto;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0; 
+        height: 0; 
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-bottom: 8px solid ${props => props.hovered ? theme.grey : "transparent"};
+    }
 `
 
 const ChildBar = styled.div`
-
-    @keyframes slideDown{
+    @keyframes fadeIn{
         from{
-            transform: translateY(-100%)
+            transform: translateY(-100%);
+            opacity: 0;
         }
         to{
-            transform: translateY(0%)
+            transform: translateY(0%);
+            opacity: 1;
         }
     }
-    display: none;
     position: absolute;
     background: ${theme.grey};
     top: 60px;
     left: 0;
     width: 100%;
     z-index: -1;
-    animation: slideDown 0.2s ease-out;
+    animation: fadeIn 0.2s ease-out;
 `
 
 const ChildList = styled.ul`
@@ -108,29 +105,44 @@ const ChildLink = styled(Link)`
 `
 
 const Nav = ({
-    navItems
-}) =>
-    <Outer>
-        <List>
-            {navItems.map((navItem, i) =>
-                <Item key={i}>
-                    <ItemLink to={navItem.url} active={navItem.active}>
-                        {navItem.title}
-                    </ItemLink>
-                    <ChildBar>
-                        <ChildList id={i}>
-                            {navItem.children.map((child, j) =>
-                                <ChildItem key={j}>
-                                    <ChildLink to={child.url}>
-                                        {child.title}
-                                    </ChildLink>
-                                </ChildItem>
-                            )}
-                        </ChildList>
-                    </ChildBar>
-                </Item>
-            )}
-        </List>
-    </Outer>
+    navItems,
+    selected,
+    setSelected
+}) => {
+
+    return(
+        <Outer>
+            <List>
+                {navItems.map((navItem, i) =>
+                    <Item 
+                        key={i}
+                        onMouseEnter={() => setSelected(i)}
+                    >
+                        <ItemLink 
+                            to={navItem.url} 
+                            active={navItem.active}
+                            hovered={selected === i}
+                        >
+                            {navItem.title}
+                        </ItemLink>
+                        <ChildBar>
+                            {selected === i &&
+                                <ChildList id={i}>
+                                    {navItem.children.map((child, j) =>
+                                        <ChildItem key={j}>
+                                            <ChildLink to={child.url}>
+                                                {child.title}
+                                            </ChildLink>
+                                        </ChildItem>
+                                    )}
+                                </ChildList>
+                            }
+                        </ChildBar>
+                    </Item>
+                )}
+            </List>
+        </Outer>
+    )
+}
 
 export default Nav

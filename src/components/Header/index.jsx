@@ -8,10 +8,14 @@ import MenuButton from "./MenuButton"
 import Nav from "./Nav"
 import logo from "./logo-black.svg"
 
+const Wrapper = styled.div`
+    z-index: 999;
+`
+
 const Outer = styled.header`
     background: ${theme.white};
     position: relative;
-    z-index: 2;
+    z-index: initial;
 `
 
 const Inner = styled.div`
@@ -33,15 +37,20 @@ export const Header = ({
 }) => {
 
     const [open, setOpen] = useState(false)
+    const [selected, setSelected] = useState(false)
 
     return(
-        <>
-            <Outer>
+        <Wrapper>
+            <Outer onMouseLeave={() => setSelected(false)}>
                 <Inner>
                     <Link to="/">
                         <Logo src={logo} alt="British Film Institute"/>
                     </Link>
-                    <Nav navItems={navItems}/>
+                    <Nav
+                        navItems={navItems}
+                        selected={selected}
+                        setSelected={setSelected}
+                    />
                     <MenuButton 
                         handleClick={() => setOpen(!open)}
                         open={open}
@@ -51,7 +60,7 @@ export const Header = ({
             </Outer>
 
             {open && <MobilePanel navItems={navItems}/>}
-        </>
+        </Wrapper>
     )
 }
 
