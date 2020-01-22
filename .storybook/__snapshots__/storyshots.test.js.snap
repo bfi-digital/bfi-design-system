@@ -2,28 +2,45 @@
 
 exports[`Storyshots Header With Demo Data 1`] = `
 <header
-  className="sc-bdVaJa eFepty"
+  className="sc-dnqmqq hsGEGI"
 >
-  <a
-    aria-current="page"
-    href="/"
-    onClick={[Function]}
+  <div
+    className="sc-iwsKbI clZXhY"
   >
-    <img
-      alt="British Film Institute"
-      className="sc-htpNat cYoudE"
-      src="test-file-stub"
-    />
-  </a>
-  <button
-    className="sc-bwzfXH dMNuGL"
-    onClick={[Function]}
-  >
-    <img
-      alt=""
-      src="test-file-stub"
-    />
-    Menu
-  </button>
+    <a
+      aria-current="page"
+      href="/"
+      onClick={[Function]}
+    >
+      <img
+        alt="British Film Institute"
+        className="sc-gZMcBi ciFPTA"
+        src={
+          Object {
+            "default": "test-file-stub",
+          }
+        }
+      />
+    </a>
+    <button
+      className="sc-htoDjs hYnosD"
+      onClick={[Function]}
+    >
+      <img
+        alt=""
+        src={
+          Object {
+            "default": "test-file-stub",
+          }
+        }
+      />
+       Menu
+    </button>
+    <button
+      className="sc-bdVaJa dDqVak"
+    >
+      Search
+    </button>
+  </div>
 </header>
 `;
