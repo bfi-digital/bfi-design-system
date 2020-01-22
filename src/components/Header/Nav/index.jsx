@@ -25,6 +25,9 @@ const Item = styled.li`
     @media screen and (min-width: ${theme.l}){
         font-size: 1rem;
     }
+    &:hover div{
+        display: block;
+    }
 `
 
 const ItemLink = styled(Link)`
@@ -61,6 +64,50 @@ const ItemLink = styled(Link)`
     }
 `
 
+const ChildBar = styled.div`
+
+    @keyframes slideDown{
+        from{
+            transform: translateY(-100%)
+        }
+        to{
+            transform: translateY(0%)
+        }
+    }
+    display: none;
+    position: absolute;
+    background: ${theme.grey};
+    top: 60px;
+    padding: 15px;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    animation: slideDown 0.2s ease-out;
+`
+
+const ChildList = styled.ul`
+    max-width: 1024px;
+    padding-left: 0;
+    margin: 0 auto;
+    width: 100%;
+    &:hover a{
+        color: ${theme.darkGrey}
+    }
+`
+
+const ChildItem = styled.li`
+    display: inline-block;
+    margin-right: 15px;
+`
+
+const ChildLink = styled(Link)`
+    color: ${theme.charcoal};
+    text-decoration: none;
+    &:hover{
+        color: ${theme.charcoal} !important;
+    }
+`
+
 const Nav = ({
     navItems
 }) =>
@@ -71,6 +118,17 @@ const Nav = ({
                     <ItemLink to={navItem.url} active={navItem.active}>
                         {navItem.title}
                     </ItemLink>
+                    <ChildBar>
+                        <ChildList id={i}>
+                            {navItem.children.map((child, j) =>
+                                <ChildItem key={j}>
+                                    <ChildLink to={child.url}>
+                                        {child.title}
+                                    </ChildLink>
+                                </ChildItem>
+                            )}
+                        </ChildList>
+                    </ChildBar>
                 </Item>
             )}
         </List>

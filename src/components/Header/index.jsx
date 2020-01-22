@@ -10,6 +10,8 @@ import logo from "./logo-black.svg"
 
 const Outer = styled.header`
     background: ${theme.white};
+    position: relative;
+    z-index: 2;
 `
 
 const Inner = styled.div`
