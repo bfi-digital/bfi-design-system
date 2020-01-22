@@ -2,8 +2,6 @@ import * as React from "react"
 import styled from "styled-components"
 import theme from "../../_theme"
 import Icon from "./Icon"
-// import * as menuIcon from "./menu-black.svg"
-// import * as closeIcon from "./close-black.svg"
 
 const Button = styled.button`
     border: none;
@@ -17,9 +15,8 @@ const Button = styled.button`
     justify-content: center;
     align-items: center;
     color: ${theme.charcoal};
-    img{
-        height: 12px;
-        margin-right: 5px;
+    @media screen and (min-width: ${theme.m}){
+        display: none;
     }
 `
 

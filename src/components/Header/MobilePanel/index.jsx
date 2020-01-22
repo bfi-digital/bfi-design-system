@@ -23,6 +23,9 @@ const Panel = styled.nav`
     padding: 0px 15px;
     animation: fadeIn 0.1s ease-out;
     overflow-y: scroll;
+    @media screen and (min-width: ${theme.m}){
+        display: none;
+    }
 `
 
 const List = styled.ul`
@@ -61,9 +64,6 @@ const ItemButton = styled.button`
     width: 100%;
     text-align: left;
     cursor: pointer;
-    &:focus{
-        outline: none;
-    }
 `
 
 const ChildList = styled.ul`
