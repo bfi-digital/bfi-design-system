@@ -27,103 +27,104 @@ exports[`Storyshots Header With Demo Data 1`] = `
       >
         <ul
           className="sc-gqjmRU kJnFWp"
+          role="menubar"
         >
           <li
             className="sc-VigVT gxwVyq"
-            onMouseEnter={[Function]}
           >
             <a
               active={true}
+              aria-haspopup="true"
               className="sc-jTzLTM kMVYib"
               hovered={false}
               href="/#"
               onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              role="menuitem"
             >
               Watch
             </a>
-            <div
-              className="sc-fjdhpX bmxNkF"
-            />
           </li>
           <li
             className="sc-VigVT gxwVyq"
-            onMouseEnter={[Function]}
           >
             <a
+              aria-haspopup="true"
               className="sc-jTzLTM exNXsv"
               hovered={false}
               href="/#"
               onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              role="menuitem"
             >
               Explore
             </a>
-            <div
-              className="sc-fjdhpX bmxNkF"
-            />
           </li>
           <li
             className="sc-VigVT gxwVyq"
-            onMouseEnter={[Function]}
           >
             <a
+              aria-haspopup="true"
               className="sc-jTzLTM exNXsv"
               hovered={false}
               href="/#"
               onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              role="menuitem"
             >
               Make
             </a>
-            <div
-              className="sc-fjdhpX bmxNkF"
-            />
           </li>
           <li
             className="sc-VigVT gxwVyq"
-            onMouseEnter={[Function]}
           >
             <a
+              aria-haspopup="true"
               className="sc-jTzLTM exNXsv"
               hovered={false}
               href="/#"
               onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              role="menuitem"
             >
               Education
             </a>
-            <div
-              className="sc-fjdhpX bmxNkF"
-            />
           </li>
           <li
             className="sc-VigVT gxwVyq"
-            onMouseEnter={[Function]}
           >
             <a
+              aria-haspopup="true"
               className="sc-jTzLTM exNXsv"
               hovered={false}
               href="/#"
               onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              role="menuitem"
             >
               About
             </a>
-            <div
-              className="sc-fjdhpX bmxNkF"
-            />
           </li>
           <li
             className="sc-VigVT gxwVyq"
-            onMouseEnter={[Function]}
           >
             <a
+              aria-haspopup="true"
               className="sc-jTzLTM exNXsv"
               hovered={false}
               href="/#"
               onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              role="menuitem"
             >
               Support
             </a>
-            <div
-              className="sc-fjdhpX bmxNkF"
-            />
           </li>
         </ul>
       </nav>
