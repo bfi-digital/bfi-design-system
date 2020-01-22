@@ -5,8 +5,8 @@ import { Link } from "@reach/router"
 import Search from "./Search"
 import MobilePanel from "./MobilePanel"
 import MenuButton from "./MenuButton"
-
-import * as logo from "./logo-black.svg"
+import Nav from "./Nav"
+import logo from "./logo-black.svg"
 
 const Outer = styled.header`
     background: ${theme.white};
@@ -39,6 +39,7 @@ export const Header = ({
                     <Link to="/">
                         <Logo src={logo} alt="British Film Institute"/>
                     </Link>
+                    <Nav navItems={navItems}/>
                     <MenuButton 
                         handleClick={() => setOpen(!open)}
                         open={open}
