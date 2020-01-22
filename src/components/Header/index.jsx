@@ -30,7 +30,7 @@ export const Header = ({
     navItems
 }) => {
 
-    const [mobilePanel, setMobilePanel] = useState(false)
+    const [open, setOpen] = useState(false)
 
     return(
         <>
@@ -40,14 +40,14 @@ export const Header = ({
                         <Logo src={logo} alt="British Film Institute"/>
                     </Link>
                     <MenuButton 
-                        handleClick={() => setMobilePanel(!mobilePanel)}
-                        open={mobilePanel}
+                        handleClick={() => setOpen(!open)}
+                        open={open}
                     />
                     <Search/>
                 </Inner>
             </Outer>
 
-            {mobilePanel && <MobilePanel navItems={navItems}/>}
+            {open && <MobilePanel navItems={navItems}/>}
         </>
     )
 }

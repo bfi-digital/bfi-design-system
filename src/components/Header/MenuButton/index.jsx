@@ -1,10 +1,11 @@
 import * as React from "react"
 import styled from "styled-components"
 import theme from "../../_theme"
-import * as menuIcon from "./menu-black.svg"
-import * as closeIcon from "./close-black.svg"
+import Icon from "./Icon"
+// import * as menuIcon from "./menu-black.svg"
+// import * as closeIcon from "./close-black.svg"
 
-export const Button = styled.button`
+const Button = styled.button`
     border: none;
     cursor: pointer;
     background: none;
@@ -26,16 +27,13 @@ const MenuButton = ({
     handleClick,
     open
 }) =>
-    <Button onClick={handleClick}>
-        {open ? 
-            <>
-                <img src={closeIcon} alt=""/> Close
-            </>
-            :
-            <>
-                <img src={menuIcon} alt=""/> Menu
-            </>
-        }
+    <Button 
+        onClick={handleClick}
+        aria-controls="menu-panel"
+        aria-expanded={open ? "true" : "false"}
+    >
+        {open ? "Close" : "Menu"}
+        <Icon open={open}/>
     </Button>    
 
 export default MenuButton

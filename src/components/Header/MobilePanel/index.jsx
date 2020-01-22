@@ -96,14 +96,18 @@ const MobilePanel = ({
     const [ selected, setSelected ] = useState(false)
 
     return(
-        <Panel>
+        <Panel id="menu-panel" role="region">
             <List>
                 {navItems.map((navItem, i) =>
                     <Item key={i}>
-                        <ItemButton onClick={() => selected === i ? setSelected(false) : setSelected(i)}>
+                        <ItemButton
+                            aria-controls={i}
+                            aria-expanded={selected === i ? "true" : "false"}
+                            onClick={() => selected === i ? setSelected(false) : setSelected(i)}
+                        >
                             {navItem.title}
                         </ItemButton>
-                        <ChildList>
+                        <ChildList id={i}>
                             {selected === i &&
                                 <>
                                     <ChildItem>
