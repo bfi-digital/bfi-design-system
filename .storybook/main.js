@@ -3,7 +3,8 @@ module.exports = {
     addons: [
         "@storybook/addon-a11y",
         "@storybook/addon-docs",
-        "@storybook/addon-viewport/register"
+        "@storybook/addon-viewport/register",
+        "@storybook/addon-backgrounds/register"
     ],
 
     webpackFinal: async config => {

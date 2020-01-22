@@ -5,7 +5,13 @@ import navItems from "./data"
 
 export default {
     title: "Header",
-    decorators: [withA11y]
+    decorators: [withA11y],
+    parameters: {
+        backgrounds: [
+            { name: "black", value: "#000000", default: true },
+            { name: "white", value: "#ffffff" },
+        ]
+    }
 }
 
 export const withDemoData = () =>
