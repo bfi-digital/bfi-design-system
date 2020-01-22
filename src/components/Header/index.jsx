@@ -19,7 +19,7 @@ const Inner = styled.div`
     align-items: center;
     max-width: 1024px;
     margin: 0 auto;
-    padding: 5px 15px;
+    padding: 0px 15px;
 `
 
 const Logo = styled.img`

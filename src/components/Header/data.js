@@ -2,6 +2,7 @@ export default [
     {
         title: "Watch",
         url: "#",
+        active: true,
         children: 
         [
             {
