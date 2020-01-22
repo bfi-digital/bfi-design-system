@@ -65,11 +65,9 @@ const ChildBar = styled.div`
     @keyframes fadeIn{
         from{
             transform: translateY(-100%);
-            opacity: 0;
         }
         to{
             transform: translateY(0%);
-            opacity: 1;
         }
     }
     position: absolute;
@@ -78,11 +76,11 @@ const ChildBar = styled.div`
     left: 0;
     width: 100%;
     z-index: -1;
-    animation: fadeIn 0.2s ease-out;
+    animation: fadeIn 0.3s ease-out;
 `
 
 const ChildList = styled.ul`
-    padding: 15px;
+    padding: 10px 15px;
     max-width: 1024px;
     margin: 0 auto;
     width: 100%;
@@ -94,6 +92,11 @@ const ChildList = styled.ul`
 const ChildItem = styled.li`
     display: inline-block;
     margin-right: 15px;
+    padding: 5px 0px;
+    @media screen and (min-width: ${theme.l}){
+        font-size: 1rem;
+        margin-right: 15px;
+    }
 `
 
 const ChildLink = styled(Link)`
@@ -112,32 +115,38 @@ const Nav = ({
 
     return(
         <Outer>
-            <List>
+            <List role="menubar">
                 {navItems.map((navItem, i) =>
                     <Item 
                         key={i}
-                        onMouseEnter={() => setSelected(i)}
                     >
-                        <ItemLink 
+                        <ItemLink
+                            onMouseEnter={() => setSelected(i)}
+                            onFocus={() => setSelected(i)}
+                            aria-haspopup="true"
                             to={navItem.url} 
                             active={navItem.active}
                             hovered={selected === i}
+                            role="menuitem"
                         >
                             {navItem.title}
                         </ItemLink>
-                        <ChildBar>
-                            {selected === i &&
+                        {selected === i &&
+                            <ChildBar>
                                 <ChildList id={i}>
                                     {navItem.children.map((child, j) =>
-                                        <ChildItem key={j}>
+                                        <ChildItem
+                                            key={j}
+                                            role="menuitem"
+                                        >
                                             <ChildLink to={child.url}>
                                                 {child.title}
                                             </ChildLink>
                                         </ChildItem>
                                     )}
                                 </ChildList>
-                            }
-                        </ChildBar>
+                            </ChildBar>
+                        }
                     </Item>
                 )}
             </List>
