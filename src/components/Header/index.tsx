@@ -38,7 +38,18 @@ const Logo = styled.img`
     width: 46px;
 `
 
-export const Header = ({
+interface navItem {
+    id: number,
+    title: string,
+    url: string
+}
+
+interface Props {
+    navItems: navItem[]
+    hero: boolean
+}
+
+export const Header: React.FC<Props> = ({
     navItems
 }) => {
 

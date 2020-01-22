@@ -8,8 +8,7 @@ const extensions = [
     ".js", 
     ".jsx",
     ".ts",
-    ".tsx",
-    ".svg"
+    ".tsx"
 ]
 
 export default {
