@@ -1,122 +1,157 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Header With Demo Data 1`] = `
-<header
-  className="sc-fjdhpX gHDQVm"
+<div
+  className="sc-chPdSV bOuyQS"
 >
-  <div
-    className="sc-jzJRlG llTaGW"
+  <header
+    className="sc-kgoBCf bzEBYs"
+    onMouseLeave={[Function]}
   >
-    <a
-      aria-current="page"
-      href="/"
-      onClick={[Function]}
+    <div
+      className="sc-kGXeez UQbNw"
     >
-      <img
-        alt="British Film Institute"
-        className="sc-cSHVUG dbtova"
-        src="test-file-stub"
-      />
-    </a>
-    <nav
-      className="sc-gZMcBi goqrhZ"
-    >
-      <ul
-        className="sc-gqjmRU kJnFWp"
+      <a
+        aria-current="page"
+        href="/"
+        onClick={[Function]}
       >
-        <li
-          className="sc-VigVT gxwVyq"
-        >
-          <a
-            active={true}
-            className="sc-jTzLTM bsWjFj"
-            href="/#"
-            onClick={[Function]}
-          >
-            Watch
-          </a>
-        </li>
-        <li
-          className="sc-VigVT gxwVyq"
-        >
-          <a
-            className="sc-jTzLTM iuWJdc"
-            href="/#"
-            onClick={[Function]}
-          >
-            Explore
-          </a>
-        </li>
-        <li
-          className="sc-VigVT gxwVyq"
-        >
-          <a
-            className="sc-jTzLTM iuWJdc"
-            href="/#"
-            onClick={[Function]}
-          >
-            Make
-          </a>
-        </li>
-        <li
-          className="sc-VigVT gxwVyq"
-        >
-          <a
-            className="sc-jTzLTM iuWJdc"
-            href="/#"
-            onClick={[Function]}
-          >
-            Education
-          </a>
-        </li>
-        <li
-          className="sc-VigVT gxwVyq"
-        >
-          <a
-            className="sc-jTzLTM iuWJdc"
-            href="/#"
-            onClick={[Function]}
-          >
-            About
-          </a>
-        </li>
-        <li
-          className="sc-VigVT gxwVyq"
-        >
-          <a
-            className="sc-jTzLTM iuWJdc"
-            href="/#"
-            onClick={[Function]}
-          >
-            Support
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <button
-      aria-controls="menu-panel"
-      aria-expanded="false"
-      className="sc-iwsKbI fROsfM"
-      onClick={[Function]}
-    >
-      Menu
-      <div
-        className="sc-dnqmqq eRJgxh"
-        open={false}
+        <img
+          alt="British Film Institute"
+          className="sc-kpOJdX bndQFl"
+          src="test-file-stub"
+        />
+      </a>
+      <nav
+        className="sc-gZMcBi goqrhZ"
       >
-        <div />
-      </div>
-    </button>
-    <button
-      className="sc-bdVaJa iySLTE"
-    >
-      <img
-        alt=""
-        className="sc-bwzfXH cWNFVp"
-        src="test-file-stub"
-      />
-      Search
-    </button>
-  </div>
-</header>
+        <ul
+          className="sc-gqjmRU kJnFWp"
+        >
+          <li
+            className="sc-VigVT gxwVyq"
+            onMouseEnter={[Function]}
+          >
+            <a
+              active={true}
+              className="sc-jTzLTM kMVYib"
+              hovered={false}
+              href="/#"
+              onClick={[Function]}
+            >
+              Watch
+            </a>
+            <div
+              className="sc-fjdhpX bmxNkF"
+            />
+          </li>
+          <li
+            className="sc-VigVT gxwVyq"
+            onMouseEnter={[Function]}
+          >
+            <a
+              className="sc-jTzLTM exNXsv"
+              hovered={false}
+              href="/#"
+              onClick={[Function]}
+            >
+              Explore
+            </a>
+            <div
+              className="sc-fjdhpX bmxNkF"
+            />
+          </li>
+          <li
+            className="sc-VigVT gxwVyq"
+            onMouseEnter={[Function]}
+          >
+            <a
+              className="sc-jTzLTM exNXsv"
+              hovered={false}
+              href="/#"
+              onClick={[Function]}
+            >
+              Make
+            </a>
+            <div
+              className="sc-fjdhpX bmxNkF"
+            />
+          </li>
+          <li
+            className="sc-VigVT gxwVyq"
+            onMouseEnter={[Function]}
+          >
+            <a
+              className="sc-jTzLTM exNXsv"
+              hovered={false}
+              href="/#"
+              onClick={[Function]}
+            >
+              Education
+            </a>
+            <div
+              className="sc-fjdhpX bmxNkF"
+            />
+          </li>
+          <li
+            className="sc-VigVT gxwVyq"
+            onMouseEnter={[Function]}
+          >
+            <a
+              className="sc-jTzLTM exNXsv"
+              hovered={false}
+              href="/#"
+              onClick={[Function]}
+            >
+              About
+            </a>
+            <div
+              className="sc-fjdhpX bmxNkF"
+            />
+          </li>
+          <li
+            className="sc-VigVT gxwVyq"
+            onMouseEnter={[Function]}
+          >
+            <a
+              className="sc-jTzLTM exNXsv"
+              hovered={false}
+              href="/#"
+              onClick={[Function]}
+            >
+              Support
+            </a>
+            <div
+              className="sc-fjdhpX bmxNkF"
+            />
+          </li>
+        </ul>
+      </nav>
+      <button
+        aria-controls="menu-panel"
+        aria-expanded="false"
+        className="sc-iwsKbI fROsfM"
+        onClick={[Function]}
+      >
+        Menu
+        <div
+          className="sc-dnqmqq eRJgxh"
+          open={false}
+        >
+          <div />
+        </div>
+      </button>
+      <button
+        className="sc-bdVaJa iySLTE"
+      >
+        <img
+          alt=""
+          className="sc-bwzfXH cWNFVp"
+          src="test-file-stub"
+        />
+        Search
+      </button>
+    </div>
+  </header>
+</div>
 `;
