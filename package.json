@@ -14,7 +14,8 @@
     "pretest": "eslint src/ --ext .jsx",
     "test": "jest",
     "prepare": "jest && rollup -c",
-    "lint": "eslint src/ --ext .jsx"
+    "lint": "eslint src/ --ext .jsx",
+    "typecheck": "tsc"
   },
   "license": "ISC",
   "devDependencies": {
