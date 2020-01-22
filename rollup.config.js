@@ -12,7 +12,7 @@ const extensions = [
 ]
 
 export default {
-    input: "src/index.ts",
+    input: "src/index.js",
     output: {
         file: "dist/bundle.js",
         format: "cjs",
