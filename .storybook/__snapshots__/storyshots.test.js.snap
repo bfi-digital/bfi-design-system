@@ -9,7 +9,7 @@ exports[`Storyshots Header With Demo Data 1`] = `
     onMouseLeave={[Function]}
   >
     <div
-      className="sc-kGXeez UQbNw"
+      className="sc-kGXeez izHSIQ"
     >
       <a
         aria-current="page"
@@ -27,7 +27,6 @@ exports[`Storyshots Header With Demo Data 1`] = `
       >
         <ul
           className="sc-gqjmRU kJnFWp"
-          role="menubar"
         >
           <li
             className="sc-VigVT gxwVyq"

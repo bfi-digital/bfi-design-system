@@ -54,7 +54,7 @@ We use `jest` and `react-test-renderer` to run snapshot tests on all components.
 
 `npm test` runs all the tests.
 
-If you make changes to the output of components, you can regenerate the snapshot files with `jest --updateSnaphots`.
+If you make changes to the output of components, you can regenerate the snapshot files with `jest --updateSnaphot`.
 
 The snapshot test cases themselves come from the same `stories.jsx` file colocated with each component.
 
