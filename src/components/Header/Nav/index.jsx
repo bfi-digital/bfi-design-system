@@ -115,7 +115,7 @@ const Nav = ({
 
     return(
         <Outer>
-            <List role="menubar">
+            <List>
                 {navItems.map((navItem, i) =>
                     <Item 
                         key={i}

@@ -26,6 +26,9 @@ const Inner = styled.div`
     max-width: 1024px;
     margin: 0 auto;
     padding: 0px 15px;
+    @media screen and (min-width: ${theme.xl}){
+        max-width: 1440px;
+    }
 `
 
 const Logo = styled.img`
