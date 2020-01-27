@@ -29,7 +29,7 @@ const Item = styled.li`
 
 const ItemLink = styled(Link)`
     display: block;
-    padding: 20px 15px;
+    padding: 21px 15px;
     color: ${props => props.isWhite ? theme.white : theme.charcoal};
     text-decoration: none;
     position: relative;

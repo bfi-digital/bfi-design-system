@@ -18,6 +18,7 @@ const Outer = styled.header`
     background: ${props => props.isTransparent ? 'transparent' : theme.white};
     position: relative;
     z-index: initial;
+    min-height: 60px;
 `
 
 const Inner = styled.div`
