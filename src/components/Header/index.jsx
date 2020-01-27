@@ -32,6 +32,19 @@ const Inner = styled.div`
     @media screen and (min-width: ${theme.xl}){
         max-width: 1440px;
     }
+
+    a, button {
+        &:focus {
+            box-shadow: 
+                inset ${theme.darkPink} 0px 0px 0px 2px,
+                inset ${theme.dustyPink} 0px 0px 0px 4px !important;
+            outline: none !important;
+        }
+    }
+`
+
+const LogoLink = styled(Link)`
+    padding: 6px 2px;
 `
 
 const Logo = styled.img`
@@ -55,9 +68,9 @@ export const Header = ({
                 isTransparent={isOverlaid}
             >
                 <Inner>
-                    <Link to="/">
+                    <LogoLink to="/">
                         <Logo src={isOverlaid ? logoWhite : logo} alt="British Film Institute"/>
-                    </Link>
+                    </LogoLink>
                     <Nav
                         navItems={navItems}
                         selected={selected}

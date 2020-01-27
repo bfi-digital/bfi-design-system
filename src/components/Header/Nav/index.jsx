@@ -80,7 +80,7 @@ const ChildBar = styled.div`
 `
 
 const ChildList = styled.ul`
-    padding: 10px 15px;
+    padding: 0px 15px;
     max-width: 1024px;
     margin: 0 auto;
     width: 100%;
@@ -91,19 +91,22 @@ const ChildList = styled.ul`
 
 const ChildItem = styled.li`
     display: inline-block;
-    margin-right: 15px;
-    padding: 5px 0px;
+    padding: 0px;
     @media screen and (min-width: ${theme.l}){
         font-size: 1rem;
-        margin-right: 15px;
     }
 `
 
 const ChildLink = styled(Link)`
     color: ${theme.charcoal};
     text-decoration: none;
-    &:hover{
+    padding: 8px 12px;
+    display: inline-block;
+    &:hover {
         color: ${theme.charcoal} !important;
+    }
+    @media screen and (min-width: ${theme.l}){
+        padding: 10px 15px;
     }
 `
 

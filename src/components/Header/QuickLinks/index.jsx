@@ -39,6 +39,13 @@ const Item = styled.li`
         padding: 0;
         color: ${theme.charcoal};
         font-weight: 600;
+        
+        &:focus {
+            box-shadow: 
+                inset ${theme.darkPink} 0px 0px 0px 2px,
+                inset ${theme.white} 0px 0px 0px 4px !important;
+            outline: none !important;
+        }
     }
 
     @media screen and (min-width: ${theme.m}){
