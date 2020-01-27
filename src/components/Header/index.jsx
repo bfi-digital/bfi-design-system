@@ -40,33 +40,35 @@ const Logo = styled.img`
 
 export const Header = ({
     navItems,
-    isOverlay
+    overlay
 }) => {
     const [open, setOpen] = useState(false)
     const [selected, setSelected] = useState(false)
+    const [isOverlaid, setOverlaid] = useState(overlay)
 
     return(
-        <Wrapper>
+        <Wrapper onMouseLeave={() => setOverlaid(overlay)}>
             <QuickLinks />
             <Outer 
                 onMouseLeave={() => setSelected(false)}
-                isTransparent={isOverlay}
+                onMouseEnter={() => setOverlaid(false)}
+                isTransparent={isOverlaid}
             >
                 <Inner>
                     <Link to="/">
-                        <Logo src={isOverlay ? logoWhite : logo} alt="British Film Institute"/>
+                        <Logo src={isOverlaid ? logoWhite : logo} alt="British Film Institute"/>
                     </Link>
                     <Nav
                         navItems={navItems}
                         selected={selected}
                         setSelected={setSelected}
-                        isOverlay={isOverlay}
+                        isOverlaid={isOverlaid}
                     />
                     <MenuButton 
                         handleClick={() => setOpen(!open)}
                         open={open}
                     />
-                    <Search isOverlay={isOverlay} />
+                    <Search isOverlaid={isOverlaid} />
                 </Inner>
             </Outer>
 

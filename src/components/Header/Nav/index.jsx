@@ -72,7 +72,7 @@ const ChildBar = styled.div`
     }
     position: absolute;
     background: ${theme.grey};
-    top: 60px;
+    top: 64px;
     left: 0;
     width: 100%;
     z-index: -1;
@@ -111,7 +111,7 @@ const Nav = ({
     navItems,
     selected,
     setSelected,
-    isOverlay
+    isOverlaid
 }) => {
 
     return(
@@ -129,7 +129,7 @@ const Nav = ({
                             active={navItem.active}
                             hovered={selected === i}
                             role="menuitem"
-                            isWhite={isOverlay}
+                            isWhite={isOverlaid}
                         >
                             {navItem.title}
                         </ItemLink>

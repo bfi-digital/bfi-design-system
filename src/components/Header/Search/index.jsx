@@ -18,7 +18,7 @@ const Button = styled.button`
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        color: ${props => props.isOverlay ? theme.white : theme.charcoal};
+        color: ${props => props.isOverlaid ? theme.white : theme.charcoal};
     }
 ` 
 
@@ -26,9 +26,9 @@ const Img = styled.img`
     margin-right: 10px;
 `
 
-const Search = ({isOverlay}) =>
-    <Button isOverlay={isOverlay}>
-        <Img src={isOverlay ? eyeglassWhite : eyeglass} alt=""/>
+const Search = ({isOverlaid}) =>
+    <Button isOverlaid={isOverlaid}>
+        <Img src={isOverlaid ? eyeglassWhite : eyeglass} alt=""/>
         Search
     </Button>
 
