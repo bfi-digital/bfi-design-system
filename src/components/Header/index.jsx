@@ -3,6 +3,7 @@ import theme from "../_theme"
 import styled from "styled-components"
 import { Link } from "@reach/router"
 import Search from "./Search"
+import QuickLinks from "./QuickLinks"
 import MobilePanel from "./MobilePanel"
 import MenuButton from "./MenuButton"
 import Nav from "./Nav"
@@ -44,6 +45,7 @@ export const Header = ({
 
     return(
         <Wrapper>
+            <QuickLinks />
             <Outer onMouseLeave={() => setSelected(false)}>
                 <Inner>
                     <Link to="/">
