@@ -8,13 +8,14 @@ import MobilePanel from "./MobilePanel"
 import MenuButton from "./MenuButton"
 import Nav from "./Nav"
 import logo from "./logo-black.svg"
+import logoWhite from "./logo-white.svg"
 
 const Wrapper = styled.div`
-    z-index: 999;
-`
+        z-index: 999;
+    `
 
 const Outer = styled.header`
-    background: ${theme.white};
+    background: ${props => props.isTransparent ? 'transparent' : theme.white};
     position: relative;
     z-index: initial;
 `
@@ -37,30 +38,34 @@ const Logo = styled.img`
 `
 
 export const Header = ({
-    navItems
+    navItems,
+    isOverlay
 }) => {
-
     const [open, setOpen] = useState(false)
     const [selected, setSelected] = useState(false)
 
     return(
         <Wrapper>
             <QuickLinks />
-            <Outer onMouseLeave={() => setSelected(false)}>
+            <Outer 
+                onMouseLeave={() => setSelected(false)}
+                isTransparent={isOverlay}
+            >
                 <Inner>
                     <Link to="/">
-                        <Logo src={logo} alt="British Film Institute"/>
+                        <Logo src={isOverlay ? logoWhite : logo} alt="British Film Institute"/>
                     </Link>
                     <Nav
                         navItems={navItems}
                         selected={selected}
                         setSelected={setSelected}
+                        isOverlay={isOverlay}
                     />
                     <MenuButton 
                         handleClick={() => setOpen(!open)}
                         open={open}
                     />
-                    <Search/>
+                    <Search isOverlay={isOverlay} />
                 </Inner>
             </Outer>
 

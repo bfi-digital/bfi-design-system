@@ -15,4 +15,7 @@ export default {
 }
 
 export const withDemoData = () =>
-    <Header navItems={navItems} />
+    <Header navItems={navItems} isOverlay={false} />
+
+export const transparentBackground = () =>
+    <Header navItems={navItems} isOverlay={true} />

@@ -2,6 +2,7 @@ import * as React from "react"
 import theme from "../../_theme"
 import styled from "styled-components"
 import eyeglass from "./eyeglass.svg"
+import eyeglassWhite from "./eyeglass-white.svg"
 
 const Button = styled.button`
     display: none;
@@ -17,17 +18,17 @@ const Button = styled.button`
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        color: ${theme.charcoal};
+        color: ${props => props.isOverlay ? theme.white : theme.charcoal};
     }
-`
+` 
 
 const Img = styled.img`
     margin-right: 10px;
 `
 
-const Search = () =>
-    <Button>
-        <Img src={eyeglass} alt=""/>
+const Search = ({isOverlay}) =>
+    <Button isOverlay={isOverlay}>
+        <Img src={isOverlay ? eyeglassWhite : eyeglass} alt=""/>
         Search
     </Button>
 

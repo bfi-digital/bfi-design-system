@@ -30,7 +30,7 @@ const Item = styled.li`
 const ItemLink = styled(Link)`
     display: block;
     padding: 20px 15px;
-    color: ${theme.charcoal};
+    color: ${props => props.isWhite ? theme.white : theme.charcoal};
     text-decoration: none;
     position: relative;
     &:after{
@@ -40,7 +40,7 @@ const ItemLink = styled(Link)`
         bottom: 15px;
         display: block;
         content: "";
-        border-bottom: ${props => props.active ? `2px solid ${theme.charcoal}` : ""};
+        border-bottom: ${props => props.active ? `2px solid ${props.isWhite ? theme.white : theme.charcoal}` : ""};
         @media screen and (min-width: ${theme.l}){
             bottom: 17px;
         }
@@ -110,7 +110,8 @@ const ChildLink = styled(Link)`
 const Nav = ({
     navItems,
     selected,
-    setSelected
+    setSelected,
+    isOverlay
 }) => {
 
     return(
@@ -128,6 +129,7 @@ const Nav = ({
                             active={navItem.active}
                             hovered={selected === i}
                             role="menuitem"
+                            isWhite={isOverlay}
                         >
                             {navItem.title}
                         </ItemLink>
