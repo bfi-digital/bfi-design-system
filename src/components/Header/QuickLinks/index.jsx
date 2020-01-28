@@ -38,7 +38,12 @@ const Item = styled.li`
     a {
         padding: 0;
         color: ${theme.charcoal};
-        font-weight: 600;
+        font-weight: 700;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
         
         &:focus {
             box-shadow: 
