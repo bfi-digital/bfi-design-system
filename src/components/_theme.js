@@ -6,7 +6,7 @@ export default {
 
     darkGrey: "#746D6D",
     grey: "#e8e5e5",
-    lightGrey: "f6f6f6",
+    lightGrey: "#f6f6f6",
 
     lightPink: "#ffe6e7",
     dustyPink: "#f0c5c8",
