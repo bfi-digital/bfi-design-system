@@ -10,12 +10,18 @@ import Nav from "./Nav"
 import logo from "./logo-black.svg"
 import logoWhite from "./logo-white.svg"
 
+// HEADER TODO:
+// 1. On scroll make header sticky and turn off isOverlaid
+// 2. possibly removing search button
+
+
 const Wrapper = styled.div`
-        z-index: 999;
-    `
+    z-index: 999;
+`
 
 const Outer = styled.header`
     background: ${props => props.isTransparent ? 'transparent' : theme.white};
+    border-bottom: ${props => props.isTransparent ? 'none' : '1px solid ' + theme.grey};
     position: relative;
     z-index: initial;
     min-height: 60px;
@@ -26,11 +32,11 @@ const Inner = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    max-width: 1024px;
+    max-width:  ${theme.l};
     margin: 0 auto;
     padding: 0px 15px;
     @media screen and (min-width: ${theme.xl}){
-        max-width: 1440px;
+        max-width: ${theme.xl};
     }
 
     a, button {
