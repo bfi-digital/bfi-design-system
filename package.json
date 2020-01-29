@@ -27,7 +27,7 @@
     "@rollup/plugin-node-resolve": "^7.0.0",
     "@storybook/addon-a11y": "^5.3.3",
     "@storybook/addon-backgrounds": "^5.3.8",
-    "@storybook/addon-docs": "^5.3.3",
+    "@storybook/addon-docs": "^5.3.9",
     "@storybook/addon-storyshots": "^5.3.3",
     "@storybook/addon-viewport": "^5.3.3",
     "@storybook/react": "^5.3.3",
