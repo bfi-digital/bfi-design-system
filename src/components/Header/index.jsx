@@ -10,9 +10,14 @@ import Nav from "./Nav"
 import logo from "./logo-black.svg"
 import logoWhite from "./logo-white.svg"
 
+// HEADER TODO:
+// 1. On scroll make header sticky and turn off isOverlaid
+// 2. possibly removing search button
+
+
 const Wrapper = styled.div`
-        z-index: 999;
-    `
+    z-index: 999;
+`
 
 const Outer = styled.header`
     background: ${props => props.isTransparent ? 'transparent' : theme.white};

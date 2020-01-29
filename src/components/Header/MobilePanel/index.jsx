@@ -15,7 +15,7 @@ const Panel = styled.nav`
     }
     position: fixed;
     /* offset header */
-    top: 61px;
+    top: 119px;
     left: 0px;
     width: 100%;
     bottom: 0px;
