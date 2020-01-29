@@ -26,11 +26,11 @@ const Inner = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    max-width: 1024px;
+    max-width:  ${theme.l};
     margin: 0 auto;
     padding: 0px 15px;
     @media screen and (min-width: ${theme.xl}){
-        max-width: 1440px;
+        max-width: ${theme.xl};
     }
 
     a, button {

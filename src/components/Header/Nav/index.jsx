@@ -81,11 +81,14 @@ const ChildBar = styled.div`
 
 const ChildList = styled.ul`
     padding: 0px 15px;
-    max-width: 1024px;
+    max-width:  ${theme.l};
     margin: 0 auto;
     width: 100%;
     &:hover a{
         color: ${theme.darkGrey}
+    }
+    @media screen and (min-width: ${theme.xl}){
+        max-width: ${theme.xl};
     }
 `
 

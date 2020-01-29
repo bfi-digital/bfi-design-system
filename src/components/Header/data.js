@@ -194,7 +194,7 @@ export default [
         ]
     },
     {
-        title: "Support",
+        title: "Join",
         url: "#",
         children: [
             {
