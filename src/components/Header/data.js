@@ -44,7 +44,7 @@ export default [
         ]
     },
     {
-        title: "Explore",
+        title: "Discover",
         url: "#",
         children: [
             {
@@ -86,7 +86,7 @@ export default [
         ]
     },
     {
-        title: "Make",
+        title: "Industry",
         url: "#",
         children:   [
             {
@@ -116,7 +116,7 @@ export default [
         ]  
     },
     {
-        title: "Education",
+        title: "Learn",
         url: "#",
         children: [
             {
