@@ -18,7 +18,8 @@ export default create({
 
   // Text colors
   textColor: 'rgb(28, 28, 28)',
-//   textInverseColor: 'rgba(255,255,255,0.9)',
+  textInverseColor: 'rgb(255,255,255)',
+  linkColor: 'rgb(240, 197, 200)',
 
   // Toolbar default and active colors
 //   barTextColor: 'silver',

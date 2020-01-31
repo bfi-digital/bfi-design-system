@@ -1,0 +1,58 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/addon-docs/blocks';
+
+import theme from "../../components/_theme"
+
+<Meta title="Docs|Visual Language/Colour" />
+
+# Colour
+BFI uses colours to communicate functionality in the interface and to subtley provide a guide for which area of the website is being viewed. Colour must be used carefully and abiding by a clear set of guidence.
+
+### Colours must always be accessible
+When using colours, ensure that they work for everyone, especially those who are colour blind or who have low vision. Do not use color on its own to convey information. The BFI colour palette has been designed with accessibility as a fundamental guiding principle, and so the colour contrast of each colour combination has been taken into account for all shades. 
+
+All colour contrasts of text and interactive elements must meet [level AA of the Web Content Accessibility Guidelines (WCAG 2.1)](https://www.w3.org/TR/WCAG21/#contrast-minimum).
+
+- To have similar coloured text on coloured background, always use the dark shade on top of light shade of each colour option.
+- Black and Deep Navy should be used on Dusty Pink.
+- White and Dusty Pink should be used on Deep Navy.
+- White and Dusty Pink should be used on Racer Green.
+- White and Dusty Pink should be used on Black.
+- Black and Deep Navy should be used on Light Grey & White.
+
+### Communication > Aesthetics
+While colour adds to the decoration of a web page, it is more important that the colour is used purposefully and should be there to support the content, not replace it.
+
+
+### Visual hierarchy with colour use
+Colour should be used to help guide a user to what matters on the page, supporting the visual hierarchy of the page. Colour should not be over used.
+
+<ColorPalette>
+    <ColorItem 
+        title="Dusty Pink" 
+        subtitle="BFI's primary colour, it is used primarily on the Watch pillar." 
+        colors={[theme.dustyPink]} />
+    <ColorItem 
+        title="Dark & Light shades" 
+        subtitle="A dark and light shade of pink used for highlighting and contrast." 
+        colors={[theme.darkPink, theme.lightPink]} />
+    <ColorItem 
+        title="Deep Navy" 
+        subtitle="A dark blue, used throughout the Discover pillar." 
+        colors={[theme.deepNavy]} />
+    <ColorItem 
+        title="Dark & Light shades" 
+        subtitle="A dark and light shade of pink used for highlighting and contrast." 
+        colors={[theme.darkBlue, theme.lightBlue]} />
+    <ColorItem 
+        title="Racer Green" 
+        subtitle="A dark green, used throughout the Create pillar." 
+        colors={[theme.racerGreen]} />
+    <ColorItem 
+        title="Dark & Light shades" 
+        subtitle="A dark and light shade of pink used for highlighting and contrast." 
+        colors={[theme.darkGreen, theme.lightGreen]} />
+    <ColorItem 
+        title="Monochrome shades" 
+        subtitle="An off black, with shades of grey used to highlight sections and text." 
+        colors={[theme.charcoal, theme.darkGrey, theme.grey, theme.lightGrey, theme.white]} />
+</ColorPalette>
