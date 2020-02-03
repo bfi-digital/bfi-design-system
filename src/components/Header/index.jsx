@@ -20,8 +20,8 @@ const Wrapper = styled.div`
 `
 
 const Outer = styled.header`
-    background: ${props => props.isTransparent ? 'transparent' : theme.white};
-    border-bottom: ${props => props.isTransparent ? 'none' : '1px solid ' + theme.grey};
+    background: ${props => props.isTransparent ? "transparent" : theme.white};
+    border-bottom: ${props => props.isTransparent ? "none" : "1px solid " + theme.grey};
     position: relative;
     z-index: initial;
     min-height: 60px;

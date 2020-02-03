@@ -134,7 +134,7 @@ const Nav = ({
                             to={navItem.url} 
                             active={navItem.active}
                             hovered={selected === i}
-                            role="menuitem"
+                            // role="menuitem"
                             isWhite={isOverlaid}
                         >
                             {navItem.title}
@@ -145,7 +145,7 @@ const Nav = ({
                                     {navItem.children.map((child, j) =>
                                         <ChildItem
                                             key={j}
-                                            role="menuitem"
+                                            // role="menuitem"
                                         >
                                             <ChildLink to={child.url}>
                                                 {child.title}
