@@ -3,9 +3,13 @@ import theme from "../../_theme"
 import styled from "styled-components"
 
 const Wrapper = styled.div`
-    background: ${theme.dustyPink};
-    font-weight: 600;
-    padding: 5px 0;
+    display: none;
+    @media screen and (min-width: ${theme.m}){
+        display: block;
+        background: ${theme.dustyPink};
+        font-weight: 600;
+        padding: 5px 0;
+    }
 `
 
 const Inner = styled.div`

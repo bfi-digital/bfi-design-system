@@ -15,7 +15,18 @@ export default {
 }
 
 export const withDemoData = () =>
-    <Header navItems={navItems} overlay={false} />
+    <Header navItems={navItems} />
 
 export const transparentBackground = () =>
     <Header navItems={navItems} overlay={true} />
+
+export const withOverflowingContent = () =>
+    <>
+        <Header navItems={navItems} />
+        <div style={{
+            height: "200vh",
+            background: "red",
+            width: "100px",
+            border: "1px solid blue"
+        }}></div>
+    </>

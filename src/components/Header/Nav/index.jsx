@@ -64,10 +64,10 @@ const ItemLink = styled(Link)`
 const ChildBar = styled.div`
     @keyframes fadeIn{
         from{
-            transform: translateY(-100%);
+            opacity: 0;
         }
         to{
-            transform: translateY(0%);
+            opacity: 1;
         }
     }
     position: absolute;
@@ -75,8 +75,7 @@ const ChildBar = styled.div`
     top: 64px;
     left: 0;
     width: 100%;
-    z-index: -1;
-    animation: fadeIn 0.3s ease-out;
+    animation: fadeIn 0.1s ease-out;
 `
 
 const ChildList = styled.ul`
