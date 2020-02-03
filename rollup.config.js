@@ -1,6 +1,6 @@
 import resolve from "@rollup/plugin-node-resolve"
 import babel from "rollup-plugin-babel"
-import images from "@rollup/plugin-image"
+import url from "@rollup/plugin-url"
 import autoExternal from "rollup-plugin-auto-external"
 import peerDepsExternal from "rollup-plugin-peer-deps-external"
 
@@ -24,7 +24,7 @@ export default {
         resolve({
             extensions: extensions
         }),
-        images(),
+        url(),
         babel({
             extensions: extensions,
             exclude: "node_modules/**"
