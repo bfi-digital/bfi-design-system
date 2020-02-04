@@ -14,7 +14,7 @@ export default {
     }
 }
 
-export const withDemoData = () =>
+export const opaqueBackground = () =>
     <Header navItems={navItems} />
 
 export const transparentBackground = () =>
