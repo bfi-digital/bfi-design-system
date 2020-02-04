@@ -12,11 +12,11 @@ export default {
     dustyPink: "#f0c5c8",
     darkPink: "#895d60",
 
-    lightBlue: "#c1d6f5",
+    lightBlue: "#DBE9FF",
     deepNavy: "#031d45",
     darkBlue: "#1a2029",
 
-    lightGreen: "#c0edd9",
+    lightGreen: "#DFFFF1",
     racerGreen: "#004225",
     darkGreen: "#172820",
 
