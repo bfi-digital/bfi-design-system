@@ -1,5 +1,5 @@
 module.exports = {
-    stories: ["../src/**/stories.(tsx|jsx)"],
+    stories: ["../src/**/stories.(tsx|jsx)", "../src/**/*.stories.mdx"],
     addons: [
         "@storybook/addon-a11y",
         "@storybook/addon-docs",
@@ -20,10 +20,4 @@ module.exports = {
         return config;
     },
 };
-
-
-
-
-
-
 
