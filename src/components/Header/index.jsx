@@ -28,6 +28,7 @@ const Outer = styled.header`
     min-height: 60px;
     position: sticky;
     top: 0px;
+    transition: 0.1s ease-out;
 `
 
 const Inner = styled.div`
@@ -70,9 +71,12 @@ export const Header = ({
 
     return(
         <>
-            <QuickLinks/>
+            <QuickLinks onMouseLeave={() => setOverlaid(true)} />
             <Outer 
-                onMouseLeave={() => setSelected(false)}
+                onMouseLeave={() => {
+                    setSelected(false)
+                    setOverlaid(true)
+                }}
                 onMouseEnter={() => setOverlaid(false)}
                 isTransparent={isOverlaid}
             >
@@ -93,7 +97,6 @@ export const Header = ({
                     <Search isOverlaid={isOverlaid} />
                 </Inner>
             </Outer>
-
             {open && <MobilePanel navItems={navItems}/>}
         </>
     )
