@@ -25,8 +25,7 @@ export const withOverflowingContent = () =>
         <Header navItems={navItems} />
         <div style={{
             height: "200vh",
-            background: "red",
-            width: "100px",
-            border: "1px solid blue"
+            width: "100%",
+            background: "linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%)"
         }}></div>
     </>
