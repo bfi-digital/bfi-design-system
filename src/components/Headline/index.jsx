@@ -44,8 +44,8 @@ export const Headline = ({
     level,
     text
 }) => {
-    if (level === 1) return <H1 dangerouslySetInnerHTML={{__html: text}}></H1>
-    if (level === 2) return <H2 dangerouslySetInnerHTML={{__html: text}}></H2>
-    if (level === 3) return <H3 dangerouslySetInnerHTML={{__html: text}}></H3>
+    if (level === 1) return <H1>{text}</H1>
+    if (level === 2) return <H2>{text}</H2>
+    if (level === 3) return <H3>{text}</H3>
     return null
 }

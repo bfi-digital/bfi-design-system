@@ -600,32 +600,23 @@ Array [
 exports[`Storyshots Headline Level 1 1`] = `
 <h1
   className="sc-hMqMXs hVROlX"
-  dangerouslySetInnerHTML={
-    Object {
-      "__html": "My example headline",
-    }
-  }
-/>
+>
+  My example headline
+</h1>
 `;
 
 exports[`Storyshots Headline Level 2 1`] = `
 <h2
   className="sc-kEYyzF dNAbFG"
-  dangerouslySetInnerHTML={
-    Object {
-      "__html": "My example headline",
-    }
-  }
-/>
+>
+  My example headline
+</h2>
 `;
 
 exports[`Storyshots Headline Level 3 1`] = `
 <h3
   className="sc-kkGfuU eSLrmU"
-  dangerouslySetInnerHTML={
-    Object {
-      "__html": "My example headline",
-    }
-  }
-/>
+>
+  My example headline
+</h3>
 `;
