@@ -1,8 +1,11 @@
 module.exports = {
-    stories: ["../src/**/stories.(tsx|jsx)", "../src/**/*.stories.mdx"],
+    stories: [
+      "../src/**/stories.(tsx|jsx)", 
+      // "../src/**/*.stories.mdx"
+    ],
     addons: [
         "@storybook/addon-a11y",
-        "@storybook/addon-docs",
+        // "@storybook/addon-docs",
         "@storybook/addon-viewport/register",
         "@storybook/addon-backgrounds/register"
     ],
@@ -19,5 +22,4 @@ module.exports = {
         config.resolve.extensions.push('.ts', '.tsx');
         return config;
     },
-};
-
+}
