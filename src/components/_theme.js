@@ -8,15 +8,15 @@ export default {
     grey: "#e8e5e5",
     lightGrey: "#f6f6f6",
 
-    lightPink: "#ffe6e7",
+    lightPink: "#FAEFF0",
     dustyPink: "#f0c5c8",
     darkPink: "#895d60",
 
-    lightBlue: "#DBE9FF",
+    lightBlue: "#E9F2FF",
     deepNavy: "#031d45",
     darkBlue: "#1a2029",
 
-    lightGreen: "#DFFFF1",
+    lightGreen: "#EEFAF4",
     racerGreen: "#004225",
     darkGreen: "#172820",
 
