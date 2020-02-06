@@ -7,6 +7,7 @@ import QuickLinks from "./QuickLinks"
 import MobilePanel from "./MobilePanel"
 import MenuButton from "./MenuButton"
 import Nav from "./Nav"
+
 import logo from "./logo-black.svg"
 import logoWhite from "./logo-white.svg"
 
@@ -14,17 +15,15 @@ import logoWhite from "./logo-white.svg"
 // 1. On scroll make header sticky and turn off isOverlaid
 // 2. possibly removing search button
 
-
-const Wrapper = styled.div`
-    z-index: 999;
-`
-
 const Outer = styled.header`
-    background: ${props => props.isTransparent ? 'transparent' : theme.white};
-    border-bottom: ${props => props.isTransparent ? 'none' : '1px solid ' + theme.grey};
+    background: ${props => props.isTransparent ? "transparent" : theme.white};
+    border-bottom: ${props => props.isTransparent ? "none" : "1px solid " + theme.grey};
     position: relative;
-    z-index: initial;
+    z-index: 999;
     min-height: 60px;
+    position: sticky;
+    top: 0px;
+    transition: 0.1s ease-out;
 `
 
 const Inner = styled.div`
@@ -66,10 +65,13 @@ export const Header = ({
     const [isOverlaid, setOverlaid] = useState(overlay)
 
     return(
-        <Wrapper onMouseLeave={() => setOverlaid(overlay)}>
-            <QuickLinks />
+        <>
+            <QuickLinks onMouseLeave={() => {overlay && setOverlaid(true)}} />
             <Outer 
-                onMouseLeave={() => setSelected(false)}
+                onMouseLeave={() => {
+                    setSelected(false)
+                    overlay && setOverlaid(true)
+                }}
                 onMouseEnter={() => setOverlaid(false)}
                 isTransparent={isOverlaid}
             >
@@ -90,9 +92,8 @@ export const Header = ({
                     <Search isOverlaid={isOverlaid} />
                 </Inner>
             </Outer>
-
             {open && <MobilePanel navItems={navItems}/>}
-        </Wrapper>
+        </>
     )
 }
 

@@ -64,10 +64,10 @@ const ItemLink = styled(Link)`
 const ChildBar = styled.div`
     @keyframes fadeIn{
         from{
-            transform: translateY(-100%);
+            opacity: 0;
         }
         to{
-            transform: translateY(0%);
+            opacity: 1;
         }
     }
     position: absolute;
@@ -75,8 +75,7 @@ const ChildBar = styled.div`
     top: 64px;
     left: 0;
     width: 100%;
-    z-index: -1;
-    animation: fadeIn 0.3s ease-out;
+    animation: fadeIn 0.1s ease-out;
 `
 
 const ChildList = styled.ul`
@@ -118,48 +117,44 @@ const Nav = ({
     selected,
     setSelected,
     isOverlaid
-}) => {
-
-    return(
-        <Outer>
-            <List>
-                {navItems.map((navItem, i) =>
-                    <Item 
-                        key={i}
+}) =>
+    <Outer>
+        <List>
+            {navItems.map((navItem, i) =>
+                <Item 
+                    key={i}
+                >
+                    <ItemLink
+                        onMouseEnter={() => setSelected(i)}
+                        onFocus={() => setSelected(i)}
+                        aria-haspopup="true"
+                        to={navItem.url} 
+                        active={navItem.active}
+                        hovered={selected === i}
+                        // role="menuitem"
+                        isWhite={isOverlaid}
                     >
-                        <ItemLink
-                            onMouseEnter={() => setSelected(i)}
-                            onFocus={() => setSelected(i)}
-                            aria-haspopup="true"
-                            to={navItem.url} 
-                            active={navItem.active}
-                            hovered={selected === i}
-                            role="menuitem"
-                            isWhite={isOverlaid}
-                        >
-                            {navItem.title}
-                        </ItemLink>
-                        {selected === i &&
-                            <ChildBar>
-                                <ChildList id={i}>
-                                    {navItem.children.map((child, j) =>
-                                        <ChildItem
-                                            key={j}
-                                            role="menuitem"
-                                        >
-                                            <ChildLink to={child.url}>
-                                                {child.title}
-                                            </ChildLink>
-                                        </ChildItem>
-                                    )}
-                                </ChildList>
-                            </ChildBar>
-                        }
-                    </Item>
-                )}
-            </List>
-        </Outer>
-    )
-}
+                        {navItem.title}
+                    </ItemLink>
+                    {selected === i &&
+                        <ChildBar>
+                            <ChildList id={i}>
+                                {navItem.children.map((child, j) =>
+                                    <ChildItem
+                                        key={j}
+                                        // role="menuitem"
+                                    >
+                                        <ChildLink to={child.url}>
+                                            {child.title}
+                                        </ChildLink>
+                                    </ChildItem>
+                                )}
+                            </ChildList>
+                        </ChildBar>
+                    }
+                </Item>
+            )}
+        </List>
+    </Outer>
 
 export default Nav

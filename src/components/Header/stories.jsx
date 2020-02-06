@@ -14,8 +14,18 @@ export default {
     }
 }
 
-export const withDemoData = () =>
-    <Header navItems={navItems} overlay={false} />
+export const opaqueBackground = () =>
+    <Header navItems={navItems} />
 
 export const transparentBackground = () =>
     <Header navItems={navItems} overlay={true} />
+
+export const withOverflowingContent = () =>
+    <>
+        <Header navItems={navItems} />
+        <div style={{
+            height: "200vh",
+            width: "100%",
+            background: "linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%)"
+        }}></div>
+    </>

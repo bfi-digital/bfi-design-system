@@ -1,12 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Header Transparent Background 1`] = `
-<div
-  className="sc-dxgOiQ fIyGHW"
-  onMouseLeave={[Function]}
->
+exports[`Storyshots Header Opaque Background 1`] = `
+Array [
   <div
-    className="sc-htpNat ksANEs"
+    className="sc-htpNat csXghi"
   >
     <div
       className="sc-bxivhb bLRHtd"
@@ -48,24 +45,218 @@ exports[`Storyshots Header Transparent Background 1`] = `
         </li>
       </ul>
     </div>
-  </div>
+  </div>,
   <header
-    className="sc-ckVGcZ bGtfwy"
+    className="sc-dxgOiQ feterq"
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
   >
     <div
-      className="sc-jKJlTe iFzFtw"
+      className="sc-ckVGcZ bByFYV"
     >
       <a
         aria-current="page"
-        className="sc-eNQAEJ hUxsts"
+        className="sc-jKJlTe jALKvc"
         href="/"
         onClick={[Function]}
       >
         <img
           alt="British Film Institute"
-          className="sc-hMqMXs dFmhos"
+          className="sc-eNQAEJ dfIhly"
+          src="test-file-stub"
+        />
+      </a>
+      <nav
+        className="sc-fjdhpX eqtoOA"
+      >
+        <ul
+          className="sc-jzJRlG kvxIqi"
+        >
+          <li
+            className="sc-cSHVUG gqOBkD"
+          >
+            <a
+              active={true}
+              aria-haspopup="true"
+              className="sc-kAzzGY cgevdj"
+              hovered={false}
+              href="/#"
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+            >
+              Watch
+            </a>
+          </li>
+          <li
+            className="sc-cSHVUG gqOBkD"
+          >
+            <a
+              aria-haspopup="true"
+              className="sc-kAzzGY higVxZ"
+              hovered={false}
+              href="/#"
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+            >
+              Discover
+            </a>
+          </li>
+          <li
+            className="sc-cSHVUG gqOBkD"
+          >
+            <a
+              aria-haspopup="true"
+              className="sc-kAzzGY higVxZ"
+              hovered={false}
+              href="/#"
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+            >
+              Industry
+            </a>
+          </li>
+          <li
+            className="sc-cSHVUG gqOBkD"
+          >
+            <a
+              aria-haspopup="true"
+              className="sc-kAzzGY higVxZ"
+              hovered={false}
+              href="/#"
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+            >
+              Learn
+            </a>
+          </li>
+          <li
+            className="sc-cSHVUG gqOBkD"
+          >
+            <a
+              aria-haspopup="true"
+              className="sc-kAzzGY higVxZ"
+              hovered={false}
+              href="/#"
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+            >
+              About
+            </a>
+          </li>
+          <li
+            className="sc-cSHVUG gqOBkD"
+          >
+            <a
+              aria-haspopup="true"
+              className="sc-kAzzGY higVxZ"
+              hovered={false}
+              href="/#"
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+            >
+              Join
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <button
+        aria-controls="menu-panel"
+        aria-expanded="false"
+        className="sc-jTzLTM ehMPIt"
+        onClick={[Function]}
+      >
+        Menu
+        <div
+          className="sc-VigVT hLIOJs"
+          open={false}
+        >
+          <div />
+        </div>
+      </button>
+      <button
+        className="sc-bdVaJa iySLTE"
+      >
+        <img
+          alt=""
+          className="sc-bwzfXH cWNFVp"
+          src="test-file-stub"
+        />
+        Search
+      </button>
+    </div>
+  </header>,
+]
+`;
+
+exports[`Storyshots Header Transparent Background 1`] = `
+Array [
+  <div
+    className="sc-htpNat csXghi"
+  >
+    <div
+      className="sc-bxivhb bLRHtd"
+    >
+      <ul
+        className="sc-ifAKCX fdVqfR"
+      >
+        <li
+          className="sc-EHOje cTDRra"
+        >
+          <a
+            href="https://whatson.bfi.org.uk/Online/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Buy tickets
+          </a>
+        </li>
+        <li
+          className="sc-EHOje cTDRra"
+        >
+          <a
+            href="https://player.bfi.org.uk/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            BFI Player
+          </a>
+        </li>
+        <li
+          className="sc-EHOje cTDRra"
+        >
+          <a
+            href="/"
+            rel="noopener noreferrer"
+          >
+            Become a member
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>,
+  <header
+    className="sc-dxgOiQ eCyCnV"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="sc-ckVGcZ bByFYV"
+    >
+      <a
+        aria-current="page"
+        className="sc-jKJlTe jALKvc"
+        href="/"
+        onClick={[Function]}
+      >
+        <img
+          alt="British Film Institute"
+          className="sc-eNQAEJ dfIhly"
           src="test-file-stub"
         />
       </a>
@@ -88,7 +279,6 @@ exports[`Storyshots Header Transparent Background 1`] = `
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
-              role="menuitem"
             >
               Watch
             </a>
@@ -105,7 +295,6 @@ exports[`Storyshots Header Transparent Background 1`] = `
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
-              role="menuitem"
             >
               Discover
             </a>
@@ -122,7 +311,6 @@ exports[`Storyshots Header Transparent Background 1`] = `
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
-              role="menuitem"
             >
               Industry
             </a>
@@ -139,7 +327,6 @@ exports[`Storyshots Header Transparent Background 1`] = `
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
-              role="menuitem"
             >
               Learn
             </a>
@@ -156,7 +343,6 @@ exports[`Storyshots Header Transparent Background 1`] = `
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
-              role="menuitem"
             >
               About
             </a>
@@ -173,7 +359,6 @@ exports[`Storyshots Header Transparent Background 1`] = `
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
-              role="menuitem"
             >
               Join
             </a>
@@ -205,133 +390,171 @@ exports[`Storyshots Header Transparent Background 1`] = `
         Search
       </button>
     </div>
-  </header>
-</div>
+  </header>,
+]
 `;
 
-exports[`Storyshots Header With Demo Data 1`] = `
-<div
-  className="sc-chPdSV bOuyQS"
->
+exports[`Storyshots Header With Overflowing Content 1`] = `
+Array [
+  <div
+    className="sc-htpNat csXghi"
+  >
+    <div
+      className="sc-bxivhb bLRHtd"
+    >
+      <ul
+        className="sc-ifAKCX fdVqfR"
+      >
+        <li
+          className="sc-EHOje cTDRra"
+        >
+          <a
+            href="https://whatson.bfi.org.uk/Online/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Buy tickets
+          </a>
+        </li>
+        <li
+          className="sc-EHOje cTDRra"
+        >
+          <a
+            href="https://player.bfi.org.uk/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            BFI Player
+          </a>
+        </li>
+        <li
+          className="sc-EHOje cTDRra"
+        >
+          <a
+            href="/"
+            rel="noopener noreferrer"
+          >
+            Become a member
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>,
   <header
-    className="sc-kgoBCf bzEBYs"
+    className="sc-dxgOiQ feterq"
+    onMouseEnter={[Function]}
     onMouseLeave={[Function]}
   >
     <div
-      className="sc-kGXeez izHSIQ"
+      className="sc-ckVGcZ bByFYV"
     >
       <a
         aria-current="page"
+        className="sc-jKJlTe jALKvc"
         href="/"
         onClick={[Function]}
       >
         <img
           alt="British Film Institute"
-          className="sc-kpOJdX bndQFl"
+          className="sc-eNQAEJ dfIhly"
           src="test-file-stub"
         />
       </a>
       <nav
-        className="sc-gZMcBi goqrhZ"
+        className="sc-fjdhpX eqtoOA"
       >
         <ul
-          className="sc-gqjmRU kJnFWp"
+          className="sc-jzJRlG kvxIqi"
         >
           <li
-            className="sc-VigVT gxwVyq"
+            className="sc-cSHVUG gqOBkD"
           >
             <a
               active={true}
               aria-haspopup="true"
-              className="sc-jTzLTM kMVYib"
+              className="sc-kAzzGY cgevdj"
               hovered={false}
               href="/#"
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
-              role="menuitem"
             >
               Watch
             </a>
           </li>
           <li
-            className="sc-VigVT gxwVyq"
+            className="sc-cSHVUG gqOBkD"
           >
             <a
               aria-haspopup="true"
-              className="sc-jTzLTM exNXsv"
+              className="sc-kAzzGY higVxZ"
               hovered={false}
               href="/#"
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
-              role="menuitem"
             >
-              Explore
+              Discover
             </a>
           </li>
           <li
-            className="sc-VigVT gxwVyq"
+            className="sc-cSHVUG gqOBkD"
           >
             <a
               aria-haspopup="true"
-              className="sc-jTzLTM exNXsv"
+              className="sc-kAzzGY higVxZ"
               hovered={false}
               href="/#"
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
-              role="menuitem"
             >
-              Make
+              Industry
             </a>
           </li>
           <li
-            className="sc-VigVT gxwVyq"
+            className="sc-cSHVUG gqOBkD"
           >
             <a
               aria-haspopup="true"
-              className="sc-jTzLTM exNXsv"
+              className="sc-kAzzGY higVxZ"
               hovered={false}
               href="/#"
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
-              role="menuitem"
             >
-              Education
+              Learn
             </a>
           </li>
           <li
-            className="sc-VigVT gxwVyq"
+            className="sc-cSHVUG gqOBkD"
           >
             <a
               aria-haspopup="true"
-              className="sc-jTzLTM exNXsv"
+              className="sc-kAzzGY higVxZ"
               hovered={false}
               href="/#"
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
-              role="menuitem"
             >
               About
             </a>
           </li>
           <li
-            className="sc-VigVT gxwVyq"
+            className="sc-cSHVUG gqOBkD"
           >
             <a
               aria-haspopup="true"
-              className="sc-jTzLTM exNXsv"
+              className="sc-kAzzGY higVxZ"
               hovered={false}
               href="/#"
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
-              role="menuitem"
             >
-              Support
+              Join
             </a>
           </li>
         </ul>
@@ -339,12 +562,12 @@ exports[`Storyshots Header With Demo Data 1`] = `
       <button
         aria-controls="menu-panel"
         aria-expanded="false"
-        className="sc-iwsKbI fROsfM"
+        className="sc-jTzLTM ehMPIt"
         onClick={[Function]}
       >
         Menu
         <div
-          className="sc-dnqmqq eRJgxh"
+          className="sc-VigVT hLIOJs"
           open={false}
         >
           <div />
@@ -361,6 +584,39 @@ exports[`Storyshots Header With Demo Data 1`] = `
         Search
       </button>
     </div>
-  </header>
-</div>
+  </header>,
+  <div
+    style={
+      Object {
+        "background": "linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%)",
+        "height": "200vh",
+        "width": "100%",
+      }
+    }
+  />,
+]
+`;
+
+exports[`Storyshots Headline Level 1 1`] = `
+<h1
+  className="sc-hMqMXs hVROlX"
+>
+  My example headline
+</h1>
+`;
+
+exports[`Storyshots Headline Level 2 1`] = `
+<h2
+  className="sc-kEYyzF dNAbFG"
+>
+  My example headline
+</h2>
+`;
+
+exports[`Storyshots Headline Level 3 1`] = `
+<h3
+  className="sc-kkGfuU eSLrmU"
+>
+  My example headline
+</h3>
 `;
