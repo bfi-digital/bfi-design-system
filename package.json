@@ -57,7 +57,7 @@
     "react-transition-group": "^4.3.0"
   },
   "jest": {
-    "transformIgnorePatterns":[
+    "transformIgnorePatterns": [
       "<rootDir>/src/docs"
     ],
     "moduleNameMapper": {
