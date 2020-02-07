@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Header Opaque Background 1`] = `
+exports[`Storyshots Pattern Library|Structure/Header Opaque Background 1`] = `
 Array [
   <div
     className="sc-htpNat csXghi"
@@ -194,7 +194,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Header Transparent Background 1`] = `
+exports[`Storyshots Pattern Library|Structure/Header Transparent Background 1`] = `
 Array [
   <div
     className="sc-htpNat csXghi"
@@ -394,7 +394,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Header With Overflowing Content 1`] = `
+exports[`Storyshots Pattern Library|Structure/Header With Overflowing Content 1`] = `
 Array [
   <div
     className="sc-htpNat csXghi"
@@ -597,7 +597,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Headline Level 1 1`] = `
+exports[`Storyshots Pattern Library|Typography/Headline Level 1 1`] = `
 <h1
   className="sc-hMqMXs hVROlX"
 >
@@ -605,7 +605,7 @@ exports[`Storyshots Headline Level 1 1`] = `
 </h1>
 `;
 
-exports[`Storyshots Headline Level 2 1`] = `
+exports[`Storyshots Pattern Library|Typography/Headline Level 2 1`] = `
 <h2
   className="sc-kEYyzF dNAbFG"
 >
@@ -613,7 +613,7 @@ exports[`Storyshots Headline Level 2 1`] = `
 </h2>
 `;
 
-exports[`Storyshots Headline Level 3 1`] = `
+exports[`Storyshots Pattern Library|Typography/Headline Level 3 1`] = `
 <h3
   className="sc-kkGfuU eSLrmU"
 >
