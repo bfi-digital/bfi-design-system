@@ -11,10 +11,6 @@ import Nav from "./Nav"
 import logo from "./logo-black.svg"
 import logoWhite from "./logo-white.svg"
 
-// HEADER TODO:
-// 1. On scroll make header sticky and turn off isOverlaid
-// 2. possibly removing search button
-
 const Outer = styled.header`
     background: ${props => props.isTransparent ? "transparent" : theme.white};
     border-bottom: ${props => props.isTransparent ? "none" : "1px solid " + theme.grey};
@@ -37,7 +33,6 @@ const Inner = styled.div`
     @media screen and (min-width: ${theme.xl}){
         max-width: ${theme.xl};
     }
-
     a, button {
         &:focus {
             box-shadow: 
