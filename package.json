@@ -29,6 +29,7 @@
     "@storybook/addon-backgrounds": "^5.3.8",
     "@storybook/addon-docs": "^5.3.3",
     "@storybook/addon-storyshots": "^5.3.3",
+    "@storybook/addon-storysource": "^5.3.12",
     "@storybook/addon-viewport": "^5.3.3",
     "@storybook/react": "^5.3.3",
     "@types/styled-components": "^4.4.2",
@@ -52,8 +53,7 @@
     "react-dom": "^16.12.0",
     "@reach/router": "^1.2.1"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "jest": {
     "moduleNameMapper": {
       "^.+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js"
