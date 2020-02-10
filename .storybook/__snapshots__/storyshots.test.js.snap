@@ -126,7 +126,7 @@ Array [
     </div>
   </div>,
   <header
-    className="sc-eNQAEJ dGHtZT"
+    className="sc-eNQAEJ cwTHUn"
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
   >
@@ -320,7 +320,7 @@ Array [
     </div>
   </div>,
   <header
-    className="sc-eNQAEJ kkuIUp"
+    className="sc-eNQAEJ imbzew"
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
   >
@@ -520,7 +520,7 @@ Array [
     </div>
   </div>,
   <header
-    className="sc-eNQAEJ dGHtZT"
+    className="sc-eNQAEJ cwTHUn"
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
   >
@@ -698,4 +698,249 @@ exports[`Storyshots Headline Level 3 1`] = `
 >
   My example headline
 </h3>
+`;
+
+exports[`Storyshots Hero Full Height 1`] = `
+<section
+  className="sc-cvbbAY drzdPY"
+>
+  <div
+    className="sc-jWBwVP gudvxp"
+  >
+    <h1
+      className="sc-iAyFgw iZorNx"
+    >
+      Watch a new film, rediscover your old favourites, and get inspired.
+    </h1>
+  </div>
+</section>
+`;
+
+exports[`Storyshots Hero Normal 1`] = `
+<section
+  className="sc-cvbbAY iacRTs"
+>
+  <div
+    className="sc-jWBwVP gudvxp"
+  >
+    <h1
+      className="sc-iAyFgw iZorNx"
+    >
+      Watch a new film, rediscover your old favourites, and get inspired.
+    </h1>
+  </div>
+</section>
+`;
+
+exports[`Storyshots Hero With Header 1`] = `
+Array [
+  <div
+    className="sc-EHOje edRyCG"
+  >
+    <div
+      className="sc-bZQynM eSVAVT"
+    >
+      <ul
+        className="sc-gzVnrw ktMKgT"
+      >
+        <li
+          className="sc-htoDjs btMUjf"
+        >
+          <a
+            href="https://whatson.bfi.org.uk/Online/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Buy tickets
+          </a>
+        </li>
+        <li
+          className="sc-htoDjs btMUjf"
+        >
+          <a
+            href="https://player.bfi.org.uk/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            BFI Player
+          </a>
+        </li>
+        <li
+          className="sc-htoDjs btMUjf"
+        >
+          <a
+            href="/"
+            rel="noopener noreferrer"
+          >
+            Become a member
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>,
+  <header
+    className="sc-eNQAEJ imbzew"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="sc-hMqMXs jRGVlV"
+    >
+      <a
+        aria-current="page"
+        className="sc-kEYyzF jnEmNE"
+        href="/"
+        onClick={[Function]}
+      >
+        <img
+          alt="British Film Institute"
+          className="sc-kkGfuU hxLIjy"
+          src="test-file-stub"
+        />
+      </a>
+      <nav
+        className="sc-kAzzGY dMTebm"
+      >
+        <ul
+          className="sc-chPdSV cyjTzc"
+        >
+          <li
+            className="sc-kgoBCf fKCqML"
+          >
+            <a
+              active={true}
+              aria-haspopup="true"
+              className="sc-kGXeez ezceRL"
+              hovered={false}
+              href="/#"
+              isWhite={true}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+            >
+              Watch
+            </a>
+          </li>
+          <li
+            className="sc-kgoBCf fKCqML"
+          >
+            <a
+              aria-haspopup="true"
+              className="sc-kGXeez pVICN"
+              hovered={false}
+              href="/#"
+              isWhite={true}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+            >
+              Discover
+            </a>
+          </li>
+          <li
+            className="sc-kgoBCf fKCqML"
+          >
+            <a
+              aria-haspopup="true"
+              className="sc-kGXeez pVICN"
+              hovered={false}
+              href="/#"
+              isWhite={true}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+            >
+              Industry
+            </a>
+          </li>
+          <li
+            className="sc-kgoBCf fKCqML"
+          >
+            <a
+              aria-haspopup="true"
+              className="sc-kGXeez pVICN"
+              hovered={false}
+              href="/#"
+              isWhite={true}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+            >
+              Learn
+            </a>
+          </li>
+          <li
+            className="sc-kgoBCf fKCqML"
+          >
+            <a
+              aria-haspopup="true"
+              className="sc-kGXeez pVICN"
+              hovered={false}
+              href="/#"
+              isWhite={true}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+            >
+              About
+            </a>
+          </li>
+          <li
+            className="sc-kgoBCf fKCqML"
+          >
+            <a
+              aria-haspopup="true"
+              className="sc-kGXeez pVICN"
+              hovered={false}
+              href="/#"
+              isWhite={true}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+            >
+              Join
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <button
+        aria-controls="menu-panel"
+        aria-expanded="false"
+        className="sc-cSHVUG TNZdw"
+        onClick={[Function]}
+      >
+        Menu
+        <div
+          className="sc-jzJRlG coLzYu"
+          open={false}
+        >
+          <div />
+        </div>
+      </button>
+      <button
+        className="sc-bxivhb eeoLXE"
+      >
+        <img
+          alt=""
+          className="sc-ifAKCX iBqFkz"
+          src="test-file-stub"
+        />
+        Search
+      </button>
+    </div>
+  </header>,
+  <section
+    className="sc-cvbbAY iacRTs"
+  >
+    <div
+      className="sc-jWBwVP gudvxp"
+    >
+      <h1
+        className="sc-iAyFgw iZorNx"
+      >
+        Watch a new film, rediscover your old favourites, and get inspired.
+      </h1>
+    </div>
+  </section>,
+]
 `;
