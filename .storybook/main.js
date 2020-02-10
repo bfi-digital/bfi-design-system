@@ -1,8 +1,8 @@
 const path = require("path")
 
 module.exports = {
-    stories: ["../src/**/stories.(tsx|jsx)"],
-    addons: [
+  stories: ["../src/**/stories.(tsx|jsx)", "../src/**/*.stories.mdx"],
+  addons: [
         "@storybook/addon-a11y",
         "@storybook/addon-docs",
         "@storybook/addon-viewport/register",
@@ -30,10 +30,4 @@ module.exports = {
         return config;
     },
 };
-
-
-
-
-
-
 

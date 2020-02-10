@@ -102,13 +102,13 @@ const ChildItem = styled.li`
 const ChildLink = styled(Link)`
     color: ${theme.charcoal};
     text-decoration: none;
-    padding: 8px 12px;
+    padding: 10px 13px;
     display: inline-block;
     &:hover {
         color: ${theme.charcoal} !important;
     }
     @media screen and (min-width: ${theme.l}){
-        padding: 10px 15px;
+        padding: 15px 17px;
     }
 `
 

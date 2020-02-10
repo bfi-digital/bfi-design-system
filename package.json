@@ -27,7 +27,7 @@
     "@rollup/plugin-url": "^4.0.2",
     "@storybook/addon-a11y": "^5.3.3",
     "@storybook/addon-backgrounds": "^5.3.8",
-    "@storybook/addon-docs": "^5.3.3",
+    "@storybook/addon-docs": "^5.3.9",
     "@storybook/addon-storyshots": "^5.3.3",
     "@storybook/addon-storysource": "^5.3.12",
     "@storybook/addon-viewport": "^5.3.3",
@@ -55,8 +55,11 @@
   },
   "dependencies": {},
   "jest": {
+    "transformIgnorePatterns": [
+      "<rootDir>/src/docs"
+    ],
     "moduleNameMapper": {
-      "^.+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js"
+      "^.+\\.(mdx|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js"
     }
   },
   "keywords": [
