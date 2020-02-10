@@ -596,3 +596,27 @@ Array [
   />,
 ]
 `;
+
+exports[`Storyshots Pattern Library|Typography/Headline Level 1 1`] = `
+<h1
+  className="sc-hMqMXs hVROlX"
+>
+  My example headline
+</h1>
+`;
+
+exports[`Storyshots Pattern Library|Typography/Headline Level 2 1`] = `
+<h2
+  className="sc-kEYyzF dNAbFG"
+>
+  My example headline
+</h2>
+`;
+
+exports[`Storyshots Pattern Library|Typography/Headline Level 3 1`] = `
+<h3
+  className="sc-kkGfuU eSLrmU"
+>
+  My example headline
+</h3>
+`;
