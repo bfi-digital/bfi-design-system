@@ -1,5 +1,84 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Breadcrumbs Normal 1`] = `
+<ol
+  className="sc-bdVaJa kMHSzB"
+>
+  <li
+    className="sc-bwzfXH hVndch"
+  >
+    <a
+      className="sc-htpNat jckYL"
+      href="/#"
+      onClick={[Function]}
+    >
+      Industry
+    </a>
+  </li>
+  <li
+    className="sc-bwzfXH hVndch"
+  >
+    <a
+      className="sc-htpNat jckYL"
+      href="/#"
+      onClick={[Function]}
+    >
+      Get funding
+    </a>
+  </li>
+  <li
+    className="sc-bwzfXH hVndch"
+  >
+    Find a fund to create films, TV or new formats of storytelling
+  </li>
+</ol>
+`;
+
+exports[`Storyshots Breadcrumbs Wrapping 1`] = `
+<ol
+  className="sc-bdVaJa kMHSzB"
+>
+  <li
+    className="sc-bwzfXH hVndch"
+  >
+    <a
+      className="sc-htpNat jckYL"
+      href="/#"
+      onClick={[Function]}
+    >
+      Industry
+    </a>
+  </li>
+  <li
+    className="sc-bwzfXH hVndch"
+  >
+    <a
+      className="sc-htpNat jckYL"
+      href="/#"
+      onClick={[Function]}
+    >
+      Get funding
+    </a>
+  </li>
+  <li
+    className="sc-bwzfXH hVndch"
+  >
+    <a
+      className="sc-htpNat jckYL"
+      href="/#"
+      onClick={[Function]}
+    >
+      Find a fund to create films, TV or new formats of storytelling
+    </a>
+  </li>
+  <li
+    className="sc-bwzfXH hVndch"
+  >
+    Find a fund to create films, TV or new formats of storytelling
+  </li>
+</ol>
+`;
+
 exports[`Storyshots Header Opaque Background 1`] = `
 Array [
   <div
