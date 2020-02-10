@@ -82,16 +82,16 @@ exports[`Storyshots Breadcrumbs Wrapping 1`] = `
 exports[`Storyshots Header Opaque Background 1`] = `
 Array [
   <div
-    className="sc-htpNat csXghi"
+    className="sc-EHOje edRyCG"
   >
     <div
-      className="sc-bxivhb bLRHtd"
+      className="sc-bZQynM eSVAVT"
     >
       <ul
-        className="sc-ifAKCX fdVqfR"
+        className="sc-gzVnrw ktMKgT"
       >
         <li
-          className="sc-EHOje cTDRra"
+          className="sc-htoDjs btMUjf"
         >
           <a
             href="https://whatson.bfi.org.uk/Online/"
@@ -102,7 +102,7 @@ Array [
           </a>
         </li>
         <li
-          className="sc-EHOje cTDRra"
+          className="sc-htoDjs btMUjf"
         >
           <a
             href="https://player.bfi.org.uk/"
@@ -113,7 +113,7 @@ Array [
           </a>
         </li>
         <li
-          className="sc-EHOje cTDRra"
+          className="sc-htoDjs btMUjf"
         >
           <a
             href="/"
@@ -126,38 +126,38 @@ Array [
     </div>
   </div>,
   <header
-    className="sc-dxgOiQ feterq"
+    className="sc-eNQAEJ dGHtZT"
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
   >
     <div
-      className="sc-ckVGcZ bByFYV"
+      className="sc-hMqMXs jRGVlV"
     >
       <a
         aria-current="page"
-        className="sc-jKJlTe jALKvc"
+        className="sc-kEYyzF jnEmNE"
         href="/"
         onClick={[Function]}
       >
         <img
           alt="British Film Institute"
-          className="sc-eNQAEJ dfIhly"
+          className="sc-kkGfuU hxLIjy"
           src="test-file-stub"
         />
       </a>
       <nav
-        className="sc-fjdhpX eqtoOA"
+        className="sc-kAzzGY dMTebm"
       >
         <ul
-          className="sc-jzJRlG kvxIqi"
+          className="sc-chPdSV cyjTzc"
         >
           <li
-            className="sc-cSHVUG gqOBkD"
+            className="sc-kgoBCf fKCqML"
           >
             <a
               active={true}
               aria-haspopup="true"
-              className="sc-kAzzGY cgevdj"
+              className="sc-kGXeez lVyac"
               hovered={false}
               href="/#"
               onClick={[Function]}
@@ -168,11 +168,11 @@ Array [
             </a>
           </li>
           <li
-            className="sc-cSHVUG gqOBkD"
+            className="sc-kgoBCf fKCqML"
           >
             <a
               aria-haspopup="true"
-              className="sc-kAzzGY higVxZ"
+              className="sc-kGXeez fDwBPQ"
               hovered={false}
               href="/#"
               onClick={[Function]}
@@ -183,11 +183,11 @@ Array [
             </a>
           </li>
           <li
-            className="sc-cSHVUG gqOBkD"
+            className="sc-kgoBCf fKCqML"
           >
             <a
               aria-haspopup="true"
-              className="sc-kAzzGY higVxZ"
+              className="sc-kGXeez fDwBPQ"
               hovered={false}
               href="/#"
               onClick={[Function]}
@@ -198,11 +198,11 @@ Array [
             </a>
           </li>
           <li
-            className="sc-cSHVUG gqOBkD"
+            className="sc-kgoBCf fKCqML"
           >
             <a
               aria-haspopup="true"
-              className="sc-kAzzGY higVxZ"
+              className="sc-kGXeez fDwBPQ"
               hovered={false}
               href="/#"
               onClick={[Function]}
@@ -213,11 +213,11 @@ Array [
             </a>
           </li>
           <li
-            className="sc-cSHVUG gqOBkD"
+            className="sc-kgoBCf fKCqML"
           >
             <a
               aria-haspopup="true"
-              className="sc-kAzzGY higVxZ"
+              className="sc-kGXeez fDwBPQ"
               hovered={false}
               href="/#"
               onClick={[Function]}
@@ -228,11 +228,11 @@ Array [
             </a>
           </li>
           <li
-            className="sc-cSHVUG gqOBkD"
+            className="sc-kgoBCf fKCqML"
           >
             <a
               aria-haspopup="true"
-              className="sc-kAzzGY higVxZ"
+              className="sc-kGXeez fDwBPQ"
               hovered={false}
               href="/#"
               onClick={[Function]}
@@ -247,23 +247,23 @@ Array [
       <button
         aria-controls="menu-panel"
         aria-expanded="false"
-        className="sc-jTzLTM ehMPIt"
+        className="sc-cSHVUG TNZdw"
         onClick={[Function]}
       >
         Menu
         <div
-          className="sc-VigVT hLIOJs"
+          className="sc-jzJRlG coLzYu"
           open={false}
         >
           <div />
         </div>
       </button>
       <button
-        className="sc-bdVaJa iySLTE"
+        className="sc-bxivhb ePWSQU"
       >
         <img
           alt=""
-          className="sc-bwzfXH cWNFVp"
+          className="sc-ifAKCX iBqFkz"
           src="test-file-stub"
         />
         Search
@@ -276,16 +276,16 @@ Array [
 exports[`Storyshots Header Transparent Background 1`] = `
 Array [
   <div
-    className="sc-htpNat csXghi"
+    className="sc-EHOje edRyCG"
   >
     <div
-      className="sc-bxivhb bLRHtd"
+      className="sc-bZQynM eSVAVT"
     >
       <ul
-        className="sc-ifAKCX fdVqfR"
+        className="sc-gzVnrw ktMKgT"
       >
         <li
-          className="sc-EHOje cTDRra"
+          className="sc-htoDjs btMUjf"
         >
           <a
             href="https://whatson.bfi.org.uk/Online/"
@@ -296,7 +296,7 @@ Array [
           </a>
         </li>
         <li
-          className="sc-EHOje cTDRra"
+          className="sc-htoDjs btMUjf"
         >
           <a
             href="https://player.bfi.org.uk/"
@@ -307,7 +307,7 @@ Array [
           </a>
         </li>
         <li
-          className="sc-EHOje cTDRra"
+          className="sc-htoDjs btMUjf"
         >
           <a
             href="/"
@@ -320,38 +320,38 @@ Array [
     </div>
   </div>,
   <header
-    className="sc-dxgOiQ eCyCnV"
+    className="sc-eNQAEJ kkuIUp"
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
   >
     <div
-      className="sc-ckVGcZ bByFYV"
+      className="sc-hMqMXs jRGVlV"
     >
       <a
         aria-current="page"
-        className="sc-jKJlTe jALKvc"
+        className="sc-kEYyzF jnEmNE"
         href="/"
         onClick={[Function]}
       >
         <img
           alt="British Film Institute"
-          className="sc-eNQAEJ dfIhly"
+          className="sc-kkGfuU hxLIjy"
           src="test-file-stub"
         />
       </a>
       <nav
-        className="sc-fjdhpX eqtoOA"
+        className="sc-kAzzGY dMTebm"
       >
         <ul
-          className="sc-jzJRlG kvxIqi"
+          className="sc-chPdSV cyjTzc"
         >
           <li
-            className="sc-cSHVUG gqOBkD"
+            className="sc-kgoBCf fKCqML"
           >
             <a
               active={true}
               aria-haspopup="true"
-              className="sc-kAzzGY kSFAtW"
+              className="sc-kGXeez ezceRL"
               hovered={false}
               href="/#"
               isWhite={true}
@@ -363,11 +363,11 @@ Array [
             </a>
           </li>
           <li
-            className="sc-cSHVUG gqOBkD"
+            className="sc-kgoBCf fKCqML"
           >
             <a
               aria-haspopup="true"
-              className="sc-kAzzGY ZuCgF"
+              className="sc-kGXeez pVICN"
               hovered={false}
               href="/#"
               isWhite={true}
@@ -379,11 +379,11 @@ Array [
             </a>
           </li>
           <li
-            className="sc-cSHVUG gqOBkD"
+            className="sc-kgoBCf fKCqML"
           >
             <a
               aria-haspopup="true"
-              className="sc-kAzzGY ZuCgF"
+              className="sc-kGXeez pVICN"
               hovered={false}
               href="/#"
               isWhite={true}
@@ -395,11 +395,11 @@ Array [
             </a>
           </li>
           <li
-            className="sc-cSHVUG gqOBkD"
+            className="sc-kgoBCf fKCqML"
           >
             <a
               aria-haspopup="true"
-              className="sc-kAzzGY ZuCgF"
+              className="sc-kGXeez pVICN"
               hovered={false}
               href="/#"
               isWhite={true}
@@ -411,11 +411,11 @@ Array [
             </a>
           </li>
           <li
-            className="sc-cSHVUG gqOBkD"
+            className="sc-kgoBCf fKCqML"
           >
             <a
               aria-haspopup="true"
-              className="sc-kAzzGY ZuCgF"
+              className="sc-kGXeez pVICN"
               hovered={false}
               href="/#"
               isWhite={true}
@@ -427,11 +427,11 @@ Array [
             </a>
           </li>
           <li
-            className="sc-cSHVUG gqOBkD"
+            className="sc-kgoBCf fKCqML"
           >
             <a
               aria-haspopup="true"
-              className="sc-kAzzGY ZuCgF"
+              className="sc-kGXeez pVICN"
               hovered={false}
               href="/#"
               isWhite={true}
@@ -447,23 +447,23 @@ Array [
       <button
         aria-controls="menu-panel"
         aria-expanded="false"
-        className="sc-jTzLTM ehMPIt"
+        className="sc-cSHVUG TNZdw"
         onClick={[Function]}
       >
         Menu
         <div
-          className="sc-VigVT hLIOJs"
+          className="sc-jzJRlG coLzYu"
           open={false}
         >
           <div />
         </div>
       </button>
       <button
-        className="sc-bdVaJa cpKyYQ"
+        className="sc-bxivhb eeoLXE"
       >
         <img
           alt=""
-          className="sc-bwzfXH cWNFVp"
+          className="sc-ifAKCX iBqFkz"
           src="test-file-stub"
         />
         Search
@@ -476,16 +476,16 @@ Array [
 exports[`Storyshots Header With Overflowing Content 1`] = `
 Array [
   <div
-    className="sc-htpNat csXghi"
+    className="sc-EHOje edRyCG"
   >
     <div
-      className="sc-bxivhb bLRHtd"
+      className="sc-bZQynM eSVAVT"
     >
       <ul
-        className="sc-ifAKCX fdVqfR"
+        className="sc-gzVnrw ktMKgT"
       >
         <li
-          className="sc-EHOje cTDRra"
+          className="sc-htoDjs btMUjf"
         >
           <a
             href="https://whatson.bfi.org.uk/Online/"
@@ -496,7 +496,7 @@ Array [
           </a>
         </li>
         <li
-          className="sc-EHOje cTDRra"
+          className="sc-htoDjs btMUjf"
         >
           <a
             href="https://player.bfi.org.uk/"
@@ -507,7 +507,7 @@ Array [
           </a>
         </li>
         <li
-          className="sc-EHOje cTDRra"
+          className="sc-htoDjs btMUjf"
         >
           <a
             href="/"
@@ -520,38 +520,38 @@ Array [
     </div>
   </div>,
   <header
-    className="sc-dxgOiQ feterq"
+    className="sc-eNQAEJ dGHtZT"
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
   >
     <div
-      className="sc-ckVGcZ bByFYV"
+      className="sc-hMqMXs jRGVlV"
     >
       <a
         aria-current="page"
-        className="sc-jKJlTe jALKvc"
+        className="sc-kEYyzF jnEmNE"
         href="/"
         onClick={[Function]}
       >
         <img
           alt="British Film Institute"
-          className="sc-eNQAEJ dfIhly"
+          className="sc-kkGfuU hxLIjy"
           src="test-file-stub"
         />
       </a>
       <nav
-        className="sc-fjdhpX eqtoOA"
+        className="sc-kAzzGY dMTebm"
       >
         <ul
-          className="sc-jzJRlG kvxIqi"
+          className="sc-chPdSV cyjTzc"
         >
           <li
-            className="sc-cSHVUG gqOBkD"
+            className="sc-kgoBCf fKCqML"
           >
             <a
               active={true}
               aria-haspopup="true"
-              className="sc-kAzzGY cgevdj"
+              className="sc-kGXeez lVyac"
               hovered={false}
               href="/#"
               onClick={[Function]}
@@ -562,11 +562,11 @@ Array [
             </a>
           </li>
           <li
-            className="sc-cSHVUG gqOBkD"
+            className="sc-kgoBCf fKCqML"
           >
             <a
               aria-haspopup="true"
-              className="sc-kAzzGY higVxZ"
+              className="sc-kGXeez fDwBPQ"
               hovered={false}
               href="/#"
               onClick={[Function]}
@@ -577,11 +577,11 @@ Array [
             </a>
           </li>
           <li
-            className="sc-cSHVUG gqOBkD"
+            className="sc-kgoBCf fKCqML"
           >
             <a
               aria-haspopup="true"
-              className="sc-kAzzGY higVxZ"
+              className="sc-kGXeez fDwBPQ"
               hovered={false}
               href="/#"
               onClick={[Function]}
@@ -592,11 +592,11 @@ Array [
             </a>
           </li>
           <li
-            className="sc-cSHVUG gqOBkD"
+            className="sc-kgoBCf fKCqML"
           >
             <a
               aria-haspopup="true"
-              className="sc-kAzzGY higVxZ"
+              className="sc-kGXeez fDwBPQ"
               hovered={false}
               href="/#"
               onClick={[Function]}
@@ -607,11 +607,11 @@ Array [
             </a>
           </li>
           <li
-            className="sc-cSHVUG gqOBkD"
+            className="sc-kgoBCf fKCqML"
           >
             <a
               aria-haspopup="true"
-              className="sc-kAzzGY higVxZ"
+              className="sc-kGXeez fDwBPQ"
               hovered={false}
               href="/#"
               onClick={[Function]}
@@ -622,11 +622,11 @@ Array [
             </a>
           </li>
           <li
-            className="sc-cSHVUG gqOBkD"
+            className="sc-kgoBCf fKCqML"
           >
             <a
               aria-haspopup="true"
-              className="sc-kAzzGY higVxZ"
+              className="sc-kGXeez fDwBPQ"
               hovered={false}
               href="/#"
               onClick={[Function]}
@@ -641,23 +641,23 @@ Array [
       <button
         aria-controls="menu-panel"
         aria-expanded="false"
-        className="sc-jTzLTM ehMPIt"
+        className="sc-cSHVUG TNZdw"
         onClick={[Function]}
       >
         Menu
         <div
-          className="sc-VigVT hLIOJs"
+          className="sc-jzJRlG coLzYu"
           open={false}
         >
           <div />
         </div>
       </button>
       <button
-        className="sc-bdVaJa iySLTE"
+        className="sc-bxivhb ePWSQU"
       >
         <img
           alt=""
-          className="sc-bwzfXH cWNFVp"
+          className="sc-ifAKCX iBqFkz"
           src="test-file-stub"
         />
         Search
@@ -678,7 +678,7 @@ Array [
 
 exports[`Storyshots Headline Level 1 1`] = `
 <h1
-  className="sc-hMqMXs hVROlX"
+  className="sc-iAyFgw iZorNx"
 >
   My example headline
 </h1>
@@ -686,7 +686,7 @@ exports[`Storyshots Headline Level 1 1`] = `
 
 exports[`Storyshots Headline Level 2 1`] = `
 <h2
-  className="sc-kEYyzF dNAbFG"
+  className="sc-hSdWYo ezUQLr"
 >
   My example headline
 </h2>
@@ -694,7 +694,7 @@ exports[`Storyshots Headline Level 2 1`] = `
 
 exports[`Storyshots Headline Level 3 1`] = `
 <h3
-  className="sc-kkGfuU eSLrmU"
+  className="sc-eHgmQL itmkpO"
 >
   My example headline
 </h3>
