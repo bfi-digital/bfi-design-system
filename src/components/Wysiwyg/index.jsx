@@ -21,18 +21,24 @@ const Outer = styled.article`
     a{
         color: ${theme.darkPink};
         text-decoration: none;
-        transition: box-shadow 0.1s ease-out;
         box-shadow:
-            inset 0 -0em white,
-            inset 0 -0.15em ${theme.lightPink};
-        &:hover, &:focus{
-            box-shadow:
-                inset 0 -0em white,
-                inset 0 -0.15em ${theme.dustyPink};
+            inset 0 -0.0em white,
+            inset 0 -0.125em ${theme.darkPink};
+        &:hover{
+            box-shadow: none;
         }
         &:focus{
-            background: ${theme.dustyPink};
-            color: ${theme.charcoal};
+            background: ${theme.lightPink};
+            box-shadow:
+                inset 0 -0em white,
+                inset 0 -0.17em ${theme.darkPink};
+            outline: none;
+        }
+        &:active{
+            background: ${theme.lightPink};
+            box-shadow:
+                inset 0 -0em white,
+                inset 0 -0.125em ${theme.darkPink};
             outline: none;
         }
     }
