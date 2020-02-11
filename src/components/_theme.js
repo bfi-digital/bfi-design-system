@@ -21,6 +21,7 @@ export default {
     darkGreen: "#172820",
 
     // breakpoints
+    s: "500px",
     m: "768px", // tablets and larger
     l: "960px", // desktops and larger
     xl: "1440px", // large desktops only
