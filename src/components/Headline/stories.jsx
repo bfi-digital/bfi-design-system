@@ -3,7 +3,7 @@ import { withA11y } from "@storybook/addon-a11y"
 import { Headline } from "./index"
 
 export default {
-    title: "Pattern Library|z Component Archive/Headline",
+    title: "Components/Headline",
     decorators: [withA11y],
 }
 

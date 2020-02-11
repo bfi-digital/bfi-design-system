@@ -40,6 +40,19 @@ const H3 = styled.h3`
     }
 `
 
+const H4 = styled.h4`
+    font-family: "Archivo Black";
+    color: ${theme.charcoal};
+    font-weight: 800;
+    font-size: 1rem;
+    @media screen and (min-width: ${theme.m}){
+        font-size: 1.125rem;
+    }
+    @media screen and (min-width: ${theme.xl}){
+        font-size: 1.563rem;
+    }
+`
+
 export const Headline = ({
     level,
     text
@@ -47,5 +60,6 @@ export const Headline = ({
     if (level === 1) return <H1>{text}</H1>
     if (level === 2) return <H2>{text}</H2>
     if (level === 3) return <H3>{text}</H3>
+    if (level === 4) return <H4>{text}</H4>
     return null
 }

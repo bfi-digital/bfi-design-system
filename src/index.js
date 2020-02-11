@@ -1,3 +1,5 @@
 export * from "./components/Header"
 export * from "./components/Headline"
 export * from "./components/Breadcrumbs"
+export * from "./components/PageLinks"
+export * from "./components/Hero"
