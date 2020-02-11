@@ -1,0 +1,38 @@
+import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+import { Header } from "../../../components/Header/index"
+import navItems from "../../../components/Header/data"
+
+<Meta title="Pattern Library|Structure/Header" component={Header} />
+
+# Header
+ 
+text
+
+<Preview>
+    <Story name="Opaque Background">
+        <Header navItems={navItems} />
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="Transparent Background">
+        <Header navItems={navItems} overlay={true} />
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="With overflowing content">
+        <>
+            <Header navItems={navItems} />
+            <div style={{
+                height: "200vh",
+                width: "100%",
+                background: "linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%)"
+            }}></div>
+        </>
+    </Story>
+</Preview>
+
+## Props 
+
+<Props of={Header} />
