@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import theme from "../_theme"
 import { Link } from "@reach/router"
+import PropTypes from 'prop-types';
 
 const Outer = styled.ol`
     list-style: none;
@@ -50,3 +51,11 @@ export const Breadcrumbs = ({
             </Crumb>
         )}
     </Outer>
+
+
+Breadcrumbs.propTypes = {
+    /** 
+	 * An array of the breadcrumbs for this page/post. Each element of the array contains a `title` and a `url` field.
+	 **/
+    breadcrumbs: PropTypes.array
+};

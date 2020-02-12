@@ -6,13 +6,21 @@ import data, {longData as data2} from "../../../components/Breadcrumbs/data"
 
 # Breadcrumbs
  
-text
+A breadcrumb will automatically be displayed at the top of each page. This will be based off of the pages location in the menu. 
+
+The breadcrumbs helps users to understand where they are within a website’s structure as they move between levels and pillars. Breadcrumbs are only showed from the 2nd level of child pages onwards and are shown above all content on a page, but below a hero if there is one.
+
+They include a non linked version of the current page the user is on.
+
+## Examples
 
 <Preview>
     <Story name="Normal">
         <Breadcrumbs breadcrumbs={data} />
     </Story>
 </Preview>
+
+Breadcrumbs are limited to 8 columns of width on larger screens or 70% of the width of the container. If they are long like in the example below they do not ever fill the full width of the container - this is so they are lower in the visual hierarchy than the content immediately below them, on smaller screen sizes they fill the width.
 
 <Preview>
     <Story name="Long data">
