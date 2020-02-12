@@ -4,11 +4,9 @@ import { PageLinks } from "./index"
 import four, { three } from "./data"
 
 export default {
-    title: "PageLinks",
+    title: "All Components/PageLinks",
     decorators: [withA11y],
 }
-
-console.log(four)
 
 export const ThreeLinks = () =>
     <PageLinks links={three}/>

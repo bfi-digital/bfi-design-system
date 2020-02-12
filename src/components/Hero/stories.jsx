@@ -5,7 +5,7 @@ import { Header } from "../Header"
 import navItems from "../Header/data.js"
 
 export default {
-    title: "Hero",
+    title: "All Components/Hero",
     decorators: [withA11y],
 }
 

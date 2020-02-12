@@ -1,0 +1,25 @@
+import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+import { Breadcrumbs } from "../../../components/Breadcrumbs/index"
+import data, {longData as data2} from "../../../components/Breadcrumbs/data"
+
+<Meta title="Pattern Library|Structure/Breadcrumbs" component={Breadcrumbs} />
+
+# Breadcrumbs
+ 
+text
+
+<Preview>
+    <Story name="Normal">
+        <Breadcrumbs breadcrumbs={data} />
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="Long data">
+        <Breadcrumbs breadcrumbs={data2} />
+    </Story>
+</Preview>
+
+## Props 
+
+<Props of={Breadcrumbs} />

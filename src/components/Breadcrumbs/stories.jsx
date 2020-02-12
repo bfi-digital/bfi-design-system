@@ -4,7 +4,7 @@ import { Breadcrumbs } from "./index"
 import data, {longData} from "./data"
 
 export default {
-    title: "Breadcrumbs",
+    title: "All Components/Breadcrumbs",
     decorators: [withA11y],
 }
 
