@@ -160,6 +160,7 @@ Array [
               className="sc-kGXeez lVyac"
               hovered={false}
               href="/#"
+              isWhite={false}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
@@ -175,6 +176,7 @@ Array [
               className="sc-kGXeez fDwBPQ"
               hovered={false}
               href="/#"
+              isWhite={false}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
@@ -190,6 +192,7 @@ Array [
               className="sc-kGXeez fDwBPQ"
               hovered={false}
               href="/#"
+              isWhite={false}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
@@ -205,6 +208,7 @@ Array [
               className="sc-kGXeez fDwBPQ"
               hovered={false}
               href="/#"
+              isWhite={false}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
@@ -220,6 +224,7 @@ Array [
               className="sc-kGXeez fDwBPQ"
               hovered={false}
               href="/#"
+              isWhite={false}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
@@ -235,6 +240,7 @@ Array [
               className="sc-kGXeez fDwBPQ"
               hovered={false}
               href="/#"
+              isWhite={false}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
@@ -554,6 +560,7 @@ Array [
               className="sc-kGXeez lVyac"
               hovered={false}
               href="/#"
+              isWhite={false}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
@@ -569,6 +576,7 @@ Array [
               className="sc-kGXeez fDwBPQ"
               hovered={false}
               href="/#"
+              isWhite={false}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
@@ -584,6 +592,7 @@ Array [
               className="sc-kGXeez fDwBPQ"
               hovered={false}
               href="/#"
+              isWhite={false}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
@@ -599,6 +608,7 @@ Array [
               className="sc-kGXeez fDwBPQ"
               hovered={false}
               href="/#"
+              isWhite={false}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
@@ -614,6 +624,7 @@ Array [
               className="sc-kGXeez fDwBPQ"
               hovered={false}
               href="/#"
+              isWhite={false}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
@@ -629,6 +640,7 @@ Array [
               className="sc-kGXeez fDwBPQ"
               hovered={false}
               href="/#"
+              isWhite={false}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
@@ -943,6 +955,22 @@ Array [
     </div>
   </section>,
 ]
+`;
+
+exports[`Storyshots All Components/Lead paragraph Normal 1`] = `
+<div
+  style={
+    Object {
+      "padding": "20px",
+    }
+  }
+>
+  <article
+    className="sc-cMljjf javjqa"
+  >
+    We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough, they won't want it anymore! We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough, they won't want it anymore!
+  </article>
+</div>
 `;
 
 exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
@@ -1371,23 +1399,7 @@ exports[`Storyshots All Components/PageLinks Three Links 1`] = `
 </ul>
 `;
 
-exports[`Storyshots Lead paragraph Normal 1`] = `
-<div
-  style={
-    Object {
-      "padding": "20px",
-    }
-  }
->
-  <article
-    className="sc-cMljjf javjqa"
-  >
-    We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough, they won't want it anymore! We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough, they won't want it anymore!
-  </article>
-</div>
-`;
-
-exports[`Storyshots Wysiwyg editor Normal 1`] = `
+exports[`Storyshots All Components/Wysiwyg editor Normal 1`] = `
 <div
   style={
     Object {
