@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import theme from "../_theme"
+import PropTypes from 'prop-types';
 
 const H1 = styled.h1`
     font-family: "Archivo Black";
@@ -63,3 +64,18 @@ export const Headline = ({
     if (level === 4) return <H4>{text}</H4>
     return null
 }
+
+
+Headline.propTypes = {
+    /** 
+	 * The text of the heading, with a character limit of {INSERT CHARLIMIT}
+	 **/
+    text: PropTypes.string,
+    /** 
+	 * A select option, restricted to level 2 & 3 in Drupal, but with options for 1 & 4 for use in the frontend
+	 **/
+    level: PropTypes.number
+};
+Headline.defaultProps = {
+    level: 2
+};
