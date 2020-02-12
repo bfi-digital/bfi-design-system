@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Breadcrumbs Normal 1`] = `
+exports[`Storyshots All Components/Breadcrumbs Normal 1`] = `
 <ol
   className="sc-bdVaJa kMHSzB"
 >
@@ -34,7 +34,7 @@ exports[`Storyshots Breadcrumbs Normal 1`] = `
 </ol>
 `;
 
-exports[`Storyshots Breadcrumbs Wrapping 1`] = `
+exports[`Storyshots All Components/Breadcrumbs Wrapping 1`] = `
 <ol
   className="sc-bdVaJa kMHSzB"
 >
@@ -79,252 +79,7 @@ exports[`Storyshots Breadcrumbs Wrapping 1`] = `
 </ol>
 `;
 
-exports[`Storyshots Hero Full Height 1`] = `
-<section
-  className="sc-cvbbAY drzdPY"
->
-  <div
-    className="sc-jWBwVP gudvxp"
-  >
-    <h1
-      className="sc-iAyFgw iZorNx"
-    >
-      Watch a new film, rediscover your old favourites, and get inspired.
-    </h1>
-  </div>
-</section>
-`;
-
-exports[`Storyshots Hero Normal 1`] = `
-<section
-  className="sc-cvbbAY iacRTs"
->
-  <div
-    className="sc-jWBwVP gudvxp"
-  >
-    <h1
-      className="sc-iAyFgw iZorNx"
-    >
-      Watch a new film, rediscover your old favourites, and get inspired.
-    </h1>
-  </div>
-</section>
-`;
-
-exports[`Storyshots Hero With Header 1`] = `
-Array [
-  <div
-    className="sc-EHOje edRyCG"
-  >
-    <div
-      className="sc-bZQynM eSVAVT"
-    >
-      <ul
-        className="sc-gzVnrw ktMKgT"
-      >
-        <li
-          className="sc-htoDjs btMUjf"
-        >
-          <a
-            href="https://whatson.bfi.org.uk/Online/"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            Buy tickets
-          </a>
-        </li>
-        <li
-          className="sc-htoDjs btMUjf"
-        >
-          <a
-            href="https://player.bfi.org.uk/"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            BFI Player
-          </a>
-        </li>
-        <li
-          className="sc-htoDjs btMUjf"
-        >
-          <a
-            href="/"
-            rel="noopener noreferrer"
-          >
-            Become a member
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>,
-  <header
-    className="sc-eNQAEJ imbzew"
-    onMouseEnter={[Function]}
-    onMouseLeave={[Function]}
-  >
-    <div
-      className="sc-hMqMXs jRGVlV"
-    >
-      <a
-        aria-current="page"
-        className="sc-kEYyzF jnEmNE"
-        href="/"
-        onClick={[Function]}
-      >
-        <img
-          alt="British Film Institute"
-          className="sc-kkGfuU hxLIjy"
-          src="test-file-stub"
-        />
-      </a>
-      <nav
-        className="sc-kAzzGY dMTebm"
-      >
-        <ul
-          className="sc-chPdSV cyjTzc"
-        >
-          <li
-            className="sc-kgoBCf fKCqML"
-          >
-            <a
-              active={true}
-              aria-haspopup="true"
-              className="sc-kGXeez ezceRL"
-              hovered={false}
-              href="/#"
-              isWhite={true}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onMouseEnter={[Function]}
-            >
-              Watch
-            </a>
-          </li>
-          <li
-            className="sc-kgoBCf fKCqML"
-          >
-            <a
-              aria-haspopup="true"
-              className="sc-kGXeez pVICN"
-              hovered={false}
-              href="/#"
-              isWhite={true}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onMouseEnter={[Function]}
-            >
-              Discover
-            </a>
-          </li>
-          <li
-            className="sc-kgoBCf fKCqML"
-          >
-            <a
-              aria-haspopup="true"
-              className="sc-kGXeez pVICN"
-              hovered={false}
-              href="/#"
-              isWhite={true}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onMouseEnter={[Function]}
-            >
-              Industry
-            </a>
-          </li>
-          <li
-            className="sc-kgoBCf fKCqML"
-          >
-            <a
-              aria-haspopup="true"
-              className="sc-kGXeez pVICN"
-              hovered={false}
-              href="/#"
-              isWhite={true}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onMouseEnter={[Function]}
-            >
-              Learn
-            </a>
-          </li>
-          <li
-            className="sc-kgoBCf fKCqML"
-          >
-            <a
-              aria-haspopup="true"
-              className="sc-kGXeez pVICN"
-              hovered={false}
-              href="/#"
-              isWhite={true}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onMouseEnter={[Function]}
-            >
-              About
-            </a>
-          </li>
-          <li
-            className="sc-kgoBCf fKCqML"
-          >
-            <a
-              aria-haspopup="true"
-              className="sc-kGXeez pVICN"
-              hovered={false}
-              href="/#"
-              isWhite={true}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onMouseEnter={[Function]}
-            >
-              Join
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <button
-        aria-controls="menu-panel"
-        aria-expanded="false"
-        className="sc-cSHVUG TNZdw"
-        onClick={[Function]}
-      >
-        Menu
-        <div
-          className="sc-jzJRlG coLzYu"
-          open={false}
-        >
-          <div />
-        </div>
-      </button>
-      <button
-        className="sc-bxivhb eeoLXE"
-      >
-        <img
-          alt=""
-          className="sc-ifAKCX iBqFkz"
-          src="test-file-stub"
-        />
-        Search
-      </button>
-    </div>
-  </header>,
-  <section
-    className="sc-cvbbAY iacRTs"
-  >
-    <div
-      className="sc-jWBwVP gudvxp"
-    >
-      <h1
-        className="sc-iAyFgw iZorNx"
-      >
-        Watch a new film, rediscover your old favourites, and get inspired.
-      </h1>
-    </div>
-  </section>,
-]
-`;
-
-exports[`Storyshots Pattern Library|Structure/Header Opaque Background 1`] = `
+exports[`Storyshots All Components/Header Opaque Background 1`] = `
 Array [
   <div
     className="sc-EHOje edRyCG"
@@ -518,7 +273,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Pattern Library|Structure/Header Transparent Background 1`] = `
+exports[`Storyshots All Components/Header Transparent Background 1`] = `
 Array [
   <div
     className="sc-EHOje edRyCG"
@@ -718,7 +473,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Pattern Library|Structure/Header With Overflowing Content 1`] = `
+exports[`Storyshots All Components/Header With Overflowing Content 1`] = `
 Array [
   <div
     className="sc-EHOje edRyCG"
@@ -921,7 +676,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Pattern Library|Typography/Headline Level 1 1`] = `
+exports[`Storyshots All Components/Headline Level 1 1`] = `
 <h1
   className="sc-iAyFgw iZorNx"
 >
@@ -929,7 +684,7 @@ exports[`Storyshots Pattern Library|Typography/Headline Level 1 1`] = `
 </h1>
 `;
 
-exports[`Storyshots Pattern Library|Typography/Headline Level 2 1`] = `
+exports[`Storyshots All Components/Headline Level 2 1`] = `
 <h2
   className="sc-hSdWYo ezUQLr"
 >
@@ -937,7 +692,7 @@ exports[`Storyshots Pattern Library|Typography/Headline Level 2 1`] = `
 </h2>
 `;
 
-exports[`Storyshots Pattern Library|Typography/Headline Level 3 1`] = `
+exports[`Storyshots All Components/Headline Level 3 1`] = `
 <h3
   className="sc-eHgmQL itmkpO"
 >
@@ -945,26 +700,779 @@ exports[`Storyshots Pattern Library|Typography/Headline Level 3 1`] = `
 </h3>
 `;
 
-exports[`Storyshots Pattern Library|z Component Archive/Headline Level 1 1`] = `
-<h1
-  className="sc-iAyFgw iZorNx"
+exports[`Storyshots All Components/Hero Full Height 1`] = `
+<section
+  className="sc-jWBwVP hcqUWq"
 >
-  My example headline
-</h1>
+  <div
+    className="sc-brqgnP eEvLKc"
+  >
+    <h1
+      className="sc-iAyFgw iZorNx"
+    >
+      Watch a new film, rediscover your old favourites, and get inspired.
+    </h1>
+  </div>
+</section>
 `;
 
-exports[`Storyshots Pattern Library|z Component Archive/Headline Level 2 1`] = `
-<h2
-  className="sc-hSdWYo ezUQLr"
+exports[`Storyshots All Components/Hero Normal 1`] = `
+<section
+  className="sc-jWBwVP cQXbAg"
 >
-  My example headline
-</h2>
+  <div
+    className="sc-brqgnP eEvLKc"
+  >
+    <h1
+      className="sc-iAyFgw iZorNx"
+    >
+      Watch a new film, rediscover your old favourites, and get inspired.
+    </h1>
+  </div>
+</section>
 `;
 
-exports[`Storyshots Pattern Library|z Component Archive/Headline Level 3 1`] = `
-<h3
-  className="sc-eHgmQL itmkpO"
+exports[`Storyshots All Components/Hero With Header 1`] = `
+Array [
+  <div
+    className="sc-EHOje edRyCG"
+  >
+    <div
+      className="sc-bZQynM eSVAVT"
+    >
+      <ul
+        className="sc-gzVnrw ktMKgT"
+      >
+        <li
+          className="sc-htoDjs btMUjf"
+        >
+          <a
+            href="https://whatson.bfi.org.uk/Online/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Buy tickets
+          </a>
+        </li>
+        <li
+          className="sc-htoDjs btMUjf"
+        >
+          <a
+            href="https://player.bfi.org.uk/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            BFI Player
+          </a>
+        </li>
+        <li
+          className="sc-htoDjs btMUjf"
+        >
+          <a
+            href="/"
+            rel="noopener noreferrer"
+          >
+            Become a member
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>,
+  <header
+    className="sc-eNQAEJ imbzew"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="sc-hMqMXs jRGVlV"
+    >
+      <a
+        aria-current="page"
+        className="sc-kEYyzF jnEmNE"
+        href="/"
+        onClick={[Function]}
+      >
+        <img
+          alt="British Film Institute"
+          className="sc-kkGfuU hxLIjy"
+          src="test-file-stub"
+        />
+      </a>
+      <nav
+        className="sc-kAzzGY dMTebm"
+      >
+        <ul
+          className="sc-chPdSV cyjTzc"
+        >
+          <li
+            className="sc-kgoBCf fKCqML"
+          >
+            <a
+              active={true}
+              aria-haspopup="true"
+              className="sc-kGXeez ezceRL"
+              hovered={false}
+              href="/#"
+              isWhite={true}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+            >
+              Watch
+            </a>
+          </li>
+          <li
+            className="sc-kgoBCf fKCqML"
+          >
+            <a
+              aria-haspopup="true"
+              className="sc-kGXeez pVICN"
+              hovered={false}
+              href="/#"
+              isWhite={true}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+            >
+              Discover
+            </a>
+          </li>
+          <li
+            className="sc-kgoBCf fKCqML"
+          >
+            <a
+              aria-haspopup="true"
+              className="sc-kGXeez pVICN"
+              hovered={false}
+              href="/#"
+              isWhite={true}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+            >
+              Industry
+            </a>
+          </li>
+          <li
+            className="sc-kgoBCf fKCqML"
+          >
+            <a
+              aria-haspopup="true"
+              className="sc-kGXeez pVICN"
+              hovered={false}
+              href="/#"
+              isWhite={true}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+            >
+              Learn
+            </a>
+          </li>
+          <li
+            className="sc-kgoBCf fKCqML"
+          >
+            <a
+              aria-haspopup="true"
+              className="sc-kGXeez pVICN"
+              hovered={false}
+              href="/#"
+              isWhite={true}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+            >
+              About
+            </a>
+          </li>
+          <li
+            className="sc-kgoBCf fKCqML"
+          >
+            <a
+              aria-haspopup="true"
+              className="sc-kGXeez pVICN"
+              hovered={false}
+              href="/#"
+              isWhite={true}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+            >
+              Join
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <button
+        aria-controls="menu-panel"
+        aria-expanded="false"
+        className="sc-cSHVUG TNZdw"
+        onClick={[Function]}
+      >
+        Menu
+        <div
+          className="sc-jzJRlG coLzYu"
+          open={false}
+        >
+          <div />
+        </div>
+      </button>
+      <button
+        className="sc-bxivhb eeoLXE"
+      >
+        <img
+          alt=""
+          className="sc-ifAKCX iBqFkz"
+          src="test-file-stub"
+        />
+        Search
+      </button>
+    </div>
+  </header>,
+  <section
+    className="sc-jWBwVP cQXbAg"
+  >
+    <div
+      className="sc-brqgnP eEvLKc"
+    >
+      <h1
+        className="sc-iAyFgw iZorNx"
+      >
+        Watch a new film, rediscover your old favourites, and get inspired.
+      </h1>
+    </div>
+  </section>,
+]
+`;
+
+exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
+<ul
+  className="sc-jlyJG bFeAnC"
 >
-  My example headline
-</h3>
+  <li
+    className="sc-jAaTju hDQicP"
+  >
+    <h4
+      className="sc-cvbbAY iQJlKx"
+    >
+      Industry fund
+    </h4>
+    <p
+      className="sc-jDwBTQ cCsqaJ"
+    >
+      What do they got in there? King Kong? You know what? It is beets. I've crashed into a beet truck. Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.
+    </p>
+    <a
+      className="sc-gPEVay fuJBob"
+      colorScheme={0}
+      href="/#"
+      onClick={[Function]}
+    >
+      Apply to this fund
+      <img
+        alt=""
+        className="sc-iRbamj qpLmK"
+        src="test-file-stub"
+      />
+    </a>
+  </li>
+  <li
+    className="sc-jAaTju hDQicP"
+  >
+    <h4
+      className="sc-cvbbAY iQJlKx"
+    >
+      Get funding fund
+    </h4>
+    <p
+      className="sc-jDwBTQ cCsqaJ"
+    >
+      Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
+    </p>
+    <a
+      className="sc-gPEVay fuJBob"
+      colorScheme={0}
+      href="/#"
+      onClick={[Function]}
+    >
+      Apply to this fund
+      <img
+        alt=""
+        className="sc-iRbamj qpLmK"
+        src="test-file-stub"
+      />
+    </a>
+  </li>
+  <li
+    className="sc-jAaTju hDQicP"
+  >
+    <h4
+      className="sc-cvbbAY iQJlKx"
+    >
+      Get funding fund
+    </h4>
+    <p
+      className="sc-jDwBTQ cCsqaJ"
+    >
+      Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
+    </p>
+    <a
+      className="sc-gPEVay fuJBob"
+      colorScheme={0}
+      href="/#"
+      onClick={[Function]}
+    >
+      Apply to this fund
+      <img
+        alt=""
+        className="sc-iRbamj qpLmK"
+        src="test-file-stub"
+      />
+    </a>
+  </li>
+  <li
+    className="sc-jAaTju hDQicP"
+  >
+    <h4
+      className="sc-cvbbAY iQJlKx"
+    >
+      Find a fund
+    </h4>
+    <p
+      className="sc-jDwBTQ cCsqaJ"
+    >
+      Yes, Yes, without the oops! Hey, take a look at the earthlings. Goodbye!
+    </p>
+    <a
+      className="sc-gPEVay fuJBob"
+      colorScheme={0}
+      href="/#"
+      onClick={[Function]}
+    >
+      Apply to this fund
+      <img
+        alt=""
+        className="sc-iRbamj qpLmK"
+        src="test-file-stub"
+      />
+    </a>
+  </li>
+  <li
+    className="sc-jAaTju hDQicP"
+  >
+    <h4
+      className="sc-cvbbAY iQJlKx"
+    >
+      Industry fund
+    </h4>
+    <p
+      className="sc-jDwBTQ cCsqaJ"
+    >
+      What do they got in there? King Kong? You know what? It is beets. I've crashed into a beet truck. Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.
+    </p>
+    <a
+      className="sc-gPEVay fuJBob"
+      colorScheme={0}
+      href="/#"
+      onClick={[Function]}
+    >
+      Apply to this fund
+      <img
+        alt=""
+        className="sc-iRbamj qpLmK"
+        src="test-file-stub"
+      />
+    </a>
+  </li>
+  <li
+    className="sc-jAaTju hDQicP"
+  >
+    <h4
+      className="sc-cvbbAY iQJlKx"
+    >
+      Get funding fund
+    </h4>
+    <p
+      className="sc-jDwBTQ cCsqaJ"
+    >
+      Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
+    </p>
+    <a
+      className="sc-gPEVay fuJBob"
+      colorScheme={0}
+      href="/#"
+      onClick={[Function]}
+    >
+      Apply to this fund
+      <img
+        alt=""
+        className="sc-iRbamj qpLmK"
+        src="test-file-stub"
+      />
+    </a>
+  </li>
+  <li
+    className="sc-jAaTju hDQicP"
+  >
+    <h4
+      className="sc-cvbbAY iQJlKx"
+    >
+      Get funding fund
+    </h4>
+    <p
+      className="sc-jDwBTQ cCsqaJ"
+    >
+      Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
+    </p>
+    <a
+      className="sc-gPEVay fuJBob"
+      colorScheme={0}
+      href="/#"
+      onClick={[Function]}
+    >
+      Apply to this fund
+      <img
+        alt=""
+        className="sc-iRbamj qpLmK"
+        src="test-file-stub"
+      />
+    </a>
+  </li>
+  <li
+    className="sc-jAaTju hDQicP"
+  >
+    <h4
+      className="sc-cvbbAY iQJlKx"
+    >
+      Find a fund
+    </h4>
+    <p
+      className="sc-jDwBTQ cCsqaJ"
+    >
+      Yes, Yes, without the oops! Hey, take a look at the earthlings. Goodbye!
+    </p>
+    <a
+      className="sc-gPEVay fuJBob"
+      colorScheme={0}
+      href="/#"
+      onClick={[Function]}
+    >
+      Apply to this fund
+      <img
+        alt=""
+        className="sc-iRbamj qpLmK"
+        src="test-file-stub"
+      />
+    </a>
+  </li>
+</ul>
+`;
+
+exports[`Storyshots All Components/PageLinks Four Links 1`] = `
+<ul
+  className="sc-jlyJG bFeAnC"
+>
+  <li
+    className="sc-jAaTju hDQicP"
+  >
+    <h4
+      className="sc-cvbbAY iQJlKx"
+    >
+      Industry fund
+    </h4>
+    <p
+      className="sc-jDwBTQ cCsqaJ"
+    >
+      What do they got in there? King Kong? You know what? It is beets. I've crashed into a beet truck. Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.
+    </p>
+    <a
+      className="sc-gPEVay fuJBob"
+      colorScheme={0}
+      href="/#"
+      onClick={[Function]}
+    >
+      Apply to this fund
+      <img
+        alt=""
+        className="sc-iRbamj qpLmK"
+        src="test-file-stub"
+      />
+    </a>
+  </li>
+  <li
+    className="sc-jAaTju hDQicP"
+  >
+    <h4
+      className="sc-cvbbAY iQJlKx"
+    >
+      Get funding fund
+    </h4>
+    <p
+      className="sc-jDwBTQ cCsqaJ"
+    >
+      Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
+    </p>
+    <a
+      className="sc-gPEVay fuJBob"
+      colorScheme={0}
+      href="/#"
+      onClick={[Function]}
+    >
+      Apply to this fund
+      <img
+        alt=""
+        className="sc-iRbamj qpLmK"
+        src="test-file-stub"
+      />
+    </a>
+  </li>
+  <li
+    className="sc-jAaTju hDQicP"
+  >
+    <h4
+      className="sc-cvbbAY iQJlKx"
+    >
+      Get funding fund
+    </h4>
+    <p
+      className="sc-jDwBTQ cCsqaJ"
+    >
+      Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
+    </p>
+    <a
+      className="sc-gPEVay fuJBob"
+      colorScheme={0}
+      href="/#"
+      onClick={[Function]}
+    >
+      Apply to this fund
+      <img
+        alt=""
+        className="sc-iRbamj qpLmK"
+        src="test-file-stub"
+      />
+    </a>
+  </li>
+  <li
+    className="sc-jAaTju hDQicP"
+  >
+    <h4
+      className="sc-cvbbAY iQJlKx"
+    >
+      Find a fund
+    </h4>
+    <p
+      className="sc-jDwBTQ cCsqaJ"
+    >
+      Yes, Yes, without the oops! Hey, take a look at the earthlings. Goodbye!
+    </p>
+    <a
+      className="sc-gPEVay fuJBob"
+      colorScheme={0}
+      href="/#"
+      onClick={[Function]}
+    >
+      Apply to this fund
+      <img
+        alt=""
+        className="sc-iRbamj qpLmK"
+        src="test-file-stub"
+      />
+    </a>
+  </li>
+</ul>
+`;
+
+exports[`Storyshots All Components/PageLinks Three Links 1`] = `
+<ul
+  className="sc-jlyJG bFeAnC"
+>
+  <li
+    className="sc-jAaTju hDQicP"
+  >
+    <h4
+      className="sc-cvbbAY iQJlKx"
+    >
+      Industry fund
+    </h4>
+    <p
+      className="sc-jDwBTQ cCsqaJ"
+    >
+      What do they got in there? King Kong? You know what? It is beets. I've crashed into a beet truck. Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.
+    </p>
+    <a
+      className="sc-gPEVay fuJBob"
+      colorScheme={0}
+      href="/#"
+      onClick={[Function]}
+    >
+      Apply to this fund
+      <img
+        alt=""
+        className="sc-iRbamj qpLmK"
+        src="test-file-stub"
+      />
+    </a>
+  </li>
+  <li
+    className="sc-jAaTju hDQicP"
+  >
+    <h4
+      className="sc-cvbbAY iQJlKx"
+    >
+      Get funding fund
+    </h4>
+    <p
+      className="sc-jDwBTQ cCsqaJ"
+    >
+      Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
+    </p>
+    <a
+      className="sc-gPEVay fuJBob"
+      colorScheme={0}
+      href="/#"
+      onClick={[Function]}
+    >
+      Apply to this fund
+      <img
+        alt=""
+        className="sc-iRbamj qpLmK"
+        src="test-file-stub"
+      />
+    </a>
+  </li>
+  <li
+    className="sc-jAaTju hDQicP"
+  >
+    <h4
+      className="sc-cvbbAY iQJlKx"
+    >
+      Get funding fund
+    </h4>
+    <p
+      className="sc-jDwBTQ cCsqaJ"
+    >
+      Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
+    </p>
+    <a
+      className="sc-gPEVay fuJBob"
+      colorScheme={0}
+      href="/#"
+      onClick={[Function]}
+    >
+      Apply to this fund
+      <img
+        alt=""
+        className="sc-iRbamj qpLmK"
+        src="test-file-stub"
+      />
+    </a>
+  </li>
+</ul>
+`;
+
+exports[`Storyshots Lead paragraph Normal 1`] = `
+<div
+  style={
+    Object {
+      "padding": "20px",
+    }
+  }
+>
+  <article
+    className="sc-cMljjf javjqa"
+  >
+    We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough, they won't want it anymore! We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough, they won't want it anymore!
+  </article>
+</div>
+`;
+
+exports[`Storyshots Wysiwyg editor Normal 1`] = `
+<div
+  style={
+    Object {
+      "padding": "20px",
+    }
+  }
+>
+  <article
+    className="sc-gipzik hSfQLQ"
+  >
+    
+
+            
+    <p>
+      We gotta burn the rain forest, 
+      <strong>
+        dump toxic waste
+      </strong>
+      , pollute the air, and 
+      <a
+        href="#"
+      >
+        rip up the OZONE!
+      </a>
+       'Cause maybe if we screw up this planet enough, they won't want it anymore! We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough, they won't want it anymore!
+    </p>
+    
+
+            
+    <ol>
+      
+                
+      <li>
+        What do they got in there? King Kong?
+      </li>
+      
+                
+      <li>
+        You really think you can fly that thing?
+      </li>
+      
+                
+      <li>
+        Must go faster
+      </li>
+      
+            
+    </ol>
+    
+
+            
+    <p>
+      You really think you can fly that thing? Eventually, you do plan to have dinosaurs on your dinosaur tour, right? 
+      <a
+        href="#"
+      >
+        I gave it a cold?
+      </a>
+       I gave it a virus. A computer virus. Did he just throw my cat out of the window? You're a very talented young man, with your own clever thoughts and ideas. Do you need a manager?
+    </p>
+    
+
+            
+    <ul>
+      
+                
+      <li>
+        What do they got in there? King Kong?
+      </li>
+      
+                
+      <li>
+        You really think you can fly that thing?
+      </li>
+      
+                
+      <li>
+        Must go faster
+      </li>
+      
+            
+    </ul>
+    
+            
+            
+  </article>
+</div>
 `;
