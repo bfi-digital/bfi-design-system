@@ -2,7 +2,7 @@ import React from "react"
 import { Headline } from "../Headline"
 import styled from "styled-components"
 import theme from "../_theme"
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types"
 
 const Outer = styled.section`
     background: ${theme.charcoal};

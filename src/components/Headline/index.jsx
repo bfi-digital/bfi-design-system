@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import theme from "../_theme"
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types"
 
 const H1 = styled.h1`
     font-family: "Archivo Black";

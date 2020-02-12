@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import theme from "../_theme"
 import { PageLink } from "./Link"
+import PropTypes from "prop-types"
 
 const Outer = styled.ul`
     padding: 15px;

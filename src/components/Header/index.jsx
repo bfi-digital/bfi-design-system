@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import theme from "../_theme"
 import styled from "styled-components"
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types"
 import { Link } from "@reach/router"
 import Search from "./Search"
 import QuickLinks from "./QuickLinks"

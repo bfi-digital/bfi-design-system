@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import theme from "../_theme"
 import { Link } from "@reach/router"
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types"
 
 const Outer = styled.ol`
     list-style: none;
