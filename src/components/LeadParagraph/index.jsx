@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import theme from "../_theme"
+import PropTypes from 'prop-types';
 
 const Outer = styled.article`
     color: ${theme.charcoal};
@@ -27,3 +28,10 @@ export const LeadParagraph = ({
     <Outer>
         {text}
     </Outer>
+
+LeadParagraph.propTypes = {
+    /** 
+	 * The text of the lead paragraph
+	 **/
+    text: PropTypes.string
+};
