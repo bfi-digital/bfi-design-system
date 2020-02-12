@@ -2,6 +2,7 @@ import React from "react"
 import { Headline } from "../Headline"
 import styled from "styled-components"
 import theme from "../_theme"
+import PropTypes from 'prop-types'
 
 const Outer = styled.section`
     background: ${theme.charcoal};
@@ -47,3 +48,23 @@ export const Hero = ({
             <Headline level={1} text={headline}/>
         </Container>
     </Outer>
+
+
+Hero.propTypes = {
+    /** 
+	 * Url to the image for the hero. 
+	 **/
+    image: PropTypes.string,
+    /** 
+	 * The text for the title which will be used as the H1 for this page/post.
+	 **/
+    headline: PropTypes.string,
+    /** 
+	 * A boolean to determine if the hero is set full width - defaulting to false, set it to true to have a taller hero.
+	 **/
+    fullHeight: PropTypes.bool,
+};
+
+Hero.defaultProps = {
+    fullHeight: false
+};

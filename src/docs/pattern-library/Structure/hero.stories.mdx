@@ -6,8 +6,22 @@ import navItems from "../../../components/Header/data"
 <Meta title="Pattern Library|Structure/Hero" component={Hero} />
 
 # Hero
+
+When users come to your page, they’ll feel some kind of reaction. Whether it’s positive or negative, that reaction is determined in large part by what they see. Because vision is perhaps the strongest human sense, a hero image is one of the fastest ways to grab the user’s attention. A hero image should be more than just a pretty picture, it is a powerful communication tool and so it should be relevant to the content of the page/post.
+
+### How the hero works
  
-text
+If a page/post has the hero field set to true, then the hero component will be included at the top of the page. It will replace the title, and appear above all other content. 
+
+The hero uses the featured image for a background, and has a white H1 for the title overlaid on it. There is a gradient starting at 65% of black at the bottom and going to 0% at the top - to allow for colour contrast accessibility. 
+
+There is also a colour overlay on the image depending on the pillar the page is within.
+
+## Props 
+
+<Props of={Hero} />
+
+## Examples 
 
 <Preview>
     <Story name="Normal">
@@ -39,7 +53,3 @@ text
         </>
     </Story>
 </Preview>
-
-## Props 
-
-<Props of={Hero} />
