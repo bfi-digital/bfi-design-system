@@ -6,7 +6,19 @@ import navItems from "../../../components/Header/data"
 
 # Header
  
-text
+The header is the primary navigation for the website, it serves to shows users that they are on BFI.org and which section of the website they are currently using. It is two tiered, with the primary top level pillars focused on being arranged by user goal, and a second level underneath it with pages that are either major services, or service list pages with the aim of providing the user to their goal as quickly and effieciently as possible.
+
+The header also includes a promotional banner, the goal of this banner is to highlight the main business goals of BFI and encourage users to access the core business areas - Southbank, Player & Membership.
+
+The header has two main states, by default it is oqaque with a white background. However on pages that contain a hero element, the header is set to a transparent background with white text, and is overlaid on top of the hero.
+
+On scroll the header sticks to the top of the screen.
+ 
+## Props 
+
+<Props of={Header} />
+
+## Examples
 
 <Preview>
     <Story name="Opaque Background">
@@ -39,7 +51,3 @@ text
         </>
     </Story>
 </Preview>
-
-## Props 
-
-<Props of={Header} />

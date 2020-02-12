@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import theme from "../_theme"
 import styled from "styled-components"
+import PropTypes from 'prop-types'
 import { Link } from "@reach/router"
 import Search from "./Search"
 import QuickLinks from "./QuickLinks"
@@ -94,3 +95,17 @@ export const Header = ({
     )
 }
 
+Header.propTypes = {
+    /** 
+	 * An array of all the navigation items on the BFI website. Each element of the array contains a top level pillar with a `title` and a `url` field and a `children` array, containing all the sub pages of this pillar which also have a `title` and `url field. 
+	 **/
+    navItems: PropTypes.array,
+    /** 
+	 * A boolean to determine if the header is set to opaque or transparent - defaulting to false, it should only be set to true if the page/post contains a hero element.
+	 **/
+    overlay: PropTypes.bool
+};
+
+Header.defaultProps = {
+    overlay: false
+};
