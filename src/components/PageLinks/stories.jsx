@@ -9,12 +9,12 @@ export default {
 }
 
 export const ThreeLinks = () =>
-    <PageLinks links={three}/>
+    <PageLinks links={three} colorScheme={0}/>
 
 export const FourLinks = () =>
-    <PageLinks links={four}/>
+    <PageLinks links={four} colorScheme={0}/>
 
 export const EightLinks = () =>
     <PageLinks links={[
         ...four, ...four
-    ]}/>
+    ]} colorScheme={0}/>

@@ -944,3 +944,27 @@ exports[`Storyshots Pattern Library|Typography/Headline Level 3 1`] = `
   My example headline
 </h3>
 `;
+
+exports[`Storyshots Pattern Library|z Component Archive/Headline Level 1 1`] = `
+<h1
+  className="sc-iAyFgw iZorNx"
+>
+  My example headline
+</h1>
+`;
+
+exports[`Storyshots Pattern Library|z Component Archive/Headline Level 2 1`] = `
+<h2
+  className="sc-hSdWYo ezUQLr"
+>
+  My example headline
+</h2>
+`;
+
+exports[`Storyshots Pattern Library|z Component Archive/Headline Level 3 1`] = `
+<h3
+  className="sc-eHgmQL itmkpO"
+>
+  My example headline
+</h3>
+`;

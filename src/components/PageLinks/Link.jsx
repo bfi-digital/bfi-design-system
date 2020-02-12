@@ -5,10 +5,19 @@ import { Link } from "@reach/router"
 import { Headline } from "../Headline"
 import arrow from "./arrow-right.svg"
 
+const colorSchemes = [
+    {
+        background: theme.lightGreen,
+        shadow: theme.darkGreen,
+        text: theme.racerGreen,
+        focus: theme.dustyPink
+    }
+]
+
 const Outer = styled.li`
     position: relative;
-    background: ${theme.lightGreen};
-    box-shadow: -5px 5px 0px ${theme.racerGreen};
+    background: ${props => colorSchemes[props.colorScheme].background};
+    box-shadow: -5px 5px 0px ${props => colorSchemes[props.colorScheme].shadow};
     padding: 25px;
     margin-bottom: 35px;
     border-radius: 10px;
@@ -18,7 +27,7 @@ const Outer = styled.li`
     position: relative;
     h4{
         margin-top: 0px;
-        color: ${theme.racerGreen};
+        color: ${props => colorSchemes[props.colorScheme].text};
         margin-bottom: 20px;
     }
     &:hover, &:focus-within {
@@ -27,16 +36,16 @@ const Outer = styled.li`
         }
     }
     &:focus-within{
-        box-shadow: 0px 0px 0px 5px ${theme.dustyPink};
+        box-shadow: 0px 0px 0px 5px ${props => colorSchemes[props.colorScheme].focus};
     }
     &:active{
-        box-shadow: -2px 2px 0px ${theme.racerGreen};
+        box-shadow: -2px 2px 0px ${props => colorSchemes[props.colorScheme].text};
         transform: translate(-3px, 3px);
     }
 `
 
 const Description = styled.p`
-    color: ${theme.racerGreen};
+    color: ${props => colorSchemes[props.colorScheme].text};
     margin-bottom: 35px;
     line-height: 1.5;
 `
@@ -44,7 +53,7 @@ const Description = styled.p`
 const CallToAction = styled(Link)`
     margin-top: auto;
     text-decoration: none;
-    color: ${theme.racerGreen};
+    color: ${props => colorSchemes[props.colorScheme].text};
     font-weight: bold;
     &:after{
         content: "";
@@ -69,12 +78,13 @@ export const PageLink = ({
     title,
     description,
     callToAction,
-    url
+    url,
+    colorScheme
 }) =>
-    <Outer>
+    <Outer colorScheme={colorScheme}>
         <Headline level={4} text={title} />
-        <Description>{description}</Description>
-        <CallToAction to={url}>
+        <Description colorScheme={colorScheme}>{description}</Description>
+        <CallToAction to={url} colorScheme={colorScheme}>
             {callToAction}
             <Icon src={arrow} alt=""/>
         </CallToAction>
