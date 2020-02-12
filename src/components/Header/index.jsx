@@ -104,8 +104,8 @@ Header.propTypes = {
 	 * A boolean to determine if the header is set to opaque or transparent - defaulting to false, it should only be set to true if the page/post contains a hero element.
 	 **/
     overlay: PropTypes.bool
-};
+}
 
 Header.defaultProps = {
     overlay: false
-};
+}

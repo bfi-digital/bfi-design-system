@@ -78,4 +78,4 @@ Wysiwyg.propTypes = {
 	 * Block of html from the WYSIWYG that will be parsed into the correct styles.
 	 **/
     html: PropTypes.string
-};
+}

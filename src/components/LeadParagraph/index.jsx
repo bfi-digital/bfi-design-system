@@ -34,4 +34,4 @@ LeadParagraph.propTypes = {
 	 * The text of the lead paragraph
 	 **/
     text: PropTypes.string
-};
+}

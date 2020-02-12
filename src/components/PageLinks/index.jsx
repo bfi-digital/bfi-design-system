@@ -64,8 +64,8 @@ PageLinks.propTypes = {
 	 * A number which selects the colour scheme of the page links slice, dependant on the pillar the page/post is within.
 	 **/
     colorScheme: PropTypes.number
-};
+}
 
 PageLinks.defaultProps = {
     colorScheme: 0
-};
+}

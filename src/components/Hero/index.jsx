@@ -63,8 +63,8 @@ Hero.propTypes = {
 	 * A boolean to determine if the hero is set full width - defaulting to false, set it to true to have a taller hero.
 	 **/
     fullHeight: PropTypes.bool,
-};
+}
 
 Hero.defaultProps = {
     fullHeight: false
-};
+}

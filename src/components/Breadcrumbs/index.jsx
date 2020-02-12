@@ -58,4 +58,4 @@ Breadcrumbs.propTypes = {
 	 * An array of the breadcrumbs for this page/post. Each element of the array contains a `title` and a `url` field.
 	 **/
     breadcrumbs: PropTypes.array
-};
+}

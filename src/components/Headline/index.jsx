@@ -75,7 +75,7 @@ Headline.propTypes = {
 	 * A select option, restricted to level 2 & 3 in Drupal, but with options for 1 & 4 for use in the frontend
 	 **/
     level: PropTypes.number
-};
+}
 Headline.defaultProps = {
     level: 2
-};
+}
