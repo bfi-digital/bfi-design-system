@@ -3,7 +3,7 @@ import { withA11y } from "@storybook/addon-a11y"
 import { Wysiwyg } from "./index"
 
 export default {
-    title: "Wysiwyg editor",
+    title: "All Components/Wysiwyg editor",
     decorators: [withA11y],
 }
 

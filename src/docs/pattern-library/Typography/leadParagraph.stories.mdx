@@ -1,0 +1,22 @@
+import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+import { LeadParagraph } from "../../../components/LeadParagraph/index"
+
+<Meta title="Pattern Library|Typography/LeadParagraph" component={LeadParagraph} />
+
+# LeadParagraph
+ 
+text
+
+<Preview>
+    <Story name="Normal">
+        <div style={{padding: "20px"}}>
+            <LeadParagraph
+                text="We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough, they won't want it anymore! We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough, they won't want it anymore!"
+            />
+        </div>
+    </Story>
+</Preview>
+
+## Props 
+
+<Props of={LeadParagraph} />
