@@ -55,3 +55,17 @@ export const PageLinks = ({
     </Outer>
 
 
+PageLinks.propTypes = {
+    /** 
+	 * An array of manually selected pages for this group of page links. Each element of the array contains a `title`, `url`, `description` and `callToAction` text which are generated from the meta data of the page that is being linked to.
+	 **/
+    links: PropTypes.array,
+    /** 
+	 * A number which selects the colour scheme of the page links slice, dependant on the pillar the page/post is within.
+	 **/
+    colorScheme: PropTypes.number
+};
+
+PageLinks.defaultProps = {
+    colorScheme: 0
+};
