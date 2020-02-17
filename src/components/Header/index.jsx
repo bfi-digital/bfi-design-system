@@ -37,9 +37,8 @@ const Inner = styled.div`
     }
     a, button {
         &:focus {
-            box-shadow: 
-                inset ${theme.darkPink} 0px 0px 0px 2px,
-                inset ${theme.dustyPink} 0px 0px 0px 4px !important;
+            border-radius: 7px;
+            box-shadow: inset ${theme.dustyPink} 0px 0px 0px 4px;
             outline: none !important;
         }
     }
