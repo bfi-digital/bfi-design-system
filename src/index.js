@@ -1,4 +1,5 @@
 export * from "./components/Header"
+export * from "./components/Footer"
 export * from "./components/Headline"
 export * from "./components/Breadcrumbs"
 export * from "./components/PageLinks"
@@ -7,3 +8,6 @@ export * from "./components/Text"
 export * from "./components/LeadParagraph"
 export * from "./components/Divider"
 export * from "./components/Blockquote"
+export * from "./components/Images"
+
+export * from "./components/PageContainer"

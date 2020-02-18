@@ -8,6 +8,7 @@ const Outer = styled.ol`
     list-style: none;
     color: ${theme.charcoal};
     font-size: 0.9rem;
+    padding-left: 0px;
     line-height: 1.5;
     @media screen and (min-width: ${theme.l}){
         font-size: 1rem;
