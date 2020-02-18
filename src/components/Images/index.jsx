@@ -67,11 +67,13 @@ const Caption = styled.figcaption`
 `
 
 const ImageHolder = styled.div`
-    @media screen and (min-width: ${theme.m}){
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-    }
+    ${props => props.number > 1 ? `
+        @media screen and (min-width: ${theme.m}){
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+        }
+    ` : null}
 `
 
 const Button = styled.button`
@@ -86,7 +88,7 @@ const Button = styled.button`
     margin-bottom: 10px;
     @media screen and (min-width: ${theme.m}){
         margin-right: 10px;
-        width: calc( 33.33% - 6.67px);
+        /* width: calc( 33.33% - 6.67px); */
         &:last-of-type{
             margin-right: 0px;
         }
@@ -102,7 +104,6 @@ const Image = styled.img`
         margin-bottom: 10px;
         @media screen and (min-width: ${theme.m}){
             margin-right: 10px;
-            width: calc( 33.33% - 6.67px);
             &:last-of-type{
                 margin-right: 0px;
             }
@@ -127,7 +128,7 @@ export const Images = ({
 
     return(
         <Outer>
-            <ImageHolder>
+            <ImageHolder number={images.length}>
                 {images.map((image, i) => lightbox ?                    
                     <Button key={i} onClick={() => setOpenImage(image)}>
                         <Image
@@ -138,6 +139,7 @@ export const Images = ({
                     </Button>
                     :
                     <Image
+                        key={i}
                         src={image.url}
                         alt={image.alt}
                     />
