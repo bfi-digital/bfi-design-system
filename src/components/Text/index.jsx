@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import theme from "../_theme"
 import parse from "html-react-parser"
-import PropTypes from "prop-types"
+import * as PropTypes from "prop-types"
 
 const Outer = styled.article`
     color: ${theme.charcoal};
@@ -66,14 +66,14 @@ const Outer = styled.article`
 
 `
 
-export const Wysiwyg = ({
+export const Text = ({
     html
 }) =>
     <Outer>
         {parse(html)}
     </Outer>
 
-Wysiwyg.propTypes = {
+Text.propTypes = {
     /** 
 	 * Block of html from the WYSIWYG that will be parsed into the correct styles.
 	 **/
