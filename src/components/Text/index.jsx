@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import theme from "../_theme"
 import parse from "html-react-parser"
-import * as PropTypes from "prop-types"
+import PropTypes from "prop-types"
 
 const Outer = styled.article`
     color: ${theme.charcoal};
