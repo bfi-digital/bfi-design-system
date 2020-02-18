@@ -1,15 +1,15 @@
 import React from "react"
 import { withA11y } from "@storybook/addon-a11y"
-import { Wysiwyg } from "./index"
+import { Text } from "./index"
 
 export default {
-    title: "All Components/Wysiwyg editor",
+    title: "All Components/Text",
     decorators: [withA11y],
 }
 
 export const normal = () =>
     <div style={{padding: "20px"}}>
-        <Wysiwyg 
+        <Text
             html={`
 
             <p>We gotta burn the rain forest, <strong>dump toxic waste</strong>, pollute the air, and <a href="#">rip up the OZONE!</a> 'Cause maybe if we screw up this planet enough, they won't want it anymore! We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough, they won't want it anymore!</p>
