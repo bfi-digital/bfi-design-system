@@ -16,6 +16,14 @@ const Outer = styled.footer`
     color: ${theme.white};
 `
 
+const Inner = styled.div`
+    max-width: ${theme.l};
+    margin: 0 auto;
+    @media screen and (min-width: ${theme.xl}) {
+        max-width: ${theme.xl}
+    }
+`
+
 const LogoImage = styled.img`
     height: 80px;
     @media screen and (min-width: ${theme.m}) {
@@ -90,39 +98,41 @@ export const Footer = ({
     copyrightText
 }) => 
     <Outer>
-        <TopRow>
-            <LogoImage src={logo} alt="British Film Institute. Film Forever."/>
-            {menus.map(menu =>
-                <Menu key={menu.id}>
-                    <Heading>{menu.title}</Heading>
-                    {menu.children.map(menuItem =>
-                        <MenuItem key={menuItem.id} to={menuItem.url}>{menuItem.title}</MenuItem>    
-                    )}
+        <Inner>
+            <TopRow>
+                <LogoImage src={logo} alt="British Film Institute. Film Forever."/>
+                {menus.map(menu =>
+                    <Menu key={menu.id}>
+                        <Heading>{menu.title}</Heading>
+                        {menu.children.map(menuItem =>
+                            <MenuItem key={menuItem.id} to={menuItem.url}>{menuItem.title}</MenuItem>    
+                        )}
+                    </Menu>
+                )}
+                <Menu>
+                    <Heading>Keep in touch</Heading>
+                    <MenuItem to="/">Contact us</MenuItem> 
+                    <ExternalMenuItem href="#">
+                        <Icon src={facebook} alt=""/>
+                        Facebook
+                    </ExternalMenuItem>
+                    <ExternalMenuItem href="#">
+                        <Icon src={twitter} alt=""/>
+                        Twitter
+                    </ExternalMenuItem>
+                    <ExternalMenuItem href="#">
+                        <Icon src={youtube} alt=""/>
+                        YouTube
+                    </ExternalMenuItem>
+                    <ExternalMenuItem href="#">
+                        <Icon src={instagram} alt=""/>
+                        Instagram
+                    </ExternalMenuItem>
                 </Menu>
-            )}
-            <Menu>
-                <Heading>Keep in touch</Heading>
-                <MenuItem to="/">Contact us</MenuItem> 
-                <ExternalMenuItem href="#">
-                    <Icon src={facebook} alt=""/>
-                    Facebook
-                </ExternalMenuItem>
-                <ExternalMenuItem href="#">
-                    <Icon src={twitter} alt=""/>
-                    Twitter
-                </ExternalMenuItem>
-                <ExternalMenuItem href="#">
-                    <Icon src={youtube} alt=""/>
-                    YouTube
-                </ExternalMenuItem>
-                <ExternalMenuItem href="#">
-                    <Icon src={instagram} alt=""/>
-                    Instagram
-                </ExternalMenuItem>
-            </Menu>
-        </TopRow>
-        <BottomRow>
-            <img src={lotteryLogo} alt="The BFI recieves National Lottery funding"/>
-            <Copyright>{copyrightText}</Copyright>
-        </BottomRow>
+            </TopRow>
+            <BottomRow>
+                <img src={lotteryLogo} alt="The BFI recieves National Lottery funding"/>
+                <Copyright>{copyrightText}</Copyright>
+            </BottomRow>
+        </Inner>
     </Outer>
