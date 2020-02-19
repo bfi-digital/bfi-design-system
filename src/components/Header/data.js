@@ -1,6 +1,6 @@
 export default [
     {
-        title: "Watch",
+        title: "Watch & Discover",
         url: "#",
         active: true,
         children: 
@@ -38,7 +38,7 @@ export default [
         ]
     },
     {
-        title: "Discover",
+        title: "Make & Industry",
         url: "#",
         children: [
             {
@@ -74,7 +74,7 @@ export default [
         ]
     },
     {
-        title: "Industry",
+        title: "Learn & Education",
         url: "#",
         children:   [
             {
@@ -99,92 +99,4 @@ export default [
             }
         ]  
     },
-    {
-        title: "Learn",
-        url: "#",
-        children: [
-            {
-                id: 1,
-                title: "Education events",
-                url: "/"
-            },
-            {
-                id: 2,
-                title: "Resources to teach",
-                url: "/"
-            },
-            {
-                id: 3,
-                title: "Resources to learn",
-                url: "/"
-            },
-            {
-                id: 4,
-                title: "Opportunities for young filmmakers",
-                url: "/"
-            },
-            {
-                id: 5,
-                title: "BFI Policy",
-                url: "/"
-            }
-        ]
-    },
-    {
-        title: "About",
-        url: "#",
-        children: [
-            {
-                id: 1,
-                title: "Our story",
-                url: "/"
-            },
-            {
-                id: 2,
-                title: "Our team",
-                url: "/"
-            },
-            {
-                id: 3,
-                title: "BFI Policy",
-                url: "/"
-            },
-            {
-                id: 4,
-                title: "BFI National Archive",
-                url: "/"
-            },
-            {
-                id: 5,
-                title: "Our partners",
-                url: "/"
-            },
-            {
-                id: 6,
-                title: "Press releases & media enquiries",
-                url: "/"
-            }
-        ]
-    },
-    {
-        title: "Join",
-        url: "#",
-        children: [
-            {
-                id: 1,
-                title: "Membership",
-                url: "/"
-            },
-            {
-                id: 2,
-                title: "Support the BFI",
-                url: "/"
-            },
-            {
-                id: 3,
-                title: "Partner with the BFI",
-                url: "/"
-            }
-        ]
-    }
 ]
