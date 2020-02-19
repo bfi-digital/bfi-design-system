@@ -1136,16 +1136,16 @@ exports[`Storyshots All Components/Lead paragraph Normal 1`] = `
 exports[`Storyshots All Components/Page Normal 1`] = `
 Array [
   <div
-    className="sc-gZMcBi gzQDXt"
+    className="sc-kgoBCf hJlZUq"
   >
     <div
-      className="sc-gqjmRU jbLBOJ"
+      className="sc-kGXeez cyTksT"
     >
       <ul
-        className="sc-VigVT iEDoiP"
+        className="sc-kpOJdX cWODpJ"
       >
         <li
-          className="sc-jTzLTM fRoXoU"
+          className="sc-dxgOiQ EbLR"
         >
           <a
             href="https://whatson.bfi.org.uk/Online/"
@@ -1156,7 +1156,7 @@ Array [
           </a>
         </li>
         <li
-          className="sc-jTzLTM fRoXoU"
+          className="sc-dxgOiQ EbLR"
         >
           <a
             href="https://player.bfi.org.uk/"
@@ -1167,7 +1167,7 @@ Array [
           </a>
         </li>
         <li
-          className="sc-jTzLTM fRoXoU"
+          className="sc-dxgOiQ EbLR"
         >
           <a
             href="/"
@@ -1180,38 +1180,38 @@ Array [
     </div>
   </div>,
   <header
-    className="sc-eHgmQL bilsbt"
+    className="sc-jlyJG jfAQre"
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
   >
     <div
-      className="sc-cvbbAY jGssRp"
+      className="sc-gipzik htYqK"
     >
       <a
         aria-current="page"
-        className="sc-jWBwVP jBxXhq"
+        className="sc-csuQGl gGRcVa"
         href="/"
         onClick={[Function]}
       >
         <img
           alt="British Film Institute"
-          className="sc-brqgnP miVqp"
+          className="sc-Rmtcm ewaapn"
           src="test-file-stub"
         />
       </a>
       <nav
-        className="sc-ckVGcZ fvxxSu"
+        className="sc-cvbbAY eNxvkE"
       >
         <ul
-          className="sc-jKJlTe hkQZuo"
+          className="sc-jWBwVP BZrWt"
         >
           <li
-            className="sc-eNQAEJ eghrEy"
+            className="sc-brqgnP RaqGA"
           >
             <a
               active={true}
               aria-haspopup="true"
-              className="sc-hMqMXs cyWvwk"
+              className="sc-cMljjf lmniap"
               hovered={false}
               href="/#"
               isWhite={false}
@@ -1219,15 +1219,15 @@ Array [
               onFocus={[Function]}
               onMouseEnter={[Function]}
             >
-              Watch
+              Watch & Discover
             </a>
           </li>
           <li
-            className="sc-eNQAEJ eghrEy"
+            className="sc-brqgnP RaqGA"
           >
             <a
               aria-haspopup="true"
-              className="sc-hMqMXs bbrXgQ"
+              className="sc-cMljjf lcWZwU"
               hovered={false}
               href="/#"
               isWhite={false}
@@ -1235,15 +1235,15 @@ Array [
               onFocus={[Function]}
               onMouseEnter={[Function]}
             >
-              Discover
+              Make & Industry
             </a>
           </li>
           <li
-            className="sc-eNQAEJ eghrEy"
+            className="sc-brqgnP RaqGA"
           >
             <a
               aria-haspopup="true"
-              className="sc-hMqMXs bbrXgQ"
+              className="sc-cMljjf lcWZwU"
               hovered={false}
               href="/#"
               isWhite={false}
@@ -1251,55 +1251,7 @@ Array [
               onFocus={[Function]}
               onMouseEnter={[Function]}
             >
-              Industry
-            </a>
-          </li>
-          <li
-            className="sc-eNQAEJ eghrEy"
-          >
-            <a
-              aria-haspopup="true"
-              className="sc-hMqMXs bbrXgQ"
-              hovered={false}
-              href="/#"
-              isWhite={false}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onMouseEnter={[Function]}
-            >
-              Learn
-            </a>
-          </li>
-          <li
-            className="sc-eNQAEJ eghrEy"
-          >
-            <a
-              aria-haspopup="true"
-              className="sc-hMqMXs bbrXgQ"
-              hovered={false}
-              href="/#"
-              isWhite={false}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onMouseEnter={[Function]}
-            >
-              About
-            </a>
-          </li>
-          <li
-            className="sc-eNQAEJ eghrEy"
-          >
-            <a
-              aria-haspopup="true"
-              className="sc-hMqMXs bbrXgQ"
-              hovered={false}
-              href="/#"
-              isWhite={false}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onMouseEnter={[Function]}
-            >
-              Join
+              Learn & Education
             </a>
           </li>
         </ul>
@@ -1307,23 +1259,23 @@ Array [
       <button
         aria-controls="menu-panel"
         aria-expanded="false"
-        className="sc-dxgOiQ phSZo"
+        className="sc-eHgmQL ggoZon"
         onClick={[Function]}
       >
         Menu
         <div
-          className="sc-kpOJdX hgIpcj"
+          className="sc-hSdWYo cqYJMH"
           open={false}
         >
           <div />
         </div>
       </button>
       <button
-        className="sc-dnqmqq dQJMcW"
+        className="sc-kAzzGY ixYvFQ"
       >
         <img
           alt=""
-          className="sc-iwsKbI jKbzIc"
+          className="sc-chPdSV kfLyyH"
           src="test-file-stub"
         />
         Search
@@ -1331,10 +1283,10 @@ Array [
     </div>
   </header>,
   <div
-    className="sc-fMiknA gcQXap"
+    className="sc-kgAjT cWVQCh"
   >
     <article
-      className="sc-dVhcbM fvRniO"
+      className="sc-cJSrbW bnTsgY"
     >
       <ol
         className="sc-bxivhb cpkjqV"
@@ -1368,35 +1320,207 @@ Array [
         </li>
       </ol>
       <h1
-        className="sc-cMljjf fJTyhF"
+        className="sc-bRBYWo iugclN"
       >
         Headline goes here
       </h1>
       <article
-        className="sc-fBuWsC clReWJ"
+        className="sc-TOsTZ dsRvib"
       >
         God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs. Do you have any idea how long it takes those cups to decompose. Yes, Yes, without the oops! Yes, Yes, without the oops! Drive us out of here!
       </article>
       <article
-        className="sc-fAjcbJ gXXJnw"
+        className="sc-hmzhuo fiTANZ"
       >
         So you two dig up, dig up dinosaurs? Hey, you know how I'm, like, always trying to save the planet? Here's my chance. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.
       </article>
     </article>
     <aside
-      className="sc-eqIVtm jUYugM"
+      className="sc-ksYbfQ izEwis"
     >
       Sidebar here
     </aside>
   </div>,
   <footer
-    className="sc-gzVnrw jtMeGj"
+    className="sc-gzVnrw bRQfCj"
   >
-    <img
-      alt="British Film Institute"
-      className="sc-htoDjs iDzHVx"
-      src="test-file-stub"
-    />
+    <div
+      className="sc-htoDjs hVELrt"
+    >
+      <section
+        className="sc-iwsKbI FYnkY"
+      >
+        <img
+          alt="British Film Institute. Film Forever."
+          className="sc-dnqmqq fcmNkl"
+          src="test-file-stub"
+        />
+        <nav
+          className="sc-gqjmRU lcYDQW"
+        >
+          <h4
+            className="sc-VigVT jjueOz"
+          >
+            Business
+          </h4>
+          <a
+            aria-current="page"
+            className="sc-fjdhpX iUMHRO"
+            href="/"
+            onClick={[Function]}
+          >
+            Partnerships
+          </a>
+          <a
+            aria-current="page"
+            className="sc-fjdhpX iUMHRO"
+            href="/"
+            onClick={[Function]}
+          >
+            Venue hire
+          </a>
+          <a
+            aria-current="page"
+            className="sc-fjdhpX iUMHRO"
+            href="/"
+            onClick={[Function]}
+          >
+            Viewing theatre hire
+          </a>
+          <a
+            aria-current="page"
+            className="sc-fjdhpX iUMHRO"
+            href="/"
+            onClick={[Function]}
+          >
+            Book a film for your cinema
+          </a>
+        </nav>
+        <nav
+          className="sc-gqjmRU lcYDQW"
+        >
+          <h4
+            className="sc-VigVT jjueOz"
+          >
+            About the BFI
+          </h4>
+          <a
+            aria-current="page"
+            className="sc-fjdhpX iUMHRO"
+            href="/"
+            onClick={[Function]}
+          >
+            Our story
+          </a>
+          <a
+            aria-current="page"
+            className="sc-fjdhpX iUMHRO"
+            href="/"
+            onClick={[Function]}
+          >
+            Our team
+          </a>
+          <a
+            aria-current="page"
+            className="sc-fjdhpX iUMHRO"
+            href="/"
+            onClick={[Function]}
+          >
+            Careers
+          </a>
+          <a
+            aria-current="page"
+            className="sc-fjdhpX iUMHRO"
+            href="/"
+            onClick={[Function]}
+          >
+            Our partners
+          </a>
+          <a
+            aria-current="page"
+            className="sc-fjdhpX iUMHRO"
+            href="/"
+            onClick={[Function]}
+          >
+            Press releases and media enquiries
+          </a>
+        </nav>
+        <nav
+          className="sc-gqjmRU lcYDQW"
+        >
+          <h4
+            className="sc-VigVT jjueOz"
+          >
+            Keep in touch
+          </h4>
+          <a
+            aria-current="page"
+            className="sc-fjdhpX iUMHRO"
+            href="/"
+            onClick={[Function]}
+          >
+            Contact us
+          </a>
+          <a
+            className="sc-jzJRlG iXaVhE"
+            href="#"
+          >
+            <img
+              alt=""
+              className="sc-cSHVUG gZcENC"
+              src="test-file-stub"
+            />
+            Facebook
+          </a>
+          <a
+            className="sc-jzJRlG iXaVhE"
+            href="#"
+          >
+            <img
+              alt=""
+              className="sc-cSHVUG gZcENC"
+              src="test-file-stub"
+            />
+            Twitter
+          </a>
+          <a
+            className="sc-jzJRlG iXaVhE"
+            href="#"
+          >
+            <img
+              alt=""
+              className="sc-cSHVUG gZcENC"
+              src="test-file-stub"
+            />
+            YouTube
+          </a>
+          <a
+            className="sc-jzJRlG iXaVhE"
+            href="#"
+          >
+            <img
+              alt=""
+              className="sc-cSHVUG gZcENC"
+              src="test-file-stub"
+            />
+            Instagram
+          </a>
+        </nav>
+      </section>
+      <section
+        className="sc-gZMcBi gnVDDW"
+      >
+        <img
+          alt="The BFI recieves National Lottery funding"
+          src="test-file-stub"
+        />
+        <p
+          className="sc-jTzLTM eCMmlJ"
+        >
+          ©2020 British Film Institute. All rights reserved. Registered charity 287780
+        </p>
+      </section>
+    </div>
   </footer>,
 ]
 `;

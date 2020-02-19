@@ -3,6 +3,7 @@ import { Wrapper, MainContent, Sidebar } from "./index"
 
 import navItems from "../Header/data"
 import crumbs from "../Breadcrumbs/data"
+import footerMenus from "../Footer/data"
 
 import { Headline } from "../Headline"
 import { Breadcrumbs } from "../Breadcrumbs"
@@ -38,5 +39,8 @@ export const normal = () =>
                 Sidebar here
             </Sidebar>
         </Wrapper>
-        <Footer/>
+        <Footer
+            menus={footerMenus}
+            copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"
+        />
     </>
