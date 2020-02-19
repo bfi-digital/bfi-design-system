@@ -1,6 +1,7 @@
 import * as React from "react"
 import { withA11y } from "@storybook/addon-a11y"
 import { Footer } from "./index"
+import data from "./data"
 
 export default {
     title: "All Components/Footer",
@@ -8,4 +9,7 @@ export default {
 }
 
 export const normal = () =>
-    <Footer />
+    <Footer
+        menus={data}
+        copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"
+    />

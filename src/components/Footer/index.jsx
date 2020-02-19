@@ -2,20 +2,127 @@ import React from "react"
 import styled from "styled-components"
 import theme from "../_theme"
 import logo from "./logo.svg"
+import lotteryLogo from "./lottery-logo.svg"
+import { Link } from "@reach/router"
+
+import facebook from "./facebook.svg"
+import twitter from "./twitter.svg"
+import youtube from "./youtube.svg"
+import instagram from "./instagram.svg"
 
 const Outer = styled.footer`
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    padding: 50px 0px;
+    padding: 40px 15px 20px 15px;
     background: ${theme.charcoal};
+    color: ${theme.white};
 `
 
 const LogoImage = styled.img`
     height: 80px;
+    @media screen and (min-width: ${theme.m}) {
+        margin-right: auto;
+    }
 `
 
-export const Footer = () => 
+const TopRow = styled.section`
+    margin-bottom: 50px;
+    @media screen and (min-width: ${theme.m}) {
+        display: flex;
+        flex-direction: row;
+    }
+`
+
+const BottomRow = styled.section`
+    @media screen and (min-width: ${theme.m}) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+`
+
+const Menu = styled.nav`
+    margin-top: 30px;
+    /* width: 100%; */
+    max-width: 160px;
+    @media screen and (min-width: ${theme.m}) {
+        margin-top: 0px;
+        margin-left: 30px;
+    }
+    @media screen and (min-width: ${theme.l}) {
+        margin-left: 50px;
+    }
+`
+
+const Heading = styled.h4`
+    margin-top: 0px;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    margin-bottom: 10px;
+`
+
+const Copyright = styled.p``
+
+const linkStyles = `
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 7px;
+    &:hover{
+        text-decoration: underline;
+    }
+`
+
+const MenuItem = styled(Link)`${linkStyles}`
+
+const ExternalMenuItem = styled.a`${linkStyles}`
+
+const Icon = styled.img`
+    margin-right: 7px;
+`
+
+export const Footer = ({
+    menus,
+    copyrightText
+}) => 
     <Outer>
-        <LogoImage src={logo} alt="British Film Institute"/>
+        <TopRow>
+            <LogoImage src={logo} alt="British Film Institute. Film Forever."/>
+            {menus.map(menu =>
+                <Menu key={menu.id}>
+                    <Heading>{menu.title}</Heading>
+                    {menu.children.map(menuItem =>
+                        <MenuItem key={menuItem.id} to={menuItem.url}>{menuItem.title}</MenuItem>    
+                    )}
+                </Menu>
+            )}
+            <Menu>
+                <Heading>Keep in touch</Heading>
+                <MenuItem to="/">Contact us</MenuItem> 
+                <ExternalMenuItem href="#">
+                    <Icon src={facebook} alt=""/>
+                    Facebook
+                </ExternalMenuItem>
+                <ExternalMenuItem href="#">
+                    <Icon src={twitter} alt=""/>
+                    Twitter
+                </ExternalMenuItem>
+                <ExternalMenuItem href="#">
+                    <Icon src={youtube} alt=""/>
+                    YouTube
+                </ExternalMenuItem>
+                <ExternalMenuItem href="#">
+                    <Icon src={instagram} alt=""/>
+                    Instagram
+                </ExternalMenuItem>
+            </Menu>
+        </TopRow>
+        <BottomRow>
+            <img src={lotteryLogo} alt="The BFI recieves National Lottery funding"/>
+            <Copyright>{copyrightText}</Copyright>
+        </BottomRow>
     </Outer>
