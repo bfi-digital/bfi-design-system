@@ -18,20 +18,23 @@ export default {
     output: {
         file: "dist/bundle.js",
         format: "cjs",
-        globals: { "styled-components": "styled" }
+        globals: { 
+            "styled-components": "styled"
+        }
     },
     plugins: [
-        peerDepsExternal(),
-        autoExternal(),
         resolve({
             extensions: extensions
         }),
         commonjs(),
         json(),
+        peerDepsExternal(),
+        autoExternal(),
         url(),
         babel({
             extensions: extensions,
             exclude: "node_modules/**"
         }),
     ],
+    external: ["prop-types"],
 }

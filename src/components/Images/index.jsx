@@ -151,6 +151,7 @@ export const Images = ({
                 <>
                     <DialogStyles/>
                     <Dialog 
+                        aria-label="lightbox"
                         isOpen={openImage} 
                         onDismiss={() => setOpenImage(false)}
                     >

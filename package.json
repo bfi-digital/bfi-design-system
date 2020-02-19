@@ -1,6 +1,6 @@
 {
   "name": "bfi-design-system",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "author": "FutureGov <dev@wearefuturegov.com> (https://wearefuturegov.com)",
   "homepage": "https://gerwig.netlify.com",
   "description": "Next-gen design system for the British Film Institute",
@@ -37,6 +37,7 @@
     "@types/styled-components": "^4.4.2",
     "awesome-typescript-loader": "^5.2.1",
     "babel-loader": "^8.0.6",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "eslint": "^6.8.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.17.0",
