@@ -4,6 +4,7 @@ import theme from "../_theme"
 import logo from "./logo.svg"
 import lotteryLogo from "./lottery-logo.svg"
 import { Link } from "@reach/router"
+import PropTypes from "prop-types"
 
 import facebook from "./facebook.svg"
 import twitter from "./twitter.svg"
@@ -136,3 +137,14 @@ export const Footer = ({
             </BottomRow>
         </Inner>
     </Outer>
+
+Footer.propTypes = {
+    /** 
+	 * An array of the menus the footer should display. Each menu has a title, id and an array of child menu items
+	 **/
+    breadcrumbs: PropTypes.array,
+    /** 
+	 * A string for the copyright notice
+	 **/
+    copyrightText: PropTypes.string
+}
