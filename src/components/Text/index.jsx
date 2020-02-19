@@ -45,6 +45,7 @@ const Outer = styled.article`
     }
 
     ul{
+        display: inline-block;
         list-style: none;
         li{
             margin-left: -15px;
@@ -58,6 +59,7 @@ const Outer = styled.article`
     }
 
     ol{
+        display: inline-block;
         li{
             padding-left: 10px;
             margin-bottom: 5px;
