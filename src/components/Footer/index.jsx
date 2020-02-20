@@ -19,7 +19,7 @@ const Outer = styled.footer`
 
 const Inner = styled.div`
     max-width: ${theme.l};
-    padding: 0px 15px;
+    padding: 0px ${theme.horizontalPadding};
     margin: 0 auto;
     @media screen and (min-width: ${theme.xl}) {
         max-width: ${theme.xl}

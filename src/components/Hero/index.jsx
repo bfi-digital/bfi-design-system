@@ -32,7 +32,7 @@ const Container = styled.div`
     max-width: ${theme.l};
     width: 100%;
     margin: 0 auto;
-    padding: 0px 15px;
+    padding: 0px ${theme.horizontalPadding};
     @media screen and (min-width: ${theme.xl}){
         max-width: ${theme.xl};
     }

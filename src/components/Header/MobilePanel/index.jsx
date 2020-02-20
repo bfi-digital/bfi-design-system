@@ -20,7 +20,7 @@ const Panel = styled.nav`
     width: 100%;
     bottom: 0px;
     background: ${theme.white};
-    padding: 0px 15px;
+    padding: 0px ${theme.horizontalPadding};
     animation: fadeIn 0.1s ease-out;
     overflow-y: scroll;
     @media screen and (min-width: ${theme.m}){

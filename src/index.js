@@ -9,5 +9,4 @@ export * from "./components/LeadParagraph"
 export * from "./components/Divider"
 export * from "./components/Blockquote"
 export * from "./components/Images"
-
 export * from "./components/PageContainer"

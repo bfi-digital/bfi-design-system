@@ -5,7 +5,7 @@ import { PageLink } from "./Link"
 import PropTypes from "prop-types"
 
 const Outer = styled.ul`
-    padding: 15px;
+    padding: 15px ${theme.horizontalPadding};
     list-style: none;
     display: flex;
     flex-direction: row;

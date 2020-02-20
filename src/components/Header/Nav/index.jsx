@@ -79,7 +79,7 @@ const ChildBar = styled.div`
 `
 
 const ChildList = styled.ul`
-    padding: 0px 15px;
+    padding: 0px ${theme.horizontalPadding};
     max-width:  ${theme.l};
     margin: 0 auto;
     width: 100%;
