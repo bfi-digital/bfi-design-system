@@ -31,7 +31,6 @@ const Inner = styled.div`
     max-width:  ${theme.l};
     margin: 0 auto;
     padding: 0px 15px;
-    position: relative;
 
     @media screen and (min-width: ${theme.xl}){
         max-width: ${theme.xl};
@@ -61,9 +60,9 @@ const TopSection = styled.div`
 const QuickLinks = styled.div`
     position: fixed;
     left: 0;
+    top: 0;
     z-index: 9999;
     width: 100%;
-    background: pink;
 `
 const QuickLink = styled(Link)`
     background: ${theme.white};
@@ -72,10 +71,15 @@ const QuickLink = styled(Link)`
     text-decoration: none;
     padding: 21px 15px;
 `
-const QuickLinkContainer = styled.div`
+
+const QuickLinkInner = styled(Inner)`
+    position: relative;
+`
+
+const QuickLinkPositioner = styled.div`
     position: absolute;
-    right: 0;
-    top: 5px;
+    right: 10px;
+    top: 20px;
 `
 
 export const Header = ({
@@ -90,19 +94,20 @@ export const Header = ({
         <>
             
             <TopSection>
-                <QuickLinks>
-                    <Inner>
-                        <QuickLinkContainer>
-                            <QuickLink to="/">BFI Southbank</QuickLink>
-                            <QuickLink to="/">Become a Member</QuickLink>
-                        </QuickLinkContainer>
-                    </Inner>
-                </QuickLinks>
                 <Inner>
                     <LogoLink to="/">
                         <Logo src={isOverlaid ? logoWhite : logo} alt="British Film Institute"/>
                     </LogoLink>
                 </Inner>
+
+                <QuickLinks>
+                    <QuickLinkInner>
+                        <QuickLinkPositioner>
+                            <QuickLink to="/">BFI Southbank</QuickLink>
+                            <QuickLink to="/">Become a Member</QuickLink>
+                        </QuickLinkPositioner>
+                    </QuickLinkInner>
+                </QuickLinks>
             </TopSection>
             <Outer 
                 onMouseLeave={() => {
