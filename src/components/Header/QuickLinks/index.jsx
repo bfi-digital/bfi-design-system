@@ -11,11 +11,13 @@ const Wrapper = styled.div`
     width: 100%;
 `
 const QuickLink = styled(Link)`
-    background: ${theme.white};
-    color: ${theme.darkPink};
+    background: ${props => props.isSticky ? theme.white : "transparent"};
+    color: ${props => props.isTransparent ? (!props.isSticky ? theme.white : theme.darkPink) : theme.darkPink};
     font-weight: 700;
     text-decoration: none;
     padding: 21px 15px;
+    transition: background 0.1s ease-out;
+    transition-delay: ${props => props.isSticky ? "1s" : "0.1s"};
 `
 
 const Positioner = styled.div`
@@ -24,12 +26,12 @@ const Positioner = styled.div`
     top: 20px;
 `
 
-const QuickLinks = ({Inner}) =>
+const QuickLinks = ({Inner, isOverlaid, isSticky}) =>
     <Wrapper>
         <Inner>
             <Positioner>
-                <QuickLink to="/">BFI Southbank</QuickLink>
-                <QuickLink to="/">Become a Member</QuickLink>
+                <QuickLink to="/" isTransparent={isOverlaid} isSticky={isSticky}>BFI Southbank</QuickLink>
+                <QuickLink to="/" isTransparent={isOverlaid} isSticky={isSticky}>Become a Member</QuickLink>
             </Positioner>
         </Inner>
     </Wrapper>

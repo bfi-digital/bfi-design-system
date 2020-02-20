@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect, useRef } from "react"
 import theme from "../_theme"
 import styled from "styled-components"
 import PropTypes from "prop-types"
@@ -13,7 +13,7 @@ import logo from "./logo-black.svg"
 import logoWhite from "./logo-white.svg"
 
 const Outer = styled.header`
-    background: ${props => props.isTransparent ? "transparent" : theme.white};
+    background: ${props => props.isTransparent ? (!props.isSticky ? "transparent" : theme.white) : theme.white};
     border-bottom: 1px solid ${props => props.isTransparent ? "transparent" : theme.grey};
     margin-bottom: ${props => props.overlay ? "-65px" : "0px"};
     position: relative;
@@ -54,8 +54,9 @@ const Logo = styled.img`
 `
 
 const TopSection = styled.div`
-    background: ${theme.white};
+    background: ${props => props.isTransparent ? "transparent" : theme.white};
     padding-top: 15px;
+    transition: 0.1s ease-out;
 `
 const QuickLinksInner = styled(Inner)`
     position: relative;
@@ -68,20 +69,43 @@ export const Header = ({
     const [open, setOpen] = useState(false)
     const [selected, setSelected] = useState(false)
     const [isOverlaid, setOverlaid] = useState(overlay)
+    const [isSticky, setSticky] = useState(false)
+    const ref = useRef(null);
+
+    const handleScroll = () => {
+        setSticky(ref.current.getBoundingClientRect().top <= 0)
+    }
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll)
+        return () => {
+            window.removeEventListener('scroll', () => handleScroll)
+        }
+    }, [])
 
     return(
         <>
             
-            <TopSection>
+            <TopSection 
+                onMouseLeave={() => {
+                    setSelected(false)
+                    overlay && setOverlaid(true)
+                }}
+                onMouseEnter={() => setOverlaid(false)}
+                isTransparent={isOverlaid}>
                 <Inner>
                     <LogoLink to="/">
                         <Logo src={isOverlaid ? logoWhite : logo} alt="British Film Institute"/>
                     </LogoLink>
                 </Inner>
 
-                <QuickLinks Inner={QuickLinksInner}/>
+                <QuickLinks 
+                    Inner={QuickLinksInner} 
+                    isOverlaid={isOverlaid} 
+                    isSticky={isSticky}
+                />
             </TopSection>
             <Outer 
+                ref={ref}
                 onMouseLeave={() => {
                     setSelected(false)
                     overlay && setOverlaid(true)
@@ -89,6 +113,7 @@ export const Header = ({
                 onMouseEnter={() => setOverlaid(false)}
                 isTransparent={isOverlaid}
                 overlay={overlay}
+                isSticky={isSticky}
             >
                 <Inner>
                     
@@ -97,6 +122,7 @@ export const Header = ({
                         selected={selected}
                         setSelected={setSelected}
                         isOverlaid={isOverlaid}
+                        isSticky={isSticky}
                     />
                     <MenuButton 
                         handleClick={() => setOpen(!open)}
