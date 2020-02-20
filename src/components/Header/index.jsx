@@ -4,6 +4,7 @@ import styled from "styled-components"
 import PropTypes from "prop-types"
 import { Link } from "@reach/router"
 import Search from "./Search"
+import QuickLinks from "./QuickLinks"
 import MobilePanel from "./MobilePanel"
 import MenuButton from "./MenuButton"
 import Nav from "./Nav"
@@ -56,30 +57,8 @@ const TopSection = styled.div`
     background: ${theme.white};
     padding-top: 15px;
 `
-
-const QuickLinks = styled.div`
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 9999;
-    width: 100%;
-`
-const QuickLink = styled(Link)`
-    background: ${theme.white};
-    color: ${theme.darkPink};
-    font-weight: 700;
-    text-decoration: none;
-    padding: 21px 15px;
-`
-
-const QuickLinkInner = styled(Inner)`
+const QuickLinksInner = styled(Inner)`
     position: relative;
-`
-
-const QuickLinkPositioner = styled.div`
-    position: absolute;
-    right: 10px;
-    top: 20px;
 `
 
 export const Header = ({
@@ -100,14 +79,7 @@ export const Header = ({
                     </LogoLink>
                 </Inner>
 
-                <QuickLinks>
-                    <QuickLinkInner>
-                        <QuickLinkPositioner>
-                            <QuickLink to="/">BFI Southbank</QuickLink>
-                            <QuickLink to="/">Become a Member</QuickLink>
-                        </QuickLinkPositioner>
-                    </QuickLinkInner>
-                </QuickLinks>
+                <QuickLinks Inner={QuickLinksInner}/>
             </TopSection>
             <Outer 
                 onMouseLeave={() => {
