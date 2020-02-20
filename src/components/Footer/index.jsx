@@ -12,13 +12,14 @@ import youtube from "./youtube.svg"
 import instagram from "./instagram.svg"
 
 const Outer = styled.footer`
-    padding: 40px 15px 20px 15px;
+    padding: 40px 0px 20px 0px;
     background: ${theme.charcoal};
     color: ${theme.white};
 `
 
 const Inner = styled.div`
     max-width: ${theme.l};
+    padding: 0px 15px;
     margin: 0 auto;
     @media screen and (min-width: ${theme.xl}) {
         max-width: ${theme.xl}
