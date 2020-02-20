@@ -70,15 +70,15 @@ export const Header = ({
     const [selected, setSelected] = useState(false)
     const [isOverlaid, setOverlaid] = useState(overlay)
     const [isSticky, setSticky] = useState(false)
-    const ref = useRef(null);
+    const ref = useRef(null)
 
     const handleScroll = () => {
         setSticky(ref.current.getBoundingClientRect().top <= 0)
     }
     useEffect(() => {
-        window.addEventListener('scroll', handleScroll)
+        window.addEventListener("scroll", handleScroll)
         return () => {
-            window.removeEventListener('scroll', () => handleScroll)
+            window.removeEventListener("scroll", () => handleScroll)
         }
     }, [])
 
