@@ -4,7 +4,6 @@ import styled from "styled-components"
 import PropTypes from "prop-types"
 import { Link } from "@reach/router"
 import Search from "./Search"
-import QuickLinks from "./QuickLinks"
 import MobilePanel from "./MobilePanel"
 import MenuButton from "./MenuButton"
 import Nav from "./Nav"
@@ -32,6 +31,8 @@ const Inner = styled.div`
     max-width:  ${theme.l};
     margin: 0 auto;
     padding: 0px 15px;
+    position: relative;
+
     @media screen and (min-width: ${theme.xl}){
         max-width: ${theme.xl};
     }
@@ -49,7 +50,32 @@ const LogoLink = styled(Link)`
 `
 
 const Logo = styled.img`
-    width: 46px;
+    width: 75px;
+`
+
+const TopSection = styled.div`
+    background: ${theme.white};
+    padding-top: 15px;
+`
+
+const QuickLinks = styled.div`
+    position: fixed;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    background: pink;
+`
+const QuickLink = styled(Link)`
+    background: ${theme.white};
+    color: ${theme.darkPink};
+    font-weight: 700;
+    text-decoration: none;
+    padding: 21px 15px;
+`
+const QuickLinkContainer = styled.div`
+    position: absolute;
+    right: 0;
+    top: 5px;
 `
 
 export const Header = ({
@@ -62,7 +88,22 @@ export const Header = ({
 
     return(
         <>
-            <QuickLinks onMouseLeave={() => {overlay && setOverlaid(true)}} />
+            
+            <TopSection>
+                <QuickLinks>
+                    <Inner>
+                        <QuickLinkContainer>
+                            <QuickLink to="/">BFI Southbank</QuickLink>
+                            <QuickLink to="/">Become a Member</QuickLink>
+                        </QuickLinkContainer>
+                    </Inner>
+                </QuickLinks>
+                <Inner>
+                    <LogoLink to="/">
+                        <Logo src={isOverlaid ? logoWhite : logo} alt="British Film Institute"/>
+                    </LogoLink>
+                </Inner>
+            </TopSection>
             <Outer 
                 onMouseLeave={() => {
                     setSelected(false)
@@ -73,9 +114,7 @@ export const Header = ({
                 overlay={overlay}
             >
                 <Inner>
-                    <LogoLink to="/">
-                        <Logo src={isOverlaid ? logoWhite : logo} alt="British Film Institute"/>
-                    </LogoLink>
+                    
                     <Nav
                         navItems={navItems}
                         selected={selected}

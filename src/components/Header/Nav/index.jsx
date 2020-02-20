@@ -17,10 +17,11 @@ const List = styled.ul`
     flex-direction: row;
     align-items: center;
     margin: 0px;
+    padding-left: 0;
 `
 
 const Item = styled.li`
-    font-weight: bold;
+    font-weight: 600;
     font-size: 0.9rem;
     @media screen and (min-width: ${theme.l}){
         font-size: 1rem;
