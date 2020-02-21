@@ -39,7 +39,8 @@ const BreadcrumbLink = styled(Link)`
         text-decoration: none;
     }
     &:focus{
-        background: ${theme.lightPink}
+        background: ${theme.lightPink};
+        outline: none;
     }
 `
 

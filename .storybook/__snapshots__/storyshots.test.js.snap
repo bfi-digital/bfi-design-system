@@ -31,13 +31,13 @@ exports[`Storyshots All Components/Blockquote Without Citation 1`] = `
 
 exports[`Storyshots All Components/Breadcrumbs Normal 1`] = `
 <ol
-  className="sc-bxivhb cpkjqV"
+  className="sc-bxivhb dkElCb"
 >
   <li
     className="sc-ifAKCX TSOqM"
   >
     <a
-      className="sc-EHOje eTLzlg"
+      className="sc-EHOje lcJiSL"
       href="/#"
       onClick={[Function]}
     >
@@ -48,7 +48,7 @@ exports[`Storyshots All Components/Breadcrumbs Normal 1`] = `
     className="sc-ifAKCX TSOqM"
   >
     <a
-      className="sc-EHOje eTLzlg"
+      className="sc-EHOje lcJiSL"
       href="/#"
       onClick={[Function]}
     >
@@ -65,13 +65,13 @@ exports[`Storyshots All Components/Breadcrumbs Normal 1`] = `
 
 exports[`Storyshots All Components/Breadcrumbs Wrapping 1`] = `
 <ol
-  className="sc-bxivhb cpkjqV"
+  className="sc-bxivhb dkElCb"
 >
   <li
     className="sc-ifAKCX TSOqM"
   >
     <a
-      className="sc-EHOje eTLzlg"
+      className="sc-EHOje lcJiSL"
       href="/#"
       onClick={[Function]}
     >
@@ -82,7 +82,7 @@ exports[`Storyshots All Components/Breadcrumbs Wrapping 1`] = `
     className="sc-ifAKCX TSOqM"
   >
     <a
-      className="sc-EHOje eTLzlg"
+      className="sc-EHOje lcJiSL"
       href="/#"
       onClick={[Function]}
     >
@@ -93,7 +93,7 @@ exports[`Storyshots All Components/Breadcrumbs Wrapping 1`] = `
     className="sc-ifAKCX TSOqM"
   >
     <a
-      className="sc-EHOje eTLzlg"
+      className="sc-EHOje lcJiSL"
       href="/#"
       onClick={[Function]}
     >
@@ -103,7 +103,7 @@ exports[`Storyshots All Components/Breadcrumbs Wrapping 1`] = `
   <li
     className="sc-ifAKCX TSOqM"
   >
-    Find a fund to create films, TV or new formats of storytelling
+    Development Fund
   </li>
 </ol>
 `;
@@ -117,7 +117,7 @@ exports[`Storyshots All Components/Button Primary 1`] = `
   }
 >
   <a
-    className="sc-bZQynM bNuRdl"
+    className="sc-bZQynM hghCKQ"
     colorScheme={0}
     href="/#"
     onClick={[Function]}
@@ -148,7 +148,7 @@ exports[`Storyshots All Components/Button Secondary 1`] = `
 
 exports[`Storyshots All Components/Divider Normal 1`] = `
 <hr
-  className="sc-htoDjs hAjIAk"
+  className="sc-htoDjs czhBuC"
 />
 `;
 
@@ -1053,7 +1053,7 @@ exports[`Storyshots All Components/ImageSide Left And Big 1`] = `
     </figcaption>
   </figure>
   <article
-    className="sc-TOsTZ juLFpU"
+    className="sc-TOsTZ eAFLlh"
   >
     
 
@@ -1157,7 +1157,7 @@ exports[`Storyshots All Components/ImageSide Right And Small 1`] = `
     </figcaption>
   </figure>
   <article
-    className="sc-TOsTZ juLFpU"
+    className="sc-TOsTZ eAFLlh"
   >
     
 
@@ -1387,6 +1387,600 @@ exports[`Storyshots All Components/Lead paragraph Normal 1`] = `
 </div>
 `;
 
+exports[`Storyshots All Components/Page Active Page 1`] = `
+Array [
+  <div
+    className="sc-kpOJdX gzdIB"
+  >
+    <div
+      className="sc-dxgOiQ jNKqYJ"
+    >
+      <ul
+        className="sc-ckVGcZ bPSmhm"
+      >
+        <li
+          className="sc-jKJlTe XBSLx"
+        >
+          <a
+            href="https://whatson.bfi.org.uk/Online/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Buy tickets
+          </a>
+        </li>
+        <li
+          className="sc-jKJlTe XBSLx"
+        >
+          <a
+            href="https://player.bfi.org.uk/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            BFI Player
+          </a>
+        </li>
+        <li
+          className="sc-jKJlTe XBSLx"
+        >
+          <a
+            href="/"
+            rel="noopener noreferrer"
+          >
+            Become a member
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>,
+  <header
+    className="sc-csuQGl iqdjCI"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <div
+      className="sc-Rmtcm jWoRCr"
+    >
+      <a
+        aria-current="page"
+        className="sc-bRBYWo krZptX"
+        href="/"
+        onClick={[Function]}
+      >
+        <img
+          alt="British Film Institute"
+          className="sc-hzDkRC ggbliJ"
+          src="test-file-stub"
+        />
+      </a>
+      <nav
+        className="sc-brqgnP hHtDLE"
+      >
+        <ul
+          className="sc-cMljjf dDVhTj"
+        >
+          <li
+            className="sc-jAaTju hZQRgl"
+          >
+            <a
+              active={true}
+              aria-haspopup="true"
+              className="sc-jDwBTQ hqNJYM"
+              hovered={false}
+              href="/#"
+              isWhite={false}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+            >
+              Watch & Discover
+            </a>
+          </li>
+          <li
+            className="sc-jAaTju hZQRgl"
+          >
+            <a
+              aria-haspopup="true"
+              className="sc-jDwBTQ djVIeW"
+              hovered={false}
+              href="/#"
+              isWhite={false}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+            >
+              Make & Industry
+            </a>
+          </li>
+          <li
+            className="sc-jAaTju hZQRgl"
+          >
+            <a
+              aria-haspopup="true"
+              className="sc-jDwBTQ djVIeW"
+              hovered={false}
+              href="/#"
+              isWhite={false}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+            >
+              Learn & Education
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <button
+        aria-controls="menu-panel"
+        aria-expanded="false"
+        className="sc-jWBwVP ZQfIc"
+        onClick={[Function]}
+      >
+        Menu
+        <div
+          className="sc-cvbbAY bzjrEM"
+          open={false}
+        >
+          <div />
+        </div>
+      </button>
+      <button
+        className="sc-kgoBCf lkctXv"
+      >
+        <img
+          alt=""
+          className="sc-kGXeez bRTIXE"
+          src="test-file-stub"
+        />
+        Search
+      </button>
+    </div>
+  </header>,
+  <div
+    className="sc-jbKcbu dyftzr"
+  >
+    <article
+      className="sc-dNLxif cxpypa"
+    >
+      <ol
+        className="sc-bxivhb dkElCb"
+      >
+        <li
+          className="sc-ifAKCX TSOqM"
+        >
+          <a
+            className="sc-EHOje lcJiSL"
+            href="/#"
+            onClick={[Function]}
+          >
+            Industry
+          </a>
+        </li>
+        <li
+          className="sc-ifAKCX TSOqM"
+        >
+          <a
+            className="sc-EHOje lcJiSL"
+            href="/#"
+            onClick={[Function]}
+          >
+            Get funding
+          </a>
+        </li>
+        <li
+          className="sc-ifAKCX TSOqM"
+        >
+          <a
+            className="sc-EHOje lcJiSL"
+            href="/#"
+            onClick={[Function]}
+          >
+            Find a fund to create films, TV or new formats of storytelling
+          </a>
+        </li>
+        <li
+          className="sc-ifAKCX TSOqM"
+        >
+          Development Fund
+        </li>
+      </ol>
+      <h1
+        className="sc-fBuWsC bhOHYS"
+      >
+        Development Fund
+      </h1>
+      <article
+        className="sc-hqyNC hWGhDh"
+      >
+        We want to support work that takes risks and does something different. This means we fund projects that can’t find other, commercial finance at development stage.
+      </article>
+      <article
+        className="sc-TOsTZ eAFLlh"
+      >
+         
+        <p>
+          The BFI Development Fund supports live action or animated fiction projects, including:
+        </p>
+         
+        <ul>
+           
+          <li>
+            feature films and other longform work
+          </li>
+           
+          <li>
+            emerging media including, virtual reality
+          </li>
+           
+        </ul>
+         
+        <p>
+          If you want to make a documentary, contact our partner Doc Society which provides this funding.
+        </p>
+         
+      </article>
+      <h2
+        className="sc-fMiknA gGLTif"
+      >
+        Who can apply
+      </h2>
+      <article
+        className="sc-TOsTZ eAFLlh"
+      >
+         
+        <p>
+          This fund supports projects which have a writer and a producer. Your team can also include a director, if you have one at this stage.
+        </p>
+         
+        <p>
+          The producer needs to apply through their company, based in the UK (or another state of the EU or European Economic Area).
+        </p>
+         
+        <p>
+          Writers, directors and producers will need to tell us about their creative track record in the application. This can be in other film work or different media, including theatre and TV.
+        </p>
+         
+        <p>
+          Other development funding is available through BFI NETWORK for writers
+        </p>
+         
+        <ul>
+           
+          <li>
+            at an early career stage
+          </li>
+           
+          <li>
+            without a producer
+          </li>
+           
+        </ul>
+         
+      </article>
+      <hr
+        className="sc-htoDjs czhBuC"
+      />
+      <h2
+        className="sc-fMiknA gGLTif"
+      >
+        What you need to provide
+      </h2>
+      <article
+        className="sc-TOsTZ eAFLlh"
+      >
+         
+        <p>
+          You’ll need to submit an example of the writer’s and/or director’s previous work. This can be in any format, including:
+        </p>
+         
+        <ul>
+           
+          <li>
+            scripts
+          </li>
+           
+          <li>
+            pitch documents
+          </li>
+           
+          <li>
+            treatments
+          </li>
+           
+          <li>
+            mood boards
+          </li>
+           
+          <li>
+            storyboards
+          </li>
+           
+          <li>
+            sizzle reel
+          </li>
+           
+        </ul>
+         
+      </article>
+      <hr
+        className="sc-htoDjs czhBuC"
+      />
+      <h2
+        className="sc-fMiknA gGLTif"
+      >
+        What kind of projects we fund
+      </h2>
+      <article
+        className="sc-TOsTZ eAFLlh"
+      >
+         
+        <p>
+          We’re looking for projects which:
+        </p>
+         
+        <ul>
+           
+          <li>
+            have cultural impact and spark debate
+          </li>
+           
+          <li>
+            take risks in platform, content or form
+          </li>
+           
+          <li>
+            give new perspectives and widen the range of voices and audiences in film
+          </li>
+           
+          <li>
+            come from outside London and the South East of England
+          </li>
+           
+          <li>
+            enable talent development and progression achieve creative excellence
+          </li>
+           
+        </ul>
+         
+      </article>
+      <hr
+        className="sc-htoDjs czhBuC"
+      />
+      <h2
+        className="sc-fMiknA gGLTif"
+      >
+        Apply for funding
+      </h2>
+      <article
+        className="sc-TOsTZ eAFLlh"
+      >
+         
+        <p>
+          You’ll need to make an account if you’ve not applied before.
+        </p>
+         
+      </article>
+      <a
+        className="sc-bZQynM jsvBdM"
+        colorScheme={1}
+        href="/#"
+        onClick={[Function]}
+      >
+        Apply for funding
+      </a>
+      <hr
+        className="sc-htoDjs czhBuC"
+      />
+      <h2
+        className="sc-fMiknA gGLTif"
+      >
+        Contact us
+      </h2>
+      <article
+        className="sc-TOsTZ eAFLlh"
+      >
+        <p>
+          Contact us if you have a question about your application: 
+          <a
+            href="mailto:developmentcoordinator@bfi.org.uk"
+            title="Email us"
+          >
+            developmentcoordinator@bfi.org.uk
+          </a>
+          .
+        </p>
+      </article>
+    </article>
+    <aside
+      className="sc-jqCOkK iFHvra"
+    >
+      Sidebar here
+    </aside>
+  </div>,
+  <footer
+    className="sc-dnqmqq kVNAGq"
+  >
+    <div
+      className="sc-iwsKbI iZPEoN"
+    >
+      <section
+        className="sc-gqjmRU jZSsCi"
+      >
+        <img
+          alt="British Film Institute. Film Forever."
+          className="sc-gZMcBi kikhDD"
+          src="test-file-stub"
+        />
+        <nav
+          className="sc-jTzLTM jwEjTs"
+        >
+          <h4
+            className="sc-fjdhpX lZPxJ"
+          >
+            Business
+          </h4>
+          <a
+            aria-current="page"
+            className="sc-cSHVUG lbaKwf"
+            href="/"
+            onClick={[Function]}
+          >
+            Partnerships
+          </a>
+          <a
+            aria-current="page"
+            className="sc-cSHVUG lbaKwf"
+            href="/"
+            onClick={[Function]}
+          >
+            Venue hire
+          </a>
+          <a
+            aria-current="page"
+            className="sc-cSHVUG lbaKwf"
+            href="/"
+            onClick={[Function]}
+          >
+            Viewing theatre hire
+          </a>
+          <a
+            aria-current="page"
+            className="sc-cSHVUG lbaKwf"
+            href="/"
+            onClick={[Function]}
+          >
+            Book a film for your cinema
+          </a>
+        </nav>
+        <nav
+          className="sc-jTzLTM jwEjTs"
+        >
+          <h4
+            className="sc-fjdhpX lZPxJ"
+          >
+            About the BFI
+          </h4>
+          <a
+            aria-current="page"
+            className="sc-cSHVUG lbaKwf"
+            href="/"
+            onClick={[Function]}
+          >
+            Our story
+          </a>
+          <a
+            aria-current="page"
+            className="sc-cSHVUG lbaKwf"
+            href="/"
+            onClick={[Function]}
+          >
+            Our team
+          </a>
+          <a
+            aria-current="page"
+            className="sc-cSHVUG lbaKwf"
+            href="/"
+            onClick={[Function]}
+          >
+            Careers
+          </a>
+          <a
+            aria-current="page"
+            className="sc-cSHVUG lbaKwf"
+            href="/"
+            onClick={[Function]}
+          >
+            Our partners
+          </a>
+          <a
+            aria-current="page"
+            className="sc-cSHVUG lbaKwf"
+            href="/"
+            onClick={[Function]}
+          >
+            Press releases and media enquiries
+          </a>
+        </nav>
+        <nav
+          className="sc-jTzLTM jwEjTs"
+        >
+          <h4
+            className="sc-fjdhpX lZPxJ"
+          >
+            Keep in touch
+          </h4>
+          <a
+            aria-current="page"
+            className="sc-cSHVUG lbaKwf"
+            href="/"
+            onClick={[Function]}
+          >
+            Contact us
+          </a>
+          <a
+            className="sc-kAzzGY dBmtLY"
+            href="#"
+          >
+            <img
+              alt=""
+              className="sc-chPdSV bSAUnu"
+              src="test-file-stub"
+            />
+            Facebook
+          </a>
+          <a
+            className="sc-kAzzGY dBmtLY"
+            href="#"
+          >
+            <img
+              alt=""
+              className="sc-chPdSV bSAUnu"
+              src="test-file-stub"
+            />
+            Twitter
+          </a>
+          <a
+            className="sc-kAzzGY dBmtLY"
+            href="#"
+          >
+            <img
+              alt=""
+              className="sc-chPdSV bSAUnu"
+              src="test-file-stub"
+            />
+            YouTube
+          </a>
+          <a
+            className="sc-kAzzGY dBmtLY"
+            href="#"
+          >
+            <img
+              alt=""
+              className="sc-chPdSV bSAUnu"
+              src="test-file-stub"
+            />
+            Instagram
+          </a>
+        </nav>
+      </section>
+      <section
+        className="sc-VigVT hUbEDI"
+      >
+        <img
+          alt="The BFI recieves National Lottery funding"
+          src="test-file-stub"
+        />
+        <p
+          className="sc-jzJRlG enxKql"
+        >
+          ©2020 British Film Institute. All rights reserved. Registered charity 287780
+        </p>
+      </section>
+    </div>
+  </footer>,
+]
+`;
+
 exports[`Storyshots All Components/Page Normal 1`] = `
 Array [
   <div
@@ -1543,13 +2137,13 @@ Array [
       className="sc-dNLxif cxpypa"
     >
       <ol
-        className="sc-bxivhb cpkjqV"
+        className="sc-bxivhb dkElCb"
       >
         <li
           className="sc-ifAKCX TSOqM"
         >
           <a
-            className="sc-EHOje eTLzlg"
+            className="sc-EHOje lcJiSL"
             href="/#"
             onClick={[Function]}
           >
@@ -1560,7 +2154,7 @@ Array [
           className="sc-ifAKCX TSOqM"
         >
           <a
-            className="sc-EHOje eTLzlg"
+            className="sc-EHOje lcJiSL"
             href="/#"
             onClick={[Function]}
           >
@@ -1570,7 +2164,18 @@ Array [
         <li
           className="sc-ifAKCX TSOqM"
         >
-          Find a fund to create films, TV or new formats of storytelling
+          <a
+            className="sc-EHOje lcJiSL"
+            href="/#"
+            onClick={[Function]}
+          >
+            Find a fund to create films, TV or new formats of storytelling
+          </a>
+        </li>
+        <li
+          className="sc-ifAKCX TSOqM"
+        >
+          Development Fund
         </li>
       </ol>
       <h1
@@ -1584,7 +2189,7 @@ Array [
         God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs. Do you have any idea how long it takes those cups to decompose. Yes, Yes, without the oops! Yes, Yes, without the oops! Drive us out of here!
       </article>
       <article
-        className="sc-TOsTZ juLFpU"
+        className="sc-TOsTZ eAFLlh"
       >
         So you two dig up, dig up dinosaurs? Hey, you know how I'm, like, always trying to save the planet? Here's my chance. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.
       </article>
@@ -3162,7 +3767,7 @@ exports[`Storyshots All Components/Text Normal 1`] = `
   }
 >
   <article
-    className="sc-TOsTZ juLFpU"
+    className="sc-TOsTZ eAFLlh"
   >
     
 

@@ -13,6 +13,15 @@ const colorSchemes = [
         focusShadow: theme.darkPink,
         // Secondary button only
         focus: theme.dustyPink
+    },
+    {
+        shadow: theme.dustyPink,
+        hoverBackground: theme.darkGrey,
+        text: theme.white,
+        background: theme.charcoal,
+        focusShadow: theme.dustyPink,
+        // Secondary button only
+        focus: theme.dustyPink
     }
 ]
 
@@ -26,14 +35,18 @@ const PrimaryButton = styled(Link)`
     border-radius: 4px;
     padding: 10px 25px;
     box-shadow: -5px 5px 0px ${props => colorSchemes[props.colorScheme].shadow};
+    margin-left: 5px;
+
     &:hover, &:focus{
         background: ${props => colorSchemes[props.colorScheme].hoverBackground};
     }
     &:focus{
         background: ${props => colorSchemes[props.colorScheme].hoverBackground};
-        box-shadow: -5px 5px 0px ${props => colorSchemes[props.colorScheme].focusShadow};
+        box-shadow: 0px 0px 0px 4px ${props => colorSchemes[props.colorScheme].focusShadow};
+        outline: none;
     }
     &:active{
+        background: ${props => colorSchemes[props.colorScheme].background};
         box-shadow: none;
         transform: translate(-5px, 5px);   
     }
