@@ -28,7 +28,7 @@ const colorSchemes = [
 
 const Outer = styled.li`
     position: relative;
-    background: ${props => colorSchemes[props.colorScheme].background};
+    background: ${props => props.withImages ? theme.grey : colorSchemes[props.colorScheme].background};
     box-shadow: -5px 5px 0px ${props => colorSchemes[props.colorScheme].shadow};
     padding: 25px;
     margin-bottom: 35px;
@@ -37,8 +37,14 @@ const Outer = styled.li`
     display: flex;
     flex-direction: column;
     position: relative;
+    overflow: hidden;
+    &:before {
+        display: block;
+        content: "";
+        height: ${props => props.withImages ? "50%" : "0"};
+    }
     h4{
-        margin-top: 0px;
+        margin-top: 0;
         color: ${props => colorSchemes[props.colorScheme].text};
         margin-bottom: 20px;
     }
@@ -90,17 +96,35 @@ const Icon = styled.div`
     }
 `
 
+const PageImage = styled.div`
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(${props => props.imageSrc});
+    height: calc(50% - 25px);
+    background-position: center center;
+    background-size: cover;
+`
+
 export const PageLink = ({
     title,
     description,
     callToAction,
     url,
+    image,
     colorScheme,
-    external
+    external,
+    withImages
 }) =>
-    <Outer colorScheme={colorScheme}>
+    <Outer colorScheme={colorScheme} withImages={withImages}>
+        { withImages && 
+            <PageImage imageSrc={image} />
+        }
         <Headline level={4} text={title} />
-        <Description colorScheme={colorScheme}>{description}</Description>
+        { !withImages && 
+            <Description colorScheme={colorScheme}>{description}</Description>
+        }
         <CallToAction external={external} to={url} colorScheme={colorScheme}>
             {callToAction}
             <Icon><Arrow colourFill={colorSchemes[colorScheme].text} /></Icon>

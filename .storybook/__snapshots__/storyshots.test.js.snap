@@ -383,7 +383,7 @@ Array [
     </div>
   </div>,
   <header
-    className="sc-csuQGl cPdbOL"
+    className="sc-csuQGl iqdjCI"
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
   >
@@ -687,7 +687,7 @@ Array [
     </div>
   </div>,
   <header
-    className="sc-csuQGl cPdbOL"
+    className="sc-csuQGl iqdjCI"
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
   >
@@ -1426,7 +1426,7 @@ Array [
     </div>
   </div>,
   <header
-    className="sc-csuQGl cPdbOL"
+    className="sc-csuQGl iqdjCI"
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
   >
@@ -1773,10 +1773,10 @@ Array [
 
 exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
 <ul
-  className="sc-jnlKLf hSEJjr"
+  className="sc-fYxtnH bmrnIP"
 >
   <li
-    className="sc-jqCOkK ipcLQz"
+    className="sc-jqCOkK bPzRDS"
   >
     <h4
       className="sc-dVhcbM dQVLzk"
@@ -1784,26 +1784,44 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
       Industry fund
     </h4>
     <p
-      className="sc-uJMKN dEIluL"
+      className="sc-uJMKN huhqLF"
     >
       What do they got in there? King Kong? You know what? It is beets. I've crashed into a beet truck. Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.
     </p>
     <a
-      className="sc-bbmXgH dabmKX"
+      className="sc-bbmXgH NIIbs"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
     >
       Apply to this fund
-      <img
-        alt=""
-        className="sc-gGBfsJ bZJrty"
-        src="test-file-stub"
-      />
+      <div
+        className="sc-gGBfsJ gSxAOn"
+      >
+        <svg
+          height="14"
+          viewBox="0 0 8 14"
+          width="8"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            fill="none"
+            fillRule="evenodd"
+            stroke="none"
+            strokeWidth="1"
+          >
+            <path
+              d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
+              fill="#895d60"
+              transform="matrix(0 1 1 0 -3 3)"
+            />
+          </g>
+        </svg>
+      </div>
     </a>
   </li>
   <li
-    className="sc-jqCOkK ipcLQz"
+    className="sc-jqCOkK bPzRDS"
   >
     <h4
       className="sc-dVhcbM dQVLzk"
@@ -1811,26 +1829,44 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
       Get funding fund
     </h4>
     <p
-      className="sc-uJMKN dEIluL"
+      className="sc-uJMKN huhqLF"
     >
       Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
     </p>
     <a
-      className="sc-bbmXgH dabmKX"
+      className="sc-bbmXgH NIIbs"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
     >
       Apply to this fund
-      <img
-        alt=""
-        className="sc-gGBfsJ bZJrty"
-        src="test-file-stub"
-      />
+      <div
+        className="sc-gGBfsJ gSxAOn"
+      >
+        <svg
+          height="14"
+          viewBox="0 0 8 14"
+          width="8"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            fill="none"
+            fillRule="evenodd"
+            stroke="none"
+            strokeWidth="1"
+          >
+            <path
+              d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
+              fill="#895d60"
+              transform="matrix(0 1 1 0 -3 3)"
+            />
+          </g>
+        </svg>
+      </div>
     </a>
   </li>
   <li
-    className="sc-jqCOkK ipcLQz"
+    className="sc-jqCOkK bPzRDS"
   >
     <h4
       className="sc-dVhcbM dQVLzk"
@@ -1838,26 +1874,44 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
       Get funding fund
     </h4>
     <p
-      className="sc-uJMKN dEIluL"
+      className="sc-uJMKN huhqLF"
     >
       Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
     </p>
     <a
-      className="sc-bbmXgH dabmKX"
+      className="sc-bbmXgH NIIbs"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
     >
       Apply to this fund
-      <img
-        alt=""
-        className="sc-gGBfsJ bZJrty"
-        src="test-file-stub"
-      />
+      <div
+        className="sc-gGBfsJ gSxAOn"
+      >
+        <svg
+          height="14"
+          viewBox="0 0 8 14"
+          width="8"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            fill="none"
+            fillRule="evenodd"
+            stroke="none"
+            strokeWidth="1"
+          >
+            <path
+              d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
+              fill="#895d60"
+              transform="matrix(0 1 1 0 -3 3)"
+            />
+          </g>
+        </svg>
+      </div>
     </a>
   </li>
   <li
-    className="sc-jqCOkK ipcLQz"
+    className="sc-jqCOkK bPzRDS"
   >
     <h4
       className="sc-dVhcbM dQVLzk"
@@ -1865,26 +1919,44 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
       Find a fund
     </h4>
     <p
-      className="sc-uJMKN dEIluL"
+      className="sc-uJMKN huhqLF"
     >
       Yes, Yes, without the oops! Hey, take a look at the earthlings. Goodbye!
     </p>
     <a
-      className="sc-bbmXgH dabmKX"
+      className="sc-bbmXgH NIIbs"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
     >
       Apply to this fund
-      <img
-        alt=""
-        className="sc-gGBfsJ bZJrty"
-        src="test-file-stub"
-      />
+      <div
+        className="sc-gGBfsJ gSxAOn"
+      >
+        <svg
+          height="14"
+          viewBox="0 0 8 14"
+          width="8"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            fill="none"
+            fillRule="evenodd"
+            stroke="none"
+            strokeWidth="1"
+          >
+            <path
+              d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
+              fill="#895d60"
+              transform="matrix(0 1 1 0 -3 3)"
+            />
+          </g>
+        </svg>
+      </div>
     </a>
   </li>
   <li
-    className="sc-jqCOkK ipcLQz"
+    className="sc-jqCOkK bPzRDS"
   >
     <h4
       className="sc-dVhcbM dQVLzk"
@@ -1892,26 +1964,44 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
       Industry fund
     </h4>
     <p
-      className="sc-uJMKN dEIluL"
+      className="sc-uJMKN huhqLF"
     >
       What do they got in there? King Kong? You know what? It is beets. I've crashed into a beet truck. Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.
     </p>
     <a
-      className="sc-bbmXgH dabmKX"
+      className="sc-bbmXgH NIIbs"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
     >
       Apply to this fund
-      <img
-        alt=""
-        className="sc-gGBfsJ bZJrty"
-        src="test-file-stub"
-      />
+      <div
+        className="sc-gGBfsJ gSxAOn"
+      >
+        <svg
+          height="14"
+          viewBox="0 0 8 14"
+          width="8"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            fill="none"
+            fillRule="evenodd"
+            stroke="none"
+            strokeWidth="1"
+          >
+            <path
+              d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
+              fill="#895d60"
+              transform="matrix(0 1 1 0 -3 3)"
+            />
+          </g>
+        </svg>
+      </div>
     </a>
   </li>
   <li
-    className="sc-jqCOkK ipcLQz"
+    className="sc-jqCOkK bPzRDS"
   >
     <h4
       className="sc-dVhcbM dQVLzk"
@@ -1919,26 +2009,44 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
       Get funding fund
     </h4>
     <p
-      className="sc-uJMKN dEIluL"
+      className="sc-uJMKN huhqLF"
     >
       Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
     </p>
     <a
-      className="sc-bbmXgH dabmKX"
+      className="sc-bbmXgH NIIbs"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
     >
       Apply to this fund
-      <img
-        alt=""
-        className="sc-gGBfsJ bZJrty"
-        src="test-file-stub"
-      />
+      <div
+        className="sc-gGBfsJ gSxAOn"
+      >
+        <svg
+          height="14"
+          viewBox="0 0 8 14"
+          width="8"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            fill="none"
+            fillRule="evenodd"
+            stroke="none"
+            strokeWidth="1"
+          >
+            <path
+              d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
+              fill="#895d60"
+              transform="matrix(0 1 1 0 -3 3)"
+            />
+          </g>
+        </svg>
+      </div>
     </a>
   </li>
   <li
-    className="sc-jqCOkK ipcLQz"
+    className="sc-jqCOkK bPzRDS"
   >
     <h4
       className="sc-dVhcbM dQVLzk"
@@ -1946,26 +2054,44 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
       Get funding fund
     </h4>
     <p
-      className="sc-uJMKN dEIluL"
+      className="sc-uJMKN huhqLF"
     >
       Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
     </p>
     <a
-      className="sc-bbmXgH dabmKX"
+      className="sc-bbmXgH NIIbs"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
     >
       Apply to this fund
-      <img
-        alt=""
-        className="sc-gGBfsJ bZJrty"
-        src="test-file-stub"
-      />
+      <div
+        className="sc-gGBfsJ gSxAOn"
+      >
+        <svg
+          height="14"
+          viewBox="0 0 8 14"
+          width="8"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            fill="none"
+            fillRule="evenodd"
+            stroke="none"
+            strokeWidth="1"
+          >
+            <path
+              d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
+              fill="#895d60"
+              transform="matrix(0 1 1 0 -3 3)"
+            />
+          </g>
+        </svg>
+      </div>
     </a>
   </li>
   <li
-    className="sc-jqCOkK ipcLQz"
+    className="sc-jqCOkK bPzRDS"
   >
     <h4
       className="sc-dVhcbM dQVLzk"
@@ -1973,33 +2099,51 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
       Find a fund
     </h4>
     <p
-      className="sc-uJMKN dEIluL"
+      className="sc-uJMKN huhqLF"
     >
       Yes, Yes, without the oops! Hey, take a look at the earthlings. Goodbye!
     </p>
     <a
-      className="sc-bbmXgH dabmKX"
+      className="sc-bbmXgH NIIbs"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
     >
       Apply to this fund
-      <img
-        alt=""
-        className="sc-gGBfsJ bZJrty"
-        src="test-file-stub"
-      />
+      <div
+        className="sc-gGBfsJ gSxAOn"
+      >
+        <svg
+          height="14"
+          viewBox="0 0 8 14"
+          width="8"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            fill="none"
+            fillRule="evenodd"
+            stroke="none"
+            strokeWidth="1"
+          >
+            <path
+              d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
+              fill="#895d60"
+              transform="matrix(0 1 1 0 -3 3)"
+            />
+          </g>
+        </svg>
+      </div>
     </a>
   </li>
 </ul>
 `;
 
-exports[`Storyshots All Components/PageLinks Four Links 1`] = `
+exports[`Storyshots All Components/PageLinks Four Links Industry Theme 1`] = `
 <ul
-  className="sc-jnlKLf hSEJjr"
+  className="sc-fYxtnH bmrnIP"
 >
   <li
-    className="sc-jqCOkK ipcLQz"
+    className="sc-jqCOkK fRVHSm"
   >
     <h4
       className="sc-dVhcbM dQVLzk"
@@ -2013,20 +2157,38 @@ exports[`Storyshots All Components/PageLinks Four Links 1`] = `
     </p>
     <a
       className="sc-bbmXgH dabmKX"
-      colorScheme={0}
+      colorScheme={1}
       href="/#"
       onClick={[Function]}
     >
       Apply to this fund
-      <img
-        alt=""
-        className="sc-gGBfsJ bZJrty"
-        src="test-file-stub"
-      />
+      <div
+        className="sc-gGBfsJ gSxAOn"
+      >
+        <svg
+          height="14"
+          viewBox="0 0 8 14"
+          width="8"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            fill="none"
+            fillRule="evenodd"
+            stroke="none"
+            strokeWidth="1"
+          >
+            <path
+              d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
+              fill="#004225"
+              transform="matrix(0 1 1 0 -3 3)"
+            />
+          </g>
+        </svg>
+      </div>
     </a>
   </li>
   <li
-    className="sc-jqCOkK ipcLQz"
+    className="sc-jqCOkK fRVHSm"
   >
     <h4
       className="sc-dVhcbM dQVLzk"
@@ -2040,20 +2202,38 @@ exports[`Storyshots All Components/PageLinks Four Links 1`] = `
     </p>
     <a
       className="sc-bbmXgH dabmKX"
-      colorScheme={0}
+      colorScheme={1}
       href="/#"
       onClick={[Function]}
     >
       Apply to this fund
-      <img
-        alt=""
-        className="sc-gGBfsJ bZJrty"
-        src="test-file-stub"
-      />
+      <div
+        className="sc-gGBfsJ gSxAOn"
+      >
+        <svg
+          height="14"
+          viewBox="0 0 8 14"
+          width="8"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            fill="none"
+            fillRule="evenodd"
+            stroke="none"
+            strokeWidth="1"
+          >
+            <path
+              d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
+              fill="#004225"
+              transform="matrix(0 1 1 0 -3 3)"
+            />
+          </g>
+        </svg>
+      </div>
     </a>
   </li>
   <li
-    className="sc-jqCOkK ipcLQz"
+    className="sc-jqCOkK fRVHSm"
   >
     <h4
       className="sc-dVhcbM dQVLzk"
@@ -2067,20 +2247,38 @@ exports[`Storyshots All Components/PageLinks Four Links 1`] = `
     </p>
     <a
       className="sc-bbmXgH dabmKX"
-      colorScheme={0}
+      colorScheme={1}
       href="/#"
       onClick={[Function]}
     >
       Apply to this fund
-      <img
-        alt=""
-        className="sc-gGBfsJ bZJrty"
-        src="test-file-stub"
-      />
+      <div
+        className="sc-gGBfsJ gSxAOn"
+      >
+        <svg
+          height="14"
+          viewBox="0 0 8 14"
+          width="8"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            fill="none"
+            fillRule="evenodd"
+            stroke="none"
+            strokeWidth="1"
+          >
+            <path
+              d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
+              fill="#004225"
+              transform="matrix(0 1 1 0 -3 3)"
+            />
+          </g>
+        </svg>
+      </div>
     </a>
   </li>
   <li
-    className="sc-jqCOkK ipcLQz"
+    className="sc-jqCOkK fRVHSm"
   >
     <h4
       className="sc-dVhcbM dQVLzk"
@@ -2094,16 +2292,587 @@ exports[`Storyshots All Components/PageLinks Four Links 1`] = `
     </p>
     <a
       className="sc-bbmXgH dabmKX"
+      colorScheme={1}
+      href="/#"
+      onClick={[Function]}
+    >
+      Apply to this fund
+      <div
+        className="sc-gGBfsJ gSxAOn"
+      >
+        <svg
+          height="14"
+          viewBox="0 0 8 14"
+          width="8"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            fill="none"
+            fillRule="evenodd"
+            stroke="none"
+            strokeWidth="1"
+          >
+            <path
+              d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
+              fill="#004225"
+              transform="matrix(0 1 1 0 -3 3)"
+            />
+          </g>
+        </svg>
+      </div>
+    </a>
+  </li>
+</ul>
+`;
+
+exports[`Storyshots All Components/PageLinks Four Links Learn Theme 1`] = `
+<ul
+  className="sc-fYxtnH bmrnIP"
+>
+  <li
+    className="sc-jqCOkK hCwvfB"
+  >
+    <h4
+      className="sc-dVhcbM dQVLzk"
+    >
+      Industry fund
+    </h4>
+    <p
+      className="sc-uJMKN kygNfi"
+    >
+      What do they got in there? King Kong? You know what? It is beets. I've crashed into a beet truck. Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.
+    </p>
+    <a
+      className="sc-bbmXgH dSPCGz"
+      colorScheme={2}
+      href="/#"
+      onClick={[Function]}
+    >
+      Apply to this fund
+      <div
+        className="sc-gGBfsJ gSxAOn"
+      >
+        <svg
+          height="14"
+          viewBox="0 0 8 14"
+          width="8"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            fill="none"
+            fillRule="evenodd"
+            stroke="none"
+            strokeWidth="1"
+          >
+            <path
+              d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
+              fill="#031d45"
+              transform="matrix(0 1 1 0 -3 3)"
+            />
+          </g>
+        </svg>
+      </div>
+    </a>
+  </li>
+  <li
+    className="sc-jqCOkK hCwvfB"
+  >
+    <h4
+      className="sc-dVhcbM dQVLzk"
+    >
+      Get funding fund
+    </h4>
+    <p
+      className="sc-uJMKN kygNfi"
+    >
+      Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
+    </p>
+    <a
+      className="sc-bbmXgH dSPCGz"
+      colorScheme={2}
+      href="/#"
+      onClick={[Function]}
+    >
+      Apply to this fund
+      <div
+        className="sc-gGBfsJ gSxAOn"
+      >
+        <svg
+          height="14"
+          viewBox="0 0 8 14"
+          width="8"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            fill="none"
+            fillRule="evenodd"
+            stroke="none"
+            strokeWidth="1"
+          >
+            <path
+              d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
+              fill="#031d45"
+              transform="matrix(0 1 1 0 -3 3)"
+            />
+          </g>
+        </svg>
+      </div>
+    </a>
+  </li>
+  <li
+    className="sc-jqCOkK hCwvfB"
+  >
+    <h4
+      className="sc-dVhcbM dQVLzk"
+    >
+      Get funding fund
+    </h4>
+    <p
+      className="sc-uJMKN kygNfi"
+    >
+      Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
+    </p>
+    <a
+      className="sc-bbmXgH dSPCGz"
+      colorScheme={2}
+      href="/#"
+      onClick={[Function]}
+    >
+      Apply to this fund
+      <div
+        className="sc-gGBfsJ gSxAOn"
+      >
+        <svg
+          height="14"
+          viewBox="0 0 8 14"
+          width="8"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            fill="none"
+            fillRule="evenodd"
+            stroke="none"
+            strokeWidth="1"
+          >
+            <path
+              d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
+              fill="#031d45"
+              transform="matrix(0 1 1 0 -3 3)"
+            />
+          </g>
+        </svg>
+      </div>
+    </a>
+  </li>
+  <li
+    className="sc-jqCOkK hCwvfB"
+  >
+    <h4
+      className="sc-dVhcbM dQVLzk"
+    >
+      Find a fund
+    </h4>
+    <p
+      className="sc-uJMKN kygNfi"
+    >
+      Yes, Yes, without the oops! Hey, take a look at the earthlings. Goodbye!
+    </p>
+    <a
+      className="sc-bbmXgH dSPCGz"
+      colorScheme={2}
+      href="/#"
+      onClick={[Function]}
+    >
+      Apply to this fund
+      <div
+        className="sc-gGBfsJ gSxAOn"
+      >
+        <svg
+          height="14"
+          viewBox="0 0 8 14"
+          width="8"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            fill="none"
+            fillRule="evenodd"
+            stroke="none"
+            strokeWidth="1"
+          >
+            <path
+              d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
+              fill="#031d45"
+              transform="matrix(0 1 1 0 -3 3)"
+            />
+          </g>
+        </svg>
+      </div>
+    </a>
+  </li>
+</ul>
+`;
+
+exports[`Storyshots All Components/PageLinks Four Links Watch Theme 1`] = `
+<ul
+  className="sc-fYxtnH bmrnIP"
+>
+  <li
+    className="sc-jqCOkK bPzRDS"
+  >
+    <h4
+      className="sc-dVhcbM dQVLzk"
+    >
+      Industry fund
+    </h4>
+    <p
+      className="sc-uJMKN huhqLF"
+    >
+      What do they got in there? King Kong? You know what? It is beets. I've crashed into a beet truck. Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.
+    </p>
+    <a
+      className="sc-bbmXgH NIIbs"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
     >
       Apply to this fund
-      <img
-        alt=""
-        className="sc-gGBfsJ bZJrty"
-        src="test-file-stub"
-      />
+      <div
+        className="sc-gGBfsJ gSxAOn"
+      >
+        <svg
+          height="14"
+          viewBox="0 0 8 14"
+          width="8"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            fill="none"
+            fillRule="evenodd"
+            stroke="none"
+            strokeWidth="1"
+          >
+            <path
+              d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
+              fill="#895d60"
+              transform="matrix(0 1 1 0 -3 3)"
+            />
+          </g>
+        </svg>
+      </div>
+    </a>
+  </li>
+  <li
+    className="sc-jqCOkK bPzRDS"
+  >
+    <h4
+      className="sc-dVhcbM dQVLzk"
+    >
+      Get funding fund
+    </h4>
+    <p
+      className="sc-uJMKN huhqLF"
+    >
+      Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
+    </p>
+    <a
+      className="sc-bbmXgH NIIbs"
+      colorScheme={0}
+      href="/#"
+      onClick={[Function]}
+    >
+      Apply to this fund
+      <div
+        className="sc-gGBfsJ gSxAOn"
+      >
+        <svg
+          height="14"
+          viewBox="0 0 8 14"
+          width="8"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            fill="none"
+            fillRule="evenodd"
+            stroke="none"
+            strokeWidth="1"
+          >
+            <path
+              d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
+              fill="#895d60"
+              transform="matrix(0 1 1 0 -3 3)"
+            />
+          </g>
+        </svg>
+      </div>
+    </a>
+  </li>
+  <li
+    className="sc-jqCOkK bPzRDS"
+  >
+    <h4
+      className="sc-dVhcbM dQVLzk"
+    >
+      Get funding fund
+    </h4>
+    <p
+      className="sc-uJMKN huhqLF"
+    >
+      Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
+    </p>
+    <a
+      className="sc-bbmXgH NIIbs"
+      colorScheme={0}
+      href="/#"
+      onClick={[Function]}
+    >
+      Apply to this fund
+      <div
+        className="sc-gGBfsJ gSxAOn"
+      >
+        <svg
+          height="14"
+          viewBox="0 0 8 14"
+          width="8"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            fill="none"
+            fillRule="evenodd"
+            stroke="none"
+            strokeWidth="1"
+          >
+            <path
+              d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
+              fill="#895d60"
+              transform="matrix(0 1 1 0 -3 3)"
+            />
+          </g>
+        </svg>
+      </div>
+    </a>
+  </li>
+  <li
+    className="sc-jqCOkK bPzRDS"
+  >
+    <h4
+      className="sc-dVhcbM dQVLzk"
+    >
+      Find a fund
+    </h4>
+    <p
+      className="sc-uJMKN huhqLF"
+    >
+      Yes, Yes, without the oops! Hey, take a look at the earthlings. Goodbye!
+    </p>
+    <a
+      className="sc-bbmXgH NIIbs"
+      colorScheme={0}
+      href="/#"
+      onClick={[Function]}
+    >
+      Apply to this fund
+      <div
+        className="sc-gGBfsJ gSxAOn"
+      >
+        <svg
+          height="14"
+          viewBox="0 0 8 14"
+          width="8"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            fill="none"
+            fillRule="evenodd"
+            stroke="none"
+            strokeWidth="1"
+          >
+            <path
+              d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
+              fill="#895d60"
+              transform="matrix(0 1 1 0 -3 3)"
+            />
+          </g>
+        </svg>
+      </div>
+    </a>
+  </li>
+</ul>
+`;
+
+exports[`Storyshots All Components/PageLinks Four Links With Image 1`] = `
+<ul
+  className="sc-fYxtnH bmrnIP"
+>
+  <li
+    className="sc-jqCOkK fxRGBw"
+  >
+    <div
+      className="sc-jnlKLf eZZmtW"
+    />
+    <h4
+      className="sc-dVhcbM dQVLzk"
+    >
+      Industry fund
+    </h4>
+    <a
+      className="sc-bbmXgH NIIbs"
+      colorScheme={0}
+      href="/#"
+      onClick={[Function]}
+    >
+      Apply to this fund
+      <div
+        className="sc-gGBfsJ gSxAOn"
+      >
+        <svg
+          height="14"
+          viewBox="0 0 8 14"
+          width="8"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            fill="none"
+            fillRule="evenodd"
+            stroke="none"
+            strokeWidth="1"
+          >
+            <path
+              d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
+              fill="#895d60"
+              transform="matrix(0 1 1 0 -3 3)"
+            />
+          </g>
+        </svg>
+      </div>
+    </a>
+  </li>
+  <li
+    className="sc-jqCOkK fxRGBw"
+  >
+    <div
+      className="sc-jnlKLf eZZmtW"
+    />
+    <h4
+      className="sc-dVhcbM dQVLzk"
+    >
+      Get funding fund
+    </h4>
+    <a
+      className="sc-bbmXgH NIIbs"
+      colorScheme={0}
+      href="/#"
+      onClick={[Function]}
+    >
+      Apply to this fund
+      <div
+        className="sc-gGBfsJ gSxAOn"
+      >
+        <svg
+          height="14"
+          viewBox="0 0 8 14"
+          width="8"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            fill="none"
+            fillRule="evenodd"
+            stroke="none"
+            strokeWidth="1"
+          >
+            <path
+              d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
+              fill="#895d60"
+              transform="matrix(0 1 1 0 -3 3)"
+            />
+          </g>
+        </svg>
+      </div>
+    </a>
+  </li>
+  <li
+    className="sc-jqCOkK fxRGBw"
+  >
+    <div
+      className="sc-jnlKLf eZZmtW"
+    />
+    <h4
+      className="sc-dVhcbM dQVLzk"
+    >
+      Get funding fund
+    </h4>
+    <a
+      className="sc-bbmXgH NIIbs"
+      colorScheme={0}
+      href="/#"
+      onClick={[Function]}
+    >
+      Apply to this fund
+      <div
+        className="sc-gGBfsJ gSxAOn"
+      >
+        <svg
+          height="14"
+          viewBox="0 0 8 14"
+          width="8"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            fill="none"
+            fillRule="evenodd"
+            stroke="none"
+            strokeWidth="1"
+          >
+            <path
+              d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
+              fill="#895d60"
+              transform="matrix(0 1 1 0 -3 3)"
+            />
+          </g>
+        </svg>
+      </div>
+    </a>
+  </li>
+  <li
+    className="sc-jqCOkK fxRGBw"
+  >
+    <div
+      className="sc-jnlKLf eZZmtW"
+    />
+    <h4
+      className="sc-dVhcbM dQVLzk"
+    >
+      Find a fund
+    </h4>
+    <a
+      className="sc-bbmXgH NIIbs"
+      colorScheme={0}
+      href="/#"
+      onClick={[Function]}
+    >
+      Apply to this fund
+      <div
+        className="sc-gGBfsJ gSxAOn"
+      >
+        <svg
+          height="14"
+          viewBox="0 0 8 14"
+          width="8"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            fill="none"
+            fillRule="evenodd"
+            stroke="none"
+            strokeWidth="1"
+          >
+            <path
+              d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
+              fill="#895d60"
+              transform="matrix(0 1 1 0 -3 3)"
+            />
+          </g>
+        </svg>
+      </div>
     </a>
   </li>
 </ul>
@@ -2111,10 +2880,10 @@ exports[`Storyshots All Components/PageLinks Four Links 1`] = `
 
 exports[`Storyshots All Components/PageLinks Three Links 1`] = `
 <ul
-  className="sc-jnlKLf hSEJjr"
+  className="sc-fYxtnH bmrnIP"
 >
   <li
-    className="sc-jqCOkK ipcLQz"
+    className="sc-jqCOkK bPzRDS"
   >
     <h4
       className="sc-dVhcbM dQVLzk"
@@ -2122,26 +2891,44 @@ exports[`Storyshots All Components/PageLinks Three Links 1`] = `
       Industry fund
     </h4>
     <p
-      className="sc-uJMKN dEIluL"
+      className="sc-uJMKN huhqLF"
     >
       What do they got in there? King Kong? You know what? It is beets. I've crashed into a beet truck. Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.
     </p>
     <a
-      className="sc-bbmXgH dabmKX"
+      className="sc-bbmXgH NIIbs"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
     >
       Apply to this fund
-      <img
-        alt=""
-        className="sc-gGBfsJ bZJrty"
-        src="test-file-stub"
-      />
+      <div
+        className="sc-gGBfsJ gSxAOn"
+      >
+        <svg
+          height="14"
+          viewBox="0 0 8 14"
+          width="8"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            fill="none"
+            fillRule="evenodd"
+            stroke="none"
+            strokeWidth="1"
+          >
+            <path
+              d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
+              fill="#895d60"
+              transform="matrix(0 1 1 0 -3 3)"
+            />
+          </g>
+        </svg>
+      </div>
     </a>
   </li>
   <li
-    className="sc-jqCOkK ipcLQz"
+    className="sc-jqCOkK bPzRDS"
   >
     <h4
       className="sc-dVhcbM dQVLzk"
@@ -2149,26 +2936,44 @@ exports[`Storyshots All Components/PageLinks Three Links 1`] = `
       Get funding fund
     </h4>
     <p
-      className="sc-uJMKN dEIluL"
+      className="sc-uJMKN huhqLF"
     >
       Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
     </p>
     <a
-      className="sc-bbmXgH dabmKX"
+      className="sc-bbmXgH NIIbs"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
     >
       Apply to this fund
-      <img
-        alt=""
-        className="sc-gGBfsJ bZJrty"
-        src="test-file-stub"
-      />
+      <div
+        className="sc-gGBfsJ gSxAOn"
+      >
+        <svg
+          height="14"
+          viewBox="0 0 8 14"
+          width="8"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            fill="none"
+            fillRule="evenodd"
+            stroke="none"
+            strokeWidth="1"
+          >
+            <path
+              d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
+              fill="#895d60"
+              transform="matrix(0 1 1 0 -3 3)"
+            />
+          </g>
+        </svg>
+      </div>
     </a>
   </li>
   <li
-    className="sc-jqCOkK ipcLQz"
+    className="sc-jqCOkK bPzRDS"
   >
     <h4
       className="sc-dVhcbM dQVLzk"
@@ -2176,22 +2981,40 @@ exports[`Storyshots All Components/PageLinks Three Links 1`] = `
       Get funding fund
     </h4>
     <p
-      className="sc-uJMKN dEIluL"
+      className="sc-uJMKN huhqLF"
     >
       Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
     </p>
     <a
-      className="sc-bbmXgH dabmKX"
+      className="sc-bbmXgH NIIbs"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
     >
       Apply to this fund
-      <img
-        alt=""
-        className="sc-gGBfsJ bZJrty"
-        src="test-file-stub"
-      />
+      <div
+        className="sc-gGBfsJ gSxAOn"
+      >
+        <svg
+          height="14"
+          viewBox="0 0 8 14"
+          width="8"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            fill="none"
+            fillRule="evenodd"
+            stroke="none"
+            strokeWidth="1"
+          >
+            <path
+              d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
+              fill="#895d60"
+              transform="matrix(0 1 1 0 -3 3)"
+            />
+          </g>
+        </svg>
+      </div>
     </a>
   </li>
 </ul>
@@ -2207,111 +3030,111 @@ exports[`Storyshots All Components/StepByStep Primary 1`] = `
   }
 >
   <section
-    className="sc-fYxtnH hSLfWw"
+    className="sc-tilXH jMVAVb"
   >
     <h3
-      className="sc-tilXH brGkib"
+      className="sc-hEsumM dagyAv"
     >
       Applying for film funding
     </h3>
     <ol
-      className="sc-hEsumM eiLEeH"
+      className="sc-ktHwxA qsOIZ"
     >
       <li
-        className="sc-ktHwxA iNQrZj"
+        className="sc-cIShpX eIkjev"
       >
         <button
           aria-expanded="false"
-          className="sc-kafWEX gzunVU"
+          className="sc-feJyhm joDzlh"
           onClick={[Function]}
         >
           <strong
-            className="sc-cIShpX RtEBw"
+            className="sc-kafWEX lkXwxK"
           >
             Is this fund right for you?
           </strong>
           <p
-            className="sc-feJyhm ljkdxt"
+            className="sc-iELTvK cuiywN"
           >
             Show
           </p>
         </button>
       </li>
       <li
-        className="sc-ktHwxA iNQrZj"
+        className="sc-cIShpX eIkjev"
       >
         <button
           aria-expanded="false"
-          className="sc-kafWEX gzunVU"
+          className="sc-feJyhm joDzlh"
           onClick={[Function]}
         >
           <strong
-            className="sc-cIShpX RtEBw"
+            className="sc-kafWEX lkXwxK"
           >
             Prepare your supporting materials
           </strong>
           <p
-            className="sc-feJyhm ljkdxt"
+            className="sc-iELTvK cuiywN"
           >
             Show
           </p>
         </button>
       </li>
       <li
-        className="sc-ktHwxA iNQrZj"
+        className="sc-cIShpX eIkjev"
       >
         <button
           aria-expanded="false"
-          className="sc-kafWEX gzunVU"
+          className="sc-feJyhm joDzlh"
           onClick={[Function]}
         >
           <strong
-            className="sc-cIShpX RtEBw"
+            className="sc-kafWEX lkXwxK"
           >
             Apply
           </strong>
           <p
-            className="sc-feJyhm ljkdxt"
+            className="sc-iELTvK cuiywN"
           >
             Show
           </p>
         </button>
       </li>
       <li
-        className="sc-ktHwxA iNQrZj"
+        className="sc-cIShpX eIkjev"
       >
         <button
           aria-expanded="false"
-          className="sc-kafWEX gzunVU"
+          className="sc-feJyhm joDzlh"
           onClick={[Function]}
         >
           <strong
-            className="sc-cIShpX RtEBw"
+            className="sc-kafWEX lkXwxK"
           >
             Wait to hear from us
           </strong>
           <p
-            className="sc-feJyhm ljkdxt"
+            className="sc-iELTvK cuiywN"
           >
             Show
           </p>
         </button>
       </li>
       <li
-        className="sc-ktHwxA iNQrZj"
+        className="sc-cIShpX eIkjev"
       >
         <button
           aria-expanded="false"
-          className="sc-kafWEX gzunVU"
+          className="sc-feJyhm joDzlh"
           onClick={[Function]}
         >
           <strong
-            className="sc-cIShpX RtEBw"
+            className="sc-kafWEX lkXwxK"
           >
             Your decision
           </strong>
           <p
-            className="sc-feJyhm ljkdxt"
+            className="sc-iELTvK cuiywN"
           >
             Show
           </p>

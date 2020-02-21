@@ -20,6 +20,9 @@ export const FourLinksIndustryTheme = () =>
 export const FourLinksLearnTheme = () =>
     <PageLinks links={four} colorScheme={2}/>
 
+export const FourLinksWithImage = () =>
+    <PageLinks links={four} colorScheme={0} withImages={true} />
+
 export const EightLinks = () =>
     <PageLinks links={[
         ...four, ...four
