@@ -2197,6 +2197,131 @@ exports[`Storyshots All Components/PageLinks Three Links 1`] = `
 </ul>
 `;
 
+exports[`Storyshots All Components/StepByStep Primary 1`] = `
+<div
+  style={
+    Object {
+      "maxWidth": "350px",
+      "padding": "20px",
+    }
+  }
+>
+  <section
+    className="sc-fYxtnH hSLfWw"
+  >
+    <h3
+      className="sc-tilXH brGkib"
+    >
+      Applying for film funding
+    </h3>
+    <ol
+      className="sc-hEsumM eiLEeH"
+    >
+      <li
+        className="sc-ktHwxA iNQrZj"
+      >
+        <button
+          aria-expanded="false"
+          className="sc-kafWEX gzunVU"
+          onClick={[Function]}
+        >
+          <strong
+            className="sc-cIShpX RtEBw"
+          >
+            Is this fund right for you?
+          </strong>
+          <p
+            className="sc-feJyhm ljkdxt"
+          >
+            Show
+          </p>
+        </button>
+      </li>
+      <li
+        className="sc-ktHwxA iNQrZj"
+      >
+        <button
+          aria-expanded="false"
+          className="sc-kafWEX gzunVU"
+          onClick={[Function]}
+        >
+          <strong
+            className="sc-cIShpX RtEBw"
+          >
+            Prepare your supporting materials
+          </strong>
+          <p
+            className="sc-feJyhm ljkdxt"
+          >
+            Show
+          </p>
+        </button>
+      </li>
+      <li
+        className="sc-ktHwxA iNQrZj"
+      >
+        <button
+          aria-expanded="false"
+          className="sc-kafWEX gzunVU"
+          onClick={[Function]}
+        >
+          <strong
+            className="sc-cIShpX RtEBw"
+          >
+            Apply
+          </strong>
+          <p
+            className="sc-feJyhm ljkdxt"
+          >
+            Show
+          </p>
+        </button>
+      </li>
+      <li
+        className="sc-ktHwxA iNQrZj"
+      >
+        <button
+          aria-expanded="false"
+          className="sc-kafWEX gzunVU"
+          onClick={[Function]}
+        >
+          <strong
+            className="sc-cIShpX RtEBw"
+          >
+            Wait to hear from us
+          </strong>
+          <p
+            className="sc-feJyhm ljkdxt"
+          >
+            Show
+          </p>
+        </button>
+      </li>
+      <li
+        className="sc-ktHwxA iNQrZj"
+      >
+        <button
+          aria-expanded="false"
+          className="sc-kafWEX gzunVU"
+          onClick={[Function]}
+        >
+          <strong
+            className="sc-cIShpX RtEBw"
+          >
+            Your decision
+          </strong>
+          <p
+            className="sc-feJyhm ljkdxt"
+          >
+            Show
+          </p>
+        </button>
+      </li>
+    </ol>
+  </section>
+</div>
+`;
+
 exports[`Storyshots All Components/Text Normal 1`] = `
 <div
   style={
