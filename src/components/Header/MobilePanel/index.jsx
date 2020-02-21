@@ -111,13 +111,13 @@ const MobilePanel = ({
                             {selected === i &&
                                 <>
                                     <ChildItem>
-                                        <ChildLink to={navItem.url}>
+                                        <ChildLink to={navItem.url} external={navItem.external}>
                                             {navItem.title} home
                                         </ChildLink>
                                     </ChildItem>
                                     {navItem.children.map((child, j) =>
                                         <ChildItem key={j}>
-                                            <ChildLink to={child.url}>
+                                            <ChildLink to={child.url} external={child.external}>
                                                 {child.title}
                                             </ChildLink>
                                         </ChildItem>

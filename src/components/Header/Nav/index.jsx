@@ -129,6 +129,7 @@ const Nav = ({
                         onFocus={() => setSelected(i)}
                         aria-haspopup="true"
                         to={navItem.url} 
+                        external={navItem.external}
                         active={navItem.active}
                         hovered={selected === i}
                         // role="menuitem"

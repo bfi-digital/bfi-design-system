@@ -79,12 +79,13 @@ export const PageLink = ({
     description,
     callToAction,
     url,
-    colorScheme
+    colorScheme,
+    external
 }) =>
     <Outer colorScheme={colorScheme}>
         <Headline level={4} text={title} />
         <Description colorScheme={colorScheme}>{description}</Description>
-        <CallToAction to={url} colorScheme={colorScheme}>
+        <CallToAction external={external} to={url} colorScheme={colorScheme}>
             {callToAction}
             <Icon src={arrow} alt=""/>
         </CallToAction>
