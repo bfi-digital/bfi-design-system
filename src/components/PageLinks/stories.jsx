@@ -11,10 +11,16 @@ export default {
 export const ThreeLinks = () =>
     <PageLinks links={three} colorScheme={0}/>
 
-export const FourLinks = () =>
+export const FourLinksWatchTheme = () =>
+    <PageLinks links={four} colorScheme={0}/>
+
+export const FourLinksIndustryTheme = () =>
+    <PageLinks links={four} colorScheme={1}/>
+
+export const FourLinksLearnTheme = () =>
     <PageLinks links={four} colorScheme={2}/>
 
-export const EightLinks = () =>
+    export const EightLinks = () =>
     <PageLinks links={[
         ...four, ...four
     ]} colorScheme={0}/>
