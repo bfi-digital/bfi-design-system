@@ -3,13 +3,25 @@ import styled from "styled-components"
 import theme from "../_theme"
 import { LinkSwitch as Link } from "../LinkSwitch"
 import { Headline } from "../Headline"
-import arrow from "./arrow-right.svg"
+import Arrow from "./arrow-right.jsx"
 
 const colorSchemes = [
     {
+        background: theme.lightPink,
+        shadow: theme.darkPink,
+        text: theme.darkPink,
+        focus: theme.dustyPink
+    },
+    {
         background: theme.lightGreen,
-        shadow: theme.darkGreen,
+        shadow: theme.racerGreen,
         text: theme.racerGreen,
+        focus: theme.dustyPink
+    },
+    {
+        background: theme.lightBlue,
+        shadow: theme.deepNavy,
+        text: theme.deepNavy,
         focus: theme.dustyPink
     }
 ]
@@ -31,7 +43,7 @@ const Outer = styled.li`
         margin-bottom: 20px;
     }
     &:hover, &:focus-within {
-        a img{
+        a svg{
             transform: translateX(5px)
         }
     }
@@ -69,9 +81,13 @@ const CallToAction = styled(Link)`
     }
 `
 
-const Icon = styled.img`
-    margin-left: 10px;
-    transition: transform 0.2s ease-out;
+const Icon = styled.div`
+    display: inline-block;
+    vertical-align: middle;    
+    svg {
+        margin-left: 10px;
+        transition: transform 0.2s ease-out;
+    }
 `
 
 export const PageLink = ({
@@ -87,7 +103,7 @@ export const PageLink = ({
         <Description colorScheme={colorScheme}>{description}</Description>
         <CallToAction external={external} to={url} colorScheme={colorScheme}>
             {callToAction}
-            <Icon src={arrow} alt=""/>
+            <Icon><Arrow colourFill={colorSchemes[colorScheme].text} /></Icon>
         </CallToAction>
     </Outer>
 

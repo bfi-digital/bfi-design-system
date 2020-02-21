@@ -12,7 +12,7 @@ export const ThreeLinks = () =>
     <PageLinks links={three} colorScheme={0}/>
 
 export const FourLinks = () =>
-    <PageLinks links={four} colorScheme={0}/>
+    <PageLinks links={four} colorScheme={2}/>
 
 export const EightLinks = () =>
     <PageLinks links={[
