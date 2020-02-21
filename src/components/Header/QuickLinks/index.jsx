@@ -11,13 +11,13 @@ const Wrapper = styled.div`
     width: 100%;
 `
 const QuickLink = styled(Link)`
-    background: ${props => props.isSticky ? theme.white : "transparent"};
+    background: ${props => props.isTransparent ? (props.isSticky ? theme.white : "transparent") : theme.white};
     color: ${props => props.isTransparent ? (!props.isSticky ? theme.white : theme.darkPink) : theme.darkPink};
     font-weight: 700;
     text-decoration: none;
     padding: 21px 15px;
     transition: background 0.1s ease-out;
-    transition-delay: ${props => props.isSticky ? "1s" : "0.1s"};
+    transition-delay: ${props => props.isSticky ? "0s" : "0.1s"};
 `
 
 const Positioner = styled.div`

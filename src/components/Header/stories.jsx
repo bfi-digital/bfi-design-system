@@ -22,7 +22,7 @@ export const transparentBackground = () =>
 
 export const withOverflowingContent = () =>
     <>
-        <Header navItems={navItems} overlay={true}/>
+        <Header navItems={navItems} overlay={false}/>
         <div style={{
             height: "200vh",
             width: "100%",
