@@ -108,38 +108,76 @@ exports[`Storyshots All Components/Breadcrumbs Wrapping 1`] = `
 </ol>
 `;
 
+exports[`Storyshots All Components/Button Primary 1`] = `
+<div
+  style={
+    Object {
+      "padding": "20px",
+    }
+  }
+>
+  <a
+    className="sc-bZQynM bNuRdl"
+    colorScheme={0}
+    href="/#"
+    onClick={[Function]}
+  >
+    Click me
+  </a>
+</div>
+`;
+
+exports[`Storyshots All Components/Button Secondary 1`] = `
+<div
+  style={
+    Object {
+      "padding": "20px",
+    }
+  }
+>
+  <a
+    className="sc-gzVnrw giGuYD"
+    colorScheme={0}
+    href="/#"
+    onClick={[Function]}
+  >
+    Click me
+  </a>
+</div>
+`;
+
 exports[`Storyshots All Components/Divider Normal 1`] = `
 <hr
-  className="sc-bZQynM hsboVq"
+  className="sc-htoDjs hAjIAk"
 />
 `;
 
 exports[`Storyshots All Components/Footer Normal 1`] = `
 <footer
-  className="sc-gzVnrw cwMYVi"
+  className="sc-dnqmqq kVNAGq"
 >
   <div
-    className="sc-htoDjs iblJTF"
+    className="sc-iwsKbI iZPEoN"
   >
     <section
-      className="sc-iwsKbI FYnkY"
+      className="sc-gqjmRU jZSsCi"
     >
       <img
         alt="British Film Institute. Film Forever."
-        className="sc-dnqmqq fcmNkl"
+        className="sc-gZMcBi kikhDD"
         src="test-file-stub"
       />
       <nav
-        className="sc-gqjmRU lcYDQW"
+        className="sc-jTzLTM jwEjTs"
       >
         <h4
-          className="sc-VigVT jjueOz"
+          className="sc-fjdhpX lZPxJ"
         >
           Business
         </h4>
         <a
           aria-current="page"
-          className="sc-fjdhpX iUMHRO"
+          className="sc-cSHVUG lbaKwf"
           href="/"
           onClick={[Function]}
         >
@@ -147,7 +185,7 @@ exports[`Storyshots All Components/Footer Normal 1`] = `
         </a>
         <a
           aria-current="page"
-          className="sc-fjdhpX iUMHRO"
+          className="sc-cSHVUG lbaKwf"
           href="/"
           onClick={[Function]}
         >
@@ -155,7 +193,7 @@ exports[`Storyshots All Components/Footer Normal 1`] = `
         </a>
         <a
           aria-current="page"
-          className="sc-fjdhpX iUMHRO"
+          className="sc-cSHVUG lbaKwf"
           href="/"
           onClick={[Function]}
         >
@@ -163,7 +201,7 @@ exports[`Storyshots All Components/Footer Normal 1`] = `
         </a>
         <a
           aria-current="page"
-          className="sc-fjdhpX iUMHRO"
+          className="sc-cSHVUG lbaKwf"
           href="/"
           onClick={[Function]}
         >
@@ -171,16 +209,16 @@ exports[`Storyshots All Components/Footer Normal 1`] = `
         </a>
       </nav>
       <nav
-        className="sc-gqjmRU lcYDQW"
+        className="sc-jTzLTM jwEjTs"
       >
         <h4
-          className="sc-VigVT jjueOz"
+          className="sc-fjdhpX lZPxJ"
         >
           About the BFI
         </h4>
         <a
           aria-current="page"
-          className="sc-fjdhpX iUMHRO"
+          className="sc-cSHVUG lbaKwf"
           href="/"
           onClick={[Function]}
         >
@@ -188,7 +226,7 @@ exports[`Storyshots All Components/Footer Normal 1`] = `
         </a>
         <a
           aria-current="page"
-          className="sc-fjdhpX iUMHRO"
+          className="sc-cSHVUG lbaKwf"
           href="/"
           onClick={[Function]}
         >
@@ -196,7 +234,7 @@ exports[`Storyshots All Components/Footer Normal 1`] = `
         </a>
         <a
           aria-current="page"
-          className="sc-fjdhpX iUMHRO"
+          className="sc-cSHVUG lbaKwf"
           href="/"
           onClick={[Function]}
         >
@@ -204,7 +242,7 @@ exports[`Storyshots All Components/Footer Normal 1`] = `
         </a>
         <a
           aria-current="page"
-          className="sc-fjdhpX iUMHRO"
+          className="sc-cSHVUG lbaKwf"
           href="/"
           onClick={[Function]}
         >
@@ -212,7 +250,7 @@ exports[`Storyshots All Components/Footer Normal 1`] = `
         </a>
         <a
           aria-current="page"
-          className="sc-fjdhpX iUMHRO"
+          className="sc-cSHVUG lbaKwf"
           href="/"
           onClick={[Function]}
         >
@@ -220,61 +258,61 @@ exports[`Storyshots All Components/Footer Normal 1`] = `
         </a>
       </nav>
       <nav
-        className="sc-gqjmRU lcYDQW"
+        className="sc-jTzLTM jwEjTs"
       >
         <h4
-          className="sc-VigVT jjueOz"
+          className="sc-fjdhpX lZPxJ"
         >
           Keep in touch
         </h4>
         <a
           aria-current="page"
-          className="sc-fjdhpX iUMHRO"
+          className="sc-cSHVUG lbaKwf"
           href="/"
           onClick={[Function]}
         >
           Contact us
         </a>
         <a
-          className="sc-jzJRlG iXaVhE"
+          className="sc-kAzzGY dBmtLY"
           href="#"
         >
           <img
             alt=""
-            className="sc-cSHVUG gZcENC"
+            className="sc-chPdSV bSAUnu"
             src="test-file-stub"
           />
           Facebook
         </a>
         <a
-          className="sc-jzJRlG iXaVhE"
+          className="sc-kAzzGY dBmtLY"
           href="#"
         >
           <img
             alt=""
-            className="sc-cSHVUG gZcENC"
+            className="sc-chPdSV bSAUnu"
             src="test-file-stub"
           />
           Twitter
         </a>
         <a
-          className="sc-jzJRlG iXaVhE"
+          className="sc-kAzzGY dBmtLY"
           href="#"
         >
           <img
             alt=""
-            className="sc-cSHVUG gZcENC"
+            className="sc-chPdSV bSAUnu"
             src="test-file-stub"
           />
           YouTube
         </a>
         <a
-          className="sc-jzJRlG iXaVhE"
+          className="sc-kAzzGY dBmtLY"
           href="#"
         >
           <img
             alt=""
-            className="sc-cSHVUG gZcENC"
+            className="sc-chPdSV bSAUnu"
             src="test-file-stub"
           />
           Instagram
@@ -282,14 +320,14 @@ exports[`Storyshots All Components/Footer Normal 1`] = `
       </nav>
     </section>
     <section
-      className="sc-gZMcBi gnVDDW"
+      className="sc-VigVT hUbEDI"
     >
       <img
         alt="The BFI recieves National Lottery funding"
         src="test-file-stub"
       />
       <p
-        className="sc-jTzLTM eCMmlJ"
+        className="sc-jzJRlG enxKql"
       >
         ©2020 British Film Institute. All rights reserved. Registered charity 287780
       </p>
@@ -301,16 +339,16 @@ exports[`Storyshots All Components/Footer Normal 1`] = `
 exports[`Storyshots All Components/Header Opaque Background 1`] = `
 Array [
   <div
-    className="sc-kgoBCf hJlZUq"
+    className="sc-kpOJdX gzdIB"
   >
     <div
-      className="sc-kGXeez gZzxYQ"
+      className="sc-dxgOiQ jNKqYJ"
     >
       <ul
-        className="sc-kpOJdX cWODpJ"
+        className="sc-ckVGcZ bPSmhm"
       >
         <li
-          className="sc-dxgOiQ EbLR"
+          className="sc-jKJlTe XBSLx"
         >
           <a
             href="https://whatson.bfi.org.uk/Online/"
@@ -321,7 +359,7 @@ Array [
           </a>
         </li>
         <li
-          className="sc-dxgOiQ EbLR"
+          className="sc-jKJlTe XBSLx"
         >
           <a
             href="https://player.bfi.org.uk/"
@@ -332,7 +370,7 @@ Array [
           </a>
         </li>
         <li
-          className="sc-dxgOiQ EbLR"
+          className="sc-jKJlTe XBSLx"
         >
           <a
             href="/"
@@ -345,38 +383,38 @@ Array [
     </div>
   </div>,
   <header
-    className="sc-jlyJG jfAQre"
+    className="sc-csuQGl cPdbOL"
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
   >
     <div
-      className="sc-gipzik usITF"
+      className="sc-Rmtcm jWoRCr"
     >
       <a
         aria-current="page"
-        className="sc-csuQGl gGRcVa"
+        className="sc-bRBYWo krZptX"
         href="/"
         onClick={[Function]}
       >
         <img
           alt="British Film Institute"
-          className="sc-Rmtcm ewaapn"
+          className="sc-hzDkRC ggbliJ"
           src="test-file-stub"
         />
       </a>
       <nav
-        className="sc-cvbbAY eNxvkE"
+        className="sc-brqgnP hHtDLE"
       >
         <ul
-          className="sc-jWBwVP BZrWt"
+          className="sc-cMljjf dDVhTj"
         >
           <li
-            className="sc-brqgnP RaqGA"
+            className="sc-jAaTju hZQRgl"
           >
             <a
               active={true}
               aria-haspopup="true"
-              className="sc-cMljjf lmniap"
+              className="sc-jDwBTQ hqNJYM"
               hovered={false}
               href="/#"
               isWhite={false}
@@ -388,11 +426,11 @@ Array [
             </a>
           </li>
           <li
-            className="sc-brqgnP RaqGA"
+            className="sc-jAaTju hZQRgl"
           >
             <a
               aria-haspopup="true"
-              className="sc-cMljjf lcWZwU"
+              className="sc-jDwBTQ djVIeW"
               hovered={false}
               href="/#"
               isWhite={false}
@@ -404,11 +442,11 @@ Array [
             </a>
           </li>
           <li
-            className="sc-brqgnP RaqGA"
+            className="sc-jAaTju hZQRgl"
           >
             <a
               aria-haspopup="true"
-              className="sc-cMljjf lcWZwU"
+              className="sc-jDwBTQ djVIeW"
               hovered={false}
               href="/#"
               isWhite={false}
@@ -424,23 +462,23 @@ Array [
       <button
         aria-controls="menu-panel"
         aria-expanded="false"
-        className="sc-eHgmQL ggoZon"
+        className="sc-jWBwVP ZQfIc"
         onClick={[Function]}
       >
         Menu
         <div
-          className="sc-hSdWYo cqYJMH"
+          className="sc-cvbbAY bzjrEM"
           open={false}
         >
           <div />
         </div>
       </button>
       <button
-        className="sc-kAzzGY ixYvFQ"
+        className="sc-kgoBCf lkctXv"
       >
         <img
           alt=""
-          className="sc-chPdSV kfLyyH"
+          className="sc-kGXeez bRTIXE"
           src="test-file-stub"
         />
         Search
@@ -453,16 +491,16 @@ Array [
 exports[`Storyshots All Components/Header Transparent Background 1`] = `
 Array [
   <div
-    className="sc-kgoBCf hJlZUq"
+    className="sc-kpOJdX gzdIB"
   >
     <div
-      className="sc-kGXeez gZzxYQ"
+      className="sc-dxgOiQ jNKqYJ"
     >
       <ul
-        className="sc-kpOJdX cWODpJ"
+        className="sc-ckVGcZ bPSmhm"
       >
         <li
-          className="sc-dxgOiQ EbLR"
+          className="sc-jKJlTe XBSLx"
         >
           <a
             href="https://whatson.bfi.org.uk/Online/"
@@ -473,7 +511,7 @@ Array [
           </a>
         </li>
         <li
-          className="sc-dxgOiQ EbLR"
+          className="sc-jKJlTe XBSLx"
         >
           <a
             href="https://player.bfi.org.uk/"
@@ -484,7 +522,7 @@ Array [
           </a>
         </li>
         <li
-          className="sc-dxgOiQ EbLR"
+          className="sc-jKJlTe XBSLx"
         >
           <a
             href="/"
@@ -497,38 +535,38 @@ Array [
     </div>
   </div>,
   <header
-    className="sc-jlyJG eHehst"
+    className="sc-csuQGl hbsGTQ"
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
   >
     <div
-      className="sc-gipzik usITF"
+      className="sc-Rmtcm jWoRCr"
     >
       <a
         aria-current="page"
-        className="sc-csuQGl gGRcVa"
+        className="sc-bRBYWo krZptX"
         href="/"
         onClick={[Function]}
       >
         <img
           alt="British Film Institute"
-          className="sc-Rmtcm ewaapn"
+          className="sc-hzDkRC ggbliJ"
           src="test-file-stub"
         />
       </a>
       <nav
-        className="sc-cvbbAY eNxvkE"
+        className="sc-brqgnP hHtDLE"
       >
         <ul
-          className="sc-jWBwVP BZrWt"
+          className="sc-cMljjf dDVhTj"
         >
           <li
-            className="sc-brqgnP RaqGA"
+            className="sc-jAaTju hZQRgl"
           >
             <a
               active={true}
               aria-haspopup="true"
-              className="sc-cMljjf gebQJH"
+              className="sc-jDwBTQ edqzqS"
               hovered={false}
               href="/#"
               isWhite={true}
@@ -540,11 +578,11 @@ Array [
             </a>
           </li>
           <li
-            className="sc-brqgnP RaqGA"
+            className="sc-jAaTju hZQRgl"
           >
             <a
               aria-haspopup="true"
-              className="sc-cMljjf dPhPmR"
+              className="sc-jDwBTQ eeUude"
               hovered={false}
               href="/#"
               isWhite={true}
@@ -556,11 +594,11 @@ Array [
             </a>
           </li>
           <li
-            className="sc-brqgnP RaqGA"
+            className="sc-jAaTju hZQRgl"
           >
             <a
               aria-haspopup="true"
-              className="sc-cMljjf dPhPmR"
+              className="sc-jDwBTQ eeUude"
               hovered={false}
               href="/#"
               isWhite={true}
@@ -576,23 +614,23 @@ Array [
       <button
         aria-controls="menu-panel"
         aria-expanded="false"
-        className="sc-eHgmQL ggoZon"
+        className="sc-jWBwVP ZQfIc"
         onClick={[Function]}
       >
         Menu
         <div
-          className="sc-hSdWYo cqYJMH"
+          className="sc-cvbbAY bzjrEM"
           open={false}
         >
           <div />
         </div>
       </button>
       <button
-        className="sc-kAzzGY gozaGK"
+        className="sc-kgoBCf hiPjLY"
       >
         <img
           alt=""
-          className="sc-chPdSV kfLyyH"
+          className="sc-kGXeez bRTIXE"
           src="test-file-stub"
         />
         Search
@@ -605,16 +643,16 @@ Array [
 exports[`Storyshots All Components/Header With Overflowing Content 1`] = `
 Array [
   <div
-    className="sc-kgoBCf hJlZUq"
+    className="sc-kpOJdX gzdIB"
   >
     <div
-      className="sc-kGXeez gZzxYQ"
+      className="sc-dxgOiQ jNKqYJ"
     >
       <ul
-        className="sc-kpOJdX cWODpJ"
+        className="sc-ckVGcZ bPSmhm"
       >
         <li
-          className="sc-dxgOiQ EbLR"
+          className="sc-jKJlTe XBSLx"
         >
           <a
             href="https://whatson.bfi.org.uk/Online/"
@@ -625,7 +663,7 @@ Array [
           </a>
         </li>
         <li
-          className="sc-dxgOiQ EbLR"
+          className="sc-jKJlTe XBSLx"
         >
           <a
             href="https://player.bfi.org.uk/"
@@ -636,7 +674,7 @@ Array [
           </a>
         </li>
         <li
-          className="sc-dxgOiQ EbLR"
+          className="sc-jKJlTe XBSLx"
         >
           <a
             href="/"
@@ -649,38 +687,38 @@ Array [
     </div>
   </div>,
   <header
-    className="sc-jlyJG jfAQre"
+    className="sc-csuQGl cPdbOL"
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
   >
     <div
-      className="sc-gipzik usITF"
+      className="sc-Rmtcm jWoRCr"
     >
       <a
         aria-current="page"
-        className="sc-csuQGl gGRcVa"
+        className="sc-bRBYWo krZptX"
         href="/"
         onClick={[Function]}
       >
         <img
           alt="British Film Institute"
-          className="sc-Rmtcm ewaapn"
+          className="sc-hzDkRC ggbliJ"
           src="test-file-stub"
         />
       </a>
       <nav
-        className="sc-cvbbAY eNxvkE"
+        className="sc-brqgnP hHtDLE"
       >
         <ul
-          className="sc-jWBwVP BZrWt"
+          className="sc-cMljjf dDVhTj"
         >
           <li
-            className="sc-brqgnP RaqGA"
+            className="sc-jAaTju hZQRgl"
           >
             <a
               active={true}
               aria-haspopup="true"
-              className="sc-cMljjf lmniap"
+              className="sc-jDwBTQ hqNJYM"
               hovered={false}
               href="/#"
               isWhite={false}
@@ -692,11 +730,11 @@ Array [
             </a>
           </li>
           <li
-            className="sc-brqgnP RaqGA"
+            className="sc-jAaTju hZQRgl"
           >
             <a
               aria-haspopup="true"
-              className="sc-cMljjf lcWZwU"
+              className="sc-jDwBTQ djVIeW"
               hovered={false}
               href="/#"
               isWhite={false}
@@ -708,11 +746,11 @@ Array [
             </a>
           </li>
           <li
-            className="sc-brqgnP RaqGA"
+            className="sc-jAaTju hZQRgl"
           >
             <a
               aria-haspopup="true"
-              className="sc-cMljjf lcWZwU"
+              className="sc-jDwBTQ djVIeW"
               hovered={false}
               href="/#"
               isWhite={false}
@@ -728,23 +766,23 @@ Array [
       <button
         aria-controls="menu-panel"
         aria-expanded="false"
-        className="sc-eHgmQL ggoZon"
+        className="sc-jWBwVP ZQfIc"
         onClick={[Function]}
       >
         Menu
         <div
-          className="sc-hSdWYo cqYJMH"
+          className="sc-cvbbAY bzjrEM"
           open={false}
         >
           <div />
         </div>
       </button>
       <button
-        className="sc-kAzzGY ixYvFQ"
+        className="sc-kgoBCf lkctXv"
       >
         <img
           alt=""
-          className="sc-chPdSV kfLyyH"
+          className="sc-kGXeez bRTIXE"
           src="test-file-stub"
         />
         Search
@@ -765,7 +803,7 @@ Array [
 
 exports[`Storyshots All Components/Headline Level 1 1`] = `
 <h1
-  className="sc-bRBYWo iugclN"
+  className="sc-jhAzac ecXjKB"
 >
   My example headline
 </h1>
@@ -773,7 +811,7 @@ exports[`Storyshots All Components/Headline Level 1 1`] = `
 
 exports[`Storyshots All Components/Headline Level 2 1`] = `
 <h2
-  className="sc-hzDkRC hMHOEw"
+  className="sc-fBuWsC exUQCz"
 >
   My example headline
 </h2>
@@ -781,7 +819,7 @@ exports[`Storyshots All Components/Headline Level 2 1`] = `
 
 exports[`Storyshots All Components/Headline Level 3 1`] = `
 <h3
-  className="sc-jhAzac brEDsH"
+  className="sc-fMiknA feuurY"
 >
   My example headline
 </h3>
@@ -789,13 +827,13 @@ exports[`Storyshots All Components/Headline Level 3 1`] = `
 
 exports[`Storyshots All Components/Hero Full Height 1`] = `
 <section
-  className="sc-fMiknA eYlUjl"
+  className="sc-eqIVtm bYGoAy"
 >
   <div
-    className="sc-dVhcbM hLMsoO"
+    className="sc-fAjcbJ jGGHpv"
   >
     <h1
-      className="sc-bRBYWo iugclN"
+      className="sc-jhAzac ecXjKB"
     >
       Watch a new film, rediscover your old favourites, and get inspired.
     </h1>
@@ -805,13 +843,13 @@ exports[`Storyshots All Components/Hero Full Height 1`] = `
 
 exports[`Storyshots All Components/Hero Normal 1`] = `
 <section
-  className="sc-fMiknA eZRQPK"
+  className="sc-eqIVtm lmJjqG"
 >
   <div
-    className="sc-dVhcbM hLMsoO"
+    className="sc-fAjcbJ jGGHpv"
   >
     <h1
-      className="sc-bRBYWo iugclN"
+      className="sc-jhAzac ecXjKB"
     >
       Watch a new film, rediscover your old favourites, and get inspired.
     </h1>
@@ -822,16 +860,16 @@ exports[`Storyshots All Components/Hero Normal 1`] = `
 exports[`Storyshots All Components/Hero With Header 1`] = `
 Array [
   <div
-    className="sc-kgoBCf hJlZUq"
+    className="sc-kpOJdX gzdIB"
   >
     <div
-      className="sc-kGXeez gZzxYQ"
+      className="sc-dxgOiQ jNKqYJ"
     >
       <ul
-        className="sc-kpOJdX cWODpJ"
+        className="sc-ckVGcZ bPSmhm"
       >
         <li
-          className="sc-dxgOiQ EbLR"
+          className="sc-jKJlTe XBSLx"
         >
           <a
             href="https://whatson.bfi.org.uk/Online/"
@@ -842,7 +880,7 @@ Array [
           </a>
         </li>
         <li
-          className="sc-dxgOiQ EbLR"
+          className="sc-jKJlTe XBSLx"
         >
           <a
             href="https://player.bfi.org.uk/"
@@ -853,7 +891,7 @@ Array [
           </a>
         </li>
         <li
-          className="sc-dxgOiQ EbLR"
+          className="sc-jKJlTe XBSLx"
         >
           <a
             href="/"
@@ -866,38 +904,38 @@ Array [
     </div>
   </div>,
   <header
-    className="sc-jlyJG eHehst"
+    className="sc-csuQGl hbsGTQ"
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
   >
     <div
-      className="sc-gipzik usITF"
+      className="sc-Rmtcm jWoRCr"
     >
       <a
         aria-current="page"
-        className="sc-csuQGl gGRcVa"
+        className="sc-bRBYWo krZptX"
         href="/"
         onClick={[Function]}
       >
         <img
           alt="British Film Institute"
-          className="sc-Rmtcm ewaapn"
+          className="sc-hzDkRC ggbliJ"
           src="test-file-stub"
         />
       </a>
       <nav
-        className="sc-cvbbAY eNxvkE"
+        className="sc-brqgnP hHtDLE"
       >
         <ul
-          className="sc-jWBwVP BZrWt"
+          className="sc-cMljjf dDVhTj"
         >
           <li
-            className="sc-brqgnP RaqGA"
+            className="sc-jAaTju hZQRgl"
           >
             <a
               active={true}
               aria-haspopup="true"
-              className="sc-cMljjf gebQJH"
+              className="sc-jDwBTQ edqzqS"
               hovered={false}
               href="/#"
               isWhite={true}
@@ -909,11 +947,11 @@ Array [
             </a>
           </li>
           <li
-            className="sc-brqgnP RaqGA"
+            className="sc-jAaTju hZQRgl"
           >
             <a
               aria-haspopup="true"
-              className="sc-cMljjf dPhPmR"
+              className="sc-jDwBTQ eeUude"
               hovered={false}
               href="/#"
               isWhite={true}
@@ -925,11 +963,11 @@ Array [
             </a>
           </li>
           <li
-            className="sc-brqgnP RaqGA"
+            className="sc-jAaTju hZQRgl"
           >
             <a
               aria-haspopup="true"
-              className="sc-cMljjf dPhPmR"
+              className="sc-jDwBTQ eeUude"
               hovered={false}
               href="/#"
               isWhite={true}
@@ -945,23 +983,23 @@ Array [
       <button
         aria-controls="menu-panel"
         aria-expanded="false"
-        className="sc-eHgmQL ggoZon"
+        className="sc-jWBwVP ZQfIc"
         onClick={[Function]}
       >
         Menu
         <div
-          className="sc-hSdWYo cqYJMH"
+          className="sc-cvbbAY bzjrEM"
           open={false}
         >
           <div />
         </div>
       </button>
       <button
-        className="sc-kAzzGY gozaGK"
+        className="sc-kgoBCf hiPjLY"
       >
         <img
           alt=""
-          className="sc-chPdSV kfLyyH"
+          className="sc-kGXeez bRTIXE"
           src="test-file-stub"
         />
         Search
@@ -969,13 +1007,13 @@ Array [
     </div>
   </header>,
   <section
-    className="sc-fMiknA eZRQPK"
+    className="sc-eqIVtm lmJjqG"
   >
     <div
-      className="sc-dVhcbM hLMsoO"
+      className="sc-fAjcbJ jGGHpv"
     >
       <h1
-        className="sc-bRBYWo iugclN"
+        className="sc-jhAzac ecXjKB"
       >
         Watch a new film, rediscover your old favourites, and get inspired.
       </h1>
@@ -993,21 +1031,21 @@ exports[`Storyshots All Components/ImageSide Left And Big 1`] = `
   }
 >
   <figure
-    className="sc-eqIVtm jpEnVM"
+    className="sc-caSCKo hTRZGr"
   >
     <img
       alt="Alt text"
-      className="sc-fAjcbJ gvEaeT"
+      className="sc-gisBJw hoxvQY"
       src="http://placehold.it/600x400"
     />
     <figcaption
-      className="sc-caSCKo cqSbcj"
+      className="sc-kjoXOD kFqpif"
     >
       Example image caption
     </figcaption>
   </figure>
   <article
-    className="sc-gisBJw jOGIeX"
+    className="sc-cHGsZl cyWGHI"
   >
     
 
@@ -1097,21 +1135,21 @@ exports[`Storyshots All Components/ImageSide Right And Small 1`] = `
   }
 >
   <figure
-    className="sc-eqIVtm gFcgtF"
+    className="sc-caSCKo dlHyPX"
   >
     <img
       alt="Alt text"
-      className="sc-fAjcbJ gvEaeT"
+      className="sc-gisBJw hoxvQY"
       src="http://placehold.it/200x200"
     />
     <figcaption
-      className="sc-caSCKo cqSbcj"
+      className="sc-kjoXOD kFqpif"
     >
       Example image caption
     </figcaption>
   </figure>
   <article
-    className="sc-gisBJw jOGIeX"
+    className="sc-cHGsZl cyWGHI"
   >
     
 
@@ -1203,44 +1241,44 @@ exports[`Storyshots All Components/Images Normal 1`] = `
   }
 >
   <figure
-    className="sc-kjoXOD joHcEv"
+    className="sc-TOsTZ enDTPW"
   >
     <div
-      className="sc-TOsTZ gOvYoc"
+      className="sc-cJSrbW kkuAeV"
     >
       <button
-        className="sc-kgAjT gcTZVI"
+        className="sc-ksYbfQ iKfaOh"
         onClick={[Function]}
       >
         <img
           alt="Example image"
-          className="sc-cJSrbW ibWVxz"
+          className="sc-hmzhuo fGLWnE"
           src="http://placehold.it/300x200"
         />
       </button>
       <button
-        className="sc-kgAjT gcTZVI"
+        className="sc-ksYbfQ iKfaOh"
         onClick={[Function]}
       >
         <img
           alt="Example image 2"
-          className="sc-cJSrbW ibWVxz"
+          className="sc-hmzhuo fGLWnE"
           src="http://placehold.it/200x300"
         />
       </button>
       <button
-        className="sc-kgAjT gcTZVI"
+        className="sc-ksYbfQ iKfaOh"
         onClick={[Function]}
       >
         <img
           alt="Example image 3"
-          className="sc-cJSrbW ibWVxz"
+          className="sc-hmzhuo fGLWnE"
           src="http://placehold.it/600x400"
         />
       </button>
     </div>
     <figcaption
-      className="sc-cHGsZl cKPWTw"
+      className="sc-kgAjT iaYcpi"
     >
       A gallery of three images
     </figcaption>
@@ -1259,29 +1297,29 @@ exports[`Storyshots All Components/Images Not Clickable 1`] = `
   }
 >
   <figure
-    className="sc-kjoXOD joHcEv"
+    className="sc-TOsTZ enDTPW"
   >
     <div
-      className="sc-TOsTZ gOvYoc"
+      className="sc-cJSrbW kkuAeV"
     >
       <img
         alt="Example image"
-        className="sc-cJSrbW cACPiC"
+        className="sc-hmzhuo lekZfZ"
         src="http://placehold.it/300x200"
       />
       <img
         alt="Example image 2"
-        className="sc-cJSrbW cACPiC"
+        className="sc-hmzhuo lekZfZ"
         src="http://placehold.it/200x300"
       />
       <img
         alt="Example image 3"
-        className="sc-cJSrbW cACPiC"
+        className="sc-hmzhuo lekZfZ"
         src="http://placehold.it/600x400"
       />
     </div>
     <figcaption
-      className="sc-cHGsZl cKPWTw"
+      className="sc-kgAjT iaYcpi"
     >
       A gallery of three images
     </figcaption>
@@ -1300,24 +1338,24 @@ exports[`Storyshots All Components/Images Only One 1`] = `
   }
 >
   <figure
-    className="sc-kjoXOD joHcEv"
+    className="sc-TOsTZ enDTPW"
   >
     <div
-      className="sc-TOsTZ EardK"
+      className="sc-cJSrbW eHcDyA"
     >
       <button
-        className="sc-kgAjT gcTZVI"
+        className="sc-ksYbfQ iKfaOh"
         onClick={[Function]}
       >
         <img
           alt="Example image"
-          className="sc-cJSrbW ibWVxz"
+          className="sc-hmzhuo fGLWnE"
           src="http://placehold.it/300x200"
         />
       </button>
     </div>
     <figcaption
-      className="sc-cHGsZl cKPWTw"
+      className="sc-kgAjT iaYcpi"
     >
       A single full-width image
     </figcaption>
@@ -1334,7 +1372,7 @@ exports[`Storyshots All Components/Lead paragraph Normal 1`] = `
   }
 >
   <article
-    className="sc-hmzhuo doLthV"
+    className="sc-kvZOFW icNtCo"
   >
     We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough, they won't want it anymore! We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough, they won't want it anymore!
   </article>
@@ -1344,16 +1382,16 @@ exports[`Storyshots All Components/Lead paragraph Normal 1`] = `
 exports[`Storyshots All Components/Page Normal 1`] = `
 Array [
   <div
-    className="sc-kgoBCf hJlZUq"
+    className="sc-kpOJdX gzdIB"
   >
     <div
-      className="sc-kGXeez gZzxYQ"
+      className="sc-dxgOiQ jNKqYJ"
     >
       <ul
-        className="sc-kpOJdX cWODpJ"
+        className="sc-ckVGcZ bPSmhm"
       >
         <li
-          className="sc-dxgOiQ EbLR"
+          className="sc-jKJlTe XBSLx"
         >
           <a
             href="https://whatson.bfi.org.uk/Online/"
@@ -1364,7 +1402,7 @@ Array [
           </a>
         </li>
         <li
-          className="sc-dxgOiQ EbLR"
+          className="sc-jKJlTe XBSLx"
         >
           <a
             href="https://player.bfi.org.uk/"
@@ -1375,7 +1413,7 @@ Array [
           </a>
         </li>
         <li
-          className="sc-dxgOiQ EbLR"
+          className="sc-jKJlTe XBSLx"
         >
           <a
             href="/"
@@ -1388,38 +1426,38 @@ Array [
     </div>
   </div>,
   <header
-    className="sc-jlyJG jfAQre"
+    className="sc-csuQGl cPdbOL"
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
   >
     <div
-      className="sc-gipzik usITF"
+      className="sc-Rmtcm jWoRCr"
     >
       <a
         aria-current="page"
-        className="sc-csuQGl gGRcVa"
+        className="sc-bRBYWo krZptX"
         href="/"
         onClick={[Function]}
       >
         <img
           alt="British Film Institute"
-          className="sc-Rmtcm ewaapn"
+          className="sc-hzDkRC ggbliJ"
           src="test-file-stub"
         />
       </a>
       <nav
-        className="sc-cvbbAY eNxvkE"
+        className="sc-brqgnP hHtDLE"
       >
         <ul
-          className="sc-jWBwVP BZrWt"
+          className="sc-cMljjf dDVhTj"
         >
           <li
-            className="sc-brqgnP RaqGA"
+            className="sc-jAaTju hZQRgl"
           >
             <a
               active={true}
               aria-haspopup="true"
-              className="sc-cMljjf lmniap"
+              className="sc-jDwBTQ hqNJYM"
               hovered={false}
               href="/#"
               isWhite={false}
@@ -1431,11 +1469,11 @@ Array [
             </a>
           </li>
           <li
-            className="sc-brqgnP RaqGA"
+            className="sc-jAaTju hZQRgl"
           >
             <a
               aria-haspopup="true"
-              className="sc-cMljjf lcWZwU"
+              className="sc-jDwBTQ djVIeW"
               hovered={false}
               href="/#"
               isWhite={false}
@@ -1447,11 +1485,11 @@ Array [
             </a>
           </li>
           <li
-            className="sc-brqgnP RaqGA"
+            className="sc-jAaTju hZQRgl"
           >
             <a
               aria-haspopup="true"
-              className="sc-cMljjf lcWZwU"
+              className="sc-jDwBTQ djVIeW"
               hovered={false}
               href="/#"
               isWhite={false}
@@ -1467,23 +1505,23 @@ Array [
       <button
         aria-controls="menu-panel"
         aria-expanded="false"
-        className="sc-eHgmQL ggoZon"
+        className="sc-jWBwVP ZQfIc"
         onClick={[Function]}
       >
         Menu
         <div
-          className="sc-hSdWYo cqYJMH"
+          className="sc-cvbbAY bzjrEM"
           open={false}
         >
           <div />
         </div>
       </button>
       <button
-        className="sc-kAzzGY ixYvFQ"
+        className="sc-kgoBCf lkctXv"
       >
         <img
           alt=""
-          className="sc-chPdSV kfLyyH"
+          className="sc-kGXeez bRTIXE"
           src="test-file-stub"
         />
         Search
@@ -1491,10 +1529,10 @@ Array [
     </div>
   </header>,
   <div
-    className="sc-frDJqD iVXeXw"
+    className="sc-hqyNC fityal"
   >
     <article
-      className="sc-kvZOFW lhscjl"
+      className="sc-jbKcbu fnpTtU"
     >
       <ol
         className="sc-bxivhb cpkjqV"
@@ -1528,52 +1566,52 @@ Array [
         </li>
       </ol>
       <h1
-        className="sc-bRBYWo iugclN"
+        className="sc-jhAzac ecXjKB"
       >
         Headline goes here
       </h1>
       <article
-        className="sc-hmzhuo doLthV"
+        className="sc-kvZOFW icNtCo"
       >
         God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs. Do you have any idea how long it takes those cups to decompose. Yes, Yes, without the oops! Yes, Yes, without the oops! Drive us out of here!
       </article>
       <article
-        className="sc-gisBJw jOGIeX"
+        className="sc-cHGsZl cyWGHI"
       >
         So you two dig up, dig up dinosaurs? Hey, you know how I'm, like, always trying to save the planet? Here's my chance. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.
       </article>
     </article>
     <aside
-      className="sc-hqyNC gqywGK"
+      className="sc-dNLxif kCADKD"
     >
       Sidebar here
     </aside>
   </div>,
   <footer
-    className="sc-gzVnrw cwMYVi"
+    className="sc-dnqmqq kVNAGq"
   >
     <div
-      className="sc-htoDjs iblJTF"
+      className="sc-iwsKbI iZPEoN"
     >
       <section
-        className="sc-iwsKbI FYnkY"
+        className="sc-gqjmRU jZSsCi"
       >
         <img
           alt="British Film Institute. Film Forever."
-          className="sc-dnqmqq fcmNkl"
+          className="sc-gZMcBi kikhDD"
           src="test-file-stub"
         />
         <nav
-          className="sc-gqjmRU lcYDQW"
+          className="sc-jTzLTM jwEjTs"
         >
           <h4
-            className="sc-VigVT jjueOz"
+            className="sc-fjdhpX lZPxJ"
           >
             Business
           </h4>
           <a
             aria-current="page"
-            className="sc-fjdhpX iUMHRO"
+            className="sc-cSHVUG lbaKwf"
             href="/"
             onClick={[Function]}
           >
@@ -1581,7 +1619,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-fjdhpX iUMHRO"
+            className="sc-cSHVUG lbaKwf"
             href="/"
             onClick={[Function]}
           >
@@ -1589,7 +1627,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-fjdhpX iUMHRO"
+            className="sc-cSHVUG lbaKwf"
             href="/"
             onClick={[Function]}
           >
@@ -1597,7 +1635,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-fjdhpX iUMHRO"
+            className="sc-cSHVUG lbaKwf"
             href="/"
             onClick={[Function]}
           >
@@ -1605,16 +1643,16 @@ Array [
           </a>
         </nav>
         <nav
-          className="sc-gqjmRU lcYDQW"
+          className="sc-jTzLTM jwEjTs"
         >
           <h4
-            className="sc-VigVT jjueOz"
+            className="sc-fjdhpX lZPxJ"
           >
             About the BFI
           </h4>
           <a
             aria-current="page"
-            className="sc-fjdhpX iUMHRO"
+            className="sc-cSHVUG lbaKwf"
             href="/"
             onClick={[Function]}
           >
@@ -1622,7 +1660,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-fjdhpX iUMHRO"
+            className="sc-cSHVUG lbaKwf"
             href="/"
             onClick={[Function]}
           >
@@ -1630,7 +1668,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-fjdhpX iUMHRO"
+            className="sc-cSHVUG lbaKwf"
             href="/"
             onClick={[Function]}
           >
@@ -1638,7 +1676,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-fjdhpX iUMHRO"
+            className="sc-cSHVUG lbaKwf"
             href="/"
             onClick={[Function]}
           >
@@ -1646,7 +1684,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-fjdhpX iUMHRO"
+            className="sc-cSHVUG lbaKwf"
             href="/"
             onClick={[Function]}
           >
@@ -1654,61 +1692,61 @@ Array [
           </a>
         </nav>
         <nav
-          className="sc-gqjmRU lcYDQW"
+          className="sc-jTzLTM jwEjTs"
         >
           <h4
-            className="sc-VigVT jjueOz"
+            className="sc-fjdhpX lZPxJ"
           >
             Keep in touch
           </h4>
           <a
             aria-current="page"
-            className="sc-fjdhpX iUMHRO"
+            className="sc-cSHVUG lbaKwf"
             href="/"
             onClick={[Function]}
           >
             Contact us
           </a>
           <a
-            className="sc-jzJRlG iXaVhE"
+            className="sc-kAzzGY dBmtLY"
             href="#"
           >
             <img
               alt=""
-              className="sc-cSHVUG gZcENC"
+              className="sc-chPdSV bSAUnu"
               src="test-file-stub"
             />
             Facebook
           </a>
           <a
-            className="sc-jzJRlG iXaVhE"
+            className="sc-kAzzGY dBmtLY"
             href="#"
           >
             <img
               alt=""
-              className="sc-cSHVUG gZcENC"
+              className="sc-chPdSV bSAUnu"
               src="test-file-stub"
             />
             Twitter
           </a>
           <a
-            className="sc-jzJRlG iXaVhE"
+            className="sc-kAzzGY dBmtLY"
             href="#"
           >
             <img
               alt=""
-              className="sc-cSHVUG gZcENC"
+              className="sc-chPdSV bSAUnu"
               src="test-file-stub"
             />
             YouTube
           </a>
           <a
-            className="sc-jzJRlG iXaVhE"
+            className="sc-kAzzGY dBmtLY"
             href="#"
           >
             <img
               alt=""
-              className="sc-cSHVUG gZcENC"
+              className="sc-chPdSV bSAUnu"
               src="test-file-stub"
             />
             Instagram
@@ -1716,14 +1754,14 @@ Array [
         </nav>
       </section>
       <section
-        className="sc-gZMcBi gnVDDW"
+        className="sc-VigVT hUbEDI"
       >
         <img
           alt="The BFI recieves National Lottery funding"
           src="test-file-stub"
         />
         <p
-          className="sc-jTzLTM eCMmlJ"
+          className="sc-jzJRlG enxKql"
         >
           ©2020 British Film Institute. All rights reserved. Registered charity 287780
         </p>
@@ -1735,23 +1773,23 @@ Array [
 
 exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
 <ul
-  className="sc-bbmXgH czXdCO"
+  className="sc-jnlKLf hSEJjr"
 >
   <li
-    className="sc-jbKcbu cYoOwI"
+    className="sc-jqCOkK ipcLQz"
   >
     <h4
-      className="sc-fBuWsC cDejFu"
+      className="sc-dVhcbM dQVLzk"
     >
       Industry fund
     </h4>
     <p
-      className="sc-dNLxif cwbLmM"
+      className="sc-uJMKN dEIluL"
     >
       What do they got in there? King Kong? You know what? It is beets. I've crashed into a beet truck. Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.
     </p>
     <a
-      className="sc-jqCOkK ePmOJW"
+      className="sc-bbmXgH dabmKX"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
@@ -1759,26 +1797,26 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
       Apply to this fund
       <img
         alt=""
-        className="sc-uJMKN bSaDIM"
+        className="sc-gGBfsJ bZJrty"
         src="test-file-stub"
       />
     </a>
   </li>
   <li
-    className="sc-jbKcbu cYoOwI"
+    className="sc-jqCOkK ipcLQz"
   >
     <h4
-      className="sc-fBuWsC cDejFu"
+      className="sc-dVhcbM dQVLzk"
     >
       Get funding fund
     </h4>
     <p
-      className="sc-dNLxif cwbLmM"
+      className="sc-uJMKN dEIluL"
     >
       Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
     </p>
     <a
-      className="sc-jqCOkK ePmOJW"
+      className="sc-bbmXgH dabmKX"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
@@ -1786,26 +1824,26 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
       Apply to this fund
       <img
         alt=""
-        className="sc-uJMKN bSaDIM"
+        className="sc-gGBfsJ bZJrty"
         src="test-file-stub"
       />
     </a>
   </li>
   <li
-    className="sc-jbKcbu cYoOwI"
+    className="sc-jqCOkK ipcLQz"
   >
     <h4
-      className="sc-fBuWsC cDejFu"
+      className="sc-dVhcbM dQVLzk"
     >
       Get funding fund
     </h4>
     <p
-      className="sc-dNLxif cwbLmM"
+      className="sc-uJMKN dEIluL"
     >
       Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
     </p>
     <a
-      className="sc-jqCOkK ePmOJW"
+      className="sc-bbmXgH dabmKX"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
@@ -1813,26 +1851,26 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
       Apply to this fund
       <img
         alt=""
-        className="sc-uJMKN bSaDIM"
+        className="sc-gGBfsJ bZJrty"
         src="test-file-stub"
       />
     </a>
   </li>
   <li
-    className="sc-jbKcbu cYoOwI"
+    className="sc-jqCOkK ipcLQz"
   >
     <h4
-      className="sc-fBuWsC cDejFu"
+      className="sc-dVhcbM dQVLzk"
     >
       Find a fund
     </h4>
     <p
-      className="sc-dNLxif cwbLmM"
+      className="sc-uJMKN dEIluL"
     >
       Yes, Yes, without the oops! Hey, take a look at the earthlings. Goodbye!
     </p>
     <a
-      className="sc-jqCOkK ePmOJW"
+      className="sc-bbmXgH dabmKX"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
@@ -1840,26 +1878,26 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
       Apply to this fund
       <img
         alt=""
-        className="sc-uJMKN bSaDIM"
+        className="sc-gGBfsJ bZJrty"
         src="test-file-stub"
       />
     </a>
   </li>
   <li
-    className="sc-jbKcbu cYoOwI"
+    className="sc-jqCOkK ipcLQz"
   >
     <h4
-      className="sc-fBuWsC cDejFu"
+      className="sc-dVhcbM dQVLzk"
     >
       Industry fund
     </h4>
     <p
-      className="sc-dNLxif cwbLmM"
+      className="sc-uJMKN dEIluL"
     >
       What do they got in there? King Kong? You know what? It is beets. I've crashed into a beet truck. Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.
     </p>
     <a
-      className="sc-jqCOkK ePmOJW"
+      className="sc-bbmXgH dabmKX"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
@@ -1867,26 +1905,26 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
       Apply to this fund
       <img
         alt=""
-        className="sc-uJMKN bSaDIM"
+        className="sc-gGBfsJ bZJrty"
         src="test-file-stub"
       />
     </a>
   </li>
   <li
-    className="sc-jbKcbu cYoOwI"
+    className="sc-jqCOkK ipcLQz"
   >
     <h4
-      className="sc-fBuWsC cDejFu"
+      className="sc-dVhcbM dQVLzk"
     >
       Get funding fund
     </h4>
     <p
-      className="sc-dNLxif cwbLmM"
+      className="sc-uJMKN dEIluL"
     >
       Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
     </p>
     <a
-      className="sc-jqCOkK ePmOJW"
+      className="sc-bbmXgH dabmKX"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
@@ -1894,26 +1932,26 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
       Apply to this fund
       <img
         alt=""
-        className="sc-uJMKN bSaDIM"
+        className="sc-gGBfsJ bZJrty"
         src="test-file-stub"
       />
     </a>
   </li>
   <li
-    className="sc-jbKcbu cYoOwI"
+    className="sc-jqCOkK ipcLQz"
   >
     <h4
-      className="sc-fBuWsC cDejFu"
+      className="sc-dVhcbM dQVLzk"
     >
       Get funding fund
     </h4>
     <p
-      className="sc-dNLxif cwbLmM"
+      className="sc-uJMKN dEIluL"
     >
       Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
     </p>
     <a
-      className="sc-jqCOkK ePmOJW"
+      className="sc-bbmXgH dabmKX"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
@@ -1921,26 +1959,26 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
       Apply to this fund
       <img
         alt=""
-        className="sc-uJMKN bSaDIM"
+        className="sc-gGBfsJ bZJrty"
         src="test-file-stub"
       />
     </a>
   </li>
   <li
-    className="sc-jbKcbu cYoOwI"
+    className="sc-jqCOkK ipcLQz"
   >
     <h4
-      className="sc-fBuWsC cDejFu"
+      className="sc-dVhcbM dQVLzk"
     >
       Find a fund
     </h4>
     <p
-      className="sc-dNLxif cwbLmM"
+      className="sc-uJMKN dEIluL"
     >
       Yes, Yes, without the oops! Hey, take a look at the earthlings. Goodbye!
     </p>
     <a
-      className="sc-jqCOkK ePmOJW"
+      className="sc-bbmXgH dabmKX"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
@@ -1948,7 +1986,7 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
       Apply to this fund
       <img
         alt=""
-        className="sc-uJMKN bSaDIM"
+        className="sc-gGBfsJ bZJrty"
         src="test-file-stub"
       />
     </a>
@@ -1958,23 +1996,23 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
 
 exports[`Storyshots All Components/PageLinks Four Links 1`] = `
 <ul
-  className="sc-bbmXgH czXdCO"
+  className="sc-jnlKLf hSEJjr"
 >
   <li
-    className="sc-jbKcbu cYoOwI"
+    className="sc-jqCOkK ipcLQz"
   >
     <h4
-      className="sc-fBuWsC cDejFu"
+      className="sc-dVhcbM dQVLzk"
     >
       Industry fund
     </h4>
     <p
-      className="sc-dNLxif cwbLmM"
+      className="sc-uJMKN dEIluL"
     >
       What do they got in there? King Kong? You know what? It is beets. I've crashed into a beet truck. Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.
     </p>
     <a
-      className="sc-jqCOkK ePmOJW"
+      className="sc-bbmXgH dabmKX"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
@@ -1982,26 +2020,26 @@ exports[`Storyshots All Components/PageLinks Four Links 1`] = `
       Apply to this fund
       <img
         alt=""
-        className="sc-uJMKN bSaDIM"
+        className="sc-gGBfsJ bZJrty"
         src="test-file-stub"
       />
     </a>
   </li>
   <li
-    className="sc-jbKcbu cYoOwI"
+    className="sc-jqCOkK ipcLQz"
   >
     <h4
-      className="sc-fBuWsC cDejFu"
+      className="sc-dVhcbM dQVLzk"
     >
       Get funding fund
     </h4>
     <p
-      className="sc-dNLxif cwbLmM"
+      className="sc-uJMKN dEIluL"
     >
       Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
     </p>
     <a
-      className="sc-jqCOkK ePmOJW"
+      className="sc-bbmXgH dabmKX"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
@@ -2009,26 +2047,26 @@ exports[`Storyshots All Components/PageLinks Four Links 1`] = `
       Apply to this fund
       <img
         alt=""
-        className="sc-uJMKN bSaDIM"
+        className="sc-gGBfsJ bZJrty"
         src="test-file-stub"
       />
     </a>
   </li>
   <li
-    className="sc-jbKcbu cYoOwI"
+    className="sc-jqCOkK ipcLQz"
   >
     <h4
-      className="sc-fBuWsC cDejFu"
+      className="sc-dVhcbM dQVLzk"
     >
       Get funding fund
     </h4>
     <p
-      className="sc-dNLxif cwbLmM"
+      className="sc-uJMKN dEIluL"
     >
       Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
     </p>
     <a
-      className="sc-jqCOkK ePmOJW"
+      className="sc-bbmXgH dabmKX"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
@@ -2036,26 +2074,26 @@ exports[`Storyshots All Components/PageLinks Four Links 1`] = `
       Apply to this fund
       <img
         alt=""
-        className="sc-uJMKN bSaDIM"
+        className="sc-gGBfsJ bZJrty"
         src="test-file-stub"
       />
     </a>
   </li>
   <li
-    className="sc-jbKcbu cYoOwI"
+    className="sc-jqCOkK ipcLQz"
   >
     <h4
-      className="sc-fBuWsC cDejFu"
+      className="sc-dVhcbM dQVLzk"
     >
       Find a fund
     </h4>
     <p
-      className="sc-dNLxif cwbLmM"
+      className="sc-uJMKN dEIluL"
     >
       Yes, Yes, without the oops! Hey, take a look at the earthlings. Goodbye!
     </p>
     <a
-      className="sc-jqCOkK ePmOJW"
+      className="sc-bbmXgH dabmKX"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
@@ -2063,7 +2101,7 @@ exports[`Storyshots All Components/PageLinks Four Links 1`] = `
       Apply to this fund
       <img
         alt=""
-        className="sc-uJMKN bSaDIM"
+        className="sc-gGBfsJ bZJrty"
         src="test-file-stub"
       />
     </a>
@@ -2073,23 +2111,23 @@ exports[`Storyshots All Components/PageLinks Four Links 1`] = `
 
 exports[`Storyshots All Components/PageLinks Three Links 1`] = `
 <ul
-  className="sc-bbmXgH czXdCO"
+  className="sc-jnlKLf hSEJjr"
 >
   <li
-    className="sc-jbKcbu cYoOwI"
+    className="sc-jqCOkK ipcLQz"
   >
     <h4
-      className="sc-fBuWsC cDejFu"
+      className="sc-dVhcbM dQVLzk"
     >
       Industry fund
     </h4>
     <p
-      className="sc-dNLxif cwbLmM"
+      className="sc-uJMKN dEIluL"
     >
       What do they got in there? King Kong? You know what? It is beets. I've crashed into a beet truck. Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.
     </p>
     <a
-      className="sc-jqCOkK ePmOJW"
+      className="sc-bbmXgH dabmKX"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
@@ -2097,26 +2135,26 @@ exports[`Storyshots All Components/PageLinks Three Links 1`] = `
       Apply to this fund
       <img
         alt=""
-        className="sc-uJMKN bSaDIM"
+        className="sc-gGBfsJ bZJrty"
         src="test-file-stub"
       />
     </a>
   </li>
   <li
-    className="sc-jbKcbu cYoOwI"
+    className="sc-jqCOkK ipcLQz"
   >
     <h4
-      className="sc-fBuWsC cDejFu"
+      className="sc-dVhcbM dQVLzk"
     >
       Get funding fund
     </h4>
     <p
-      className="sc-dNLxif cwbLmM"
+      className="sc-uJMKN dEIluL"
     >
       Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
     </p>
     <a
-      className="sc-jqCOkK ePmOJW"
+      className="sc-bbmXgH dabmKX"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
@@ -2124,26 +2162,26 @@ exports[`Storyshots All Components/PageLinks Three Links 1`] = `
       Apply to this fund
       <img
         alt=""
-        className="sc-uJMKN bSaDIM"
+        className="sc-gGBfsJ bZJrty"
         src="test-file-stub"
       />
     </a>
   </li>
   <li
-    className="sc-jbKcbu cYoOwI"
+    className="sc-jqCOkK ipcLQz"
   >
     <h4
-      className="sc-fBuWsC cDejFu"
+      className="sc-dVhcbM dQVLzk"
     >
       Get funding fund
     </h4>
     <p
-      className="sc-dNLxif cwbLmM"
+      className="sc-uJMKN dEIluL"
     >
       Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
     </p>
     <a
-      className="sc-jqCOkK ePmOJW"
+      className="sc-bbmXgH dabmKX"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
@@ -2151,7 +2189,7 @@ exports[`Storyshots All Components/PageLinks Three Links 1`] = `
       Apply to this fund
       <img
         alt=""
-        className="sc-uJMKN bSaDIM"
+        className="sc-gGBfsJ bZJrty"
         src="test-file-stub"
       />
     </a>
@@ -2168,7 +2206,7 @@ exports[`Storyshots All Components/Text Normal 1`] = `
   }
 >
   <article
-    className="sc-gisBJw jOGIeX"
+    className="sc-cHGsZl cyWGHI"
   >
     
 
