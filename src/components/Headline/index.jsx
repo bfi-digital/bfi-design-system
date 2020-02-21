@@ -3,7 +3,7 @@ import styled from "styled-components"
 import theme from "../_theme"
 import PropTypes from "prop-types"
 
-const H1 = styled.h1`
+const HeroH1 = styled.h1`
     font-family: "Archivo Black";
     text-transform: uppercase;
     color: ${theme.charcoal};
@@ -18,6 +18,11 @@ const H1 = styled.h1`
     @media screen and (min-width: ${theme.xl}){
         font-size: 2.3125rem;
     }
+`
+
+const H1 = styled.h1`
+    font-family: "Open Sans";
+    text-transform: none;
 `
 
 const H2 = styled.h2`

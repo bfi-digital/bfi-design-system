@@ -45,7 +45,7 @@ export const Hero = ({
 }) =>
     <Outer fullHeight={fullHeight} image={image}>
         <Container>
-            <Headline level={1} text={headline}/>
+            <Headline level={0} text={headline}/>
         </Container>
     </Outer>
 
