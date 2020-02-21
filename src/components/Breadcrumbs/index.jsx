@@ -10,6 +10,7 @@ const Outer = styled.ol`
     font-size: 0.9rem;
     padding-left: 0px;
     line-height: 1.5;
+    margin-top: 0;
     @media screen and (min-width: ${theme.l}){
         font-size: 1rem;
         max-width: calc( 0.7 * ${theme.l});
