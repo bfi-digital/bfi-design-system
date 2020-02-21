@@ -116,10 +116,10 @@ exports[`Storyshots All Components/Divider Normal 1`] = `
 
 exports[`Storyshots All Components/Footer Normal 1`] = `
 <footer
-  className="sc-gzVnrw bRQfCj"
+  className="sc-gzVnrw cwMYVi"
 >
   <div
-    className="sc-htoDjs hVELrt"
+    className="sc-htoDjs iblJTF"
   >
     <section
       className="sc-iwsKbI FYnkY"
@@ -304,7 +304,7 @@ Array [
     className="sc-kgoBCf hJlZUq"
   >
     <div
-      className="sc-kGXeez cyTksT"
+      className="sc-kGXeez gZzxYQ"
     >
       <ul
         className="sc-kpOJdX cWODpJ"
@@ -350,7 +350,7 @@ Array [
     onMouseLeave={[Function]}
   >
     <div
-      className="sc-gipzik htYqK"
+      className="sc-gipzik usITF"
     >
       <a
         aria-current="page"
@@ -456,7 +456,7 @@ Array [
     className="sc-kgoBCf hJlZUq"
   >
     <div
-      className="sc-kGXeez cyTksT"
+      className="sc-kGXeez gZzxYQ"
     >
       <ul
         className="sc-kpOJdX cWODpJ"
@@ -502,7 +502,7 @@ Array [
     onMouseLeave={[Function]}
   >
     <div
-      className="sc-gipzik htYqK"
+      className="sc-gipzik usITF"
     >
       <a
         aria-current="page"
@@ -608,7 +608,7 @@ Array [
     className="sc-kgoBCf hJlZUq"
   >
     <div
-      className="sc-kGXeez cyTksT"
+      className="sc-kGXeez gZzxYQ"
     >
       <ul
         className="sc-kpOJdX cWODpJ"
@@ -654,7 +654,7 @@ Array [
     onMouseLeave={[Function]}
   >
     <div
-      className="sc-gipzik htYqK"
+      className="sc-gipzik usITF"
     >
       <a
         aria-current="page"
@@ -792,7 +792,7 @@ exports[`Storyshots All Components/Hero Full Height 1`] = `
   className="sc-fMiknA eYlUjl"
 >
   <div
-    className="sc-dVhcbM gRCSvZ"
+    className="sc-dVhcbM hLMsoO"
   >
     <h1
       className="sc-bRBYWo iugclN"
@@ -808,7 +808,7 @@ exports[`Storyshots All Components/Hero Normal 1`] = `
   className="sc-fMiknA eZRQPK"
 >
   <div
-    className="sc-dVhcbM gRCSvZ"
+    className="sc-dVhcbM hLMsoO"
   >
     <h1
       className="sc-bRBYWo iugclN"
@@ -825,7 +825,7 @@ Array [
     className="sc-kgoBCf hJlZUq"
   >
     <div
-      className="sc-kGXeez cyTksT"
+      className="sc-kGXeez gZzxYQ"
     >
       <ul
         className="sc-kpOJdX cWODpJ"
@@ -871,7 +871,7 @@ Array [
     onMouseLeave={[Function]}
   >
     <div
-      className="sc-gipzik htYqK"
+      className="sc-gipzik usITF"
     >
       <a
         aria-current="page"
@@ -972,7 +972,7 @@ Array [
     className="sc-fMiknA eZRQPK"
   >
     <div
-      className="sc-dVhcbM gRCSvZ"
+      className="sc-dVhcbM hLMsoO"
     >
       <h1
         className="sc-bRBYWo iugclN"
@@ -982,6 +982,214 @@ Array [
     </div>
   </section>,
 ]
+`;
+
+exports[`Storyshots All Components/ImageSide Left And Big 1`] = `
+<div
+  style={
+    Object {
+      "padding": "20px",
+    }
+  }
+>
+  <figure
+    className="sc-eqIVtm jpEnVM"
+  >
+    <img
+      alt="Alt text"
+      className="sc-fAjcbJ gvEaeT"
+      src="http://placehold.it/600x400"
+    />
+    <figcaption
+      className="sc-caSCKo cqSbcj"
+    >
+      Example image caption
+    </figcaption>
+  </figure>
+  <article
+    className="sc-gisBJw jOGIeX"
+  >
+    
+
+
+    <p>
+      We gotta burn the rain forest, 
+      <strong>
+        dump toxic waste
+      </strong>
+      , pollute the air, and 
+      <a
+        href="#"
+      >
+        rip up the OZONE!
+      </a>
+       'Cause maybe if we screw up this planet enough, they won't want it anymore! We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough, they won't want it anymore!
+    </p>
+    
+
+
+    <ol>
+      
+    
+      <li>
+        What do they got in there? King Kong?
+      </li>
+      
+    
+      <li>
+        You really think you can fly that thing?
+      </li>
+      
+    
+      <li>
+        Must go faster
+      </li>
+      
+
+    </ol>
+    
+
+
+    <p>
+      You really think you can fly that thing? Eventually, you do plan to have dinosaurs on your dinosaur tour, right? 
+      <a
+        href="#"
+      >
+        I gave it a cold?
+      </a>
+       I gave it a virus. A computer virus. Did he just throw my cat out of the window? You're a very talented young man, with your own clever thoughts and ideas. Do you need a manager?
+    </p>
+    
+
+
+    <ul>
+      
+    
+      <li>
+        What do they got in there? King Kong?
+      </li>
+      
+    
+      <li>
+        You really think you can fly that thing?
+      </li>
+      
+    
+      <li>
+        Must go faster
+      </li>
+      
+
+    </ul>
+    
+
+
+  </article>
+</div>
+`;
+
+exports[`Storyshots All Components/ImageSide Right And Small 1`] = `
+<div
+  style={
+    Object {
+      "padding": "20px",
+    }
+  }
+>
+  <figure
+    className="sc-eqIVtm gFcgtF"
+  >
+    <img
+      alt="Alt text"
+      className="sc-fAjcbJ gvEaeT"
+      src="http://placehold.it/200x200"
+    />
+    <figcaption
+      className="sc-caSCKo cqSbcj"
+    >
+      Example image caption
+    </figcaption>
+  </figure>
+  <article
+    className="sc-gisBJw jOGIeX"
+  >
+    
+
+
+    <p>
+      We gotta burn the rain forest, 
+      <strong>
+        dump toxic waste
+      </strong>
+      , pollute the air, and 
+      <a
+        href="#"
+      >
+        rip up the OZONE!
+      </a>
+       'Cause maybe if we screw up this planet enough, they won't want it anymore! We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough, they won't want it anymore!
+    </p>
+    
+
+
+    <ol>
+      
+    
+      <li>
+        What do they got in there? King Kong?
+      </li>
+      
+    
+      <li>
+        You really think you can fly that thing?
+      </li>
+      
+    
+      <li>
+        Must go faster
+      </li>
+      
+
+    </ol>
+    
+
+
+    <p>
+      You really think you can fly that thing? Eventually, you do plan to have dinosaurs on your dinosaur tour, right? 
+      <a
+        href="#"
+      >
+        I gave it a cold?
+      </a>
+       I gave it a virus. A computer virus. Did he just throw my cat out of the window? You're a very talented young man, with your own clever thoughts and ideas. Do you need a manager?
+    </p>
+    
+
+
+    <ul>
+      
+    
+      <li>
+        What do they got in there? King Kong?
+      </li>
+      
+    
+      <li>
+        You really think you can fly that thing?
+      </li>
+      
+    
+      <li>
+        Must go faster
+      </li>
+      
+
+    </ul>
+    
+
+
+  </article>
+</div>
 `;
 
 exports[`Storyshots All Components/Images Normal 1`] = `
@@ -995,44 +1203,44 @@ exports[`Storyshots All Components/Images Normal 1`] = `
   }
 >
   <figure
-    className="sc-eqIVtm gRhmhP"
+    className="sc-kjoXOD joHcEv"
   >
     <div
-      className="sc-caSCKo dbHSxF"
+      className="sc-TOsTZ gOvYoc"
     >
       <button
-        className="sc-gisBJw fCqnuX"
+        className="sc-kgAjT gcTZVI"
         onClick={[Function]}
       >
         <img
           alt="Example image"
-          className="sc-kjoXOD deiAFJ"
+          className="sc-cJSrbW ibWVxz"
           src="http://placehold.it/300x200"
         />
       </button>
       <button
-        className="sc-gisBJw fCqnuX"
+        className="sc-kgAjT gcTZVI"
         onClick={[Function]}
       >
         <img
           alt="Example image 2"
-          className="sc-kjoXOD deiAFJ"
+          className="sc-cJSrbW ibWVxz"
           src="http://placehold.it/200x300"
         />
       </button>
       <button
-        className="sc-gisBJw fCqnuX"
+        className="sc-kgAjT gcTZVI"
         onClick={[Function]}
       >
         <img
           alt="Example image 3"
-          className="sc-kjoXOD deiAFJ"
+          className="sc-cJSrbW ibWVxz"
           src="http://placehold.it/600x400"
         />
       </button>
     </div>
     <figcaption
-      className="sc-fAjcbJ hbnRDP"
+      className="sc-cHGsZl cKPWTw"
     >
       A gallery of three images
     </figcaption>
@@ -1051,29 +1259,29 @@ exports[`Storyshots All Components/Images Not Clickable 1`] = `
   }
 >
   <figure
-    className="sc-eqIVtm gRhmhP"
+    className="sc-kjoXOD joHcEv"
   >
     <div
-      className="sc-caSCKo dbHSxF"
+      className="sc-TOsTZ gOvYoc"
     >
       <img
         alt="Example image"
-        className="sc-kjoXOD iJvosS"
+        className="sc-cJSrbW cACPiC"
         src="http://placehold.it/300x200"
       />
       <img
         alt="Example image 2"
-        className="sc-kjoXOD iJvosS"
+        className="sc-cJSrbW cACPiC"
         src="http://placehold.it/200x300"
       />
       <img
         alt="Example image 3"
-        className="sc-kjoXOD iJvosS"
+        className="sc-cJSrbW cACPiC"
         src="http://placehold.it/600x400"
       />
     </div>
     <figcaption
-      className="sc-fAjcbJ hbnRDP"
+      className="sc-cHGsZl cKPWTw"
     >
       A gallery of three images
     </figcaption>
@@ -1092,24 +1300,24 @@ exports[`Storyshots All Components/Images Only One 1`] = `
   }
 >
   <figure
-    className="sc-eqIVtm gRhmhP"
+    className="sc-kjoXOD joHcEv"
   >
     <div
-      className="sc-caSCKo jWzZWB"
+      className="sc-TOsTZ EardK"
     >
       <button
-        className="sc-gisBJw fCqnuX"
+        className="sc-kgAjT gcTZVI"
         onClick={[Function]}
       >
         <img
           alt="Example image"
-          className="sc-kjoXOD deiAFJ"
+          className="sc-cJSrbW ibWVxz"
           src="http://placehold.it/300x200"
         />
       </button>
     </div>
     <figcaption
-      className="sc-fAjcbJ hbnRDP"
+      className="sc-cHGsZl cKPWTw"
     >
       A single full-width image
     </figcaption>
@@ -1126,7 +1334,7 @@ exports[`Storyshots All Components/Lead paragraph Normal 1`] = `
   }
 >
   <article
-    className="sc-TOsTZ dsRvib"
+    className="sc-hmzhuo doLthV"
   >
     We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough, they won't want it anymore! We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough, they won't want it anymore!
   </article>
@@ -1139,7 +1347,7 @@ Array [
     className="sc-kgoBCf hJlZUq"
   >
     <div
-      className="sc-kGXeez cyTksT"
+      className="sc-kGXeez gZzxYQ"
     >
       <ul
         className="sc-kpOJdX cWODpJ"
@@ -1185,7 +1393,7 @@ Array [
     onMouseLeave={[Function]}
   >
     <div
-      className="sc-gipzik htYqK"
+      className="sc-gipzik usITF"
     >
       <a
         aria-current="page"
@@ -1283,10 +1491,10 @@ Array [
     </div>
   </header>,
   <div
-    className="sc-kgAjT cWVQCh"
+    className="sc-frDJqD iVXeXw"
   >
     <article
-      className="sc-cJSrbW bnTsgY"
+      className="sc-kvZOFW lhscjl"
     >
       <ol
         className="sc-bxivhb cpkjqV"
@@ -1325,27 +1533,27 @@ Array [
         Headline goes here
       </h1>
       <article
-        className="sc-TOsTZ dsRvib"
+        className="sc-hmzhuo doLthV"
       >
         God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs. Do you have any idea how long it takes those cups to decompose. Yes, Yes, without the oops! Yes, Yes, without the oops! Drive us out of here!
       </article>
       <article
-        className="sc-hmzhuo fiTANZ"
+        className="sc-gisBJw jOGIeX"
       >
         So you two dig up, dig up dinosaurs? Hey, you know how I'm, like, always trying to save the planet? Here's my chance. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.
       </article>
     </article>
     <aside
-      className="sc-ksYbfQ izEwis"
+      className="sc-hqyNC gqywGK"
     >
       Sidebar here
     </aside>
   </div>,
   <footer
-    className="sc-gzVnrw bRQfCj"
+    className="sc-gzVnrw cwMYVi"
   >
     <div
-      className="sc-htoDjs hVELrt"
+      className="sc-htoDjs iblJTF"
     >
       <section
         className="sc-iwsKbI FYnkY"
@@ -1527,10 +1735,10 @@ Array [
 
 exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
 <ul
-  className="sc-dNLxif bUSNJV"
+  className="sc-bbmXgH czXdCO"
 >
   <li
-    className="sc-frDJqD hKXuKw"
+    className="sc-jbKcbu cYoOwI"
   >
     <h4
       className="sc-fBuWsC cDejFu"
@@ -1538,12 +1746,12 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
       Industry fund
     </h4>
     <p
-      className="sc-kvZOFW lmVhFx"
+      className="sc-dNLxif cwbLmM"
     >
       What do they got in there? King Kong? You know what? It is beets. I've crashed into a beet truck. Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.
     </p>
     <a
-      className="sc-hqyNC kLpwRZ"
+      className="sc-jqCOkK ePmOJW"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
@@ -1551,13 +1759,13 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
       Apply to this fund
       <img
         alt=""
-        className="sc-jbKcbu jYASic"
+        className="sc-uJMKN bSaDIM"
         src="test-file-stub"
       />
     </a>
   </li>
   <li
-    className="sc-frDJqD hKXuKw"
+    className="sc-jbKcbu cYoOwI"
   >
     <h4
       className="sc-fBuWsC cDejFu"
@@ -1565,12 +1773,12 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
       Get funding fund
     </h4>
     <p
-      className="sc-kvZOFW lmVhFx"
+      className="sc-dNLxif cwbLmM"
     >
       Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
     </p>
     <a
-      className="sc-hqyNC kLpwRZ"
+      className="sc-jqCOkK ePmOJW"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
@@ -1578,13 +1786,13 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
       Apply to this fund
       <img
         alt=""
-        className="sc-jbKcbu jYASic"
+        className="sc-uJMKN bSaDIM"
         src="test-file-stub"
       />
     </a>
   </li>
   <li
-    className="sc-frDJqD hKXuKw"
+    className="sc-jbKcbu cYoOwI"
   >
     <h4
       className="sc-fBuWsC cDejFu"
@@ -1592,12 +1800,12 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
       Get funding fund
     </h4>
     <p
-      className="sc-kvZOFW lmVhFx"
+      className="sc-dNLxif cwbLmM"
     >
       Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
     </p>
     <a
-      className="sc-hqyNC kLpwRZ"
+      className="sc-jqCOkK ePmOJW"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
@@ -1605,13 +1813,13 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
       Apply to this fund
       <img
         alt=""
-        className="sc-jbKcbu jYASic"
+        className="sc-uJMKN bSaDIM"
         src="test-file-stub"
       />
     </a>
   </li>
   <li
-    className="sc-frDJqD hKXuKw"
+    className="sc-jbKcbu cYoOwI"
   >
     <h4
       className="sc-fBuWsC cDejFu"
@@ -1619,12 +1827,12 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
       Find a fund
     </h4>
     <p
-      className="sc-kvZOFW lmVhFx"
+      className="sc-dNLxif cwbLmM"
     >
       Yes, Yes, without the oops! Hey, take a look at the earthlings. Goodbye!
     </p>
     <a
-      className="sc-hqyNC kLpwRZ"
+      className="sc-jqCOkK ePmOJW"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
@@ -1632,13 +1840,13 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
       Apply to this fund
       <img
         alt=""
-        className="sc-jbKcbu jYASic"
+        className="sc-uJMKN bSaDIM"
         src="test-file-stub"
       />
     </a>
   </li>
   <li
-    className="sc-frDJqD hKXuKw"
+    className="sc-jbKcbu cYoOwI"
   >
     <h4
       className="sc-fBuWsC cDejFu"
@@ -1646,12 +1854,12 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
       Industry fund
     </h4>
     <p
-      className="sc-kvZOFW lmVhFx"
+      className="sc-dNLxif cwbLmM"
     >
       What do they got in there? King Kong? You know what? It is beets. I've crashed into a beet truck. Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.
     </p>
     <a
-      className="sc-hqyNC kLpwRZ"
+      className="sc-jqCOkK ePmOJW"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
@@ -1659,13 +1867,13 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
       Apply to this fund
       <img
         alt=""
-        className="sc-jbKcbu jYASic"
+        className="sc-uJMKN bSaDIM"
         src="test-file-stub"
       />
     </a>
   </li>
   <li
-    className="sc-frDJqD hKXuKw"
+    className="sc-jbKcbu cYoOwI"
   >
     <h4
       className="sc-fBuWsC cDejFu"
@@ -1673,12 +1881,12 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
       Get funding fund
     </h4>
     <p
-      className="sc-kvZOFW lmVhFx"
+      className="sc-dNLxif cwbLmM"
     >
       Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
     </p>
     <a
-      className="sc-hqyNC kLpwRZ"
+      className="sc-jqCOkK ePmOJW"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
@@ -1686,13 +1894,13 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
       Apply to this fund
       <img
         alt=""
-        className="sc-jbKcbu jYASic"
+        className="sc-uJMKN bSaDIM"
         src="test-file-stub"
       />
     </a>
   </li>
   <li
-    className="sc-frDJqD hKXuKw"
+    className="sc-jbKcbu cYoOwI"
   >
     <h4
       className="sc-fBuWsC cDejFu"
@@ -1700,12 +1908,12 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
       Get funding fund
     </h4>
     <p
-      className="sc-kvZOFW lmVhFx"
+      className="sc-dNLxif cwbLmM"
     >
       Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
     </p>
     <a
-      className="sc-hqyNC kLpwRZ"
+      className="sc-jqCOkK ePmOJW"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
@@ -1713,13 +1921,13 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
       Apply to this fund
       <img
         alt=""
-        className="sc-jbKcbu jYASic"
+        className="sc-uJMKN bSaDIM"
         src="test-file-stub"
       />
     </a>
   </li>
   <li
-    className="sc-frDJqD hKXuKw"
+    className="sc-jbKcbu cYoOwI"
   >
     <h4
       className="sc-fBuWsC cDejFu"
@@ -1727,12 +1935,12 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
       Find a fund
     </h4>
     <p
-      className="sc-kvZOFW lmVhFx"
+      className="sc-dNLxif cwbLmM"
     >
       Yes, Yes, without the oops! Hey, take a look at the earthlings. Goodbye!
     </p>
     <a
-      className="sc-hqyNC kLpwRZ"
+      className="sc-jqCOkK ePmOJW"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
@@ -1740,7 +1948,7 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
       Apply to this fund
       <img
         alt=""
-        className="sc-jbKcbu jYASic"
+        className="sc-uJMKN bSaDIM"
         src="test-file-stub"
       />
     </a>
@@ -1750,10 +1958,10 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
 
 exports[`Storyshots All Components/PageLinks Four Links 1`] = `
 <ul
-  className="sc-dNLxif bUSNJV"
+  className="sc-bbmXgH czXdCO"
 >
   <li
-    className="sc-frDJqD hKXuKw"
+    className="sc-jbKcbu cYoOwI"
   >
     <h4
       className="sc-fBuWsC cDejFu"
@@ -1761,12 +1969,12 @@ exports[`Storyshots All Components/PageLinks Four Links 1`] = `
       Industry fund
     </h4>
     <p
-      className="sc-kvZOFW lmVhFx"
+      className="sc-dNLxif cwbLmM"
     >
       What do they got in there? King Kong? You know what? It is beets. I've crashed into a beet truck. Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.
     </p>
     <a
-      className="sc-hqyNC kLpwRZ"
+      className="sc-jqCOkK ePmOJW"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
@@ -1774,13 +1982,13 @@ exports[`Storyshots All Components/PageLinks Four Links 1`] = `
       Apply to this fund
       <img
         alt=""
-        className="sc-jbKcbu jYASic"
+        className="sc-uJMKN bSaDIM"
         src="test-file-stub"
       />
     </a>
   </li>
   <li
-    className="sc-frDJqD hKXuKw"
+    className="sc-jbKcbu cYoOwI"
   >
     <h4
       className="sc-fBuWsC cDejFu"
@@ -1788,12 +1996,12 @@ exports[`Storyshots All Components/PageLinks Four Links 1`] = `
       Get funding fund
     </h4>
     <p
-      className="sc-kvZOFW lmVhFx"
+      className="sc-dNLxif cwbLmM"
     >
       Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
     </p>
     <a
-      className="sc-hqyNC kLpwRZ"
+      className="sc-jqCOkK ePmOJW"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
@@ -1801,13 +2009,13 @@ exports[`Storyshots All Components/PageLinks Four Links 1`] = `
       Apply to this fund
       <img
         alt=""
-        className="sc-jbKcbu jYASic"
+        className="sc-uJMKN bSaDIM"
         src="test-file-stub"
       />
     </a>
   </li>
   <li
-    className="sc-frDJqD hKXuKw"
+    className="sc-jbKcbu cYoOwI"
   >
     <h4
       className="sc-fBuWsC cDejFu"
@@ -1815,12 +2023,12 @@ exports[`Storyshots All Components/PageLinks Four Links 1`] = `
       Get funding fund
     </h4>
     <p
-      className="sc-kvZOFW lmVhFx"
+      className="sc-dNLxif cwbLmM"
     >
       Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
     </p>
     <a
-      className="sc-hqyNC kLpwRZ"
+      className="sc-jqCOkK ePmOJW"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
@@ -1828,13 +2036,13 @@ exports[`Storyshots All Components/PageLinks Four Links 1`] = `
       Apply to this fund
       <img
         alt=""
-        className="sc-jbKcbu jYASic"
+        className="sc-uJMKN bSaDIM"
         src="test-file-stub"
       />
     </a>
   </li>
   <li
-    className="sc-frDJqD hKXuKw"
+    className="sc-jbKcbu cYoOwI"
   >
     <h4
       className="sc-fBuWsC cDejFu"
@@ -1842,12 +2050,12 @@ exports[`Storyshots All Components/PageLinks Four Links 1`] = `
       Find a fund
     </h4>
     <p
-      className="sc-kvZOFW lmVhFx"
+      className="sc-dNLxif cwbLmM"
     >
       Yes, Yes, without the oops! Hey, take a look at the earthlings. Goodbye!
     </p>
     <a
-      className="sc-hqyNC kLpwRZ"
+      className="sc-jqCOkK ePmOJW"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
@@ -1855,7 +2063,7 @@ exports[`Storyshots All Components/PageLinks Four Links 1`] = `
       Apply to this fund
       <img
         alt=""
-        className="sc-jbKcbu jYASic"
+        className="sc-uJMKN bSaDIM"
         src="test-file-stub"
       />
     </a>
@@ -1865,10 +2073,10 @@ exports[`Storyshots All Components/PageLinks Four Links 1`] = `
 
 exports[`Storyshots All Components/PageLinks Three Links 1`] = `
 <ul
-  className="sc-dNLxif bUSNJV"
+  className="sc-bbmXgH czXdCO"
 >
   <li
-    className="sc-frDJqD hKXuKw"
+    className="sc-jbKcbu cYoOwI"
   >
     <h4
       className="sc-fBuWsC cDejFu"
@@ -1876,12 +2084,12 @@ exports[`Storyshots All Components/PageLinks Three Links 1`] = `
       Industry fund
     </h4>
     <p
-      className="sc-kvZOFW lmVhFx"
+      className="sc-dNLxif cwbLmM"
     >
       What do they got in there? King Kong? You know what? It is beets. I've crashed into a beet truck. Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.
     </p>
     <a
-      className="sc-hqyNC kLpwRZ"
+      className="sc-jqCOkK ePmOJW"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
@@ -1889,13 +2097,13 @@ exports[`Storyshots All Components/PageLinks Three Links 1`] = `
       Apply to this fund
       <img
         alt=""
-        className="sc-jbKcbu jYASic"
+        className="sc-uJMKN bSaDIM"
         src="test-file-stub"
       />
     </a>
   </li>
   <li
-    className="sc-frDJqD hKXuKw"
+    className="sc-jbKcbu cYoOwI"
   >
     <h4
       className="sc-fBuWsC cDejFu"
@@ -1903,12 +2111,12 @@ exports[`Storyshots All Components/PageLinks Three Links 1`] = `
       Get funding fund
     </h4>
     <p
-      className="sc-kvZOFW lmVhFx"
+      className="sc-dNLxif cwbLmM"
     >
       Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
     </p>
     <a
-      className="sc-hqyNC kLpwRZ"
+      className="sc-jqCOkK ePmOJW"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
@@ -1916,13 +2124,13 @@ exports[`Storyshots All Components/PageLinks Three Links 1`] = `
       Apply to this fund
       <img
         alt=""
-        className="sc-jbKcbu jYASic"
+        className="sc-uJMKN bSaDIM"
         src="test-file-stub"
       />
     </a>
   </li>
   <li
-    className="sc-frDJqD hKXuKw"
+    className="sc-jbKcbu cYoOwI"
   >
     <h4
       className="sc-fBuWsC cDejFu"
@@ -1930,12 +2138,12 @@ exports[`Storyshots All Components/PageLinks Three Links 1`] = `
       Get funding fund
     </h4>
     <p
-      className="sc-kvZOFW lmVhFx"
+      className="sc-dNLxif cwbLmM"
     >
       Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
     </p>
     <a
-      className="sc-hqyNC kLpwRZ"
+      className="sc-jqCOkK ePmOJW"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
@@ -1943,7 +2151,7 @@ exports[`Storyshots All Components/PageLinks Three Links 1`] = `
       Apply to this fund
       <img
         alt=""
-        className="sc-jbKcbu jYASic"
+        className="sc-uJMKN bSaDIM"
         src="test-file-stub"
       />
     </a>
@@ -1960,7 +2168,7 @@ exports[`Storyshots All Components/Text Normal 1`] = `
   }
 >
   <article
-    className="sc-hmzhuo fiTANZ"
+    className="sc-gisBJw jOGIeX"
   >
     
 
