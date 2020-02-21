@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import theme from "../_theme"
-import { Link } from "@reach/router"
+import { LinkSwitch as Link } from "../LinkSwitch"
 import { Headline } from "../Headline"
 import arrow from "./arrow-right.svg"
 

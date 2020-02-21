@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "@reach/router"
+import { LinkSwitch as Link } from "../../LinkSwitch"
 import theme from "../../_theme"
 import styled from "styled-components"
 

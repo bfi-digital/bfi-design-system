@@ -3,7 +3,7 @@ import styled from "styled-components"
 import theme from "../_theme"
 import logo from "./logo.svg"
 import lotteryLogo from "./lottery-logo.svg"
-import { Link } from "@reach/router"
+import { LinkSwitch as Link } from "../LinkSwitch"
 import PropTypes from "prop-types"
 
 import facebook from "./facebook.svg"
