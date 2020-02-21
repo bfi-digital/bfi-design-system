@@ -38,3 +38,14 @@ export const ImageSide = ({
         />
         {caption && <Figcaption>{caption}</Figcaption>}
     </Figure>
+
+ImageSide.propTypes = {
+    // The source URL of the image
+    src: PropTypes.string,
+    // Alt-text string for the image.
+    alt: PropTypes.string,
+    // Which side should the image be on. String. Left by default. To override say "right"
+    side: PropTypes.string,
+    // A visible caption for the image. Optional
+    caption: PropTypes.string
+}
