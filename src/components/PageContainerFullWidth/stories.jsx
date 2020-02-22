@@ -13,7 +13,6 @@ import { Header } from "../Header"
 import { Footer } from "../Footer"
 import { LeadParagraph } from "../LeadParagraph"
 import { Text } from "../Text"
-import { StepByStep } from "../StepByStep"
 
 export default {
     title: "All Components/PageFullWidth"

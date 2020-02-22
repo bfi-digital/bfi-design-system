@@ -43,14 +43,18 @@ const Outer = styled.article`
             outline: none;
         }
     }
+    p + ul {
+        margin-top: -10px;
+    }
 
     ul{
         margin-top: 0;
+        margin-bottom: 0;
         display: inline-block;
         list-style: none;
         li{
             margin-left: -15px;
-            margin-bottom: 5px;
+            margin-bottom: 3px;
             &:before{
                 content: "•";
                 color: ${theme.darkPink};
@@ -61,10 +65,11 @@ const Outer = styled.article`
 
     ol{
         margin-top: 0;
+        margin-bottom: 0;
         display: inline-block;
         li{
             padding-left: 10px;
-            margin-bottom: 5px;
+            margin-bottom: 3px;
         }
     }
 

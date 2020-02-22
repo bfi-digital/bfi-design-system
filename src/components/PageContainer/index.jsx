@@ -21,6 +21,7 @@ export const MainContent = styled.article`
 
 export const Sidebar = styled.aside`
     @media screen and (min-width: ${theme.m}){
+        padding-top: 55px;
         width: 33%;
         margin-left: 70px;
     }
