@@ -13,6 +13,7 @@ import { Header } from "../Header"
 import { Footer } from "../Footer"
 import { LeadParagraph } from "../LeadParagraph"
 import { Text } from "../Text"
+import { StepByStep } from "../StepByStep"
 
 export default {
     title: "All Components/Page"
@@ -153,7 +154,31 @@ export const activePage = () =>
                 />
             </MainContent>
             <Sidebar>
-                Sidebar here
+                <StepByStep 
+                    title="Applying for film funding"
+                    steps={[
+                        {
+                            title: "Is this fund right for you?",
+                            description: "The BFI Audience Fund supports audience facing film projects and organisations of national scale and significant cultural ambition."
+                        },
+                        {
+                            title: "Prepare your supporting materials",
+                            description: "The BFI Audience Fund supports audience facing film projects and organisations of national scale and significant cultural ambition."
+                        },
+                        {
+                            title: "Apply",
+                            description: "The BFI Audience Fund supports audience facing film projects and organisations of national scale and significant cultural ambition."
+                        },
+                        {
+                            title: "Wait to hear from us",
+                            description: "The BFI Audience Fund supports audience facing film projects and organisations of national scale and significant cultural ambition."
+                        },
+                        {
+                            title: "Your decision",
+                            description: "The BFI Audience Fund supports audience facing film projects and organisations of national scale and significant cultural ambition."
+                        },
+                    ]} 
+                />
             </Sidebar>
         </Wrapper>
         <Footer
