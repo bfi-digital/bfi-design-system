@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect, useRef } from "react"
 import theme from "../_theme"
 import styled from "styled-components"
 import PropTypes from "prop-types"
@@ -13,7 +13,7 @@ import logo from "./logo-black.svg"
 import logoWhite from "./logo-white.svg"
 
 const Outer = styled.header`
-    background: ${props => props.isTransparent ? "transparent" : theme.white};
+    background: ${props => props.isTransparent ? (!props.isSticky ? "transparent" : theme.white) : theme.white};
     border-bottom: 1px solid ${props => props.isTransparent ? "transparent" : theme.grey};
     margin-bottom: ${props => props.overlay ? "-65px" : "0px"};
     position: relative;
@@ -44,12 +44,37 @@ const Inner = styled.div`
     }
 `
 
+const Logo = styled.img`
+    width: 75px;
+`
+
 const LogoLink = styled(Link)`
     padding: 6px 2px;
 `
 
-const Logo = styled.img`
-    width: 46px;
+const MobileLogoLink = styled(Link)`
+    padding: 6px 2px;
+    display: block;
+    @media screen and (min-width: ${theme.m}){
+        display: none;
+    }
+    img {
+        width: 46px;
+    }
+`
+
+
+const TopSection = styled.div`
+    display: none;
+    @media screen and (min-width: ${theme.m}){
+        display: block;
+        background: ${props => props.isTransparent ? "transparent" : theme.white};
+        padding-top: 15px;
+        transition: 0.1s ease-out;
+    }
+`
+const QuickLinksInner = styled(Inner)`
+    position: relative;
 `
 
 export const Header = ({
@@ -59,11 +84,43 @@ export const Header = ({
     const [open, setOpen] = useState(false)
     const [selected, setSelected] = useState(false)
     const [isOverlaid, setOverlaid] = useState(overlay)
+    const [isSticky, setSticky] = useState(false)
+    const ref = useRef(null)
+
+    const handleScroll = () => {
+        setSticky(ref.current.getBoundingClientRect().top <= 0)
+    }
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll)
+        return () => {
+            window.removeEventListener("scroll", () => handleScroll)
+        }
+    }, [])
 
     return(
         <>
-            <QuickLinks onMouseLeave={() => {overlay && setOverlaid(true)}} />
+            
+            <TopSection 
+                onMouseLeave={() => {
+                    setSelected(false)
+                    overlay && setOverlaid(true)
+                }}
+                onMouseEnter={() => setOverlaid(false)}
+                isTransparent={isOverlaid}>
+                <Inner>
+                    <LogoLink to="/">
+                        <Logo src={isOverlaid ? logoWhite : logo} alt="British Film Institute"/>
+                    </LogoLink>
+                </Inner>
+
+                <QuickLinks 
+                    Inner={QuickLinksInner} 
+                    isOverlaid={isOverlaid} 
+                    isSticky={isSticky}
+                />
+            </TopSection>
             <Outer 
+                ref={ref}
                 onMouseLeave={() => {
                     setSelected(false)
                     overlay && setOverlaid(true)
@@ -71,16 +128,18 @@ export const Header = ({
                 onMouseEnter={() => setOverlaid(false)}
                 isTransparent={isOverlaid}
                 overlay={overlay}
+                isSticky={isSticky}
             >
                 <Inner>
-                    <LogoLink to="/">
+                    <MobileLogoLink to="/">
                         <Logo src={isOverlaid ? logoWhite : logo} alt="British Film Institute"/>
-                    </LogoLink>
+                    </MobileLogoLink>
                     <Nav
                         navItems={navItems}
                         selected={selected}
                         setSelected={setSelected}
                         isOverlaid={isOverlaid}
+                        isSticky={isSticky}
                     />
                     <MenuButton 
                         handleClick={() => setOpen(!open)}
@@ -89,7 +148,7 @@ export const Header = ({
                     <Search isOverlaid={isOverlaid} />
                 </Inner>
             </Outer>
-            {open && <MobilePanel navItems={navItems}/>}
+            {open && <MobilePanel navItems={navItems} />}
         </>
     )
 }

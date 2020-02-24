@@ -17,10 +17,11 @@ const List = styled.ul`
     flex-direction: row;
     align-items: center;
     margin: 0px;
+    padding-left: 0;
 `
 
 const Item = styled.li`
-    font-weight: bold;
+    font-weight: 600;
     font-size: 0.9rem;
     @media screen and (min-width: ${theme.l}){
         font-size: 1rem;
@@ -30,7 +31,7 @@ const Item = styled.li`
 const ItemLink = styled(Link)`
     display: block;
     padding: 21px 15px;
-    color: ${props => props.isWhite ? theme.white : theme.charcoal};
+    color: ${props => props.isWhite ? (props.isSticky ? theme.charcoal : theme.white) : theme.charcoal};
     text-decoration: none;
     position: relative;
     &:after{
@@ -40,7 +41,7 @@ const ItemLink = styled(Link)`
         bottom: 15px;
         display: block;
         content: "";
-        border-bottom: ${props => props.active ? `2px solid ${props.isWhite ? theme.white : theme.charcoal}` : ""};
+        border-bottom: ${props => props.active ? `2px solid ${props.isWhite ? (props.isSticky ? theme.charcoal : theme.white) : theme.charcoal}` : ""};
         @media screen and (min-width: ${theme.l}){
             bottom: 17px;
         }
@@ -116,7 +117,8 @@ const Nav = ({
     navItems,
     selected,
     setSelected,
-    isOverlaid
+    isOverlaid,
+    isSticky
 }) =>
     <Outer>
         <List>
@@ -134,6 +136,7 @@ const Nav = ({
                         hovered={selected === i}
                         // role="menuitem"
                         isWhite={isOverlaid}
+                        isSticky={isSticky}
                     >
                         {navItem.title}
                     </ItemLink>

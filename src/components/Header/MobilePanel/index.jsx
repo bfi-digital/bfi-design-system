@@ -48,7 +48,6 @@ const Item = styled.li`
             color: ${theme.charcoal} !important;
         }
     }
-
 `
 
 const ItemButton = styled.button`
@@ -56,7 +55,7 @@ const ItemButton = styled.button`
     background: none;
     border: none;
     font-size: 1rem;
-    font-weight: bold;
+    font-weight: 600;
     color: ${theme.charcoal};
     transition: color 0.1s;
     display: block;
@@ -64,6 +63,11 @@ const ItemButton = styled.button`
     width: 100%;
     text-align: left;
     cursor: pointer;
+    &:focus {
+        border-radius: 7px;
+        box-shadow: #f0c5c8 0px 0px 0px 4px;
+        outline: none !important;
+    }
 `
 
 const ChildList = styled.ul`
@@ -82,10 +86,32 @@ const ChildLink = styled(Link)`
     display: block;
     color: ${theme.charcoal};
     text-decoration: none;
-    padding-bottom: 15px;
+    padding: 10px 0;
     transition: color 0.1s;
     &:hover{
         color: ${theme.charcoal} !important;
+    }
+    &:focus {
+        border-radius: 7px;
+        box-shadow: #f0c5c8 0px 0px 0px 4px;
+        outline: none !important;
+    }
+`
+
+const QuickLinks = styled.div`
+    margin-top: 25px;
+`
+
+const QuickLink = styled(Link)`
+    color: ${theme.darkPink};
+    font-weight: 700;
+    text-decoration: none;
+    padding: 10px 0;
+    display: block;
+    &:focus {
+        border-radius: 7px;
+        box-shadow: #f0c5c8 0px 0px 0px 4px;
+        outline: none !important;
     }
 `
 
@@ -128,6 +154,11 @@ const MobilePanel = ({
                     </Item>
                 )}
             </List>
+            <QuickLinks>
+                {/* todo: need to convert these to be dynamically pulled data from CMS */}
+                <QuickLink to="/">BFI Southbank</QuickLink>
+                <QuickLink to="/">Become a Member</QuickLink>
+            </QuickLinks>
         </Panel>
     )
 }
