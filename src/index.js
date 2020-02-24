@@ -13,6 +13,7 @@ export * from "./components/Blockquote"
 export * from "./components/Images"
 export * from "./components/Button"
 export * from "./components/StepByStep"
+export * from "./components/ImageSide"
 
 // Page scaffolds
 export * from "./components/PageContainer"
