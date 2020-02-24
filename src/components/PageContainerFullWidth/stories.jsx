@@ -18,7 +18,7 @@ export default {
     title: "All Components/PageFullWidth"
 }
 
-export const normal = () =>
+export const serviceListPageExample = () =>
     <>
         <Header navItems={navItems}/>
         <Wrapper>
@@ -44,14 +44,11 @@ export const normal = () =>
         />
     </>
 
-export const activePage = () =>
+export const homePageExample = () =>
     <>
         <Header navItems={navItems}/>
         <Wrapper>
             <MainContent>
-                <Breadcrumbs 
-                    breadcrumbs={crumbs} 
-                />
                 <Headline 
                     level={1} 
                     text="Development Fund"

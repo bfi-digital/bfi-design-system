@@ -3,7 +3,6 @@ import theme from "../_theme"
 import styled from "styled-components"
 import PropTypes from "prop-types"
 import { LinkSwitch as Link } from "../LinkSwitch"
-import Search from "./Search"
 import QuickLinks from "./QuickLinks"
 import MobilePanel from "./MobilePanel"
 import MenuButton from "./MenuButton"
@@ -11,6 +10,7 @@ import Nav from "./Nav"
 
 import logo from "./logo-black.svg"
 import logoWhite from "./logo-white.svg"
+import LotteryLogo from "./lottery-logo.jsx"
 
 const Outer = styled.header`
     background: ${props => props.isTransparent ? (!props.isSticky ? "transparent" : theme.white) : theme.white};
@@ -46,6 +46,18 @@ const Inner = styled.div`
 
 const Logo = styled.img`
     width: 75px;
+`
+
+const LotteryContainer = styled.div`
+    display: none;
+    svg {
+        width: 100%;
+        height: auto;
+    }
+    @media screen and (min-width: ${theme.m}){
+        width: 80px;
+        display: flex;
+    }
 `
 
 const LogoLink = styled(Link)`
@@ -145,7 +157,9 @@ export const Header = ({
                         handleClick={() => setOpen(!open)}
                         open={open}
                     />
-                    <Search isOverlaid={isOverlaid} />
+                    <LotteryContainer >
+                        <LotteryLogo colourFill={isOverlaid ? theme.white : theme.charcoal} />
+                    </LotteryContainer>
                 </Inner>
             </Outer>
             {open && <MobilePanel navItems={navItems} />}

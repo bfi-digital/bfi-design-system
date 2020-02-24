@@ -7,7 +7,6 @@ import eyeglassWhite from "./eyeglass-white.svg"
 const Button = styled.button`
     display: none;
     @media screen and (min-width: ${theme.m}){
-        display: none;
         border: none;
         cursor: pointer;
         background: none;
