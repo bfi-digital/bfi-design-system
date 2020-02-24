@@ -44,13 +44,25 @@ const Inner = styled.div`
     }
 `
 
+const Logo = styled.img`
+    width: 75px;
+`
+
 const LogoLink = styled(Link)`
     padding: 6px 2px;
 `
 
-const Logo = styled.img`
-    width: 75px;
+const MobileLogoLink = styled(Link)`
+    padding: 6px 2px;
+    display: block;
+    @media screen and (min-width: ${theme.m}){
+        display: none;
+    }
+    img {
+        width: 46px;
+    }
 `
+
 
 const TopSection = styled.div`
     display: none;
@@ -119,7 +131,9 @@ export const Header = ({
                 isSticky={isSticky}
             >
                 <Inner>
-                    
+                    <MobileLogoLink to="/">
+                        <Logo src={isOverlaid ? logoWhite : logo} alt="British Film Institute"/>
+                    </MobileLogoLink>
                     <Nav
                         navItems={navItems}
                         selected={selected}
