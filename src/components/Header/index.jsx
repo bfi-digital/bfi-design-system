@@ -148,7 +148,7 @@ export const Header = ({
                     <Search isOverlaid={isOverlaid} />
                 </Inner>
             </Outer>
-            {open && <MobilePanel navItems={navItems}/>}
+            {open && <MobilePanel navItems={navItems} />}
         </>
     )
 }

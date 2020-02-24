@@ -48,7 +48,7 @@ const Item = styled.li`
             color: ${theme.charcoal} !important;
         }
     }
-
+    
 `
 
 const ItemButton = styled.button`
@@ -56,7 +56,7 @@ const ItemButton = styled.button`
     background: none;
     border: none;
     font-size: 1rem;
-    font-weight: bold;
+    font-weight: 600;
     color: ${theme.charcoal};
     transition: color 0.1s;
     display: block;
@@ -87,6 +87,18 @@ const ChildLink = styled(Link)`
     &:hover{
         color: ${theme.charcoal} !important;
     }
+`
+
+const QuickLinks = styled.div`
+    margin-top: 25px;
+`
+
+const QuickLink = styled(Link)`
+    color: ${theme.darkPink};
+    font-weight: 700;
+    text-decoration: none;
+    padding-bottom: 15px;
+    display: block;
 `
 
 const MobilePanel = ({
@@ -128,6 +140,11 @@ const MobilePanel = ({
                     </Item>
                 )}
             </List>
+            <QuickLinks>
+                {/* todo: need to convert these to be dynamically pulled data from CMS */}
+                <QuickLink to="/">BFI Southbank</QuickLink>
+                <QuickLink to="/">Become a Member</QuickLink>
+            </QuickLinks>
         </Panel>
     )
 }

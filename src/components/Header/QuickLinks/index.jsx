@@ -30,6 +30,7 @@ const QuickLinks = ({Inner, isOverlaid, isSticky}) =>
     <Wrapper>
         <Inner>
             <Positioner>
+                 {/* todo: need to convert these to be dynamically pulled data from CMS */}
                 <QuickLink to="/" isTransparent={isOverlaid} isSticky={isSticky}>BFI Southbank</QuickLink>
                 <QuickLink to="/" isTransparent={isOverlaid} isSticky={isSticky}>Become a Member</QuickLink>
             </Positioner>
