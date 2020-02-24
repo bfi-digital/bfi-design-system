@@ -48,7 +48,6 @@ const Item = styled.li`
             color: ${theme.charcoal} !important;
         }
     }
-    
 `
 
 const ItemButton = styled.button`
@@ -64,6 +63,11 @@ const ItemButton = styled.button`
     width: 100%;
     text-align: left;
     cursor: pointer;
+    &:focus {
+        border-radius: 7px;
+        box-shadow: #f0c5c8 0px 0px 0px 4px;
+        outline: none !important;
+    }
 `
 
 const ChildList = styled.ul`
@@ -82,10 +86,15 @@ const ChildLink = styled(Link)`
     display: block;
     color: ${theme.charcoal};
     text-decoration: none;
-    padding-bottom: 15px;
+    padding: 10px 0;
     transition: color 0.1s;
     &:hover{
         color: ${theme.charcoal} !important;
+    }
+    &:focus {
+        border-radius: 7px;
+        box-shadow: #f0c5c8 0px 0px 0px 4px;
+        outline: none !important;
     }
 `
 
@@ -97,8 +106,13 @@ const QuickLink = styled(Link)`
     color: ${theme.darkPink};
     font-weight: 700;
     text-decoration: none;
-    padding-bottom: 15px;
+    padding: 10px 0;
     display: block;
+    &:focus {
+        border-radius: 7px;
+        box-shadow: #f0c5c8 0px 0px 0px 4px;
+        outline: none !important;
+    }
 `
 
 const MobilePanel = ({
