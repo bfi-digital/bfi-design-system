@@ -53,9 +53,13 @@ const Logo = styled.img`
 `
 
 const TopSection = styled.div`
-    background: ${props => props.isTransparent ? "transparent" : theme.white};
-    padding-top: 15px;
-    transition: 0.1s ease-out;
+    display: none;
+    @media screen and (min-width: ${theme.m}){
+        display: block;
+        background: ${props => props.isTransparent ? "transparent" : theme.white};
+        padding-top: 15px;
+        transition: 0.1s ease-out;
+    }
 `
 const QuickLinksInner = styled(Inner)`
     position: relative;
