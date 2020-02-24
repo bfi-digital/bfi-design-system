@@ -95,7 +95,6 @@ export const Header = ({
 }) => {
     const [open, setOpen] = useState(false)
     const [selected, setSelected] = useState(false)
-    const [isOverlaid, setOverlaid] = useState(overlay)
     const [isSticky, setSticky] = useState(false)
     const ref = useRef(null)
 
@@ -113,16 +112,16 @@ export const Header = ({
         <>
             
             <TopSection 
-                isTransparent={isOverlaid}>
+                isTransparent={overlay}>
                 <Inner>
                     <LogoLink to="/">
-                        <Logo src={isOverlaid ? logoWhite : logo} alt="British Film Institute"/>
+                        <Logo src={overlay ? logoWhite : logo} alt="British Film Institute"/>
                     </LogoLink>
                 </Inner>
 
                 <QuickLinks 
                     Inner={QuickLinksInner} 
-                    isOverlaid={isOverlaid} 
+                    isOverlaid={overlay} 
                     isSticky={isSticky}
                 />
             </TopSection>
@@ -131,19 +130,19 @@ export const Header = ({
                 onMouseLeave={() => {
                     setSelected(false)
                 }}
-                isTransparent={isOverlaid}
+                isTransparent={overlay}
                 overlay={overlay}
                 isSticky={isSticky}
             >
                 <Inner>
                     <MobileLogoLink to="/">
-                        <Logo src={isOverlaid ? logoWhite : logo} alt="British Film Institute"/>
+                        <Logo src={overlay ? logoWhite : logo} alt="British Film Institute"/>
                     </MobileLogoLink>
                     <Nav
                         navItems={navItems}
                         selected={selected}
                         setSelected={setSelected}
-                        isOverlaid={isOverlaid}
+                        isOverlaid={overlay}
                         isSticky={isSticky}
                     />
                     <MenuButton 
@@ -151,7 +150,7 @@ export const Header = ({
                         open={open}
                     />
                     <LotteryContainer >
-                        <LotteryLogo colourFill={isOverlaid ? theme.white : theme.charcoal} />
+                        <LotteryLogo colourFill={overlay ? theme.white : theme.charcoal} />
                     </LotteryContainer>
                 </Inner>
             </Outer>

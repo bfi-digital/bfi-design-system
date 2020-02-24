@@ -1153,7 +1153,29 @@ exports[`Storyshots All Components/Hero Full Height 1`] = `
   className="sc-kjoXOD cPyKbd"
 >
   <div
-    className="sc-cHGsZl bQDmiL"
+    className="sc-cHGsZl fKNlvR"
+  />
+  <div
+    className="sc-TOsTZ cWWlNg"
+  >
+    <h1
+      className="sc-dVhcbM bTJSaK"
+    >
+      Watch a new film, rediscover your old favourites, and get inspired.
+    </h1>
+  </div>
+</section>
+`;
+
+exports[`Storyshots All Components/Hero Industry Theme 1`] = `
+<section
+  className="sc-kjoXOD loxwJP"
+>
+  <div
+    className="sc-cHGsZl bYxjWF"
+  />
+  <div
+    className="sc-TOsTZ cWWlNg"
   >
     <h1
       className="sc-dVhcbM bTJSaK"
@@ -1169,7 +1191,10 @@ exports[`Storyshots All Components/Hero Normal 1`] = `
   className="sc-kjoXOD loxwJP"
 >
   <div
-    className="sc-cHGsZl bQDmiL"
+    className="sc-cHGsZl fKNlvR"
+  />
+  <div
+    className="sc-TOsTZ cWWlNg"
   >
     <h1
       className="sc-dVhcbM bTJSaK"
@@ -1438,7 +1463,10 @@ Array [
     className="sc-kjoXOD loxwJP"
   >
     <div
-      className="sc-cHGsZl bQDmiL"
+      className="sc-cHGsZl fKNlvR"
+    />
+    <div
+      className="sc-TOsTZ cWWlNg"
     >
       <h1
         className="sc-dVhcbM bTJSaK"
@@ -1459,21 +1487,21 @@ exports[`Storyshots All Components/ImageSide Left And Big 1`] = `
   }
 >
   <figure
-    className="sc-TOsTZ jnmrlR"
+    className="sc-kgAjT cbyHxv"
   >
     <img
       alt="Alt text"
-      className="sc-kgAjT eepKOC"
+      className="sc-cJSrbW gxxjoj"
       src="http://placehold.it/600x400"
     />
     <figcaption
-      className="sc-cJSrbW gveEjR"
+      className="sc-ksYbfQ RrarW"
     >
       Example image caption
     </figcaption>
   </figure>
   <article
-    className="sc-ksYbfQ cedrlG"
+    className="sc-hmzhuo kBuKSW"
   >
     
 
@@ -1563,21 +1591,21 @@ exports[`Storyshots All Components/ImageSide Right And Small 1`] = `
   }
 >
   <figure
-    className="sc-TOsTZ bdemew"
+    className="sc-kgAjT dgLLjJ"
   >
     <img
       alt="Alt text"
-      className="sc-kgAjT eepKOC"
+      className="sc-cJSrbW gxxjoj"
       src="http://placehold.it/200x200"
     />
     <figcaption
-      className="sc-cJSrbW gveEjR"
+      className="sc-ksYbfQ RrarW"
     >
       Example image caption
     </figcaption>
   </figure>
   <article
-    className="sc-ksYbfQ cedrlG"
+    className="sc-hmzhuo kBuKSW"
   >
     
 
@@ -1669,44 +1697,44 @@ exports[`Storyshots All Components/Images Normal 1`] = `
   }
 >
   <figure
-    className="sc-hmzhuo jCxAgw"
+    className="sc-frDJqD cohYZh"
   >
     <div
-      className="sc-kvZOFW jNOXJw"
+      className="sc-hqyNC kXMuTJ"
     >
       <button
-        className="sc-hqyNC gdkVaD"
+        className="sc-jbKcbu kKyOTI"
         onClick={[Function]}
       >
         <img
           alt="Example image"
-          className="sc-jbKcbu hSRWZv"
+          className="sc-dNLxif jquofQ"
           src="http://placehold.it/300x200"
         />
       </button>
       <button
-        className="sc-hqyNC gdkVaD"
+        className="sc-jbKcbu kKyOTI"
         onClick={[Function]}
       >
         <img
           alt="Example image 2"
-          className="sc-jbKcbu hSRWZv"
+          className="sc-dNLxif jquofQ"
           src="http://placehold.it/200x300"
         />
       </button>
       <button
-        className="sc-hqyNC gdkVaD"
+        className="sc-jbKcbu kKyOTI"
         onClick={[Function]}
       >
         <img
           alt="Example image 3"
-          className="sc-jbKcbu hSRWZv"
+          className="sc-dNLxif jquofQ"
           src="http://placehold.it/600x400"
         />
       </button>
     </div>
     <figcaption
-      className="sc-frDJqD bDhium"
+      className="sc-kvZOFW egNDSf"
     >
       A gallery of three images
     </figcaption>
@@ -1725,29 +1753,29 @@ exports[`Storyshots All Components/Images Not Clickable 1`] = `
   }
 >
   <figure
-    className="sc-hmzhuo jCxAgw"
+    className="sc-frDJqD cohYZh"
   >
     <div
-      className="sc-kvZOFW jNOXJw"
+      className="sc-hqyNC kXMuTJ"
     >
       <img
         alt="Example image"
-        className="sc-jbKcbu kHFliX"
+        className="sc-dNLxif gyzQxu"
         src="http://placehold.it/300x200"
       />
       <img
         alt="Example image 2"
-        className="sc-jbKcbu kHFliX"
+        className="sc-dNLxif gyzQxu"
         src="http://placehold.it/200x300"
       />
       <img
         alt="Example image 3"
-        className="sc-jbKcbu kHFliX"
+        className="sc-dNLxif gyzQxu"
         src="http://placehold.it/600x400"
       />
     </div>
     <figcaption
-      className="sc-frDJqD bDhium"
+      className="sc-kvZOFW egNDSf"
     >
       A gallery of three images
     </figcaption>
@@ -1766,24 +1794,24 @@ exports[`Storyshots All Components/Images Only One 1`] = `
   }
 >
   <figure
-    className="sc-hmzhuo jCxAgw"
+    className="sc-frDJqD cohYZh"
   >
     <div
-      className="sc-kvZOFW lhpMGh"
+      className="sc-hqyNC bECTdA"
     >
       <button
-        className="sc-hqyNC gdkVaD"
+        className="sc-jbKcbu kKyOTI"
         onClick={[Function]}
       >
         <img
           alt="Example image"
-          className="sc-jbKcbu hSRWZv"
+          className="sc-dNLxif jquofQ"
           src="http://placehold.it/300x200"
         />
       </button>
     </div>
     <figcaption
-      className="sc-frDJqD bDhium"
+      className="sc-kvZOFW egNDSf"
     >
       A single full-width image
     </figcaption>
@@ -1800,7 +1828,7 @@ exports[`Storyshots All Components/Lead paragraph Normal 1`] = `
   }
 >
   <article
-    className="sc-jqCOkK dPiuyv"
+    className="sc-uJMKN fqCoDD"
   >
     We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough, they won't want it anymore! We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough, they won't want it anymore!
   </article>
@@ -2062,10 +2090,10 @@ Array [
     </div>
   </header>,
   <div
-    className="sc-uJMKN eaDkBv"
+    className="sc-bbmXgH jzjEam"
   >
     <article
-      className="sc-bbmXgH iDqcPP"
+      className="sc-gGBfsJ cfUqPe"
     >
       <ol
         className="sc-bxivhb dkElCb"
@@ -2115,12 +2143,12 @@ Array [
         Development Fund
       </h1>
       <article
-        className="sc-jqCOkK dPiuyv"
+        className="sc-uJMKN fqCoDD"
       >
         We want to support work that takes risks and does something different. This means we fund projects that can’t find other, commercial finance at development stage.
       </article>
       <article
-        className="sc-ksYbfQ cedrlG"
+        className="sc-hmzhuo kBuKSW"
       >
          
         <p>
@@ -2150,7 +2178,7 @@ Array [
         Who can apply
       </h2>
       <article
-        className="sc-ksYbfQ cedrlG"
+        className="sc-hmzhuo kBuKSW"
       >
          
         <p>
@@ -2191,7 +2219,7 @@ Array [
         What you need to provide
       </h2>
       <article
-        className="sc-ksYbfQ cedrlG"
+        className="sc-hmzhuo kBuKSW"
       >
          
         <p>
@@ -2236,7 +2264,7 @@ Array [
         What kind of projects we fund
       </h2>
       <article
-        className="sc-ksYbfQ cedrlG"
+        className="sc-hmzhuo kBuKSW"
       >
          
         <p>
@@ -2277,7 +2305,7 @@ Array [
         Apply for funding
       </h2>
       <article
-        className="sc-ksYbfQ cedrlG"
+        className="sc-hmzhuo kBuKSW"
       >
          
         <p>
@@ -2302,7 +2330,7 @@ Array [
         Contact us
       </h2>
       <article
-        className="sc-ksYbfQ cedrlG"
+        className="sc-hmzhuo kBuKSW"
       >
         <p>
           Contact us if you have a question about your application: 
@@ -2317,114 +2345,114 @@ Array [
       </article>
     </article>
     <aside
-      className="sc-gGBfsJ fbxhhK"
+      className="sc-jnlKLf fpWVQn"
     >
       <section
-        className="sc-jnlKLf jKMWma"
+        className="sc-fYxtnH hSLfWw"
       >
         <h3
-          className="sc-fYxtnH dPnkJj"
+          className="sc-tilXH brGkib"
         >
           Applying for film funding
         </h3>
         <ol
-          className="sc-tilXH jdxMtS"
+          className="sc-hEsumM eiLEeH"
         >
           <li
-            className="sc-hEsumM rdxIb"
+            className="sc-ktHwxA bXySDg"
           >
             <button
               aria-expanded="false"
-              className="sc-cIShpX guPjlv"
+              className="sc-kafWEX gzunVU"
               onClick={[Function]}
             >
               <strong
-                className="sc-ktHwxA exfjVq"
+                className="sc-cIShpX RtEBw"
               >
                 Is this fund right for you?
               </strong>
               <p
-                className="sc-kafWEX icylbA"
+                className="sc-feJyhm ljkdxt"
               >
                 Show
               </p>
             </button>
           </li>
           <li
-            className="sc-hEsumM rdxIb"
+            className="sc-ktHwxA bXySDg"
           >
             <button
               aria-expanded="false"
-              className="sc-cIShpX guPjlv"
+              className="sc-kafWEX gzunVU"
               onClick={[Function]}
             >
               <strong
-                className="sc-ktHwxA exfjVq"
+                className="sc-cIShpX RtEBw"
               >
                 Prepare your supporting materials
               </strong>
               <p
-                className="sc-kafWEX icylbA"
+                className="sc-feJyhm ljkdxt"
               >
                 Show
               </p>
             </button>
           </li>
           <li
-            className="sc-hEsumM rdxIb"
+            className="sc-ktHwxA bXySDg"
           >
             <button
               aria-expanded="false"
-              className="sc-cIShpX guPjlv"
+              className="sc-kafWEX gzunVU"
               onClick={[Function]}
             >
               <strong
-                className="sc-ktHwxA exfjVq"
+                className="sc-cIShpX RtEBw"
               >
                 Apply
               </strong>
               <p
-                className="sc-kafWEX icylbA"
+                className="sc-feJyhm ljkdxt"
               >
                 Show
               </p>
             </button>
           </li>
           <li
-            className="sc-hEsumM rdxIb"
+            className="sc-ktHwxA bXySDg"
           >
             <button
               aria-expanded="false"
-              className="sc-cIShpX guPjlv"
+              className="sc-kafWEX gzunVU"
               onClick={[Function]}
             >
               <strong
-                className="sc-ktHwxA exfjVq"
+                className="sc-cIShpX RtEBw"
               >
                 Wait to hear from us
               </strong>
               <p
-                className="sc-kafWEX icylbA"
+                className="sc-feJyhm ljkdxt"
               >
                 Show
               </p>
             </button>
           </li>
           <li
-            className="sc-hEsumM rdxIb"
+            className="sc-ktHwxA bXySDg"
           >
             <button
               aria-expanded="false"
-              className="sc-cIShpX guPjlv"
+              className="sc-kafWEX gzunVU"
               onClick={[Function]}
             >
               <strong
-                className="sc-ktHwxA exfjVq"
+                className="sc-cIShpX RtEBw"
               >
                 Your decision
               </strong>
               <p
-                className="sc-kafWEX icylbA"
+                className="sc-feJyhm ljkdxt"
               >
                 Show
               </p>
@@ -2873,10 +2901,10 @@ Array [
     </div>
   </header>,
   <div
-    className="sc-uJMKN eaDkBv"
+    className="sc-bbmXgH jzjEam"
   >
     <article
-      className="sc-bbmXgH iDqcPP"
+      className="sc-gGBfsJ cfUqPe"
     >
       <ol
         className="sc-bxivhb dkElCb"
@@ -2926,18 +2954,18 @@ Array [
         Headline goes here
       </h1>
       <article
-        className="sc-jqCOkK dPiuyv"
+        className="sc-uJMKN fqCoDD"
       >
         God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs. Do you have any idea how long it takes those cups to decompose. Yes, Yes, without the oops! Yes, Yes, without the oops! Drive us out of here!
       </article>
       <article
-        className="sc-ksYbfQ cedrlG"
+        className="sc-hmzhuo kBuKSW"
       >
         So you two dig up, dig up dinosaurs? Hey, you know how I'm, like, always trying to save the planet? Here's my chance. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.
       </article>
     </article>
     <aside
-      className="sc-gGBfsJ fbxhhK"
+      className="sc-jnlKLf fpWVQn"
     >
       Sidebar here
     </aside>
@@ -3384,7 +3412,10 @@ Array [
     className="sc-kjoXOD loxwJP"
   >
     <div
-      className="sc-cHGsZl bQDmiL"
+      className="sc-cHGsZl fKNlvR"
+    />
+    <div
+      className="sc-TOsTZ cWWlNg"
     >
       <h1
         className="sc-dVhcbM bTJSaK"
@@ -3394,10 +3425,10 @@ Array [
     </div>
   </section>,
   <div
-    className="sc-feJyhm iMDDMm"
+    className="sc-iELTvK eTcJET"
   >
     <article
-      className="sc-iELTvK cubseK"
+      className="sc-cmTdod kTszrt"
     >
       <h2
         className="sc-fAjcbJ fiyLpo"
@@ -3845,10 +3876,10 @@ Array [
     </div>
   </header>,
   <div
-    className="sc-feJyhm iMDDMm"
+    className="sc-iELTvK eTcJET"
   >
     <article
-      className="sc-iELTvK cubseK"
+      className="sc-cmTdod kTszrt"
     >
       <ol
         className="sc-bxivhb dkElCb"
@@ -3887,12 +3918,12 @@ Array [
         Find a fund to create films, TV or new formats of storytelling
       </h1>
       <article
-        className="sc-jqCOkK dPiuyv"
+        className="sc-uJMKN fqCoDD"
       >
         If you’re an adventurous storyteller, we can help you with funding to create your film, TV, or emerging media like VR or AR.
       </article>
       <article
-        className="sc-ksYbfQ cedrlG"
+        className="sc-hmzhuo kBuKSW"
       >
         Page list goes here
       </article>
@@ -4084,10 +4115,10 @@ Array [
 
 exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
 <ul
-  className="sc-elJkPf zcBrL"
+  className="sc-jtRfpW jNlsUp"
 >
   <li
-    className="sc-cmTdod iLcGLG"
+    className="sc-jwKygS cHuios"
   >
     <h4
       className="sc-gisBJw sTdwR"
@@ -4095,19 +4126,19 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
       Industry fund
     </h4>
     <p
-      className="sc-jwKygS bevsbo"
+      className="sc-btzYZH cBACKx"
     >
       What do they got in there? King Kong? You know what? It is beets. I've crashed into a beet truck. Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.
     </p>
     <a
-      className="sc-btzYZH exywtF"
+      className="sc-lhVmIH mFIXE"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
     >
       Apply to this fund
       <div
-        className="sc-lhVmIH kgDmyP"
+        className="sc-bYSBpT fDuZRB"
       >
         <svg
           height="14"
@@ -4132,7 +4163,7 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
     </a>
   </li>
   <li
-    className="sc-cmTdod iLcGLG"
+    className="sc-jwKygS cHuios"
   >
     <h4
       className="sc-gisBJw sTdwR"
@@ -4140,19 +4171,19 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
       Get funding fund
     </h4>
     <p
-      className="sc-jwKygS bevsbo"
+      className="sc-btzYZH cBACKx"
     >
       Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
     </p>
     <a
-      className="sc-btzYZH exywtF"
+      className="sc-lhVmIH mFIXE"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
     >
       Apply to this fund
       <div
-        className="sc-lhVmIH kgDmyP"
+        className="sc-bYSBpT fDuZRB"
       >
         <svg
           height="14"
@@ -4177,7 +4208,7 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
     </a>
   </li>
   <li
-    className="sc-cmTdod iLcGLG"
+    className="sc-jwKygS cHuios"
   >
     <h4
       className="sc-gisBJw sTdwR"
@@ -4185,19 +4216,19 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
       Get funding fund
     </h4>
     <p
-      className="sc-jwKygS bevsbo"
+      className="sc-btzYZH cBACKx"
     >
       Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
     </p>
     <a
-      className="sc-btzYZH exywtF"
+      className="sc-lhVmIH mFIXE"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
     >
       Apply to this fund
       <div
-        className="sc-lhVmIH kgDmyP"
+        className="sc-bYSBpT fDuZRB"
       >
         <svg
           height="14"
@@ -4222,7 +4253,7 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
     </a>
   </li>
   <li
-    className="sc-cmTdod iLcGLG"
+    className="sc-jwKygS cHuios"
   >
     <h4
       className="sc-gisBJw sTdwR"
@@ -4230,19 +4261,19 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
       Find a fund
     </h4>
     <p
-      className="sc-jwKygS bevsbo"
+      className="sc-btzYZH cBACKx"
     >
       Yes, Yes, without the oops! Hey, take a look at the earthlings. Goodbye!
     </p>
     <a
-      className="sc-btzYZH exywtF"
+      className="sc-lhVmIH mFIXE"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
     >
       Apply to this fund
       <div
-        className="sc-lhVmIH kgDmyP"
+        className="sc-bYSBpT fDuZRB"
       >
         <svg
           height="14"
@@ -4267,7 +4298,7 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
     </a>
   </li>
   <li
-    className="sc-cmTdod iLcGLG"
+    className="sc-jwKygS cHuios"
   >
     <h4
       className="sc-gisBJw sTdwR"
@@ -4275,19 +4306,19 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
       Industry fund
     </h4>
     <p
-      className="sc-jwKygS bevsbo"
+      className="sc-btzYZH cBACKx"
     >
       What do they got in there? King Kong? You know what? It is beets. I've crashed into a beet truck. Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.
     </p>
     <a
-      className="sc-btzYZH exywtF"
+      className="sc-lhVmIH mFIXE"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
     >
       Apply to this fund
       <div
-        className="sc-lhVmIH kgDmyP"
+        className="sc-bYSBpT fDuZRB"
       >
         <svg
           height="14"
@@ -4312,7 +4343,7 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
     </a>
   </li>
   <li
-    className="sc-cmTdod iLcGLG"
+    className="sc-jwKygS cHuios"
   >
     <h4
       className="sc-gisBJw sTdwR"
@@ -4320,19 +4351,19 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
       Get funding fund
     </h4>
     <p
-      className="sc-jwKygS bevsbo"
+      className="sc-btzYZH cBACKx"
     >
       Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
     </p>
     <a
-      className="sc-btzYZH exywtF"
+      className="sc-lhVmIH mFIXE"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
     >
       Apply to this fund
       <div
-        className="sc-lhVmIH kgDmyP"
+        className="sc-bYSBpT fDuZRB"
       >
         <svg
           height="14"
@@ -4357,7 +4388,7 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
     </a>
   </li>
   <li
-    className="sc-cmTdod iLcGLG"
+    className="sc-jwKygS cHuios"
   >
     <h4
       className="sc-gisBJw sTdwR"
@@ -4365,19 +4396,19 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
       Get funding fund
     </h4>
     <p
-      className="sc-jwKygS bevsbo"
+      className="sc-btzYZH cBACKx"
     >
       Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
     </p>
     <a
-      className="sc-btzYZH exywtF"
+      className="sc-lhVmIH mFIXE"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
     >
       Apply to this fund
       <div
-        className="sc-lhVmIH kgDmyP"
+        className="sc-bYSBpT fDuZRB"
       >
         <svg
           height="14"
@@ -4402,7 +4433,7 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
     </a>
   </li>
   <li
-    className="sc-cmTdod iLcGLG"
+    className="sc-jwKygS cHuios"
   >
     <h4
       className="sc-gisBJw sTdwR"
@@ -4410,19 +4441,19 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
       Find a fund
     </h4>
     <p
-      className="sc-jwKygS bevsbo"
+      className="sc-btzYZH cBACKx"
     >
       Yes, Yes, without the oops! Hey, take a look at the earthlings. Goodbye!
     </p>
     <a
-      className="sc-btzYZH exywtF"
+      className="sc-lhVmIH mFIXE"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
     >
       Apply to this fund
       <div
-        className="sc-lhVmIH kgDmyP"
+        className="sc-bYSBpT fDuZRB"
       >
         <svg
           height="14"
@@ -4451,10 +4482,10 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
 
 exports[`Storyshots All Components/PageLinks Four Links Industry Theme 1`] = `
 <ul
-  className="sc-elJkPf zcBrL"
+  className="sc-jtRfpW jNlsUp"
 >
   <li
-    className="sc-cmTdod kpDeMZ"
+    className="sc-jwKygS bccWWN"
   >
     <h4
       className="sc-gisBJw sTdwR"
@@ -4462,19 +4493,19 @@ exports[`Storyshots All Components/PageLinks Four Links Industry Theme 1`] = `
       Industry fund
     </h4>
     <p
-      className="sc-jwKygS bPHPvZ"
+      className="sc-btzYZH eppDwi"
     >
       What do they got in there? King Kong? You know what? It is beets. I've crashed into a beet truck. Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.
     </p>
     <a
-      className="sc-btzYZH ebvhyN"
+      className="sc-lhVmIH lejKvn"
       colorScheme={1}
       href="/#"
       onClick={[Function]}
     >
       Apply to this fund
       <div
-        className="sc-lhVmIH kgDmyP"
+        className="sc-bYSBpT fDuZRB"
       >
         <svg
           height="14"
@@ -4499,7 +4530,7 @@ exports[`Storyshots All Components/PageLinks Four Links Industry Theme 1`] = `
     </a>
   </li>
   <li
-    className="sc-cmTdod kpDeMZ"
+    className="sc-jwKygS bccWWN"
   >
     <h4
       className="sc-gisBJw sTdwR"
@@ -4507,19 +4538,19 @@ exports[`Storyshots All Components/PageLinks Four Links Industry Theme 1`] = `
       Get funding fund
     </h4>
     <p
-      className="sc-jwKygS bPHPvZ"
+      className="sc-btzYZH eppDwi"
     >
       Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
     </p>
     <a
-      className="sc-btzYZH ebvhyN"
+      className="sc-lhVmIH lejKvn"
       colorScheme={1}
       href="/#"
       onClick={[Function]}
     >
       Apply to this fund
       <div
-        className="sc-lhVmIH kgDmyP"
+        className="sc-bYSBpT fDuZRB"
       >
         <svg
           height="14"
@@ -4544,7 +4575,7 @@ exports[`Storyshots All Components/PageLinks Four Links Industry Theme 1`] = `
     </a>
   </li>
   <li
-    className="sc-cmTdod kpDeMZ"
+    className="sc-jwKygS bccWWN"
   >
     <h4
       className="sc-gisBJw sTdwR"
@@ -4552,19 +4583,19 @@ exports[`Storyshots All Components/PageLinks Four Links Industry Theme 1`] = `
       Get funding fund
     </h4>
     <p
-      className="sc-jwKygS bPHPvZ"
+      className="sc-btzYZH eppDwi"
     >
       Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
     </p>
     <a
-      className="sc-btzYZH ebvhyN"
+      className="sc-lhVmIH lejKvn"
       colorScheme={1}
       href="/#"
       onClick={[Function]}
     >
       Apply to this fund
       <div
-        className="sc-lhVmIH kgDmyP"
+        className="sc-bYSBpT fDuZRB"
       >
         <svg
           height="14"
@@ -4589,7 +4620,7 @@ exports[`Storyshots All Components/PageLinks Four Links Industry Theme 1`] = `
     </a>
   </li>
   <li
-    className="sc-cmTdod kpDeMZ"
+    className="sc-jwKygS bccWWN"
   >
     <h4
       className="sc-gisBJw sTdwR"
@@ -4597,19 +4628,19 @@ exports[`Storyshots All Components/PageLinks Four Links Industry Theme 1`] = `
       Find a fund
     </h4>
     <p
-      className="sc-jwKygS bPHPvZ"
+      className="sc-btzYZH eppDwi"
     >
       Yes, Yes, without the oops! Hey, take a look at the earthlings. Goodbye!
     </p>
     <a
-      className="sc-btzYZH ebvhyN"
+      className="sc-lhVmIH lejKvn"
       colorScheme={1}
       href="/#"
       onClick={[Function]}
     >
       Apply to this fund
       <div
-        className="sc-lhVmIH kgDmyP"
+        className="sc-bYSBpT fDuZRB"
       >
         <svg
           height="14"
@@ -4638,10 +4669,10 @@ exports[`Storyshots All Components/PageLinks Four Links Industry Theme 1`] = `
 
 exports[`Storyshots All Components/PageLinks Four Links Learn Theme 1`] = `
 <ul
-  className="sc-elJkPf zcBrL"
+  className="sc-jtRfpW jNlsUp"
 >
   <li
-    className="sc-cmTdod brOxaA"
+    className="sc-jwKygS gcGTEK"
   >
     <h4
       className="sc-gisBJw sTdwR"
@@ -4649,19 +4680,19 @@ exports[`Storyshots All Components/PageLinks Four Links Learn Theme 1`] = `
       Industry fund
     </h4>
     <p
-      className="sc-jwKygS djkLCf"
+      className="sc-btzYZH hncEib"
     >
       What do they got in there? King Kong? You know what? It is beets. I've crashed into a beet truck. Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.
     </p>
     <a
-      className="sc-btzYZH hHVHcB"
+      className="sc-lhVmIH yBVTp"
       colorScheme={2}
       href="/#"
       onClick={[Function]}
     >
       Apply to this fund
       <div
-        className="sc-lhVmIH kgDmyP"
+        className="sc-bYSBpT fDuZRB"
       >
         <svg
           height="14"
@@ -4686,7 +4717,7 @@ exports[`Storyshots All Components/PageLinks Four Links Learn Theme 1`] = `
     </a>
   </li>
   <li
-    className="sc-cmTdod brOxaA"
+    className="sc-jwKygS gcGTEK"
   >
     <h4
       className="sc-gisBJw sTdwR"
@@ -4694,19 +4725,19 @@ exports[`Storyshots All Components/PageLinks Four Links Learn Theme 1`] = `
       Get funding fund
     </h4>
     <p
-      className="sc-jwKygS djkLCf"
+      className="sc-btzYZH hncEib"
     >
       Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
     </p>
     <a
-      className="sc-btzYZH hHVHcB"
+      className="sc-lhVmIH yBVTp"
       colorScheme={2}
       href="/#"
       onClick={[Function]}
     >
       Apply to this fund
       <div
-        className="sc-lhVmIH kgDmyP"
+        className="sc-bYSBpT fDuZRB"
       >
         <svg
           height="14"
@@ -4731,7 +4762,7 @@ exports[`Storyshots All Components/PageLinks Four Links Learn Theme 1`] = `
     </a>
   </li>
   <li
-    className="sc-cmTdod brOxaA"
+    className="sc-jwKygS gcGTEK"
   >
     <h4
       className="sc-gisBJw sTdwR"
@@ -4739,19 +4770,19 @@ exports[`Storyshots All Components/PageLinks Four Links Learn Theme 1`] = `
       Get funding fund
     </h4>
     <p
-      className="sc-jwKygS djkLCf"
+      className="sc-btzYZH hncEib"
     >
       Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
     </p>
     <a
-      className="sc-btzYZH hHVHcB"
+      className="sc-lhVmIH yBVTp"
       colorScheme={2}
       href="/#"
       onClick={[Function]}
     >
       Apply to this fund
       <div
-        className="sc-lhVmIH kgDmyP"
+        className="sc-bYSBpT fDuZRB"
       >
         <svg
           height="14"
@@ -4776,7 +4807,7 @@ exports[`Storyshots All Components/PageLinks Four Links Learn Theme 1`] = `
     </a>
   </li>
   <li
-    className="sc-cmTdod brOxaA"
+    className="sc-jwKygS gcGTEK"
   >
     <h4
       className="sc-gisBJw sTdwR"
@@ -4784,19 +4815,19 @@ exports[`Storyshots All Components/PageLinks Four Links Learn Theme 1`] = `
       Find a fund
     </h4>
     <p
-      className="sc-jwKygS djkLCf"
+      className="sc-btzYZH hncEib"
     >
       Yes, Yes, without the oops! Hey, take a look at the earthlings. Goodbye!
     </p>
     <a
-      className="sc-btzYZH hHVHcB"
+      className="sc-lhVmIH yBVTp"
       colorScheme={2}
       href="/#"
       onClick={[Function]}
     >
       Apply to this fund
       <div
-        className="sc-lhVmIH kgDmyP"
+        className="sc-bYSBpT fDuZRB"
       >
         <svg
           height="14"
@@ -4825,10 +4856,10 @@ exports[`Storyshots All Components/PageLinks Four Links Learn Theme 1`] = `
 
 exports[`Storyshots All Components/PageLinks Four Links Watch Theme 1`] = `
 <ul
-  className="sc-elJkPf zcBrL"
+  className="sc-jtRfpW jNlsUp"
 >
   <li
-    className="sc-cmTdod iLcGLG"
+    className="sc-jwKygS cHuios"
   >
     <h4
       className="sc-gisBJw sTdwR"
@@ -4836,19 +4867,19 @@ exports[`Storyshots All Components/PageLinks Four Links Watch Theme 1`] = `
       Industry fund
     </h4>
     <p
-      className="sc-jwKygS bevsbo"
+      className="sc-btzYZH cBACKx"
     >
       What do they got in there? King Kong? You know what? It is beets. I've crashed into a beet truck. Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.
     </p>
     <a
-      className="sc-btzYZH exywtF"
+      className="sc-lhVmIH mFIXE"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
     >
       Apply to this fund
       <div
-        className="sc-lhVmIH kgDmyP"
+        className="sc-bYSBpT fDuZRB"
       >
         <svg
           height="14"
@@ -4873,7 +4904,7 @@ exports[`Storyshots All Components/PageLinks Four Links Watch Theme 1`] = `
     </a>
   </li>
   <li
-    className="sc-cmTdod iLcGLG"
+    className="sc-jwKygS cHuios"
   >
     <h4
       className="sc-gisBJw sTdwR"
@@ -4881,19 +4912,19 @@ exports[`Storyshots All Components/PageLinks Four Links Watch Theme 1`] = `
       Get funding fund
     </h4>
     <p
-      className="sc-jwKygS bevsbo"
+      className="sc-btzYZH cBACKx"
     >
       Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
     </p>
     <a
-      className="sc-btzYZH exywtF"
+      className="sc-lhVmIH mFIXE"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
     >
       Apply to this fund
       <div
-        className="sc-lhVmIH kgDmyP"
+        className="sc-bYSBpT fDuZRB"
       >
         <svg
           height="14"
@@ -4918,7 +4949,7 @@ exports[`Storyshots All Components/PageLinks Four Links Watch Theme 1`] = `
     </a>
   </li>
   <li
-    className="sc-cmTdod iLcGLG"
+    className="sc-jwKygS cHuios"
   >
     <h4
       className="sc-gisBJw sTdwR"
@@ -4926,19 +4957,19 @@ exports[`Storyshots All Components/PageLinks Four Links Watch Theme 1`] = `
       Get funding fund
     </h4>
     <p
-      className="sc-jwKygS bevsbo"
+      className="sc-btzYZH cBACKx"
     >
       Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
     </p>
     <a
-      className="sc-btzYZH exywtF"
+      className="sc-lhVmIH mFIXE"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
     >
       Apply to this fund
       <div
-        className="sc-lhVmIH kgDmyP"
+        className="sc-bYSBpT fDuZRB"
       >
         <svg
           height="14"
@@ -4963,7 +4994,7 @@ exports[`Storyshots All Components/PageLinks Four Links Watch Theme 1`] = `
     </a>
   </li>
   <li
-    className="sc-cmTdod iLcGLG"
+    className="sc-jwKygS cHuios"
   >
     <h4
       className="sc-gisBJw sTdwR"
@@ -4971,19 +5002,19 @@ exports[`Storyshots All Components/PageLinks Four Links Watch Theme 1`] = `
       Find a fund
     </h4>
     <p
-      className="sc-jwKygS bevsbo"
+      className="sc-btzYZH cBACKx"
     >
       Yes, Yes, without the oops! Hey, take a look at the earthlings. Goodbye!
     </p>
     <a
-      className="sc-btzYZH exywtF"
+      className="sc-lhVmIH mFIXE"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
     >
       Apply to this fund
       <div
-        className="sc-lhVmIH kgDmyP"
+        className="sc-bYSBpT fDuZRB"
       >
         <svg
           height="14"
@@ -5012,13 +5043,13 @@ exports[`Storyshots All Components/PageLinks Four Links Watch Theme 1`] = `
 
 exports[`Storyshots All Components/PageLinks Four Links With Image 1`] = `
 <ul
-  className="sc-elJkPf zcBrL"
+  className="sc-jtRfpW jNlsUp"
 >
   <li
-    className="sc-cmTdod fiqlNw"
+    className="sc-jwKygS gzZJPi"
   >
     <div
-      className="sc-bYSBpT eDCyxP"
+      className="sc-elJkPf jkopOT"
     />
     <h4
       className="sc-gisBJw sTdwR"
@@ -5026,14 +5057,14 @@ exports[`Storyshots All Components/PageLinks Four Links With Image 1`] = `
       Industry fund
     </h4>
     <a
-      className="sc-btzYZH exywtF"
+      className="sc-lhVmIH mFIXE"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
     >
       Apply to this fund
       <div
-        className="sc-lhVmIH kgDmyP"
+        className="sc-bYSBpT fDuZRB"
       >
         <svg
           height="14"
@@ -5058,10 +5089,10 @@ exports[`Storyshots All Components/PageLinks Four Links With Image 1`] = `
     </a>
   </li>
   <li
-    className="sc-cmTdod fiqlNw"
+    className="sc-jwKygS gzZJPi"
   >
     <div
-      className="sc-bYSBpT eDCyxP"
+      className="sc-elJkPf jkopOT"
     />
     <h4
       className="sc-gisBJw sTdwR"
@@ -5069,14 +5100,14 @@ exports[`Storyshots All Components/PageLinks Four Links With Image 1`] = `
       Get funding fund
     </h4>
     <a
-      className="sc-btzYZH exywtF"
+      className="sc-lhVmIH mFIXE"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
     >
       Apply to this fund
       <div
-        className="sc-lhVmIH kgDmyP"
+        className="sc-bYSBpT fDuZRB"
       >
         <svg
           height="14"
@@ -5101,10 +5132,10 @@ exports[`Storyshots All Components/PageLinks Four Links With Image 1`] = `
     </a>
   </li>
   <li
-    className="sc-cmTdod fiqlNw"
+    className="sc-jwKygS gzZJPi"
   >
     <div
-      className="sc-bYSBpT eDCyxP"
+      className="sc-elJkPf jkopOT"
     />
     <h4
       className="sc-gisBJw sTdwR"
@@ -5112,14 +5143,14 @@ exports[`Storyshots All Components/PageLinks Four Links With Image 1`] = `
       Get funding fund
     </h4>
     <a
-      className="sc-btzYZH exywtF"
+      className="sc-lhVmIH mFIXE"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
     >
       Apply to this fund
       <div
-        className="sc-lhVmIH kgDmyP"
+        className="sc-bYSBpT fDuZRB"
       >
         <svg
           height="14"
@@ -5144,10 +5175,10 @@ exports[`Storyshots All Components/PageLinks Four Links With Image 1`] = `
     </a>
   </li>
   <li
-    className="sc-cmTdod fiqlNw"
+    className="sc-jwKygS gzZJPi"
   >
     <div
-      className="sc-bYSBpT eDCyxP"
+      className="sc-elJkPf jkopOT"
     />
     <h4
       className="sc-gisBJw sTdwR"
@@ -5155,14 +5186,14 @@ exports[`Storyshots All Components/PageLinks Four Links With Image 1`] = `
       Find a fund
     </h4>
     <a
-      className="sc-btzYZH exywtF"
+      className="sc-lhVmIH mFIXE"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
     >
       Apply to this fund
       <div
-        className="sc-lhVmIH kgDmyP"
+        className="sc-bYSBpT fDuZRB"
       >
         <svg
           height="14"
@@ -5191,10 +5222,10 @@ exports[`Storyshots All Components/PageLinks Four Links With Image 1`] = `
 
 exports[`Storyshots All Components/PageLinks Three Links 1`] = `
 <ul
-  className="sc-elJkPf zcBrL"
+  className="sc-jtRfpW jNlsUp"
 >
   <li
-    className="sc-cmTdod iLcGLG"
+    className="sc-jwKygS cHuios"
   >
     <h4
       className="sc-gisBJw sTdwR"
@@ -5202,19 +5233,19 @@ exports[`Storyshots All Components/PageLinks Three Links 1`] = `
       Industry fund
     </h4>
     <p
-      className="sc-jwKygS bevsbo"
+      className="sc-btzYZH cBACKx"
     >
       What do they got in there? King Kong? You know what? It is beets. I've crashed into a beet truck. Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.
     </p>
     <a
-      className="sc-btzYZH exywtF"
+      className="sc-lhVmIH mFIXE"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
     >
       Apply to this fund
       <div
-        className="sc-lhVmIH kgDmyP"
+        className="sc-bYSBpT fDuZRB"
       >
         <svg
           height="14"
@@ -5239,7 +5270,7 @@ exports[`Storyshots All Components/PageLinks Three Links 1`] = `
     </a>
   </li>
   <li
-    className="sc-cmTdod iLcGLG"
+    className="sc-jwKygS cHuios"
   >
     <h4
       className="sc-gisBJw sTdwR"
@@ -5247,19 +5278,19 @@ exports[`Storyshots All Components/PageLinks Three Links 1`] = `
       Get funding fund
     </h4>
     <p
-      className="sc-jwKygS bevsbo"
+      className="sc-btzYZH cBACKx"
     >
       Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
     </p>
     <a
-      className="sc-btzYZH exywtF"
+      className="sc-lhVmIH mFIXE"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
     >
       Apply to this fund
       <div
-        className="sc-lhVmIH kgDmyP"
+        className="sc-bYSBpT fDuZRB"
       >
         <svg
           height="14"
@@ -5284,7 +5315,7 @@ exports[`Storyshots All Components/PageLinks Three Links 1`] = `
     </a>
   </li>
   <li
-    className="sc-cmTdod iLcGLG"
+    className="sc-jwKygS cHuios"
   >
     <h4
       className="sc-gisBJw sTdwR"
@@ -5292,19 +5323,19 @@ exports[`Storyshots All Components/PageLinks Three Links 1`] = `
       Get funding fund
     </h4>
     <p
-      className="sc-jwKygS bevsbo"
+      className="sc-btzYZH cBACKx"
     >
       Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
     </p>
     <a
-      className="sc-btzYZH exywtF"
+      className="sc-lhVmIH mFIXE"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
     >
       Apply to this fund
       <div
-        className="sc-lhVmIH kgDmyP"
+        className="sc-bYSBpT fDuZRB"
       >
         <svg
           height="14"
@@ -5341,111 +5372,111 @@ exports[`Storyshots All Components/StepByStep Primary 1`] = `
   }
 >
   <section
-    className="sc-jnlKLf jKMWma"
+    className="sc-fYxtnH hSLfWw"
   >
     <h3
-      className="sc-fYxtnH dPnkJj"
+      className="sc-tilXH brGkib"
     >
       Applying for film funding
     </h3>
     <ol
-      className="sc-tilXH jdxMtS"
+      className="sc-hEsumM eiLEeH"
     >
       <li
-        className="sc-hEsumM rdxIb"
+        className="sc-ktHwxA bXySDg"
       >
         <button
           aria-expanded="false"
-          className="sc-cIShpX guPjlv"
+          className="sc-kafWEX gzunVU"
           onClick={[Function]}
         >
           <strong
-            className="sc-ktHwxA exfjVq"
+            className="sc-cIShpX RtEBw"
           >
             Is this fund right for you?
           </strong>
           <p
-            className="sc-kafWEX icylbA"
+            className="sc-feJyhm ljkdxt"
           >
             Show
           </p>
         </button>
       </li>
       <li
-        className="sc-hEsumM rdxIb"
+        className="sc-ktHwxA bXySDg"
       >
         <button
           aria-expanded="false"
-          className="sc-cIShpX guPjlv"
+          className="sc-kafWEX gzunVU"
           onClick={[Function]}
         >
           <strong
-            className="sc-ktHwxA exfjVq"
+            className="sc-cIShpX RtEBw"
           >
             Prepare your supporting materials
           </strong>
           <p
-            className="sc-kafWEX icylbA"
+            className="sc-feJyhm ljkdxt"
           >
             Show
           </p>
         </button>
       </li>
       <li
-        className="sc-hEsumM rdxIb"
+        className="sc-ktHwxA bXySDg"
       >
         <button
           aria-expanded="false"
-          className="sc-cIShpX guPjlv"
+          className="sc-kafWEX gzunVU"
           onClick={[Function]}
         >
           <strong
-            className="sc-ktHwxA exfjVq"
+            className="sc-cIShpX RtEBw"
           >
             Apply
           </strong>
           <p
-            className="sc-kafWEX icylbA"
+            className="sc-feJyhm ljkdxt"
           >
             Show
           </p>
         </button>
       </li>
       <li
-        className="sc-hEsumM rdxIb"
+        className="sc-ktHwxA bXySDg"
       >
         <button
           aria-expanded="false"
-          className="sc-cIShpX guPjlv"
+          className="sc-kafWEX gzunVU"
           onClick={[Function]}
         >
           <strong
-            className="sc-ktHwxA exfjVq"
+            className="sc-cIShpX RtEBw"
           >
             Wait to hear from us
           </strong>
           <p
-            className="sc-kafWEX icylbA"
+            className="sc-feJyhm ljkdxt"
           >
             Show
           </p>
         </button>
       </li>
       <li
-        className="sc-hEsumM rdxIb"
+        className="sc-ktHwxA bXySDg"
       >
         <button
           aria-expanded="false"
-          className="sc-cIShpX guPjlv"
+          className="sc-kafWEX gzunVU"
           onClick={[Function]}
         >
           <strong
-            className="sc-ktHwxA exfjVq"
+            className="sc-cIShpX RtEBw"
           >
             Your decision
           </strong>
           <p
-            className="sc-kafWEX icylbA"
+            className="sc-feJyhm ljkdxt"
           >
             Show
           </p>
@@ -5465,7 +5496,7 @@ exports[`Storyshots All Components/Text Normal 1`] = `
   }
 >
   <article
-    className="sc-ksYbfQ cedrlG"
+    className="sc-hmzhuo kBuKSW"
   >
     
 

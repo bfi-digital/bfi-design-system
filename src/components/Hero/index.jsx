@@ -4,6 +4,21 @@ import styled from "styled-components"
 import theme from "../_theme"
 import PropTypes from "prop-types"
 
+const colorSchemes = [
+    {
+        background: "transparent"
+    },
+    {
+        background: theme.dustyPink
+    },
+    {
+        background: theme.racerGreen
+    },
+    {
+        background: theme.deepNavy
+    }
+]
+
 const Outer = styled.section`
     background: ${theme.charcoal};
     background-image: url(${props => props.image});
@@ -29,12 +44,23 @@ const Outer = styled.section`
         }
     }
 `
+const InnerGradient = styled.div`
+    background: ${props => colorSchemes[props.colorScheme].background};
+    opacity: 0.6;
+    background-image: linear-gradient(180deg, rgba(14,24,19,0.00) 0%, rgba(14,24,19,0.60) 80%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+`
 
 const Container = styled.div`
     max-width: ${theme.l};
     width: 100%;
     margin: 0 auto;
     padding: 0px ${theme.horizontalPadding};
+    z-index: 1;
+
     @media screen and (min-width: ${theme.xl}){
         max-width: ${theme.xl};
     }
@@ -43,9 +69,11 @@ const Container = styled.div`
 export const Hero = ({
     image,
     headline,
-    fullHeight
+    fullHeight,
+    colorScheme
 }) =>
     <Outer fullHeight={fullHeight} image={image}>
+        <InnerGradient  colorScheme={colorScheme} />
         <Container>
             <Headline level={0} text={headline}/>
         </Container>
@@ -65,8 +93,13 @@ Hero.propTypes = {
 	 * A boolean to determine if the hero is set full width - defaulting to false, set it to true to have a taller hero.
 	 **/
     fullHeight: PropTypes.bool,
+    /** 
+	 * A number to define which colour overlay the Hero should have, it defaults to none.
+	 **/
+    colorScheme: PropTypes.number
 }
 
 Hero.defaultProps = {
-    fullHeight: false
+    fullHeight: false,
+    colorScheme: 0
 }

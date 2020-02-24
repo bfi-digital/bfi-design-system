@@ -6,8 +6,6 @@ import {default as crumbs} from "../Breadcrumbs/data"
 import footerMenus from "../Footer/data"
 
 import { Headline } from "../Headline"
-import { Divider } from "../Divider"
-import { Button } from "../Button"
 import { Breadcrumbs } from "../Breadcrumbs"
 import { Header } from "../Header"
 import { Hero } from "../Hero"
