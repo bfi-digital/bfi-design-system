@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { Link } from "@reach/router"
+import { LinkSwitch as Link } from "../../LinkSwitch"
 import theme from "../../_theme"
 import styled from "styled-components"
 
@@ -20,7 +20,7 @@ const Panel = styled.nav`
     width: 100%;
     bottom: 0px;
     background: ${theme.white};
-    padding: 0px 15px;
+    padding: 0px ${theme.horizontalPadding};
     animation: fadeIn 0.1s ease-out;
     overflow-y: scroll;
     @media screen and (min-width: ${theme.m}){
@@ -111,13 +111,13 @@ const MobilePanel = ({
                             {selected === i &&
                                 <>
                                     <ChildItem>
-                                        <ChildLink to={navItem.url}>
+                                        <ChildLink to={navItem.url} external={navItem.external}>
                                             {navItem.title} home
                                         </ChildLink>
                                     </ChildItem>
                                     {navItem.children.map((child, j) =>
                                         <ChildItem key={j}>
-                                            <ChildLink to={child.url}>
+                                            <ChildLink to={child.url} external={child.external}>
                                                 {child.title}
                                             </ChildLink>
                                         </ChildItem>

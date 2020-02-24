@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "@reach/router"
+import { LinkSwitch as Link } from "../../LinkSwitch"
 import theme from "../../_theme"
 import styled from "styled-components"
 
@@ -80,7 +80,7 @@ const ChildBar = styled.div`
 `
 
 const ChildList = styled.ul`
-    padding: 0px 15px;
+    padding: 0px ${theme.horizontalPadding};
     max-width:  ${theme.l};
     margin: 0 auto;
     width: 100%;
@@ -131,6 +131,7 @@ const Nav = ({
                         onFocus={() => setSelected(i)}
                         aria-haspopup="true"
                         to={navItem.url} 
+                        external={navItem.external}
                         active={navItem.active}
                         hovered={selected === i}
                         // role="menuitem"

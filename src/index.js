@@ -1,3 +1,5 @@
+
+// Normal components
 export * from "./components/Header"
 export * from "./components/Footer"
 export * from "./components/Headline"
@@ -9,5 +11,8 @@ export * from "./components/LeadParagraph"
 export * from "./components/Divider"
 export * from "./components/Blockquote"
 export * from "./components/Images"
+export * from "./components/Button"
+export * from "./components/StepByStep"
 
+// Page scaffolds
 export * from "./components/PageContainer"

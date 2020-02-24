@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react"
 import theme from "../_theme"
 import styled from "styled-components"
 import PropTypes from "prop-types"
-import { Link } from "@reach/router"
+import { LinkSwitch as Link } from "../LinkSwitch"
 import Search from "./Search"
 import QuickLinks from "./QuickLinks"
 import MobilePanel from "./MobilePanel"
@@ -31,8 +31,7 @@ const Inner = styled.div`
     align-items: center;
     max-width:  ${theme.l};
     margin: 0 auto;
-    padding: 0px 15px;
-
+    padding: 0px ${theme.horizontalPadding};
     @media screen and (min-width: ${theme.xl}){
         max-width: ${theme.xl};
     }

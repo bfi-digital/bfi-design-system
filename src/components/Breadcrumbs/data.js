@@ -26,6 +26,6 @@ export const longData = [
         url: "#"
     },
     {
-        title: "Find a fund to create films, TV or new formats of storytelling"
+        title: "Development Fund"
     }
 ]

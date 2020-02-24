@@ -1,5 +1,5 @@
 import React from "react"
-import { Wrapper, MainContent, Sidebar } from "./index"
+import { Wrapper, MainContent } from "./index"
 
 import navItems from "../Header/data"
 import {longData as crumbs} from "../Breadcrumbs/data"
@@ -13,10 +13,9 @@ import { Header } from "../Header"
 import { Footer } from "../Footer"
 import { LeadParagraph } from "../LeadParagraph"
 import { Text } from "../Text"
-import { StepByStep } from "../StepByStep"
 
 export default {
-    title: "All Components/Page"
+    title: "All Components/PageFullWidth"
 }
 
 export const normal = () =>
@@ -38,9 +37,6 @@ export const normal = () =>
                     html="So you two dig up, dig up dinosaurs? Hey, you know how I'm, like, always trying to save the planet? Here's my chance. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should."
                 />
             </MainContent>
-            <Sidebar>
-                Sidebar here
-            </Sidebar>
         </Wrapper>
         <Footer
             menus={footerMenus}
@@ -153,33 +149,7 @@ export const activePage = () =>
                     html="<p>Contact us if you have a question about your application: <a href='mailto:developmentcoordinator@bfi.org.uk' title='Email us'>developmentcoordinator@bfi.org.uk</a>.</p>"
                 />
             </MainContent>
-            <Sidebar>
-                <StepByStep 
-                    title="Applying for film funding"
-                    steps={[
-                        {
-                            title: "Is this fund right for you?",
-                            description: "The BFI Audience Fund supports audience facing film projects and organisations of national scale and significant cultural ambition."
-                        },
-                        {
-                            title: "Prepare your supporting materials",
-                            description: "The BFI Audience Fund supports audience facing film projects and organisations of national scale and significant cultural ambition."
-                        },
-                        {
-                            title: "Apply",
-                            description: "The BFI Audience Fund supports audience facing film projects and organisations of national scale and significant cultural ambition."
-                        },
-                        {
-                            title: "Wait to hear from us",
-                            description: "The BFI Audience Fund supports audience facing film projects and organisations of national scale and significant cultural ambition."
-                        },
-                        {
-                            title: "Your decision",
-                            description: "The BFI Audience Fund supports audience facing film projects and organisations of national scale and significant cultural ambition."
-                        },
-                    ]} 
-                />
-            </Sidebar>
+    
         </Wrapper>
         <Footer
             menus={footerMenus}

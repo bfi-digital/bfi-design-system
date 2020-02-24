@@ -7,6 +7,9 @@ export default {
     decorators: [withA11y],
 }
 
+export const HeroH1 = () =>
+    <Headline level={0} text="My example headline" />
+
 export const level1 = () =>
     <Headline level={1} text="My example headline" />
 

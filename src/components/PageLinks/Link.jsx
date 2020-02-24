@@ -1,22 +1,34 @@
 import React from "react"
 import styled from "styled-components"
 import theme from "../_theme"
-import { Link } from "@reach/router"
+import { LinkSwitch as Link } from "../LinkSwitch"
 import { Headline } from "../Headline"
-import arrow from "./arrow-right.svg"
+import Arrow from "./arrow-right.jsx"
 
 const colorSchemes = [
     {
+        background: theme.lightPink,
+        shadow: theme.darkPink,
+        text: theme.darkPink,
+        focus: theme.dustyPink
+    },
+    {
         background: theme.lightGreen,
-        shadow: theme.darkGreen,
+        shadow: theme.racerGreen,
         text: theme.racerGreen,
+        focus: theme.dustyPink
+    },
+    {
+        background: theme.lightBlue,
+        shadow: theme.deepNavy,
+        text: theme.deepNavy,
         focus: theme.dustyPink
     }
 ]
 
 const Outer = styled.li`
     position: relative;
-    background: ${props => colorSchemes[props.colorScheme].background};
+    background: ${props => props.withImages ? theme.grey : colorSchemes[props.colorScheme].background};
     box-shadow: -5px 5px 0px ${props => colorSchemes[props.colorScheme].shadow};
     padding: 25px;
     margin-bottom: 35px;
@@ -25,13 +37,19 @@ const Outer = styled.li`
     display: flex;
     flex-direction: column;
     position: relative;
+    overflow: hidden;
+    &:before {
+        display: block;
+        content: "";
+        height: ${props => props.withImages ? "50%" : "0"};
+    }
     h4{
-        margin-top: 0px;
+        margin-top: 0;
         color: ${props => colorSchemes[props.colorScheme].text};
         margin-bottom: 20px;
     }
     &:hover, &:focus-within {
-        a img{
+        a svg{
             transform: translateX(5px)
         }
     }
@@ -69,9 +87,24 @@ const CallToAction = styled(Link)`
     }
 `
 
-const Icon = styled.img`
-    margin-left: 10px;
-    transition: transform 0.2s ease-out;
+const Icon = styled.div`
+    display: inline-block;
+    vertical-align: middle;    
+    svg {
+        margin-left: 10px;
+        transition: transform 0.2s ease-out;
+    }
+`
+
+const PageImage = styled.div`
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(${props => props.imageSrc});
+    height: calc(50% - 25px);
+    background-position: center center;
+    background-size: cover;
 `
 
 export const PageLink = ({
@@ -79,14 +112,22 @@ export const PageLink = ({
     description,
     callToAction,
     url,
-    colorScheme
+    image,
+    colorScheme,
+    external,
+    withImages
 }) =>
-    <Outer colorScheme={colorScheme}>
+    <Outer colorScheme={colorScheme} withImages={withImages}>
+        { withImages && 
+            <PageImage imageSrc={image} />
+        }
         <Headline level={4} text={title} />
-        <Description colorScheme={colorScheme}>{description}</Description>
-        <CallToAction to={url} colorScheme={colorScheme}>
+        { !withImages && 
+            <Description colorScheme={colorScheme}>{description}</Description>
+        }
+        <CallToAction external={external} to={url} colorScheme={colorScheme}>
             {callToAction}
-            <Icon src={arrow} alt=""/>
+            <Icon><Arrow colourFill={colorSchemes[colorScheme].text} /></Icon>
         </CallToAction>
     </Outer>
 

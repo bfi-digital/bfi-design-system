@@ -5,7 +5,7 @@ import { PageLink } from "./Link"
 import PropTypes from "prop-types"
 
 const Outer = styled.ul`
-    padding: 15px;
+    padding: 15px ${theme.horizontalPadding};
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -46,11 +46,12 @@ const Outer = styled.ul`
 
 export const PageLinks = ({
     links,
-    colorScheme
+    colorScheme,
+    withImages = false
 }) =>
     <Outer lessColumns={links.length === 3 || links.length === 6}>
         {links.map((link, i) =>
-            <PageLink key={i} {...link} colorScheme={colorScheme}/>    
+            <PageLink key={i} {...link} colorScheme={colorScheme} withImages={withImages} />    
         )}
     </Outer>
 

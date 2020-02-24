@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import theme from "../_theme"
-import { Link } from "@reach/router"
+import { LinkSwitch as Link } from "../LinkSwitch"
 import PropTypes from "prop-types"
 
 const Outer = styled.ol`
@@ -10,6 +10,7 @@ const Outer = styled.ol`
     font-size: 0.9rem;
     padding-left: 0px;
     line-height: 1.5;
+    margin-top: 0;
     @media screen and (min-width: ${theme.l}){
         font-size: 1rem;
         max-width: calc( 0.7 * ${theme.l});
@@ -38,7 +39,8 @@ const BreadcrumbLink = styled(Link)`
         text-decoration: none;
     }
     &:focus{
-        background: ${theme.lightPink}
+        background: ${theme.lightPink};
+        outline: none;
     }
 `
 
