@@ -113,11 +113,6 @@ export const Header = ({
         <>
             
             <TopSection 
-                onMouseLeave={() => {
-                    setSelected(false)
-                    overlay && setOverlaid(true)
-                }}
-                onMouseEnter={() => setOverlaid(false)}
                 isTransparent={isOverlaid}>
                 <Inner>
                     <LogoLink to="/">
@@ -135,9 +130,7 @@ export const Header = ({
                 ref={ref}
                 onMouseLeave={() => {
                     setSelected(false)
-                    overlay && setOverlaid(true)
                 }}
-                onMouseEnter={() => setOverlaid(false)}
                 isTransparent={isOverlaid}
                 overlay={overlay}
                 isSticky={isSticky}

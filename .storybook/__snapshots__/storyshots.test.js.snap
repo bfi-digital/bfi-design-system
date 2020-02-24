@@ -340,8 +340,6 @@ exports[`Storyshots All Components/Header Opaque Background 1`] = `
 Array [
   <div
     className="sc-fBuWsC gbMpwL"
-    onMouseEnter={[Function]}
-    onMouseLeave={[Function]}
   >
     <div
       className="sc-csuQGl fNmAKr"
@@ -394,7 +392,6 @@ Array [
   </div>,
   <header
     className="sc-gipzik gtsaGA"
-    onMouseEnter={[Function]}
     onMouseLeave={[Function]}
   >
     <div
@@ -600,8 +597,6 @@ exports[`Storyshots All Components/Header Transparent Background 1`] = `
 Array [
   <div
     className="sc-fBuWsC ILnJk"
-    onMouseEnter={[Function]}
-    onMouseLeave={[Function]}
   >
     <div
       className="sc-csuQGl fNmAKr"
@@ -654,7 +649,6 @@ Array [
   </div>,
   <header
     className="sc-gipzik kZqoEu"
-    onMouseEnter={[Function]}
     onMouseLeave={[Function]}
   >
     <div
@@ -860,8 +854,6 @@ exports[`Storyshots All Components/Header With Overflowing Content 1`] = `
 Array [
   <div
     className="sc-fBuWsC gbMpwL"
-    onMouseEnter={[Function]}
-    onMouseLeave={[Function]}
   >
     <div
       className="sc-csuQGl fNmAKr"
@@ -914,7 +906,6 @@ Array [
   </div>,
   <header
     className="sc-gipzik gtsaGA"
-    onMouseEnter={[Function]}
     onMouseLeave={[Function]}
   >
     <div
@@ -1159,7 +1150,7 @@ exports[`Storyshots All Components/Headline Level 3 1`] = `
 
 exports[`Storyshots All Components/Hero Full Height 1`] = `
 <section
-  className="sc-kjoXOD bfqiqr"
+  className="sc-kjoXOD cPyKbd"
 >
   <div
     className="sc-cHGsZl bQDmiL"
@@ -1175,7 +1166,7 @@ exports[`Storyshots All Components/Hero Full Height 1`] = `
 
 exports[`Storyshots All Components/Hero Normal 1`] = `
 <section
-  className="sc-kjoXOD fWbYdc"
+  className="sc-kjoXOD loxwJP"
 >
   <div
     className="sc-cHGsZl bQDmiL"
@@ -1193,8 +1184,6 @@ exports[`Storyshots All Components/Hero With Header 1`] = `
 Array [
   <div
     className="sc-fBuWsC ILnJk"
-    onMouseEnter={[Function]}
-    onMouseLeave={[Function]}
   >
     <div
       className="sc-csuQGl fNmAKr"
@@ -1247,7 +1236,6 @@ Array [
   </div>,
   <header
     className="sc-gipzik kZqoEu"
-    onMouseEnter={[Function]}
     onMouseLeave={[Function]}
   >
     <div
@@ -1447,7 +1435,7 @@ Array [
     </div>
   </header>,
   <section
-    className="sc-kjoXOD fWbYdc"
+    className="sc-kjoXOD loxwJP"
   >
     <div
       className="sc-cHGsZl bQDmiL"
@@ -1823,8 +1811,6 @@ exports[`Storyshots All Components/Page Active Page 1`] = `
 Array [
   <div
     className="sc-fBuWsC gbMpwL"
-    onMouseEnter={[Function]}
-    onMouseLeave={[Function]}
   >
     <div
       className="sc-csuQGl fNmAKr"
@@ -1877,7 +1863,6 @@ Array [
   </div>,
   <header
     className="sc-gipzik gtsaGA"
-    onMouseEnter={[Function]}
     onMouseLeave={[Function]}
   >
     <div
@@ -2637,8 +2622,6 @@ exports[`Storyshots All Components/Page Normal 1`] = `
 Array [
   <div
     className="sc-fBuWsC gbMpwL"
-    onMouseEnter={[Function]}
-    onMouseLeave={[Function]}
   >
     <div
       className="sc-csuQGl fNmAKr"
@@ -2691,7 +2674,6 @@ Array [
   </div>,
   <header
     className="sc-gipzik gtsaGA"
-    onMouseEnter={[Function]}
     onMouseLeave={[Function]}
   >
     <div
@@ -3148,8 +3130,6 @@ exports[`Storyshots All Components/PageFullWidth Home Page Example 1`] = `
 Array [
   <div
     className="sc-fBuWsC ILnJk"
-    onMouseEnter={[Function]}
-    onMouseLeave={[Function]}
   >
     <div
       className="sc-csuQGl fNmAKr"
@@ -3202,7 +3182,6 @@ Array [
   </div>,
   <header
     className="sc-gipzik kZqoEu"
-    onMouseEnter={[Function]}
     onMouseLeave={[Function]}
   >
     <div
@@ -3402,7 +3381,7 @@ Array [
     </div>
   </header>,
   <section
-    className="sc-kjoXOD fWbYdc"
+    className="sc-kjoXOD loxwJP"
   >
     <div
       className="sc-cHGsZl bQDmiL"
@@ -3816,8 +3795,6 @@ exports[`Storyshots All Components/PageFullWidth Service List Page Example 1`] =
 Array [
   <div
     className="sc-fBuWsC gbMpwL"
-    onMouseEnter={[Function]}
-    onMouseLeave={[Function]}
   >
     <div
       className="sc-csuQGl fNmAKr"
@@ -3870,7 +3847,6 @@ Array [
   </div>,
   <header
     className="sc-gipzik gtsaGA"
-    onMouseEnter={[Function]}
     onMouseLeave={[Function]}
   >
     <div

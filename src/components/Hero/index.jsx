@@ -10,20 +10,22 @@ const Outer = styled.section`
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: ${props => props.fullHeight ? "100vh" : "450px"};
+    height: ${props => props.fullHeight ? "80vh" : "450px"};
     display: flex;
     align-items: flex-end;
     @media screen and (min-width: ${theme.m}){
-        align-items: ${props => props.fullHeight ? "flex-end": "center"};
+        align-items: "flex-end";
     }
     h1{
         color: ${theme.white};
         max-width: calc( 0.5 * ${theme.l});
         text-shadow: 0px 0px 30px ${theme.charcoal}50;
+        margin-bottom: 50px;
     }
     @media screen and (min-width: ${theme.xl}){
         h1{
             max-width: calc( 0.5 * ${theme.xl})
+            margin-bottom: 75px;
         }
     }
 `
