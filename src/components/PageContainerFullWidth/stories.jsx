@@ -10,6 +10,7 @@ import { Divider } from "../Divider"
 import { Button } from "../Button"
 import { Breadcrumbs } from "../Breadcrumbs"
 import { Header } from "../Header"
+import { Hero } from "../Hero"
 import { Footer } from "../Footer"
 import { LeadParagraph } from "../LeadParagraph"
 import { Text } from "../Text"
@@ -46,7 +47,11 @@ export const serviceListPageExample = () =>
 
 export const homePageExample = () =>
     <>
-        <Header navItems={navItems}/>
+        <Header navItems={navItems} overlay={true} />
+        <Hero 
+            image="https://bfi-prototype.netlify.com/static/media/watch-banner.b01324c4.jpg"
+            headline="Watch a new film, rediscover your old favourites, and get inspired."
+        />
         <Wrapper>
             <MainContent>
                 <Headline 

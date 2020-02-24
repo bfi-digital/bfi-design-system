@@ -15,7 +15,7 @@ import LotteryLogo from "./lottery-logo.jsx"
 const Outer = styled.header`
     background: ${props => props.isTransparent ? (!props.isSticky ? "transparent" : theme.white) : theme.white};
     border-bottom: 1px solid ${props => props.isTransparent ? "transparent" : theme.grey};
-    margin-bottom: ${props => props.overlay ? "-65px" : "0px"};
+    margin-bottom: ${props => props.overlay ? "-175px" : "0px"};
     position: relative;
     z-index: 999;
     min-height: 60px;
