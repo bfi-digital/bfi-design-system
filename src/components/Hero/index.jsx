@@ -21,11 +21,11 @@ const colorSchemes = [
 
 const Outer = styled.section`
     background: ${theme.charcoal};
-    background-image: url(${props => props.image});
-    background-size: cover;
-    background-position: center;
     width: 100%;
     height: ${props => props.fullHeight ? "80vh" : "450px"};
+    background-image: url(${props => props.image1920x1080});
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: flex-end;
     @media screen and (min-width: ${theme.m}){
@@ -39,11 +39,12 @@ const Outer = styled.section`
     }
     @media screen and (min-width: ${theme.xl}){
         h1{
-            max-width: calc( 0.5 * ${theme.xl})
+            max-width: calc( 0.5 * ${theme.xl});
             margin-bottom: 75px;
         }
     }
 `
+
 const InnerGradient = styled.div`
     background: ${props => colorSchemes[props.colorScheme].background};
     opacity: 0.6;
@@ -67,12 +68,12 @@ const Container = styled.div`
 `
 
 export const Hero = ({
-    image,
+    image1920x1080,
     headline,
     fullHeight,
     colorScheme
 }) =>
-    <Outer fullHeight={fullHeight} image={image}>
+    <Outer fullHeight={fullHeight} image={image1920x1080}>
         <InnerGradient  colorScheme={colorScheme} />
         <Container>
             <Headline level={0} text={headline}/>
@@ -82,9 +83,9 @@ export const Hero = ({
 
 Hero.propTypes = {
     /** 
-	 * Url to the image for the hero. 
+	 * Urls to the image for the hero. 
 	 **/
-    image: PropTypes.string,
+    image1920x1080: PropTypes.string,
     /** 
 	 * The text for the title which will be used as the H1 for this page/post.
 	 **/

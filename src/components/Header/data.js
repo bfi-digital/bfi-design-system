@@ -8,7 +8,8 @@ export default [
             {
                 id: 1,
                 title: "BFI Player",
-                url: "/watch/bfi-player"
+                url: "/watch/bfi-player",
+                external: true
             },
             {
                 id: 2,
