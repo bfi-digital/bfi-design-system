@@ -11,7 +11,8 @@ import { Header } from "../Header"
 import { Hero } from "../Hero"
 import { Footer } from "../Footer"
 import { LeadParagraph } from "../LeadParagraph"
-import { Text } from "../Text"
+import { PageLinks } from "../PageLinks"
+import four from "../PageLinks/data"
 
 export default {
     title: "All Components/PageFullWidth"
@@ -32,9 +33,10 @@ export const serviceListPageExample = () =>
                 <LeadParagraph 
                     text="If you’re an adventurous storyteller, we can help you with funding to create your film, TV, or emerging media like VR or AR."
                 />
-                <Text 
-                    html="Page list goes here"
-                />
+                <PageLinks links={[
+                    ...four, ...four
+                ]} colorScheme={1}/>
+                
             </MainContent>
         </Wrapper>
         <Footer
