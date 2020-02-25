@@ -1,79 +1,39 @@
 import * as React from "react"
 import theme from "../../_theme"
 import styled from "styled-components"
+import { Link } from "@reach/router"
 
 const Wrapper = styled.div`
-    display: none;
-    @media screen and (min-width: ${theme.m}){
-        display: block;
-        background: ${theme.dustyPink};
-        font-weight: 600;
-        padding: 5px 0;
-    }
-`
-
-const Inner = styled.div`
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    max-width:  ${theme.l};
-    margin: 0 auto;
-    padding: 0px ${theme.horizontalPadding};
-    @media screen and (min-width: ${theme.xl}){
-        max-width: ${theme.xl};
-    }
-`
-
-const List = styled.ul`
-    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
     width: 100%;
-    align-items: center;
-    justify-content: center;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+`
+const QuickLink = styled(Link)`
+    background: ${props => props.isTransparent ? (props.isSticky ? theme.white : "transparent") : theme.white};
+    color: ${props => props.isTransparent ? (!props.isSticky ? theme.white : theme.darkPink) : theme.darkPink};
+    font-weight: 700;
+    text-decoration: none;
+    padding: 21px 15px;
+    transition: background 0.1s ease-out;
+    transition-delay: ${props => props.isSticky ? "0s" : "0.1s"};
 `
 
-const Item = styled.li`
-    width: 33%;
-    text-align: center;
-
-    a {
-        padding: 0;
-        color: ${theme.charcoal};
-        font-weight: 700;
-        text-decoration: none;
-
-        &:hover {
-            text-decoration: underline;
-        }
-        
-        &:focus {
-            border-radius: 7px;
-            box-shadow: inset ${theme.darkPink} 0px 0px 0px 4px;
-            outline: none !important;
-        }
-    }
-
-    @media screen and (min-width: ${theme.m}){
-        width: auto;
-        
-        a {
-            padding: 5px 20px;
-            text-align: left;
-        }
-    }
+const Positioner = styled.div`
+    position: absolute;
+    right: 10px;
+    top: 20px;
 `
 
-const QuickLinks = () =>
+const QuickLinks = ({Inner, isOverlaid, isSticky}) =>
     <Wrapper>
         <Inner>
-            <List>
-                <Item><a href="https://whatson.bfi.org.uk/Online/" target="_blank" rel="noopener noreferrer">Buy tickets</a></Item>
-                <Item><a href="https://player.bfi.org.uk/" target="_blank" rel="noopener noreferrer">BFI Player</a></Item>
-                <Item><a href="/" rel="noopener noreferrer">Become a member</a></Item>
-            </List>
+            <Positioner>
+                {/* todo: need to convert these to be dynamically pulled data from CMS */}
+                <QuickLink to="/" isTransparent={isOverlaid} isSticky={isSticky}>BFI Southbank</QuickLink>
+                <QuickLink to="/" isTransparent={isOverlaid} isSticky={isSticky}>Become a Member</QuickLink>
+            </Positioner>
         </Inner>
     </Wrapper>
 

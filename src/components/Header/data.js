@@ -12,27 +12,22 @@ export default [
             },
             {
                 id: 2,
-                title: "BFI Southbank",
+                title: "BFI Cinemas",
                 url: "/"
             },
             {
                 id: 3,
-                title: "BFI IMAX",
+                title: "Sight & Sound",
                 url: "/"
             },
             {
                 id: 4,
-                title: "Mediateque",
-                url: "/"
-            },
-            {
-                id: 5,
                 title: "BFI National Archive",
                 url: "/"
             },
             {
-                id: 6,
-                title: "London Film Festival",
+                id: 5,
+                title: "Seasons & Releases",
                 url: "/"
             }
         ]
@@ -41,42 +36,6 @@ export default [
         title: "Make & Industry",
         url: "#",
         children: [
-            {
-                id: 1,
-                title: "Sight & Sound",
-                url: "/"
-            },
-            {
-                id: 2,
-                title: "Editorials",
-                url: "/"
-            },
-            {
-                id: 3,
-                title: "News",
-                url: "/"
-            },
-            {
-                id: 4,
-                title: "Film Lists",
-                url: "/"
-            },
-            {
-                id: 5,
-                title: "BFI Releases",
-                url: "/"
-            },
-            {
-                id: 6,
-                title: "BFI National Archive",
-                url: "/"
-            }
-        ]
-    },
-    {
-        title: "Learn & Education",
-        url: "#",
-        children:   [
             {
                 id: 1,
                 title: "Get funding",
@@ -95,6 +54,37 @@ export default [
             {
                 id: 4,
                 title: "Understand the film industry",
+                url: "/"
+            }
+        ]
+    },
+    {
+        title: "Learn & Education",
+        url: "#",
+        children:   [
+            {
+                id: 1,
+                title: "Education events",
+                url: "/"
+            },
+            {
+                id: 2,
+                title: "Resources to teach",
+                url: "/"
+            },
+            {
+                id: 3,
+                title: "Resources to learn",
+                url: "/"
+            },
+            {
+                id: 4,
+                title: "Opportunities for young filmmakers",
+                url: "/"
+            },
+            {
+                id: 5,
+                title: "BFI Policy",
                 url: "/"
             }
         ]  

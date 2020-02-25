@@ -30,3 +30,11 @@ export const withHeader = () =>
             headline="Watch a new film, rediscover your old favourites, and get inspired."
         />
     </>
+
+
+export const industryTheme = () =>
+    <Hero 
+        image="https://bfi-prototype.netlify.com/static/media/watch-banner.b01324c4.jpg"
+        headline="Watch a new film, rediscover your old favourites, and get inspired."
+        colorScheme={2}
+    />
