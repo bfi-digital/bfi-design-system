@@ -85,6 +85,13 @@ const linkStyles = `
     &:hover{
         text-decoration: underline;
     }
+    &:focus{
+        outline: none;
+        background: ${theme.darkPink};
+    }
+    &::-moz-focus-inner {
+        border: 0;
+    }
 `
 
 const MenuItem = styled(Link)`${linkStyles}`
