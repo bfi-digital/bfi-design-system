@@ -136,7 +136,7 @@ exports[`Storyshots All Components/Button Secondary 1`] = `
   }
 >
   <a
-    className="sc-gzVnrw giGuYD"
+    className="sc-gzVnrw eePzTm"
     colorScheme={0}
     href="/#"
     onClick={[Function]}
@@ -177,7 +177,7 @@ exports[`Storyshots All Components/Footer Normal 1`] = `
         </h4>
         <a
           aria-current="page"
-          className="sc-cSHVUG lbaKwf"
+          className="sc-cSHVUG iMmoMd"
           href="/"
           onClick={[Function]}
         >
@@ -185,7 +185,7 @@ exports[`Storyshots All Components/Footer Normal 1`] = `
         </a>
         <a
           aria-current="page"
-          className="sc-cSHVUG lbaKwf"
+          className="sc-cSHVUG iMmoMd"
           href="/"
           onClick={[Function]}
         >
@@ -193,7 +193,7 @@ exports[`Storyshots All Components/Footer Normal 1`] = `
         </a>
         <a
           aria-current="page"
-          className="sc-cSHVUG lbaKwf"
+          className="sc-cSHVUG iMmoMd"
           href="/"
           onClick={[Function]}
         >
@@ -201,7 +201,7 @@ exports[`Storyshots All Components/Footer Normal 1`] = `
         </a>
         <a
           aria-current="page"
-          className="sc-cSHVUG lbaKwf"
+          className="sc-cSHVUG iMmoMd"
           href="/"
           onClick={[Function]}
         >
@@ -218,7 +218,7 @@ exports[`Storyshots All Components/Footer Normal 1`] = `
         </h4>
         <a
           aria-current="page"
-          className="sc-cSHVUG lbaKwf"
+          className="sc-cSHVUG iMmoMd"
           href="/"
           onClick={[Function]}
         >
@@ -226,7 +226,7 @@ exports[`Storyshots All Components/Footer Normal 1`] = `
         </a>
         <a
           aria-current="page"
-          className="sc-cSHVUG lbaKwf"
+          className="sc-cSHVUG iMmoMd"
           href="/"
           onClick={[Function]}
         >
@@ -234,7 +234,7 @@ exports[`Storyshots All Components/Footer Normal 1`] = `
         </a>
         <a
           aria-current="page"
-          className="sc-cSHVUG lbaKwf"
+          className="sc-cSHVUG iMmoMd"
           href="/"
           onClick={[Function]}
         >
@@ -242,7 +242,7 @@ exports[`Storyshots All Components/Footer Normal 1`] = `
         </a>
         <a
           aria-current="page"
-          className="sc-cSHVUG lbaKwf"
+          className="sc-cSHVUG iMmoMd"
           href="/"
           onClick={[Function]}
         >
@@ -250,7 +250,7 @@ exports[`Storyshots All Components/Footer Normal 1`] = `
         </a>
         <a
           aria-current="page"
-          className="sc-cSHVUG lbaKwf"
+          className="sc-cSHVUG iMmoMd"
           href="/"
           onClick={[Function]}
         >
@@ -267,14 +267,14 @@ exports[`Storyshots All Components/Footer Normal 1`] = `
         </h4>
         <a
           aria-current="page"
-          className="sc-cSHVUG lbaKwf"
+          className="sc-cSHVUG iMmoMd"
           href="/"
           onClick={[Function]}
         >
           Contact us
         </a>
         <a
-          className="sc-kAzzGY dBmtLY"
+          className="sc-kAzzGY dqJCCp"
           href="#"
         >
           <img
@@ -285,7 +285,7 @@ exports[`Storyshots All Components/Footer Normal 1`] = `
           Facebook
         </a>
         <a
-          className="sc-kAzzGY dBmtLY"
+          className="sc-kAzzGY dqJCCp"
           href="#"
         >
           <img
@@ -296,7 +296,7 @@ exports[`Storyshots All Components/Footer Normal 1`] = `
           Twitter
         </a>
         <a
-          className="sc-kAzzGY dBmtLY"
+          className="sc-kAzzGY dqJCCp"
           href="#"
         >
           <img
@@ -307,7 +307,7 @@ exports[`Storyshots All Components/Footer Normal 1`] = `
           YouTube
         </a>
         <a
-          className="sc-kAzzGY dBmtLY"
+          className="sc-kAzzGY dqJCCp"
           href="#"
         >
           <img
@@ -2486,7 +2486,7 @@ Array [
           </h4>
           <a
             aria-current="page"
-            className="sc-cSHVUG lbaKwf"
+            className="sc-cSHVUG iMmoMd"
             href="/"
             onClick={[Function]}
           >
@@ -2494,7 +2494,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-cSHVUG lbaKwf"
+            className="sc-cSHVUG iMmoMd"
             href="/"
             onClick={[Function]}
           >
@@ -2502,7 +2502,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-cSHVUG lbaKwf"
+            className="sc-cSHVUG iMmoMd"
             href="/"
             onClick={[Function]}
           >
@@ -2510,7 +2510,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-cSHVUG lbaKwf"
+            className="sc-cSHVUG iMmoMd"
             href="/"
             onClick={[Function]}
           >
@@ -2527,7 +2527,7 @@ Array [
           </h4>
           <a
             aria-current="page"
-            className="sc-cSHVUG lbaKwf"
+            className="sc-cSHVUG iMmoMd"
             href="/"
             onClick={[Function]}
           >
@@ -2535,7 +2535,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-cSHVUG lbaKwf"
+            className="sc-cSHVUG iMmoMd"
             href="/"
             onClick={[Function]}
           >
@@ -2543,7 +2543,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-cSHVUG lbaKwf"
+            className="sc-cSHVUG iMmoMd"
             href="/"
             onClick={[Function]}
           >
@@ -2551,7 +2551,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-cSHVUG lbaKwf"
+            className="sc-cSHVUG iMmoMd"
             href="/"
             onClick={[Function]}
           >
@@ -2559,7 +2559,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-cSHVUG lbaKwf"
+            className="sc-cSHVUG iMmoMd"
             href="/"
             onClick={[Function]}
           >
@@ -2576,14 +2576,14 @@ Array [
           </h4>
           <a
             aria-current="page"
-            className="sc-cSHVUG lbaKwf"
+            className="sc-cSHVUG iMmoMd"
             href="/"
             onClick={[Function]}
           >
             Contact us
           </a>
           <a
-            className="sc-kAzzGY dBmtLY"
+            className="sc-kAzzGY dqJCCp"
             href="#"
           >
             <img
@@ -2594,7 +2594,7 @@ Array [
             Facebook
           </a>
           <a
-            className="sc-kAzzGY dBmtLY"
+            className="sc-kAzzGY dqJCCp"
             href="#"
           >
             <img
@@ -2605,7 +2605,7 @@ Array [
             Twitter
           </a>
           <a
-            className="sc-kAzzGY dBmtLY"
+            className="sc-kAzzGY dqJCCp"
             href="#"
           >
             <img
@@ -2616,7 +2616,7 @@ Array [
             YouTube
           </a>
           <a
-            className="sc-kAzzGY dBmtLY"
+            className="sc-kAzzGY dqJCCp"
             href="#"
           >
             <img
@@ -2994,7 +2994,7 @@ Array [
           </h4>
           <a
             aria-current="page"
-            className="sc-cSHVUG lbaKwf"
+            className="sc-cSHVUG iMmoMd"
             href="/"
             onClick={[Function]}
           >
@@ -3002,7 +3002,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-cSHVUG lbaKwf"
+            className="sc-cSHVUG iMmoMd"
             href="/"
             onClick={[Function]}
           >
@@ -3010,7 +3010,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-cSHVUG lbaKwf"
+            className="sc-cSHVUG iMmoMd"
             href="/"
             onClick={[Function]}
           >
@@ -3018,7 +3018,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-cSHVUG lbaKwf"
+            className="sc-cSHVUG iMmoMd"
             href="/"
             onClick={[Function]}
           >
@@ -3035,7 +3035,7 @@ Array [
           </h4>
           <a
             aria-current="page"
-            className="sc-cSHVUG lbaKwf"
+            className="sc-cSHVUG iMmoMd"
             href="/"
             onClick={[Function]}
           >
@@ -3043,7 +3043,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-cSHVUG lbaKwf"
+            className="sc-cSHVUG iMmoMd"
             href="/"
             onClick={[Function]}
           >
@@ -3051,7 +3051,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-cSHVUG lbaKwf"
+            className="sc-cSHVUG iMmoMd"
             href="/"
             onClick={[Function]}
           >
@@ -3059,7 +3059,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-cSHVUG lbaKwf"
+            className="sc-cSHVUG iMmoMd"
             href="/"
             onClick={[Function]}
           >
@@ -3067,7 +3067,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-cSHVUG lbaKwf"
+            className="sc-cSHVUG iMmoMd"
             href="/"
             onClick={[Function]}
           >
@@ -3084,14 +3084,14 @@ Array [
           </h4>
           <a
             aria-current="page"
-            className="sc-cSHVUG lbaKwf"
+            className="sc-cSHVUG iMmoMd"
             href="/"
             onClick={[Function]}
           >
             Contact us
           </a>
           <a
-            className="sc-kAzzGY dBmtLY"
+            className="sc-kAzzGY dqJCCp"
             href="#"
           >
             <img
@@ -3102,7 +3102,7 @@ Array [
             Facebook
           </a>
           <a
-            className="sc-kAzzGY dBmtLY"
+            className="sc-kAzzGY dqJCCp"
             href="#"
           >
             <img
@@ -3113,7 +3113,7 @@ Array [
             Twitter
           </a>
           <a
-            className="sc-kAzzGY dBmtLY"
+            className="sc-kAzzGY dqJCCp"
             href="#"
           >
             <img
@@ -3124,7 +3124,7 @@ Array [
             YouTube
           </a>
           <a
-            className="sc-kAzzGY dBmtLY"
+            className="sc-kAzzGY dqJCCp"
             href="#"
           >
             <img
@@ -3461,7 +3461,7 @@ Array [
           </h4>
           <a
             aria-current="page"
-            className="sc-cSHVUG lbaKwf"
+            className="sc-cSHVUG iMmoMd"
             href="/"
             onClick={[Function]}
           >
@@ -3469,7 +3469,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-cSHVUG lbaKwf"
+            className="sc-cSHVUG iMmoMd"
             href="/"
             onClick={[Function]}
           >
@@ -3477,7 +3477,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-cSHVUG lbaKwf"
+            className="sc-cSHVUG iMmoMd"
             href="/"
             onClick={[Function]}
           >
@@ -3485,7 +3485,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-cSHVUG lbaKwf"
+            className="sc-cSHVUG iMmoMd"
             href="/"
             onClick={[Function]}
           >
@@ -3502,7 +3502,7 @@ Array [
           </h4>
           <a
             aria-current="page"
-            className="sc-cSHVUG lbaKwf"
+            className="sc-cSHVUG iMmoMd"
             href="/"
             onClick={[Function]}
           >
@@ -3510,7 +3510,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-cSHVUG lbaKwf"
+            className="sc-cSHVUG iMmoMd"
             href="/"
             onClick={[Function]}
           >
@@ -3518,7 +3518,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-cSHVUG lbaKwf"
+            className="sc-cSHVUG iMmoMd"
             href="/"
             onClick={[Function]}
           >
@@ -3526,7 +3526,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-cSHVUG lbaKwf"
+            className="sc-cSHVUG iMmoMd"
             href="/"
             onClick={[Function]}
           >
@@ -3534,7 +3534,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-cSHVUG lbaKwf"
+            className="sc-cSHVUG iMmoMd"
             href="/"
             onClick={[Function]}
           >
@@ -3551,14 +3551,14 @@ Array [
           </h4>
           <a
             aria-current="page"
-            className="sc-cSHVUG lbaKwf"
+            className="sc-cSHVUG iMmoMd"
             href="/"
             onClick={[Function]}
           >
             Contact us
           </a>
           <a
-            className="sc-kAzzGY dBmtLY"
+            className="sc-kAzzGY dqJCCp"
             href="#"
           >
             <img
@@ -3569,7 +3569,7 @@ Array [
             Facebook
           </a>
           <a
-            className="sc-kAzzGY dBmtLY"
+            className="sc-kAzzGY dqJCCp"
             href="#"
           >
             <img
@@ -3580,7 +3580,7 @@ Array [
             Twitter
           </a>
           <a
-            className="sc-kAzzGY dBmtLY"
+            className="sc-kAzzGY dqJCCp"
             href="#"
           >
             <img
@@ -3591,7 +3591,7 @@ Array [
             YouTube
           </a>
           <a
-            className="sc-kAzzGY dBmtLY"
+            className="sc-kAzzGY dqJCCp"
             href="#"
           >
             <img
@@ -4312,7 +4312,7 @@ Array [
           </h4>
           <a
             aria-current="page"
-            className="sc-cSHVUG lbaKwf"
+            className="sc-cSHVUG iMmoMd"
             href="/"
             onClick={[Function]}
           >
@@ -4320,7 +4320,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-cSHVUG lbaKwf"
+            className="sc-cSHVUG iMmoMd"
             href="/"
             onClick={[Function]}
           >
@@ -4328,7 +4328,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-cSHVUG lbaKwf"
+            className="sc-cSHVUG iMmoMd"
             href="/"
             onClick={[Function]}
           >
@@ -4336,7 +4336,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-cSHVUG lbaKwf"
+            className="sc-cSHVUG iMmoMd"
             href="/"
             onClick={[Function]}
           >
@@ -4353,7 +4353,7 @@ Array [
           </h4>
           <a
             aria-current="page"
-            className="sc-cSHVUG lbaKwf"
+            className="sc-cSHVUG iMmoMd"
             href="/"
             onClick={[Function]}
           >
@@ -4361,7 +4361,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-cSHVUG lbaKwf"
+            className="sc-cSHVUG iMmoMd"
             href="/"
             onClick={[Function]}
           >
@@ -4369,7 +4369,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-cSHVUG lbaKwf"
+            className="sc-cSHVUG iMmoMd"
             href="/"
             onClick={[Function]}
           >
@@ -4377,7 +4377,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-cSHVUG lbaKwf"
+            className="sc-cSHVUG iMmoMd"
             href="/"
             onClick={[Function]}
           >
@@ -4385,7 +4385,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-cSHVUG lbaKwf"
+            className="sc-cSHVUG iMmoMd"
             href="/"
             onClick={[Function]}
           >
@@ -4402,14 +4402,14 @@ Array [
           </h4>
           <a
             aria-current="page"
-            className="sc-cSHVUG lbaKwf"
+            className="sc-cSHVUG iMmoMd"
             href="/"
             onClick={[Function]}
           >
             Contact us
           </a>
           <a
-            className="sc-kAzzGY dBmtLY"
+            className="sc-kAzzGY dqJCCp"
             href="#"
           >
             <img
@@ -4420,7 +4420,7 @@ Array [
             Facebook
           </a>
           <a
-            className="sc-kAzzGY dBmtLY"
+            className="sc-kAzzGY dqJCCp"
             href="#"
           >
             <img
@@ -4431,7 +4431,7 @@ Array [
             Twitter
           </a>
           <a
-            className="sc-kAzzGY dBmtLY"
+            className="sc-kAzzGY dqJCCp"
             href="#"
           >
             <img
@@ -4442,7 +4442,7 @@ Array [
             YouTube
           </a>
           <a
-            className="sc-kAzzGY dBmtLY"
+            className="sc-kAzzGY dqJCCp"
             href="#"
           >
             <img
