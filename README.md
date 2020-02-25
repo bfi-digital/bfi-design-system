@@ -8,7 +8,7 @@ The next-gen design system for the [British Film Institute](bfi.org.uk).
 
 ## 🍿 Demo and docs
 
-👉 **[Storybook is here.](https://gerwig.netlify.com)**
+👉 **[Storybook is here.](https://design-system.bfi.digital)**
 
 There's a living documentation powered by [Storybook](https://storybook.js.org/), where you can see all the available components and their variations.
 
