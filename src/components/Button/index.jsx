@@ -62,7 +62,7 @@ const SecondaryButton = styled(Link)`
     text-decoration: none;
     transition: border-radius 0.2s ease-out;
     &:hover{
-        border-radius: 2px;
+        background-color: ${theme.grey}
     }
     &:focus{
         box-shadow: 0px 0px 0px 4px ${props => colorSchemes[props.colorScheme].focus};
