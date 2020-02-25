@@ -86,7 +86,7 @@ const linkStyles = `
         text-decoration: underline;
     }
     &:focus{
-        outline: none;
+        outline: 2px solid ${theme.darkPink};
         background: ${theme.darkPink};
     }
     &::-moz-focus-inner {
