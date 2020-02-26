@@ -23,7 +23,7 @@ const Outer = styled.section`
     background: ${theme.charcoal};
     width: 100%;
     height: ${props => props.fullHeight ? "80vh" : "450px"};
-    background-image: url(${props => props.image1920x1080});
+    background-image: url(${props => props.image});
     background-size: cover;
     background-position: center;
     display: flex;
