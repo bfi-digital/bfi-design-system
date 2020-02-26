@@ -16,7 +16,7 @@ import { Text } from "../Text"
 import { StepByStep } from "../StepByStep"
 
 export default {
-    title: "All Components/Page"
+    title: "Page examples/Page"
 }
 
 export const normal = () =>

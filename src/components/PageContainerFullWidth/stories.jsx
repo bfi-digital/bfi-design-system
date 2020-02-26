@@ -15,7 +15,7 @@ import { PageLinks } from "../PageLinks"
 import four from "../PageLinks/data"
 
 export default {
-    title: "All Components/PageFullWidth"
+    title: "Page examples/PageFullWidth"
 }
 
 export const serviceListPageExample = () =>

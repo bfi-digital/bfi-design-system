@@ -1,0 +1,26 @@
+import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+import { ImageSide } from "../../../components/ImageSide/index"
+
+<Meta title="Pattern Library|Slices/Single Image" component={ImageSide} />
+
+# Single Image
+ 
+ 
+## Examples
+
+<Preview>
+    <Story name="Image on the left">
+        <div style={{padding: "20px"}}>
+            <ImageSide
+                side="left"
+                alt="Alt text"
+                src="http://placehold.it/600x400"
+                caption="Example image caption"
+            />
+        </div>
+    </Story>
+</Preview>
+
+## Props 
+
+<Props of={ImageSide} />

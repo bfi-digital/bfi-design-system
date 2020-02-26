@@ -1,0 +1,25 @@
+import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks'
+import { Button } from "../../../components/Button/index"
+
+<Meta title="Pattern Library|Elements/Button" component={Button} />
+
+# Button
+
+
+## Examples
+
+<Preview>
+    <Story name="Primary">
+        <Button url="#">Click me</Button>
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="Secondary">
+        <Button secondary={true} url="#">Click me</Button>
+    </Story>
+</Preview>
+
+## Props 
+
+<Props of={Button} />
