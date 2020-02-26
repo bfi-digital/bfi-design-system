@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 import theme from "../_theme"
+import parse from "html-react-parser"
 
 const Outer = styled.section``
 
@@ -93,6 +94,24 @@ const ShowButtonText = styled.p`
     font-weight: 400;
 `
 
+const Description = styled.p`
+    color: ${theme.charcoal};
+    a{
+        color: ${theme.darkPink};
+        &:hover{
+            text-decoration: none;
+        }
+        &::-moz-focus-inner {
+            border: 0;
+        }
+        &:focus{
+            outline: none;
+            background: ${theme.lightPink}
+        }
+    }
+`
+
+
 export const StepByStep = ({
     title,
     steps
@@ -104,6 +123,7 @@ export const StepByStep = ({
         <Outer>
             <Headline>{title}</Headline>
             <Steps>
+                {console.log(steps)}
                 {steps.map((step, i) =>
                     <Step key={i}>
                         <ShowButton
@@ -116,7 +136,7 @@ export const StepByStep = ({
                             <ShowButtonText>{openSteps === i ? "Hide" : "Show"}</ShowButtonText>
                         </ShowButton>
                         {openSteps === i &&
-                            <p>{step.description}</p>
+                            <Description>{parse(step.description)}</Description>
                         }
                     </Step>
                 )}
