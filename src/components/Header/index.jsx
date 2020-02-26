@@ -62,6 +62,7 @@ const LotteryContainer = styled.div`
 
 const LogoLink = styled(Link)`
     padding: 6px 2px;
+    z-index: 9999;
 `
 
 const MobileLogoLink = styled(Link)`

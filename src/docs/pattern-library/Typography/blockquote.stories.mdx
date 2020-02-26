@@ -1,0 +1,30 @@
+import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+import { Blockquote } from "../../../components/Blockquote/index"
+
+<Meta title="Pattern Library|Typography/Blockquote" component={Blockquote} />
+
+# Blockquote
+ 
+Blockquotes are used to emphasize excerpts of text. Generally users almost never read a full post, but tend to scan. Therefore we need to provide them with some focus anchors to fix their attention to the most important parts of our articles. Quotes should be used to cite something someone has said, or they could be used to highlight a particular piece of text.
+
+<Preview>
+    <Story name="With Citation">
+        <Blockquote 
+            quote="Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should." 
+            citation="Ian Malcolm"
+        />
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="Without Citation">
+        <Blockquote 
+            quote="Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should." 
+        />
+    </Story>
+</Preview>
+
+
+## Props 
+
+<Props of={Blockquote} />
