@@ -7,19 +7,19 @@ import theme from "../_theme"
 const colorSchemes = [
     {
         shadow: theme.dustyPink,
-        hoverBackground: theme.lightPink,
-        text: theme.charcoal,
-        background: theme.white,
-        focusShadow: theme.darkPink,
+        hoverBackground: theme.darkGrey,
+        text: theme.white,
+        background: theme.charcoal,
+        focusShadow: theme.dustyPink,
         // Secondary button only
         focus: theme.dustyPink
     },
     {
         shadow: theme.dustyPink,
-        hoverBackground: theme.darkGrey,
-        text: theme.white,
-        background: theme.charcoal,
-        focusShadow: theme.dustyPink,
+        hoverBackground: theme.lightPink,
+        text: theme.charcoal,
+        background: theme.white,
+        focusShadow: theme.darkPink,
         // Secondary button only
         focus: theme.dustyPink
     }
