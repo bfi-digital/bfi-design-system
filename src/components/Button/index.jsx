@@ -57,10 +57,9 @@ const SecondaryButton = styled(Link)`
     color: ${theme.charcoal};
     font-weight: bold;
     border-radius: 5px;
-    font-size: 1.125rem;
-    padding: 4px 10px;
+    font-size: 1rem;
+    padding: 4px 15px;
     text-decoration: none;
-    transition: border-radius 0.2s ease-out;
     &:hover{
         background-color: ${theme.grey}
     }
