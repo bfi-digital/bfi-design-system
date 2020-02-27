@@ -1,29 +1,57 @@
-import React, { useState } from "react"
+import React from "react"
+import PropTypes from "prop-types"
 import styled from "styled-components"
+import theme from "../_theme"
 
-const Tabs = styled.div``
+const Outer = styled.ul`
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    border-bottom: 1px solid ${theme.darkPink};
+    margin-bottom: 25px;
+`
 
-const TabList = styled.ul``
+const Li = styled.li`
+    display: inline-block;
+    padding: 15px 20px;
+    &:first-of-type{
+        padding-left: 0px;
+    }
+`
 
-const Tab = ({
+const A = styled.a`
+    font-weight: bold;
+    text-decoration: none;
+    color: ${props => props.active ? theme.darkPink : theme.charcoal};
+
+`
+
+export const TabList = ({
+    children
+}) =>
+    <Outer role="tablist">{children}</Outer>
+
+export const Tab = ({
     children,
     openTab,
     setOpenTab,
     i
 }) =>
-    <li role="presentation">
-        <a 
+    <Li role="presentation">
+        <A
             role="tab"
             id={`tab${i}`}
             href={`#section${i}`}
             aria-selected={openTab === i}
             onClick={() => setOpenTab(i)}
+            active={openTab === i}
         >
             {children}
-        </a>
-    </li>
+        </A>
+    </Li>
 
-const TabPanel = ({
+export const TabPanel = ({
     children,
     i,
     openTab
@@ -37,34 +65,18 @@ const TabPanel = ({
         {children}
     </section>
 
+Tab.propTypes = {
+    // The value of the currently open tab
+    openTab: PropTypes.number,
+    // A function to update the currently open tab, such as that provided by the useState hook
+    setOpenTab: PropTypes.func,
+    // This tab's identity, to associate links with panels
+    i: PropTypes.number
+}
 
-export const ShowingTabs = () => {
-    const [openTab, setOpenTab ] = useState(1)
-    return(
-        <Tabs>
-
-            <TabList role="tablist">
-                <Tab i={1} openTab={openTab} setOpenTab={setOpenTab}>
-                    Highlight
-                </Tab>
-                <Tab i={2} openTab={openTab} setOpenTab={setOpenTab}>
-                    Showing today
-                </Tab>
-                <Tab i={3} openTab={openTab} setOpenTab={setOpenTab}>
-                    Showing this week
-                </Tab>
-            </TabList>
-
-            <TabPanel i={1} openTab={openTab}>
-                Tab 1 content
-            </TabPanel>
-            <TabPanel i={2} openTab={openTab}>
-                Tab 2 content
-            </TabPanel>
-            <TabPanel  i={3} openTab={openTab}>
-                Tab 3 content
-            </TabPanel>
-
-        </Tabs>
-    )
+TabPanel.propTypes = {
+    // The value of the currently open tab
+    openTab: PropTypes.number,
+    // This tab panels identity, to associate panels with links
+    i: PropTypes.number
 }
