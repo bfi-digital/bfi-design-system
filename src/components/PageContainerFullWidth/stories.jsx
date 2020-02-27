@@ -52,7 +52,7 @@ export const homePageExample = () =>
     <>
         <Header navItems={navItems} overlay={true} />
         <Hero 
-            image="https://bfi-prototype.netlify.com/static/media/watch-banner.b01324c4.jpg"
+            image1920x1080="https://bfi-prototype.netlify.com/static/media/watch-banner.b01324c4.jpg"
             headline="Watch a new film, rediscover your old favourites, and get inspired."
         />
         <Wrapper>

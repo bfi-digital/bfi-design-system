@@ -22,7 +22,8 @@ const colorSchemes = [
 const Outer = styled.section`
     background: ${theme.charcoal};
     width: 100%;
-    height: ${props => props.fullHeight ? "80vh" : "450px"};
+    min-height: ${props => props.fullHeight ? "100vh" : "75vh"};
+    padding-top: ${props => props.withHeader ? "64px" : "0px"};
     background-image: url(${props => props.image});
     background-size: cover;
     background-position: center;
@@ -30,10 +31,11 @@ const Outer = styled.section`
     align-items: flex-end;
     @media screen and (min-width: ${theme.m}){
         align-items: "flex-end";
+        padding-top: ${props => props.withHeader ? "175px" : "0px"};
     }
     h1{
         color: ${theme.white};
-        max-width: calc( 0.5 * ${theme.l});
+        max-width: calc( 0.5 * ${theme.m});
         text-shadow: 0px 0px 30px ${theme.charcoal}50;
         margin-bottom: 50px;
     }
@@ -71,10 +73,15 @@ export const Hero = ({
     image1920x1080,
     headline,
     fullHeight,
-    colorScheme
+    colorScheme,
+    withHeader
 }) =>
-    <Outer fullHeight={fullHeight} image={image1920x1080}>
-        <InnerGradient  colorScheme={colorScheme} />
+    <Outer 
+        fullHeight={fullHeight} 
+        image={image1920x1080} 
+        withHeader={withHeader}
+    >
+        <InnerGradient colorScheme={colorScheme} />
         <Container>
             <Headline level={0} text={headline}/>
         </Container>
@@ -82,22 +89,16 @@ export const Hero = ({
 
 
 Hero.propTypes = {
-    /** 
-	 * Urls to the image for the hero. 
-	 **/
+    // Urls to the image for the hero. 
     image1920x1080: PropTypes.string,
-    /** 
-	 * The text for the title which will be used as the H1 for this page/post.
-	 **/
+    // The text for the title which will be used as the H1 for this page/post.
     headline: PropTypes.string,
-    /** 
-	 * A boolean to determine if the hero is set full width - defaulting to false, set it to true to have a taller hero.
-	 **/
+    // A boolean to determine if the hero is set full width - defaulting to false, set it to true to have a taller hero.
     fullHeight: PropTypes.bool,
-    /** 
-	 * A number to define which colour overlay the Hero should have, it defaults to none.
-	 **/
-    colorScheme: PropTypes.number
+    // A number to define which colour overlay the Hero should have, it defaults to none.
+    colorScheme: PropTypes.number,
+    // A boolean to tell the hero whether it has a header over the top of it, so that content in the hero never overlaps the header. Defaults to false.
+    withHeader: PropTypes.bool
 }
 
 Hero.defaultProps = {
