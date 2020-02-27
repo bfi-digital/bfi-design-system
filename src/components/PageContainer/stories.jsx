@@ -14,6 +14,21 @@ import { Footer } from "../Footer"
 import { LeadParagraph } from "../LeadParagraph"
 import { Text } from "../Text"
 import { StepByStep } from "../StepByStep"
+import { SidebarPageLinks } from "../SidebarPageLinks"
+
+
+const pageLinksData = [
+    {
+        title: "BFI London Film Festival",
+        url: "#",
+        image: "https://www.bfi.org.uk/sites/bfi.org.uk/files/styles/16x9_small/public/sitestructure/lff-2019-1000x750.jpg?itok=vsVDKGIh"
+    },
+    {
+        title: "BFI Flare: London LGBTIQ+ Film Festival",
+        url: "#",
+        image: "https://www.bfi.org.uk/sites/bfi.org.uk/files/styles/16x9_small/public/sitestructure/flare-2020-artwork-1000-750-v1.jpg?itok=0oZOJp2r"
+    }
+]
 
 export default {
     title: "Page examples/Page"
@@ -39,7 +54,7 @@ export const normal = () =>
                 />
             </MainContent>
             <Sidebar>
-                Sidebar here
+                <SidebarPageLinks links={pageLinksData} blockTitle="Related pages" />
             </Sidebar>
         </Wrapper>
         <Footer
@@ -47,6 +62,9 @@ export const normal = () =>
             copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"
         />
     </>
+
+
+
 
 export const activePage = () =>
     <>

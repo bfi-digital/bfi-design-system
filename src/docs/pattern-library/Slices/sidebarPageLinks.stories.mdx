@@ -1,0 +1,30 @@
+import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+import { SidebarPageLinks } from "../../../components/SidebarPageLinks/index"
+import four, { three } from "../../../components/SidebarPageLinks/data"
+
+<Meta title="Pattern Library|Slices/Sidebar Page Links" component={SidebarPageLinks} />
+
+# Sidebar Page Links
+ 
+ 
+## Examples
+
+<Preview>
+    <Story name="Sidebar Page Links with title">
+        <div style={{padding: "20px", maxWidth: "350px"}}>
+            <SidebarPageLinks links={four} blockTitle="Related pages" />
+        </div>
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="Sidebar Page Links without title">
+        <div style={{padding: "20px", maxWidth: "350px"}}>
+            <SidebarPageLinks links={three} />
+        </div>
+    </Story>
+</Preview>
+
+## Props 
+
+<Props of={SidebarPageLinks} />
