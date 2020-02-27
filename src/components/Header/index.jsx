@@ -32,7 +32,7 @@ const Inner = styled.div`
     max-width:  ${theme.l};
     margin: 0 auto;
     padding: 0px ${theme.horizontalPadding};
-    @media screen and (min-width: ${theme.xl}){
+    @media screen and (min-width: ${theme.xl + 200}){
         max-width: ${theme.xl};
     }
     a, button {

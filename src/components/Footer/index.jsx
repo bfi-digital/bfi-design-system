@@ -22,7 +22,7 @@ const Inner = styled.div`
     max-width: ${theme.l};
     padding: 0px ${theme.horizontalPadding};
     margin: 0 auto;
-    @media screen and (min-width: ${theme.xl}) {
+    @media screen and (min-width: ${theme.xl + 200}) {
         max-width: ${theme.xl}
     }
 `

@@ -64,7 +64,7 @@ const Container = styled.div`
     padding: 0px ${theme.horizontalPadding};
     z-index: 1;
 
-    @media screen and (min-width: ${theme.xl}){
+    @media screen and (min-width: ${theme.xl + 200}){
         max-width: ${theme.xl};
     }
 `

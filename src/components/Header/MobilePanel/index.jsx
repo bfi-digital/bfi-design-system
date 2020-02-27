@@ -13,6 +13,7 @@ const Panel = styled.nav`
             opacity: 1 
         }
     }
+    z-index: 999;
     position: fixed;
     /* offset header */
     top: 64px;

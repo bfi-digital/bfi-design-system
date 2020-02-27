@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
     margin: 0 auto;
     padding: 40px ${theme.horizontalPadding};
     
-    @media screen and (min-width: ${theme.xl}){
+    @media screen and (min-width: ${theme.xl + 200}){
         max-width: ${theme.xl};
         padding: 70px ${theme.horizontalPadding};
     }

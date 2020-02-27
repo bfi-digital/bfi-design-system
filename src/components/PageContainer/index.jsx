@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
         display: flex;
         flex-direction: row;
     }
-    @media screen and (min-width: ${theme.xl}){
+    @media screen and (min-width: ${theme.xl + 200}){
         max-width: ${theme.xl};
         padding: 70px ${theme.horizontalPadding};
     }
