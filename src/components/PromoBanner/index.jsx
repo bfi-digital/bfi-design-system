@@ -1,31 +1,31 @@
 import React from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
-import theme from "../_theme"
+// import theme from "../_theme"
 
 import { Headline } from "../Headline"
 import { Button } from "../Button"
 
-const colorSchemes = [
-    {
-        background: theme.lightPink,
-        shadow: theme.darkPink,
-        text: theme.darkPink,
-        focus: theme.dustyPink
-    },
-    {
-        background: theme.lightGreen,
-        shadow: theme.racerGreen,
-        text: theme.racerGreen,
-        focus: theme.dustyPink
-    },
-    {
-        background: theme.lightBlue,
-        shadow: theme.deepNavy,
-        text: theme.deepNavy,
-        focus: theme.dustyPink
-    }
-]
+// const colorSchemes = [
+//     {
+//         background: theme.lightPink,
+//         shadow: theme.darkPink,
+//         text: theme.darkPink,
+//         focus: theme.dustyPink
+//     },
+//     {
+//         background: theme.lightGreen,
+//         shadow: theme.racerGreen,
+//         text: theme.racerGreen,
+//         focus: theme.dustyPink
+//     },
+//     {
+//         background: theme.lightBlue,
+//         shadow: theme.deepNavy,
+//         text: theme.deepNavy,
+//         focus: theme.dustyPink
+//     }
+// ]
 
 const Outer = styled.section``
 

@@ -1148,28 +1148,9 @@ exports[`Storyshots All Components/Headline Level 3 1`] = `
 </h3>
 `;
 
-exports[`Storyshots All Components/Hero Full Height 1`] = `
-<section
-  className="sc-kjoXOD cTPbUE"
->
-  <div
-    className="sc-cHGsZl fKNlvR"
-  />
-  <div
-    className="sc-TOsTZ KGaMI"
-  >
-    <h1
-      className="sc-dVhcbM bdmkYD"
-    >
-      Watch a new film, rediscover your old favourites, and get inspired.
-    </h1>
-  </div>
-</section>
-`;
-
 exports[`Storyshots All Components/Hero Industry Theme 1`] = `
 <section
-  className="sc-kjoXOD eCErQl"
+  className="sc-kjoXOD cAHHwR"
 >
   <div
     className="sc-cHGsZl bYxjWF"
@@ -1188,7 +1169,7 @@ exports[`Storyshots All Components/Hero Industry Theme 1`] = `
 
 exports[`Storyshots All Components/Hero Normal 1`] = `
 <section
-  className="sc-kjoXOD eCErQl"
+  className="sc-kjoXOD cAHHwR"
 >
   <div
     className="sc-cHGsZl fKNlvR"
@@ -1460,7 +1441,7 @@ Array [
     </div>
   </header>,
   <section
-    className="sc-kjoXOD eCErQl"
+    className="sc-kjoXOD PtWPe"
   >
     <div
       className="sc-cHGsZl fKNlvR"
@@ -4902,7 +4883,7 @@ Array [
     </div>
   </header>,
   <section
-    className="sc-kjoXOD jeYQyY"
+    className="sc-kjoXOD cAHHwR"
   >
     <div
       className="sc-cHGsZl fKNlvR"
