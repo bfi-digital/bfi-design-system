@@ -7,11 +7,10 @@ export default {
     decorators: [withA11y]
 }
 
-export const primary = () => {
+const Tabs = () => {
     const [openTab, setOpenTab ] = useState(1)
     return(
-        <div style={{padding: "20px", maxWidth: "650px"}}>
-
+        <>
             <TabList>
                 <Tab i={1} openTab={openTab} setOpenTab={setOpenTab}>
                     Highlight
@@ -23,7 +22,6 @@ export const primary = () => {
                     Showing this week
                 </Tab>
             </TabList>
-
             <TabPanel i={1} openTab={openTab}>
                 Tab 1 content
             </TabPanel>
@@ -33,7 +31,11 @@ export const primary = () => {
             <TabPanel  i={3} openTab={openTab}>
                 Tab 3 content
             </TabPanel>
-
-        </div>
+        </>
     )
 }
+
+export const primary = () => 
+    <div style={{padding: "20px", maxWidth: "650px"}}>
+        <Tabs/>
+    </div>
