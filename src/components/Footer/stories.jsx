@@ -11,5 +11,5 @@ export default {
 export const normal = () =>
     <Footer
         menus={data}
-        copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"
+        copyrightText="&copy; 2020 British Film Institute. All rights reserved. Registered charity 287780"
     />

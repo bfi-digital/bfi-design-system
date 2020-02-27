@@ -5,6 +5,7 @@ import logo from "./logo.svg"
 import lotteryLogo from "./lottery-logo.svg"
 import { LinkSwitch as Link } from "../LinkSwitch"
 import PropTypes from "prop-types"
+import parse from "html-react-parser"
 
 import facebook from "./facebook.svg"
 import twitter from "./twitter.svg"
@@ -141,7 +142,7 @@ export const Footer = ({
             </TopRow>
             <BottomRow>
                 <img src={lotteryLogo} alt="The BFI recieves National Lottery funding"/>
-                <Copyright>{copyrightText}</Copyright>
+                <Copyright>{parse(copyrightText)}</Copyright>
             </BottomRow>
         </Inner>
     </Outer>
