@@ -22,7 +22,7 @@ const colorSchemes = [
 const Outer = styled.section`
     background: ${theme.charcoal};
     width: 100%;
-    min-height: ${props => props.fullHeight ? "100vh" : "75vh"};
+    min-height: 80vh;
     padding-top: ${props => props.withHeader ? "64px" : "0px"};
     background-image: url(${props => props.image});
     background-size: cover;
@@ -72,12 +72,10 @@ const Container = styled.div`
 export const Hero = ({
     image1920x1080,
     headline,
-    fullHeight,
     colorScheme,
     withHeader
 }) =>
     <Outer 
-        fullHeight={fullHeight} 
         image={image1920x1080} 
         withHeader={withHeader}
     >
@@ -93,8 +91,6 @@ Hero.propTypes = {
     image1920x1080: PropTypes.string,
     // The text for the title which will be used as the H1 for this page/post.
     headline: PropTypes.string,
-    // A boolean to determine if the hero is set full width - defaulting to false, set it to true to have a taller hero.
-    fullHeight: PropTypes.bool,
     // A number to define which colour overlay the Hero should have, it defaults to none.
     colorScheme: PropTypes.number,
     // A boolean to tell the hero whether it has a header over the top of it, so that content in the hero never overlaps the header. Defaults to false.
@@ -102,6 +98,5 @@ Hero.propTypes = {
 }
 
 Hero.defaultProps = {
-    fullHeight: false,
     colorScheme: 0
 }

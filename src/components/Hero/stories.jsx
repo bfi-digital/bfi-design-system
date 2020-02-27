@@ -15,13 +15,6 @@ export const normal = () =>
         headline="Watch a new film, rediscover your old favourites, and get inspired."
     />
 
-export const fullHeight = () =>
-    <Hero 
-        image1920x1080="https://bfi-prototype.netlify.com/static/media/watch-banner.b01324c4.jpg"
-        headline="Watch a new film, rediscover your old favourites, and get inspired."
-        fullHeight={true} 
-    />
-
 export const withHeader = () =>
     <>
         <Header navItems={navItems} overlay={true} />
