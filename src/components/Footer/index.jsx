@@ -95,6 +95,10 @@ const linkStyles = `
     }
 `
 
+const LotteryImg = styled.img`
+    max-width: 90px;
+`
+
 const MenuItem = styled(Link)`${linkStyles}`
 
 const ExternalMenuItem = styled.a`${linkStyles}`
@@ -141,7 +145,7 @@ export const Footer = ({
                 </Menu>
             </TopRow>
             <BottomRow>
-                <img src={lotteryLogo} alt="The BFI recieves National Lottery funding"/>
+                <LotteryImg src={lotteryLogo} alt="The BFI recieves National Lottery funding"/>
                 <Copyright>{parse(copyrightText)}</Copyright>
             </BottomRow>
         </Inner>
