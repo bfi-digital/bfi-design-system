@@ -9,14 +9,7 @@ const Outer = styled.li`
     position: relative;
     transition: box-shadow .3s;
     border-radius: 5px;
-
-    div {
-        -webkit-transition: all ease 0.3s;
-        -moz-transition: all ease 0.3s;
-        -o-transition: all ease 0.3s;
-        transition: all ease 0.3s;
-    }
-
+    
     &:last-child {
         border: none;
         margin-bottom: 0px;
@@ -63,6 +56,10 @@ const PageImage = styled.div`
     background-size: cover;
     display: block;
     border-radius: 4px;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    transition: all ease 0.3s;
 `
 
 const CallToAction = styled(Link)`

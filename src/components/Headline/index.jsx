@@ -25,12 +25,12 @@ const H1 = styled(HeroH1)`
     text-transform: none;
     margin-block-start: 1em;
     margin-block-end: 0.5em;
-    font-weight: 700;
+    font-weight: 800;
 `
 
 const H2 = styled.h2`
     color: ${theme.charcoal};
-    font-weight: 600;
+    font-weight: 700;
     font-size: 1.375rem;
     margin-block-start: 1em;
     margin-block-end: 0.5em;
@@ -45,7 +45,7 @@ const H2 = styled.h2`
 
 const H3 = styled.h3`
     color: ${theme.charcoal};
-    font-weight: 600;
+    font-weight: 700;
     font-size: 1.4375rem;
     margin-block-start: 1em;
     margin-block-end: 0.5em;
@@ -58,7 +58,7 @@ const H3 = styled.h3`
 const H4 = styled.h4`
     font-family: "Open Sans";
     color: ${theme.charcoal};
-    font-weight: 600;
+    font-weight: 700;
     font-size: 1rem;
     @media screen and (min-width: ${theme.m}){
         font-size: 1.125rem;
