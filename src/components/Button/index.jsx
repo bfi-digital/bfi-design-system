@@ -36,6 +36,7 @@ const PrimaryButton = styled(Link)`
     padding: 10px 25px;
     box-shadow: -5px 5px 0px ${props => colorSchemes[props.colorScheme].shadow};
     margin-left: 5px;
+    transition: box-shadow .3s;
 
     &:hover, &:focus{
         background: ${props => colorSchemes[props.colorScheme].hoverBackground};

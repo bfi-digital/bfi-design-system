@@ -38,6 +38,8 @@ const Outer = styled.li`
     flex-direction: column;
     position: relative;
     overflow: hidden;
+    transition: box-shadow .3s;
+
     &:before {
         display: block;
         content: "";
@@ -51,6 +53,10 @@ const Outer = styled.li`
     &:hover, &:focus-within {
         a svg{
             transform: translateX(5px)
+        }
+        .image {
+            filter: grayscale(100%) contrast(1) blur(0px);
+            mix-blend-mode: multiply;
         }
     }
     &:focus-within{
@@ -96,15 +102,29 @@ const Icon = styled.div`
     }
 `
 
-const PageImage = styled.div`
+const PageImageContainer = styled.div`
+    background: ${theme.dustyPink};
+    display: inline-block;
     width: 100%;
+    height: calc(50% - 25px);
+    border-radius: 4px;
+    margin-right: 10px;
     position: absolute;
     top: 0;
     left: 0;
+`
+const PageImage = styled.div`
+    width: 100%;
     background: url(${props => props.imageSrc});
-    height: calc(50% - 25px);
+    height: 100%;
     background-position: center center;
     background-size: cover;
+    display: block;
+    border-radius: 4px;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    transition: all ease 0.3s;
 `
 
 export const PageLink = ({
@@ -119,7 +139,9 @@ export const PageLink = ({
 }) =>
     <Outer colorScheme={colorScheme} withImages={withImages}>
         { withImages && 
-            <PageImage imageSrc={image480x320} />
+            <PageImageContainer>
+                <PageImage className="image" imageSrc={image480x320} />
+            </PageImageContainer>
         }
         <Headline level={4} text={title} />
         { !withImages && 

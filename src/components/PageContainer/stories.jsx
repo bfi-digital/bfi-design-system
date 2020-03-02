@@ -1,10 +1,11 @@
 import React from "react"
-import { Wrapper, MainContent, Sidebar } from "./index"
+import { Wrapper, MainContent, UpperContent, Sidebar } from "./index"
 
 import navItems from "../Header/data"
 import {longData as crumbs} from "../Breadcrumbs/data"
 import footerMenus from "../Footer/data"
 
+import { Hero } from "../Hero"
 import { Headline } from "../Headline"
 import { Divider } from "../Divider"
 import { Button } from "../Button"
@@ -14,9 +15,24 @@ import { Footer } from "../Footer"
 import { LeadParagraph } from "../LeadParagraph"
 import { Text } from "../Text"
 import { StepByStep } from "../StepByStep"
+import { SidebarPageLinks } from "../SidebarPageLinks"
+
+
+const pageLinksData = [
+    {
+        title: "BFI London Film Festival",
+        url: "#",
+        image: "https://www.bfi.org.uk/sites/bfi.org.uk/files/styles/16x9_small/public/sitestructure/lff-2019-1000x750.jpg?itok=vsVDKGIh"
+    },
+    {
+        title: "BFI Flare: London LGBTIQ+ Film Festival",
+        url: "#",
+        image: "https://www.bfi.org.uk/sites/bfi.org.uk/files/styles/16x9_small/public/sitestructure/flare-2020-artwork-1000-750-v1.jpg?itok=0oZOJp2r"
+    }
+]
 
 export default {
-    title: "Page examples/Page"
+    title: "Page examples/Film Page"
 }
 
 export const normal = () =>
@@ -39,7 +55,7 @@ export const normal = () =>
                 />
             </MainContent>
             <Sidebar>
-                Sidebar here
+                <SidebarPageLinks links={pageLinksData} blockTitle="Related pages" />
             </Sidebar>
         </Wrapper>
         <Footer
@@ -47,6 +63,9 @@ export const normal = () =>
             copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"
         />
     </>
+
+
+
 
 export const activePage = () =>
     <>
@@ -180,6 +199,71 @@ export const activePage = () =>
                     ]} 
                 />
             </Sidebar>
+        </Wrapper>
+        <Footer
+            menus={footerMenus}
+            copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"
+        />
+    </>
+
+
+export const FilmPage = () =>
+    <>
+        <Header navItems={navItems} overlay={true} />
+        <Hero 
+            image1920x1080="https://player.bfi.org.uk/sites/default/files/styles/landscape_1440x810/public/hero-images/La-Dolce-vita-1.jpg"
+            headline="La dolce vita"
+        />
+        <UpperContent>
+            <Breadcrumbs 
+                breadcrumbs={[
+                    {
+                        title: "Discover",
+                        url: "#"
+                    },
+                    {
+                        title: "Films",
+                        url: "#"
+                    },
+                    {
+                        title: "La dolche vita"
+                    }
+                ]} 
+            />
+            <LeadParagraph 
+                text="{CTA's here}"
+            />
+        </UpperContent>
+        <Wrapper>           
+            <Sidebar leftSide={true}>
+                <Text html="
+                    <span>Italy, France, 1960-02-03</span>
+
+                    <p><strong>Director:</strong> Federico Fellini</p>
+                    
+                    <p><strong>Featuring:</strong> Marcello Mastroianni, Anita Ekberg, Anouk Aimée</p>
+                "/>
+            </Sidebar>
+            <MainContent>
+                <LeadParagraph 
+                    text="Fellini’s epic La dolce vita stands as a towering achievement of 1960s cinema. Set in Rome during the height of the ‘Hollywood on the Tiber’ era, the episodic narrative follows jaded journalist Marcello Rubini (Mastroianni) on the trail of gossip on VIPs, including Swedish-American film star Sylvia Rank (Ekberg). The film caused a sensation on its initial release, angering censors and polarising opinion among critics and audiences, but is now rightly considered a masterpiece that’s had a profound influence on popular culture. It was La dolce vita, for instance, that coined the term ‘paparazzo’, which came to describe a certain type of relentless celebrity photographer."
+                />
+                <Headline 
+                    level={2} 
+                    text="Book tickets at BFI Southbank"
+                />
+                <LeadParagraph 
+                    text="{Showings here}"
+                />
+
+                <Headline 
+                    level={2} 
+                    text="Read more about La dolce vita"
+                />
+                <LeadParagraph 
+                    text="{Articles here}"
+                />
+            </MainContent>
         </Wrapper>
         <Footer
             menus={footerMenus}

@@ -25,12 +25,12 @@ const H1 = styled(HeroH1)`
     text-transform: none;
     margin-block-start: 1em;
     margin-block-end: 0.5em;
-    font-weight: 700;
+    font-weight: 800;
 `
 
 const H2 = styled.h2`
     color: ${theme.charcoal};
-    font-weight: 600;
+    font-weight: 700;
     font-size: 1.375rem;
     margin-block-start: 1em;
     margin-block-end: 0.5em;
@@ -45,7 +45,7 @@ const H2 = styled.h2`
 
 const H3 = styled.h3`
     color: ${theme.charcoal};
-    font-weight: 600;
+    font-weight: 700;
     font-size: 1.4375rem;
     margin-block-start: 1em;
     margin-block-end: 0.5em;
@@ -56,15 +56,28 @@ const H3 = styled.h3`
 `
 
 const H4 = styled.h4`
-    font-family: "Archivo Black";
+    font-family: "Open Sans";
     color: ${theme.charcoal};
-    font-weight: 800;
+    font-weight: 700;
     font-size: 1rem;
     @media screen and (min-width: ${theme.m}){
         font-size: 1.125rem;
     }
     @media screen and (min-width: ${theme.xl}){
         font-size: 1.563rem;
+    }
+`
+
+const H5 = styled.h5`
+    font-family: "Open Sans";
+    color: ${theme.charcoal};
+    font-weight: 600;
+    font-size: 0.875rem;
+    @media screen and (min-width: ${theme.m}){
+        font-size: 1rem;
+    }
+    @media screen and (min-width: ${theme.xl}){
+        font-size: 1.125rem;
     }
 `
 
@@ -77,6 +90,7 @@ export const Headline = ({
     if (level === 2) return <H2>{text}</H2>
     if (level === 3) return <H3>{text}</H3>
     if (level === 4) return <H4>{text}</H4>
+    if (level === 5) return <H5>{text}</H5>
     return null
 }
 
