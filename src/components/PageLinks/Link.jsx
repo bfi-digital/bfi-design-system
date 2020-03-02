@@ -112,14 +112,14 @@ export const PageLink = ({
     description,
     callToAction,
     url,
-    image,
+    image480x320,
     colorScheme,
     external,
     withImages
 }) =>
     <Outer colorScheme={colorScheme} withImages={withImages}>
         { withImages && 
-            <PageImage imageSrc={image} />
+            <PageImage imageSrc={image480x320} />
         }
         <Headline level={4} text={title} />
         { !withImages && 

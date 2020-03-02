@@ -152,12 +152,8 @@ export const Footer = ({
     </Outer>
 
 Footer.propTypes = {
-    /** 
-	 * An array of the menus the footer should display. Each menu has a title, id and an array of child menu items
-	 **/
+    // An array of the menus the footer should display. Each menu has a title, id and an array of child menu items
     breadcrumbs: PropTypes.array,
-    /** 
-	 * A string for the copyright notice
-	 **/
+    // A HTML string for the copyright notice
     copyrightText: PropTypes.string
 }

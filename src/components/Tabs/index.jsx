@@ -14,17 +14,29 @@ const Outer = styled.ul`
 
 const Li = styled.li`
     display: inline-block;
-    padding: 15px 20px;
-    &:first-of-type{
-        padding-left: 0px;
-    }
+    padding: 15px 0px;
+    margin-right: 30px;
+    font-size: 1.25rem;
+    /* border-bottom: ${props => props.active ? `3px solid ${theme.darkPink}` : "none"}; */
 `
 
 const A = styled.a`
     font-weight: bold;
     text-decoration: none;
     color: ${props => props.active ? theme.darkPink : theme.charcoal};
-
+    &:hover{
+        color: ${theme.darkGrey};
+    }
+    &:focus{
+        color: ${theme.charcoal};
+        outline: none;
+        background: ${theme.lightPink};
+        box-shadow: 0px 0px 0px 5px ${theme.lightPink};
+    }
+    &:active{
+        color: ${theme.charcoal};
+    }
+    pointer-events: ${props => props.active ? "none" : null};
 `
 
 export const TabList = ({
@@ -38,7 +50,7 @@ export const Tab = ({
     setOpenTab,
     i
 }) =>
-    <Li role="presentation">
+    <Li role="presentation" active={openTab === i}>
         <A
             role="tab"
             id={`tab${i}`}

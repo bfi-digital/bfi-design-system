@@ -15,5 +15,8 @@ export * from "./components/Button"
 export * from "./components/StepByStep"
 export * from "./components/ImageSide"
 
+export * from "./components/FilmShowings"
+export * from "./components/Tabs"
+
 // Page scaffolds
 export * from "./components/PageContainer"
