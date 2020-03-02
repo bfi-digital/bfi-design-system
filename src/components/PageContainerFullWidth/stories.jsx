@@ -96,6 +96,10 @@ export const homePageExample = () =>
                     weekShowings={demoShowings}
                     allShowingsUrl="#"
                 />
+                <Headline 
+                    level={2} 
+                    text="Watch with us"
+                />
             </MainContent>
     
         </Wrapper>

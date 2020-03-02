@@ -76,7 +76,7 @@ export const WideHighlightCard = ({
             <Headline>{title}</Headline>
             <Caption>{caption}</Caption>
             <Description>{description}</Description>
-            <Button external={external} to={callToActionUrl}>{callToActionTitle}</Button>
+            <Button colorScheme={1} to={callToActionUrl}>{callToActionTitle}</Button>
         </Inner>
     </Outer>
 
