@@ -17,6 +17,7 @@ export * from "./components/ImageSide"
 
 export * from "./components/FilmShowings"
 export * from "./components/Tabs"
+export * from "./components/Highlights"
 
 // Page scaffolds
 export * from "./components/PageContainer"

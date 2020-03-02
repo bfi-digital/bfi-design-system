@@ -20,12 +20,21 @@ const Li = styled.li`
     /* border-bottom: ${props => props.active ? `3px solid ${theme.darkPink}` : "none"}; */
 `
 
-const A = styled.a`
+const Button = styled.button`
     font-weight: bold;
     text-decoration: none;
+    padding: 0px;
+    border: none;
+    background: none;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1rem;
     color: ${props => props.active ? theme.darkPink : theme.charcoal};
     &:hover{
         color: ${theme.darkGrey};
+    }
+    &::-moz-focus-inner {
+        border: 0;
     }
     &:focus{
         color: ${theme.charcoal};
@@ -51,16 +60,15 @@ export const Tab = ({
     i
 }) =>
     <Li role="presentation" active={openTab === i}>
-        <A
+        <Button
             role="tab"
             id={`tab${i}`}
-            href={`#section${i}`}
             aria-selected={openTab === i}
             onClick={() => setOpenTab(i)}
             active={openTab === i}
         >
             {children}
-        </A>
+        </Button>
     </Li>
 
 export const TabPanel = ({

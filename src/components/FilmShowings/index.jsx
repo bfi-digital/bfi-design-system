@@ -8,6 +8,10 @@ import { Button } from "../Button"
 const Outer = styled.div`
     padding-bottom: 25px;
     border-bottom: 1px solid ${theme.grey};
+    margin-bottom: 35px;
+    h3{
+        margin-top: 0px;
+    }
 `
 
 const Date = styled.p``
@@ -20,11 +24,12 @@ const Times = styled.ul`
 
 const Time = styled.li`
     display: inline-block;
+    margin: 10px 0px;
     margin-right: 10px;
 `
 
 const SoldOut = styled.span`
-    margin: 0;
+    margin: 0px;
     border: 2px solid ${theme.darkGrey};
     color: ${theme.darkGrey};
     font-weight: bold;

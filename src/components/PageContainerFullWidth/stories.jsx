@@ -13,6 +13,8 @@ import { Footer } from "../Footer"
 import { LeadParagraph } from "../LeadParagraph"
 import { PageLinks } from "../PageLinks"
 import four from "../PageLinks/data"
+import { Highlights } from "../Highlights"
+import demoShowings from "../Highlights/data"
 
 export default {
     title: "Page examples/PageFullWidth"
@@ -61,6 +63,38 @@ export const homePageExample = () =>
                 <Headline 
                     level={2} 
                     text="Highlights this week"
+                />
+                <Highlights
+                    highlight={{
+                        image600x600: "https://placehold.it/600x600",
+                        imageAltText: "",
+                        caption: "18 - 29 March at BFI Southbank",
+                        title: "BFI Flare: London LGBTIQ+ Film Festival 2020 programme announced",
+                        description: "The best new and classic LGBTIQ+ films from around the world. Priority booking opens to BFI Members at 11:30 on 25 Feb. Champion booking is open.",
+                        callToActionUrl: "#",
+                        callToActionTitle: "Explore the programme"
+                    }}
+                    todayHighlight={{
+                        image480x320: "https://placehold.it/480x320",
+                        imageAltText: "",
+                        caption: "Current season",
+                        title: "Fellini Season, Jan-Feb 2020",
+                        description: "The great Italian director’s centenary will be celebrated with a major two-month retrospective at BFI Southbank.",
+                        callToActionUrl: "#",
+                        callToActionTitle: "Explore the season"
+                    }}
+                    todayShowings={demoShowings}
+                    weekHighlight={{
+                        image480x320: "https://placehold.it/480x320",
+                        imageAltText: "",
+                        caption: "Current season",
+                        title: "Cronenberg Season, Jan-Feb 2020",
+                        description: "Canadian director David Cronenberg has been making...",
+                        callToActionUrl: "#",
+                        callToActionTitle: "Explore the season"
+                    }}
+                    weekShowings={demoShowings}
+                    allShowingsUrl="#"
                 />
             </MainContent>
     
