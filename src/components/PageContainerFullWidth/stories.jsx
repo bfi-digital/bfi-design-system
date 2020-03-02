@@ -16,6 +16,9 @@ import four from "../PageLinks/data"
 import { Highlights } from "../Highlights"
 import demoShowings from "../Highlights/data"
 
+import { FilmGrid } from "../FilmGrid"
+import demoFilms from "../FilmGrid/data"
+
 export default {
     title: "Page examples/PageFullWidth"
 }
@@ -100,6 +103,7 @@ export const homePageExample = () =>
                     level={2} 
                     text="Watch with us"
                 />
+                <FilmGrid films={demoFilms} allFilmsUrl="#"/>
             </MainContent>
     
         </Wrapper>

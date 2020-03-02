@@ -8,7 +8,9 @@ import { WideHighlightCard } from "./WideHighlightCard"
 import { FilmShowings } from "../FilmShowings"
 import { Button } from "../Button"
 
-const Outer = styled.div``
+const Outer = styled.div`
+    margin-bottom: 55px;
+`
 
 const Grid = styled.div`
     @media screen and (min-width: ${theme.m}){
