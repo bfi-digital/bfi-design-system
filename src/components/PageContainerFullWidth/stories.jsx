@@ -1,5 +1,5 @@
 import React from "react"
-import { Wrapper, MainContent } from "./index"
+import { Wrapper, MainContent, GreySection } from "./index"
 
 import navItems from "../Header/data"
 import {default as crumbs} from "../Breadcrumbs/data"
@@ -99,14 +99,18 @@ export const homePageExample = () =>
                     weekShowings={demoShowings}
                     allShowingsUrl="#"
                 />
+            </MainContent>
+    
+        </Wrapper>
+        <GreySection>
+            <MainContent>
                 <Headline 
                     level={2} 
                     text="Watch with us"
                 />
                 <FilmGrid films={demoFilms} allFilmsUrl="#"/>
             </MainContent>
-    
-        </Wrapper>
+        </GreySection>
         <Footer
             menus={footerMenus}
             copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"

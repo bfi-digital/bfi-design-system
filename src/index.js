@@ -18,6 +18,8 @@ export * from "./components/ImageSide"
 export * from "./components/FilmShowings"
 export * from "./components/Tabs"
 export * from "./components/Highlights"
+export * from "./components/FilmGrid"
+export * from "./components/PromoBanner"
 
 // Page scaffolds
 export * from "./components/PageContainer"
