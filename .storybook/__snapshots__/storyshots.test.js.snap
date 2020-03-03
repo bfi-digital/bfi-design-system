@@ -165,180 +165,180 @@ exports[`Storyshots All Components/FilmGrid Normal 1`] = `
     className="sc-jTzLTM ghhRIx"
   >
     <a
-      className="sc-dnqmqq kJPzIJ"
+      className="sc-iwsKbI fzQfWU"
       href="/#"
       onClick={[Function]}
     >
       <img
         alt="Example image"
-        className="sc-iwsKbI clYmsQ"
+        className="sc-gZMcBi gsrUbk"
         src="http://placehold.it/480x270"
       />
       <h3
-        className="sc-gZMcBi loXaWD"
+        className="sc-gqjmRU gmiiAZ"
       >
         La La Land
       </h3>
       <ul
-        className="sc-gqjmRU kpYkF"
+        className="sc-VigVT ccUqYQ"
       >
         <li
-          className="sc-VigVT fMuQow"
+          className="sc-dnqmqq cGvBQm"
         >
           BFI Player
         </li>
         <li
-          className="sc-VigVT fMuQow"
+          className="sc-dnqmqq cGvBQm"
         >
           Southbank
         </li>
       </ul>
     </a>
     <a
-      className="sc-dnqmqq kJPzIJ"
+      className="sc-iwsKbI fzQfWU"
       href="/#"
       onClick={[Function]}
     >
       <img
         alt="Example image"
-        className="sc-iwsKbI clYmsQ"
+        className="sc-gZMcBi gsrUbk"
         src="http://placehold.it/480x270"
       />
       <h3
-        className="sc-gZMcBi loXaWD"
+        className="sc-gqjmRU gmiiAZ"
       >
         The Lighthouse
       </h3>
       <ul
-        className="sc-gqjmRU kpYkF"
+        className="sc-VigVT ccUqYQ"
       >
         <li
-          className="sc-VigVT fMuQow"
+          className="sc-dnqmqq cGvBQm"
         >
           BFI Player
         </li>
         <li
-          className="sc-VigVT fMuQow"
+          className="sc-dnqmqq cGvBQm"
         >
           Southbank
         </li>
       </ul>
     </a>
     <a
-      className="sc-dnqmqq kJPzIJ"
+      className="sc-iwsKbI fzQfWU"
       href="/#"
       onClick={[Function]}
     >
       <img
         alt="Example image"
-        className="sc-iwsKbI clYmsQ"
+        className="sc-gZMcBi gsrUbk"
         src="http://placehold.it/480x270"
       />
       <h3
-        className="sc-gZMcBi loXaWD"
+        className="sc-gqjmRU gmiiAZ"
       >
         Santa Claus Conquers the Martians
       </h3>
       <ul
-        className="sc-gqjmRU kpYkF"
+        className="sc-VigVT ccUqYQ"
       >
         <li
-          className="sc-VigVT fMuQow"
+          className="sc-dnqmqq cGvBQm"
         >
           BFI Player
         </li>
         <li
-          className="sc-VigVT fMuQow"
+          className="sc-dnqmqq cGvBQm"
         >
           Southbank
         </li>
       </ul>
     </a>
     <a
-      className="sc-dnqmqq kJPzIJ"
+      className="sc-iwsKbI fzQfWU"
       href="/#"
       onClick={[Function]}
     >
       <img
         alt="Example image"
-        className="sc-iwsKbI clYmsQ"
+        className="sc-gZMcBi gsrUbk"
         src="http://placehold.it/480x270"
       />
       <h3
-        className="sc-gZMcBi loXaWD"
+        className="sc-gqjmRU gmiiAZ"
       >
         Gremlins
       </h3>
       <ul
-        className="sc-gqjmRU kpYkF"
+        className="sc-VigVT ccUqYQ"
       >
         <li
-          className="sc-VigVT fMuQow"
+          className="sc-dnqmqq cGvBQm"
         >
           BFI Player
         </li>
         <li
-          className="sc-VigVT fMuQow"
+          className="sc-dnqmqq cGvBQm"
         >
           Southbank
         </li>
       </ul>
     </a>
     <a
-      className="sc-dnqmqq kJPzIJ"
+      className="sc-iwsKbI fzQfWU"
       href="/#"
       onClick={[Function]}
     >
       <img
         alt="Example image"
-        className="sc-iwsKbI clYmsQ"
+        className="sc-gZMcBi gsrUbk"
         src="http://placehold.it/480x270"
       />
       <h3
-        className="sc-gZMcBi loXaWD"
+        className="sc-gqjmRU gmiiAZ"
       >
         Portrait of a Lady on Fire
       </h3>
       <ul
-        className="sc-gqjmRU kpYkF"
+        className="sc-VigVT ccUqYQ"
       >
         <li
-          className="sc-VigVT fMuQow"
+          className="sc-dnqmqq cGvBQm"
         >
           BFI Player
         </li>
         <li
-          className="sc-VigVT fMuQow"
+          className="sc-dnqmqq cGvBQm"
         >
           Southbank
         </li>
       </ul>
     </a>
     <a
-      className="sc-dnqmqq kJPzIJ"
+      className="sc-iwsKbI fzQfWU"
       href="/#"
       onClick={[Function]}
     >
       <img
         alt="Example image"
-        className="sc-iwsKbI clYmsQ"
+        className="sc-gZMcBi gsrUbk"
         src="http://placehold.it/480x270"
       />
       <h3
-        className="sc-gZMcBi loXaWD"
+        className="sc-gqjmRU gmiiAZ"
       >
         Birdman
       </h3>
       <ul
-        className="sc-gqjmRU kpYkF"
+        className="sc-VigVT ccUqYQ"
       >
         <li
-          className="sc-VigVT fMuQow"
+          className="sc-dnqmqq cGvBQm"
         >
           BFI Player
         </li>
         <li
-          className="sc-VigVT fMuQow"
+          className="sc-dnqmqq cGvBQm"
         >
           Southbank
         </li>
@@ -4215,6 +4215,14 @@ exports[`Storyshots All Components/Tabs Primary 1`] = `
 </div>
 `;
 
+exports[`Storyshots All Components/Tag Primary 1`] = `
+<li
+  className="sc-dnqmqq cGvBQm"
+>
+  Example tag
+</li>
+`;
+
 exports[`Storyshots All Components/Text Normal 1`] = `
 <div
   style={
@@ -7091,180 +7099,180 @@ Array [
         className="sc-jTzLTM ghhRIx"
       >
         <a
-          className="sc-dnqmqq kJPzIJ"
+          className="sc-iwsKbI fzQfWU"
           href="/#"
           onClick={[Function]}
         >
           <img
             alt="Example image"
-            className="sc-iwsKbI clYmsQ"
+            className="sc-gZMcBi gsrUbk"
             src="http://placehold.it/480x270"
           />
           <h3
-            className="sc-gZMcBi loXaWD"
+            className="sc-gqjmRU gmiiAZ"
           >
             La La Land
           </h3>
           <ul
-            className="sc-gqjmRU kpYkF"
+            className="sc-VigVT ccUqYQ"
           >
             <li
-              className="sc-VigVT fMuQow"
+              className="sc-dnqmqq cGvBQm"
             >
               BFI Player
             </li>
             <li
-              className="sc-VigVT fMuQow"
+              className="sc-dnqmqq cGvBQm"
             >
               Southbank
             </li>
           </ul>
         </a>
         <a
-          className="sc-dnqmqq kJPzIJ"
+          className="sc-iwsKbI fzQfWU"
           href="/#"
           onClick={[Function]}
         >
           <img
             alt="Example image"
-            className="sc-iwsKbI clYmsQ"
+            className="sc-gZMcBi gsrUbk"
             src="http://placehold.it/480x270"
           />
           <h3
-            className="sc-gZMcBi loXaWD"
+            className="sc-gqjmRU gmiiAZ"
           >
             The Lighthouse
           </h3>
           <ul
-            className="sc-gqjmRU kpYkF"
+            className="sc-VigVT ccUqYQ"
           >
             <li
-              className="sc-VigVT fMuQow"
+              className="sc-dnqmqq cGvBQm"
             >
               BFI Player
             </li>
             <li
-              className="sc-VigVT fMuQow"
+              className="sc-dnqmqq cGvBQm"
             >
               Southbank
             </li>
           </ul>
         </a>
         <a
-          className="sc-dnqmqq kJPzIJ"
+          className="sc-iwsKbI fzQfWU"
           href="/#"
           onClick={[Function]}
         >
           <img
             alt="Example image"
-            className="sc-iwsKbI clYmsQ"
+            className="sc-gZMcBi gsrUbk"
             src="http://placehold.it/480x270"
           />
           <h3
-            className="sc-gZMcBi loXaWD"
+            className="sc-gqjmRU gmiiAZ"
           >
             Santa Claus Conquers the Martians
           </h3>
           <ul
-            className="sc-gqjmRU kpYkF"
+            className="sc-VigVT ccUqYQ"
           >
             <li
-              className="sc-VigVT fMuQow"
+              className="sc-dnqmqq cGvBQm"
             >
               BFI Player
             </li>
             <li
-              className="sc-VigVT fMuQow"
+              className="sc-dnqmqq cGvBQm"
             >
               Southbank
             </li>
           </ul>
         </a>
         <a
-          className="sc-dnqmqq kJPzIJ"
+          className="sc-iwsKbI fzQfWU"
           href="/#"
           onClick={[Function]}
         >
           <img
             alt="Example image"
-            className="sc-iwsKbI clYmsQ"
+            className="sc-gZMcBi gsrUbk"
             src="http://placehold.it/480x270"
           />
           <h3
-            className="sc-gZMcBi loXaWD"
+            className="sc-gqjmRU gmiiAZ"
           >
             Gremlins
           </h3>
           <ul
-            className="sc-gqjmRU kpYkF"
+            className="sc-VigVT ccUqYQ"
           >
             <li
-              className="sc-VigVT fMuQow"
+              className="sc-dnqmqq cGvBQm"
             >
               BFI Player
             </li>
             <li
-              className="sc-VigVT fMuQow"
+              className="sc-dnqmqq cGvBQm"
             >
               Southbank
             </li>
           </ul>
         </a>
         <a
-          className="sc-dnqmqq kJPzIJ"
+          className="sc-iwsKbI fzQfWU"
           href="/#"
           onClick={[Function]}
         >
           <img
             alt="Example image"
-            className="sc-iwsKbI clYmsQ"
+            className="sc-gZMcBi gsrUbk"
             src="http://placehold.it/480x270"
           />
           <h3
-            className="sc-gZMcBi loXaWD"
+            className="sc-gqjmRU gmiiAZ"
           >
             Portrait of a Lady on Fire
           </h3>
           <ul
-            className="sc-gqjmRU kpYkF"
+            className="sc-VigVT ccUqYQ"
           >
             <li
-              className="sc-VigVT fMuQow"
+              className="sc-dnqmqq cGvBQm"
             >
               BFI Player
             </li>
             <li
-              className="sc-VigVT fMuQow"
+              className="sc-dnqmqq cGvBQm"
             >
               Southbank
             </li>
           </ul>
         </a>
         <a
-          className="sc-dnqmqq kJPzIJ"
+          className="sc-iwsKbI fzQfWU"
           href="/#"
           onClick={[Function]}
         >
           <img
             alt="Example image"
-            className="sc-iwsKbI clYmsQ"
+            className="sc-gZMcBi gsrUbk"
             src="http://placehold.it/480x270"
           />
           <h3
-            className="sc-gZMcBi loXaWD"
+            className="sc-gqjmRU gmiiAZ"
           >
             Birdman
           </h3>
           <ul
-            className="sc-gqjmRU kpYkF"
+            className="sc-VigVT ccUqYQ"
           >
             <li
-              className="sc-VigVT fMuQow"
+              className="sc-dnqmqq cGvBQm"
             >
               BFI Player
             </li>
             <li
-              className="sc-VigVT fMuQow"
+              className="sc-dnqmqq cGvBQm"
             >
               Southbank
             </li>

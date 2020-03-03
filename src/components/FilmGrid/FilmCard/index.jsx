@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import theme from "../../_theme"
 import { LinkSwitch } from "../../LinkSwitch"
+import { Tag } from "../../Tag"
 
 const Outer = styled(LinkSwitch)`
     display: block;
@@ -61,15 +62,6 @@ const Channels = styled.ul`
     padding: 0;
 `
 
-const Channel = styled.li`
-    display: inline-block;
-    margin-right: 10px;
-    padding: 5px;
-    border-radius: 5px;
-    font-size: 0.7rem;
-    background: ${theme.dustyPink};
-`
-
 export const FilmCard = ({
     image480x270,
     imageAltText,
@@ -82,7 +74,7 @@ export const FilmCard = ({
         <Title>{name}</Title>
         <Channels>
             {channels.map(channel =>
-                <Channel key={channel}>{channel}</Channel>
+                <Tag key={channel}>{channel}</Tag>
             )}
         </Channels>
     </Outer>
