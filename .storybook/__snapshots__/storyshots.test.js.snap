@@ -165,7 +165,7 @@ exports[`Storyshots All Components/FilmGrid Normal 1`] = `
     className="sc-jTzLTM ghhRIx"
   >
     <a
-      className="sc-iwsKbI fzQfWU"
+      className="sc-iwsKbI bSBLHR"
       href="/#"
       onClick={[Function]}
     >
@@ -195,7 +195,7 @@ exports[`Storyshots All Components/FilmGrid Normal 1`] = `
       </ul>
     </a>
     <a
-      className="sc-iwsKbI fzQfWU"
+      className="sc-iwsKbI bSBLHR"
       href="/#"
       onClick={[Function]}
     >
@@ -225,7 +225,7 @@ exports[`Storyshots All Components/FilmGrid Normal 1`] = `
       </ul>
     </a>
     <a
-      className="sc-iwsKbI fzQfWU"
+      className="sc-iwsKbI bSBLHR"
       href="/#"
       onClick={[Function]}
     >
@@ -255,7 +255,7 @@ exports[`Storyshots All Components/FilmGrid Normal 1`] = `
       </ul>
     </a>
     <a
-      className="sc-iwsKbI fzQfWU"
+      className="sc-iwsKbI bSBLHR"
       href="/#"
       onClick={[Function]}
     >
@@ -285,7 +285,7 @@ exports[`Storyshots All Components/FilmGrid Normal 1`] = `
       </ul>
     </a>
     <a
-      className="sc-iwsKbI fzQfWU"
+      className="sc-iwsKbI bSBLHR"
       href="/#"
       onClick={[Function]}
     >
@@ -315,7 +315,7 @@ exports[`Storyshots All Components/FilmGrid Normal 1`] = `
       </ul>
     </a>
     <a
-      className="sc-iwsKbI fzQfWU"
+      className="sc-iwsKbI bSBLHR"
       href="/#"
       onClick={[Function]}
     >
@@ -2098,7 +2098,7 @@ exports[`Storyshots All Components/Highlights Normal 1`] = `
 </div>
 `;
 
-exports[`Storyshots All Components/ImageSide Left And Big 1`] = `
+exports[`Storyshots All Components/Image Full Width 1`] = `
 <div
   style={
     Object {
@@ -2107,7 +2107,111 @@ exports[`Storyshots All Components/ImageSide Left And Big 1`] = `
   }
 >
   <figure
-    className="sc-iyvyFf cicLEn"
+    className="sc-iyvyFf kfwVcQ"
+  >
+    <img
+      alt="Alt text"
+      className="sc-hwwEjo dqgbTM"
+      src="http://placehold.it/1440x768"
+    />
+    <figcaption
+      className="sc-kPVwWT hRgpPG"
+    >
+      Example image caption
+    </figcaption>
+  </figure>
+  <article
+    className="sc-kfGgVZ bLgTpW"
+  >
+    
+
+
+    <p>
+      We gotta burn the rain forest, 
+      <strong>
+        dump toxic waste
+      </strong>
+      , pollute the air, and 
+      <a
+        href="#"
+      >
+        rip up the OZONE!
+      </a>
+       'Cause maybe if we screw up this planet enough, they won't want it anymore! We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough, they won't want it anymore!
+    </p>
+    
+
+
+    <ol>
+      
+    
+      <li>
+        What do they got in there? King Kong?
+      </li>
+      
+    
+      <li>
+        You really think you can fly that thing?
+      </li>
+      
+    
+      <li>
+        Must go faster
+      </li>
+      
+
+    </ol>
+    
+
+
+    <p>
+      You really think you can fly that thing? Eventually, you do plan to have dinosaurs on your dinosaur tour, right? 
+      <a
+        href="#"
+      >
+        I gave it a cold?
+      </a>
+       I gave it a virus. A computer virus. Did he just throw my cat out of the window? You're a very talented young man, with your own clever thoughts and ideas. Do you need a manager?
+    </p>
+    
+
+
+    <ul>
+      
+    
+      <li>
+        What do they got in there? King Kong?
+      </li>
+      
+    
+      <li>
+        You really think you can fly that thing?
+      </li>
+      
+    
+      <li>
+        Must go faster
+      </li>
+      
+
+    </ul>
+    
+
+
+  </article>
+</div>
+`;
+
+exports[`Storyshots All Components/Image Left And Big 1`] = `
+<div
+  style={
+    Object {
+      "padding": "20px",
+    }
+  }
+>
+  <figure
+    className="sc-iyvyFf dpwALm"
   >
     <img
       alt="Alt text"
@@ -2202,7 +2306,7 @@ exports[`Storyshots All Components/ImageSide Left And Big 1`] = `
 </div>
 `;
 
-exports[`Storyshots All Components/ImageSide Right And Small 1`] = `
+exports[`Storyshots All Components/Image Right And Small 1`] = `
 <div
   style={
     Object {
@@ -2211,7 +2315,7 @@ exports[`Storyshots All Components/ImageSide Right And Small 1`] = `
   }
 >
   <figure
-    className="sc-iyvyFf iCFdNq"
+    className="sc-iyvyFf gapNeQ"
   >
     <img
       alt="Alt text"
@@ -2306,7 +2410,7 @@ exports[`Storyshots All Components/ImageSide Right And Small 1`] = `
 </div>
 `;
 
-exports[`Storyshots All Components/Images Normal 1`] = `
+exports[`Storyshots All Components/ImageGallery Normal 1`] = `
 <div
   style={
     Object {
@@ -2362,7 +2466,7 @@ exports[`Storyshots All Components/Images Normal 1`] = `
 </div>
 `;
 
-exports[`Storyshots All Components/Images Not Clickable 1`] = `
+exports[`Storyshots All Components/ImageGallery Not Clickable 1`] = `
 <div
   style={
     Object {
@@ -2403,7 +2507,7 @@ exports[`Storyshots All Components/Images Not Clickable 1`] = `
 </div>
 `;
 
-exports[`Storyshots All Components/Images Only One 1`] = `
+exports[`Storyshots All Components/ImageGallery Only One 1`] = `
 <div
   style={
     Object {
@@ -7099,7 +7203,7 @@ Array [
         className="sc-jTzLTM ghhRIx"
       >
         <a
-          className="sc-iwsKbI fzQfWU"
+          className="sc-iwsKbI bSBLHR"
           href="/#"
           onClick={[Function]}
         >
@@ -7129,7 +7233,7 @@ Array [
           </ul>
         </a>
         <a
-          className="sc-iwsKbI fzQfWU"
+          className="sc-iwsKbI bSBLHR"
           href="/#"
           onClick={[Function]}
         >
@@ -7159,7 +7263,7 @@ Array [
           </ul>
         </a>
         <a
-          className="sc-iwsKbI fzQfWU"
+          className="sc-iwsKbI bSBLHR"
           href="/#"
           onClick={[Function]}
         >
@@ -7189,7 +7293,7 @@ Array [
           </ul>
         </a>
         <a
-          className="sc-iwsKbI fzQfWU"
+          className="sc-iwsKbI bSBLHR"
           href="/#"
           onClick={[Function]}
         >
@@ -7219,7 +7323,7 @@ Array [
           </ul>
         </a>
         <a
-          className="sc-iwsKbI fzQfWU"
+          className="sc-iwsKbI bSBLHR"
           href="/#"
           onClick={[Function]}
         >
@@ -7249,7 +7353,7 @@ Array [
           </ul>
         </a>
         <a
-          className="sc-iwsKbI fzQfWU"
+          className="sc-iwsKbI bSBLHR"
           href="/#"
           onClick={[Function]}
         >
