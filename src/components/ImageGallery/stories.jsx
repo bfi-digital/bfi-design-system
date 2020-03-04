@@ -3,7 +3,7 @@ import { withA11y } from "@storybook/addon-a11y"
 import { ImageGallery } from "./index"
 
 export default {
-    title: "All Components/Images",
+    title: "All Components/ImageGallery",
     decorators: [withA11y]
 }
 
@@ -28,7 +28,7 @@ export const normal = () =>
         maxWidth: "1000px",
         margin: "0 auto"
     }}>    
-        <Images 
+        <ImageGallery 
             images={demoData}
             caption="A gallery of three images"
         />
@@ -40,7 +40,7 @@ export const onlyOne = () =>
         maxWidth: "1000px",
         margin: "0 auto"
     }}>    
-        <Images 
+        <ImageGallery 
             images={[
                 {
                     url: "http://placehold.it/300x200",
@@ -57,7 +57,7 @@ export const notClickable = () =>
         maxWidth: "1000px",
         margin: "0 auto"
     }}>    
-        <Images 
+        <ImageGallery 
             images={demoData}
             caption="A gallery of three images"
             lightbox={false}

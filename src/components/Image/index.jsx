@@ -4,12 +4,14 @@ import theme from "../_theme"
 import PropTypes from "prop-types"
 
 const Figure = styled.figure`
-    float: ${props => props.side};
-    max-width: 40%;
-    margin: ${props => 
-        props.side === "left" ? 
-            "20px 40px 40px 0px" : 
-            "20px 0px 40px 40px"
+    float: ${props => props.side ? props.side : null};
+    max-width: ${props => props.side ? "40%" : "100%"};
+    width: ${props => props.side ? "auto" : "100%"};
+    margin: ${props => {
+        if(props.side === "left") return "20px 40px 40px 0px"
+        if(props.side === "right") return "20px 0px 40px 40px"
+        return "20px 0px"
+    }
 };
 `
 

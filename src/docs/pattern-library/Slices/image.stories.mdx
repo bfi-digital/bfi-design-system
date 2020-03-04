@@ -1,7 +1,7 @@
 import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
-import { ImageSide } from "../../../components/ImageSide/index"
+import { Image } from "../../../components/Image/index"
 
-<Meta title="Pattern Library|Slices/Single Image" component={ImageSide} />
+<Meta title="Pattern Library|Slices/Single Image" component={Image} />
 
 # Single Image
  
@@ -11,7 +11,7 @@ import { ImageSide } from "../../../components/ImageSide/index"
 <Preview>
     <Story name="Image on the left">
         <div style={{padding: "20px"}}>
-            <ImageSide
+            <Image
                 side="left"
                 alt="Alt text"
                 src="http://placehold.it/600x400"
@@ -23,4 +23,4 @@ import { ImageSide } from "../../../components/ImageSide/index"
 
 ## Props 
 
-<Props of={ImageSide} />
+<Props of={Image} />

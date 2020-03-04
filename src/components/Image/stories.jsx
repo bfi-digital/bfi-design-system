@@ -4,7 +4,7 @@ import { Image } from "./index"
 import { Text } from "../Text"
 
 export default {
-    title: "All Components/ImageSide",
+    title: "All Components/Image",
     decorators: [withA11y]
 }
 
@@ -28,9 +28,21 @@ let exampleText = `
 
 `
 
+export const fullWidth = () =>
+    <div style={{padding: "20px"}}>
+        <Image
+            alt="Alt text"
+            src="http://placehold.it/1440x768"
+            caption="Example image caption"
+        />
+        <Text
+            html={exampleText}
+        />
+    </div>
+
 export const leftAndBig = () =>
     <div style={{padding: "20px"}}>
-        <ImageSide
+        <Image
             side="left"
             alt="Alt text"
             src="http://placehold.it/600x400"
@@ -43,7 +55,7 @@ export const leftAndBig = () =>
 
 export const rightAndSmall = () =>
     <div style={{padding: "20px"}}>
-        <ImageSide
+        <Image
             side="right"
             alt="Alt text"
             src="http://placehold.it/200x200"
