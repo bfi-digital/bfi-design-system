@@ -32,7 +32,7 @@ const Outer = styled(LinkSwitch)`
         }
     }
     &:focus{
-        box-shadow: 0px 0px 0px 3px ${theme.dustyPink};
+        box-shadow: 0px 0px 0px 5px white, 0px 0px 0px 9px ${theme.dustyPink};
     }
     &::-moz-focus-inner {
         border: 0;

@@ -25,7 +25,7 @@ const Figcaption = styled.figcaption`
     margin: 0 auto;
 `
 
-export const ImageSide = ({
+export const Image = ({
     src,
     alt,
     side,
@@ -39,12 +39,12 @@ export const ImageSide = ({
         {caption && <Figcaption>{caption}</Figcaption>}
     </Figure>
 
-ImageSide.propTypes = {
+Image.propTypes = {
     // The source URL of the image
     src: PropTypes.string,
     // Alt-text string for the image.
     alt: PropTypes.string,
-    // Which side should the image be on. String. Left by default. To override say "right"
+    // Which side should the image be on. String. False by default. Say "left" or "right"
     side: PropTypes.string,
     // A visible caption for the image. Optional
     caption: PropTypes.string

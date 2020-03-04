@@ -1,6 +1,6 @@
 import * as React from "react"
 import { withA11y } from "@storybook/addon-a11y"
-import { ImageSide } from "./index"
+import { Image } from "./index"
 import { Text } from "../Text"
 
 export default {

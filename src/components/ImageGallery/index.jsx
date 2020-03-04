@@ -118,7 +118,7 @@ const BigImage = styled.img`
     box-shadow: 0px 10px 40px ${theme.charcoal}50;
 `
 
-export const Images = ({
+export const ImageGallery = ({
     images,
     caption,
     lightbox
@@ -169,7 +169,7 @@ export const Images = ({
     )
 }
 
-Images.propTypes = {
+ImageGallery.propTypes = {
     /** 
      *
 	 * Provide an array of at least one object, containing keys for the image URLs and alt text
@@ -185,6 +185,6 @@ Images.propTypes = {
     ligthbox: PropTypes.bool,
 }
 
-Images.defaultProps = {
+ImageGallery.defaultProps = {
     lightbox: true
 }

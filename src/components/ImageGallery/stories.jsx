@@ -1,6 +1,6 @@
 import * as React from "react"
 import { withA11y } from "@storybook/addon-a11y"
-import { Images } from "./index"
+import { ImageGallery } from "./index"
 
 export default {
     title: "All Components/Images",
