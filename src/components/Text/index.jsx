@@ -15,6 +15,10 @@ const Outer = styled.article`
         font-size: 1.25rem;
     }
 
+    p:first-of-type{
+        margin-top: 0px;
+    }
+
     p, ol, ul{
         margin-bottom: 20px;
     }

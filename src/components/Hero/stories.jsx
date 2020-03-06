@@ -13,6 +13,7 @@ export const normal = () =>
     <Hero 
         image1920x1080="https://bfi-prototype.netlify.com/static/media/watch-banner.b01324c4.jpg"
         headline="Watch a new film, rediscover your old favourites, and get inspired."
+        copyright="Image: Firstname Surname"
     />
 
 export const withHeader = () =>

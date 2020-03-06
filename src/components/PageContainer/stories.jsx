@@ -1,5 +1,5 @@
 import React from "react"
-import { Wrapper, MainContent, UpperContent, Sidebar } from "./index"
+import { Wrapper, MainContent, UpperContent, Sidebar, Actions, ShowingsGrid, PlayButton, AllShowingsButton } from "./index"
 
 import navItems from "../Header/data"
 import {longData as crumbs} from "../Breadcrumbs/data"
@@ -15,8 +15,9 @@ import { Footer } from "../Footer"
 import { LeadParagraph } from "../LeadParagraph"
 import { Text } from "../Text"
 import { StepByStep } from "../StepByStep"
+import { QuickFacts } from "../QuickFacts"
 import { SidebarPageLinks } from "../SidebarPageLinks"
-
+import { FilmShowings } from "../FilmShowings"
 
 const pageLinksData = [
     {
@@ -30,6 +31,71 @@ const pageLinksData = [
         image: "https://www.bfi.org.uk/sites/bfi.org.uk/files/styles/16x9_small/public/sitestructure/flare-2020-artwork-1000-750-v1.jpg?itok=0oZOJp2r"
     }
 ]
+
+const days = [
+    {
+        date: "24th February",
+        times: [
+            {
+                title: "3:30pm",
+                url: "#"
+            },
+            {
+                title: "6:30pm",
+                url: "#"
+            },
+            {
+                title: "8:45pm",
+                url: "#",
+                soldOut: true
+            }
+        ]
+    },
+    {
+        date: "24th February",
+        times: [
+            {
+                title: "3:30pm",
+                url: "#",
+                soldOut: true
+            },
+            {
+                title: "6:30pm",
+                url: "#"
+            }
+        ]
+    },
+    {
+        date: "24th February",
+        times: [
+            {
+                title: "3:30pm",
+                url: "#",
+                soldOut: true
+            },
+            {
+                title: "6:30pm",
+                url: "#"
+            }
+        ]
+    },
+    {
+        date: "24th February",
+        times: [
+            {
+                title: "3:30pm",
+                url: "#",
+                soldOut: true
+            },
+            {
+                title: "6:30pm",
+                url: "#",
+                soldOut: true
+            }
+        ]
+    },
+]
+
 
 export default {
     title: "Page examples/Film Page"
@@ -63,9 +129,6 @@ export const normal = () =>
             copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"
         />
     </>
-
-
-
 
 export const activePage = () =>
     <>
@@ -206,19 +269,17 @@ export const activePage = () =>
         />
     </>
 
-
 export const FilmPage = () =>
     <>
         <Header navItems={navItems} overlay={true} />
         <Hero 
+            copyright="Image: Firstname Surname"
             image1920x1080="https://player.bfi.org.uk/sites/default/files/styles/landscape_1440x810/public/hero-images/La-Dolce-vita-1.jpg"
-            headline="La dolce vita"
-        />
-        <UpperContent>
+        >
             <Breadcrumbs 
                 breadcrumbs={[
                     {
-                        title: "Discover",
+                        title: "Watch",
                         url: "#"
                     },
                     {
@@ -226,43 +287,54 @@ export const FilmPage = () =>
                         url: "#"
                     },
                     {
-                        title: "La dolche vita"
+                        title: "La Dolce Vita"
                     }
                 ]} 
             />
-            <LeadParagraph 
-                text="{CTA's here}"
-            />
-        </UpperContent>
+            <Headline level={0} text="La Dolce Vita"/>
+        </Hero>
+        <Wrapper>
+                <Actions>
+                    <Button to="#">Buy tickets</Button>
+                    <PlayButton to="#">Watch on BFI Player</PlayButton>
+                </Actions>
+        </Wrapper>
         <Wrapper>           
             <Sidebar leftSide={true}>
-                <Text html="
-                    <span>Italy, France, 1960-02-03</span>
-
-                    <p><strong>Director:</strong> Federico Fellini</p>
-                    
-                    <p><strong>Featuring:</strong> Marcello Mastroianni, Anita Ekberg, Anouk Aimée</p>
-                "/>
+                <QuickFacts
+                    facts={[
+                        "Italy, France \n1960",
+                        {
+                            label: "Directed by",
+                            value: "Frederico Fellini"
+                        },
+                        {
+                            label: "Featuring",
+                            value: "Marcello Mastroianni, Anita Ekberg, Anouk Aimée"
+                        },
+                    ]}
+                />
             </Sidebar>
             <MainContent>
-                <LeadParagraph 
-                    text="Fellini’s epic La dolce vita stands as a towering achievement of 1960s cinema. Set in Rome during the height of the ‘Hollywood on the Tiber’ era, the episodic narrative follows jaded journalist Marcello Rubini (Mastroianni) on the trail of gossip on VIPs, including Swedish-American film star Sylvia Rank (Ekberg). The film caused a sensation on its initial release, angering censors and polarising opinion among critics and audiences, but is now rightly considered a masterpiece that’s had a profound influence on popular culture. It was La dolce vita, for instance, that coined the term ‘paparazzo’, which came to describe a certain type of relentless celebrity photographer."
+                <Text
+                    html="<p>Fellini’s epic La dolce vita stands as a towering achievement of 1960s cinema. Set in Rome during the height of the ‘Hollywood on the Tiber’ era, the episodic narrative follows jaded journalist Marcello Rubini (Mastroianni) on the trail of gossip on VIPs, including Swedish-American film star Sylvia Rank (Ekberg).<p> 
+                    <p>The film caused a sensation on its initial release, angering censors and polarising opinion among critics and audiences, but is now rightly considered a masterpiece that’s had a profound influence on popular culture.</p> 
+                    <p>It was La dolce vita, for instance, that coined the term ‘paparazzo’, which came to describe a certain type of relentless celebrity photographer.</p>"
                 />
                 <Headline 
                     level={2} 
                     text="Book tickets at BFI Southbank"
                 />
-                <LeadParagraph 
-                    text="{Showings here}"
-                />
-
-                <Headline 
-                    level={2} 
-                    text="Read more about La dolce vita"
-                />
-                <LeadParagraph 
-                    text="{Articles here}"
-                />
+                <ShowingsGrid>
+                    {days.map(day =>
+                        <FilmShowings
+                            key={day.date}
+                            date={day.date}
+                            times={day.times}
+                        />
+                    )}
+                </ShowingsGrid>
+                <AllShowingsButton>All showings</AllShowingsButton>
             </MainContent>
         </Wrapper>
         <Footer

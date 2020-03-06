@@ -44,7 +44,7 @@ export const FilmShowings = ({
     times
 }) =>
     <Outer>
-        <Headline level={3} text={name}/>
+        {name && <Headline level={3} text={name}/>}
         <Date>{date}</Date>
         <Times>
             {times.map((time, i) =>

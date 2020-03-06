@@ -22,6 +22,7 @@ const colorSchemes = [
 const Outer = styled.section`
     background: ${theme.charcoal};
     width: 100%;
+    position: relative;
     min-height: 80vh;
     padding-top: ${props => props.withHeader ? "64px" : "0px"};
     background-image: url(${props => props.image});
@@ -63,17 +64,46 @@ const Container = styled.div`
     margin: 0 auto;
     padding: 0px ${theme.horizontalPadding};
     z-index: 1;
+    position: relative;
 
     @media screen and (min-width: ${theme.xl + 200}){
         max-width: ${theme.xl};
     }
+
+    ol + h1{
+        margin-top: 20px;
+    }
+    li, a{
+        color: ${theme.white};
+        text-shadow: 0px 0px 30px ${theme.charcoal}50;
+        &:focus{
+            background: ${theme.darkPink};
+        }
+    }
+`
+
+const Copyright = styled.p`
+        color: ${theme.white};
+        text-shadow: 0px 0px 30px ${theme.charcoal}50;
+        font-size: 0.75rem;
+        position: absolute;
+        bottom: 5px;
+
+
+        @media screen and (min-width: ${theme.m}){
+            right: ${theme.horizontalPadding};
+            bottom: 5px;
+        }
+
 `
 
 export const Hero = ({
     image1920x1080,
     headline,
     colorScheme,
-    withHeader
+    withHeader,
+    copyright,
+    children
 }) =>
     <Outer 
         image={image1920x1080} 
@@ -81,7 +111,9 @@ export const Hero = ({
     >
         <InnerGradient colorScheme={colorScheme} />
         <Container>
-            <Headline level={0} text={headline}/>
+            {children}
+            {headline && <Headline level={0} text={headline}/>}
+            {copyright && <Copyright>{copyright}</Copyright>}
         </Container>
     </Outer>
 
@@ -89,12 +121,15 @@ export const Hero = ({
 Hero.propTypes = {
     // Urls to the image for the hero. 
     image1920x1080: PropTypes.string,
-    // The text for the title which will be used as the H1 for this page/post.
+    // The text for the title which will be used as the H1 for this page/post. Optional. You might choose not to give this and pass children in instead
     headline: PropTypes.string,
     // A number to define which colour overlay the Hero should have, it defaults to none.
     colorScheme: PropTypes.number,
     // A boolean to tell the hero whether it has a header over the top of it, so that content in the hero never overlaps the header. Defaults to false.
-    withHeader: PropTypes.bool
+    withHeader: PropTypes.bool,
+    // A string giving the copyright attribution of the background image
+    copyright: PropTypes.string
+    
 }
 
 Hero.defaultProps = {
