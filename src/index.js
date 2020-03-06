@@ -14,6 +14,7 @@ export * from "./components/ImageGallery"
 export * from "./components/Image"
 export * from "./components/Button"
 export * from "./components/StepByStep"
+export * from "./components/QuickFacts"
 
 export * from "./components/FilmShowings"
 export * from "./components/Tabs"
