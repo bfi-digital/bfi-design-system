@@ -34,23 +34,6 @@ export const normal = () =>
         />
     </div>
 
-export const onlyOne = () =>
-    <div style={{
-        padding: "20px",
-        maxWidth: "1000px",
-        margin: "0 auto"
-    }}>    
-        <ImageGallery 
-            images={[
-                {
-                    url: "http://placehold.it/300x200",
-                    alt: "Example image"
-                }
-            ]}
-            caption="A single full-width image"
-        />
-    </div>
-
 export const notClickable = () =>
     <div style={{
         padding: "20px",
