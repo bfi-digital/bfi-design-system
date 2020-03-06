@@ -1,5 +1,5 @@
 import React from "react"
-import { Wrapper, MainContent, UpperContent, Sidebar, Actions, ShowingsGrid, PlayButton, AllShowingsButton } from "./index"
+import { Wrapper, MainContent, Sidebar, Actions, ShowingsGrid, PlayButton } from "./index"
 
 import navItems from "../Header/data"
 import {longData as crumbs} from "../Breadcrumbs/data"
@@ -294,10 +294,10 @@ export const FilmPage = () =>
             <Headline level={0} text="La Dolce Vita"/>
         </Hero>
         <Wrapper>
-                <Actions>
-                    <Button to="#">Buy tickets</Button>
-                    <PlayButton to="#">Watch on BFI Player</PlayButton>
-                </Actions>
+            <Actions>
+                <Button to="#">Buy tickets</Button>
+                <PlayButton to="#">Watch on BFI Player</PlayButton>
+            </Actions>
         </Wrapper>
         <Wrapper>           
             <Sidebar leftSide={true}>
@@ -334,7 +334,7 @@ export const FilmPage = () =>
                         />
                     )}
                 </ShowingsGrid>
-                <AllShowingsButton>All showings</AllShowingsButton>
+                <Button to="#" level={3}>All showings</Button>
             </MainContent>
         </Wrapper>
         <Footer

@@ -34,7 +34,7 @@ const PrimaryButton = styled(Link)`
     background: ${props => colorSchemes[props.colorScheme].background};
     border-radius: 4px;
     padding: 10px 25px;
-    box-shadow: -5px 5px 0px ${props => colorSchemes[props.colorScheme].shadow};
+    box-shadow: -3px 3px 0px ${props => colorSchemes[props.colorScheme].shadow};
     margin-left: 5px;
     transition: box-shadow .3s;
 
@@ -73,22 +73,48 @@ const SecondaryButton = styled(Link)`
     }
 `
 
+const TertiaryButton = styled(Link)`
+    border: 2px solid ${theme.charcoal};
+    color: ${theme.charcoal};
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 10px 30px;
+    text-decoration: none;
+    margin: 0 auto;
+    display: block;
+    max-width: 250px;
+    text-align: center;
+    &:hover{
+        background-color: ${theme.grey}
+    }
+    &:focus{
+        box-shadow: 0px 0px 0px 4px ${props => colorSchemes[props.colorScheme].focus};
+    }
+    &:active{
+        color: ${theme.white};
+        background: ${theme.charcoal}
+    }
+`
+
 export const Button = ({
-    secondary,
+    level,
     children,
     ...props
-}) => secondary ?
-    <SecondaryButton {...props}>{children}</SecondaryButton> :
-    <PrimaryButton {...props}>{children}</PrimaryButton>
+}) => {
+    if(level === 3) return <TertiaryButton {...props}>{children}</TertiaryButton>
+    if(level === 2) return <SecondaryButton {...props}>{children}</SecondaryButton>
+    return <PrimaryButton {...props}>{children}</PrimaryButton>
+}
 
 Button.propTypes = {
     url: PropTypes.string,
     external: PropTypes.bool,
-    secondary: PropTypes.bool,
+    // A number between 1 and 3
+    level: PropTypes.number,
     colorScheme: PropTypes.number
 }
 
 Button.defaultProps = {
-    colorScheme: 0,
-    secondary: false
+    colorScheme: 0
 }

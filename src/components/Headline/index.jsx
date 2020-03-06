@@ -32,7 +32,7 @@ const H2 = styled.h2`
     color: ${theme.charcoal};
     font-weight: 700;
     font-size: 1.375rem;
-    margin-block-start: 1em;
+    margin-block-start: 1.5em;
     margin-block-end: 0.5em;
 
     @media screen and (min-width: ${theme.l}){

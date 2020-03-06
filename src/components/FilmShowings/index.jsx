@@ -55,7 +55,7 @@ export const FilmShowings = ({
                         </SoldOut>
                         :
                         <Button 
-                            secondary 
+                            level={2}
                             href={time.url} 
                             {...time}
                         >

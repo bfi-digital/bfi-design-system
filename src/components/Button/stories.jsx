@@ -9,10 +9,15 @@ export default {
 
 export const primary = () =>
     <div style={{padding: "20px"}}>
-        <Button url="#">Click me</Button>
+        <Button level={1} url="#">Click me</Button>
     </div>
 
 export const secondary = () =>
     <div style={{padding: "20px"}}>
-        <Button secondary={true} url="#">Click me</Button>
+        <Button level={2} url="#">Click me</Button>
+    </div>
+
+export const tertiary = () =>
+    <div style={{padding: "20px"}}>
+        <Button level={3} url="#">Click me</Button>
     </div>
