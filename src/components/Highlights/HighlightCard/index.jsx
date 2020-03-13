@@ -68,7 +68,8 @@ export const HighlightCard = ({
     title,
     description,
     callToActionUrl,
-    callToActionTitle
+    callToActionTitle,
+    external
 }) =>
     <Outer>
         <Img alt={imageAltText} src={image480x320}/>
