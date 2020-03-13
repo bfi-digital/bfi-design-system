@@ -82,13 +82,13 @@ const ShowButton = styled.button`
     &:focus{
         outline: none;
         p{
-            background: ${theme.lightPink}
+            background: ${theme.lightest}
         }
     }
 `
 
 const ShowButtonText = styled.p`
-    color: ${theme.darkPink};
+    color: ${theme.dark};
     display: inline;
     text-decoration: underline;
     font-weight: 400;
@@ -97,7 +97,7 @@ const ShowButtonText = styled.p`
 const Description = styled.p`
     color: ${theme.charcoal};
     a{
-        color: ${theme.darkPink};
+        color: ${theme.dark};
         &:hover{
             text-decoration: none;
         }
@@ -106,7 +106,7 @@ const Description = styled.p`
         }
         &:focus{
             outline: none;
-            background: ${theme.lightPink}
+            background: ${theme.lightest}
         }
     }
 `

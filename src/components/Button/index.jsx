@@ -6,22 +6,22 @@ import theme from "../_theme"
 
 const colorSchemes = [
     {
-        shadow: theme.dustyPink,
+        shadow: theme.primary,
         hoverBackground: theme.darkGrey,
         text: theme.white,
         background: theme.charcoal,
-        focusShadow: theme.dustyPink,
+        focusShadow: theme.primary,
         // Secondary button only
-        focus: theme.dustyPink
+        focus: theme.primary
     },
     {
-        shadow: theme.dustyPink,
-        hoverBackground: theme.lightPink,
+        shadow: theme.primary,
+        hoverBackground: theme.lightest,
         text: theme.charcoal,
         background: theme.white,
-        focusShadow: theme.darkPink,
+        focusShadow: theme.dark,
         // Secondary button only
-        focus: theme.dustyPink
+        focus: theme.primary
     }
 ]
 
@@ -32,7 +32,7 @@ const PrimaryButton = styled(Link)`
     color: ${props => colorSchemes[props.colorScheme].text};
     text-decoration: none;
     background: ${props => colorSchemes[props.colorScheme].background};
-    border-radius: 4px;
+    // border-radius: 4px;
     padding: 10px 25px;
     box-shadow: -3px 3px 0px ${props => colorSchemes[props.colorScheme].shadow};
     margin-left: 5px;
@@ -57,7 +57,7 @@ const SecondaryButton = styled(Link)`
     border: 2px solid ${theme.charcoal};
     color: ${theme.charcoal};
     font-weight: bold;
-    border-radius: 5px;
+    // border-radius: 5px;
     font-size: 1rem;
     padding: 4px 15px;
     text-decoration: none;
@@ -77,7 +77,7 @@ const TertiaryButton = styled(Link)`
     border: 2px solid ${theme.charcoal};
     color: ${theme.charcoal};
     font-weight: bold;
-    border-radius: 5px;
+    // border-radius: 5px;
     font-size: 1rem;
     padding: 10px 30px;
     text-decoration: none;

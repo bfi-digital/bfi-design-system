@@ -6,7 +6,7 @@ import { Tag } from "../../Tag"
 
 const Outer = styled(LinkSwitch)`
     display: block;
-    border-radius: 5px;
+    // border-radius: 5px;
     text-decoration: none;
     color: ${theme.charcoal};
     margin-bottom: 35px;
@@ -32,20 +32,20 @@ const Outer = styled(LinkSwitch)`
         }
     }
     &:focus{
-        box-shadow: 0px 0px 0px 5px white, 0px 0px 0px 9px ${theme.dustyPink};
+        box-shadow: 0px 0px 0px 5px white, 0px 0px 0px 9px ${theme.primary};
     }
     &::-moz-focus-inner {
         border: 0;
     }
     &:active{
         h3{
-            color: ${theme.darkPink};
+            color: ${theme.dark};
         }
     }
 `
 
 const Image = styled.img`
-    border-radius: 5px;
+    // border-radius: 5px;
     width: 100%;
     height: auto;
 `

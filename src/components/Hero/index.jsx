@@ -9,7 +9,7 @@ const colorSchemes = [
         background: "transparent"
     },
     {
-        background: theme.dustyPink
+        background: theme.primary
     },
     {
         background: theme.racerGreen
@@ -77,7 +77,7 @@ const Container = styled.div`
         color: ${theme.white};
         text-shadow: 0px 0px 30px ${theme.charcoal}50;
         &:focus{
-            background: ${theme.darkPink};
+            background: ${theme.dark};
         }
     }
 `

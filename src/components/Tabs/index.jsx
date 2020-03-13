@@ -8,7 +8,7 @@ const Outer = styled.ul`
     margin: 0px;
     padding: 0px;
     list-style-type: none;
-    border-bottom: 1px solid ${theme.darkPink};
+    border-bottom: 1px solid ${theme.dark};
     margin-bottom: 25px;
 `
 
@@ -17,7 +17,7 @@ const Li = styled.li`
     padding: 15px 0px;
     margin-right: 30px;
     font-size: 1.25rem;
-    /* border-bottom: ${props => props.active ? `3px solid ${theme.darkPink}` : "none"}; */
+    /* border-bottom: ${props => props.active ? `3px solid ${theme.dark}` : "none"}; */
 `
 
 const Button = styled.button`
@@ -29,7 +29,7 @@ const Button = styled.button`
     text-decoration: none;
     cursor: pointer;
     font-size: 1rem;
-    color: ${props => props.active ? theme.darkPink : theme.charcoal};
+    color: ${props => props.active ? theme.dark : theme.charcoal};
     &:hover{
         color: ${theme.darkGrey};
     }
@@ -39,8 +39,8 @@ const Button = styled.button`
     &:focus{
         color: ${theme.charcoal};
         outline: none;
-        background: ${theme.lightPink};
-        box-shadow: 0px 0px 0px 5px ${theme.lightPink};
+        background: ${theme.lightest};
+        box-shadow: 0px 0px 0px 5px ${theme.lightest};
     }
     &:active{
         color: ${theme.charcoal};

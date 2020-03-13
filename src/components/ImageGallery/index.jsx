@@ -83,7 +83,7 @@ const Button = styled.button`
     padding: 0px;
     width: 100%;
     &:focus{
-        outline: 2px solid ${theme.dustyPink};
+        outline: 2px solid ${theme.primary};
     }
     margin-bottom: 10px;
     @media screen and (min-width: ${theme.m}){

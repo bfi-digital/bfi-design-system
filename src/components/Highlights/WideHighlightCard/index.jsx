@@ -6,9 +6,9 @@ import theme from "../../_theme"
 import { Button } from "../../Button"
 
 const Outer = styled.div`
-    border-radius: 5px;
+    // border-radius: 5px;
     overflow: hidden;
-    background-color: ${theme.lightPink};
+    background-color: ${theme.lightest};
     display: flex;
     flex-direction: column;
     margin-bottom: 35px;
