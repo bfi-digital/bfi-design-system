@@ -41,7 +41,7 @@ const Outer = styled.li`
     }
 `
 const PageImageContainer = styled.div`
-    background: ${theme.primary};
+    background: ${theme.light};
     display: inline-block;
     width: calc(40% - 10px);
     height: 100px;

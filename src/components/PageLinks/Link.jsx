@@ -82,7 +82,7 @@ const Icon = styled.div`
 `
 
 const PageImageContainer = styled.div`
-    background: ${theme.primary};
+    background: ${theme.light};
     display: inline-block;
     width: 100%;
     height: calc(50% - 25px);
