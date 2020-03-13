@@ -43,9 +43,7 @@ const Outer = styled.section`
 `
 
 const InnerGradient = styled.div`
-    background: ${props => colorSchemes[props.colorScheme].background};
-    opacity: 0.6;
-    background-image: linear-gradient(180deg, rgba(14,24,19,0.00) 0%, rgba(14,24,19,0.60) 80%);
+    background: linear-gradient(rgba(18, 12, 13, 0.3), rgba(18, 12, 13, 0.7));
     width: 100%;
     height: 100%;
     position: absolute;

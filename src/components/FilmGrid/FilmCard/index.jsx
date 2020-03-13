@@ -10,6 +10,8 @@ const Outer = styled(LinkSwitch)`
     text-decoration: none;
     color: ${theme.charcoal};
     margin-bottom: 35px;
+    transition: box-shadow .3s;
+
     @media screen and (min-width: ${theme.m}){
         margin-right: 25px;
         max-width: calc(50% - 12.5px);
@@ -32,6 +34,7 @@ const Outer = styled(LinkSwitch)`
         }
     }
     &:focus{
+        outline: none;
         box-shadow: 0px 0px 0px 5px white, 0px 0px 0px 9px ${theme.primary};
     }
     &::-moz-focus-inner {

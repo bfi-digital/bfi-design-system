@@ -61,10 +61,13 @@ const SecondaryButton = styled(Link)`
     font-size: 1rem;
     padding: 4px 15px;
     text-decoration: none;
+    transition: box-shadow .3s;
+
     &:hover{
         background-color: ${theme.grey}
     }
     &:focus{
+        outline: none;
         box-shadow: 0px 0px 0px 4px ${props => colorSchemes[props.colorScheme].focus};
     }
     &:active{
@@ -85,10 +88,13 @@ const TertiaryButton = styled(Link)`
     display: block;
     max-width: 250px;
     text-align: center;
+    transition: box-shadow .3s;
+
     &:hover{
         background-color: ${theme.grey}
     }
     &:focus{
+        outline: none;
         box-shadow: 0px 0px 0px 4px ${props => colorSchemes[props.colorScheme].focus};
     }
     &:active{
