@@ -13,18 +13,6 @@ export default {
     light: '#E2888B',
     lightest: '#FFEFF0',
 
-    lightPink: "#FAEFF0",
-    dustyPink: "#f0c5c8",
-    darkPink: "#895d60",
-
-    lightBlue: "#E9F2FF",
-    deepNavy: "#031d45",
-    darkBlue: "#1a2029",
-
-    lightGreen: "#EEFAF4",
-    racerGreen: "#004225",
-    darkGreen: "#172820",
-
     // breakpoints
     s: "500px",
     m: "768px", // tablets and larger

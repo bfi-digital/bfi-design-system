@@ -10,12 +10,6 @@ const colorSchemes = [
     },
     {
         background: theme.primary
-    },
-    {
-        background: theme.racerGreen
-    },
-    {
-        background: theme.deepNavy
     }
 ]
 
