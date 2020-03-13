@@ -28,9 +28,13 @@ const Outer = styled(LinkSwitch)`
             margin-right: 0px;
         }
     }
-    &:hover{
+    &:hover, &:focus-within {
         h3{
             color: ${theme.darkGrey};
+        }
+        img {
+            filter: grayscale(100%) contrast(1) blur(0px);
+            mix-blend-mode: multiply;
         }
     }
     &:focus{
@@ -46,11 +50,21 @@ const Outer = styled(LinkSwitch)`
         }
     }
 `
-
+const ImageContainer = styled.div`
+    background: ${theme.light};
+    display: inline-block;
+    width: 100%;
+    height: auto;
+`
 const Image = styled.img`
     // border-radius: 5px;
     width: 100%;
     height: auto;
+    display: block;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    transition: all ease 0.3s;
 `
 
 const Title = styled.h3`
@@ -73,7 +87,9 @@ export const FilmCard = ({
     url
 }) =>
     <Outer to={url}>
-        <Image src={image480x270} alt={imageAltText}/>
+        <ImageContainer>
+            <Image src={image480x270} alt={imageAltText}/>
+        </ImageContainer>
         <Title>{name}</Title>
         <Channels>
             {channels.map(channel =>
