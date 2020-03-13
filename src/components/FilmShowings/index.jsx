@@ -36,6 +36,7 @@ const SoldOut = styled.span`
     // border-radius: 5px;
     font-size: 1rem;
     padding: 4px 15px;
+    cursor: no-drop;
 `
 
 export const FilmShowings = ({
