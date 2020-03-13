@@ -4,15 +4,6 @@ import styled from "styled-components"
 import theme from "../_theme"
 import PropTypes from "prop-types"
 
-const colorSchemes = [
-    {
-        background: "transparent"
-    },
-    {
-        background: theme.primary
-    }
-]
-
 const Outer = styled.section`
     background: ${theme.charcoal};
     width: 100%;
@@ -92,7 +83,6 @@ const Copyright = styled.p`
 export const Hero = ({
     image1920x1080,
     headline,
-    colorScheme,
     withHeader,
     copyright,
     children
@@ -101,7 +91,7 @@ export const Hero = ({
         image={image1920x1080} 
         withHeader={withHeader}
     >
-        <InnerGradient colorScheme={colorScheme} />
+        <InnerGradient />
         <Container>
             {children}
             {headline && <Headline level={0} text={headline}/>}
@@ -115,15 +105,9 @@ Hero.propTypes = {
     image1920x1080: PropTypes.string,
     // The text for the title which will be used as the H1 for this page/post. Optional. You might choose not to give this and pass children in instead
     headline: PropTypes.string,
-    // A number to define which colour overlay the Hero should have, it defaults to none.
-    colorScheme: PropTypes.number,
     // A boolean to tell the hero whether it has a header over the top of it, so that content in the hero never overlaps the header. Defaults to false.
     withHeader: PropTypes.bool,
     // A string giving the copyright attribution of the background image
     copyright: PropTypes.string
     
-}
-
-Hero.defaultProps = {
-    colorScheme: 0
 }
