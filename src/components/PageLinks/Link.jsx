@@ -17,7 +17,6 @@ const Outer = styled.li`
     flex-direction: column;
     position: relative;
     overflow: hidden;
-    transition: box-shadow .3s;
 
     &:before {
         display: block;
@@ -40,6 +39,7 @@ const Outer = styled.li`
     }
     &:focus-within{
         box-shadow: 0px 0px 0px 5px ${theme.primary};
+        transition: box-shadow .3s;
     }
     &:active{
         box-shadow: -2px 2px 0px ${theme.dark};
