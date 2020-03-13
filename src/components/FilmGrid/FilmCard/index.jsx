@@ -3,6 +3,7 @@ import styled from "styled-components"
 import theme from "../../_theme"
 import { LinkSwitch } from "../../LinkSwitch"
 import { Tag } from "../../Tag"
+import placeholderImage from "./placeholder.png"
 
 const Outer = styled(LinkSwitch)`
     display: block;
@@ -35,6 +36,9 @@ const Outer = styled(LinkSwitch)`
         img {
             filter: grayscale(100%) contrast(1) blur(0px);
             mix-blend-mode: multiply;
+        }
+        .placeholder {
+            opacity: 0.5;
         }
     }
     &:focus{
@@ -88,7 +92,7 @@ export const FilmCard = ({
 }) =>
     <Outer to={url}>
         <ImageContainer>
-            <Image src={image480x270} alt={imageAltText}/>
+            <Image src={image480x270 != "" ? image480x270 : placeholderImage} alt={imageAltText}/>
         </ImageContainer>
         <Title>{name}</Title>
         <Channels>
