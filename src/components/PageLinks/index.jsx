@@ -29,7 +29,8 @@ const Outer = styled.ul`
             }
         }
         @media screen and (min-width: ${theme.l}){
-            width: calc(25% - 18.75px);
+            width: ${props => props.lessColumns ? 'calc(33.333% - 26px)' : 'calc(25% - 18.75px)'};
+
             margin-right: 25px;
             &:nth-of-type(even) {
                 margin-right: 25px;
