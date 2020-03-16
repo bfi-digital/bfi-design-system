@@ -4229,6 +4229,37 @@ exports[`Storyshots All Components/Text Normal 1`] = `
 </div>
 `;
 
+exports[`Storyshots All Components/VideoEmbed Vimeo 1`] = `
+<div
+  className="sc-fjmCvl drnhSI"
+>
+  <iframe
+    allow="autoplay; fullscreen"
+    allowFullScreen={true}
+    frameBorder="0"
+    height="270"
+    src="https://player.vimeo.com/video/143029218?app_id=122963"
+    title="Film is Fragile - Film needs your help! | BFI Trailer"
+    width="480"
+  />
+</div>
+`;
+
+exports[`Storyshots All Components/VideoEmbed Youtube 1`] = `
+<div
+  className="sc-fjmCvl drnhSI"
+>
+  <iframe
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen={true}
+    frameBorder="0"
+    height="270"
+    src="https://www.youtube.com/embed/vpqYxK6mmSU?feature=oembed"
+    width="480"
+  />
+</div>
+`;
+
 exports[`Storyshots Page examples/Page Full Width Home Page Example 1`] = `
 Array [
   <div
