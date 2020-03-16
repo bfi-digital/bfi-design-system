@@ -11,7 +11,7 @@ export default [
     },
     {
         name: "The Lighthouse",
-        image480x270: "http://placehold.it/480x270",
+        image480x270: "",
         imageAltText: "Example image",
         channels: [
             "BFI Player",

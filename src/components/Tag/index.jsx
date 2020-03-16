@@ -7,5 +7,6 @@ export const Tag = styled.li`
     padding: 5px;
     border-radius: 5px;
     font-size: 0.7rem;
-    background: ${theme.dustyPink};
+    background: ${theme.primary};
+    color: ${theme.white};
 `

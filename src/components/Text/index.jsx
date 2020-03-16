@@ -24,26 +24,26 @@ const Outer = styled.article`
     }
 
     a{
-        color: ${theme.darkPink};
+        color: ${theme.dark};
         text-decoration: none;
         box-shadow:
             inset 0 -0.0em white,
-            inset 0 -0.125em ${theme.darkPink};
+            inset 0 -0.125em ${theme.dark};
         &:hover{
             box-shadow: none;
         }
         &:focus{
-            background: ${theme.lightPink};
+            background: ${theme.lightest};
             box-shadow:
                 inset 0 -0em white,
-                inset 0 -0.17em ${theme.darkPink};
+                inset 0 -0.17em ${theme.dark};
             outline: none;
         }
         &:active{
-            background: ${theme.lightPink};
+            background: ${theme.lightest};
             box-shadow:
                 inset 0 -0em white,
-                inset 0 -0.125em ${theme.darkPink};
+                inset 0 -0.125em ${theme.dark};
             outline: none;
         }
     }
@@ -61,7 +61,7 @@ const Outer = styled.article`
             margin-bottom: 3px;
             &:before{
                 content: "•";
-                color: ${theme.darkPink};
+                color: ${theme.dark};
                 margin-right: 20px;
             }
         }

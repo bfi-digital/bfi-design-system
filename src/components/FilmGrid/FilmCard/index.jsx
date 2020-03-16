@@ -3,13 +3,16 @@ import styled from "styled-components"
 import theme from "../../_theme"
 import { LinkSwitch } from "../../LinkSwitch"
 import { Tag } from "../../Tag"
+import placeholderImage from "./placeholder.png"
 
 const Outer = styled(LinkSwitch)`
     display: block;
-    border-radius: 5px;
+    // border-radius: 5px;
     text-decoration: none;
     color: ${theme.charcoal};
     margin-bottom: 35px;
+    transition: box-shadow .3s;
+
     @media screen and (min-width: ${theme.m}){
         margin-right: 25px;
         max-width: calc(50% - 12.5px);
@@ -26,28 +29,46 @@ const Outer = styled(LinkSwitch)`
             margin-right: 0px;
         }
     }
-    &:hover{
+    &:hover, &:focus-within {
         h3{
             color: ${theme.darkGrey};
         }
+        img {
+            filter: grayscale(100%) contrast(1) blur(0px);
+            mix-blend-mode: multiply;
+        }
+        .placeholder {
+            opacity: 0.5;
+        }
     }
     &:focus{
-        box-shadow: 0px 0px 0px 5px white, 0px 0px 0px 9px ${theme.dustyPink};
+        outline: none;
+        box-shadow: 0px 0px 0px 5px white, 0px 0px 0px 9px ${theme.primary};
     }
     &::-moz-focus-inner {
         border: 0;
     }
     &:active{
         h3{
-            color: ${theme.darkPink};
+            color: ${theme.dark};
         }
     }
 `
-
-const Image = styled.img`
-    border-radius: 5px;
+const ImageContainer = styled.div`
+    background: ${theme.light};
+    display: inline-block;
     width: 100%;
     height: auto;
+`
+const Image = styled.img`
+    // border-radius: 5px;
+    width: 100%;
+    height: auto;
+    display: block;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    transition: all ease 0.3s;
 `
 
 const Title = styled.h3`
@@ -70,7 +91,9 @@ export const FilmCard = ({
     url
 }) =>
     <Outer to={url}>
-        <Image src={image480x270} alt={imageAltText}/>
+        <ImageContainer>
+            <Image src={image480x270 != "" ? image480x270 : placeholderImage} alt={imageAltText}/>
+        </ImageContainer>
         <Title>{name}</Title>
         <Channels>
             {channels.map(channel =>

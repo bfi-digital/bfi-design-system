@@ -8,7 +8,7 @@ const Outer = styled.li`
     margin-bottom: 20px;
     position: relative;
     transition: box-shadow .3s;
-    border-radius: 5px;
+    // border-radius: 5px;
     
     &:last-child {
         border: none;
@@ -27,7 +27,7 @@ const Outer = styled.li`
         }
     }
     &:focus-within{
-        box-shadow: 0px 0px 0px 5px ${theme.dustyPink};
+        box-shadow: 0px 0px 0px 5px ${theme.primary};
         outline: none;
     }
     &:after {
@@ -41,11 +41,11 @@ const Outer = styled.li`
     }
 `
 const PageImageContainer = styled.div`
-    background: ${theme.dustyPink};
+    background: ${theme.light};
     display: inline-block;
     width: calc(40% - 10px);
     height: 100px;
-    border-radius: 4px;
+    // border-radius: 4px;
     margin-right: 10px;
 `
 const PageImage = styled.div`
@@ -55,7 +55,7 @@ const PageImage = styled.div`
     background-position: center center;
     background-size: cover;
     display: block;
-    border-radius: 4px;
+    // border-radius: 4px;
     -webkit-transition: all ease 0.3s;
     -moz-transition: all ease 0.3s;
     -o-transition: all ease 0.3s;

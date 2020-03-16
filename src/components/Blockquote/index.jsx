@@ -40,8 +40,8 @@ const Citation = styled.cite`
 
 const colorSchemes = [
     {
-        background: theme.lightPink,
-        text: theme.darkPink,
+        background: theme.lightest,
+        text: theme.dark,
     }
 ]
 

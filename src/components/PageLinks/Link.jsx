@@ -5,40 +5,18 @@ import { LinkSwitch as Link } from "../LinkSwitch"
 import { Headline } from "../Headline"
 import Arrow from "./arrow-right.jsx"
 
-const colorSchemes = [
-    {
-        background: theme.lightPink,
-        shadow: theme.darkPink,
-        text: theme.darkPink,
-        focus: theme.dustyPink
-    },
-    {
-        background: theme.lightGreen,
-        shadow: theme.racerGreen,
-        text: theme.racerGreen,
-        focus: theme.dustyPink
-    },
-    {
-        background: theme.lightBlue,
-        shadow: theme.deepNavy,
-        text: theme.deepNavy,
-        focus: theme.dustyPink
-    }
-]
-
 const Outer = styled.li`
     position: relative;
-    background: ${props => props.withImages ? theme.grey : colorSchemes[props.colorScheme].background};
-    box-shadow: -5px 5px 0px ${props => colorSchemes[props.colorScheme].shadow};
+    background: ${props => props.withImages ? theme.grey : theme.lightest};
+    box-shadow: -5px 5px 0px ${theme.dark};
     padding: 25px;
     margin-bottom: 35px;
-    border-radius: 10px;
+    // border-radius: 10px;
     min-height: 300px;
     display: flex;
     flex-direction: column;
     position: relative;
     overflow: hidden;
-    transition: box-shadow .3s;
 
     &:before {
         display: block;
@@ -47,7 +25,7 @@ const Outer = styled.li`
     }
     h4{
         margin-top: 0;
-        color: ${props => colorSchemes[props.colorScheme].text};
+        color: ${theme.dark};
         margin-bottom: 20px;
     }
     &:hover, &:focus-within {
@@ -60,16 +38,17 @@ const Outer = styled.li`
         }
     }
     &:focus-within{
-        box-shadow: 0px 0px 0px 5px ${props => colorSchemes[props.colorScheme].focus};
+        box-shadow: 0px 0px 0px 5px ${theme.primary};
+        transition: box-shadow .3s;
     }
     &:active{
-        box-shadow: -2px 2px 0px ${props => colorSchemes[props.colorScheme].text};
+        box-shadow: -2px 2px 0px ${theme.dark};
         transform: translate(-3px, 3px);
     }
 `
 
 const Description = styled.p`
-    color: ${props => colorSchemes[props.colorScheme].text};
+    color: ${theme.dark};
     margin-bottom: 35px;
     line-height: 1.5;
 `
@@ -77,7 +56,7 @@ const Description = styled.p`
 const CallToAction = styled(Link)`
     margin-top: auto;
     text-decoration: none;
-    color: ${props => colorSchemes[props.colorScheme].text};
+    color: ${theme.dark};
     font-weight: bold;
     &:after{
         content: "";
@@ -103,11 +82,11 @@ const Icon = styled.div`
 `
 
 const PageImageContainer = styled.div`
-    background: ${theme.dustyPink};
+    background: ${theme.light};
     display: inline-block;
     width: 100%;
     height: calc(50% - 25px);
-    border-radius: 4px;
+    // border-radius: 4px;
     margin-right: 10px;
     position: absolute;
     top: 0;
@@ -120,7 +99,7 @@ const PageImage = styled.div`
     background-position: center center;
     background-size: cover;
     display: block;
-    border-radius: 4px;
+    // border-radius: 4px;
     -webkit-transition: all ease 0.3s;
     -moz-transition: all ease 0.3s;
     -o-transition: all ease 0.3s;
@@ -133,11 +112,10 @@ export const PageLink = ({
     callToAction,
     url,
     image480x320,
-    colorScheme,
     external,
     withImages
 }) =>
-    <Outer colorScheme={colorScheme} withImages={withImages}>
+    <Outer withImages={withImages}>
         { withImages && 
             <PageImageContainer>
                 <PageImage className="image" imageSrc={image480x320} />
@@ -145,11 +123,11 @@ export const PageLink = ({
         }
         <Headline level={4} text={title} />
         { !withImages && 
-            <Description colorScheme={colorScheme}>{description}</Description>
+            <Description>{description}</Description>
         }
-        <CallToAction external={external} to={url} colorScheme={colorScheme}>
+        <CallToAction external={external} to={url}>
             {callToAction}
-            <Icon><Arrow colourFill={colorSchemes[colorScheme].text} /></Icon>
+            <Icon><Arrow colourFill={theme.dark} /></Icon>
         </CallToAction>
     </Outer>
 

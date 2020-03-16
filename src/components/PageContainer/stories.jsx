@@ -98,10 +98,10 @@ const days = [
 
 
 export default {
-    title: "Page examples/Film Page"
+    title: "Page examples/Page With Sidebar"
 }
 
-export const normal = () =>
+export const normalPage = () =>
     <>
         <Header navItems={navItems}/>
         <Wrapper>

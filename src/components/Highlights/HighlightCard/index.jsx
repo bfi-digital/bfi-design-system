@@ -5,8 +5,8 @@ import theme from "../../_theme"
 import { LinkSwitch } from "../../LinkSwitch"
 
 const Outer = styled.div`
-    border-radius: 5px;
-    background-color: ${theme.lightPink};
+    // border-radius: 5px;
+    background-color: ${theme.lightest};
     display: flex;
     flex-direction: column;
     margin-bottom: 35px;
@@ -20,7 +20,7 @@ const Outer = styled.div`
 `
 
 const Img = styled.img`
-    border-radius: 5px 5px 0px 0px;
+    // border-radius: 5px 5px 0px 0px;
     width: 100%;
     height: auto;
 `
@@ -52,11 +52,11 @@ const CallToAction = styled(LinkSwitch)`
     color: ${theme.white};
     text-align: center;
     padding: 12px 20px;
-    border-radius: 0px 0px 5px 5px;
+    // border-radius: 0px 0px 5px 5px;
     text-decoration: none;
     &:focus{
         outline: none;
-        box-shadow: 0px 0px 0px 5px ${theme.dustyPink};
+        box-shadow: 0px 0px 0px 5px ${theme.primary};
     }
 
 `
@@ -68,7 +68,8 @@ export const HighlightCard = ({
     title,
     description,
     callToActionUrl,
-    callToActionTitle
+    callToActionTitle,
+    external
 }) =>
     <Outer>
         <Img alt={imageAltText} src={image480x320}/>

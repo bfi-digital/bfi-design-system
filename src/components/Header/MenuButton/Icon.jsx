@@ -9,7 +9,7 @@ const Outer = styled.div`
     &:before, 
     div {
         background-color: ${theme.charcoal};
-        border-radius: 3px;
+        // border-radius: 3px;
         content: '';
         display: block;
         height: 2px;

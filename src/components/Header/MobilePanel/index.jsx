@@ -65,8 +65,8 @@ const ItemButton = styled.button`
     text-align: left;
     cursor: pointer;
     &:focus {
-        border-radius: 7px;
-        box-shadow: #f0c5c8 0px 0px 0px 4px;
+        // border-radius: 7px;
+        box-shadow: #B00C22 0px 0px 0px 4px;
         outline: none !important;
     }
 `
@@ -93,8 +93,8 @@ const ChildLink = styled(Link)`
         color: ${theme.charcoal} !important;
     }
     &:focus {
-        border-radius: 7px;
-        box-shadow: #f0c5c8 0px 0px 0px 4px;
+        // border-radius: 7px;
+        box-shadow: #B00C22 0px 0px 0px 4px;
         outline: none !important;
     }
 `
@@ -104,14 +104,14 @@ const QuickLinks = styled.div`
 `
 
 const QuickLink = styled(Link)`
-    color: ${theme.darkPink};
+    color: ${theme.dark};
     font-weight: 700;
     text-decoration: none;
     padding: 10px 0;
     display: block;
     &:focus {
-        border-radius: 7px;
-        box-shadow: #f0c5c8 0px 0px 0px 4px;
+        // border-radius: 7px;
+        box-shadow: #B00C22 0px 0px 0px 4px;
         outline: none !important;
     }
 `

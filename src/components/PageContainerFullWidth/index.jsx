@@ -16,7 +16,7 @@ export const GreySection = styled.div`
     max-width: ${theme.l};
     margin: 0 auto;
     padding: 40px ${theme.horizontalPadding};
-    background-color: ${theme.lightGrey};
+    background-color: ${theme.lightestGrey};
     @media screen and (min-width: ${theme.xl + 200}){
         max-width: ${theme.xl};
         padding: 70px ${theme.horizontalPadding};

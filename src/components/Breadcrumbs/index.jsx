@@ -33,13 +33,13 @@ const Crumb = styled.li`
 `
 
 const BreadcrumbLink = styled(Link)`
-    color: ${theme.darkPink};
+    color: ${theme.dark};
     font-weight: bold;
     &:hover{
         text-decoration: none;
     }
     &:focus{
-        background: ${theme.lightPink};
+        background: ${theme.lightest};
         outline: none;
     }
 `

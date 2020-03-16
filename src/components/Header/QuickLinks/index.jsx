@@ -12,7 +12,7 @@ const Wrapper = styled.div`
 `
 const QuickLink = styled(Link)`
     background: ${props => props.isTransparent ? (props.isSticky ? theme.white : "transparent") : theme.white};
-    color: ${props => props.isTransparent ? (!props.isSticky ? theme.white : theme.darkPink) : theme.darkPink};
+    color: ${props => props.isTransparent ? (!props.isSticky ? theme.white : theme.dark) : theme.dark};
     font-weight: 700;
     text-decoration: none;
     padding: 21px 15px;

@@ -1,24 +1,17 @@
 export default {
 
     // colour scheme
-    charcoal: "#1c1c1c",
+    charcoal: "#120C0D",
     white: "#ffffff",
 
     darkGrey: "#746D6D",
     grey: "#E9E8E8",
     lightGrey: "#f6f6f6",
 
-    lightPink: "#FAEFF0",
-    dustyPink: "#f0c5c8",
-    darkPink: "#895d60",
-
-    lightBlue: "#E9F2FF",
-    deepNavy: "#031d45",
-    darkBlue: "#1a2029",
-
-    lightGreen: "#EEFAF4",
-    racerGreen: "#004225",
-    darkGreen: "#172820",
+    primary: '#B00C22',
+    dark: '#7D0717',
+    light: '#E2888B',
+    lightest: '#FFEFF0',
 
     // breakpoints
     s: "500px",
