@@ -1,15 +1,22 @@
-import React from "react"
+import React, { useState } from "react"
 import styled from "styled-components"
 import theme from "../../_theme"
-import icon from "./fileIcon.svg"
+import DownloadFileIcon from "./downloadFileIcon.jsx"
 import PropTypes from "prop-types"
 
 const Outer = styled.div`
     max-width: 75%;
     &:not(:first-child) {
         a {
-            border-top: 1px solid ${theme.grey};
-            padding-top: 15px;
+            margin-top: 30px;
+            &:after {
+                content: "";
+                height: 1px;
+                width: 100%;
+                position: absolute;
+                left: 0;
+                top: -15px;
+                background: ${theme.grey};
         }
     }
 `
@@ -17,11 +24,28 @@ const Link = styled.a`
     margin-bottom: 15px;
     display: block;
     width: fit-content;
+    transition: box-shadow .3s;
+    position: relative;
+
+    svg {
+        margin-right: 10px;
+        vertical-align: top;
+    }
+
+    &:hover {
+        background: ${theme.lightGrey};
+        .file-title {
+            color: ${theme.dark};
+        }
+    }
+
+    &:focus {
+        outline: none;
+        background: ${theme.lightGrey};
+        box-shadow: 0px 0px 0px 5px white, 0px 0px 0px 9px ${theme.primary};
+    }
 `
-const Img = styled.img`
-    margin-right: 10px;
-    vertical-align: top;
-`
+
 const FileDetails= styled.div`
     display: inline-block;
     max-width: calc(100% - 40px);
@@ -45,17 +69,27 @@ export const FileDownload = ({
     type,
     url,
     size
-}) =>
-    <Outer>
-        <Link href={url} download>
-            <Img src={icon} alt=""/>
-            <FileDetails>
-                <Title>{title}</Title>
-                <Type>{type}</Type>
-                <Size>{size}</Size>
-            </FileDetails>
-        </Link>
-    </Outer>
+}) => {
+    const [isHovered, setIsHovered] = useState(false)
+
+    return(
+        <Outer>
+            <Link 
+                href={url} 
+                download
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => setIsHovered(false)}
+            >
+                <DownloadFileIcon colourFill={isHovered ? theme.dark : theme.primary} />
+                <FileDetails>
+                    <Title className="file-title">{title}</Title>
+                    <Type>{type}</Type>
+                    <Size>{size}</Size>
+                </FileDetails>
+            </Link>
+        </Outer>
+    )
+}
 
 FileDownload.propTypes = {
     /** 

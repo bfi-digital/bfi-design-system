@@ -30,7 +30,7 @@ const Outer = styled.li`
     }
     &:hover, &:focus-within {
         a svg{
-            transform: translateX(5px)
+            transform: translateX(5px);
         }
         .image {
             filter: grayscale(100%) contrast(1) blur(0px);
