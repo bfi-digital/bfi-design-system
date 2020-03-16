@@ -1,0 +1,35 @@
+import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+import { DownloadableFiles } from "../../../components/DownloadableFiles/index"
+import { FileDownload } from "../../../components/DownloadableFiles/FileDownload/index"
+import demoFiles from "../../../components/DownloadableFiles/data"
+
+<Meta title="Pattern Library|Slices/File Downloads" component={DownloadableFiles} />
+
+# Single FileDownload
+ 
+ 
+## Examples
+
+<Preview>
+    <Story name="Single File Download">
+        <div style={{padding: "20px"}}>
+            <DownloadableFiles
+                files={demoFiles[0]}
+            />
+        </div>
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="Multiple File Downloads">
+        <div style={{padding: "20px"}}>
+            <DownloadableFiles
+                files={demoFiles}
+            />
+        </div>
+    </Story>
+</Preview>
+
+## Props of each file
+
+<Props of={FileDownload} />
