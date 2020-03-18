@@ -8,10 +8,11 @@ export default {
     grey: "#E9E8E8",
     lightGrey: "#f6f6f6",
 
-    primary: '#B00C22',
-    dark: '#7D0717',
-    light: '#E2888B',
-    lightest: '#FFEFF0',
+    primary: '#B80F09',
+    highlight: '#ED3732',
+    dark: '#5D1913',
+    light: '#F0C5C8',
+    lightest: '#FCEFEF',
 
     // breakpoints
     s: "500px",

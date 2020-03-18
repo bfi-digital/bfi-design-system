@@ -38,7 +38,7 @@ const Inner = styled.div`
     a, button {
         &:focus {
             // border-radius: 7px;
-            box-shadow: inset ${theme.primary} 0px 0px 0px 4px;
+            box-shadow: inset ${theme.highlight} 0px 0px 0px 4px;
             outline: none !important;
         }
     }

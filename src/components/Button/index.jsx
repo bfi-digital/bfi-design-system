@@ -10,9 +10,9 @@ const colorSchemes = [
         hoverBackground: theme.darkGrey,
         text: theme.white,
         background: theme.charcoal,
-        focusShadow: theme.primary,
+        focusShadow: theme.highlight,
         // Secondary button only
-        focus: theme.primary
+        focus: theme.highlight
     },
     {
         shadow: theme.primary,
@@ -36,7 +36,6 @@ const PrimaryButton = styled(Link)`
     padding: 10px 25px;
     box-shadow: -3px 3px 0px ${props => colorSchemes[props.colorScheme].shadow};
     margin-left: 5px;
-    transition: box-shadow .3s;
 
     &:hover, &:focus{
         background: ${props => colorSchemes[props.colorScheme].hoverBackground};

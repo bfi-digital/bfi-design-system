@@ -42,7 +42,7 @@ const Link = styled.a`
     &:focus {
         outline: none;
         background: ${theme.lightGrey};
-        box-shadow: 0px 0px 0px 5px white, 0px 0px 0px 9px ${theme.primary};
+        box-shadow: 0px 0px 0px 5px white, 0px 0px 0px 9px ${theme.highlight};
     }
 `
 

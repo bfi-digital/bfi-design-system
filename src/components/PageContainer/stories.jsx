@@ -224,7 +224,7 @@ export const activePage = () =>
                         <p>You’ll need to make an account if you’ve not applied before.</p>
                     "
                 />
-                <Button url="#" colorScheme={1}>Apply for funding</Button>
+                <Button url="#" colorScheme={0}>Apply for funding</Button>
                 <Divider />
 
                 <Headline

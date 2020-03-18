@@ -8,7 +8,7 @@ import Arrow from "./arrow-right.jsx"
 const Outer = styled.li`
     position: relative;
     background: ${props => props.withImages ? theme.grey : theme.lightest};
-    box-shadow: -5px 5px 0px ${theme.dark};
+    box-shadow: -5px 5px 0px ${theme.primary};
     padding: 25px;
     margin-bottom: 35px;
     // border-radius: 10px;
@@ -25,7 +25,7 @@ const Outer = styled.li`
     }
     h4{
         margin-top: 0;
-        color: ${theme.dark};
+        color: ${theme.primary};
         margin-bottom: 20px;
     }
     &:hover, &:focus-within {
@@ -38,17 +38,17 @@ const Outer = styled.li`
         }
     }
     &:focus-within{
-        box-shadow: 0px 0px 0px 5px ${theme.primary};
+        box-shadow: 0px 0px 0px 5px ${theme.highlight};
         transition: box-shadow .3s;
     }
     &:active{
-        box-shadow: -2px 2px 0px ${theme.dark};
+        box-shadow: -2px 2px 0px ${theme.primary};
         transform: translate(-3px, 3px);
     }
 `
 
 const Description = styled.p`
-    color: ${theme.dark};
+    color: ${theme.primary};
     margin-bottom: 35px;
     line-height: 1.5;
 `
@@ -56,7 +56,7 @@ const Description = styled.p`
 const CallToAction = styled(Link)`
     margin-top: auto;
     text-decoration: none;
-    color: ${theme.dark};
+    color: ${theme.primary};
     font-weight: bold;
     &:after{
         content: "";
@@ -82,7 +82,7 @@ const Icon = styled.div`
 `
 
 const PageImageContainer = styled.div`
-    background: ${theme.light};
+    background: ${theme.highlight};
     display: inline-block;
     width: 100%;
     height: calc(50% - 25px);
@@ -127,7 +127,7 @@ export const PageLink = ({
         }
         <CallToAction external={external} to={url}>
             {callToAction}
-            <Icon><Arrow colourFill={theme.dark} /></Icon>
+            <Icon><Arrow colourFill={theme.primary} /></Icon>
         </CallToAction>
     </Outer>
 

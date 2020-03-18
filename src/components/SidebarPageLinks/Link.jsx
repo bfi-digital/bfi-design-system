@@ -27,7 +27,7 @@ const Outer = styled.li`
         }
     }
     &:focus-within{
-        box-shadow: 0px 0px 0px 5px ${theme.primary};
+        box-shadow: 0px 0px 0px 5px ${theme.highlight};
         outline: none;
     }
     &:after {
@@ -41,7 +41,7 @@ const Outer = styled.li`
     }
 `
 const PageImageContainer = styled.div`
-    background: ${theme.light};
+    background: ${theme.highlight};
     display: inline-block;
     width: calc(40% - 10px);
     height: 100px;

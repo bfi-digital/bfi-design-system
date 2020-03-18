@@ -66,7 +66,7 @@ const ItemButton = styled.button`
     cursor: pointer;
     &:focus {
         // border-radius: 7px;
-        box-shadow: #B00C22 0px 0px 0px 4px;
+        box-shadow: #ED3732 0px 0px 0px 4px;
         outline: none !important;
     }
 `
@@ -94,7 +94,7 @@ const ChildLink = styled(Link)`
     }
     &:focus {
         // border-radius: 7px;
-        box-shadow: #B00C22 0px 0px 0px 4px;
+        box-shadow: #ED3732 0px 0px 0px 4px;
         outline: none !important;
     }
 `
@@ -111,7 +111,7 @@ const QuickLink = styled(Link)`
     display: block;
     &:focus {
         // border-radius: 7px;
-        box-shadow: #B00C22 0px 0px 0px 4px;
+        box-shadow: #ED3732 0px 0px 0px 4px;
         outline: none !important;
     }
 `

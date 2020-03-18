@@ -2,15 +2,15 @@
 
 exports[`Storyshots All Components/Blockquote With Citation 1`] = `
 <blockquote
-  className="sc-bdVaJa jetDHC"
+  className="sc-bdVaJa eIzcUT"
 >
   <q
-    className="sc-bwzfXH dNBvyj"
+    className="sc-bwzfXH fJyQyA"
   >
     Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.
   </q>
   <cite
-    className="sc-htpNat jRgXmV"
+    className="sc-htpNat gKayGA"
   >
     Ian Malcolm
   </cite>
@@ -19,10 +19,10 @@ exports[`Storyshots All Components/Blockquote With Citation 1`] = `
 
 exports[`Storyshots All Components/Blockquote Without Citation 1`] = `
 <blockquote
-  className="sc-bdVaJa jetDHC"
+  className="sc-bdVaJa eIzcUT"
 >
   <q
-    className="sc-bwzfXH dNBvyj"
+    className="sc-bwzfXH fJyQyA"
   >
     Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.
   </q>
@@ -37,7 +37,7 @@ exports[`Storyshots All Components/Breadcrumbs Normal 1`] = `
     className="sc-ifAKCX TSOqM"
   >
     <a
-      className="sc-EHOje jLtMYD"
+      className="sc-EHOje jZjVnG"
       href="/#"
       onClick={[Function]}
     >
@@ -48,7 +48,7 @@ exports[`Storyshots All Components/Breadcrumbs Normal 1`] = `
     className="sc-ifAKCX TSOqM"
   >
     <a
-      className="sc-EHOje jLtMYD"
+      className="sc-EHOje jZjVnG"
       href="/#"
       onClick={[Function]}
     >
@@ -71,7 +71,7 @@ exports[`Storyshots All Components/Breadcrumbs Wrapping 1`] = `
     className="sc-ifAKCX TSOqM"
   >
     <a
-      className="sc-EHOje jLtMYD"
+      className="sc-EHOje jZjVnG"
       href="/#"
       onClick={[Function]}
     >
@@ -82,7 +82,7 @@ exports[`Storyshots All Components/Breadcrumbs Wrapping 1`] = `
     className="sc-ifAKCX TSOqM"
   >
     <a
-      className="sc-EHOje jLtMYD"
+      className="sc-EHOje jZjVnG"
       href="/#"
       onClick={[Function]}
     >
@@ -93,7 +93,7 @@ exports[`Storyshots All Components/Breadcrumbs Wrapping 1`] = `
     className="sc-ifAKCX TSOqM"
   >
     <a
-      className="sc-EHOje jLtMYD"
+      className="sc-EHOje jZjVnG"
       href="/#"
       onClick={[Function]}
     >
@@ -117,7 +117,7 @@ exports[`Storyshots All Components/Button Primary 1`] = `
   }
 >
   <a
-    className="sc-bZQynM elhckv"
+    className="sc-bZQynM hsIisc"
     colorScheme={0}
     href="/#"
     onClick={[Function]}
@@ -136,7 +136,7 @@ exports[`Storyshots All Components/Button Secondary 1`] = `
   }
 >
   <a
-    className="sc-gzVnrw gFILHl"
+    className="sc-gzVnrw kJZBjK"
     colorScheme={0}
     href="/#"
     onClick={[Function]}
@@ -155,7 +155,7 @@ exports[`Storyshots All Components/Button Tertiary 1`] = `
   }
 >
   <a
-    className="sc-htoDjs eCyJox"
+    className="sc-htoDjs kSqlNH"
     colorScheme={0}
     href="/#"
     onClick={[Function]}
@@ -186,7 +186,7 @@ exports[`Storyshots All Components/Downloadable File Multiple Files 1`] = `
       className="sc-iwsKbI jjCdai"
     >
       <a
-        className="sc-gZMcBi fdmPPv"
+        className="sc-gZMcBi jmscRx"
         download={true}
         href="https://www.bfi.org.uk/sites/bfi.org.uk/files/downloads/bfi-young-audiences-content-fund-production-application-guidelines-2019-10.pdf"
         onMouseEnter={[Function]}
@@ -205,7 +205,7 @@ exports[`Storyshots All Components/Downloadable File Multiple Files 1`] = `
             strokeWidth="1"
           >
             <g
-              fill="#B00C22"
+              fill="#B80F09"
               fillRule="nonzero"
               transform="translate(-80 -1189)"
             >
@@ -225,7 +225,7 @@ exports[`Storyshots All Components/Downloadable File Multiple Files 1`] = `
           className="sc-gqjmRU hresGf"
         >
           <span
-            className="sc-VigVT gjBNON file-title"
+            className="sc-VigVT hJDpbz file-title"
           >
             File title
           </span>
@@ -246,7 +246,7 @@ exports[`Storyshots All Components/Downloadable File Multiple Files 1`] = `
       className="sc-iwsKbI jjCdai"
     >
       <a
-        className="sc-gZMcBi fdmPPv"
+        className="sc-gZMcBi jmscRx"
         download={true}
         href="https://www.bfi.org.uk/sites/bfi.org.uk/files/downloads/bfi-young-audiences-content-fund-production-application-guidelines-2019-10.pdf"
         onMouseEnter={[Function]}
@@ -265,7 +265,7 @@ exports[`Storyshots All Components/Downloadable File Multiple Files 1`] = `
             strokeWidth="1"
           >
             <g
-              fill="#B00C22"
+              fill="#B80F09"
               fillRule="nonzero"
               transform="translate(-80 -1189)"
             >
@@ -285,7 +285,7 @@ exports[`Storyshots All Components/Downloadable File Multiple Files 1`] = `
           className="sc-gqjmRU hresGf"
         >
           <span
-            className="sc-VigVT gjBNON file-title"
+            className="sc-VigVT hJDpbz file-title"
           >
             Young Audiences Content Fund production application guidelines
           </span>
@@ -321,7 +321,7 @@ exports[`Storyshots All Components/Downloadable File Single File 1`] = `
       className="sc-iwsKbI jjCdai"
     >
       <a
-        className="sc-gZMcBi fdmPPv"
+        className="sc-gZMcBi jmscRx"
         download={true}
         href="https://www.bfi.org.uk/sites/bfi.org.uk/files/downloads/bfi-young-audiences-content-fund-production-application-guidelines-2019-10.pdf"
         onMouseEnter={[Function]}
@@ -340,7 +340,7 @@ exports[`Storyshots All Components/Downloadable File Single File 1`] = `
             strokeWidth="1"
           >
             <g
-              fill="#B00C22"
+              fill="#B80F09"
               fillRule="nonzero"
               transform="translate(-80 -1189)"
             >
@@ -360,7 +360,7 @@ exports[`Storyshots All Components/Downloadable File Single File 1`] = `
           className="sc-gqjmRU hresGf"
         >
           <span
-            className="sc-VigVT gjBNON file-title"
+            className="sc-VigVT hJDpbz file-title"
           >
             File title
           </span>
@@ -394,12 +394,12 @@ exports[`Storyshots All Components/FilmGrid Normal 1`] = `
     className="sc-dxgOiQ hNzFql"
   >
     <a
-      className="sc-kAzzGY eVcdAa"
+      className="sc-kAzzGY dYgCGj"
       href="/#"
       onClick={[Function]}
     >
       <div
-        className="sc-chPdSV ldGRJf"
+        className="sc-chPdSV hrnHsq"
       >
         <img
           alt="Example image"
@@ -416,24 +416,24 @@ exports[`Storyshots All Components/FilmGrid Normal 1`] = `
         className="sc-kpOJdX gHeVat"
       >
         <li
-          className="sc-cSHVUG ilvSkD"
+          className="sc-cSHVUG koXlVd"
         >
           BFI Player
         </li>
         <li
-          className="sc-cSHVUG ilvSkD"
+          className="sc-cSHVUG koXlVd"
         >
           Southbank
         </li>
       </ul>
     </a>
     <a
-      className="sc-kAzzGY eVcdAa"
+      className="sc-kAzzGY dYgCGj"
       href="/#"
       onClick={[Function]}
     >
       <div
-        className="sc-chPdSV ldGRJf"
+        className="sc-chPdSV hrnHsq"
       >
         <img
           alt="Example image"
@@ -450,24 +450,24 @@ exports[`Storyshots All Components/FilmGrid Normal 1`] = `
         className="sc-kpOJdX gHeVat"
       >
         <li
-          className="sc-cSHVUG ilvSkD"
+          className="sc-cSHVUG koXlVd"
         >
           BFI Player
         </li>
         <li
-          className="sc-cSHVUG ilvSkD"
+          className="sc-cSHVUG koXlVd"
         >
           Southbank
         </li>
       </ul>
     </a>
     <a
-      className="sc-kAzzGY eVcdAa"
+      className="sc-kAzzGY dYgCGj"
       href="/#"
       onClick={[Function]}
     >
       <div
-        className="sc-chPdSV ldGRJf"
+        className="sc-chPdSV hrnHsq"
       >
         <img
           alt="Example image"
@@ -484,24 +484,24 @@ exports[`Storyshots All Components/FilmGrid Normal 1`] = `
         className="sc-kpOJdX gHeVat"
       >
         <li
-          className="sc-cSHVUG ilvSkD"
+          className="sc-cSHVUG koXlVd"
         >
           BFI Player
         </li>
         <li
-          className="sc-cSHVUG ilvSkD"
+          className="sc-cSHVUG koXlVd"
         >
           Southbank
         </li>
       </ul>
     </a>
     <a
-      className="sc-kAzzGY eVcdAa"
+      className="sc-kAzzGY dYgCGj"
       href="/#"
       onClick={[Function]}
     >
       <div
-        className="sc-chPdSV ldGRJf"
+        className="sc-chPdSV hrnHsq"
       >
         <img
           alt="Example image"
@@ -518,24 +518,24 @@ exports[`Storyshots All Components/FilmGrid Normal 1`] = `
         className="sc-kpOJdX gHeVat"
       >
         <li
-          className="sc-cSHVUG ilvSkD"
+          className="sc-cSHVUG koXlVd"
         >
           BFI Player
         </li>
         <li
-          className="sc-cSHVUG ilvSkD"
+          className="sc-cSHVUG koXlVd"
         >
           Southbank
         </li>
       </ul>
     </a>
     <a
-      className="sc-kAzzGY eVcdAa"
+      className="sc-kAzzGY dYgCGj"
       href="/#"
       onClick={[Function]}
     >
       <div
-        className="sc-chPdSV ldGRJf"
+        className="sc-chPdSV hrnHsq"
       >
         <img
           alt="Example image"
@@ -552,24 +552,24 @@ exports[`Storyshots All Components/FilmGrid Normal 1`] = `
         className="sc-kpOJdX gHeVat"
       >
         <li
-          className="sc-cSHVUG ilvSkD"
+          className="sc-cSHVUG koXlVd"
         >
           BFI Player
         </li>
         <li
-          className="sc-cSHVUG ilvSkD"
+          className="sc-cSHVUG koXlVd"
         >
           Southbank
         </li>
       </ul>
     </a>
     <a
-      className="sc-kAzzGY eVcdAa"
+      className="sc-kAzzGY dYgCGj"
       href="/#"
       onClick={[Function]}
     >
       <div
-        className="sc-chPdSV ldGRJf"
+        className="sc-chPdSV hrnHsq"
       >
         <img
           alt="Example image"
@@ -586,19 +586,19 @@ exports[`Storyshots All Components/FilmGrid Normal 1`] = `
         className="sc-kpOJdX gHeVat"
       >
         <li
-          className="sc-cSHVUG ilvSkD"
+          className="sc-cSHVUG koXlVd"
         >
           BFI Player
         </li>
         <li
-          className="sc-cSHVUG ilvSkD"
+          className="sc-cSHVUG koXlVd"
         >
           Southbank
         </li>
       </ul>
     </a>
     <a
-      className="sc-bZQynM elhckv sc-ckVGcZ cBfbuY"
+      className="sc-bZQynM hsIisc sc-ckVGcZ cBfbuY"
       colorScheme={0}
       href="/#"
       onClick={[Function]}
@@ -686,7 +686,7 @@ exports[`Storyshots All Components/FilmShowings Two Showings 1`] = `
         className="sc-jWBwVP hzigEZ"
       >
         <a
-          className="sc-gzVnrw gFILHl"
+          className="sc-gzVnrw kJZBjK"
           colorScheme={0}
           href="/#"
           onClick={[Function]}
@@ -699,7 +699,7 @@ exports[`Storyshots All Components/FilmShowings Two Showings 1`] = `
         className="sc-jWBwVP hzigEZ"
       >
         <a
-          className="sc-gzVnrw gFILHl"
+          className="sc-gzVnrw kJZBjK"
           colorScheme={0}
           href="/#"
           onClick={[Function]}
@@ -748,7 +748,7 @@ exports[`Storyshots All Components/Footer Normal 1`] = `
         </h4>
         <a
           aria-current="page"
-          className="sc-bRBYWo iaiTCo"
+          className="sc-bRBYWo iRtZw"
           href="/"
           onClick={[Function]}
         >
@@ -756,7 +756,7 @@ exports[`Storyshots All Components/Footer Normal 1`] = `
         </a>
         <a
           aria-current="page"
-          className="sc-bRBYWo iaiTCo"
+          className="sc-bRBYWo iRtZw"
           href="/"
           onClick={[Function]}
         >
@@ -764,7 +764,7 @@ exports[`Storyshots All Components/Footer Normal 1`] = `
         </a>
         <a
           aria-current="page"
-          className="sc-bRBYWo iaiTCo"
+          className="sc-bRBYWo iRtZw"
           href="/"
           onClick={[Function]}
         >
@@ -772,7 +772,7 @@ exports[`Storyshots All Components/Footer Normal 1`] = `
         </a>
         <a
           aria-current="page"
-          className="sc-bRBYWo iaiTCo"
+          className="sc-bRBYWo iRtZw"
           href="/"
           onClick={[Function]}
         >
@@ -789,7 +789,7 @@ exports[`Storyshots All Components/Footer Normal 1`] = `
         </h4>
         <a
           aria-current="page"
-          className="sc-bRBYWo iaiTCo"
+          className="sc-bRBYWo iRtZw"
           href="/"
           onClick={[Function]}
         >
@@ -797,7 +797,7 @@ exports[`Storyshots All Components/Footer Normal 1`] = `
         </a>
         <a
           aria-current="page"
-          className="sc-bRBYWo iaiTCo"
+          className="sc-bRBYWo iRtZw"
           href="/"
           onClick={[Function]}
         >
@@ -805,7 +805,7 @@ exports[`Storyshots All Components/Footer Normal 1`] = `
         </a>
         <a
           aria-current="page"
-          className="sc-bRBYWo iaiTCo"
+          className="sc-bRBYWo iRtZw"
           href="/"
           onClick={[Function]}
         >
@@ -813,7 +813,7 @@ exports[`Storyshots All Components/Footer Normal 1`] = `
         </a>
         <a
           aria-current="page"
-          className="sc-bRBYWo iaiTCo"
+          className="sc-bRBYWo iRtZw"
           href="/"
           onClick={[Function]}
         >
@@ -821,7 +821,7 @@ exports[`Storyshots All Components/Footer Normal 1`] = `
         </a>
         <a
           aria-current="page"
-          className="sc-bRBYWo iaiTCo"
+          className="sc-bRBYWo iRtZw"
           href="/"
           onClick={[Function]}
         >
@@ -838,14 +838,14 @@ exports[`Storyshots All Components/Footer Normal 1`] = `
         </h4>
         <a
           aria-current="page"
-          className="sc-bRBYWo iaiTCo"
+          className="sc-bRBYWo iRtZw"
           href="/"
           onClick={[Function]}
         >
           Contact us
         </a>
         <a
-          className="sc-hzDkRC gamKiC"
+          className="sc-hzDkRC rhNky"
           href="#"
         >
           <img
@@ -856,7 +856,7 @@ exports[`Storyshots All Components/Footer Normal 1`] = `
           Facebook
         </a>
         <a
-          className="sc-hzDkRC gamKiC"
+          className="sc-hzDkRC rhNky"
           href="#"
         >
           <img
@@ -867,7 +867,7 @@ exports[`Storyshots All Components/Footer Normal 1`] = `
           Twitter
         </a>
         <a
-          className="sc-hzDkRC gamKiC"
+          className="sc-hzDkRC rhNky"
           href="#"
         >
           <img
@@ -878,7 +878,7 @@ exports[`Storyshots All Components/Footer Normal 1`] = `
           YouTube
         </a>
         <a
-          className="sc-hzDkRC gamKiC"
+          className="sc-hzDkRC rhNky"
           href="#"
         >
           <img
@@ -914,7 +914,7 @@ Array [
     className="sc-cIShpX djcKal"
   >
     <div
-      className="sc-jnlKLf fEDFhp"
+      className="sc-jnlKLf fSDUXJ"
     >
       <a
         aria-current="page"
@@ -933,14 +933,14 @@ Array [
       className="sc-fBuWsC gCtGeh"
     >
       <div
-        className="sc-jnlKLf sc-kafWEX iRBZJV"
+        className="sc-jnlKLf sc-kafWEX jyQTfo"
       >
         <div
           className="sc-dVhcbM kOVIKx"
         >
           <a
             aria-current="page"
-            className="sc-fMiknA gpxPha"
+            className="sc-fMiknA bJmMUM"
             href="/"
             isSticky={false}
             isTransparent={false}
@@ -950,7 +950,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-fMiknA gpxPha"
+            className="sc-fMiknA bJmMUM"
             href="/"
             isSticky={false}
             isTransparent={false}
@@ -967,7 +967,7 @@ Array [
     onMouseLeave={[Function]}
   >
     <div
-      className="sc-jnlKLf fEDFhp"
+      className="sc-jnlKLf fSDUXJ"
     >
       <a
         aria-current="page"
@@ -1180,7 +1180,7 @@ Array [
     className="sc-cIShpX cxCUub"
   >
     <div
-      className="sc-jnlKLf fEDFhp"
+      className="sc-jnlKLf fSDUXJ"
     >
       <a
         aria-current="page"
@@ -1199,7 +1199,7 @@ Array [
       className="sc-fBuWsC gCtGeh"
     >
       <div
-        className="sc-jnlKLf sc-kafWEX iRBZJV"
+        className="sc-jnlKLf sc-kafWEX jyQTfo"
       >
         <div
           className="sc-dVhcbM kOVIKx"
@@ -1233,7 +1233,7 @@ Array [
     onMouseLeave={[Function]}
   >
     <div
-      className="sc-jnlKLf fEDFhp"
+      className="sc-jnlKLf fSDUXJ"
     >
       <a
         aria-current="page"
@@ -1480,7 +1480,7 @@ exports[`Storyshots All Components/Hero Normal 1`] = `
     className="sc-iELTvK fNiKpH"
   />
   <div
-    className="sc-cmTdod gKSBbh"
+    className="sc-cmTdod iVpsdo"
   >
     <h1
       className="sc-jKJlTe QsYrr"
@@ -1502,7 +1502,7 @@ Array [
     className="sc-cIShpX cxCUub"
   >
     <div
-      className="sc-jnlKLf fEDFhp"
+      className="sc-jnlKLf fSDUXJ"
     >
       <a
         aria-current="page"
@@ -1521,7 +1521,7 @@ Array [
       className="sc-fBuWsC gCtGeh"
     >
       <div
-        className="sc-jnlKLf sc-kafWEX iRBZJV"
+        className="sc-jnlKLf sc-kafWEX jyQTfo"
       >
         <div
           className="sc-dVhcbM kOVIKx"
@@ -1555,7 +1555,7 @@ Array [
     onMouseLeave={[Function]}
   >
     <div
-      className="sc-jnlKLf fEDFhp"
+      className="sc-jnlKLf fSDUXJ"
     >
       <a
         aria-current="page"
@@ -1757,7 +1757,7 @@ Array [
       className="sc-iELTvK fNiKpH"
     />
     <div
-      className="sc-cmTdod gKSBbh"
+      className="sc-cmTdod iVpsdo"
     >
       <h1
         className="sc-jKJlTe QsYrr"
@@ -1782,16 +1782,16 @@ exports[`Storyshots All Components/Highlights Normal 1`] = `
     className="sc-eXEjpC cDyPhC"
   >
     <ul
-      className="sc-btzYZH hWQmiL"
+      className="sc-btzYZH ipMjfd"
       role="tablist"
     >
       <li
-        className="sc-lhVmIH jTyqgs"
+        className="sc-lhVmIH dBQfXa"
         role="presentation"
       >
         <button
           aria-selected={true}
-          className="sc-bYSBpT dGVzcL"
+          className="sc-bYSBpT cQJCJm"
           id="tab1"
           onClick={[Function]}
           role="tab"
@@ -1805,7 +1805,7 @@ exports[`Storyshots All Components/Highlights Normal 1`] = `
       >
         <button
           aria-selected={false}
-          className="sc-bYSBpT iDspXE"
+          className="sc-bYSBpT bhpuAY"
           id="tab2"
           onClick={[Function]}
           role="tab"
@@ -1819,7 +1819,7 @@ exports[`Storyshots All Components/Highlights Normal 1`] = `
       >
         <button
           aria-selected={false}
-          className="sc-bYSBpT iDspXE"
+          className="sc-bYSBpT bhpuAY"
           id="tab3"
           onClick={[Function]}
           role="tab"
@@ -1835,7 +1835,7 @@ exports[`Storyshots All Components/Highlights Normal 1`] = `
       role="tabpanel"
     >
       <div
-        className="sc-iyvyFf fTIOss"
+        className="sc-iyvyFf hSGoSY"
       >
         <img
           alt=""
@@ -1861,7 +1861,7 @@ exports[`Storyshots All Components/Highlights Normal 1`] = `
             The best new and classic LGBTIQ+ films from around the world. Priority booking opens to BFI Members at 11:30 on 25 Feb. Champion booking is open.
           </p>
           <a
-            className="sc-bZQynM gEmvLG"
+            className="sc-bZQynM cGsycj"
             colorScheme={1}
             href="/#"
             onClick={[Function]}
@@ -1881,7 +1881,7 @@ exports[`Storyshots All Components/Highlights Normal 1`] = `
         className="sc-ibxdXY bYqhfp"
       >
         <div
-          className="sc-elJkPf irpLCK"
+          className="sc-elJkPf hZokBR"
         >
           <img
             alt=""
@@ -1908,7 +1908,7 @@ exports[`Storyshots All Components/Highlights Normal 1`] = `
             </p>
           </div>
           <a
-            className="sc-gzOgki haLwJT"
+            className="sc-gzOgki fWMdHb"
             href="/#"
             onClick={[Function]}
           >
@@ -1938,7 +1938,7 @@ exports[`Storyshots All Components/Highlights Normal 1`] = `
                 className="sc-jWBwVP hzigEZ"
               >
                 <a
-                  className="sc-gzVnrw gFILHl"
+                  className="sc-gzVnrw kJZBjK"
                   colorScheme={0}
                   href="/#"
                   onClick={[Function]}
@@ -1951,7 +1951,7 @@ exports[`Storyshots All Components/Highlights Normal 1`] = `
                 className="sc-jWBwVP hzigEZ"
               >
                 <a
-                  className="sc-gzVnrw gFILHl"
+                  className="sc-gzVnrw kJZBjK"
                   colorScheme={0}
                   href="/#"
                   onClick={[Function]}
@@ -2002,7 +2002,7 @@ exports[`Storyshots All Components/Highlights Normal 1`] = `
                 className="sc-jWBwVP hzigEZ"
               >
                 <a
-                  className="sc-gzVnrw gFILHl"
+                  className="sc-gzVnrw kJZBjK"
                   colorScheme={0}
                   href="/#"
                   onClick={[Function]}
@@ -2043,7 +2043,7 @@ exports[`Storyshots All Components/Highlights Normal 1`] = `
                 className="sc-jWBwVP hzigEZ"
               >
                 <a
-                  className="sc-gzVnrw gFILHl"
+                  className="sc-gzVnrw kJZBjK"
                   colorScheme={0}
                   href="/#"
                   onClick={[Function]}
@@ -2095,7 +2095,7 @@ exports[`Storyshots All Components/Highlights Normal 1`] = `
         </div>
       </div>
       <a
-        className="sc-bZQynM elhckv sc-iQKALj hZznPT"
+        className="sc-bZQynM hsIisc sc-iQKALj hZznPT"
         colorScheme={0}
         href="/#"
         onClick={[Function]}
@@ -2113,7 +2113,7 @@ exports[`Storyshots All Components/Highlights Normal 1`] = `
         className="sc-ibxdXY bYqhfp"
       >
         <div
-          className="sc-elJkPf irpLCK"
+          className="sc-elJkPf hZokBR"
         >
           <img
             alt=""
@@ -2140,7 +2140,7 @@ exports[`Storyshots All Components/Highlights Normal 1`] = `
             </p>
           </div>
           <a
-            className="sc-gzOgki haLwJT"
+            className="sc-gzOgki fWMdHb"
             href="/#"
             onClick={[Function]}
           >
@@ -2170,7 +2170,7 @@ exports[`Storyshots All Components/Highlights Normal 1`] = `
                 className="sc-jWBwVP hzigEZ"
               >
                 <a
-                  className="sc-gzVnrw gFILHl"
+                  className="sc-gzVnrw kJZBjK"
                   colorScheme={0}
                   href="/#"
                   onClick={[Function]}
@@ -2183,7 +2183,7 @@ exports[`Storyshots All Components/Highlights Normal 1`] = `
                 className="sc-jWBwVP hzigEZ"
               >
                 <a
-                  className="sc-gzVnrw gFILHl"
+                  className="sc-gzVnrw kJZBjK"
                   colorScheme={0}
                   href="/#"
                   onClick={[Function]}
@@ -2234,7 +2234,7 @@ exports[`Storyshots All Components/Highlights Normal 1`] = `
                 className="sc-jWBwVP hzigEZ"
               >
                 <a
-                  className="sc-gzVnrw gFILHl"
+                  className="sc-gzVnrw kJZBjK"
                   colorScheme={0}
                   href="/#"
                   onClick={[Function]}
@@ -2275,7 +2275,7 @@ exports[`Storyshots All Components/Highlights Normal 1`] = `
                 className="sc-jWBwVP hzigEZ"
               >
                 <a
-                  className="sc-gzVnrw gFILHl"
+                  className="sc-gzVnrw kJZBjK"
                   colorScheme={0}
                   href="/#"
                   onClick={[Function]}
@@ -2327,7 +2327,7 @@ exports[`Storyshots All Components/Highlights Normal 1`] = `
         </div>
       </div>
       <a
-        className="sc-bZQynM elhckv sc-iQKALj hZznPT"
+        className="sc-bZQynM hsIisc sc-iQKALj hZznPT"
         colorScheme={0}
         href="/#"
         onClick={[Function]}
@@ -2362,7 +2362,7 @@ exports[`Storyshots All Components/Image Full Width 1`] = `
     </figcaption>
   </figure>
   <article
-    className="sc-gwVKww jkgwBS"
+    className="sc-gwVKww bDriYo"
   >
     
 
@@ -2466,7 +2466,7 @@ exports[`Storyshots All Components/Image Left And Big 1`] = `
     </figcaption>
   </figure>
   <article
-    className="sc-gwVKww jkgwBS"
+    className="sc-gwVKww bDriYo"
   >
     
 
@@ -2570,7 +2570,7 @@ exports[`Storyshots All Components/Image Right And Small 1`] = `
     </figcaption>
   </figure>
   <article
-    className="sc-gwVKww jkgwBS"
+    className="sc-gwVKww bDriYo"
   >
     
 
@@ -2668,7 +2668,7 @@ exports[`Storyshots All Components/ImageGallery Normal 1`] = `
       className="sc-iQNlJl bFLMbk"
     >
       <button
-        className="sc-bsbRJL dNjqfP"
+        className="sc-bsbRJL ivSeBh"
         onClick={[Function]}
       >
         <img
@@ -2678,7 +2678,7 @@ exports[`Storyshots All Components/ImageGallery Normal 1`] = `
         />
       </button>
       <button
-        className="sc-bsbRJL dNjqfP"
+        className="sc-bsbRJL ivSeBh"
         onClick={[Function]}
       >
         <img
@@ -2688,7 +2688,7 @@ exports[`Storyshots All Components/ImageGallery Normal 1`] = `
         />
       </button>
       <button
-        className="sc-bsbRJL dNjqfP"
+        className="sc-bsbRJL ivSeBh"
         onClick={[Function]}
       >
         <img
@@ -2769,7 +2769,7 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
   className="sc-gJWqzi fKFEDZ"
 >
   <li
-    className="sc-cpmLhU hgYXfD"
+    className="sc-cpmLhU izeHMy"
   >
     <h4
       className="sc-kkGfuU dNKoMy"
@@ -2777,12 +2777,12 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
       Industry fund
     </h4>
     <p
-      className="sc-dymIpo PoMtn"
+      className="sc-dymIpo gcDxTk"
     >
       What do they got in there? King Kong? You know what? It is beets. I've crashed into a beet truck. Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.
     </p>
     <a
-      className="sc-bnXvFD jUqeZh"
+      className="sc-bnXvFD gHSpwI"
       href="/#"
       onClick={[Function]}
     >
@@ -2804,7 +2804,7 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
           >
             <path
               d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
-              fill="#7D0717"
+              fill="#B80F09"
               transform="matrix(0 1 1 0 -3 3)"
             />
           </g>
@@ -2813,7 +2813,7 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
     </a>
   </li>
   <li
-    className="sc-cpmLhU hgYXfD"
+    className="sc-cpmLhU izeHMy"
   >
     <h4
       className="sc-kkGfuU dNKoMy"
@@ -2821,12 +2821,12 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
       Get funding fund
     </h4>
     <p
-      className="sc-dymIpo PoMtn"
+      className="sc-dymIpo gcDxTk"
     >
       Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
     </p>
     <a
-      className="sc-bnXvFD jUqeZh"
+      className="sc-bnXvFD gHSpwI"
       href="/#"
       onClick={[Function]}
     >
@@ -2848,7 +2848,7 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
           >
             <path
               d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
-              fill="#7D0717"
+              fill="#B80F09"
               transform="matrix(0 1 1 0 -3 3)"
             />
           </g>
@@ -2857,7 +2857,7 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
     </a>
   </li>
   <li
-    className="sc-cpmLhU hgYXfD"
+    className="sc-cpmLhU izeHMy"
   >
     <h4
       className="sc-kkGfuU dNKoMy"
@@ -2865,12 +2865,12 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
       Get funding fund
     </h4>
     <p
-      className="sc-dymIpo PoMtn"
+      className="sc-dymIpo gcDxTk"
     >
       Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
     </p>
     <a
-      className="sc-bnXvFD jUqeZh"
+      className="sc-bnXvFD gHSpwI"
       href="/#"
       onClick={[Function]}
     >
@@ -2892,7 +2892,7 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
           >
             <path
               d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
-              fill="#7D0717"
+              fill="#B80F09"
               transform="matrix(0 1 1 0 -3 3)"
             />
           </g>
@@ -2901,7 +2901,7 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
     </a>
   </li>
   <li
-    className="sc-cpmLhU hgYXfD"
+    className="sc-cpmLhU izeHMy"
   >
     <h4
       className="sc-kkGfuU dNKoMy"
@@ -2909,12 +2909,12 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
       Find a fund
     </h4>
     <p
-      className="sc-dymIpo PoMtn"
+      className="sc-dymIpo gcDxTk"
     >
       Yes, Yes, without the oops! Hey, take a look at the earthlings. Goodbye!
     </p>
     <a
-      className="sc-bnXvFD jUqeZh"
+      className="sc-bnXvFD gHSpwI"
       href="/#"
       onClick={[Function]}
     >
@@ -2936,7 +2936,7 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
           >
             <path
               d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
-              fill="#7D0717"
+              fill="#B80F09"
               transform="matrix(0 1 1 0 -3 3)"
             />
           </g>
@@ -2945,7 +2945,7 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
     </a>
   </li>
   <li
-    className="sc-cpmLhU hgYXfD"
+    className="sc-cpmLhU izeHMy"
   >
     <h4
       className="sc-kkGfuU dNKoMy"
@@ -2953,12 +2953,12 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
       Industry fund
     </h4>
     <p
-      className="sc-dymIpo PoMtn"
+      className="sc-dymIpo gcDxTk"
     >
       What do they got in there? King Kong? You know what? It is beets. I've crashed into a beet truck. Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.
     </p>
     <a
-      className="sc-bnXvFD jUqeZh"
+      className="sc-bnXvFD gHSpwI"
       href="/#"
       onClick={[Function]}
     >
@@ -2980,7 +2980,7 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
           >
             <path
               d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
-              fill="#7D0717"
+              fill="#B80F09"
               transform="matrix(0 1 1 0 -3 3)"
             />
           </g>
@@ -2989,7 +2989,7 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
     </a>
   </li>
   <li
-    className="sc-cpmLhU hgYXfD"
+    className="sc-cpmLhU izeHMy"
   >
     <h4
       className="sc-kkGfuU dNKoMy"
@@ -2997,12 +2997,12 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
       Get funding fund
     </h4>
     <p
-      className="sc-dymIpo PoMtn"
+      className="sc-dymIpo gcDxTk"
     >
       Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
     </p>
     <a
-      className="sc-bnXvFD jUqeZh"
+      className="sc-bnXvFD gHSpwI"
       href="/#"
       onClick={[Function]}
     >
@@ -3024,7 +3024,7 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
           >
             <path
               d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
-              fill="#7D0717"
+              fill="#B80F09"
               transform="matrix(0 1 1 0 -3 3)"
             />
           </g>
@@ -3033,7 +3033,7 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
     </a>
   </li>
   <li
-    className="sc-cpmLhU hgYXfD"
+    className="sc-cpmLhU izeHMy"
   >
     <h4
       className="sc-kkGfuU dNKoMy"
@@ -3041,12 +3041,12 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
       Get funding fund
     </h4>
     <p
-      className="sc-dymIpo PoMtn"
+      className="sc-dymIpo gcDxTk"
     >
       Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
     </p>
     <a
-      className="sc-bnXvFD jUqeZh"
+      className="sc-bnXvFD gHSpwI"
       href="/#"
       onClick={[Function]}
     >
@@ -3068,7 +3068,7 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
           >
             <path
               d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
-              fill="#7D0717"
+              fill="#B80F09"
               transform="matrix(0 1 1 0 -3 3)"
             />
           </g>
@@ -3077,7 +3077,7 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
     </a>
   </li>
   <li
-    className="sc-cpmLhU hgYXfD"
+    className="sc-cpmLhU izeHMy"
   >
     <h4
       className="sc-kkGfuU dNKoMy"
@@ -3085,12 +3085,12 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
       Find a fund
     </h4>
     <p
-      className="sc-dymIpo PoMtn"
+      className="sc-dymIpo gcDxTk"
     >
       Yes, Yes, without the oops! Hey, take a look at the earthlings. Goodbye!
     </p>
     <a
-      className="sc-bnXvFD jUqeZh"
+      className="sc-bnXvFD gHSpwI"
       href="/#"
       onClick={[Function]}
     >
@@ -3112,7 +3112,7 @@ exports[`Storyshots All Components/PageLinks Eight Links 1`] = `
           >
             <path
               d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
-              fill="#7D0717"
+              fill="#B80F09"
               transform="matrix(0 1 1 0 -3 3)"
             />
           </g>
@@ -3128,7 +3128,7 @@ exports[`Storyshots All Components/PageLinks Four Links 1`] = `
   className="sc-gJWqzi fKFEDZ"
 >
   <li
-    className="sc-cpmLhU hgYXfD"
+    className="sc-cpmLhU izeHMy"
   >
     <h4
       className="sc-kkGfuU dNKoMy"
@@ -3136,12 +3136,12 @@ exports[`Storyshots All Components/PageLinks Four Links 1`] = `
       Industry fund
     </h4>
     <p
-      className="sc-dymIpo PoMtn"
+      className="sc-dymIpo gcDxTk"
     >
       What do they got in there? King Kong? You know what? It is beets. I've crashed into a beet truck. Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.
     </p>
     <a
-      className="sc-bnXvFD jUqeZh"
+      className="sc-bnXvFD gHSpwI"
       href="/#"
       onClick={[Function]}
     >
@@ -3163,7 +3163,7 @@ exports[`Storyshots All Components/PageLinks Four Links 1`] = `
           >
             <path
               d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
-              fill="#7D0717"
+              fill="#B80F09"
               transform="matrix(0 1 1 0 -3 3)"
             />
           </g>
@@ -3172,7 +3172,7 @@ exports[`Storyshots All Components/PageLinks Four Links 1`] = `
     </a>
   </li>
   <li
-    className="sc-cpmLhU hgYXfD"
+    className="sc-cpmLhU izeHMy"
   >
     <h4
       className="sc-kkGfuU dNKoMy"
@@ -3180,12 +3180,12 @@ exports[`Storyshots All Components/PageLinks Four Links 1`] = `
       Get funding fund
     </h4>
     <p
-      className="sc-dymIpo PoMtn"
+      className="sc-dymIpo gcDxTk"
     >
       Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
     </p>
     <a
-      className="sc-bnXvFD jUqeZh"
+      className="sc-bnXvFD gHSpwI"
       href="/#"
       onClick={[Function]}
     >
@@ -3207,7 +3207,7 @@ exports[`Storyshots All Components/PageLinks Four Links 1`] = `
           >
             <path
               d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
-              fill="#7D0717"
+              fill="#B80F09"
               transform="matrix(0 1 1 0 -3 3)"
             />
           </g>
@@ -3216,7 +3216,7 @@ exports[`Storyshots All Components/PageLinks Four Links 1`] = `
     </a>
   </li>
   <li
-    className="sc-cpmLhU hgYXfD"
+    className="sc-cpmLhU izeHMy"
   >
     <h4
       className="sc-kkGfuU dNKoMy"
@@ -3224,12 +3224,12 @@ exports[`Storyshots All Components/PageLinks Four Links 1`] = `
       Get funding fund
     </h4>
     <p
-      className="sc-dymIpo PoMtn"
+      className="sc-dymIpo gcDxTk"
     >
       Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
     </p>
     <a
-      className="sc-bnXvFD jUqeZh"
+      className="sc-bnXvFD gHSpwI"
       href="/#"
       onClick={[Function]}
     >
@@ -3251,7 +3251,7 @@ exports[`Storyshots All Components/PageLinks Four Links 1`] = `
           >
             <path
               d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
-              fill="#7D0717"
+              fill="#B80F09"
               transform="matrix(0 1 1 0 -3 3)"
             />
           </g>
@@ -3260,7 +3260,7 @@ exports[`Storyshots All Components/PageLinks Four Links 1`] = `
     </a>
   </li>
   <li
-    className="sc-cpmLhU hgYXfD"
+    className="sc-cpmLhU izeHMy"
   >
     <h4
       className="sc-kkGfuU dNKoMy"
@@ -3268,12 +3268,12 @@ exports[`Storyshots All Components/PageLinks Four Links 1`] = `
       Find a fund
     </h4>
     <p
-      className="sc-dymIpo PoMtn"
+      className="sc-dymIpo gcDxTk"
     >
       Yes, Yes, without the oops! Hey, take a look at the earthlings. Goodbye!
     </p>
     <a
-      className="sc-bnXvFD jUqeZh"
+      className="sc-bnXvFD gHSpwI"
       href="/#"
       onClick={[Function]}
     >
@@ -3295,7 +3295,7 @@ exports[`Storyshots All Components/PageLinks Four Links 1`] = `
           >
             <path
               d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
-              fill="#7D0717"
+              fill="#B80F09"
               transform="matrix(0 1 1 0 -3 3)"
             />
           </g>
@@ -3311,10 +3311,10 @@ exports[`Storyshots All Components/PageLinks Four Links With Image 1`] = `
   className="sc-gJWqzi fKFEDZ"
 >
   <li
-    className="sc-cpmLhU fNkWfO"
+    className="sc-cpmLhU cJDyjW"
   >
     <div
-      className="sc-fhYwyz hJrZiX"
+      className="sc-fhYwyz jfCcHY"
     >
       <div
         className="sc-jzgbtB pYWHP image"
@@ -3326,7 +3326,7 @@ exports[`Storyshots All Components/PageLinks Four Links With Image 1`] = `
       Industry fund
     </h4>
     <a
-      className="sc-bnXvFD jUqeZh"
+      className="sc-bnXvFD gHSpwI"
       href="/#"
       onClick={[Function]}
     >
@@ -3348,7 +3348,7 @@ exports[`Storyshots All Components/PageLinks Four Links With Image 1`] = `
           >
             <path
               d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
-              fill="#7D0717"
+              fill="#B80F09"
               transform="matrix(0 1 1 0 -3 3)"
             />
           </g>
@@ -3357,10 +3357,10 @@ exports[`Storyshots All Components/PageLinks Four Links With Image 1`] = `
     </a>
   </li>
   <li
-    className="sc-cpmLhU fNkWfO"
+    className="sc-cpmLhU cJDyjW"
   >
     <div
-      className="sc-fhYwyz hJrZiX"
+      className="sc-fhYwyz jfCcHY"
     >
       <div
         className="sc-jzgbtB pYWHP image"
@@ -3372,7 +3372,7 @@ exports[`Storyshots All Components/PageLinks Four Links With Image 1`] = `
       Get funding fund
     </h4>
     <a
-      className="sc-bnXvFD jUqeZh"
+      className="sc-bnXvFD gHSpwI"
       href="/#"
       onClick={[Function]}
     >
@@ -3394,7 +3394,7 @@ exports[`Storyshots All Components/PageLinks Four Links With Image 1`] = `
           >
             <path
               d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
-              fill="#7D0717"
+              fill="#B80F09"
               transform="matrix(0 1 1 0 -3 3)"
             />
           </g>
@@ -3403,10 +3403,10 @@ exports[`Storyshots All Components/PageLinks Four Links With Image 1`] = `
     </a>
   </li>
   <li
-    className="sc-cpmLhU fNkWfO"
+    className="sc-cpmLhU cJDyjW"
   >
     <div
-      className="sc-fhYwyz hJrZiX"
+      className="sc-fhYwyz jfCcHY"
     >
       <div
         className="sc-jzgbtB pYWHP image"
@@ -3418,7 +3418,7 @@ exports[`Storyshots All Components/PageLinks Four Links With Image 1`] = `
       Get funding fund
     </h4>
     <a
-      className="sc-bnXvFD jUqeZh"
+      className="sc-bnXvFD gHSpwI"
       href="/#"
       onClick={[Function]}
     >
@@ -3440,7 +3440,7 @@ exports[`Storyshots All Components/PageLinks Four Links With Image 1`] = `
           >
             <path
               d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
-              fill="#7D0717"
+              fill="#B80F09"
               transform="matrix(0 1 1 0 -3 3)"
             />
           </g>
@@ -3449,10 +3449,10 @@ exports[`Storyshots All Components/PageLinks Four Links With Image 1`] = `
     </a>
   </li>
   <li
-    className="sc-cpmLhU fNkWfO"
+    className="sc-cpmLhU cJDyjW"
   >
     <div
-      className="sc-fhYwyz hJrZiX"
+      className="sc-fhYwyz jfCcHY"
     >
       <div
         className="sc-jzgbtB pYWHP image"
@@ -3464,7 +3464,7 @@ exports[`Storyshots All Components/PageLinks Four Links With Image 1`] = `
       Find a fund
     </h4>
     <a
-      className="sc-bnXvFD jUqeZh"
+      className="sc-bnXvFD gHSpwI"
       href="/#"
       onClick={[Function]}
     >
@@ -3486,7 +3486,7 @@ exports[`Storyshots All Components/PageLinks Four Links With Image 1`] = `
           >
             <path
               d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
-              fill="#7D0717"
+              fill="#B80F09"
               transform="matrix(0 1 1 0 -3 3)"
             />
           </g>
@@ -3502,7 +3502,7 @@ exports[`Storyshots All Components/PageLinks Three Links 1`] = `
   className="sc-gJWqzi iAoSuI"
 >
   <li
-    className="sc-cpmLhU hgYXfD"
+    className="sc-cpmLhU izeHMy"
   >
     <h4
       className="sc-kkGfuU dNKoMy"
@@ -3510,12 +3510,12 @@ exports[`Storyshots All Components/PageLinks Three Links 1`] = `
       Industry fund
     </h4>
     <p
-      className="sc-dymIpo PoMtn"
+      className="sc-dymIpo gcDxTk"
     >
       What do they got in there? King Kong? You know what? It is beets. I've crashed into a beet truck. Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.
     </p>
     <a
-      className="sc-bnXvFD jUqeZh"
+      className="sc-bnXvFD gHSpwI"
       href="/#"
       onClick={[Function]}
     >
@@ -3537,7 +3537,7 @@ exports[`Storyshots All Components/PageLinks Three Links 1`] = `
           >
             <path
               d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
-              fill="#7D0717"
+              fill="#B80F09"
               transform="matrix(0 1 1 0 -3 3)"
             />
           </g>
@@ -3546,7 +3546,7 @@ exports[`Storyshots All Components/PageLinks Three Links 1`] = `
     </a>
   </li>
   <li
-    className="sc-cpmLhU hgYXfD"
+    className="sc-cpmLhU izeHMy"
   >
     <h4
       className="sc-kkGfuU dNKoMy"
@@ -3554,12 +3554,12 @@ exports[`Storyshots All Components/PageLinks Three Links 1`] = `
       Get funding fund
     </h4>
     <p
-      className="sc-dymIpo PoMtn"
+      className="sc-dymIpo gcDxTk"
     >
       Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
     </p>
     <a
-      className="sc-bnXvFD jUqeZh"
+      className="sc-bnXvFD gHSpwI"
       href="/#"
       onClick={[Function]}
     >
@@ -3581,7 +3581,7 @@ exports[`Storyshots All Components/PageLinks Three Links 1`] = `
           >
             <path
               d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
-              fill="#7D0717"
+              fill="#B80F09"
               transform="matrix(0 1 1 0 -3 3)"
             />
           </g>
@@ -3590,7 +3590,7 @@ exports[`Storyshots All Components/PageLinks Three Links 1`] = `
     </a>
   </li>
   <li
-    className="sc-cpmLhU hgYXfD"
+    className="sc-cpmLhU izeHMy"
   >
     <h4
       className="sc-kkGfuU dNKoMy"
@@ -3598,12 +3598,12 @@ exports[`Storyshots All Components/PageLinks Three Links 1`] = `
       Get funding fund
     </h4>
     <p
-      className="sc-dymIpo PoMtn"
+      className="sc-dymIpo gcDxTk"
     >
       Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
     </p>
     <a
-      className="sc-bnXvFD jUqeZh"
+      className="sc-bnXvFD gHSpwI"
       href="/#"
       onClick={[Function]}
     >
@@ -3625,7 +3625,7 @@ exports[`Storyshots All Components/PageLinks Three Links 1`] = `
           >
             <path
               d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
-              fill="#7D0717"
+              fill="#B80F09"
               transform="matrix(0 1 1 0 -3 3)"
             />
           </g>
@@ -3665,7 +3665,7 @@ exports[`Storyshots All Components/PromoBanner Normal 1`] = `
         EU demands UK keep chlorinated chicken ban to get trade deal
       </p>
       <a
-        className="sc-bZQynM gEmvLG"
+        className="sc-bZQynM cGsycj"
         colorScheme={1}
         href="/#"
         onClick={[Function]}
@@ -3707,7 +3707,7 @@ exports[`Storyshots All Components/PromoBanner Reversed Without Second Image 1`]
         EU demands UK keep chlorinated chicken ban to get trade deal
       </p>
       <a
-        className="sc-bZQynM gEmvLG"
+        className="sc-bZQynM cGsycj"
         colorScheme={1}
         href="/#"
         onClick={[Function]}
@@ -3745,7 +3745,7 @@ exports[`Storyshots All Components/SidebarPageLinks Example 1`] = `
       className="sc-gHboQg fMRUSw"
     >
       <li
-        className="sc-cbkKFq bpXfYg"
+        className="sc-cbkKFq hhusk"
       >
         <a
           className="sc-fOKMvo jZDeEF"
@@ -3753,7 +3753,7 @@ exports[`Storyshots All Components/SidebarPageLinks Example 1`] = `
           onClick={[Function]}
         >
           <div
-            className="sc-krvtoX bRqFCp"
+            className="sc-krvtoX dvgoFf"
           >
             <div
               className="sc-fYiAbW bvCYNV image"
@@ -3767,7 +3767,7 @@ exports[`Storyshots All Components/SidebarPageLinks Example 1`] = `
         </a>
       </li>
       <li
-        className="sc-cbkKFq bpXfYg"
+        className="sc-cbkKFq hhusk"
       >
         <a
           className="sc-fOKMvo jZDeEF"
@@ -3775,7 +3775,7 @@ exports[`Storyshots All Components/SidebarPageLinks Example 1`] = `
           onClick={[Function]}
         >
           <div
-            className="sc-krvtoX bRqFCp"
+            className="sc-krvtoX dvgoFf"
           >
             <div
               className="sc-fYiAbW bvCYNV image"
@@ -3789,7 +3789,7 @@ exports[`Storyshots All Components/SidebarPageLinks Example 1`] = `
         </a>
       </li>
       <li
-        className="sc-cbkKFq bpXfYg"
+        className="sc-cbkKFq hhusk"
       >
         <a
           className="sc-fOKMvo jZDeEF"
@@ -3797,7 +3797,7 @@ exports[`Storyshots All Components/SidebarPageLinks Example 1`] = `
           onClick={[Function]}
         >
           <div
-            className="sc-krvtoX bRqFCp"
+            className="sc-krvtoX dvgoFf"
           >
             <div
               className="sc-fYiAbW bvCYNV image"
@@ -3811,7 +3811,7 @@ exports[`Storyshots All Components/SidebarPageLinks Example 1`] = `
         </a>
       </li>
       <li
-        className="sc-cbkKFq bpXfYg"
+        className="sc-cbkKFq hhusk"
       >
         <a
           className="sc-fOKMvo jZDeEF"
@@ -3819,7 +3819,7 @@ exports[`Storyshots All Components/SidebarPageLinks Example 1`] = `
           onClick={[Function]}
         >
           <div
-            className="sc-krvtoX bRqFCp"
+            className="sc-krvtoX dvgoFf"
           >
             <div
               className="sc-fYiAbW bvCYNV image"
@@ -3853,7 +3853,7 @@ exports[`Storyshots All Components/SidebarPageLinks Example Without Title 1`] = 
       className="sc-gHboQg fMRUSw"
     >
       <li
-        className="sc-cbkKFq bpXfYg"
+        className="sc-cbkKFq hhusk"
       >
         <a
           className="sc-fOKMvo jZDeEF"
@@ -3861,7 +3861,7 @@ exports[`Storyshots All Components/SidebarPageLinks Example Without Title 1`] = 
           onClick={[Function]}
         >
           <div
-            className="sc-krvtoX bRqFCp"
+            className="sc-krvtoX dvgoFf"
           >
             <div
               className="sc-fYiAbW bvCYNV image"
@@ -3875,7 +3875,7 @@ exports[`Storyshots All Components/SidebarPageLinks Example Without Title 1`] = 
         </a>
       </li>
       <li
-        className="sc-cbkKFq bpXfYg"
+        className="sc-cbkKFq hhusk"
       >
         <a
           className="sc-fOKMvo jZDeEF"
@@ -3883,7 +3883,7 @@ exports[`Storyshots All Components/SidebarPageLinks Example Without Title 1`] = 
           onClick={[Function]}
         >
           <div
-            className="sc-krvtoX bRqFCp"
+            className="sc-krvtoX dvgoFf"
           >
             <div
               className="sc-fYiAbW bvCYNV image"
@@ -3897,7 +3897,7 @@ exports[`Storyshots All Components/SidebarPageLinks Example Without Title 1`] = 
         </a>
       </li>
       <li
-        className="sc-cbkKFq bpXfYg"
+        className="sc-cbkKFq hhusk"
       >
         <a
           className="sc-fOKMvo jZDeEF"
@@ -3905,7 +3905,7 @@ exports[`Storyshots All Components/SidebarPageLinks Example Without Title 1`] = 
           onClick={[Function]}
         >
           <div
-            className="sc-krvtoX bRqFCp"
+            className="sc-krvtoX dvgoFf"
           >
             <div
               className="sc-fYiAbW bvCYNV image"
@@ -3948,7 +3948,7 @@ exports[`Storyshots All Components/StepByStep Primary 1`] = `
       >
         <button
           aria-expanded="false"
-          className="sc-cQFLBn iOsHCz"
+          className="sc-cQFLBn lflEGc"
           onClick={[Function]}
         >
           <strong
@@ -3957,7 +3957,7 @@ exports[`Storyshots All Components/StepByStep Primary 1`] = `
             Is this fund right for you?
           </strong>
           <p
-            className="sc-gojNiO gvQtZQ"
+            className="sc-gojNiO fmfHkP"
           >
             Show
           </p>
@@ -3968,7 +3968,7 @@ exports[`Storyshots All Components/StepByStep Primary 1`] = `
       >
         <button
           aria-expanded="false"
-          className="sc-cQFLBn iOsHCz"
+          className="sc-cQFLBn lflEGc"
           onClick={[Function]}
         >
           <strong
@@ -3977,7 +3977,7 @@ exports[`Storyshots All Components/StepByStep Primary 1`] = `
             Prepare your supporting materials
           </strong>
           <p
-            className="sc-gojNiO gvQtZQ"
+            className="sc-gojNiO fmfHkP"
           >
             Show
           </p>
@@ -3988,7 +3988,7 @@ exports[`Storyshots All Components/StepByStep Primary 1`] = `
       >
         <button
           aria-expanded="false"
-          className="sc-cQFLBn iOsHCz"
+          className="sc-cQFLBn lflEGc"
           onClick={[Function]}
         >
           <strong
@@ -3997,7 +3997,7 @@ exports[`Storyshots All Components/StepByStep Primary 1`] = `
             Apply
           </strong>
           <p
-            className="sc-gojNiO gvQtZQ"
+            className="sc-gojNiO fmfHkP"
           >
             Show
           </p>
@@ -4008,7 +4008,7 @@ exports[`Storyshots All Components/StepByStep Primary 1`] = `
       >
         <button
           aria-expanded="false"
-          className="sc-cQFLBn iOsHCz"
+          className="sc-cQFLBn lflEGc"
           onClick={[Function]}
         >
           <strong
@@ -4017,7 +4017,7 @@ exports[`Storyshots All Components/StepByStep Primary 1`] = `
             Wait to hear from us
           </strong>
           <p
-            className="sc-gojNiO gvQtZQ"
+            className="sc-gojNiO fmfHkP"
           >
             Show
           </p>
@@ -4028,7 +4028,7 @@ exports[`Storyshots All Components/StepByStep Primary 1`] = `
       >
         <button
           aria-expanded="false"
-          className="sc-cQFLBn iOsHCz"
+          className="sc-cQFLBn lflEGc"
           onClick={[Function]}
         >
           <strong
@@ -4037,7 +4037,7 @@ exports[`Storyshots All Components/StepByStep Primary 1`] = `
             Your decision
           </strong>
           <p
-            className="sc-gojNiO gvQtZQ"
+            className="sc-gojNiO fmfHkP"
           >
             Show
           </p>
@@ -4058,16 +4058,16 @@ exports[`Storyshots All Components/Tabs Primary 1`] = `
   }
 >
   <ul
-    className="sc-btzYZH hWQmiL"
+    className="sc-btzYZH ipMjfd"
     role="tablist"
   >
     <li
-      className="sc-lhVmIH jTyqgs"
+      className="sc-lhVmIH dBQfXa"
       role="presentation"
     >
       <button
         aria-selected={true}
-        className="sc-bYSBpT dGVzcL"
+        className="sc-bYSBpT cQJCJm"
         id="tab1"
         onClick={[Function]}
         role="tab"
@@ -4081,7 +4081,7 @@ exports[`Storyshots All Components/Tabs Primary 1`] = `
     >
       <button
         aria-selected={false}
-        className="sc-bYSBpT iDspXE"
+        className="sc-bYSBpT bhpuAY"
         id="tab2"
         onClick={[Function]}
         role="tab"
@@ -4095,7 +4095,7 @@ exports[`Storyshots All Components/Tabs Primary 1`] = `
     >
       <button
         aria-selected={false}
-        className="sc-bYSBpT iDspXE"
+        className="sc-bYSBpT bhpuAY"
         id="tab3"
         onClick={[Function]}
         role="tab"
@@ -4133,7 +4133,7 @@ exports[`Storyshots All Components/Tabs Primary 1`] = `
 
 exports[`Storyshots All Components/Tag Primary 1`] = `
 <li
-  className="sc-cSHVUG ilvSkD"
+  className="sc-cSHVUG koXlVd"
 >
   Example tag
 </li>
@@ -4148,7 +4148,7 @@ exports[`Storyshots All Components/Text Normal 1`] = `
   }
 >
   <article
-    className="sc-gwVKww jkgwBS"
+    className="sc-gwVKww bDriYo"
   >
     
 
@@ -4266,7 +4266,7 @@ Array [
     className="sc-cIShpX cxCUub"
   >
     <div
-      className="sc-jnlKLf fEDFhp"
+      className="sc-jnlKLf fSDUXJ"
     >
       <a
         aria-current="page"
@@ -4285,7 +4285,7 @@ Array [
       className="sc-fBuWsC gCtGeh"
     >
       <div
-        className="sc-jnlKLf sc-kafWEX iRBZJV"
+        className="sc-jnlKLf sc-kafWEX jyQTfo"
       >
         <div
           className="sc-dVhcbM kOVIKx"
@@ -4319,7 +4319,7 @@ Array [
     onMouseLeave={[Function]}
   >
     <div
-      className="sc-jnlKLf fEDFhp"
+      className="sc-jnlKLf fSDUXJ"
     >
       <a
         aria-current="page"
@@ -4521,7 +4521,7 @@ Array [
       className="sc-iELTvK fNiKpH"
     />
     <div
-      className="sc-cmTdod gKSBbh"
+      className="sc-cmTdod iVpsdo"
     >
       <h1
         className="sc-jKJlTe QsYrr"
@@ -4545,16 +4545,16 @@ Array [
         className="sc-eXEjpC cDyPhC"
       >
         <ul
-          className="sc-btzYZH hWQmiL"
+          className="sc-btzYZH ipMjfd"
           role="tablist"
         >
           <li
-            className="sc-lhVmIH jTyqgs"
+            className="sc-lhVmIH dBQfXa"
             role="presentation"
           >
             <button
               aria-selected={true}
-              className="sc-bYSBpT dGVzcL"
+              className="sc-bYSBpT cQJCJm"
               id="tab1"
               onClick={[Function]}
               role="tab"
@@ -4568,7 +4568,7 @@ Array [
           >
             <button
               aria-selected={false}
-              className="sc-bYSBpT iDspXE"
+              className="sc-bYSBpT bhpuAY"
               id="tab2"
               onClick={[Function]}
               role="tab"
@@ -4582,7 +4582,7 @@ Array [
           >
             <button
               aria-selected={false}
-              className="sc-bYSBpT iDspXE"
+              className="sc-bYSBpT bhpuAY"
               id="tab3"
               onClick={[Function]}
               role="tab"
@@ -4598,7 +4598,7 @@ Array [
           role="tabpanel"
         >
           <div
-            className="sc-iyvyFf fTIOss"
+            className="sc-iyvyFf hSGoSY"
           >
             <img
               alt=""
@@ -4624,7 +4624,7 @@ Array [
                 The best new and classic LGBTIQ+ films from around the world. Priority booking opens to BFI Members at 11:30 on 25 Feb. Champion booking is open.
               </p>
               <a
-                className="sc-bZQynM gEmvLG"
+                className="sc-bZQynM cGsycj"
                 colorScheme={1}
                 href="/#"
                 onClick={[Function]}
@@ -4644,7 +4644,7 @@ Array [
             className="sc-ibxdXY bYqhfp"
           >
             <div
-              className="sc-elJkPf irpLCK"
+              className="sc-elJkPf hZokBR"
             >
               <img
                 alt=""
@@ -4671,7 +4671,7 @@ Array [
                 </p>
               </div>
               <a
-                className="sc-gzOgki haLwJT"
+                className="sc-gzOgki fWMdHb"
                 href="/#"
                 onClick={[Function]}
               >
@@ -4701,7 +4701,7 @@ Array [
                     className="sc-jWBwVP hzigEZ"
                   >
                     <a
-                      className="sc-gzVnrw gFILHl"
+                      className="sc-gzVnrw kJZBjK"
                       colorScheme={0}
                       href="/#"
                       onClick={[Function]}
@@ -4714,7 +4714,7 @@ Array [
                     className="sc-jWBwVP hzigEZ"
                   >
                     <a
-                      className="sc-gzVnrw gFILHl"
+                      className="sc-gzVnrw kJZBjK"
                       colorScheme={0}
                       href="/#"
                       onClick={[Function]}
@@ -4765,7 +4765,7 @@ Array [
                     className="sc-jWBwVP hzigEZ"
                   >
                     <a
-                      className="sc-gzVnrw gFILHl"
+                      className="sc-gzVnrw kJZBjK"
                       colorScheme={0}
                       href="/#"
                       onClick={[Function]}
@@ -4806,7 +4806,7 @@ Array [
                     className="sc-jWBwVP hzigEZ"
                   >
                     <a
-                      className="sc-gzVnrw gFILHl"
+                      className="sc-gzVnrw kJZBjK"
                       colorScheme={0}
                       href="/#"
                       onClick={[Function]}
@@ -4858,7 +4858,7 @@ Array [
             </div>
           </div>
           <a
-            className="sc-bZQynM elhckv sc-iQKALj hZznPT"
+            className="sc-bZQynM hsIisc sc-iQKALj hZznPT"
             colorScheme={0}
             href="/#"
             onClick={[Function]}
@@ -4876,7 +4876,7 @@ Array [
             className="sc-ibxdXY bYqhfp"
           >
             <div
-              className="sc-elJkPf irpLCK"
+              className="sc-elJkPf hZokBR"
             >
               <img
                 alt=""
@@ -4903,7 +4903,7 @@ Array [
                 </p>
               </div>
               <a
-                className="sc-gzOgki haLwJT"
+                className="sc-gzOgki fWMdHb"
                 href="/#"
                 onClick={[Function]}
               >
@@ -4933,7 +4933,7 @@ Array [
                     className="sc-jWBwVP hzigEZ"
                   >
                     <a
-                      className="sc-gzVnrw gFILHl"
+                      className="sc-gzVnrw kJZBjK"
                       colorScheme={0}
                       href="/#"
                       onClick={[Function]}
@@ -4946,7 +4946,7 @@ Array [
                     className="sc-jWBwVP hzigEZ"
                   >
                     <a
-                      className="sc-gzVnrw gFILHl"
+                      className="sc-gzVnrw kJZBjK"
                       colorScheme={0}
                       href="/#"
                       onClick={[Function]}
@@ -4997,7 +4997,7 @@ Array [
                     className="sc-jWBwVP hzigEZ"
                   >
                     <a
-                      className="sc-gzVnrw gFILHl"
+                      className="sc-gzVnrw kJZBjK"
                       colorScheme={0}
                       href="/#"
                       onClick={[Function]}
@@ -5038,7 +5038,7 @@ Array [
                     className="sc-jWBwVP hzigEZ"
                   >
                     <a
-                      className="sc-gzVnrw gFILHl"
+                      className="sc-gzVnrw kJZBjK"
                       colorScheme={0}
                       href="/#"
                       onClick={[Function]}
@@ -5090,7 +5090,7 @@ Array [
             </div>
           </div>
           <a
-            className="sc-bZQynM elhckv sc-iQKALj hZznPT"
+            className="sc-bZQynM hsIisc sc-iQKALj hZznPT"
             colorScheme={0}
             href="/#"
             onClick={[Function]}
@@ -5116,12 +5116,12 @@ Array [
         className="sc-dxgOiQ hNzFql"
       >
         <a
-          className="sc-kAzzGY eVcdAa"
+          className="sc-kAzzGY dYgCGj"
           href="/#"
           onClick={[Function]}
         >
           <div
-            className="sc-chPdSV ldGRJf"
+            className="sc-chPdSV hrnHsq"
           >
             <img
               alt="Example image"
@@ -5138,24 +5138,24 @@ Array [
             className="sc-kpOJdX gHeVat"
           >
             <li
-              className="sc-cSHVUG ilvSkD"
+              className="sc-cSHVUG koXlVd"
             >
               BFI Player
             </li>
             <li
-              className="sc-cSHVUG ilvSkD"
+              className="sc-cSHVUG koXlVd"
             >
               Southbank
             </li>
           </ul>
         </a>
         <a
-          className="sc-kAzzGY eVcdAa"
+          className="sc-kAzzGY dYgCGj"
           href="/#"
           onClick={[Function]}
         >
           <div
-            className="sc-chPdSV ldGRJf"
+            className="sc-chPdSV hrnHsq"
           >
             <img
               alt="Example image"
@@ -5172,24 +5172,24 @@ Array [
             className="sc-kpOJdX gHeVat"
           >
             <li
-              className="sc-cSHVUG ilvSkD"
+              className="sc-cSHVUG koXlVd"
             >
               BFI Player
             </li>
             <li
-              className="sc-cSHVUG ilvSkD"
+              className="sc-cSHVUG koXlVd"
             >
               Southbank
             </li>
           </ul>
         </a>
         <a
-          className="sc-kAzzGY eVcdAa"
+          className="sc-kAzzGY dYgCGj"
           href="/#"
           onClick={[Function]}
         >
           <div
-            className="sc-chPdSV ldGRJf"
+            className="sc-chPdSV hrnHsq"
           >
             <img
               alt="Example image"
@@ -5206,24 +5206,24 @@ Array [
             className="sc-kpOJdX gHeVat"
           >
             <li
-              className="sc-cSHVUG ilvSkD"
+              className="sc-cSHVUG koXlVd"
             >
               BFI Player
             </li>
             <li
-              className="sc-cSHVUG ilvSkD"
+              className="sc-cSHVUG koXlVd"
             >
               Southbank
             </li>
           </ul>
         </a>
         <a
-          className="sc-kAzzGY eVcdAa"
+          className="sc-kAzzGY dYgCGj"
           href="/#"
           onClick={[Function]}
         >
           <div
-            className="sc-chPdSV ldGRJf"
+            className="sc-chPdSV hrnHsq"
           >
             <img
               alt="Example image"
@@ -5240,24 +5240,24 @@ Array [
             className="sc-kpOJdX gHeVat"
           >
             <li
-              className="sc-cSHVUG ilvSkD"
+              className="sc-cSHVUG koXlVd"
             >
               BFI Player
             </li>
             <li
-              className="sc-cSHVUG ilvSkD"
+              className="sc-cSHVUG koXlVd"
             >
               Southbank
             </li>
           </ul>
         </a>
         <a
-          className="sc-kAzzGY eVcdAa"
+          className="sc-kAzzGY dYgCGj"
           href="/#"
           onClick={[Function]}
         >
           <div
-            className="sc-chPdSV ldGRJf"
+            className="sc-chPdSV hrnHsq"
           >
             <img
               alt="Example image"
@@ -5274,24 +5274,24 @@ Array [
             className="sc-kpOJdX gHeVat"
           >
             <li
-              className="sc-cSHVUG ilvSkD"
+              className="sc-cSHVUG koXlVd"
             >
               BFI Player
             </li>
             <li
-              className="sc-cSHVUG ilvSkD"
+              className="sc-cSHVUG koXlVd"
             >
               Southbank
             </li>
           </ul>
         </a>
         <a
-          className="sc-kAzzGY eVcdAa"
+          className="sc-kAzzGY dYgCGj"
           href="/#"
           onClick={[Function]}
         >
           <div
-            className="sc-chPdSV ldGRJf"
+            className="sc-chPdSV hrnHsq"
           >
             <img
               alt="Example image"
@@ -5308,19 +5308,19 @@ Array [
             className="sc-kpOJdX gHeVat"
           >
             <li
-              className="sc-cSHVUG ilvSkD"
+              className="sc-cSHVUG koXlVd"
             >
               BFI Player
             </li>
             <li
-              className="sc-cSHVUG ilvSkD"
+              className="sc-cSHVUG koXlVd"
             >
               Southbank
             </li>
           </ul>
         </a>
         <a
-          className="sc-bZQynM elhckv sc-ckVGcZ cBfbuY"
+          className="sc-bZQynM hsIisc sc-ckVGcZ cBfbuY"
           colorScheme={0}
           href="/#"
           onClick={[Function]}
@@ -5354,7 +5354,7 @@ Array [
           </h4>
           <a
             aria-current="page"
-            className="sc-bRBYWo iaiTCo"
+            className="sc-bRBYWo iRtZw"
             href="/"
             onClick={[Function]}
           >
@@ -5362,7 +5362,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-bRBYWo iaiTCo"
+            className="sc-bRBYWo iRtZw"
             href="/"
             onClick={[Function]}
           >
@@ -5370,7 +5370,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-bRBYWo iaiTCo"
+            className="sc-bRBYWo iRtZw"
             href="/"
             onClick={[Function]}
           >
@@ -5378,7 +5378,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-bRBYWo iaiTCo"
+            className="sc-bRBYWo iRtZw"
             href="/"
             onClick={[Function]}
           >
@@ -5395,7 +5395,7 @@ Array [
           </h4>
           <a
             aria-current="page"
-            className="sc-bRBYWo iaiTCo"
+            className="sc-bRBYWo iRtZw"
             href="/"
             onClick={[Function]}
           >
@@ -5403,7 +5403,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-bRBYWo iaiTCo"
+            className="sc-bRBYWo iRtZw"
             href="/"
             onClick={[Function]}
           >
@@ -5411,7 +5411,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-bRBYWo iaiTCo"
+            className="sc-bRBYWo iRtZw"
             href="/"
             onClick={[Function]}
           >
@@ -5419,7 +5419,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-bRBYWo iaiTCo"
+            className="sc-bRBYWo iRtZw"
             href="/"
             onClick={[Function]}
           >
@@ -5427,7 +5427,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-bRBYWo iaiTCo"
+            className="sc-bRBYWo iRtZw"
             href="/"
             onClick={[Function]}
           >
@@ -5444,14 +5444,14 @@ Array [
           </h4>
           <a
             aria-current="page"
-            className="sc-bRBYWo iaiTCo"
+            className="sc-bRBYWo iRtZw"
             href="/"
             onClick={[Function]}
           >
             Contact us
           </a>
           <a
-            className="sc-hzDkRC gamKiC"
+            className="sc-hzDkRC rhNky"
             href="#"
           >
             <img
@@ -5462,7 +5462,7 @@ Array [
             Facebook
           </a>
           <a
-            className="sc-hzDkRC gamKiC"
+            className="sc-hzDkRC rhNky"
             href="#"
           >
             <img
@@ -5473,7 +5473,7 @@ Array [
             Twitter
           </a>
           <a
-            className="sc-hzDkRC gamKiC"
+            className="sc-hzDkRC rhNky"
             href="#"
           >
             <img
@@ -5484,7 +5484,7 @@ Array [
             YouTube
           </a>
           <a
-            className="sc-hzDkRC gamKiC"
+            className="sc-hzDkRC rhNky"
             href="#"
           >
             <img
@@ -5521,7 +5521,7 @@ Array [
     className="sc-cIShpX djcKal"
   >
     <div
-      className="sc-jnlKLf fEDFhp"
+      className="sc-jnlKLf fSDUXJ"
     >
       <a
         aria-current="page"
@@ -5540,14 +5540,14 @@ Array [
       className="sc-fBuWsC gCtGeh"
     >
       <div
-        className="sc-jnlKLf sc-kafWEX iRBZJV"
+        className="sc-jnlKLf sc-kafWEX jyQTfo"
       >
         <div
           className="sc-dVhcbM kOVIKx"
         >
           <a
             aria-current="page"
-            className="sc-fMiknA gpxPha"
+            className="sc-fMiknA bJmMUM"
             href="/"
             isSticky={false}
             isTransparent={false}
@@ -5557,7 +5557,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-fMiknA gpxPha"
+            className="sc-fMiknA bJmMUM"
             href="/"
             isSticky={false}
             isTransparent={false}
@@ -5574,7 +5574,7 @@ Array [
     onMouseLeave={[Function]}
   >
     <div
-      className="sc-jnlKLf fEDFhp"
+      className="sc-jnlKLf fSDUXJ"
     >
       <a
         aria-current="page"
@@ -5782,7 +5782,7 @@ Array [
           className="sc-ifAKCX TSOqM"
         >
           <a
-            className="sc-EHOje jLtMYD"
+            className="sc-EHOje jZjVnG"
             href="/#"
             onClick={[Function]}
           >
@@ -5793,7 +5793,7 @@ Array [
           className="sc-ifAKCX TSOqM"
         >
           <a
-            className="sc-EHOje jLtMYD"
+            className="sc-EHOje jZjVnG"
             href="/#"
             onClick={[Function]}
           >
@@ -5820,7 +5820,7 @@ Array [
         className="sc-gJWqzi fKFEDZ"
       >
         <li
-          className="sc-cpmLhU hgYXfD"
+          className="sc-cpmLhU izeHMy"
         >
           <h4
             className="sc-kkGfuU dNKoMy"
@@ -5828,12 +5828,12 @@ Array [
             Industry fund
           </h4>
           <p
-            className="sc-dymIpo PoMtn"
+            className="sc-dymIpo gcDxTk"
           >
             What do they got in there? King Kong? You know what? It is beets. I've crashed into a beet truck. Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.
           </p>
           <a
-            className="sc-bnXvFD jUqeZh"
+            className="sc-bnXvFD gHSpwI"
             href="/#"
             onClick={[Function]}
           >
@@ -5855,7 +5855,7 @@ Array [
                 >
                   <path
                     d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
-                    fill="#7D0717"
+                    fill="#B80F09"
                     transform="matrix(0 1 1 0 -3 3)"
                   />
                 </g>
@@ -5864,7 +5864,7 @@ Array [
           </a>
         </li>
         <li
-          className="sc-cpmLhU hgYXfD"
+          className="sc-cpmLhU izeHMy"
         >
           <h4
             className="sc-kkGfuU dNKoMy"
@@ -5872,12 +5872,12 @@ Array [
             Get funding fund
           </h4>
           <p
-            className="sc-dymIpo PoMtn"
+            className="sc-dymIpo gcDxTk"
           >
             Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
           </p>
           <a
-            className="sc-bnXvFD jUqeZh"
+            className="sc-bnXvFD gHSpwI"
             href="/#"
             onClick={[Function]}
           >
@@ -5899,7 +5899,7 @@ Array [
                 >
                   <path
                     d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
-                    fill="#7D0717"
+                    fill="#B80F09"
                     transform="matrix(0 1 1 0 -3 3)"
                   />
                 </g>
@@ -5908,7 +5908,7 @@ Array [
           </a>
         </li>
         <li
-          className="sc-cpmLhU hgYXfD"
+          className="sc-cpmLhU izeHMy"
         >
           <h4
             className="sc-kkGfuU dNKoMy"
@@ -5916,12 +5916,12 @@ Array [
             Get funding fund
           </h4>
           <p
-            className="sc-dymIpo PoMtn"
+            className="sc-dymIpo gcDxTk"
           >
             Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
           </p>
           <a
-            className="sc-bnXvFD jUqeZh"
+            className="sc-bnXvFD gHSpwI"
             href="/#"
             onClick={[Function]}
           >
@@ -5943,7 +5943,7 @@ Array [
                 >
                   <path
                     d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
-                    fill="#7D0717"
+                    fill="#B80F09"
                     transform="matrix(0 1 1 0 -3 3)"
                   />
                 </g>
@@ -5952,7 +5952,7 @@ Array [
           </a>
         </li>
         <li
-          className="sc-cpmLhU hgYXfD"
+          className="sc-cpmLhU izeHMy"
         >
           <h4
             className="sc-kkGfuU dNKoMy"
@@ -5960,12 +5960,12 @@ Array [
             Find a fund
           </h4>
           <p
-            className="sc-dymIpo PoMtn"
+            className="sc-dymIpo gcDxTk"
           >
             Yes, Yes, without the oops! Hey, take a look at the earthlings. Goodbye!
           </p>
           <a
-            className="sc-bnXvFD jUqeZh"
+            className="sc-bnXvFD gHSpwI"
             href="/#"
             onClick={[Function]}
           >
@@ -5987,7 +5987,7 @@ Array [
                 >
                   <path
                     d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
-                    fill="#7D0717"
+                    fill="#B80F09"
                     transform="matrix(0 1 1 0 -3 3)"
                   />
                 </g>
@@ -5996,7 +5996,7 @@ Array [
           </a>
         </li>
         <li
-          className="sc-cpmLhU hgYXfD"
+          className="sc-cpmLhU izeHMy"
         >
           <h4
             className="sc-kkGfuU dNKoMy"
@@ -6004,12 +6004,12 @@ Array [
             Industry fund
           </h4>
           <p
-            className="sc-dymIpo PoMtn"
+            className="sc-dymIpo gcDxTk"
           >
             What do they got in there? King Kong? You know what? It is beets. I've crashed into a beet truck. Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.
           </p>
           <a
-            className="sc-bnXvFD jUqeZh"
+            className="sc-bnXvFD gHSpwI"
             href="/#"
             onClick={[Function]}
           >
@@ -6031,7 +6031,7 @@ Array [
                 >
                   <path
                     d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
-                    fill="#7D0717"
+                    fill="#B80F09"
                     transform="matrix(0 1 1 0 -3 3)"
                   />
                 </g>
@@ -6040,7 +6040,7 @@ Array [
           </a>
         </li>
         <li
-          className="sc-cpmLhU hgYXfD"
+          className="sc-cpmLhU izeHMy"
         >
           <h4
             className="sc-kkGfuU dNKoMy"
@@ -6048,12 +6048,12 @@ Array [
             Get funding fund
           </h4>
           <p
-            className="sc-dymIpo PoMtn"
+            className="sc-dymIpo gcDxTk"
           >
             Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
           </p>
           <a
-            className="sc-bnXvFD jUqeZh"
+            className="sc-bnXvFD gHSpwI"
             href="/#"
             onClick={[Function]}
           >
@@ -6075,7 +6075,7 @@ Array [
                 >
                   <path
                     d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
-                    fill="#7D0717"
+                    fill="#B80F09"
                     transform="matrix(0 1 1 0 -3 3)"
                   />
                 </g>
@@ -6084,7 +6084,7 @@ Array [
           </a>
         </li>
         <li
-          className="sc-cpmLhU hgYXfD"
+          className="sc-cpmLhU izeHMy"
         >
           <h4
             className="sc-kkGfuU dNKoMy"
@@ -6092,12 +6092,12 @@ Array [
             Get funding fund
           </h4>
           <p
-            className="sc-dymIpo PoMtn"
+            className="sc-dymIpo gcDxTk"
           >
             Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
           </p>
           <a
-            className="sc-bnXvFD jUqeZh"
+            className="sc-bnXvFD gHSpwI"
             href="/#"
             onClick={[Function]}
           >
@@ -6119,7 +6119,7 @@ Array [
                 >
                   <path
                     d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
-                    fill="#7D0717"
+                    fill="#B80F09"
                     transform="matrix(0 1 1 0 -3 3)"
                   />
                 </g>
@@ -6128,7 +6128,7 @@ Array [
           </a>
         </li>
         <li
-          className="sc-cpmLhU hgYXfD"
+          className="sc-cpmLhU izeHMy"
         >
           <h4
             className="sc-kkGfuU dNKoMy"
@@ -6136,12 +6136,12 @@ Array [
             Find a fund
           </h4>
           <p
-            className="sc-dymIpo PoMtn"
+            className="sc-dymIpo gcDxTk"
           >
             Yes, Yes, without the oops! Hey, take a look at the earthlings. Goodbye!
           </p>
           <a
-            className="sc-bnXvFD jUqeZh"
+            className="sc-bnXvFD gHSpwI"
             href="/#"
             onClick={[Function]}
           >
@@ -6163,7 +6163,7 @@ Array [
                 >
                   <path
                     d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
-                    fill="#7D0717"
+                    fill="#B80F09"
                     transform="matrix(0 1 1 0 -3 3)"
                   />
                 </g>
@@ -6198,7 +6198,7 @@ Array [
           </h4>
           <a
             aria-current="page"
-            className="sc-bRBYWo iaiTCo"
+            className="sc-bRBYWo iRtZw"
             href="/"
             onClick={[Function]}
           >
@@ -6206,7 +6206,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-bRBYWo iaiTCo"
+            className="sc-bRBYWo iRtZw"
             href="/"
             onClick={[Function]}
           >
@@ -6214,7 +6214,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-bRBYWo iaiTCo"
+            className="sc-bRBYWo iRtZw"
             href="/"
             onClick={[Function]}
           >
@@ -6222,7 +6222,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-bRBYWo iaiTCo"
+            className="sc-bRBYWo iRtZw"
             href="/"
             onClick={[Function]}
           >
@@ -6239,7 +6239,7 @@ Array [
           </h4>
           <a
             aria-current="page"
-            className="sc-bRBYWo iaiTCo"
+            className="sc-bRBYWo iRtZw"
             href="/"
             onClick={[Function]}
           >
@@ -6247,7 +6247,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-bRBYWo iaiTCo"
+            className="sc-bRBYWo iRtZw"
             href="/"
             onClick={[Function]}
           >
@@ -6255,7 +6255,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-bRBYWo iaiTCo"
+            className="sc-bRBYWo iRtZw"
             href="/"
             onClick={[Function]}
           >
@@ -6263,7 +6263,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-bRBYWo iaiTCo"
+            className="sc-bRBYWo iRtZw"
             href="/"
             onClick={[Function]}
           >
@@ -6271,7 +6271,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-bRBYWo iaiTCo"
+            className="sc-bRBYWo iRtZw"
             href="/"
             onClick={[Function]}
           >
@@ -6288,14 +6288,14 @@ Array [
           </h4>
           <a
             aria-current="page"
-            className="sc-bRBYWo iaiTCo"
+            className="sc-bRBYWo iRtZw"
             href="/"
             onClick={[Function]}
           >
             Contact us
           </a>
           <a
-            className="sc-hzDkRC gamKiC"
+            className="sc-hzDkRC rhNky"
             href="#"
           >
             <img
@@ -6306,7 +6306,7 @@ Array [
             Facebook
           </a>
           <a
-            className="sc-hzDkRC gamKiC"
+            className="sc-hzDkRC rhNky"
             href="#"
           >
             <img
@@ -6317,7 +6317,7 @@ Array [
             Twitter
           </a>
           <a
-            className="sc-hzDkRC gamKiC"
+            className="sc-hzDkRC rhNky"
             href="#"
           >
             <img
@@ -6328,7 +6328,7 @@ Array [
             YouTube
           </a>
           <a
-            className="sc-hzDkRC gamKiC"
+            className="sc-hzDkRC rhNky"
             href="#"
           >
             <img
@@ -6365,7 +6365,7 @@ Array [
     className="sc-cIShpX djcKal"
   >
     <div
-      className="sc-jnlKLf fEDFhp"
+      className="sc-jnlKLf fSDUXJ"
     >
       <a
         aria-current="page"
@@ -6384,14 +6384,14 @@ Array [
       className="sc-fBuWsC gCtGeh"
     >
       <div
-        className="sc-jnlKLf sc-kafWEX iRBZJV"
+        className="sc-jnlKLf sc-kafWEX jyQTfo"
       >
         <div
           className="sc-dVhcbM kOVIKx"
         >
           <a
             aria-current="page"
-            className="sc-fMiknA gpxPha"
+            className="sc-fMiknA bJmMUM"
             href="/"
             isSticky={false}
             isTransparent={false}
@@ -6401,7 +6401,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-fMiknA gpxPha"
+            className="sc-fMiknA bJmMUM"
             href="/"
             isSticky={false}
             isTransparent={false}
@@ -6418,7 +6418,7 @@ Array [
     onMouseLeave={[Function]}
   >
     <div
-      className="sc-jnlKLf fEDFhp"
+      className="sc-jnlKLf fSDUXJ"
     >
       <a
         aria-current="page"
@@ -6626,7 +6626,7 @@ Array [
           className="sc-ifAKCX TSOqM"
         >
           <a
-            className="sc-EHOje jLtMYD"
+            className="sc-EHOje jZjVnG"
             href="/#"
             onClick={[Function]}
           >
@@ -6637,7 +6637,7 @@ Array [
           className="sc-ifAKCX TSOqM"
         >
           <a
-            className="sc-EHOje jLtMYD"
+            className="sc-EHOje jZjVnG"
             href="/#"
             onClick={[Function]}
           >
@@ -6648,7 +6648,7 @@ Array [
           className="sc-ifAKCX TSOqM"
         >
           <a
-            className="sc-EHOje jLtMYD"
+            className="sc-EHOje jZjVnG"
             href="/#"
             onClick={[Function]}
           >
@@ -6672,7 +6672,7 @@ Array [
         We want to support work that takes risks and does something different. This means we fund projects that can’t find other, commercial finance at development stage.
       </article>
       <article
-        className="sc-gwVKww jkgwBS"
+        className="sc-gwVKww bDriYo"
       >
          
         <p>
@@ -6702,7 +6702,7 @@ Array [
         Who can apply
       </h2>
       <article
-        className="sc-gwVKww jkgwBS"
+        className="sc-gwVKww bDriYo"
       >
          
         <p>
@@ -6743,7 +6743,7 @@ Array [
         What you need to provide
       </h2>
       <article
-        className="sc-gwVKww jkgwBS"
+        className="sc-gwVKww bDriYo"
       >
          
         <p>
@@ -6788,7 +6788,7 @@ Array [
         What kind of projects we fund
       </h2>
       <article
-        className="sc-gwVKww jkgwBS"
+        className="sc-gwVKww bDriYo"
       >
          
         <p>
@@ -6829,7 +6829,7 @@ Array [
         Apply for funding
       </h2>
       <article
-        className="sc-gwVKww jkgwBS"
+        className="sc-gwVKww bDriYo"
       >
          
         <p>
@@ -6838,8 +6838,8 @@ Array [
          
       </article>
       <a
-        className="sc-bZQynM gEmvLG"
-        colorScheme={1}
+        className="sc-bZQynM hsIisc"
+        colorScheme={0}
         href="/#"
         onClick={[Function]}
       >
@@ -6854,7 +6854,7 @@ Array [
         Contact us
       </h2>
       <article
-        className="sc-gwVKww jkgwBS"
+        className="sc-gwVKww bDriYo"
       >
         <p>
           Contact us if you have a question about your application: 
@@ -6887,7 +6887,7 @@ Array [
           >
             <button
               aria-expanded="false"
-              className="sc-cQFLBn iOsHCz"
+              className="sc-cQFLBn lflEGc"
               onClick={[Function]}
             >
               <strong
@@ -6896,7 +6896,7 @@ Array [
                 Is this fund right for you?
               </strong>
               <p
-                className="sc-gojNiO gvQtZQ"
+                className="sc-gojNiO fmfHkP"
               >
                 Show
               </p>
@@ -6907,7 +6907,7 @@ Array [
           >
             <button
               aria-expanded="false"
-              className="sc-cQFLBn iOsHCz"
+              className="sc-cQFLBn lflEGc"
               onClick={[Function]}
             >
               <strong
@@ -6916,7 +6916,7 @@ Array [
                 Prepare your supporting materials
               </strong>
               <p
-                className="sc-gojNiO gvQtZQ"
+                className="sc-gojNiO fmfHkP"
               >
                 Show
               </p>
@@ -6927,7 +6927,7 @@ Array [
           >
             <button
               aria-expanded="false"
-              className="sc-cQFLBn iOsHCz"
+              className="sc-cQFLBn lflEGc"
               onClick={[Function]}
             >
               <strong
@@ -6936,7 +6936,7 @@ Array [
                 Apply
               </strong>
               <p
-                className="sc-gojNiO gvQtZQ"
+                className="sc-gojNiO fmfHkP"
               >
                 Show
               </p>
@@ -6947,7 +6947,7 @@ Array [
           >
             <button
               aria-expanded="false"
-              className="sc-cQFLBn iOsHCz"
+              className="sc-cQFLBn lflEGc"
               onClick={[Function]}
             >
               <strong
@@ -6956,7 +6956,7 @@ Array [
                 Wait to hear from us
               </strong>
               <p
-                className="sc-gojNiO gvQtZQ"
+                className="sc-gojNiO fmfHkP"
               >
                 Show
               </p>
@@ -6967,7 +6967,7 @@ Array [
           >
             <button
               aria-expanded="false"
-              className="sc-cQFLBn iOsHCz"
+              className="sc-cQFLBn lflEGc"
               onClick={[Function]}
             >
               <strong
@@ -6976,7 +6976,7 @@ Array [
                 Your decision
               </strong>
               <p
-                className="sc-gojNiO gvQtZQ"
+                className="sc-gojNiO fmfHkP"
               >
                 Show
               </p>
@@ -7010,7 +7010,7 @@ Array [
           </h4>
           <a
             aria-current="page"
-            className="sc-bRBYWo iaiTCo"
+            className="sc-bRBYWo iRtZw"
             href="/"
             onClick={[Function]}
           >
@@ -7018,7 +7018,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-bRBYWo iaiTCo"
+            className="sc-bRBYWo iRtZw"
             href="/"
             onClick={[Function]}
           >
@@ -7026,7 +7026,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-bRBYWo iaiTCo"
+            className="sc-bRBYWo iRtZw"
             href="/"
             onClick={[Function]}
           >
@@ -7034,7 +7034,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-bRBYWo iaiTCo"
+            className="sc-bRBYWo iRtZw"
             href="/"
             onClick={[Function]}
           >
@@ -7051,7 +7051,7 @@ Array [
           </h4>
           <a
             aria-current="page"
-            className="sc-bRBYWo iaiTCo"
+            className="sc-bRBYWo iRtZw"
             href="/"
             onClick={[Function]}
           >
@@ -7059,7 +7059,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-bRBYWo iaiTCo"
+            className="sc-bRBYWo iRtZw"
             href="/"
             onClick={[Function]}
           >
@@ -7067,7 +7067,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-bRBYWo iaiTCo"
+            className="sc-bRBYWo iRtZw"
             href="/"
             onClick={[Function]}
           >
@@ -7075,7 +7075,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-bRBYWo iaiTCo"
+            className="sc-bRBYWo iRtZw"
             href="/"
             onClick={[Function]}
           >
@@ -7083,7 +7083,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-bRBYWo iaiTCo"
+            className="sc-bRBYWo iRtZw"
             href="/"
             onClick={[Function]}
           >
@@ -7100,14 +7100,14 @@ Array [
           </h4>
           <a
             aria-current="page"
-            className="sc-bRBYWo iaiTCo"
+            className="sc-bRBYWo iRtZw"
             href="/"
             onClick={[Function]}
           >
             Contact us
           </a>
           <a
-            className="sc-hzDkRC gamKiC"
+            className="sc-hzDkRC rhNky"
             href="#"
           >
             <img
@@ -7118,7 +7118,7 @@ Array [
             Facebook
           </a>
           <a
-            className="sc-hzDkRC gamKiC"
+            className="sc-hzDkRC rhNky"
             href="#"
           >
             <img
@@ -7129,7 +7129,7 @@ Array [
             Twitter
           </a>
           <a
-            className="sc-hzDkRC gamKiC"
+            className="sc-hzDkRC rhNky"
             href="#"
           >
             <img
@@ -7140,7 +7140,7 @@ Array [
             YouTube
           </a>
           <a
-            className="sc-hzDkRC gamKiC"
+            className="sc-hzDkRC rhNky"
             href="#"
           >
             <img
@@ -7177,7 +7177,7 @@ Array [
     className="sc-cIShpX cxCUub"
   >
     <div
-      className="sc-jnlKLf fEDFhp"
+      className="sc-jnlKLf fSDUXJ"
     >
       <a
         aria-current="page"
@@ -7196,7 +7196,7 @@ Array [
       className="sc-fBuWsC gCtGeh"
     >
       <div
-        className="sc-jnlKLf sc-kafWEX iRBZJV"
+        className="sc-jnlKLf sc-kafWEX jyQTfo"
       >
         <div
           className="sc-dVhcbM kOVIKx"
@@ -7230,7 +7230,7 @@ Array [
     onMouseLeave={[Function]}
   >
     <div
-      className="sc-jnlKLf fEDFhp"
+      className="sc-jnlKLf fSDUXJ"
     >
       <a
         aria-current="page"
@@ -7432,7 +7432,7 @@ Array [
       className="sc-iELTvK fNiKpH"
     />
     <div
-      className="sc-cmTdod gKSBbh"
+      className="sc-cmTdod iVpsdo"
     >
       <ol
         className="sc-bxivhb QYYhi"
@@ -7441,7 +7441,7 @@ Array [
           className="sc-ifAKCX TSOqM"
         >
           <a
-            className="sc-EHOje jLtMYD"
+            className="sc-EHOje jZjVnG"
             href="/#"
             onClick={[Function]}
           >
@@ -7452,7 +7452,7 @@ Array [
           className="sc-ifAKCX TSOqM"
         >
           <a
-            className="sc-EHOje jLtMYD"
+            className="sc-EHOje jZjVnG"
             href="/#"
             onClick={[Function]}
           >
@@ -7484,7 +7484,7 @@ Array [
       className="sc-cLQEGU jhmhZU"
     >
       <a
-        className="sc-bZQynM elhckv"
+        className="sc-bZQynM hsIisc"
         colorScheme={0}
         href="/#"
         onClick={[Function]}
@@ -7492,7 +7492,7 @@ Array [
         Buy tickets
       </a>
       <a
-        className="sc-bZQynM elhckv"
+        className="sc-bZQynM hsIisc"
         colorScheme={0}
         href="/#"
         onClick={[Function]}
@@ -7547,7 +7547,7 @@ Array [
       className="sc-cmthru dOPzVj"
     >
       <article
-        className="sc-gwVKww jkgwBS"
+        className="sc-gwVKww bDriYo"
       >
         <p>
           Fellini’s epic La dolce vita stands as a towering achievement of 1960s cinema. Set in Rome during the height of the ‘Hollywood on the Tiber’ era, the episodic narrative follows jaded journalist Marcello Rubini (Mastroianni) on the trail of gossip on VIPs, including Swedish-American film star Sylvia Rank (Ekberg).
@@ -7586,7 +7586,7 @@ Array [
               className="sc-jWBwVP hzigEZ"
             >
               <a
-                className="sc-gzVnrw gFILHl"
+                className="sc-gzVnrw kJZBjK"
                 colorScheme={0}
                 href="/#"
                 onClick={[Function]}
@@ -7599,7 +7599,7 @@ Array [
               className="sc-jWBwVP hzigEZ"
             >
               <a
-                className="sc-gzVnrw gFILHl"
+                className="sc-gzVnrw kJZBjK"
                 colorScheme={0}
                 href="/#"
                 onClick={[Function]}
@@ -7645,7 +7645,7 @@ Array [
               className="sc-jWBwVP hzigEZ"
             >
               <a
-                className="sc-gzVnrw gFILHl"
+                className="sc-gzVnrw kJZBjK"
                 colorScheme={0}
                 href="/#"
                 onClick={[Function]}
@@ -7681,7 +7681,7 @@ Array [
               className="sc-jWBwVP hzigEZ"
             >
               <a
-                className="sc-gzVnrw gFILHl"
+                className="sc-gzVnrw kJZBjK"
                 colorScheme={0}
                 href="/#"
                 onClick={[Function]}
@@ -7727,7 +7727,7 @@ Array [
         </div>
       </section>
       <a
-        className="sc-htoDjs eCyJox"
+        className="sc-htoDjs kSqlNH"
         colorScheme={0}
         href="/#"
         onClick={[Function]}
@@ -7760,7 +7760,7 @@ Array [
           </h4>
           <a
             aria-current="page"
-            className="sc-bRBYWo iaiTCo"
+            className="sc-bRBYWo iRtZw"
             href="/"
             onClick={[Function]}
           >
@@ -7768,7 +7768,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-bRBYWo iaiTCo"
+            className="sc-bRBYWo iRtZw"
             href="/"
             onClick={[Function]}
           >
@@ -7776,7 +7776,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-bRBYWo iaiTCo"
+            className="sc-bRBYWo iRtZw"
             href="/"
             onClick={[Function]}
           >
@@ -7784,7 +7784,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-bRBYWo iaiTCo"
+            className="sc-bRBYWo iRtZw"
             href="/"
             onClick={[Function]}
           >
@@ -7801,7 +7801,7 @@ Array [
           </h4>
           <a
             aria-current="page"
-            className="sc-bRBYWo iaiTCo"
+            className="sc-bRBYWo iRtZw"
             href="/"
             onClick={[Function]}
           >
@@ -7809,7 +7809,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-bRBYWo iaiTCo"
+            className="sc-bRBYWo iRtZw"
             href="/"
             onClick={[Function]}
           >
@@ -7817,7 +7817,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-bRBYWo iaiTCo"
+            className="sc-bRBYWo iRtZw"
             href="/"
             onClick={[Function]}
           >
@@ -7825,7 +7825,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-bRBYWo iaiTCo"
+            className="sc-bRBYWo iRtZw"
             href="/"
             onClick={[Function]}
           >
@@ -7833,7 +7833,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-bRBYWo iaiTCo"
+            className="sc-bRBYWo iRtZw"
             href="/"
             onClick={[Function]}
           >
@@ -7850,14 +7850,14 @@ Array [
           </h4>
           <a
             aria-current="page"
-            className="sc-bRBYWo iaiTCo"
+            className="sc-bRBYWo iRtZw"
             href="/"
             onClick={[Function]}
           >
             Contact us
           </a>
           <a
-            className="sc-hzDkRC gamKiC"
+            className="sc-hzDkRC rhNky"
             href="#"
           >
             <img
@@ -7868,7 +7868,7 @@ Array [
             Facebook
           </a>
           <a
-            className="sc-hzDkRC gamKiC"
+            className="sc-hzDkRC rhNky"
             href="#"
           >
             <img
@@ -7879,7 +7879,7 @@ Array [
             Twitter
           </a>
           <a
-            className="sc-hzDkRC gamKiC"
+            className="sc-hzDkRC rhNky"
             href="#"
           >
             <img
@@ -7890,7 +7890,7 @@ Array [
             YouTube
           </a>
           <a
-            className="sc-hzDkRC gamKiC"
+            className="sc-hzDkRC rhNky"
             href="#"
           >
             <img
@@ -7927,7 +7927,7 @@ Array [
     className="sc-cIShpX djcKal"
   >
     <div
-      className="sc-jnlKLf fEDFhp"
+      className="sc-jnlKLf fSDUXJ"
     >
       <a
         aria-current="page"
@@ -7946,14 +7946,14 @@ Array [
       className="sc-fBuWsC gCtGeh"
     >
       <div
-        className="sc-jnlKLf sc-kafWEX iRBZJV"
+        className="sc-jnlKLf sc-kafWEX jyQTfo"
       >
         <div
           className="sc-dVhcbM kOVIKx"
         >
           <a
             aria-current="page"
-            className="sc-fMiknA gpxPha"
+            className="sc-fMiknA bJmMUM"
             href="/"
             isSticky={false}
             isTransparent={false}
@@ -7963,7 +7963,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-fMiknA gpxPha"
+            className="sc-fMiknA bJmMUM"
             href="/"
             isSticky={false}
             isTransparent={false}
@@ -7980,7 +7980,7 @@ Array [
     onMouseLeave={[Function]}
   >
     <div
-      className="sc-jnlKLf fEDFhp"
+      className="sc-jnlKLf fSDUXJ"
     >
       <a
         aria-current="page"
@@ -8188,7 +8188,7 @@ Array [
           className="sc-ifAKCX TSOqM"
         >
           <a
-            className="sc-EHOje jLtMYD"
+            className="sc-EHOje jZjVnG"
             href="/#"
             onClick={[Function]}
           >
@@ -8199,7 +8199,7 @@ Array [
           className="sc-ifAKCX TSOqM"
         >
           <a
-            className="sc-EHOje jLtMYD"
+            className="sc-EHOje jZjVnG"
             href="/#"
             onClick={[Function]}
           >
@@ -8210,7 +8210,7 @@ Array [
           className="sc-ifAKCX TSOqM"
         >
           <a
-            className="sc-EHOje jLtMYD"
+            className="sc-EHOje jZjVnG"
             href="/#"
             onClick={[Function]}
           >
@@ -8234,7 +8234,7 @@ Array [
         God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs. Do you have any idea how long it takes those cups to decompose. Yes, Yes, without the oops! Yes, Yes, without the oops! Drive us out of here!
       </article>
       <article
-        className="sc-gwVKww jkgwBS"
+        className="sc-gwVKww bDriYo"
       >
         So you two dig up, dig up dinosaurs? Hey, you know how I'm, like, always trying to save the planet? Here's my chance. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.
       </article>
@@ -8254,7 +8254,7 @@ Array [
           className="sc-gHboQg fMRUSw"
         >
           <li
-            className="sc-cbkKFq bpXfYg"
+            className="sc-cbkKFq hhusk"
           >
             <a
               className="sc-fOKMvo jZDeEF"
@@ -8262,7 +8262,7 @@ Array [
               onClick={[Function]}
             >
               <div
-                className="sc-krvtoX bRqFCp"
+                className="sc-krvtoX dvgoFf"
               >
                 <div
                   className="sc-fYiAbW eVOAHC image"
@@ -8276,7 +8276,7 @@ Array [
             </a>
           </li>
           <li
-            className="sc-cbkKFq bpXfYg"
+            className="sc-cbkKFq hhusk"
           >
             <a
               className="sc-fOKMvo jZDeEF"
@@ -8284,7 +8284,7 @@ Array [
               onClick={[Function]}
             >
               <div
-                className="sc-krvtoX bRqFCp"
+                className="sc-krvtoX dvgoFf"
               >
                 <div
                   className="sc-fYiAbW dCbHYW image"
@@ -8325,7 +8325,7 @@ Array [
           </h4>
           <a
             aria-current="page"
-            className="sc-bRBYWo iaiTCo"
+            className="sc-bRBYWo iRtZw"
             href="/"
             onClick={[Function]}
           >
@@ -8333,7 +8333,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-bRBYWo iaiTCo"
+            className="sc-bRBYWo iRtZw"
             href="/"
             onClick={[Function]}
           >
@@ -8341,7 +8341,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-bRBYWo iaiTCo"
+            className="sc-bRBYWo iRtZw"
             href="/"
             onClick={[Function]}
           >
@@ -8349,7 +8349,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-bRBYWo iaiTCo"
+            className="sc-bRBYWo iRtZw"
             href="/"
             onClick={[Function]}
           >
@@ -8366,7 +8366,7 @@ Array [
           </h4>
           <a
             aria-current="page"
-            className="sc-bRBYWo iaiTCo"
+            className="sc-bRBYWo iRtZw"
             href="/"
             onClick={[Function]}
           >
@@ -8374,7 +8374,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-bRBYWo iaiTCo"
+            className="sc-bRBYWo iRtZw"
             href="/"
             onClick={[Function]}
           >
@@ -8382,7 +8382,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-bRBYWo iaiTCo"
+            className="sc-bRBYWo iRtZw"
             href="/"
             onClick={[Function]}
           >
@@ -8390,7 +8390,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-bRBYWo iaiTCo"
+            className="sc-bRBYWo iRtZw"
             href="/"
             onClick={[Function]}
           >
@@ -8398,7 +8398,7 @@ Array [
           </a>
           <a
             aria-current="page"
-            className="sc-bRBYWo iaiTCo"
+            className="sc-bRBYWo iRtZw"
             href="/"
             onClick={[Function]}
           >
@@ -8415,14 +8415,14 @@ Array [
           </h4>
           <a
             aria-current="page"
-            className="sc-bRBYWo iaiTCo"
+            className="sc-bRBYWo iRtZw"
             href="/"
             onClick={[Function]}
           >
             Contact us
           </a>
           <a
-            className="sc-hzDkRC gamKiC"
+            className="sc-hzDkRC rhNky"
             href="#"
           >
             <img
@@ -8433,7 +8433,7 @@ Array [
             Facebook
           </a>
           <a
-            className="sc-hzDkRC gamKiC"
+            className="sc-hzDkRC rhNky"
             href="#"
           >
             <img
@@ -8444,7 +8444,7 @@ Array [
             Twitter
           </a>
           <a
-            className="sc-hzDkRC gamKiC"
+            className="sc-hzDkRC rhNky"
             href="#"
           >
             <img
@@ -8455,7 +8455,7 @@ Array [
             YouTube
           </a>
           <a
-            className="sc-hzDkRC gamKiC"
+            className="sc-hzDkRC rhNky"
             href="#"
           >
             <img
