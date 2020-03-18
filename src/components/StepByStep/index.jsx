@@ -95,7 +95,7 @@ const ShowButtonText = styled.p`
 `
 
 const Description = styled.p`
-    color: ${theme.charcoal};
+    color: ${theme.black};
     a{
         color: ${theme.dark};
         &:hover{

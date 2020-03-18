@@ -151,7 +151,7 @@ export const Header = ({
                         open={open}
                     />
                     <LotteryContainer >
-                        <LotteryLogo colourFill={overlay ? theme.white : theme.charcoal} />
+                        <LotteryLogo colourFill={overlay ? theme.white : theme.black} />
                     </LotteryContainer>
                 </Inner>
             </Outer>

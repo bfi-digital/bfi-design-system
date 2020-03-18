@@ -5,7 +5,7 @@ import theme from "../_theme"
 import PropTypes from "prop-types"
 
 const Outer = styled.section`
-    background: ${theme.charcoal};
+    background: ${theme.black};
     width: 100%;
     position: relative;
     min-height: 80vh;
@@ -22,7 +22,7 @@ const Outer = styled.section`
     h1{
         color: ${theme.white};
         max-width: calc( 0.5 * ${theme.m});
-        text-shadow: 0px 0px 30px ${theme.charcoal}50;
+        text-shadow: 0px 0px 30px ${theme.black}50;
         margin-bottom: 50px;
     }
     @media screen and (min-width: ${theme.xl}){
@@ -58,7 +58,7 @@ const Container = styled.div`
     }
     li, a{
         color: ${theme.white};
-        text-shadow: 0px 0px 30px ${theme.charcoal}50;
+        text-shadow: 0px 0px 30px ${theme.black}50;
         &:focus{
             background: ${theme.dark};
         }
@@ -67,7 +67,7 @@ const Container = styled.div`
 
 const Copyright = styled.p`
         color: ${theme.white};
-        text-shadow: 0px 0px 30px ${theme.charcoal}50;
+        text-shadow: 0px 0px 30px ${theme.black}50;
         font-size: 0.75rem;
         position: absolute;
         bottom: 5px;

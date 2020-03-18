@@ -1,7 +1,7 @@
 export default {
 
     // colour scheme
-    charcoal: "#120C0D",
+    black: "#120C0D",
     white: "#ffffff",
 
     darkGrey: "#746D6D",

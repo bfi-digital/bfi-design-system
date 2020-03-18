@@ -9,7 +9,7 @@ const Outer = styled(LinkSwitch)`
     display: block;
     // border-radius: 5px;
     text-decoration: none;
-    color: ${theme.charcoal};
+    color: ${theme.black};
     margin-bottom: 35px;
     transition: box-shadow .3s;
 

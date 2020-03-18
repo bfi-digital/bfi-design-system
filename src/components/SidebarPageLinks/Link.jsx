@@ -64,7 +64,7 @@ const PageImage = styled.div`
 
 const CallToAction = styled(Link)`
     text-decoration: none;
-    color: ${theme.charcoal};
+    color: ${theme.black};
     display: block;
     max-height: 100px;
 

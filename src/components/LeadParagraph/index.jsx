@@ -4,7 +4,7 @@ import theme from "../_theme"
 import PropTypes from "prop-types"
 
 const Outer = styled.article`
-    color: ${theme.charcoal};
+    color: ${theme.black};
     line-height: 1.5;
     font-size: 1.0625rem;
     margin-bottom: 20px;

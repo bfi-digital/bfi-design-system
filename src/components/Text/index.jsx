@@ -5,7 +5,7 @@ import parse from "html-react-parser"
 import PropTypes from "prop-types"
 
 const Outer = styled.article`
-    color: ${theme.charcoal};
+    color: ${theme.black};
     line-height: 1.5;
     font-size: 1rem;
     @media screen and (min-width: ${theme.l}){

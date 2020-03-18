@@ -6,7 +6,7 @@ import PropTypes from "prop-types"
 const HeroH1 = styled.h1`
     font-family: "Archivo Black";
     text-transform: uppercase;
-    color: ${theme.charcoal};
+    color: ${theme.black};
     font-weight: 800;
     font-size: 1.875rem;
     @media screen and (min-width: ${theme.m}){
@@ -29,7 +29,7 @@ const H1 = styled(HeroH1)`
 `
 
 const H2 = styled.h2`
-    color: ${theme.charcoal};
+    color: ${theme.black};
     font-weight: 700;
     font-size: 1.375rem;
     margin-block-start: 1.5em;
@@ -44,7 +44,7 @@ const H2 = styled.h2`
 `
 
 const H3 = styled.h3`
-    color: ${theme.charcoal};
+    color: ${theme.black};
     font-weight: 700;
     font-size: 1.4375rem;
     margin-block-start: 1em;
@@ -57,7 +57,7 @@ const H3 = styled.h3`
 
 const H4 = styled.h4`
     font-family: "Open Sans";
-    color: ${theme.charcoal};
+    color: ${theme.black};
     font-weight: 700;
     font-size: 1rem;
     @media screen and (min-width: ${theme.m}){
@@ -70,7 +70,7 @@ const H4 = styled.h4`
 
 const H5 = styled.h5`
     font-family: "Open Sans";
-    color: ${theme.charcoal};
+    color: ${theme.black};
     font-weight: 600;
     font-size: 0.875rem;
     @media screen and (min-width: ${theme.m}){

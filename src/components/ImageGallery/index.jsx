@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import styled, { createGlobalStyle } from "styled-components"
 import theme from "../_theme"
 import { Dialog } from "@reach/dialog"
@@ -30,7 +30,7 @@ const DialogStyles = createGlobalStyle`
     }
 
     [data-reach-dialog-overlay] {
-        background: ${theme.charcoal}80;
+        background: ${theme.black}80;
         position: fixed;
         top: 0;
         right: 0;
@@ -60,7 +60,7 @@ const Outer = styled.figure`
 
 const Caption = styled.figcaption`
     text-align: center;
-    color: ${theme.charcoal};
+    color: ${theme.darkGrey};
     font-size: 0.9rem;
     max-width: 70%;
     margin: 0 auto;
@@ -72,6 +72,7 @@ const ImageHolder = styled.div`
             display: flex;
             flex-direction: row;
             align-items: flex-start;
+            flex-wrap: wrap;
         }
     ` : null}
 `
@@ -82,14 +83,18 @@ const Button = styled.button`
     cursor: pointer;
     padding: 0px;
     width: 100%;
+
     &:focus{
-        outline: 2px solid ${theme.primary};
+        outline: 3px solid ${theme.primary};
     }
     margin-bottom: 10px;
     @media screen and (min-width: ${theme.m}){
         margin-right: 10px;
         /* width: calc( 33.33% - 6.67px); */
-        &:last-of-type{
+        flex: 1 0 calc(25% - 10px);
+        max-width: 50%;
+
+        &:nth-child(4){
             margin-right: 0px;
         }
     }
@@ -100,71 +105,100 @@ const Image = styled.img`
     padding: 0;
     display: block;
     width: 100%;
-    ${props => !props.isClickable ? `
-        margin-bottom: 10px;
-        @media screen and (min-width: ${theme.m}){
-            margin-right: 10px;
-            &:last-of-type{
-                margin-right: 0px;
-            }
-        }
-    ` : null}
 `
 
 const BigImage = styled.img`
     width: auto;
     max-width: 100%;
     max-height: 90vh;
-    box-shadow: 0px 10px 40px ${theme.charcoal}50;
+    box-shadow: 0px 10px 40px ${theme.black}50;
 `
+
+const useKeyPress = function(targetKey) {
+    const [keyPressed, setKeyPressed] = useState(false)
+  
+    function downHandler({ key }) {
+        if (key === targetKey) {
+            setKeyPressed(true)
+        }
+    }
+
+    const upHandler = ({ key }) => {
+        if (key === targetKey) {
+            setKeyPressed(false)
+        }
+    }
+
+    React.useEffect(() => {
+        window.addEventListener("keydown", downHandler)
+        window.addEventListener("keyup", upHandler)
+
+        return () => {
+            window.removeEventListener("keydown", downHandler)
+            window.removeEventListener("keyup", upHandler)
+        }
+    })
+  
+    return keyPressed
+}
 
 export const ImageGallery = ({
     images,
-    caption,
-    lightbox
+    caption
 }) => {
-
-    const [ openImage, setOpenImage ] = useState(false)
+    const [ openImage, setOpenImage ] = useState(0)
+    const leftPress = useKeyPress("ArrowLeft")
+    const rightPress = useKeyPress("ArrowRight")
+    
+    useEffect(() => {
+        if (leftPress && openImage) {
+            if(openImage == 1) {
+                setOpenImage(images.length)
+            } else {
+                setOpenImage(openImage-1)
+            }
+        }
+    }, [leftPress])
+    useEffect(() => {
+        if (rightPress && openImage) {
+            if(openImage == images.length) {
+                setOpenImage(1)
+            } else {
+                setOpenImage(openImage+1)
+            }
+        }
+    }, [rightPress])
 
     return(
         <Outer>
             <ImageHolder number={images.length}>
-                {images.map((image, i) => lightbox ?                    
-                    <Button key={i} onClick={() => setOpenImage(image)}>
+                {images.map((image, i) =>                   
+                    <Button key={i} onClick={() => setOpenImage(i+1)}>
                         <Image
-                            isClickable
                             src={image.url}
                             alt={image.alt}
                         />
                     </Button>
-                    :
-                    <Image
-                        key={i}
-                        src={image.url}
-                        alt={image.alt}
-                    />
                 )}
             </ImageHolder>
             {caption && <Caption>{caption}</Caption>}
 
-            {lightbox &&
-                <>
-                    <DialogStyles/>
-                    <Dialog 
-                        aria-label="lightbox"
-                        isOpen={openImage} 
-                        onDismiss={() => setOpenImage(false)}
-                    >
-                        <VisuallyHidden>
-                            <button onClick={() => setOpenImage(false)}>Close</button>
-                        </VisuallyHidden>
-                        <BigImage
-                            src={openImage.url}
-                            alt={openImage.alt}
-                        />       
-                    </Dialog>
-                </>
-            }
+            <>
+                <DialogStyles/>
+                <Dialog 
+                    aria-label="lightbox"
+                    isOpen={openImage} 
+                    onDismiss={() => setOpenImage(0)}
+                >
+                    <VisuallyHidden>
+                        <button onClick={() => setOpenImage(0)}>Close</button>
+                    </VisuallyHidden>
+                    <BigImage
+                        src={images[openImage == 0 ? openImage : (openImage-1)].url}
+                        alt={images[openImage == 0 ? openImage : (openImage-1)].alt}
+                    />       
+                </Dialog>
+            </>
         </Outer>
     )
 }
@@ -179,12 +213,4 @@ ImageGallery.propTypes = {
 	 * Optionally, provide a text caption for the image/gallery
 	 **/
     caption: PropTypes.string,
-    /**
-	 * Say whether the images should be clickable, leading to a lightbox. True by default
-	 **/
-    ligthbox: PropTypes.bool,
-}
-
-ImageGallery.defaultProps = {
-    lightbox: true
 }

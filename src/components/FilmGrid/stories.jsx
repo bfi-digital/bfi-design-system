@@ -10,7 +10,7 @@ export default {
 
 export const normal = () =>
     <div style={{
-        padding: "20px",
+        padding: "10px",
         maxWidth: "1000px"
     }}>
         <FilmGrid films={demoFilms} allFilmsUrl="#"/>

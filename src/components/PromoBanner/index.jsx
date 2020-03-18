@@ -8,7 +8,7 @@ import { Button } from "../Button"
 
 const colorSchemes = [
     {
-        background: theme.charcoal,
+        background: theme.black,
         text: theme.white,
     },
 ]

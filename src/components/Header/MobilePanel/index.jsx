@@ -46,7 +46,7 @@ const Item = styled.li`
     &:hover {
         border-color: ${theme.darkGrey};
         button{
-            color: ${theme.charcoal} !important;
+            color: ${theme.black} !important;
         }
     }
 `
@@ -57,7 +57,7 @@ const ItemButton = styled.button`
     border: none;
     font-size: 1rem;
     font-weight: 600;
-    color: ${theme.charcoal};
+    color: ${theme.black};
     transition: color 0.1s;
     display: block;
     padding: 15px 0px;
@@ -85,12 +85,12 @@ const ChildItem = styled.li`
 
 const ChildLink = styled(Link)`
     display: block;
-    color: ${theme.charcoal};
+    color: ${theme.black};
     text-decoration: none;
     padding: 10px 0;
     transition: color 0.1s;
     &:hover{
-        color: ${theme.charcoal} !important;
+        color: ${theme.black} !important;
     }
     &:focus {
         // border-radius: 7px;

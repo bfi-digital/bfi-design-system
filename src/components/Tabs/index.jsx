@@ -29,7 +29,7 @@ const Button = styled.button`
     text-decoration: none;
     cursor: pointer;
     font-size: 1rem;
-    color: ${props => props.active ? theme.dark : theme.charcoal};
+    color: ${props => props.active ? theme.dark : theme.black};
     &:hover{
         color: ${theme.darkGrey};
     }
@@ -37,13 +37,13 @@ const Button = styled.button`
         border: 0;
     }
     &:focus{
-        color: ${theme.charcoal};
+        color: ${theme.black};
         outline: none;
         background: ${theme.lightest};
         box-shadow: 0px 0px 0px 5px ${theme.lightest};
     }
     &:active{
-        color: ${theme.charcoal};
+        color: ${theme.black};
     }
     pointer-events: ${props => props.active ? "none" : null};
 `

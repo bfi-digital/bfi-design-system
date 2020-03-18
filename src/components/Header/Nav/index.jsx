@@ -31,7 +31,7 @@ const Item = styled.li`
 const ItemLink = styled(Link)`
     display: block;
     padding: 21px 15px;
-    color: ${props => props.isWhite ? (props.isSticky ? theme.charcoal : theme.white) : theme.charcoal};
+    color: ${props => props.isWhite ? (props.isSticky ? theme.black : theme.white) : theme.black};
     text-decoration: none;
     position: relative;
     &:after{
@@ -41,7 +41,7 @@ const ItemLink = styled(Link)`
         bottom: 15px;
         display: block;
         content: "";
-        border-bottom: ${props => props.active ? `2px solid ${props.isWhite ? (props.isSticky ? theme.charcoal : theme.white) : theme.charcoal}` : ""};
+        border-bottom: ${props => props.active ? `2px solid ${props.isWhite ? (props.isSticky ? theme.black : theme.white) : theme.black}` : ""};
         @media screen and (min-width: ${theme.l}){
             bottom: 17px;
         }
@@ -101,12 +101,12 @@ const ChildItem = styled.li`
 `
 
 const ChildLink = styled(Link)`
-    color: ${theme.charcoal};
+    color: ${theme.black};
     text-decoration: none;
     padding: 10px 13px;
     display: inline-block;
     &:hover {
-        color: ${theme.charcoal} !important;
+        color: ${theme.black} !important;
     }
     @media screen and (min-width: ${theme.l}){
         padding: 15px 17px;

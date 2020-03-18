@@ -9,7 +9,7 @@ const colorSchemes = [
         shadow: theme.primary,
         hoverBackground: theme.darkGrey,
         text: theme.white,
-        background: theme.charcoal,
+        background: theme.black,
         focusShadow: theme.highlight,
         // Secondary button only
         focus: theme.highlight
@@ -17,7 +17,7 @@ const colorSchemes = [
     {
         shadow: theme.primary,
         hoverBackground: theme.lightest,
-        text: theme.charcoal,
+        text: theme.black,
         background: theme.white,
         focusShadow: theme.dark,
         // Secondary button only
@@ -53,8 +53,8 @@ const PrimaryButton = styled(Link)`
 `
 
 const SecondaryButton = styled(Link)`
-    border: 2px solid ${theme.charcoal};
-    color: ${theme.charcoal};
+    border: 2px solid ${theme.black};
+    color: ${theme.black};
     font-weight: bold;
     // border-radius: 5px;
     font-size: 1rem;
@@ -71,13 +71,13 @@ const SecondaryButton = styled(Link)`
     }
     &:active{
         color: ${theme.white};
-        background: ${theme.charcoal}
+        background: ${theme.black}
     }
 `
 
 const TertiaryButton = styled(Link)`
-    border: 2px solid ${theme.charcoal};
-    color: ${theme.charcoal};
+    border: 2px solid ${theme.black};
+    color: ${theme.black};
     font-weight: bold;
     // border-radius: 5px;
     font-size: 1rem;
@@ -98,7 +98,7 @@ const TertiaryButton = styled(Link)`
     }
     &:active{
         color: ${theme.white};
-        background: ${theme.charcoal}
+        background: ${theme.black}
     }
 `
 

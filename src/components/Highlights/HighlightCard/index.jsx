@@ -46,7 +46,7 @@ const Description = styled.p`
 `
 
 const CallToAction = styled(LinkSwitch)`
-    background: ${theme.charcoal};
+    background: ${theme.black};
     display: block;
     font-weight: bold;
     color: ${theme.white};

@@ -8,7 +8,7 @@ const Outer = styled.div`
     &:after, 
     &:before, 
     div {
-        background-color: ${theme.charcoal};
+        background-color: ${theme.black};
         // border-radius: 3px;
         content: '';
         display: block;

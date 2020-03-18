@@ -56,9 +56,10 @@ export const leftAndBig = () =>
 export const rightAndSmall = () =>
     <div style={{padding: "20px"}}>
         <Image
+            isClickable={true}
             side="right"
             alt="Alt text"
-            src="http://placehold.it/200x200"
+            src="http://placehold.it/250x200"
             caption="Example image caption"
         />
         <Text

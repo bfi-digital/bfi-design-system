@@ -14,7 +14,7 @@ const Button = styled.button`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    color: ${theme.charcoal};
+    color: ${theme.black};
     @media screen and (min-width: ${theme.m}){
         display: none;
     }

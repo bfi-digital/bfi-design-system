@@ -6,7 +6,7 @@ import PropTypes from "prop-types"
 
 const Outer = styled.ol`
     list-style: none;
-    color: ${theme.charcoal};
+    color: ${theme.black};
     font-size: 0.9rem;
     padding-left: 0px;
     line-height: 1.5;

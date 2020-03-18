@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import theme from "../_theme"
 import logo from "./logo.svg"
-import lotteryLogo from "./lottery-logo.svg"
+import LotteryLogo from "./lottery-logo.jsx"
 import { LinkSwitch as Link } from "../LinkSwitch"
 import PropTypes from "prop-types"
 import parse from "html-react-parser"
@@ -14,7 +14,7 @@ import instagram from "./instagram.svg"
 
 const Outer = styled.footer`
     padding: 40px 0px 20px 0px;
-    background: ${theme.charcoal};
+    background: ${theme.black};
     color: ${theme.white};
 `
 
@@ -95,10 +95,6 @@ const linkStyles = `
     }
 `
 
-const LotteryImg = styled.img`
-    max-width: 90px;
-`
-
 const MenuItem = styled(Link)`${linkStyles}`
 
 const ExternalMenuItem = styled.a`${linkStyles}`
@@ -145,7 +141,8 @@ export const Footer = ({
                 </Menu>
             </TopRow>
             <BottomRow>
-                <LotteryImg src={lotteryLogo} alt="The BFI recieves National Lottery funding"/>
+                <LotteryLogo colourFill={theme.white} alt="The BFI recieves National Lottery funding" />
+
                 <Copyright>{parse(copyrightText)}</Copyright>
             </BottomRow>
         </Inner>

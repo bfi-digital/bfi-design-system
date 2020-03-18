@@ -20,6 +20,14 @@ const demoData = [
         url: "http://placehold.it/600x400",
         alt: "Example image 3"
     },
+    {
+        url: "http://placehold.it/600x400",
+        alt: "Example image 4"
+    },
+    {
+        url: "http://placehold.it/600x400",
+        alt: "Example image 5"
+    },
 ]
 
 export const normal = () =>
@@ -28,21 +36,9 @@ export const normal = () =>
         maxWidth: "1000px",
         margin: "0 auto"
     }}>    
+        
         <ImageGallery 
             images={demoData}
-            caption="A gallery of three images"
-        />
-    </div>
-
-export const notClickable = () =>
-    <div style={{
-        padding: "20px",
-        maxWidth: "1000px",
-        margin: "0 auto"
-    }}>    
-        <ImageGallery 
-            images={demoData}
-            caption="A gallery of three images"
-            lightbox={false}
+            caption="A gallery of images"
         />
     </div>
