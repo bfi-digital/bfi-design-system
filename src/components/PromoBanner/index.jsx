@@ -88,7 +88,8 @@ export const PromoBanner = ({
     colorScheme,
     backgroundColor,
     secondImage,
-    secondImageAlt
+    secondImageAlt,
+    external
 }) =>
     <Outer 
         reversed={reversed} 
@@ -105,7 +106,7 @@ export const PromoBanner = ({
             <Headline level={2} text={headline}/>
             <Description>{description}</Description>
             {callToActionUrl && 
-                <Button to={callToActionUrl} colorScheme={1}>
+                <Button to={callToActionUrl} colorScheme={1} external={external}>
                     {callToActionTitle}
                 </Button>
             }
@@ -138,4 +139,6 @@ PromoBanner.propTypes = {
     secondImage: PropTypes.string,
     // Alt text for opitonal second image
     secondImageAltText: PropTypes.string,
+    // Boolean for whether link is external. Default is false
+    external: PropTypes.external
 }
