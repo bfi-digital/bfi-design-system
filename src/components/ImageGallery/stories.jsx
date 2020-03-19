@@ -10,23 +10,28 @@ export default {
 const demoData = [
     {
         url: "http://placehold.it/300x200",
-        alt: "Example image"
+        alt: "Example image",
+        caption: "Example image"
     },
     {
         url: "http://placehold.it/200x300",
-        alt: "Example image 2"
+        alt: "Example image 2",
+        caption: "Example image 2"
     },
     {
         url: "http://placehold.it/600x400",
-        alt: "Example image 3"
+        alt: "Example image 3",
+        caption: "Example image 3"
     },
     {
         url: "http://placehold.it/600x400",
-        alt: "Example image 4"
+        alt: "Example image 4",
+        caption: "Example image 4"
     },
     {
         url: "http://placehold.it/600x400",
-        alt: "Example image 5"
+        alt: "Example image 5",
+        caption: "Example image 5"
     },
 ]
 
@@ -39,6 +44,6 @@ export const normal = () =>
         
         <ImageGallery 
             images={demoData}
-            caption="A gallery of images"
+            galleryCaption="A gallery of images"
         />
     </div>

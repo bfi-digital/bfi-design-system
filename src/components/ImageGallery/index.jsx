@@ -63,7 +63,7 @@ const Outer = styled.figure`
 
 const Caption = styled.figcaption`
     text-align: center;
-    color: ${theme.darkGrey};
+    color: ${props => props.white ? theme.white : theme.darkGrey};
     font-size: 0.9rem;
     max-width: 70%;
     margin: 0 auto;
@@ -167,7 +167,7 @@ const useKeyPress = function(targetKey) {
 
 export const ImageGallery = ({
     images,
-    caption
+    galleryCaption
 }) => {
     const [ openImage, setOpenImage ] = useState(0)
     const leftPress = useKeyPress("ArrowLeft")
@@ -204,7 +204,7 @@ export const ImageGallery = ({
                     </Button>
                 )}
             </ImageHolder>
-            {caption && <Caption>{caption}</Caption>}
+            {galleryCaption && <Caption>{galleryCaption}</Caption>}
 
             <>
                 <DialogStyles/>
@@ -220,6 +220,10 @@ export const ImageGallery = ({
                         src={images[openImage == 0 ? openImage : (openImage-1)].url}
                         alt={images[openImage == 0 ? openImage : (openImage-1)].alt}
                     />       
+                    {images[openImage == 0 ? openImage : (openImage-1)].caption &&
+                        <Caption white={true}>{images[openImage == 0 ? openImage : (openImage-1)].caption}</Caption>
+                    }
+
                 </Dialog>
             </>
         </Outer>
@@ -233,7 +237,7 @@ ImageGallery.propTypes = {
 	 **/
     images: PropTypes.array,
     /**
-	 * Optionally, provide a text caption for the image/gallery
+	 * Optionally, provide a text caption for the full gallery
 	 **/
-    caption: PropTypes.string,
+    galleryCaption: PropTypes.string,
 }
