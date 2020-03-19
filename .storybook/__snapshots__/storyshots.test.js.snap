@@ -2452,7 +2452,7 @@ exports[`Storyshots All Components/Image Full Width 1`] = `
       src="http://placehold.it/1440x768"
     />
     <figcaption
-      className="sc-hrWEMg eFQUsF"
+      className="sc-hrWEMg iszkkY"
     >
       Example image caption
     </figcaption>
@@ -2556,7 +2556,7 @@ exports[`Storyshots All Components/Image Left And Big 1`] = `
       src="http://placehold.it/600x400"
     />
     <figcaption
-      className="sc-hrWEMg eFQUsF"
+      className="sc-hrWEMg iszkkY"
     >
       Example image caption
     </figcaption>
@@ -2655,7 +2655,7 @@ exports[`Storyshots All Components/Image Right And Small 1`] = `
     className="sc-iQKALj hJmpAp"
   >
     <button
-      className="sc-eTuwsz kDcDNZ"
+      className="sc-eTuwsz fAKcwy"
       onClick={[Function]}
     >
       <img
@@ -2665,7 +2665,7 @@ exports[`Storyshots All Components/Image Right And Small 1`] = `
       />
     </button>
     <figcaption
-      className="sc-hrWEMg eFQUsF"
+      className="sc-hrWEMg iszkkY"
     >
       Example image caption
     </figcaption>
@@ -2769,7 +2769,7 @@ exports[`Storyshots All Components/ImageGallery Normal 1`] = `
       className="sc-bsbRJL fSJeDT"
     >
       <button
-        className="sc-hZSUBg buhqjY"
+        className="sc-hZSUBg cXqIwa"
         onClick={[Function]}
       >
         <img
@@ -2779,7 +2779,7 @@ exports[`Storyshots All Components/ImageGallery Normal 1`] = `
         />
       </button>
       <button
-        className="sc-hZSUBg buhqjY"
+        className="sc-hZSUBg cXqIwa"
         onClick={[Function]}
       >
         <img
@@ -2789,7 +2789,7 @@ exports[`Storyshots All Components/ImageGallery Normal 1`] = `
         />
       </button>
       <button
-        className="sc-hZSUBg buhqjY"
+        className="sc-hZSUBg cXqIwa"
         onClick={[Function]}
       >
         <img
@@ -2799,7 +2799,7 @@ exports[`Storyshots All Components/ImageGallery Normal 1`] = `
         />
       </button>
       <button
-        className="sc-hZSUBg buhqjY"
+        className="sc-hZSUBg cXqIwa"
         onClick={[Function]}
       >
         <img
@@ -2809,7 +2809,7 @@ exports[`Storyshots All Components/ImageGallery Normal 1`] = `
         />
       </button>
       <button
-        className="sc-hZSUBg buhqjY"
+        className="sc-hZSUBg cXqIwa"
         onClick={[Function]}
       >
         <img
@@ -2820,7 +2820,7 @@ exports[`Storyshots All Components/ImageGallery Normal 1`] = `
       </button>
     </div>
     <figcaption
-      className="sc-iQNlJl ewWIJQ"
+      className="sc-iQNlJl kCNfcM"
     >
       A gallery of images
     </figcaption>

@@ -41,6 +41,9 @@ const DialogStyles = createGlobalStyle`
         justify-content: center;
         align-items: center;
         animation: fadeIn 0.1s ease-out; 
+        &:hover {
+            cursor: zoom-out;
+        }
     }
     [data-reach-dialog-content] {
         margin: 5vw;
@@ -64,6 +67,10 @@ const Caption = styled.figcaption`
     font-size: 0.9rem;
     max-width: 70%;
     margin: 0 auto;
+    display: block;
+    &:hover {
+        cursor: default;
+    }
 `
 
 const ImageHolder = styled.div`
@@ -79,11 +86,24 @@ const ImageHolder = styled.div`
 
 const Button = styled.button`
     border: none;
-    background: none;
+    background: ${theme.highlight};
     cursor: pointer;
     padding: 0px;
     width: 100%;
 
+    img {
+        -webkit-transition: all ease 0.3s;
+        -moz-transition: all ease 0.3s;
+        -o-transition: all ease 0.3s;
+        transition: all ease 0.3s;
+    }
+    &:hover {
+        cursor: zoom-in;
+        img {
+            filter: grayscale(100%) contrast(1) blur(0px);
+            mix-blend-mode: multiply;
+        }
+    }
     &:focus{
         outline: 3px solid ${theme.primary};
     }
@@ -112,6 +132,9 @@ const BigImage = styled.img`
     max-width: 100%;
     max-height: 90vh;
     box-shadow: 0px 10px 40px ${theme.black}50;
+    &:hover {
+        cursor: default;
+    }
 `
 
 const useKeyPress = function(targetKey) {
