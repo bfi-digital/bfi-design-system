@@ -146,6 +146,12 @@ export const StepByStep = ({
 }
 
 StepByStep.propTypes = {
+    /** 
+	 * Title of the whole step by step slice.
+	 **/
     title: PropTypes.string,
+    /** 
+	 * An array containing the steps, each has a `title` and a `description`, with the description being able to parse HTML so it can contain links and paragraphs.
+	 **/
     steps: PropTypes.array
 }

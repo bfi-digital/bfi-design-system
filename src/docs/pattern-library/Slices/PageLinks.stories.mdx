@@ -10,16 +10,28 @@ import four, { three } from "../../../components/PageLinks/data"
 ## Examples
 
 <Preview>
-    <Story name="Page Links">
-        <PageLinks links={[
-            ...four, ...four
-        ]} blockTitle="Related pages" />
+    <Story name="Three Page Links">
+        <PageLinks links={three} />
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="Four Page Links">
+        <PageLinks links={four} />
     </Story>
 </Preview>
 
 <Preview>
     <Story name="Page Links with images">
         <PageLinks links={four} withImages={true} />
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="Eight page Links">
+        <PageLinks links={[
+            ...four, ...four
+        ]} />
     </Story>
 </Preview>
 

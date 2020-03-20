@@ -65,9 +65,14 @@ PageLinks.propTypes = {
     /** 
 	 * A number which selects the colour scheme of the page links slice, dependant on the pillar the page/post is within.
 	 **/
-    colorScheme: PropTypes.number
+    colorScheme: PropTypes.number,
+    /** 
+	 * Option to show pagelinks with images - if shown, there will not be a description.
+	 **/
+    withImages: PropTypes.bool
 }
 
 PageLinks.defaultProps = {
-    colorScheme: 0
+    colorScheme: 0,
+    withImages: false
 }
