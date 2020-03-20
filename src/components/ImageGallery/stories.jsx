@@ -15,8 +15,7 @@ const demoData = [
     },
     {
         url: "http://placehold.it/200x300",
-        alt: "Example image 2",
-        caption: "Example image 2"
+        alt: "Example image 2"
     },
     {
         url: "http://placehold.it/600x400",
