@@ -121,6 +121,7 @@ exports[`Storyshots All Components/Button Primary 1`] = `
     colorScheme={0}
     href="/#"
     onClick={[Function]}
+    title="Click me"
   >
     Click me
   </a>
@@ -140,6 +141,7 @@ exports[`Storyshots All Components/Button Secondary 1`] = `
     colorScheme={0}
     href="/#"
     onClick={[Function]}
+    title="Click me"
   >
     Click me
   </a>
@@ -159,6 +161,7 @@ exports[`Storyshots All Components/Button Tertiary 1`] = `
     colorScheme={0}
     href="/#"
     onClick={[Function]}
+    title="Click me"
   >
     Click me
   </a>
@@ -602,6 +605,7 @@ exports[`Storyshots All Components/FilmGrid Normal 1`] = `
       colorScheme={0}
       href="/#"
       onClick={[Function]}
+      title="See more films"
     >
       See more films
     </a>
@@ -639,7 +643,6 @@ exports[`Storyshots All Components/FilmShowings Sold Out 1`] = `
         <span
           className="sc-brqgnP ccQTyn"
         >
-          7:00pm
            - Sold out
         </span>
       </li>
@@ -649,7 +652,6 @@ exports[`Storyshots All Components/FilmShowings Sold Out 1`] = `
         <span
           className="sc-brqgnP ccQTyn"
         >
-          7:00pm
            - Sold out
         </span>
       </li>
@@ -690,7 +692,8 @@ exports[`Storyshots All Components/FilmShowings Two Showings 1`] = `
           colorScheme={0}
           href="/#"
           onClick={[Function]}
-          title="3:30pm"
+          time="3:30pm"
+          title="Book this at BFI Southbank"
         >
           3:30pm
         </a>
@@ -703,7 +706,8 @@ exports[`Storyshots All Components/FilmShowings Two Showings 1`] = `
           colorScheme={0}
           href="/#"
           onClick={[Function]}
-          title="6:30pm"
+          time="6:30pm"
+          title="Book this at BFI Southbank"
         >
           6:30pm
         </a>
@@ -1961,6 +1965,7 @@ exports[`Storyshots All Components/Highlights Normal 1`] = `
             colorScheme={1}
             href="/#"
             onClick={[Function]}
+            title="Explore the programme"
           >
             Explore the programme
           </a>
@@ -2039,9 +2044,7 @@ exports[`Storyshots All Components/Highlights Normal 1`] = `
                   href="/#"
                   onClick={[Function]}
                   title="3:30pm"
-                >
-                  3:30pm
-                </a>
+                />
               </li>
               <li
                 className="sc-jWBwVP hzigEZ"
@@ -2052,9 +2055,7 @@ exports[`Storyshots All Components/Highlights Normal 1`] = `
                   href="/#"
                   onClick={[Function]}
                   title="6:30pm"
-                >
-                  6:30pm
-                </a>
+                />
               </li>
               <li
                 className="sc-jWBwVP hzigEZ"
@@ -2062,7 +2063,6 @@ exports[`Storyshots All Components/Highlights Normal 1`] = `
                 <span
                   className="sc-brqgnP ccQTyn"
                 >
-                  8:45pm
                    - Sold out
                 </span>
               </li>
@@ -2090,7 +2090,6 @@ exports[`Storyshots All Components/Highlights Normal 1`] = `
                 <span
                   className="sc-brqgnP ccQTyn"
                 >
-                  3:30pm
                    - Sold out
                 </span>
               </li>
@@ -2103,9 +2102,7 @@ exports[`Storyshots All Components/Highlights Normal 1`] = `
                   href="/#"
                   onClick={[Function]}
                   title="6:30pm"
-                >
-                  6:30pm
-                </a>
+                />
               </li>
             </ul>
           </div>
@@ -2131,7 +2128,6 @@ exports[`Storyshots All Components/Highlights Normal 1`] = `
                 <span
                   className="sc-brqgnP ccQTyn"
                 >
-                  3:30pm
                    - Sold out
                 </span>
               </li>
@@ -2144,9 +2140,7 @@ exports[`Storyshots All Components/Highlights Normal 1`] = `
                   href="/#"
                   onClick={[Function]}
                   title="6:30pm"
-                >
-                  6:30pm
-                </a>
+                />
               </li>
             </ul>
           </div>
@@ -2172,7 +2166,6 @@ exports[`Storyshots All Components/Highlights Normal 1`] = `
                 <span
                   className="sc-brqgnP ccQTyn"
                 >
-                  3:30pm
                    - Sold out
                 </span>
               </li>
@@ -2182,7 +2175,6 @@ exports[`Storyshots All Components/Highlights Normal 1`] = `
                 <span
                   className="sc-brqgnP ccQTyn"
                 >
-                  6:30pm
                    - Sold out
                 </span>
               </li>
@@ -2195,6 +2187,7 @@ exports[`Storyshots All Components/Highlights Normal 1`] = `
         colorScheme={0}
         href="/#"
         onClick={[Function]}
+        title="All showings"
       >
         All showings
       </a>
@@ -2271,9 +2264,7 @@ exports[`Storyshots All Components/Highlights Normal 1`] = `
                   href="/#"
                   onClick={[Function]}
                   title="3:30pm"
-                >
-                  3:30pm
-                </a>
+                />
               </li>
               <li
                 className="sc-jWBwVP hzigEZ"
@@ -2284,9 +2275,7 @@ exports[`Storyshots All Components/Highlights Normal 1`] = `
                   href="/#"
                   onClick={[Function]}
                   title="6:30pm"
-                >
-                  6:30pm
-                </a>
+                />
               </li>
               <li
                 className="sc-jWBwVP hzigEZ"
@@ -2294,7 +2283,6 @@ exports[`Storyshots All Components/Highlights Normal 1`] = `
                 <span
                   className="sc-brqgnP ccQTyn"
                 >
-                  8:45pm
                    - Sold out
                 </span>
               </li>
@@ -2322,7 +2310,6 @@ exports[`Storyshots All Components/Highlights Normal 1`] = `
                 <span
                   className="sc-brqgnP ccQTyn"
                 >
-                  3:30pm
                    - Sold out
                 </span>
               </li>
@@ -2335,9 +2322,7 @@ exports[`Storyshots All Components/Highlights Normal 1`] = `
                   href="/#"
                   onClick={[Function]}
                   title="6:30pm"
-                >
-                  6:30pm
-                </a>
+                />
               </li>
             </ul>
           </div>
@@ -2363,7 +2348,6 @@ exports[`Storyshots All Components/Highlights Normal 1`] = `
                 <span
                   className="sc-brqgnP ccQTyn"
                 >
-                  3:30pm
                    - Sold out
                 </span>
               </li>
@@ -2376,9 +2360,7 @@ exports[`Storyshots All Components/Highlights Normal 1`] = `
                   href="/#"
                   onClick={[Function]}
                   title="6:30pm"
-                >
-                  6:30pm
-                </a>
+                />
               </li>
             </ul>
           </div>
@@ -2404,7 +2386,6 @@ exports[`Storyshots All Components/Highlights Normal 1`] = `
                 <span
                   className="sc-brqgnP ccQTyn"
                 >
-                  3:30pm
                    - Sold out
                 </span>
               </li>
@@ -2414,7 +2395,6 @@ exports[`Storyshots All Components/Highlights Normal 1`] = `
                 <span
                   className="sc-brqgnP ccQTyn"
                 >
-                  6:30pm
                    - Sold out
                 </span>
               </li>
@@ -2427,6 +2407,7 @@ exports[`Storyshots All Components/Highlights Normal 1`] = `
         colorScheme={0}
         href="/#"
         onClick={[Function]}
+        title="All showings"
       >
         All showings
       </a>
@@ -3749,6 +3730,7 @@ exports[`Storyshots All Components/PromoBanner Normal 1`] = `
         colorScheme={1}
         href="/#"
         onClick={[Function]}
+        title="Find out more"
       >
         Find out more
       </a>
@@ -3791,6 +3773,7 @@ exports[`Storyshots All Components/PromoBanner Reversed Without Second Image 1`]
         colorScheme={1}
         href="/#"
         onClick={[Function]}
+        title="Find out more"
       >
         Find out more
       </a>
@@ -4708,6 +4691,7 @@ Array [
                 colorScheme={1}
                 href="/#"
                 onClick={[Function]}
+                title="Explore the programme"
               >
                 Explore the programme
               </a>
@@ -4786,9 +4770,7 @@ Array [
                       href="/#"
                       onClick={[Function]}
                       title="3:30pm"
-                    >
-                      3:30pm
-                    </a>
+                    />
                   </li>
                   <li
                     className="sc-jWBwVP hzigEZ"
@@ -4799,9 +4781,7 @@ Array [
                       href="/#"
                       onClick={[Function]}
                       title="6:30pm"
-                    >
-                      6:30pm
-                    </a>
+                    />
                   </li>
                   <li
                     className="sc-jWBwVP hzigEZ"
@@ -4809,7 +4789,6 @@ Array [
                     <span
                       className="sc-brqgnP ccQTyn"
                     >
-                      8:45pm
                        - Sold out
                     </span>
                   </li>
@@ -4837,7 +4816,6 @@ Array [
                     <span
                       className="sc-brqgnP ccQTyn"
                     >
-                      3:30pm
                        - Sold out
                     </span>
                   </li>
@@ -4850,9 +4828,7 @@ Array [
                       href="/#"
                       onClick={[Function]}
                       title="6:30pm"
-                    >
-                      6:30pm
-                    </a>
+                    />
                   </li>
                 </ul>
               </div>
@@ -4878,7 +4854,6 @@ Array [
                     <span
                       className="sc-brqgnP ccQTyn"
                     >
-                      3:30pm
                        - Sold out
                     </span>
                   </li>
@@ -4891,9 +4866,7 @@ Array [
                       href="/#"
                       onClick={[Function]}
                       title="6:30pm"
-                    >
-                      6:30pm
-                    </a>
+                    />
                   </li>
                 </ul>
               </div>
@@ -4919,7 +4892,6 @@ Array [
                     <span
                       className="sc-brqgnP ccQTyn"
                     >
-                      3:30pm
                        - Sold out
                     </span>
                   </li>
@@ -4929,7 +4901,6 @@ Array [
                     <span
                       className="sc-brqgnP ccQTyn"
                     >
-                      6:30pm
                        - Sold out
                     </span>
                   </li>
@@ -4942,6 +4913,7 @@ Array [
             colorScheme={0}
             href="/#"
             onClick={[Function]}
+            title="All showings"
           >
             All showings
           </a>
@@ -5018,9 +4990,7 @@ Array [
                       href="/#"
                       onClick={[Function]}
                       title="3:30pm"
-                    >
-                      3:30pm
-                    </a>
+                    />
                   </li>
                   <li
                     className="sc-jWBwVP hzigEZ"
@@ -5031,9 +5001,7 @@ Array [
                       href="/#"
                       onClick={[Function]}
                       title="6:30pm"
-                    >
-                      6:30pm
-                    </a>
+                    />
                   </li>
                   <li
                     className="sc-jWBwVP hzigEZ"
@@ -5041,7 +5009,6 @@ Array [
                     <span
                       className="sc-brqgnP ccQTyn"
                     >
-                      8:45pm
                        - Sold out
                     </span>
                   </li>
@@ -5069,7 +5036,6 @@ Array [
                     <span
                       className="sc-brqgnP ccQTyn"
                     >
-                      3:30pm
                        - Sold out
                     </span>
                   </li>
@@ -5082,9 +5048,7 @@ Array [
                       href="/#"
                       onClick={[Function]}
                       title="6:30pm"
-                    >
-                      6:30pm
-                    </a>
+                    />
                   </li>
                 </ul>
               </div>
@@ -5110,7 +5074,6 @@ Array [
                     <span
                       className="sc-brqgnP ccQTyn"
                     >
-                      3:30pm
                        - Sold out
                     </span>
                   </li>
@@ -5123,9 +5086,7 @@ Array [
                       href="/#"
                       onClick={[Function]}
                       title="6:30pm"
-                    >
-                      6:30pm
-                    </a>
+                    />
                   </li>
                 </ul>
               </div>
@@ -5151,7 +5112,6 @@ Array [
                     <span
                       className="sc-brqgnP ccQTyn"
                     >
-                      3:30pm
                        - Sold out
                     </span>
                   </li>
@@ -5161,7 +5121,6 @@ Array [
                     <span
                       className="sc-brqgnP ccQTyn"
                     >
-                      6:30pm
                        - Sold out
                     </span>
                   </li>
@@ -5174,6 +5133,7 @@ Array [
             colorScheme={0}
             href="/#"
             onClick={[Function]}
+            title="All showings"
           >
             All showings
           </a>
@@ -5404,6 +5364,7 @@ Array [
           colorScheme={0}
           href="/#"
           onClick={[Function]}
+          title="See more films"
         >
           See more films
         </a>
@@ -7114,6 +7075,7 @@ Array [
         colorScheme={0}
         href="/#"
         onClick={[Function]}
+        title="Apply for funding"
       >
         Apply for funding
       </a>
@@ -7856,6 +7818,7 @@ Array [
         colorScheme={0}
         href="/#"
         onClick={[Function]}
+        title="Buy tickets"
       >
         Buy tickets
       </a>
@@ -7864,6 +7827,15 @@ Array [
         colorScheme={0}
         href="/#"
         onClick={[Function]}
+        title={
+          Array [
+            "Watch on BFI Player",
+            <ForwardRef(styled.img)
+              alt=""
+              src="test-file-stub"
+            />,
+          ]
+        }
       >
         Watch on BFI Player
         <img
@@ -7959,9 +7931,7 @@ Array [
                 href="/#"
                 onClick={[Function]}
                 title="3:30pm"
-              >
-                3:30pm
-              </a>
+              />
             </li>
             <li
               className="sc-jWBwVP hzigEZ"
@@ -7972,9 +7942,7 @@ Array [
                 href="/#"
                 onClick={[Function]}
                 title="6:30pm"
-              >
-                6:30pm
-              </a>
+              />
             </li>
             <li
               className="sc-jWBwVP hzigEZ"
@@ -7982,7 +7950,6 @@ Array [
               <span
                 className="sc-brqgnP ccQTyn"
               >
-                8:45pm
                  - Sold out
               </span>
             </li>
@@ -8005,7 +7972,6 @@ Array [
               <span
                 className="sc-brqgnP ccQTyn"
               >
-                3:30pm
                  - Sold out
               </span>
             </li>
@@ -8018,9 +7984,7 @@ Array [
                 href="/#"
                 onClick={[Function]}
                 title="6:30pm"
-              >
-                6:30pm
-              </a>
+              />
             </li>
           </ul>
         </div>
@@ -8041,7 +8005,6 @@ Array [
               <span
                 className="sc-brqgnP ccQTyn"
               >
-                3:30pm
                  - Sold out
               </span>
             </li>
@@ -8054,9 +8017,7 @@ Array [
                 href="/#"
                 onClick={[Function]}
                 title="6:30pm"
-              >
-                6:30pm
-              </a>
+              />
             </li>
           </ul>
         </div>
@@ -8077,7 +8038,6 @@ Array [
               <span
                 className="sc-brqgnP ccQTyn"
               >
-                3:30pm
                  - Sold out
               </span>
             </li>
@@ -8087,7 +8047,6 @@ Array [
               <span
                 className="sc-brqgnP ccQTyn"
               >
-                6:30pm
                  - Sold out
               </span>
             </li>
@@ -8099,6 +8058,7 @@ Array [
         colorScheme={0}
         href="/#"
         onClick={[Function]}
+        title="All showings"
       >
         All showings
       </a>

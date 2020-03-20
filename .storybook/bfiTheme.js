@@ -3,8 +3,8 @@ import { create } from '@storybook/theming/create';
 export default create({
   base: 'light',
 
-  colorPrimary: 'rgb(240, 197, 200)',
-  colorSecondary: 'rgb(137, 93, 96)',
+  colorPrimary: 'rgb(184, 15, 9)',
+  colorSecondary: 'rgb(93, 25, 19)',
 
   // UI
   appBg: 'rgb(246, 246, 246)',
@@ -17,9 +17,9 @@ export default create({
 //   fontCode: 'monospace',
 
   // Text colors
-  textColor: 'rgb(28, 28, 28)',
+  textColor: 'rgb(18, 12, 13)',
   textInverseColor: 'rgb(255,255,255)',
-  linkColor: 'rgb(240, 197, 200)',
+  linkColor: 'rgb(237, 55, 50)',
 
   // Toolbar default and active colors
 //   barTextColor: 'silver',
