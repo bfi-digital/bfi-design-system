@@ -7,8 +7,8 @@ import Arrow from "./arrow-right"
 
 const Outer = styled.li`
     position: relative;
-    background: ${props => props.withImages ? theme.grey : theme.lightest};
-    box-shadow: -5px 5px 0px ${theme.primary};
+    background: ${props => props.withImages ? theme.grey : theme.lightGrey};
+    box-shadow: 0px 5px 0px ${theme.primary};
     padding: 25px;
     margin-bottom: 35px;
     // border-radius: 10px;
@@ -25,7 +25,7 @@ const Outer = styled.li`
     }
     h4{
         margin-top: 0;
-        color: ${theme.primary};
+        color: ${theme.black};
         margin-bottom: 20px;
     }
     &:hover, &:focus-within {
@@ -42,13 +42,13 @@ const Outer = styled.li`
         transition: box-shadow .3s;
     }
     &:active{
-        box-shadow: -2px 2px 0px ${theme.primary};
-        transform: translate(-3px, 3px);
+        box-shadow: 0px 1px 0px ${theme.primary};
+        transform: translate(0px, 3px);
     }
 `
 
 const Description = styled.p`
-    color: ${theme.primary};
+    color: ${theme.black};
     margin-bottom: 35px;
     line-height: 1.5;
 `
@@ -56,7 +56,7 @@ const Description = styled.p`
 const CallToAction = styled(Link)`
     margin-top: auto;
     text-decoration: none;
-    color: ${theme.primary};
+    color: ${theme.black};
     font-weight: bold;
     &:after{
         content: "";
@@ -127,7 +127,7 @@ export const PageLink = ({
         }
         <CallToAction external={external} to={url}>
             {callToAction}
-            <Icon><Arrow colourFill={theme.primary} /></Icon>
+            <Icon><Arrow colourFill={theme.black} /></Icon>
         </CallToAction>
     </Outer>
 
