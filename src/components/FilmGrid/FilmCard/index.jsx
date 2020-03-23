@@ -92,7 +92,7 @@ export const FilmCard = ({
 }) =>
     <Outer to={url}>
         <ImageContainer>
-            <Image src={image480x270 != "" ? image480x270 : placeholderImage} alt={imageAltText}/>
+            <Image src={image480x270 != "" ? image480x270 : placeholderImage} alt=""/>
         </ImageContainer>
         <Title>{name}</Title>
         <Channels>
