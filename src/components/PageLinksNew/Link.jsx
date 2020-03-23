@@ -12,7 +12,7 @@ const Outer = styled.li`
     padding: 25px;
     margin-bottom: 35px;
     // border-radius: 10px;
-    min-height: 300px;
+    min-height: 220px;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -26,7 +26,7 @@ const Outer = styled.li`
     h4{
         margin-top: 0;
         color: ${theme.black};
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     &:hover, &:focus-within {
         a svg{
@@ -49,14 +49,14 @@ const Outer = styled.li`
 
 const Description = styled.p`
     color: ${theme.black};
-    margin-bottom: 35px;
+    margin-bottom: 15px;
     line-height: 1.5;
 `
 
 const CallToAction = styled(Link)`
     margin-top: auto;
     text-decoration: none;
-    color: ${theme.black};
+    color: ${theme.primary};
     font-weight: bold;
     &:after{
         content: "";
@@ -127,7 +127,7 @@ export const PageLink = ({
         }
         <CallToAction external={external} to={url}>
             {callToAction}
-            <Icon><Arrow colourFill={theme.black} /></Icon>
+            <Icon><Arrow colourFill={theme.primary} /></Icon>
         </CallToAction>
     </Outer>
 
