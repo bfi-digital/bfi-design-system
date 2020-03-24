@@ -19,7 +19,7 @@ const Outer = styled.ul`
             }
         }
         @media screen and (min-width: ${theme.m}){
-            width: calc(33.333% - 16.666px);
+            width: ${props => props.lessColumns ? "calc(50% - 25px)" : "calc(33.333% - 16.666px)"};
             margin-right: 25px;
             &:nth-of-type(even) {
                 margin-right: 25px;
@@ -30,17 +30,52 @@ const Outer = styled.ul`
         }
     }
 `
+const ScrollerContainer = styled.div`
+    width: 100%;
+    overflow: scroll;
+    padding: 15px ${theme.horizontalPadding};
+`
+const ScrollerTrack = styled.ul`
+    width: ${props => props.num*435}px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    li {
+        display: inline-block;
+        width: 400px;
+        margin-right: 25px;
+        &:last-of-type {
+            margin-right: 0px;
+        }
+    }
+`
 
 export const PageLinksNew = ({
     links,
     colorScheme,
     withImages = false
 }) =>
-    <Outer>
-        {links.map((link, i) =>
-            <PageLink key={i} {...link} colorScheme={colorScheme} withImages={withImages} />    
-        )}
-    </Outer>
+    <>
+    {links.length > 6 ?
+        <ScrollerContainer>
+            <ScrollerTrack num={links.length}>
+                {links.map((link, i) =>
+                    <PageLink key={i} {...link} colorScheme={colorScheme} withImages={withImages} />    
+                )}
+            </ScrollerTrack>
+        </ScrollerContainer>
+    :
+        <Outer lessColumns={links.length === 2 || links.length === 4}>
+            {links.map((link, i) =>
+                <PageLink key={i} {...link} colorScheme={colorScheme} withImages={withImages} />    
+            )}
+        </Outer>
+    }
+    </>
+
 
 
 PageLinksNew.propTypes = {
