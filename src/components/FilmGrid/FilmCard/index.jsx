@@ -85,7 +85,6 @@ const Channels = styled.ul`
 
 export const FilmCard = ({
     image480x270,
-    imageAltText,
     name,
     channels,
     url

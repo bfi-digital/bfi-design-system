@@ -405,7 +405,7 @@ exports[`Storyshots All Components/FilmGrid Normal 1`] = `
         className="sc-chPdSV hrnHsq"
       >
         <img
-          alt="Example image"
+          alt=""
           className="sc-kgoBCf kSExLM"
           src="http://placehold.it/480x270"
         />
@@ -439,7 +439,7 @@ exports[`Storyshots All Components/FilmGrid Normal 1`] = `
         className="sc-chPdSV hrnHsq"
       >
         <img
-          alt="Example image"
+          alt=""
           className="sc-kgoBCf kSExLM"
           src="test-file-stub"
         />
@@ -473,7 +473,7 @@ exports[`Storyshots All Components/FilmGrid Normal 1`] = `
         className="sc-chPdSV hrnHsq"
       >
         <img
-          alt="Example image"
+          alt=""
           className="sc-kgoBCf kSExLM"
           src="http://placehold.it/480x270"
         />
@@ -507,7 +507,7 @@ exports[`Storyshots All Components/FilmGrid Normal 1`] = `
         className="sc-chPdSV hrnHsq"
       >
         <img
-          alt="Example image"
+          alt=""
           className="sc-kgoBCf kSExLM"
           src="http://placehold.it/480x270"
         />
@@ -541,7 +541,7 @@ exports[`Storyshots All Components/FilmGrid Normal 1`] = `
         className="sc-chPdSV hrnHsq"
       >
         <img
-          alt="Example image"
+          alt=""
           className="sc-kgoBCf kSExLM"
           src="http://placehold.it/480x270"
         />
@@ -575,7 +575,7 @@ exports[`Storyshots All Components/FilmGrid Normal 1`] = `
         className="sc-chPdSV hrnHsq"
       >
         <img
-          alt="Example image"
+          alt=""
           className="sc-kgoBCf kSExLM"
           src="http://placehold.it/480x270"
         />
@@ -5164,7 +5164,7 @@ Array [
             className="sc-chPdSV hrnHsq"
           >
             <img
-              alt="Example image"
+              alt=""
               className="sc-kgoBCf kSExLM"
               src="http://placehold.it/480x270"
             />
@@ -5198,7 +5198,7 @@ Array [
             className="sc-chPdSV hrnHsq"
           >
             <img
-              alt="Example image"
+              alt=""
               className="sc-kgoBCf kSExLM"
               src="test-file-stub"
             />
@@ -5232,7 +5232,7 @@ Array [
             className="sc-chPdSV hrnHsq"
           >
             <img
-              alt="Example image"
+              alt=""
               className="sc-kgoBCf kSExLM"
               src="http://placehold.it/480x270"
             />
@@ -5266,7 +5266,7 @@ Array [
             className="sc-chPdSV hrnHsq"
           >
             <img
-              alt="Example image"
+              alt=""
               className="sc-kgoBCf kSExLM"
               src="http://placehold.it/480x270"
             />
@@ -5300,7 +5300,7 @@ Array [
             className="sc-chPdSV hrnHsq"
           >
             <img
-              alt="Example image"
+              alt=""
               className="sc-kgoBCf kSExLM"
               src="http://placehold.it/480x270"
             />
@@ -5334,7 +5334,7 @@ Array [
             className="sc-chPdSV hrnHsq"
           >
             <img
-              alt="Example image"
+              alt=""
               className="sc-kgoBCf kSExLM"
               src="http://placehold.it/480x270"
             />
