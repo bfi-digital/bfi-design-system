@@ -6,7 +6,7 @@ const Outer = styled.div`
 
 `
 
-export const VideoEmbed = ({
+export const Oembed = ({
     oembedObject
 }) =>
     <Outer>

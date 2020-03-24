@@ -14,15 +14,15 @@ export const twoShowings = () =>
             date="24th February"
             times={[
                 {
-                    title: "3:30pm",
+                    time: "3:30pm",
                     url: "#"
                 },
                 {
-                    title: "6:30pm",
+                    time: "6:30pm",
                     url: "#"
                 },
                 {
-                    title: "8:45pm",
+                    time: "8:45pm",
                     url: "#",
                     soldOut: true
                 }

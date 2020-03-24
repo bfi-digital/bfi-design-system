@@ -52,15 +52,16 @@ export const FilmShowings = ({
                 <Time key={i}>
                     {time.soldOut ?
                         <SoldOut>
-                            {time.title} - Sold out
+                            {time.time} - Sold out
                         </SoldOut>
                         :
                         <Button 
                             level={2}
                             href={time.url} 
+                            title="Book this at BFI Southbank"
                             {...time}
                         >
-                            {time.title}
+                            {time.time}
                         </Button>
                     }
                 </Time>

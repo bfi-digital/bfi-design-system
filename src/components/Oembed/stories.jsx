@@ -1,9 +1,9 @@
 import * as React from "react"
 import { withA11y } from "@storybook/addon-a11y"
-import { VideoEmbed } from "./index"
+import { Oembed } from "./index"
 
 export default {
-    title: "All Components/VideoEmbed",
+    title: "All Components/Oembed",
     decorators: [withA11y]
 }
 
@@ -52,7 +52,7 @@ const youtubeExampleData = [
 ]
 
 export const vimeo = () =>
-    <VideoEmbed oembedObject={vimeoExampleData[0]} />
+    <Oembed oembedObject={vimeoExampleData[0]} />
 
 export const youtube = () =>
-    <VideoEmbed oembedObject={youtubeExampleData[0]} />
+    <Oembed oembedObject={youtubeExampleData[0]} />

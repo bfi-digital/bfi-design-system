@@ -85,14 +85,13 @@ const Channels = styled.ul`
 
 export const FilmCard = ({
     image480x270,
-    imageAltText,
     name,
     channels,
     url
 }) =>
     <Outer to={url}>
         <ImageContainer>
-            <Image src={image480x270 != "" ? image480x270 : placeholderImage} alt={imageAltText}/>
+            <Image src={image480x270 != "" ? image480x270 : placeholderImage} alt=""/>
         </ImageContainer>
         <Title>{name}</Title>
         <Channels>

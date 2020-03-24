@@ -105,11 +105,12 @@ const TertiaryButton = styled(Link)`
 export const Button = ({
     level,
     children,
+    title,
     ...props
 }) => {
-    if(level === 3) return <TertiaryButton {...props}>{children}</TertiaryButton>
-    if(level === 2) return <SecondaryButton {...props}>{children}</SecondaryButton>
-    return <PrimaryButton {...props}>{children}</PrimaryButton>
+    if(level === 3) return <TertiaryButton title={title ? title : children} {...props}>{children}</TertiaryButton>
+    if(level === 2) return <SecondaryButton title={title ? title : children} {...props}>{children}</SecondaryButton>
+    return <PrimaryButton title={title ? title : children} {...props}>{children}</PrimaryButton>
 }
 
 Button.propTypes = {
@@ -117,7 +118,8 @@ Button.propTypes = {
     external: PropTypes.bool,
     // A number between 1 and 3
     level: PropTypes.number,
-    colorScheme: PropTypes.number
+    colorScheme: PropTypes.number,
+    title: PropTypes.string
 }
 
 Button.defaultProps = {
