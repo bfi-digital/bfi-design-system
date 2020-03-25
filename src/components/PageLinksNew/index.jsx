@@ -25,7 +25,10 @@ const Outer = styled.ul`
                 margin-right: 25px;
             }
             &:nth-of-type(3n) {
-                margin-right: 0px;
+                margin-right: ${props => props.lessColumns ? "25px" : "0px"};
+            }
+            &:nth-of-type(4n) {
+                margin-right: ${props => props.lessColumns ? "0px" : "25px"};
             }
         }
     }

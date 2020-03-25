@@ -7,33 +7,40 @@ import Arrow from "./arrow-right"
 
 const Outer = styled.li`
     position: relative;
-    background: ${props => props.withImages ? theme.grey : theme.lightGrey};
+    background: ${theme.lightGrey};
     box-shadow: 0px 5px 0px ${theme.primary};
-    padding: 25px;
     margin-bottom: 35px;
     // border-radius: 10px;
     display: flex;
     flex-direction: column;
     position: relative;
     overflow: hidden;
-    min-height: 160px;
+    min-height: 130px;
+
+    width: 100%;
+    padding: 15px;
+    padding-top: ${props => props.withImages ? "135px" : "15px"};
 
     @media screen and (min-width: ${theme.m}){
         width: 190px;
+        padding: 25px;
+        padding-top: ${props => props.withImages ? "155px" : "25px"};
     }
     @media screen and (min-width: ${theme.l}){
         width: 220px;
+        padding-top: ${props => props.withImages ? "225px" : "25px"};
     }
 
-    &:before {
-        display: block;
-        content: "";
-        height: ${props => props.withImages ? "50%" : "0"};
-    }
+
     h4{
         margin-top: 0;
         color: ${theme.black};
-        margin-bottom: 10px;
+        margin-bottom: 15px;
+        line-height: 1;
+    }
+    p {
+        margin-top: 0;
+        margin-bottom: 20px;
     }
     &:hover, &:focus-within {
         a svg{
@@ -90,14 +97,19 @@ const Icon = styled.div`
 
 const PageImageContainer = styled.div`
     background: ${theme.highlight};
-    display: inline-block;
+    display: block;
     width: 100%;
-    height: calc(50% - 25px);
-    // border-radius: 4px;
-    margin-right: 10px;
     position: absolute;
     top: 0;
     left: 0;
+    height: 120px;
+
+    @media screen and (min-width: ${theme.m}){
+        height: 130px;
+    }
+    @media screen and (min-width: ${theme.l}){
+        height: 200px;
+    }
 `
 const PageImage = styled.div`
     width: 100%;
