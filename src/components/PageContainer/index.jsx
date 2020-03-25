@@ -53,20 +53,6 @@ export const Actions = styled.section`
 
 `
 
-export const ShowingsGrid = styled.section`
-    @supports (display: grid){
-        @media screen and (min-width: ${theme.m}){
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            div{
-                margin-bottom: 0px;
-            }
-        }
-        margin-bottom: 35px;
-    }
-`
-
 const Icon = styled.img`
     margin-left: 13px;
     height: 14px;

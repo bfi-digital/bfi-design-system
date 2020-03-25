@@ -702,7 +702,7 @@ exports[`Storyshots All Components/FilmGrid Normal 1`] = `
 </div>
 `;
 
-exports[`Storyshots All Components/FilmShowings Sold Out 1`] = `
+exports[`Storyshots All Components/FilmShowing Sold Out 1`] = `
 <div
   style={
     Object {
@@ -749,7 +749,7 @@ exports[`Storyshots All Components/FilmShowings Sold Out 1`] = `
 </div>
 `;
 
-exports[`Storyshots All Components/FilmShowings Two Showings 1`] = `
+exports[`Storyshots All Components/FilmShowing Two Showings 1`] = `
 <div
   style={
     Object {

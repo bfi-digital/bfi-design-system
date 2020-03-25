@@ -4,7 +4,7 @@ import theme from "../_theme"
 import parse from "html-react-parser"
 import PropTypes from "prop-types"
 
-const Outer = styled.article`
+const Outer = styled.section`
     color: ${theme.black};
     line-height: 1.5;
     font-size: 1rem;

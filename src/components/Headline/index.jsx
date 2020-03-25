@@ -58,8 +58,9 @@ const H3 = styled.h3`
 const H4 = styled.h4`
     font-family: "Open Sans";
     color: ${theme.black};
-    font-weight: 700;
+    font-weight: 600;
     font-size: 1rem;
+    margin-bottom: 10px;
     @media screen and (min-width: ${theme.m}){
         font-size: 1.125rem;
     }

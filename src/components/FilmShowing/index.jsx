@@ -6,7 +6,7 @@ import { Headline } from "../Headline"
 import { Button } from "../Button"
 
 const Outer = styled.div`
-    padding-bottom: 25px;
+    padding-bottom: 15px;
     border-bottom: 1px solid ${theme.grey};
     margin-bottom: 35px;
     h4{
@@ -43,7 +43,7 @@ const SoldOut = styled.span`
     cursor: no-drop;
 `
 
-export const FilmShowings = ({
+export const FilmShowing = ({
     name,
     date,
     times
@@ -73,7 +73,7 @@ export const FilmShowings = ({
         </Times>
     </Outer>
 
-FilmShowings.propTypes = {
+FilmShowing.propTypes = {
     // Name of the film
     name: PropTypes.string,
     // Date of this showing
