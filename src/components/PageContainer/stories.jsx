@@ -314,6 +314,7 @@ export const FilmPage = () =>
                         },
                     ]}
                 />
+                {/* add advertisement here */}
             </Sidebar>
             <MainContent>
                 <Text

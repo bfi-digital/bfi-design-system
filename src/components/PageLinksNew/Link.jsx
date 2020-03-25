@@ -12,11 +12,18 @@ const Outer = styled.li`
     padding: 25px;
     margin-bottom: 35px;
     // border-radius: 10px;
-    min-height: 220px;
     display: flex;
     flex-direction: column;
     position: relative;
     overflow: hidden;
+    min-height: 160px;
+
+    @media screen and (min-width: ${theme.m}){
+        width: 190px;
+    }
+    @media screen and (min-width: ${theme.l}){
+        width: 220px;
+    }
 
     &:before {
         display: block;

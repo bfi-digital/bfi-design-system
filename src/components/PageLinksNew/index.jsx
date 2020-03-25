@@ -36,20 +36,36 @@ const ScrollerContainer = styled.div`
     padding: 15px ${theme.horizontalPadding};
 `
 const ScrollerTrack = styled.ul`
-    width: ${props => props.num*435}px;
+    width: ${props => props.num*285}px;
     padding: 0;
     list-style: none;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 
+    @media screen and (min-width: ${theme.m}){
+        width: ${props => props.num*385}px;
+    }
+    @media screen and (min-width: ${theme.l}){
+        width: ${props => props.num*435}px;
+    }
+
     li {
         display: inline-block;
-        width: 400px;
         margin-right: 25px;
+        width: 250px;
+
         &:last-of-type {
             margin-right: 0px;
         }
+
+        @media screen and (min-width: ${theme.m}){
+            width: 350px;
+        }
+        @media screen and (min-width: ${theme.l}){
+            width: 400px;
+        }
+
     }
 `
 
