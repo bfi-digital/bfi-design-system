@@ -43,6 +43,7 @@ const Outer = styled.li`
         margin-bottom: 20px;
     }
     &:hover, &:focus-within {
+        box-shadow: 0px 5px 0px ${theme.dark};
         a svg{
             transform: translateX(5px);
         }
