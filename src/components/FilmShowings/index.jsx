@@ -9,12 +9,16 @@ const Outer = styled.div`
     padding-bottom: 25px;
     border-bottom: 1px solid ${theme.grey};
     margin-bottom: 35px;
-    h3{
+    h4{
         margin-top: 0px;
+        margin-bottom: 0px;
     }
 `
 
-const Date = styled.p``
+const Date = styled.p`
+    margin-top: 5px;
+    margin-bottom: 5px;
+`
 
 const Times = styled.ul`
     list-style-type: none;
@@ -45,7 +49,7 @@ export const FilmShowings = ({
     times
 }) =>
     <Outer>
-        {name && <Headline level={3} text={name}/>}
+        {name && <Headline level={4} text={name}/>}
         <Date>{date}</Date>
         <Times>
             {times.map((time, i) =>

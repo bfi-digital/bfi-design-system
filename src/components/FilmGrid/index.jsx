@@ -5,7 +5,6 @@ import { FilmCard } from "./FilmCard"
 import { Button } from "../Button"
 
 const Outer = styled.section`
-    padding-top: 15px;
     @media screen and (min-width: ${theme.m}){
         display: flex;
         flex-direction: row;
@@ -27,5 +26,7 @@ export const FilmGrid = ({
         {films.map(film =>
             <FilmCard key={film.title} {...film}/>    
         )}
-        <CentredButton to={allFilmsUrl}>See more films</CentredButton>
+        { allFilmsUrl &&
+            <CentredButton to={allFilmsUrl}>See more films</CentredButton>
+        }
     </Outer>
