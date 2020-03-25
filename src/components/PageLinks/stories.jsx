@@ -1,7 +1,7 @@
 import * as React from "react"
 import { withA11y } from "@storybook/addon-a11y"
 import { PageLinks } from "./index"
-import four, { three } from "./data"
+import three, { two } from "./data"
 
 export default {
     title: "All Components/PageLinks",
@@ -11,13 +11,23 @@ export default {
 export const ThreeLinks = () =>
     <PageLinks links={three} />
 
-export const FourLinks = () =>
-    <PageLinks links={four} />
+export const TwoLinks = () =>
+    <PageLinks links={two} />
 
-export const FourLinksWithImage = () =>
-    <PageLinks links={four} withImages={true} />
-
-export const EightLinks = () =>
+export const NineLinks = () =>
     <PageLinks links={[
-        ...four, ...four
+        ...three, ...three, ...three
+    ]} />
+
+export const LinksWithImage = () =>
+    <PageLinks links={three} withImages={true} />
+
+export const SixLinks = () =>
+    <PageLinks links={[
+        ...three, ...three
+    ]} />
+
+export const FourLinks = () =>
+    <PageLinks links={[
+        ...two, ...two
     ]} />

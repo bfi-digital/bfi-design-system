@@ -19,29 +19,56 @@ const Outer = styled.ul`
             }
         }
         @media screen and (min-width: ${theme.m}){
-            width: calc(33.333% - 16.666px);
+            width: ${props => props.lessColumns ? "calc(50% - 25px)" : "calc(33.333% - 16.666px)"};
             margin-right: 25px;
             &:nth-of-type(even) {
                 margin-right: 25px;
             }
             &:nth-of-type(3n) {
-                margin-right: 0px;
-            }
-        }
-        @media screen and (min-width: ${theme.l}){
-            width: ${props => props.lessColumns ? "calc(33.333% - 26px)" : "calc(25% - 18.75px)"};
-
-            margin-right: 25px;
-            &:nth-of-type(even) {
-                margin-right: 25px;
-            }
-            &:nth-of-type(3n) {
-                margin-right: 25px;
+                margin-right: ${props => props.lessColumns ? "25px" : "0px"};
             }
             &:nth-of-type(4n) {
-                margin-right: 0px;
+                margin-right: ${props => props.lessColumns ? "0px" : "25px"};
             }
         }
+    }
+`
+const ScrollerContainer = styled.div`
+    width: 100%;
+    overflow: scroll;
+    padding: 15px ${theme.horizontalPadding};
+`
+const ScrollerTrack = styled.ul`
+    width: ${props => props.num*285}px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: ${theme.m}){
+        width: ${props => props.num*385}px;
+    }
+    @media screen and (min-width: ${theme.l}){
+        width: ${props => props.num*435}px;
+    }
+
+    li {
+        display: inline-block;
+        margin-right: 25px;
+        width: 250px;
+
+        &:last-of-type {
+            margin-right: 0px;
+        }
+
+        @media screen and (min-width: ${theme.m}){
+            width: 350px;
+        }
+        @media screen and (min-width: ${theme.l}){
+            width: 400px;
+        }
+
     }
 `
 
@@ -50,11 +77,24 @@ export const PageLinks = ({
     colorScheme,
     withImages = false
 }) =>
-    <Outer lessColumns={links.length === 3 || links.length === 6}>
-        {links.map((link, i) =>
-            <PageLink key={i} {...link} colorScheme={colorScheme} withImages={withImages} />    
-        )}
-    </Outer>
+    <>
+        {links.length > 6 ?
+            <ScrollerContainer>
+                <ScrollerTrack num={links.length}>
+                    {links.map((link, i) =>
+                        <PageLink key={i} {...link} colorScheme={colorScheme} withImages={withImages} />    
+                    )}
+                </ScrollerTrack>
+            </ScrollerContainer>
+            :
+            <Outer lessColumns={links.length === 2 || links.length === 4}>
+                {links.map((link, i) =>
+                    <PageLink key={i} {...link} colorScheme={colorScheme} withImages={withImages} />    
+                )}
+            </Outer>
+        }
+    </>
+
 
 
 PageLinks.propTypes = {

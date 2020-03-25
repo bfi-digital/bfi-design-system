@@ -3,29 +3,43 @@ import styled from "styled-components"
 import theme from "../_theme"
 import { LinkSwitch as Link } from "../LinkSwitch"
 import { Headline } from "../Headline"
-import Arrow from "./arrow-right.jsx"
+import Arrow from "./arrow-right"
 
 const Outer = styled.li`
     position: relative;
-    background: ${props => props.withImages ? theme.grey : theme.lightest};
-    box-shadow: -5px 5px 0px ${theme.primary};
-    padding: 25px;
+    background: ${theme.lightGrey};
+    box-shadow: 0px 5px 0px ${theme.primary};
     margin-bottom: 35px;
     // border-radius: 10px;
-    min-height: 300px;
     display: flex;
     flex-direction: column;
     position: relative;
     overflow: hidden;
+    min-height: 130px;
 
-    &:before {
-        display: block;
-        content: "";
-        height: ${props => props.withImages ? "50%" : "0"};
+    width: 100%;
+    padding: 15px;
+    padding-top: ${props => props.withImages ? "135px" : "15px"};
+
+    @media screen and (min-width: ${theme.m}){
+        width: 190px;
+        padding: 25px;
+        padding-top: ${props => props.withImages ? "155px" : "25px"};
     }
+    @media screen and (min-width: ${theme.l}){
+        width: 220px;
+        padding-top: ${props => props.withImages ? "225px" : "25px"};
+    }
+
+
     h4{
         margin-top: 0;
-        color: ${theme.primary};
+        color: ${theme.black};
+        margin-bottom: 15px;
+        line-height: 1;
+    }
+    p {
+        margin-top: 0;
         margin-bottom: 20px;
     }
     &:hover, &:focus-within {
@@ -42,14 +56,14 @@ const Outer = styled.li`
         transition: box-shadow .3s;
     }
     &:active{
-        box-shadow: -2px 2px 0px ${theme.primary};
-        transform: translate(-3px, 3px);
+        box-shadow: 0px 1px 0px ${theme.primary};
+        transform: translate(0px, 3px);
     }
 `
 
 const Description = styled.p`
-    color: ${theme.primary};
-    margin-bottom: 35px;
+    color: ${theme.black};
+    margin-bottom: 15px;
     line-height: 1.5;
 `
 
@@ -83,14 +97,19 @@ const Icon = styled.div`
 
 const PageImageContainer = styled.div`
     background: ${theme.highlight};
-    display: inline-block;
+    display: block;
     width: 100%;
-    height: calc(50% - 25px);
-    // border-radius: 4px;
-    margin-right: 10px;
     position: absolute;
     top: 0;
     left: 0;
+    height: 120px;
+
+    @media screen and (min-width: ${theme.m}){
+        height: 130px;
+    }
+    @media screen and (min-width: ${theme.l}){
+        height: 200px;
+    }
 `
 const PageImage = styled.div`
     width: 100%;

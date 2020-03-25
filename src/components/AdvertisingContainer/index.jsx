@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import theme from "../_theme"
+import PropTypes from "prop-types"
 
 const Outer = styled.div`
     background: ${theme.lightGrey};
@@ -30,7 +31,7 @@ export const AdvertisingContainer = ({
         }
         { children ?
             <>{children}</>
-        :
+            :
             <p>Advertisement failed to load</p>
         }
     </Outer>
