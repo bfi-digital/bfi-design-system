@@ -34,8 +34,7 @@ const PrimaryButton = styled(Link)`
     background: ${props => colorSchemes[props.colorScheme].background};
     // border-radius: 4px;
     padding: 10px 25px;
-    box-shadow: -3px 3px 0px ${props => colorSchemes[props.colorScheme].shadow};
-    margin-left: 5px;
+    box-shadow: 0 3px 0px ${props => colorSchemes[props.colorScheme].shadow};
 
     &:hover, &:focus{
         background: ${props => colorSchemes[props.colorScheme].hoverBackground};
@@ -48,7 +47,7 @@ const PrimaryButton = styled(Link)`
     &:active{
         background: ${props => colorSchemes[props.colorScheme].background};
         box-shadow: none;
-        transform: translate(-5px, 5px);   
+        transform: translate(0, 5px);   
     }
 `
 
