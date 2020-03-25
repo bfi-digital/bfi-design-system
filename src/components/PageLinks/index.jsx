@@ -10,6 +10,7 @@ const Outer = styled.ul`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
     li {
         @media screen and (min-width: ${theme.s}){
             width: calc(50% - 12.5px);
@@ -19,10 +20,10 @@ const Outer = styled.ul`
             }
         }
         @media screen and (min-width: ${theme.m}){
-            width: ${props => props.lessColumns ? "calc(50% - 25px)" : "calc(33.333% - 16.666px)"};
+            width: ${props => props.lessColumns ? "calc(50% - 12.5px)" : "calc(33.333% - 16.666px)"};
             margin-right: 25px;
             &:nth-of-type(even) {
-                margin-right: 25px;
+                margin-right: ${props => props.lessColumns ? "0px" : "25px"};
             }
             &:nth-of-type(3n) {
                 margin-right: ${props => props.lessColumns ? "25px" : "0px"};
@@ -30,6 +31,9 @@ const Outer = styled.ul`
             &:nth-of-type(4n) {
                 margin-right: ${props => props.lessColumns ? "0px" : "25px"};
             }
+        }
+        @media screen and (min-width: ${theme.l}){
+            min-width: 275px;
         }
     }
 `
