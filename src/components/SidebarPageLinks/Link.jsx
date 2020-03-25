@@ -39,6 +39,12 @@ const Outer = styled.li`
         width: 100%;
         background: ${theme.grey};
     }
+    &:last-of-type {
+        margin-bottom: 25px;
+        &:after {
+            display: none;
+        }
+    }
 `
 const PageImageContainer = styled.div`
     background: ${theme.highlight};
