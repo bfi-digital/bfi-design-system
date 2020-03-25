@@ -24,13 +24,14 @@ const Outer = styled.article`
     }
 
     a{
-        color: ${theme.dark};
+        color: ${theme.primary};
         text-decoration: none;
         box-shadow:
             inset 0 -0.0em white,
-            inset 0 -0.125em ${theme.dark};
+            inset 0 -0.125em ${theme.primary};
         &:hover{
             box-shadow: none;
+            color: ${theme.dark};
         }
         &:focus{
             background: ${theme.lightest};

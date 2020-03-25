@@ -12,12 +12,15 @@ const Wrapper = styled.div`
 `
 const QuickLink = styled(Link)`
     background: ${props => props.isTransparent ? (props.isSticky ? theme.white : "transparent") : theme.white};
-    color: ${props => props.isTransparent ? (!props.isSticky ? theme.white : theme.dark) : theme.dark};
+    color: ${props => props.isTransparent ? (!props.isSticky ? theme.white : theme.primary) : theme.primary};
     font-weight: 700;
     text-decoration: none;
     padding: 21px 15px;
     transition: background 0.1s ease-out;
     transition-delay: ${props => props.isSticky ? "0s" : "0.1s"};
+    &:hover {
+        color: ${theme.dark};
+    }
 `
 
 const Positioner = styled.div`
