@@ -1,6 +1,14 @@
-export default [
+import * as React from "react"
+import { withA11y } from "@storybook/addon-a11y"
+import { FilmShowingGrid } from "./index"
+
+export default {
+    title: "All Components/FilmShowingGrid",
+    decorators: [withA11y]
+}
+
+const days = [
     {
-        name: "La La Land",
         date: "24th February",
         times: [
             {
@@ -19,7 +27,6 @@ export default [
         ]
     },
     {
-        name: "The Lighthouse",
         date: "24th February",
         times: [
             {
@@ -34,7 +41,6 @@ export default [
         ]
     },
     {
-        name: "Manos: The Hands of Fate",
         date: "24th February",
         times: [
             {
@@ -49,7 +55,6 @@ export default [
         ]
     },
     {
-        name: "Santa Claus Conquers the Martians",
         date: "24th February",
         times: [
             {
@@ -65,3 +70,9 @@ export default [
         ]
     },
 ]
+
+export const example = () =>
+    <FilmShowingGrid showings={days} />
+
+export const exampleWithTitle = () =>
+    <FilmShowingGrid title="La La Land" showings={days} />

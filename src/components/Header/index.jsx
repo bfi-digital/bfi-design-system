@@ -14,14 +14,13 @@ import LotteryLogo from "./lottery-logo.jsx"
 
 const Outer = styled.header`
     background: ${props => props.isTransparent ? (!props.isSticky ? "transparent" : theme.white) : theme.white};
-    border-bottom: 1px solid ${props => props.isTransparent ? "transparent" : theme.grey};
+    border-bottom: 1px solid ${props => props.isTransparent ? (!props.isSticky ? "transparent" : theme.grey) : theme.grey};
     margin-bottom: ${props => props.overlay ? "-175px" : "0px"};
     position: relative;
     z-index: 999;
     min-height: 60px;
     position: sticky;
     top: 0px;
-    transition: 0.1s ease-out;
 `
 
 const Inner = styled.div`
@@ -83,7 +82,6 @@ const TopSection = styled.div`
         display: block;
         background: ${props => props.isTransparent ? "transparent" : theme.white};
         padding-top: 15px;
-        transition: 0.1s ease-out;
     }
 `
 const QuickLinksInner = styled(Inner)`

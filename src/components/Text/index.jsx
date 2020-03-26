@@ -4,7 +4,7 @@ import theme from "../_theme"
 import parse from "html-react-parser"
 import PropTypes from "prop-types"
 
-const Outer = styled.article`
+const Outer = styled.section`
     color: ${theme.black};
     line-height: 1.5;
     font-size: 1rem;
@@ -24,13 +24,14 @@ const Outer = styled.article`
     }
 
     a{
-        color: ${theme.dark};
+        color: ${theme.primary};
         text-decoration: none;
         box-shadow:
             inset 0 -0.0em white,
-            inset 0 -0.125em ${theme.dark};
+            inset 0 -0.125em ${theme.primary};
         &:hover{
             box-shadow: none;
+            color: ${theme.dark};
         }
         &:focus{
             background: ${theme.lightest};

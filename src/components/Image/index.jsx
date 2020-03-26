@@ -103,6 +103,7 @@ const DialogStyles = createGlobalStyle`
         justify-content: center;
         align-items: center;
         animation: fadeIn 0.2s ease-out; 
+        z-index: 9999;
         &:hover {
             cursor: zoom-out;
         }

@@ -10,27 +10,35 @@ const Outer = styled(LinkSwitch)`
     // border-radius: 5px;
     text-decoration: none;
     color: ${theme.black};
-    margin-bottom: 35px;
+    margin-bottom: 25px;
     transition: box-shadow .3s;
+    
+    h4 {
+        margin-top: 0;
+    }
 
     @media screen and (min-width: ${theme.m}){
-        margin-right: 25px;
-        max-width: calc(50% - 12.5px);
+        margin-right: 15px;
+        margin-bottom: 15px;
+
+        max-width: calc(50% - 10px);
         &:nth-of-type(even){
             margin-right: 0px;
         }
     }
     @media screen and (min-width: ${theme.l}){
-        max-width: calc(33% - 13.5px);
+        max-width: calc(33% - 10px);
+        margin-bottom: 15px;
+
         &:nth-of-type(even){
-            margin-right: 25px;
+            margin-right: 15px;
         }
         &:nth-of-type(3n){
             margin-right: 0px;
         }
     }
     &:hover, &:focus-within {
-        h3{
+        h4{
             color: ${theme.darkGrey};
         }
         img {
@@ -49,7 +57,7 @@ const Outer = styled(LinkSwitch)`
         border: 0;
     }
     &:active{
-        h3{
+        h4{
             color: ${theme.dark};
         }
     }
@@ -71,7 +79,7 @@ const Image = styled.img`
     transition: all ease 0.3s;
 `
 
-const Title = styled.h3`
+const Title = styled.h4`
     font-size: 1.125rem;
     margin-top: 10px;
     margin-bottom: 5px;

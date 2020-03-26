@@ -41,6 +41,7 @@ const DialogStyles = createGlobalStyle`
         justify-content: center;
         align-items: center;
         animation: fadeIn 0.1s ease-out; 
+        z-index: 9999;
         &:hover {
             cursor: zoom-out;
         }
@@ -111,10 +112,10 @@ const Button = styled.button`
     @media screen and (min-width: ${theme.m}){
         margin-right: 10px;
         /* width: calc( 33.33% - 6.67px); */
-        flex: 1 0 calc(25% - 10px);
+        flex: 1 0 calc(33% - 10px);
         max-width: 50%;
 
-        &:nth-child(4){
+        &:nth-child(3){
             margin-right: 0px;
         }
     }

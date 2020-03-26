@@ -5,7 +5,7 @@ import DownloadFileIcon from "./downloadFileIcon.jsx"
 import PropTypes from "prop-types"
 
 const Outer = styled.div`
-    max-width: 75%;
+    max-width: 70%;
     &:not(:first-child) {
         a {
             margin-top: 30px;
@@ -30,6 +30,8 @@ const Link = styled.a`
     svg {
         margin-right: 10px;
         vertical-align: top;
+        margin-left: 5px;
+        margin-top: 5px;
     }
 
     &:hover {
@@ -41,14 +43,14 @@ const Link = styled.a`
 
     &:focus {
         outline: none;
-        background: ${theme.lightGrey};
+        background: ${theme.lightest};
         box-shadow: 0px 0px 0px 5px white, 0px 0px 0px 9px ${theme.highlight};
     }
 `
 
 const FileDetails= styled.div`
     display: inline-block;
-    max-width: calc(100% - 40px);
+    max-width: calc(100% - 45px);
 `
 const Title = styled.span`
     display: block;

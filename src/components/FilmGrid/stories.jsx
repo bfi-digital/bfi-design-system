@@ -13,5 +13,5 @@ export const normal = () =>
         padding: "10px",
         maxWidth: "1000px"
     }}>
-        <FilmGrid films={demoFilms} allFilmsUrl="#"/>
+        <FilmGrid films={demoFilms} />
     </div>

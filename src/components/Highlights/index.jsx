@@ -5,7 +5,7 @@ import theme from "../_theme"
 import { TabList, Tab, TabPanel } from "../Tabs"
 import { HighlightCard } from "./HighlightCard"
 import { WideHighlightCard } from "./WideHighlightCard"
-import { FilmShowings } from "../FilmShowings"
+import { FilmShowing } from "../FilmShowing"
 import { Button } from "../Button"
 
 const Outer = styled.div`
@@ -89,7 +89,7 @@ export const Highlights = ({
                     />
                     <Showings>
                         {todayShowings.map(film =>
-                            <FilmShowings key={film.title} {...film}/>
+                            <FilmShowing key={film.title} {...film}/>
                         )}
                     </Showings>
                 </Grid>
@@ -108,7 +108,7 @@ export const Highlights = ({
                     />
                     <Showings>
                         {weekShowings.map(film =>
-                            <FilmShowings key={film.title} {...film}/>
+                            <FilmShowing key={film.title} {...film}/>
                         )}
                     </Showings>
                 </Grid>
