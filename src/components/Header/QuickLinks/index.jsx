@@ -16,8 +16,7 @@ const QuickLink = styled(Link)`
     font-weight: 700;
     text-decoration: none;
     padding: 21px 15px;
-    transition: background 0.1s ease-out;
-    transition-delay: ${props => props.isSticky ? "0s" : "0.1s"};
+
     &:hover {
         color: ${theme.dark};
     }
