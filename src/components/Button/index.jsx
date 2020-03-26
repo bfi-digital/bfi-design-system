@@ -6,7 +6,7 @@ import theme from "../_theme"
 
 const colorSchemes = [
     {
-        shadow: theme.primary,
+        shadow: theme.highlight,
         hoverBackground: theme.darkGrey,
         text: theme.white,
         background: theme.black,
