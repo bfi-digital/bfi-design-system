@@ -42,6 +42,7 @@ const BreadcrumbLink = styled(Link)`
     &:focus{
         background: ${theme.lightest};
         outline: none;
+        box-shadow: 0px 0px 0px 2px ${theme.highlight};
     }
 `
 
