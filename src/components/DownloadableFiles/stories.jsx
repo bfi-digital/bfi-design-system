@@ -4,7 +4,7 @@ import { DownloadableFiles } from "./index"
 import demoFiles from "./data"
 
 export default {
-    title: "All Components/Downloadable File",
+    title: "2 All Components/Downloadable File",
     decorators: [withA11y]
 }
 

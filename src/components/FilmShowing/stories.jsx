@@ -3,7 +3,7 @@ import { withA11y } from "@storybook/addon-a11y"
 import { FilmShowing } from "./index"
 
 export default {
-    title: "All Components/FilmShowing",
+    title: "2 All Components/FilmShowing",
     decorators: [withA11y]
 }
 

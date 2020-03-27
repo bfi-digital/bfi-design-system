@@ -3,7 +3,7 @@ import { withA11y } from "@storybook/addon-a11y"
 import { Oembed } from "./index"
 
 export default {
-    title: "All Components/Oembed",
+    title: "2 All Components/Oembed",
     decorators: [withA11y]
 }
 

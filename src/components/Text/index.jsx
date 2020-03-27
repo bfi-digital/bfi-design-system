@@ -23,29 +23,29 @@ const Outer = styled.section`
         margin-bottom: 20px;
     }
 
-    a{
-        color: ${theme.primary};
+    a {
+        color: ${theme.black};
         text-decoration: none;
+        font-weight: 600;
+        transition: box-shadow .3s; 
         box-shadow:
             inset 0 -0.0em white,
-            inset 0 -0.125em ${theme.primary};
+            inset 0 -10px ${theme.lightest};
         &:hover{
-            box-shadow: none;
             color: ${theme.dark};
+            box-shadow:
+                inset 0 -0.0em white,
+                inset 0 -30px ${theme.lightest};
         }
         &:focus{
-            background: ${theme.lightest};
             box-shadow:
-                inset 0 -0em white,
-                inset 0 -0.17em ${theme.dark};
-            outline: none;
+                inset 0 -0.0em white,
+                inset 0 -30px ${theme.lightest};
+            outline: 2px solid ${theme.highlight};
         }
         &:active{
-            background: ${theme.lightest};
-            box-shadow:
-                inset 0 -0em white,
-                inset 0 -0.125em ${theme.dark};
             outline: none;
+            text-decoration: underline;
         }
     }
     p + ul {

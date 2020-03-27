@@ -3,7 +3,7 @@ import { withA11y } from "@storybook/addon-a11y"
 import { TabList, Tab, TabPanel } from "./index"
 
 export default {
-    title: "All Components/Tabs",
+    title: "2 All Components/Tabs",
     decorators: [withA11y]
 }
 

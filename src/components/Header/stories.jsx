@@ -4,7 +4,7 @@ import { Header } from "./index"
 import navItems from "./data"
 
 export default {
-    title: "All Components/Header",
+    title: "2 All Components/Header",
     decorators: [withA11y],
     parameters: {
         backgrounds: [

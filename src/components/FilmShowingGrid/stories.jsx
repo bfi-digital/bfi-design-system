@@ -3,7 +3,7 @@ import { withA11y } from "@storybook/addon-a11y"
 import { FilmShowingGrid } from "./index"
 
 export default {
-    title: "All Components/FilmShowingGrid",
+    title: "2 All Components/FilmShowingGrid",
     decorators: [withA11y]
 }
 

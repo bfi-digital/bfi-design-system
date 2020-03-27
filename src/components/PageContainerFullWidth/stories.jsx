@@ -20,7 +20,7 @@ import { FilmGrid } from "../FilmGrid"
 import demoFilms from "../FilmGrid/data"
 
 export default {
-    title: "Page examples/Page Full Width"
+    title: "1 Page Examples/Page Full Width"
 }
 
 export const serviceListPageExample = () =>

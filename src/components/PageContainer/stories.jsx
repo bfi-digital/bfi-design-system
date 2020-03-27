@@ -109,7 +109,7 @@ const days = [
 
 
 export default {
-    title: "Page examples/Page With Sidebar"
+    title: "1 Page Examples/Page With Sidebar"
 }
 
 export const normalPage = () =>
@@ -331,7 +331,7 @@ export const FilmPage = () =>
                     text="Promoted links from around the web"
                 />
                 <AdvertisingContainer withCaption={false}>
-                    <div style={{width: "680px", height: "400px", background: "pink"}}></div>
+                    <div style={{width: "680px", height: "400px", background: "grey"}}></div>
                 </AdvertisingContainer>
             </MainContent>
             <Sidebar>
@@ -349,7 +349,7 @@ export const FilmPage = () =>
                     ]}
                 />
                 <AdvertisingContainer>
-                    <div style={{width: "300px", height: "250px", background: "pink"}}></div>
+                    <div style={{width: "300px", height: "250px", background: "grey"}}></div>
                 </AdvertisingContainer>
             </Sidebar>
         </Wrapper>
@@ -591,7 +591,7 @@ export const everyComponent = () =>
             <Sidebar>
                 <SidebarPageLinks links={pageLinksData} blockTitle="Related pages" />
                 <AdvertisingContainer>
-                    <div style={{width: "300px", height: "250px", background: "pink"}}></div>
+                    <div style={{width: "300px", height: "250px", background: "grey"}}></div>
                 </AdvertisingContainer>
                 <StepByStep 
                     title="Applying for film funding"
@@ -619,7 +619,7 @@ export const everyComponent = () =>
                     ]} 
                 />
                 <AdvertisingContainer>
-                    <div style={{width: "300px", height: "250px", background: "pink"}}></div>
+                    <div style={{width: "300px", height: "250px", background: "grey"}}></div>
                 </AdvertisingContainer>
             </Sidebar>
         </Wrapper>
