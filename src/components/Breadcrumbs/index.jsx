@@ -25,7 +25,7 @@ const Crumb = styled.li`
     &:after{
         margin: 0px 5px;
         content: "/";
-        font-weight: bold;
+        font-weight: normal;
     }
     &:last-of-type:after{
         display: none;

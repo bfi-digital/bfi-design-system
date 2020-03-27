@@ -18,7 +18,7 @@ const QuickLink = styled(Link)`
     padding: 21px 15px;
 
     &:hover {
-        color: ${theme.dark};
+        color: ${props => props.isTransparent ? (!props.isSticky ? theme.grey : theme.dark) : theme.dark};
     }
 `
 

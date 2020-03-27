@@ -71,27 +71,50 @@ const ShowButton = styled.button`
     background: none;
     font-size: 1rem;
     padding: 0;
+
+
     &:hover{
-        p{
-            text-decoration: none;
+        span {
+            color: ${theme.dark};
+            box-shadow:
+                inset 0 -0.0em white,
+                inset 0 -30px ${theme.lightest};
+        }
+    }
+    &:focus{
+        outline: none;
+        span {
+            box-shadow:
+                inset 0 -0.0em white,
+                inset 0 -30px ${theme.lightest};
+            outline: 2px solid ${theme.highlight};
+        }
+    }
+    &:active{
+        span {
+            outline: none;
+            text-decoration: underline;
         }
     }
     &::-moz-focus-inner {
         border: 0;
     }
     &:focus{
-        outline: none;
         p{
             background: ${theme.lightest}
         }
     }
 `
 
-const ShowButtonText = styled.p`
-    color: ${theme.dark};
+const ShowButtonText = styled.span`
     display: inline;
-    text-decoration: underline;
     font-weight: 400;
+    color: ${theme.black};
+    text-decoration: none;
+    transition: box-shadow .3s; 
+    box-shadow:
+        inset 0 -0.0em white,
+        inset 0 -10px ${theme.lightest};
 `
 
 const Description = styled.p`

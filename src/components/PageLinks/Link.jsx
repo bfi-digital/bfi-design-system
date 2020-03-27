@@ -10,16 +10,15 @@ const Outer = styled.li`
     background: ${theme.lightGrey};
     box-shadow: 0px 5px 0px ${theme.primary};
     margin-bottom: 35px;
-    // border-radius: 10px;
     display: flex;
     flex-direction: column;
     position: relative;
     overflow: hidden;
     min-height: 130px;
-
     width: 100%;
     padding: 15px;
     padding-top: ${props => props.withImages ? "135px" : "15px"};
+    
 
     @media screen and (min-width: ${theme.m}){
         width: 190px;
@@ -45,7 +44,7 @@ const Outer = styled.li`
     &:hover, &:focus-within {
         box-shadow: 0px 5px 0px ${theme.dark};
         a svg{
-            transform: translateX(5px);
+            transform: translateX(4px);
         }
         .image {
             filter: grayscale(100%) contrast(1) blur(0px);
@@ -70,9 +69,31 @@ const Description = styled.p`
 
 const CallToAction = styled(Link)`
     margin-top: auto;
+
+    color: ${theme.dark};
     text-decoration: none;
-    color: ${theme.primary};
-    font-weight: bold;
+    font-weight: 600;
+    transition: box-shadow .3s; 
+    width: fit-content;
+    box-shadow:
+        inset 0 -0.0em white,
+        inset 0 -10px ${theme.lightest};
+    &:hover{
+        color: ${theme.black};
+        box-shadow:
+            inset 0 -0.0em white,
+            inset 0 -30px ${theme.lightest};
+    }
+    &:focus{
+        box-shadow:
+            inset 0 -0.0em white,
+            inset 0 -30px ${theme.lightest};
+        outline: 2px solid ${theme.highlight};
+    }
+    &:active{
+        outline: none;
+        text-decoration: underline;
+    }
     &:after{
         content: "";
         display: block;
@@ -81,9 +102,6 @@ const CallToAction = styled(Link)`
         left: 0;
         width: 100%;
         height: 100%;
-    }
-    &:focus{
-        outline: none;
     }
 `
 
@@ -147,7 +165,7 @@ export const PageLink = ({
         }
         <CallToAction external={external} to={url}>
             {callToAction}
-            <Icon><Arrow colourFill={theme.primary} /></Icon>
+            <Icon><Arrow colourFill={theme.dark} /></Icon>
         </CallToAction>
     </Outer>
 

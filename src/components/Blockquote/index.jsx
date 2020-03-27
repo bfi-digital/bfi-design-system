@@ -6,7 +6,7 @@ import PropTypes from "prop-types"
 export const Outer = styled.blockquote`
     margin: 20px 0px;
     padding: 25px;
-    background-color: ${props => colorSchemes[props.colorScheme].background};
+    border-left: 5px solid ${theme.primary}
 `
 
 const Quote = styled.q`
@@ -41,7 +41,7 @@ const Citation = styled.cite`
 const colorSchemes = [
     {
         background: theme.lightest,
-        text: theme.dark,
+        text: theme.black,
     }
 ]
 
