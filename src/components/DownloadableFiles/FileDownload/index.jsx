@@ -9,7 +9,7 @@ const Outer = styled.div`
     &:not(:first-child) {
         a {
             margin-top: 30px;
-            &:after {
+            &:before {
                 content: "";
                 height: 1px;
                 width: 100%;

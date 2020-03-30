@@ -1,7 +1,7 @@
 import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
 import { DownloadableFiles } from "../../../components/DownloadableFiles/index"
 import { FileDownload } from "../../../components/DownloadableFiles/FileDownload/index"
-import demoFiles from "../../../components/DownloadableFiles/data"
+import demoFiles, { one, empty } from "../../../components/DownloadableFiles/data"
 
 <Meta title="Pattern Library|Slices/File Downloads" component={DownloadableFiles} />
 
@@ -14,7 +14,7 @@ import demoFiles from "../../../components/DownloadableFiles/data"
     <Story name="Single File Download">
         <div style={{padding: "20px"}}>
             <DownloadableFiles
-                files={demoFiles[0]}
+                files={one}
             />
         </div>
     </Story>
@@ -25,6 +25,16 @@ import demoFiles from "../../../components/DownloadableFiles/data"
         <div style={{padding: "20px"}}>
             <DownloadableFiles
                 files={demoFiles}
+            />
+        </div>
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="Empty test">
+        <div style={{padding: "20px"}}>
+            <DownloadableFiles
+                files={empty}
             />
         </div>
     </Story>
