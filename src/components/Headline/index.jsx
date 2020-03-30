@@ -34,6 +34,7 @@ const H2 = styled.h2`
     font-size: 1.375rem;
     margin-block-start: 1.5em;
     margin-block-end: 0.5em;
+    line-height: 1.2;
 
     @media screen and (min-width: ${theme.l}){
         font-size: 1.6875rem;
@@ -49,6 +50,7 @@ const H3 = styled.h3`
     font-size: 1.4375rem;
     margin-block-start: 1em;
     margin-block-end: 0.5em;
+    line-height: 1.2;
 
     @media screen and (min-width: ${theme.xl}){
         font-size: 1.6875rem;
@@ -61,6 +63,8 @@ const H4 = styled.h4`
     font-weight: 600;
     font-size: 1rem;
     margin-bottom: 10px;
+    line-height: 1.2;
+
     @media screen and (min-width: ${theme.m}){
         font-size: 1.125rem;
     }
@@ -74,6 +78,8 @@ const H5 = styled.h5`
     color: ${theme.black};
     font-weight: 600;
     font-size: 0.875rem;
+    line-height: 1.2;
+
     @media screen and (min-width: ${theme.m}){
         font-size: 1rem;
     }
