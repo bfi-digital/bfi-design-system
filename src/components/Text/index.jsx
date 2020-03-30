@@ -27,21 +27,30 @@ const Outer = styled.section`
         color: ${theme.black};
         text-decoration: none;
         font-weight: 600;
-        transition: box-shadow .3s; 
-        box-shadow:
-            inset 0 -0.0em white,
-            inset 0 -10px ${theme.lightest};
+        position: relative;
+        &:after {
+            content: "";
+            background: ${theme.lightest};
+            height: 40%;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            position: absolute;
+            z-index: -1;
+            transition: height .3s; 
+        }
+
         &:hover{
             color: ${theme.dark};
-            box-shadow:
-                inset 0 -0.0em white,
-                inset 0 -30px ${theme.lightest};
+            &:after {
+                height: 100%;
+            }
         }
         &:focus{
-            box-shadow:
-                inset 0 -0.0em white,
-                inset 0 -30px ${theme.lightest};
             outline: 2px solid ${theme.highlight};
+            &:after {
+                height: 100%;
+            }
         }
         &:active{
             outline: none;
@@ -59,7 +68,7 @@ const Outer = styled.section`
         list-style: none;
         li{
             margin-left: -15px;
-            margin-bottom: 3px;
+            margin-bottom: 10px;
             &:before{
                 content: "•";
                 color: ${theme.dark};
@@ -74,7 +83,7 @@ const Outer = styled.section`
         display: inline-block;
         li{
             padding-left: 10px;
-            margin-bottom: 3px;
+            margin-bottom: 10px;
         }
     }
 

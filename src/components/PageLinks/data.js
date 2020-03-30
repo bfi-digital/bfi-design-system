@@ -21,7 +21,7 @@ export default [
         title: "International Co-production Fund",
         url: "#",
         description: "We support both majority and minority UK co-productions.",
-        callToAction: "Apply to this fund",
+        callToAction: "Filmmaking courses for 16 to 19-year-olds",
         image480x320: "http://placehold.it/480x270"
     }
 ]

@@ -35,7 +35,6 @@ const Outer = styled.li`
         margin-top: 0;
         color: ${theme.black};
         margin-bottom: 15px;
-        line-height: 1;
     }
     p {
         margin-top: 0;
@@ -43,6 +42,8 @@ const Outer = styled.li`
     }
     &:hover, &:focus-within {
         box-shadow: 0px 5px 0px ${theme.dark};
+        background: ${theme.lightest};
+
         a svg{
             transform: translateX(4px);
         }
@@ -54,6 +55,9 @@ const Outer = styled.li`
     &:focus-within{
         box-shadow: 0px 0px 0px 5px ${theme.highlight};
         transition: box-shadow .3s;
+        a {
+            outline: none;
+        }
     }
     &:active{
         box-shadow: 0px 1px 0px ${theme.primary};
@@ -69,27 +73,16 @@ const Description = styled.p`
 
 const CallToAction = styled(Link)`
     margin-top: auto;
-
     color: ${theme.dark};
     text-decoration: none;
     font-weight: 600;
     transition: box-shadow .3s; 
-    width: fit-content;
-    box-shadow:
-        inset 0 -0.0em white,
-        inset 0 -10px ${theme.lightest};
+    width: 100%;
+    
     &:hover{
         color: ${theme.black};
-        box-shadow:
-            inset 0 -0.0em white,
-            inset 0 -30px ${theme.lightest};
     }
-    &:focus{
-        box-shadow:
-            inset 0 -0.0em white,
-            inset 0 -30px ${theme.lightest};
-        outline: 2px solid ${theme.highlight};
-    }
+
     &:active{
         outline: none;
         text-decoration: underline;
@@ -104,10 +97,16 @@ const CallToAction = styled(Link)`
         height: 100%;
     }
 `
+const CTAText = styled.span`
+    max-width: 80%;
+    vertical-align: middle;
+    display: inline-block;
+`
 
 const Icon = styled.div`
     display: inline-block;
-    vertical-align: middle;    
+    vertical-align: middle;   
+    margin-top: 4px; 
     svg {
         margin-left: 10px;
         transition: transform 0.2s ease-out;
@@ -164,7 +163,7 @@ export const PageLink = ({
             <Description>{description}</Description>
         }
         <CallToAction external={external} to={url}>
-            {callToAction}
+            <CTAText>{callToAction}</CTAText>
             <Icon><Arrow colourFill={theme.dark} /></Icon>
         </CallToAction>
     </Outer>

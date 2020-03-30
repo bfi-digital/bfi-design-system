@@ -76,17 +76,17 @@ const ShowButton = styled.button`
     &:hover{
         span {
             color: ${theme.dark};
-            box-shadow:
-                inset 0 -0.0em white,
-                inset 0 -30px ${theme.lightest};
+            &:after {
+                height: 100%;
+            }
         }
     }
     &:focus{
         outline: none;
         span {
-            box-shadow:
-                inset 0 -0.0em white,
-                inset 0 -30px ${theme.lightest};
+            &:after {
+                height: 100%;
+            }
             outline: 2px solid ${theme.highlight};
         }
     }
@@ -111,10 +111,18 @@ const ShowButtonText = styled.span`
     font-weight: 400;
     color: ${theme.black};
     text-decoration: none;
-    transition: box-shadow .3s; 
-    box-shadow:
-        inset 0 -0.0em white,
-        inset 0 -10px ${theme.lightest};
+    position: relative;
+    &:after {
+        content: "";
+        background: ${theme.lightest};
+        height: 40%;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        z-index: -1;
+        transition: height .3s; 
+    }
 `
 
 const Description = styled.p`
