@@ -129,12 +129,23 @@ const BigImage = styled.img`
         cursor: default;
     }
 `
+const Small =styled.small`
+    text-align: center;
+    color: ${props => props.white ? theme.white : theme.darkGrey};
+    font-size: 0.9rem;
+    margin: 0 auto;
+    display: block;
+    &:hover {
+        cursor: default;
+    }
+`
 
 export const Image = ({
     src,
     alt,
     side,
     caption,
+    copyright,
     isClickable
 }) => {
 
@@ -142,10 +153,11 @@ export const Image = ({
     
     return(
         <>
-            <Figure side={side}>
+            <Figure side={side} itemscope itemtype="http://schema.org/ImageObject">
                 { isClickable ?
                     <Button onClick={() => setOpenImage(true)}>
                         <StyledImage
+                            itemprop="image"
                             isClickable={true}
                             src={src}
                             alt={alt}
@@ -153,12 +165,14 @@ export const Image = ({
                     </Button>
                     :
                     <StyledImage
+                        itemprop="image"
                         isClickable={false}
                         src={src}
                         alt={alt}
                     />
                 }
-                {caption && <Figcaption>{caption}</Figcaption>}
+                {caption && <Figcaption itemprop="caption description">{caption}</Figcaption>}
+                {copyright && <Small itemprop="copyrightHolder">{copyright}</Small>}
             </Figure>
 
             {isClickable &&
@@ -175,8 +189,10 @@ export const Image = ({
                         <BigImage
                             src={src}
                             alt={alt}
+                            itemprop="image"
                         />       
-                        {caption && <Figcaption white={true}>{caption}</Figcaption>}
+                        {caption && <Figcaption itemprop="caption description" white={true}>{caption}</Figcaption>}
+                        {copyright && <Small itemprop="copyrightHolder" white={true} >{copyright}</Small>}
                     </Dialog>
                 </>
             }
@@ -193,6 +209,8 @@ Image.propTypes = {
     side: PropTypes.string,
     // A visible caption for the image. Optional
     caption: PropTypes.string,
+    // A copyright for the image. Optional
+    copyright: PropTypes.string,
     // Say whether the images should be clickable, leading to a light box. True by default
     isClickable: PropTypes.bool
 }

@@ -73,6 +73,17 @@ const Caption = styled.figcaption`
         cursor: default;
     }
 `
+const Small = styled.small`
+    text-align: center;
+    color: ${props => props.white ? theme.white : theme.darkGrey};
+    font-size: 0.9rem;
+    max-width: 70%;
+    margin: 0 auto;
+    display: block;
+    &:hover {
+        cursor: default;
+    }
+`
 
 const ImageHolder = styled.div`
     ${props => props.number > 1 ? `
@@ -199,18 +210,19 @@ export const ImageGallery = ({
     }, [rightPress])
 
     return(
-        <Outer>
+        <Outer itemscope itemtype="http://schema.org/ImageObject">
             <ImageHolder number={images.length}>
                 {images.map((image, i) =>                   
                     <Button key={i} onClick={() => setOpenImage(i+1)}>
                         <Image
+                            itemprop="image"
                             src={image.url}
                             alt={image.alt}
                         />
                     </Button>
                 )}
             </ImageHolder>
-            {galleryCaption && <Caption>{galleryCaption}</Caption>}
+            {galleryCaption && <Caption itemprop="caption description">{galleryCaption}</Caption>}
 
             <>
                 <DialogStyles/>
@@ -223,11 +235,15 @@ export const ImageGallery = ({
                         <button onClick={() => setOpenImage(0)}>Close</button>
                     </VisuallyHidden>
                     <BigImage
+                        itemprop="image"
                         src={images[openImage == 0 ? openImage : (openImage-1)].url}
                         alt={images[openImage == 0 ? openImage : (openImage-1)].alt}
                     />       
                     {images[openImage == 0 ? openImage : (openImage-1)].caption &&
-                        <Caption white={true}>{images[openImage == 0 ? openImage : (openImage-1)].caption}</Caption>
+                        <Caption itemprop="caption description" white={true}>{images[openImage == 0 ? openImage : (openImage-1)].caption}</Caption>
+                    }
+                    {images[openImage == 0 ? openImage : (openImage-1)].copyright &&
+                        <Small itemprop="copyrightHolder" white={true}>{images[openImage == 0 ? openImage : (openImage-1)].copyright}</Small>
                     }
 
                 </Dialog>
