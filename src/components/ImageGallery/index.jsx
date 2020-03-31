@@ -81,6 +81,7 @@ const ImageHolder = styled.div`
             flex-direction: row;
             align-items: flex-start;
             flex-wrap: wrap;
+            width: 100%;
         }
     ` : null}
 `
