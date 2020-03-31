@@ -5,7 +5,7 @@ import navItems from "../Header/data"
 import {default as crumbs} from "../Breadcrumbs/data"
 import footerMenus from "../Footer/data"
 
-import { AdvertisingContainer } from "../AdvertisingContainer"
+// import { AdvertisingContainer } from "../AdvertisingContainer"
 import { Breadcrumbs } from "../Breadcrumbs"
 import { Blockquote } from "../Blockquote"
 import { Button } from "../Button"
@@ -13,7 +13,7 @@ import { Divider } from "../Divider"
 import { DownloadableFiles } from "../DownloadableFiles"
 import { FilmGrid } from "../FilmGrid"
 import { FilmShowing } from "../FilmShowing"
-import { FilmShowingGrid } from "../FilmShowingGrid"
+// import { FilmShowingGrid } from "../FilmShowingGrid"
 import { Footer } from "../Footer"
 import { Header } from "../Header"
 import { Headline } from "../Headline"
@@ -25,9 +25,9 @@ import { LeadParagraph } from "../LeadParagraph"
 import { Oembed } from "../Oembed"
 import { PageLinks } from "../PageLinks"
 import { PromoBanner } from "../PromoBanner"
-import { QuickFacts } from "../QuickFacts"
-import { SidebarPageLinks } from "../SidebarPageLinks"
-import { StepByStep } from "../StepByStep"
+// import { QuickFacts } from "../QuickFacts"
+// import { SidebarPageLinks } from "../SidebarPageLinks"
+// import { StepByStep } from "../StepByStep"
 import { Text } from "../Text"
 
 import demoFilms from "../FilmGrid/data"
@@ -36,83 +36,6 @@ import demoShowings from "../Highlights/data"
 export default {
     title: "1 Page Examples/Page Full Width"
 }
-
-const pageLinksData = [
-    {
-        title: "BFI London Film Festival",
-        url: "#",
-        image: "https://www.bfi.org.uk/sites/bfi.org.uk/files/styles/16x9_small/public/sitestructure/lff-2019-1000x750.jpg?itok=vsVDKGIh"
-    },
-    {
-        title: "BFI Flare: London LGBTIQ+ Film Festival",
-        url: "#",
-        image: "https://www.bfi.org.uk/sites/bfi.org.uk/files/styles/16x9_small/public/sitestructure/flare-2020-artwork-1000-750-v1.jpg?itok=0oZOJp2r"
-    }
-]
-
-const days = [
-    {
-        date: "24th February",
-        times: [
-            {
-                time: "3:30pm",
-                url: "#"
-            },
-            {
-                time: "6:30pm",
-                url: "#"
-            },
-            {
-                time: "8:45pm",
-                url: "#",
-                soldOut: true
-            }
-        ]
-    },
-    {
-        date: "24th February",
-        times: [
-            {
-                time: "3:30pm",
-                url: "#",
-                soldOut: true
-            },
-            {
-                time: "6:30pm",
-                url: "#"
-            }
-        ]
-    },
-    {
-        date: "24th February",
-        times: [
-            {
-                time: "3:30pm",
-                url: "#",
-                soldOut: true
-            },
-            {
-                time: "6:30pm",
-                url: "#"
-            }
-        ]
-    },
-    {
-        date: "24th February",
-        times: [
-            {
-                time: "3:30pm",
-                url: "#",
-                soldOut: true
-            },
-            {
-                time: "6:30pm",
-                url: "#",
-                soldOut: true
-            }
-        ]
-    },
-]
 
 export const serviceListPageExample = () =>
     <>
