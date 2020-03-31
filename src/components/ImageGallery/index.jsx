@@ -106,7 +106,11 @@ const Button = styled.button`
         }
     }
     &:focus{
-        outline: 3px solid ${theme.primary};
+        outline: 3px solid ${theme.highlight};
+        img {
+            filter: grayscale(100%) contrast(1) blur(0px);
+            mix-blend-mode: multiply;
+        }
     }
     margin-bottom: 10px;
     @media screen and (min-width: ${theme.m}){
