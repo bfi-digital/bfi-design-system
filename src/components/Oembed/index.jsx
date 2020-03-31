@@ -4,6 +4,7 @@ import parse from "html-react-parser"
 
 const Outer = styled.div`
     width: 100%;
+    text-align: center;
     iframe {
         max-width: 100%;
     }
