@@ -1,0 +1,57 @@
+import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+import { PageLinks } from "../../../components/PageLinks/index"
+import three, { two } from "../../../components/PageLinks/data"
+
+<Meta title="Pattern Library|Slices/Page Links" component={PageLinks} />
+
+# Sidebar Page Links
+ 
+ 
+## Examples
+
+<Preview>
+    <Story name="Three Links">
+        <div style={{padding: "20px"}}>
+            <PageLinks links={three} />
+        </div>
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="Nine Links">
+        <div style={{padding: "20px"}}>
+            <PageLinks links={[
+                ...three, ...three, ...three
+            ]} />
+        </div>
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="Three Links with images">
+        <div style={{padding: "20px"}}>
+            <PageLinks links={three} withImages={true} />
+        </div>
+    </Story>
+</Preview>
+
+
+<Preview>
+    <Story name="Six Links">
+        <div style={{padding: "20px"}}>
+            <PageLinks links={[...three, ...three]} />
+        </div>
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="Four Links">
+        <div style={{padding: "20px"}}>
+            <PageLinks links={[...two, ...two]} />
+        </div>
+    </Story>
+</Preview>
+
+## Props 
+
+<Props of={PageLinks} />
