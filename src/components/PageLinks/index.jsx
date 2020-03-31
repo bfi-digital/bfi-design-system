@@ -82,7 +82,7 @@ export const PageLinks = ({
     withImages = false
 }) =>
     <>
-        {links.length > 6 ?
+        {links.length > 9 ?
             <ScrollerContainer>
                 <ScrollerTrack num={links.length}>
                     {links.map((link, i) =>
