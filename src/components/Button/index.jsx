@@ -34,6 +34,8 @@ const PrimaryButton = styled(Link)`
     text-decoration: none;
     padding: 10px 25px;
     z-index: 2;
+    width: 100%;
+    text-align: center;
 
     :before {
         content: "";
@@ -75,6 +77,9 @@ const PrimaryButton = styled(Link)`
             height: 1px;
             bottom: -1px;
         }
+    }
+    @media screen and (min-width: ${theme.m}){
+        width: auto;
     }
 `
 
