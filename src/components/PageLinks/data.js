@@ -10,7 +10,7 @@ export const two = [
         title: "Production Fund",
         url: "#",
         description: "We welcome production applications from new and established filmmakers.",
-        callToAction: "Apply to this fund",
+        callToAction: "",
         image480x320: "http://placehold.it/480x270"
     }
 ]

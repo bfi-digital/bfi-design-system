@@ -163,7 +163,7 @@ export const PageLink = ({
             <Description>{description}</Description>
         }
         <CallToAction external={external} to={url}>
-            <CTAText>{callToAction}</CTAText>
+            <CTAText>{callToAction !== "" ? callToAction : "Read this page"}</CTAText>
             <Icon><Arrow colourFill={theme.dark} /></Icon>
         </CallToAction>
     </Outer>
