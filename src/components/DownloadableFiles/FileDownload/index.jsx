@@ -92,7 +92,7 @@ export const FileDownload = ({
                 <DownloadFileIcon colourFill={isHovered ? theme.dark : theme.primary} />
                 <FileDetails className="file-details">
                     <Title className="file-title">{title}</Title>
-                    <Type>{type}</Type>
+                    <Type>{type == "Microsoft Office - OOXML - Word Document" ? "Word Document" : type}</Type>
                     <Size>{size}</Size>
                 </FileDetails>
             </Link>
