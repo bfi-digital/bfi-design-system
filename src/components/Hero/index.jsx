@@ -53,14 +53,17 @@ const Container = styled.div`
         max-width: ${theme.xl};
     }
 
-    ol + h1{
+    ol + h1 {
         margin-top: 20px;
     }
-    li, a{
+    li, a {
         color: ${theme.white};
         text-shadow: 0px 0px 30px ${theme.black}50;
         &:focus{
             background: ${theme.dark};
+        }
+        &:after {
+            opacity: 0.7;
         }
     }
 `

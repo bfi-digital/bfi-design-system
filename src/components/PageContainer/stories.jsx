@@ -287,21 +287,6 @@ export const FilmPage = () =>
             copyright="Image: Firstname Surname"
             image1920x1080="https://player.bfi.org.uk/sites/default/files/styles/landscape_1440x810/public/hero-images/La-Dolce-vita-1.jpg"
         >
-            <Breadcrumbs 
-                breadcrumbs={[
-                    {
-                        title: "Watch",
-                        url: "#"
-                    },
-                    {
-                        title: "Films",
-                        url: "#"
-                    },
-                    {
-                        title: "La Dolce Vita"
-                    }
-                ]} 
-            />
             <Headline level={0} text="La Dolce Vita"/>
         </Hero>
         <Wrapper>
