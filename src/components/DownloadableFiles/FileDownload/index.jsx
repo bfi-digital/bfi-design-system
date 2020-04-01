@@ -27,18 +27,6 @@ const Link = styled.a`
     transition: box-shadow .3s;
     position: relative;
 
-    :after {
-        content: "";
-        width: 100%;
-        height: 25%;
-        transition: height .3s;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        background: ${theme.lightest};
-        z-index: -1;
-    }
-
     svg {
         margin-right: 10px;
         vertical-align: top;
@@ -50,17 +38,14 @@ const Link = styled.a`
         .file-title {
             color: ${theme.dark};
         }
-        :after { 
-            height: 100%;
+        .file-details {
+            transform: translate(5px, 0px);   
         }
     }
 
     &:focus {
         outline: none;
         box-shadow: 0px 0px 0px 3px ${theme.highlight};
-        :after { 
-            height: 100%;
-        }
     }
     &:active {
         .file-title {
@@ -72,10 +57,11 @@ const Link = styled.a`
 const FileDetails= styled.div`
     display: inline-block;
     max-width: calc(100% - 45px);
+    transition: transform 0.3s;
 `
 const Title = styled.span`
     display: block;
-    color: ${theme.black};
+    color: ${theme.primary};
     font-weight: 800;
 `
 const Type = styled.span`
@@ -103,8 +89,8 @@ export const FileDownload = ({
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
             >
-                <DownloadFileIcon colourFill={isHovered ? theme.dark : theme.black} />
-                <FileDetails>
+                <DownloadFileIcon colourFill={isHovered ? theme.dark : theme.primary} />
+                <FileDetails className="file-details">
                     <Title className="file-title">{title}</Title>
                     <Type>{type}</Type>
                     <Size>{size}</Size>
