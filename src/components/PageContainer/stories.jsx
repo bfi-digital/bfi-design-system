@@ -491,7 +491,7 @@ export const everyComponent = () =>
                     }
                 ]} />
                 <Headline 
-                    level={3} 
+                    level={4} 
                     text="With these times"
                 />
                 <FilmShowing

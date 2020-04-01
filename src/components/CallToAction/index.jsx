@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 import { Button } from "../Button"
 
 export const Outer = styled.div`
-    margin-bottom: 20px;
+    margin: 20px 0;
 `
 
 export const CallToAction = ({
