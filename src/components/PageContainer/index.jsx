@@ -19,6 +19,10 @@ export const Wrapper = styled.div`
         margin-bottom: 100px;
     }
 
+    article {
+        max-width: ${props => props.sidebarLeft ? "630px" : "none"};
+    }
+
     aside {
         padding-top: ${props => props.sidebarLeft ? "0" : "25px"};
         padding-bottom: ${props => props.sidebarLeft ? "25px" : "0px"};
