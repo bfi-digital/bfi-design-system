@@ -12,14 +12,13 @@ const Outer = styled.li`
     background: ${props => props.withSideBar ? theme.lightGrey : theme.white};
     box-shadow: 0px 5px 0px ${theme.primary};
     margin-bottom: 35px;
-    display: inline-block;
+    display: inline-flex;
     position: relative;
     overflow: hidden;
     min-height: 130px;
     width: 100%;
     padding: 15px;
     padding-top: 135px;
-    
 
     @media screen and (min-width: ${theme.m}){
         width: 190px;
