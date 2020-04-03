@@ -12,7 +12,8 @@ const Outer = styled.li`
     background: ${props => props.withSideBar ? theme.lightGrey : theme.white};
     box-shadow: 0px 5px 0px ${theme.primary};
     margin-bottom: 35px;
-    display: inline-flex;
+    display: flex;
+    flex-direction: column;
     position: relative;
     overflow: hidden;
     min-height: 130px;
@@ -64,7 +65,6 @@ const Outer = styled.li`
         transform: translate(0px, 3px);
     }
 `
-const Inner = styled.div``
 
 const Date = styled.p`
     color: ${theme.darkGrey};
@@ -167,23 +167,21 @@ export const ArticleCard = ({
         <PageImageContainer>
             <PageImage className="image" imageSrc={image480x270} alt={imageAltText} />
         </PageImageContainer>
-        <Inner>
-            {categories && 
-                <Categories>
-                    {categories.map(cat =>
-                        <Tag key={cat}>{cat}</Tag>
-                    )}
-                </Categories>
-            }
-            <Headline level={4} text={title} />
-            <Date>{date}</Date>
-            {summary && 
-                <Summary>{parse(summary)}</Summary>
-            }
-            <CallToAction to={url} external={external}>
-                <CTAText>Read this article</CTAText>
-                <Icon><Arrow colourFill={theme.dark} /></Icon>
-            </CallToAction>
-        </Inner>
+        {categories && 
+            <Categories>
+                {categories.map(cat =>
+                    <Tag key={cat}>{cat}</Tag>
+                )}
+            </Categories>
+        }
+        <Headline level={4} text={title} />
+        <Date>{date}</Date>
+        {summary && 
+            <Summary>{parse(summary)}</Summary>
+        }
+        <CallToAction to={url} external={external}>
+            <CTAText>Read this article</CTAText>
+            <Icon><Arrow colourFill={theme.dark} /></Icon>
+        </CallToAction>
     </Outer>
 

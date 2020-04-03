@@ -5,12 +5,9 @@ import { ArticleCard } from "./ArticleCard"
 import { Button } from "../Button"
 import { Headline } from "../Headline"
 
-const Outer = styled.section`
+const Outer = styled.div`
     padding: 15px 0;
     padding-top: 35px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     position: relative; 
     background: ${props => props.withSideBar ? "transparent" : theme.lightGrey};
 
@@ -57,9 +54,12 @@ const Outer = styled.section`
         z-index: -1;
     }
 `
-const Articles = styled.div`
+const Articles = styled.ul`
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 `
 const CentredButton = styled(Button)`
     margin: 30px auto;
