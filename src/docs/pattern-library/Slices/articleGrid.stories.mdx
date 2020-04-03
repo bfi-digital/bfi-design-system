@@ -1,0 +1,26 @@
+import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+import { ArticleGrid } from "../../../components/ArticleGrid/index"
+import demoArticles from "../../../components/ArticleGrid/data"
+
+<Meta title="Pattern Library|Slices/Article Grid" component={ArticleGrid} />
+
+# Sidebar Page Links
+ 
+ 
+## Examples
+
+<Preview>
+    <Story name="Three Articles">
+        <ArticleGrid articles={demoArticles} />
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="Three Articles with optionals">
+        <ArticleGrid articles={demoArticles} optionalTitle="Latest articles" optionalCTALink="http://google.com" />
+    </Story>
+</Preview>
+
+## Props 
+
+<Props of={ArticleGrid} />

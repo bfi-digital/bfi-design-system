@@ -39,6 +39,16 @@ export const Wrapper = styled.div`
 export const MainContent = styled.article`
     flex: 1;
 `
+export const WrapperFullWidth = styled.article`
+    margin: 35px auto;
+`
+export const MaxWidth = styled.article`
+    max-width: ${theme.l};
+    margin: 0 auto;
+    @media screen and (min-width: ${theme.xl + 200}){
+        max-width: ${theme.xl};
+    }
+`
 
 export const Sidebar = styled.aside`
 `

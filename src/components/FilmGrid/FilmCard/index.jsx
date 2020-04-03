@@ -85,8 +85,7 @@ const Title = styled.h4`
     margin-bottom: 5px;
 `
 
-const Channels = styled.ul`
-    list-style: none;
+const Channels = styled.div`
     margin: 0;
     padding: 0;
 `
@@ -95,11 +94,12 @@ export const FilmCard = ({
     image480x270,
     name,
     channels,
-    url
+    url,
+    imageAltText
 }) =>
     <Outer to={url}>
         <ImageContainer>
-            <Image src={image480x270 != "" ? image480x270 : placeholderImage} alt=""/>
+            <Image src={image480x270 != "" ? image480x270 : placeholderImage} alt={imageAltText} />
         </ImageContainer>
         <Title>{name}</Title>
         <Channels>

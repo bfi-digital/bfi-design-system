@@ -1,11 +1,13 @@
 import React from "react"
-import { Wrapper, MainContent, Sidebar, Actions, PlayButton } from "./index"
+import { Wrapper, MainContent, MaxWidth, WrapperFullWidth, Sidebar, Actions, PlayButton } from "./index"
 
 import navItems from "../Header/data"
 import {longData as crumbs} from "../Breadcrumbs/data"
 import footerMenus from "../Footer/data"
+import demoArticles from "../ArticleGrid/data"
 
 import { AdvertisingContainer } from "../AdvertisingContainer"
+import { ArticleGrid } from "../ArticleGrid"
 import { Breadcrumbs } from "../Breadcrumbs"
 import { Blockquote } from "../Blockquote"
 import { Button } from "../Button"
@@ -308,16 +310,7 @@ export const FilmPage = () =>
                     text="Book tickets at BFI Southbank"
                 />
                 <FilmShowingGrid showings={days} />
-
                 <Button to="#" level={3}>All showings</Button>
-                
-                <Headline 
-                    level={4} 
-                    text="Promoted links from around the web"
-                />
-                <AdvertisingContainer withCaption={false}>
-                    <div style={{width: "680px", height: "400px", background: "grey"}}></div>
-                </AdvertisingContainer>
             </MainContent>
             <Sidebar>
                 <QuickFacts
@@ -338,6 +331,19 @@ export const FilmPage = () =>
                 </AdvertisingContainer>
             </Sidebar>
         </Wrapper>
+        <WrapperFullWidth>
+            <ArticleGrid articles={demoArticles} />
+            <MaxWidth>
+                <Headline 
+                    level={4} 
+                    text="Promoted links from around the web"
+                />
+                <AdvertisingContainer withCaption={false}>
+                    <div style={{width: "1020px", height: "400px", background: "grey"}}></div>
+                </AdvertisingContainer>
+            </MaxWidth>
+        </WrapperFullWidth>
+
         <Footer
             menus={footerMenus}
             copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"

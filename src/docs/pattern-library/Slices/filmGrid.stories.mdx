@@ -15,7 +15,18 @@ import demoFilms from "../../../components/FilmGrid/data"
                 padding: "5px",
                 maxWidth: "1000px"
             }}>
-                <FilmGrid films={demoFilms} allFilmsUrl="#"/>
+                <FilmGrid films={demoFilms} />
+            </div>
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="Film grid with CTA">
+            <div style={{
+                padding: "5px",
+                maxWidth: "1000px"
+            }}>
+                <FilmGrid films={demoFilms} allFilmsUrl="http://google.com"/>
             </div>
     </Story>
 </Preview>

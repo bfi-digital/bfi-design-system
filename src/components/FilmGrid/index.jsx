@@ -24,7 +24,7 @@ export const FilmGrid = ({
 }) =>
     <Outer>
         {films.map(film =>
-            <FilmCard key={film.title} {...film}/>    
+            <FilmCard key={film.uuid} {...film}/>    
         )}
         { allFilmsUrl &&
             <CentredButton to={allFilmsUrl}>See more films</CentredButton>
