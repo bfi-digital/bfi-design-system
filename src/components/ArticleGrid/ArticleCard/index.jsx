@@ -9,7 +9,7 @@ import Arrow from "./arrow-right"
 
 const Outer = styled.li`
     position: relative;
-    background: ${theme.white};
+    background: ${props => props.withSideBar ? theme.lightGrey : theme.white};
     box-shadow: 0px 5px 0px ${theme.primary};
     margin-bottom: 35px;
     display: inline-block;
@@ -154,6 +154,7 @@ const Summary = styled.p`
 `
 
 export const ArticleCard = ({
+    withSideBar,
     title,
     url,
     image480x270,
@@ -163,7 +164,7 @@ export const ArticleCard = ({
     imageAltText,
     external
 }) =>
-    <Outer className="articleCard">
+    <Outer className="articleCard" withSideBar={withSideBar}>
         <PageImageContainer>
             <PageImage className="image" imageSrc={image480x270} alt={imageAltText} />
         </PageImageContainer>

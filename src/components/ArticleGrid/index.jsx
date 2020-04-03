@@ -5,24 +5,15 @@ import { ArticleCard } from "./ArticleCard"
 import { Button } from "../Button"
 import { Headline } from "../Headline"
 
-const Container = styled.div`
-    background: ${theme.lightGrey};
-    padding: 20px 0;
-`
-
-const MaxWidth = styled.article`
-    max-width: ${theme.l};
-    margin: 0 auto;
-    @media screen and (min-width: ${theme.xl + 200}){
-        max-width: ${theme.xl};
-    }
-`
-
-const GridOuter = styled.section`
+const Outer = styled.section`
     padding: 15px 0;
+    padding-top: 35px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    position: relative; 
+    background: ${props => props.withSideBar ? "transparent" : theme.lightGrey};
+
     h2 {
         margin-top: 0;
         margin-bottom: 25px;
@@ -52,6 +43,19 @@ const GridOuter = styled.section`
             min-width: 275px;
         }
     }
+
+    &:before {
+        display: ${props => props.withSideBar ? "none" : "block"};
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -9999px;
+        right: 0;
+        box-shadow: 9999px 0 0 ${theme.lightGrey};
+        border-left: 9999px solid ${theme.lightGrey};
+        z-index: -1;
+    }
 `
 const Articles = styled.div`
     margin: 0;
@@ -67,22 +71,19 @@ const CentredButton = styled(Button)`
 export const ArticleGrid = ({
     articles,
     optionalTitle,
-    optionalCTALink
+    optionalCTALink,
+    withSideBar
 }) =>
-    <Container>
-        <MaxWidth>
-            <GridOuter>
-                {optionalTitle && 
-                    <Headline level={2} text={optionalTitle} />
-                }
-                <Articles>
-                    {articles.map(article =>
-                        <ArticleCard key={article.uuid} {...article}/>    
-                    )}
-                </Articles>
-                { optionalCTALink &&
-                    <CentredButton to={optionalCTALink}>See more articles</CentredButton>
-                }
-            </GridOuter>
-        </MaxWidth>
-    </Container>
+    <Outer withSideBar={withSideBar}>
+        {optionalTitle && 
+            <Headline level={2} text={optionalTitle} />
+        }
+        <Articles>
+            {articles.map(article =>
+                <ArticleCard key={article.uuid} withSideBar={withSideBar} {...article}/>    
+            )}
+        </Articles>
+        { optionalCTALink &&
+            <CentredButton to={optionalCTALink}>See more articles</CentredButton>
+        }
+    </Outer>

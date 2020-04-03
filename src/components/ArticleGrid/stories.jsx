@@ -9,4 +9,9 @@ export default {
 }
 
 export const normal = () =>
-    <ArticleGrid articles={demoArticles} />
+    <div style={{
+        padding: "10px",
+        maxWidth: "1000px"
+    }}>
+        <ArticleGrid articles={demoArticles} />
+    </div>

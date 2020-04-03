@@ -4,8 +4,10 @@ import { Wrapper, MainContent, GreySection } from "./index"
 import navItems from "../Header/data"
 import {default as crumbs} from "../Breadcrumbs/data"
 import footerMenus from "../Footer/data"
+import demoArticles from "../ArticleGrid/data"
 
 // import { AdvertisingContainer } from "../AdvertisingContainer"
+import { ArticleGrid } from "../ArticleGrid"
 import { Breadcrumbs } from "../Breadcrumbs"
 import { Blockquote } from "../Blockquote"
 import { Button } from "../Button"
@@ -368,7 +370,7 @@ export const everyComponent = () =>
                     secondImage="http://placehold.it/150x40"
                     secondImageAltText="Test image"
                 />
-
+                <ArticleGrid articles={demoArticles} />
             </MainContent>
         </Wrapper>
         <Footer

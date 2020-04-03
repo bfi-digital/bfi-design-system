@@ -1,5 +1,5 @@
 import React from "react"
-import { Wrapper, MainContent, MaxWidth, WrapperFullWidth, Sidebar, Actions, PlayButton } from "./index"
+import { Wrapper, MainContent, Sidebar, Actions, PlayButton } from "./index"
 
 import navItems from "../Header/data"
 import {longData as crumbs} from "../Breadcrumbs/data"
@@ -331,9 +331,10 @@ export const FilmPage = () =>
                 </AdvertisingContainer>
             </Sidebar>
         </Wrapper>
-        <WrapperFullWidth>
-            <ArticleGrid articles={demoArticles} />
-            <MaxWidth>
+        <Wrapper>
+            <MainContent>  
+                <ArticleGrid articles={demoArticles} />
+
                 <Headline 
                     level={4} 
                     text="Promoted links from around the web"
@@ -341,8 +342,8 @@ export const FilmPage = () =>
                 <AdvertisingContainer withCaption={false}>
                     <div style={{width: "1020px", height: "400px", background: "grey"}}></div>
                 </AdvertisingContainer>
-            </MaxWidth>
-        </WrapperFullWidth>
+            </MainContent>
+        </Wrapper>
 
         <Footer
             menus={footerMenus}
@@ -366,6 +367,7 @@ export const everyComponent = () =>
                 <LeadParagraph 
                     text="God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs. Do you have any idea how long it takes those cups to decompose. Yes, Yes, without the oops! Yes, Yes, without the oops! Drive us out of here!"
                 />
+
                 <Text 
                     html="<p>So you two dig up, dig up dinosaurs? Hey, you know how I'm, like, always trying to save the planet? Here's my chance. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine?</p>
                     <p>Yes, Yes, without the oops! <a href='http://google.com</MainContent>'>Yes, Yes, without the oops!</a> Drive us out of here!</p>"
@@ -575,7 +577,8 @@ export const everyComponent = () =>
                     secondImage="http://placehold.it/150x40"
                     secondImageAltText="Test image"
                 />
-
+                <ArticleGrid articles={demoArticles} />
+                <ArticleGrid withSideBar={true} articles={demoArticles} />
             </MainContent>
             
 

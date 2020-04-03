@@ -11,13 +11,25 @@ import demoArticles from "../../../components/ArticleGrid/data"
 
 <Preview>
     <Story name="Three Articles">
-        <ArticleGrid articles={demoArticles} />
+        <div style={{
+            padding: "10px",
+            maxWidth: "1000px",
+            margin: "0 auto"
+        }}>
+            <ArticleGrid articles={demoArticles} />
+        </div>
     </Story>
 </Preview>
 
 <Preview>
     <Story name="Three Articles with optionals">
-        <ArticleGrid articles={demoArticles} optionalTitle="Latest articles" optionalCTALink="http://google.com" />
+        <div style={{
+            padding: "10px",
+            maxWidth: "1000px",
+            margin: "0 auto"
+        }}>
+            <ArticleGrid articles={demoArticles} optionalTitle="Latest articles" optionalCTALink="http://google.com" />
+        </div>
     </Story>
 </Preview>
 
