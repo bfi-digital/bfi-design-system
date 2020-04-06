@@ -243,7 +243,7 @@ export const ImageGallery = ({
                         <Caption itemprop="caption description" white={true}>{images[openImage == 0 ? openImage : (openImage-1)].caption}</Caption>
                     }
                     {images[openImage == 0 ? openImage : (openImage-1)].copyright &&
-                        <Small itemprop="copyrightHolder" white={true}>&copy;{images[openImage == 0 ? openImage : (openImage-1)].copyright}</Small>
+                        <Small itemprop="copyrightHolder" white={true}>&copy; {images[openImage == 0 ? openImage : (openImage-1)].copyright}</Small>
                     }
 
                 </Dialog>

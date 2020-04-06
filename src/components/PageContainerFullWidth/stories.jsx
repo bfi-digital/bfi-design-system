@@ -12,6 +12,7 @@ import { Breadcrumbs } from "../Breadcrumbs"
 import { Blockquote } from "../Blockquote"
 import { Button } from "../Button"
 import { Divider } from "../Divider"
+import { ErrorPage } from "../ErrorPage"
 import { DownloadableFiles } from "../DownloadableFiles"
 import { FilmGrid } from "../FilmGrid"
 import { FilmShowing } from "../FilmShowing"
@@ -372,6 +373,20 @@ export const everyComponent = () =>
                 />
                 <ArticleGrid articles={demoArticles} />
             </MainContent>
+        </Wrapper>
+        <Footer
+            menus={footerMenus}
+            copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"
+        />
+    </>
+
+export const errorPageExample = () =>
+    <>
+        <Header navItems={navItems}/>
+        <Wrapper>
+            <ErrorPage 
+                error={404}
+            />
         </Wrapper>
         <Footer
             menus={footerMenus}

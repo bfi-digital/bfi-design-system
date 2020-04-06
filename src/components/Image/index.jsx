@@ -172,7 +172,7 @@ export const Image = ({
                     />
                 }
                 {caption && <Figcaption itemprop="caption description">{caption}</Figcaption>}
-                {copyright && <Small itemprop="copyrightHolder">&copy;{copyright}</Small>}
+                {copyright && <Small itemprop="copyrightHolder">&copy; {copyright}</Small>}
             </Figure>
 
             {isClickable &&
@@ -192,7 +192,7 @@ export const Image = ({
                             itemprop="image"
                         />       
                         {caption && <Figcaption itemprop="caption description" white={true}>{caption}</Figcaption>}
-                        {copyright && <Small itemprop="copyrightHolder" white={true} >&copy;{copyright}</Small>}
+                        {copyright && <Small itemprop="copyrightHolder" white={true} >&copy; {copyright}</Small>}
                     </Dialog>
                 </>
             }
