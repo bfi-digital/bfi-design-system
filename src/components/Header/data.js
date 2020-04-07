@@ -1,6 +1,6 @@
 export default [
     {
-        title: "Watch & Discover",
+        title: "Discover",
         url: "#",
         active: true,
         children: 
@@ -34,7 +34,7 @@ export default [
         ]
     },
     {
-        title: "Make & Industry",
+        title: "Film Industry",
         url: "#",
         children: [
             {
@@ -60,7 +60,7 @@ export default [
         ]
     },
     {
-        title: "Learn & Education",
+        title: "Education",
         url: "#",
         children:   [
             {

@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import parse from "html-react-parser"
 import theme from "../_theme"
 import PropTypes from "prop-types"
 import { Button } from "../Button"
@@ -14,33 +15,33 @@ const PageBackground = styled.div`
     z-index: -1;
 `
 const ErrorContainer = styled.div`
+    margin-bottom: 80px;
 `
 const Heading = styled.h1`
 
 `
 const ErrorNumber = styled.span`
     display: block;
-    font-size: 3em;
+    font-size: 2.7em;
 `
 const ErrorTitle = styled.span`
 
 `
-const ErrorSummary = styled.p`
-    display: block;
+const ErrorSummary = styled.div`
 `
 
 const errorPageData = [
     {
         title: "Error",
-        summary: "Test"
+        summary: "<p>Sorry, something seems to have gone wrong.</p><p>Try going back to home:</p>"
     },
     {
         title: "Page not found",
-        summary: "Test"
+        summary: "<p>Sorry, we can't find the page you are looking for or something has gone wrong...</p><p>Try going back to home and starting again:</p>"
     },
     {
         title: "Internal Server Error",
-        summary: "Test"
+        summary: "<p>Sorry, this page doesn't seem to be working.</p><p>Try to refresh the page, or go back to home:</p>"
     }
 ]
 
@@ -54,7 +55,8 @@ export const ErrorPage = ({
                 <ErrorNumber>{error}</ErrorNumber>
                 <ErrorTitle>{error === 404 ? errorPageData[1].title : error === 500 ? errorPageData[2].title : errorPageData[0].title}</ErrorTitle>
             </Heading>
-            <ErrorSummary>{error === 404 ? errorPageData[1].summary : error === 500 ? errorPageData[2].summary : errorPageData[0].summary}</ErrorSummary>
+            <ErrorSummary>{error === 404 ? parse(errorPageData[1].summary) : error === 500 ? parse(errorPageData[2].summary) : parse(errorPageData[0].summary)}</ErrorSummary>
+            <br/>
             <Button level={1} url="/">Return to home</Button>
         </ErrorContainer>
     </>
