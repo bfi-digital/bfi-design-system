@@ -23,7 +23,19 @@ const ErrorContainer = styled.div`
     }
 `
 const Heading = styled.h1`
+    position: relative;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
 
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 5px;
+        width: 75px;
+        background: ${theme.primary};
+    }
 `
 const ErrorNumber = styled.span`
     display: block;
@@ -68,13 +80,17 @@ const errorPageData = [
     {
         title: "Internal Server Error",
         summary: "<p>Sorry, this page doesn't seem to be working.</p><p>Try to refresh the page, or go back to home.</p>"
+    },
+    {
+        title: "Page is forbidden",
+        summary: "<p>Sorry, the page you are trying to access is restricted.</p><p>Try going back to home.</p>"
     }
 ]
 
 export const ErrorPage = ({
     error
 }) => {
-    const random = Math.floor(Math.random() * Math.floor(2));
+    const random = Math.floor(Math.random() * Math.floor(2))
 
     return(
         <>
@@ -83,7 +99,7 @@ export const ErrorPage = ({
                 <Content>
                     <Heading>
                         <ErrorNumber>{error}</ErrorNumber>
-                        <ErrorTitle>{error === 404 ? errorPageData[1].title : error === 500 ? errorPageData[2].title : errorPageData[0].title}</ErrorTitle>
+                        <ErrorTitle>{error === 404 ? errorPageData[1].title : error === 500 ? errorPageData[2].title : error === 403 || error === 401 ? errorPageData[3].title : errorPageData[0].title}</ErrorTitle>
                     </Heading>
                     <ErrorSummary>{error === 404 ? parse(errorPageData[1].summary) : error === 500 ? parse(errorPageData[2].summary) : parse(errorPageData[0].summary)}</ErrorSummary>
                 </Content>

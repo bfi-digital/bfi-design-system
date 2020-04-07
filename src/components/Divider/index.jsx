@@ -6,4 +6,8 @@ export const Divider = styled.hr`
     margin: 30px auto;
     width: 100%;
     opacity: 0.5;
+
+    @media screen and (min-width: ${theme.m}){
+        margin: 50px auto;
+    }
 `

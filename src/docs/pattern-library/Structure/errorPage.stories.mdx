@@ -1,0 +1,37 @@
+import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+import { ErrorPage } from "../../../components/ErrorPage/index"
+
+<Meta title="Pattern Library|Structure/Error Page" component={ErrorPage} />
+
+# ErrorPage
+ 
+ 
+## Props 
+
+<Props of={ErrorPage} />
+
+## Examples
+
+<Preview>
+    <Story name="404 Page">
+        <ErrorPage error={404} />
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="500 Page">
+        <ErrorPage error={500} />
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="403 Page">
+        <ErrorPage error={403} />
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="400 Page">
+        <ErrorPage error={400} />
+    </Story>
+</Preview>

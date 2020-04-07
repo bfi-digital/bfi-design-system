@@ -257,7 +257,6 @@ export const everyComponent = () =>
                     ]}
                     galleryCaption="A gallery of images"
                 />
-                <Divider />
                 <Headline 
                     level={2} 
                     text="Checkout these films"
@@ -315,7 +314,6 @@ export const everyComponent = () =>
                         }
                     ]}
                 />
-                <Divider />
                 <Headline 
                     level={2} 
                     text="Checkout our YouTube"
