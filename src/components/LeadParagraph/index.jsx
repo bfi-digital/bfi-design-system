@@ -3,11 +3,12 @@ import styled from "styled-components"
 import theme from "../_theme"
 import PropTypes from "prop-types"
 
-const Outer = styled.article`
+const Outer = styled.p`
     color: ${theme.black};
     line-height: 1.5;
     font-size: 1.0625rem;
     margin-bottom: 20px;
+    white-space: pre-wrap;
 
     @media screen and (min-width: ${theme.m}){
         font-size: 1.1875rem;
