@@ -8,22 +8,27 @@ const Outer = styled.section`
     background: ${theme.black};
     width: 100%;
     position: relative;
-    min-height: 80vh;
+    height: 70vh;
+    min-height: 500px;
     padding-top: ${props => props.withHeader ? "64px" : "0px"};
     background-image: url(${props => props.image});
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: flex-end;
-    @media screen and (min-width: ${theme.m}){
-        align-items: "flex-end";
-        padding-top: ${props => props.withHeader ? "175px" : "0px"};
-    }
+
     h1{
         color: ${theme.white};
         max-width: calc( 0.5 * ${theme.m});
         text-shadow: 0px 0px 30px ${theme.black}50;
         margin-bottom: 50px;
+    }
+
+
+    @media screen and (min-width: ${theme.m}){
+        min-height: 500px;
+        align-items: "flex-end";
+        padding-top: ${props => props.withHeader ? "175px" : "0px"};
     }
     @media screen and (min-width: ${theme.xl}){
         h1{
@@ -69,17 +74,17 @@ const Container = styled.div`
 `
 
 const Copyright = styled.p`
-        color: ${theme.white};
-        text-shadow: 0px 0px 30px ${theme.black}50;
-        font-size: 0.75rem;
-        position: absolute;
+    color: ${theme.white};
+    text-shadow: 0px 0px 30px ${theme.black}50;
+    font-size: 0.75rem;
+    position: absolute;
+    bottom: 5px;
+
+
+    @media screen and (min-width: ${theme.m}){
+        right: ${theme.horizontalPadding};
         bottom: 5px;
-
-
-        @media screen and (min-width: ${theme.m}){
-            right: ${theme.horizontalPadding};
-            bottom: 5px;
-        }
+    }
 
 `
 

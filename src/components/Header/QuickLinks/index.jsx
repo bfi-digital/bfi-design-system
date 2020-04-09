@@ -15,7 +15,7 @@ const QuickLink = styled(Link)`
     color: ${props => props.isTransparent ? (!props.isSticky ? theme.white : theme.primary) : theme.primary};
     font-weight: 700;
     text-decoration: none;
-    padding: 21px 15px;
+    padding: 19px 15px;
 
     &:hover {
         color: ${props => props.isTransparent ? (!props.isSticky ? theme.grey : theme.dark) : theme.dark};

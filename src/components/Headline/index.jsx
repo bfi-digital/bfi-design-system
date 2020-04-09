@@ -23,7 +23,7 @@ const HeroH1 = styled.h1`
 const H1 = styled(HeroH1)`
     font-family: "Open Sans";
     text-transform: none;
-    margin-block-start: 1em;
+    margin-block-start: 0.75em;
     margin-block-end: 0.5em;
     font-weight: 800;
 `

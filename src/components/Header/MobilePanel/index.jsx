@@ -4,7 +4,6 @@ import theme from "../../_theme"
 import styled from "styled-components"
 
 const Panel = styled.nav`
-
     @keyframes fadeIn{
         from{ 
             opacity: 0 

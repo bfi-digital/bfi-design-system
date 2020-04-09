@@ -129,18 +129,13 @@ export const homePageExample = () =>
                     weekShowings={demoShowings}
                     allShowingsUrl="#"
                 />
-            </MainContent>
-    
-        </Wrapper>
-        <GreySection>
-            <MainContent>
                 <Headline 
                     level={2} 
                     text="Watch with us"
                 />
                 <FilmGrid films={demoFilms} allFilmsUrl="#"/>
             </MainContent>
-        </GreySection>
+        </Wrapper>
         <Footer
             menus={footerMenus}
             copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"

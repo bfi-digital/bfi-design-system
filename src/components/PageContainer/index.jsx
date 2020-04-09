@@ -30,7 +30,7 @@ export const Wrapper = styled.div`
             padding-top: 0px;
             padding-bottom: 0px;
             width: 33%;
-            margin-left: ${props => props.sidebarLeft ? "0px" : "70px"};
+            margin-left: ${props => props.sidebarLeft ? "0px" : "50px"};
             margin-right: ${props => props.sidebarLeft ? "50px" : "0px"};
         }
     }
