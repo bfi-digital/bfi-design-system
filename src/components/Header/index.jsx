@@ -121,7 +121,7 @@ export const Header = ({
             >
                 <Inner>
                     <LogoLink to="/">
-                        <Logo src={overlay ? (isSticky ? logo : logoWhite) : logoWhite} alt="British Film Institute"/>
+                        <Logo src={overlay ? logoWhite : logo} alt="British Film Institute"/>
                     </LogoLink>
                 </Inner>
 
