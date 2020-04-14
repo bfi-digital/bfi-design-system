@@ -98,7 +98,9 @@ export const ErrorPage = ({
             <ErrorContainer>
                 <Content>
                     <Heading>
-                        <ErrorNumber>{error}</ErrorNumber>
+                        {error &&
+                            <ErrorNumber>{error}</ErrorNumber>
+                        }
                         <ErrorTitle>{error === 404 ? errorPageData[1].title : error === 500 ? errorPageData[2].title : error === 403 || error === 401 ? errorPageData[3].title : errorPageData[0].title}</ErrorTitle>
                     </Heading>
                     <ErrorSummary>{error === 404 ? parse(errorPageData[1].summary) : error === 500 ? parse(errorPageData[2].summary) : parse(errorPageData[0].summary)}</ErrorSummary>
@@ -119,8 +121,4 @@ ErrorPage.propTypes = {
 	 * The type of error
 	 **/
     error: PropTypes.number
-}
-
-ErrorPage.defaultProps = {
-    error: 404
 }
