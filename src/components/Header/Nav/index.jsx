@@ -62,7 +62,7 @@ const Item = styled.li`
     @media screen and (min-width: ${theme.l}){
         font-size: 1rem;
     }
-    &:first-of-type {
+    &:first-child {
         a {
             margin-left: -15px;
         }
@@ -80,10 +80,13 @@ const ChildBar = styled.div`
     }
     position: absolute;
     background: ${theme.grey};
-    top: 64px;
+    top: 61px;
     left: 0;
     width: 100%;
     animation: fadeIn 0.1s ease-out;
+    @media screen and (min-width: ${theme.l}){
+        top: 64px;
+    }
 `
 
 const ChildList = styled.ul`
@@ -94,8 +97,15 @@ const ChildList = styled.ul`
     &:hover a{
         color: ${theme.darkGrey}
     }
-    @media screen and (min-width: ${theme.xl}){
-        max-width: ${theme.xl};
+    li {
+        a {
+            margin-left: 0px !important;
+        }
+    }
+    li:first-child {
+        a {
+            margin-left: -15px !important;
+        }
     }
 `
 

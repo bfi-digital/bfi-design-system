@@ -25,10 +25,9 @@ const Outer = styled.section`
         margin-bottom: 50px;
     }
 
-
     @media screen and (min-width: ${theme.m}){
         margin-top: 0px;
-        min-height: 375px;
+        min-height: 390px;
         align-items: "flex-end";
         padding-top: ${props => props.withHeader ? "175px" : "0px"};
 
@@ -37,7 +36,7 @@ const Outer = styled.section`
         }
     }
     @media screen and (min-width: ${theme.xl}){
-        min-height: 425px;
+        min-height: 450px;
         h1{
             max-width: calc( 0.3 * ${theme.xl});
             margin-bottom: 75px;

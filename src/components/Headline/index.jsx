@@ -9,9 +9,6 @@ const HeroH1 = styled.h1`
     color: ${theme.black};
     font-weight: 800;
     font-size: 1.875rem;
-    @media screen and (min-width: ${theme.m}){
-        font-size: 1.5625rem;
-    }
     @media screen and (min-width: ${theme.l}){
         font-size: 2.0625rem;
     }
