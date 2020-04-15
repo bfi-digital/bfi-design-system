@@ -89,14 +89,10 @@ export const homePageExample = () =>
         <Hero 
             withHeader
             image1920x1080="https://bfi-prototype.netlify.com/static/media/watch-banner.b01324c4.jpg"
-            headline="Watch a new film, rediscover your old favourites, and get inspired."
+            headline="Discover the world of cinema with the BFI"
         />
         <Wrapper>
             <MainContent>
-                <Headline 
-                    level={2} 
-                    text="Highlights this week"
-                />
                 <Highlights
                     highlight={{
                         image600x600: "https://placehold.it/600x600",

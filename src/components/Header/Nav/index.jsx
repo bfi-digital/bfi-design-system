@@ -20,20 +20,13 @@ const List = styled.ul`
     padding-left: 0;
 `
 
-const Item = styled.li`
-    font-weight: 600;
-    font-size: 0.9rem;
-    @media screen and (min-width: ${theme.l}){
-        font-size: 1rem;
-    }
-`
-
 const ItemLink = styled(Link)`
     display: block;
     padding: 21px 15px;
     color: ${props => props.isWhite ? (props.isSticky ? theme.black : theme.white) : theme.black};
     text-decoration: none;
     position: relative;
+
     &:after{
         position: absolute;
         left: 15px;
@@ -59,6 +52,20 @@ const ItemLink = styled(Link)`
         border-left: 8px solid transparent;
         border-right: 8px solid transparent;
         border-bottom: 8px solid ${props => props.hovered ? theme.grey : "transparent"};
+    }
+`
+
+
+const Item = styled.li`
+    font-weight: 600;
+    font-size: 0.9rem;
+    @media screen and (min-width: ${theme.l}){
+        font-size: 1rem;
+    }
+    &:first-of-type {
+        a {
+            margin-left: -15px;
+        }
     }
 `
 

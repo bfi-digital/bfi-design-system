@@ -8,31 +8,38 @@ const Outer = styled.section`
     background: ${theme.black};
     width: 100%;
     position: relative;
-    height: 70vh;
-    min-height: 500px;
+    height: 40vh;
+    min-height: 200px;
     padding-top: ${props => props.withHeader ? "64px" : "0px"};
     background-image: url(${props => props.image});
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: flex-end;
+    margin-top: 175px;
 
     h1{
         color: ${theme.white};
-        max-width: calc( 0.5 * ${theme.m});
+        max-width: calc( 0.65 * ${theme.m});
         text-shadow: 0px 0px 30px ${theme.black}50;
         margin-bottom: 50px;
     }
 
 
     @media screen and (min-width: ${theme.m}){
-        min-height: 500px;
+        margin-top: 0px;
+        min-height: 375px;
         align-items: "flex-end";
         padding-top: ${props => props.withHeader ? "175px" : "0px"};
+
+        h1 {
+            max-width: calc( 0.5 * ${theme.m});
+        }
     }
     @media screen and (min-width: ${theme.xl}){
+        min-height: 425px;
         h1{
-            max-width: calc( 0.5 * ${theme.xl});
+            max-width: calc( 0.3 * ${theme.xl});
             margin-bottom: 75px;
         }
     }
