@@ -1,5 +1,5 @@
 import React from "react"
-import { Wrapper, MainContent, GreySection } from "./index"
+import { Wrapper, MainContent } from "./index"
 
 import navItems from "../Header/data"
 import {default as crumbs} from "../Breadcrumbs/data"

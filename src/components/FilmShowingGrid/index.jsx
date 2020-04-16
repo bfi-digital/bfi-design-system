@@ -30,7 +30,7 @@ export const FilmShowingGrid = ({
         <Outer>
             {showings.map(showing =>
                 <FilmShowing
-                    key={showing.date}
+                    key={showing.id}
                     date={showing.date}
                     times={showing.times}
                 />  
