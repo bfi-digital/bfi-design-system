@@ -130,6 +130,7 @@ export const homePageExample = () =>
                     text="Watch with us"
                 />
                 <FilmGrid films={demoFilms} allFilmsUrl="#"/>
+                <FilmGrid films={[demoFilms[0], demoFilms[1], demoFilms[2]]} />
             </MainContent>
         </Wrapper>
         <Footer

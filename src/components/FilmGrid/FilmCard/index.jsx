@@ -4,7 +4,7 @@ import theme from "../../_theme"
 import { LinkSwitch } from "../../LinkSwitch"
 import { Tag } from "../../Tag"
 import placeholderImage from "./placeholder.png"
-
+    
 const Outer = styled(LinkSwitch)`
     display: block;
     // border-radius: 5px;
@@ -15,6 +15,9 @@ const Outer = styled(LinkSwitch)`
     
     h4 {
         margin-top: 0;
+        min-height: 35px;
+        margin-top: 5px;
+        margin-bottom: 10px;
     }
 
     @media screen and (min-width: ${theme.m}){
@@ -62,6 +65,27 @@ const Outer = styled(LinkSwitch)`
         }
     }
 `
+const RestyledOuter = styled(Outer)`
+    flex: 0 0 80%;
+    margin-right: 15px !important;
+
+    &:last-of-type {
+        margin-right: 0px !important;
+    }
+
+    @media screen and (min-width: ${theme.m}){
+        flex: 0 0 30%;
+        &:nth-of-type(even){
+            margin-right: 15px !important;
+        }
+    }
+    @media screen and (min-width: ${theme.l}){
+        &:nth-of-type(3n){
+            margin-right: 15px !important;
+        }
+    }
+`
+
 const ImageContainer = styled.div`
     background: ${theme.highlight};
     display: inline-block;
@@ -95,16 +119,33 @@ export const FilmCard = ({
     name,
     channels,
     url,
-    imageAltText
+    imageAltText,
+    inScroller
 }) =>
-    <Outer to={url}>
-        <ImageContainer>
-            <Image src={image480x270 != "" ? image480x270 : placeholderImage} alt={imageAltText} />
-        </ImageContainer>
-        <Title>{name}</Title>
-        <Channels>
-            {channels.map(channel =>
-                <Tag key={channel}>{channel}</Tag>
-            )}
-        </Channels>
-    </Outer>
+    <>
+        {inScroller ? 
+            <RestyledOuter to={url} inScroller={inScroller}>
+                <ImageContainer>
+                    <Image src={image480x270 != "" ? image480x270 : placeholderImage} alt={imageAltText} />
+                </ImageContainer>
+                <Title>{name}</Title>
+                <Channels>
+                    {channels.map(channel =>
+                        <Tag key={channel}>{channel}</Tag>
+                    )}
+                </Channels>
+            </RestyledOuter>
+            :
+            <Outer to={url} inScroller={inScroller}>
+                <ImageContainer>
+                    <Image src={image480x270 != "" ? image480x270 : placeholderImage} alt={imageAltText} />
+                </ImageContainer>
+                <Title>{name}</Title>
+                <Channels>
+                    {channels.map(channel =>
+                        <Tag key={channel}>{channel}</Tag>
+                    )}
+                </Channels>
+            </Outer>
+        }
+    </>
