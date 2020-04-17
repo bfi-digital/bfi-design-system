@@ -84,11 +84,16 @@ const errorPageData = [
     {
         title: "Page is forbidden",
         summary: "<p>Sorry, the page you are trying to access is restricted.</p><p>Try going back to home.</p>"
+    },
+    {
+        title: "This service is temporarily unavailible",
+        summary: "<p>We are sorry, but the page you are trying to access is currently having issues.</p><p>Try again later, or try going back to home.</p>"
     }
 ]
 
 export const ErrorPage = ({
-    error
+    error,
+    errorString
 }) => {
     const random = Math.floor(Math.random() * Math.floor(2))
 
@@ -101,9 +106,13 @@ export const ErrorPage = ({
                         {error &&
                             <ErrorNumber>{error}</ErrorNumber>
                         }
-                        <ErrorTitle>{error === 404 ? errorPageData[1].title : error === 500 ? errorPageData[2].title : error === 403 || error === 401 ? errorPageData[3].title : errorPageData[0].title}</ErrorTitle>
+                        <ErrorTitle>{error === 404 ? errorPageData[1].title : error === 500 ? errorPageData[2].title : error === 403 || error === 401 ? errorPageData[3].title : error === 503 ? errorPageData[4].title : errorPageData[0].title}</ErrorTitle>
                     </Heading>
-                    <ErrorSummary>{error === 404 ? parse(errorPageData[1].summary) : error === 500 ? parse(errorPageData[2].summary) : parse(errorPageData[0].summary)}</ErrorSummary>
+                    {errorString ? 
+                        <ErrorSummary>{errorString}</ErrorSummary>
+                        :
+                        <ErrorSummary>{error === 404 ? parse(errorPageData[1].summary) : error === 500 ? parse(errorPageData[2].summary) : error === 403 || error === 401 ? errorPageData[3].title : error === 503 ? parse(errorPageData[4].summary) : parse(errorPageData[0].summary)}</ErrorSummary>
+                    }
                 </Content>
                 <Image>
                     <img src={random === 0 ? travolta : kansas} alt="" />
@@ -120,5 +129,9 @@ ErrorPage.propTypes = {
     /** 
 	 * The type of error
 	 **/
-    error: PropTypes.number
+    error: PropTypes.number,
+    /** 
+	 * An optional string to support the error message
+	 **/
+    errorString: PropTypes.string
 }
