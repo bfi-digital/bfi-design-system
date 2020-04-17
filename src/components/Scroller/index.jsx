@@ -86,14 +86,15 @@ export const Scroller = ({
     const [viewed, setViewed] = useState(0)
 
     useEffect(() => {
+        var containerWidthTemp = 0
         if (containerRef.current) {
-            const containerWidth = containerRef.current.clientWidth
+            containerWidthTemp = containerRef.current.clientWidth
         } else {
-            const containerWidth = 0
+            containerWidthTemp = 0
         }
 
-        setContainerWidth(containerWidth)
-        setTotalInViewport(Math.floor(containerWidth / 315))
+        setContainerWidth(containerWidthTemp)
+        setTotalInViewport(Math.floor(containerWidthTemp / 315))
     }, [containerRef.current])
 
     const handlePrev = () => {
