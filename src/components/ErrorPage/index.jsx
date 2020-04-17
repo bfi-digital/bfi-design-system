@@ -17,7 +17,8 @@ const PageBackground = styled.div`
     z-index: -1;
 `
 const ErrorContainer = styled.div`
-    margin-bottom: 10px;
+    margin-bottom: 80px; 
+
     @media screen and (min-width: ${theme.m}){
         display: flex;
     }
@@ -48,6 +49,7 @@ const ErrorSummary = styled.div`
 `
 
 const Content = styled.div`
+    margin-right: 30px;
 `
 const Image = styled.div`
     img {
@@ -64,8 +66,8 @@ const Image = styled.div`
     }
 `
 const CTAContainer = styled.div`
-    margin-bottom: 80px; 
-    margin-top: 15px;
+    margin-top: 25px;
+    width: 100%;
 `
 
 const errorPageData = [
@@ -113,14 +115,15 @@ export const ErrorPage = ({
                         :
                         <ErrorSummary>{error === 404 ? parse(errorPageData[1].summary) : error === 500 ? parse(errorPageData[2].summary) : error === 403 || error === 401 ? errorPageData[3].title : error === 503 ? parse(errorPageData[4].summary) : parse(errorPageData[0].summary)}</ErrorSummary>
                     }
+                    <CTAContainer>
+                        <Button level={1} url="/">Return to home</Button>
+                    </CTAContainer>
                 </Content>
                 <Image>
                     <img src={random === 0 ? travolta : kansas} alt="" />
                 </Image>
             </ErrorContainer>
-            <CTAContainer>
-                <Button level={1} url="/">Return to home</Button>
-            </CTAContainer>
+            
         </>
     )
 }
