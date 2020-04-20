@@ -5,15 +5,18 @@ import theme from "../_theme"
 import PropTypes from "prop-types"
 
 const Outer = styled.section`
+    margin: 0 auto;
     background: ${theme.black};
     width: 100%;
+    max-width: ${theme.xl};
+    max-width: calc(${theme.xl} + 100px);
     position: relative;
     height: 40vh;
     min-height: 200px;
     padding-top: ${props => props.withHeader ? "64px" : "0px"};
     background-image: url(${props => props.image});
     background-size: cover;
-    background-position: center;
+    background-position: top center;
     display: flex;
     align-items: flex-end;
     margin-top: 175px;
