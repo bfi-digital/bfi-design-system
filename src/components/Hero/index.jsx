@@ -9,14 +9,14 @@ const Outer = styled.section`
     background: ${theme.black};
     width: 100%;
     max-width: ${theme.xl};
-    max-width: calc(${theme.xl} + 100px);
+    max-width: calc(${theme.xl} + 125px);
     position: relative;
     height: 40vh;
     min-height: 200px;
     padding-top: ${props => props.withHeader ? "64px" : "0px"};
     background-image: url(${props => props.image});
     background-size: cover;
-    background-position: top center;
+    background-position: center center;
     display: flex;
     align-items: flex-end;
     margin-top: 175px;
@@ -31,17 +31,17 @@ const Outer = styled.section`
     @media screen and (min-width: ${theme.m}){
         margin-top: 0px;
         min-height: 390px;
-        align-items: "flex-end";
+        align-items: flex-end;
         padding-top: ${props => props.withHeader ? "175px" : "0px"};
 
         h1 {
-            max-width: calc( 0.5 * ${theme.m});
+            max-width: calc( 0.75 * ${theme.m});
         }
     }
     @media screen and (min-width: ${theme.xl}){
-        min-height: 450px;
+        min-height: 500px;
         h1{
-            max-width: calc( 0.3 * ${theme.xl});
+            max-width: calc( 0.4 * ${theme.xl});
             margin-bottom: 75px;
         }
     }

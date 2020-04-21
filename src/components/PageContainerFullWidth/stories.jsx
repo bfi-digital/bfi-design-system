@@ -11,6 +11,7 @@ import { ArticleGrid } from "../ArticleGrid"
 import { Breadcrumbs } from "../Breadcrumbs"
 import { Blockquote } from "../Blockquote"
 import { Button } from "../Button"
+import { CallToAction } from "../CallToAction"
 import { Divider } from "../Divider"
 import { ErrorPage } from "../ErrorPage"
 import { DownloadableFiles } from "../DownloadableFiles"
@@ -39,6 +40,302 @@ import demoShowings from "../Highlights/data"
 export default {
     title: "1 Page Examples/Page Full Width"
 }
+
+export const discoveryPage = () =>
+    <>
+        <Header navItems={navItems} overlay={true} />
+        <Hero 
+            withHeader
+            image1920x1080="https://bfi-prototype.netlify.com/static/media/watch-banner.b01324c4.jpg"
+            headline="Discover the world of cinema with the BFI"
+        />
+        <Wrapper>
+            <MainContent>
+                <Highlights
+                    highlight={{
+                        image600x600: "https://placehold.it/600x600",
+                        imageAltText: "",
+                        caption: "18 - 29 March at BFI Southbank",
+                        title: "BFI Flare: London LGBTIQ+ Film Festival 2020 programme announced",
+                        description: "The best new and classic LGBTIQ+ films from around the world. Priority booking opens to BFI Members at 11:30 on 25 Feb. Champion booking is open.",
+                        callToActionUrl: "#",
+                        callToActionTitle: "Explore the programme"
+                    }}
+                    todayHighlight={{
+                        image480x320: "https://placehold.it/480x320",
+                        imageAltText: "",
+                        caption: "Current season",
+                        title: "Fellini Season, Jan-Feb 2020",
+                        description: "The great Italian director’s centenary will be celebrated with a major two-month retrospective at BFI Southbank.",
+                        callToActionUrl: "#",
+                        callToActionTitle: "Explore the season"
+                    }}
+                    todayShowings={demoShowings}
+                    weekHighlight={{
+                        image480x320: "https://placehold.it/480x320",
+                        imageAltText: "",
+                        caption: "Current season",
+                        title: "Cronenberg Season, Jan-Feb 2020",
+                        description: "Canadian director David Cronenberg has been making...",
+                        callToActionUrl: "#",
+                        callToActionTitle: "Explore the season"
+                    }}
+                    weekShowings={demoShowings}
+                    allShowingsUrl="#"
+                />
+                <Headline 
+                    level={2} 
+                    text="Now showing"
+                />
+                <FilmGrid films={demoFilms} />
+
+                <PromoBanner 
+                    colorScheme={1}
+                    headline="Watch the greatest global cinema online on BFI Player"
+                    description="From £2.50 per film, or £4.99 a month."
+                    image="http://placehold.it/600x350"
+                    callToActionTitle="Try 14 days free now"
+                    callToActionUrl="#"
+                    reversed={true}
+                />
+
+                <Headline 
+                    level={2} 
+                    text="What to watch"
+                />
+                <PageLinks withImages={true} links={[
+                    {
+                        title: "100 great films streaming on Netflix and Amazon Prime",
+                        url: "#",
+                        callToAction: "Read this list",
+                        image480x320: "http://placehold.it/480x270"
+                    },
+                    {
+                        title: "Production Fund",
+                        url: "#",
+                        callToAction: "Read this list",
+                        image480x320: "http://placehold.it/480x270"
+                    },
+                    {
+                        title: "Production Fund",
+                        url: "#",
+                        callToAction: "Read this list",
+                        image480x320: "http://placehold.it/480x270"
+                    }
+                ]} />
+                <CallToAction linkText="See more lists" linkURL="/" center={true} />
+                
+                <PromoBanner 
+                    colorScheme={1}
+                    headline="Enjoy screenings and special events as a member"
+                    description="Become a BFI member for £37 a year and get priority booking for BFI London Film Festival, BFI Flare and at BFI Southbank all year around."
+                    image="http://placehold.it/600x350"
+                    callToActionTitle="Become a member"
+                    callToActionUrl="#"
+                />
+
+                <ArticleGrid optionalTitle="News & Articles" optionalCTALink="#" articles={demoArticles} />
+
+                <PromoBanner 
+                    colorScheme={1}
+                    headline="Sight & Sound"
+                    description="Subscribe today - in print and/ or digital - and discover the world’s best cinema."
+                    image="http://placehold.it/600x350"
+                    callToActionTitle="Subscribe now"
+                    callToActionUrl="#"
+                />
+                
+                <br/>
+
+                <PromoBanner 
+                    colorScheme={1}
+                    headline="National archive"
+                    description="National archive"
+                    image="http://placehold.it/600x350"
+                    callToActionTitle="Read more"
+                    callToActionUrl="#"
+                    reversed={true}
+                />
+            </MainContent>
+        </Wrapper>
+        <Footer
+            menus={footerMenus}
+            copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"
+        />
+    </>
+
+
+
+
+
+
+export const industryPage = () =>
+    <>
+        <Header navItems={navItems} overlay={true} />
+        <Hero 
+            withHeader
+            image1920x1080="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1410/500/1/2020-03/industry.jpg"
+            headline="We support filmmakers and champion films that push boundaries"
+        />
+        <Wrapper>
+            <MainContent>
+                <PromoBanner 
+                    colorScheme={1}
+                    headline="Get funding and support"
+                    description="At BFI, we champion films that push boundaries. We’re passionate about discovering unfamiliar voices. We support filmmakers – from first features, to world-class shorts."
+                    callToActionTitle="Find out more"
+                    callToActionUrl="#"
+                />
+                <PageLinks links={[
+                    {
+                        title: "Progress my career and grow my business",
+                        url: "#",
+                        description: "If you're an emerging filmmaker, apply for funding to build skills and experience to stand out in the industry.",
+                        callToAction: "Explore funding options"
+                    },
+                    {
+                        title: "Create film, TV, or new formats of storytelling",
+                        url: "#",
+                        description: "If you're an adventurous storyteller, we can help you with funding to create your film, tv or emerging media like VR or AR.",
+                        callToAction: "Explore funding options"
+                    },
+                    {
+                        title: "Bring great films to a wider audience",
+                        url: "#",
+                        description: "We want to help film exhibitors and distributors show bold films to diverse UK audiences.",
+                        callToAction: "Explore funding options"
+                    }
+                ]} />
+
+                <Headline level={3} text="Previously awarded funds" />
+                <Text html="<p>Search the funding awards for films, projects and organisations made by the BFI since April 2011.</p>" />
+                <CallToAction linkText="See previously awarded funds" linkURL="/" />
+                <Divider />
+
+                <PromoBanner 
+                    colorScheme={2}
+                    headline="Applying for tax relief & British Certification"
+                    description="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+                    image="http://placehold.it/600x350"
+                    callToActionTitle="Find out more"
+                    callToActionUrl="#"
+                    reversed={true}
+                />
+
+                <br/>
+
+                <PromoBanner 
+                    colorScheme={2}
+                    headline="Licensing or screening a BFI film"
+                    description="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+                    image="http://placehold.it/600x350"
+                    callToActionTitle="Find out more"
+                    callToActionUrl="#"
+                />
+                
+                <br/>
+
+                <PromoBanner 
+                    colorScheme={2}
+                    headline="Understanding Film Industry with Statistics & insights"
+                    description="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+                    image="http://placehold.it/600x350"
+                    callToActionTitle="Find out more"
+                    callToActionUrl="#"
+                    reversed={true}
+                />
+
+                <br/>
+
+                <PromoBanner 
+                    colorScheme={2}
+                    headline="Film Audience Network"
+                    description="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+                    image="http://placehold.it/600x350"
+                    callToActionTitle="Find out more"
+                    callToActionUrl="#"
+                />
+
+            </MainContent>
+        </Wrapper>
+        <Footer
+            menus={footerMenus}
+            copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"
+        />
+    </>
+
+
+
+export const educationPage = () =>
+    <>
+        <Header navItems={navItems} overlay={true} />
+        <Hero 
+            withHeader
+            image1920x1080="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1440/670/1/2020-03/education.jpg"
+            headline="Learn, teach and research about films, through films"
+        />
+        <Wrapper>
+            <MainContent>
+                <Headline
+                    level={2}
+                    text="Resources and opportunities"
+                />
+                <PageLinks links={[
+                    {
+                        title: "Opportunities for young creatives",
+                        url: "#",
+                        description: "Aged 16-25? If you are wondering where to get start with filmmaking or explore a career in film, we have a range of opportunities, workshops and courses for you.",
+                        callToAction: "Find out more"
+                    },
+                    {
+                        title: "Courses, conferences and resources for teacher",
+                        url: "#",
+                        description: "We have a wealth of knowledge and tools to help you introduce students to specialist, independent and archive films for teaching with or about film.",
+                        callToAction: "Find out more"
+                    },
+                    {
+                        title: "Make the best use of our Reuben Library",
+                        url: "#",
+                        description: "Access national archive, a huge collection of books, journals and digitised material about films, television and moving images through our Reuben Lirary at Southbank.",
+                        callToAction: "Find out more"
+                    }
+                ]} />
+
+                
+                <PromoBanner 
+                    colorScheme={2}
+                    headline="Events & activities for families at the BFI Southbank"
+                    description="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+                    image="http://placehold.it/600x350"
+                    callToActionTitle="Browse family programme"
+                    callToActionUrl="#"
+                />
+
+                <br/>
+
+                <PromoBanner 
+                    colorScheme={2}
+                    headline="Meet our team"
+                    description="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+                    image="http://placehold.it/600x350"
+                    callToActionTitle="Find out more"
+                    callToActionUrl="#"
+                    reversed={true}
+                />
+
+            </MainContent>
+        </Wrapper>
+        <Footer
+            menus={footerMenus}
+            copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"
+        />
+    </>
+
+
+
+
+
+
 
 export const serviceListPageExample = () =>
     <>
@@ -83,61 +380,8 @@ export const serviceListPageExample = () =>
 
 
 
-export const homePageExample = () =>
-    <>
-        <Header navItems={navItems} overlay={true} />
-        <Hero 
-            withHeader
-            image1920x1080="https://bfi-prototype.netlify.com/static/media/watch-banner.b01324c4.jpg"
-            headline="Discover the world of cinema with the BFI"
-        />
-        <Wrapper>
-            <MainContent>
-                <Highlights
-                    highlight={{
-                        image600x600: "https://placehold.it/600x600",
-                        imageAltText: "",
-                        caption: "18 - 29 March at BFI Southbank",
-                        title: "BFI Flare: London LGBTIQ+ Film Festival 2020 programme announced",
-                        description: "The best new and classic LGBTIQ+ films from around the world. Priority booking opens to BFI Members at 11:30 on 25 Feb. Champion booking is open.",
-                        callToActionUrl: "#",
-                        callToActionTitle: "Explore the programme"
-                    }}
-                    todayHighlight={{
-                        image480x320: "https://placehold.it/480x320",
-                        imageAltText: "",
-                        caption: "Current season",
-                        title: "Fellini Season, Jan-Feb 2020",
-                        description: "The great Italian director’s centenary will be celebrated with a major two-month retrospective at BFI Southbank.",
-                        callToActionUrl: "#",
-                        callToActionTitle: "Explore the season"
-                    }}
-                    todayShowings={demoShowings}
-                    weekHighlight={{
-                        image480x320: "https://placehold.it/480x320",
-                        imageAltText: "",
-                        caption: "Current season",
-                        title: "Cronenberg Season, Jan-Feb 2020",
-                        description: "Canadian director David Cronenberg has been making...",
-                        callToActionUrl: "#",
-                        callToActionTitle: "Explore the season"
-                    }}
-                    weekShowings={demoShowings}
-                    allShowingsUrl="#"
-                />
-                <Headline 
-                    level={2} 
-                    text="Watch with us"
-                />
-                <FilmGrid films={demoFilms} allFilmsUrl="#"/>
-                <FilmGrid films={[demoFilms[0], demoFilms[1], demoFilms[2]]} />
-            </MainContent>
-        </Wrapper>
-        <Footer
-            menus={footerMenus}
-            copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"
-        />
-    </>
+
+
 
 export const everyComponent = () =>
     <>
@@ -353,8 +597,8 @@ export const everyComponent = () =>
                 />
                 <PromoBanner 
                     colorScheme={0}
-                    headline="Watch BFI-picked contemporary and classic films in cinema"
-                    description="EU demands UK keep chlorinated chicken ban to get trade deal"
+                    headline="Enjoy screenings and special events as a member"
+                    description="Become a BFI member for £37 a year and get priority booking for BFI London Film Festival, BFI Flare and at BFI Southbank all year around."
                     image="http://placehold.it/600x600"
                     callToActionTitle="Find out more"
                     callToActionUrl="#"

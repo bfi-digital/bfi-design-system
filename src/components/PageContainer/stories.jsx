@@ -568,7 +568,7 @@ export const everyComponent = () =>
                 <PromoBanner 
                     colorScheme={0}
                     headline="Watch BFI-picked contemporary and classic films in cinema"
-                    description="EU demands UK keep chlorinated chicken ban to get trade deal"
+                    description="Become a BFI member for £37 a year and get priority booking for BFI London Film Festival, BFI Flare and at BFI Southbank all year around."
                     image="http://placehold.it/600x600"
                     callToActionTitle="Find out more"
                     callToActionUrl="#"

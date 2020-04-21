@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import theme from "../../_theme"
-import parse from "html-react-parser"
+// import parse from "html-react-parser"
 import { LinkSwitch as Link } from "../../LinkSwitch"
 import { Headline } from "../../Headline"
 import { Tag } from "../../Tag"
@@ -146,18 +146,18 @@ const Categories = styled.div`
     margin-bottom: 10px;
 `
 
-const Summary = styled.p`
-    color: ${theme.black};
-    margin-bottom: 15px;
-    line-height: 1.5;
-`
+// const Summary = styled.p`
+//     color: ${theme.black};
+//     margin-bottom: 15px;
+//     line-height: 1.5;
+// `
 
 export const ArticleCard = ({
     withSideBar,
     title,
     url,
     image480x270,
-    summary,
+    // summary,
     categories,
     date,
     imageAltText,
@@ -176,9 +176,9 @@ export const ArticleCard = ({
         }
         <Headline level={4} text={title} />
         <Date>{date}</Date>
-        {summary && 
+        {/* {summary && 
             <Summary>{parse(summary)}</Summary>
-        }
+        } */}
         <CallToAction to={url} external={external}>
             <CTAText>Read this article</CTAText>
             <Icon><Arrow colourFill={theme.dark} /></Icon>
