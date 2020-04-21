@@ -61,7 +61,7 @@ const Image = styled.div`
         padding: 15px;
 
         img {
-            margin-top: calc(50% - 104px);
+            margin-top: 15%;
         }
     }
 `
