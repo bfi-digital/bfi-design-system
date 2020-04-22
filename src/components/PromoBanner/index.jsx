@@ -82,7 +82,7 @@ const Inner = styled.div`
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding-left: 0;
+        padding-left: ${props => props.reversed ? "25px" : "0"};
         
         &.without_image {
             width: 75%;
@@ -113,8 +113,8 @@ const Image = styled.div`
         order: ${props => props.reversed ? "-1" : "1"};
         width: 50%;
         height: auto;
-        margin-right: -20px;
-        margin-left: 20px;
+        margin-right: ${props => props.reversed ? "0" : "-20px"};
+        margin-left: ${props => props.reversed ? "-20px" : "20px"};
     }
     @media screen and (min-width: ${theme.l}){
         margin-right: 0px;
@@ -147,7 +147,7 @@ export const PromoBanner = ({
         colorScheme={colorScheme} 
         backgroundColor={backgroundColor}
     >
-        <Inner className={image ? "with_image" : "without_image"}>
+        <Inner className={image ? "with_image" : "without_image"} reversed={reversed}>
             {secondImage && 
                 <SecondImage 
                     src={secondImage} 

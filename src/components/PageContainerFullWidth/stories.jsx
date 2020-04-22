@@ -95,7 +95,7 @@ export const discoveryPage = () =>
                 <Divider istransparent={true} />
 
                 <PromoBanner 
-                    colorScheme={1}
+                    colorScheme={0}
                     headline="Watch the greatest global cinema online on BFI Player"
                     description="From £2.50 per film, or £4.99 a month."
                     image="http://placehold.it/600x350"
