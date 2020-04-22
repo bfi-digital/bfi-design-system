@@ -83,11 +83,16 @@ export const discoveryPage = () =>
                     weekShowings={demoShowings}
                     allShowingsUrl="#"
                 />
+
+                <Divider istransparent={true} />
+
                 <Headline 
                     level={2} 
                     text="Now showing"
                 />
                 <FilmGrid films={demoFilms} />
+
+                <Divider istransparent={true} />
 
                 <PromoBanner 
                     colorScheme={1}
@@ -98,6 +103,8 @@ export const discoveryPage = () =>
                     callToActionUrl="#"
                     reversed={true}
                 />
+                
+                <Divider istransparent={true} />
 
                 <Headline 
                     level={2} 
@@ -125,6 +132,8 @@ export const discoveryPage = () =>
                 ]} />
                 <CallToAction linkText="See more lists" linkURL="/" center={true} />
                 
+                <Divider istransparent={true} />
+
                 <PromoBanner 
                     colorScheme={1}
                     headline="Enjoy screenings and special events as a member"
@@ -134,7 +143,11 @@ export const discoveryPage = () =>
                     callToActionUrl="#"
                 />
 
+                <Divider istransparent={true} />
+
                 <ArticleGrid optionalTitle="News & Articles" optionalCTALink="#" articles={demoArticles} />
+                
+                <Divider istransparent={true} />
 
                 <PromoBanner 
                     colorScheme={1}
@@ -145,7 +158,7 @@ export const discoveryPage = () =>
                     callToActionUrl="#"
                 />
                 
-                <br/>
+                <Divider istransparent={true} />
 
                 <PromoBanner 
                     colorScheme={1}
@@ -210,7 +223,8 @@ export const industryPage = () =>
                 <Headline level={3} text="Previously awarded funds" />
                 <Text html="<p>Search the funding awards for films, projects and organisations made by the BFI since April 2011.</p>" />
                 <CallToAction linkText="See previously awarded funds" linkURL="/" />
-                <Divider />
+                
+                <Divider istransparent={true} />
 
                 <PromoBanner 
                     colorScheme={2}
@@ -222,7 +236,7 @@ export const industryPage = () =>
                     reversed={true}
                 />
 
-                <br/>
+                <Divider istransparent={true} />
 
                 <PromoBanner 
                     colorScheme={2}
@@ -233,7 +247,7 @@ export const industryPage = () =>
                     callToActionUrl="#"
                 />
                 
-                <br/>
+                <Divider istransparent={true} />
 
                 <PromoBanner 
                     colorScheme={2}
@@ -245,7 +259,7 @@ export const industryPage = () =>
                     reversed={true}
                 />
 
-                <br/>
+                <Divider istransparent={true} />
 
                 <PromoBanner 
                     colorScheme={2}
@@ -301,7 +315,8 @@ export const educationPage = () =>
                     }
                 ]} />
 
-                
+                <Divider istransparent={true} />
+
                 <PromoBanner 
                     colorScheme={2}
                     headline="Events & activities for families at the BFI Southbank"
@@ -311,7 +326,7 @@ export const educationPage = () =>
                     callToActionUrl="#"
                 />
 
-                <br/>
+                <Divider istransparent={true} />
 
                 <PromoBanner 
                     colorScheme={2}
