@@ -9,15 +9,17 @@ const Outer = styled.ul`
     padding: 0px;
     list-style-type: none;
     border-bottom: 1px solid ${theme.dark};
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 `
 
 const Li = styled.li`
     display: inline-block;
-    padding: 15px 0px;
+    padding: 10px 0px;
+    
     margin-right: 30px;
     font-size: 1.25rem;
-    /* border-bottom: ${props => props.active ? `3px solid ${theme.dark}` : "none"}; */
+    border-bottom: ${props => props.active ? `3px solid ${theme.dark}` : "none"};
+    padding-bottom: ${props => props.active ? "10px" : "11px"};
 `
 
 const Button = styled.button`
@@ -29,9 +31,25 @@ const Button = styled.button`
     text-decoration: none;
     cursor: pointer;
     font-size: 1rem;
-    color: ${props => props.active ? theme.dark : theme.black};
+    color: ${props => props.active ? theme.dark : theme.primary};
+    position: relative;
+
+    &:after {
+        content: "";
+        width: 100%;
+        bottom: -14px;
+        left: 0;
+        height: 2px;
+        background: transparent;
+        position: absolute;
+    }
+
     &:hover{
         color: ${theme.darkGrey};
+
+        &:after {
+            background: ${theme.darkGrey};
+        }
     }
     &::-moz-focus-inner {
         border: 0;

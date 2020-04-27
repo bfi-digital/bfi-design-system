@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 import theme from "../_theme"
 import { TabList, Tab, TabPanel } from "../Tabs"
 import { HighlightCard } from "./HighlightCard"
-import { WideHighlightCard } from "./WideHighlightCard"
+import { PromoBanner } from "../PromoBanner"
 import { FilmShowing } from "../FilmShowing"
 import { Button } from "../Button"
 
@@ -66,14 +66,13 @@ export const Highlights = ({
                 </Tab>
             </TabList>
             <TabPanel  i={1} openTab={openTab}>
-                <WideHighlightCard
-                    image600x600={highlight.image600x600}
-                    imageAltText={highlight.imageAltText}
-                    caption={highlight.caption}
-                    title={highlight.title}
+                <PromoBanner 
+                    colorScheme={1}
+                    headline={highlight.title}
                     description={highlight.description}
-                    callToActionUrl={highlight.callToActionUrl}
+                    image={highlight.image600x600}
                     callToActionTitle={highlight.callToActionTitle}
+                    callToActionUrl={highlight.callToActionUrl}
                 />
             </TabPanel>
             <TabPanel i={2} openTab={openTab}>

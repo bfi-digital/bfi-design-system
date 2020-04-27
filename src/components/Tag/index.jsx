@@ -7,6 +7,6 @@ export const Tag = styled.div`
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 0.7rem;
-    background: ${theme.primary};
-    color: ${theme.white};
+    background: ${theme.lightest};
+    color: ${theme.dark};
 `

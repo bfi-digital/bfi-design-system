@@ -28,12 +28,12 @@ const Outer = styled.section`
     color: ${props => colorSchemes[props.colorScheme].text};
     position: relative;
 
-    margin-top: 50px;
+    margin-top: 15px;
     & + .promoBanner {
         margin-top: 0px;
     }
     &:last-of-type {
-        margin-bottom: 50px;
+        margin-bottom: 25px;
     }
 
     h2{
