@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 import theme from "../_theme"
-import parse from "html-react-parser"
 import PropTypes from "prop-types"
 
 const Outer = styled.section`
@@ -90,15 +89,15 @@ const Outer = styled.section`
 `
 
 export const Text = ({
-    html
+    children
 }) =>
     <Outer>
-        {parse(html)}
+        {children}
     </Outer>
 
 Text.propTypes = {
     /** 
-	 * Block of html from the WYSIWYG that will be parsed into the correct styles.
+	 * Block of html from the WYSIWYG
 	 **/
-    html: PropTypes.string
+    children: PropTypes.string
 }

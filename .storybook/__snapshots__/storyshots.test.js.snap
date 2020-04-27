@@ -3517,21 +3517,7 @@ Array [
       </p>
       <section
         className="sc-emmjRN gBidTR"
-      >
-        <p>
-          So you two dig up, dig up dinosaurs? Hey, you know how I'm, like, always trying to save the planet? Here's my chance. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine?
-        </p>
-         
-        <p>
-          Yes, Yes, without the oops! 
-          <a
-            href="http://google.com</MainContent>"
-          >
-            Yes, Yes, without the oops!
-          </a>
-           Drive us out of here!
-        </p>
-      </section>
+      />
       <blockquote
         className="sc-dxgOiQ cFBhga"
       >
@@ -3548,15 +3534,7 @@ Array [
       </blockquote>
       <section
         className="sc-emmjRN gBidTR"
-      >
-        <p>
-          Fellini’s epic La dolce vita stands as a towering achievement of 1960s cinema. Set in Rome during the height of the ‘Hollywood on the Tiber’ era, the episodic narrative follows jaded journalist Marcello Rubini (Mastroianni) on the trail of gossip on VIPs, including Swedish-American film star Sylvia Rank (Ekberg).
-        </p>
-          
-        <p>
-          The film caused a sensation on its initial release, angering censors and polarising opinion among critics and audiences, but is now rightly considered a masterpiece that’s had a profound influence on popular culture.
-        </p>
-      </section>
+      />
       <hr
         className="sc-iAyFgw ksjqFz"
       />
@@ -3585,11 +3563,7 @@ Array [
       />
       <section
         className="sc-emmjRN gBidTR"
-      >
-        <p>
-          Fellini’s epic La dolce vita stands as a towering achievement of 1960s cinema. Set in Rome during the height of the ‘Hollywood on the Tiber’ era, the episodic narrative follows jaded journalist Marcello Rubini (Mastroianni) on the trail of gossip on VIPs, including Swedish-American film star Sylvia Rank (Ekberg).
-        </p>
-      </section>
+      />
       <div
         className="sc-jAaTju gRWZPd"
       >
@@ -3599,11 +3573,7 @@ Array [
       </div>
       <section
         className="sc-emmjRN gBidTR"
-      >
-        <p>
-          The film caused a sensation on its initial release, angering censors and polarising opinion among critics and audiences, but is now rightly considered a masterpiece that’s had a profound influence on popular culture.
-        </p>
-      </section>
+      />
       <a
         className="sc-cSHVUG eKspvY"
         colorScheme={0}
@@ -3642,15 +3612,7 @@ Array [
       </figure>
       <section
         className="sc-emmjRN gBidTR"
-      >
-        <p>
-          Fellini’s epic La dolce vita stands as a towering achievement of 1960s cinema. Set in Rome during the height of the ‘Hollywood on the Tiber’ era, the episodic narrative follows jaded journalist Marcello Rubini (Mastroianni) on the trail of gossip on VIPs, including Swedish-American film star Sylvia Rank (Ekberg).
-        </p>
-          
-        <p>
-          The film caused a sensation on its initial release, angering censors and polarising opinion among critics and audiences, but is now rightly considered a masterpiece that’s had a profound influence on popular culture.
-        </p>
-      </section>
+      />
       <h3
         className="sc-EHOje hVjmbJ"
       >
@@ -3907,6 +3869,154 @@ Array [
         View some other pages
       </h2>
       <ul
+        className="sc-giadOv bvGmzW"
+      >
+        <li
+          className="sc-dTdPqK fqHBwW"
+        >
+          <h4
+            className="sc-bZQynM nSmaR"
+          >
+            Development fund
+          </h4>
+          <p
+            className="sc-itybZL fscYdb"
+          >
+            We welcome development applications from new and established filmmakers.
+          </p>
+          <a
+            className="sc-eMigcr hbJPHm"
+            href="#"
+            target="_self"
+          >
+            <span
+              className="sc-fzsDOv gSXQKD"
+            >
+              Apply to this fund
+            </span>
+            <div
+              className="sc-gPWkxV jNUcPO"
+            >
+              <svg
+                height="14"
+                viewBox="0 0 8 14"
+                width="8"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g
+                  fill="none"
+                  fillRule="evenodd"
+                  stroke="none"
+                  strokeWidth="1"
+                >
+                  <path
+                    d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
+                    fill="#5D1913"
+                    transform="matrix(0 1 1 0 -3 3)"
+                  />
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+        <li
+          className="sc-dTdPqK fqHBwW"
+        >
+          <h4
+            className="sc-bZQynM nSmaR"
+          >
+            Production Fund
+          </h4>
+          <p
+            className="sc-itybZL fscYdb"
+          >
+            We welcome production applications from new and established filmmakers.
+          </p>
+          <a
+            className="sc-eMigcr hbJPHm"
+            href="#"
+            target="_self"
+          >
+            <span
+              className="sc-fzsDOv gSXQKD"
+            >
+              Apply to this fund
+            </span>
+            <div
+              className="sc-gPWkxV jNUcPO"
+            >
+              <svg
+                height="14"
+                viewBox="0 0 8 14"
+                width="8"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g
+                  fill="none"
+                  fillRule="evenodd"
+                  stroke="none"
+                  strokeWidth="1"
+                >
+                  <path
+                    d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
+                    fill="#5D1913"
+                    transform="matrix(0 1 1 0 -3 3)"
+                  />
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+        <li
+          className="sc-dTdPqK fqHBwW"
+        >
+          <h4
+            className="sc-bZQynM nSmaR"
+          >
+            Something Fund
+          </h4>
+          <p
+            className="sc-itybZL fscYdb"
+          >
+            We welcome production applications from new and established filmmakers.
+          </p>
+          <a
+            className="sc-eMigcr hbJPHm"
+            href="#"
+            target="_self"
+          >
+            <span
+              className="sc-fzsDOv gSXQKD"
+            >
+              Apply to this fund
+            </span>
+            <div
+              className="sc-gPWkxV jNUcPO"
+            >
+              <svg
+                height="14"
+                viewBox="0 0 8 14"
+                width="8"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g
+                  fill="none"
+                  fillRule="evenodd"
+                  stroke="none"
+                  strokeWidth="1"
+                >
+                  <path
+                    d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
+                    fill="#5D1913"
+                    transform="matrix(0 1 1 0 -3 3)"
+                  />
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <ul
         className="sc-giadOv fdpcaU"
       >
         <li
@@ -3970,6 +4080,425 @@ Array [
           >
             We welcome production applications from new and established filmmakers.
           </p>
+          <a
+            className="sc-eMigcr hbJPHm"
+            href="#"
+            target="_self"
+          >
+            <span
+              className="sc-fzsDOv gSXQKD"
+            >
+              Apply to this fund
+            </span>
+            <div
+              className="sc-gPWkxV jNUcPO"
+            >
+              <svg
+                height="14"
+                viewBox="0 0 8 14"
+                width="8"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g
+                  fill="none"
+                  fillRule="evenodd"
+                  stroke="none"
+                  strokeWidth="1"
+                >
+                  <path
+                    d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
+                    fill="#5D1913"
+                    transform="matrix(0 1 1 0 -3 3)"
+                  />
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <ul
+        className="sc-giadOv bvGmzW"
+      >
+        <li
+          className="sc-dTdPqK fqHBwW"
+        >
+          <h4
+            className="sc-bZQynM nSmaR"
+          >
+            Development fund
+          </h4>
+          <p
+            className="sc-itybZL fscYdb"
+          >
+            We welcome development applications from new and established filmmakers.
+          </p>
+          <a
+            className="sc-eMigcr hbJPHm"
+            href="#"
+            target="_self"
+          >
+            <span
+              className="sc-fzsDOv gSXQKD"
+            >
+              Apply to this fund
+            </span>
+            <div
+              className="sc-gPWkxV jNUcPO"
+            >
+              <svg
+                height="14"
+                viewBox="0 0 8 14"
+                width="8"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g
+                  fill="none"
+                  fillRule="evenodd"
+                  stroke="none"
+                  strokeWidth="1"
+                >
+                  <path
+                    d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
+                    fill="#5D1913"
+                    transform="matrix(0 1 1 0 -3 3)"
+                  />
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <h2
+        className="sc-ifAKCX ldjxvY"
+      >
+        Page links with iamges
+      </h2>
+      <ul
+        className="sc-giadOv fdpcaU"
+      >
+        <li
+          className="sc-dTdPqK ihtnkX"
+        >
+          <div
+            className="sc-jVODtj htHbRp"
+          >
+            <div
+              className="sc-kUaPvJ jQtAko image"
+            />
+          </div>
+          <h4
+            className="sc-bZQynM nSmaR"
+          >
+            Development fund
+          </h4>
+          <a
+            className="sc-eMigcr hbJPHm"
+            href="#"
+            target="_self"
+          >
+            <span
+              className="sc-fzsDOv gSXQKD"
+            >
+              Apply to this fund
+            </span>
+            <div
+              className="sc-gPWkxV jNUcPO"
+            >
+              <svg
+                height="14"
+                viewBox="0 0 8 14"
+                width="8"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g
+                  fill="none"
+                  fillRule="evenodd"
+                  stroke="none"
+                  strokeWidth="1"
+                >
+                  <path
+                    d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
+                    fill="#5D1913"
+                    transform="matrix(0 1 1 0 -3 3)"
+                  />
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+        <li
+          className="sc-dTdPqK ihtnkX"
+        >
+          <div
+            className="sc-jVODtj htHbRp"
+          >
+            <div
+              className="sc-kUaPvJ jQtAko image"
+            />
+          </div>
+          <h4
+            className="sc-bZQynM nSmaR"
+          >
+            Production Fund
+          </h4>
+          <a
+            className="sc-eMigcr hbJPHm"
+            href="#"
+            target="_self"
+          >
+            <span
+              className="sc-fzsDOv gSXQKD"
+            >
+              Apply to this fund
+            </span>
+            <div
+              className="sc-gPWkxV jNUcPO"
+            >
+              <svg
+                height="14"
+                viewBox="0 0 8 14"
+                width="8"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g
+                  fill="none"
+                  fillRule="evenodd"
+                  stroke="none"
+                  strokeWidth="1"
+                >
+                  <path
+                    d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
+                    fill="#5D1913"
+                    transform="matrix(0 1 1 0 -3 3)"
+                  />
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+        <li
+          className="sc-dTdPqK ihtnkX"
+        >
+          <div
+            className="sc-jVODtj htHbRp"
+          >
+            <div
+              className="sc-kUaPvJ jQtAko image"
+            />
+          </div>
+          <h4
+            className="sc-bZQynM nSmaR"
+          >
+            Something Fund
+          </h4>
+          <a
+            className="sc-eMigcr hbJPHm"
+            href="#"
+            target="_self"
+          >
+            <span
+              className="sc-fzsDOv gSXQKD"
+            >
+              Apply to this fund
+            </span>
+            <div
+              className="sc-gPWkxV jNUcPO"
+            >
+              <svg
+                height="14"
+                viewBox="0 0 8 14"
+                width="8"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g
+                  fill="none"
+                  fillRule="evenodd"
+                  stroke="none"
+                  strokeWidth="1"
+                >
+                  <path
+                    d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
+                    fill="#5D1913"
+                    transform="matrix(0 1 1 0 -3 3)"
+                  />
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+        <li
+          className="sc-dTdPqK ihtnkX"
+        >
+          <div
+            className="sc-jVODtj htHbRp"
+          >
+            <div
+              className="sc-kUaPvJ jQtAko image"
+            />
+          </div>
+          <h4
+            className="sc-bZQynM nSmaR"
+          >
+            Something Fund
+          </h4>
+          <a
+            className="sc-eMigcr hbJPHm"
+            href="#"
+            target="_self"
+          >
+            <span
+              className="sc-fzsDOv gSXQKD"
+            >
+              Apply to this fund
+            </span>
+            <div
+              className="sc-gPWkxV jNUcPO"
+            >
+              <svg
+                height="14"
+                viewBox="0 0 8 14"
+                width="8"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g
+                  fill="none"
+                  fillRule="evenodd"
+                  stroke="none"
+                  strokeWidth="1"
+                >
+                  <path
+                    d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
+                    fill="#5D1913"
+                    transform="matrix(0 1 1 0 -3 3)"
+                  />
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <ul
+        className="sc-giadOv fdpcaU"
+      >
+        <li
+          className="sc-dTdPqK ihtnkX"
+        >
+          <div
+            className="sc-jVODtj htHbRp"
+          >
+            <div
+              className="sc-kUaPvJ jQtAko image"
+            />
+          </div>
+          <h4
+            className="sc-bZQynM nSmaR"
+          >
+            Development fund
+          </h4>
+          <a
+            className="sc-eMigcr hbJPHm"
+            href="#"
+            target="_self"
+          >
+            <span
+              className="sc-fzsDOv gSXQKD"
+            >
+              Apply to this fund
+            </span>
+            <div
+              className="sc-gPWkxV jNUcPO"
+            >
+              <svg
+                height="14"
+                viewBox="0 0 8 14"
+                width="8"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g
+                  fill="none"
+                  fillRule="evenodd"
+                  stroke="none"
+                  strokeWidth="1"
+                >
+                  <path
+                    d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
+                    fill="#5D1913"
+                    transform="matrix(0 1 1 0 -3 3)"
+                  />
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+        <li
+          className="sc-dTdPqK ihtnkX"
+        >
+          <div
+            className="sc-jVODtj htHbRp"
+          >
+            <div
+              className="sc-kUaPvJ jQtAko image"
+            />
+          </div>
+          <h4
+            className="sc-bZQynM nSmaR"
+          >
+            Production Fund
+          </h4>
+          <a
+            className="sc-eMigcr hbJPHm"
+            href="#"
+            target="_self"
+          >
+            <span
+              className="sc-fzsDOv gSXQKD"
+            >
+              Apply to this fund
+            </span>
+            <div
+              className="sc-gPWkxV jNUcPO"
+            >
+              <svg
+                height="14"
+                viewBox="0 0 8 14"
+                width="8"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g
+                  fill="none"
+                  fillRule="evenodd"
+                  stroke="none"
+                  strokeWidth="1"
+                >
+                  <path
+                    d="M3.456 10.788l-6.23-5.867a.695.695 0 010-1.025l.726-.684A.804.804 0 01-.96 3.211L4 7.861l4.961-4.65a.804.804 0 011.087.001l.727.684c.3.283.3.742 0 1.025l-6.23 5.867a.804.804 0 01-1.09 0z"
+                    fill="#5D1913"
+                    transform="matrix(0 1 1 0 -3 3)"
+                  />
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <ul
+        className="sc-giadOv bvGmzW"
+      >
+        <li
+          className="sc-dTdPqK ihtnkX"
+        >
+          <div
+            className="sc-jVODtj htHbRp"
+          >
+            <div
+              className="sc-kUaPvJ jQtAko image"
+            />
+          </div>
+          <h4
+            className="sc-bZQynM nSmaR"
+          >
+            Development fund
+          </h4>
           <a
             className="sc-eMigcr hbJPHm"
             href="#"
@@ -4951,11 +5480,7 @@ Array [
       </h3>
       <section
         className="sc-emmjRN gBidTR"
-      >
-        <p>
-          Search the funding awards for films, projects and organisations made by the BFI since April 2011.
-        </p>
-      </section>
+      />
       <div
         className="sc-kkGfuU fkebBs"
       >
@@ -6360,29 +6885,7 @@ Array [
       </p>
       <section
         className="sc-emmjRN gBidTR"
-      >
-         
-        <p>
-          The BFI Development Fund supports live action or animated fiction projects, including:
-        </p>
-         
-        <ul>
-           
-          <li>
-            feature films and other longform work
-          </li>
-           
-          <li>
-            emerging media including, virtual reality
-          </li>
-           
-        </ul>
-         
-        <p>
-          If you want to make a documentary, contact our partner Doc Society which provides this funding.
-        </p>
-         
-      </section>
+      />
       <h2
         className="sc-ifAKCX ldjxvY"
       >
@@ -6390,37 +6893,7 @@ Array [
       </h2>
       <section
         className="sc-emmjRN gBidTR"
-      >
-         
-        <p>
-          This fund supports projects which have a writer and a producer. Your team can also include a director, if you have one at this stage.
-        </p>
-         
-        <p>
-          The producer needs to apply through their company, based in the UK (or another state of the EU or European Economic Area).
-        </p>
-         
-        <p>
-          Writers, directors and producers will need to tell us about their creative track record in the application. This can be in other film work or different media, including theatre and TV.
-        </p>
-         
-        <p>
-          Other development funding is available through BFI NETWORK for writers
-        </p>
-         
-        <ul>
-           
-          <li>
-            at an early career stage
-          </li>
-           
-          <li>
-            without a producer
-          </li>
-           
-        </ul>
-         
-      </section>
+      />
       <hr
         className="sc-iAyFgw ksjqFz"
       />
@@ -6431,41 +6904,7 @@ Array [
       </h2>
       <section
         className="sc-emmjRN gBidTR"
-      >
-         
-        <p>
-          You’ll need to submit an example of the writer’s and/or director’s previous work. This can be in any format, including:
-        </p>
-         
-        <ul>
-           
-          <li>
-            scripts
-          </li>
-           
-          <li>
-            pitch documents
-          </li>
-           
-          <li>
-            treatments
-          </li>
-           
-          <li>
-            mood boards
-          </li>
-           
-          <li>
-            storyboards
-          </li>
-           
-          <li>
-            sizzle reel
-          </li>
-           
-        </ul>
-         
-      </section>
+      />
       <hr
         className="sc-iAyFgw ksjqFz"
       />
@@ -6476,37 +6915,7 @@ Array [
       </h2>
       <section
         className="sc-emmjRN gBidTR"
-      >
-         
-        <p>
-          We’re looking for projects which:
-        </p>
-         
-        <ul>
-           
-          <li>
-            have cultural impact and spark debate
-          </li>
-           
-          <li>
-            take risks in platform, content or form
-          </li>
-           
-          <li>
-            give new perspectives and widen the range of voices and audiences in film
-          </li>
-           
-          <li>
-            come from outside London and the South East of England
-          </li>
-           
-          <li>
-            enable talent development and progression achieve creative excellence
-          </li>
-           
-        </ul>
-         
-      </section>
+      />
       <hr
         className="sc-iAyFgw ksjqFz"
       />
@@ -6517,13 +6926,7 @@ Array [
       </h2>
       <section
         className="sc-emmjRN gBidTR"
-      >
-         
-        <p>
-          You’ll need to make an account if you’ve not applied before.
-        </p>
-         
-      </section>
+      />
       <a
         className="sc-cSHVUG eKspvY"
         colorScheme={0}
@@ -6543,18 +6946,7 @@ Array [
       </h2>
       <section
         className="sc-emmjRN gBidTR"
-      >
-        <p>
-          Contact us if you have a question about your application: 
-          <a
-            href="mailto:developmentcoordinator@bfi.org.uk"
-            title="Email us"
-          >
-            developmentcoordinator@bfi.org.uk
-          </a>
-          .
-        </p>
-      </section>
+      />
     </article>
     <aside
       className="sc-TFwJa eCgynF"
@@ -7255,21 +7647,7 @@ Array [
       </p>
       <section
         className="sc-emmjRN gBidTR"
-      >
-        <p>
-          So you two dig up, dig up dinosaurs? Hey, you know how I'm, like, always trying to save the planet? Here's my chance. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine?
-        </p>
-         
-        <p>
-          Yes, Yes, without the oops! 
-          <a
-            href="http://google.com</MainContent>"
-          >
-            Yes, Yes, without the oops!
-          </a>
-           Drive us out of here!
-        </p>
-      </section>
+      />
       <blockquote
         className="sc-dxgOiQ cFBhga"
       >
@@ -7286,15 +7664,7 @@ Array [
       </blockquote>
       <section
         className="sc-emmjRN gBidTR"
-      >
-        <p>
-          Fellini’s epic La dolce vita stands as a towering achievement of 1960s cinema. Set in Rome during the height of the ‘Hollywood on the Tiber’ era, the episodic narrative follows jaded journalist Marcello Rubini (Mastroianni) on the trail of gossip on VIPs, including Swedish-American film star Sylvia Rank (Ekberg).
-        </p>
-          
-        <p>
-          The film caused a sensation on its initial release, angering censors and polarising opinion among critics and audiences, but is now rightly considered a masterpiece that’s had a profound influence on popular culture.
-        </p>
-      </section>
+      />
       <hr
         className="sc-iAyFgw ksjqFz"
       />
@@ -7323,11 +7693,7 @@ Array [
       />
       <section
         className="sc-emmjRN gBidTR"
-      >
-        <p>
-          Fellini’s epic La dolce vita stands as a towering achievement of 1960s cinema. Set in Rome during the height of the ‘Hollywood on the Tiber’ era, the episodic narrative follows jaded journalist Marcello Rubini (Mastroianni) on the trail of gossip on VIPs, including Swedish-American film star Sylvia Rank (Ekberg).
-        </p>
-      </section>
+      />
       <div
         className="sc-jAaTju gRWZPd"
       >
@@ -7337,11 +7703,7 @@ Array [
       </div>
       <section
         className="sc-emmjRN gBidTR"
-      >
-        <p>
-          The film caused a sensation on its initial release, angering censors and polarising opinion among critics and audiences, but is now rightly considered a masterpiece that’s had a profound influence on popular culture.
-        </p>
-      </section>
+      />
       <a
         className="sc-cSHVUG eKspvY"
         colorScheme={0}
@@ -7380,15 +7742,7 @@ Array [
       </figure>
       <section
         className="sc-emmjRN gBidTR"
-      >
-        <p>
-          Fellini’s epic La dolce vita stands as a towering achievement of 1960s cinema. Set in Rome during the height of the ‘Hollywood on the Tiber’ era, the episodic narrative follows jaded journalist Marcello Rubini (Mastroianni) on the trail of gossip on VIPs, including Swedish-American film star Sylvia Rank (Ekberg).
-        </p>
-          
-        <p>
-          The film caused a sensation on its initial release, angering censors and polarising opinion among critics and audiences, but is now rightly considered a masterpiece that’s had a profound influence on popular culture.
-        </p>
-      </section>
+      />
       <h3
         className="sc-EHOje hVjmbJ"
       >
@@ -8939,21 +9293,7 @@ Array [
     >
       <section
         className="sc-emmjRN gBidTR"
-      >
-        <p>
-          Fellini’s epic La dolce vita stands as a towering achievement of 1960s cinema. Set in Rome during the height of the ‘Hollywood on the Tiber’ era, the episodic narrative follows jaded journalist Marcello Rubini (Mastroianni) on the trail of gossip on VIPs, including Swedish-American film star Sylvia Rank (Ekberg).
-        </p>
-        <p>
-            
-        </p>
-        <p>
-          The film caused a sensation on its initial release, angering censors and polarising opinion among critics and audiences, but is now rightly considered a masterpiece that’s had a profound influence on popular culture.
-        </p>
-          
-        <p>
-          It was La dolce vita, for instance, that coined the term ‘paparazzo’, which came to describe a certain type of relentless celebrity photographer.
-        </p>
-      </section>
+      />
       <h2
         className="sc-ifAKCX ldjxvY"
       >
@@ -9967,9 +10307,7 @@ Array [
       </p>
       <section
         className="sc-emmjRN gBidTR"
-      >
-        So you two dig up, dig up dinosaurs? Hey, you know how I'm, like, always trying to save the planet? Here's my chance. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.
-      </section>
+      />
     </article>
     <aside
       className="sc-TFwJa eCgynF"
@@ -13602,83 +13940,7 @@ exports[`Storyshots 2 All Components/Image Full Width 1`] = `
   </figure>
   <section
     className="sc-emmjRN gBidTR"
-  >
-    
-
-
-    <p>
-      We gotta burn the rain forest, 
-      <strong>
-        dump toxic waste
-      </strong>
-      , pollute the air, and 
-      <a
-        href="#"
-      >
-        rip up the OZONE!
-      </a>
-       'Cause maybe if we screw up this planet enough, they won't want it anymore! We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough, they won't want it anymore!
-    </p>
-    
-
-
-    <ol>
-      
-    
-      <li>
-        What do they got in there? King Kong?
-      </li>
-      
-    
-      <li>
-        You really think you can fly that thing?
-      </li>
-      
-    
-      <li>
-        Must go faster
-      </li>
-      
-
-    </ol>
-    
-
-
-    <p>
-      You really think you can fly that thing? Eventually, you do plan to have dinosaurs on your dinosaur tour, right? 
-      <a
-        href="#"
-      >
-        I gave it a cold?
-      </a>
-       I gave it a virus. A computer virus. Did he just throw my cat out of the window? You're a very talented young man, with your own clever thoughts and ideas. Do you need a manager?
-    </p>
-    
-
-
-    <ul>
-      
-    
-      <li>
-        What do they got in there? King Kong?
-      </li>
-      
-    
-      <li>
-        You really think you can fly that thing?
-      </li>
-      
-    
-      <li>
-        Must go faster
-      </li>
-      
-
-    </ul>
-    
-
-
-  </section>
+  />
 </div>
 `;
 
@@ -13706,83 +13968,7 @@ exports[`Storyshots 2 All Components/Image Left And Big 1`] = `
   </figure>
   <section
     className="sc-emmjRN gBidTR"
-  >
-    
-
-
-    <p>
-      We gotta burn the rain forest, 
-      <strong>
-        dump toxic waste
-      </strong>
-      , pollute the air, and 
-      <a
-        href="#"
-      >
-        rip up the OZONE!
-      </a>
-       'Cause maybe if we screw up this planet enough, they won't want it anymore! We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough, they won't want it anymore!
-    </p>
-    
-
-
-    <ol>
-      
-    
-      <li>
-        What do they got in there? King Kong?
-      </li>
-      
-    
-      <li>
-        You really think you can fly that thing?
-      </li>
-      
-    
-      <li>
-        Must go faster
-      </li>
-      
-
-    </ol>
-    
-
-
-    <p>
-      You really think you can fly that thing? Eventually, you do plan to have dinosaurs on your dinosaur tour, right? 
-      <a
-        href="#"
-      >
-        I gave it a cold?
-      </a>
-       I gave it a virus. A computer virus. Did he just throw my cat out of the window? You're a very talented young man, with your own clever thoughts and ideas. Do you need a manager?
-    </p>
-    
-
-
-    <ul>
-      
-    
-      <li>
-        What do they got in there? King Kong?
-      </li>
-      
-    
-      <li>
-        You really think you can fly that thing?
-      </li>
-      
-    
-      <li>
-        Must go faster
-      </li>
-      
-
-    </ul>
-    
-
-
-  </section>
+  />
 </div>
 `;
 
@@ -13815,83 +14001,7 @@ exports[`Storyshots 2 All Components/Image Right And Small 1`] = `
   </figure>
   <section
     className="sc-emmjRN gBidTR"
-  >
-    
-
-
-    <p>
-      We gotta burn the rain forest, 
-      <strong>
-        dump toxic waste
-      </strong>
-      , pollute the air, and 
-      <a
-        href="#"
-      >
-        rip up the OZONE!
-      </a>
-       'Cause maybe if we screw up this planet enough, they won't want it anymore! We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough, they won't want it anymore!
-    </p>
-    
-
-
-    <ol>
-      
-    
-      <li>
-        What do they got in there? King Kong?
-      </li>
-      
-    
-      <li>
-        You really think you can fly that thing?
-      </li>
-      
-    
-      <li>
-        Must go faster
-      </li>
-      
-
-    </ol>
-    
-
-
-    <p>
-      You really think you can fly that thing? Eventually, you do plan to have dinosaurs on your dinosaur tour, right? 
-      <a
-        href="#"
-      >
-        I gave it a cold?
-      </a>
-       I gave it a virus. A computer virus. Did he just throw my cat out of the window? You're a very talented young man, with your own clever thoughts and ideas. Do you need a manager?
-    </p>
-    
-
-
-    <ul>
-      
-    
-      <li>
-        What do they got in there? King Kong?
-      </li>
-      
-    
-      <li>
-        You really think you can fly that thing?
-      </li>
-      
-    
-      <li>
-        Must go faster
-      </li>
-      
-
-    </ul>
-    
-
-
-  </section>
+  />
 </div>
 `;
 
@@ -15876,82 +15986,6 @@ exports[`Storyshots 2 All Components/Text Normal 1`] = `
 >
   <section
     className="sc-emmjRN gBidTR"
-  >
-    
-
-            
-    <p>
-      We gotta burn the rain forest, 
-      <strong>
-        dump toxic waste
-      </strong>
-      , pollute the air, and 
-      <a
-        href="#"
-      >
-        rip up the OZONE!
-      </a>
-       'Cause maybe if we screw up this planet enough, they won't want it anymore! We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough, they won't want it anymore!
-    </p>
-    
-
-            
-    <ol>
-      
-                
-      <li>
-        What do they got in there? King Kong?
-      </li>
-      
-                
-      <li>
-        You really think you can fly that thing?
-      </li>
-      
-                
-      <li>
-        Must go faster
-      </li>
-      
-            
-    </ol>
-    
-
-            
-    <p>
-      You really think you can fly that thing? Eventually, you do plan to have dinosaurs on your dinosaur tour, right? 
-      <a
-        href="#"
-      >
-        I gave it a cold?
-      </a>
-       I gave it a virus. A computer virus. Did he just throw my cat out of the window? You're a very talented young man, with your own clever thoughts and ideas. Do you need a manager?
-    </p>
-    
-
-            
-    <ul>
-      
-                
-      <li>
-        What do they got in there? King Kong?
-      </li>
-      
-                
-      <li>
-        You really think you can fly that thing?
-      </li>
-      
-                
-      <li>
-        Must go faster
-      </li>
-      
-            
-    </ul>
-    
-            
-            
-  </section>
+  />
 </div>
 `;
