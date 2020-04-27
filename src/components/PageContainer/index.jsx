@@ -38,6 +38,10 @@ export const Wrapper = styled.div`
 
 export const MainContent = styled.article`
     flex: 1;
+
+    iframe {
+        border: none;
+    }
 `
 export const WrapperFullWidth = styled.article`
     margin: 35px auto;
