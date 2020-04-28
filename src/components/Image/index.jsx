@@ -6,15 +6,21 @@ import { Dialog } from "@reach/dialog"
 import VisuallyHidden from "@reach/visually-hidden"
 
 const Figure = styled.figure`
-    float: ${props => props.side ? props.side : null};
-    max-width: ${props => props.side ? "40%" : "100%"};
-    width: ${props => props.side ? "auto" : "100%"};
-    margin: ${props => {
-        if(props.side === "left") return "20px 40px 40px 0px"
-        if(props.side === "right") return "20px 0px 40px 40px"
-        return "20px 0px"
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    margin-right: 0;
+    
+    @media screen and (min-width: ${theme.m}){
+        float: ${props => props.side ? props.side : null};
+        max-width: ${props => props.side ? "40%" : "100%"};
+        width: ${props => props.side ? "auto" : "100%"};
+        margin: ${props => {
+            if(props.side === "left") return "20px 40px 40px 0px"
+            if(props.side === "right") return "20px 0px 40px 40px"
+            return "20px 0px"
+        }};
     }
-};
 `
 
 const StyledImage = styled.img`
