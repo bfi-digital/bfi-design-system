@@ -15,7 +15,8 @@ export default [
         summary: "In our biggest ever film critics&rsquo; poll, the list of best movies ever made has a new top film, ending the 50-year reign of Citizen Kane.",
         date: "Tuesday 23rd March 2020",
         url: "https://www.bfi.org.uk/greatest-films-all-time",
-        uuid: "4d1c842b-4d15-558b-82a4-5cb70546d6f3"
+        uuid: "4d1c842b-4d15-558b-82a4-5cb70546d6f3",
+        categories: ["What to watch"]
     },
     {
         title: "Stanley Kubrick, cinephile",
