@@ -59,7 +59,10 @@
   "dependencies": {
     "@reach/dialog": "^0.8.4",
     "@reach/visually-hidden": "^0.8.2",
-    "html-react-parser": "^0.10.1"
+    "html-react-parser": "^0.10.1",
+    "isomorphic-unfetch": "^3.0.0",
+    "moment": "^2.24.0",
+    "query-string": "^6.12.1"
   },
   "jest": {
     "transformIgnorePatterns": [

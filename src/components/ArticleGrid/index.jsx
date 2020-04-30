@@ -34,9 +34,9 @@ const Outer = styled.div`
             &:nth-of-type(3n) {
                 margin-right: 0px;
             }
-            &:nth-of-type(4n) {
+            /* &:nth-of-type(4n) {
                 margin-right: 25px;
-            }
+            } */
         }
         @media screen and (min-width: ${theme.l}){
             min-width: 275px;
@@ -74,7 +74,8 @@ export const ArticleGrid = ({
     articles,
     optionalTitle,
     optionalCTALink,
-    withSideBar
+    withSideBar,
+    children
 }) =>
     <Outer withSideBar={withSideBar}>
         {optionalTitle && 
@@ -88,4 +89,5 @@ export const ArticleGrid = ({
         { optionalCTALink &&
             <CentredButton to={optionalCTALink}>See more articles</CentredButton>
         }
+        {children}
     </Outer>
