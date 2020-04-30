@@ -1,0 +1,60 @@
+import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+import { PromoBanner } from "../../../components/PromoBanner/index"
+
+<Meta title="Pattern Library|Slices/Promotional Banner" component={PromoBanner} />
+
+# Promotional Banner
+ 
+ 
+## Examples
+
+<Preview>
+    <Story name="PromoBanner standard">
+        <div style={{padding: "20px"}}>
+            <PromoBanner 
+                colorScheme={0}
+                headline="Watch BFI-picked contemporary and classic films in cinema"
+                description="Become a BFI member for £37 a year and get priority booking for BFI London Film Festival, BFI Flare and at BFI Southbank all year around."
+                image="http://placehold.it/600x600"
+                callToActionTitle="Find out more"
+                callToActionUrl="#"
+                secondImage="http://placehold.it/150x40"
+                secondImageAltText="Test image"
+            />
+        </div>
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="PromoBanner reversed">
+        <div style={{padding: "20px"}}>
+            <PromoBanner 
+                reversed
+                colorScheme={0}
+                headline="Watch BFI-picked contemporary and classic films in cinema"
+                description="Become a BFI member for £37 a year and get priority booking for BFI London Film Festival, BFI Flare and at BFI Southbank all year around."
+                image="http://placehold.it/600x600"
+                callToActionTitle="Find out more"
+                callToActionUrl="#"
+            />
+        </div>
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="PromoBanner no image">
+        <div style={{padding: "20px"}}>
+            <PromoBanner 
+                colorScheme={0}
+                headline="Watch BFI-picked contemporary and classic films in cinema"
+                description="Become a BFI member for £37 a year and get priority booking for BFI London Film Festival, BFI Flare and at BFI Southbank all year around."
+                callToActionTitle="Find out more"
+                callToActionUrl="#"
+            />
+        </div>
+    </Story>
+</Preview>
+
+## Props 
+
+<Props of={PromoBanner} />
