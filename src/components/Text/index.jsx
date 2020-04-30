@@ -1,11 +1,10 @@
 import React from "react"
 import styled from "styled-components"
 import theme from "../_theme"
-import parse from "html-react-parser"
 import PropTypes from "prop-types"
 
-const Outer = styled.article`
-    color: ${theme.charcoal};
+const Outer = styled.section`
+    color: ${theme.black};
     line-height: 1.5;
     font-size: 1rem;
     @media screen and (min-width: ${theme.l}){
@@ -23,28 +22,38 @@ const Outer = styled.article`
         margin-bottom: 20px;
     }
 
-    a{
-        color: ${theme.darkPink};
+    a {
+        color: ${theme.black};
         text-decoration: none;
-        box-shadow:
-            inset 0 -0.0em white,
-            inset 0 -0.125em ${theme.darkPink};
+        font-weight: 600;
+        position: relative;
+        &:after {
+            content: "";
+            background: ${theme.lightest};
+            height: 40%;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            position: absolute;
+            z-index: -1;
+            transition: height .3s; 
+        }
+
         &:hover{
-            box-shadow: none;
+            color: ${theme.dark};
+            &:after {
+                height: 100%;
+            }
         }
         &:focus{
-            background: ${theme.lightPink};
-            box-shadow:
-                inset 0 -0em white,
-                inset 0 -0.17em ${theme.darkPink};
-            outline: none;
+            outline: 2px solid ${theme.highlight};
+            &:after {
+                height: 100%;
+            }
         }
         &:active{
-            background: ${theme.lightPink};
-            box-shadow:
-                inset 0 -0em white,
-                inset 0 -0.125em ${theme.darkPink};
             outline: none;
+            text-decoration: underline;
         }
     }
     p + ul {
@@ -58,10 +67,10 @@ const Outer = styled.article`
         list-style: none;
         li{
             margin-left: -15px;
-            margin-bottom: 3px;
+            margin-bottom: 10px;
             &:before{
                 content: "•";
-                color: ${theme.darkPink};
+                color: ${theme.dark};
                 margin-right: 20px;
             }
         }
@@ -73,22 +82,22 @@ const Outer = styled.article`
         display: inline-block;
         li{
             padding-left: 10px;
-            margin-bottom: 3px;
+            margin-bottom: 10px;
         }
     }
 
 `
 
 export const Text = ({
-    html
+    children
 }) =>
     <Outer>
-        {parse(html)}
+        {children}
     </Outer>
 
 Text.propTypes = {
     /** 
-	 * Block of html from the WYSIWYG that will be parsed into the correct styles.
+	 * Block of html from the WYSIWYG
 	 **/
-    html: PropTypes.string
+    children: PropTypes.string
 }

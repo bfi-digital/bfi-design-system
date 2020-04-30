@@ -3,7 +3,7 @@ import { withA11y } from "@storybook/addon-a11y"
 import { Divider } from "./index"
 
 export default {
-    title: "All Components/Divider",
+    title: "2 All Components/Divider",
     decorators: [withA11y]
 }
 

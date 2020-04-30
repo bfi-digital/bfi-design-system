@@ -6,11 +6,11 @@ import { Button } from "../Button"
 
 export const Wrapper = styled.div`
     max-width: ${theme.l};
-    margin: 70px auto;
+    margin: 60px auto;
     padding: 0px ${theme.horizontalPadding};
     @media screen and (min-width: ${theme.m}){
         display: flex;
-        flex-direction: row;
+        flex-direction: ${props => props.sidebarLeft ? "row-reverse" : "row"};
     }
     @media screen and (min-width: ${theme.xl + 200}){
         max-width: ${theme.xl};
@@ -18,22 +18,43 @@ export const Wrapper = styled.div`
     &:last-of-type{
         margin-bottom: 100px;
     }
+
+    article {
+        max-width: ${props => props.sidebarLeft ? "630px" : "none"};
+    }
+
+    aside {
+        padding-top: ${props => props.sidebarLeft ? "0" : "25px"};
+        padding-bottom: ${props => props.sidebarLeft ? "25px" : "0px"};
+        @media screen and (min-width: ${theme.m}){
+            padding-top: 0px;
+            padding-bottom: 0px;
+            width: 33%;
+            margin-left: ${props => props.sidebarLeft ? "0px" : "50px"};
+            margin-right: ${props => props.sidebarLeft ? "50px" : "0px"};
+        }
+    }
 `
 
 export const MainContent = styled.article`
     flex: 1;
+
+    iframe {
+        border: none;
+    }
+`
+export const WrapperFullWidth = styled.article`
+    margin: 35px auto;
+`
+export const MaxWidth = styled.article`
+    max-width: ${theme.l};
+    margin: 0 auto;
+    @media screen and (min-width: ${theme.xl + 200}){
+        max-width: ${theme.xl};
+    }
 `
 
 export const Sidebar = styled.aside`
-    padding-top: ${props => props.leftSide ? "0" : "25px"};
-    padding-bottom: ${props => props.leftSide ? "25px" : "0px"};
-    @media screen and (min-width: ${theme.m}){
-        padding-top: 0px;
-        padding-bottom: 0px;
-        width: ${props => props.leftSide ? "25%" : "33%"};
-        margin-left: ${props => props.leftSide ? "0px" : "70px"};
-        margin-right: ${props => props.leftSide ? "70px" : "0px"};
-    }
 `
 
 export const Actions = styled.section`
@@ -51,20 +72,6 @@ export const Actions = styled.section`
         }
     }
 
-`
-
-export const ShowingsGrid = styled.section`
-    @supports (display: grid){
-        @media screen and (min-width: ${theme.m}){
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            div{
-                margin-bottom: 0px;
-            }
-        }
-        margin-bottom: 35px;
-    }
 `
 
 const Icon = styled.img`

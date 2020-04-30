@@ -20,20 +20,13 @@ const List = styled.ul`
     padding-left: 0;
 `
 
-const Item = styled.li`
-    font-weight: 600;
-    font-size: 0.9rem;
-    @media screen and (min-width: ${theme.l}){
-        font-size: 1rem;
-    }
-`
-
 const ItemLink = styled(Link)`
     display: block;
     padding: 21px 15px;
-    color: ${props => props.isWhite ? (props.isSticky ? theme.charcoal : theme.white) : theme.charcoal};
+    color: ${props => props.isWhite ? (props.isSticky ? theme.black : theme.white) : theme.black};
     text-decoration: none;
     position: relative;
+
     &:after{
         position: absolute;
         left: 15px;
@@ -41,7 +34,7 @@ const ItemLink = styled(Link)`
         bottom: 15px;
         display: block;
         content: "";
-        border-bottom: ${props => props.active ? `2px solid ${props.isWhite ? (props.isSticky ? theme.charcoal : theme.white) : theme.charcoal}` : ""};
+        border-bottom: ${props => props.active ? `2px solid ${props.isWhite ? (props.isSticky ? theme.black : theme.white) : theme.black}` : ""};
         @media screen and (min-width: ${theme.l}){
             bottom: 17px;
         }
@@ -62,6 +55,20 @@ const ItemLink = styled(Link)`
     }
 `
 
+
+const Item = styled.li`
+    font-weight: 600;
+    font-size: 0.9rem;
+    @media screen and (min-width: ${theme.l}){
+        font-size: 1rem;
+    }
+    &:first-child {
+        a {
+            margin-left: -15px;
+        }
+    }
+`
+
 const ChildBar = styled.div`
     @keyframes fadeIn{
         from{
@@ -73,10 +80,13 @@ const ChildBar = styled.div`
     }
     position: absolute;
     background: ${theme.grey};
-    top: 64px;
+    top: 61px;
     left: 0;
     width: 100%;
     animation: fadeIn 0.1s ease-out;
+    @media screen and (min-width: ${theme.l}){
+        top: 64px;
+    }
 `
 
 const ChildList = styled.ul`
@@ -87,8 +97,15 @@ const ChildList = styled.ul`
     &:hover a{
         color: ${theme.darkGrey}
     }
-    @media screen and (min-width: ${theme.xl}){
-        max-width: ${theme.xl};
+    li {
+        a {
+            margin-left: 0px !important;
+        }
+    }
+    li:first-child {
+        a {
+            margin-left: -15px !important;
+        }
     }
 `
 
@@ -101,12 +118,12 @@ const ChildItem = styled.li`
 `
 
 const ChildLink = styled(Link)`
-    color: ${theme.charcoal};
+    color: ${theme.black};
     text-decoration: none;
     padding: 10px 13px;
     display: inline-block;
     &:hover {
-        color: ${theme.charcoal} !important;
+        color: ${theme.black} !important;
     }
     @media screen and (min-width: ${theme.l}){
         padding: 15px 17px;

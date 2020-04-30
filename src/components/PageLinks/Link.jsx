@@ -3,56 +3,49 @@ import styled from "styled-components"
 import theme from "../_theme"
 import { LinkSwitch as Link } from "../LinkSwitch"
 import { Headline } from "../Headline"
-import Arrow from "./arrow-right.jsx"
-
-const colorSchemes = [
-    {
-        background: theme.lightPink,
-        shadow: theme.darkPink,
-        text: theme.darkPink,
-        focus: theme.dustyPink
-    },
-    {
-        background: theme.lightGreen,
-        shadow: theme.racerGreen,
-        text: theme.racerGreen,
-        focus: theme.dustyPink
-    },
-    {
-        background: theme.lightBlue,
-        shadow: theme.deepNavy,
-        text: theme.deepNavy,
-        focus: theme.dustyPink
-    }
-]
+import Arrow from "./arrow-right"
 
 const Outer = styled.li`
     position: relative;
-    background: ${props => props.withImages ? theme.grey : colorSchemes[props.colorScheme].background};
-    box-shadow: -5px 5px 0px ${props => colorSchemes[props.colorScheme].shadow};
-    padding: 25px;
+    background: ${theme.lightGrey};
+    box-shadow: 0px 5px 0px ${theme.primary};
     margin-bottom: 35px;
-    border-radius: 10px;
-    min-height: 300px;
     display: flex;
     flex-direction: column;
     position: relative;
     overflow: hidden;
-    transition: box-shadow .3s;
+    min-height: 130px;
+    width: 100%;
+    padding: 15px;
+    padding-top: ${props => props.withImages ? "135px" : "15px"};
+    
 
-    &:before {
-        display: block;
-        content: "";
-        height: ${props => props.withImages ? "50%" : "0"};
+    @media screen and (min-width: ${theme.m}){
+        width: 190px;
+        padding: 25px;
+        padding-top: ${props => props.withImages ? "155px" : "25px"};
     }
+    @media screen and (min-width: ${theme.l}){
+        width: 220px;
+        padding-top: ${props => props.withImages ? "225px" : "25px"};
+    }
+
+
     h4{
         margin-top: 0;
-        color: ${props => colorSchemes[props.colorScheme].text};
+        color: ${theme.black};
+        margin-bottom: 15px;
+    }
+    p {
+        margin-top: 0;
         margin-bottom: 20px;
     }
     &:hover, &:focus-within {
+        box-shadow: 0px 5px 0px ${theme.dark};
+        background: ${theme.lightest};
+
         a svg{
-            transform: translateX(5px)
+            transform: translateX(4px);
         }
         .image {
             filter: grayscale(100%) contrast(1) blur(0px);
@@ -60,25 +53,40 @@ const Outer = styled.li`
         }
     }
     &:focus-within{
-        box-shadow: 0px 0px 0px 5px ${props => colorSchemes[props.colorScheme].focus};
+        box-shadow: 0px 0px 0px 5px ${theme.highlight};
+        transition: box-shadow .3s;
+        a {
+            outline: none;
+        }
     }
     &:active{
-        box-shadow: -2px 2px 0px ${props => colorSchemes[props.colorScheme].text};
-        transform: translate(-3px, 3px);
+        box-shadow: 0px 1px 0px ${theme.primary};
+        transform: translate(0px, 3px);
     }
 `
 
 const Description = styled.p`
-    color: ${props => colorSchemes[props.colorScheme].text};
-    margin-bottom: 35px;
+    color: ${theme.black};
+    margin-bottom: 15px;
     line-height: 1.5;
 `
 
 const CallToAction = styled(Link)`
     margin-top: auto;
+    color: ${theme.dark};
     text-decoration: none;
-    color: ${props => colorSchemes[props.colorScheme].text};
-    font-weight: bold;
+    font-weight: 600;
+    transition: box-shadow .3s; 
+    width: 100%;
+    
+    &:hover{
+        color: ${theme.black};
+    }
+
+    &:active{
+        outline: none;
+        text-decoration: underline;
+    }
     &:after{
         content: "";
         display: block;
@@ -88,14 +96,17 @@ const CallToAction = styled(Link)`
         width: 100%;
         height: 100%;
     }
-    &:focus{
-        outline: none;
-    }
+`
+const CTAText = styled.span`
+    max-width: 80%;
+    vertical-align: middle;
+    display: inline-block;
 `
 
 const Icon = styled.div`
     display: inline-block;
-    vertical-align: middle;    
+    vertical-align: middle;   
+    margin-top: 4px; 
     svg {
         margin-left: 10px;
         transition: transform 0.2s ease-out;
@@ -103,15 +114,20 @@ const Icon = styled.div`
 `
 
 const PageImageContainer = styled.div`
-    background: ${theme.dustyPink};
-    display: inline-block;
+    background: ${theme.highlight};
+    display: block;
     width: 100%;
-    height: calc(50% - 25px);
-    border-radius: 4px;
-    margin-right: 10px;
     position: absolute;
     top: 0;
     left: 0;
+    height: 120px;
+
+    @media screen and (min-width: ${theme.m}){
+        height: 130px;
+    }
+    @media screen and (min-width: ${theme.l}){
+        height: 200px;
+    }
 `
 const PageImage = styled.div`
     width: 100%;
@@ -120,7 +136,7 @@ const PageImage = styled.div`
     background-position: center center;
     background-size: cover;
     display: block;
-    border-radius: 4px;
+    // border-radius: 4px;
     -webkit-transition: all ease 0.3s;
     -moz-transition: all ease 0.3s;
     -o-transition: all ease 0.3s;
@@ -133,11 +149,10 @@ export const PageLink = ({
     callToAction,
     url,
     image480x320,
-    colorScheme,
     external,
     withImages
 }) =>
-    <Outer colorScheme={colorScheme} withImages={withImages}>
+    <Outer withImages={withImages}>
         { withImages && 
             <PageImageContainer>
                 <PageImage className="image" imageSrc={image480x320} />
@@ -145,11 +160,11 @@ export const PageLink = ({
         }
         <Headline level={4} text={title} />
         { !withImages && 
-            <Description colorScheme={colorScheme}>{description}</Description>
+            <Description>{description}</Description>
         }
-        <CallToAction external={external} to={url} colorScheme={colorScheme}>
-            {callToAction}
-            <Icon><Arrow colourFill={colorSchemes[colorScheme].text} /></Icon>
+        <CallToAction external={external} to={url}>
+            <CTAText>{callToAction !== "" ? callToAction : "Read this page"}</CTAText>
+            <Icon><Arrow colourFill={theme.dark} /></Icon>
         </CallToAction>
     </Outer>
 

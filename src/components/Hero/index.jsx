@@ -4,54 +4,51 @@ import styled from "styled-components"
 import theme from "../_theme"
 import PropTypes from "prop-types"
 
-const colorSchemes = [
-    {
-        background: "transparent"
-    },
-    {
-        background: theme.dustyPink
-    },
-    {
-        background: theme.racerGreen
-    },
-    {
-        background: theme.deepNavy
-    }
-]
-
 const Outer = styled.section`
-    background: ${theme.charcoal};
+    margin: 0 auto;
+    background: ${theme.black};
     width: 100%;
+    max-width: ${theme.xl};
+    max-width: calc(${theme.xl} + 125px);
     position: relative;
-    min-height: 80vh;
+    height: 40vh;
+    min-height: 200px;
     padding-top: ${props => props.withHeader ? "64px" : "0px"};
     background-image: url(${props => props.image});
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     display: flex;
     align-items: flex-end;
-    @media screen and (min-width: ${theme.m}){
-        align-items: "flex-end";
-        padding-top: ${props => props.withHeader ? "175px" : "0px"};
-    }
+    margin-top: 175px;
+
     h1{
         color: ${theme.white};
-        max-width: calc( 0.5 * ${theme.m});
-        text-shadow: 0px 0px 30px ${theme.charcoal}50;
+        max-width: calc( 0.65 * ${theme.m});
+        text-shadow: 0px 0px 30px ${theme.black}50;
         margin-bottom: 50px;
     }
+
+    @media screen and (min-width: ${theme.m}){
+        margin-top: 0px;
+        min-height: 390px;
+        align-items: flex-end;
+        padding-top: ${props => props.withHeader ? "175px" : "0px"};
+
+        h1 {
+            max-width: calc( 0.75 * ${theme.m});
+        }
+    }
     @media screen and (min-width: ${theme.xl}){
+        min-height: 500px;
         h1{
-            max-width: calc( 0.5 * ${theme.xl});
+            max-width: calc( 0.4 * ${theme.xl});
             margin-bottom: 75px;
         }
     }
 `
 
 const InnerGradient = styled.div`
-    background: ${props => colorSchemes[props.colorScheme].background};
-    opacity: 0.6;
-    background-image: linear-gradient(180deg, rgba(14,24,19,0.00) 0%, rgba(14,24,19,0.60) 80%);
+    background: linear-gradient(rgba(18, 12, 13, 0.3), rgba(18, 12, 13, 0.7));
     width: 100%;
     height: 100%;
     position: absolute;
@@ -70,37 +67,39 @@ const Container = styled.div`
         max-width: ${theme.xl};
     }
 
-    ol + h1{
+    ol + h1 {
         margin-top: 20px;
     }
-    li, a{
+    li, a {
         color: ${theme.white};
-        text-shadow: 0px 0px 30px ${theme.charcoal}50;
+        text-shadow: 0px 0px 30px ${theme.black}50;
         &:focus{
-            background: ${theme.darkPink};
+            background: ${theme.dark};
+        }
+        &:after {
+            opacity: 0.7;
         }
     }
 `
 
 const Copyright = styled.p`
-        color: ${theme.white};
-        text-shadow: 0px 0px 30px ${theme.charcoal}50;
-        font-size: 0.75rem;
-        position: absolute;
+    color: ${theme.white};
+    text-shadow: 0px 0px 30px ${theme.black}50;
+    font-size: 0.75rem;
+    position: absolute;
+    bottom: 5px;
+
+
+    @media screen and (min-width: ${theme.m}){
+        right: ${theme.horizontalPadding};
         bottom: 5px;
-
-
-        @media screen and (min-width: ${theme.m}){
-            right: ${theme.horizontalPadding};
-            bottom: 5px;
-        }
+    }
 
 `
 
 export const Hero = ({
     image1920x1080,
     headline,
-    colorScheme,
     withHeader,
     copyright,
     children
@@ -109,7 +108,7 @@ export const Hero = ({
         image={image1920x1080} 
         withHeader={withHeader}
     >
-        <InnerGradient colorScheme={colorScheme} />
+        <InnerGradient />
         <Container>
             {children}
             {headline && <Headline level={0} text={headline}/>}
@@ -123,15 +122,9 @@ Hero.propTypes = {
     image1920x1080: PropTypes.string,
     // The text for the title which will be used as the H1 for this page/post. Optional. You might choose not to give this and pass children in instead
     headline: PropTypes.string,
-    // A number to define which colour overlay the Hero should have, it defaults to none.
-    colorScheme: PropTypes.number,
     // A boolean to tell the hero whether it has a header over the top of it, so that content in the hero never overlaps the header. Defaults to false.
     withHeader: PropTypes.bool,
     // A string giving the copyright attribution of the background image
     copyright: PropTypes.string
     
-}
-
-Hero.defaultProps = {
-    colorScheme: 0
 }

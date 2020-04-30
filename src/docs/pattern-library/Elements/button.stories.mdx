@@ -10,13 +10,25 @@ import { Button } from "../../../components/Button/index"
 
 <Preview>
     <Story name="Primary">
-        <Button url="#">Click me</Button>
+        <div style={{padding: "20px"}}>
+            <Button level={1} url="#">Click me</Button>
+        </div>
     </Story>
 </Preview>
 
 <Preview>
     <Story name="Secondary">
-        <Button secondary={true} url="#">Click me</Button>
+        <div style={{padding: "20px"}}>
+            <Button level={2} url="#">Click me</Button>
+        </div>
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="Tertiary">
+        <div style={{padding: "20px"}}>
+            <Button level={3} url="#">Click me</Button>
+        </div>
     </Story>
 </Preview>
 

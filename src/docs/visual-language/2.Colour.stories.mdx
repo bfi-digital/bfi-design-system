@@ -5,19 +5,19 @@ import theme from "../../components/_theme"
 <Meta title="Docs|Visual Language/2 Colour" />
 
 # Colour
-BFI uses colours to communicate functionality in the interface and to subtley provide a guide for which area of the website is being viewed. Colour must be used carefully and abiding by a clear set of guidence.
+The primary colours are black and white, a strong secondary colour is used throughout the BFI.org website to add visual flare and highlight call to action. This colour is a deep red which envokes the feeling of film linking to old cinema seating and curtains, and the luxery of the red carpet.
+
 
 ### Colours must always be accessible
 When using colours, ensure that they work for everyone, especially those who are colour blind or who have low vision. Do not use color on its own to convey information. The BFI colour palette has been designed with accessibility as a fundamental guiding principle, and so the colour contrast of each colour combination has been taken into account for all shades. 
 
 All colour contrasts of text and interactive elements must meet [level AA of the Web Content Accessibility Guidelines (WCAG 2.1)](https://www.w3.org/TR/WCAG21/#contrast-minimum).
 
-- To have similar coloured text on coloured background, always use the dark shade on top of light shade of each colour option.
-- Black and Deep Navy should be used on Dusty Pink.
-- White and Dusty Pink should be used on Deep Navy.
-- White and Dusty Pink should be used on Racer Green.
-- White and Dusty Pink should be used on Black.
-- Black and Deep Navy should be used on Light Grey & White.
+- The primary colour is black on white for text.
+- For calls to action the main red colour can be used on white backgrounds and is fully accessible.
+- For highlights the main red colour can also be used on the lightest red shade.
+- The dark maroon can be used on the light shade.
+- The bright neon highlight colour should not be used for text - it should only be used to highlight, for example it is used to denote when an element is focused on the website, or it is used as a tone treatment on images on hover.
 
 ### Communication > Aesthetics
 While colour adds to the decoration of a web page, it is more important that the colour is used purposefully and should be there to support the content, not replace it. Colour is used to support the organising prinicples of the website, but it is not there as the only means of communicating the organising principles.
@@ -27,31 +27,15 @@ Colour should be used to help guide a user to what matters on the page, supporti
 
 <ColorPalette>
     <ColorItem 
-        title="Dusty Pink" 
-        subtitle="BFI's primary colour, it is used primarily on the Watch pillar." 
-        colors={[theme.dustyPink]} />
+        title="BFI.org Primary colours" 
+        subtitle="BFI's primary colours for web are white and an off-black." 
+        colors={[theme.black, theme.white]} />
     <ColorItem 
-        title="Dark & Light shades" 
-        subtitle="A dark and light shade of pink used for highlighting and contrast." 
-        colors={[theme.darkPink, theme.lightPink]} />
+        title="BFI.org secondary colour" 
+        subtitle="BFI's secondary colour, a deep red that envokes the feeling of film, with a connection to movie screenings, cinema seats & curtains, and the luxery of red carpet." 
+        colors={[theme.primary]} />
     <ColorItem 
-        title="Deep Navy" 
-        subtitle="A dark blue, used throughout the Discover pillar." 
-        colors={[theme.deepNavy]} />
-    <ColorItem 
-        title="Dark & Light shades" 
-        subtitle="A dark and light shade of pink used for highlighting and contrast." 
-        colors={[theme.darkBlue, theme.lightBlue]} />
-    <ColorItem 
-        title="Racer Green" 
-        subtitle="A dark green, used throughout the Create pillar." 
-        colors={[theme.racerGreen]} />
-    <ColorItem 
-        title="Dark & Light shades" 
-        subtitle="A dark and light shade of pink used for highlighting and contrast." 
-        colors={[theme.darkGreen, theme.lightGreen]} />
-    <ColorItem 
-        title="Monochrome shades" 
-        subtitle="An off black, with shades of grey used to highlight sections and text." 
-        colors={[theme.charcoal, theme.darkGrey, theme.grey, theme.lightGrey, theme.white]} />
+        title="Shades & highlights" 
+        subtitle="A dark shade, a bright shade used only for highlights, and two lighter shades used for backgrounds." 
+        colors={[theme.dark, theme.highlight, theme.light, theme.lightest]} />
 </ColorPalette>

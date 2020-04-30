@@ -4,7 +4,7 @@ import theme from "../_theme"
 
 const Outer = styled.dl`
     font-size: 1.2rem;
-    color: ${theme.charcoal};
+    color: ${theme.black};
     margin-top: 0px;
     line-height: 150%;
 `

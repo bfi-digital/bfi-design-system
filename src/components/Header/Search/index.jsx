@@ -17,7 +17,7 @@ const Button = styled.button`
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        color: ${props => props.isOverlaid ? theme.white : theme.charcoal};
+        color: ${props => props.isOverlaid ? theme.white : theme.black};
     }
 ` 
 

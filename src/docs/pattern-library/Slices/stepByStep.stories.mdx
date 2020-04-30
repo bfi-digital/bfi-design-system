@@ -1,0 +1,25 @@
+import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+import { StepByStep } from "../../../components/StepByStep/index"
+import data from "../../../components/StepByStep/data"
+
+<Meta title="Pattern Library|Slices/Step by step" component={StepByStep} />
+
+# Sidebar Page Links
+ 
+ 
+## Examples
+
+<Preview>
+    <Story name="Step by step example">
+        <div style={{padding: "20px", maxWidth: "350px"}}>
+            <StepByStep 
+                title="Applying for film funding"
+                steps={data}
+            />
+        </div>
+    </Story>
+</Preview>
+
+## Props 
+
+<Props of={StepByStep} />

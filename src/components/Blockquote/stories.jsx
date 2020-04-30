@@ -3,7 +3,7 @@ import { withA11y } from "@storybook/addon-a11y"
 import { Blockquote } from "./index"
 
 export default {
-    title: "All Components/Blockquote",
+    title: "2 All Components/Blockquote",
     decorators: [withA11y]
 }
 

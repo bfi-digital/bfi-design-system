@@ -1,0 +1,56 @@
+import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+import { ImageGallery } from "../../../components/ImageGallery/index"
+import { Text } from "../../../components/Text/index"
+
+<Meta title="Pattern Library|Slices/Image Gallery" component={ImageGallery} />
+
+# Image Gallery
+ 
+ 
+## Examples
+
+<Preview>
+    <Story name="Image gallery">
+        <div style={{
+            padding: "20px",
+            maxWidth: "1000px",
+            margin: "0 auto"
+        }}>    
+            
+            <ImageGallery 
+                images={[
+                    {
+                        url: "http://placehold.it/300x200",
+                        alt: "Example image",
+                        caption: "Example image"
+                    },
+                    {
+                        url: "http://placehold.it/200x300",
+                        alt: "Example image 2",
+                    },
+                    {
+                        url: "http://placehold.it/600x400",
+                        alt: "Example image 3",
+                        caption: "Example image 3"
+                    },
+                    {
+                        url: "http://placehold.it/600x400",
+                        alt: "Example image 4",
+                        caption: "Example image 4",
+                        copyright: "Copyright"
+                    },
+                    {
+                        url: "http://placehold.it/600x400",
+                        alt: "Example image 5",
+                        caption: "Example image 5"
+                    },
+                ]}
+                galleryCaption="A gallery of images"
+            />
+        </div>
+    </Story>
+</Preview>
+
+## Props 
+
+<Props of={ImageGallery} />

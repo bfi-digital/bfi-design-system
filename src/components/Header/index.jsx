@@ -13,15 +13,19 @@ import logoWhite from "./logo-white.svg"
 import LotteryLogo from "./lottery-logo.jsx"
 
 const Outer = styled.header`
-    background: ${props => props.isTransparent ? (!props.isSticky ? "transparent" : theme.white) : theme.white};
-    border-bottom: 1px solid ${props => props.isTransparent ? "transparent" : theme.grey};
-    margin-bottom: ${props => props.overlay ? "-175px" : "0px"};
+    background: ${theme.white};
+    border-bottom: 1px solid ${theme.grey};
+    margin-bottom: ${props => props.isTransparent ? "-175px" : "0px"};
     position: relative;
     z-index: 999;
     min-height: 60px;
     position: sticky;
     top: 0px;
-    transition: 0.1s ease-out;
+
+    @media screen and (min-width: ${theme.m}){
+        background: ${props => props.isTransparent ? (!props.isSticky ? "transparent" : theme.white) : theme.white};
+        border-bottom: 1px solid ${props => props.isTransparent ? (!props.isSticky ? "transparent" : theme.grey) : theme.grey};
+    }
 `
 
 const Inner = styled.div`
@@ -37,8 +41,8 @@ const Inner = styled.div`
     }
     a, button {
         &:focus {
-            border-radius: 7px;
-            box-shadow: inset ${theme.dustyPink} 0px 0px 0px 4px;
+            // border-radius: 7px;
+            box-shadow: inset ${theme.highlight} 0px 0px 0px 4px;
             outline: none !important;
         }
     }
@@ -81,9 +85,8 @@ const TopSection = styled.div`
     display: none;
     @media screen and (min-width: ${theme.m}){
         display: block;
-        background: ${props => props.isTransparent ? "transparent" : theme.white};
+        background: ${props => props.isTransparent ? (!props.isSticky ? "transparent" : theme.white) : theme.white};
         padding-top: 15px;
-        transition: 0.1s ease-out;
     }
 `
 const QuickLinksInner = styled(Inner)`
@@ -113,7 +116,9 @@ export const Header = ({
         <>
             
             <TopSection 
-                isTransparent={overlay}>
+                isTransparent={overlay}
+                isSticky={isSticky}
+            >
                 <Inner>
                     <LogoLink to="/">
                         <Logo src={overlay ? logoWhite : logo} alt="British Film Institute"/>
@@ -132,12 +137,11 @@ export const Header = ({
                     setSelected(false)
                 }}
                 isTransparent={overlay}
-                overlay={overlay}
                 isSticky={isSticky}
             >
                 <Inner>
                     <MobileLogoLink to="/">
-                        <Logo src={overlay ? logoWhite : logo} alt="British Film Institute"/>
+                        <Logo src={logo} alt="British Film Institute"/>
                     </MobileLogoLink>
                     <Nav
                         navItems={navItems}
@@ -149,9 +153,10 @@ export const Header = ({
                     <MenuButton 
                         handleClick={() => setOpen(!open)}
                         open={open}
+                        isWhite={overlay}
                     />
-                    <LotteryContainer >
-                        <LotteryLogo colourFill={overlay ? theme.white : theme.charcoal} />
+                    <LotteryContainer>
+                        <LotteryLogo colourFill={overlay ? theme.white : theme.black} />
                     </LotteryContainer>
                 </Inner>
             </Outer>

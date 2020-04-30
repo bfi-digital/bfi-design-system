@@ -14,7 +14,8 @@ const Button = styled.button`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    color: ${theme.charcoal};
+    // color: ${props => props.isWhite ? theme.white : theme.black};
+    color: ${theme.black};
     @media screen and (min-width: ${theme.m}){
         display: none;
     }
@@ -22,15 +23,17 @@ const Button = styled.button`
 
 const MenuButton = ({
     handleClick,
-    open
+    open,
+    isWhite
 }) =>
     <Button 
         onClick={handleClick}
         aria-controls="menu-panel"
         aria-expanded={open ? "true" : "false"}
+        isWhite={isWhite}
     >
         {open ? "Close" : "Menu"}
-        <Icon open={open}/>
+        <Icon open={open} isWhite={isWhite} />
     </Button>    
 
 export default MenuButton

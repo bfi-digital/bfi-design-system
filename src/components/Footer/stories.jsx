@@ -4,7 +4,7 @@ import { Footer } from "./index"
 import data from "./data"
 
 export default {
-    title: "All Components/Footer",
+    title: "2 All Components/Footer",
     decorators: [withA11y]
 }
 

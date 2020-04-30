@@ -4,7 +4,7 @@ import { StepByStep } from "./index"
 import data from "./data"
 
 export default {
-    title: "All Components/StepByStep",
+    title: "2 All Components/StepByStep",
     decorators: [withA11y]
 }
 

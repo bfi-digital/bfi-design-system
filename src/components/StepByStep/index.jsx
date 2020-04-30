@@ -71,33 +71,64 @@ const ShowButton = styled.button`
     background: none;
     font-size: 1rem;
     padding: 0;
+
+
     &:hover{
-        p{
-            text-decoration: none;
+        span {
+            color: ${theme.dark};
+            &:after {
+                height: 100%;
+            }
+        }
+    }
+    &:focus{
+        outline: none;
+        span {
+            &:after {
+                height: 100%;
+            }
+            outline: 2px solid ${theme.highlight};
+        }
+    }
+    &:active{
+        span {
+            outline: none;
+            text-decoration: underline;
         }
     }
     &::-moz-focus-inner {
         border: 0;
     }
     &:focus{
-        outline: none;
         p{
-            background: ${theme.lightPink}
+            background: ${theme.lightest}
         }
     }
 `
 
-const ShowButtonText = styled.p`
-    color: ${theme.darkPink};
+const ShowButtonText = styled.span`
     display: inline;
-    text-decoration: underline;
     font-weight: 400;
+    color: ${theme.black};
+    text-decoration: none;
+    position: relative;
+    &:after {
+        content: "";
+        background: ${theme.lightest};
+        height: 40%;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        z-index: -1;
+        transition: height .3s; 
+    }
 `
 
 const Description = styled.p`
-    color: ${theme.charcoal};
+    color: ${theme.black};
     a{
-        color: ${theme.darkPink};
+        color: ${theme.dark};
         &:hover{
             text-decoration: none;
         }
@@ -106,7 +137,7 @@ const Description = styled.p`
         }
         &:focus{
             outline: none;
-            background: ${theme.lightPink}
+            background: ${theme.lightest}
         }
     }
 `
@@ -146,6 +177,12 @@ export const StepByStep = ({
 }
 
 StepByStep.propTypes = {
+    /** 
+	 * Title of the whole step by step slice.
+	 **/
     title: PropTypes.string,
+    /** 
+	 * An array containing the steps, each has a `title` and a `description`, with the description being able to parse HTML so it can contain links and paragraphs.
+	 **/
     steps: PropTypes.array
 }

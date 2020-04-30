@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import styled, { createGlobalStyle } from "styled-components"
 import theme from "../_theme"
 import { Dialog } from "@reach/dialog"
@@ -30,7 +30,7 @@ const DialogStyles = createGlobalStyle`
     }
 
     [data-reach-dialog-overlay] {
-        background: ${theme.charcoal}80;
+        background: ${theme.black}80;
         position: fixed;
         top: 0;
         right: 0;
@@ -41,6 +41,10 @@ const DialogStyles = createGlobalStyle`
         justify-content: center;
         align-items: center;
         animation: fadeIn 0.1s ease-out; 
+        z-index: 9999;
+        &:hover {
+            cursor: zoom-out;
+        }
     }
     [data-reach-dialog-content] {
         margin: 5vw;
@@ -60,10 +64,25 @@ const Outer = styled.figure`
 
 const Caption = styled.figcaption`
     text-align: center;
-    color: ${theme.charcoal};
+    color: ${props => props.white ? theme.white : theme.darkGrey};
     font-size: 0.9rem;
     max-width: 70%;
     margin: 0 auto;
+    display: block;
+    &:hover {
+        cursor: default;
+    }
+`
+const Small = styled.small`
+    text-align: center;
+    color: ${props => props.white ? theme.white : theme.darkGrey};
+    font-size: 0.9rem;
+    max-width: 70%;
+    margin: 0 auto;
+    display: block;
+    &:hover {
+        cursor: default;
+    }
 `
 
 const ImageHolder = styled.div`
@@ -72,24 +91,47 @@ const ImageHolder = styled.div`
             display: flex;
             flex-direction: row;
             align-items: flex-start;
+            flex-wrap: wrap;
+            width: 100%;
         }
     ` : null}
 `
 
 const Button = styled.button`
     border: none;
-    background: none;
+    background: ${theme.highlight};
     cursor: pointer;
     padding: 0px;
     width: 100%;
+
+    img {
+        -webkit-transition: all ease 0.3s;
+        -moz-transition: all ease 0.3s;
+        -o-transition: all ease 0.3s;
+        transition: all ease 0.3s;
+    }
+    &:hover {
+        cursor: zoom-in;
+        img {
+            filter: grayscale(100%) contrast(1) blur(0px);
+            mix-blend-mode: multiply;
+        }
+    }
     &:focus{
-        outline: 2px solid ${theme.dustyPink};
+        outline: 3px solid ${theme.highlight};
+        img {
+            filter: grayscale(100%) contrast(1) blur(0px);
+            mix-blend-mode: multiply;
+        }
     }
     margin-bottom: 10px;
     @media screen and (min-width: ${theme.m}){
         margin-right: 10px;
         /* width: calc( 33.33% - 6.67px); */
-        &:last-of-type{
+        flex: 1 0 calc(33% - 10px);
+        max-width: 50%;
+
+        &:nth-child(3){
             margin-right: 0px;
         }
     }
@@ -100,71 +142,112 @@ const Image = styled.img`
     padding: 0;
     display: block;
     width: 100%;
-    ${props => !props.isClickable ? `
-        margin-bottom: 10px;
-        @media screen and (min-width: ${theme.m}){
-            margin-right: 10px;
-            &:last-of-type{
-                margin-right: 0px;
-            }
-        }
-    ` : null}
 `
 
 const BigImage = styled.img`
     width: auto;
     max-width: 100%;
     max-height: 90vh;
-    box-shadow: 0px 10px 40px ${theme.charcoal}50;
+    box-shadow: 0px 10px 40px ${theme.black}50;
+    &:hover {
+        cursor: default;
+    }
 `
+
+const useKeyPress = function(targetKey) {
+    const [keyPressed, setKeyPressed] = useState(false)
+  
+    function downHandler({ key }) {
+        if (key === targetKey) {
+            setKeyPressed(true)
+        }
+    }
+
+    const upHandler = ({ key }) => {
+        if (key === targetKey) {
+            setKeyPressed(false)
+        }
+    }
+
+    React.useEffect(() => {
+        window.addEventListener("keydown", downHandler)
+        window.addEventListener("keyup", upHandler)
+
+        return () => {
+            window.removeEventListener("keydown", downHandler)
+            window.removeEventListener("keyup", upHandler)
+        }
+    })
+  
+    return keyPressed
+}
 
 export const ImageGallery = ({
     images,
-    caption,
-    lightbox
+    galleryCaption
 }) => {
-
-    const [ openImage, setOpenImage ] = useState(false)
+    const [ openImage, setOpenImage ] = useState(0)
+    const leftPress = useKeyPress("ArrowLeft")
+    const rightPress = useKeyPress("ArrowRight")
+    
+    useEffect(() => {
+        if (leftPress && openImage) {
+            if(openImage == 1) {
+                setOpenImage(images.length)
+            } else {
+                setOpenImage(openImage-1)
+            }
+        }
+    }, [leftPress])
+    useEffect(() => {
+        if (rightPress && openImage) {
+            if(openImage == images.length) {
+                setOpenImage(1)
+            } else {
+                setOpenImage(openImage+1)
+            }
+        }
+    }, [rightPress])
 
     return(
-        <Outer>
+        <Outer itemscope itemtype="http://schema.org/ImageObject">
             <ImageHolder number={images.length}>
-                {images.map((image, i) => lightbox ?                    
-                    <Button key={i} onClick={() => setOpenImage(image)}>
+                {images.map((image, i) =>                   
+                    <Button key={i} onClick={() => setOpenImage(i+1)}>
                         <Image
-                            isClickable
+                            itemprop="image"
                             src={image.url}
                             alt={image.alt}
                         />
                     </Button>
-                    :
-                    <Image
-                        key={i}
-                        src={image.url}
-                        alt={image.alt}
-                    />
                 )}
             </ImageHolder>
-            {caption && <Caption>{caption}</Caption>}
+            {galleryCaption && <Caption itemprop="caption description">{galleryCaption}</Caption>}
 
-            {lightbox &&
-                <>
-                    <DialogStyles/>
-                    <Dialog 
-                        aria-label="lightbox"
-                        isOpen={openImage} 
-                        onDismiss={() => setOpenImage(false)}
-                    >
-                        <VisuallyHidden>
-                            <button onClick={() => setOpenImage(false)}>Close</button>
-                        </VisuallyHidden>
-                        <BigImage
-                            src={openImage.url}
-                            alt={openImage.alt}
-                        />       
-                    </Dialog>
-                </>
-            }
+            <>
+                <DialogStyles/>
+                <Dialog 
+                    aria-label="lightbox"
+                    isOpen={openImage} 
+                    onDismiss={() => setOpenImage(0)}
+                >
+                    <VisuallyHidden>
+                        <button onClick={() => setOpenImage(0)}>Close</button>
+                    </VisuallyHidden>
+                    <BigImage
+                        itemprop="image"
+                        src={images[openImage == 0 ? openImage : (openImage-1)].url}
+                        alt={images[openImage == 0 ? openImage : (openImage-1)].alt}
+                    />       
+                    {images[openImage == 0 ? openImage : (openImage-1)].caption &&
+                        <Caption itemprop="caption description" white={true}>{images[openImage == 0 ? openImage : (openImage-1)].caption}</Caption>
+                    }
+                    {images[openImage == 0 ? openImage : (openImage-1)].copyright &&
+                        <Small itemprop="copyrightHolder" white={true}>&copy; {images[openImage == 0 ? openImage : (openImage-1)].copyright}</Small>
+                    }
+
+                </Dialog>
+            </>
         </Outer>
     )
 }
@@ -176,15 +259,7 @@ ImageGallery.propTypes = {
 	 **/
     images: PropTypes.array,
     /**
-	 * Optionally, provide a text caption for the image/gallery
+	 * Optionally, provide a text caption for the full gallery
 	 **/
-    caption: PropTypes.string,
-    /**
-	 * Say whether the images should be clickable, leading to a lightbox. True by default
-	 **/
-    ligthbox: PropTypes.bool,
-}
-
-ImageGallery.defaultProps = {
-    lightbox: true
+    galleryCaption: PropTypes.string,
 }

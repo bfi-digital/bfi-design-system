@@ -1,28 +1,28 @@
 import * as React from "react"
 import { withA11y } from "@storybook/addon-a11y"
-import { FilmShowings } from "./index"
+import { FilmShowing } from "./index"
 
 export default {
-    title: "All Components/FilmShowings",
+    title: "2 All Components/FilmShowing",
     decorators: [withA11y]
 }
 
-export const twoShowings = () =>
+export const aShowing = () =>
     <div style={{padding: "20px"}}>
-        <FilmShowings
+        <FilmShowing
             name="La La Land"
             date="24th February"
             times={[
                 {
-                    title: "3:30pm",
+                    time: "3:30pm",
                     url: "#"
                 },
                 {
-                    title: "6:30pm",
+                    time: "6:30pm",
                     url: "#"
                 },
                 {
-                    title: "8:45pm",
+                    time: "8:45pm",
                     url: "#",
                     soldOut: true
                 }
@@ -32,7 +32,7 @@ export const twoShowings = () =>
 
 export const soldOut = () =>
     <div style={{padding: "20px"}}>
-        <FilmShowings
+        <FilmShowing
             name="La La Land"
             date="24th February"
             times={[

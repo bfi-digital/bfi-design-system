@@ -3,78 +3,149 @@ import styled from "styled-components"
 import theme from "../../_theme"
 import { LinkSwitch } from "../../LinkSwitch"
 import { Tag } from "../../Tag"
-
+import placeholderImage from "./placeholder.png"
+    
 const Outer = styled(LinkSwitch)`
     display: block;
-    border-radius: 5px;
+    // border-radius: 5px;
     text-decoration: none;
-    color: ${theme.charcoal};
-    margin-bottom: 35px;
+    color: ${theme.black};
+    margin-bottom: 25px;
+    transition: box-shadow .3s;
+    
+    h4 {
+        margin-top: 0;
+        min-height: 35px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
     @media screen and (min-width: ${theme.m}){
-        margin-right: 25px;
-        max-width: calc(50% - 12.5px);
+        margin-right: 15px;
+        margin-bottom: 15px;
+
+        max-width: calc(50% - 10px);
         &:nth-of-type(even){
             margin-right: 0px;
         }
     }
     @media screen and (min-width: ${theme.l}){
-        max-width: calc(33% - 13.5px);
+        max-width: calc(33% - 10px);
+        margin-bottom: 15px;
+
         &:nth-of-type(even){
-            margin-right: 25px;
+            margin-right: 15px;
         }
         &:nth-of-type(3n){
             margin-right: 0px;
         }
     }
-    &:hover{
-        h3{
+    &:hover, &:focus-within {
+        h4{
             color: ${theme.darkGrey};
+        }
+        img {
+            filter: grayscale(100%) contrast(1) blur(0px);
+            mix-blend-mode: multiply;
+        }
+        .placeholder {
+            opacity: 0.5;
         }
     }
     &:focus{
-        box-shadow: 0px 0px 0px 5px white, 0px 0px 0px 9px ${theme.dustyPink};
+        outline: none;
+        box-shadow: 0px 0px 0px 5px white, 0px 0px 0px 9px ${theme.highlight};
     }
     &::-moz-focus-inner {
         border: 0;
     }
     &:active{
-        h3{
-            color: ${theme.darkPink};
+        h4{
+            color: ${theme.dark};
+        }
+    }
+`
+const RestyledOuter = styled(Outer)`
+    flex: 0 0 80%;
+    margin-right: 15px !important;
+
+    &:last-of-type {
+        margin-right: 0px !important;
+    }
+
+    @media screen and (min-width: ${theme.m}){
+        flex: 0 0 30%;
+        &:nth-of-type(even){
+            margin-right: 15px !important;
+        }
+    }
+    @media screen and (min-width: ${theme.l}){
+        &:nth-of-type(3n){
+            margin-right: 15px !important;
         }
     }
 `
 
-const Image = styled.img`
-    border-radius: 5px;
+const ImageContainer = styled.div`
+    background: ${theme.highlight};
+    display: inline-block;
     width: 100%;
     height: auto;
 `
+const Image = styled.img`
+    // border-radius: 5px;
+    width: 100%;
+    height: auto;
+    display: block;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+`
 
-const Title = styled.h3`
+const Title = styled.h4`
     font-size: 1.125rem;
     margin-top: 10px;
     margin-bottom: 5px;
 `
 
-const Channels = styled.ul`
-    list-style: none;
+const Channels = styled.div`
     margin: 0;
     padding: 0;
 `
 
 export const FilmCard = ({
     image480x270,
-    imageAltText,
     name,
     channels,
-    url
+    url,
+    imageAltText,
+    inScroller
 }) =>
-    <Outer to={url}>
-        <Image src={image480x270} alt={imageAltText}/>
-        <Title>{name}</Title>
-        <Channels>
-            {channels.map(channel =>
-                <Tag key={channel}>{channel}</Tag>
-            )}
-        </Channels>
-    </Outer>
+    <>
+        {inScroller ? 
+            <RestyledOuter to={url} inScroller={inScroller}>
+                <ImageContainer>
+                    <Image src={image480x270 != "" ? image480x270 : placeholderImage} alt={imageAltText} />
+                </ImageContainer>
+                <Title>{name}</Title>
+                <Channels>
+                    {channels.map(channel =>
+                        <Tag key={channel}>{channel}</Tag>
+                    )}
+                </Channels>
+            </RestyledOuter>
+            :
+            <Outer to={url} inScroller={inScroller}>
+                <ImageContainer>
+                    <Image src={image480x270 != "" ? image480x270 : placeholderImage} alt={imageAltText} />
+                </ImageContainer>
+                <Title>{name}</Title>
+                <Channels>
+                    {channels.map(channel =>
+                        <Tag key={channel}>{channel}</Tag>
+                    )}
+                </Channels>
+            </Outer>
+        }
+    </>

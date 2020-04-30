@@ -1,29 +1,33 @@
 import * as React from "react"
 import { withA11y } from "@storybook/addon-a11y"
 import { PageLinks } from "./index"
-import four, { three } from "./data"
+import three, { two } from "./data"
 
 export default {
-    title: "All Components/PageLinks",
+    title: "2 All Components/PageLinks",
     decorators: [withA11y],
 }
 
 export const ThreeLinks = () =>
-    <PageLinks links={three} colorScheme={0}/>
+    <PageLinks links={three} />
 
-export const FourLinksWatchTheme = () =>
-    <PageLinks links={four} colorScheme={0}/>
+export const TwoLinks = () =>
+    <PageLinks links={two} />
 
-export const FourLinksIndustryTheme = () =>
-    <PageLinks links={four} colorScheme={1}/>
-
-export const FourLinksLearnTheme = () =>
-    <PageLinks links={four} colorScheme={2}/>
-
-export const FourLinksWithImage = () =>
-    <PageLinks links={four} colorScheme={0} withImages={true} />
-
-export const EightLinks = () =>
+export const NineLinks = () =>
     <PageLinks links={[
-        ...four, ...four
-    ]} colorScheme={0}/>
+        ...three, ...three, ...three
+    ]} />
+
+export const LinksWithImage = () =>
+    <PageLinks links={three} withImages={true} />
+
+export const SixLinks = () =>
+    <PageLinks links={[
+        ...three, ...three
+    ]} />
+
+export const FourLinks = () =>
+    <PageLinks links={[
+        ...two, ...two
+    ]} />

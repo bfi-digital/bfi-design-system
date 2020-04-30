@@ -6,7 +6,7 @@ import PropTypes from "prop-types"
 
 const Outer = styled.ol`
     list-style: none;
-    color: ${theme.charcoal};
+    color: ${theme.black};
     font-size: 0.9rem;
     padding-left: 0px;
     line-height: 1.5;
@@ -25,7 +25,7 @@ const Crumb = styled.li`
     &:after{
         margin: 0px 5px;
         content: "/";
-        font-weight: bold;
+        font-weight: normal;
     }
     &:last-of-type:after{
         display: none;
@@ -33,14 +33,38 @@ const Crumb = styled.li`
 `
 
 const BreadcrumbLink = styled(Link)`
-    color: ${theme.darkPink};
-    font-weight: bold;
+    color: ${theme.black};
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+    
+    &:after {
+        content: "";
+        background: ${theme.lightest};
+        height: 40%;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        z-index: -1;
+        transition: height .3s; 
+    }
+
     &:hover{
-        text-decoration: none;
+        color: ${theme.dark};
+        &:after {
+            height: 100%;
+        }
     }
     &:focus{
-        background: ${theme.lightPink};
+        &:after {
+            height: 100%;
+        }
+        outline: 2px solid ${theme.highlight};
+    }
+    &:active{
         outline: none;
+        text-decoration: underline;
     }
 `
 

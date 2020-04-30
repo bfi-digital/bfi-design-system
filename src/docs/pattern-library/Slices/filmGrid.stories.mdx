@@ -1,0 +1,37 @@
+import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+import { FilmGrid } from "../../../components/FilmGrid/index"
+import demoFilms from "../../../components/FilmGrid/data"
+
+<Meta title="Pattern Library|Slices/Film Grid" component={FilmGrid} />
+
+# Film Grid
+ 
+ 
+## Examples
+
+<Preview>
+    <Story name="Film grid">
+            <div style={{
+                padding: "5px",
+                maxWidth: "1000px"
+            }}>
+                <FilmGrid films={demoFilms} />
+            </div>
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="Film grid with CTA">
+            <div style={{
+                padding: "5px",
+                maxWidth: "1000px"
+            }}>
+                <FilmGrid films={demoFilms} allFilmsUrl="http://google.com"/>
+            </div>
+    </Story>
+</Preview>
+
+
+## Props of each file
+
+<Props of={FilmGrid} />

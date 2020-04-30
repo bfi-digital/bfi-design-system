@@ -12,17 +12,9 @@ export const Wrapper = styled.div`
     }
 `
 
-export const GreySection = styled.div`
-    max-width: ${theme.l};
-    margin: 0 auto;
-    padding: 40px ${theme.horizontalPadding};
-    background-color: ${theme.lightGrey};
-    @media screen and (min-width: ${theme.xl + 200}){
-        max-width: ${theme.xl};
-        padding: 70px ${theme.horizontalPadding};
-    }
-`
-
 export const MainContent = styled.article`
     flex: 1;
+    iframe {
+        border: none;
+    }
 `

@@ -6,12 +6,9 @@ import PropTypes from "prop-types"
 const HeroH1 = styled.h1`
     font-family: "Archivo Black";
     text-transform: uppercase;
-    color: ${theme.charcoal};
+    color: ${theme.black};
     font-weight: 800;
     font-size: 1.875rem;
-    @media screen and (min-width: ${theme.m}){
-        font-size: 1.5625rem;
-    }
     @media screen and (min-width: ${theme.l}){
         font-size: 2.0625rem;
     }
@@ -23,17 +20,18 @@ const HeroH1 = styled.h1`
 const H1 = styled(HeroH1)`
     font-family: "Open Sans";
     text-transform: none;
-    margin-block-start: 1em;
+    margin-block-start: 0.75em;
     margin-block-end: 0.5em;
     font-weight: 800;
 `
 
 const H2 = styled.h2`
-    color: ${theme.charcoal};
+    color: ${theme.black};
     font-weight: 700;
     font-size: 1.375rem;
     margin-block-start: 1.5em;
     margin-block-end: 0.5em;
+    line-height: 1.3;
 
     @media screen and (min-width: ${theme.l}){
         font-size: 1.6875rem;
@@ -44,11 +42,21 @@ const H2 = styled.h2`
 `
 
 const H3 = styled.h3`
-    color: ${theme.charcoal};
+    color: ${theme.black};
     font-weight: 700;
     font-size: 1.4375rem;
     margin-block-start: 1em;
     margin-block-end: 0.5em;
+    line-height: 1.3;
+
+    // &:before {
+    //     border: 1px solid ${theme.darkGrey};
+    //     margin: 30px auto;
+    //     width: 100%;
+    //     opacity: 0.5;
+    //     content: "";
+    //     display: block;
+    // }
 
     @media screen and (min-width: ${theme.xl}){
         font-size: 1.6875rem;
@@ -57,9 +65,12 @@ const H3 = styled.h3`
 
 const H4 = styled.h4`
     font-family: "Open Sans";
-    color: ${theme.charcoal};
-    font-weight: 700;
+    color: ${theme.black};
+    font-weight: 600;
     font-size: 1rem;
+    margin-bottom: 10px;
+    line-height: 1.3;
+
     @media screen and (min-width: ${theme.m}){
         font-size: 1.125rem;
     }
@@ -70,9 +81,11 @@ const H4 = styled.h4`
 
 const H5 = styled.h5`
     font-family: "Open Sans";
-    color: ${theme.charcoal};
+    color: ${theme.black};
     font-weight: 600;
     font-size: 0.875rem;
+    line-height: 1.3;
+
     @media screen and (min-width: ${theme.m}){
         font-size: 1rem;
     }

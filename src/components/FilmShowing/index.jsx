@@ -6,15 +6,19 @@ import { Headline } from "../Headline"
 import { Button } from "../Button"
 
 const Outer = styled.div`
-    padding-bottom: 25px;
+    padding-bottom: 15px;
     border-bottom: 1px solid ${theme.grey};
     margin-bottom: 35px;
-    h3{
+    h4{
         margin-top: 0px;
+        margin-bottom: 0px;
     }
 `
 
-const Date = styled.p``
+const Date = styled.p`
+    margin-top: 5px;
+    margin-bottom: 5px;
+`
 
 const Times = styled.ul`
     list-style-type: none;
@@ -33,33 +37,35 @@ const SoldOut = styled.span`
     border: 2px solid ${theme.darkGrey};
     color: ${theme.darkGrey};
     font-weight: bold;
-    border-radius: 5px;
+    // border-radius: 5px;
     font-size: 1rem;
     padding: 4px 15px;
+    cursor: no-drop;
 `
 
-export const FilmShowings = ({
+export const FilmShowing = ({
     name,
     date,
     times
 }) =>
     <Outer>
-        {name && <Headline level={3} text={name}/>}
+        {name && <Headline level={4} text={name}/>}
         <Date>{date}</Date>
         <Times>
             {times.map((time, i) =>
                 <Time key={i}>
                     {time.soldOut ?
                         <SoldOut>
-                            {time.title} - Sold out
+                            {time.time} - Sold out
                         </SoldOut>
                         :
                         <Button 
                             level={2}
                             href={time.url} 
+                            title="Book this at BFI Southbank"
                             {...time}
                         >
-                            {time.title}
+                            {time.time}
                         </Button>
                     }
                 </Time>
@@ -67,7 +73,7 @@ export const FilmShowings = ({
         </Times>
     </Outer>
 
-FilmShowings.propTypes = {
+FilmShowing.propTypes = {
     // Name of the film
     name: PropTypes.string,
     // Date of this showing

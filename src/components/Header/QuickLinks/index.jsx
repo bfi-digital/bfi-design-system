@@ -1,7 +1,7 @@
 import * as React from "react"
 import theme from "../../_theme"
 import styled from "styled-components"
-import { Link } from "@reach/router"
+import { LinkSwitch as Link } from "../../LinkSwitch"
 
 const Wrapper = styled.div`
     position: fixed;
@@ -12,12 +12,14 @@ const Wrapper = styled.div`
 `
 const QuickLink = styled(Link)`
     background: ${props => props.isTransparent ? (props.isSticky ? theme.white : "transparent") : theme.white};
-    color: ${props => props.isTransparent ? (!props.isSticky ? theme.white : theme.darkPink) : theme.darkPink};
+    color: ${props => props.isTransparent ? (!props.isSticky ? theme.white : theme.primary) : theme.primary};
     font-weight: 700;
     text-decoration: none;
-    padding: 21px 15px;
-    transition: background 0.1s ease-out;
-    transition-delay: ${props => props.isSticky ? "0s" : "0.1s"};
+    padding: 19px 15px;
+
+    &:hover {
+        color: ${props => props.isTransparent ? (!props.isSticky ? theme.grey : theme.dark) : theme.dark};
+    }
 `
 
 const Positioner = styled.div`

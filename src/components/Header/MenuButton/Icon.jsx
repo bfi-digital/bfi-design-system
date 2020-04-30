@@ -8,8 +8,9 @@ const Outer = styled.div`
     &:after, 
     &:before, 
     div {
-        background-color: ${theme.charcoal};
-        border-radius: 3px;
+        // background-color: ${props => props.isWhite ? theme.white : theme.black};
+        background-color: ${theme.black};
+        // border-radius: 3px;
         content: '';
         display: block;
         height: 2px;
@@ -26,9 +27,10 @@ const Outer = styled.div`
 `
 
 const Icon = ({
-    open
+    open,
+    isWhite
 }) =>
-    <Outer open={open}>
+    <Outer open={open} isWhite={isWhite}>
         <div></div>
     </Outer>
 

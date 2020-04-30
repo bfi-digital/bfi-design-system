@@ -8,8 +8,16 @@ import { Button } from "../Button"
 
 const colorSchemes = [
     {
-        background: theme.charcoal,
-        text: theme.white,
+        background: theme.black,
+        text: theme.white
+    },
+    {
+        background: theme.lightest,
+        text: theme.black
+    },
+    {
+        background: theme.lightGrey,
+        text: theme.black
     },
 ]
 
@@ -18,6 +26,16 @@ const Outer = styled.section`
     flex-direction: column;
     background-color: ${props => colorSchemes[props.colorScheme].background};
     color: ${props => colorSchemes[props.colorScheme].text};
+    position: relative;
+
+    margin-top: 15px;
+    & + .promoBanner {
+        margin-top: 0px;
+    }
+    &:last-of-type {
+        margin-bottom: 25px;
+    }
+
     h2{
         margin-top: 0px;
         color: ${props => colorSchemes[props.colorScheme].text};
@@ -25,30 +43,53 @@ const Outer = styled.section`
     a{
         margin-top: 10px;
     }
+
+
     @media screen and (min-width: ${theme.m}){
         flex-direction: row;
-        a{
+        a {
             margin-top: auto;
         }
-        h2{
+        h2 {
             font-size: 2.25rem;
             line-height: 120%;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: -9999px;
+            right: 0;
+            box-shadow: 9999px 0 0 ${props => colorSchemes[props.colorScheme].background};
+            border-left: 9999px solid ${props => colorSchemes[props.colorScheme].background};
+            z-index: -1;
+        }
+    }
+    @media screen and (min-width: ${theme.l}){
+        &:before {
+            display: none;
         }
     }
 `
 
 const Inner = styled.div`
-    padding: 25px;
+    padding: 15px;
     @media screen and (min-width: ${theme.m}){
-        padding: 35px;
+        padding: 25px;
         width: 50%;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        padding-left: ${props => props.reversed ? "25px" : "0"};
+        
+        &.without_image {
+            width: 75%;
+        }
     }
     @media screen and (min-width: ${theme.l}){
-        padding: 45px;
+        padding: 30px;
     }
 `
 
@@ -60,14 +101,24 @@ const Description = styled.p`
     }
 `
 
-const Image = styled.img`
+const Image = styled.div`
     order: -1;
+    height: 250px;
+    background-image: url(${props => props.image});
+    background-size: cover;
+    background-position: center center;
     width: 100%;
-    height: auto;
+
     @media screen and (min-width: ${theme.m}){
         order: ${props => props.reversed ? "-1" : "1"};
         width: 50%;
-        align-self: flex-end;
+        height: auto;
+        margin-right: ${props => props.reversed ? "0" : "-20px"};
+        margin-left: ${props => props.reversed ? "-20px" : "20px"};
+    }
+    @media screen and (min-width: ${theme.l}){
+        margin-right: 0px;
+        margin-left: 0px;
     }
 `
 
@@ -83,19 +134,20 @@ export const PromoBanner = ({
     callToActionUrl,
     callToActionTitle,
     image,
-    imageAltText,
     reversed,
     colorScheme,
     backgroundColor,
     secondImage,
-    secondImageAlt
+    secondImageAlt,
+    external
 }) =>
     <Outer 
+        className="promoBanner"
         reversed={reversed} 
         colorScheme={colorScheme} 
         backgroundColor={backgroundColor}
     >
-        <Inner>
+        <Inner className={image ? "with_image" : "without_image"} reversed={reversed}>
             {secondImage && 
                 <SecondImage 
                     src={secondImage} 
@@ -105,16 +157,17 @@ export const PromoBanner = ({
             <Headline level={2} text={headline}/>
             <Description>{description}</Description>
             {callToActionUrl && 
-                <Button to={callToActionUrl} colorScheme={1}>
+                <Button to={callToActionUrl} colorScheme={colorScheme === 2 ? 0 : 1} external={external}>
                     {callToActionTitle}
                 </Button>
             }
-        </Inner>
-        <Image 
-            reversed={reversed}
-            src={image} 
-            alt={imageAltText}
-        />
+        </Inner> 
+        {image && 
+            <Image
+                reversed={reversed}
+                image={image} 
+            />    
+        }
     </Outer>
 
 PromoBanner.propTypes = {
@@ -126,8 +179,6 @@ PromoBanner.propTypes = {
     callToAction: PropTypes.object,
     // Source URL for the image, any size
     image: PropTypes.string,
-    // Alt text for the image
-    imageAltText: PropTypes.string,
     // By default, image is on the right. Say true to flip it. Optional
     reversed: PropTypes.bool,
     // A number which selects the colour scheme of the page links slice, dependant on the pillar the page/post is within
@@ -138,4 +189,6 @@ PromoBanner.propTypes = {
     secondImage: PropTypes.string,
     // Alt text for opitonal second image
     secondImageAltText: PropTypes.string,
+    // Boolean for whether link is external. Default is false
+    external: PropTypes.external
 }

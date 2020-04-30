@@ -1,0 +1,29 @@
+import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+import { CallToAction } from "../../../components/CallToAction/index"
+
+<Meta title="Pattern Library|Slices/Call to Action" component={CallToAction} />
+
+# Single CallToAction
+ 
+ 
+## Examples
+
+<Preview>
+    <Story name="Internal Link">
+        <div style={{padding: "20px"}}>
+            <CallToAction linkText="Internal Link" linkURL="/" />
+        </div>
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="External Link">
+        <div style={{padding: "20px"}}>
+            <CallToAction linkText="External Link" linkURL="https://google.com" external={true} />
+        </div>
+    </Story>
+</Preview>
+
+## Props of each file
+
+<Props of={CallToAction} />
