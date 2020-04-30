@@ -133,7 +133,7 @@ const Description = styled.p`
 const Image = styled.div`
     order: -1;
     height: 250px;
-    background-image: url(${props => props.image});
+    background-image: url("${props => props.image}");
     background-size: cover;
     background-position: center center;
     width: 100%;

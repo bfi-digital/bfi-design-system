@@ -14,7 +14,7 @@ const Outer = styled.section`
     height: 40vh;
     min-height: 200px;
     padding-top: ${props => props.withHeader ? "64px" : "0px"};
-    background-image: url(${props => props.image});
+    background-image: url("${props => props.image}");
     background-size: cover;
     background-position: center center;
     display: flex;

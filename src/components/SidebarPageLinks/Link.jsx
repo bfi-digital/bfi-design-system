@@ -56,7 +56,7 @@ const PageImageContainer = styled.div`
 `
 const PageImage = styled.div`
     width: 100%;
-    background: url(${props => props.imageSrc});
+    background: url("${props => props.imageSrc}");
     height: 100%;
     background-position: center center;
     background-size: cover;
