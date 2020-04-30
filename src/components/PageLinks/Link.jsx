@@ -159,9 +159,7 @@ export const PageLink = ({
             </PageImageContainer>
         }
         <Headline level={4} text={title} />
-        { !withImages && 
-            <Description>{description}</Description>
-        }
+        <Description>{description}</Description>
         <CallToAction external={external} to={url}>
             <CTAText>{callToAction !== "" ? callToAction : "Read this page"}</CTAText>
             <Icon><Arrow colourFill={theme.dark} /></Icon>
