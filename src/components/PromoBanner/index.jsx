@@ -85,7 +85,32 @@ const Inner = styled.div`
         padding-left: ${props => props.reversed ? "25px" : "0"};
         
         &.without_image {
-            width: 75%;
+            width: 66%;
+        }
+    }
+    @media screen and (min-width: ${theme.l}){
+        padding: 30px;
+    }
+`
+
+const RightButton = styled.div`
+    text-align: right;
+    padding: 15px;
+
+    a {
+        width: 100%;
+        margin: auto 0;
+    }
+
+
+    @media screen and (min-width: ${theme.m}){
+        padding: 25px;
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        a {
+            width: fit-content;
         }
     }
     @media screen and (min-width: ${theme.l}){
@@ -98,6 +123,10 @@ const Description = styled.p`
     @media screen and (min-width: ${theme.m}){
         font-size: 1.25rem;
         margin-bottom: 25px;
+
+        &.without_image {
+            margin-bottom: 0;
+        }
     }
 `
 
@@ -155,18 +184,26 @@ export const PromoBanner = ({
                 />
             }
             <Headline level={2} text={headline}/>
-            <Description>{description}</Description>
-            {callToActionUrl && 
+            <Description className={image ? "with_image" : "without_image"}>{description}</Description>
+            {callToActionUrl && image && 
                 <Button to={callToActionUrl} colorScheme={colorScheme === 2 ? 0 : 1} external={external}>
                     {callToActionTitle}
                 </Button>
             }
         </Inner> 
-        {image && 
+        {image ? 
             <Image
                 reversed={reversed}
                 image={image} 
-            />    
+            />   
+            : 
+            <RightButton>
+                {callToActionUrl && 
+                <Button to={callToActionUrl} colorScheme={colorScheme === 2 ? 0 : 1} external={external}>
+                    {callToActionTitle}
+                </Button>
+                }
+            </RightButton>
         }
     </Outer>
 
