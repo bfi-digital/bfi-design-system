@@ -35,9 +35,7 @@ export const fullWidth = () =>
             src="http://placehold.it/1440x768"
             caption="Example image caption"
         />
-        <Text
-            html={exampleText}
-        />
+        <Text>{exampleText}</Text>
     </div>
 
 export const leftAndBig = () =>
@@ -48,9 +46,7 @@ export const leftAndBig = () =>
             src="http://placehold.it/600x400"
             caption="Example image caption"
         />
-        <Text
-            html={exampleText}
-        />
+        <Text>{exampleText}</Text>
     </div>
 
 export const rightAndSmall = () =>
@@ -62,7 +58,5 @@ export const rightAndSmall = () =>
             src="http://placehold.it/250x200"
             caption="Example image caption"
         />
-        <Text
-            html={exampleText}
-        />
+        <Text>{exampleText}</Text>
     </div>

@@ -10,7 +10,7 @@ export const Wrapper = styled.div`
     padding: 0px ${theme.horizontalPadding};
     @media screen and (min-width: ${theme.m}){
         display: flex;
-        flex-direction: ${props => props.sidebarLeft ? "row-reverse" : "row"};
+        flex-direction: row;
     }
     @media screen and (min-width: ${theme.xl + 200}){
         max-width: ${theme.xl};
@@ -20,18 +20,18 @@ export const Wrapper = styled.div`
     }
 
     article {
-        max-width: ${props => props.sidebarLeft ? "630px" : "none"};
+        max-width: none;
     }
 
     aside {
-        padding-top: ${props => props.sidebarLeft ? "0" : "25px"};
-        padding-bottom: ${props => props.sidebarLeft ? "25px" : "0px"};
+        padding-top: 25px;
+        padding-bottom: 0px;
         @media screen and (min-width: ${theme.m}){
             padding-top: 0px;
             padding-bottom: 0px;
             width: 33%;
-            margin-left: ${props => props.sidebarLeft ? "0px" : "50px"};
-            margin-right: ${props => props.sidebarLeft ? "50px" : "0px"};
+            margin-left: 50px;
+            margin-right: 0px;
         }
     }
 `

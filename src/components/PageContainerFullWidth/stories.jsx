@@ -203,13 +203,13 @@ export const industryPage = () =>
                     {
                         title: "Progress my career and grow my business",
                         url: "#",
-                        description: "If you're an emerging filmmaker, apply for funding to build skills and experience to stand out in the industry.",
+                        description: "If you&apos;re an emerging filmmaker, apply for funding to build skills and experience to stand out in the industry.",
                         callToAction: "Explore funding options"
                     },
                     {
                         title: "Create film, TV, or new formats of storytelling",
                         url: "#",
-                        description: "If you're an adventurous storyteller, we can help you with funding to create your film, tv or emerging media like VR or AR.",
+                        description: "If you&apos;re an adventurous storyteller, we can help you with funding to create your film, tv or emerging media like VR or AR.",
                         callToAction: "Explore funding options"
                     },
                     {
@@ -221,7 +221,7 @@ export const industryPage = () =>
                 ]} />
 
                 <Headline level={3} text="Previously awarded funds" />
-                <Text html="<p>Search the funding awards for films, projects and organisations made by the BFI since April 2011.</p>" />
+                <Text><p>Search the funding awards for films, projects and organisations made by the BFI since April 2011.</p></Text>
                 <CallToAction linkText="See previously awarded funds" linkURL="/" />
                 
                 <Divider istransparent={true} />
@@ -413,18 +413,18 @@ export const everyComponent = () =>
                 <LeadParagraph 
                     text="God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs. Do you have any idea how long it takes those cups to decompose. Yes, Yes, without the oops! Yes, Yes, without the oops! Drive us out of here!"
                 />
-                <Text 
-                    html="<p>So you two dig up, dig up dinosaurs? Hey, you know how I'm, like, always trying to save the planet? Here's my chance. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine?</p>
-                    <p>Yes, Yes, without the oops! <a href='http://google.com</MainContent>'>Yes, Yes, without the oops!</a> Drive us out of here!</p>"
-                />
+                <Text>
+                    <p>So you two dig up, dig up dinosaurs? Hey, you know how I&apos;m, like, always trying to save the planet? Here&quot;s my chance. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine?</p>
+                    <p>Yes, Yes, without the oops! <a href="http://google.com</MainContent>">Yes, Yes, without the oops!</a> Drive us out of here!</p>
+                </Text>
                 <Blockquote 
-                    quote="Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should." 
+                    quote="Yeah, but your scientists were so preoccupied with whether or not they could, they did&apos;t stop to think if they should." 
                     citation="Ian Malcolm"
                 />
-                <Text
-                    html="<p>Fellini’s epic La dolce vita stands as a towering achievement of 1960s cinema. Set in Rome during the height of the ‘Hollywood on the Tiber’ era, the episodic narrative follows jaded journalist Marcello Rubini (Mastroianni) on the trail of gossip on VIPs, including Swedish-American film star Sylvia Rank (Ekberg).</p> 
-                    <p>The film caused a sensation on its initial release, angering censors and polarising opinion among critics and audiences, but is now rightly considered a masterpiece that’s had a profound influence on popular culture.</p>"
-                />
+                <Text>
+                    <p>Fellini’s epic La dolce vita stands as a towering achievement of 1960s cinema. Set in Rome during the height of the ‘Hollywood on the Tiber’ era, the episodic narrative follows jaded journalist Marcello Rubini (Mastroianni) on the trail of gossip on VIPs, including Swedish-American film star Sylvia Rank (Ekberg).</p> 
+                    <p>The film caused a sensation on its initial release, angering censors and polarising opinion among critics and audiences, but is now rightly considered a masterpiece that’s had a profound influence on popular culture.</p>
+                </Text>
                 <Divider />
                 <Headline 
                     level={1} 
@@ -443,9 +443,9 @@ export const everyComponent = () =>
                     text="Headline 4"
                 />
                 <Divider />
-                <Text
-                    html="<p>Fellini’s epic La dolce vita stands as a towering achievement of 1960s cinema. Set in Rome during the height of the ‘Hollywood on the Tiber’ era, the episodic narrative follows jaded journalist Marcello Rubini (Mastroianni) on the trail of gossip on VIPs, including Swedish-American film star Sylvia Rank (Ekberg).</p>"
-                />
+                <Text>
+                    <p>Fellini’s epic La dolce vita stands as a towering achievement of 1960s cinema. Set in Rome during the height of the ‘Hollywood on the Tiber’ era, the episodic narrative follows jaded journalist Marcello Rubini (Mastroianni) on the trail of gossip on VIPs, including Swedish-American film star Sylvia Rank (Ekberg).</p>
+                </Text>
                 <DownloadableFiles
                     files={{
                         title: "Young Audiences Content Fund production application guidelines",
@@ -454,9 +454,9 @@ export const everyComponent = () =>
                         size: "1.2 MB"
                     }}
                 />
-                <Text
-                    html="<p>The film caused a sensation on its initial release, angering censors and polarising opinion among critics and audiences, but is now rightly considered a masterpiece that’s had a profound influence on popular culture.</p>"
-                />
+                <Text>
+                    <p>The film caused a sensation on its initial release, angering censors and polarising opinion among critics and audiences, but is now rightly considered a masterpiece that’s had a profound influence on popular culture.</p>
+                </Text>
                 
                 <Button url="#" colorScheme={0}>Apply for funding</Button>
                 <Divider />
@@ -471,10 +471,10 @@ export const everyComponent = () =>
                     src="http://placehold.it/450x300"
                     caption="Example image caption"
                 />
-                <Text
-                    html="<p>Fellini’s epic La dolce vita stands as a towering achievement of 1960s cinema. Set in Rome during the height of the ‘Hollywood on the Tiber’ era, the episodic narrative follows jaded journalist Marcello Rubini (Mastroianni) on the trail of gossip on VIPs, including Swedish-American film star Sylvia Rank (Ekberg).</p> 
-                    <p>The film caused a sensation on its initial release, angering censors and polarising opinion among critics and audiences, but is now rightly considered a masterpiece that’s had a profound influence on popular culture.</p>"
-                />
+                <Text>
+                    <p>Fellini’s epic La dolce vita stands as a towering achievement of 1960s cinema. Set in Rome during the height of the ‘Hollywood on the Tiber’ era, the episodic narrative follows jaded journalist Marcello Rubini (Mastroianni) on the trail of gossip on VIPs, including Swedish-American film star Sylvia Rank (Ekberg).</p> 
+                    <p>The film caused a sensation on its initial release, angering censors and polarising opinion among critics and audiences, but is now rightly considered a masterpiece that’s had a profound influence on popular culture.</p>
+                </Text>
                 <Headline 
                     level={3} 
                     text="An image gallery"
