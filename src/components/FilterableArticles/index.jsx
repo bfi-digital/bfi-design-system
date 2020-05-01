@@ -53,7 +53,7 @@ export const FilterableArticles = ({
         <>
             <Filters categories={categories} query={query}/>
             {articles && 
-                <ArticleGrid articles={articles.slice(0,20)}>
+                <ArticleGrid articles={articles}>
                     {(query.page <= maxPages) && <CentredButton>Load more</CentredButton>}
                 </ArticleGrid>
             }
