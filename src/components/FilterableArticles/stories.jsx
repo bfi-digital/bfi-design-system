@@ -24,11 +24,15 @@ export const normal = () =>
             },
             {
                 value: "five-things",
-                label: "Five things"
+                label: "Five Things"
             },
             {
                 value: "bfi-recommends",
-                label: "BFI recommends"
+                label: "BFI Recommends"
             },
+            {
+                value: "sight-and-sound",
+                label: "Sight and Sound"
+            }
         ]}
     />
