@@ -3,7 +3,7 @@ import styled from "styled-components"
 import theme from "../_theme"
 import PropTypes from "prop-types"
 
-const Outer = styled.section`
+const Outer = styled.div`
     color: ${theme.black};
     line-height: 1.5;
     font-size: 1rem;

@@ -6,7 +6,7 @@ import {default as crumbs} from "../Breadcrumbs/data"
 import footerMenus from "../Footer/data"
 import demoArticles from "../ArticleGrid/data"
 
-// import { AdvertisingContainer } from "../AdvertisingContainer"
+import { AdvertisingContainer } from "../AdvertisingContainer"
 import { ArticleGrid } from "../ArticleGrid"
 import { Breadcrumbs } from "../Breadcrumbs"
 import { Blockquote } from "../Blockquote"
@@ -18,6 +18,7 @@ import { DownloadableFiles } from "../DownloadableFiles"
 import { FilmGrid } from "../FilmGrid"
 import { FilmShowing } from "../FilmShowing"
 // import { FilmShowingGrid } from "../FilmShowingGrid"
+import { FilterableArticles } from "../FilterableArticles"
 import { Footer } from "../Footer"
 import { Header } from "../Header"
 import { Headline } from "../Headline"
@@ -393,6 +394,64 @@ export const serviceListPageExample = () =>
     </>
 
 
+
+
+
+
+export const articlePostListPageExample = () =>
+    <>
+        <Header navItems={navItems}/>
+        <Wrapper>
+            <MainContent>
+                <Headline 
+                    level={1} 
+                    text="News &amp; Articles"
+                />
+
+                <FilterableArticles
+                    categories={[
+                        {
+                            value: "10-great",
+                            label: "10 Great"
+                        },
+                        {
+                            value: "where-to-stream",
+                            label: "Where to stream"
+                        },
+                        {
+                            value: "where-to-begin",
+                            label: "Where to begin"
+                        },
+                        {
+                            value: "five-things",
+                            label: "Five Things"
+                        },
+                        {
+                            value: "bfi-recommends",
+                            label: "BFI Recommends"
+                        },
+                        {
+                            value: "sight-and-sound",
+                            label: "Sight and Sound"
+                        }
+                    ]}
+                />
+                
+                <Headline 
+                    level={3} 
+                    text="Promoted links from around the web"
+                />
+                <AdvertisingContainer withCaption={false}>
+                    <div style={{width: "100%", height: "400px", background: "grey"}}></div>
+                </AdvertisingContainer>
+                
+            </MainContent>
+        </Wrapper>
+        <Footer
+            menus={footerMenus}
+            copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"
+        />
+    </>
 
 
 
