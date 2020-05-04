@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import theme from "../../_theme"
+// import parse from "html-react-parser"
 import { LinkSwitch as Link } from "../../LinkSwitch"
 import { Headline } from "../../Headline"
 import { Tag } from "../../Tag"
@@ -17,25 +18,16 @@ const Outer = styled.li`
     min-height: 130px;
     width: 100%;
     padding: 15px;
-    padding-top: 135px;
 
     @media screen and (min-width: ${theme.m}){
-        width: 190px;
         padding: 25px;
-        padding-top: 155px;
     }
-    @media screen and (min-width: ${theme.l}){
-        width: Arrow;
-        padding-top: 225px;
-    }
-
 
     h4{
         margin-top: 0;
         color: ${theme.black};
         margin-bottom: 10px;
     }
-
     &:hover, &:focus-within {
         box-shadow: 0px 5px 0px ${theme.dark};
         background: ${theme.lightest};
@@ -60,13 +52,10 @@ const Outer = styled.li`
         transform: translate(0px, 3px);
     }
 `
+
 const Meta = styled.div`
     color: ${theme.darkGrey};
     margin-top: auto;
-
-    p {
-        margin-top: 0;
-    }
 `
 const Date = styled.p`
     margin-bottom: 10px;
@@ -93,21 +82,20 @@ const CallToAction = styled(Link)`
     }
 `
 
+const Content = styled.div`
+    width: 55%;
+    padding-right: 25px;
+    height: 100%;
+    position: relative;
+`
 const PageImageContainer = styled.div`
     background: ${theme.highlight};
     display: block;
-    width: 100%;
-    position: absolute;
+    width: 45%;
     top: 0;
-    left: 0;
-    height: 120px;
-
-    @media screen and (min-width: ${theme.m}){
-        height: 130px;
-    }
-    @media screen and (min-width: ${theme.l}){
-        height: 200px;
-    }
+    right: 0;
+    position: absolute;
+    height: 100%;
 `
 const PageImage = styled.div`
     width: 100%;
@@ -126,35 +114,47 @@ const Categories = styled.div`
     margin-bottom: 10px;
 `
 
+const Standfirst = styled.p`
+    color: ${theme.black};
+    margin-bottom: 15px;
+    line-height: 1.5;
+`
 
-export const ArticleCard = ({
+
+export const ArticleCardHighlighted = ({
     withSideBar,
     title,
     url,
     image480x270,
     imageAltText,
+    standfirst,
     categories,
     date,
     author,
     external
 }) =>
-    <Outer className="articleCard" withSideBar={withSideBar}>
+    <Outer className="articleCardHighlighted" withSideBar={withSideBar}>
         <PageImageContainer>
             <PageImage className="image" imageSrc={image480x270} alt={imageAltText} />
         </PageImageContainer>
-        {categories && 
-            <Categories>
-                {categories.map(cat =>
-                    <Tag key={cat}>{cat}</Tag>
-                )}
-            </Categories>
-        }
-        <Headline level={4} text={title} />
-        <Meta>
-            <Date>{date}</Date>
-            <Author>By {author}</Author>
-        </Meta>
+        <Content>
+            {categories && 
+                <Categories>
+                    {categories.map(cat =>
+                        <Tag key={cat}>{cat}</Tag>
+                    )}
+                </Categories>
+            }
+            <Headline level={4} text={title} />
+            {standfirst && 
+                <Standfirst>{standfirst}</Standfirst>
+            }
 
-        <CallToAction to={url} external={external} />
+            <Meta>
+                <Date>{date}</Date>
+                <Author>By {author}</Author>
+            </Meta>
+        </Content>
+        <CallToAction to={url} external={external}/>
     </Outer>
 

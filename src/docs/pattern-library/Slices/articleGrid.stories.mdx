@@ -10,25 +10,37 @@ import demoArticles from "../../../components/ArticleGrid/data"
 ## Examples
 
 <Preview>
-    <Story name="Three Articles">
+    <Story name="Multiple Articles with first highlighted">
         <div style={{
             padding: "10px",
             maxWidth: "1000px",
             margin: "0 auto"
         }}>
-            <ArticleGrid articles={demoArticles} />
+            <ArticleGrid articles={[...demoArticles, ...demoArticles, ...demoArticles, ...demoArticles, ...demoArticles]} firstHighlighted />
         </div>
     </Story>
 </Preview>
 
 <Preview>
-    <Story name="Three Articles with optionals">
+    <Story name="Three Articles with title and CTA">
         <div style={{
             padding: "10px",
             maxWidth: "1000px",
             margin: "0 auto"
         }}>
-            <ArticleGrid articles={demoArticles} optionalTitle="Latest articles" optionalCTALink="http://google.com" />
+            <ArticleGrid articles={[...demoArticles]} optionalTitle="Latest articles" optionalCTALink="http://google.com" />
+        </div>
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="Single Article">
+        <div style={{
+            padding: "10px",
+            maxWidth: "1000px",
+            margin: "0 auto"
+        }}>
+            <ArticleGrid articles={[demoArticles[0]]} />
         </div>
     </Story>
 </Preview>

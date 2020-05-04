@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import theme from "../_theme"
 import { ArticleCard } from "./ArticleCard"
+import { ArticleCardHighlighted } from "./ArticleCardHighlighted"
 import { Button } from "../Button"
 import { Headline } from "../Headline"
 
@@ -19,28 +20,76 @@ const Outer = styled.div`
     }
     .articleCard {
         @media screen and (min-width: ${theme.s}){
-            width: calc(50% - 12.5px);
-            margin-right: 25px;
-            &:nth-of-type(even) {
+            width: calc(50% - 7px);
+            margin-right: 14px;
+            margin-bottom: 20px;
+
+            &:nth-of-type(2n) {
                 margin-right: 0px;
             }
         }
         @media screen and (min-width: ${theme.m}){
             width: calc(33.333% - 16.666px);
+            margin-bottom: 35px;
             margin-right: 25px;
-            &:nth-of-type(even) {
+
+            &:nth-of-type(2n) {
                 margin-right: 25px;
-            }
+            }  
             &:nth-of-type(3n) {
                 margin-right: 0px;
-            }
-            /* &:nth-of-type(4n) {
-                margin-right: 25px;
-            } */
+            }            
         }
         @media screen and (min-width: ${theme.l}){
             min-width: 275px;
         }
+    }
+
+    &.withHighlight {
+        .articleCard {
+            @media screen and (min-width: ${theme.s}){
+                margin-right: 14px;
+                &:nth-of-type(2n+1) {
+                    margin-right: 0px;
+                }
+            }
+            @media screen and (min-width: ${theme.m}){
+                margin-right: 25px;
+                margin-bottom: 35px;
+
+                &:nth-of-type(2n+1) {
+                    margin-right: 25px;
+                }
+                &:nth-of-type(3n+1) {
+                    margin-right: 0px;
+                }
+            }
+            @media screen and (min-width: ${theme.l}){
+                &:nth-of-type(3n) {
+                    margin-right: 25px;
+                }
+                &:nth-of-type(3n+1) {
+                    margin-right: 25px;
+                }
+                &:nth-of-type(3n+2) {
+                    margin-right: 0px;
+                } 
+            }
+        }
+        .articleCardHighlighted {
+            @media screen and (min-width: ${theme.s}){
+                width: 100%;
+                margin-bottom: 20px;
+                margin-right: 0px;
+            }
+            @media screen and (min-width: ${theme.m}){
+                margin-bottom: 35px;
+            }
+            @media screen and (min-width: ${theme.l}){
+                width: calc(66.666% - 8.332px);
+                margin-right: 25px;
+            }
+        }   
     }
 
     &:before {
@@ -75,16 +124,29 @@ export const ArticleGrid = ({
     optionalTitle,
     optionalCTALink,
     withSideBar,
+    firstHighlighted,
     children
 }) =>
-    <Outer withSideBar={withSideBar}>
+    <Outer withSideBar={withSideBar} className={firstHighlighted ? "withHighlight" : ""}>
         {optionalTitle && 
             <Headline level={2} text={optionalTitle} />
         }
         <Articles>
-            {articles.map(article =>
-                <ArticleCard key={article.uuid} withSideBar={withSideBar} {...article}/>    
-            )}
+            {firstHighlighted  === true || articles.length === 1 ?
+                <>
+                    <ArticleCardHighlighted key={articles[0].uuid} withSideBar={withSideBar} {...articles[0]}/>
+                    {articles.length > 1 &&
+                        articles.slice(1).map(article =>
+                            <ArticleCard key={article.uuid} withSideBar={withSideBar} {...article}/>    
+                        )
+                    }
+                </>
+                :
+                articles.map(article =>
+                    <ArticleCard key={article.uuid} withSideBar={withSideBar} {...article}/>    
+                )
+            }
+            
         </Articles>
         { optionalCTALink &&
             <CentredButton to={optionalCTALink}>See more articles</CentredButton>
