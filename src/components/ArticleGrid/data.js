@@ -8,7 +8,7 @@ export default [
         date: "Monday 9th February 2017",
         url: "https://www.bfi.org.uk/news-opinion/news-bfi/lists/36-amazing-dance-scenes",
         uuid: "06347a64-5abd-59de-a6b9-be0d4a9e31e1",
-        categories: ["What to watch"]
+        category: "What to watch"
     },
     {
         title: "The 100 Greatest Films of All Time",
@@ -19,7 +19,7 @@ export default [
         date: "Tuesday 23rd March 2020",
         url: "https://www.bfi.org.uk/greatest-films-all-time",
         uuid: "4d1c842b-4d15-558b-82a4-5cb70546d6f3",
-        categories: ["What to watch"]
+        category: "What to watch"
     },
     {
         title: "Stanley Kubrick, cinephile",
@@ -30,7 +30,7 @@ export default [
         date: "Friday 22nd November 2019",
         url: "https://www.bfi.org.uk/news-opinion/sight-sound-magazine/polls-surveys/stanley-kubrick-cinephiles",
         uuid: "d1a4a7ac-44fa-56b3-9522-b865a49080c2",
-        categories: ["What to watch"]
+        category: "What to watch"
     },
     // {
     //     title: "Is Citizen Kane still the greatest film of all time?",
@@ -41,7 +41,7 @@ export default [
     //     author: "Author name",
     //     url: "https://www.bfi.org.uk/news-opinion/sight-sound-magazine/features/greatest-films-all-time/mark-kane",
     //     uuid: "cd872a79-e9f7-5276-9b6c-34ad2f509c54",
-    //     categories: ["What to watch"]
+    //     category: "What to watch"
     // },
     // {
     //     title: "Is Citizen Kane still the greatest film of all time?",
@@ -52,6 +52,6 @@ export default [
     //     author: "Author name",
     //     url: "https://www.bfi.org.uk/news-opinion/sight-sound-magazine/features/greatest-films-all-time/mark-kane",
     //     uuid: "cd872a79-e9f7-5276-9b6c-34ad2f509c54",
-    //     categories: ["What to watch"]
+    //     category: "What to watch"
     // }
 ]

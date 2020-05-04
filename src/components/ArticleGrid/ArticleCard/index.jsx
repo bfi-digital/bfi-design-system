@@ -3,7 +3,6 @@ import styled from "styled-components"
 import theme from "../../_theme"
 import { LinkSwitch as Link } from "../../LinkSwitch"
 import { Headline } from "../../Headline"
-import { Tag } from "../../Tag"
 
 const Outer = styled.li`
     position: relative;
@@ -17,16 +16,16 @@ const Outer = styled.li`
     min-height: 130px;
     width: 100%;
     padding: 15px;
-    padding-top: 135px;
+    padding-top: 155px;
 
     @media screen and (min-width: ${theme.m}){
         width: 190px;
         padding: 25px;
-        padding-top: 155px;
+        padding-top: 175px;
     }
     @media screen and (min-width: ${theme.l}){
         width: Arrow;
-        padding-top: 225px;
+        padding-top: 235px;
     }
 
 
@@ -100,13 +99,13 @@ const PageImageContainer = styled.div`
     position: absolute;
     top: 0;
     left: 0;
-    height: 120px;
+    height: 140px;
 
     @media screen and (min-width: ${theme.m}){
-        height: 130px;
+        height: 160px;
     }
     @media screen and (min-width: ${theme.l}){
-        height: 200px;
+        height: 220px;
     }
 `
 const PageImage = styled.div`
@@ -126,6 +125,21 @@ const Categories = styled.div`
     margin-bottom: 10px;
 `
 
+const CategoryTag = styled.div`
+    background: ${theme.primary};
+    color: ${theme.white};
+    padding: 5px;
+    padding-left: 15px;
+    position: absolute;
+    font-weight: 600;
+    top: 15px;
+    left: 0;
+    z-index: 5;
+
+    @media screen and (min-width: ${theme.m}){
+        padding-left: 25px;
+    }
+`
 
 export const ArticleCard = ({
     withSideBar,
@@ -133,22 +147,16 @@ export const ArticleCard = ({
     url,
     image480x270,
     imageAltText,
-    categories,
+    category,
     date,
     author,
     external
 }) =>
     <Outer className="articleCard" withSideBar={withSideBar}>
+        {category && <CategoryTag>{category}</CategoryTag> }
         <PageImageContainer>
             <PageImage className="image" imageSrc={image480x270} alt={imageAltText} />
         </PageImageContainer>
-        {categories && 
-            <Categories>
-                {categories.map(cat =>
-                    <Tag key={cat}>{cat}</Tag>
-                )}
-            </Categories>
-        }
         <Headline level={4} text={title} />
         <Meta>
             <Date>{date}</Date>

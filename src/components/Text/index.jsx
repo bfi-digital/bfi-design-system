@@ -63,6 +63,7 @@ const Outer = styled.div`
     ul{
         margin-top: 0;
         margin-bottom: 0;
+        padding-left: 15px;
         display: inline-block;
         list-style: none;
         li{
@@ -79,6 +80,7 @@ const Outer = styled.div`
     ol{
         margin-top: 0;
         margin-bottom: 0;
+        padding-left: 15px;
         display: inline-block;
         li{
             padding-left: 10px;

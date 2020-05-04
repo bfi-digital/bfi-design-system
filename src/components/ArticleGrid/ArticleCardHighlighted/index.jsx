@@ -83,19 +83,30 @@ const CallToAction = styled(Link)`
 `
 
 const Content = styled.div`
-    width: 55%;
     padding-right: 25px;
-    height: 100%;
     position: relative;
+    padding-top: 180px;
+    width: 100%;
+    
+    @media screen and (min-width: ${theme.m}){
+        padding-top: 40px;
+        width: 55%;
+        height: 100%;
+    }
 `
 const PageImageContainer = styled.div`
     background: ${theme.highlight};
     display: block;
-    width: 45%;
     top: 0;
     right: 0;
     position: absolute;
-    height: 100%;
+    width: 100%;
+    height: 175px;
+
+    @media screen and (min-width: ${theme.m}){
+        width: 45%;
+        height: 100%;
+    }
 `
 const PageImage = styled.div`
     width: 100%;
@@ -119,6 +130,21 @@ const Standfirst = styled.p`
     margin-bottom: 15px;
     line-height: 1.5;
 `
+const CategoryTag = styled.div`
+    background: ${theme.primary};
+    color: ${theme.white};
+    padding: 5px;
+    padding-left: 15px;
+    position: absolute;
+    font-weight: 600;
+    top: 15px;
+    left: 0;
+    z-index: 5;
+
+    @media screen and (min-width: ${theme.m}){
+        padding-left: 25px;
+    }
+`
 
 
 export const ArticleCardHighlighted = ({
@@ -128,23 +154,14 @@ export const ArticleCardHighlighted = ({
     image480x270,
     imageAltText,
     standfirst,
-    categories,
+    category,
     date,
     author,
     external
 }) =>
     <Outer className="articleCardHighlighted" withSideBar={withSideBar}>
-        <PageImageContainer>
-            <PageImage className="image" imageSrc={image480x270} alt={imageAltText} />
-        </PageImageContainer>
+        {category && <CategoryTag>{category}</CategoryTag> }
         <Content>
-            {categories && 
-                <Categories>
-                    {categories.map(cat =>
-                        <Tag key={cat}>{cat}</Tag>
-                    )}
-                </Categories>
-            }
             <Headline level={4} text={title} />
             {standfirst && 
                 <Standfirst>{standfirst}</Standfirst>
@@ -155,6 +172,11 @@ export const ArticleCardHighlighted = ({
                 <Author>By {author}</Author>
             </Meta>
         </Content>
+
+        <PageImageContainer>
+            <PageImage className="image" imageSrc={image480x270} alt={imageAltText} />
+        </PageImageContainer>
+
         <CallToAction to={url} external={external}/>
     </Outer>
 
