@@ -135,6 +135,7 @@ const CategoryTag = styled.div`
     color: ${theme.white};
     padding: 5px;
     padding-left: 15px;
+    padding-right: 10px;
     position: absolute;
     font-weight: 600;
     top: 15px;
