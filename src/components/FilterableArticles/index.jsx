@@ -56,8 +56,8 @@ export const FilterableArticles = ({
     return(
         <Outer>
             <Filters categories={categories} query={query}/>
-            {articles && 
-                <ArticleGrid articles={articles}>
+            {articles.length > 0 && 
+                <ArticleGrid articles={articles} firstHighlighted>
                     {(query.page <= maxPages) && <CentredButton>Load more</CentredButton>}
                 </ArticleGrid>
             }
