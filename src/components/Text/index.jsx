@@ -86,6 +86,47 @@ const Outer = styled.div`
         }
     }
 
+    
+    table { 
+        width: 750px; 
+        border-collapse: collapse; 
+        margin: 50px auto;
+    }
+    
+    tr:nth-of-type(odd) { 
+        background: ${theme.lightGrey}; 
+    }
+    
+    td, th { 
+        padding: 10px; 
+        border: 1px solid ${theme.grey}; 
+        text-align: left; 
+        font-size: 18px;
+    }
+    
+
+    @media only screen and (max-width: ${theme.l}){
+        table { 
+            width: 100%; 
+        }
+    
+        table, thead, tbody, th, td, tr { 
+            display: block; 
+        }
+        
+        thead tr { 
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+        
+        tr { border: 1px solid ${theme.grey}; }
+        
+        td, th { 
+            border: none;
+            position: relative;
+        }
+    }
 `
 
 export const Text = ({
