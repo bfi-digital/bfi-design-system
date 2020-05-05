@@ -6,7 +6,7 @@ import { Headline } from "../Headline"
 import { LeadParagraph } from "../LeadParagraph"
 import { Tag } from "../Tag"
 import { Image } from "../Image"
-
+import { Text } from "../Text"
 
 const Outer = styled.div`
     margin: 0 auto;
@@ -25,7 +25,7 @@ const Meta = styled.div`
 `
 const LowerContent = styled.div`
     margin: 30px auto;
-    max-width: 400px;
+    max-width: 425px;
     p {
         margin-top: 0;
     }
@@ -37,28 +37,28 @@ export const HeroArticle = ({
     title,
     standfirst,
     category,
-    type,
     date,
     authors
 }) =>
     <Outer>
         <Meta>
             {category && <Tag>{category}</Tag>}
-            {type && <Tag>{type}</Tag>}
             {title && <Headline level={1} text={title}/>}
             {standfirst && <LeadParagraph text={standfirst}/>}
             <LowerContent>
-                {date && <span>{date}</span>}
-                {authors.length === 1 ?
-                    <span> by: <a href={authors[0].url}>{authors[0].name}</a></span>
-                    :
-                    <p>
-                        By:&nbsp;
-                        {authors.map((author, index) =>
-                            <><a key={`author_${index}`} href={author.url}>{author.name}</a>{(index < (authors.length-1) ? ", " : "")}</>
-                        )}
-                    </p>
-                }
+                <Text>
+                    {date && <span>{date}</span>}
+                    {authors.length === 1 ?
+                        <span> by: <a href={authors[0].url}>{authors[0].name}</a></span>
+                        :
+                        <p>
+                            By:&nbsp;
+                            {authors.map((author, index) =>
+                                <><a key={`author_${index}`} href={author.url}>{author.name}</a>{(index < (authors.length-1) ? ", " : "")}</>
+                            )}
+                        </p>
+                    }
+                </Text>
             </LowerContent>
         </Meta>
         {image1920x1080 &&
@@ -84,8 +84,6 @@ HeroArticle.propTypes = {
     standfirst: PropTypes.string,
     // The category of the article.
     category: PropTypes.string,
-    // The optional type tag of the article.
-    type: PropTypes.string,
     // The date the article was posted.
     date: PropTypes.string,
     // An array of the authors of this article
