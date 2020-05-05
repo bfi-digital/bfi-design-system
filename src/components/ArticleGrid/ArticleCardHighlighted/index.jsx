@@ -4,7 +4,6 @@ import theme from "../../_theme"
 // import parse from "html-react-parser"
 import { LinkSwitch as Link } from "../../LinkSwitch"
 import { Headline } from "../../Headline"
-import { Tag } from "../../Tag"
 
 const Outer = styled.li`
     position: relative;
@@ -120,9 +119,6 @@ const PageImage = styled.div`
     -moz-transition: all ease 0.3s;
     -o-transition: all ease 0.3s;
     transition: all ease 0.3s;
-`
-const Categories = styled.div`
-    margin-bottom: 10px;
 `
 
 const Standfirst = styled.p`

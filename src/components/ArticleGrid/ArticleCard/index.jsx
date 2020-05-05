@@ -121,9 +121,6 @@ const PageImage = styled.div`
     -o-transition: all ease 0.3s;
     transition: all ease 0.3s;
 `
-const Categories = styled.div`
-    margin-bottom: 10px;
-`
 
 const CategoryTag = styled.div`
     background: ${theme.primary};

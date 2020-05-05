@@ -336,9 +336,21 @@ export const ArticleFeatureExample = () =>
                     level={2} 
                     text="PE with Joe – 3 April 2020"
                 />
-                <Text>
-                    <p>more content goes here</p>
-                </Text>
+                <Oembed oembedObject={{
+                    author_url: "https://www.youtube.com/user/BFIfilms",
+                    title: "Misbehaviour director Phillipa Lowthorpe and producer Suzanne Mackie | BFI Q\u0026A",
+                    height: 270,
+                    provider_url: "https://www.youtube.com/",
+                    type: "video",
+                    version: "1.0",
+                    thumbnail_height: 360,
+                    thumbnail_url: "https://i.ytimg.com/vi/vpqYxK6mmSU/hqdefault.jpg",
+                    thumbnail_width: 480,
+                    provider_name: "YouTube",
+                    width: 480,
+                    author_name: "BFI",
+                    html: "\u003ciframe width=\"480\" height=\"270\" src=\"https://www.youtube.com/embed/vpqYxK6mmSU?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen\u003e\u003c/iframe\u003e"
+                }} />
             </MainContent>
             <Sidebar>
                 <AdvertisingContainer>

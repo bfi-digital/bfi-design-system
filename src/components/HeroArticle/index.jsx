@@ -17,8 +17,11 @@ const Outer = styled.div`
 `
 const Meta = styled.div`
     max-width: 800px;
-    padding: 0 50px;
+    padding: 0 25px;
     margin: 0 auto; 
+    @media screen and (min-width: ${theme.m}){
+        padding: 0 50px;
+    }
 `
 const LowerContent = styled.div`
     margin: 30px auto;
