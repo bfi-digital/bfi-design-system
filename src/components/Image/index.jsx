@@ -141,6 +141,7 @@ const Small =styled.small`
     font-size: 0.9rem;
     margin: 0 auto;
     display: block;
+    font-style: italic;
     &:hover {
         cursor: default;
     }
