@@ -6,6 +6,7 @@ import PropTypes from "prop-types"
 const Outer = styled.div`
     background: ${theme.lightGrey};
     padding: 10px;
+    overflow: hidden;
     p {
         margin-top: 0;
 

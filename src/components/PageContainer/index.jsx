@@ -6,11 +6,13 @@ import { Button } from "../Button"
 
 export const Wrapper = styled.div`
     max-width: ${theme.l};
-    margin: 60px auto;
     padding: 0px ${theme.horizontalPadding};
+    margin: 30px auto;
+
     @media screen and (min-width: ${theme.m}){
         display: flex;
         flex-direction: row;
+        margin: 60px auto;
     }
     @media screen and (min-width: ${theme.xl + 200}){
         max-width: ${theme.xl};
