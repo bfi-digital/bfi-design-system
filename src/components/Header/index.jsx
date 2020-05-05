@@ -93,6 +93,38 @@ const QuickLinksInner = styled(Inner)`
     position: relative;
 `
 
+const SkipLink = styled.a`
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+    clip: rect(0 0 0 0) !important;
+    -webkit-clip-path: inset(50%) !important;
+    clip-path: inset(50%) !important;
+    white-space: nowrap !important;
+    padding: 10px 25px;
+    background: ${theme.highlight};
+    font-weight: 700;
+    display: block;
+    text-decoration: underline;
+    z-index: 99999;
+    color: ${theme.black};
+
+    &:focus {
+        position: absolute !important;
+        width: 100% !important;
+        height: auto !important;
+        margin: inherit !important;
+        overflow: visible !important;
+        clip: auto !important;
+        -webkit-clip-path: none !important;
+        clip-path: none !important;
+        white-space: inherit !important;
+        outline: none;
+    }
+`
+
 export const Header = ({
     navItems,
     overlay
@@ -114,7 +146,7 @@ export const Header = ({
 
     return(
         <>
-            
+            <SkipLink href="#content-start">Skip to main content</SkipLink>
             <TopSection 
                 isTransparent={overlay}
                 isSticky={isSticky}
