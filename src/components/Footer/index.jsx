@@ -14,8 +14,8 @@ import instagram from "./instagram.svg"
 
 const Outer = styled.footer`
     padding: 40px 0px 20px 0px;
-    background: ${theme.black};
-    color: ${theme.white};
+    background: ${theme.light};
+    color: ${theme.black};
 `
 
 const Inner = styled.div`
@@ -70,25 +70,36 @@ const Heading = styled.h4`
     font-size: 1rem;
     font-weight: bold;
     padding-bottom: 10px;
-    border-bottom: 1px solid rgba(255,255,255,0.5);
+    border-bottom: 1px solid rgba(0,0,0,0.5);
     margin-bottom: 10px;
 `
 
 const Copyright = styled.p``
 
-const linkStyles = `
+const LinkContainer = styled.div `
     display: flex;
     flex-direction: row;
     align-items: center;
-    color: white;
-    text-decoration: none;
     margin-bottom: 7px;
+`
+
+const linkStyles = `
+    color: black;
+    text-decoration: none;
+
     &:hover{
         text-decoration: underline;
     }
     &:focus{
-        outline: 2px solid ${theme.highlight};
+        outline: 2px solid ${theme.focus};
         background: ${theme.dark};
+        color: ${theme.white};
+
+        div {
+            background: ${theme.white};
+        }
+    }
+    &:active {
         text-decoration: underline;
     }
     &::-moz-focus-inner {
@@ -100,8 +111,16 @@ const MenuItem = styled(Link)`${linkStyles}`
 
 const ExternalMenuItem = styled.a`${linkStyles}`
 
-const Icon = styled.img`
+const Icon = styled.div`
     margin-right: 7px;
+    vertical-align: bottom;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+
+    background-color: ${theme.black};
+    -webkit-mask: url(${props => props.url}) no-repeat center;
+    mask: url(${props => props.url}) no-repeat center;
 `
 
 export const Footer = ({
@@ -116,33 +135,45 @@ export const Footer = ({
                     <Menu key={menu.id}>
                         <Heading>{menu.title}</Heading>
                         {menu.children.map(menuItem =>
-                            <MenuItem key={menuItem.id} to={menuItem.url}>{menuItem.title}</MenuItem>    
+                            <LinkContainer>
+                                <MenuItem key={menuItem.id} to={menuItem.url}>{menuItem.title}</MenuItem>    
+                            </LinkContainer>
                         )}
                     </Menu>
                 )}
                 <Menu>
                     <Heading>Keep in touch</Heading>
-                    <MenuItem to="/">Contact us</MenuItem> 
-                    <ExternalMenuItem href="#">
-                        <Icon src={facebook} alt=""/>
-                        Facebook
-                    </ExternalMenuItem>
-                    <ExternalMenuItem href="#">
-                        <Icon src={twitter} alt=""/>
-                        Twitter
-                    </ExternalMenuItem>
-                    <ExternalMenuItem href="#">
-                        <Icon src={youtube} alt=""/>
-                        YouTube
-                    </ExternalMenuItem>
-                    <ExternalMenuItem href="#">
-                        <Icon src={instagram} alt=""/>
-                        Instagram
-                    </ExternalMenuItem>
+                    <LinkContainer>
+                        <MenuItem className="with_break" to="/">Contact us</MenuItem> 
+                    </LinkContainer>
+                    <LinkContainer>
+                        <ExternalMenuItem href="https://www.facebook.com/BritishFilmInstitute/">
+                            <Icon url={facebook} alt=""/>
+                            Facebook
+                        </ExternalMenuItem>
+                    </LinkContainer>
+                    <LinkContainer>
+                        <ExternalMenuItem href="https://twitter.com/BFI">
+                            <Icon url={twitter} alt=""/>
+                            Twitter
+                        </ExternalMenuItem>
+                    </LinkContainer>
+                    <LinkContainer>
+                        <ExternalMenuItem href="https://www.youtube.com/user/BFIfilms">
+                            <Icon url={youtube} alt=""/>
+                            YouTube
+                        </ExternalMenuItem>
+                    </LinkContainer>
+                    <LinkContainer>
+                        <ExternalMenuItem href="https://www.instagram.com/britishfilminstitute/">
+                            <Icon url={instagram} alt=""/>
+                            Instagram
+                        </ExternalMenuItem>
+                    </LinkContainer>
                 </Menu>
             </TopRow>
             <BottomRow>
-                <LotteryLogo colourFill={theme.white} alt="The BFI recieves National Lottery funding" />
+                <LotteryLogo colourFill={theme.black} alt="The BFI recieves National Lottery funding" />
 
                 <Copyright>{parse(copyrightText)}</Copyright>
             </BottomRow>
