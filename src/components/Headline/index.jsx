@@ -4,11 +4,12 @@ import theme from "../_theme"
 import PropTypes from "prop-types"
 
 const HeroH1 = styled.h1`
-    font-family: "Archivo Black";
+    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
     text-transform: uppercase;
     color: ${theme.black};
     font-weight: 800;
     font-size: 1.5rem;
+    letter-spacing: 1px;
     @media screen and (min-width: ${theme.m}){
         font-size: 1.875rem;
     }

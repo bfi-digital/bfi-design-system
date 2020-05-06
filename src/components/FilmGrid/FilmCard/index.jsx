@@ -54,7 +54,7 @@ const Outer = styled(LinkSwitch)`
     }
     &:focus{
         outline: none;
-        box-shadow: 0px 0px 0px 5px white, 0px 0px 0px 9px ${theme.highlight};
+        box-shadow: 0px 0px 0px 5px white, 0px 0px 0px 9px ${theme.focus};
     }
     &::-moz-focus-inner {
         border: 0;
@@ -87,7 +87,7 @@ const RestyledOuter = styled(Outer)`
 `
 
 const ImageContainer = styled.div`
-    background: ${theme.highlight};
+    background: ${theme.light};
     display: inline-block;
     width: 100%;
     height: auto;

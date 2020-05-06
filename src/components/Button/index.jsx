@@ -6,13 +6,13 @@ import theme from "../_theme"
 
 const colorSchemes = [
     {
-        shadow: theme.highlight,
+        shadow: theme.primary,
         hoverBackground: theme.darkGrey,
         text: theme.white,
         background: theme.black,
         focusShadow: theme.primary,
         // Secondary button only
-        focus: theme.highlight
+        focus: theme.focus
     },
     {
         shadow: theme.primary,
@@ -51,7 +51,7 @@ const PrimaryButton = styled(Link)`
     :after {
         content: "";
         width: 100%;
-        height: 3px;
+        height: 5px;
         transition: height .3s;
         position: absolute;
         bottom: -3px;
@@ -61,6 +61,8 @@ const PrimaryButton = styled(Link)`
     }
 
     &:hover, &:focus{
+        color: #fff;
+        
         :after {
             height: calc(100% + 3px);
         }

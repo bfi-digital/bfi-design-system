@@ -40,7 +40,7 @@ const Outer = styled.li`
         }
     }
     &:focus-within{
-        box-shadow: 0px 0px 0px 5px ${theme.highlight};
+        box-shadow: 0px 0px 0px 5px ${theme.focus};
         transition: box-shadow .3s;
         a {
             outline: none;
@@ -94,7 +94,7 @@ const Content = styled.div`
     }
 `
 const PageImageContainer = styled.div`
-    background: ${theme.highlight};
+    background: ${theme.light};
     display: block;
     top: 0;
     right: 0;

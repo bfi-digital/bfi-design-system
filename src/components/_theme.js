@@ -1,18 +1,18 @@
 export default {
 
     // colour scheme
-    black: "#120C0D",
+    black: "#000000",
     white: "#ffffff",
 
     darkGrey: "#746D6D",
     grey: "#E9E8E8",
     lightGrey: "#f6f6f6",
 
-    primary: '#B80F09',
-    highlight: '#ED3732',
-    dark: '#5D1913',
-    light: '#F0C5C8',
-    lightest: '#FCEFEF',
+    primary: '#783DF6',
+    focus: '#FF22C9',
+    dark: '#310F7A',
+    light: '#E8DDFF',
+    lightest: '#F3EEFF',
 
     // breakpoints
     s: "500px",

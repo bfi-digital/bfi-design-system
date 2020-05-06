@@ -43,7 +43,7 @@ const Button = styled.button`
     border: none;
     display: flex;
     margin-bottom: 10px;
-    background: ${theme.highlight};
+    background: ${theme.primary};
     cursor: pointer;
     padding: 0px;
     width: 100%;
@@ -62,7 +62,7 @@ const Button = styled.button`
         }
     }
     &:focus{
-        outline: 3px solid ${theme.highlight};
+        outline: 3px solid ${theme.focus};
         img {
             filter: grayscale(100%) contrast(1) blur(0px);
             mix-blend-mode: multiply;

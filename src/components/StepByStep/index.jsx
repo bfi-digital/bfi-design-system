@@ -87,7 +87,7 @@ const ShowButton = styled.button`
             &:after {
                 height: 100%;
             }
-            outline: 2px solid ${theme.highlight};
+            outline: 2px solid ${theme.focus};
         }
     }
     &:active{
