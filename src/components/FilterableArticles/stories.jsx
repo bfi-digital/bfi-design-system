@@ -9,7 +9,8 @@ export default {
 
 export const normal = () =>
     <FilterableArticles
-        categories={[
+        parameter="category"
+        filters={[
             {
                 value: "10-great",
                 label: "10 Great"

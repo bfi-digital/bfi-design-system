@@ -18,47 +18,76 @@ const CentredButton = styled(Button)`
     text-align: center;
 `
 
+const transformAuthors = authors => {
+    let names = authors.map(author => author.name)
+    if(names.length > 2){
+        return names[0] + ", " + names[1] + " and others"
+    } else if(names.length === 2){
+        return names.join(" and ")
+    } else {
+        return names[0]
+    }
+}
+
+const transformArticles = articles => articles.map(article => {
+    return {
+        key: article.id,
+        title: article.title,
+        url: article.url,
+        author: article.authors ? transformAuthors(article.authors) : false,
+        categories: article.category ? [article.category.name] : false,
+        image480x270: article.primary_image[2].url,
+        date: moment(article.created).format("dddd Do MMMM YYYY")
+    }
+})
+
+
 export const FilterableArticles = ({
-    categories
+    filters,
+    parameter
 }) => {
 
     const query = queryString.parse(window.location.search)
 
     const [articles, setArticles] = useState([])
+
+    const [page, setPage] = useState(1)
     const [maxPages, setMaxPages] = useState(1)
 
-    const fetchAndTransformArticles = async query => {
+    const fetchArticles = async (query, newPage) => {
         let newQuery = queryString.stringify({
             category: query.category,
             author: query.author,
-            page: query.page
+            page: newPage
         })
         let res = await fetch(`https://content-store.explore.bfi.digital/api/articles?${newQuery}`)
         let data = await res.json()
-        let transformedArticles = data.data.map(article => {
-            return {
-                key: article.id,
-                title: article.title,
-                url: article.url,
-                categories: article.category ? [article.category.name] : false,
-                image480x270: article.primary_image[2].url,
-                date: moment(article.created).format("dddd Do MMMM YYYY")
-            }
-        })
+        let transformedArticles = transformArticles(data.data)
         setArticles(articles.concat(transformedArticles))
         setMaxPages(data.meta.total)
     }
+
+    const loadMore = () => {
+        fetchArticles(query, page + 1)
+        setPage(page + 1)
+    }
     
     useEffect(() => {
-        fetchAndTransformArticles(query)
+        fetchArticles(query)
     }, [window.location.search])
     
     return(
         <Outer>
-            <Filters categories={categories} query={query}/>
+
+            {maxPages}
+            <Filters 
+                filters={filters} 
+                query={query} 
+                parameter={parameter}
+            />
             {articles.length > 0 && 
                 <ArticleGrid articles={articles} firstHighlighted>
-                    {(query.page <= maxPages) && <CentredButton>Load more</CentredButton>}
+                    {(page < maxPages) && <CentredButton href="#" onClick={loadMore}>Load more</CentredButton>}
                 </ArticleGrid>
             }
         </Outer>

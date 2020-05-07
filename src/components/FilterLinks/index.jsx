@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "@reach/router"
 import styled from "styled-components"
 import theme from "../_theme"
 import queryString from "query-string"
@@ -8,12 +9,13 @@ const Outer = styled.nav`
     padding: 15px 0;
 `
 
-const Filter = styled.button`
+const FilterLink = styled(Link)`
     color: ${theme.primary};
     font-weight: bold;
     border-radius: 100px;
     font-size: 1rem;
     padding: 5px 15px;
+    text-decoration: none;
     margin-right: 10px;
     background-color: ${theme.lightest};
     border: none;
@@ -41,30 +43,11 @@ const Filter = styled.button`
     }
 `
 
-export const Filters = ({
-    filters,
-    parameter,
-    query
+export const FilterLinks = ({
+    links
 }) => 
     <Outer>
-        <Filter 
-            disabled={!query[parameter]}
-            onClick={() => {
-                delete query[parameter]
-                window.location.search = queryString.stringify(query)
-            }}
-        >   All
-        </Filter>
-        {filters.map(filter =>
-            <Filter 
-                disabled={query[parameter] === filter.value}
-                key={filter.value} 
-                onClick={() => {
-                    query[parameter] = filter.value
-                    window.location.search = queryString.stringify(query)
-                }}
-            >
-                {filter.label}
-            </Filter>
+        {links.map(link =>
+            <FilterLink key={link.url} to={link.url}>{link.label}</FilterLink>
         )}
     </Outer>
