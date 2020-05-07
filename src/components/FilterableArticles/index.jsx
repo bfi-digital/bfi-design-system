@@ -33,7 +33,7 @@ export const FilterableArticles = ({
         let data = await res.json()
         let transformedArticles = data.data.map(article => {
             return {
-                key: article.uuid,
+                key: article.id,
                 title: article.title,
                 url: article.url,
                 categories: article.category ? [article.category.name] : false,
