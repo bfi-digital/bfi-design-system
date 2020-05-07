@@ -5,6 +5,7 @@ import { ArticleCard } from "./ArticleCard"
 import { ArticleCardHighlighted } from "./ArticleCardHighlighted"
 import { Button } from "../Button"
 import { Headline } from "../Headline"
+import { Skeleton } from "./ArticleCard/Skeleton"
 
 const Outer = styled.div`
     margin: 15px 0;
@@ -132,21 +133,33 @@ export const ArticleGrid = ({
             <Headline level={2} text={optionalTitle} />
         }
         <Articles>
-            {firstHighlighted  === true || articles.length === 1 ?
+            {articles ?
                 <>
-                    <ArticleCardHighlighted key={articles[0].uuid} withSideBar={withSideBar} {...articles[0]}/>
-                    {articles.length > 1 &&
-                        articles.slice(1).map(article =>
+                    {firstHighlighted  === true || articles.length === 1 ?
+                        <>
+                            <ArticleCardHighlighted key={articles[0].uuid} withSideBar={withSideBar} {...articles[0]}/>
+                            {articles.length > 1 &&
+                                articles.slice(1).map(article =>
+                                    <ArticleCard key={article.uuid} withSideBar={withSideBar} {...article}/>    
+                                )
+                            }
+                        </>
+                        :
+                        articles.map(article =>
                             <ArticleCard key={article.uuid} withSideBar={withSideBar} {...article}/>    
                         )
                     }
                 </>
                 :
-                articles.map(article =>
-                    <ArticleCard key={article.uuid} withSideBar={withSideBar} {...article}/>    
-                )
+                <>
+                    <Skeleton/>
+                    <Skeleton/>
+                    <Skeleton/>
+                    <Skeleton/>
+                    <Skeleton/>
+                    <Skeleton/>
+                </>
             }
-            
         </Articles>
         { optionalCTALink &&
             <CentredButton to={optionalCTALink}>See more articles</CentredButton>
