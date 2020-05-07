@@ -18,13 +18,27 @@ const CentredButton = styled(Button)`
     text-align: center;
 `
 
+const transformAuthors = authors => {
+    let names = authors.map(author => author.name)
+    if(names.length > 2){
+        return names[0] + ", " + names[1] + " and others"
+    } else if(names.length === 2){
+        return names.join(" and ")
+    } else {
+        return names[0]
+    }
+}
+
 export const FilterableArticles = ({
-    categories
+    filters,
+    parameter
 }) => {
 
     const query = queryString.parse(window.location.search)
 
     const [articles, setArticles] = useState([])
+
+    const [page, setPage] = useState(query.page || 1)
     const [maxPages, setMaxPages] = useState(1)
 
     const fetchAndTransformArticles = async query => {
@@ -40,6 +54,7 @@ export const FilterableArticles = ({
                 key: article.id,
                 title: article.title,
                 url: article.url,
+                author: article.authors ? transformAuthors(article.authors) : false,
                 categories: article.category ? [article.category.name] : false,
                 image480x270: article.primary_image[2].url,
                 date: moment(article.created).format("dddd Do MMMM YYYY")
@@ -55,10 +70,16 @@ export const FilterableArticles = ({
     
     return(
         <Outer>
-            <Filters categories={categories} query={query}/>
+
+            {maxPages}
+            <Filters 
+                filters={filters} 
+                query={query} 
+                parameter={parameter}
+            />
             {articles.length > 0 && 
                 <ArticleGrid articles={articles} firstHighlighted>
-                    {(query.page <= maxPages) && <CentredButton>Load more</CentredButton>}
+                    {(page < maxPages) && <CentredButton>Load more</CentredButton>}
                 </ArticleGrid>
             }
         </Outer>

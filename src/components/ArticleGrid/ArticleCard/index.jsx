@@ -158,7 +158,7 @@ export const ArticleCard = ({
         <Headline level={4} text={title} />
         <Meta>
             <Date>{date}</Date>
-            <Author>By {author}</Author>
+            {author && <Author>By {author}</Author>}
         </Meta>
 
         <CallToAction to={url} external={external} />

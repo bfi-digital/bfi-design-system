@@ -42,28 +42,29 @@ const Filter = styled.button`
 `
 
 export const Filters = ({
-    categories,
+    filters,
+    parameter,
     query
 }) => 
     <Outer>
         <Filter 
-            disabled={!query.category}
+            disabled={!query[parameter]}
             onClick={() => {
-                delete query.category
+                delete query[parameter]
                 window.location.search = queryString.stringify(query)
             }}
         >   All
         </Filter>
-        {categories.map(category =>
+        {filters.map(filter =>
             <Filter 
-                disabled={query.category === category.value}
-                key={category.value} 
+                disabled={query[parameter] === filter.value}
+                key={filter.value} 
                 onClick={() => {
-                    query.category = category.value
+                    query[parameter] = filter.value
                     window.location.search = queryString.stringify(query)
                 }}
             >
-                {category.label}
+                {filter.label}
             </Filter>
         )}
     </Outer>
