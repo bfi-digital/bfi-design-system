@@ -115,7 +115,6 @@ const PageImage = styled.div`
     background-position: center center;
     background-size: cover;
     display: block;
-    // border-radius: 4px;
     -webkit-transition: all ease 0.3s;
     -moz-transition: all ease 0.3s;
     -o-transition: all ease 0.3s;
