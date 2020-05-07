@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import theme from "../../_theme"
+// import parse from "html-react-parser"
 import { LinkSwitch as Link } from "../../LinkSwitch"
 import { Headline } from "../../Headline"
 
@@ -16,25 +17,16 @@ const Outer = styled.li`
     min-height: 130px;
     width: 100%;
     padding: 15px;
-    padding-top: 155px;
 
     @media screen and (min-width: ${theme.m}){
-        width: 190px;
         padding: 25px;
-        padding-top: 175px;
     }
-    @media screen and (min-width: ${theme.l}){
-        width: Arrow;
-        padding-top: 235px;
-    }
-
 
     h4{
         margin-top: 0;
         color: ${theme.black};
         margin-bottom: 10px;
     }
-
     &:hover, &:focus-within {
         box-shadow: 0px 5px 0px ${theme.dark};
         background: ${theme.lightest};
@@ -59,13 +51,10 @@ const Outer = styled.li`
         transform: translate(0px, 3px);
     }
 `
+
 const Meta = styled.div`
     color: ${theme.darkGrey};
     margin-top: auto;
-
-    p {
-        margin-top: 0;
-    }
 `
 const Date = styled.p`
     margin-bottom: 10px;
@@ -92,20 +81,30 @@ const CallToAction = styled(Link)`
     }
 `
 
+const Content = styled.div`
+    padding-right: 25px;
+    position: relative;
+    padding-top: 180px;
+    width: 100%;
+    
+    @media screen and (min-width: ${theme.m}){
+        padding-top: 40px;
+        width: 55%;
+        height: 100%;
+    }
+`
 const PageImageContainer = styled.div`
     background: ${theme.highlight};
     display: block;
-    width: 100%;
-    position: absolute;
     top: 0;
-    left: 0;
-    height: 140px;
+    right: 0;
+    position: absolute;
+    width: 100%;
+    height: 175px;
 
     @media screen and (min-width: ${theme.m}){
-        height: 160px;
-    }
-    @media screen and (min-width: ${theme.l}){
-        height: 220px;
+        width: 45%;
+        height: 100%;
     }
 `
 const PageImage = styled.div`
@@ -122,6 +121,11 @@ const PageImage = styled.div`
     transition: all ease 0.3s;
 `
 
+const Standfirst = styled.p`
+    color: ${theme.black};
+    margin-bottom: 15px;
+    line-height: 1.5;
+`
 const CategoryTag = styled.div`
     background: ${theme.primary};
     color: ${theme.white};
@@ -139,28 +143,37 @@ const CategoryTag = styled.div`
     }
 `
 
-export const ArticleCard = ({
+
+export const ArticleCardHighlighted = ({
     withSideBar,
     title,
     url,
     image480x270,
     imageAltText,
+    standfirst,
     category,
     date,
     author,
     external
 }) =>
-    <Outer className="articleCard" withSideBar={withSideBar}>
+    <Outer className="articleCardHighlighted" withSideBar={withSideBar}>
         {category && <CategoryTag>{category}</CategoryTag> }
+        <Content>
+            <Headline level={4} text={title} />
+            {standfirst && 
+                <Standfirst>{standfirst}</Standfirst>
+            }
+
+            <Meta>
+                <Date>{date}</Date>
+                <Author>By {author}</Author>
+            </Meta>
+        </Content>
+
         <PageImageContainer>
             <PageImage className="image" imageSrc={image480x270} alt={imageAltText} />
         </PageImageContainer>
-        <Headline level={4} text={title} />
-        <Meta>
-            <Date>{date}</Date>
-            <Author>By {author}</Author>
-        </Meta>
 
-        <CallToAction to={url} external={external} />
+        <CallToAction to={url} external={external}/>
     </Outer>
 

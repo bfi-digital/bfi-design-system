@@ -3,7 +3,7 @@ import styled from "styled-components"
 import theme from "../_theme"
 import PropTypes from "prop-types"
 
-const Outer = styled.section`
+const Outer = styled.div`
     color: ${theme.black};
     line-height: 1.5;
     font-size: 1rem;
@@ -63,6 +63,7 @@ const Outer = styled.section`
     ul{
         margin-top: 0;
         margin-bottom: 0;
+        padding-left: 15px;
         display: inline-block;
         list-style: none;
         li{
@@ -79,6 +80,7 @@ const Outer = styled.section`
     ol{
         margin-top: 0;
         margin-bottom: 0;
+        padding-left: 15px;
         display: inline-block;
         li{
             padding-left: 10px;
@@ -86,6 +88,47 @@ const Outer = styled.section`
         }
     }
 
+    
+    table { 
+        width: 750px; 
+        border-collapse: collapse; 
+        margin: 50px auto;
+    }
+    
+    tr:nth-of-type(odd) { 
+        background: ${theme.lightGrey}; 
+    }
+    
+    td, th { 
+        padding: 10px; 
+        border: 1px solid ${theme.grey}; 
+        text-align: left; 
+        font-size: 18px;
+    }
+    
+
+    @media only screen and (max-width: ${theme.l}){
+        table { 
+            width: 100%; 
+        }
+    
+        table, thead, tbody, th, td, tr { 
+            display: block; 
+        }
+        
+        thead tr { 
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+        
+        tr { border: 1px solid ${theme.grey}; }
+        
+        td, th { 
+            border: none;
+            position: relative;
+        }
+    }
 `
 
 export const Text = ({

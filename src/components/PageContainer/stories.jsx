@@ -20,6 +20,7 @@ import { Footer } from "../Footer"
 import { Header } from "../Header"
 import { Headline } from "../Headline"
 import { Hero } from "../Hero"
+import { HeroArticle } from "../HeroArticle"
 // import { Highlights } from "../Highlights"
 import { Image } from "../Image"
 import { ImageGallery } from "../ImageGallery"
@@ -272,6 +273,106 @@ export const activePage = () =>
         />
     </>
 
+
+
+
+
+export const ArticleFeatureExample = () =>
+    <>
+        <Header navItems={navItems} />
+        <HeroArticle 
+            image1920x1080="https://bfi-prototype.netlify.com/static/media/watch-banner.b01324c4.jpg"
+            imageAltText="Alt text for the image"
+            imageCopyright="HELP MUSICIANS, directed by Thomas Guthrie"
+            title="Britain on Lockdown: How online videos have shaped the crisis"
+            standfirst="As the BFI National Archive calls on the British public to help map the digital video response to coronavirus across the UK, our curators begin a regular new series highlighting the online videos that have made an impact during the lockdown period."
+            category="Article category"
+            type="Feature"
+            date="28 April 2020"
+            authors={[
+                {
+                    name: "Ros Cranston",
+                    url: "#"
+                },
+                {
+                    name: "William Fowler",
+                    url: "#"
+                },
+                {
+                    name: "Steve Foxon",
+                    url: "#"
+                },
+                {
+                    name: "Will Massa",
+                    url: "#"
+                },
+                {
+                    name: "Patrick Russell",
+                    url: "#"
+                },
+                {
+                    name: "Jez Stewart",
+                    url: "#"
+                },
+                {
+                    name: "James Taylor",
+                    url: "#"
+                }
+            ]}
+        />
+        <Wrapper>           
+            <MainContent>
+                <Text>
+                    <p>Today the BFI launches a public campaign, Britain on Lockdown, calling on the public to recommend those online videos that best represent how Britain has experienced the impact of coronavirus.</p>
+
+                    <p>From Joe Wicks to Boris Johnson, and from films showing solidarity for NHS frontline workers or bringing local communities coming together to music videos and comedy parodies, not to mention public health videos about proper handwashing, charity campaign pieces and much more – online video has played a key role in our collective experience of the lockdown in a way that has never been experienced before.</p>
+
+                    <p>Whether it’s to tell us about videos that have entertained, informed or inspired, or that have challenged, moved, outraged or simply made us smile, the BFI wants to hear from you. A simple submissions form allows you to share your recommendations.</p>
+
+                    <p>The impact of these digitally created films – distributed across multiple platforms and in some cases shared with millions of viewers – has been phenomenal. TikTok alone is reporting its video collection of #coronavirus themed content has had a jaw-dropping 46.8bn views. The curatorial team at the BFI National Archive has already started mapping the digital video response to the coronavirus crisis. In the first of a regular series, curators here choose a selection of titles from early in the lockdown period that give a flavour of the breadth of filmmaking that landed on people’s screens as we all began to Stay Home, Protect the NHS and Save Lives.</p>
+                </Text>
+                
+                <Headline 
+                    level={2} 
+                    text="PE with Joe – 3 April 2020"
+                />
+                <Oembed oembedObject={{
+                    author_url: "https://www.youtube.com/user/BFIfilms",
+                    title: "Misbehaviour director Phillipa Lowthorpe and producer Suzanne Mackie | BFI Q\u0026A",
+                    height: 270,
+                    provider_url: "https://www.youtube.com/",
+                    type: "video",
+                    version: "1.0",
+                    thumbnail_height: 360,
+                    thumbnail_url: "https://i.ytimg.com/vi/vpqYxK6mmSU/hqdefault.jpg",
+                    thumbnail_width: 480,
+                    provider_name: "YouTube",
+                    width: 480,
+                    author_name: "BFI",
+                    html: "\u003ciframe width=\"480\" height=\"270\" src=\"https://www.youtube.com/embed/vpqYxK6mmSU?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen\u003e\u003c/iframe\u003e"
+                }} />
+            </MainContent>
+            <Sidebar>
+                <AdvertisingContainer>
+                    <div style={{width: "300px", height: "250px", background: "grey"}}></div>
+                </AdvertisingContainer>
+            </Sidebar>
+        </Wrapper>
+
+        <Footer
+            menus={footerMenus}
+            copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"
+        />
+    </>
+
+
+
+
+
+
+
+
+
 export const FilmPage = () =>
     <>
         <Header navItems={navItems} overlay={true} />
@@ -317,7 +418,7 @@ export const FilmPage = () =>
                     ]}
                 />
                 <AdvertisingContainer>
-                    <div style={{width: "300px", height: "250px", background: "grey"}}></div>
+                    <div style={{width: "100%", height: "250px", background: "grey"}}></div>
                 </AdvertisingContainer>
             </Sidebar>
         </Wrapper>
@@ -340,6 +441,12 @@ export const FilmPage = () =>
             copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"
         />
     </>
+
+
+
+
+
+
 
 
 export const everyComponent = () =>

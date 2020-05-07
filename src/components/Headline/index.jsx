@@ -8,7 +8,10 @@ const HeroH1 = styled.h1`
     text-transform: uppercase;
     color: ${theme.black};
     font-weight: 800;
-    font-size: 1.875rem;
+    font-size: 1.5rem;
+    @media screen and (min-width: ${theme.m}){
+        font-size: 1.875rem;
+    }
     @media screen and (min-width: ${theme.l}){
         font-size: 2.0625rem;
     }
@@ -48,15 +51,6 @@ const H3 = styled.h3`
     margin-block-start: 1em;
     margin-block-end: 0.5em;
     line-height: 1.3;
-
-    // &:before {
-    //     border: 1px solid ${theme.darkGrey};
-    //     margin: 30px auto;
-    //     width: 100%;
-    //     opacity: 0.5;
-    //     content: "";
-    //     display: block;
-    // }
 
     @media screen and (min-width: ${theme.xl}){
         font-size: 1.6875rem;
@@ -98,8 +92,8 @@ export const Headline = ({
     level,
     text
 }) => {
-    if (level === 0) return <HeroH1>{text}</HeroH1>
-    if (level === 1) return <H1>{text}</H1>
+    if (level === 0) return <HeroH1 id="content-start">{text}</HeroH1>
+    if (level === 1) return <H1 id="content-start">{text}</H1>
     if (level === 2) return <H2>{text}</H2>
     if (level === 3) return <H3>{text}</H3>
     if (level === 4) return <H4>{text}</H4>

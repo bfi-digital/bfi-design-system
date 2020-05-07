@@ -7,6 +7,10 @@ import { Filters } from "./Filters"
 import { Button } from "../Button"
 import queryString from "query-string"
 
+const Outer = styled.div`
+    margin-bottom: 50px;
+`
+
 const CentredButton = styled(Button)`
     margin: 30px auto;
     max-width: 250px;
@@ -50,13 +54,13 @@ export const FilterableArticles = ({
     }, [window.location.search])
     
     return(
-        <>
+        <Outer>
             <Filters categories={categories} query={query}/>
-            {articles && 
-                <ArticleGrid articles={articles}>
+            {articles.length > 0 && 
+                <ArticleGrid articles={articles} firstHighlighted>
                     {(query.page <= maxPages) && <CentredButton>Load more</CentredButton>}
                 </ArticleGrid>
             }
-        </>
+        </Outer>
     )
 }
