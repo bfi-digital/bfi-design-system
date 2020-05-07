@@ -33,7 +33,7 @@ export const FilterableArticles = ({
             author: query.author,
             page: query.page
         })
-        let res = await fetch(`https://news-index.explore.bfi.digital/api/articles?${newQuery}`)
+        let res = await fetch(`https://content-store.explore.bfi.digital/api/articles?${newQuery}`)
         let data = await res.json()
         let transformedArticles = data.data.map(article => {
             return {
