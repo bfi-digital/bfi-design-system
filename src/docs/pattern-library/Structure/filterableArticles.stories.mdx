@@ -1,0 +1,48 @@
+import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks'
+import { FilterableArticles } from "../../../components/FilterableArticles/index"
+
+<Meta title="Pattern Library|Structure/Filterable Articles" component={FilterableArticles} />
+
+# Filterable Articles
+ 
+
+
+## Examples
+
+<Preview>
+    <Story name="Normal">
+        <FilterableArticles
+            parameter="category"
+            filters={[
+                {
+                    value: "10-great",
+                    label: "10 Great"
+                },
+                {
+                    value: "where-to-stream",
+                    label: "Where to stream"
+                },
+                {
+                    value: "where-to-begin",
+                    label: "Where to begin"
+                },
+                {
+                    value: "five-things",
+                    label: "Five Things"
+                },
+                {
+                    value: "bfi-recommends",
+                    label: "BFI Recommends"
+                },
+                {
+                    value: "sight-and-sound",
+                    label: "Sight and Sound"
+                }
+            ]}
+        />
+    </Story>
+</Preview>
+
+## Props 
+
+<Props of={FilterableArticles} />

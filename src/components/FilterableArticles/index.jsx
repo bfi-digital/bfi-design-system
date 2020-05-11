@@ -78,8 +78,6 @@ export const FilterableArticles = ({
     
     return(
         <Outer>
-
-            {maxPages}
             <Filters 
                 filters={filters} 
                 query={query} 

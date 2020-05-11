@@ -6,21 +6,17 @@ import theme from "../_theme"
 
 const colorSchemes = [
     {
-        shadow: theme.highlight,
+        shadow: theme.primary,
         hoverBackground: theme.darkGrey,
         text: theme.white,
         background: theme.black,
-        focusShadow: theme.primary,
-        // Secondary button only
-        focus: theme.highlight
+        focus: theme.focus
     },
     {
         shadow: theme.primary,
         hoverBackground: theme.lightest,
         text: theme.black,
         background: theme.white,
-        focusShadow: theme.dark,
-        // Secondary button only
         focus: theme.primary
     }
 ]
@@ -31,43 +27,41 @@ const PrimaryButton = styled(Link)`
     font-weight: bold;
     font-size: 1.125rem;
     color: ${props => colorSchemes[props.colorScheme].text};
+    background: ${props => colorSchemes[props.colorScheme].background};
     text-decoration: none;
     padding: 10px 25px;
     z-index: 2;
     width: 100%;
     text-align: center;
 
-    :before {
-        content: "";
-        width: 100%;
-        height: 100%;
-        transition: height .3s;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background: ${props => colorSchemes[props.colorScheme].background};
-        z-index: -1;
-    }
     :after {
         content: "";
         width: 100%;
-        height: 3px;
+        height: 5px;
         transition: height .3s;
         position: absolute;
-        bottom: -3px;
+        bottom: -5px;
         left: 0;
         background: ${props => colorSchemes[props.colorScheme].shadow};
         z-index: -1;
     }
 
     &:hover, &:focus{
+        color: #fff;
+        
         :after {
-            height: calc(100% + 3px);
+            height: calc(100% + 5px);
         }
     }
     &:focus{
-        box-shadow: 0px 0px 0px 4px ${props => colorSchemes[props.colorScheme].focusShadow};
+        box-shadow: 0px 0px 0px 4px ${props => colorSchemes[props.colorScheme].focus};
         outline: none;
+        height: calc(100% + 5px);
+
+        :after {
+            bottom: 0;
+            height: 100%;
+        }
     }
     &:active{
         background: ${props => colorSchemes[props.colorScheme].background};

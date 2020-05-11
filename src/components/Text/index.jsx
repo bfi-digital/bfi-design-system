@@ -27,29 +27,21 @@ const Outer = styled.div`
         text-decoration: none;
         font-weight: 600;
         position: relative;
-        &:after {
-            content: "";
-            background: ${theme.lightest};
-            height: 40%;
-            width: 100%;
-            bottom: 0;
-            left: 0;
-            position: absolute;
-            z-index: -1;
-            transition: height .3s; 
-        }
+        background-image: linear-gradient(120deg, ${theme.primary} 0%, ${theme.primary} 100%);
+        background-repeat: no-repeat;
+        background-size: 100% 2px;
+        background-position: 0 100%;
+        transition: all 0.15s ease-in-out;
 
         &:hover{
-            color: ${theme.dark};
-            &:after {
-                height: 100%;
-            }
+            color: ${theme.white};
+            background-size: 100% 100%;
         }
         &:focus{
-            outline: 2px solid ${theme.highlight};
-            &:after {
-                height: 100%;
-            }
+            background-size: 100% 100%;
+            color: ${theme.white};
+            outline: none;
+            background-image: linear-gradient(120deg, ${theme.focus} 0%, ${theme.focus} 100%);
         }
         &:active{
             outline: none;

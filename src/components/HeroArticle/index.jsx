@@ -7,6 +7,7 @@ import { LeadParagraph } from "../LeadParagraph"
 import { Tag } from "../Tag"
 import { Image } from "../Image"
 import { Text } from "../Text"
+import { LinkSwitch as Link } from "../LinkSwitch"
 
 const Outer = styled.div`
     margin: 0 auto;
@@ -37,12 +38,13 @@ export const HeroArticle = ({
     title,
     standfirst,
     category,
+    categoryLink,
     date,
     authors
 }) =>
     <Outer>
         <Meta>
-            {category && <Tag>{category}</Tag>}
+            {category && <Tag link={categoryLink}>{category}</Tag>}
             {title && <Headline level={1} text={title}/>}
             {standfirst && <LeadParagraph text={standfirst}/>}
             <LowerContent>
@@ -54,7 +56,7 @@ export const HeroArticle = ({
                         <p>
                             By:&nbsp;
                             {authors.map((author, index) =>
-                                <><a key={`author_${index}`} href={author.url}>{author.name}</a>{(index < (authors.length-1) ? ", " : "")}</>
+                                <><Link key={`author_${index}`} to={author.url}>{author.name}</Link>{(index < (authors.length-1) ? ", " : "")}</>
                             )}
                         </p>
                     }
@@ -84,8 +86,10 @@ HeroArticle.propTypes = {
     standfirst: PropTypes.string,
     // The category of the article.
     category: PropTypes.string,
+    // The link to the filtered list of this category.
+    categoryLink: PropTypes.string,
     // The date the article was posted.
     date: PropTypes.string,
-    // An array of the authors of this article
+    // An array of the authors of this article, each author contains their name and url
     authors: PropTypes.array,
 }

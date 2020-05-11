@@ -42,7 +42,7 @@ const Inner = styled.div`
     a, button {
         &:focus {
             // border-radius: 7px;
-            box-shadow: inset ${theme.highlight} 0px 0px 0px 4px;
+            box-shadow: inset ${theme.focus} 0px 0px 0px 4px;
             outline: none !important;
         }
     }
@@ -104,12 +104,12 @@ const SkipLink = styled.a`
     clip-path: inset(50%) !important;
     white-space: nowrap !important;
     padding: 10px 25px;
-    background: ${theme.highlight};
+    background: ${theme.primary};
     font-weight: 700;
     display: block;
     text-decoration: underline;
     z-index: 99999;
-    color: ${theme.black};
+    color: ${theme.white};
 
     &:focus {
         position: absolute !important;

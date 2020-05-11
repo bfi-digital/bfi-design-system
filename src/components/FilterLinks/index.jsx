@@ -2,7 +2,6 @@ import React from "react"
 import { Link } from "@reach/router"
 import styled from "styled-components"
 import theme from "../_theme"
-import queryString from "query-string"
 
 const Outer = styled.nav`
     margin: 15px 0;

@@ -51,7 +51,7 @@ const ItemLink = styled(Link)`
         height: 0; 
         border-left: 8px solid transparent;
         border-right: 8px solid transparent;
-        border-bottom: 8px solid ${props => props.hovered ? theme.grey : "transparent"};
+        border-bottom: 8px solid ${props => props.hovered ? theme.lightest : "transparent"};
     }
 `
 
@@ -79,7 +79,7 @@ const ChildBar = styled.div`
         }
     }
     position: absolute;
-    background: ${theme.grey};
+    background: ${theme.lightest};
     top: 61px;
     left: 0;
     width: 100%;

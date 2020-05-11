@@ -409,7 +409,8 @@ export const articlePostListPageExample = () =>
                 />
 
                 <FilterableArticles
-                    categories={[
+                    parameter="category"
+                    filters={[
                         {
                             value: "10-great",
                             label: "10 Great"

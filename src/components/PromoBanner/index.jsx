@@ -186,7 +186,7 @@ export const PromoBanner = ({
             <Headline level={2} text={headline}/>
             <Description className={image ? "with_image" : "without_image"}>{description}</Description>
             {callToActionUrl && image && 
-                <Button to={callToActionUrl} colorScheme={colorScheme === 2 ? 0 : 1} external={external}>
+                <Button to={callToActionUrl} colorScheme={colorScheme === 1 || colorScheme === 2 ? 0 : 1} external={external}>
                     {callToActionTitle}
                 </Button>
             }
@@ -199,7 +199,7 @@ export const PromoBanner = ({
             : 
             <RightButton>
                 {callToActionUrl && 
-                <Button to={callToActionUrl} colorScheme={colorScheme === 2 ? 0 : 1} external={external}>
+                <Button to={callToActionUrl} colorScheme={colorScheme === 1 || colorScheme === 2 ? 0 : 1} external={external}>
                     {callToActionTitle}
                 </Button>
                 }

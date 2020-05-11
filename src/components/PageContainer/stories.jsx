@@ -287,6 +287,7 @@ export const ArticleFeatureExample = () =>
             title="Britain on Lockdown: How online videos have shaped the crisis"
             standfirst="As the BFI National Archive calls on the British public to help map the digital video response to coronavirus across the UK, our curators begin a regular new series highlighting the online videos that have made an impact during the lockdown period."
             category="Article category"
+            categoryLink="#"
             type="Feature"
             date="28 April 2020"
             authors={[

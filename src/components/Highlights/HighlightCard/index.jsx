@@ -56,7 +56,7 @@ const CallToAction = styled(LinkSwitch)`
     text-decoration: none;
     &:focus{
         outline: none;
-        box-shadow: 0px 0px 0px 5px ${theme.highlight};
+        box-shadow: 0px 0px 0px 5px ${theme.focus};
     }
 
 `
