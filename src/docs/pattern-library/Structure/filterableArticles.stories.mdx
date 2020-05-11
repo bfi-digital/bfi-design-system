@@ -58,6 +58,20 @@ import { FilterableArticles } from "../../../components/FilterableArticles/index
     </Story>
 </Preview>
 
+<Preview>
+    <Story name="Filtered by type example">
+        <FilterableArticles
+            parameter="type"
+            filters={[
+                {
+                    value: "video",
+                    label: "Video"
+                }
+            ]}
+        />
+    </Story>
+</Preview>
+
 ## Props 
 
 <Props of={FilterableArticles} />
