@@ -73,11 +73,11 @@ const CTAContainer = styled.div`
 const errorPageData = [
     {
         title: "Error",
-        summary: "<p>Sorry, something seems to have gone wrong.</p><p>Try going back to home.</p>"
+        summary: "<p>Sorry, something seems to have gone wrong.</p><p>You can try going back or find what you are looking for on another page.</p>"
     },
     {
         title: "Page not found",
-        summary: "<p>Sorry, we can't find the page you are looking for or something has gone wrong...</p><p>Try going back to home and starting again.</p>"
+        summary: "<p>Sorry, something went wrong and we cannot find the page you are looking for.</p><p>You can try going back or find what you are looking for on another page.</p>"
     },
     {
         title: "Internal Server Error",
@@ -85,11 +85,11 @@ const errorPageData = [
     },
     {
         title: "Page is forbidden",
-        summary: "<p>Sorry, the page you are trying to access is restricted.</p><p>Try going back to home.</p>"
+        summary: "<p>Sorry, the page you are trying to access is restricted.</p><p>You can try going back or find what you are looking for on another page.</p>"
     },
     {
-        title: "This service is temporarily unavailible",
-        summary: "<p>We are sorry, but the page you are trying to access is currently having issues.</p><p>Try again later, or try going back to home.</p>"
+        title: "Temporarily unavailable",
+        summary: "<p>Sorry, the page you are trying to access is currently having issues.</p><p>Try again later, or You can try going back or find what you are looking for on another page.</p>"
     }
 ]
 
