@@ -415,7 +415,7 @@ export const ArticleRecommendsExample = () =>
 
                     <p>Well, I needn’t have worried. With Todd Haynes at the helm and Cate Blanchett the perfect Carol (I’d always pictured Cate when I read the book!) how could it falter? Watching it is like seeing the pages of Highsmith’s novel come to life, more exquisitely than I could have imagined. It made me fall in love with the story and the characters all over again. And just like with the book, I revisit Carol as often as I can.</p>
 
-                    <p><a href="#">Emma Smart</a><br/>Head of Library &amp; Mediatheque</p>
+                    <p><a href="https://www.bfi.org.uk/people/emma-smart">Emma Smart</a><br/>Head of Library &amp; Mediatheque</p>
                 </Text>
                 
                 <FilmCardSingle 
