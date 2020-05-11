@@ -36,7 +36,7 @@ const transformArticles = articles => articles.map(article => {
         title: article.title,
         url: article.url,
         author: article.authors ? transformAuthors(article.authors) : false,
-        categories: article.category ? [article.category.name] : false,
+        category: article.category ? article.category.name : "Uncategorised",
         image480x270: article.primary_image[2].url,
         date: moment(article.created).format("dddd Do MMMM YYYY")
     }
