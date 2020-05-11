@@ -8,6 +8,7 @@ import demoArticles from "../ArticleGrid/data"
 
 import { AdvertisingContainer } from "../AdvertisingContainer"
 import { ArticleGrid } from "../ArticleGrid"
+import { ArticleKeywords } from "../ArticleKeywords"
 import { Breadcrumbs } from "../Breadcrumbs"
 import { Blockquote } from "../Blockquote"
 import { Button } from "../Button"
@@ -353,6 +354,23 @@ export const ArticleFeatureExample = () =>
                     author_name: "BFI",
                     html: "\u003ciframe width=\"480\" height=\"270\" src=\"https://www.youtube.com/embed/vpqYxK6mmSU?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen\u003e\u003c/iframe\u003e"
                 }} />
+
+                <ArticleKeywords
+                    keywords={[
+                        {
+                            label: "Covid-19",
+                            url: "#"
+                        },
+                        {
+                            label: "BFI National Archive",
+                            url: "#"
+                        },
+                        {
+                            label: "Video",
+                            url: "#"
+                        }
+                    ]}
+                />
             </MainContent>
             <Sidebar>
                 <AdvertisingContainer>

@@ -1,23 +1,22 @@
 import React from "react"
-import { Link } from "@reach/router"
 import styled from "styled-components"
+import { Link } from "@reach/router"
+import PropTypes from "prop-types"
 import theme from "../_theme"
 
-const Outer = styled.nav`
-    margin: 15px 0;
-    padding: 15px 0;
+const Outer = styled.div`
+    margin-top: 50px;
 `
-
 const FilterLink = styled(Link)`
-    color: ${theme.primary};
+    color: ${theme.black};
     font-weight: bold;
-    border-radius: 100px;
+    border-radius: 5px;
     font-size: 1rem;
     padding: 5px 15px;
     text-decoration: none;
     margin-right: 10px;
-    background-color: ${theme.lightest};
-    border: none;
+    background-color: transparent;
+    border: 2px solid ${theme.black};
     transition: box-shadow .3s;
     cursor: pointer;
     margin-bottom: 10px;
@@ -33,20 +32,20 @@ const FilterLink = styled(Link)`
     }
     &:active{
         color: ${theme.white};
-        background: ${theme.black}
-    }
-    &[disabled]{
-        pointer-events: none;
-        color: ${theme.white};
         background: ${theme.primary}
     }
 `
-
-export const FilterLinks = ({
-    links
-}) => 
+export const ArticleKeywords = ({
+    keywords
+}) =>
     <Outer>
-        {links.map(link =>
-            <FilterLink key={link.url} to={link.url}>{link.label}</FilterLink>
+        {keywords.map(keyword =>
+            <FilterLink key={keyword.url} to={keyword.url}>{keyword.label}</FilterLink>
         )}
     </Outer>
+
+
+ArticleKeywords.propTypes = {
+    // An aray of the keywords, each with a label and url
+    keywords: PropTypes.array,
+}

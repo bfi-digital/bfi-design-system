@@ -2,6 +2,7 @@
 // Normal components
 export * from "./components/AdvertisingContainer"
 export * from "./components/ArticleGrid"
+export * from "./components/ArticleKeywords"
 export * from "./components/Blockquote"
 export * from "./components/Breadcrumbs"
 export * from "./components/Button"

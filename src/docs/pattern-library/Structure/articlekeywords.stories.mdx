@@ -1,0 +1,35 @@
+import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks'
+import { ArticleKeywords } from "../../../components/ArticleKeywords/index"
+
+<Meta title="Pattern Library|Structure/Article Keywords" component={ArticleKeywords} />
+
+# ArticleKeywords
+ 
+
+
+## Examples
+
+<Preview>
+    <Story name="Normal">
+        <ArticleKeywords
+            keywords={[
+                {
+                    label: "Covid-19",
+                    url: "#"
+                },
+                {
+                    label: "BFI National Archive",
+                    url: "#"
+                },
+                {
+                    label: "Video",
+                    url: "#"
+                }
+            ]}
+        />
+    </Story>
+</Preview>
+
+## Props 
+
+<Props of={ArticleKeywords} />
