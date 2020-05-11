@@ -5,7 +5,9 @@ import PropTypes from "prop-types"
 
 export const Outer = styled.blockquote`
     margin: 20px 0px;
-    padding: 25px;
+    padding: 15px;
+    padding-right: 0;
+    padding-left: 40px;
     border-left: 5px solid ${theme.primary}
 `
 
@@ -14,12 +16,14 @@ const Quote = styled.q`
     font-family: "Archivo Black";
     display: block;
     font-weight: 400;
-    font-size: 1.375rem;
+    font-size: 1.2rem;
+    line-height: 1.4;
+
     @media screen and (min-width: ${theme.l}){
-        font-size: 1.6875rem;
+        font-size: 1.3rem;
     }
     @media screen and (min-width: ${theme.xl}){
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 `
 
