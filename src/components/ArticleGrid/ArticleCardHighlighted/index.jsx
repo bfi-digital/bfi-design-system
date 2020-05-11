@@ -88,7 +88,7 @@ const Content = styled.div`
     width: 100%;
     
     @media screen and (min-width: ${theme.m}){
-        padding-top: 40px;
+        padding-top: ${props => props.withCategory ? "40px" : "0"};
         width: 55%;
         height: 100%;
     }
@@ -156,7 +156,7 @@ export const ArticleCardHighlighted = ({
     author,
     external
 }) =>
-    <Outer className="articleCardHighlighted" withSideBar={withSideBar}>
+    <Outer className="articleCardHighlighted" withSideBar={withSideBar} withCategory={category ? true : false}>
         {category && <CategoryTag>{category}</CategoryTag> }
         <Content>
             <Headline level={4} text={title} />
