@@ -34,6 +34,7 @@ const transformArticles = articles => articles.map(article => {
     return {
         key: article.id,
         title: article.title,
+        standfirst: article.summary,
         url: article.url,
         author: article.authors ? transformAuthors(article.authors) : false,
         category: article.category ? article.category.name : false,
@@ -46,7 +47,8 @@ const transformArticles = articles => articles.map(article => {
 export const FilterableArticles = ({
     filters,
     parameter,
-    limit
+    limit,
+    includeHighlight
 }) => {
     const query = queryString.parse(window.location.search)
 
@@ -87,7 +89,7 @@ export const FilterableArticles = ({
                         parameter={parameter}
                     />
                     {articles.length > 0 ?
-                        <ArticleGrid articles={articles} firstHighlighted>
+                        <ArticleGrid articles={articles} firstHighlighted={includeHighlight}>
                             {(page < maxPages) && !limit && <CentredButton href="#" onClick={loadMore}>Load more</CentredButton>}
                         </ArticleGrid>
                         :
@@ -97,7 +99,7 @@ export const FilterableArticles = ({
                 :
                 <>
                     {articles.length > 0 ? 
-                        <ArticleGrid articles={articles.slice(0,limit)} firstHighlighted>
+                        <ArticleGrid articles={articles.slice(0,limit)} firstHighlighted={includeHighlight}>
                             {(page < maxPages) && !limit && <CentredButton href="#" onClick={loadMore}>Load more</CentredButton>}
                         </ArticleGrid>
                         :
@@ -115,5 +117,12 @@ FilterableArticles.propTypes = {
     // Array of the filters - for a single filter taxonomy, this can just be a single option
     filters: PropTypes.array,
     // An optional number that can be used to disable the filters/pagination and just show a specific number og posts - this should only be used on specific pages such as landing page.
-    limit: PropTypes.number
+    limit: PropTypes.number,
+    // An optional boolean to set if the first card is highlighted in the list. This defaults to true.
+    includeHighlight: PropTypes.bool
+}
+
+FilterableArticles.defaultProps = {
+    parameter: "category",
+    includeHighlight: true
 }

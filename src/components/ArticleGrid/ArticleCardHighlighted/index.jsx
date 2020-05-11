@@ -4,6 +4,7 @@ import theme from "../../_theme"
 // import parse from "html-react-parser"
 import { LinkSwitch as Link } from "../../LinkSwitch"
 import { Headline } from "../../Headline"
+import parse from "html-react-parser"
 
 const Outer = styled.li`
     position: relative;
@@ -161,7 +162,7 @@ export const ArticleCardHighlighted = ({
         <Content>
             <Headline level={4} text={title} />
             {standfirst && 
-                <Standfirst>{standfirst}</Standfirst>
+                <Standfirst>{parse(standfirst)}</Standfirst>
             }
 
             <Meta>

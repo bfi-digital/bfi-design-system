@@ -16,6 +16,7 @@ import { DownloadableFiles } from "../DownloadableFiles"
 import { FilmGrid } from "../FilmGrid"
 import { FilmShowing } from "../FilmShowing"
 import { FilmShowingGrid } from "../FilmShowingGrid"
+import { FilterableArticles } from "../FilterableArticles"
 import { Footer } from "../Footer"
 import { Header } from "../Header"
 import { Headline } from "../Headline"
@@ -360,6 +361,15 @@ export const ArticleFeatureExample = () =>
             </Sidebar>
         </Wrapper>
 
+        <Wrapper>
+            <MainContent>
+                <Headline level={2} text="Other things to explore" />
+                <FilterableArticles
+                    limit={3}
+                    includeHighlight={false}
+                />
+            </MainContent>
+        </Wrapper>
         <Footer
             menus={footerMenus}
             copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"
