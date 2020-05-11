@@ -24,11 +24,3 @@ export const loading = () =>
     }}>
         <ArticleGrid articles={false} />
     </div>
-
-export const skeleton = () =>
-    <div style={{
-        padding: "10px",
-        maxWidth: "1000px"
-    }}>
-        <Skeleton />
-    </div>

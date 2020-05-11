@@ -56,7 +56,7 @@ const PrimaryButton = styled(Link)`
     &:focus{
         box-shadow: 0px 0px 0px 4px ${props => colorSchemes[props.colorScheme].focus};
         outline: none;
-        height: calc(100% + 5px);
+        height: auto;
 
         :after {
             bottom: 0;

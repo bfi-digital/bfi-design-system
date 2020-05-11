@@ -19,6 +19,7 @@ import { FilmGrid } from "../FilmGrid"
 import { FilmShowing } from "../FilmShowing"
 // import { FilmShowingGrid } from "../FilmShowingGrid"
 import { FilterableArticles } from "../FilterableArticles"
+import { FilterLinks } from "../FilterLinks"
 import { Footer } from "../Footer"
 import { Header } from "../Header"
 import { Headline } from "../Headline"
@@ -52,7 +53,14 @@ export const discoveryPage = () =>
         />
         <Wrapper>
             <MainContent>
-                <Highlights
+                <PromoBanner 
+                    colorScheme={1}
+                    headline="Become a BFI member"
+                    description="Get priority booking and enjoy special events for £37 a year."
+                    callToActionTitle="Join today"
+                    callToActionUrl="#"
+                />
+                {/* <Highlights
                     highlight={{
                         image600x600: "https://placehold.it/600x600",
                         imageAltText: "",
@@ -83,9 +91,7 @@ export const discoveryPage = () =>
                     }}
                     weekShowings={demoShowings}
                     allShowingsUrl="#"
-                />
-
-                <Divider istransparent={true} />
+                /> */}
 
                 <Headline 
                     level={2} 
@@ -135,18 +141,61 @@ export const discoveryPage = () =>
                 
                 <Divider istransparent={true} />
 
-                <PromoBanner 
-                    colorScheme={1}
-                    headline="Enjoy screenings and special events as a member"
-                    description="Become a BFI member for £37 a year and get priority booking for BFI London Film Festival, BFI Flare and at BFI Southbank all year around."
-                    image="http://placehold.it/600x350"
-                    callToActionTitle="Become a member"
-                    callToActionUrl="#"
+                <Headline 
+                    level={2} 
+                    text="News &amp; Articles"
+                />
+                <FilterLinks
+                    links={[
+                        {
+                            url: "#",
+                            label: "Example link"
+                        },
+                        {
+                            url: "#",
+                            label: "Where to stream"
+                        },
+                        {
+                            url: "#",
+                            label: "Where to begin"
+                        },
+                        {
+                            url: "#",
+                            label: "Five Things"
+                        }
+                    ]}
                 />
 
-                <Divider istransparent={true} />
-
-                <ArticleGrid optionalTitle="News & Articles" optionalCTALink="#" articles={demoArticles} />
+                <FilterableArticles
+                    limit={true}
+                    parameter="category"
+                    filters={[
+                        {
+                            value: "10-great",
+                            label: "10 Great"
+                        },
+                        {
+                            value: "where-to-stream",
+                            label: "Where to stream"
+                        },
+                        {
+                            value: "where-to-begin",
+                            label: "Where to begin"
+                        },
+                        {
+                            value: "five-things",
+                            label: "Five Things"
+                        },
+                        {
+                            value: "bfi-recommends",
+                            label: "BFI Recommends"
+                        },
+                        {
+                            value: "sight-and-sound",
+                            label: "Sight and Sound"
+                        }
+                    ]}
+                />
                 
                 <Divider istransparent={true} />
 

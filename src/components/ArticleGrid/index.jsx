@@ -11,7 +11,7 @@ const Outer = styled.div`
     margin: 15px 0;
     padding: 15px 0;
     padding-top: 35px;
-    margin-top: 35px;
+    margin-top: 25px;
     position: relative; 
     background: ${props => props.withSideBar ? "transparent" : theme.lightGrey};
 

@@ -44,7 +44,8 @@ const transformArticles = articles => articles.map(article => {
 
 export const FilterableArticles = ({
     filters,
-    parameter
+    parameter,
+    limit
 }) => {
 
     const query = queryString.parse(window.location.search)
@@ -78,16 +79,42 @@ export const FilterableArticles = ({
     
     return(
         <Outer>
-            <Filters 
-                filters={filters} 
-                query={query} 
-                parameter={parameter}
-            />
-            {articles.length > 0 && 
-                <ArticleGrid articles={articles} firstHighlighted>
-                    {(page < maxPages) && <CentredButton href="#" onClick={loadMore}>Load more</CentredButton>}
-                </ArticleGrid>
+            {!limit ?
+                <>
+                    <Filters 
+                        filters={filters} 
+                        query={query} 
+                        parameter={parameter}
+                    />
+                    {articles.length > 0 ?
+                        <ArticleGrid articles={articles} firstHighlighted>
+                            {(page < maxPages) && !limit && <CentredButton href="#" onClick={loadMore}>Load more</CentredButton>}
+                        </ArticleGrid>
+                        :
+                        <ArticleGrid articles={false} />
+                    }
+                </>
+                :
+                <>
+                    {articles.length > 0 ? 
+                        <ArticleGrid articles={articles.slice(0,8)} firstHighlighted>
+                            {(page < maxPages) && !limit && <CentredButton href="#" onClick={loadMore}>Load more</CentredButton>}
+                        </ArticleGrid>
+                        :
+                        <ArticleGrid articles={false} />
+                    }
+                </>
             }
+            
         </Outer>
     )
+}
+
+FilterableArticles.propTypes = {
+    // The parameter of what will be filtered.
+    parameter: PropTypes.string,
+    // Array of the filters
+    filters: PropTypes.array,
+    // An optional boolean that can be used to disable the filters and just show the first set of posts - this should only be used on the landing page.
+    limit: PropTypes.bool
 }
