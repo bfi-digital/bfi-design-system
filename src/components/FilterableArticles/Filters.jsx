@@ -2,10 +2,11 @@ import React from "react"
 import styled from "styled-components"
 import theme from "../_theme"
 import queryString from "query-string"
+import { Headline } from "../Headline"
 
 const Outer = styled.nav`
-    margin: 15px 0;
-    padding: 15px 0;
+    margin-top: 15px;
+    padding-top: 15px;
 `
 
 const Filter = styled.button`
@@ -47,14 +48,16 @@ export const Filters = ({
     query
 }) => 
     <Outer>
-        <Filter 
-            disabled={!query[parameter]}
-            onClick={() => {
-                delete query[parameter]
-                window.location.search = queryString.stringify(query)
-            }}
-        >   All
-        </Filter>
+        { filters.length > 1 &&
+            <Filter 
+                disabled={!query[parameter]}
+                onClick={() => {
+                    delete query[parameter]
+                    window.location.search = queryString.stringify(query)
+                }}
+            >   All
+            </Filter>
+        }
         {filters.map(filter =>
             <Filter 
                 disabled={query[parameter] === filter.value}

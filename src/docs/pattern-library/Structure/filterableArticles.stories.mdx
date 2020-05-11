@@ -10,7 +10,7 @@ import { FilterableArticles } from "../../../components/FilterableArticles/index
 ## Examples
 
 <Preview>
-    <Story name="Normal">
+    <Story name="All articles">
         <FilterableArticles
             parameter="category"
             filters={[
@@ -37,6 +37,21 @@ import { FilterableArticles } from "../../../components/FilterableArticles/index
                 {
                     value: "sight-and-sound",
                     label: "Sight and Sound"
+                }
+            ]}
+        />
+    </Story>
+</Preview>
+
+
+<Preview>
+    <Story name="Filtered by author">
+        <FilterableArticles
+            parameter="author"
+            filters={[
+                {
+                    value: "83f71749-a675-5ec0-8876-87e6487dc0c3",
+                    label: "Isabel Stevens"
                 }
             ]}
         />

@@ -57,7 +57,7 @@ export const FilterableArticles = ({
 
     const fetchArticles = async (query, newPage) => {
         let newQuery = queryString.stringify({
-            category: query.category,
+            [parameter]: query[parameter],
             author: query.author,
             page: newPage
         })
@@ -111,9 +111,9 @@ export const FilterableArticles = ({
 }
 
 FilterableArticles.propTypes = {
-    // The parameter of what will be filtered.
+    // The taxonomy of what will be filtered, for example 'category' or 'author'
     parameter: PropTypes.string,
-    // Array of the filters
+    // Array of the filters - for a single filter taxonomy, this can just be a single option
     filters: PropTypes.array,
     // An optional boolean that can be used to disable the filters and just show the first set of posts - this should only be used on the landing page.
     limit: PropTypes.bool
