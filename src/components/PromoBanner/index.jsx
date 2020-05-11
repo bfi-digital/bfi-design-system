@@ -51,8 +51,6 @@ const Outer = styled.section`
             margin-top: auto;
         }
         h2 {
-            font-size: 2.25rem;
-            line-height: 120%;
             margin-bottom: 20px;
         }
         &:before {
