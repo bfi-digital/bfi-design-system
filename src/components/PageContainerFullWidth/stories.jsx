@@ -24,7 +24,7 @@ import { Footer } from "../Footer"
 import { Header } from "../Header"
 import { Headline } from "../Headline"
 import { Hero } from "../Hero"
-import { Highlights } from "../Highlights"
+// import { Highlights } from "../Highlights"
 import { Image } from "../Image"
 import { ImageGallery } from "../ImageGallery"
 import { LeadParagraph } from "../LeadParagraph"
@@ -37,7 +37,7 @@ import { PromoBanner } from "../PromoBanner"
 import { Text } from "../Text"
 
 import demoFilms from "../FilmGrid/data"
-import demoShowings from "../Highlights/data"
+// import demoShowings from "../Highlights/data"
 
 export default {
     title: "1 Page Examples/Page Full Width"

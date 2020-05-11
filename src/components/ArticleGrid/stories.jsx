@@ -1,7 +1,6 @@
 import React from "react"
 import { withA11y } from "@storybook/addon-a11y"
 import { ArticleGrid } from "./index"
-import { Skeleton } from "./ArticleCard/Skeleton"
 import demoArticles from "./data"
 
 export default {

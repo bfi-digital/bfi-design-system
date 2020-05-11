@@ -2,7 +2,6 @@ import React from "react"
 import styled from "styled-components"
 import theme from "../_theme"
 import queryString from "query-string"
-import { Headline } from "../Headline"
 
 const Outer = styled.nav`
     margin-top: 15px;
@@ -60,7 +59,7 @@ export const Filters = ({
         }
         {filters.map(filter =>
             <Filter 
-                disabled={query[parameter] === filter.value}
+                disabled={filters.length <= 1 ? true : query[parameter] === filter.value}
                 key={filter.value} 
                 onClick={() => {
                     query[parameter] = filter.value

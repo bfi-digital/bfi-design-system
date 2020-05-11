@@ -272,7 +272,7 @@ Array [
         className="sc-kPVwWT hDEKVf"
       >
         <nav
-          className="sc-iyvyFf VoHOY"
+          className="sc-iyvyFf ekkxSK"
         >
           <button
             className="sc-hwwEjo ebyoXO"
@@ -324,6 +324,134 @@ Array [
             Sight and Sound
           </button>
         </nav>
+        <div
+          className="sc-jWBwVP eyAQXn"
+        >
+          <ul
+            className="sc-brqgnP bgfsdd"
+          >
+            <li
+              className="sc-kkGfuU cQwrrw articleCard"
+            >
+              <div
+                className="sc-eHgmQL vPWok"
+              />
+              <div
+                className="sc-iAyFgw jJkmqa"
+              >
+                <div
+                  className="sc-cvbbAY hZoFHM"
+                />
+                <div
+                  className="sc-hSdWYo jvEJit"
+                />
+                <div
+                  className="sc-hSdWYo jvEJit"
+                />
+              </div>
+            </li>
+            <li
+              className="sc-kkGfuU cQwrrw articleCard"
+            >
+              <div
+                className="sc-eHgmQL vPWok"
+              />
+              <div
+                className="sc-iAyFgw jJkmqa"
+              >
+                <div
+                  className="sc-cvbbAY hZoFHM"
+                />
+                <div
+                  className="sc-hSdWYo jvEJit"
+                />
+                <div
+                  className="sc-hSdWYo jvEJit"
+                />
+              </div>
+            </li>
+            <li
+              className="sc-kkGfuU cQwrrw articleCard"
+            >
+              <div
+                className="sc-eHgmQL vPWok"
+              />
+              <div
+                className="sc-iAyFgw jJkmqa"
+              >
+                <div
+                  className="sc-cvbbAY hZoFHM"
+                />
+                <div
+                  className="sc-hSdWYo jvEJit"
+                />
+                <div
+                  className="sc-hSdWYo jvEJit"
+                />
+              </div>
+            </li>
+            <li
+              className="sc-kkGfuU cQwrrw articleCard"
+            >
+              <div
+                className="sc-eHgmQL vPWok"
+              />
+              <div
+                className="sc-iAyFgw jJkmqa"
+              >
+                <div
+                  className="sc-cvbbAY hZoFHM"
+                />
+                <div
+                  className="sc-hSdWYo jvEJit"
+                />
+                <div
+                  className="sc-hSdWYo jvEJit"
+                />
+              </div>
+            </li>
+            <li
+              className="sc-kkGfuU cQwrrw articleCard"
+            >
+              <div
+                className="sc-eHgmQL vPWok"
+              />
+              <div
+                className="sc-iAyFgw jJkmqa"
+              >
+                <div
+                  className="sc-cvbbAY hZoFHM"
+                />
+                <div
+                  className="sc-hSdWYo jvEJit"
+                />
+                <div
+                  className="sc-hSdWYo jvEJit"
+                />
+              </div>
+            </li>
+            <li
+              className="sc-kkGfuU cQwrrw articleCard"
+            >
+              <div
+                className="sc-eHgmQL vPWok"
+              />
+              <div
+                className="sc-iAyFgw jJkmqa"
+              >
+                <div
+                  className="sc-cvbbAY hZoFHM"
+                />
+                <div
+                  className="sc-hSdWYo jvEJit"
+                />
+                <div
+                  className="sc-hSdWYo jvEJit"
+                />
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
       <h3
         className="sc-EHOje hREXNU"
@@ -947,571 +1075,37 @@ Array [
     <article
       className="sc-kQsIoO iJPUEy"
     >
-      <div
-        className="sc-qrIAp dQWDRF"
+      <section
+        className="sc-VJcYb gngAVz promoBanner"
       >
-        <ul
-          className="sc-krDsej eCIRtD"
-          role="tablist"
+        <div
+          className="sc-ipXKqB ikYXZP without_image"
         >
-          <li
-            className="sc-dTdPqK iEjCqy"
-            role="presentation"
+          <h2
+            className="sc-ifAKCX hwShjf"
           >
-            <button
-              aria-selected={true}
-              className="sc-itybZL eEfpsL"
-              id="tab1"
-              onClick={[Function]}
-              role="tab"
-            >
-              Highlight
-            </button>
-          </li>
-          <li
-            className="sc-dTdPqK iBBVJL"
-            role="presentation"
+            Become a BFI member
+          </h2>
+          <p
+            className="sc-cqCuEk dFBCLC without_image"
           >
-            <button
-              aria-selected={false}
-              className="sc-itybZL gZoIYL"
-              id="tab2"
-              onClick={[Function]}
-              role="tab"
-            >
-              Showing today
-            </button>
-          </li>
-          <li
-            className="sc-dTdPqK iBBVJL"
-            role="presentation"
-          >
-            <button
-              aria-selected={false}
-              className="sc-itybZL gZoIYL"
-              id="tab3"
-              onClick={[Function]}
-              role="tab"
-            >
-              Showing this week
-            </button>
-          </li>
-        </ul>
-        <section
-          aria-labelledby="tab1"
-          hidden={false}
-          id="section1"
-          role="tabpanel"
+            Get priority booking and enjoy special events for £37 a year.
+          </p>
+        </div>
+        <div
+          className="sc-hmXxxW rPFlI"
         >
-          <section
-            className="sc-VJcYb gngAVz promoBanner"
-          >
-            <div
-              className="sc-ipXKqB ikYXZP with_image"
-            >
-              <h2
-                className="sc-ifAKCX hwShjf"
-              >
-                BFI Flare: London LGBTIQ+ Film Festival 2020 programme announced
-              </h2>
-              <p
-                className="sc-cqCuEk dFBCLC with_image"
-              >
-                The best new and classic LGBTIQ+ films from around the world. Priority booking opens to BFI Members at 11:30 on 25 Feb. Champion booking is open.
-              </p>
-              <a
-                className="sc-eNQAEJ gPgYOw"
-                colorScheme={0}
-                href="#"
-                target="_self"
-                title="Explore the programme"
-              >
-                Explore the programme
-              </a>
-            </div>
-            <div
-              className="sc-dliRfk hixlpz"
-            />
-          </section>
-        </section>
-        <section
-          aria-labelledby="tab1"
-          hidden={true}
-          id="section2"
-          role="tabpanel"
-        >
-          <div
-            className="sc-iqzUVk jgpphU"
-          >
-            <div
-              className="sc-eMigcr eRPYzd"
-            >
-              <img
-                alt=""
-                className="sc-fzsDOv fVDnvf"
-                src="https://placehold.it/480x320"
-              />
-              <div
-                className="sc-gPWkxV vYWpn"
-              >
-                <p
-                  className="sc-jVODtj bwGEtz"
-                >
-                  Current season
-                </p>
-                <h4
-                  className="sc-kUaPvJ eWXgvZ"
-                >
-                  Fellini Season, Jan-Feb 2020
-                </h4>
-                <p
-                  className="sc-giadOv cgLjSm"
-                >
-                  The great Italian director’s centenary will be celebrated with a major two-month retrospective at BFI Southbank.
-                </p>
-              </div>
-              <a
-                className="sc-fONwsr hPCYcL"
-                href="#"
-                target="_self"
-              >
-                Explore the season
-              </a>
-            </div>
-            <div
-              className="sc-ipZHIp MbGUy"
-            >
-              <div
-                className="sc-bYSBpT dASjXG"
-              >
-                <h4
-                  className="sc-bZQynM faaoba"
-                >
-                  La La Land
-                </h4>
-                <p
-                  className="sc-elJkPf kioEDw"
-                >
-                  24th February
-                </p>
-                <ul
-                  className="sc-jtRfpW iJKXra"
-                >
-                  <li
-                    className="sc-kTUwUJ btBkKb"
-                  >
-                    <a
-                      className="sc-hMqMXs gJLVBd"
-                      colorScheme={0}
-                      href="#"
-                      target="_self"
-                      time="3:30pm"
-                      title="Book this at BFI Southbank"
-                    >
-                      3:30pm
-                    </a>
-                  </li>
-                  <li
-                    className="sc-kTUwUJ btBkKb"
-                  >
-                    <a
-                      className="sc-hMqMXs gJLVBd"
-                      colorScheme={0}
-                      href="#"
-                      target="_self"
-                      time="6:30pm"
-                      title="Book this at BFI Southbank"
-                    >
-                      6:30pm
-                    </a>
-                  </li>
-                  <li
-                    className="sc-kTUwUJ btBkKb"
-                  >
-                    <span
-                      className="sc-dqBHgY fnEnng"
-                    >
-                      8:45pm
-                       - Sold out
-                    </span>
-                  </li>
-                </ul>
-              </div>
-              <div
-                className="sc-bYSBpT dASjXG"
-              >
-                <h4
-                  className="sc-bZQynM faaoba"
-                >
-                  The Lighthouse
-                </h4>
-                <p
-                  className="sc-elJkPf kioEDw"
-                >
-                  24th February
-                </p>
-                <ul
-                  className="sc-jtRfpW iJKXra"
-                >
-                  <li
-                    className="sc-kTUwUJ btBkKb"
-                  >
-                    <span
-                      className="sc-dqBHgY fnEnng"
-                    >
-                      3:30pm
-                       - Sold out
-                    </span>
-                  </li>
-                  <li
-                    className="sc-kTUwUJ btBkKb"
-                  >
-                    <a
-                      className="sc-hMqMXs gJLVBd"
-                      colorScheme={0}
-                      href="#"
-                      target="_self"
-                      time="6:30pm"
-                      title="Book this at BFI Southbank"
-                    >
-                      6:30pm
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div
-                className="sc-bYSBpT dASjXG"
-              >
-                <h4
-                  className="sc-bZQynM faaoba"
-                >
-                  Manos: The Hands of Fate
-                </h4>
-                <p
-                  className="sc-elJkPf kioEDw"
-                >
-                  24th February
-                </p>
-                <ul
-                  className="sc-jtRfpW iJKXra"
-                >
-                  <li
-                    className="sc-kTUwUJ btBkKb"
-                  >
-                    <span
-                      className="sc-dqBHgY fnEnng"
-                    >
-                      3:30pm
-                       - Sold out
-                    </span>
-                  </li>
-                  <li
-                    className="sc-kTUwUJ btBkKb"
-                  >
-                    <a
-                      className="sc-hMqMXs gJLVBd"
-                      colorScheme={0}
-                      href="#"
-                      target="_self"
-                      time="6:30pm"
-                      title="Book this at BFI Southbank"
-                    >
-                      6:30pm
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div
-                className="sc-bYSBpT dASjXG"
-              >
-                <h4
-                  className="sc-bZQynM faaoba"
-                >
-                  Santa Claus Conquers the Martians
-                </h4>
-                <p
-                  className="sc-elJkPf kioEDw"
-                >
-                  24th February
-                </p>
-                <ul
-                  className="sc-jtRfpW iJKXra"
-                >
-                  <li
-                    className="sc-kTUwUJ btBkKb"
-                  >
-                    <span
-                      className="sc-dqBHgY fnEnng"
-                    >
-                      3:30pm
-                       - Sold out
-                    </span>
-                  </li>
-                  <li
-                    className="sc-kTUwUJ btBkKb"
-                  >
-                    <span
-                      className="sc-dqBHgY fnEnng"
-                    >
-                      6:30pm
-                       - Sold out
-                    </span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
           <a
-            className="sc-eNQAEJ gPgYOw sc-iGrrsa eAklzZ"
+            className="sc-eNQAEJ busIsm"
             colorScheme={0}
             href="#"
             target="_self"
-            title="All showings"
+            title="Join today"
           >
-            All showings
+            Join today
           </a>
-        </section>
-        <section
-          aria-labelledby="tab1"
-          hidden={true}
-          id="section3"
-          role="tabpanel"
-        >
-          <div
-            className="sc-iqzUVk jgpphU"
-          >
-            <div
-              className="sc-eMigcr eRPYzd"
-            >
-              <img
-                alt=""
-                className="sc-fzsDOv fVDnvf"
-                src="https://placehold.it/480x320"
-              />
-              <div
-                className="sc-gPWkxV vYWpn"
-              >
-                <p
-                  className="sc-jVODtj bwGEtz"
-                >
-                  Current season
-                </p>
-                <h4
-                  className="sc-kUaPvJ eWXgvZ"
-                >
-                  Cronenberg Season, Jan-Feb 2020
-                </h4>
-                <p
-                  className="sc-giadOv cgLjSm"
-                >
-                  Canadian director David Cronenberg has been making...
-                </p>
-              </div>
-              <a
-                className="sc-fONwsr hPCYcL"
-                href="#"
-                target="_self"
-              >
-                Explore the season
-              </a>
-            </div>
-            <div
-              className="sc-ipZHIp MbGUy"
-            >
-              <div
-                className="sc-bYSBpT dASjXG"
-              >
-                <h4
-                  className="sc-bZQynM faaoba"
-                >
-                  La La Land
-                </h4>
-                <p
-                  className="sc-elJkPf kioEDw"
-                >
-                  24th February
-                </p>
-                <ul
-                  className="sc-jtRfpW iJKXra"
-                >
-                  <li
-                    className="sc-kTUwUJ btBkKb"
-                  >
-                    <a
-                      className="sc-hMqMXs gJLVBd"
-                      colorScheme={0}
-                      href="#"
-                      target="_self"
-                      time="3:30pm"
-                      title="Book this at BFI Southbank"
-                    >
-                      3:30pm
-                    </a>
-                  </li>
-                  <li
-                    className="sc-kTUwUJ btBkKb"
-                  >
-                    <a
-                      className="sc-hMqMXs gJLVBd"
-                      colorScheme={0}
-                      href="#"
-                      target="_self"
-                      time="6:30pm"
-                      title="Book this at BFI Southbank"
-                    >
-                      6:30pm
-                    </a>
-                  </li>
-                  <li
-                    className="sc-kTUwUJ btBkKb"
-                  >
-                    <span
-                      className="sc-dqBHgY fnEnng"
-                    >
-                      8:45pm
-                       - Sold out
-                    </span>
-                  </li>
-                </ul>
-              </div>
-              <div
-                className="sc-bYSBpT dASjXG"
-              >
-                <h4
-                  className="sc-bZQynM faaoba"
-                >
-                  The Lighthouse
-                </h4>
-                <p
-                  className="sc-elJkPf kioEDw"
-                >
-                  24th February
-                </p>
-                <ul
-                  className="sc-jtRfpW iJKXra"
-                >
-                  <li
-                    className="sc-kTUwUJ btBkKb"
-                  >
-                    <span
-                      className="sc-dqBHgY fnEnng"
-                    >
-                      3:30pm
-                       - Sold out
-                    </span>
-                  </li>
-                  <li
-                    className="sc-kTUwUJ btBkKb"
-                  >
-                    <a
-                      className="sc-hMqMXs gJLVBd"
-                      colorScheme={0}
-                      href="#"
-                      target="_self"
-                      time="6:30pm"
-                      title="Book this at BFI Southbank"
-                    >
-                      6:30pm
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div
-                className="sc-bYSBpT dASjXG"
-              >
-                <h4
-                  className="sc-bZQynM faaoba"
-                >
-                  Manos: The Hands of Fate
-                </h4>
-                <p
-                  className="sc-elJkPf kioEDw"
-                >
-                  24th February
-                </p>
-                <ul
-                  className="sc-jtRfpW iJKXra"
-                >
-                  <li
-                    className="sc-kTUwUJ btBkKb"
-                  >
-                    <span
-                      className="sc-dqBHgY fnEnng"
-                    >
-                      3:30pm
-                       - Sold out
-                    </span>
-                  </li>
-                  <li
-                    className="sc-kTUwUJ btBkKb"
-                  >
-                    <a
-                      className="sc-hMqMXs gJLVBd"
-                      colorScheme={0}
-                      href="#"
-                      target="_self"
-                      time="6:30pm"
-                      title="Book this at BFI Southbank"
-                    >
-                      6:30pm
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div
-                className="sc-bYSBpT dASjXG"
-              >
-                <h4
-                  className="sc-bZQynM faaoba"
-                >
-                  Santa Claus Conquers the Martians
-                </h4>
-                <p
-                  className="sc-elJkPf kioEDw"
-                >
-                  24th February
-                </p>
-                <ul
-                  className="sc-jtRfpW iJKXra"
-                >
-                  <li
-                    className="sc-kTUwUJ btBkKb"
-                  >
-                    <span
-                      className="sc-dqBHgY fnEnng"
-                    >
-                      3:30pm
-                       - Sold out
-                    </span>
-                  </li>
-                  <li
-                    className="sc-kTUwUJ btBkKb"
-                  >
-                    <span
-                      className="sc-dqBHgY fnEnng"
-                    >
-                      6:30pm
-                       - Sold out
-                    </span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <a
-            className="sc-eNQAEJ gPgYOw sc-iGrrsa eAklzZ"
-            colorScheme={0}
-            href="#"
-            target="_self"
-            title="All showings"
-          >
-            All showings
-          </a>
-        </section>
-      </div>
-      <hr
-        className="sc-Rmtcm hUaJYw"
-      />
+        </div>
+      </section>
       <h2
         className="sc-ifAKCX hwShjf"
       >
@@ -1788,7 +1382,7 @@ Array [
             From £2.50 per film, or £4.99 a month.
           </p>
           <a
-            className="sc-eNQAEJ dyDKIo"
+            className="sc-eNQAEJ hSvZMS"
             colorScheme={1}
             href="#"
             target="_self"
@@ -1977,7 +1571,7 @@ Array [
         className="sc-csuQGl hSwHUG"
       >
         <a
-          className="sc-eNQAEJ gPgYOw"
+          className="sc-eNQAEJ busIsm"
           colorScheme={0}
           href="/"
           target="_self"
@@ -1989,186 +1583,174 @@ Array [
       <hr
         className="sc-Rmtcm hUaJYw"
       />
-      <section
-        className="sc-VJcYb gngAVz promoBanner"
+      <h2
+        className="sc-ifAKCX hwShjf"
       >
-        <div
-          className="sc-ipXKqB ikYXZP with_image"
-        >
-          <h2
-            className="sc-ifAKCX hwShjf"
-          >
-            Enjoy screenings and special events as a member
-          </h2>
-          <p
-            className="sc-cqCuEk dFBCLC with_image"
-          >
-            Become a BFI member for £37 a year and get priority booking for BFI London Film Festival, BFI Flare and at BFI Southbank all year around.
-          </p>
-          <a
-            className="sc-eNQAEJ gPgYOw"
-            colorScheme={0}
-            href="#"
-            target="_self"
-            title="Become a member"
-          >
-            Become a member
-          </a>
-        </div>
-        <div
-          className="sc-dliRfk eLLCwG"
-        />
-      </section>
-      <hr
-        className="sc-Rmtcm hUaJYw"
-      />
-      <div
-        className="sc-jWBwVP jvLWUV"
+        News & Articles
+      </h2>
+      <nav
+        className="sc-dfVpRl gKigPR"
       >
-        <h2
-          className="sc-ifAKCX hwShjf"
-        >
-          News & Articles
-        </h2>
-        <ul
-          className="sc-brqgnP bgfsdd"
-        >
-          <li
-            className="sc-htoDjs iVxBte articleCard"
-          >
-            <div
-              className="sc-fjdhpX bxscOA"
-            >
-              What to watch
-            </div>
-            <div
-              className="sc-VigVT fOioIb"
-            >
-              <div
-                alt="Example image"
-                className="sc-jTzLTM bIKxOs image"
-              />
-            </div>
-            <h4
-              className="sc-bZQynM faaoba"
-            >
-              36 amazing dance scenes
-            </h4>
-            <div
-              className="sc-dnqmqq dCJPdk"
-            >
-              <p
-                className="sc-iwsKbI hxSMrF"
-              >
-                Monday 9th February 2017
-              </p>
-              <p
-                className="sc-gZMcBi jJFcIc"
-              >
-                By 
-                Author name
-              </p>
-            </div>
-            <a
-              className="sc-gqjmRU kWAUlj"
-              href="https://www.bfi.org.uk/news-opinion/news-bfi/lists/36-amazing-dance-scenes"
-              target="_self"
-            />
-          </li>
-          <li
-            className="sc-htoDjs iVxBte articleCard"
-          >
-            <div
-              className="sc-fjdhpX bxscOA"
-            >
-              What to watch
-            </div>
-            <div
-              className="sc-VigVT fOioIb"
-            >
-              <div
-                alt="Example image"
-                className="sc-jTzLTM kiYNkz image"
-              />
-            </div>
-            <h4
-              className="sc-bZQynM faaoba"
-            >
-              The 100 Greatest Films of All Time
-            </h4>
-            <div
-              className="sc-dnqmqq dCJPdk"
-            >
-              <p
-                className="sc-iwsKbI hxSMrF"
-              >
-                Tuesday 23rd March 2020
-              </p>
-              <p
-                className="sc-gZMcBi jJFcIc"
-              >
-                By 
-                Author name
-              </p>
-            </div>
-            <a
-              className="sc-gqjmRU kWAUlj"
-              href="https://www.bfi.org.uk/greatest-films-all-time"
-              target="_self"
-            />
-          </li>
-          <li
-            className="sc-htoDjs iVxBte articleCard"
-          >
-            <div
-              className="sc-fjdhpX bxscOA"
-            >
-              What to watch
-            </div>
-            <div
-              className="sc-VigVT fOioIb"
-            >
-              <div
-                alt="Example image"
-                className="sc-jTzLTM dUvOyH image"
-              />
-            </div>
-            <h4
-              className="sc-bZQynM faaoba"
-            >
-              Stanley Kubrick, cinephile
-            </h4>
-            <div
-              className="sc-dnqmqq dCJPdk"
-            >
-              <p
-                className="sc-iwsKbI hxSMrF"
-              >
-                Friday 22nd November 2019
-              </p>
-              <p
-                className="sc-gZMcBi jJFcIc"
-              >
-                By 
-                Author name
-              </p>
-            </div>
-            <a
-              className="sc-gqjmRU kWAUlj"
-              href="https://www.bfi.org.uk/news-opinion/sight-sound-magazine/polls-surveys/stanley-kubrick-cinephiles"
-              target="_self"
-            />
-          </li>
-        </ul>
         <a
-          className="sc-eNQAEJ gPgYOw sc-cMljjf kgpmoe"
-          colorScheme={0}
-          href="#"
-          target="_self"
-          title="See more articles"
+          className="sc-gzOgki jbNPHF"
+          href="/#"
+          onClick={[Function]}
         >
-          See more articles
+          Example link
         </a>
+        <a
+          className="sc-gzOgki jbNPHF"
+          href="/#"
+          onClick={[Function]}
+        >
+          Where to stream
+        </a>
+        <a
+          className="sc-gzOgki jbNPHF"
+          href="/#"
+          onClick={[Function]}
+        >
+          Where to begin
+        </a>
+        <a
+          className="sc-gzOgki jbNPHF"
+          href="/#"
+          onClick={[Function]}
+        >
+          Five Things
+        </a>
+      </nav>
+      <div
+        className="sc-kPVwWT hDEKVf"
+      >
+        <div
+          className="sc-jWBwVP eyAQXn"
+        >
+          <ul
+            className="sc-brqgnP bgfsdd"
+          >
+            <li
+              className="sc-kkGfuU cQwrrw articleCard"
+            >
+              <div
+                className="sc-eHgmQL vPWok"
+              />
+              <div
+                className="sc-iAyFgw jJkmqa"
+              >
+                <div
+                  className="sc-cvbbAY hZoFHM"
+                />
+                <div
+                  className="sc-hSdWYo jvEJit"
+                />
+                <div
+                  className="sc-hSdWYo jvEJit"
+                />
+              </div>
+            </li>
+            <li
+              className="sc-kkGfuU cQwrrw articleCard"
+            >
+              <div
+                className="sc-eHgmQL vPWok"
+              />
+              <div
+                className="sc-iAyFgw jJkmqa"
+              >
+                <div
+                  className="sc-cvbbAY hZoFHM"
+                />
+                <div
+                  className="sc-hSdWYo jvEJit"
+                />
+                <div
+                  className="sc-hSdWYo jvEJit"
+                />
+              </div>
+            </li>
+            <li
+              className="sc-kkGfuU cQwrrw articleCard"
+            >
+              <div
+                className="sc-eHgmQL vPWok"
+              />
+              <div
+                className="sc-iAyFgw jJkmqa"
+              >
+                <div
+                  className="sc-cvbbAY hZoFHM"
+                />
+                <div
+                  className="sc-hSdWYo jvEJit"
+                />
+                <div
+                  className="sc-hSdWYo jvEJit"
+                />
+              </div>
+            </li>
+            <li
+              className="sc-kkGfuU cQwrrw articleCard"
+            >
+              <div
+                className="sc-eHgmQL vPWok"
+              />
+              <div
+                className="sc-iAyFgw jJkmqa"
+              >
+                <div
+                  className="sc-cvbbAY hZoFHM"
+                />
+                <div
+                  className="sc-hSdWYo jvEJit"
+                />
+                <div
+                  className="sc-hSdWYo jvEJit"
+                />
+              </div>
+            </li>
+            <li
+              className="sc-kkGfuU cQwrrw articleCard"
+            >
+              <div
+                className="sc-eHgmQL vPWok"
+              />
+              <div
+                className="sc-iAyFgw jJkmqa"
+              >
+                <div
+                  className="sc-cvbbAY hZoFHM"
+                />
+                <div
+                  className="sc-hSdWYo jvEJit"
+                />
+                <div
+                  className="sc-hSdWYo jvEJit"
+                />
+              </div>
+            </li>
+            <li
+              className="sc-kkGfuU cQwrrw articleCard"
+            >
+              <div
+                className="sc-eHgmQL vPWok"
+              />
+              <div
+                className="sc-iAyFgw jJkmqa"
+              >
+                <div
+                  className="sc-cvbbAY hZoFHM"
+                />
+                <div
+                  className="sc-hSdWYo jvEJit"
+                />
+                <div
+                  className="sc-hSdWYo jvEJit"
+                />
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
       <hr
         className="sc-Rmtcm hUaJYw"
@@ -2190,7 +1772,7 @@ Array [
             Subscribe today - in print and/ or digital - and discover the world’s best cinema.
           </p>
           <a
-            className="sc-eNQAEJ gPgYOw"
+            className="sc-eNQAEJ busIsm"
             colorScheme={0}
             href="#"
             target="_self"
@@ -2225,7 +1807,7 @@ Array [
             National archive
           </p>
           <a
-            className="sc-eNQAEJ gPgYOw"
+            className="sc-eNQAEJ busIsm"
             colorScheme={0}
             href="#"
             target="_self"
@@ -3016,7 +2598,7 @@ Array [
             xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
           </p>
           <a
-            className="sc-eNQAEJ gPgYOw"
+            className="sc-eNQAEJ busIsm"
             colorScheme={0}
             href="#"
             target="_self"
@@ -3051,7 +2633,7 @@ Array [
             xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
           </p>
           <a
-            className="sc-eNQAEJ gPgYOw"
+            className="sc-eNQAEJ busIsm"
             colorScheme={0}
             href="#"
             target="_self"
@@ -3686,7 +3268,7 @@ Array [
           className="sc-ksYbfQ hVptsA"
         >
           <a
-            className="sc-eNQAEJ gPgYOw"
+            className="sc-eNQAEJ busIsm"
             colorScheme={0}
             href="/"
             target="_self"
@@ -4422,7 +4004,7 @@ Array [
         </p>
       </div>
       <a
-        className="sc-eNQAEJ gPgYOw"
+        className="sc-eNQAEJ busIsm"
         colorScheme={0}
         href="#"
         target="_self"
@@ -5453,7 +5035,7 @@ Array [
             Become a BFI member for £37 a year and get priority booking for BFI London Film Festival, BFI Flare and at BFI Southbank all year around.
           </p>
           <a
-            className="sc-eNQAEJ dyDKIo"
+            className="sc-eNQAEJ hSvZMS"
             colorScheme={1}
             href="#"
             target="_self"
@@ -5467,7 +5049,7 @@ Array [
         />
       </section>
       <div
-        className="sc-jWBwVP jvLWUV"
+        className="sc-jWBwVP eyAQXn"
       >
         <ul
           className="sc-brqgnP bgfsdd"
@@ -6225,7 +5807,7 @@ Array [
           className="sc-hmXxxW rPFlI"
         >
           <a
-            className="sc-eNQAEJ gPgYOw"
+            className="sc-eNQAEJ busIsm"
             colorScheme={0}
             href="#"
             target="_self"
@@ -6399,7 +5981,7 @@ Array [
         className="sc-csuQGl sdfpZ"
       >
         <a
-          className="sc-eNQAEJ gPgYOw"
+          className="sc-eNQAEJ busIsm"
           colorScheme={0}
           href="/"
           target="_self"
@@ -6430,7 +6012,7 @@ Array [
             xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
           </p>
           <a
-            className="sc-eNQAEJ gPgYOw"
+            className="sc-eNQAEJ busIsm"
             colorScheme={0}
             href="#"
             target="_self"
@@ -6464,7 +6046,7 @@ Array [
             xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
           </p>
           <a
-            className="sc-eNQAEJ gPgYOw"
+            className="sc-eNQAEJ busIsm"
             colorScheme={0}
             href="#"
             target="_self"
@@ -6499,7 +6081,7 @@ Array [
             xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
           </p>
           <a
-            className="sc-eNQAEJ gPgYOw"
+            className="sc-eNQAEJ busIsm"
             colorScheme={0}
             href="#"
             target="_self"
@@ -6533,7 +6115,7 @@ Array [
             xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
           </p>
           <a
-            className="sc-eNQAEJ gPgYOw"
+            className="sc-eNQAEJ busIsm"
             colorScheme={0}
             href="#"
             target="_self"
@@ -8045,7 +7627,7 @@ Array [
         </p>
       </div>
       <a
-        className="sc-eNQAEJ gPgYOw"
+        className="sc-eNQAEJ busIsm"
         colorScheme={0}
         href="#"
         target="_self"
@@ -9670,7 +9252,7 @@ Array [
         </p>
       </div>
       <a
-        className="sc-eNQAEJ gPgYOw"
+        className="sc-eNQAEJ busIsm"
         colorScheme={0}
         href="#"
         target="_self"
@@ -10099,7 +9681,7 @@ Array [
             Become a BFI member for £37 a year and get priority booking for BFI London Film Festival, BFI Flare and at BFI Southbank all year around.
           </p>
           <a
-            className="sc-eNQAEJ dyDKIo"
+            className="sc-eNQAEJ hSvZMS"
             colorScheme={1}
             href="#"
             target="_self"
@@ -10113,7 +9695,7 @@ Array [
         />
       </section>
       <div
-        className="sc-jWBwVP jvLWUV"
+        className="sc-jWBwVP eyAQXn"
       >
         <ul
           className="sc-brqgnP bgfsdd"
@@ -10247,7 +9829,7 @@ Array [
         </ul>
       </div>
       <div
-        className="sc-jWBwVP djeMDj"
+        className="sc-jWBwVP wncrK"
       >
         <ul
           className="sc-brqgnP bgfsdd"
@@ -11200,7 +10782,7 @@ Array [
       className="sc-gmeYpB doxOxD"
     >
       <a
-        className="sc-eNQAEJ gPgYOw"
+        className="sc-eNQAEJ busIsm"
         colorScheme={0}
         href="#"
         target="_self"
@@ -11209,7 +10791,7 @@ Array [
         Buy tickets
       </a>
       <a
-        className="sc-eNQAEJ gPgYOw"
+        className="sc-eNQAEJ busIsm"
         colorScheme={0}
         href="#"
         target="_self"
@@ -11488,7 +11070,7 @@ Array [
       className="sc-chbbiW cEHXbo"
     >
       <div
-        className="sc-jWBwVP jvLWUV"
+        className="sc-jWBwVP eyAQXn"
       >
         <ul
           className="sc-brqgnP bgfsdd"
@@ -12769,7 +12351,7 @@ exports[`Storyshots 2 All Components/ArticleGrid Loading 1`] = `
   }
 >
   <div
-    className="sc-jWBwVP jvLWUV"
+    className="sc-jWBwVP eyAQXn"
   >
     <ul
       className="sc-brqgnP bgfsdd"
@@ -12909,7 +12491,7 @@ exports[`Storyshots 2 All Components/ArticleGrid Normal 1`] = `
   }
 >
   <div
-    className="sc-jWBwVP jvLWUV"
+    className="sc-jWBwVP eyAQXn"
   >
     <ul
       className="sc-brqgnP bgfsdd"
@@ -13045,38 +12627,6 @@ exports[`Storyshots 2 All Components/ArticleGrid Normal 1`] = `
 </div>
 `;
 
-exports[`Storyshots 2 All Components/ArticleGrid Skeleton 1`] = `
-<div
-  style={
-    Object {
-      "maxWidth": "1000px",
-      "padding": "10px",
-    }
-  }
->
-  <li
-    className="sc-kkGfuU cQwrrw articleCard"
-  >
-    <div
-      className="sc-eHgmQL vPWok"
-    />
-    <div
-      className="sc-iAyFgw jJkmqa"
-    >
-      <div
-        className="sc-cvbbAY hZoFHM"
-      />
-      <div
-        className="sc-hSdWYo jvEJit"
-      />
-      <div
-        className="sc-hSdWYo jvEJit"
-      />
-    </div>
-  </li>
-</div>
-`;
-
 exports[`Storyshots 2 All Components/Blockquote With Citation 1`] = `
 <blockquote
   className="sc-jAaTju bwnZAS"
@@ -13194,7 +12744,7 @@ exports[`Storyshots 2 All Components/Button Primary 1`] = `
   }
 >
   <a
-    className="sc-eNQAEJ gPgYOw"
+    className="sc-eNQAEJ busIsm"
     colorScheme={0}
     href="#"
     target="_self"
@@ -13257,7 +12807,7 @@ exports[`Storyshots 2 All Components/Call to Action External Link 1`] = `
     className="sc-csuQGl sdfpZ"
   >
     <a
-      className="sc-eNQAEJ gPgYOw"
+      className="sc-eNQAEJ busIsm"
       colorScheme={0}
       href="https://google.com"
       target="_blank"
@@ -13281,7 +12831,7 @@ exports[`Storyshots 2 All Components/Call to Action Internal Link 1`] = `
     className="sc-csuQGl sdfpZ"
   >
     <a
-      className="sc-eNQAEJ gPgYOw"
+      className="sc-eNQAEJ busIsm"
       colorScheme={0}
       href="/"
       target="_self"
@@ -13305,7 +12855,7 @@ exports[`Storyshots 2 All Components/Call to Action Two Links 1`] = `
     className="sc-csuQGl sdfpZ"
   >
     <a
-      className="sc-eNQAEJ gPgYOw"
+      className="sc-eNQAEJ busIsm"
       colorScheme={0}
       href="/"
       target="_self"
@@ -13318,7 +12868,7 @@ exports[`Storyshots 2 All Components/Call to Action Two Links 1`] = `
     className="sc-csuQGl sdfpZ"
   >
     <a
-      className="sc-eNQAEJ gPgYOw"
+      className="sc-eNQAEJ busIsm"
       colorScheme={0}
       href="https://google.com"
       target="_blank"
@@ -13585,7 +13135,7 @@ Array [
         className="sc-ksYbfQ hVptsA"
       >
         <a
-          className="sc-eNQAEJ gPgYOw"
+          className="sc-eNQAEJ busIsm"
           colorScheme={0}
           href="/"
           target="_self"
@@ -13646,7 +13196,7 @@ Array [
         className="sc-ksYbfQ hVptsA"
       >
         <a
-          className="sc-eNQAEJ gPgYOw"
+          className="sc-eNQAEJ busIsm"
           colorScheme={0}
           href="/"
           target="_self"
@@ -14608,7 +14158,7 @@ exports[`Storyshots 2 All Components/Filterable Articles Normal 1`] = `
   className="sc-kPVwWT hDEKVf"
 >
   <nav
-    className="sc-iyvyFf VoHOY"
+    className="sc-iyvyFf ekkxSK"
   >
     <button
       className="sc-hwwEjo ebyoXO"
@@ -14660,6 +14210,134 @@ exports[`Storyshots 2 All Components/Filterable Articles Normal 1`] = `
       Sight and Sound
     </button>
   </nav>
+  <div
+    className="sc-jWBwVP eyAQXn"
+  >
+    <ul
+      className="sc-brqgnP bgfsdd"
+    >
+      <li
+        className="sc-kkGfuU cQwrrw articleCard"
+      >
+        <div
+          className="sc-eHgmQL vPWok"
+        />
+        <div
+          className="sc-iAyFgw jJkmqa"
+        >
+          <div
+            className="sc-cvbbAY hZoFHM"
+          />
+          <div
+            className="sc-hSdWYo jvEJit"
+          />
+          <div
+            className="sc-hSdWYo jvEJit"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-kkGfuU cQwrrw articleCard"
+      >
+        <div
+          className="sc-eHgmQL vPWok"
+        />
+        <div
+          className="sc-iAyFgw jJkmqa"
+        >
+          <div
+            className="sc-cvbbAY hZoFHM"
+          />
+          <div
+            className="sc-hSdWYo jvEJit"
+          />
+          <div
+            className="sc-hSdWYo jvEJit"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-kkGfuU cQwrrw articleCard"
+      >
+        <div
+          className="sc-eHgmQL vPWok"
+        />
+        <div
+          className="sc-iAyFgw jJkmqa"
+        >
+          <div
+            className="sc-cvbbAY hZoFHM"
+          />
+          <div
+            className="sc-hSdWYo jvEJit"
+          />
+          <div
+            className="sc-hSdWYo jvEJit"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-kkGfuU cQwrrw articleCard"
+      >
+        <div
+          className="sc-eHgmQL vPWok"
+        />
+        <div
+          className="sc-iAyFgw jJkmqa"
+        >
+          <div
+            className="sc-cvbbAY hZoFHM"
+          />
+          <div
+            className="sc-hSdWYo jvEJit"
+          />
+          <div
+            className="sc-hSdWYo jvEJit"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-kkGfuU cQwrrw articleCard"
+      >
+        <div
+          className="sc-eHgmQL vPWok"
+        />
+        <div
+          className="sc-iAyFgw jJkmqa"
+        >
+          <div
+            className="sc-cvbbAY hZoFHM"
+          />
+          <div
+            className="sc-hSdWYo jvEJit"
+          />
+          <div
+            className="sc-hSdWYo jvEJit"
+          />
+        </div>
+      </li>
+      <li
+        className="sc-kkGfuU cQwrrw articleCard"
+      >
+        <div
+          className="sc-eHgmQL vPWok"
+        />
+        <div
+          className="sc-iAyFgw jJkmqa"
+        >
+          <div
+            className="sc-cvbbAY hZoFHM"
+          />
+          <div
+            className="sc-hSdWYo jvEJit"
+          />
+          <div
+            className="sc-hSdWYo jvEJit"
+          />
+        </div>
+      </li>
+    </ul>
+  </div>
 </div>
 `;
 
@@ -16009,7 +15687,7 @@ exports[`Storyshots 2 All Components/Highlights Normal 1`] = `
             The best new and classic LGBTIQ+ films from around the world. Priority booking opens to BFI Members at 11:30 on 25 Feb. Champion booking is open.
           </p>
           <a
-            className="sc-eNQAEJ gPgYOw"
+            className="sc-eNQAEJ busIsm"
             colorScheme={0}
             href="#"
             target="_self"
@@ -16251,7 +15929,7 @@ exports[`Storyshots 2 All Components/Highlights Normal 1`] = `
         </div>
       </div>
       <a
-        className="sc-eNQAEJ gPgYOw sc-iGrrsa eAklzZ"
+        className="sc-eNQAEJ busIsm sc-iGrrsa eAklzZ"
         colorScheme={0}
         href="#"
         target="_self"
@@ -16488,7 +16166,7 @@ exports[`Storyshots 2 All Components/Highlights Normal 1`] = `
         </div>
       </div>
       <a
-        className="sc-eNQAEJ gPgYOw sc-iGrrsa eAklzZ"
+        className="sc-eNQAEJ busIsm sc-iGrrsa eAklzZ"
         colorScheme={0}
         href="#"
         target="_self"
@@ -18161,7 +17839,7 @@ exports[`Storyshots 2 All Components/PromoBanner Banner Without Image 1`] = `
       className="sc-hmXxxW rPFlI"
     >
       <a
-        className="sc-eNQAEJ dyDKIo"
+        className="sc-eNQAEJ hSvZMS"
         colorScheme={1}
         href="#"
         target="_self"
@@ -18203,7 +17881,7 @@ exports[`Storyshots 2 All Components/PromoBanner Normal 1`] = `
         Become a BFI member for £37 a year and get priority booking for BFI London Film Festival, BFI Flare and at BFI Southbank all year around.
       </p>
       <a
-        className="sc-eNQAEJ dyDKIo"
+        className="sc-eNQAEJ hSvZMS"
         colorScheme={1}
         href="#"
         target="_self"
@@ -18246,7 +17924,7 @@ exports[`Storyshots 2 All Components/PromoBanner Reversed Image 1`] = `
         Become a BFI member for £37 a year and get priority booking for BFI London Film Festival, BFI Flare and at BFI Southbank all year around.
       </p>
       <a
-        className="sc-eNQAEJ dyDKIo"
+        className="sc-eNQAEJ hSvZMS"
         colorScheme={1}
         href="#"
         target="_self"

@@ -6,6 +6,7 @@ import { ArticleGrid } from "../ArticleGrid"
 import { Filters } from "./Filters"
 import { Button } from "../Button"
 import queryString from "query-string"
+import PropTypes from "prop-types"
 
 const Outer = styled.div`
     margin-bottom: 50px;
@@ -47,7 +48,6 @@ export const FilterableArticles = ({
     parameter,
     limit
 }) => {
-
     const query = queryString.parse(window.location.search)
 
     const [articles, setArticles] = useState([])
@@ -76,7 +76,7 @@ export const FilterableArticles = ({
     useEffect(() => {
         fetchArticles(query)
     }, [window.location.search])
-    
+
     return(
         <Outer>
             {!limit ?
@@ -105,7 +105,6 @@ export const FilterableArticles = ({
                     }
                 </>
             }
-            
         </Outer>
     )
 }
