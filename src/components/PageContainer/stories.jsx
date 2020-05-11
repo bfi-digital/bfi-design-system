@@ -386,6 +386,10 @@ export const ArticleFeatureExample = () =>
                     includeHighlight={false}
                     internalTitle="Other things to explore"
                 />
+
+                <AdvertisingContainer>
+                    <div style={{width: "1020px", height: "400px", background: "grey"}}></div>
+                </AdvertisingContainer>
             </MainContent>
         </Wrapper>
         <Footer
