@@ -3,7 +3,6 @@ import styled from "styled-components"
 import theme from "../_theme"
 import PropTypes from "prop-types"
 import { Headline } from "../Headline"
-import { Text } from "../Text"
 import { LinkSwitch as Link } from "../LinkSwitch"
 
 const Outer = styled.div`
@@ -135,10 +134,10 @@ export const FilmCardSingle = ({
                         {southbankUrl && <StyledLink to={southbankUrl}>At Southbank</StyledLink>}
                     </>
                     :
-                   <>{filmLink && <StyledLink to={filmLink}>Find out more</StyledLink>}</>
+                    <>{filmLink && <StyledLink to={filmLink}>Find out more</StyledLink>}</>
                 }
             </ContentLinks>
-       </Content>
+        </Content>
         {image225x225 &&
             <Image imageSrc={image225x225} />
         }

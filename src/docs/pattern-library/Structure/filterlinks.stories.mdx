@@ -1,0 +1,39 @@
+import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks'
+import { FilterLinks } from "../../../components/FilterLinks/index"
+
+<Meta title="Pattern Library|Structure/Filter Links" component={FilterLinks} />
+
+# FilterLinks
+ 
+
+
+## Examples
+
+<Preview>
+    <Story name="Normal">
+        <FilterLinks
+            links={[
+                {
+                    url: "#",
+                    label: "Example link"
+                },
+                {
+                    url: "#",
+                    label: "Where to stream"
+                },
+                {
+                    url: "#",
+                    label: "Where to begin"
+                },
+                {
+                    url: "#",
+                    label: "Five Things"
+                }
+            ]}
+        />
+    </Story>
+</Preview>
+
+## Props 
+
+<Props of={FilterLinks} />

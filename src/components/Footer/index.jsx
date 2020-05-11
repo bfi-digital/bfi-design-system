@@ -135,8 +135,8 @@ export const Footer = ({
                     <Menu key={menu.id}>
                         <Heading>{menu.title}</Heading>
                         {menu.children.map(menuItem =>
-                            <LinkContainer>
-                                <MenuItem key={menuItem.id} to={menuItem.url}>{menuItem.title}</MenuItem>    
+                            <LinkContainer key={menuItem.id}>
+                                <MenuItem to={menuItem.url}>{menuItem.title}</MenuItem>    
                             </LinkContainer>
                         )}
                     </Menu>

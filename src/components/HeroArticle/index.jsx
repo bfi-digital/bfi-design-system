@@ -87,7 +87,7 @@ HeroArticle.propTypes = {
     // The category of the article.
     category: PropTypes.string,
     // The link to the filtered list of this category.
-    category: PropTypes.string,
+    categoryLink: PropTypes.string,
     // The date the article was posted.
     date: PropTypes.string,
     // An array of the authors of this article, each author contains their name and url
