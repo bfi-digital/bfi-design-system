@@ -6,7 +6,7 @@ import theme from "../_theme"
 const Outer = styled.div`
     width: 100%;
     text-align: center;
-    margin: 25px 0;
+    margin-bottom: 25px;
 
     iframe {
         max-width: 620px;

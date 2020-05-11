@@ -8,7 +8,7 @@ import { LinkSwitch as Link } from "../LinkSwitch"
 const Outer = styled.div`
     background: ${theme.lightest};
     margin: 0 auto;
-    margin-top: 50px;
+    margin-bottom: 25px;
     padding: 15px;
     display: block;
     @media screen and (min-width: ${theme.s}){
