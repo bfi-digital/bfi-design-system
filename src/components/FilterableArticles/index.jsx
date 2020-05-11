@@ -48,7 +48,8 @@ export const FilterableArticles = ({
     filters,
     parameter,
     limit,
-    includeHighlight
+    includeHighlight,
+    internalTitle
 }) => {
     const query = queryString.parse(window.location.search)
 
@@ -89,8 +90,8 @@ export const FilterableArticles = ({
                         parameter={parameter}
                     />
                     {articles.length > 0 ?
-                        <ArticleGrid articles={articles} firstHighlighted={includeHighlight}>
-                            {(page < maxPages) && !limit && <CentredButton href="#" onClick={loadMore}>Load more</CentredButton>}
+                        <ArticleGrid articles={articles} firstHighlighted={includeHighlight} optionalTitle={internalTitle}>
+                            {(page < maxPages) && <CentredButton href="#" onClick={loadMore}>Load more</CentredButton>}
                         </ArticleGrid>
                         :
                         <ArticleGrid articles={false} />
@@ -99,7 +100,7 @@ export const FilterableArticles = ({
                 :
                 <>
                     {articles.length > 0 ? 
-                        <ArticleGrid articles={articles.slice(0,limit)} firstHighlighted={includeHighlight}>
+                        <ArticleGrid articles={articles.slice(0,limit)} firstHighlighted={includeHighlight} optionalTitle={internalTitle}>
                             {(page < maxPages) && !limit && <CentredButton href="#" onClick={loadMore}>Load more</CentredButton>}
                         </ArticleGrid>
                         :
@@ -119,7 +120,9 @@ FilterableArticles.propTypes = {
     // An optional number that can be used to disable the filters/pagination and just show a specific number og posts - this should only be used on specific pages such as landing page.
     limit: PropTypes.number,
     // An optional boolean to set if the first card is highlighted in the list. This defaults to true.
-    includeHighlight: PropTypes.bool
+    includeHighlight: PropTypes.bool,
+    // An optional title that will be included within the grey background
+    internalTitle: PropTypes.string
 }
 
 FilterableArticles.defaultProps = {

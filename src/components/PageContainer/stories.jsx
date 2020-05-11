@@ -363,10 +363,10 @@ export const ArticleFeatureExample = () =>
 
         <Wrapper>
             <MainContent>
-                <Headline level={2} text="Other things to explore" />
                 <FilterableArticles
                     limit={3}
                     includeHighlight={false}
+                    internalTitle="Other things to explore"
                 />
             </MainContent>
         </Wrapper>

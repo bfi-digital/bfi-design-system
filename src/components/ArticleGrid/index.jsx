@@ -18,6 +18,7 @@ const Outer = styled.div`
     h2 {
         margin-top: 0;
         margin-bottom: 25px;
+        text-align: center;
     }
     .articleCard {
         @media screen and (min-width: ${theme.s}){
