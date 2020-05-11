@@ -114,7 +114,8 @@ export const FilmCardSingle = ({
     year,
     listNumber,
     playerUrl,
-    southbankUrl
+    southbankUrl,
+    filmLink
 }) =>
     <Outer>
         {listNumber && <Number>{listNumber}</Number>}
@@ -127,9 +128,15 @@ export const FilmCardSingle = ({
                 {year && <span>{year}</span>}
             </Meta>
             <ContentLinks>
-                <p>Now showing</p>
-                {playerUrl && <StyledLink to={playerUrl}>On BFI Player</StyledLink>}
-                {southbankUrl && <StyledLink to={southbankUrl}>At Southbank</StyledLink>}
+                {playerUrl || southbankUrl ?
+                    <>
+                        <p>Now showing</p>
+                        {playerUrl && <StyledLink to={playerUrl}>On BFI Player</StyledLink>}
+                        {southbankUrl && <StyledLink to={southbankUrl}>At Southbank</StyledLink>}
+                    </>
+                    :
+                   <>{filmLink && <StyledLink to={filmLink}>Find out more</StyledLink>}</>
+                }
             </ContentLinks>
        </Content>
         {image225x225 &&
@@ -154,5 +161,7 @@ FilmCardSingle.propTypes = {
     // URL to view the content on player
     playerUrl: PropTypes.string,
     // URL to buy ticket on southbank
-    southbankUrl: PropTypes.string
+    southbankUrl: PropTypes.string,
+    // URL to link to the film page
+    filmLink: PropTypes.string
 }
