@@ -97,7 +97,7 @@ export const FilterableArticles = ({
                 :
                 <>
                     {articles.length > 0 ? 
-                        <ArticleGrid articles={articles.slice(0,8)} firstHighlighted>
+                        <ArticleGrid articles={articles.slice(0,limit)} firstHighlighted>
                             {(page < maxPages) && !limit && <CentredButton href="#" onClick={loadMore}>Load more</CentredButton>}
                         </ArticleGrid>
                         :
@@ -114,6 +114,6 @@ FilterableArticles.propTypes = {
     parameter: PropTypes.string,
     // Array of the filters - for a single filter taxonomy, this can just be a single option
     filters: PropTypes.array,
-    // An optional boolean that can be used to disable the filters and just show the first set of posts - this should only be used on the landing page.
-    limit: PropTypes.bool
+    // An optional number that can be used to disable the filters/pagination and just show a specific number og posts - this should only be used on specific pages such as landing page.
+    limit: PropTypes.number
 }
