@@ -193,6 +193,7 @@ export const Header = ({
                 </Inner>
             </Outer>
             {open && <MobilePanel navItems={navItems} />}
+            <div id="content-start"></div>
         </>
     )
 }
