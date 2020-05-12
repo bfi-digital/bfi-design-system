@@ -49,7 +49,8 @@ export const FilterableArticles = ({
     parameter,
     limit,
     includeHighlight,
-    internalTitle
+    internalTitle,
+    internalLink
 }) => {
     const query = queryString.parse(window.location.search)
 
@@ -90,7 +91,7 @@ export const FilterableArticles = ({
                         parameter={parameter}
                     />
                     {articles.length > 0 ?
-                        <ArticleGrid articles={articles} firstHighlighted={includeHighlight} optionalTitle={internalTitle}>
+                        <ArticleGrid articles={articles} firstHighlighted={includeHighlight} optionalTitle={internalTitle} optionalCTALink={internalLink}>
                             {(page < maxPages) && <CentredButton href="#" onClick={loadMore}>Load more</CentredButton>}
                         </ArticleGrid>
                         :
@@ -100,7 +101,7 @@ export const FilterableArticles = ({
                 :
                 <>
                     {articles.length > 0 ? 
-                        <ArticleGrid articles={articles.slice(0,limit)} firstHighlighted={includeHighlight} optionalTitle={internalTitle}>
+                        <ArticleGrid articles={articles.slice(0,limit)} firstHighlighted={includeHighlight} optionalTitle={internalTitle} optionalCTALink={internalLink}>
                             {(page < maxPages) && !limit && <CentredButton href="#" onClick={loadMore}>Load more</CentredButton>}
                         </ArticleGrid>
                         :
@@ -122,7 +123,9 @@ FilterableArticles.propTypes = {
     // An optional boolean to set if the first card is highlighted in the list. This defaults to true.
     includeHighlight: PropTypes.bool,
     // An optional title that will be included within the grey background
-    internalTitle: PropTypes.string
+    internalTitle: PropTypes.string,
+    // An optional link that will be used to add a link within the grey background - this should be used to send the user to all articles page
+    internalLink: PropTypes.string
 }
 
 FilterableArticles.defaultProps = {

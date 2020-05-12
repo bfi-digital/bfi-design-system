@@ -53,15 +53,7 @@ import { FilterableArticles } from "../../../components/FilterableArticles/index
     <Story name="Filtered by author">
         <>
             <p>This only works if the param `author=83f71749-a675-5ec0-8876-87e6487dc0c3` is also in the url</p>
-            <FilterableArticles
-                parameter="author"
-                filters={[
-                    {
-                        value: "83f71749-a675-5ec0-8876-87e6487dc0c3",
-                        label: "Isabel Stevens"
-                    }
-                ]}
-            />
+            <FilterableArticles parameter="author" />
         </>
     </Story>
 </Preview>

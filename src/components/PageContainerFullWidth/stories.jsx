@@ -173,28 +173,9 @@ export const discoveryPage = () =>
                         {
                             value: "10-great",
                             label: "10 Great"
-                        },
-                        {
-                            value: "where-to-stream",
-                            label: "Where to stream"
-                        },
-                        {
-                            value: "where-to-begin",
-                            label: "Where to begin"
-                        },
-                        {
-                            value: "five-things",
-                            label: "Five Things"
-                        },
-                        {
-                            value: "bfi-recommends",
-                            label: "BFI Recommends"
-                        },
-                        {
-                            value: "sight-and-sound",
-                            label: "Sight and Sound"
                         }
                     ]}
+                    internalLink="#"
                 />
                 
                 <Divider istransparent={true} />
