@@ -277,49 +277,49 @@ Array [
           className="sc-kPVwWT dUxurs"
         >
           <button
-            className="sc-kfGgVZ dZBFig"
+            className="sc-kfGgVZ fWgKBf"
             disabled={true}
             onClick={[Function]}
           >
                All
           </button>
           <button
-            className="sc-kfGgVZ dZBFig"
+            className="sc-kfGgVZ fWgKBf"
             disabled={false}
             onClick={[Function]}
           >
             10 Great
           </button>
           <button
-            className="sc-kfGgVZ dZBFig"
+            className="sc-kfGgVZ fWgKBf"
             disabled={false}
             onClick={[Function]}
           >
             Where to stream
           </button>
           <button
-            className="sc-kfGgVZ dZBFig"
+            className="sc-kfGgVZ fWgKBf"
             disabled={false}
             onClick={[Function]}
           >
             Where to begin
           </button>
           <button
-            className="sc-kfGgVZ dZBFig"
+            className="sc-kfGgVZ fWgKBf"
             disabled={false}
             onClick={[Function]}
           >
             Five Things
           </button>
           <button
-            className="sc-kfGgVZ dZBFig"
+            className="sc-kfGgVZ fWgKBf"
             disabled={false}
             onClick={[Function]}
           >
             BFI Recommends
           </button>
           <button
-            className="sc-kfGgVZ dZBFig"
+            className="sc-kfGgVZ fWgKBf"
             disabled={false}
             onClick={[Function]}
           >
@@ -18150,49 +18150,49 @@ exports[`Storyshots 2 All Components/Filterable Articles Normal 1`] = `
     className="sc-kPVwWT dUxurs"
   >
     <button
-      className="sc-kfGgVZ dZBFig"
+      className="sc-kfGgVZ fWgKBf"
       disabled={true}
       onClick={[Function]}
     >
          All
     </button>
     <button
-      className="sc-kfGgVZ dZBFig"
+      className="sc-kfGgVZ fWgKBf"
       disabled={false}
       onClick={[Function]}
     >
       10 Great
     </button>
     <button
-      className="sc-kfGgVZ dZBFig"
+      className="sc-kfGgVZ fWgKBf"
       disabled={false}
       onClick={[Function]}
     >
       Where to stream
     </button>
     <button
-      className="sc-kfGgVZ dZBFig"
+      className="sc-kfGgVZ fWgKBf"
       disabled={false}
       onClick={[Function]}
     >
       Where to begin
     </button>
     <button
-      className="sc-kfGgVZ dZBFig"
+      className="sc-kfGgVZ fWgKBf"
       disabled={false}
       onClick={[Function]}
     >
       Five Things
     </button>
     <button
-      className="sc-kfGgVZ dZBFig"
+      className="sc-kfGgVZ fWgKBf"
       disabled={false}
       onClick={[Function]}
     >
       BFI Recommends
     </button>
     <button
-      className="sc-kfGgVZ dZBFig"
+      className="sc-kfGgVZ fWgKBf"
       disabled={false}
       onClick={[Function]}
     >
