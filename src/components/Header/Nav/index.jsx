@@ -63,11 +63,6 @@ const Item = styled.li`
     @media screen and (min-width: ${theme.l}){
         font-size: 1rem;
     }
-    &:first-child {
-        a {
-            margin-left: -15px;
-        }
-    }
 `
 
 const ChildBar = styled.div`
@@ -90,7 +85,7 @@ const ChildBar = styled.div`
     }
 `
 
-const ChildList = styled.ul`
+const ChildList = styled.div`
     padding: 0px ${theme.horizontalPadding};
     margin: 0 auto;
     width: 100%;
@@ -108,28 +103,59 @@ const ChildList = styled.ul`
 `
 const InnerContainer = styled.div`
     max-width: ${theme.l};
+    padding: 0 15px;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 `
+const Column = styled.div`
+    width: calc(33% - 50px);
+    margin-right 50px;
 
-
-const ChildItem = styled.li`
-    display: inline-block;
-    padding: 0px;
-    @media screen and (min-width: ${theme.l}){
-        font-size: 1rem;
+    &.row_2 {
+        a:nth-child(2n) {
+            &:after {
+                display: none;
+            }
+        }
+    }
+    &.row_3 {
+        a:nth-child(3n) {
+            &:after {
+                display: none;
+            }
+        }
     }
 `
-
 const ChildLink = styled(Link)`
     color: ${theme.black};
     text-decoration: none;
-    padding: 10px 13px;
-    display: inline-block;
+    padding: 10px 15px;
+    width: 100%;
+    min-height: 75px;
+    display: table;
+    position: relative;
+
+    span {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    &:after {
+        content: "";
+        width: calc(100% - 30px);
+        height: 1px;
+        background: ${theme.darkGrey};
+        bottom: 0;
+        left: 15px;
+        position: absolute;
+    }
     &:hover {
         color: ${theme.black} !important;
     }
     @media screen and (min-width: ${theme.l}){
-        padding: 15px 17px;
+        padding: 15px 15px;
+        font-size: 1rem;
     }
 `
 
@@ -139,47 +165,61 @@ const Nav = ({
     setSelected,
     isOverlaid,
     isSticky
-}) =>
+}) => 
     <Outer>
         <List>
-            {navItems.map((navItem, i) =>
-                <Item 
-                    key={i}
-                >
-                    <ItemLink
-                        onMouseEnter={() => setSelected(i)}
-                        onFocus={() => setSelected(i)}
-                        aria-haspopup="true"
-                        to={navItem.url} 
-                        external={navItem.external}
-                        active={navItem.active}
-                        hovered={selected === i}
-                        // role="menuitem"
-                        isWhite={isOverlaid}
-                        isSticky={isSticky}
+            {navItems.map((navItem, i) => {
+                const size = navItem.children.length > 6 ? 3 : 2
+                return(
+                    <Item 
+                        key={i}
                     >
-                        {navItem.title}
-                    </ItemLink>
-                    {selected === i &&
-                        <ChildBar>
-                            <ChildList id={i}>
-                                <InnerContainer>
-                                    {navItem.children.map((child, j) =>
-                                        <ChildItem
-                                            key={j}
-                                            // role="menuitem"
-                                        >
-                                            <ChildLink to={child.url}>
-                                                {child.title}
-                                            </ChildLink>
-                                        </ChildItem>
-                                    )}
-                                </InnerContainer>
-                            </ChildList>
-                        </ChildBar>
-                    }
-                </Item>
-            )}
+                        <ItemLink
+                            onMouseEnter={() => setSelected(i)}
+                            onFocus={() => setSelected(i)}
+                            aria-haspopup="true"
+                            to={navItem.url} 
+                            external={navItem.external}
+                            active={navItem.active}
+                            hovered={selected === i}
+                            // role="menuitem"
+                            isWhite={isOverlaid}
+                            isSticky={isSticky}
+                        >
+                            {navItem.title}
+                        </ItemLink>
+                        {selected === i &&
+                            <ChildBar>
+                                <ChildList id={i}>
+                                    <InnerContainer>
+                                        <Column className={"row_"+size}>
+                                            {navItem.children.slice(0, size).map((child, j) =>
+                                                <ChildLink key={j} to={child.url}>
+                                                    <span>{child.title}</span>
+                                                </ChildLink>
+                                            )}
+                                        </Column>
+                                        <Column className={"row_"+size}>
+                                            {navItem.children.slice(size, (size*2)).map((child, j) =>
+                                                <ChildLink key={j} to={child.url}>
+                                                    <span>{child.title}</span>
+                                                </ChildLink>
+                                            )}
+                                        </Column>
+                                        <Column className={"row_"+size}>
+                                            {navItem.children.slice((size*2), (size*3)).map((child, j) =>
+                                                <ChildLink key={j} to={child.url}>
+                                                    <span>{child.title}</span>
+                                                </ChildLink>
+                                            )}
+                                        </Column>
+                                    </InnerContainer>
+                                </ChildList>
+                            </ChildBar>
+                        }
+                    </Item>
+                )
+            })}
         </List>
     </Outer>
 

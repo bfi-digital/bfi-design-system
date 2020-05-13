@@ -13,22 +13,37 @@ export default [
             },
             {
                 id: 2,
-                title: "BFI Cinemas",
+                title: "BFI Southbank",
                 url: "/"
             },
             {
                 id: 3,
-                title: "Sight & Sound",
+                title: "BFI IMAX",
                 url: "/"
             },
             {
                 id: 4,
-                title: "BFI National Archive",
+                title: "Festivals",
                 url: "/"
             },
             {
                 id: 5,
-                title: "Seasons & Releases",
+                title: "Read, Watch & Listen",
+                url: "/"
+            },
+            {
+                id: 6,
+                title: "Sight & Sound",
+                url: "/"
+            },
+            {
+                id: 7,
+                title: "Seasons & Collections",
+                url: "/"
+            },
+            {
+                id: 8,
+                title: "BFI National Archive",
                 url: "/"
             }
         ]
@@ -39,22 +54,43 @@ export default [
         children: [
             {
                 id: 1,
-                title: "Get funding",
-                url: "/"
+                title: "How We Support the Film Industry",
+                url: "/watch/bfi-player",
+                external: true
             },
             {
                 id: 2,
-                title: "Progress your career",
+                title: "Policies & Strategy",
                 url: "/"
             },
             {
                 id: 3,
-                title: "Get tax relief",
+                title: "Get Funding & Support",
                 url: "/"
             },
             {
                 id: 4,
-                title: "Understand the film industry",
+                title: "Apply for Tax Relief & British Certification",
+                url: "/"
+            },
+            {
+                id: 5,
+                title: "Search for Lottery awards",
+                url: "/"
+            },
+            {
+                id: 6,
+                title: "Film Industry Statistics & Insights",
+                url: "/"
+            },
+            {
+                id: 7,
+                title: "BFI Distribution",
+                url: "/"
+            },
+            {
+                id: 8,
+                title: "BFI Film Audience Network",
                 url: "/"
             }
         ]
@@ -65,27 +101,32 @@ export default [
         children:   [
             {
                 id: 1,
-                title: "Education events",
+                title: "How We Support Education & Skills Development",
                 url: "/"
             },
             {
                 id: 2,
-                title: "Resources to teach",
+                title: "Policies & Strategy",
                 url: "/"
             },
             {
                 id: 3,
-                title: "Resources to learn",
+                title: "Opportunities for Young Creatives",
                 url: "/"
             },
             {
                 id: 4,
-                title: "Opportunities for young filmmakers",
+                title: "Events & activities for families",
                 url: "/"
             },
             {
                 id: 5,
-                title: "BFI Policy",
+                title: "Courses, conferences & resources for teachers",
+                url: "/"
+            },
+            {
+                id: 5,
+                title: "Use Reuben Library for your research",
                 url: "/"
             }
         ]  
