@@ -85,9 +85,16 @@ const Outer = styled.div`
         width: 750px; 
         border-collapse: collapse; 
         margin: 50px auto;
+
+        caption {
+            color: ${theme.darkGrey};
+            margin-bottom: 5px;
+            width: 100%;
+            display: block;
+        }
     }
     
-    tr:nth-of-type(odd) { 
+    tr:nth-of-type(even) { 
         background: ${theme.lightGrey}; 
     }
     
@@ -96,6 +103,9 @@ const Outer = styled.div`
         border: 1px solid ${theme.grey}; 
         text-align: left; 
         font-size: 18px;
+    }
+    th {
+        background: ${theme.lightest}; 
     }
     
 
