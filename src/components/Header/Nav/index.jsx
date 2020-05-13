@@ -81,7 +81,6 @@ const ChildBar = styled.div`
     }
     margin: 0 auto;
     position: absolute;
-    max-width: calc(${theme.xl} + 125px);
     top: 61px;
     left: 0;
     width: 100%;
@@ -96,6 +95,7 @@ const ChildList = styled.ul`
     margin: 0 auto;
     width: 100%;
     background: ${theme.lightest};
+    max-width: calc(${theme.xl} + 125px);
 
     &:hover a{
         color: ${theme.darkGrey}
@@ -103,11 +103,6 @@ const ChildList = styled.ul`
     li {
         a {
             margin-left: 0px !important;
-        }
-    }
-    li:first-child {
-        a {
-            margin-left: -15px !important;
         }
     }
 `
