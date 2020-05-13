@@ -117,13 +117,21 @@ export const Hero = ({
 
 
 Hero.propTypes = {
-    // Urls to the image for the hero. 
+    /** 
+    * Urls to the image for the hero. 
+    **/
     image1920x1080: PropTypes.string,
-    // The text for the title which will be used as the H1 for this page/post. Optional. You might choose not to give this and pass children in instead
+    /** 
+    * The text for the title which will be used as the H1 for this page/post. Optional. You might choose not to give this and pass children in instead
+    **/
     headline: PropTypes.string,
-    // A boolean to tell the hero whether it has a header over the top of it, so that content in the hero never overlaps the header. Defaults to false.
+    /** 
+    * A boolean to tell the hero whether it has a header over the top of it, so that content in the hero never overlaps the header. Defaults to false.
+    **/
     withHeader: PropTypes.bool,
-    // A string giving the copyright attribution of the background image
+    /** 
+    * A string giving the copyright attribution of the background image
+    **/
     copyright: PropTypes.string
     
 }

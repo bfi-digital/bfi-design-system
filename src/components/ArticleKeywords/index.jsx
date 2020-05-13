@@ -46,6 +46,8 @@ export const ArticleKeywords = ({
 
 
 ArticleKeywords.propTypes = {
-    // An aray of the keywords, each with a label and url
+    /** 
+    * An aray of the keywords, each with a label and url
+    **/
     keywords: PropTypes.array,
 }

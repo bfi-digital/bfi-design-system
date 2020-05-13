@@ -104,17 +104,27 @@ export const TabPanel = ({
     </section>
 
 Tab.propTypes = {
-    // The value of the currently open tab
+    /** 
+    * The value of the currently open tab
+    **/
     openTab: PropTypes.number,
-    // A function to update the currently open tab, such as that provided by the useState hook
+    /** 
+    * A function to update the currently open tab, such as that provided by the useState hook
+    **/
     setOpenTab: PropTypes.func,
-    // This tab's identity, to associate links with panels
+    /** 
+    * This tab's identity, to associate links with panels
+    **/
     i: PropTypes.number
 }
 
 TabPanel.propTypes = {
-    // The value of the currently open tab
+    /** 
+    * The value of the currently open tab
+    **/
     openTab: PropTypes.number,
-    // This tab panels identity, to associate panels with links
+    /** 
+    * This tab panels identity, to associate panels with links
+    **/
     i: PropTypes.number
 }

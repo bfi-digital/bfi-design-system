@@ -254,7 +254,7 @@ export const ImageGallery = ({
 
 ImageGallery.propTypes = {
     /** 
-     *
+    *
 	 * Provide an array of at least one object, containing keys for the image URLs and alt text
 	 **/
     images: PropTypes.array,

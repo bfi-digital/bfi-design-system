@@ -78,22 +78,40 @@ export const HeroArticle = ({
 
 
 HeroArticle.propTypes = {
-    // Urls to the image for the article hero. 
+    /** 
+    * Urls to the image for the article hero. 
+    **/
     image1920x1080: PropTypes.string,
-    // Alt text for hero image.
+    /** 
+    * Alt text for hero image.
+    **/
     imageAltText: PropTypes.string,
-    // Optional copyright text for the hero image.
+    /** 
+    * Optional copyright text for the hero image.
+    **/
     imageCopyright: PropTypes.string,
-    // The text for the title which will be used as the H1 for this page/post
+    /** 
+    * The text for the title which will be used as the H1 for this page/post
+    **/
     title: PropTypes.string,
-    // A summary of the article.
+    /** 
+    * A summary of the article.
+    **/
     standfirst: PropTypes.string,
-    // The category of the article.
+    /** 
+    * The category of the article.
+    **/
     category: PropTypes.string,
-    // The link to the filtered list of this category.
+    /** 
+    * The link to the filtered list of this category.
+    **/
     categoryLink: PropTypes.string,
-    // The date the article was posted.
+    /** 
+    * The date the article was posted.
+    **/
     date: PropTypes.string,
-    // An array of the authors of this article, each author contains their name and url
+    /** 
+    * An array of the authors of this article, each author contains their name and url
+    **/
     authors: PropTypes.array,
 }

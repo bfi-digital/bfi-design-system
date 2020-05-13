@@ -39,8 +39,12 @@ export const FilmShowingGrid = ({
     </>
 
 FilmShowingGrid.propTypes = {
-    // Optional title for the grid of film showings
+    /** 
+    * Optional title for the grid of film showings
+    **/
     title: PropTypes.string,
-    // Array of all showings
+    /** 
+    * Array of all showings
+    **/
     showings: PropTypes.array
 }
