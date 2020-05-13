@@ -5,6 +5,7 @@ import styled from "styled-components"
 
 const Outer = styled.nav`
     display: none;
+
     @media screen and (min-width: ${theme.m}){
         display: block;
         margin-right: auto;
@@ -78,8 +79,9 @@ const ChildBar = styled.div`
             opacity: 1;
         }
     }
+    margin: 0 auto;
     position: absolute;
-    background: ${theme.lightest};
+    max-width: calc(${theme.xl} + 125px);
     top: 61px;
     left: 0;
     width: 100%;
@@ -91,9 +93,10 @@ const ChildBar = styled.div`
 
 const ChildList = styled.ul`
     padding: 0px ${theme.horizontalPadding};
-    max-width:  ${theme.l};
     margin: 0 auto;
     width: 100%;
+    background: ${theme.lightest};
+
     &:hover a{
         color: ${theme.darkGrey}
     }
@@ -108,6 +111,11 @@ const ChildList = styled.ul`
         }
     }
 `
+const InnerContainer = styled.div`
+    max-width: ${theme.l};
+    margin: 0 auto;
+`
+
 
 const ChildItem = styled.li`
     display: inline-block;
@@ -160,16 +168,18 @@ const Nav = ({
                     {selected === i &&
                         <ChildBar>
                             <ChildList id={i}>
-                                {navItem.children.map((child, j) =>
-                                    <ChildItem
-                                        key={j}
-                                        // role="menuitem"
-                                    >
-                                        <ChildLink to={child.url}>
-                                            {child.title}
-                                        </ChildLink>
-                                    </ChildItem>
-                                )}
+                                <InnerContainer>
+                                    {navItem.children.map((child, j) =>
+                                        <ChildItem
+                                            key={j}
+                                            // role="menuitem"
+                                        >
+                                            <ChildLink to={child.url}>
+                                                {child.title}
+                                            </ChildLink>
+                                        </ChildItem>
+                                    )}
+                                </InnerContainer>
                             </ChildList>
                         </ChildBar>
                     }
