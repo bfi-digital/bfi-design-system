@@ -43,7 +43,7 @@ const Button = styled.button`
     border: none;
     display: flex;
     margin-bottom: 10px;
-    background: ${theme.primary};
+    background: ${theme.light};
     cursor: pointer;
     padding: 0px;
     width: 100%;
