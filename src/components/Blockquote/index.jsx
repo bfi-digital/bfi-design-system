@@ -13,9 +13,9 @@ export const Outer = styled.blockquote`
 
 const Quote = styled.q`
     color: ${props => colorSchemes[props.colorScheme].text};
-    font-family: "Archivo Black";
+    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, "Open Sans", Arial, "Lucida Grande", sans-serif; 
     display: block;
-    font-weight: 400;
+    font-weight: 800;
     font-size: 1.2rem;
     line-height: 1.4;
 
@@ -31,7 +31,7 @@ const Citation = styled.cite`
     color: ${props => colorSchemes[props.colorScheme].text};
     display: block;
     font-style: normal;
-    margin-top: 15px;
+    margin-top: 10px;
     line-height: 1.5;
     font-size: 1rem;
     @media screen and (min-width: ${theme.l}){
