@@ -74,10 +74,16 @@ export const FilmShowing = ({
     </Outer>
 
 FilmShowing.propTypes = {
-    // Name of the film
+    /** 
+    * Name of the film
+    **/
     name: PropTypes.string,
-    // Date of this showing
+    /** 
+    * Date of this showing
+    **/
     date: PropTypes.string,
-    // Array of titles and urls for showing times
+    /** 
+    * Array of titles and urls for showing times
+    **/
     times: PropTypes.array
 }

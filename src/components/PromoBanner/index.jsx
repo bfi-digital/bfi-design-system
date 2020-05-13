@@ -206,24 +206,44 @@ export const PromoBanner = ({
     </Outer>
 
 PromoBanner.propTypes = {
-    // Headline of the banner
+    /** 
+    * Headline of the banner
+    **/
     headline: PropTypes.string,
-    // Short text description for the banner
+    /** 
+    * Short text description for the banner
+    **/
     description: PropTypes.string,
-    // Object containing a url, title and external key for the call to action button. Optional
+    /** 
+    * Object containing a url, title and external key for the call to action button. Optional
+    **/
     callToAction: PropTypes.object,
-    // Source URL for the image, any size
+    /** 
+    * Source URL for the image, any size
+    **/
     image: PropTypes.string,
-    // By default, image is on the right. Say true to flip it. Optional
+    /** 
+    * By default, image is on the right. Say true to flip it. Optional
+    **/
     reversed: PropTypes.bool,
-    // A number which selects the colour scheme of the page links slice, dependant on the pillar the page/post is within
+    /** 
+    * A number which selects the colour scheme of the page links slice, dependant on the pillar the page/post is within
+    **/
     colorScheme: PropTypes.number,
-    // Pass in a colour to override the colour scheme's background color. Optional
+    /** 
+    * Pass in a colour to override the colour scheme's background color. Optional
+    **/
     backgroundColor: PropTypes.string,    
-    // Source URL for optional second image, any size
+    /** 
+    * Source URL for optional second image, any size
+    **/
     secondImage: PropTypes.string,
-    // Alt text for opitonal second image
+    /** 
+    * Alt text for opitonal second image
+    **/
     secondImageAltText: PropTypes.string,
-    // Boolean for whether link is external. Default is false
+    /** 
+    * Boolean for whether link is external. Default is false
+    **/
     external: PropTypes.external
 }

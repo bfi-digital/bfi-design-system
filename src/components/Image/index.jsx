@@ -213,17 +213,29 @@ export const Image = ({
 }
 
 Image.propTypes = {
-    // The source URL of the image
+    /** 
+    * The source URL of the image
+    **/
     src: PropTypes.string,
-    // Alt-text string for the image.
+    /** 
+    * Alt-text string for the image.
+    **/
     alt: PropTypes.string,
-    // Which side should the image be on. String. False by default. Say "left" or "right"
+    /** 
+    * Which side should the image be on. String. False by default. Say "left" or "right"
+    **/
     side: PropTypes.string,
-    // A visible caption for the image. Optional
+    /** 
+    * A visible caption for the image. Optional
+    **/
     caption: PropTypes.string,
-    // A copyright for the image. Optional
+    /** 
+    * A copyright for the image. Optional
+    **/
     copyright: PropTypes.string,
-    // Say whether the images should be clickable, leading to a light box. True by default
+    /** 
+    * Say whether the images should be clickable, leading to a light box. True by default
+    **/
     isClickable: PropTypes.bool
 }
 

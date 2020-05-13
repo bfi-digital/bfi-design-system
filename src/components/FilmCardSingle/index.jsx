@@ -145,22 +145,40 @@ export const FilmCardSingle = ({
 
 
 FilmCardSingle.propTypes = {
-    // Url to the image for the article hero
+    /** 
+	 * Url to the image for the article hero
+    **/
     image225x225: PropTypes.string,
-    // Content title 
+    /** 
+	 * Content title 
+    **/
     title: PropTypes.string,
-    // The type of content
+    /** 
+	 * The type of content
+    **/
     type: PropTypes.string,
-    // Director of content
+    /** 
+	 * Director of content
+    **/
     director: PropTypes.string,
-    // Content releae year
+    /** 
+	 * Content releae year
+    **/
     year: PropTypes.string,
-    // An optional number for use if this card is being used in a list
+    /** 
+	 * An optional number for use if this card is being used in a list
+    **/
     listNumber: PropTypes.string,
-    // URL to view the content on player
+    /** 
+	 * URL to view the content on player
+    **/
     playerUrl: PropTypes.string,
-    // URL to buy ticket on southbank
+    /** 
+	 * URL to buy ticket on southbank
+    **/
     southbankUrl: PropTypes.string,
-    // URL to link to the film page
+    /** 
+	 * URL to link to the film page
+    **/
     filmLink: PropTypes.string
 }

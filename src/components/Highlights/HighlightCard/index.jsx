@@ -82,18 +82,32 @@ export const HighlightCard = ({
     </Outer>
 
 HighlightCard.propTypes = {
-    // Image source
+    /** 
+    * Image source
+    **/
     image480x320: PropTypes.string,
-    // Alternative text for the image
+    /** 
+    * Alternative text for the image
+    **/
     imageAltText: PropTypes.string,
-    // Small text appearing above the title
+    /** 
+    * Small text appearing above the title
+    **/
     caption: PropTypes.string,
-    // Biggest text in the box
+    /** 
+    * Biggest text in the box
+    **/
     title: PropTypes.string,
-    // Short paragraph about the thing
+    /** 
+    * Short paragraph about the thing
+    **/
     description: PropTypes.string,
-    // URL for the button to link to 
+    /** 
+    * URL for the button to link to 
+    **/
     callToActionUrl: PropTypes.string,
-    // Boolean for whether link is external. Default is false
+    /** 
+    * Boolean for whether link is external. Default is false
+    **/
     external: PropTypes.external
 }

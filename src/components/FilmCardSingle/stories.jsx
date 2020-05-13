@@ -35,7 +35,6 @@ export const filmNotInList = () =>
             type="Film"
             director="Jean-Luc Godard"
             year="1963"
-            listNumber="1"
             playerUrl="https://player.bfi.org.uk/subscription/film/watch-le-mepris-1963-online"
         />
     </div>

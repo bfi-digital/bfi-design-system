@@ -20,6 +20,8 @@ export const Divider = ({
 
 
 Divider.propTypes = {
-    // Optionally hide the divider so it creates a space between content without being shown
+    /** 
+    * Optionally hide the divider so it creates a space between content without being shown
+    **/
     istransparent: PropTypes.bool,
 }

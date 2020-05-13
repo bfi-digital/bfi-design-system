@@ -1,0 +1,94 @@
+import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+import { FilmCardSingle } from "../../../components/FilmCardSingle/index"
+
+<Meta title="Pattern Library|Slices/Film Card Single" component={FilmCardSingle} />
+
+# Film Card Single
+ 
+
+
+
+## Props
+
+<Props of={FilmCardSingle} />
+
+
+ 
+## Examples
+
+<Preview>
+    <Story name="Film in list">
+        <div style={{
+            padding: "5px",
+            maxWidth: "1000px"
+        }}>
+            <FilmCardSingle 
+                image225x225="https://player.bfi.org.uk/sites/default/files/styles/landscape_1440x810/public/hero-images/La-Dolce-vita-1.jpg"
+                title="Le Mépris"
+                type="Film"
+                director="Jean-Luc Godard"
+                year="1963"
+                listNumber="1"
+                playerUrl="https://player.bfi.org.uk/subscription/film/watch-le-mepris-1963-online"
+                southbankUrl="https://player.bfi.org.uk/subscription/film/watch-le-mepris-1963-online"
+            />            
+        </div>
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="Film not in list">
+        <div style={{
+            padding: "5px",
+            maxWidth: "1000px"
+        }}>
+            <FilmCardSingle 
+                image225x225="https://player.bfi.org.uk/sites/default/files/styles/landscape_1440x810/public/hero-images/La-Dolce-vita-1.jpg"
+                title="Le Mépris"
+                type="Film"
+                director="Jean-Luc Godard"
+                year="1963"
+                playerUrl="https://player.bfi.org.uk/subscription/film/watch-le-mepris-1963-online"
+            />          
+        </div>
+    </Story>
+</Preview>
+
+
+<Preview>
+    <Story name="Film no links">
+        <div style={{
+            padding: "5px",
+            maxWidth: "1000px"
+        }}>
+            <FilmCardSingle 
+                image225x225="https://player.bfi.org.uk/sites/default/files/styles/landscape_1440x810/public/hero-images/La-Dolce-vita-1.jpg"
+                title="Le Mépris"
+                type="Film"
+                director="Jean-Luc Godard"
+                year="1963"
+                filmLink="https://player.bfi.org.uk/subscription/film/watch-le-mepris-1963-online"
+            />       
+        </div>
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="Film in list high number">
+        <div style={{
+            padding: "5px",
+            maxWidth: "1000px"
+        }}>
+            <FilmCardSingle 
+                image225x225="https://player.bfi.org.uk/sites/default/files/styles/landscape_1440x810/public/hero-images/La-Dolce-vita-1.jpg"
+                title="Le Mépris"
+                type="Film"
+                director="Jean-Luc Godard"
+                year="1963"
+                listNumber="100"
+                filmLink="https://player.bfi.org.uk/subscription/film/watch-le-mepris-1963-online"
+                playerUrl="https://player.bfi.org.uk/subscription/film/watch-le-mepris-1963-online"
+                southbankUrl="https://player.bfi.org.uk/subscription/film/watch-le-mepris-1963-online"            />       
+        </div>
+    </Story>
+</Preview>

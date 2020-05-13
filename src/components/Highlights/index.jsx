@@ -118,14 +118,24 @@ export const Highlights = ({
 }
 
 Highlights.propTypes = {
-    // Object with keys for the full-width highlight on the first tab
+    /** 
+    * Object with keys for the full-width highlight on the first tab
+    **/
     highlight: PropTypes.object,
-    // Object with keys for the tall highlight on the second tab
+    /** 
+    * Object with keys for the tall highlight on the second tab
+    **/
     todayHighlight: PropTypes.object,
-    // Array of objects with keys for each film, its date and an array of showtime objects
+    /** 
+    * Array of objects with keys for each film, its date and an array of showtime objects
+    **/
     todayShowings: PropTypes.array,
-    // Object with keys for the tall highlight on the third tab
+    /** 
+    * Object with keys for the tall highlight on the third tab
+    **/
     weekHighlight: PropTypes.object,
-    // Array of objects with keys for each film, its date and an array of showtime objects
+    /** 
+    * Array of objects with keys for each film, its date and an array of showtime objects
+    **/
     weekShowings: PropTypes.array
 }

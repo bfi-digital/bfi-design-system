@@ -114,17 +114,29 @@ export const FilterableArticles = ({
 }
 
 FilterableArticles.propTypes = {
-    // The taxonomy of what will be filtered, for example 'category' or 'author'
+    /** 
+    * The taxonomy of what will be filtered, for example 'category' or 'author'
+    **/
     parameter: PropTypes.string,
-    // Array of the filters - for a single filter taxonomy, this can just be a single option
+    /** 
+    * Array of the filters - for a single filter taxonomy, this can just be a single option
+    **/
     filters: PropTypes.array,
-    // An optional number that can be used to disable the filters/pagination and just show a specific number og posts - this should only be used on specific pages such as landing page.
+    /** 
+    * An optional number that can be used to disable the filters/pagination and just show a specific number og posts - this should only be used on specific pages such as landing page.
+    **/
     limit: PropTypes.number,
-    // An optional boolean to set if the first card is highlighted in the list. This defaults to true.
+    /** 
+    * An optional boolean to set if the first card is highlighted in the list. This defaults to true.
+    **/
     includeHighlight: PropTypes.bool,
-    // An optional title that will be included within the grey background
+    /** 
+    * An optional title that will be included within the grey background
+    **/
     internalTitle: PropTypes.string,
-    // An optional link that will be used to add a link within the grey background - this should be used to send the user to all articles page
+    /** 
+    * An optional link that will be used to add a link within the grey background - this should be used to send the user to all articles page
+    **/
     internalLink: PropTypes.string
 }
 
