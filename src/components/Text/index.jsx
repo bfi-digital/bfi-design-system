@@ -85,12 +85,18 @@ const Outer = styled.div`
         width: 750px; 
         border-collapse: collapse; 
         margin: 50px auto;
+        max-width: 100%;
+        overflow: scroll;
 
         caption {
             color: ${theme.darkGrey};
             margin-bottom: 5px;
-            width: 100%;
-            display: block;
+        }
+        @media only screen and (max-width: ${theme.m}){
+            caption {
+                width: 100%;
+                display: block;
+            }
         }
     }
     
@@ -109,7 +115,7 @@ const Outer = styled.div`
     }
     
 
-    @media only screen and (max-width: ${theme.l}){
+    @media only screen and (max-width: ${theme.m}){
         table { 
             width: 100%; 
         }
