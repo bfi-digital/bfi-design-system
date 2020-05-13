@@ -1,7 +1,7 @@
 import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
 import { HeroArticle } from "../../../components/HeroArticle/index"
 
-<Meta title="Pattern Library|Structure/HeroArticle" component={HeroArticle} />
+<Meta title="Pattern Library|Structure/Hero Article" component={HeroArticle} />
 
 # Article Hero 
 
@@ -79,8 +79,6 @@ import { HeroArticle } from "../../../components/HeroArticle/index"
 <Preview>
     <Story name="Recommends example">
         <HeroArticle 
-            image1920x1080="https://bfi-prototype.netlify.com/static/media/watch-banner.b01324c4.jpg"
-            imageAltText="Alt text for the image"
             title="BFI Recommends: Carol"
             standfirst="The perfect adaptation: Todd Haynes’ exquisite film of Patricia Highsmith’s novel The Price of Salt is the latest in our daily series of recommendations, chosen by Emma Smart."
             category="BFI Recommends"
@@ -91,6 +89,53 @@ import { HeroArticle } from "../../../components/HeroArticle/index"
                     url: "#"
                 }
             ]}
+            brand="sight-and-sound"
+        />
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="Sight &amp; Sound Feature example">
+        <HeroArticle 
+            image1920x1080="https://bfi-prototype.netlify.com/static/media/watch-banner.b01324c4.jpg"
+            imageAltText="Alt text for the image"
+            imageCopyright="HELP MUSICIANS, directed by Thomas Guthrie"
+            title="Britain on Lockdown: How online videos have shaped the crisis"
+            standfirst="As the BFI National Archive calls on the British public to help map the digital video response to coronavirus across the UK, our curators begin a regular new series highlighting the online videos that have made an impact during the lockdown period."
+            category="Article category"
+            type="Feature"
+            date="28 April 2020"
+            authors={[
+                {
+                    name: "Ros Cranston",
+                    url: "#"
+                },
+                {
+                    name: "William Fowler",
+                    url: "#"
+                },
+                {
+                    name: "Steve Foxon",
+                    url: "#"
+                },
+                {
+                    name: "Will Massa",
+                    url: "#"
+                },
+                {
+                    name: "Patrick Russell",
+                    url: "#"
+                },
+                {
+                    name: "Jez Stewart",
+                    url: "#"
+                },
+                {
+                    name: "James Taylor",
+                    url: "#"
+                }
+            ]}
+            brand="sight-and-sound"
         />
     </Story>
 </Preview>

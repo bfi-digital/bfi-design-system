@@ -8,6 +8,8 @@ import { Tag } from "../Tag"
 import { Image } from "../Image"
 import { Text } from "../Text"
 import { LinkSwitch as Link } from "../LinkSwitch"
+import SandSWhite from "./s-and-s-white.png"
+import SandSBlack from "./s-and-s-black.png"
 
 const Outer = styled.div`
     margin: 0 auto;
@@ -31,6 +33,25 @@ const LowerContent = styled.div`
         margin-top: 0;
     }
 `
+const ImageContainer = styled.div`
+    position: relative;
+`
+const BrandLogo = styled.div`
+
+    &.with_image {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+    &.without_image {
+        text-align: center;
+    }
+    
+    img {
+        width: 400px;
+        height: auto;
+    }
+`
 export const HeroArticle = ({
     image1920x1080,
     imageAltText,
@@ -40,7 +61,8 @@ export const HeroArticle = ({
     category,
     categoryLink,
     date,
-    authors
+    authors,
+    brand
 }) =>
     <Outer>
         <Meta>
@@ -67,13 +89,18 @@ export const HeroArticle = ({
                 </Text>
             </LowerContent>
         </Meta>
-        {image1920x1080 &&
-            <Image
-                alt={imageAltText}
-                src={image1920x1080}
-                copyright={imageCopyright}
-            />
-        }
+        <ImageContainer>
+            {image1920x1080 &&
+                <Image
+                    alt={imageAltText}
+                    src={image1920x1080}
+                    copyright={imageCopyright}
+                />
+            }
+            {brand === "sight-and-sound" &&
+                <BrandLogo className={image1920x1080 ? "with_image" : "without_image"}><img src={image1920x1080 ? SandSWhite : SandSBlack} alt={brand} /></BrandLogo>
+            }
+        </ImageContainer>
     </Outer>
 
 
@@ -114,4 +141,8 @@ HeroArticle.propTypes = {
     * An array of the authors of this article, each author contains their name and url
     **/
     authors: PropTypes.array,
+    /** 
+    * The brand assigned to this article
+    **/
+    brand: PropTypes.string
 }
