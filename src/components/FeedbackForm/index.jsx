@@ -8,7 +8,13 @@ const SCOPE = 'https://www.googleapis.com/auth/spreadsheets';
 
 export const FeedbackForm = ({}) => {
 
+    //https://docs.google.com/spreadsheets/d/1sNKntYnsKDC8_mqTq0HQsHetamSC_D9g7xLdafMpc_8/edit#gid=0
+    //https://medium.com/@mheavers/storing-form-data-from-a-website-in-google-spreadsheets-using-javascript-react-a15aeb9143cb
+
+
+    
   handleClientLoad =()=> { //initialize the Google API
+    gapi.load('client:auth2', this.initClient);
   }
 
   initClient =()=> { //provide the authentication credentials you set up in the Google developer console
