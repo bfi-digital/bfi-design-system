@@ -11,6 +11,7 @@ const Outer = styled.div`
     background: ${props => props.withLink ? theme.primary : theme.light};
     color: ${theme.black};
     position: relative;
+    margin-bottom: 5px;
 
     &:hover {
         background: ${props => props.withLink ? theme.dark : theme.light};

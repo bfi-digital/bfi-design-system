@@ -51,6 +51,9 @@ const Outer = styled(LinkSwitch)`
         .placeholder {
             opacity: 0.5;
         }
+        p {
+            color: ${theme.dark};
+        }
     }
     &:focus{
         outline: none;
@@ -105,8 +108,8 @@ const Image = styled.img`
 
 const Title = styled.p`
     font-size: 1.125rem;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
     font-weight: 700;
 `
 

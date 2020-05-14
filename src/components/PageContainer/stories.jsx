@@ -12,6 +12,7 @@ import { ArticleKeywords } from "../ArticleKeywords"
 import { Breadcrumbs } from "../Breadcrumbs"
 import { Blockquote } from "../Blockquote"
 import { Button } from "../Button"
+import { CallToAction } from "../CallToAction"
 import { Divider } from "../Divider"
 import { DownloadableFiles } from "../DownloadableFiles"
 import { FilmCardSingle } from "../FilmCardSingle"
@@ -33,6 +34,7 @@ import { PageLinks } from "../PageLinks"
 import { PromoBanner } from "../PromoBanner"
 import { QuickFacts } from "../QuickFacts"
 import { SidebarPageLinks } from "../SidebarPageLinks"
+import { SidebarFilmLinks } from "../SidebarFilmLinks"
 import { StepByStep } from "../StepByStep"
 import { Text } from "../Text"
 
@@ -231,7 +233,7 @@ export const activePage = () =>
                 <Text> 
                     <p>You’ll need to make an account if you’ve not applied before.</p>
                 </Text>
-                <Button url="#" colorScheme={0}>Apply for funding</Button>
+                <CallToAction linkURL="/" linkText="Apply for funding" />
                 <Divider />
 
                 <Headline
@@ -874,7 +876,8 @@ export const everyComponent = () =>
                     <p>The film caused a sensation on its initial release, angering censors and polarising opinion among critics and audiences, but is now rightly considered a masterpiece that’s had a profound influence on popular culture.</p>
                 </Text>
                 
-                <Button url="#" colorScheme={0}>Apply for funding</Button>
+                <CallToAction linkURL="/" linkText="Apply for funding" />
+
                 <Divider />
                 <Headline 
                     level={2} 
@@ -1036,8 +1039,7 @@ export const everyComponent = () =>
                     secondImage="http://placehold.it/150x40"
                     secondImageAltText="Test image"
                 />
-                <ArticleGrid articles={demoArticles} />
-                <ArticleGrid withSideBar={true} articles={demoArticles} />
+                <ArticleGrid pageWithSideBar={true} articles={demoArticles.slice(0,2)} />
             </MainContent>
             
 
@@ -1074,6 +1076,37 @@ export const everyComponent = () =>
                 <AdvertisingContainer>
                     <div style={{width: "300px", height: "250px", background: "grey"}}></div>
                 </AdvertisingContainer>
+                <SidebarFilmLinks 
+                    blockTitle="Watch these films"
+                    films={[
+                        {
+                            name: "La La Land",
+                            image480x270: "http://placehold.it/480x270",
+                            imageAltText: "Example image",
+                            channels: [
+                                "Southbank"
+                            ],
+                            url: "#"
+                        },
+                        {
+                            name: "The Lighthouse",
+                            channels: [
+                                "BFI Player",
+                                "Southbank"
+                            ],
+                            url: "#"
+                        },
+                        {
+                            name: "Santa Claus Conquers the Martians",
+                            image480x270: "http://placehold.it/480x270",
+                            imageAltText: "Example image",
+                            channels: [
+                                "BFI Player"
+                            ],
+                            url: "#"
+                        }
+                    ]} 
+                />
             </Sidebar>
         </Wrapper>
         <Footer
