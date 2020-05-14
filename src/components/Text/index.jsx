@@ -59,7 +59,7 @@ const Outer = styled.div`
         display: inline-block;
         list-style: none;
         li{
-            margin-left: -15px;
+            margin-left: -5px;
             margin-bottom: 10px;
             &:before{
                 content: "•";

@@ -17,7 +17,7 @@ const colorSchemes = [
         hoverBackground: theme.lightest,
         text: theme.black,
         background: theme.white,
-        focus: theme.primary
+        focus: theme.focus
     }
 ]
 

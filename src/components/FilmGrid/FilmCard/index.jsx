@@ -13,7 +13,7 @@ const Outer = styled(LinkSwitch)`
     margin-bottom: 25px;
     transition: box-shadow .3s;
     
-    h4 {
+    .filmcard_title {
         margin-top: 0;
         min-height: 35px;
         margin-top: 5px;
@@ -41,7 +41,7 @@ const Outer = styled(LinkSwitch)`
         }
     }
     &:hover, &:focus-within {
-        h4{
+        .filmcard_title {
             color: ${theme.darkGrey};
         }
         img {
@@ -60,7 +60,7 @@ const Outer = styled(LinkSwitch)`
         border: 0;
     }
     &:active{
-        h4{
+        .filmcard_title {
             color: ${theme.dark};
         }
     }
@@ -103,10 +103,11 @@ const Image = styled.img`
     transition: all ease 0.3s;
 `
 
-const Title = styled.h4`
+const Title = styled.p`
     font-size: 1.125rem;
     margin-top: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    font-weight: 700;
 `
 
 const Channels = styled.div`
@@ -128,7 +129,7 @@ export const FilmCard = ({
                 <ImageContainer>
                     <Image src={image480x270 != "" ? image480x270 : placeholderImage} alt={imageAltText} />
                 </ImageContainer>
-                <Title>{name}</Title>
+                <Title className="filmcard_title">{name}</Title>
                 <Channels>
                     {channels.map(channel =>
                         <Tag key={channel}>{channel}</Tag>
@@ -138,7 +139,7 @@ export const FilmCard = ({
             :
             <Outer to={url} inScroller={inScroller}>
                 <ImageContainer>
-                    <Image src={image480x270 != "" ? image480x270 : placeholderImage} alt={imageAltText} />
+                    <Image src={image480x270 ? image480x270 : placeholderImage} alt={imageAltText} />
                 </ImageContainer>
                 <Title>{name}</Title>
                 <Channels>

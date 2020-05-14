@@ -33,7 +33,7 @@ const H2 = styled.h2`
     color: ${theme.black};
     font-weight: 700;
     font-size: 1.375rem;
-    margin-block-start: 1.5em;
+    margin-block-start: 1.75em;
     margin-block-end: 0.5em;
     line-height: 1.3;
 
@@ -49,7 +49,7 @@ const H3 = styled.h3`
     color: ${theme.black};
     font-weight: 700;
     font-size: 1.4375rem;
-    margin-block-start: 1em;
+    margin-block-start: 1.5em;
     margin-block-end: 0.5em;
     line-height: 1.3;
 
