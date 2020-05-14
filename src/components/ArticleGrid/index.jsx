@@ -164,7 +164,7 @@ export const ArticleGrid = ({
                 <Skeleton/>
                 <Skeleton/>
             </Articles>
-            }
+        }
         { optionalCTALink &&
             <CentredButton to={optionalCTALink}>See more articles</CentredButton>
         }

@@ -2,7 +2,6 @@ import React from "react"
 import styled from "styled-components"
 import theme from "../_theme"
 import { LinkSwitch as Link } from "../LinkSwitch"
-import { Headline } from "../Headline"
 
 const Outer = styled.li`
     margin-bottom: 20px;
