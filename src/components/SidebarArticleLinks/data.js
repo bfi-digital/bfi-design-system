@@ -5,7 +5,7 @@ export default [
         imageAltText: "Example image",
         standfirst: "As BFI Southbank hosts a two-month celebration of some of the great dance movies, writers from across the BFI pick out a favourite on-screen&nbsp;dancing moment that always gets their toes tapping.",
         author: "Author name",
-        date: "Monday 9th February 2017",
+        date: "9 February 2017",
         url: "https://www.bfi.org.uk/news-opinion/news-bfi/lists/36-amazing-dance-scenes",
         uuid: "06347a64-5abd-59de-a6b9-be0d4a9e31e1",
         category: "What to watch"
@@ -16,7 +16,7 @@ export default [
         imageAltText: "Example image",
         standfirst: "In our biggest ever film critics&rsquo; poll, the list of best movies ever made has a new top film, ending the 50-year reign of Citizen Kane.",
         author: "Author name",
-        date: "Tuesday 23rd March 2020",
+        date: "23 March 2020",
         url: "https://www.bfi.org.uk/greatest-films-all-time",
         uuid: "4d1c842b-4d15-558b-82a4-5cb70546d6f3",
         category: "What to watch"
@@ -27,7 +27,7 @@ export default [
         imageAltText: "Example image",
         standfirst: "As BFI Southbank hosts a two-month celebration of some of the great dance movies, writers from across the BFI pick out a favourite on-screen&nbsp;dancing moment that always gets their toes tapping.",
         author: "Author name",
-        date: "Friday 22nd November 2019",
+        date: "22 November 2019",
         url: "https://www.bfi.org.uk/news-opinion/sight-sound-magazine/polls-surveys/stanley-kubrick-cinephiles",
         uuid: "d1a4a7ac-44fa-56b3-9522-b865a49080c2",
         category: "What to watch"

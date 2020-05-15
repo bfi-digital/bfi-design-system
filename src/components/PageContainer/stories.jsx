@@ -743,10 +743,9 @@ export const FilmPage = () =>
     <>
         <Header navItems={navItems} overlay={true} />
         <Hero 
-            copyright="Image: Firstname Surname"
-            image1920x1080="https://player.bfi.org.uk/sites/default/files/styles/landscape_1440x810/public/hero-images/La-Dolce-vita-1.jpg"
+            image1920x1080="https://staging.core-cms.bfi.digital/sites/default/files/2020-05/image.jpeg"
         >
-            <Headline level={0} text="La Dolce Vita"/>
+            <Headline level={0} text="Raging Bull"/>
         </Hero>
         <Wrapper>
             <Actions>
@@ -756,10 +755,12 @@ export const FilmPage = () =>
         </Wrapper>
         <Wrapper>           
             <MainContent>
+                <LeadParagraph text="Starring Robert De Niro as the middleweight boxer Jake La Motta, Scorsese’s biopic is widely acknowledged as one of the greatest films of the 1980s." />
                 <Text>
-                    <p>Fellini’s epic La dolce vita stands as a towering achievement of 1960s cinema. Set in Rome during the height of the ‘Hollywood on the Tiber’ era, the episodic narrative follows jaded journalist Marcello Rubini (Mastroianni) on the trail of gossip on VIPs, including Swedish-American film star Sylvia Rank (Ekberg).</p> 
-                    <p>The film caused a sensation on its initial release, angering censors and polarising opinion among critics and audiences, but is now rightly considered a masterpiece that’s had a profound influence on popular culture.</p> 
-                    <p>It was La dolce vita, for instance, that coined the term ‘paparazzo’, which came to describe a certain type of relentless celebrity photographer.</p>
+                    <p>“Raging Bull is the most painful and heart-rending portrait of jealousy in the cinema – an Othello for our times. Boxing is the arena, not the subject.”<br />Roger Ebert, The Great Movies, 2002</p>
+                    <p>Scorsese’s biographical portrait of the 1940s boxing champion Jake La Motta is a study of seething male aggression to rank alongside his 1976 film Taxi Driver. Adapted from La Motta’s memoirs by Paul Schrader and Mardik Martin, the film opens in the early 1960s with an overweight La Motta practising his post-boxing cabaret routine. Through flashbacks we witness the dramas of his time in the ring, his abusive marriages, and his turbulent relationship with his brother and manager Joey (Joe Pesci).</p>
+                    <p>The sequences between the ropes are extraordinarily immediate, with Michael Chapman’s mobile black and white cinematography closely attending every blow, and Thelma Schoonmaker’s editing brutally precise and dynamic. Robert De Niro famously gained weight to play the out of shape La Motta of later years.</p>
+                    <p>Boxing drama Body and Soul (1947) and Stanley Kubrick’s early documentary Day of the Fight (1951) are among the films that influenced Raging Bull.</p>
                 </Text>
                 
                 <Headline 
@@ -778,8 +779,16 @@ export const FilmPage = () =>
                             value: "Frederico Fellini"
                         },
                         {
+                            label: "Produced by",
+                            value: "Irwin Winkler, Robert Chartoff, Peter Savage"
+                        },
+                        {
+                            label: "Written by",
+                            value: "Paul Schrader, Mardik Martin"
+                        },
+                        {
                             label: "Featuring",
-                            value: "Marcello Mastroianni, Anita Ekberg, Anouk Aimée"
+                            value: "Robert De Niro, Joe Pesci, Cathy Moriarty"
                         },
                     ]}
                 />
@@ -790,7 +799,41 @@ export const FilmPage = () =>
         </Wrapper>
         <Wrapper>
             <MainContent>  
-                <ArticleGrid articles={demoArticles} />
+                <ArticleGrid articles={
+                    [{
+                        title: "Joe Pesci: seven essential films",
+                        image480x270: "https://www.bfi.org.uk/sites/bfi.org.uk/files/styles/api_4x3_thumb/public/news/raging-bull-1980-004-robert-de-niro-joe-pesci-bfi-00m-pbh-1000x750.jpg?itok=dc0VDnB3",
+                        imageAltText: "Example image",
+                        standfirst: "From Home Alone to GoodFellas: seven of the best films from an actor who pops out of the screen with menace and charisma.",
+                        author: "Brogan Morris",
+                        date: "9 February 2017",
+                        url: "https://www.bfi.org.uk/news-opinion/news-bfi/lists/joe-pesci-seven-essential-films",
+                        uuid: "06347a64-5abd-59de-a6b9-be0d4a9e31e1",
+                        category: "News"
+                    },
+                    {
+                        title: "Martin Scorsese: a career in 10 songs",
+                        image480x270: "https://www.bfi.org.uk/sites/bfi.org.uk/files/styles/api_4x3_thumb/public/news/casino-1995-003-robert-de-niro-casino-00m-y3h-1000x750.jpg?itok=oTNU6QY4",
+                        imageAltText: "Example image",
+                        standfirst: "Songs in the key of Scorsese... how Marty revolutionised movie soundtracks.",
+                        author: "Brogan Morris",
+                        date: "3 January 2017",
+                        url: "https://www.bfi.org.uk/greatest-films-all-time",
+                        uuid: "4d1c842b-4d15-558b-82a4-5cb70546d6f3",
+                        category: "What to watch"
+                    },
+                    {
+                        title: "10 great boxing films",
+                        image480x270: "https://www.bfi.org.uk/sites/bfi.org.uk/files/styles/api_16x9_thumb/public/news/raging-bull-1980-001-robert-de-niro-bxing-00m-rg2-1920x1080.jpg?itok=zOLbAs1k",
+                        imageAltText: "Example image",
+                        standfirst: "Get in the ring with these 10 knockout boxing movies, as Sylvester Stallone returns to the screen with Creed, the latest instalment of the Rocky saga.",
+                        author: "Christina Newland",
+                        date: "22 November 2019",
+                        url: "https://www.bfi.org.uk/news-opinion/sight-sound-magazine/polls-surveys/stanley-kubrick-cinephiles",
+                        uuid: "d1a4a7ac-44fa-56b3-9522-b865a49080c2",
+                        category: "10 great"
+                    }]
+                } />
 
                 <Headline 
                     level={4} 
