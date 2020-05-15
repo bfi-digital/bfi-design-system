@@ -125,6 +125,9 @@ const CentredButton = styled(Button)`
     display: block;
     text-align: center;
 `
+const StyledHeadline = styled(Headline)`
+    text-align: center;
+`   
 
 export const ArticleGrid = ({
     articles,
@@ -136,7 +139,7 @@ export const ArticleGrid = ({
 }) =>
     <Outer pageWithSideBar={pageWithSideBar} className={firstHighlighted ? "withHighlight" : ""}>
         {optionalTitle && 
-            <Headline level={2} text={optionalTitle} />
+            <StyledHeadline level={2} text={optionalTitle} />
         }
         {articles ?
             <Articles lessColumns={articles.length === 2 || articles.length === 4}>
