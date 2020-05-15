@@ -19,6 +19,10 @@ const colorSchemes = [
         background: theme.lightGrey,
         text: theme.black
     },
+    {
+        background: theme.dark,
+        text: theme.white
+    },
 ]
 
 const Outer = styled.section`
