@@ -56,6 +56,7 @@ const PageImageContainer = styled.div`
     height: 100px;
     // border-radius: 4px;
     margin-right: 10px;
+    vertical-align: middle;
 `
 const PageImage = styled.div`
     width: 100%;
@@ -75,7 +76,6 @@ const CallToAction = styled(Link)`
     text-decoration: none;
     color: ${theme.black};
     display: block;
-    max-height: 100px;
 
     &:after{
         content: "";
