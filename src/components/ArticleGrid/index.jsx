@@ -47,7 +47,7 @@ const Articles = styled.ul`
             margin-right: 14px;
             margin-bottom: 20px;
 
-            &:nth-of-type(2n) {
+            &:nth-of-type(3n) {
                 margin-right: 0px;
             }
         }

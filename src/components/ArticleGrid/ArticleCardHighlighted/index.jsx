@@ -6,7 +6,7 @@ import { LinkSwitch as Link } from "../../LinkSwitch"
 import { Headline } from "../../Headline"
 import parse from "html-react-parser"
 
-const Outer = styled.li`
+const Outer = styled.div`
     position: relative;
     background: ${props => props.pageWithSideBar ? theme.lightGrey : theme.white};
     box-shadow: 0px 5px 0px ${theme.primary};
