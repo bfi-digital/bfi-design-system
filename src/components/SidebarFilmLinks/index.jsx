@@ -27,11 +27,13 @@ export const SidebarFilmLinks = ({
             blockTitle &&
                 <Headline level={4} text={blockTitle} />
         }
-        <List>
-            {films.map((film, i) =>
-                <SidebarFilmCard key={i} {...film} />    
-            )}
-        </List>
+        {films &&
+            <List>
+                {films.map((film, i) =>
+                    <SidebarFilmCard key={i} {...film} />    
+                )}
+            </List>
+        }
     </Outer>
 
 

@@ -30,7 +30,7 @@ const Outer = styled.li`
         }
     }
     &:focus-within{
-        box-shadow: 0px 0px 0px 5px ${theme.focus};
+        box-shadow: 0px 0px 0px 3px ${theme.focus};
         outline: none;
     }
     &:after {

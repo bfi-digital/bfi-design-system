@@ -81,24 +81,24 @@ export const PageLinks = ({
     colorScheme,
     withImages = false
 }) =>
-    <>
-        {links.length > 9 ?
-            <ScrollerContainer>
-                <ScrollerTrack num={links.length}>
+    links && 
+        <>
+            {links.length > 9 ?
+                <ScrollerContainer>
+                    <ScrollerTrack num={links.length}>
+                        {links.map((link, i) =>
+                            <PageLink key={i} {...link} colorScheme={colorScheme} withImages={withImages} />    
+                        )}
+                    </ScrollerTrack>
+                </ScrollerContainer>
+                :
+                <Outer lessColumns={links.length === 2 || links.length === 4}>
                     {links.map((link, i) =>
                         <PageLink key={i} {...link} colorScheme={colorScheme} withImages={withImages} />    
                     )}
-                </ScrollerTrack>
-            </ScrollerContainer>
-            :
-            <Outer lessColumns={links.length === 2 || links.length === 4}>
-                {links.map((link, i) =>
-                    <PageLink key={i} {...link} colorScheme={colorScheme} withImages={withImages} />    
-                )}
-            </Outer>
-        }
-    </>
-
+                </Outer>
+            }
+        </>
 
 
 PageLinks.propTypes = {
