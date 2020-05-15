@@ -1,22 +1,27 @@
+/**
+ * @jest-environment jsdom
+ */
 import React from "react"
 import styled from "styled-components"
 import theme from "../_theme"
-import ScrollContainer from "react-indiana-drag-scroll"
+// import ScrollContainer from "react-indiana-drag-scroll"
 
 const Outer = styled.div`
     position: relative;
+`
+const ScrollerTrack = styled.div`
+    overflow: scroll;
+    overflow-y: hidden;
+    padding: 10px;
+    display: flex;
 
-    .scroll-container {
-        display: flex;
-        padding: 10px;
-    }
-    .scroll-container::-webkit-scrollbar {
+    &::-webkit-scrollbar {
         height: 10px;
         width: 10px;
         border: 1px solid ${theme.grey};
         background:     ${theme.grey};
     }
-    .scroll-container::-webkit-scrollbar-thumb:horizontal{
+    &::-webkit-scrollbar-thumb:horizontal{
         background: ${theme.primary};
         border-radius: 1px;
     }
@@ -58,9 +63,9 @@ export const Scroller = ({
     return(
         <Outer>
             {/* <LeftScrollerFade className={children && "revealed"} /> */}
-            <ScrollContainer hideScrollbars={false} vertical={false} className="scroll-container">
+            <ScrollerTrack>
                 {children}
-            </ScrollContainer>
+            </ScrollerTrack>
             <RightScrollerFade className={children && "revealed"} />
         </Outer>
         
