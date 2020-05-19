@@ -2,7 +2,9 @@ import React from "react"
 import styled from "styled-components"
 import theme from "../_theme"
 import { LinkSwitch as Link } from "../LinkSwitch"
-
+import { Tag } from "../Tag"
+import placeholderImage from "./placeholder.png"
+   
 const Outer = styled.li`
     margin-bottom: 20px;
     position: relative;
@@ -13,19 +15,13 @@ const Outer = styled.li`
         border: none;
         margin-bottom: 0px;
     }
-    .pagelink_title {
-        margin: 0;
-        display: inline-block;
-        vertical-align: top;
-        width: 60%;
-        font-weight: 600;
-    }
+    
     &:hover, &:focus-within {
         .image {
             filter: grayscale(100%) contrast(1) blur(0px);
             mix-blend-mode: multiply;
         }
-        .pagelink_title {
+        p {
             color: ${theme.dark};
         }
     }
@@ -76,7 +72,7 @@ const CallToAction = styled(Link)`
     text-decoration: none;
     color: ${theme.black};
     display: block;
-
+    
     &:after{
         content: "";
         display: block;
@@ -90,12 +86,22 @@ const CallToAction = styled(Link)`
         outline: none;
     }
 `
+
+const Content = styled.div`
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+    width: 60%;
+`
+
 const Heading = styled.p`
     font-family: "Open Sans";
     color: ${theme.black};
     font-weight: 600;
     font-size: 0.875rem;
     line-height: 1.3;
+    margin-top: 0;
+    margin-bottom: 5px;
 
     @media screen and (min-width: ${theme.m}){
         font-size: 1rem;
@@ -104,19 +110,36 @@ const Heading = styled.p`
         font-size: 1.125rem;
     }
 `
-export const PageLink = ({
-    title,
-    image,
-    external,
-    url
+
+const Channels = styled.div`
+    margin: 0;
+    padding: 0;
+    div {
+        margin-right: 5px;
+        font-size: 0.8rem;
+    }
+`
+export const SidebarFilmCard = ({
+    image480x270,
+    name,
+    channels,
+    url,
+    imageAltText,
+    external
 }) =>
     <Outer>
         <CallToAction external={external} to={url}>
             <PageImageContainer>
-                <PageImage className="image" imageSrc={image} />
+                <PageImage className="image" imageSrc={image480x270 ? image480x270 : placeholderImage} alt={imageAltText} />
             </PageImageContainer>
-            
-            <Heading className="pagelink_title">{title}</Heading>
+            <Content>
+                <Heading>{name}</Heading>
+                <Channels>
+                    {channels.map(channel =>
+                        <Tag key={channel}>{channel}</Tag>
+                    )}
+                </Channels>
+            </Content>
         </CallToAction>
     </Outer>
 

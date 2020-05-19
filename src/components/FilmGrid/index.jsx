@@ -26,7 +26,7 @@ export const FilmGrid = ({
     <>
         {films.length === 4 || films.length === 5 || films.length > 6 ?
             <>
-                <Scroller arrayLength={films.length}>
+                <Scroller>
                     {films.map(film =>
                         <FilmCard key={film.uuid} inScroller={true} {...film}/>    
                     )}

@@ -9,6 +9,7 @@ const Outer = styled.p`
     font-size: 1.0625rem;
     margin-bottom: 20px;
     white-space: pre-wrap;
+    margin-top: 0;
 
     @media screen and (min-width: ${theme.m}){
         font-size: 1.1875rem;

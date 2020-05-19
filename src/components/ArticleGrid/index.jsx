@@ -13,33 +13,58 @@ const Outer = styled.div`
     padding-top: 35px;
     margin-top: 25px;
     position: relative; 
-    background: ${props => props.withSideBar ? "transparent" : theme.lightGrey};
+    background: ${props => props.pageWithSideBar ? "transparent" : theme.lightGrey};
 
     h2 {
         margin-top: 0;
         margin-bottom: 25px;
         text-align: center;
     }
+
+    &:before {
+        display: ${props => props.pageWithSideBar ? "none" : "block"};
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -9999px;
+        right: 0;
+        box-shadow: 9999px 0 0 ${theme.lightGrey};
+        border-left: 9999px solid ${theme.lightGrey};
+        z-index: -1;
+    }
+`
+const Articles = styled.ul`
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
     .articleCard {
         @media screen and (min-width: ${theme.s}){
             width: calc(50% - 7px);
             margin-right: 14px;
             margin-bottom: 20px;
 
-            &:nth-of-type(2n) {
+            &:nth-of-type(3n) {
                 margin-right: 0px;
             }
         }
+
         @media screen and (min-width: ${theme.m}){
-            width: calc(33.333% - 16.666px);
+            width: ${props => props.lessColumns ? "calc(50% - 12.5px)" : "calc(33.333% - 16.666px)"};
             margin-bottom: 35px;
             margin-right: 25px;
 
-            &:nth-of-type(2n) {
-                margin-right: 25px;
-            }  
+            &:nth-of-type(even) {
+                margin-right: ${props => props.lessColumns ? "0px" : "25px"};
+            }
             &:nth-of-type(3n) {
-                margin-right: 0px;
+                margin-right: ${props => props.lessColumns ? "25px" : "0px"};
+            }
+            &:nth-of-type(4n) {
+                margin-right: ${props => props.lessColumns ? "0px" : "25px"};
             }            
         }
         @media screen and (min-width: ${theme.l}){
@@ -93,26 +118,6 @@ const Outer = styled.div`
             }
         }   
     }
-
-    &:before {
-        display: ${props => props.withSideBar ? "none" : "block"};
-        content: "";
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: -9999px;
-        right: 0;
-        box-shadow: 9999px 0 0 ${theme.lightGrey};
-        border-left: 9999px solid ${theme.lightGrey};
-        z-index: -1;
-    }
-`
-const Articles = styled.ul`
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
 `
 const CentredButton = styled(Button)`
     margin: 30px auto;
@@ -120,48 +125,49 @@ const CentredButton = styled(Button)`
     display: block;
     text-align: center;
 `
+const StyledHeadline = styled(Headline)`
+    text-align: center;
+`   
 
 export const ArticleGrid = ({
     articles,
     optionalTitle,
     optionalCTALink,
-    withSideBar,
+    pageWithSideBar,
     firstHighlighted,
     children
 }) =>
-    <Outer withSideBar={withSideBar} className={firstHighlighted ? "withHighlight" : ""}>
+    <Outer pageWithSideBar={pageWithSideBar} className={firstHighlighted ? "withHighlight" : ""}>
         {optionalTitle && 
-            <Headline level={2} text={optionalTitle} />
+            <StyledHeadline level={2} text={optionalTitle} />
         }
-        <Articles>
-            {articles ?
-                <>
-                    {firstHighlighted  === true || articles.length === 1 ?
-                        <>
-                            <ArticleCardHighlighted key={articles[0].uuid} withSideBar={withSideBar} {...articles[0]}/>
-                            {articles.length > 1 &&
-                                articles.slice(1).map(article =>
-                                    <ArticleCard key={article.uuid} withSideBar={withSideBar} {...article}/>    
-                                )
-                            }
-                        </>
-                        :
-                        articles.map(article =>
-                            <ArticleCard key={article.uuid} withSideBar={withSideBar} {...article}/>    
-                        )
-                    }
-                </>
-                :
-                <>
-                    <Skeleton/>
-                    <Skeleton/>
-                    <Skeleton/>
-                    <Skeleton/>
-                    <Skeleton/>
-                    <Skeleton/>
-                </>
-            }
-        </Articles>
+        {articles ?
+            <Articles lessColumns={articles.length === 2 || articles.length === 4}>
+                {firstHighlighted  === true || articles.length === 1 ?
+                    <>
+                        <ArticleCardHighlighted key={articles[0].uuid} pageWithSideBar={pageWithSideBar} {...articles[0]}/>
+                        {articles.length > 1 &&
+                            articles.slice(1).map(article =>
+                                <ArticleCard key={article.uuid} pageWithSideBar={pageWithSideBar} {...article}/>    
+                            )
+                        }
+                    </>
+                    :
+                    articles.map(article =>
+                        <ArticleCard key={article.uuid} pageWithSideBar={pageWithSideBar} {...article}/>    
+                    )
+                }
+            </Articles>
+            :
+            <Articles>
+                <Skeleton/>
+                <Skeleton/>
+                <Skeleton/>
+                <Skeleton/>
+                <Skeleton/>
+                <Skeleton/>
+            </Articles>
+        }
         { optionalCTALink &&
             <CentredButton to={optionalCTALink}>See more articles</CentredButton>
         }

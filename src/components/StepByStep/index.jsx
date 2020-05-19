@@ -4,7 +4,9 @@ import styled from "styled-components"
 import theme from "../_theme"
 import parse from "html-react-parser"
 
-const Outer = styled.section``
+const Outer = styled.section`
+    margin-bottom: 25px;
+`
 
 const Headline = styled.h3`
     font-weight: 700;
@@ -72,21 +74,9 @@ const ShowButton = styled.button`
     font-size: 1rem;
     padding: 0;
 
-
-    &:hover{
-        span {
-            color: ${theme.dark};
-            &:after {
-                height: 100%;
-            }
-        }
-    }
     &:focus{
         outline: none;
         span {
-            &:after {
-                height: 100%;
-            }
             outline: 2px solid ${theme.focus};
         }
     }
@@ -111,17 +101,21 @@ const ShowButtonText = styled.span`
     font-weight: 400;
     color: ${theme.black};
     text-decoration: none;
+    font-weight: 600;
     position: relative;
-    &:after {
-        content: "";
-        background: ${theme.lightest};
-        height: 40%;
-        width: 100%;
-        bottom: 0;
-        left: 0;
-        position: absolute;
-        z-index: -1;
-        transition: height .3s; 
+    background-image: linear-gradient(120deg, ${theme.primary} 0%, ${theme.primary} 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 2px;
+    background-position: 0 100%;
+    transition: all 0.15s ease-in-out;
+
+    &:hover{
+        color: ${theme.white};
+        background-size: 100% 100%;
+    }
+    &:active{
+        outline: none;
+        text-decoration: underline;
     }
 `
 

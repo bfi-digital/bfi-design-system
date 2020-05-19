@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
-import { PageLink } from "./Link"
+import { SidebarFilmCard } from "./SidebarFilmCard"
 import { Headline } from "../Headline"
 
 const Outer = styled.section`
@@ -18,29 +18,30 @@ const List = styled.ul`
     margin-top: 15px;
 `
 
-export const SidebarPageLinks = ({
-    links,
+export const SidebarFilmLinks = ({
+    films,
     blockTitle
 }) =>
     <Outer>
-        { blockTitle &&
-            <Headline level={4} text={blockTitle} />
+        {
+            blockTitle &&
+                <Headline level={4} text={blockTitle} />
         }
-        {links &&
+        {films &&
             <List>
-                {links.map((link, i) =>
-                    <PageLink key={i} {...link} />    
+                {films.map((film, i) =>
+                    <SidebarFilmCard key={i} {...film} />    
                 )}
             </List>
         }
     </Outer>
 
 
-SidebarPageLinks.propTypes = {
+SidebarFilmLinks.propTypes = {
     /** 
 	 * An array of manually selected pages for this group of page links. Each element of the array contains a `title`, `url`, `description` and `callToAction` text which are generated from the meta data of the page that is being linked to.
 	 **/
-    links: PropTypes.array,
+    films: PropTypes.array,
     /** 
 	 * An optional title which can be used to provide context as to what this group of links relates to, or how they are grouped together.
 	 **/

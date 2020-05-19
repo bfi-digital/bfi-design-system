@@ -8,14 +8,14 @@ export const Outer = styled.blockquote`
     padding: 15px;
     padding-right: 0;
     padding-left: 40px;
-    border-left: 5px solid ${theme.primary}
+    border-left: 5px solid ${theme.primary};
 `
 
 const Quote = styled.q`
-    color: ${props => colorSchemes[props.colorScheme].text};
-    font-family: "Archivo Black";
+    color: ${theme.black};
+    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, "Open Sans", Arial, "Lucida Grande", sans-serif; 
     display: block;
-    font-weight: 400;
+    font-weight: 800;
     font-size: 1.2rem;
     line-height: 1.4;
 
@@ -28,10 +28,10 @@ const Quote = styled.q`
 `
 
 const Citation = styled.cite`
-    color: ${props => colorSchemes[props.colorScheme].text};
+    color: ${theme.black};
     display: block;
     font-style: normal;
-    margin-top: 15px;
+    margin-top: 10px;
     line-height: 1.5;
     font-size: 1rem;
     @media screen and (min-width: ${theme.l}){
@@ -42,21 +42,13 @@ const Citation = styled.cite`
     }
 `
 
-const colorSchemes = [
-    {
-        background: theme.lightest,
-        text: theme.black,
-    }
-]
-
 export const Blockquote = ({
     quote,
-    citation,
-    colorScheme
+    citation
 }) =>
-    <Outer colorScheme={colorScheme}>
-        <Quote colorScheme={colorScheme}>{quote}</Quote>
-        {citation && <Citation colorScheme={colorScheme}>{citation}</Citation>}
+    <Outer>
+        <Quote>{quote}</Quote>
+        {citation && <Citation>{citation}</Citation>}
     </Outer>
 
 
@@ -68,13 +60,5 @@ Blockquote.propTypes = {
     /** 
 	 * Optionally, the attribution of the quote
 	 **/
-    citation: PropTypes.string,
-    /** 
-	 * A number which selects the colour scheme of the blockquote slice, dependant on the pillar the page/post is within.
-	 **/
-    colorScheme: PropTypes.number
-}
-
-Blockquote.defaultProps = {
-    colorScheme: 0
+    citation: PropTypes.string
 }

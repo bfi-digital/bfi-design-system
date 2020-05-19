@@ -31,27 +31,5 @@ export default [
         url: "https://www.bfi.org.uk/news-opinion/sight-sound-magazine/polls-surveys/stanley-kubrick-cinephiles",
         uuid: "d1a4a7ac-44fa-56b3-9522-b865a49080c2",
         category: "What to watch"
-    },
-    // {
-    //     title: "Is Citizen Kane still the greatest film of all time?",
-    //     image480x270: "https://www.bfi.org.uk/sites/bfi.org.uk/files/styles/api_original/public/news/citizen-kane-1941-002-00m-dn6-kane-on-podium-in-front-of-kane-poster-1000x750.jpg?itok=pfntBLCq",
-    //     imageAltText: "Example image",
-    //     standfirst: "Anticipating the results of Sight &amp; Sound&rsquo;s once-in-a-decade Greatest Film of All Time poll in 2012, David Thomson launches a series of debates on the canon, wondering whether Citizen Kane will &ndash; or should &ndash; retain its top spot.",
-    //     date: "Wednesday 13th October 2019",
-    //     author: "Author name",
-    //     url: "https://www.bfi.org.uk/news-opinion/sight-sound-magazine/features/greatest-films-all-time/mark-kane",
-    //     uuid: "cd872a79-e9f7-5276-9b6c-34ad2f509c54",
-    //     category: "What to watch"
-    // },
-    // {
-    //     title: "Is Citizen Kane still the greatest film of all time?",
-    //     image480x270: "https://www.bfi.org.uk/sites/bfi.org.uk/files/styles/api_original/public/news/citizen-kane-1941-002-00m-dn6-kane-on-podium-in-front-of-kane-poster-1000x750.jpg?itok=pfntBLCq",
-    //     imageAltText: "Example image",
-    //     standfirst: "Anticipating the results of Sight &amp; Sound&rsquo;s once-in-a-decade Greatest Film of All Time poll in 2012, David Thomson launches a series of debates on the canon, wondering whether Citizen Kane will &ndash; or should &ndash; retain its top spot.",
-    //     date: "Wednesday 13th October 2019",
-    //     author: "Author name",
-    //     url: "https://www.bfi.org.uk/news-opinion/sight-sound-magazine/features/greatest-films-all-time/mark-kane",
-    //     uuid: "cd872a79-e9f7-5276-9b6c-34ad2f509c54",
-    //     category: "What to watch"
-    // }
+    }
 ]

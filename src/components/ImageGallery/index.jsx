@@ -99,7 +99,7 @@ const ImageHolder = styled.div`
 
 const Button = styled.button`
     border: none;
-    background: ${theme.primary};
+    background: ${theme.light};
     cursor: pointer;
     padding: 0px;
     width: 100%;

@@ -59,7 +59,7 @@ const Outer = styled.div`
         display: inline-block;
         list-style: none;
         li{
-            margin-left: -15px;
+            margin-left: -5px;
             margin-bottom: 10px;
             &:before{
                 content: "•";
@@ -85,9 +85,22 @@ const Outer = styled.div`
         width: 750px; 
         border-collapse: collapse; 
         margin: 50px auto;
+        max-width: 100%;
+        overflow: scroll;
+
+        caption {
+            color: ${theme.darkGrey};
+            margin-bottom: 5px;
+        }
+        @media only screen and (max-width: ${theme.m}){
+            caption {
+                width: 100%;
+                display: block;
+            }
+        }
     }
     
-    tr:nth-of-type(odd) { 
+    tr:nth-of-type(even) { 
         background: ${theme.lightGrey}; 
     }
     
@@ -97,9 +110,12 @@ const Outer = styled.div`
         text-align: left; 
         font-size: 18px;
     }
+    th {
+        background: ${theme.lightest}; 
+    }
     
 
-    @media only screen and (max-width: ${theme.l}){
+    @media only screen and (max-width: ${theme.m}){
         table { 
             width: 100%; 
         }

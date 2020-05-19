@@ -6,7 +6,7 @@ import { Headline } from "../../Headline"
 
 const Outer = styled.li`
     position: relative;
-    background: ${props => props.withSideBar ? theme.lightGrey : theme.white};
+    background: ${props => props.pageWithSideBar ? theme.lightGrey : theme.white};
     box-shadow: 0px 5px 0px ${theme.primary};
     margin-bottom: 35px;
     display: flex;
@@ -139,7 +139,7 @@ const CategoryTag = styled.div`
 `
 
 export const ArticleCard = ({
-    withSideBar,
+    pageWithSideBar,
     title,
     url,
     image480x270,
@@ -149,7 +149,7 @@ export const ArticleCard = ({
     author,
     external
 }) =>
-    <Outer className="articleCard" withSideBar={withSideBar} withCategory={category ? true : false}>
+    <Outer className="articleCard" pageWithSideBar={pageWithSideBar} withCategory={category ? true : false}>
         {category && <CategoryTag>{category}</CategoryTag> }
         <PageImageContainer>
             <PageImage className="image" imageSrc={image480x270} alt={imageAltText} />

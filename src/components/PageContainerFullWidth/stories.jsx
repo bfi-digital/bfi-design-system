@@ -167,7 +167,7 @@ export const discoveryPage = () =>
                 />
 
                 <FilterableArticles
-                    limit={8}
+                    limit={7}
                     parameter="category"
                     filters={[
                         {

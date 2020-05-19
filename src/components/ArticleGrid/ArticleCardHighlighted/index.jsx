@@ -6,9 +6,9 @@ import { LinkSwitch as Link } from "../../LinkSwitch"
 import { Headline } from "../../Headline"
 import parse from "html-react-parser"
 
-const Outer = styled.li`
+const Outer = styled.div`
     position: relative;
-    background: ${props => props.withSideBar ? theme.lightGrey : theme.white};
+    background: ${props => props.pageWithSideBar ? theme.lightGrey : theme.white};
     box-shadow: 0px 5px 0px ${theme.primary};
     margin-bottom: 35px;
     display: flex;
@@ -146,7 +146,7 @@ const CategoryTag = styled.div`
 
 
 export const ArticleCardHighlighted = ({
-    withSideBar,
+    pageWithSideBar,
     title,
     url,
     image480x270,
@@ -157,7 +157,7 @@ export const ArticleCardHighlighted = ({
     author,
     external
 }) =>
-    <Outer className="articleCardHighlighted" withSideBar={withSideBar}>
+    <Outer className="articleCardHighlighted" pageWithSideBar={pageWithSideBar}>
         {category && <CategoryTag>{category}</CategoryTag> }
         <Content withCategory={category ? true : false}>
             <Headline level={4} text={title} />
