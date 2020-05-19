@@ -228,7 +228,7 @@ export const ImageGallery = ({
                 <DialogStyles/>
                 <Dialog 
                     aria-label="lightbox"
-                    isOpen={openImage} 
+                    isOpen={openImage > 0 ? true : false} 
                     onDismiss={() => setOpenImage(0)}
                 >
                     <VisuallyHidden>

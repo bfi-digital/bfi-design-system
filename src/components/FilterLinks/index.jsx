@@ -46,7 +46,7 @@ export const FilterLinks = ({
     links
 }) => 
     <Outer>
-        {links.map(link =>
-            <FilterLink key={link.url} to={link.url}>{link.label}</FilterLink>
+        {links.map(link, i =>
+            <FilterLink key={i} to={link.url}>{link.label}</FilterLink>
         )}
     </Outer>

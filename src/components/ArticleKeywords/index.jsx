@@ -39,8 +39,8 @@ export const ArticleKeywords = ({
     keywords
 }) =>
     <Outer>
-        {keywords.map(keyword =>
-            <FilterLink key={keyword.url} to={keyword.url}>{keyword.label}</FilterLink>
+        {keywords.map(keyword, i =>
+            <FilterLink key={i} to={keyword.url}>{keyword.label}</FilterLink>
         )}
     </Outer>
 

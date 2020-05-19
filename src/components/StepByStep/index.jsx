@@ -148,7 +148,6 @@ export const StepByStep = ({
         <Outer>
             <Headline>{title}</Headline>
             <Steps>
-                {console.log(steps)}
                 {steps.map((step, i) =>
                     <Step key={i}>
                         <ShowButton
