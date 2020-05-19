@@ -14,7 +14,7 @@ import instagram from "./instagram.svg"
 
 const Outer = styled.footer`
     padding: 40px 0px 20px 0px;
-    background: ${theme.light};
+    background: ${theme.lightFocus};
     color: ${theme.black};
 `
 
