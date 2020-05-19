@@ -1,7 +1,7 @@
 import React from "react"
 import { Wrapper, MainContent, Sidebar, Actions, PlayButton } from "./index"
 
-import navItems from "../Header/data"
+import navItems, { quickLinksData } from "../Header/data"
 import {longData as crumbs} from "../Breadcrumbs/data"
 import footerMenus from "../Footer/data"
 import demoArticles from "../ArticleGrid/data"
@@ -120,7 +120,7 @@ export default {
 
 export const normalPage = () =>
     <>
-        <Header navItems={navItems}/>
+        <Header navItems={navItems} quickLinks={quickLinksData} />
         <Wrapper>
             <MainContent>
                 <Breadcrumbs 
@@ -149,7 +149,7 @@ export const normalPage = () =>
 
 export const activePage = () =>
     <>
-        <Header navItems={navItems}/>
+        <Header navItems={navItems} quickLinks={quickLinksData} />
         <Wrapper>
             <MainContent>
                 <Breadcrumbs 
@@ -282,7 +282,7 @@ export const activePage = () =>
 
 export const ArticleFeatureExample = () =>
     <>
-        <Header navItems={navItems} />
+        <Header navItems={navItems} quickLinks={quickLinksData}  />
         <HeroArticle 
             image1920x1080="https://bfi-prototype.netlify.com/static/media/watch-banner.b01324c4.jpg"
             imageAltText="Alt text for the image"
@@ -393,7 +393,7 @@ export const ArticleFeatureExample = () =>
 
 export const ArticleRecommendsExample = () =>
     <>
-        <Header navItems={navItems} />
+        <Header navItems={navItems} quickLinks={quickLinksData}  />
         <HeroArticle 
             title="BFI Recommends: Carol"
             standfirst="The perfect adaptation: Todd Haynes’ exquisite film of Patricia Highsmith’s novel The Price of Salt is the latest in our daily series of recommendations, chosen by Emma Smart."
@@ -461,7 +461,7 @@ export const ArticleRecommendsExample = () =>
 
 export const ArticleVideoExample = () =>
     <>
-        <Header navItems={navItems} />
+        <Header navItems={navItems} quickLinks={quickLinksData}  />
         <HeroArticle 
             title="Video: BFI CEO Ben Roberts talks to Screen about navigating the ongoing COVID-19 crisis"
             standfirst="The perfect adaptation: Todd Haynes’ exquisite film of Patricia Highsmith’s novel The Price of Salt is the latest in our daily series of recommendations, chosen by Emma Smart."
@@ -528,7 +528,7 @@ export const ArticleVideoExample = () =>
 
 export const ArticleAnnouncementExample = () =>
     <>
-        <Header navItems={navItems} />
+        <Header navItems={navItems} quickLinks={quickLinksData}  />
         <HeroArticle 
             image1920x1080="https://www.bfi.org.uk/sites/bfi.org.uk/files/homepage/bfi-covid-19-support-for-uk-industry-1000x343.jpg"
             imageAltText="Alt text for the image"
@@ -606,7 +606,7 @@ export const ArticleAnnouncementExample = () =>
 
 export const ArticleListExample = () =>
     <>
-        <Header navItems={navItems} />
+        <Header navItems={navItems} quickLinks={quickLinksData}  />
         <HeroArticle 
             title="Five things to watch this weekend – 1-3 May"
             standfirst="Japanese ghost stories, Brits abroad and a seven-hour epic – what are you watching this weekend?"
@@ -739,7 +739,7 @@ export const ArticleListExample = () =>
 
 export const FilmPage = () =>
     <>
-        <Header navItems={navItems} overlay={true} />
+        <Header navItems={navItems} quickLinks={quickLinksData}  overlay={true} />
         <Hero 
             copyright="Image: Firstname Surname"
             image1920x1080="https://player.bfi.org.uk/sites/default/files/styles/landscape_1440x810/public/hero-images/La-Dolce-vita-1.jpg"
@@ -815,7 +815,7 @@ export const FilmPage = () =>
 
 export const everyComponent = () =>
     <>
-        <Header navItems={navItems}/>
+        <Header navItems={navItems} quickLinks={quickLinksData} />
         <Wrapper>
             <MainContent>
                 <Breadcrumbs 

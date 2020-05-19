@@ -28,15 +28,24 @@ const Positioner = styled.div`
     top: 20px;
 `
 
-const QuickLinks = ({Inner, isOverlaid, isSticky}) =>
-    <Wrapper>
-        <Inner>
-            <Positioner>
-                {/* todo: need to convert these to be dynamically pulled data from CMS */}
-                <QuickLink to="/" isTransparent={isOverlaid} isSticky={isSticky}>BFI Southbank</QuickLink>
-                <QuickLink to="/" isTransparent={isOverlaid} isSticky={isSticky}>Become a Member</QuickLink>
-            </Positioner>
-        </Inner>
-    </Wrapper>
+const QuickLinks = ({links, Inner, isOverlaid, isSticky}) => {
+    return(
+        links ?
+            <Wrapper>
+                <Inner>
+                    <Positioner>
+                        {links[0] &&
+                            <QuickLink to={links[0].url} isTransparent={isOverlaid} isSticky={isSticky}>{links[0].title}</QuickLink>
+                        }
+                        {links[1] &&
+                            <QuickLink to={links[1].url} isTransparent={isOverlaid} isSticky={isSticky}>{links[1].title}</QuickLink>
+                        }
+                    </Positioner>
+                </Inner>
+            </Wrapper>
+        :
+        null
+    )
+}
 
 export default QuickLinks

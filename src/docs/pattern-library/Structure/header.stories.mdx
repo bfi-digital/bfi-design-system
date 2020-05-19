@@ -1,6 +1,6 @@
 import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
 import { Header } from "../../../components/Header/index"
-import navItems from "../../../components/Header/data"
+import navItems, { quickLinksData } from "../../../components/Header/data"
 
 <Meta title="Pattern Library|Structure/Header" component={Header} />
 
@@ -22,14 +22,15 @@ On scroll the header sticks to the top of the screen.
 
 <Preview>
     <Story name="Opaque Background">
-        <Header navItems={navItems} />
+        <Header navItems={navItems} quickLinks={quickLinksData} quickLinks={quickLinksData} />
+        {JSON.stringify(links)}
     </Story>
 </Preview>
 
 <Preview>
     <Story name="Transparent Background">
         <>
-        <Header navItems={navItems} overlay={true} />
+        <Header navItems={navItems} quickLinks={quickLinksData} quickLinks={quickLinksData} overlay={true} />
         <div style={{
                 height: "100vh",
                 width: "100%",
@@ -42,7 +43,7 @@ On scroll the header sticks to the top of the screen.
 <Preview>
     <Story name="With overflowing content">
         <>
-            <Header navItems={navItems} />
+            <Header navItems={navItems} quickLinks={quickLinksData} quickLinks={quickLinksData} />
             <div style={{
                 height: "200vh",
                 width: "100%",

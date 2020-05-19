@@ -1,7 +1,7 @@
 import * as React from "react"
 import { withA11y } from "@storybook/addon-a11y"
 import { Header } from "./index"
-import navItems from "./data"
+import navItems, { quickLinksData } from "./data"
 
 export default {
     title: "2 All Components/Header",
@@ -16,7 +16,7 @@ export default {
 
 export const opaque = () =>
     <>
-        <Header navItems={navItems} overlay={false}/>
+        <Header navItems={navItems} quickLinks={quickLinksData} overlay={false}/>
         <div style={{
             height: "200vh",
             width: "100%",

@@ -137,3 +137,15 @@ export default [
     },
     
 ]
+
+
+export const quickLinksData = [
+    {
+        title: "Shop",
+        url: "/"
+    },
+    {
+        title: "Join",
+        url: "/"
+    }
+]

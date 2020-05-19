@@ -127,6 +127,7 @@ const SkipLink = styled.a`
 
 export const Header = ({
     navItems,
+    quickLinks,
     overlay
 }) => {
     const [open, setOpen] = useState(false)
@@ -158,6 +159,7 @@ export const Header = ({
                 </Inner>
 
                 <QuickLinks 
+                    links={quickLinks}
                     Inner={QuickLinksInner} 
                     isOverlaid={overlay} 
                     isSticky={isSticky}
