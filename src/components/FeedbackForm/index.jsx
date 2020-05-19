@@ -38,11 +38,11 @@ const FeedbackContainer = styled.div`
 export const FeedbackForm = ({
     typeFormURL
 }) => {
-    const [isOpen, setIsOpen] = useState(false)
+    const [openFeedback, setopenFeedback] = useState(false)
 
     return(
         <Outer>
-            {isOpen ?
+            {openFeedback ?
                 <FeedbackContainer>
                     <ReactTypeformEmbed 
                         popup={false} 
