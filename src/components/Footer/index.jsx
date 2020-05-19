@@ -6,6 +6,7 @@ import LotteryLogo from "./lottery-logo.jsx"
 import { LinkSwitch as Link } from "../LinkSwitch"
 import PropTypes from "prop-types"
 import parse from "html-react-parser"
+import { FeedbackForm } from "../FeedbackForm"
 
 import facebook from "./facebook.svg"
 import twitter from "./twitter.svg"
@@ -16,6 +17,7 @@ const Outer = styled.footer`
     padding: 40px 0px 20px 0px;
     background: ${theme.lightFocus};
     color: ${theme.black};
+    border-top: 4px solid ${theme.dark};
 `
 
 const Inner = styled.div`
@@ -127,58 +129,63 @@ export const Footer = ({
     menus,
     copyrightText
 }) => 
-    <Outer>
+    <>  
         <Inner>
-            <TopRow>
-                <LogoImage src={logo} alt="British Film Institute. Film Forever."/>
-                {menus.map(menu =>
-                    <Menu key={menu.id}>
-                        <Heading>{menu.title}</Heading>
-                        {menu.children.map(menuItem =>
-                            <LinkContainer key={menuItem.id}>
-                                <MenuItem to={menuItem.url}>{menuItem.title}</MenuItem>    
-                            </LinkContainer>
-                        )}
-                    </Menu>
-                )}
-                <Menu>
-                    <Heading>Keep in touch</Heading>
-                    <LinkContainer>
-                        <MenuItem className="with_break" to="/">Contact us</MenuItem> 
-                    </LinkContainer>
-                    <LinkContainer>
-                        <ExternalMenuItem href="https://www.facebook.com/BritishFilmInstitute/">
-                            <Icon url={facebook} alt=""/>
-                            Facebook
-                        </ExternalMenuItem>
-                    </LinkContainer>
-                    <LinkContainer>
-                        <ExternalMenuItem href="https://twitter.com/BFI">
-                            <Icon url={twitter} alt=""/>
-                            Twitter
-                        </ExternalMenuItem>
-                    </LinkContainer>
-                    <LinkContainer>
-                        <ExternalMenuItem href="https://www.youtube.com/user/BFIfilms">
-                            <Icon url={youtube} alt=""/>
-                            YouTube
-                        </ExternalMenuItem>
-                    </LinkContainer>
-                    <LinkContainer>
-                        <ExternalMenuItem href="https://www.instagram.com/britishfilminstitute/">
-                            <Icon url={instagram} alt=""/>
-                            Instagram
-                        </ExternalMenuItem>
-                    </LinkContainer>
-                </Menu>
-            </TopRow>
-            <BottomRow>
-                <LotteryLogo colourFill={theme.black} alt="The BFI recieves National Lottery funding" />
-
-                <Copyright>{parse(copyrightText)}</Copyright>
-            </BottomRow>
+            <FeedbackForm />
         </Inner>
-    </Outer>
+        <Outer>
+            <Inner>
+                <TopRow>
+                    <LogoImage src={logo} alt="British Film Institute. Film Forever."/>
+                    {menus.map(menu =>
+                        <Menu key={menu.id}>
+                            <Heading>{menu.title}</Heading>
+                            {menu.children.map(menuItem =>
+                                <LinkContainer key={menuItem.id}>
+                                    <MenuItem to={menuItem.url}>{menuItem.title}</MenuItem>    
+                                </LinkContainer>
+                            )}
+                        </Menu>
+                    )}
+                    <Menu>
+                        <Heading>Keep in touch</Heading>
+                        <LinkContainer>
+                            <MenuItem className="with_break" to="/">Contact us</MenuItem> 
+                        </LinkContainer>
+                        <LinkContainer>
+                            <ExternalMenuItem href="https://www.facebook.com/BritishFilmInstitute/">
+                                <Icon url={facebook} alt=""/>
+                                Facebook
+                            </ExternalMenuItem>
+                        </LinkContainer>
+                        <LinkContainer>
+                            <ExternalMenuItem href="https://twitter.com/BFI">
+                                <Icon url={twitter} alt=""/>
+                                Twitter
+                            </ExternalMenuItem>
+                        </LinkContainer>
+                        <LinkContainer>
+                            <ExternalMenuItem href="https://www.youtube.com/user/BFIfilms">
+                                <Icon url={youtube} alt=""/>
+                                YouTube
+                            </ExternalMenuItem>
+                        </LinkContainer>
+                        <LinkContainer>
+                            <ExternalMenuItem href="https://www.instagram.com/britishfilminstitute/">
+                                <Icon url={instagram} alt=""/>
+                                Instagram
+                            </ExternalMenuItem>
+                        </LinkContainer>
+                    </Menu>
+                </TopRow>
+                <BottomRow>
+                    <LotteryLogo colourFill={theme.black} alt="The BFI recieves National Lottery funding" />
+
+                    <Copyright>{parse(copyrightText)}</Copyright>
+                </BottomRow>
+            </Inner>
+        </Outer>
+    </>
 
 Footer.propTypes = {
     /** 
