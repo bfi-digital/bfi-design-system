@@ -46,8 +46,8 @@ const QuickLinks = ({links, Inner, isOverlaid, isSticky}) => {
                     </Positioner>
                 </Inner>
             </Wrapper>
-        :
-        null
+            :
+            null
     )
 }
 

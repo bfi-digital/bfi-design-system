@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import styled from "styled-components"
 import theme from "../_theme"
 import PropTypes from "prop-types"
-import { ReactTypeformEmbed } from 'react-typeform-embed';
+import { ReactTypeformEmbed } from "react-typeform-embed"
 
 const Outer = styled.div`
     
@@ -31,7 +31,8 @@ const FeedbackBar = styled.button`
     }
 `
 const FeedbackContainer = styled.div`
-    border-top: 4px solid ${theme.dark};
+    border-top: 8px solid ${theme.dark};
+    border-bottom: 4px solid ${theme.dark};
 `
 
 export const FeedbackForm = ({
