@@ -38,7 +38,7 @@ const FeedbackContainer = styled.div`
 export const FeedbackForm = ({
     typeFormURL
 }) => {
-    const [openFeedback, setopenFeedback] = useState(false)
+    const [openFeedback, setOpenFeedback] = useState(false)
 
     return(
         <Outer>
@@ -54,7 +54,7 @@ export const FeedbackForm = ({
                     />
                 </FeedbackContainer>
                 :
-                <FeedbackBar onClick={() => {setIsOpen(true)}} title="Give us some feedback">
+                <FeedbackBar onClick={() => {setOpenFeedback(true)}} title="Give us some feedback">
                     This site is currently in <strong>BETA</strong>, help us improve with feedback - <strong>Is there anything wrong with this page?</strong>
                 </FeedbackBar>
             }
