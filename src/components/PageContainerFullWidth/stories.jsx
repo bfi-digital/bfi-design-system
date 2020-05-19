@@ -1,7 +1,7 @@
 import React from "react"
 import { Wrapper, MainContent } from "./index"
 
-import navItems from "../Header/data"
+import navItems, { quickLinksData } from "../Header/data"
 import {default as crumbs} from "../Breadcrumbs/data"
 import footerMenus from "../Footer/data"
 import demoArticles from "../ArticleGrid/data"
@@ -45,7 +45,7 @@ export default {
 
 export const discoveryPage = () =>
     <>
-        <Header navItems={navItems} overlay={true} />
+        <Header navItems={navItems} quickLinks={quickLinksData} overlay={true} />
         <Hero 
             withHeader
             image1920x1080="https://bfi-prototype.netlify.com/static/media/watch-banner.b01324c4.jpg"
@@ -215,7 +215,7 @@ export const discoveryPage = () =>
 
 export const industryPage = () =>
     <>
-        <Header navItems={navItems} overlay={true} />
+        <Header navItems={navItems} quickLinks={quickLinksData} overlay={true} />
         <Hero 
             withHeader
             image1920x1080="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1410/500/1/2020-03/industry.jpg"
@@ -313,7 +313,7 @@ export const industryPage = () =>
 
 export const educationPage = () =>
     <>
-        <Header navItems={navItems} overlay={true} />
+        <Header navItems={navItems} quickLinks={quickLinksData} overlay={true} />
         <Hero 
             withHeader
             image1920x1080="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1440/670/1/2020-03/education.jpg"
@@ -385,7 +385,7 @@ export const educationPage = () =>
 
 export const serviceListPageExample = () =>
     <>
-        <Header navItems={navItems}/>
+        <Header navItems={navItems} quickLinks={quickLinksData}/>
         <Wrapper>
             <MainContent>
                 <Breadcrumbs 
@@ -430,7 +430,7 @@ export const serviceListPageExample = () =>
 
 export const articlePostListPageExample = () =>
     <>
-        <Header navItems={navItems}/>
+        <Header navItems={navItems} quickLinks={quickLinksData}/>
         <Wrapper>
             <MainContent>
                 <Headline 
@@ -490,7 +490,7 @@ export const articlePostListPageExample = () =>
 
 export const everyComponent = () =>
     <>
-        <Header navItems={navItems}/>
+        <Header navItems={navItems} quickLinks={quickLinksData}/>
         <Wrapper>
             <MainContent>
                 <Breadcrumbs 
@@ -815,7 +815,7 @@ export const everyComponent = () =>
 
 export const errorPageExample = () =>
     <>
-        <Header navItems={navItems}/>
+        <Header navItems={navItems} quickLinks={quickLinksData}/>
         <Wrapper>
             <ErrorPage 
                 error={404}

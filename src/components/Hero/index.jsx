@@ -8,7 +8,6 @@ const Outer = styled.section`
     margin: 0 auto;
     background: ${theme.black};
     width: 100%;
-    max-width: ${theme.xl};
     max-width: calc(${theme.xl} + 125px);
     position: relative;
     height: 40vh;

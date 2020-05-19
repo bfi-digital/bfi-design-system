@@ -1,6 +1,6 @@
 export default [
     {
-        title: "Discover",
+        title: "Watch & Discover",
         url: "#",
         active: true,
         children: 
@@ -13,81 +13,139 @@ export default [
             },
             {
                 id: 2,
-                title: "BFI Cinemas",
+                title: "BFI Southbank",
                 url: "/"
             },
             {
                 id: 3,
-                title: "Sight & Sound",
+                title: "BFI IMAX",
                 url: "/"
             },
             {
                 id: 4,
+                title: "Festivals",
+                url: "/"
+            },
+            {
+                id: 5,
+                title: "Read, Watch & listen",
+                url: "/"
+            },
+            {
+                id: 6,
+                title: "BFI Releases (DVDs)",
+                url: "/"
+            },
+            {
+                id: 7,
+                title: "Seasons & Collections",
+                url: "/"
+            },
+            {
+                id: 8,
                 title: "BFI National Archive",
                 url: "/"
             },
             {
-                id: 5,
-                title: "Seasons & Releases",
+                id: 9,
+                title: "Sight & Sound",
                 url: "/"
             }
         ]
     },
     {
-        title: "Film Industry",
-        url: "#",
-        children: [
-            {
-                id: 1,
-                title: "Get funding",
-                url: "/"
-            },
-            {
-                id: 2,
-                title: "Progress your career",
-                url: "/"
-            },
-            {
-                id: 3,
-                title: "Get tax relief",
-                url: "/"
-            },
-            {
-                id: 4,
-                title: "Understand the film industry",
-                url: "/"
-            }
-        ]
-    },
-    {
-        title: "Education",
+        title: "Learning & Training",
         url: "#",
         children:   [
             {
                 id: 1,
-                title: "Education events",
+                title: "How We Support Education & Skills Development",
                 url: "/"
             },
             {
                 id: 2,
-                title: "Resources to teach",
+                title: "Policies & Strategy",
                 url: "/"
             },
             {
                 id: 3,
-                title: "Resources to learn",
+                title: "Events & activities for families",
                 url: "/"
             },
             {
                 id: 4,
-                title: "Opportunities for young filmmakers",
+                title: "Opportunities for Young Creatives",
                 url: "/"
             },
             {
                 id: 5,
-                title: "BFI Policy",
+                title: "Progress my career",
+                url: "/"
+            },
+            {
+                id: 6,
+                title: "Courses, conferences and resources for teachers",
+                url: "/"
+            },
+            {
+                id: 7,
+                title: "Use Reuben Library for your research",
                 url: "/"
             }
         ]  
     },
+    {
+        title: "Funding & Industry",
+        url: "#",
+        children: [
+            {
+                id: 1,
+                title: "How We Support the Film Industry",
+                url: "/"
+            },
+            {
+                id: 2,
+                title: "Policies & Strategy",
+                url: "/"
+            },
+            {
+                id: 3,
+                title: "BFI Distribution",
+                url: "/"
+            },
+            {
+                id: 4,
+                title: "Get Funding & Support",
+                url: "/"
+            },
+            {
+                id: 5,
+                title: "Apply for Tax Relief & British Certification",
+                url: "/"
+            },
+            {
+                id: 6,
+                title: "Search for Lottery awards",
+                url: "/"
+            },
+            {
+                id: 7,
+                title: "Film Industry Statistics & Insights",
+                url: "/"
+            }
+        ]
+    },
+    
+]
+
+
+export const quickLinksData = [
+    {
+        title: "Shop",
+        url: "/"
+    },
+    {
+        title: "Join",
+        url: "/"
+    }
 ]
