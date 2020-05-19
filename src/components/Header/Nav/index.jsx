@@ -86,7 +86,7 @@ const ChildBar = styled.div`
 `
 
 const ChildList = styled.div`
-    padding: 0px ${theme.horizontalPadding};
+    padding: ${theme.horizontalPadding} ${theme.horizontalPadding};
     margin: 0 auto;
     width: 100%;
     background: ${theme.lightest};
