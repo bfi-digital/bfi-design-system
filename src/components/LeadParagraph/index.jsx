@@ -7,7 +7,7 @@ const Outer = styled.p`
     color: ${theme.black};
     line-height: 1.5;
     font-size: 1.0625rem;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     white-space: pre-wrap;
     margin-top: 0;
 
