@@ -805,6 +805,18 @@ export const everyComponent = () =>
                     secondImageAltText="Test image"
                 />
                 <ArticleGrid articles={demoArticles} />
+
+                <Headline 
+                    level={2} 
+                    text="A promo banner with a video!"
+                />
+                <PromoBanner 
+                    colorScheme={2}
+                    reversed={true}
+                    headline="Watch BFI-picked contemporary and classic films in cinema"
+                    description="Become a BFI member for £37 a year and get priority booking for BFI London Film Festival, BFI Flare and at BFI Southbank all year around."
+                    oembedObject={{ html: "\u003ciframe width=\"480\" height=\"270\" src=\"https://www.youtube.com/embed/vpqYxK6mmSU?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen\u003e\u003c/iframe\u003e"}}
+                />
             </MainContent>
         </Wrapper>
         <Footer

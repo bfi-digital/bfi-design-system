@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 import theme from "../_theme"
+import parse from "html-react-parser"
 
 import { Headline } from "../Headline"
 import { Button } from "../Button"
@@ -158,6 +159,38 @@ const SecondImage = styled.img`
     max-width: 100%;
     height: auto;
 `
+const VideoInner = styled.div`
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+`
+const Video = styled.div`
+    order: -1;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+
+    @media screen and (min-width: ${theme.m}){
+        order: ${props => props.reversed ? "-1" : "1"};
+        max-width: 75%;
+        height: auto;
+        margin-right: ${props => props.reversed ? "0" : "-20px"};
+        margin-left: ${props => props.reversed ? "-20px" : "20px"};
+    }
+    @media screen and (min-width: ${theme.l}){
+        margin-right: 0px;
+        margin-left: 0px;
+        max-width: 50%;
+    }
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+`
 
 export const PromoBanner = ({
     headline,
@@ -170,7 +203,8 @@ export const PromoBanner = ({
     backgroundColor,
     secondImage,
     secondImageAlt,
-    external
+    external,
+    oembedObject
 }) =>
     <Outer 
         className="promoBanner"
@@ -178,7 +212,7 @@ export const PromoBanner = ({
         colorScheme={colorScheme} 
         backgroundColor={backgroundColor}
     >
-        <Inner className={image ? "with_image" : "without_image"} reversed={reversed}>
+        <Inner className={image || oembedObject ? "with_image" : "without_image"} reversed={reversed}>
             {secondImage && 
                 <SecondImage 
                     src={secondImage} 
@@ -186,26 +220,36 @@ export const PromoBanner = ({
                 />
             }
             <Headline level={2} text={headline}/>
-            <Description className={image ? "with_image" : "without_image"}>{description}</Description>
-            {callToActionUrl && image && 
+            <Description className={image || oembedObject ? "with_image" : "without_image"}>{description}</Description>
+            {callToActionUrl && (image || oembedObject) && 
                 <Button to={callToActionUrl} colorScheme={colorScheme === 1 || colorScheme === 2 ? 0 : 1} external={external}>
                     {callToActionTitle}
                 </Button>
             }
         </Inner> 
-        {image ? 
-            <Image
-                reversed={reversed}
-                image={image} 
-            />   
-            : 
-            <RightButton>
-                {callToActionUrl && 
-                <Button to={callToActionUrl} colorScheme={colorScheme === 1 || colorScheme === 2 ? 0 : 1} external={external}>
-                    {callToActionTitle}
-                </Button>
-                }
-            </RightButton>
+        { oembedObject ?
+            <Video reversed={reversed}>
+                <VideoInner>
+                    {parse(oembedObject.html)}
+                </VideoInner>
+            </Video>
+            :
+            <>
+            {image ? 
+                <Image
+                    reversed={reversed}
+                    image={image} 
+                />   
+                : 
+                <RightButton>
+                    {callToActionUrl && 
+                    <Button to={callToActionUrl} colorScheme={colorScheme === 1 || colorScheme === 2 ? 0 : 1} external={external}>
+                        {callToActionTitle}
+                    </Button>
+                    }
+                </RightButton>
+            }
+            </>
         }
     </Outer>
 
@@ -249,5 +293,9 @@ PromoBanner.propTypes = {
     /** 
     * Boolean for whether link is external. Default is false
     **/
-    external: PropTypes.external
+    external: PropTypes.bool,
+    /** 
+    * Optional video embed which will override the image
+    **/
+    oembedObject: PropTypes.string
 }
