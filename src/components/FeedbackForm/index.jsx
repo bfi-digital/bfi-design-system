@@ -2,7 +2,6 @@ import React, { useState } from "react"
 import styled from "styled-components"
 import theme from "../_theme"
 import PropTypes from "prop-types"
-import { ReactTypeformEmbed } from "react-typeform-embed"
 
 const Outer = styled.div`
     
@@ -36,7 +35,7 @@ const FeedbackContainer = styled.div`
 `
 
 export const FeedbackForm = ({
-    typeFormURL
+    formEmbed
 }) => {
     const [openFeedback, setOpenFeedback] = useState(false)
 
@@ -44,14 +43,7 @@ export const FeedbackForm = ({
         <Outer>
             {openFeedback ?
                 <FeedbackContainer>
-                    <ReactTypeformEmbed 
-                        popup={false} 
-                        url={typeFormURL + "?currenturl=" + window.location.pathname + window.location.search}
-                        hideHeaders
-                        hideFooter
-                        buttonText="Give Feedback"
-                        style={{ height: "300px", width: "100%", position: "relative" }}
-                    />
+                    <div dangerouslySetInnerHTML={{__html: formEmbed}}></div>
                 </FeedbackContainer>
                 :
                 <FeedbackBar onClick={() => {setOpenFeedback(true)}} title="Give us some feedback">
@@ -65,11 +57,11 @@ export const FeedbackForm = ({
 
 FeedbackForm.propTypes = {
     /** 
-	 * Url for the feedback form - e.g. https://deesondesign.typeform.com/to/cK12uT
+	 * The embed code
     **/
-    typeFormURL: PropTypes.string
+   formEmbed: PropTypes.string
 }
 
 FeedbackForm.defaultProps = {
-    typeFormURL: "https://deesondesign.typeform.com/to/cK12uT"
+    typeFormURL: `<script>(function(t,e,s,n){var o,a,c;t.SMCX=t.SMCX||[],e.getElementById(n)||(o=e.getElementsByTagName(s),a=o[o.length-1],c=e.createElement(s),c.type="text/javascript",c.async=!0,c.id=n,c.src=["https:"===location.protocol?"https://":"http://","widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgd9hxa3V5_2FlYXPg9kCnB6_2FG142i_2BHxbMOKeBcVzphTEcm.js"].join(""),a.parentNode.insertBefore(c,a))})(window,document,"script","smcx-sdk");</script><a style="font: 12px Helvetica, sans-serif; color: #999; text-decoration: none;" href=https://www.surveymonkey.com> Create your own user feedback survey </a>`
 }
