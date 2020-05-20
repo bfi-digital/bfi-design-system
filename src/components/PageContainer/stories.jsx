@@ -28,6 +28,7 @@ import { HeroArticle } from "../HeroArticle"
 // import { Highlights } from "../Highlights"
 import { Image } from "../Image"
 import { ImageGallery } from "../ImageGallery"
+import { ImageSponsorLinks } from "../ImageSponsorLinks"
 import { LeadParagraph } from "../LeadParagraph"
 import { Oembed } from "../Oembed"
 import { PageLinks } from "../PageLinks"
@@ -1063,6 +1064,62 @@ export const FilmPage = () =>
             </MainContent>
         </Wrapper>
 
+        <Footer
+            menus={footerMenus}
+            copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"
+        />
+    </>
+
+
+
+
+
+
+export const sightAndSoundPageExample = () =>
+    <>
+        <Header navItems={navItems} quickLinks={quickLinksData} />
+        <Wrapper>
+            <MainContent>
+                <Breadcrumbs 
+                    breadcrumbs={[
+                        {
+                            title: "Watch & Discover",
+                            url: "#"
+                        },
+                        {
+                            title: "Sight & Sound",
+                            url: "#"
+                        },
+                        {
+                            title: "Sight & Sound: the May 2020 issue"
+                        }
+                    ]} 
+                />
+                <Headline 
+                    level={1} 
+                    text="Sight &amp; Sound: the May 2020 issue"
+                />
+                <ImageSponsorLinks 
+                    images={[{
+                        url: "https://www.bfi.org.uk/sites/bfi.org.uk/files/styles/16x9_small/public/sight-and-sound-logo-280x69.png?itok=AEegRSbk",
+                        alt: "Sight & Sound",
+                        link: "#"
+                    }]}
+                />
+                <LeadParagraph 
+                    text="Break-out time: remembering Mathieu Kassovitz’s explosive debut La Haine, the film that turned French urban bust to boom, on its 25th anniversary."
+                />
+                <Text> 
+                    <p>Plus contemporary banlieu tensions in Ladj Ly’s Les Miserables, Damien Chazelle’s Netflix jazz series The Eddy, Mark Cousins’s new history of female filmmaking and David Thomson on acting’s wrong turn.</p>
+                    
+                    <p>In print and digital from 6 April 2020. Buy a print issue, get the digital edition or subscribe.</p>
+                </Text>
+                
+            </MainContent>
+            <Sidebar>
+                <SidebarPageLinks links={pageLinksData} blockTitle="Related pages" />
+            </Sidebar>
+        </Wrapper>
         <Footer
             menus={footerMenus}
             copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"
