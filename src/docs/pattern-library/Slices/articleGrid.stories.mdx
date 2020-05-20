@@ -16,7 +16,7 @@ import demoArticles from "../../../components/ArticleGrid/data"
             maxWidth: "1000px",
             margin: "0 auto"
         }}>
-            <ArticleGrid articles={[...demoArticles, ...demoArticles, ...demoArticles, ...demoArticles, ...demoArticles]} firstHighlighted />
+            <ArticleGrid articles={[...demoArticles, ...demoArticles, ...demoArticles, ...demoArticles, ...demoArticles, ...demoArticles, ...demoArticles]} firstHighlighted />
         </div>
     </Story>
 </Preview>
@@ -34,13 +34,73 @@ import demoArticles from "../../../components/ArticleGrid/data"
 </Preview>
 
 <Preview>
-    <Story name="Single Article">
+    <Story name="1 Article">
         <div style={{
             padding: "10px",
             maxWidth: "1000px",
             margin: "0 auto"
         }}>
             <ArticleGrid articles={[demoArticles[0]]} />
+        </div>
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="2 Articles">
+        <div style={{
+            padding: "10px",
+            maxWidth: "1000px",
+            margin: "0 auto"
+        }}>
+            <ArticleGrid articles={demoArticles.slice(0, 2)} />
+        </div>
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="3 Articles">
+        <div style={{
+            padding: "10px",
+            maxWidth: "1000px",
+            margin: "0 auto"
+        }}>
+            <ArticleGrid articles={demoArticles} />
+        </div>
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="4 Articles">
+        <div style={{
+            padding: "10px",
+            maxWidth: "1000px",
+            margin: "0 auto"
+        }}>
+            <ArticleGrid articles={[...demoArticles, ...demoArticles.slice(0, 1)]} />
+        </div>
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="5 Articles">
+        <div style={{
+            padding: "10px",
+            maxWidth: "1000px",
+            margin: "0 auto"
+        }}>
+            <ArticleGrid articles={[...demoArticles, ...demoArticles.slice(0, 2)]} />
+        </div>
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="6 Articles">
+        <div style={{
+            padding: "10px",
+            maxWidth: "1000px",
+            margin: "0 auto"
+        }}>
+            <ArticleGrid articles={[...demoArticles, ...demoArticles]} />
         </div>
     </Story>
 </Preview>

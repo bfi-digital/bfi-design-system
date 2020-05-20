@@ -57,15 +57,15 @@ const Articles = styled.ul`
             margin-bottom: 35px;
             margin-right: 25px;
 
-            &:nth-of-type(even) {
+            &:nth-of-type(2n) {
                 margin-right: ${props => props.lessColumns ? "0px" : "25px"};
             }
             &:nth-of-type(3n) {
                 margin-right: ${props => props.lessColumns ? "25px" : "0px"};
             }
-            &:nth-of-type(4n) {
-                margin-right: ${props => props.lessColumns ? "0px" : "25px"};
-            }            
+            // &:nth-of-type(4n) {
+            //     margin-right: ${props => props.lessColumns ? "0px" : "25px"};
+            // }            
         }
         @media screen and (min-width: ${theme.l}){
             min-width: 275px;
