@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 import parse from "html-react-parser"
-import theme from "../_theme"
 
 const VideoContainer = styled.div`
     position: relative;

@@ -238,21 +238,21 @@ export const PromoBanner = ({
             </Video>
             :
             <>
-            {image ? 
-                <Image
-                    reversed={reversed}
-                    image={image} 
-                    pageWithSideBar={pageWithSideBar}
-                />   
-                : 
-                <RightButton>
-                    {callToActionUrl && 
-                    <Button to={callToActionUrl} colorScheme={colorScheme === 1 || colorScheme === 2 ? 0 : 1} external={external}>
-                        {callToActionTitle}
-                    </Button>
-                    }
-                </RightButton>
-            }
+                {image ? 
+                    <Image
+                        reversed={reversed}
+                        image={image} 
+                        pageWithSideBar={pageWithSideBar}
+                    />   
+                    : 
+                    <RightButton>
+                        {callToActionUrl && 
+                        <Button to={callToActionUrl} colorScheme={colorScheme === 1 || colorScheme === 2 ? 0 : 1} external={external}>
+                            {callToActionTitle}
+                        </Button>
+                        }
+                    </RightButton>
+                }
             </>
         }
     </Outer>

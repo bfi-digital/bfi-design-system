@@ -260,10 +260,10 @@ Array [
     id="content-start"
   />,
   <div
-    className="sc-cBdUnI fUkZGg"
+    className="sc-kcDeIU kRAzwR"
   >
     <article
-      className="sc-exkUMo kGzGfI"
+      className="sc-BngTV fgkqaA"
     >
       <h1
         className="sc-htpNat sc-bxivhb cxdQtX"
@@ -330,7 +330,7 @@ Array [
           className="sc-jWBwVP dSqRSx"
         >
           <ul
-            className="sc-brqgnP dkMifZ"
+            className="sc-brqgnP iNEGQA"
           >
             <li
               className="sc-kkGfuU cQwrrw articleCard"
@@ -1096,13 +1096,13 @@ Array [
     </div>
   </section>,
   <div
-    className="sc-cBdUnI fUkZGg"
+    className="sc-kcDeIU kRAzwR"
   >
     <article
-      className="sc-exkUMo kGzGfI"
+      className="sc-BngTV fgkqaA"
     >
       <section
-        className="sc-kLIISr ixsEkK promoBanner"
+        className="sc-kLIISr jcNFJV promoBanner"
       >
         <div
           className="sc-qrIAp dPHOQ without_image"
@@ -1377,7 +1377,7 @@ Array [
         className="sc-jhAzac iXDsZE"
       />
       <section
-        className="sc-kLIISr bOIPZp promoBanner"
+        className="sc-kLIISr dTOlPr promoBanner"
         reversed={true}
       >
         <div
@@ -1418,16 +1418,16 @@ Array [
         What to watch
       </h2>
       <ul
-        className="sc-bEjcJn clDCsp"
+        className="sc-likbZx dQjvdZ"
       >
         <li
-          className="sc-eInJlc jEqcYH"
+          className="sc-fOICqy kzloqL"
         >
           <div
-            className="sc-jtRlXQ hkxYyh"
+            className="sc-bEjcJn cVUTIV"
           >
             <div
-              className="sc-bGbJRg cVXQCf image"
+              className="sc-ePZHVD cibllA image"
             />
           </div>
           <h4
@@ -1436,20 +1436,20 @@ Array [
             100 great films streaming on Netflix and Amazon Prime
           </h4>
           <p
-            className="sc-gtfDJT bsILVb"
+            className="sc-hzDEsm jOTGwl"
           />
           <a
-            className="sc-fOICqy iWDbTy"
+            className="sc-jeCdPy fArpkE"
             href="#"
             target="_self"
           >
             <span
-              className="sc-hzDEsm gIgVnT"
+              className="sc-jtRlXQ cqYKIN"
             >
               Read this list
             </span>
             <div
-              className="sc-jeCdPy inrCqM"
+              className="sc-bGbJRg jivPxX"
             >
               <svg
                 height="14"
@@ -1474,13 +1474,13 @@ Array [
           </a>
         </li>
         <li
-          className="sc-eInJlc jEqcYH"
+          className="sc-fOICqy kzloqL"
         >
           <div
-            className="sc-jtRlXQ hkxYyh"
+            className="sc-bEjcJn cVUTIV"
           >
             <div
-              className="sc-bGbJRg cVXQCf image"
+              className="sc-ePZHVD cibllA image"
             />
           </div>
           <h4
@@ -1489,20 +1489,20 @@ Array [
             Production Fund
           </h4>
           <p
-            className="sc-gtfDJT bsILVb"
+            className="sc-hzDEsm jOTGwl"
           />
           <a
-            className="sc-fOICqy iWDbTy"
+            className="sc-jeCdPy fArpkE"
             href="#"
             target="_self"
           >
             <span
-              className="sc-hzDEsm gIgVnT"
+              className="sc-jtRlXQ cqYKIN"
             >
               Read this list
             </span>
             <div
-              className="sc-jeCdPy inrCqM"
+              className="sc-bGbJRg jivPxX"
             >
               <svg
                 height="14"
@@ -1527,13 +1527,13 @@ Array [
           </a>
         </li>
         <li
-          className="sc-eInJlc jEqcYH"
+          className="sc-fOICqy kzloqL"
         >
           <div
-            className="sc-jtRlXQ hkxYyh"
+            className="sc-bEjcJn cVUTIV"
           >
             <div
-              className="sc-bGbJRg cVXQCf image"
+              className="sc-ePZHVD cibllA image"
             />
           </div>
           <h4
@@ -1542,20 +1542,20 @@ Array [
             Production Fund
           </h4>
           <p
-            className="sc-gtfDJT bsILVb"
+            className="sc-hzDEsm jOTGwl"
           />
           <a
-            className="sc-fOICqy iWDbTy"
+            className="sc-jeCdPy fArpkE"
             href="#"
             target="_self"
           >
             <span
-              className="sc-hzDEsm gIgVnT"
+              className="sc-jtRlXQ cqYKIN"
             >
               Read this list
             </span>
             <div
-              className="sc-jeCdPy inrCqM"
+              className="sc-bGbJRg jivPxX"
             >
               <svg
                 height="14"
@@ -1640,7 +1640,7 @@ Array [
           className="sc-jWBwVP dSqRSx"
         >
           <ul
-            className="sc-brqgnP dkMifZ"
+            className="sc-brqgnP iNEGQA"
           >
             <li
               className="sc-kkGfuU cQwrrw articleCard"
@@ -1769,7 +1769,7 @@ Array [
         className="sc-jhAzac iXDsZE"
       />
       <section
-        className="sc-kLIISr ixsEkK promoBanner"
+        className="sc-kLIISr jcNFJV promoBanner"
       >
         <div
           className="sc-qrIAp dPHOQ with_image"
@@ -1802,7 +1802,7 @@ Array [
         className="sc-jhAzac iXDsZE"
       />
       <section
-        className="sc-kLIISr ixsEkK promoBanner"
+        className="sc-kLIISr jcNFJV promoBanner"
         reversed={true}
       >
         <div
@@ -2457,10 +2457,10 @@ Array [
     </div>
   </section>,
   <div
-    className="sc-cBdUnI fUkZGg"
+    className="sc-kcDeIU kRAzwR"
   >
     <article
-      className="sc-exkUMo kGzGfI"
+      className="sc-BngTV fgkqaA"
     >
       <h2
         className="sc-ifAKCX htAKPU"
@@ -2468,10 +2468,10 @@ Array [
         Resources and opportunities
       </h2>
       <ul
-        className="sc-bEjcJn clDCsp"
+        className="sc-likbZx dQjvdZ"
       >
         <li
-          className="sc-eInJlc cDdOQQ"
+          className="sc-fOICqy bDazqi"
         >
           <h4
             className="sc-bZQynM faaoba"
@@ -2479,22 +2479,22 @@ Array [
             Opportunities for young creatives
           </h4>
           <p
-            className="sc-gtfDJT bsILVb"
+            className="sc-hzDEsm jOTGwl"
           >
             Aged 16-25? If you are wondering where to get start with filmmaking or explore a career in film, we have a range of opportunities, workshops and courses for you.
           </p>
           <a
-            className="sc-fOICqy iWDbTy"
+            className="sc-jeCdPy fArpkE"
             href="#"
             target="_self"
           >
             <span
-              className="sc-hzDEsm gIgVnT"
+              className="sc-jtRlXQ cqYKIN"
             >
               Find out more
             </span>
             <div
-              className="sc-jeCdPy inrCqM"
+              className="sc-bGbJRg jivPxX"
             >
               <svg
                 height="14"
@@ -2519,7 +2519,7 @@ Array [
           </a>
         </li>
         <li
-          className="sc-eInJlc cDdOQQ"
+          className="sc-fOICqy bDazqi"
         >
           <h4
             className="sc-bZQynM faaoba"
@@ -2527,22 +2527,22 @@ Array [
             Courses, conferences and resources for teacher
           </h4>
           <p
-            className="sc-gtfDJT bsILVb"
+            className="sc-hzDEsm jOTGwl"
           >
             We have a wealth of knowledge and tools to help you introduce students to specialist, independent and archive films for teaching with or about film.
           </p>
           <a
-            className="sc-fOICqy iWDbTy"
+            className="sc-jeCdPy fArpkE"
             href="#"
             target="_self"
           >
             <span
-              className="sc-hzDEsm gIgVnT"
+              className="sc-jtRlXQ cqYKIN"
             >
               Find out more
             </span>
             <div
-              className="sc-jeCdPy inrCqM"
+              className="sc-bGbJRg jivPxX"
             >
               <svg
                 height="14"
@@ -2567,7 +2567,7 @@ Array [
           </a>
         </li>
         <li
-          className="sc-eInJlc cDdOQQ"
+          className="sc-fOICqy bDazqi"
         >
           <h4
             className="sc-bZQynM faaoba"
@@ -2575,22 +2575,22 @@ Array [
             Make the best use of our Reuben Library
           </h4>
           <p
-            className="sc-gtfDJT bsILVb"
+            className="sc-hzDEsm jOTGwl"
           >
             Access national archive, a huge collection of books, journals and digitised material about films, television and moving images through our Reuben Lirary at Southbank.
           </p>
           <a
-            className="sc-fOICqy iWDbTy"
+            className="sc-jeCdPy fArpkE"
             href="#"
             target="_self"
           >
             <span
-              className="sc-hzDEsm gIgVnT"
+              className="sc-jtRlXQ cqYKIN"
             >
               Find out more
             </span>
             <div
-              className="sc-jeCdPy inrCqM"
+              className="sc-bGbJRg jivPxX"
             >
               <svg
                 height="14"
@@ -2619,7 +2619,7 @@ Array [
         className="sc-jhAzac iXDsZE"
       />
       <section
-        className="sc-kLIISr dibaGJ promoBanner"
+        className="sc-kLIISr cwXvJT promoBanner"
       >
         <div
           className="sc-qrIAp dPHOQ with_image"
@@ -2652,7 +2652,7 @@ Array [
         className="sc-jhAzac iXDsZE"
       />
       <section
-        className="sc-kLIISr dibaGJ promoBanner"
+        className="sc-kLIISr cwXvJT promoBanner"
         reversed={true}
       >
         <div
@@ -3291,7 +3291,7 @@ Array [
     id="content-start"
   />,
   <div
-    className="sc-cBdUnI fUkZGg"
+    className="sc-kcDeIU kRAzwR"
   >
     <div
       className="sc-kjoXOD lehGdM"
@@ -3955,10 +3955,10 @@ Array [
     id="content-start"
   />,
   <div
-    className="sc-cBdUnI fUkZGg"
+    className="sc-kcDeIU kRAzwR"
   >
     <article
-      className="sc-exkUMo kGzGfI"
+      className="sc-BngTV fgkqaA"
     >
       <ol
         className="sc-csuQGl kjfdOD"
@@ -4140,64 +4140,64 @@ Array [
         An image gallery
       </h3>
       <figure
-        className="sc-kaNhvL uNCnc"
+        className="sc-iBEsjs jsfehM"
       >
         <div
-          className="sc-hzNEM cuNAHc"
+          className="sc-kxynE aOMys"
         >
           <button
-            className="sc-chbbiW gdaDf"
+            className="sc-cooIXK boxMUj"
             onClick={[Function]}
           >
             <img
               alt="Example image"
-              className="sc-kxynE fbCWby"
+              className="sc-fcdeBU jywMdG"
               src="http://placehold.it/300x200"
             />
           </button>
           <button
-            className="sc-chbbiW gdaDf"
+            className="sc-cooIXK boxMUj"
             onClick={[Function]}
           >
             <img
               alt="Example image 2"
-              className="sc-kxynE fbCWby"
+              className="sc-fcdeBU jywMdG"
               src="http://placehold.it/300x300"
             />
           </button>
           <button
-            className="sc-chbbiW gdaDf"
+            className="sc-cooIXK boxMUj"
             onClick={[Function]}
           >
             <img
               alt="Example image 3"
-              className="sc-kxynE fbCWby"
+              className="sc-fcdeBU jywMdG"
               src="http://placehold.it/600x400"
             />
           </button>
           <button
-            className="sc-chbbiW gdaDf"
+            className="sc-cooIXK boxMUj"
             onClick={[Function]}
           >
             <img
               alt="Example image 4"
-              className="sc-kxynE fbCWby"
+              className="sc-fcdeBU jywMdG"
               src="http://placehold.it/1200x800"
             />
           </button>
           <button
-            className="sc-chbbiW gdaDf"
+            className="sc-cooIXK boxMUj"
             onClick={[Function]}
           >
             <img
               alt="Example image 5"
-              className="sc-kxynE fbCWby"
+              className="sc-fcdeBU jywMdG"
               src="http://placehold.it/600x400"
             />
           </button>
         </div>
         <figcaption
-          className="sc-LKuAh hPXknj"
+          className="sc-hzNEM lbmBYg"
         >
           A gallery of images
         </figcaption>
@@ -4370,7 +4370,7 @@ Array [
         Checkout our YouTube
       </h2>
       <div
-        className="sc-fZwumE gUxLCt"
+        className="sc-clNaTc bUxqry"
       >
         <iframe
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -4390,10 +4390,10 @@ Array [
         View some other pages
       </h2>
       <ul
-        className="sc-bEjcJn clDCsp"
+        className="sc-likbZx dQjvdZ"
       >
         <li
-          className="sc-eInJlc cDdOQQ"
+          className="sc-fOICqy bDazqi"
         >
           <h4
             className="sc-bZQynM faaoba"
@@ -4401,22 +4401,22 @@ Array [
             Development fund
           </h4>
           <p
-            className="sc-gtfDJT bsILVb"
+            className="sc-hzDEsm jOTGwl"
           >
             We welcome development applications from new and established filmmakers.
           </p>
           <a
-            className="sc-fOICqy iWDbTy"
+            className="sc-jeCdPy fArpkE"
             href="#"
             target="_self"
           >
             <span
-              className="sc-hzDEsm gIgVnT"
+              className="sc-jtRlXQ cqYKIN"
             >
               Apply to this fund
             </span>
             <div
-              className="sc-jeCdPy inrCqM"
+              className="sc-bGbJRg jivPxX"
             >
               <svg
                 height="14"
@@ -4441,7 +4441,7 @@ Array [
           </a>
         </li>
         <li
-          className="sc-eInJlc cDdOQQ"
+          className="sc-fOICqy bDazqi"
         >
           <h4
             className="sc-bZQynM faaoba"
@@ -4449,22 +4449,22 @@ Array [
             Production Fund
           </h4>
           <p
-            className="sc-gtfDJT bsILVb"
+            className="sc-hzDEsm jOTGwl"
           >
             We welcome production applications from new and established filmmakers.
           </p>
           <a
-            className="sc-fOICqy iWDbTy"
+            className="sc-jeCdPy fArpkE"
             href="#"
             target="_self"
           >
             <span
-              className="sc-hzDEsm gIgVnT"
+              className="sc-jtRlXQ cqYKIN"
             >
               Apply to this fund
             </span>
             <div
-              className="sc-jeCdPy inrCqM"
+              className="sc-bGbJRg jivPxX"
             >
               <svg
                 height="14"
@@ -4489,7 +4489,7 @@ Array [
           </a>
         </li>
         <li
-          className="sc-eInJlc cDdOQQ"
+          className="sc-fOICqy bDazqi"
         >
           <h4
             className="sc-bZQynM faaoba"
@@ -4497,22 +4497,22 @@ Array [
             Something Fund
           </h4>
           <p
-            className="sc-gtfDJT bsILVb"
+            className="sc-hzDEsm jOTGwl"
           >
             We welcome production applications from new and established filmmakers.
           </p>
           <a
-            className="sc-fOICqy iWDbTy"
+            className="sc-jeCdPy fArpkE"
             href="#"
             target="_self"
           >
             <span
-              className="sc-hzDEsm gIgVnT"
+              className="sc-jtRlXQ cqYKIN"
             >
               Apply to this fund
             </span>
             <div
-              className="sc-jeCdPy inrCqM"
+              className="sc-bGbJRg jivPxX"
             >
               <svg
                 height="14"
@@ -4538,10 +4538,10 @@ Array [
         </li>
       </ul>
       <ul
-        className="sc-bEjcJn fvGMhj"
+        className="sc-likbZx MEupq"
       >
         <li
-          className="sc-eInJlc cDdOQQ"
+          className="sc-fOICqy bDazqi"
         >
           <h4
             className="sc-bZQynM faaoba"
@@ -4549,22 +4549,22 @@ Array [
             Development fund
           </h4>
           <p
-            className="sc-gtfDJT bsILVb"
+            className="sc-hzDEsm jOTGwl"
           >
             We welcome development applications from new and established filmmakers.
           </p>
           <a
-            className="sc-fOICqy iWDbTy"
+            className="sc-jeCdPy fArpkE"
             href="#"
             target="_self"
           >
             <span
-              className="sc-hzDEsm gIgVnT"
+              className="sc-jtRlXQ cqYKIN"
             >
               Apply to this fund
             </span>
             <div
-              className="sc-jeCdPy inrCqM"
+              className="sc-bGbJRg jivPxX"
             >
               <svg
                 height="14"
@@ -4589,7 +4589,7 @@ Array [
           </a>
         </li>
         <li
-          className="sc-eInJlc cDdOQQ"
+          className="sc-fOICqy bDazqi"
         >
           <h4
             className="sc-bZQynM faaoba"
@@ -4597,22 +4597,22 @@ Array [
             Production Fund
           </h4>
           <p
-            className="sc-gtfDJT bsILVb"
+            className="sc-hzDEsm jOTGwl"
           >
             We welcome production applications from new and established filmmakers.
           </p>
           <a
-            className="sc-fOICqy iWDbTy"
+            className="sc-jeCdPy fArpkE"
             href="#"
             target="_self"
           >
             <span
-              className="sc-hzDEsm gIgVnT"
+              className="sc-jtRlXQ cqYKIN"
             >
               Apply to this fund
             </span>
             <div
-              className="sc-jeCdPy inrCqM"
+              className="sc-bGbJRg jivPxX"
             >
               <svg
                 height="14"
@@ -4638,10 +4638,10 @@ Array [
         </li>
       </ul>
       <ul
-        className="sc-bEjcJn clDCsp"
+        className="sc-likbZx dQjvdZ"
       >
         <li
-          className="sc-eInJlc cDdOQQ"
+          className="sc-fOICqy bDazqi"
         >
           <h4
             className="sc-bZQynM faaoba"
@@ -4649,22 +4649,22 @@ Array [
             Development fund
           </h4>
           <p
-            className="sc-gtfDJT bsILVb"
+            className="sc-hzDEsm jOTGwl"
           >
             We welcome development applications from new and established filmmakers.
           </p>
           <a
-            className="sc-fOICqy iWDbTy"
+            className="sc-jeCdPy fArpkE"
             href="#"
             target="_self"
           >
             <span
-              className="sc-hzDEsm gIgVnT"
+              className="sc-jtRlXQ cqYKIN"
             >
               Apply to this fund
             </span>
             <div
-              className="sc-jeCdPy inrCqM"
+              className="sc-bGbJRg jivPxX"
             >
               <svg
                 height="14"
@@ -4695,16 +4695,16 @@ Array [
         Page links with iamges
       </h2>
       <ul
-        className="sc-bEjcJn fvGMhj"
+        className="sc-likbZx MEupq"
       >
         <li
-          className="sc-eInJlc jEqcYH"
+          className="sc-fOICqy kzloqL"
         >
           <div
-            className="sc-jtRlXQ hkxYyh"
+            className="sc-bEjcJn cVUTIV"
           >
             <div
-              className="sc-bGbJRg cVXQCf image"
+              className="sc-ePZHVD cibllA image"
             />
           </div>
           <h4
@@ -4713,22 +4713,22 @@ Array [
             Development fund
           </h4>
           <p
-            className="sc-gtfDJT bsILVb"
+            className="sc-hzDEsm jOTGwl"
           >
             We welcome development applications from new and established filmmakers.
           </p>
           <a
-            className="sc-fOICqy iWDbTy"
+            className="sc-jeCdPy fArpkE"
             href="#"
             target="_self"
           >
             <span
-              className="sc-hzDEsm gIgVnT"
+              className="sc-jtRlXQ cqYKIN"
             >
               Apply to this fund
             </span>
             <div
-              className="sc-jeCdPy inrCqM"
+              className="sc-bGbJRg jivPxX"
             >
               <svg
                 height="14"
@@ -4753,13 +4753,13 @@ Array [
           </a>
         </li>
         <li
-          className="sc-eInJlc jEqcYH"
+          className="sc-fOICqy kzloqL"
         >
           <div
-            className="sc-jtRlXQ hkxYyh"
+            className="sc-bEjcJn cVUTIV"
           >
             <div
-              className="sc-bGbJRg cVXQCf image"
+              className="sc-ePZHVD cibllA image"
             />
           </div>
           <h4
@@ -4768,22 +4768,22 @@ Array [
             Production Fund
           </h4>
           <p
-            className="sc-gtfDJT bsILVb"
+            className="sc-hzDEsm jOTGwl"
           >
             We welcome production applications from new and established filmmakers.
           </p>
           <a
-            className="sc-fOICqy iWDbTy"
+            className="sc-jeCdPy fArpkE"
             href="#"
             target="_self"
           >
             <span
-              className="sc-hzDEsm gIgVnT"
+              className="sc-jtRlXQ cqYKIN"
             >
               Apply to this fund
             </span>
             <div
-              className="sc-jeCdPy inrCqM"
+              className="sc-bGbJRg jivPxX"
             >
               <svg
                 height="14"
@@ -4808,13 +4808,13 @@ Array [
           </a>
         </li>
         <li
-          className="sc-eInJlc jEqcYH"
+          className="sc-fOICqy kzloqL"
         >
           <div
-            className="sc-jtRlXQ hkxYyh"
+            className="sc-bEjcJn cVUTIV"
           >
             <div
-              className="sc-bGbJRg cVXQCf image"
+              className="sc-ePZHVD cibllA image"
             />
           </div>
           <h4
@@ -4823,22 +4823,22 @@ Array [
             Something Fund
           </h4>
           <p
-            className="sc-gtfDJT bsILVb"
+            className="sc-hzDEsm jOTGwl"
           >
             We welcome production applications from new and established filmmakers.
           </p>
           <a
-            className="sc-fOICqy iWDbTy"
+            className="sc-jeCdPy fArpkE"
             href="#"
             target="_self"
           >
             <span
-              className="sc-hzDEsm gIgVnT"
+              className="sc-jtRlXQ cqYKIN"
             >
               Apply to this fund
             </span>
             <div
-              className="sc-jeCdPy inrCqM"
+              className="sc-bGbJRg jivPxX"
             >
               <svg
                 height="14"
@@ -4863,13 +4863,13 @@ Array [
           </a>
         </li>
         <li
-          className="sc-eInJlc jEqcYH"
+          className="sc-fOICqy kzloqL"
         >
           <div
-            className="sc-jtRlXQ hkxYyh"
+            className="sc-bEjcJn cVUTIV"
           >
             <div
-              className="sc-bGbJRg cVXQCf image"
+              className="sc-ePZHVD cibllA image"
             />
           </div>
           <h4
@@ -4878,22 +4878,22 @@ Array [
             Something Fund
           </h4>
           <p
-            className="sc-gtfDJT bsILVb"
+            className="sc-hzDEsm jOTGwl"
           >
             We welcome production applications from new and established filmmakers.
           </p>
           <a
-            className="sc-fOICqy iWDbTy"
+            className="sc-jeCdPy fArpkE"
             href="#"
             target="_self"
           >
             <span
-              className="sc-hzDEsm gIgVnT"
+              className="sc-jtRlXQ cqYKIN"
             >
               Apply to this fund
             </span>
             <div
-              className="sc-jeCdPy inrCqM"
+              className="sc-bGbJRg jivPxX"
             >
               <svg
                 height="14"
@@ -4919,16 +4919,16 @@ Array [
         </li>
       </ul>
       <ul
-        className="sc-bEjcJn fvGMhj"
+        className="sc-likbZx MEupq"
       >
         <li
-          className="sc-eInJlc jEqcYH"
+          className="sc-fOICqy kzloqL"
         >
           <div
-            className="sc-jtRlXQ hkxYyh"
+            className="sc-bEjcJn cVUTIV"
           >
             <div
-              className="sc-bGbJRg cVXQCf image"
+              className="sc-ePZHVD cibllA image"
             />
           </div>
           <h4
@@ -4937,22 +4937,22 @@ Array [
             Development fund
           </h4>
           <p
-            className="sc-gtfDJT bsILVb"
+            className="sc-hzDEsm jOTGwl"
           >
             We welcome development applications from new and established filmmakers.
           </p>
           <a
-            className="sc-fOICqy iWDbTy"
+            className="sc-jeCdPy fArpkE"
             href="#"
             target="_self"
           >
             <span
-              className="sc-hzDEsm gIgVnT"
+              className="sc-jtRlXQ cqYKIN"
             >
               Apply to this fund
             </span>
             <div
-              className="sc-jeCdPy inrCqM"
+              className="sc-bGbJRg jivPxX"
             >
               <svg
                 height="14"
@@ -4977,13 +4977,13 @@ Array [
           </a>
         </li>
         <li
-          className="sc-eInJlc jEqcYH"
+          className="sc-fOICqy kzloqL"
         >
           <div
-            className="sc-jtRlXQ hkxYyh"
+            className="sc-bEjcJn cVUTIV"
           >
             <div
-              className="sc-bGbJRg cVXQCf image"
+              className="sc-ePZHVD cibllA image"
             />
           </div>
           <h4
@@ -4992,22 +4992,22 @@ Array [
             Production Fund
           </h4>
           <p
-            className="sc-gtfDJT bsILVb"
+            className="sc-hzDEsm jOTGwl"
           >
             We welcome production applications from new and established filmmakers.
           </p>
           <a
-            className="sc-fOICqy iWDbTy"
+            className="sc-jeCdPy fArpkE"
             href="#"
             target="_self"
           >
             <span
-              className="sc-hzDEsm gIgVnT"
+              className="sc-jtRlXQ cqYKIN"
             >
               Apply to this fund
             </span>
             <div
-              className="sc-jeCdPy inrCqM"
+              className="sc-bGbJRg jivPxX"
             >
               <svg
                 height="14"
@@ -5033,16 +5033,16 @@ Array [
         </li>
       </ul>
       <ul
-        className="sc-bEjcJn clDCsp"
+        className="sc-likbZx dQjvdZ"
       >
         <li
-          className="sc-eInJlc jEqcYH"
+          className="sc-fOICqy kzloqL"
         >
           <div
-            className="sc-jtRlXQ hkxYyh"
+            className="sc-bEjcJn cVUTIV"
           >
             <div
-              className="sc-bGbJRg cVXQCf image"
+              className="sc-ePZHVD cibllA image"
             />
           </div>
           <h4
@@ -5051,22 +5051,22 @@ Array [
             Development fund
           </h4>
           <p
-            className="sc-gtfDJT bsILVb"
+            className="sc-hzDEsm jOTGwl"
           >
             We welcome development applications from new and established filmmakers.
           </p>
           <a
-            className="sc-fOICqy iWDbTy"
+            className="sc-jeCdPy fArpkE"
             href="#"
             target="_self"
           >
             <span
-              className="sc-hzDEsm gIgVnT"
+              className="sc-jtRlXQ cqYKIN"
             >
               Apply to this fund
             </span>
             <div
-              className="sc-jeCdPy inrCqM"
+              className="sc-bGbJRg jivPxX"
             >
               <svg
                 height="14"
@@ -5100,7 +5100,7 @@ Array [
         Click this promotion!
       </h2>
       <section
-        className="sc-kLIISr bOIPZp promoBanner"
+        className="sc-kLIISr dTOlPr promoBanner"
       >
         <div
           className="sc-qrIAp dPHOQ with_image"
@@ -5137,7 +5137,7 @@ Array [
         className="sc-jWBwVP dSqRSx"
       >
         <ul
-          className="sc-brqgnP dkMifZ"
+          className="sc-brqgnP iNEGQA"
         >
           <li
             className="sc-htoDjs iVxBte articleCard"
@@ -5267,6 +5267,48 @@ Array [
           </li>
         </ul>
       </div>
+      <h2
+        className="sc-ifAKCX htAKPU"
+      >
+        A promo banner with a video!
+      </h2>
+      <section
+        className="sc-kLIISr cwXvJT promoBanner"
+        reversed={true}
+      >
+        <div
+          className="sc-qrIAp jxRGMh with_image"
+          reversed={true}
+        >
+          <h2
+            className="sc-ifAKCX htAKPU"
+          >
+            Watch BFI-picked contemporary and classic films in cinema
+          </h2>
+          <p
+            className="sc-ipZHIp cCXzim with_image"
+          >
+            Become a BFI member for £37 a year and get priority booking for BFI London Film Festival, BFI Flare and at BFI Southbank all year around.
+          </p>
+        </div>
+        <div
+          className="sc-jtggT jIAJrV"
+          reversed={true}
+        >
+          <div
+            className="sc-dEoRIm hXNUue"
+          >
+            <iframe
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen={true}
+              frameBorder="0"
+              height="270"
+              src="https://www.youtube.com/embed/vpqYxK6mmSU?feature=oembed"
+              width="480"
+            />
+          </div>
+        </div>
+      </section>
     </article>
   </div>,
   <div
@@ -5890,13 +5932,13 @@ Array [
     </div>
   </section>,
   <div
-    className="sc-cBdUnI fUkZGg"
+    className="sc-kcDeIU kRAzwR"
   >
     <article
-      className="sc-exkUMo kGzGfI"
+      className="sc-BngTV fgkqaA"
     >
       <section
-        className="sc-kLIISr ixsEkK promoBanner"
+        className="sc-kLIISr jcNFJV promoBanner"
       >
         <div
           className="sc-qrIAp dPHOQ without_image"
@@ -5927,10 +5969,10 @@ Array [
         </div>
       </section>
       <ul
-        className="sc-bEjcJn clDCsp"
+        className="sc-likbZx dQjvdZ"
       >
         <li
-          className="sc-eInJlc cDdOQQ"
+          className="sc-fOICqy bDazqi"
         >
           <h4
             className="sc-bZQynM faaoba"
@@ -5938,22 +5980,22 @@ Array [
             Progress my career and grow my business
           </h4>
           <p
-            className="sc-gtfDJT bsILVb"
+            className="sc-hzDEsm jOTGwl"
           >
             If you&apos;re an emerging filmmaker, apply for funding to build skills and experience to stand out in the industry.
           </p>
           <a
-            className="sc-fOICqy iWDbTy"
+            className="sc-jeCdPy fArpkE"
             href="#"
             target="_self"
           >
             <span
-              className="sc-hzDEsm gIgVnT"
+              className="sc-jtRlXQ cqYKIN"
             >
               Explore funding options
             </span>
             <div
-              className="sc-jeCdPy inrCqM"
+              className="sc-bGbJRg jivPxX"
             >
               <svg
                 height="14"
@@ -5978,7 +6020,7 @@ Array [
           </a>
         </li>
         <li
-          className="sc-eInJlc cDdOQQ"
+          className="sc-fOICqy bDazqi"
         >
           <h4
             className="sc-bZQynM faaoba"
@@ -5986,22 +6028,22 @@ Array [
             Create film, TV, or new formats of storytelling
           </h4>
           <p
-            className="sc-gtfDJT bsILVb"
+            className="sc-hzDEsm jOTGwl"
           >
             If you&apos;re an adventurous storyteller, we can help you with funding to create your film, tv or emerging media like VR or AR.
           </p>
           <a
-            className="sc-fOICqy iWDbTy"
+            className="sc-jeCdPy fArpkE"
             href="#"
             target="_self"
           >
             <span
-              className="sc-hzDEsm gIgVnT"
+              className="sc-jtRlXQ cqYKIN"
             >
               Explore funding options
             </span>
             <div
-              className="sc-jeCdPy inrCqM"
+              className="sc-bGbJRg jivPxX"
             >
               <svg
                 height="14"
@@ -6026,7 +6068,7 @@ Array [
           </a>
         </li>
         <li
-          className="sc-eInJlc cDdOQQ"
+          className="sc-fOICqy bDazqi"
         >
           <h4
             className="sc-bZQynM faaoba"
@@ -6034,22 +6076,22 @@ Array [
             Bring great films to a wider audience
           </h4>
           <p
-            className="sc-gtfDJT bsILVb"
+            className="sc-hzDEsm jOTGwl"
           >
             We want to help film exhibitors and distributors show bold films to diverse UK audiences.
           </p>
           <a
-            className="sc-fOICqy iWDbTy"
+            className="sc-jeCdPy fArpkE"
             href="#"
             target="_self"
           >
             <span
-              className="sc-hzDEsm gIgVnT"
+              className="sc-jtRlXQ cqYKIN"
             >
               Explore funding options
             </span>
             <div
-              className="sc-jeCdPy inrCqM"
+              className="sc-bGbJRg jivPxX"
             >
               <svg
                 height="14"
@@ -6103,7 +6145,7 @@ Array [
         className="sc-jhAzac iXDsZE"
       />
       <section
-        className="sc-kLIISr dibaGJ promoBanner"
+        className="sc-kLIISr cwXvJT promoBanner"
         reversed={true}
       >
         <div
@@ -6139,7 +6181,7 @@ Array [
         className="sc-jhAzac iXDsZE"
       />
       <section
-        className="sc-kLIISr dibaGJ promoBanner"
+        className="sc-kLIISr cwXvJT promoBanner"
       >
         <div
           className="sc-qrIAp dPHOQ with_image"
@@ -6172,7 +6214,7 @@ Array [
         className="sc-jhAzac iXDsZE"
       />
       <section
-        className="sc-kLIISr dibaGJ promoBanner"
+        className="sc-kLIISr cwXvJT promoBanner"
         reversed={true}
       >
         <div
@@ -6208,7 +6250,7 @@ Array [
         className="sc-jhAzac iXDsZE"
       />
       <section
-        className="sc-kLIISr dibaGJ promoBanner"
+        className="sc-kLIISr cwXvJT promoBanner"
       >
         <div
           className="sc-qrIAp dPHOQ with_image"
@@ -6844,10 +6886,10 @@ Array [
     id="content-start"
   />,
   <div
-    className="sc-cBdUnI fUkZGg"
+    className="sc-kcDeIU kRAzwR"
   >
     <article
-      className="sc-exkUMo kGzGfI"
+      className="sc-BngTV fgkqaA"
     >
       <ol
         className="sc-csuQGl kjfdOD"
@@ -6891,10 +6933,10 @@ Array [
         If you’re an adventurous storyteller, we can help you with funding to create your film, TV, or emerging media like VR or AR.
       </p>
       <ul
-        className="sc-bEjcJn fvGMhj"
+        className="sc-likbZx MEupq"
       >
         <li
-          className="sc-eInJlc cDdOQQ"
+          className="sc-fOICqy bDazqi"
         >
           <h4
             className="sc-bZQynM faaoba"
@@ -6902,22 +6944,22 @@ Array [
             Development fund
           </h4>
           <p
-            className="sc-gtfDJT bsILVb"
+            className="sc-hzDEsm jOTGwl"
           >
             We welcome development applications from new and established filmmakers.
           </p>
           <a
-            className="sc-fOICqy iWDbTy"
+            className="sc-jeCdPy fArpkE"
             href="#"
             target="_self"
           >
             <span
-              className="sc-hzDEsm gIgVnT"
+              className="sc-jtRlXQ cqYKIN"
             >
               Apply to this fund
             </span>
             <div
-              className="sc-jeCdPy inrCqM"
+              className="sc-bGbJRg jivPxX"
             >
               <svg
                 height="14"
@@ -6942,7 +6984,7 @@ Array [
           </a>
         </li>
         <li
-          className="sc-eInJlc cDdOQQ"
+          className="sc-fOICqy bDazqi"
         >
           <h4
             className="sc-bZQynM faaoba"
@@ -6950,22 +6992,22 @@ Array [
             Production Fund
           </h4>
           <p
-            className="sc-gtfDJT bsILVb"
+            className="sc-hzDEsm jOTGwl"
           >
             We welcome production applications from new and established filmmakers.
           </p>
           <a
-            className="sc-fOICqy iWDbTy"
+            className="sc-jeCdPy fArpkE"
             href="#"
             target="_self"
           >
             <span
-              className="sc-hzDEsm gIgVnT"
+              className="sc-jtRlXQ cqYKIN"
             >
               Apply to this fund
             </span>
             <div
-              className="sc-jeCdPy inrCqM"
+              className="sc-bGbJRg jivPxX"
             >
               <svg
                 height="14"
@@ -7597,10 +7639,10 @@ Array [
     id="content-start"
   />,
   <div
-    className="sc-fQejPQ kSbCQA"
+    className="sc-etwtAo evHWBx"
   >
     <article
-      className="sc-clNaTc jgQfbx"
+      className="sc-jXQZqI buSztZ"
     >
       <ol
         className="sc-csuQGl kjfdOD"
@@ -7820,114 +7862,114 @@ Array [
       </div>
     </article>
     <aside
-      className="sc-iGPElx kMhDvC"
+      className="sc-hgHYgh gTrlaM"
     >
       <section
-        className="sc-eIHaNI gbhNLE"
+        className="sc-dxZgTM eDxHCs"
       >
         <h3
-          className="sc-eTpRJs ebCKVz"
+          className="sc-iomxrj cvUVYn"
         >
           Applying for film funding
         </h3>
         <ol
-          className="sc-dxZgTM diZdtw"
+          className="sc-dvCyap gGkkqZ"
         >
           <li
-            className="sc-iomxrj ilchmg"
+            className="sc-iFMziU kujiJn"
           >
             <button
               aria-expanded="false"
-              className="sc-iFMziU kZQcOL"
+              className="sc-gVLVqr ftlLAe"
               onClick={[Function]}
             >
               <strong
-                className="sc-dvCyap hxLQTt"
+                className="sc-keVrkP bUhpka"
               >
                 Is this fund right for you?
               </strong>
               <span
-                className="sc-keVrkP chPTNS"
+                className="sc-cBdUnI hNzVcV"
               >
                 Show
               </span>
             </button>
           </li>
           <li
-            className="sc-iomxrj ilchmg"
+            className="sc-iFMziU kujiJn"
           >
             <button
               aria-expanded="false"
-              className="sc-iFMziU kZQcOL"
+              className="sc-gVLVqr ftlLAe"
               onClick={[Function]}
             >
               <strong
-                className="sc-dvCyap hxLQTt"
+                className="sc-keVrkP bUhpka"
               >
                 Prepare your supporting materials
               </strong>
               <span
-                className="sc-keVrkP chPTNS"
+                className="sc-cBdUnI hNzVcV"
               >
                 Show
               </span>
             </button>
           </li>
           <li
-            className="sc-iomxrj ilchmg"
+            className="sc-iFMziU kujiJn"
           >
             <button
               aria-expanded="false"
-              className="sc-iFMziU kZQcOL"
+              className="sc-gVLVqr ftlLAe"
               onClick={[Function]}
             >
               <strong
-                className="sc-dvCyap hxLQTt"
+                className="sc-keVrkP bUhpka"
               >
                 Apply
               </strong>
               <span
-                className="sc-keVrkP chPTNS"
+                className="sc-cBdUnI hNzVcV"
               >
                 Show
               </span>
             </button>
           </li>
           <li
-            className="sc-iomxrj ilchmg"
+            className="sc-iFMziU kujiJn"
           >
             <button
               aria-expanded="false"
-              className="sc-iFMziU kZQcOL"
+              className="sc-gVLVqr ftlLAe"
               onClick={[Function]}
             >
               <strong
-                className="sc-dvCyap hxLQTt"
+                className="sc-keVrkP bUhpka"
               >
                 Wait to hear from us
               </strong>
               <span
-                className="sc-keVrkP chPTNS"
+                className="sc-cBdUnI hNzVcV"
               >
                 Show
               </span>
             </button>
           </li>
           <li
-            className="sc-iomxrj ilchmg"
+            className="sc-iFMziU kujiJn"
           >
             <button
               aria-expanded="false"
-              className="sc-iFMziU kZQcOL"
+              className="sc-gVLVqr ftlLAe"
               onClick={[Function]}
             >
               <strong
-                className="sc-dvCyap hxLQTt"
+                className="sc-keVrkP bUhpka"
               >
                 Your decision
               </strong>
               <span
-                className="sc-keVrkP chPTNS"
+                className="sc-cBdUnI hNzVcV"
               >
                 Show
               </span>
@@ -8594,10 +8636,10 @@ Array [
     </div>
   </div>,
   <div
-    className="sc-fQejPQ kSbCQA"
+    className="sc-etwtAo evHWBx"
   >
     <article
-      className="sc-clNaTc jgQfbx"
+      className="sc-jXQZqI buSztZ"
     >
       <div
         className="sc-bHwgHz ektsBg"
@@ -8655,7 +8697,7 @@ Array [
       </div>
     </article>
     <aside
-      className="sc-iGPElx kMhDvC"
+      className="sc-hgHYgh gTrlaM"
     >
       <div
         className="sc-bdVaJa cTaNCo"
@@ -8678,10 +8720,10 @@ Array [
     </aside>
   </div>,
   <div
-    className="sc-fQejPQ kSbCQA"
+    className="sc-etwtAo evHWBx"
   >
     <article
-      className="sc-clNaTc jgQfbx"
+      className="sc-jXQZqI buSztZ"
     >
       <div
         className="sc-esjQYD dvPZZY"
@@ -8690,7 +8732,7 @@ Array [
           className="sc-jWBwVP dSqRSx"
         >
           <ul
-            className="sc-brqgnP dkMifZ"
+            className="sc-brqgnP iNEGQA"
           >
             <li
               className="sc-kkGfuU cQwrrw articleCard"
@@ -9550,10 +9592,10 @@ Array [
     </div>
   </div>,
   <div
-    className="sc-fQejPQ kSbCQA"
+    className="sc-etwtAo evHWBx"
   >
     <article
-      className="sc-clNaTc jgQfbx"
+      className="sc-jXQZqI buSztZ"
     >
       <div
         className="sc-bHwgHz ektsBg"
@@ -9577,7 +9619,7 @@ Array [
         PE with Joe – 3 April 2020
       </h2>
       <div
-        className="sc-fZwumE gUxLCt"
+        className="sc-clNaTc bUxqry"
       >
         <iframe
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -9615,7 +9657,7 @@ Array [
       </div>
     </article>
     <aside
-      className="sc-iGPElx kMhDvC"
+      className="sc-hgHYgh gTrlaM"
     >
       <div
         className="sc-bdVaJa cTaNCo"
@@ -9638,10 +9680,10 @@ Array [
     </aside>
   </div>,
   <div
-    className="sc-fQejPQ kSbCQA"
+    className="sc-etwtAo evHWBx"
   >
     <article
-      className="sc-clNaTc jgQfbx"
+      className="sc-jXQZqI buSztZ"
     >
       <div
         className="sc-esjQYD dvPZZY"
@@ -9650,7 +9692,7 @@ Array [
           className="sc-jWBwVP dSqRSx"
         >
           <ul
-            className="sc-brqgnP dkMifZ"
+            className="sc-brqgnP iNEGQA"
           >
             <li
               className="sc-kkGfuU cQwrrw articleCard"
@@ -10450,10 +10492,10 @@ Array [
     />
   </div>,
   <div
-    className="sc-fQejPQ kSbCQA"
+    className="sc-etwtAo evHWBx"
   >
     <article
-      className="sc-clNaTc jgQfbx"
+      className="sc-jXQZqI buSztZ"
     >
       <div
         className="sc-jqCOkK gSCHZv"
@@ -10507,7 +10549,7 @@ Array [
         />
       </div>
       <div
-        className="sc-fZwumE gUxLCt"
+        className="sc-clNaTc bUxqry"
       >
         <iframe
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -10574,7 +10616,7 @@ Array [
         />
       </div>
       <div
-        className="sc-fZwumE gUxLCt"
+        className="sc-clNaTc bUxqry"
       >
         <iframe
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -10772,7 +10814,7 @@ Array [
         />
       </div>
       <div
-        className="sc-fZwumE gUxLCt"
+        className="sc-clNaTc bUxqry"
       >
         <iframe
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -10792,7 +10834,7 @@ Array [
       </div>
     </article>
     <aside
-      className="sc-iGPElx kMhDvC"
+      className="sc-hgHYgh gTrlaM"
     >
       <div
         className="sc-bdVaJa cTaNCo"
@@ -10815,10 +10857,10 @@ Array [
     </aside>
   </div>,
   <div
-    className="sc-fQejPQ kSbCQA"
+    className="sc-etwtAo evHWBx"
   >
     <article
-      className="sc-clNaTc jgQfbx"
+      className="sc-jXQZqI buSztZ"
     >
       <div
         className="sc-esjQYD dvPZZY"
@@ -10827,7 +10869,7 @@ Array [
           className="sc-jWBwVP dSqRSx"
         >
           <ul
-            className="sc-brqgnP dkMifZ"
+            className="sc-brqgnP iNEGQA"
           >
             <li
               className="sc-kkGfuU cQwrrw articleCard"
@@ -11627,10 +11669,10 @@ Array [
     />
   </div>,
   <div
-    className="sc-fQejPQ kSbCQA"
+    className="sc-etwtAo evHWBx"
   >
     <article
-      className="sc-clNaTc jgQfbx"
+      className="sc-jXQZqI buSztZ"
     >
       <div
         className="sc-bHwgHz ektsBg"
@@ -11699,7 +11741,7 @@ Array [
       </div>
     </article>
     <aside
-      className="sc-iGPElx kMhDvC"
+      className="sc-hgHYgh gTrlaM"
     >
       <div
         className="sc-bdVaJa cTaNCo"
@@ -11722,10 +11764,10 @@ Array [
     </aside>
   </div>,
   <div
-    className="sc-fQejPQ kSbCQA"
+    className="sc-etwtAo evHWBx"
   >
     <article
-      className="sc-clNaTc jgQfbx"
+      className="sc-jXQZqI buSztZ"
     >
       <div
         className="sc-esjQYD dvPZZY"
@@ -11734,7 +11776,7 @@ Array [
           className="sc-jWBwVP dSqRSx"
         >
           <ul
-            className="sc-brqgnP dkMifZ"
+            className="sc-brqgnP iNEGQA"
           >
             <li
               className="sc-kkGfuU cQwrrw articleCard"
@@ -12602,10 +12644,10 @@ Array [
     </div>
   </div>,
   <div
-    className="sc-fQejPQ kSbCQA"
+    className="sc-etwtAo evHWBx"
   >
     <article
-      className="sc-clNaTc jgQfbx"
+      className="sc-jXQZqI buSztZ"
     >
       <div
         className="sc-bHwgHz ektsBg"
@@ -12629,7 +12671,7 @@ Array [
         PE with Joe – 3 April 2020
       </h2>
       <div
-        className="sc-fZwumE gUxLCt"
+        className="sc-clNaTc bUxqry"
       >
         <iframe
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -12667,7 +12709,7 @@ Array [
       </div>
     </article>
     <aside
-      className="sc-iGPElx kMhDvC"
+      className="sc-hgHYgh gTrlaM"
     >
       <div
         className="sc-bdVaJa cTaNCo"
@@ -12690,10 +12732,10 @@ Array [
     </aside>
   </div>,
   <div
-    className="sc-fQejPQ kSbCQA"
+    className="sc-etwtAo evHWBx"
   >
     <article
-      className="sc-clNaTc jgQfbx"
+      className="sc-jXQZqI buSztZ"
     >
       <div
         className="sc-esjQYD dvPZZY"
@@ -12702,7 +12744,7 @@ Array [
           className="sc-jWBwVP dSqRSx"
         >
           <ul
-            className="sc-brqgnP dkMifZ"
+            className="sc-brqgnP iNEGQA"
           >
             <li
               className="sc-kkGfuU cQwrrw articleCard"
@@ -13555,10 +13597,10 @@ Array [
     </div>
   </div>,
   <div
-    className="sc-fQejPQ kSbCQA"
+    className="sc-etwtAo evHWBx"
   >
     <article
-      className="sc-clNaTc jgQfbx"
+      className="sc-jXQZqI buSztZ"
     >
       <div
         className="sc-bHwgHz ektsBg"
@@ -13582,7 +13624,7 @@ Array [
         PE with Joe – 3 April 2020
       </h2>
       <div
-        className="sc-fZwumE gUxLCt"
+        className="sc-clNaTc bUxqry"
       >
         <iframe
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -13620,7 +13662,7 @@ Array [
       </div>
     </article>
     <aside
-      className="sc-iGPElx kMhDvC"
+      className="sc-hgHYgh gTrlaM"
     >
       <div
         className="sc-bdVaJa cTaNCo"
@@ -13643,10 +13685,10 @@ Array [
     </aside>
   </div>,
   <div
-    className="sc-fQejPQ kSbCQA"
+    className="sc-etwtAo evHWBx"
   >
     <article
-      className="sc-clNaTc jgQfbx"
+      className="sc-jXQZqI buSztZ"
     >
       <div
         className="sc-esjQYD dvPZZY"
@@ -13655,7 +13697,7 @@ Array [
           className="sc-jWBwVP dSqRSx"
         >
           <ul
-            className="sc-brqgnP dkMifZ"
+            className="sc-brqgnP iNEGQA"
           >
             <li
               className="sc-kkGfuU cQwrrw articleCard"
@@ -14447,13 +14489,13 @@ Array [
     />
   </div>,
   <div
-    className="sc-fQejPQ kSbCQA"
+    className="sc-etwtAo evHWBx"
   >
     <article
-      className="sc-clNaTc jgQfbx"
+      className="sc-jXQZqI buSztZ"
     >
       <div
-        className="sc-fZwumE gUxLCt"
+        className="sc-clNaTc bUxqry"
       >
         <iframe
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -14494,7 +14536,7 @@ Array [
       </div>
     </article>
     <aside
-      className="sc-iGPElx kMhDvC"
+      className="sc-hgHYgh gTrlaM"
     >
       <div
         className="sc-bdVaJa cTaNCo"
@@ -14517,10 +14559,10 @@ Array [
     </aside>
   </div>,
   <div
-    className="sc-fQejPQ kSbCQA"
+    className="sc-etwtAo evHWBx"
   >
     <article
-      className="sc-clNaTc jgQfbx"
+      className="sc-jXQZqI buSztZ"
     >
       <div
         className="sc-esjQYD dvPZZY"
@@ -14529,7 +14571,7 @@ Array [
           className="sc-jWBwVP dSqRSx"
         >
           <ul
-            className="sc-brqgnP dkMifZ"
+            className="sc-brqgnP iNEGQA"
           >
             <li
               className="sc-kkGfuU cQwrrw articleCard"
@@ -15279,10 +15321,10 @@ Array [
     id="content-start"
   />,
   <div
-    className="sc-fQejPQ kSbCQA"
+    className="sc-etwtAo evHWBx"
   >
     <article
-      className="sc-clNaTc jgQfbx"
+      className="sc-jXQZqI buSztZ"
     >
       <ol
         className="sc-csuQGl kjfdOD"
@@ -15479,64 +15521,64 @@ Array [
         An image gallery
       </h3>
       <figure
-        className="sc-kaNhvL uNCnc"
+        className="sc-iBEsjs jsfehM"
       >
         <div
-          className="sc-hzNEM cuNAHc"
+          className="sc-kxynE aOMys"
         >
           <button
-            className="sc-chbbiW gdaDf"
+            className="sc-cooIXK boxMUj"
             onClick={[Function]}
           >
             <img
               alt="Example image"
-              className="sc-kxynE fbCWby"
+              className="sc-fcdeBU jywMdG"
               src="http://placehold.it/300x200"
             />
           </button>
           <button
-            className="sc-chbbiW gdaDf"
+            className="sc-cooIXK boxMUj"
             onClick={[Function]}
           >
             <img
               alt="Example image 2"
-              className="sc-kxynE fbCWby"
+              className="sc-fcdeBU jywMdG"
               src="http://placehold.it/300x300"
             />
           </button>
           <button
-            className="sc-chbbiW gdaDf"
+            className="sc-cooIXK boxMUj"
             onClick={[Function]}
           >
             <img
               alt="Example image 3"
-              className="sc-kxynE fbCWby"
+              className="sc-fcdeBU jywMdG"
               src="http://placehold.it/600x400"
             />
           </button>
           <button
-            className="sc-chbbiW gdaDf"
+            className="sc-cooIXK boxMUj"
             onClick={[Function]}
           >
             <img
               alt="Example image 4"
-              className="sc-kxynE fbCWby"
+              className="sc-fcdeBU jywMdG"
               src="http://placehold.it/1200x800"
             />
           </button>
           <button
-            className="sc-chbbiW gdaDf"
+            className="sc-cooIXK boxMUj"
             onClick={[Function]}
           >
             <img
               alt="Example image 5"
-              className="sc-kxynE fbCWby"
+              className="sc-fcdeBU jywMdG"
               src="http://placehold.it/600x400"
             />
           </button>
         </div>
         <figcaption
-          className="sc-LKuAh hPXknj"
+          className="sc-hzNEM lbmBYg"
         >
           A gallery of images
         </figcaption>
@@ -15709,7 +15751,7 @@ Array [
         Checkout our YouTube
       </h2>
       <div
-        className="sc-fZwumE gUxLCt"
+        className="sc-clNaTc bUxqry"
       >
         <iframe
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -15729,10 +15771,10 @@ Array [
         View some other pages
       </h2>
       <ul
-        className="sc-bEjcJn fvGMhj"
+        className="sc-likbZx MEupq"
       >
         <li
-          className="sc-eInJlc cDdOQQ"
+          className="sc-fOICqy bDazqi"
         >
           <h4
             className="sc-bZQynM faaoba"
@@ -15740,22 +15782,22 @@ Array [
             Development fund
           </h4>
           <p
-            className="sc-gtfDJT bsILVb"
+            className="sc-hzDEsm jOTGwl"
           >
             We welcome development applications from new and established filmmakers.
           </p>
           <a
-            className="sc-fOICqy iWDbTy"
+            className="sc-jeCdPy fArpkE"
             href="#"
             target="_self"
           >
             <span
-              className="sc-hzDEsm gIgVnT"
+              className="sc-jtRlXQ cqYKIN"
             >
               Apply to this fund
             </span>
             <div
-              className="sc-jeCdPy inrCqM"
+              className="sc-bGbJRg jivPxX"
             >
               <svg
                 height="14"
@@ -15780,7 +15822,7 @@ Array [
           </a>
         </li>
         <li
-          className="sc-eInJlc cDdOQQ"
+          className="sc-fOICqy bDazqi"
         >
           <h4
             className="sc-bZQynM faaoba"
@@ -15788,22 +15830,22 @@ Array [
             Production Fund
           </h4>
           <p
-            className="sc-gtfDJT bsILVb"
+            className="sc-hzDEsm jOTGwl"
           >
             We welcome production applications from new and established filmmakers.
           </p>
           <a
-            className="sc-fOICqy iWDbTy"
+            className="sc-jeCdPy fArpkE"
             href="#"
             target="_self"
           >
             <span
-              className="sc-hzDEsm gIgVnT"
+              className="sc-jtRlXQ cqYKIN"
             >
               Apply to this fund
             </span>
             <div
-              className="sc-jeCdPy inrCqM"
+              className="sc-bGbJRg jivPxX"
             >
               <svg
                 height="14"
@@ -15837,10 +15879,10 @@ Array [
         Click this promotion!
       </h2>
       <section
-        className="sc-kLIISr bOIPZp promoBanner"
+        className="sc-kLIISr lkbAQP promoBanner"
       >
         <div
-          className="sc-qrIAp dPHOQ with_image"
+          className="sc-qrIAp dgWlDx with_image"
         >
           <img
             className="sc-bmyXtO fionQb"
@@ -15867,14 +15909,14 @@ Array [
           </a>
         </div>
         <div
-          className="sc-iGrrsa dZjdgQ"
+          className="sc-iGrrsa dOFbaB"
         />
       </section>
       <div
         className="sc-jWBwVP dHBqw"
       >
         <ul
-          className="sc-brqgnP ihxWuR"
+          className="sc-brqgnP guUjBl"
         >
           <li
             className="sc-htoDjs PhxoU articleCard"
@@ -15962,12 +16004,54 @@ Array [
           </li>
         </ul>
       </div>
+      <h2
+        className="sc-ifAKCX htAKPU"
+      >
+        A promo banner with a video!
+      </h2>
+      <section
+        className="sc-kLIISr ieCHdh promoBanner"
+        reversed={true}
+      >
+        <div
+          className="sc-qrIAp dGVLV with_image"
+          reversed={true}
+        >
+          <h2
+            className="sc-ifAKCX htAKPU"
+          >
+            Watch BFI-picked contemporary and classic films in cinema
+          </h2>
+          <p
+            className="sc-ipZHIp cCXzim with_image"
+          >
+            Become a BFI member for £37 a year and get priority booking for BFI London Film Festival, BFI Flare and at BFI Southbank all year around.
+          </p>
+        </div>
+        <div
+          className="sc-jtggT hqlNSs"
+          reversed={true}
+        >
+          <div
+            className="sc-dEoRIm hXNUue"
+          >
+            <iframe
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen={true}
+              frameBorder="0"
+              height="270"
+              src="https://www.youtube.com/embed/vpqYxK6mmSU?feature=oembed"
+              width="480"
+            />
+          </div>
+        </div>
+      </section>
     </article>
     <aside
-      className="sc-iGPElx kMhDvC"
+      className="sc-hgHYgh gTrlaM"
     >
       <section
-        className="sc-kQsIoO COEEJ"
+        className="sc-jrIrqw gqEoOq"
       >
         <h4
           className="sc-bZQynM faaoba"
@@ -15975,47 +16059,47 @@ Array [
           Related pages
         </h4>
         <ul
-          className="sc-gPzReC kbXwQp"
+          className="sc-hjRWVT bSxIcX"
         >
           <li
-            className="sc-hIVACf gKFCOX"
+            className="sc-gVyKpa cruIzZ"
           >
             <a
-              className="sc-eXNvrr QrruK"
+              className="sc-kQsIoO blirhC"
               href="#"
               target="_self"
             >
               <div
-                className="sc-gpHHfC gYdWaK"
+                className="sc-eXNvrr hQeKfE"
               >
                 <div
-                  className="sc-gVyKpa jKmcWF image"
+                  className="sc-cpmKsF jlzSUL image"
                 />
               </div>
               <p
-                className="sc-cpmKsF iNIOra pagelink_title"
+                className="sc-gPzReC gfQuRv pagelink_title"
               >
                 BFI London Film Festival
               </p>
             </a>
           </li>
           <li
-            className="sc-hIVACf gKFCOX"
+            className="sc-gVyKpa cruIzZ"
           >
             <a
-              className="sc-eXNvrr QrruK"
+              className="sc-kQsIoO blirhC"
               href="#"
               target="_self"
             >
               <div
-                className="sc-gpHHfC gYdWaK"
+                className="sc-eXNvrr hQeKfE"
               >
                 <div
-                  className="sc-gVyKpa gOUFye image"
+                  className="sc-cpmKsF fvvJR image"
                 />
               </div>
               <p
-                className="sc-cpmKsF iNIOra pagelink_title"
+                className="sc-gPzReC gfQuRv pagelink_title"
               >
                 BFI Flare: London LGBTIQ+ Film Festival
               </p>
@@ -16042,111 +16126,111 @@ Array [
         />
       </div>
       <section
-        className="sc-eIHaNI gbhNLE"
+        className="sc-dxZgTM eDxHCs"
       >
         <h3
-          className="sc-eTpRJs ebCKVz"
+          className="sc-iomxrj cvUVYn"
         >
           Applying for film funding
         </h3>
         <ol
-          className="sc-dxZgTM diZdtw"
+          className="sc-dvCyap gGkkqZ"
         >
           <li
-            className="sc-iomxrj ilchmg"
+            className="sc-iFMziU kujiJn"
           >
             <button
               aria-expanded="false"
-              className="sc-iFMziU kZQcOL"
+              className="sc-gVLVqr ftlLAe"
               onClick={[Function]}
             >
               <strong
-                className="sc-dvCyap hxLQTt"
+                className="sc-keVrkP bUhpka"
               >
                 Is this fund right for you?
               </strong>
               <span
-                className="sc-keVrkP chPTNS"
+                className="sc-cBdUnI hNzVcV"
               >
                 Show
               </span>
             </button>
           </li>
           <li
-            className="sc-iomxrj ilchmg"
+            className="sc-iFMziU kujiJn"
           >
             <button
               aria-expanded="false"
-              className="sc-iFMziU kZQcOL"
+              className="sc-gVLVqr ftlLAe"
               onClick={[Function]}
             >
               <strong
-                className="sc-dvCyap hxLQTt"
+                className="sc-keVrkP bUhpka"
               >
                 Prepare your supporting materials
               </strong>
               <span
-                className="sc-keVrkP chPTNS"
+                className="sc-cBdUnI hNzVcV"
               >
                 Show
               </span>
             </button>
           </li>
           <li
-            className="sc-iomxrj ilchmg"
+            className="sc-iFMziU kujiJn"
           >
             <button
               aria-expanded="false"
-              className="sc-iFMziU kZQcOL"
+              className="sc-gVLVqr ftlLAe"
               onClick={[Function]}
             >
               <strong
-                className="sc-dvCyap hxLQTt"
+                className="sc-keVrkP bUhpka"
               >
                 Apply
               </strong>
               <span
-                className="sc-keVrkP chPTNS"
+                className="sc-cBdUnI hNzVcV"
               >
                 Show
               </span>
             </button>
           </li>
           <li
-            className="sc-iomxrj ilchmg"
+            className="sc-iFMziU kujiJn"
           >
             <button
               aria-expanded="false"
-              className="sc-iFMziU kZQcOL"
+              className="sc-gVLVqr ftlLAe"
               onClick={[Function]}
             >
               <strong
-                className="sc-dvCyap hxLQTt"
+                className="sc-keVrkP bUhpka"
               >
                 Wait to hear from us
               </strong>
               <span
-                className="sc-keVrkP chPTNS"
+                className="sc-cBdUnI hNzVcV"
               >
                 Show
               </span>
             </button>
           </li>
           <li
-            className="sc-iomxrj ilchmg"
+            className="sc-iFMziU kujiJn"
           >
             <button
               aria-expanded="false"
-              className="sc-iFMziU kZQcOL"
+              className="sc-gVLVqr ftlLAe"
               onClick={[Function]}
             >
               <strong
-                className="sc-dvCyap hxLQTt"
+                className="sc-keVrkP bUhpka"
               >
                 Your decision
               </strong>
               <span
-                className="sc-keVrkP chPTNS"
+                className="sc-cBdUnI hNzVcV"
               >
                 Show
               </span>
@@ -16173,7 +16257,7 @@ Array [
         />
       </div>
       <section
-        className="sc-fyjhYU haFcsN"
+        className="sc-eIHaNI iBTSHi"
       >
         <h4
           className="sc-bZQynM faaoba"
@@ -16181,34 +16265,34 @@ Array [
           Watch these films
         </h4>
         <ul
-          className="sc-ugnQR kApYSo"
+          className="sc-eTpRJs bTAJHm"
         >
           <li
-            className="sc-jrIrqw gZtapp"
+            className="sc-iybRtq gdWuQz"
           >
             <a
-              className="sc-iQtOjA jeQQwQ"
+              className="sc-cEvuZC eSFCsr"
               href="#"
               target="_self"
             >
               <div
-                className="sc-hjRWVT cWnWCJ"
+                className="sc-iQtOjA gngHfk"
               >
                 <div
                   alt="Example image"
-                  className="sc-iybRtq bjHMYw image"
+                  className="sc-fHxwqH kfAlwI image"
                 />
               </div>
               <div
-                className="sc-fHxwqH kblwQa"
+                className="sc-kXeGPI kFYuKa"
               >
                 <p
-                  className="sc-cEvuZC fScsdP"
+                  className="sc-fyjhYU cYvFJM"
                 >
                   La La Land
                 </p>
                 <div
-                  className="sc-kXeGPI cmuhPw"
+                  className="sc-ugnQR eFnnpP"
                 >
                   <div
                     className="sc-hEsumM fOhbPP"
@@ -16220,30 +16304,30 @@ Array [
             </a>
           </li>
           <li
-            className="sc-jrIrqw gZtapp"
+            className="sc-iybRtq gdWuQz"
           >
             <a
-              className="sc-iQtOjA jeQQwQ"
+              className="sc-cEvuZC eSFCsr"
               href="#"
               target="_self"
             >
               <div
-                className="sc-hjRWVT cWnWCJ"
+                className="sc-iQtOjA gngHfk"
               >
                 <div
-                  className="sc-iybRtq mWYXZ image"
+                  className="sc-fHxwqH eyVmNx image"
                 />
               </div>
               <div
-                className="sc-fHxwqH kblwQa"
+                className="sc-kXeGPI kFYuKa"
               >
                 <p
-                  className="sc-cEvuZC fScsdP"
+                  className="sc-fyjhYU cYvFJM"
                 >
                   The Lighthouse
                 </p>
                 <div
-                  className="sc-kXeGPI cmuhPw"
+                  className="sc-ugnQR eFnnpP"
                 >
                   <div
                     className="sc-hEsumM fOhbPP"
@@ -16260,31 +16344,31 @@ Array [
             </a>
           </li>
           <li
-            className="sc-jrIrqw gZtapp"
+            className="sc-iybRtq gdWuQz"
           >
             <a
-              className="sc-iQtOjA jeQQwQ"
+              className="sc-cEvuZC eSFCsr"
               href="#"
               target="_self"
             >
               <div
-                className="sc-hjRWVT cWnWCJ"
+                className="sc-iQtOjA gngHfk"
               >
                 <div
                   alt="Example image"
-                  className="sc-iybRtq bjHMYw image"
+                  className="sc-fHxwqH kfAlwI image"
                 />
               </div>
               <div
-                className="sc-fHxwqH kblwQa"
+                className="sc-kXeGPI kFYuKa"
               >
                 <p
-                  className="sc-cEvuZC fScsdP"
+                  className="sc-fyjhYU cYvFJM"
                 >
                   Santa Claus Conquers the Martians
                 </p>
                 <div
-                  className="sc-kXeGPI cmuhPw"
+                  className="sc-ugnQR eFnnpP"
                 >
                   <div
                     className="sc-hEsumM fOhbPP"
@@ -16920,10 +17004,10 @@ Array [
     </div>
   </section>,
   <div
-    className="sc-fQejPQ kSbCQA"
+    className="sc-etwtAo evHWBx"
   >
     <section
-      className="sc-kasBVs iGwbYz"
+      className="sc-eInJlc hpIIwj"
     >
       <a
         className="sc-eNQAEJ gidYks"
@@ -16952,17 +17036,17 @@ Array [
         Watch on BFI Player
         <img
           alt=""
-          className="sc-hgHYgh iamsws"
+          className="sc-gtfDJT ktQUOb"
           src="test-file-stub"
         />
       </a>
     </section>
   </div>,
   <div
-    className="sc-fQejPQ kSbCQA"
+    className="sc-etwtAo evHWBx"
   >
     <article
-      className="sc-clNaTc jgQfbx"
+      className="sc-jXQZqI buSztZ"
     >
       <p
         className="sc-rBLzX dRCRSc"
@@ -17165,54 +17249,54 @@ Array [
       </a>
     </article>
     <aside
-      className="sc-iGPElx kMhDvC"
+      className="sc-hgHYgh gTrlaM"
     >
       <dl
-        className="sc-eKZiaR bpQtrB"
+        className="sc-fgfRvd eyemYq"
       >
         <dd
-          className="sc-fgfRvd ehVeLL"
+          className="sc-gpHHfC hqBBWX"
         >
           Italy, France 
 1960
         </dd>
         <dt
-          className="sc-drMfKT jamZur"
+          className="sc-hIVACf cOHlwZ"
         >
           Directed by
         </dt>
         <dd
-          className="sc-fgfRvd eKuLQb"
+          className="sc-gpHHfC bFPPrw"
         >
           Frederico Fellini
         </dd>
         <dt
-          className="sc-drMfKT jamZur"
+          className="sc-hIVACf cOHlwZ"
         >
           Produced by
         </dt>
         <dd
-          className="sc-fgfRvd eKuLQb"
+          className="sc-gpHHfC bFPPrw"
         >
           Irwin Winkler, Robert Chartoff, Peter Savage
         </dd>
         <dt
-          className="sc-drMfKT jamZur"
+          className="sc-hIVACf cOHlwZ"
         >
           Written by
         </dt>
         <dd
-          className="sc-fgfRvd eKuLQb"
+          className="sc-gpHHfC bFPPrw"
         >
           Paul Schrader, Mardik Martin
         </dd>
         <dt
-          className="sc-drMfKT jamZur"
+          className="sc-hIVACf cOHlwZ"
         >
           Featuring
         </dt>
         <dd
-          className="sc-fgfRvd eKuLQb"
+          className="sc-gpHHfC bFPPrw"
         >
           Robert De Niro, Joe Pesci, Cathy Moriarty
         </dd>
@@ -17238,16 +17322,16 @@ Array [
     </aside>
   </div>,
   <div
-    className="sc-fQejPQ kSbCQA"
+    className="sc-etwtAo evHWBx"
   >
     <article
-      className="sc-clNaTc jgQfbx"
+      className="sc-jXQZqI buSztZ"
     >
       <div
         className="sc-jWBwVP dSqRSx"
       >
         <ul
-          className="sc-brqgnP dkMifZ"
+          className="sc-brqgnP iNEGQA"
         >
           <li
             className="sc-htoDjs iVxBte articleCard"
@@ -18002,10 +18086,10 @@ Array [
     id="content-start"
   />,
   <div
-    className="sc-fQejPQ kSbCQA"
+    className="sc-etwtAo evHWBx"
   >
     <article
-      className="sc-clNaTc jgQfbx"
+      className="sc-jXQZqI buSztZ"
     >
       <ol
         className="sc-csuQGl kjfdOD"
@@ -18066,10 +18150,10 @@ Array [
       </div>
     </article>
     <aside
-      className="sc-iGPElx kMhDvC"
+      className="sc-hgHYgh gTrlaM"
     >
       <section
-        className="sc-kQsIoO COEEJ"
+        className="sc-jrIrqw gqEoOq"
       >
         <h4
           className="sc-bZQynM faaoba"
@@ -18077,47 +18161,47 @@ Array [
           Related pages
         </h4>
         <ul
-          className="sc-gPzReC kbXwQp"
+          className="sc-hjRWVT bSxIcX"
         >
           <li
-            className="sc-hIVACf gKFCOX"
+            className="sc-gVyKpa cruIzZ"
           >
             <a
-              className="sc-eXNvrr QrruK"
+              className="sc-kQsIoO blirhC"
               href="#"
               target="_self"
             >
               <div
-                className="sc-gpHHfC gYdWaK"
+                className="sc-eXNvrr hQeKfE"
               >
                 <div
-                  className="sc-gVyKpa jKmcWF image"
+                  className="sc-cpmKsF jlzSUL image"
                 />
               </div>
               <p
-                className="sc-cpmKsF iNIOra pagelink_title"
+                className="sc-gPzReC gfQuRv pagelink_title"
               >
                 BFI London Film Festival
               </p>
             </a>
           </li>
           <li
-            className="sc-hIVACf gKFCOX"
+            className="sc-gVyKpa cruIzZ"
           >
             <a
-              className="sc-eXNvrr QrruK"
+              className="sc-kQsIoO blirhC"
               href="#"
               target="_self"
             >
               <div
-                className="sc-gpHHfC gYdWaK"
+                className="sc-eXNvrr hQeKfE"
               >
                 <div
-                  className="sc-gVyKpa gOUFye image"
+                  className="sc-cpmKsF fvvJR image"
                 />
               </div>
               <p
-                className="sc-cpmKsF iNIOra pagelink_title"
+                className="sc-gPzReC gfQuRv pagelink_title"
               >
                 BFI Flare: London LGBTIQ+ Film Festival
               </p>
@@ -18602,7 +18686,7 @@ exports[`Storyshots 2 All Components/ArticleGrid Loading 1`] = `
     className="sc-jWBwVP dSqRSx"
   >
     <ul
-      className="sc-brqgnP dkMifZ"
+      className="sc-brqgnP iNEGQA"
     >
       <li
         className="sc-kkGfuU cQwrrw articleCard"
@@ -18742,7 +18826,7 @@ exports[`Storyshots 2 All Components/ArticleGrid Normal 1`] = `
     className="sc-jWBwVP dSqRSx"
   >
     <ul
-      className="sc-brqgnP dkMifZ"
+      className="sc-brqgnP iNEGQA"
     >
       <li
         className="sc-htoDjs iVxBte articleCard"
@@ -20473,7 +20557,7 @@ exports[`Storyshots 2 All Components/Filterable Articles Normal 1`] = `
     className="sc-jWBwVP dSqRSx"
   >
     <ul
-      className="sc-brqgnP dkMifZ"
+      className="sc-brqgnP iNEGQA"
     >
       <li
         className="sc-kkGfuU cQwrrw articleCard"
@@ -21876,7 +21960,7 @@ exports[`Storyshots 2 All Components/Highlights Normal 1`] = `
   }
 >
   <div
-    className="sc-dEoRIm cCIZim"
+    className="sc-ebFjAB IaHHp"
   >
     <ul
       className="sc-gPWkxV fympeF"
@@ -21932,7 +22016,7 @@ exports[`Storyshots 2 All Components/Highlights Normal 1`] = `
       role="tabpanel"
     >
       <section
-        className="sc-kLIISr ixsEkK promoBanner"
+        className="sc-kLIISr jcNFJV promoBanner"
       >
         <div
           className="sc-qrIAp dPHOQ with_image"
@@ -21969,7 +22053,7 @@ exports[`Storyshots 2 All Components/Highlights Normal 1`] = `
       role="tabpanel"
     >
       <div
-        className="sc-jtggT koHhFB"
+        className="sc-jKVCRD jZSltV"
       >
         <div
           className="sc-giadOv ePJYEA"
@@ -22007,7 +22091,7 @@ exports[`Storyshots 2 All Components/Highlights Normal 1`] = `
           </a>
         </div>
         <div
-          className="sc-ebFjAB gneNbO"
+          className="sc-kaNhvL bTdfhz"
         >
           <div
             className="sc-jtRfpW bWblgT"
@@ -22190,7 +22274,7 @@ exports[`Storyshots 2 All Components/Highlights Normal 1`] = `
         </div>
       </div>
       <a
-        className="sc-eNQAEJ gidYks sc-jKVCRD Shwzs"
+        className="sc-eNQAEJ gidYks sc-LKuAh kWuwzf"
         colorScheme={0}
         href="#"
         target="_self"
@@ -22206,7 +22290,7 @@ exports[`Storyshots 2 All Components/Highlights Normal 1`] = `
       role="tabpanel"
     >
       <div
-        className="sc-jtggT koHhFB"
+        className="sc-jKVCRD jZSltV"
       >
         <div
           className="sc-giadOv ePJYEA"
@@ -22244,7 +22328,7 @@ exports[`Storyshots 2 All Components/Highlights Normal 1`] = `
           </a>
         </div>
         <div
-          className="sc-ebFjAB gneNbO"
+          className="sc-kaNhvL bTdfhz"
         >
           <div
             className="sc-jtRfpW bWblgT"
@@ -22427,7 +22511,7 @@ exports[`Storyshots 2 All Components/Highlights Normal 1`] = `
         </div>
       </div>
       <a
-        className="sc-eNQAEJ gidYks sc-jKVCRD Shwzs"
+        className="sc-eNQAEJ gidYks sc-LKuAh kWuwzf"
         colorScheme={0}
         href="#"
         target="_self"
@@ -22600,66 +22684,66 @@ exports[`Storyshots 2 All Components/Image Sponsor Links Multiple 1`] = `
   }
 >
   <figure
-    className="sc-fcdeBU TkfWZ"
+    className="sc-kZmsYB kRWkDR"
   >
     <div
-      className="sc-gmeYpB dQfYp"
+      className="sc-RcBXQ iKVryE"
     >
       <div
-        className="sc-kZmsYB cwTPUO"
+        className="sc-iSDuPN gedQmg"
       >
         <a
-          className="sc-RcBXQ jRSBfK"
+          className="sc-fZwumE YiBPd"
           href="http://bfi.org.uk"
           target="_blank"
           title="Example image"
         >
           <img
             alt="Example image"
-            className="sc-iSDuPN jJqNvD"
+            className="sc-fQejPQ gdjdmH"
             src="https://ugc.futurelearn.com/uploads/images/92/51/925182cd-662d-41c9-91d4-843a1f4bc0b9.svg"
           />
         </a>
       </div>
       <div
-        className="sc-kZmsYB cwTPUO"
+        className="sc-iSDuPN gedQmg"
       >
         <img
           alt="Example image 2"
-          className="sc-iSDuPN jJqNvD"
+          className="sc-fQejPQ gdjdmH"
           src="https://www.bfi.org.uk/sites/all/themes/bfi2013/images/national-lottery-logo-color.png"
         />
       </div>
       <div
-        className="sc-kZmsYB cwTPUO"
+        className="sc-iSDuPN gedQmg"
       >
         <img
           alt="Example image 3"
-          className="sc-iSDuPN jJqNvD"
+          className="sc-fQejPQ gdjdmH"
           src="https://i.pinimg.com/originals/be/cb/8b/becb8b14b0f0be0037c5854cbe79b66f.jpg"
         />
       </div>
       <div
-        className="sc-kZmsYB cwTPUO"
+        className="sc-iSDuPN gedQmg"
       >
         <img
           alt="Example image 4"
-          className="sc-iSDuPN jJqNvD"
+          className="sc-fQejPQ gdjdmH"
           src="https://pbs.twimg.com/profile_images/1022403345955385345/5BTupdlq_400x400.jpg"
         />
       </div>
       <div
-        className="sc-kZmsYB cwTPUO"
+        className="sc-iSDuPN gedQmg"
       >
         <a
-          className="sc-RcBXQ jRSBfK"
+          className="sc-fZwumE YiBPd"
           href="https://www.bfi.org.uk/supporting-uk-film/distribution-exhibition-funding/film-audience-network"
           target="_blank"
           title="Example image 5"
         >
           <img
             alt="Example image 5"
-            className="sc-iSDuPN jJqNvD"
+            className="sc-fQejPQ gdjdmH"
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTYyBCRuGWUtc_vZ7JpdM6IoOWCOHUk2fcko-yRHgkeKCggQ0Du&usqp=CAU"
           />
         </a>
@@ -22680,23 +22764,23 @@ exports[`Storyshots 2 All Components/Image Sponsor Links Single 1`] = `
   }
 >
   <figure
-    className="sc-fcdeBU TkfWZ"
+    className="sc-kZmsYB kRWkDR"
   >
     <div
-      className="sc-gmeYpB dQfYp"
+      className="sc-RcBXQ iKVryE"
     >
       <div
-        className="sc-kZmsYB cwTPUO"
+        className="sc-iSDuPN gedQmg"
       >
         <a
-          className="sc-RcBXQ jRSBfK"
+          className="sc-fZwumE YiBPd"
           href="http://bfi.org.uk"
           target="_blank"
           title="Example image"
         >
           <img
             alt="Example image"
-            className="sc-iSDuPN jJqNvD"
+            className="sc-fQejPQ gdjdmH"
             src="https://ugc.futurelearn.com/uploads/images/92/51/925182cd-662d-41c9-91d4-843a1f4bc0b9.svg"
           />
         </a>
@@ -22717,64 +22801,64 @@ exports[`Storyshots 2 All Components/ImageGallery Normal 1`] = `
   }
 >
   <figure
-    className="sc-kaNhvL uNCnc"
+    className="sc-iBEsjs jsfehM"
   >
     <div
-      className="sc-hzNEM cuNAHc"
+      className="sc-kxynE aOMys"
     >
       <button
-        className="sc-chbbiW gdaDf"
+        className="sc-cooIXK boxMUj"
         onClick={[Function]}
       >
         <img
           alt="Example image"
-          className="sc-kxynE fbCWby"
+          className="sc-fcdeBU jywMdG"
           src="http://placehold.it/300x200"
         />
       </button>
       <button
-        className="sc-chbbiW gdaDf"
+        className="sc-cooIXK boxMUj"
         onClick={[Function]}
       >
         <img
           alt="Example image 2"
-          className="sc-kxynE fbCWby"
+          className="sc-fcdeBU jywMdG"
           src="http://placehold.it/200x300"
         />
       </button>
       <button
-        className="sc-chbbiW gdaDf"
+        className="sc-cooIXK boxMUj"
         onClick={[Function]}
       >
         <img
           alt="Example image 3"
-          className="sc-kxynE fbCWby"
+          className="sc-fcdeBU jywMdG"
           src="http://placehold.it/600x400"
         />
       </button>
       <button
-        className="sc-chbbiW gdaDf"
+        className="sc-cooIXK boxMUj"
         onClick={[Function]}
       >
         <img
           alt="Example image 4"
-          className="sc-kxynE fbCWby"
+          className="sc-fcdeBU jywMdG"
           src="http://placehold.it/600x400"
         />
       </button>
       <button
-        className="sc-chbbiW gdaDf"
+        className="sc-cooIXK boxMUj"
         onClick={[Function]}
       >
         <img
           alt="Example image 5"
-          className="sc-kxynE fbCWby"
+          className="sc-fcdeBU jywMdG"
           src="http://placehold.it/600x400"
         />
       </button>
     </div>
     <figcaption
-      className="sc-LKuAh hPXknj"
+      className="sc-hzNEM lbmBYg"
     >
       A gallery of images
     </figcaption>
@@ -22800,7 +22884,7 @@ exports[`Storyshots 2 All Components/Lead paragraph Normal 1`] = `
 
 exports[`Storyshots 2 All Components/Oembed Vimeo 1`] = `
 <div
-  className="sc-fZwumE gUxLCt"
+  className="sc-clNaTc bUxqry"
 >
   <iframe
     allow="autoplay; fullscreen"
@@ -22816,7 +22900,7 @@ exports[`Storyshots 2 All Components/Oembed Vimeo 1`] = `
 
 exports[`Storyshots 2 All Components/Oembed Youtube 1`] = `
 <div
-  className="sc-fZwumE gUxLCt"
+  className="sc-clNaTc bUxqry"
 >
   <iframe
     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -22831,10 +22915,10 @@ exports[`Storyshots 2 All Components/Oembed Youtube 1`] = `
 
 exports[`Storyshots 2 All Components/PageLinks Four Links 1`] = `
 <ul
-  className="sc-bEjcJn fvGMhj"
+  className="sc-likbZx MEupq"
 >
   <li
-    className="sc-eInJlc cDdOQQ"
+    className="sc-fOICqy bDazqi"
   >
     <h4
       className="sc-bZQynM faaoba"
@@ -22842,22 +22926,22 @@ exports[`Storyshots 2 All Components/PageLinks Four Links 1`] = `
       Development fund
     </h4>
     <p
-      className="sc-gtfDJT bsILVb"
+      className="sc-hzDEsm jOTGwl"
     >
       We welcome development applications from new and established filmmakers.
     </p>
     <a
-      className="sc-fOICqy iWDbTy"
+      className="sc-jeCdPy fArpkE"
       href="#"
       target="_self"
     >
       <span
-        className="sc-hzDEsm gIgVnT"
+        className="sc-jtRlXQ cqYKIN"
       >
         Apply to this fund
       </span>
       <div
-        className="sc-jeCdPy inrCqM"
+        className="sc-bGbJRg jivPxX"
       >
         <svg
           height="14"
@@ -22882,7 +22966,7 @@ exports[`Storyshots 2 All Components/PageLinks Four Links 1`] = `
     </a>
   </li>
   <li
-    className="sc-eInJlc cDdOQQ"
+    className="sc-fOICqy bDazqi"
   >
     <h4
       className="sc-bZQynM faaoba"
@@ -22890,22 +22974,22 @@ exports[`Storyshots 2 All Components/PageLinks Four Links 1`] = `
       Production Fund
     </h4>
     <p
-      className="sc-gtfDJT bsILVb"
+      className="sc-hzDEsm jOTGwl"
     >
       We welcome production applications from new and established filmmakers.
     </p>
     <a
-      className="sc-fOICqy iWDbTy"
+      className="sc-jeCdPy fArpkE"
       href="#"
       target="_self"
     >
       <span
-        className="sc-hzDEsm gIgVnT"
+        className="sc-jtRlXQ cqYKIN"
       >
         Read this page
       </span>
       <div
-        className="sc-jeCdPy inrCqM"
+        className="sc-bGbJRg jivPxX"
       >
         <svg
           height="14"
@@ -22930,7 +23014,7 @@ exports[`Storyshots 2 All Components/PageLinks Four Links 1`] = `
     </a>
   </li>
   <li
-    className="sc-eInJlc cDdOQQ"
+    className="sc-fOICqy bDazqi"
   >
     <h4
       className="sc-bZQynM faaoba"
@@ -22938,22 +23022,22 @@ exports[`Storyshots 2 All Components/PageLinks Four Links 1`] = `
       Development fund
     </h4>
     <p
-      className="sc-gtfDJT bsILVb"
+      className="sc-hzDEsm jOTGwl"
     >
       We welcome development applications from new and established filmmakers.
     </p>
     <a
-      className="sc-fOICqy iWDbTy"
+      className="sc-jeCdPy fArpkE"
       href="#"
       target="_self"
     >
       <span
-        className="sc-hzDEsm gIgVnT"
+        className="sc-jtRlXQ cqYKIN"
       >
         Apply to this fund
       </span>
       <div
-        className="sc-jeCdPy inrCqM"
+        className="sc-bGbJRg jivPxX"
       >
         <svg
           height="14"
@@ -22978,7 +23062,7 @@ exports[`Storyshots 2 All Components/PageLinks Four Links 1`] = `
     </a>
   </li>
   <li
-    className="sc-eInJlc cDdOQQ"
+    className="sc-fOICqy bDazqi"
   >
     <h4
       className="sc-bZQynM faaoba"
@@ -22986,22 +23070,22 @@ exports[`Storyshots 2 All Components/PageLinks Four Links 1`] = `
       Production Fund
     </h4>
     <p
-      className="sc-gtfDJT bsILVb"
+      className="sc-hzDEsm jOTGwl"
     >
       We welcome production applications from new and established filmmakers.
     </p>
     <a
-      className="sc-fOICqy iWDbTy"
+      className="sc-jeCdPy fArpkE"
       href="#"
       target="_self"
     >
       <span
-        className="sc-hzDEsm gIgVnT"
+        className="sc-jtRlXQ cqYKIN"
       >
         Read this page
       </span>
       <div
-        className="sc-jeCdPy inrCqM"
+        className="sc-bGbJRg jivPxX"
       >
         <svg
           height="14"
@@ -23030,16 +23114,16 @@ exports[`Storyshots 2 All Components/PageLinks Four Links 1`] = `
 
 exports[`Storyshots 2 All Components/PageLinks Links With Image 1`] = `
 <ul
-  className="sc-bEjcJn clDCsp"
+  className="sc-likbZx dQjvdZ"
 >
   <li
-    className="sc-eInJlc jEqcYH"
+    className="sc-fOICqy kzloqL"
   >
     <div
-      className="sc-jtRlXQ hkxYyh"
+      className="sc-bEjcJn cVUTIV"
     >
       <div
-        className="sc-bGbJRg cVXQCf image"
+        className="sc-ePZHVD cibllA image"
       />
     </div>
     <h4
@@ -23048,22 +23132,22 @@ exports[`Storyshots 2 All Components/PageLinks Links With Image 1`] = `
       Development fund
     </h4>
     <p
-      className="sc-gtfDJT bsILVb"
+      className="sc-hzDEsm jOTGwl"
     >
       We welcome development applications from new and established filmmakers.
     </p>
     <a
-      className="sc-fOICqy iWDbTy"
+      className="sc-jeCdPy fArpkE"
       href="#"
       target="_self"
     >
       <span
-        className="sc-hzDEsm gIgVnT"
+        className="sc-jtRlXQ cqYKIN"
       >
         Apply to this fund
       </span>
       <div
-        className="sc-jeCdPy inrCqM"
+        className="sc-bGbJRg jivPxX"
       >
         <svg
           height="14"
@@ -23088,13 +23172,13 @@ exports[`Storyshots 2 All Components/PageLinks Links With Image 1`] = `
     </a>
   </li>
   <li
-    className="sc-eInJlc jEqcYH"
+    className="sc-fOICqy kzloqL"
   >
     <div
-      className="sc-jtRlXQ hkxYyh"
+      className="sc-bEjcJn cVUTIV"
     >
       <div
-        className="sc-bGbJRg cVXQCf image"
+        className="sc-ePZHVD cibllA image"
       />
     </div>
     <h4
@@ -23103,22 +23187,22 @@ exports[`Storyshots 2 All Components/PageLinks Links With Image 1`] = `
       Production Fund
     </h4>
     <p
-      className="sc-gtfDJT bsILVb"
+      className="sc-hzDEsm jOTGwl"
     >
       We welcome production applications from new and established filmmakers.
     </p>
     <a
-      className="sc-fOICqy iWDbTy"
+      className="sc-jeCdPy fArpkE"
       href="#"
       target="_self"
     >
       <span
-        className="sc-hzDEsm gIgVnT"
+        className="sc-jtRlXQ cqYKIN"
       >
         Read this page
       </span>
       <div
-        className="sc-jeCdPy inrCqM"
+        className="sc-bGbJRg jivPxX"
       >
         <svg
           height="14"
@@ -23143,13 +23227,13 @@ exports[`Storyshots 2 All Components/PageLinks Links With Image 1`] = `
     </a>
   </li>
   <li
-    className="sc-eInJlc jEqcYH"
+    className="sc-fOICqy kzloqL"
   >
     <div
-      className="sc-jtRlXQ hkxYyh"
+      className="sc-bEjcJn cVUTIV"
     >
       <div
-        className="sc-bGbJRg cVXQCf image"
+        className="sc-ePZHVD cibllA image"
       />
     </div>
     <h4
@@ -23158,22 +23242,22 @@ exports[`Storyshots 2 All Components/PageLinks Links With Image 1`] = `
       International Co-production Fund
     </h4>
     <p
-      className="sc-gtfDJT bsILVb"
+      className="sc-hzDEsm jOTGwl"
     >
       We support both majority and minority UK co-productions.
     </p>
     <a
-      className="sc-fOICqy iWDbTy"
+      className="sc-jeCdPy fArpkE"
       href="#"
       target="_self"
     >
       <span
-        className="sc-hzDEsm gIgVnT"
+        className="sc-jtRlXQ cqYKIN"
       >
         Filmmaking courses for 16 to 19-year-olds
       </span>
       <div
-        className="sc-jeCdPy inrCqM"
+        className="sc-bGbJRg jivPxX"
       >
         <svg
           height="14"
@@ -23202,10 +23286,10 @@ exports[`Storyshots 2 All Components/PageLinks Links With Image 1`] = `
 
 exports[`Storyshots 2 All Components/PageLinks Nine Links 1`] = `
 <ul
-  className="sc-bEjcJn clDCsp"
+  className="sc-likbZx dQjvdZ"
 >
   <li
-    className="sc-eInJlc cDdOQQ"
+    className="sc-fOICqy bDazqi"
   >
     <h4
       className="sc-bZQynM faaoba"
@@ -23213,22 +23297,22 @@ exports[`Storyshots 2 All Components/PageLinks Nine Links 1`] = `
       Development fund
     </h4>
     <p
-      className="sc-gtfDJT bsILVb"
+      className="sc-hzDEsm jOTGwl"
     >
       We welcome development applications from new and established filmmakers.
     </p>
     <a
-      className="sc-fOICqy iWDbTy"
+      className="sc-jeCdPy fArpkE"
       href="#"
       target="_self"
     >
       <span
-        className="sc-hzDEsm gIgVnT"
+        className="sc-jtRlXQ cqYKIN"
       >
         Apply to this fund
       </span>
       <div
-        className="sc-jeCdPy inrCqM"
+        className="sc-bGbJRg jivPxX"
       >
         <svg
           height="14"
@@ -23253,7 +23337,7 @@ exports[`Storyshots 2 All Components/PageLinks Nine Links 1`] = `
     </a>
   </li>
   <li
-    className="sc-eInJlc cDdOQQ"
+    className="sc-fOICqy bDazqi"
   >
     <h4
       className="sc-bZQynM faaoba"
@@ -23261,22 +23345,22 @@ exports[`Storyshots 2 All Components/PageLinks Nine Links 1`] = `
       Production Fund
     </h4>
     <p
-      className="sc-gtfDJT bsILVb"
+      className="sc-hzDEsm jOTGwl"
     >
       We welcome production applications from new and established filmmakers.
     </p>
     <a
-      className="sc-fOICqy iWDbTy"
+      className="sc-jeCdPy fArpkE"
       href="#"
       target="_self"
     >
       <span
-        className="sc-hzDEsm gIgVnT"
+        className="sc-jtRlXQ cqYKIN"
       >
         Read this page
       </span>
       <div
-        className="sc-jeCdPy inrCqM"
+        className="sc-bGbJRg jivPxX"
       >
         <svg
           height="14"
@@ -23301,7 +23385,7 @@ exports[`Storyshots 2 All Components/PageLinks Nine Links 1`] = `
     </a>
   </li>
   <li
-    className="sc-eInJlc cDdOQQ"
+    className="sc-fOICqy bDazqi"
   >
     <h4
       className="sc-bZQynM faaoba"
@@ -23309,22 +23393,22 @@ exports[`Storyshots 2 All Components/PageLinks Nine Links 1`] = `
       International Co-production Fund
     </h4>
     <p
-      className="sc-gtfDJT bsILVb"
+      className="sc-hzDEsm jOTGwl"
     >
       We support both majority and minority UK co-productions.
     </p>
     <a
-      className="sc-fOICqy iWDbTy"
+      className="sc-jeCdPy fArpkE"
       href="#"
       target="_self"
     >
       <span
-        className="sc-hzDEsm gIgVnT"
+        className="sc-jtRlXQ cqYKIN"
       >
         Filmmaking courses for 16 to 19-year-olds
       </span>
       <div
-        className="sc-jeCdPy inrCqM"
+        className="sc-bGbJRg jivPxX"
       >
         <svg
           height="14"
@@ -23349,7 +23433,7 @@ exports[`Storyshots 2 All Components/PageLinks Nine Links 1`] = `
     </a>
   </li>
   <li
-    className="sc-eInJlc cDdOQQ"
+    className="sc-fOICqy bDazqi"
   >
     <h4
       className="sc-bZQynM faaoba"
@@ -23357,22 +23441,22 @@ exports[`Storyshots 2 All Components/PageLinks Nine Links 1`] = `
       Development fund
     </h4>
     <p
-      className="sc-gtfDJT bsILVb"
+      className="sc-hzDEsm jOTGwl"
     >
       We welcome development applications from new and established filmmakers.
     </p>
     <a
-      className="sc-fOICqy iWDbTy"
+      className="sc-jeCdPy fArpkE"
       href="#"
       target="_self"
     >
       <span
-        className="sc-hzDEsm gIgVnT"
+        className="sc-jtRlXQ cqYKIN"
       >
         Apply to this fund
       </span>
       <div
-        className="sc-jeCdPy inrCqM"
+        className="sc-bGbJRg jivPxX"
       >
         <svg
           height="14"
@@ -23397,7 +23481,7 @@ exports[`Storyshots 2 All Components/PageLinks Nine Links 1`] = `
     </a>
   </li>
   <li
-    className="sc-eInJlc cDdOQQ"
+    className="sc-fOICqy bDazqi"
   >
     <h4
       className="sc-bZQynM faaoba"
@@ -23405,22 +23489,22 @@ exports[`Storyshots 2 All Components/PageLinks Nine Links 1`] = `
       Production Fund
     </h4>
     <p
-      className="sc-gtfDJT bsILVb"
+      className="sc-hzDEsm jOTGwl"
     >
       We welcome production applications from new and established filmmakers.
     </p>
     <a
-      className="sc-fOICqy iWDbTy"
+      className="sc-jeCdPy fArpkE"
       href="#"
       target="_self"
     >
       <span
-        className="sc-hzDEsm gIgVnT"
+        className="sc-jtRlXQ cqYKIN"
       >
         Read this page
       </span>
       <div
-        className="sc-jeCdPy inrCqM"
+        className="sc-bGbJRg jivPxX"
       >
         <svg
           height="14"
@@ -23445,7 +23529,7 @@ exports[`Storyshots 2 All Components/PageLinks Nine Links 1`] = `
     </a>
   </li>
   <li
-    className="sc-eInJlc cDdOQQ"
+    className="sc-fOICqy bDazqi"
   >
     <h4
       className="sc-bZQynM faaoba"
@@ -23453,22 +23537,22 @@ exports[`Storyshots 2 All Components/PageLinks Nine Links 1`] = `
       International Co-production Fund
     </h4>
     <p
-      className="sc-gtfDJT bsILVb"
+      className="sc-hzDEsm jOTGwl"
     >
       We support both majority and minority UK co-productions.
     </p>
     <a
-      className="sc-fOICqy iWDbTy"
+      className="sc-jeCdPy fArpkE"
       href="#"
       target="_self"
     >
       <span
-        className="sc-hzDEsm gIgVnT"
+        className="sc-jtRlXQ cqYKIN"
       >
         Filmmaking courses for 16 to 19-year-olds
       </span>
       <div
-        className="sc-jeCdPy inrCqM"
+        className="sc-bGbJRg jivPxX"
       >
         <svg
           height="14"
@@ -23493,7 +23577,7 @@ exports[`Storyshots 2 All Components/PageLinks Nine Links 1`] = `
     </a>
   </li>
   <li
-    className="sc-eInJlc cDdOQQ"
+    className="sc-fOICqy bDazqi"
   >
     <h4
       className="sc-bZQynM faaoba"
@@ -23501,22 +23585,22 @@ exports[`Storyshots 2 All Components/PageLinks Nine Links 1`] = `
       Development fund
     </h4>
     <p
-      className="sc-gtfDJT bsILVb"
+      className="sc-hzDEsm jOTGwl"
     >
       We welcome development applications from new and established filmmakers.
     </p>
     <a
-      className="sc-fOICqy iWDbTy"
+      className="sc-jeCdPy fArpkE"
       href="#"
       target="_self"
     >
       <span
-        className="sc-hzDEsm gIgVnT"
+        className="sc-jtRlXQ cqYKIN"
       >
         Apply to this fund
       </span>
       <div
-        className="sc-jeCdPy inrCqM"
+        className="sc-bGbJRg jivPxX"
       >
         <svg
           height="14"
@@ -23541,7 +23625,7 @@ exports[`Storyshots 2 All Components/PageLinks Nine Links 1`] = `
     </a>
   </li>
   <li
-    className="sc-eInJlc cDdOQQ"
+    className="sc-fOICqy bDazqi"
   >
     <h4
       className="sc-bZQynM faaoba"
@@ -23549,22 +23633,22 @@ exports[`Storyshots 2 All Components/PageLinks Nine Links 1`] = `
       Production Fund
     </h4>
     <p
-      className="sc-gtfDJT bsILVb"
+      className="sc-hzDEsm jOTGwl"
     >
       We welcome production applications from new and established filmmakers.
     </p>
     <a
-      className="sc-fOICqy iWDbTy"
+      className="sc-jeCdPy fArpkE"
       href="#"
       target="_self"
     >
       <span
-        className="sc-hzDEsm gIgVnT"
+        className="sc-jtRlXQ cqYKIN"
       >
         Read this page
       </span>
       <div
-        className="sc-jeCdPy inrCqM"
+        className="sc-bGbJRg jivPxX"
       >
         <svg
           height="14"
@@ -23589,7 +23673,7 @@ exports[`Storyshots 2 All Components/PageLinks Nine Links 1`] = `
     </a>
   </li>
   <li
-    className="sc-eInJlc cDdOQQ"
+    className="sc-fOICqy bDazqi"
   >
     <h4
       className="sc-bZQynM faaoba"
@@ -23597,22 +23681,22 @@ exports[`Storyshots 2 All Components/PageLinks Nine Links 1`] = `
       International Co-production Fund
     </h4>
     <p
-      className="sc-gtfDJT bsILVb"
+      className="sc-hzDEsm jOTGwl"
     >
       We support both majority and minority UK co-productions.
     </p>
     <a
-      className="sc-fOICqy iWDbTy"
+      className="sc-jeCdPy fArpkE"
       href="#"
       target="_self"
     >
       <span
-        className="sc-hzDEsm gIgVnT"
+        className="sc-jtRlXQ cqYKIN"
       >
         Filmmaking courses for 16 to 19-year-olds
       </span>
       <div
-        className="sc-jeCdPy inrCqM"
+        className="sc-bGbJRg jivPxX"
       >
         <svg
           height="14"
@@ -23641,10 +23725,10 @@ exports[`Storyshots 2 All Components/PageLinks Nine Links 1`] = `
 
 exports[`Storyshots 2 All Components/PageLinks Six Links 1`] = `
 <ul
-  className="sc-bEjcJn clDCsp"
+  className="sc-likbZx dQjvdZ"
 >
   <li
-    className="sc-eInJlc cDdOQQ"
+    className="sc-fOICqy bDazqi"
   >
     <h4
       className="sc-bZQynM faaoba"
@@ -23652,22 +23736,22 @@ exports[`Storyshots 2 All Components/PageLinks Six Links 1`] = `
       Development fund
     </h4>
     <p
-      className="sc-gtfDJT bsILVb"
+      className="sc-hzDEsm jOTGwl"
     >
       We welcome development applications from new and established filmmakers.
     </p>
     <a
-      className="sc-fOICqy iWDbTy"
+      className="sc-jeCdPy fArpkE"
       href="#"
       target="_self"
     >
       <span
-        className="sc-hzDEsm gIgVnT"
+        className="sc-jtRlXQ cqYKIN"
       >
         Apply to this fund
       </span>
       <div
-        className="sc-jeCdPy inrCqM"
+        className="sc-bGbJRg jivPxX"
       >
         <svg
           height="14"
@@ -23692,7 +23776,7 @@ exports[`Storyshots 2 All Components/PageLinks Six Links 1`] = `
     </a>
   </li>
   <li
-    className="sc-eInJlc cDdOQQ"
+    className="sc-fOICqy bDazqi"
   >
     <h4
       className="sc-bZQynM faaoba"
@@ -23700,22 +23784,22 @@ exports[`Storyshots 2 All Components/PageLinks Six Links 1`] = `
       Production Fund
     </h4>
     <p
-      className="sc-gtfDJT bsILVb"
+      className="sc-hzDEsm jOTGwl"
     >
       We welcome production applications from new and established filmmakers.
     </p>
     <a
-      className="sc-fOICqy iWDbTy"
+      className="sc-jeCdPy fArpkE"
       href="#"
       target="_self"
     >
       <span
-        className="sc-hzDEsm gIgVnT"
+        className="sc-jtRlXQ cqYKIN"
       >
         Read this page
       </span>
       <div
-        className="sc-jeCdPy inrCqM"
+        className="sc-bGbJRg jivPxX"
       >
         <svg
           height="14"
@@ -23740,7 +23824,7 @@ exports[`Storyshots 2 All Components/PageLinks Six Links 1`] = `
     </a>
   </li>
   <li
-    className="sc-eInJlc cDdOQQ"
+    className="sc-fOICqy bDazqi"
   >
     <h4
       className="sc-bZQynM faaoba"
@@ -23748,22 +23832,22 @@ exports[`Storyshots 2 All Components/PageLinks Six Links 1`] = `
       International Co-production Fund
     </h4>
     <p
-      className="sc-gtfDJT bsILVb"
+      className="sc-hzDEsm jOTGwl"
     >
       We support both majority and minority UK co-productions.
     </p>
     <a
-      className="sc-fOICqy iWDbTy"
+      className="sc-jeCdPy fArpkE"
       href="#"
       target="_self"
     >
       <span
-        className="sc-hzDEsm gIgVnT"
+        className="sc-jtRlXQ cqYKIN"
       >
         Filmmaking courses for 16 to 19-year-olds
       </span>
       <div
-        className="sc-jeCdPy inrCqM"
+        className="sc-bGbJRg jivPxX"
       >
         <svg
           height="14"
@@ -23788,7 +23872,7 @@ exports[`Storyshots 2 All Components/PageLinks Six Links 1`] = `
     </a>
   </li>
   <li
-    className="sc-eInJlc cDdOQQ"
+    className="sc-fOICqy bDazqi"
   >
     <h4
       className="sc-bZQynM faaoba"
@@ -23796,22 +23880,22 @@ exports[`Storyshots 2 All Components/PageLinks Six Links 1`] = `
       Development fund
     </h4>
     <p
-      className="sc-gtfDJT bsILVb"
+      className="sc-hzDEsm jOTGwl"
     >
       We welcome development applications from new and established filmmakers.
     </p>
     <a
-      className="sc-fOICqy iWDbTy"
+      className="sc-jeCdPy fArpkE"
       href="#"
       target="_self"
     >
       <span
-        className="sc-hzDEsm gIgVnT"
+        className="sc-jtRlXQ cqYKIN"
       >
         Apply to this fund
       </span>
       <div
-        className="sc-jeCdPy inrCqM"
+        className="sc-bGbJRg jivPxX"
       >
         <svg
           height="14"
@@ -23836,7 +23920,7 @@ exports[`Storyshots 2 All Components/PageLinks Six Links 1`] = `
     </a>
   </li>
   <li
-    className="sc-eInJlc cDdOQQ"
+    className="sc-fOICqy bDazqi"
   >
     <h4
       className="sc-bZQynM faaoba"
@@ -23844,22 +23928,22 @@ exports[`Storyshots 2 All Components/PageLinks Six Links 1`] = `
       Production Fund
     </h4>
     <p
-      className="sc-gtfDJT bsILVb"
+      className="sc-hzDEsm jOTGwl"
     >
       We welcome production applications from new and established filmmakers.
     </p>
     <a
-      className="sc-fOICqy iWDbTy"
+      className="sc-jeCdPy fArpkE"
       href="#"
       target="_self"
     >
       <span
-        className="sc-hzDEsm gIgVnT"
+        className="sc-jtRlXQ cqYKIN"
       >
         Read this page
       </span>
       <div
-        className="sc-jeCdPy inrCqM"
+        className="sc-bGbJRg jivPxX"
       >
         <svg
           height="14"
@@ -23884,7 +23968,7 @@ exports[`Storyshots 2 All Components/PageLinks Six Links 1`] = `
     </a>
   </li>
   <li
-    className="sc-eInJlc cDdOQQ"
+    className="sc-fOICqy bDazqi"
   >
     <h4
       className="sc-bZQynM faaoba"
@@ -23892,22 +23976,22 @@ exports[`Storyshots 2 All Components/PageLinks Six Links 1`] = `
       International Co-production Fund
     </h4>
     <p
-      className="sc-gtfDJT bsILVb"
+      className="sc-hzDEsm jOTGwl"
     >
       We support both majority and minority UK co-productions.
     </p>
     <a
-      className="sc-fOICqy iWDbTy"
+      className="sc-jeCdPy fArpkE"
       href="#"
       target="_self"
     >
       <span
-        className="sc-hzDEsm gIgVnT"
+        className="sc-jtRlXQ cqYKIN"
       >
         Filmmaking courses for 16 to 19-year-olds
       </span>
       <div
-        className="sc-jeCdPy inrCqM"
+        className="sc-bGbJRg jivPxX"
       >
         <svg
           height="14"
@@ -23936,10 +24020,10 @@ exports[`Storyshots 2 All Components/PageLinks Six Links 1`] = `
 
 exports[`Storyshots 2 All Components/PageLinks Three Links 1`] = `
 <ul
-  className="sc-bEjcJn clDCsp"
+  className="sc-likbZx dQjvdZ"
 >
   <li
-    className="sc-eInJlc cDdOQQ"
+    className="sc-fOICqy bDazqi"
   >
     <h4
       className="sc-bZQynM faaoba"
@@ -23947,22 +24031,22 @@ exports[`Storyshots 2 All Components/PageLinks Three Links 1`] = `
       Development fund
     </h4>
     <p
-      className="sc-gtfDJT bsILVb"
+      className="sc-hzDEsm jOTGwl"
     >
       We welcome development applications from new and established filmmakers.
     </p>
     <a
-      className="sc-fOICqy iWDbTy"
+      className="sc-jeCdPy fArpkE"
       href="#"
       target="_self"
     >
       <span
-        className="sc-hzDEsm gIgVnT"
+        className="sc-jtRlXQ cqYKIN"
       >
         Apply to this fund
       </span>
       <div
-        className="sc-jeCdPy inrCqM"
+        className="sc-bGbJRg jivPxX"
       >
         <svg
           height="14"
@@ -23987,7 +24071,7 @@ exports[`Storyshots 2 All Components/PageLinks Three Links 1`] = `
     </a>
   </li>
   <li
-    className="sc-eInJlc cDdOQQ"
+    className="sc-fOICqy bDazqi"
   >
     <h4
       className="sc-bZQynM faaoba"
@@ -23995,22 +24079,22 @@ exports[`Storyshots 2 All Components/PageLinks Three Links 1`] = `
       Production Fund
     </h4>
     <p
-      className="sc-gtfDJT bsILVb"
+      className="sc-hzDEsm jOTGwl"
     >
       We welcome production applications from new and established filmmakers.
     </p>
     <a
-      className="sc-fOICqy iWDbTy"
+      className="sc-jeCdPy fArpkE"
       href="#"
       target="_self"
     >
       <span
-        className="sc-hzDEsm gIgVnT"
+        className="sc-jtRlXQ cqYKIN"
       >
         Read this page
       </span>
       <div
-        className="sc-jeCdPy inrCqM"
+        className="sc-bGbJRg jivPxX"
       >
         <svg
           height="14"
@@ -24035,7 +24119,7 @@ exports[`Storyshots 2 All Components/PageLinks Three Links 1`] = `
     </a>
   </li>
   <li
-    className="sc-eInJlc cDdOQQ"
+    className="sc-fOICqy bDazqi"
   >
     <h4
       className="sc-bZQynM faaoba"
@@ -24043,22 +24127,22 @@ exports[`Storyshots 2 All Components/PageLinks Three Links 1`] = `
       International Co-production Fund
     </h4>
     <p
-      className="sc-gtfDJT bsILVb"
+      className="sc-hzDEsm jOTGwl"
     >
       We support both majority and minority UK co-productions.
     </p>
     <a
-      className="sc-fOICqy iWDbTy"
+      className="sc-jeCdPy fArpkE"
       href="#"
       target="_self"
     >
       <span
-        className="sc-hzDEsm gIgVnT"
+        className="sc-jtRlXQ cqYKIN"
       >
         Filmmaking courses for 16 to 19-year-olds
       </span>
       <div
-        className="sc-jeCdPy inrCqM"
+        className="sc-bGbJRg jivPxX"
       >
         <svg
           height="14"
@@ -24087,10 +24171,10 @@ exports[`Storyshots 2 All Components/PageLinks Three Links 1`] = `
 
 exports[`Storyshots 2 All Components/PageLinks Two Links 1`] = `
 <ul
-  className="sc-bEjcJn fvGMhj"
+  className="sc-likbZx MEupq"
 >
   <li
-    className="sc-eInJlc cDdOQQ"
+    className="sc-fOICqy bDazqi"
   >
     <h4
       className="sc-bZQynM faaoba"
@@ -24098,22 +24182,22 @@ exports[`Storyshots 2 All Components/PageLinks Two Links 1`] = `
       Development fund
     </h4>
     <p
-      className="sc-gtfDJT bsILVb"
+      className="sc-hzDEsm jOTGwl"
     >
       We welcome development applications from new and established filmmakers.
     </p>
     <a
-      className="sc-fOICqy iWDbTy"
+      className="sc-jeCdPy fArpkE"
       href="#"
       target="_self"
     >
       <span
-        className="sc-hzDEsm gIgVnT"
+        className="sc-jtRlXQ cqYKIN"
       >
         Apply to this fund
       </span>
       <div
-        className="sc-jeCdPy inrCqM"
+        className="sc-bGbJRg jivPxX"
       >
         <svg
           height="14"
@@ -24138,7 +24222,7 @@ exports[`Storyshots 2 All Components/PageLinks Two Links 1`] = `
     </a>
   </li>
   <li
-    className="sc-eInJlc cDdOQQ"
+    className="sc-fOICqy bDazqi"
   >
     <h4
       className="sc-bZQynM faaoba"
@@ -24146,22 +24230,22 @@ exports[`Storyshots 2 All Components/PageLinks Two Links 1`] = `
       Production Fund
     </h4>
     <p
-      className="sc-gtfDJT bsILVb"
+      className="sc-hzDEsm jOTGwl"
     >
       We welcome production applications from new and established filmmakers.
     </p>
     <a
-      className="sc-fOICqy iWDbTy"
+      className="sc-jeCdPy fArpkE"
       href="#"
       target="_self"
     >
       <span
-        className="sc-hzDEsm gIgVnT"
+        className="sc-jtRlXQ cqYKIN"
       >
         Read this page
       </span>
       <div
-        className="sc-jeCdPy inrCqM"
+        className="sc-bGbJRg jivPxX"
       >
         <svg
           height="14"
@@ -24197,7 +24281,7 @@ exports[`Storyshots 2 All Components/PromoBanner Banner Without Image 1`] = `
   }
 >
   <section
-    className="sc-kLIISr bOIPZp promoBanner"
+    className="sc-kLIISr dTOlPr promoBanner"
   >
     <div
       className="sc-qrIAp dPHOQ without_image"
@@ -24239,7 +24323,7 @@ exports[`Storyshots 2 All Components/PromoBanner Normal 1`] = `
   }
 >
   <section
-    className="sc-kLIISr bOIPZp promoBanner"
+    className="sc-kLIISr dTOlPr promoBanner"
   >
     <div
       className="sc-qrIAp dPHOQ with_image"
@@ -24284,7 +24368,7 @@ exports[`Storyshots 2 All Components/PromoBanner Reversed Image 1`] = `
   }
 >
   <section
-    className="sc-kLIISr bOIPZp promoBanner"
+    className="sc-kLIISr dTOlPr promoBanner"
     reversed={true}
   >
     <div
@@ -24329,32 +24413,32 @@ exports[`Storyshots 2 All Components/SidebarArticleLinks Example 1`] = `
   }
 >
   <section
-    className="sc-sdtwF bVkErr"
+    className="sc-cHSUfg gtDflg"
   >
     <ul
-      className="sc-iYUSvU ikTONv"
+      className="sc-cTjmhe crdzZh"
     >
       <li
-        className="sc-kcDeIU gpzQvN"
+        className="sc-bFADNz gBnwl"
       >
         <a
-          className="sc-cqpYsc ehkYCY"
+          className="sc-dyGzUR hWozCw"
           href="https://www.bfi.org.uk/news-opinion/news-bfi/lists/36-amazing-dance-scenes"
           target="_self"
         >
           <div
-            className="sc-BngTV kqrWKy"
+            className="sc-cqpYsc iyjXSG"
           >
             <div
               alt="Example image"
-              className="sc-bFADNz bUijbR image"
+              className="sc-hBbWxd eVCrCC image"
             />
           </div>
           <div
-            className="sc-hBbWxd lplSYU"
+            className="sc-drKuOJ hxBIbx"
           >
             <div
-              className="sc-gRnDUn cKlCqD"
+              className="sc-sdtwF jyiHEw"
             >
               <div
                 className="sc-hEsumM fOhbPP"
@@ -24363,12 +24447,12 @@ exports[`Storyshots 2 All Components/SidebarArticleLinks Example 1`] = `
               </div>
             </div>
             <p
-              className="sc-dyGzUR XlgqI articlecard_title"
+              className="sc-gRnDUn cDZTKg articlecard_title"
             >
               36 amazing dance scenes
             </p>
             <p
-              className="sc-drKuOJ jOqAXr"
+              className="sc-cmjSyW hzxWNi"
             >
               9 February 2017
             </p>
@@ -24376,26 +24460,26 @@ exports[`Storyshots 2 All Components/SidebarArticleLinks Example 1`] = `
         </a>
       </li>
       <li
-        className="sc-kcDeIU gpzQvN"
+        className="sc-bFADNz gBnwl"
       >
         <a
-          className="sc-cqpYsc ehkYCY"
+          className="sc-dyGzUR hWozCw"
           href="https://www.bfi.org.uk/greatest-films-all-time"
           target="_self"
         >
           <div
-            className="sc-BngTV kqrWKy"
+            className="sc-cqpYsc iyjXSG"
           >
             <div
               alt="Example image"
-              className="sc-bFADNz eYhhiE image"
+              className="sc-hBbWxd jghBwf image"
             />
           </div>
           <div
-            className="sc-hBbWxd lplSYU"
+            className="sc-drKuOJ hxBIbx"
           >
             <div
-              className="sc-gRnDUn cKlCqD"
+              className="sc-sdtwF jyiHEw"
             >
               <div
                 className="sc-hEsumM fOhbPP"
@@ -24404,12 +24488,12 @@ exports[`Storyshots 2 All Components/SidebarArticleLinks Example 1`] = `
               </div>
             </div>
             <p
-              className="sc-dyGzUR XlgqI articlecard_title"
+              className="sc-gRnDUn cDZTKg articlecard_title"
             >
               The 100 Greatest Films of All Time
             </p>
             <p
-              className="sc-drKuOJ jOqAXr"
+              className="sc-cmjSyW hzxWNi"
             >
               23 March 2020
             </p>
@@ -24417,26 +24501,26 @@ exports[`Storyshots 2 All Components/SidebarArticleLinks Example 1`] = `
         </a>
       </li>
       <li
-        className="sc-kcDeIU gpzQvN"
+        className="sc-bFADNz gBnwl"
       >
         <a
-          className="sc-cqpYsc ehkYCY"
+          className="sc-dyGzUR hWozCw"
           href="https://www.bfi.org.uk/news-opinion/sight-sound-magazine/polls-surveys/stanley-kubrick-cinephiles"
           target="_self"
         >
           <div
-            className="sc-BngTV kqrWKy"
+            className="sc-cqpYsc iyjXSG"
           >
             <div
               alt="Example image"
-              className="sc-bFADNz iCDQbp image"
+              className="sc-hBbWxd eREoJs image"
             />
           </div>
           <div
-            className="sc-hBbWxd lplSYU"
+            className="sc-drKuOJ hxBIbx"
           >
             <div
-              className="sc-gRnDUn cKlCqD"
+              className="sc-sdtwF jyiHEw"
             >
               <div
                 className="sc-hEsumM fOhbPP"
@@ -24445,12 +24529,12 @@ exports[`Storyshots 2 All Components/SidebarArticleLinks Example 1`] = `
               </div>
             </div>
             <p
-              className="sc-dyGzUR XlgqI articlecard_title"
+              className="sc-gRnDUn cDZTKg articlecard_title"
             >
               Stanley Kubrick, cinephile
             </p>
             <p
-              className="sc-drKuOJ jOqAXr"
+              className="sc-cmjSyW hzxWNi"
             >
               22 November 2019
             </p>
@@ -24472,37 +24556,37 @@ exports[`Storyshots 2 All Components/SidebarFilmLinks Example 1`] = `
   }
 >
   <section
-    className="sc-fyjhYU haFcsN"
+    className="sc-eIHaNI iBTSHi"
   >
     <ul
-      className="sc-ugnQR kApYSo"
+      className="sc-eTpRJs bTAJHm"
     >
       <li
-        className="sc-jrIrqw gZtapp"
+        className="sc-iybRtq gdWuQz"
       >
         <a
-          className="sc-iQtOjA jeQQwQ"
+          className="sc-cEvuZC eSFCsr"
           href="#"
           target="_self"
         >
           <div
-            className="sc-hjRWVT cWnWCJ"
+            className="sc-iQtOjA gngHfk"
           >
             <div
               alt="Example image"
-              className="sc-iybRtq bjHMYw image"
+              className="sc-fHxwqH kfAlwI image"
             />
           </div>
           <div
-            className="sc-fHxwqH kblwQa"
+            className="sc-kXeGPI kFYuKa"
           >
             <p
-              className="sc-cEvuZC fScsdP"
+              className="sc-fyjhYU cYvFJM"
             >
               La La Land
             </p>
             <div
-              className="sc-kXeGPI cmuhPw"
+              className="sc-ugnQR eFnnpP"
             >
               <div
                 className="sc-hEsumM fOhbPP"
@@ -24514,31 +24598,31 @@ exports[`Storyshots 2 All Components/SidebarFilmLinks Example 1`] = `
         </a>
       </li>
       <li
-        className="sc-jrIrqw gZtapp"
+        className="sc-iybRtq gdWuQz"
       >
         <a
-          className="sc-iQtOjA jeQQwQ"
+          className="sc-cEvuZC eSFCsr"
           href="#"
           target="_self"
         >
           <div
-            className="sc-hjRWVT cWnWCJ"
+            className="sc-iQtOjA gngHfk"
           >
             <div
               alt="Example image"
-              className="sc-iybRtq mWYXZ image"
+              className="sc-fHxwqH eyVmNx image"
             />
           </div>
           <div
-            className="sc-fHxwqH kblwQa"
+            className="sc-kXeGPI kFYuKa"
           >
             <p
-              className="sc-cEvuZC fScsdP"
+              className="sc-fyjhYU cYvFJM"
             >
               The Lighthouse
             </p>
             <div
-              className="sc-kXeGPI cmuhPw"
+              className="sc-ugnQR eFnnpP"
             >
               <div
                 className="sc-hEsumM fOhbPP"
@@ -24555,31 +24639,31 @@ exports[`Storyshots 2 All Components/SidebarFilmLinks Example 1`] = `
         </a>
       </li>
       <li
-        className="sc-jrIrqw gZtapp"
+        className="sc-iybRtq gdWuQz"
       >
         <a
-          className="sc-iQtOjA jeQQwQ"
+          className="sc-cEvuZC eSFCsr"
           href="#"
           target="_self"
         >
           <div
-            className="sc-hjRWVT cWnWCJ"
+            className="sc-iQtOjA gngHfk"
           >
             <div
               alt="Example image"
-              className="sc-iybRtq bjHMYw image"
+              className="sc-fHxwqH kfAlwI image"
             />
           </div>
           <div
-            className="sc-fHxwqH kblwQa"
+            className="sc-kXeGPI kFYuKa"
           >
             <p
-              className="sc-cEvuZC fScsdP"
+              className="sc-fyjhYU cYvFJM"
             >
               Santa Claus Conquers the Martians
             </p>
             <div
-              className="sc-kXeGPI cmuhPw"
+              className="sc-ugnQR eFnnpP"
             >
               <div
                 className="sc-hEsumM fOhbPP"
@@ -24591,31 +24675,31 @@ exports[`Storyshots 2 All Components/SidebarFilmLinks Example 1`] = `
         </a>
       </li>
       <li
-        className="sc-jrIrqw gZtapp"
+        className="sc-iybRtq gdWuQz"
       >
         <a
-          className="sc-iQtOjA jeQQwQ"
+          className="sc-cEvuZC eSFCsr"
           href="#"
           target="_self"
         >
           <div
-            className="sc-hjRWVT cWnWCJ"
+            className="sc-iQtOjA gngHfk"
           >
             <div
               alt="Example image"
-              className="sc-iybRtq bjHMYw image"
+              className="sc-fHxwqH kfAlwI image"
             />
           </div>
           <div
-            className="sc-fHxwqH kblwQa"
+            className="sc-kXeGPI kFYuKa"
           >
             <p
-              className="sc-cEvuZC fScsdP"
+              className="sc-fyjhYU cYvFJM"
             >
               Gremlins
             </p>
             <div
-              className="sc-kXeGPI cmuhPw"
+              className="sc-ugnQR eFnnpP"
             >
               <div
                 className="sc-hEsumM fOhbPP"
@@ -24632,31 +24716,31 @@ exports[`Storyshots 2 All Components/SidebarFilmLinks Example 1`] = `
         </a>
       </li>
       <li
-        className="sc-jrIrqw gZtapp"
+        className="sc-iybRtq gdWuQz"
       >
         <a
-          className="sc-iQtOjA jeQQwQ"
+          className="sc-cEvuZC eSFCsr"
           href="#"
           target="_self"
         >
           <div
-            className="sc-hjRWVT cWnWCJ"
+            className="sc-iQtOjA gngHfk"
           >
             <div
               alt="Example image"
-              className="sc-iybRtq bjHMYw image"
+              className="sc-fHxwqH kfAlwI image"
             />
           </div>
           <div
-            className="sc-fHxwqH kblwQa"
+            className="sc-kXeGPI kFYuKa"
           >
             <p
-              className="sc-cEvuZC fScsdP"
+              className="sc-fyjhYU cYvFJM"
             >
               Portrait of a Lady on Fire
             </p>
             <div
-              className="sc-kXeGPI cmuhPw"
+              className="sc-ugnQR eFnnpP"
             >
               <div
                 className="sc-hEsumM fOhbPP"
@@ -24668,31 +24752,31 @@ exports[`Storyshots 2 All Components/SidebarFilmLinks Example 1`] = `
         </a>
       </li>
       <li
-        className="sc-jrIrqw gZtapp"
+        className="sc-iybRtq gdWuQz"
       >
         <a
-          className="sc-iQtOjA jeQQwQ"
+          className="sc-cEvuZC eSFCsr"
           href="#"
           target="_self"
         >
           <div
-            className="sc-hjRWVT cWnWCJ"
+            className="sc-iQtOjA gngHfk"
           >
             <div
               alt="Example image"
-              className="sc-iybRtq bjHMYw image"
+              className="sc-fHxwqH kfAlwI image"
             />
           </div>
           <div
-            className="sc-fHxwqH kblwQa"
+            className="sc-kXeGPI kFYuKa"
           >
             <p
-              className="sc-cEvuZC fScsdP"
+              className="sc-fyjhYU cYvFJM"
             >
               Birdman
             </p>
             <div
-              className="sc-kXeGPI cmuhPw"
+              className="sc-ugnQR eFnnpP"
             >
               <div
                 className="sc-hEsumM fOhbPP"
@@ -24709,31 +24793,31 @@ exports[`Storyshots 2 All Components/SidebarFilmLinks Example 1`] = `
         </a>
       </li>
       <li
-        className="sc-jrIrqw gZtapp"
+        className="sc-iybRtq gdWuQz"
       >
         <a
-          className="sc-iQtOjA jeQQwQ"
+          className="sc-cEvuZC eSFCsr"
           href="#"
           target="_self"
         >
           <div
-            className="sc-hjRWVT cWnWCJ"
+            className="sc-iQtOjA gngHfk"
           >
             <div
               alt="Example image"
-              className="sc-iybRtq bjHMYw image"
+              className="sc-fHxwqH kfAlwI image"
             />
           </div>
           <div
-            className="sc-fHxwqH kblwQa"
+            className="sc-kXeGPI kFYuKa"
           >
             <p
-              className="sc-cEvuZC fScsdP"
+              className="sc-fyjhYU cYvFJM"
             >
               Birdman 2
             </p>
             <div
-              className="sc-kXeGPI cmuhPw"
+              className="sc-ugnQR eFnnpP"
             >
               <div
                 className="sc-hEsumM fOhbPP"
@@ -24759,7 +24843,7 @@ exports[`Storyshots 2 All Components/SidebarPageLinks Example 1`] = `
   }
 >
   <section
-    className="sc-kQsIoO COEEJ"
+    className="sc-jrIrqw gqEoOq"
   >
     <h4
       className="sc-bZQynM faaoba"
@@ -24767,91 +24851,91 @@ exports[`Storyshots 2 All Components/SidebarPageLinks Example 1`] = `
       Related pages
     </h4>
     <ul
-      className="sc-gPzReC kbXwQp"
+      className="sc-hjRWVT bSxIcX"
     >
       <li
-        className="sc-hIVACf gKFCOX"
+        className="sc-gVyKpa cruIzZ"
       >
         <a
-          className="sc-eXNvrr QrruK"
+          className="sc-kQsIoO blirhC"
           href="#"
           target="_self"
         >
           <div
-            className="sc-gpHHfC gYdWaK"
+            className="sc-eXNvrr hQeKfE"
           >
             <div
-              className="sc-gVyKpa fqLabI image"
+              className="sc-cpmKsF cbFmOB image"
             />
           </div>
           <p
-            className="sc-cpmKsF iNIOra pagelink_title"
+            className="sc-gPzReC gfQuRv pagelink_title"
           >
             Industry fund
           </p>
         </a>
       </li>
       <li
-        className="sc-hIVACf gKFCOX"
+        className="sc-gVyKpa cruIzZ"
       >
         <a
-          className="sc-eXNvrr QrruK"
+          className="sc-kQsIoO blirhC"
           href="#"
           target="_self"
         >
           <div
-            className="sc-gpHHfC gYdWaK"
+            className="sc-eXNvrr hQeKfE"
           >
             <div
-              className="sc-gVyKpa fqLabI image"
+              className="sc-cpmKsF cbFmOB image"
             />
           </div>
           <p
-            className="sc-cpmKsF iNIOra pagelink_title"
+            className="sc-gPzReC gfQuRv pagelink_title"
           >
             Get funding fund
           </p>
         </a>
       </li>
       <li
-        className="sc-hIVACf gKFCOX"
+        className="sc-gVyKpa cruIzZ"
       >
         <a
-          className="sc-eXNvrr QrruK"
+          className="sc-kQsIoO blirhC"
           href="#"
           target="_self"
         >
           <div
-            className="sc-gpHHfC gYdWaK"
+            className="sc-eXNvrr hQeKfE"
           >
             <div
-              className="sc-gVyKpa fqLabI image"
+              className="sc-cpmKsF cbFmOB image"
             />
           </div>
           <p
-            className="sc-cpmKsF iNIOra pagelink_title"
+            className="sc-gPzReC gfQuRv pagelink_title"
           >
             Get funding fund
           </p>
         </a>
       </li>
       <li
-        className="sc-hIVACf gKFCOX"
+        className="sc-gVyKpa cruIzZ"
       >
         <a
-          className="sc-eXNvrr QrruK"
+          className="sc-kQsIoO blirhC"
           href="#"
           target="_self"
         >
           <div
-            className="sc-gpHHfC gYdWaK"
+            className="sc-eXNvrr hQeKfE"
           >
             <div
-              className="sc-gVyKpa fqLabI image"
+              className="sc-cpmKsF cbFmOB image"
             />
           </div>
           <p
-            className="sc-cpmKsF iNIOra pagelink_title"
+            className="sc-gPzReC gfQuRv pagelink_title"
           >
             Find a fund
           </p>
@@ -24872,72 +24956,72 @@ exports[`Storyshots 2 All Components/SidebarPageLinks Example Without Title 1`] 
   }
 >
   <section
-    className="sc-kQsIoO COEEJ"
+    className="sc-jrIrqw gqEoOq"
   >
     <ul
-      className="sc-gPzReC kbXwQp"
+      className="sc-hjRWVT bSxIcX"
     >
       <li
-        className="sc-hIVACf gKFCOX"
+        className="sc-gVyKpa cruIzZ"
       >
         <a
-          className="sc-eXNvrr QrruK"
+          className="sc-kQsIoO blirhC"
           href="#"
           target="_self"
         >
           <div
-            className="sc-gpHHfC gYdWaK"
+            className="sc-eXNvrr hQeKfE"
           >
             <div
-              className="sc-gVyKpa fqLabI image"
+              className="sc-cpmKsF cbFmOB image"
             />
           </div>
           <p
-            className="sc-cpmKsF iNIOra pagelink_title"
+            className="sc-gPzReC gfQuRv pagelink_title"
           >
             Industry fund
           </p>
         </a>
       </li>
       <li
-        className="sc-hIVACf gKFCOX"
+        className="sc-gVyKpa cruIzZ"
       >
         <a
-          className="sc-eXNvrr QrruK"
+          className="sc-kQsIoO blirhC"
           href="#"
           target="_self"
         >
           <div
-            className="sc-gpHHfC gYdWaK"
+            className="sc-eXNvrr hQeKfE"
           >
             <div
-              className="sc-gVyKpa fqLabI image"
+              className="sc-cpmKsF cbFmOB image"
             />
           </div>
           <p
-            className="sc-cpmKsF iNIOra pagelink_title"
+            className="sc-gPzReC gfQuRv pagelink_title"
           >
             Get funding fund
           </p>
         </a>
       </li>
       <li
-        className="sc-hIVACf gKFCOX"
+        className="sc-gVyKpa cruIzZ"
       >
         <a
-          className="sc-eXNvrr QrruK"
+          className="sc-kQsIoO blirhC"
           href="#"
           target="_self"
         >
           <div
-            className="sc-gpHHfC gYdWaK"
+            className="sc-eXNvrr hQeKfE"
           >
             <div
-              className="sc-gVyKpa fqLabI image"
+              className="sc-cpmKsF cbFmOB image"
             />
           </div>
           <p
-            className="sc-cpmKsF iNIOra pagelink_title"
+            className="sc-gPzReC gfQuRv pagelink_title"
           >
             Get funding fund
           </p>
@@ -24958,111 +25042,111 @@ exports[`Storyshots 2 All Components/StepByStep Primary 1`] = `
   }
 >
   <section
-    className="sc-eIHaNI gbhNLE"
+    className="sc-dxZgTM eDxHCs"
   >
     <h3
-      className="sc-eTpRJs ebCKVz"
+      className="sc-iomxrj cvUVYn"
     >
       Applying for film funding
     </h3>
     <ol
-      className="sc-dxZgTM diZdtw"
+      className="sc-dvCyap gGkkqZ"
     >
       <li
-        className="sc-iomxrj ilchmg"
+        className="sc-iFMziU kujiJn"
       >
         <button
           aria-expanded="false"
-          className="sc-iFMziU kZQcOL"
+          className="sc-gVLVqr ftlLAe"
           onClick={[Function]}
         >
           <strong
-            className="sc-dvCyap hxLQTt"
+            className="sc-keVrkP bUhpka"
           >
             Is this fund right for you?
           </strong>
           <span
-            className="sc-keVrkP chPTNS"
+            className="sc-cBdUnI hNzVcV"
           >
             Show
           </span>
         </button>
       </li>
       <li
-        className="sc-iomxrj ilchmg"
+        className="sc-iFMziU kujiJn"
       >
         <button
           aria-expanded="false"
-          className="sc-iFMziU kZQcOL"
+          className="sc-gVLVqr ftlLAe"
           onClick={[Function]}
         >
           <strong
-            className="sc-dvCyap hxLQTt"
+            className="sc-keVrkP bUhpka"
           >
             Prepare your supporting materials
           </strong>
           <span
-            className="sc-keVrkP chPTNS"
+            className="sc-cBdUnI hNzVcV"
           >
             Show
           </span>
         </button>
       </li>
       <li
-        className="sc-iomxrj ilchmg"
+        className="sc-iFMziU kujiJn"
       >
         <button
           aria-expanded="false"
-          className="sc-iFMziU kZQcOL"
+          className="sc-gVLVqr ftlLAe"
           onClick={[Function]}
         >
           <strong
-            className="sc-dvCyap hxLQTt"
+            className="sc-keVrkP bUhpka"
           >
             Apply
           </strong>
           <span
-            className="sc-keVrkP chPTNS"
+            className="sc-cBdUnI hNzVcV"
           >
             Show
           </span>
         </button>
       </li>
       <li
-        className="sc-iomxrj ilchmg"
+        className="sc-iFMziU kujiJn"
       >
         <button
           aria-expanded="false"
-          className="sc-iFMziU kZQcOL"
+          className="sc-gVLVqr ftlLAe"
           onClick={[Function]}
         >
           <strong
-            className="sc-dvCyap hxLQTt"
+            className="sc-keVrkP bUhpka"
           >
             Wait to hear from us
           </strong>
           <span
-            className="sc-keVrkP chPTNS"
+            className="sc-cBdUnI hNzVcV"
           >
             Show
           </span>
         </button>
       </li>
       <li
-        className="sc-iomxrj ilchmg"
+        className="sc-iFMziU kujiJn"
       >
         <button
           aria-expanded="false"
-          className="sc-iFMziU kZQcOL"
+          className="sc-gVLVqr ftlLAe"
           onClick={[Function]}
         >
           <strong
-            className="sc-dvCyap hxLQTt"
+            className="sc-keVrkP bUhpka"
           >
             Your decision
           </strong>
           <span
-            className="sc-keVrkP chPTNS"
+            className="sc-cBdUnI hNzVcV"
           >
             Show
           </span>

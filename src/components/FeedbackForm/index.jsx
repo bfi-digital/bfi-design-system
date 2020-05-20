@@ -52,7 +52,7 @@ export const FeedbackForm = ({
                         buttonText="Give Feedback"
                         style={{ height: "300px", width: "100%", position: "relative" }}
                     /> */}
-                    <p>form emebed goes here</p>
+                    <p>form emebed goes here {typeFormURL}</p>
                 </FeedbackContainer>
                 :
                 <FeedbackBar onClick={() => {setOpenFeedback(true)}} title="Give us some feedback">
