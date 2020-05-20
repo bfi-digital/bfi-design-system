@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 import theme from "../../_theme"
-// import parse from "html-react-parser"
 import { LinkSwitch as Link } from "../../LinkSwitch"
 import { Headline } from "../../Headline"
 import parse from "html-react-parser"

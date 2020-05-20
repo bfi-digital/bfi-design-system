@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import styled from "styled-components"
 import theme from "../_theme"
 import PropTypes from "prop-types"
+import parse from "html-react-parser"
 
 const Outer = styled.div`
     
@@ -43,7 +44,7 @@ export const FeedbackForm = ({
         <Outer>
             {openFeedback ?
                 <FeedbackContainer>
-                    <div dangerouslySetInnerHTML={{__html: formEmbed}}></div>
+                    {parse('<script>(function(t,e,s,n){var o,a,c;t.SMCX=t.SMCX||[],e.getElementById(n)||(o=e.getElementsByTagName(s),a=o[o.length-1],c=e.createElement(s),c.type="text/javascript",c.async=!0,c.id=n,c.src=["https:"===location.protocol?"https://":"http://","widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgd9hxa3V5_2FlYXPg9kCnB6_2FG142i_2BHxbMOKeBcVzphTEcm.js"].join(""),a.parentNode.insertBefore(c,a))})(window,document,"script","smcx-sdk");</script><a style="font: 12px Helvetica, sans-serif; color: #999; text-decoration: none;" href=https://www.surveymonkey.com> Create your own user feedback survey </a>')}
                 </FeedbackContainer>
                 :
                 <FeedbackBar onClick={() => {setOpenFeedback(true)}} title="Give us some feedback">
@@ -63,5 +64,5 @@ FeedbackForm.propTypes = {
 }
 
 FeedbackForm.defaultProps = {
-    typeFormURL: `<script>(function(t,e,s,n){var o,a,c;t.SMCX=t.SMCX||[],e.getElementById(n)||(o=e.getElementsByTagName(s),a=o[o.length-1],c=e.createElement(s),c.type="text/javascript",c.async=!0,c.id=n,c.src=["https:"===location.protocol?"https://":"http://","widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgd9hxa3V5_2FlYXPg9kCnB6_2FG142i_2BHxbMOKeBcVzphTEcm.js"].join(""),a.parentNode.insertBefore(c,a))})(window,document,"script","smcx-sdk");</script><a style="font: 12px Helvetica, sans-serif; color: #999; text-decoration: none;" href=https://www.surveymonkey.com> Create your own user feedback survey </a>`
+    typeFormURL: '<script>(function(t,e,s,n){var o,a,c;t.SMCX=t.SMCX||[],e.getElementById(n)||(o=e.getElementsByTagName(s),a=o[o.length-1],c=e.createElement(s),c.type="text/javascript",c.async=!0,c.id=n,c.src=["https:"===location.protocol?"https://":"http://","widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgd9hxa3V5_2FlYXPg9kCnB6_2FG142i_2BHxbMOKeBcVzphTEcm.js"].join(""),a.parentNode.insertBefore(c,a))})(window,document,"script","smcx-sdk");</script><a style="font: 12px Helvetica, sans-serif; color: #999; text-decoration: none;" href=https://www.surveymonkey.com> Create your own user feedback survey </a>'
 }
