@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import styled from "styled-components"
 import theme from "../_theme"
 import PropTypes from "prop-types"
-import { ReactTypeformEmbed } from "react-typeform-embed"
+// import { ReactTypeformEmbed } from "react-typeform-embed"
 
 const Outer = styled.div`
     
@@ -44,14 +44,15 @@ export const FeedbackForm = ({
         <Outer>
             {openFeedback ?
                 <FeedbackContainer>
-                    <ReactTypeformEmbed 
+                    {/* <ReactTypeformEmbed 
                         popup={false} 
                         url={typeFormURL + "?currenturl=" + window.location.pathname + window.location.search}
                         hideHeaders
                         hideFooter
                         buttonText="Give Feedback"
                         style={{ height: "300px", width: "100%", position: "relative" }}
-                    />
+                    /> */}
+                    <p>Form embed goes here</p>
                 </FeedbackContainer>
                 :
                 <FeedbackBar onClick={() => {setOpenFeedback(true)}} title="Give us some feedback">

@@ -62,8 +62,7 @@
     "html-react-parser": "^0.10.1",
     "isomorphic-unfetch": "^3.0.0",
     "moment": "^2.24.0",
-    "query-string": "^6.12.1",
-    "react-typeform-embed": "^0.2.1"
+    "query-string": "^6.12.1"
   },
   "jest": {
     "transformIgnorePatterns": [
