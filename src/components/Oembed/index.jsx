@@ -3,28 +3,27 @@ import styled from "styled-components"
 import parse from "html-react-parser"
 import theme from "../_theme"
 
-const Outer = styled.div`
+const VideoContainer = styled.div`
+    position: relative;
     width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
     text-align: center;
     margin-bottom: 25px;
 
     iframe {
-        max-width: 620px;
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
-        height: 190px;
-        
-        @media screen and (min-width: ${theme.s}){
-            height: 270px;
-        }
-        @media screen and (min-width: ${theme.m}){
-            height: 348px;
-        }
+        height: 100%;
+        max-width: 100%;
     }
 `
 
 export const Oembed = ({
     oembedObject
 }) =>
-    <Outer>
+    <VideoContainer>
         {parse(oembedObject.html)}
-    </Outer>
+    </VideoContainer>
