@@ -148,20 +148,32 @@ export const discoveryPage = () =>
                 <FilterLinks
                     links={[
                         {
-                            url: "#",
-                            label: "Example link"
+                            url: "/",
+                            label: "All"
                         },
                         {
-                            url: "#",
-                            label: "Where to stream"
+                            url: "/",
+                            label: "Review"
                         },
                         {
-                            url: "#",
-                            label: "Where to begin"
+                            url: "/",
+                            label: "Video"
                         },
                         {
-                            url: "#",
-                            label: "Five Things"
+                            url: "/",
+                            label: "Opinion"
+                        },
+                        {
+                            url: "/",
+                            label: "Recommendations"
+                        },
+                        {
+                            url: "/",
+                            label: "Long Read"
+                        },
+                        {
+                            url: "/",
+                            label: "Interviews"
                         }
                     ]}
                 />
@@ -169,12 +181,6 @@ export const discoveryPage = () =>
                 <FilterableArticles
                     limit={7}
                     parameter="category"
-                    filters={[
-                        {
-                            value: "10-great",
-                            label: "10 Great"
-                        }
-                    ]}
                     internalLink="#"
                 />
                 
@@ -442,28 +448,28 @@ export const articlePostListPageExample = () =>
                     parameter="category"
                     filters={[
                         {
-                            value: "10-great",
-                            label: "10 Great"
+                            value: "review",
+                            label: "Review"
                         },
                         {
-                            value: "where-to-stream",
-                            label: "Where to stream"
+                            value: "video",
+                            label: "Video"
                         },
                         {
-                            value: "where-to-begin",
-                            label: "Where to begin"
+                            value: "opinion",
+                            label: "Opinion"
                         },
                         {
-                            value: "five-things",
-                            label: "Five Things"
+                            value: "recommendations",
+                            label: "Recommendations"
                         },
                         {
-                            value: "bfi-recommends",
-                            label: "BFI Recommends"
+                            value: "long-read",
+                            label: "Long Read"
                         },
                         {
-                            value: "sight-and-sound",
-                            label: "Sight and Sound"
+                            value: "interviews",
+                            label: "Interviews"
                         }
                     ]}
                 />
