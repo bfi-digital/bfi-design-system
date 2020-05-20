@@ -1291,6 +1291,7 @@ export const everyComponent = () =>
                     text="Click this promotion!"
                 />
                 <PromoBanner 
+                    pageWithSideBar={true}
                     colorScheme={0}
                     headline="Watch BFI-picked contemporary and classic films in cinema"
                     description="Become a BFI member for £37 a year and get priority booking for BFI London Film Festival, BFI Flare and at BFI Southbank all year around."
@@ -1306,6 +1307,7 @@ export const everyComponent = () =>
                     text="A promo banner with a video!"
                 />
                 <PromoBanner 
+                    pageWithSideBar={true}
                     colorScheme={2}
                     reversed={true}
                     headline="Watch BFI-picked contemporary and classic films in cinema"

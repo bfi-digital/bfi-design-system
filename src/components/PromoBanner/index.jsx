@@ -51,7 +51,8 @@ const Outer = styled.section`
 
 
     @media screen and (min-width: ${theme.m}){
-        flex-direction: row;
+        flex-direction: ${props => props.pageWithSideBar ? "column" : "row"};
+
         a {
             margin-top: auto;
         }
@@ -81,7 +82,7 @@ const Inner = styled.div`
     padding: 15px;
     @media screen and (min-width: ${theme.m}){
         padding: 25px;
-        width: 50%;
+        width: ${props => props.pageWithSideBar ? "100%" : "50%"};
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -142,9 +143,9 @@ const Image = styled.div`
     width: 100%;
 
     @media screen and (min-width: ${theme.m}){
-        order: ${props => props.reversed ? "-1" : "1"};
-        width: 50%;
-        height: auto;
+        order: ${props => props.reversed || props.pageWithSideBar ? "-1" : "1"};
+        width: ${props => props.pageWithSideBar ? "100%" : "50%"};
+        height: ${props => props.pageWithSideBar ? "250px" : "auto"};
         margin-right: ${props => props.reversed ? "0" : "-20px"};
         margin-left: ${props => props.reversed ? "-20px" : "20px"};
     }
@@ -173,7 +174,7 @@ const Video = styled.div`
 
     @media screen and (min-width: ${theme.m}){
         order: ${props => props.reversed ? "-1" : "1"};
-        max-width: 75%;
+        max-width: ${props => props.pageWithSideBar ? "100%" : "75%"};
         height: auto;
         margin-right: ${props => props.reversed ? "0" : "-20px"};
         margin-left: ${props => props.reversed ? "-20px" : "20px"};
@@ -181,7 +182,7 @@ const Video = styled.div`
     @media screen and (min-width: ${theme.l}){
         margin-right: 0px;
         margin-left: 0px;
-        max-width: 50%;
+        max-width: ${props => props.pageWithSideBar ? "100%" : "50%"};
     }
     iframe {
         position: absolute;
@@ -204,15 +205,17 @@ export const PromoBanner = ({
     secondImage,
     secondImageAlt,
     external,
-    oembedObject
+    oembedObject,
+    pageWithSideBar
 }) =>
     <Outer 
         className="promoBanner"
         reversed={reversed} 
         colorScheme={colorScheme} 
         backgroundColor={backgroundColor}
+        pageWithSideBar={pageWithSideBar}
     >
-        <Inner className={image || oembedObject ? "with_image" : "without_image"} reversed={reversed}>
+        <Inner className={image || oembedObject ? "with_image" : "without_image"} reversed={reversed} pageWithSideBar={pageWithSideBar}>
             {secondImage && 
                 <SecondImage 
                     src={secondImage} 
@@ -228,7 +231,7 @@ export const PromoBanner = ({
             }
         </Inner> 
         { oembedObject ?
-            <Video reversed={reversed}>
+            <Video reversed={reversed} pageWithSideBar={pageWithSideBar}>
                 <VideoInner>
                     {parse(oembedObject.html)}
                 </VideoInner>
@@ -239,6 +242,7 @@ export const PromoBanner = ({
                 <Image
                     reversed={reversed}
                     image={image} 
+                    pageWithSideBar={pageWithSideBar}
                 />   
                 : 
                 <RightButton>
@@ -297,5 +301,9 @@ PromoBanner.propTypes = {
     /** 
     * Optional video embed which will override the image
     **/
-    oembedObject: PropTypes.string
+    oembedObject: PropTypes.string,
+    /** 
+    * Boolean to define if this is on a page with a sidebar or not. Default is false
+    **/
+    pageWithSideBar: PropTypes.bool
 }
