@@ -27,6 +27,7 @@ const ItemLink = styled(Link)`
     color: ${props => props.isWhite ? (props.isSticky ? theme.black : theme.white) : theme.black};
     text-decoration: none;
     position: relative;
+    margin-right: 15px;
 
     &:after{
         position: absolute;
@@ -53,6 +54,9 @@ const ItemLink = styled(Link)`
         border-left: 8px solid transparent;
         border-right: 8px solid transparent;
         border-bottom: 8px solid ${props => props.hovered ? theme.lightest : "transparent"};
+    }
+    &:first-child {
+        margin-left: -15px;
     }
 `
 
