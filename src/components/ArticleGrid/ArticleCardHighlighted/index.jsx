@@ -167,7 +167,7 @@ export const ArticleCardHighlighted = ({
 
             <Meta>
                 <Date>{date}</Date>
-                <Author>By {author}</Author>
+                {author && <Author>By {author}</Author>}
             </Meta>
         </Content>
 
