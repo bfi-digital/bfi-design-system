@@ -73,18 +73,19 @@ export const HeroArticle = ({
                 <Text>
                     {date && <span>{date}</span>}
                     {authors &&
-                        <>
-                            {authors.length === 1 ?
-                                <span> by: <a href={authors[0].url}>{authors[0].name}</a></span>
-                                :
-                                <p>
-                                    By:&nbsp;
-                                    {authors.map((author, index) =>
-                                        <><Link key={`author_${index}`} to={author.url}>{author.name}</Link>{(index < (authors.length-1) ? ", " : "")}</>
-                                    )}
-                                </p>
-                            }
-                        </>
+                        authors.length > 0 &&
+                            <>
+                                {authors.length === 1 ?
+                                    <span> by <a href={authors[0].url}>{authors[0].name}</a></span>
+                                    :
+                                    <p>
+                                        By&nbsp;
+                                        {authors.map((author, index) =>
+                                            <><Link key={`author_${index}`} to={author.url}>{author.name}</Link>{(index < (authors.length-1) ? ", " : "")}</>
+                                        )}
+                                    </p>
+                                }
+                            </>
                     }
                 </Text>
             </LowerContent>
