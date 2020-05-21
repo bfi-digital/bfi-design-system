@@ -19,7 +19,7 @@ export default [
         date: "23 March 2020",
         url: "https://www.bfi.org.uk/greatest-films-all-time",
         uuid: "4d1c842b-4d15-558b-82a4-5cb70546d6f3",
-        category: "What to watch"
+        type: "Test type"
     },
     {
         title: "Stanley Kubrick, cinephile",

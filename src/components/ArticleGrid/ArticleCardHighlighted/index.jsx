@@ -155,11 +155,16 @@ export const ArticleCardHighlighted = ({
     category,
     date,
     author,
-    external
+    external,
+    type
 }) =>
     <Outer className="articleCardHighlighted" pageWithSideBar={pageWithSideBar}>
-        {category && <CategoryTag>{category}</CategoryTag> }
-        <Content withCategory={category ? true : false}>
+        {category ? 
+            <CategoryTag>{category}</CategoryTag> 
+            :
+            type && <CategoryTag>{type}</CategoryTag>
+        }
+        <Content withCategory={category ? true : type ? true : false}>
             <Headline level={4} text={title} />
             {standfirst && 
                 <Standfirst>{parse(standfirst)}</Standfirst>

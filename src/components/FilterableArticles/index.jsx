@@ -36,6 +36,7 @@ const transformArticles = articles => articles.map(article => {
         title: article.title,
         standfirst: article.summary,
         url: article.url,
+        type: article.type.name,
         author: article.authors ? transformAuthors(article.authors) : false,
         category: article.category ? article.category.name : false,
         image480x270: article.primary_image[2].url,
@@ -101,9 +102,7 @@ export const FilterableArticles = ({
                 :
                 <>
                     {articles.length > 0 ? 
-                        <ArticleGrid articles={articles.slice(0,limit)} firstHighlighted={includeHighlight} optionalTitle={internalTitle} optionalCTALink={internalLink}>
-                            {(page < maxPages) && !limit && <CentredButton href="#" onClick={loadMore}>Load more</CentredButton>}
-                        </ArticleGrid>
+                        <ArticleGrid articles={articles.slice(0,limit)} firstHighlighted={includeHighlight} optionalTitle={internalTitle} optionalCTALink={internalLink} />
                         :
                         <ArticleGrid articles={false} />
                     }
@@ -115,7 +114,7 @@ export const FilterableArticles = ({
 
 FilterableArticles.propTypes = {
     /** 
-    * The taxonomy of what will be filtered, for example 'category' or 'author'
+    * The taxonomy of what will be filtered, for example 'type' or 'author'
     **/
     parameter: PropTypes.string,
     /** 
@@ -141,6 +140,6 @@ FilterableArticles.propTypes = {
 }
 
 FilterableArticles.defaultProps = {
-    parameter: "category",
+    parameter: "type",
     includeHighlight: true
 }

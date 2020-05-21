@@ -147,10 +147,15 @@ export const ArticleCard = ({
     category,
     date,
     author,
+    type,
     external
 }) =>
     <Outer className="articleCard" pageWithSideBar={pageWithSideBar} withCategory={category ? true : false}>
-        {category && <CategoryTag>{category}</CategoryTag> }
+        {category ? 
+            <CategoryTag>{category}</CategoryTag> 
+            :
+            type && <CategoryTag>{type}</CategoryTag>
+        }
         <PageImageContainer>
             <PageImage className="image" imageSrc={image480x270} alt={imageAltText} />
         </PageImageContainer>
