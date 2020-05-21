@@ -36,7 +36,7 @@ const transformArticles = articles => articles.map(article => {
         title: article.title,
         standfirst: article.summary,
         url: article.url,
-        type: article.type.name,
+        type: article.type ? article.type.name : false,
         author: article.authors ? transformAuthors(article.authors) : false,
         category: article.category ? article.category.name : false,
         image480x270: article.primary_image[2].url,
