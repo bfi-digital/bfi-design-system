@@ -34,12 +34,12 @@ const Outer = styled.section`
     position: relative;
 
     margin-top: 15px;
-    & + .promoBanner {
-        margin-top: 0px;
-    }
-    &:last-of-type {
-        margin-bottom: 25px;
-    }
+    // & + .promoBanner {
+    //     margin-top: 0px;
+    // }
+    // &:last-of-type {
+    //     margin-bottom: 25px;
+    // }
 
     h2{
         margin-top: 0px;
