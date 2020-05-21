@@ -2,6 +2,7 @@ import React from "react"
 import { LinkSwitch as Link } from "../../LinkSwitch"
 import theme from "../../_theme"
 import styled from "styled-components"
+import logo from "../logo-black.svg"
 
 const Outer = styled.nav`
     display: none;
@@ -46,14 +47,15 @@ const ItemLink = styled(Link)`
         content: "";
         position: absolute;
         margin: 0 auto;
-        bottom: 0px;
+        bottom: -1px;
         left: 50%;
         transform: translateX(-50%);
         width: 0; 
         height: 0; 
         border-left: 8px solid transparent;
         border-right: 8px solid transparent;
-        border-bottom: 8px solid ${props => props.hovered ? theme.white : "transparent"};
+        border-bottom: 8px solid ${props => props.hovered ? theme.lightGrey : "transparent"};
+        z-index: 99;
     }
     &:first-child {
         margin-left: -15px;
@@ -70,7 +72,9 @@ const Item = styled.li`
 `
 
 const ChildBar = styled.div`
-    background: ${theme.white};
+    background: ${theme.lightGrey};
+    border-bottom: 1px solid ${theme.grey};
+    border-top: 1px solid ${theme.grey};
 
     @keyframes fadeIn{
         from{
@@ -197,6 +201,14 @@ const ChildLink = styled(Link)`
     }
 `
 
+const BlackLogo = styled(Item)`
+    margin-right: 30px;
+`
+const Logo = styled.img`
+    width: 40px;
+    vertical-align: middle;
+`
+
 const Nav = ({
     navItems,
     selected,
@@ -206,6 +218,7 @@ const Nav = ({
 }) => 
     <Outer>
         <List>
+            {isSticky && <BlackLogo><Logo src={logo} alt="British Film Institute"/></BlackLogo>}
             {navItems.map((navItem, i) => {
                 const size = Math.ceil(navItem.children.length / 3)
                 return(
