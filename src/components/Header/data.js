@@ -108,11 +108,11 @@ export default [
                 title: "Policies & Strategy",
                 url: "/"
             },
-            {
-                id: 3,
-                title: "BFI Distribution",
-                url: "/"
-            },
+            // {
+            //     id: 3,
+            //     title: "BFI Distribution",
+            //     url: "/"
+            // },
             {
                 id: 4,
                 title: "Get Funding & Support",

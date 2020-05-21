@@ -118,6 +118,13 @@ const Column = styled.div`
     width: calc(33% - 50px);
     margin-right 50px;
 
+    &.row_1 {
+        a:nth-child(1n) {
+            &:after {
+                display: none;
+            }
+        }
+    }
     &.row_2 {
         a:nth-child(2n) {
             &:after {
@@ -130,6 +137,32 @@ const Column = styled.div`
             &:after {
                 display: none;
             }
+        }
+    }
+    &.row_4 {
+        a:nth-child(4n) {
+            &:after {
+                display: none;
+            }
+        }
+    }
+    &.row_5 {
+        a:nth-child(5n) {
+            &:after {
+                display: none;
+            }
+        }
+    }
+    &.row_6 {
+        a:nth-child(6n) {
+            &:after {
+                display: none;
+            }
+        }
+    }
+    a:last-child {
+        &:after {
+            display: none;
         }
     }
 `
@@ -174,7 +207,7 @@ const Nav = ({
     <Outer>
         <List>
             {navItems.map((navItem, i) => {
-                const size = navItem.children.length > 6 ? 3 : 2
+                const size = Math.ceil(navItem.children.length / 3)
                 return(
                     <Item 
                         key={i}
