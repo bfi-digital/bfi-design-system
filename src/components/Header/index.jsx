@@ -107,12 +107,23 @@ const SkipLink = styled.a`
     background: ${theme.primary};
     font-weight: 700;
     display: block;
-    text-decoration: underline;
+    text-decoration: none;
     z-index: 99999;
-    color: ${theme.white};
+    color: ${theme.black};
+    
+    .inner {
+        max-width:  ${theme.l};
+        margin: 0 auto;
+    }
+    .button_like {
+        background: ${theme.white};
+        padding: 10px 15px;
+        display: inline-block;
+        border: 3px solid ${theme.focus};
+    }
 
     &:focus {
-        position: absolute !important;
+        position: static !important;
         width: 100% !important;
         height: auto !important;
         margin: inherit !important;
@@ -147,7 +158,7 @@ export const Header = ({
 
     return(
         <>
-            <SkipLink href="#content-start">Skip to main content</SkipLink>
+            <SkipLink href="#content-start"><div className="inner"><div className="button_like">Skip to content</div></div></SkipLink>
             <TopSection 
                 isTransparent={overlay}
                 isSticky={isSticky}
