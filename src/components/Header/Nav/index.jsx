@@ -53,7 +53,7 @@ const ItemLink = styled(Link)`
         height: 0; 
         border-left: 8px solid transparent;
         border-right: 8px solid transparent;
-        border-bottom: 8px solid ${props => props.hovered ? theme.lightest : "transparent"};
+        border-bottom: 8px solid ${props => props.hovered ? theme.white : "transparent"};
     }
     &:first-child {
         margin-left: -15px;
@@ -70,6 +70,8 @@ const Item = styled.li`
 `
 
 const ChildBar = styled.div`
+    background: ${theme.white};
+
     @keyframes fadeIn{
         from{
             opacity: 0;
@@ -93,7 +95,6 @@ const ChildList = styled.div`
     padding: ${theme.horizontalPadding} ${theme.horizontalPadding};
     margin: 0 auto;
     width: 100%;
-    background: ${theme.lightest};
     max-width: calc(${theme.xl} + 125px);
 
     &:hover a{
@@ -148,7 +149,7 @@ const ChildLink = styled(Link)`
     &:after {
         content: "";
         width: calc(100% - 30px);
-        height: 1px;
+        height: 2px;
         background: ${theme.darkGrey};
         bottom: 0;
         left: 15px;
