@@ -29,6 +29,7 @@ import { HeroArticle } from "../HeroArticle"
 import { Image } from "../Image"
 import { ImageGallery } from "../ImageGallery"
 import { ImageSponsorLinks } from "../ImageSponsorLinks"
+import { NewsletterSignUp } from "../NewsletterSignUp"
 import { LeadParagraph } from "../LeadParagraph"
 import { Oembed } from "../Oembed"
 import { PageLinks } from "../PageLinks"
@@ -1371,6 +1372,7 @@ export const everyComponent = () =>
                     description="Become a BFI member for £37 a year and get priority booking for BFI London Film Festival, BFI Flare and at BFI Southbank all year around."
                     oembedObject={{ html: "\u003ciframe width=\"480\" height=\"270\" src=\"https://www.youtube.com/embed/vpqYxK6mmSU?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen\u003e\u003c/iframe\u003e"}}
                 />
+                <NewsletterSignUp />
             </MainContent>
             
 
