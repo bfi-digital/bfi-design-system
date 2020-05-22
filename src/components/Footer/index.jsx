@@ -18,7 +18,7 @@ const Outer = styled.footer`
     padding: 40px 0px 20px 0px;
     background: ${theme.lightFocus};
     color: ${theme.black};
-    border-top: 4px solid ${theme.dark};
+    // border-top: 4px solid ${theme.dark};
 `
 
 const Inner = styled.div`
@@ -56,33 +56,37 @@ const MiddleRow = styled.section`
         }
     }
 `
-const LogoImage = styled.img`
-    width: 100px;
-    margin-right: 25px;
-    vertical-align: middle;
-`
-const AboutBFI = styled.div`
-    width: calc(50% - 100px);
-    margin-right: 50px;
-    div {
-        display: inline-block;
-        vertical-align: middle;
-        width: calc(100% - 125px);
-    }
-    p:first-of-type {
-        margin-top: 0;
-    }
-    p:last-of-type {
-        margin-bottom: 0;
-    }
-`
+// const LogoImage = styled.img`
+//     width: 100px;
+//     margin-right: 25px;
+//     vertical-align: middle;
+// `
+// const AboutBFI = styled.div`
+//     width: calc(50% - 100px);
+//     margin-right: 50px;
+//     div {
+//         display: inline-block;
+//         vertical-align: middle;
+//         width: calc(100% - 125px);
+//     }
+//     p:first-of-type {
+//         margin-top: 0;
+//     }
+//     p:last-of-type {
+//         margin-bottom: 0;
+//     }
+// `
 const SupportLogos = styled.div`
-    width: 25%;
-    margin-right: 50px;
+    width: 75%;
+    margin-bottom: 25px;
 
     svg {
         width: 100px;
         height: auto;
+    }
+    @media screen and (min-width: ${theme.m}) {
+        margin-right: 60px;
+        margin-bottom: 0;
     }
 `
 const FollowMenu = styled.div`
@@ -91,9 +95,12 @@ const FollowMenu = styled.div`
 
 
 const BottomRow = styled.section`
-    font-size: 0.85rem;
-    @media screen and (min-width: ${theme.m}) {
+    font-size: 0.8rem;
+    text-align: center;
 
+    @media screen and (min-width: ${theme.m}) {
+        text-align: left;
+        font-size: 0.85rem;
         .container {
             display: flex;
             flex-direction: row;
@@ -104,13 +111,21 @@ const BottomRow = styled.section`
 `
 
 const BottomLinks = styled.div`
+    margin-bottom: 20px;
+    
     a {
         margin-right: 15px;
         font-weight: 600;
-        text-decoration: none;
-
-        &:hover {
-            text-decoration: underline;
+        text-decoration: underline;
+    }
+    @media screen and (min-width: ${theme.m}) {
+        margin-bottom: 0;
+        a {
+            text-decoration: none;
+    
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
 `
@@ -118,11 +133,15 @@ const BottomLinks = styled.div`
 
 const Menu = styled.nav`
     margin-top: 30px;
-    /* width: 100%; */
-    max-width: 25%;
+    width: 100%;
     @media screen and (min-width: ${theme.m}) {
         margin-top: 0px;
         margin-left: 30px;
+        width: 25%;
+
+        &:first-of-type {
+            margin-left: 0;
+        }
     }
 `
 
@@ -141,7 +160,7 @@ const SubHeading = styled.h2`
     display: block;
     font-size: 1.3rem;
     font-weight: bold;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 `
 
 const Copyright = styled.p``
@@ -151,6 +170,10 @@ const LinkContainer = styled.div `
     flex-direction: row;
     align-items: center;
     margin-bottom: 20px;
+`
+const IconLinkContainer = styled(LinkContainer)`
+    display: flex;
+    justify-content: space-between;
 `
 
 const linkStyles = `
@@ -183,7 +206,7 @@ const linkStyles = `
 const MenuItem = styled(Link)`${linkStyles}`
 
 const ExternalMenuItem = styled.a`${linkStyles}
-    margin-right: 10px;
+    // margin-right: 10px;
 `
 
 const Icon = styled.div`
@@ -222,7 +245,7 @@ export const Footer = ({
             </TopRow>
             <MiddleRow>
                 <Inner className="container">
-                    <AboutBFI>
+                    {/* <AboutBFI>
                         <LogoImage src={logo} alt="British Film Institute. Film Forever."/>
                         <div>
                             <p>The BFI is the UK’s lead organisation for film, television and the moving image.</p>
@@ -231,7 +254,7 @@ export const Footer = ({
 
                             <p>Read our strategy BFI2022</p>
                         </div>
-                    </AboutBFI>
+                    </AboutBFI> */}
                         
                     <SupportLogos>
                         <SubHeading>Supported by</SubHeading>
@@ -239,7 +262,7 @@ export const Footer = ({
                     </SupportLogos>
                     <FollowMenu>
                         <SubHeading>Follow us</SubHeading>
-                        <LinkContainer>
+                        <IconLinkContainer>
                             <ExternalMenuItem href="https://twitter.com/BFI">
                                 <Icon className="logo" url={twitter} alt="Twitter"/>
                             </ExternalMenuItem>
@@ -255,7 +278,7 @@ export const Footer = ({
                             <ExternalMenuItem href="https://www.youtube.com/user/BFIfilms">
                                 <Icon className="logo" url={youtube} alt="YouTube"/>
                             </ExternalMenuItem>
-                        </LinkContainer>
+                        </IconLinkContainer>
                         
                     </FollowMenu>
                 </Inner>
