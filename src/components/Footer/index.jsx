@@ -2,11 +2,13 @@ import React from "react"
 import styled from "styled-components"
 import theme from "../_theme"
 import logo from "./logo.svg"
-import LotteryLogo from "./lottery-logo.jsx"
+import LotteryLogo from "./lottery-logo.svg"
+import DCMSLogo from "./dcms.png"
 import { LinkSwitch as Link } from "../LinkSwitch"
 import PropTypes from "prop-types"
 import parse from "html-react-parser"
 import { FeedbackForm } from "../FeedbackForm"
+import { ImageSponsorLinks } from "../ImageSponsorLinks"
 
 import facebook from "./facebook.svg"
 import twitter from "./twitter.svg"
@@ -258,7 +260,16 @@ export const Footer = ({
                         
                     <SupportLogos>
                         <SubHeading>Supported by</SubHeading>
-                        <LotteryLogo colourFill={theme.black} alt="The BFI recieves National Lottery funding" />
+                        <ImageSponsorLinks images={[
+                            {
+                                url: LotteryLogo,
+                                alt: "The BFI recieves National Lottery funding"
+                            },
+                            {
+                                url: DCMSLogo,
+                                alt: "Department for Digital Culture Media & Sport"
+                            }
+                        ]} />
                     </SupportLogos>
                     <FollowMenu>
                         <SubHeading>Follow us</SubHeading>
