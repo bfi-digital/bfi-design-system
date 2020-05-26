@@ -87,7 +87,7 @@ const Copyright = styled.p`
     font-size: 0.75rem;
     position: absolute;
     bottom: 5px;
-
+    display: none;
 
     @media screen and (min-width: ${theme.m}){
         right: ${theme.horizontalPadding};

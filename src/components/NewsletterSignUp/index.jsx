@@ -115,8 +115,9 @@ const NewsletterForm = styled.form`
 const NewsletterLabel = styled.label`
     display: inline-block;
     font-weight: 600;
-    width: 60%;
-    @media screen and (min-width: ${theme.m}){
+    width: 100%;
+
+    @media screen and (min-width: ${theme.s}){
         width: auto;
     }
 `
@@ -134,8 +135,8 @@ const SubmitButton = styled.button`
     text-align: center;
     cursor: pointer;
     border: none;
-    width: 40%;
-    @media screen and (min-width: ${theme.m}){
+    width: 100%;
+    @media screen and (min-width: ${theme.s}){
         width: auto;
     }
 
