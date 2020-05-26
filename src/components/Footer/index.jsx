@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 import theme from "../_theme"
-import logo from "./logo.svg"
 import LotteryLogo from "./lottery-logo.svg"
 import DCMSLogo from "./dcms.png"
 import { LinkSwitch as Link } from "../LinkSwitch"
