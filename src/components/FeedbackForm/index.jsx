@@ -43,7 +43,6 @@ export const FeedbackForm = ({
     formURL
 }) => {
     const [openFeedback, setOpenFeedback] = useState(false)
-    const [surveyLoaded, setSurveyLoaded] = useState(false)
     
     return(
         <Outer>
