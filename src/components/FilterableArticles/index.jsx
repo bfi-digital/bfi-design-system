@@ -37,7 +37,7 @@ export const FilterableArticles = ({
                         parameter={parameter}
                         allAction={allAction}
                     />
-                    {articles.length > 0 ?
+                    {articles && articles.length > 0 ?
                         <ArticleGrid articles={articles} firstHighlighted={includeHighlight} optionalTitle={internalTitle} optionalCTALink={internalLink}>
                             {loadMore && <CentredButton href="#" onClick={loadMore}>Load more</CentredButton>}
                         </ArticleGrid>
@@ -47,7 +47,7 @@ export const FilterableArticles = ({
                 </>
                 :
                 <>
-                    {articles.length > 0 ? 
+                    {articles && articles.length > 0 ? 
                         <ArticleGrid articles={articles.slice(0,limit)} firstHighlighted={includeHighlight} optionalTitle={internalTitle} optionalCTALink={internalLink} />
                         :
                         <ArticleGrid articles={false} />

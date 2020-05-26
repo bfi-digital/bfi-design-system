@@ -8,32 +8,4 @@ export default {
 }
 
 export const normal = () =>
-    <FilterableArticles
-        parameter="category"
-        filters={[
-            {
-                value: "10-great",
-                label: "10 Great"
-            },
-            {
-                value: "where-to-stream",
-                label: "Where to stream"
-            },
-            {
-                value: "where-to-begin",
-                label: "Where to begin"
-            },
-            {
-                value: "five-things",
-                label: "Five Things"
-            },
-            {
-                value: "bfi-recommends",
-                label: "BFI Recommends"
-            },
-            {
-                value: "sight-and-sound",
-                label: "Sight and Sound"
-            }
-        ]}
-    />
+    <p>Due to this component requiring connection with the front end framework to pull data from the API, it is not possible to display an example of this component within Storybook.</p>
