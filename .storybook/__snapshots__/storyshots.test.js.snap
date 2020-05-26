@@ -287,49 +287,36 @@ Array [
           <button
             className="sc-esjQYD hFYZzS"
             disabled={true}
-            onClick={[Function]}
           >
                All
           </button>
           <button
             className="sc-esjQYD hFYZzS"
-            disabled={false}
-            onClick={[Function]}
           >
             Review
           </button>
           <button
             className="sc-esjQYD hFYZzS"
-            disabled={false}
-            onClick={[Function]}
           >
             Video
           </button>
           <button
             className="sc-esjQYD hFYZzS"
-            disabled={false}
-            onClick={[Function]}
           >
             Opinion
           </button>
           <button
             className="sc-esjQYD hFYZzS"
-            disabled={false}
-            onClick={[Function]}
           >
             Recommendations
           </button>
           <button
             className="sc-esjQYD hFYZzS"
-            disabled={false}
-            onClick={[Function]}
           >
             Long Read
           </button>
           <button
             className="sc-esjQYD hFYZzS"
-            disabled={false}
-            onClick={[Function]}
           >
             Interviews
           </button>
@@ -23916,191 +23903,9 @@ exports[`Storyshots 2 All Components/Filter-esque Links Normal 1`] = `
 `;
 
 exports[`Storyshots 2 All Components/Filterable Articles Normal 1`] = `
-<div
-  className="sc-kIPQKe jDQtez"
->
-  <nav
-    className="sc-kfGgVZ eHcqxq"
-  >
-    <button
-      className="sc-esjQYD hFYZzS"
-      disabled={true}
-      onClick={[Function]}
-    >
-         All
-    </button>
-    <button
-      className="sc-esjQYD hFYZzS"
-      disabled={false}
-      onClick={[Function]}
-    >
-      10 Great
-    </button>
-    <button
-      className="sc-esjQYD hFYZzS"
-      disabled={false}
-      onClick={[Function]}
-    >
-      Where to stream
-    </button>
-    <button
-      className="sc-esjQYD hFYZzS"
-      disabled={false}
-      onClick={[Function]}
-    >
-      Where to begin
-    </button>
-    <button
-      className="sc-esjQYD hFYZzS"
-      disabled={false}
-      onClick={[Function]}
-    >
-      Five Things
-    </button>
-    <button
-      className="sc-esjQYD hFYZzS"
-      disabled={false}
-      onClick={[Function]}
-    >
-      BFI Recommends
-    </button>
-    <button
-      className="sc-esjQYD hFYZzS"
-      disabled={false}
-      onClick={[Function]}
-    >
-      Sight and Sound
-    </button>
-  </nav>
-  <div
-    className="sc-jWBwVP dSqRSx"
-  >
-    <ul
-      className="sc-brqgnP iNEGQA"
-    >
-      <li
-        className="sc-kkGfuU cQwrrw articleCard"
-      >
-        <div
-          className="sc-eHgmQL vPWok"
-        />
-        <div
-          className="sc-iAyFgw jJkmqa"
-        >
-          <div
-            className="sc-cvbbAY hZoFHM"
-          />
-          <div
-            className="sc-hSdWYo jvEJit"
-          />
-          <div
-            className="sc-hSdWYo jvEJit"
-          />
-        </div>
-      </li>
-      <li
-        className="sc-kkGfuU cQwrrw articleCard"
-      >
-        <div
-          className="sc-eHgmQL vPWok"
-        />
-        <div
-          className="sc-iAyFgw jJkmqa"
-        >
-          <div
-            className="sc-cvbbAY hZoFHM"
-          />
-          <div
-            className="sc-hSdWYo jvEJit"
-          />
-          <div
-            className="sc-hSdWYo jvEJit"
-          />
-        </div>
-      </li>
-      <li
-        className="sc-kkGfuU cQwrrw articleCard"
-      >
-        <div
-          className="sc-eHgmQL vPWok"
-        />
-        <div
-          className="sc-iAyFgw jJkmqa"
-        >
-          <div
-            className="sc-cvbbAY hZoFHM"
-          />
-          <div
-            className="sc-hSdWYo jvEJit"
-          />
-          <div
-            className="sc-hSdWYo jvEJit"
-          />
-        </div>
-      </li>
-      <li
-        className="sc-kkGfuU cQwrrw articleCard"
-      >
-        <div
-          className="sc-eHgmQL vPWok"
-        />
-        <div
-          className="sc-iAyFgw jJkmqa"
-        >
-          <div
-            className="sc-cvbbAY hZoFHM"
-          />
-          <div
-            className="sc-hSdWYo jvEJit"
-          />
-          <div
-            className="sc-hSdWYo jvEJit"
-          />
-        </div>
-      </li>
-      <li
-        className="sc-kkGfuU cQwrrw articleCard"
-      >
-        <div
-          className="sc-eHgmQL vPWok"
-        />
-        <div
-          className="sc-iAyFgw jJkmqa"
-        >
-          <div
-            className="sc-cvbbAY hZoFHM"
-          />
-          <div
-            className="sc-hSdWYo jvEJit"
-          />
-          <div
-            className="sc-hSdWYo jvEJit"
-          />
-        </div>
-      </li>
-      <li
-        className="sc-kkGfuU cQwrrw articleCard"
-      >
-        <div
-          className="sc-eHgmQL vPWok"
-        />
-        <div
-          className="sc-iAyFgw jJkmqa"
-        >
-          <div
-            className="sc-cvbbAY hZoFHM"
-          />
-          <div
-            className="sc-hSdWYo jvEJit"
-          />
-          <div
-            className="sc-hSdWYo jvEJit"
-          />
-        </div>
-      </li>
-    </ul>
-  </div>
-</div>
+<p>
+  Due to this component requiring connection with the front end framework to pull data from the API, it is not possible to display an example of this component within Storybook.
+</p>
 `;
 
 exports[`Storyshots 2 All Components/Footer Normal 1`] = `
