@@ -11,5 +11,23 @@ export default {
 export const normal = () =>
     <Footer
         menus={data}
+        copyrightLinks={[
+            {
+                title: "Cookies & privacy",
+                url: "#"
+            },
+            {
+                title: "Terms & conditions",
+                url: "#"
+            },
+            {
+                title: "Accessibility",
+                url: "#"
+            },
+            {
+                title: "Help & FAQs",
+                url: "#"
+            }
+        ]}
         copyrightText="&copy; 2020 British Film Institute. All rights reserved. Registered charity 287780"
     />

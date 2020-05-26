@@ -211,6 +211,24 @@ export const discoveryPage = () =>
         </Wrapper>
         <Footer
             menus={footerMenus}
+            copyrightLinks={[
+                {
+                    title: "Cookies & privacy",
+                    url: "#"
+                },
+                {
+                    title: "Terms & conditions",
+                    url: "#"
+                },
+                {
+                    title: "Accessibility",
+                    url: "#"
+                },
+                {
+                    title: "Help & FAQs",
+                    url: "#"
+                }
+            ]}
             copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"
         />
     </>
@@ -312,6 +330,24 @@ export const industryPage = () =>
         </Wrapper>
         <Footer
             menus={footerMenus}
+            copyrightLinks={[
+                {
+                    title: "Cookies & privacy",
+                    url: "#"
+                },
+                {
+                    title: "Terms & conditions",
+                    url: "#"
+                },
+                {
+                    title: "Accessibility",
+                    url: "#"
+                },
+                {
+                    title: "Help & FAQs",
+                    url: "#"
+                }
+            ]}
             copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"
         />
     </>
@@ -380,6 +416,24 @@ export const educationPage = () =>
         </Wrapper>
         <Footer
             menus={footerMenus}
+            copyrightLinks={[
+                {
+                    title: "Cookies & privacy",
+                    url: "#"
+                },
+                {
+                    title: "Terms & conditions",
+                    url: "#"
+                },
+                {
+                    title: "Accessibility",
+                    url: "#"
+                },
+                {
+                    title: "Help & FAQs",
+                    url: "#"
+                }
+            ]}
             copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"
         />
     </>
@@ -426,6 +480,24 @@ export const serviceListPageExample = () =>
         </Wrapper>
         <Footer
             menus={footerMenus}
+            copyrightLinks={[
+                {
+                    title: "Cookies & privacy",
+                    url: "#"
+                },
+                {
+                    title: "Terms & conditions",
+                    url: "#"
+                },
+                {
+                    title: "Accessibility",
+                    url: "#"
+                },
+                {
+                    title: "Help & FAQs",
+                    url: "#"
+                }
+            ]}
             copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"
         />
     </>
@@ -487,6 +559,24 @@ export const articlePostListPageExample = () =>
         </Wrapper>
         <Footer
             menus={footerMenus}
+            copyrightLinks={[
+                {
+                    title: "Cookies & privacy",
+                    url: "#"
+                },
+                {
+                    title: "Terms & conditions",
+                    url: "#"
+                },
+                {
+                    title: "Accessibility",
+                    url: "#"
+                },
+                {
+                    title: "Help & FAQs",
+                    url: "#"
+                }
+            ]}
             copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"
         />
     </>
@@ -829,6 +919,24 @@ export const everyComponent = () =>
         </Wrapper>
         <Footer
             menus={footerMenus}
+            copyrightLinks={[
+                {
+                    title: "Cookies & privacy",
+                    url: "#"
+                },
+                {
+                    title: "Terms & conditions",
+                    url: "#"
+                },
+                {
+                    title: "Accessibility",
+                    url: "#"
+                },
+                {
+                    title: "Help & FAQs",
+                    url: "#"
+                }
+            ]}
             copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"
         />
     </>
@@ -843,6 +951,24 @@ export const errorPageExample = () =>
         </Wrapper>
         <Footer
             menus={footerMenus}
+            copyrightLinks={[
+                {
+                    title: "Cookies & privacy",
+                    url: "#"
+                },
+                {
+                    title: "Terms & conditions",
+                    url: "#"
+                },
+                {
+                    title: "Accessibility",
+                    url: "#"
+                },
+                {
+                    title: "Help & FAQs",
+                    url: "#"
+                }
+            ]}
             copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"
         />
     </>

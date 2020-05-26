@@ -2,6 +2,7 @@ export default [
     {
         id: 1,
         title: "Coronavirus (COVID-19)",
+        titleLink: "/",
         children: 
         [
             {
@@ -19,6 +20,7 @@ export default [
     {
         id: 2,
         title: "Support",
+        titleLink: "/",
         children: 
         [
             {
@@ -66,6 +68,7 @@ export default [
     {
         id: 3,
         title: "Commercial",
+        titleLink: "/",
         children: 
         [
             {
@@ -103,6 +106,7 @@ export default [
     {
         id: 4,
         title: "About",
+        titleLink: "/",
         children: 
         [
             {

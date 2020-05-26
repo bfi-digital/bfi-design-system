@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import theme from "../_theme"
 import LotteryLogo from "./lottery-logo.svg"
-import DCMSLogo from "./dcms.png"
+import DCMSLogo from "./dcms.svg"
 import { LinkSwitch as Link } from "../LinkSwitch"
 import PropTypes from "prop-types"
 import parse from "html-react-parser"
@@ -57,26 +57,6 @@ const MiddleRow = styled.section`
         }
     }
 `
-// const LogoImage = styled.img`
-//     width: 100px;
-//     margin-right: 25px;
-//     vertical-align: middle;
-// `
-// const AboutBFI = styled.div`
-//     width: calc(50% - 100px);
-//     margin-right: 50px;
-//     div {
-//         display: inline-block;
-//         vertical-align: middle;
-//         width: calc(100% - 125px);
-//     }
-//     p:first-of-type {
-//         margin-top: 0;
-//     }
-//     p:last-of-type {
-//         margin-bottom: 0;
-//     }
-// `
 const SupportLogos = styled.div`
     width: 75%;
     margin-bottom: 25px;
@@ -163,7 +143,12 @@ const SubHeading = styled.h2`
     margin-bottom: 15px;
 `
 
-const Copyright = styled.p``
+const Copyright = styled.p`
+    @media screen and (min-width: ${theme.m}) {
+        text-align: right;
+        padding-left: 25px;
+    }
+`
 
 const LinkContainer = styled.div `
     display: flex;
@@ -201,6 +186,13 @@ const linkStyles = `
     &::-moz-focus-inner {
         border: 0;
     }
+
+    &.title_link {
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
 `
 
 const MenuItem = styled(Link)`${linkStyles}`
@@ -222,7 +214,8 @@ const Icon = styled.div`
 
 export const Footer = ({
     menus,
-    copyrightText
+    copyrightText,
+    copyrightLinks
 }) => 
     <>  
         <Inner>
@@ -233,7 +226,11 @@ export const Footer = ({
                 <Inner className="container">
                     {menus.map(menu =>
                         <Menu key={menu.id}>
-                            <Heading>{menu.title}</Heading>
+                            {menu.titleLink ?
+                                <MenuItem className="title_link" to={menu.titleLink}><Heading>{menu.title}</Heading></MenuItem>
+                                :
+                                <Heading>{menu.title}</Heading>
+                            }
                             {menu.children.map(menuItem =>
                                 <LinkContainer key={menuItem.id}>
                                     <MenuItem to={menuItem.url}>{menuItem.title}</MenuItem>    
@@ -244,18 +241,7 @@ export const Footer = ({
                 </Inner>
             </TopRow>
             <MiddleRow>
-                <Inner className="container">
-                    {/* <AboutBFI>
-                        <LogoImage src={logo} alt="British Film Institute. Film Forever."/>
-                        <div>
-                            <p>The BFI is the UK’s lead organisation for film, television and the moving image.</p>
-
-                            <p>Our mission is to supporting the future of UK film.</p>
-
-                            <p>Read our strategy BFI2022</p>
-                        </div>
-                    </AboutBFI> */}
-                        
+                <Inner className="container">  
                     <SupportLogos>
                         <SubHeading>Supported by</SubHeading>
                         <ImageSponsorLinks images={[
@@ -295,10 +281,10 @@ export const Footer = ({
             <BottomRow>
                 <Inner className="container">
                     <BottomLinks>
-                        <MenuItem to="#">Cookies &amp; privacy</MenuItem>    
-                        <MenuItem to="#">Terms &amp; conditions</MenuItem>    
-                        <MenuItem to="#">Accessibility</MenuItem>    
-                        <MenuItem to="#">Help &amp; FAQs</MenuItem>    
+                        {copyrightLinks && copyrightLinks.map(copyrightLink =>
+                            <MenuItem to={copyrightLink.url}>{copyrightLink.title}</MenuItem>    
+
+                        )}
                     </BottomLinks>
                     <Copyright>{parse(copyrightText)}</Copyright>
                 </Inner>
@@ -308,11 +294,15 @@ export const Footer = ({
 
 Footer.propTypes = {
     /** 
-    * An array of the menus the footer should display. Each menu has a title, id and an array of child menu items
+    * An array of the menus the footer should display. Each menu has a title which is a 2nd level link and a list of 3rd level links underneath it.
     **/
-    breadcrumbs: PropTypes.array,
+    menus: PropTypes.array,
     /** 
     * A HTML string for the copyright notice
     **/
-    copyrightText: PropTypes.string
+    copyrightText: PropTypes.string,
+    /** 
+    * An array of the links for the bottom menu links next to the copyright text
+    **/
+    copyrightLinks: PropTypes.array,
 }
