@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 import theme from "../_theme"
-import queryString from "query-string"
 import { Headline } from "../Headline"
 
 const Outer = styled.nav`
@@ -50,27 +49,21 @@ const Filter = styled.button`
 export const Filters = ({
     filters,
     parameter,
-    query
+    allAction,
 }) => 
     <Outer>
         { filters && filters.length > 1 ?
             <>
                 <Filter 
-                    disabled={!query[parameter]}
-                    onClick={() => {
-                        delete query[parameter]
-                        window.location.search = queryString.stringify(query)
-                    }}
+                    disabled={filters.find(filter => filter.active === true) === undefined}
+                    onClick={allAction}
                 >   All
                 </Filter>
                 {filters.map(filter =>
                     <Filter 
-                        disabled={filters.length <= 1 ? true : query[parameter] === filter.value}
+                        disabled={filter.active}
                         key={filter.value} 
-                        onClick={() => {
-                            query[parameter] = filter.value
-                            window.location.search = queryString.stringify(query)
-                        }}
+                        onClick={filter.action}
                     >
                         {filter.label}
                     </Filter>
@@ -81,10 +74,7 @@ export const Filters = ({
                 <Headline level={2} text={"Filtered by " + parameter + (filters ? (": " + filters[0].label) : "")} />
                 <Filter 
                     className="clearBtn"
-                    onClick={() => {
-                        delete query[parameter]
-                        window.location.search = queryString.stringify(query)
-                    }}>Clear filter</Filter>
+                    onClick={allAction}>Clear filter</Filter>
             </>
         }
     </Outer>

@@ -1,11 +1,8 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import styled from "styled-components"
-import fetch from "isomorphic-unfetch"
-import moment from "moment"
 import { ArticleGrid } from "../ArticleGrid"
 import { Filters } from "./Filters"
 import { Button } from "../Button"
-import queryString from "query-string"
 import PropTypes from "prop-types"
 
 const Outer = styled.div`
@@ -19,68 +16,17 @@ const CentredButton = styled(Button)`
     text-align: center;
 `
 
-const transformAuthors = authors => {
-    let names = authors.map(author => author.name)
-    if(names.length > 2){
-        return names[0] + ", " + names[1] + " and others"
-    } else if(names.length === 2){
-        return names.join(" and ")
-    } else {
-        return names[0]
-    }
-}
-
-const transformArticles = articles => articles.map(article => {
-    return {
-        key: article.id,
-        title: article.title,
-        standfirst: article.summary,
-        url: article.url,
-        type: article.type ? article.type.name : false,
-        author: article.authors ? transformAuthors(article.authors) : false,
-        category: article.category ? article.category.name : false,
-        image480x270: article.primary_image[2].url,
-        date: moment(article.created).format("dddd Do MMMM YYYY")
-    }
-})
-
-
 export const FilterableArticles = ({
     filters,
     parameter,
+    articles,
+    allAction,
     limit,
     includeHighlight,
     internalTitle,
-    internalLink
+    internalLink,
+    loadMore,
 }) => {
-    const query = queryString.parse(window.location.search)
-
-    const [articles, setArticles] = useState([])
-
-    const [page, setPage] = useState(1)
-    const [maxPages, setMaxPages] = useState(1)
-
-    const fetchArticles = async (query, newPage) => {
-        let newQuery = queryString.stringify({
-            [parameter]: query[parameter],
-            author: query.author,
-            page: newPage
-        })
-        let res = await fetch(`https://content-store.explore.bfi.digital/api/articles?${newQuery}`)
-        let data = await res.json()
-        let transformedArticles = transformArticles(data.data)
-        setArticles(articles.concat(transformedArticles))
-        setMaxPages(data.meta.total)
-    }
-
-    const loadMore = () => {
-        fetchArticles(query, page + 1)
-        setPage(page + 1)
-    }
-    
-    useEffect(() => {
-        fetchArticles(query)
-    }, [window.location.search])
 
     return(
         <Outer>
@@ -88,12 +34,12 @@ export const FilterableArticles = ({
                 <>
                     <Filters 
                         filters={filters} 
-                        query={query} 
                         parameter={parameter}
+                        allAction={allAction}
                     />
                     {articles.length > 0 ?
                         <ArticleGrid articles={articles} firstHighlighted={includeHighlight} optionalTitle={internalTitle} optionalCTALink={internalLink}>
-                            {(page < maxPages) && <CentredButton href="#" onClick={loadMore}>Load more</CentredButton>}
+                            {loadMore && <CentredButton href="#" onClick={loadMore}>Load more</CentredButton>}
                         </ArticleGrid>
                         :
                         <ArticleGrid articles={false} />
@@ -122,6 +68,10 @@ FilterableArticles.propTypes = {
     **/
     filters: PropTypes.array,
     /** 
+    * Array of 'articles'. Should have all the props needed for the 'articles' prop of an ArticleGrid
+    **/
+    articles: PropTypes.array,
+    /** 
     * An optional number that can be used to disable the filters/pagination and just show a specific number og posts - this should only be used on specific pages such as landing page.
     **/
     limit: PropTypes.number,
@@ -136,7 +86,11 @@ FilterableArticles.propTypes = {
     /** 
     * An optional link that will be used to add a link within the grey background - this should be used to send the user to all articles page
     **/
-    internalLink: PropTypes.string
+    internalLink: PropTypes.string,
+    /**
+     * An optional function that is to be called when the 'load more' button is pressed. If omitted, the load more button is not shown.
+     */
+    loadMore: PropTypes.func
 }
 
 FilterableArticles.defaultProps = {
