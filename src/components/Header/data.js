@@ -2,6 +2,8 @@ export default [
     {
         title: "Watch & Discover",
         url: "#",
+        highlightText: "Discover more as a member",
+        highlightURL: "/",
         active: true,
         children: 
         [
@@ -56,6 +58,8 @@ export default [
     {
         title: "Learning & Training",
         url: "#",
+        highlightText: "Support us",
+        highlightURL: "/",
         children:   [
             {
                 id: 1,
@@ -97,6 +101,8 @@ export default [
     {
         title: "Funding & Industry",
         url: "#",
+        highlightText: "Our response to Covid-19",
+        highlightURL: "/",
         children: [
             {
                 id: 1,

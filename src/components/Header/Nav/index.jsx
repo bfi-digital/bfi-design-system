@@ -97,6 +97,7 @@ const ChildBar = styled.div`
 
 const ChildList = styled.div`
     padding: ${theme.horizontalPadding} ${theme.horizontalPadding};
+    padding-bottom: 0px;
     margin: 0 auto;
     width: 100%;
     max-width: calc(${theme.xl} + 125px);
@@ -208,6 +209,30 @@ const Logo = styled.img`
     width: 40px;
     vertical-align: middle;
 `
+const HighlightContainer = styled.div`
+    padding: 0 15px;
+    width: 100%;
+`
+const HighlightLink = styled(Link)`
+    padding: 25px 15px;
+    width: 100%;
+    border-top: 2px solid ${theme.darkGrey};
+    text-align: center;
+    color: ${theme.primary} !important;
+    font-weight: 700;
+    text-decoration: none;
+    margin-top: 15px;
+    display: block;
+    -webkit-transition: background ease 0.3s;
+    -moz-transition: background ease 0.3s;
+    -o-transition: background ease 0.3s;
+    transition: background ease 0.3s;
+
+    &:hover {
+        color: ${theme.dark} !important;
+        background: ${theme.grey};
+    }
+`
 
 const Nav = ({
     navItems,
@@ -268,6 +293,11 @@ const Nav = ({
                                                 </ChildLink>
                                             )}
                                         </Column>
+                                        { navItem.highlightText && 
+                                            <HighlightContainer>
+                                                <HighlightLink to={navItem.highlightURL}>{navItem.highlightText}</HighlightLink>
+                                            </HighlightContainer>
+                                        }
                                     </InnerContainer>
                                 </ChildList>
                             </ChildBar>
