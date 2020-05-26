@@ -10,7 +10,6 @@ import Nav from "./Nav"
 
 import logo from "./logo-black.svg"
 import logoWhite from "./logo-white.svg"
-import LotteryLogo from "./lottery-logo.jsx"
 
 const Outer = styled.header`
     background: ${theme.white};
@@ -50,18 +49,6 @@ const Inner = styled.div`
 
 const Logo = styled.img`
     width: 75px;
-`
-
-const LotteryContainer = styled.div`
-    display: none;
-    svg {
-        width: 100%;
-        height: auto;
-    }
-    @media screen and (min-width: ${theme.m}){
-        width: 80px;
-        display: flex;
-    }
 `
 
 const LogoLink = styled(Link)`
@@ -200,9 +187,6 @@ export const Header = ({
                         open={open}
                         isWhite={overlay}
                     />
-                    <LotteryContainer>
-                        <LotteryLogo colourFill={overlay ? theme.white : theme.black} />
-                    </LotteryContainer>
                 </Inner>
             </Outer>
             {open && <MobilePanel navItems={navItems} />}

@@ -218,7 +218,11 @@ const Nav = ({
 }) => 
     <Outer>
         <List>
-            {isSticky && <BlackLogo><Logo src={logo} alt="British Film Institute"/></BlackLogo>}
+            {isSticky && 
+                <Link to="/">
+                    <BlackLogo><Logo src={logo} alt="British Film Institute"/></BlackLogo>
+                </Link>
+            }
             {navItems.map((navItem, i) => {
                 const size = Math.ceil(navItem.children.length / 3)
                 return(
