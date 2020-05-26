@@ -281,9 +281,8 @@ export const Footer = ({
             <BottomRow>
                 <Inner className="container">
                     <BottomLinks>
-                        {copyrightLinks && copyrightLinks.map(copyrightLink =>
-                            <MenuItem to={copyrightLink.url}>{copyrightLink.title}</MenuItem>    
-
+                        {copyrightLinks && copyrightLinks.map((copyrightLink, i) =>
+                            <MenuItem to={copyrightLink.url} key={"copyrightlink_"+i}>{copyrightLink.title}</MenuItem>    
                         )}
                     </BottomLinks>
                     <Copyright>{parse(copyrightText)}</Copyright>

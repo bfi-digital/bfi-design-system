@@ -18,6 +18,10 @@ const VideoContainer = styled.div`
         height: 100%;
         max-width: 100%;
     }
+
+    .instagram-media {
+        min-height: 757px;
+    }
 `
 
 export const Oembed = ({

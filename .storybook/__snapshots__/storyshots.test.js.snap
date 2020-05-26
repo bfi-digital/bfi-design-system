@@ -1379,9 +1379,6 @@ Array [
           >
             100 great films streaming on Netflix and Amazon Prime
           </h4>
-          <p
-            className="sc-gpHHfC hvSvNV"
-          />
           <a
             className="sc-gVyKpa jYKpTA"
             href="#"
@@ -1432,9 +1429,6 @@ Array [
           >
             Production Fund
           </h4>
-          <p
-            className="sc-gpHHfC hvSvNV"
-          />
           <a
             className="sc-gVyKpa jYKpTA"
             href="#"
@@ -1485,9 +1479,6 @@ Array [
           >
             Production Fund
           </h4>
-          <p
-            className="sc-gpHHfC hvSvNV"
-          />
           <a
             className="sc-gVyKpa jYKpTA"
             href="#"
@@ -4504,7 +4495,7 @@ Array [
         Checkout our YouTube
       </h2>
       <div
-        className="sc-gtfDJT goltYQ"
+        className="sc-gtfDJT lcvJrh"
       >
         <iframe
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -5444,22 +5435,25 @@ Array [
         </div>
       </section>
       <div
-        className="sc-iGPElx jckiUh"
+        className="sc-iGPElx hyOxxn"
       >
         <h3
           className="sc-EHOje duljtv"
         >
-          Sign up to our newsletter
+          Get the latest from the BFI
         </h3>
+        <p>
+          Sign up for BFI news, features, video and podcasts
+        </p>
         <form
           action="https://www.createsend.com/t/subscribeerror?description="
           className="sc-kasBVs ljnreh js-cm-form"
-          data-id="191722FC90141D02184CB1B62AB3DC265D39BA39753E45C7A8F631C18C2D9EAB3F100B5CD60F795E8807A6639DDD564AC68BA5CA501EA9C4FF9B1A55DE11F1D0"
+          data-id="191722FC90141D02184CB1B62AB3DC26D57AD7AD0DF253BE15DD122C605B740244DFF1ADDEE1A8DA861127EDFD99BF281A7016BD9F175EAF91CB858CC76D303F"
           id="subForm"
           method="post"
         >
           <label
-            className="sc-hgHYgh gaxeXW"
+            className="sc-hgHYgh jMTtws"
           >
             Email
             <input
@@ -5468,17 +5462,17 @@ Array [
               className="js-cm-email-input qa-input-email"
               id="fieldEmail"
               maxLength="200"
-              name="cm-zyuiii-zyuiii"
+              name="cm-ydyddhy-ydyddhy"
               placeholder="Your email..."
               required={true}
               type="email"
             />
           </label>
           <button
-            className="sc-eInJlc bBwWuu"
+            className="sc-eInJlc uPkaq"
             type="submit"
           >
-            Subscribe
+            Sign up
           </button>
         </form>
       </div>
@@ -6209,7 +6203,7 @@ Array [
           <p
             className="sc-gpHHfC hvSvNV"
           >
-            If you&apos;re an emerging filmmaker, apply for funding to build skills and experience to stand out in the industry.
+            If you're an emerging filmmaker, apply for funding to build skills and experience to stand out in the industry.
           </p>
           <a
             className="sc-gVyKpa jYKpTA"
@@ -6257,7 +6251,7 @@ Array [
           <p
             className="sc-gpHHfC hvSvNV"
           >
-            If you&apos;re an adventurous storyteller, we can help you with funding to create your film, tv or emerging media like VR or AR.
+            If you're an adventurous storyteller, we can help you with funding to create your film, tv or emerging media like VR or AR.
           </p>
           <a
             className="sc-gVyKpa jYKpTA"
@@ -10062,7 +10056,7 @@ Array [
         PE with Joe – 3 April 2020
       </h2>
       <div
-        className="sc-gtfDJT goltYQ"
+        className="sc-gtfDJT lcvJrh"
       >
         <iframe
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -11046,7 +11040,7 @@ Array [
         />
       </div>
       <div
-        className="sc-gtfDJT goltYQ"
+        className="sc-gtfDJT lcvJrh"
       >
         <iframe
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -11113,7 +11107,7 @@ Array [
         />
       </div>
       <div
-        className="sc-gtfDJT goltYQ"
+        className="sc-gtfDJT lcvJrh"
       >
         <iframe
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -11311,7 +11305,7 @@ Array [
         />
       </div>
       <div
-        className="sc-gtfDJT goltYQ"
+        className="sc-gtfDJT lcvJrh"
       >
         <iframe
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -13276,7 +13270,7 @@ Array [
         PE with Joe – 3 April 2020
       </h2>
       <div
-        className="sc-gtfDJT goltYQ"
+        className="sc-gtfDJT lcvJrh"
       >
         <iframe
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -14283,7 +14277,7 @@ Array [
         PE with Joe – 3 April 2020
       </h2>
       <div
-        className="sc-gtfDJT goltYQ"
+        className="sc-gtfDJT lcvJrh"
       >
         <iframe
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -15208,7 +15202,7 @@ Array [
       className="sc-hzDEsm dTBqjG"
     >
       <div
-        className="sc-gtfDJT goltYQ"
+        className="sc-gtfDJT lcvJrh"
       >
         <iframe
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -16518,7 +16512,7 @@ Array [
         Checkout our YouTube
       </h2>
       <div
-        className="sc-gtfDJT goltYQ"
+        className="sc-gtfDJT lcvJrh"
       >
         <iframe
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -16814,22 +16808,25 @@ Array [
         </div>
       </section>
       <div
-        className="sc-iGPElx jckiUh"
+        className="sc-iGPElx hyOxxn"
       >
         <h3
           className="sc-EHOje duljtv"
         >
-          Sign up to our newsletter
+          Get the latest from the BFI
         </h3>
+        <p>
+          Sign up for BFI news, features, video and podcasts
+        </p>
         <form
           action="https://www.createsend.com/t/subscribeerror?description="
           className="sc-kasBVs ljnreh js-cm-form"
-          data-id="191722FC90141D02184CB1B62AB3DC265D39BA39753E45C7A8F631C18C2D9EAB3F100B5CD60F795E8807A6639DDD564AC68BA5CA501EA9C4FF9B1A55DE11F1D0"
+          data-id="191722FC90141D02184CB1B62AB3DC26D57AD7AD0DF253BE15DD122C605B740244DFF1ADDEE1A8DA861127EDFD99BF281A7016BD9F175EAF91CB858CC76D303F"
           id="subForm"
           method="post"
         >
           <label
-            className="sc-hgHYgh gaxeXW"
+            className="sc-hgHYgh jMTtws"
           >
             Email
             <input
@@ -16838,17 +16835,17 @@ Array [
               className="js-cm-email-input qa-input-email"
               id="fieldEmail"
               maxLength="200"
-              name="cm-zyuiii-zyuiii"
+              name="cm-ydyddhy-ydyddhy"
               placeholder="Your email..."
               required={true}
               type="email"
             />
           </label>
           <button
-            className="sc-eInJlc bBwWuu"
+            className="sc-eInJlc uPkaq"
             type="submit"
           >
-            Subscribe
+            Sign up
           </button>
         </form>
       </div>
@@ -23233,7 +23230,7 @@ exports[`Storyshots 2 All Components/Hero Normal 1`] = `
       Watch a new film, rediscover your old favourites, and get inspired.
     </h1>
     <p
-      className="sc-bHwgHz hlxAFb"
+      className="sc-bHwgHz fCYKus"
     >
       Image: Firstname Surname
     </p>
@@ -24436,22 +24433,25 @@ exports[`Storyshots 2 All Components/Newsletter Sign Up Example 1`] = `
   }
 >
   <div
-    className="sc-iGPElx jckiUh"
+    className="sc-iGPElx hyOxxn"
   >
     <h3
       className="sc-EHOje duljtv"
     >
-      Sign up to our newsletter
+      Get the latest from the BFI
     </h3>
+    <p>
+      Sign up for BFI news, features, video and podcasts
+    </p>
     <form
       action="https://www.createsend.com/t/subscribeerror?description="
       className="sc-kasBVs ljnreh js-cm-form"
-      data-id="191722FC90141D02184CB1B62AB3DC265D39BA39753E45C7A8F631C18C2D9EAB3F100B5CD60F795E8807A6639DDD564AC68BA5CA501EA9C4FF9B1A55DE11F1D0"
+      data-id="191722FC90141D02184CB1B62AB3DC26D57AD7AD0DF253BE15DD122C605B740244DFF1ADDEE1A8DA861127EDFD99BF281A7016BD9F175EAF91CB858CC76D303F"
       id="subForm"
       method="post"
     >
       <label
-        className="sc-hgHYgh gaxeXW"
+        className="sc-hgHYgh jMTtws"
       >
         Email
         <input
@@ -24460,17 +24460,17 @@ exports[`Storyshots 2 All Components/Newsletter Sign Up Example 1`] = `
           className="js-cm-email-input qa-input-email"
           id="fieldEmail"
           maxLength="200"
-          name="cm-zyuiii-zyuiii"
+          name="cm-ydyddhy-ydyddhy"
           placeholder="Your email..."
           required={true}
           type="email"
         />
       </label>
       <button
-        className="sc-eInJlc bBwWuu"
+        className="sc-eInJlc uPkaq"
         type="submit"
       >
-        Subscribe
+        Sign up
       </button>
     </form>
   </div>
@@ -24479,7 +24479,7 @@ exports[`Storyshots 2 All Components/Newsletter Sign Up Example 1`] = `
 
 exports[`Storyshots 2 All Components/Oembed Vimeo 1`] = `
 <div
-  className="sc-gtfDJT goltYQ"
+  className="sc-gtfDJT lcvJrh"
 >
   <iframe
     allow="autoplay; fullscreen"
@@ -24495,7 +24495,7 @@ exports[`Storyshots 2 All Components/Oembed Vimeo 1`] = `
 
 exports[`Storyshots 2 All Components/Oembed Youtube 1`] = `
 <div
-  className="sc-gtfDJT goltYQ"
+  className="sc-gtfDJT lcvJrh"
 >
   <iframe
     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
