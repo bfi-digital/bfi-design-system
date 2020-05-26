@@ -82,9 +82,8 @@ const SupportLogos = styled.div`
     width: 75%;
     margin-bottom: 25px;
 
-    svg {
-        width: 100px;
-        height: auto;
+    img {
+        height: 60px;
     }
     @media screen and (min-width: ${theme.m}) {
         margin-right: 60px;
