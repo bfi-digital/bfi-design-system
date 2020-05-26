@@ -2,10 +2,12 @@ import React, { useState } from "react"
 import styled from "styled-components"
 import theme from "../_theme"
 import PropTypes from "prop-types"
-// import { ReactTypeformEmbed } from "react-typeform-embed"
+import Script from "react-load-script"
 
 const Outer = styled.div`
-    
+    .smcx-embed, .smcx-iframe-container {
+        max-width: none !important;
+    }
 `
 
 const FeedbackBar = styled.button`
@@ -34,30 +36,29 @@ const FeedbackContainer = styled.div`
     border-top: 8px solid ${theme.dark};
     border-bottom: 4px solid ${theme.dark};
 `
+const SurveyMonkeyContainer = styled.div`
+`
 
 export const FeedbackForm = ({
-    typeFormURL
+    formURL
 }) => {
     const [openFeedback, setOpenFeedback] = useState(false)
-
+    const [surveyLoaded, setSurveyLoaded] = useState(false)
+    
     return(
         <Outer>
             {openFeedback ?
                 <FeedbackContainer>
-                    {/* <ReactTypeformEmbed 
-                        popup={false} 
-                        url={typeFormURL + "?currenturl=" + window.location.pathname + window.location.search}
-                        hideHeaders
-                        hideFooter
-                        buttonText="Give Feedback"
-                        style={{ height: "300px", width: "100%", position: "relative" }}
-                    /> */}
-                    <p>form emebed goes here {typeFormURL}</p>
+                    <SurveyMonkeyContainer id="smcx-sdk"></SurveyMonkeyContainer>
+                    <Script
+                        url={formURL}
+                    />
                 </FeedbackContainer>
                 :
                 <FeedbackBar onClick={() => {setOpenFeedback(true)}} title="Give us some feedback">
                     This site is currently in <strong>BETA</strong>, help us improve with feedback - <strong>Is there anything wrong with this page?</strong>
                 </FeedbackBar>
+
             }
         </Outer>
     )
@@ -66,11 +67,11 @@ export const FeedbackForm = ({
 
 FeedbackForm.propTypes = {
     /** 
-	 * Url for the feedback form - e.g. https://deesondesign.typeform.com/to/cK12uT
+	 * Url for the feedback form
     **/
-    typeFormURL: PropTypes.string
+    formURL: PropTypes.string
 }
 
 FeedbackForm.defaultProps = {
-    typeFormURL: "https://deesondesign.typeform.com/to/cK12uT"
+    formURL: "https://widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgd9hxa3V5_2FlYXPg9kCnB6_2FG142i_2BHxbMOKeBcVzphTEcm.js"
 }

@@ -33,13 +33,13 @@ const Outer = styled.section`
     color: ${props => colorSchemes[props.colorScheme].text};
     position: relative;
 
-    margin-top: 15px;
-    & + .promoBanner {
-        margin-top: 0px;
-    }
-    &:last-of-type {
-        margin-bottom: 25px;
-    }
+    margin-bottom: 25px;
+    // & + .promoBanner {
+    //     margin-top: 0px;
+    // }
+    // &:last-of-type {
+    //     margin-bottom: 25px;
+    // }
 
     h2{
         margin-top: 0px;
@@ -69,6 +69,7 @@ const Outer = styled.section`
             box-shadow: 9999px 0 0 ${props => colorSchemes[props.colorScheme].background};
             border-left: 9999px solid ${props => colorSchemes[props.colorScheme].background};
             z-index: -1;
+            display: ${props => props.pageWithSideBar ? "none" : "default"}
         }
     }
     @media screen and (min-width: ${theme.l}){
@@ -86,7 +87,7 @@ const Inner = styled.div`
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding-left: ${props => props.reversed ? "25px" : "0"};
+        padding-left: ${props => props.reversed ? "25px" : props.pageWithSideBar ? "25px" : "0"};
         
         &.without_image {
             width: 66%;
@@ -146,8 +147,8 @@ const Image = styled.div`
         order: ${props => props.reversed || props.pageWithSideBar ? "-1" : "1"};
         width: ${props => props.pageWithSideBar ? "100%" : "50%"};
         height: ${props => props.pageWithSideBar ? "250px" : "auto"};
-        margin-right: ${props => props.reversed ? "0" : "-20px"};
-        margin-left: ${props => props.reversed ? "-20px" : "20px"};
+        margin-right: ${props => props.pageWithSideBar ? "0" : props.reversed ? "0px" : "-20px"};
+        margin-left: ${props => props.pageWithSideBar ? "0" : props.reversed ? "-20px" : "20px"};
     }
     @media screen and (min-width: ${theme.l}){
         margin-right: 0px;
@@ -176,8 +177,8 @@ const Video = styled.div`
         order: ${props => props.reversed ? "-1" : "1"};
         max-width: ${props => props.pageWithSideBar ? "100%" : "75%"};
         height: auto;
-        margin-right: ${props => props.reversed ? "0" : "-20px"};
-        margin-left: ${props => props.reversed ? "-20px" : "20px"};
+        margin-right: ${props => props.pageWithSideBar ? "0" : props.reversed ? "0" : "-20px"};
+        margin-left: ${props => props.pageWithSideBar ? "0" : props.reversed ? "-20px" : "-20px"};
     }
     @media screen and (min-width: ${theme.l}){
         margin-right: 0px;

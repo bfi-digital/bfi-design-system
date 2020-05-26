@@ -20,7 +20,7 @@ const ImagesHolder = styled.div`
 
 const ImageContainer = styled.div`
     margin-bottom: 10px;
-    margin-right: 20px;
+    margin-right: 30px;
 
     img {
         -webkit-transition: all ease 0.3s;

@@ -1,23 +1,25 @@
 import React from "react"
 import styled from "styled-components"
 import theme from "../_theme"
-import logo from "./logo.svg"
-import LotteryLogo from "./lottery-logo.jsx"
+import LotteryLogo from "./lottery-logo.svg"
+import DCMSLogo from "./dcms.png"
 import { LinkSwitch as Link } from "../LinkSwitch"
 import PropTypes from "prop-types"
 import parse from "html-react-parser"
 import { FeedbackForm } from "../FeedbackForm"
+import { ImageSponsorLinks } from "../ImageSponsorLinks"
 
 import facebook from "./facebook.svg"
 import twitter from "./twitter.svg"
 import youtube from "./youtube.svg"
 import instagram from "./instagram.svg"
+import linkedin from "./linkedin.svg"
 
 const Outer = styled.footer`
     padding: 40px 0px 20px 0px;
     background: ${theme.lightFocus};
     color: ${theme.black};
-    border-top: 4px solid ${theme.dark};
+    // border-top: 4px solid ${theme.dark};
 `
 
 const Inner = styled.div`
@@ -29,51 +31,136 @@ const Inner = styled.div`
     }
 `
 
-const LogoImage = styled.img`
-    height: 80px;
+const TopRow = styled.section`
+    margin-bottom: 30px;
     @media screen and (min-width: ${theme.m}) {
-        margin-right: auto;
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
     }
 `
 
-const TopRow = styled.section`
-    margin-bottom: 50px;
+const MiddleRow = styled.section`
+    margin-bottom: 30px;
+    border-top: 1px solid ${theme.dark};
+    border-bottom: 1px solid ${theme.dark};
+    padding-top: 35px;
+    padding-bottom: 35px;
+
     @media screen and (min-width: ${theme.m}) {
-        display: flex;
-        flex-direction: row;
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
     }
 `
+// const LogoImage = styled.img`
+//     width: 100px;
+//     margin-right: 25px;
+//     vertical-align: middle;
+// `
+// const AboutBFI = styled.div`
+//     width: calc(50% - 100px);
+//     margin-right: 50px;
+//     div {
+//         display: inline-block;
+//         vertical-align: middle;
+//         width: calc(100% - 125px);
+//     }
+//     p:first-of-type {
+//         margin-top: 0;
+//     }
+//     p:last-of-type {
+//         margin-bottom: 0;
+//     }
+// `
+const SupportLogos = styled.div`
+    width: 75%;
+    margin-bottom: 25px;
+
+    img {
+        height: 60px;
+    }
+    @media screen and (min-width: ${theme.m}) {
+        margin-right: 60px;
+        margin-bottom: 0;
+    }
+`
+const FollowMenu = styled.div`
+    width: 25%;
+`
+
 
 const BottomRow = styled.section`
+    font-size: 0.8rem;
+    text-align: center;
+
     @media screen and (min-width: ${theme.m}) {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
+        text-align: left;
+        font-size: 0.85rem;
+        .container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
     }
 `
+
+const BottomLinks = styled.div`
+    margin-bottom: 20px;
+    
+    a {
+        margin-right: 15px;
+        font-weight: 600;
+        text-decoration: underline;
+    }
+    @media screen and (min-width: ${theme.m}) {
+        margin-bottom: 0;
+        a {
+            text-decoration: none;
+    
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+`
+
 
 const Menu = styled.nav`
     margin-top: 30px;
-    /* width: 100%; */
-    max-width: 160px;
+    width: 100%;
     @media screen and (min-width: ${theme.m}) {
         margin-top: 0px;
         margin-left: 30px;
-    }
-    @media screen and (min-width: ${theme.l}) {
-        margin-left: 50px;
+        width: 25%;
+
+        &:first-of-type {
+            margin-left: 0;
+        }
     }
 `
 
-const Heading = styled.h4`
+const Heading = styled.h2`
     margin-top: 0px;
-    display: inline-block;
-    font-size: 1rem;
+    display: block;
+    font-size: 1.3rem;
     font-weight: bold;
-    padding-bottom: 10px;
-    border-bottom: 1px solid rgba(0,0,0,0.5);
-    margin-bottom: 10px;
+    padding-top: 15px;
+    border-top: 3px solid ${theme.black};
+    margin-bottom: 25px;
+`
+
+const SubHeading = styled.h2`
+    margin-top: 0px;
+    display: block;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
 `
 
 const Copyright = styled.p``
@@ -82,22 +169,29 @@ const LinkContainer = styled.div `
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 7px;
+    margin-bottom: 20px;
+`
+const IconLinkContainer = styled(LinkContainer)`
+    display: flex;
+    justify-content: space-between;
 `
 
 const linkStyles = `
     color: black;
-    text-decoration: none;
+    text-decoration: underline;
 
     &:hover{
-        text-decoration: underline;
+        text-decoration: none;
+        div.logo {
+            background: rgba(0,0,0,0.6);
+        }
     }
     &:focus{
         outline: 2px solid ${theme.focus};
         background: ${theme.dark};
         color: ${theme.white};
 
-        div {
+        div.logo {
             background: ${theme.white};
         }
     }
@@ -111,13 +205,14 @@ const linkStyles = `
 
 const MenuItem = styled(Link)`${linkStyles}`
 
-const ExternalMenuItem = styled.a`${linkStyles}`
+const ExternalMenuItem = styled.a`${linkStyles}
+    // margin-right: 10px;
+`
 
 const Icon = styled.div`
-    margin-right: 7px;
     vertical-align: bottom;
-    width: 25px;
-    height: 25px;
+    width: 35px;
+    height: 35px;
     display: inline-block;
 
     background-color: ${theme.black};
@@ -134,9 +229,8 @@ export const Footer = ({
             <FeedbackForm />
         </Inner>
         <Outer>
-            <Inner>
-                <TopRow>
-                    <LogoImage src={logo} alt="British Film Institute. Film Forever."/>
+            <TopRow>
+                <Inner className="container">
                     {menus.map(menu =>
                         <Menu key={menu.id}>
                             <Heading>{menu.title}</Heading>
@@ -147,43 +241,68 @@ export const Footer = ({
                             )}
                         </Menu>
                     )}
-                    <Menu>
-                        <Heading>Keep in touch</Heading>
-                        <LinkContainer>
-                            <MenuItem className="with_break" to="/">Contact us</MenuItem> 
-                        </LinkContainer>
-                        <LinkContainer>
-                            <ExternalMenuItem href="https://www.facebook.com/BritishFilmInstitute/">
-                                <Icon url={facebook} alt=""/>
-                                Facebook
-                            </ExternalMenuItem>
-                        </LinkContainer>
-                        <LinkContainer>
-                            <ExternalMenuItem href="https://twitter.com/BFI">
-                                <Icon url={twitter} alt=""/>
-                                Twitter
-                            </ExternalMenuItem>
-                        </LinkContainer>
-                        <LinkContainer>
-                            <ExternalMenuItem href="https://www.youtube.com/user/BFIfilms">
-                                <Icon url={youtube} alt=""/>
-                                YouTube
-                            </ExternalMenuItem>
-                        </LinkContainer>
-                        <LinkContainer>
-                            <ExternalMenuItem href="https://www.instagram.com/britishfilminstitute/">
-                                <Icon url={instagram} alt=""/>
-                                Instagram
-                            </ExternalMenuItem>
-                        </LinkContainer>
-                    </Menu>
-                </TopRow>
-                <BottomRow>
-                    <LotteryLogo colourFill={theme.black} alt="The BFI recieves National Lottery funding" />
+                </Inner>
+            </TopRow>
+            <MiddleRow>
+                <Inner className="container">
+                    {/* <AboutBFI>
+                        <LogoImage src={logo} alt="British Film Institute. Film Forever."/>
+                        <div>
+                            <p>The BFI is the UK’s lead organisation for film, television and the moving image.</p>
 
+                            <p>Our mission is to supporting the future of UK film.</p>
+
+                            <p>Read our strategy BFI2022</p>
+                        </div>
+                    </AboutBFI> */}
+                        
+                    <SupportLogos>
+                        <SubHeading>Supported by</SubHeading>
+                        <ImageSponsorLinks images={[
+                            {
+                                url: LotteryLogo,
+                                alt: "The BFI recieves National Lottery funding"
+                            },
+                            {
+                                url: DCMSLogo,
+                                alt: "Department for Digital Culture Media & Sport"
+                            }
+                        ]} />
+                    </SupportLogos>
+                    <FollowMenu>
+                        <SubHeading>Follow us</SubHeading>
+                        <IconLinkContainer>
+                            <ExternalMenuItem href="https://twitter.com/BFI">
+                                <Icon className="logo" url={twitter} alt="Twitter"/>
+                            </ExternalMenuItem>
+                            <ExternalMenuItem href="https://www.facebook.com/BritishFilmInstitute/">
+                                <Icon className="logo" url={facebook} alt="Facebook"/>
+                            </ExternalMenuItem>
+                            <ExternalMenuItem href="https://www.instagram.com/britishfilminstitute/">
+                                <Icon className="logo" url={instagram} alt="Instagram"/>
+                            </ExternalMenuItem>
+                            <ExternalMenuItem href="https://www.linkedin.com/company/british-film-institute">
+                                <Icon className="logo" url={linkedin} alt="LinkedIn"/>
+                            </ExternalMenuItem>
+                            <ExternalMenuItem href="https://www.youtube.com/user/BFIfilms">
+                                <Icon className="logo" url={youtube} alt="YouTube"/>
+                            </ExternalMenuItem>
+                        </IconLinkContainer>
+                        
+                    </FollowMenu>
+                </Inner>
+            </MiddleRow>
+            <BottomRow>
+                <Inner className="container">
+                    <BottomLinks>
+                        <MenuItem to="#">Cookies &amp; privacy</MenuItem>    
+                        <MenuItem to="#">Terms &amp; conditions</MenuItem>    
+                        <MenuItem to="#">Accessibility</MenuItem>    
+                        <MenuItem to="#">Help &amp; FAQs</MenuItem>    
+                    </BottomLinks>
                     <Copyright>{parse(copyrightText)}</Copyright>
-                </BottomRow>
-            </Inner>
+                </Inner>
+            </BottomRow>
         </Outer>
     </>
 
