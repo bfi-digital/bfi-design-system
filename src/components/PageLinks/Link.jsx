@@ -4,6 +4,7 @@ import theme from "../_theme"
 import { LinkSwitch as Link } from "../LinkSwitch"
 import { Headline } from "../Headline"
 import Arrow from "./arrow-right"
+import parse from "html-react-parser"
 
 const Outer = styled.li`
     position: relative;
@@ -159,7 +160,7 @@ export const PageLink = ({
             </PageImageContainer>
         }
         <Headline level={4} text={title} />
-        <Description>{description}</Description>
+        <Description>{parse(description)}</Description>
         <CallToAction external={external} to={url}>
             <CTAText>{callToAction !== "" ? callToAction : "Read this page"}</CTAText>
             <Icon><Arrow colourFill={theme.dark} /></Icon>
