@@ -10,8 +10,27 @@ import { NewsletterSignUp } from "../../../components/NewsletterSignUp/index"
 
 <Preview>
     <Story name="Default example">
-        <div style={{padding: "20px"}}>
-            <NewsletterSignUp linkText="Internal Link" linkURL="/" />
+        <div style={{padding: "20px", maxWidth: "600px"}}>
+            <NewsletterSignUp />
+        </div>
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="All examples">
+        <div style={{padding: "20px", maxWidth: "600px"}}>
+            <NewsletterSignUp newsletterOption={0} />
+            <NewsletterSignUp newsletterOption={1} />
+            <NewsletterSignUp newsletterOption={2} />
+            <NewsletterSignUp newsletterOption={3} />
+            <NewsletterSignUp newsletterOption={4} />
+            <NewsletterSignUp newsletterOption={5} />
+            <NewsletterSignUp newsletterOption={6} />
+            <NewsletterSignUp newsletterOption={7} />
+            <NewsletterSignUp newsletterOption={8} />
+            <NewsletterSignUp newsletterOption={9} />
+            <NewsletterSignUp newsletterOption={10} />
+            <NewsletterSignUp newsletterOption={11} />
         </div>
     </Story>
 </Preview>
