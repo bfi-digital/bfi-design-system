@@ -56,7 +56,7 @@ export default [
         ]
     },
     {
-        title: "Learning & Training",
+        title: "Learn & Make",
         url: "#",
         highlightText: "Support us",
         highlightURL: "/",

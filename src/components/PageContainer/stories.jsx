@@ -126,17 +126,12 @@ export const normalPage = () =>
     <>
         <Header navItems={navItems} quickLinks={quickLinksData} />
         <Wrapper>
+            <Hero 
+                title="Headline goes here"
+                standfirst="God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs. Do you have any idea how long it takes those cups to decompose. Yes, Yes, without the oops! Yes, Yes, without the oops! Drive us out of here!"
+                breadcrumbs={crumbs}
+            />
             <MainContent>
-                <Breadcrumbs 
-                    breadcrumbs={crumbs} 
-                />
-                <Headline 
-                    level={1} 
-                    text="Headline goes here"
-                />
-                <LeadParagraph 
-                    text="God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs. Do you have any idea how long it takes those cups to decompose. Yes, Yes, without the oops! Yes, Yes, without the oops! Drive us out of here!"
-                />
                 <Text> 
                     So you two dig up, dig up dinosaurs? Hey, you know how I&apos;m, like, always trying to save the planet? Here&apos;s my chance. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? Yeah, but your scientists were so preoccupied with whether or not they could, they didn&apos;t stop to think if they should.
                 </Text>
@@ -169,21 +164,61 @@ export const normalPage = () =>
         />
     </>
 
-export const activePage = () =>
+export const normalPageWithHeroImage = () =>
+<>
+    <Header navItems={navItems} quickLinks={quickLinksData} />
+    <Wrapper>
+        <Hero 
+            title="Headline goes here"
+            standfirst="God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs. Do you have any idea how long it takes those cups to decompose. Yes, Yes, without the oops! Yes, Yes, without the oops! Drive us out of here!"
+            breadcrumbs={crumbs}
+            image1920x1080="https://bfi-prototype.netlify.com/static/media/watch-banner.b01324c4.jpg"
+            imageAltText="Alt text for the image"
+            imageCopyright="HELP MUSICIANS, directed by Thomas Guthrie"
+        />
+        <MainContent>
+            <Text> 
+                So you two dig up, dig up dinosaurs? Hey, you know how I&apos;m, like, always trying to save the planet? Here&apos;s my chance. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? Yeah, but your scientists were so preoccupied with whether or not they could, they didn&apos;t stop to think if they should.
+            </Text>
+        </MainContent>
+        <Sidebar>
+            <SidebarPageLinks links={pageLinksData} blockTitle="Related pages" />
+        </Sidebar>
+    </Wrapper>
+    <Footer
+        menus={footerMenus}
+        copyrightLinks={[
+            {
+                title: "Cookies & privacy",
+                url: "#"
+            },
+            {
+                title: "Terms & conditions",
+                url: "#"
+            },
+            {
+                title: "Accessibility",
+                url: "#"
+            },
+            {
+                title: "Help & FAQs",
+                url: "#"
+            }
+        ]}
+        copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"
+    />
+</>
+
+export const actionPage = () =>
     <>
         <Header navItems={navItems} quickLinks={quickLinksData} />
         <Wrapper>
+            <Hero 
+                title="Development Fund"
+                standfirst="We want to support work that takes risks and does something different. This means we fund projects that can’t find other, commercial finance at development stage."
+                breadcrumbs={crumbs}
+            />
             <MainContent>
-                <Breadcrumbs 
-                    breadcrumbs={crumbs} 
-                />
-                <Headline 
-                    level={1} 
-                    text="Development Fund"
-                />
-                <LeadParagraph 
-                    text="We want to support work that takes risks and does something different. This means we fund projects that can’t find other, commercial finance at development stage."
-                />
                 <Text> 
                     <p>The BFI Development Fund supports live action or animated fiction projects, including:</p>
                     <ul>

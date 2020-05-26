@@ -1,137 +1,95 @@
 import React from "react"
-import { Headline } from "../Headline"
 import styled from "styled-components"
 import theme from "../_theme"
 import PropTypes from "prop-types"
+import { Headline } from "../Headline"
+import { LeadParagraph } from "../LeadParagraph"
+import { Breadcrumbs } from "../Breadcrumbs"
+import { Image } from "../Image"
 
-const Outer = styled.section`
+const Outer = styled.div`
     margin: 0 auto;
-    background: ${theme.black};
+    text-align: center;
     width: 100%;
+    flex: 0 0 100%;
+    margin-bottom: 15px;
+
+    max-width: ${theme.xl};
     max-width: calc(${theme.xl} + 125px);
+
+    p, ol {
+        max-width: 620px;
+    }
+
+    &.without_image {
+        text-align: left;
+    }
+
+    &.with_image {
+        p, ol {
+            margin: 0 auto;
+        }
+        p {
+            margin-bottom: 30px;
+        }
+    }
+`
+const Meta = styled.div`
+
+`
+
+const ImageContainer = styled.div`
     position: relative;
-    height: 40vh;
-    min-height: 200px;
-    padding-top: ${props => props.withHeader ? "64px" : "0px"};
-    background-image: url("${props => props.image}");
-    background-size: cover;
-    background-position: center center;
-    display: flex;
-    align-items: flex-end;
-    margin-top: 175px;
-
-    h1{
-        color: ${theme.white};
-        max-width: calc( 0.65 * ${theme.m});
-        text-shadow: 0px 0px 30px ${theme.black}50;
-        margin-bottom: 50px;
-    }
-
-    @media screen and (min-width: ${theme.m}){
-        margin-top: 0px;
-        min-height: 390px;
-        align-items: flex-end;
-        padding-top: ${props => props.withHeader ? "175px" : "0px"};
-
-        h1 {
-            max-width: calc( 0.75 * ${theme.m});
-        }
-    }
-    @media screen and (min-width: ${theme.xl}){
-        min-height: 500px;
-        h1{
-            max-width: calc( 0.4 * ${theme.xl});
-            margin-bottom: 75px;
-        }
-    }
 `
-
-const InnerGradient = styled.div`
-    background: linear-gradient(rgba(18, 12, 13, 0.3), rgba(18, 12, 13, 0.7));
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 0;
-`
-
-const Container = styled.div`
-    max-width: ${theme.l};
-    width: 100%;
-    margin: 0 auto;
-    padding: 0px ${theme.horizontalPadding};
-    z-index: 1;
-    position: relative;
-
-    @media screen and (min-width: ${theme.xl + 200}){
-        max-width: ${theme.xl};
-    }
-
-    ol + h1 {
-        margin-top: 20px;
-    }
-    li, a {
-        color: ${theme.white};
-        text-shadow: 0px 0px 30px ${theme.black}50;
-        &:focus{
-            background: ${theme.dark};
-        }
-        &:after {
-            opacity: 0.7;
-        }
-    }
-`
-
-const Copyright = styled.p`
-    color: ${theme.white};
-    text-shadow: 0px 0px 30px ${theme.black}50;
-    font-size: 0.75rem;
-    position: absolute;
-    bottom: 5px;
-    display: none;
-
-    @media screen and (min-width: ${theme.m}){
-        right: ${theme.horizontalPadding};
-        bottom: 5px;
-    }
-
-`
-
 export const Hero = ({
     image1920x1080,
-    headline,
-    withHeader,
-    copyright,
-    children
+    imageAltText,
+    imageCopyright,
+    title,
+    standfirst,
+    breadcrumbs
 }) =>
-    <Outer 
-        image={image1920x1080} 
-        withHeader={withHeader}
-    >
-        <InnerGradient />
-        <Container>
-            {children}
-            {headline && <Headline level={0} text={headline}/>}
-            {copyright && <Copyright>{copyright}</Copyright>}
-        </Container>
+    <Outer className={image1920x1080 ? "with_image" : "without_image"}>
+        <Meta>
+            {breadcrumbs && <Breadcrumbs breadcrumbs={breadcrumbs} />}
+            {title && <Headline level={1} text={title}/>}
+            {standfirst && <LeadParagraph text={standfirst}/>}
+        </Meta>
+        <ImageContainer>
+            {image1920x1080 &&
+                <Image
+                    alt={imageAltText}
+                    src={image1920x1080}
+                    copyright={imageCopyright}
+                />
+            }
+        </ImageContainer>
     </Outer>
 
 
 Hero.propTypes = {
     /** 
-    * Urls to the image for the hero. 
+    * Urls to the image for the article hero. 
     **/
     image1920x1080: PropTypes.string,
     /** 
-    * The text for the title which will be used as the H1 for this page/post. Optional. You might choose not to give this and pass children in instead
+    * Alt text for hero image.
     **/
-    headline: PropTypes.string,
+    imageAltText: PropTypes.string,
     /** 
-    * A boolean to tell the hero whether it has a header over the top of it, so that content in the hero never overlaps the header. Defaults to false.
+    * Optional copyright text for the hero image.
     **/
-    withHeader: PropTypes.bool,
+    imageCopyright: PropTypes.string,
     /** 
-    * A string giving the copyright attribution of the background image
+    * The text for the title which will be used as the H1 for this page/post
     **/
-    copyright: PropTypes.string
-    
+    title: PropTypes.string,
+    /** 
+    * A summary of the article.
+    **/
+    standfirst: PropTypes.string,
+    /** 
+    * The breadcrumb array
+    **/
+    crumbs: PropTypes.array
 }

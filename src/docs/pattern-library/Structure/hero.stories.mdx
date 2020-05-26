@@ -2,6 +2,7 @@ import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
 import { Hero } from "../../../components/Hero/index"
 import { Header } from "../../../components/Header/index"
 import navItems, { quickLinksData } from "../../../components/Header/data"
+import {longData as crumbs} from "../../../components/Breadcrumbs/data"
 
 <Meta title="Pattern Library|Structure/Hero" component={Hero} />
 
@@ -22,32 +23,11 @@ The hero uses the featured image for a background, and has a white H1 for the ti
 ## Examples 
 
 <Preview>
-    <Story name="Normal">
+    <Story name="Page example without image">
         <Hero 
-            image="https://bfi-prototype.netlify.com/static/media/watch-banner.b01324c4.jpg"
-            headline="Watch a new film, rediscover your old favourites, and get inspired." 
+            title="Development Fund"
+            standfirst="We want to support work that takes risks and does something different. This means we fund projects that can’t find other, commercial finance at development stage."
+            breadcrummbs={crumbs}
         />
-    </Story>
-</Preview>
-
-<Preview>
-    <Story name="Full Height">
-        <Hero 
-            image="https://bfi-prototype.netlify.com/static/media/watch-banner.b01324c4.jpg"
-            headline="Watch a new film, rediscover your old favourites, and get inspired."
-            fullHeight={true} 
-        />
-    </Story>
-</Preview>
-
-<Preview>
-    <Story name="With Header">
-        <>
-            <Header navItems={navItems} quickLinks={quickLinksData} overlay={true} />
-            <Hero 
-                image="https://bfi-prototype.netlify.com/static/media/watch-banner.b01324c4.jpg"
-                headline="Watch a new film, rediscover your old favourites, and get inspired." 
-            />
-        </>
     </Story>
 </Preview>

@@ -11,6 +11,7 @@ export const Wrapper = styled.div`
 
     @media screen and (min-width: ${theme.m}){
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
         margin: 60px auto;
     }
