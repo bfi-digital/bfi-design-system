@@ -159,7 +159,7 @@ export const PageLink = ({
                 <PageImage className="image" imageSrc={image480x320} />
             </PageImageContainer>
         }
-        <Headline level={4} text={title} />
+        {title && <Headline level={4} text={title} />}
         {description && <Description>{parse(description)}</Description>}
         <CallToAction external={external} to={url}>
             <CTAText>{callToAction !== "" ? callToAction : "Read this page"}</CTAText>
