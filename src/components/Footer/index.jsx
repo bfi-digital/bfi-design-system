@@ -1,13 +1,14 @@
 import React from "react"
 import styled from "styled-components"
 import theme from "../_theme"
-import LotteryLogo from "./lottery-logo.svg"
-import DCMSLogo from "./dcms.svg"
 import { LinkSwitch as Link } from "../LinkSwitch"
 import PropTypes from "prop-types"
 import parse from "html-react-parser"
 import { FeedbackForm } from "../FeedbackForm"
 import { ImageSponsorLinks } from "../ImageSponsorLinks"
+
+import LotteryLogo from "./lottery-logo.svg"
+import DCMSLogo from "./dcms.svg"
 
 import facebook from "./facebook.svg"
 import twitter from "./twitter.svg"

@@ -25,8 +25,6 @@ const QuickLink = styled(Link)`
         color: ${props => props.isTransparent ? (!props.isSticky ? theme.grey : theme.dark) : theme.dark};
         background: ${theme.grey};
     }
-
-    
 `
 
 const QuickLinks = ({links, Inner, isOverlaid, isSticky}) => {
