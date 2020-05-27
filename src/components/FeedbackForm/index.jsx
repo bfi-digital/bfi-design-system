@@ -5,9 +5,17 @@ import PropTypes from "prop-types"
 import Script from "react-load-script"
 
 const Outer = styled.div`
+    overflow: hidden;
+    
     .smcx-embed, .smcx-iframe-container {
         max-width: none !important;
         border: none !important;
+        height: 400x !important;
+
+        iframe {
+            margin-top: -80px;
+            height: calc(100% + 80px);
+        }
     }
 `
 
@@ -46,7 +54,7 @@ const SurveyMonkeyContainer = styled.div`
 `
 
 const Loading = styled.div`
-    height: 265px;
+    height: 400x;
     width: 100%;
     text-align: center;
     position: relative;
