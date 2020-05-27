@@ -183,38 +183,38 @@ Array [
           className="sc-kQsIoO hplWJY"
         >
           <button
-            className="sc-gPzReC eeddzF"
+            className="sc-gPzReC oUAIY"
             disabled={true}
           >
                All
           </button>
           <button
-            className="sc-gPzReC eeddzF"
+            className="sc-gPzReC oUAIY"
           >
             Review
           </button>
           <button
-            className="sc-gPzReC eeddzF"
+            className="sc-gPzReC oUAIY"
           >
             Video
           </button>
           <button
-            className="sc-gPzReC eeddzF"
+            className="sc-gPzReC oUAIY"
           >
             Opinion
           </button>
           <button
-            className="sc-gPzReC eeddzF"
+            className="sc-gPzReC oUAIY"
           >
             Recommendations
           </button>
           <button
-            className="sc-gPzReC eeddzF"
+            className="sc-gPzReC oUAIY"
           >
             Long Read
           </button>
           <button
-            className="sc-gPzReC eeddzF"
+            className="sc-gPzReC oUAIY"
           >
             Interviews
           </button>
@@ -1547,7 +1547,7 @@ Array [
       >
         <a
           aria-current="page"
-          className="sc-kfGgVZ eufMhB"
+          className="sc-kfGgVZ elfOTL"
           href="/"
           onClick={[Function]}
         >
@@ -1555,7 +1555,7 @@ Array [
         </a>
         <a
           aria-current="page"
-          className="sc-kfGgVZ eufMhB"
+          className="sc-kfGgVZ elfOTL"
           href="/"
           onClick={[Function]}
         >
@@ -1563,7 +1563,7 @@ Array [
         </a>
         <a
           aria-current="page"
-          className="sc-kfGgVZ eufMhB"
+          className="sc-kfGgVZ elfOTL"
           href="/"
           onClick={[Function]}
         >
@@ -1571,7 +1571,7 @@ Array [
         </a>
         <a
           aria-current="page"
-          className="sc-kfGgVZ eufMhB"
+          className="sc-kfGgVZ elfOTL"
           href="/"
           onClick={[Function]}
         >
@@ -1579,7 +1579,7 @@ Array [
         </a>
         <a
           aria-current="page"
-          className="sc-kfGgVZ eufMhB"
+          className="sc-kfGgVZ elfOTL"
           href="/"
           onClick={[Function]}
         >
@@ -1587,7 +1587,7 @@ Array [
         </a>
         <a
           aria-current="page"
-          className="sc-kfGgVZ eufMhB"
+          className="sc-kfGgVZ elfOTL"
           href="/"
           onClick={[Function]}
         >
@@ -1595,7 +1595,7 @@ Array [
         </a>
         <a
           aria-current="page"
-          className="sc-kfGgVZ eufMhB"
+          className="sc-kfGgVZ elfOTL"
           href="/"
           onClick={[Function]}
         >
@@ -23226,28 +23226,28 @@ exports[`Storyshots 2 All Components/Filter-esque Links Normal 1`] = `
   className="sc-kPVwWT ecORTz"
 >
   <a
-    className="sc-kfGgVZ eufMhB"
+    className="sc-kfGgVZ elfOTL"
     href="/#"
     onClick={[Function]}
   >
     Example link
   </a>
   <a
-    className="sc-kfGgVZ eufMhB"
+    className="sc-kfGgVZ elfOTL"
     href="/#"
     onClick={[Function]}
   >
     Where to stream
   </a>
   <a
-    className="sc-kfGgVZ eufMhB"
+    className="sc-kfGgVZ elfOTL"
     href="/#"
     onClick={[Function]}
   >
     Where to begin
   </a>
   <a
-    className="sc-kfGgVZ eufMhB"
+    className="sc-kfGgVZ elfOTL"
     href="/#"
     onClick={[Function]}
   >

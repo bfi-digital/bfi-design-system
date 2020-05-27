@@ -20,6 +20,7 @@ const Filter = styled.button`
     transition: box-shadow .3s;
     cursor: pointer;
     margin-bottom: 10px;
+    
     &::-moz-focus-inner {
         border: 0;
     }
