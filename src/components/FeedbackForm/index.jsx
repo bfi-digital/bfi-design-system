@@ -10,7 +10,7 @@ const Outer = styled.div`
     .smcx-embed, .smcx-iframe-container {
         max-width: none !important;
         border: none !important;
-        height: 400x !important;
+        height: 400px !important;
 
         iframe {
             margin-top: -80px;
@@ -47,14 +47,13 @@ const FeedbackBar = styled.button`
     }
 `
 const FeedbackContainer = styled.div`
-    border-top: 8px solid ${theme.dark};
     border-bottom: 4px solid ${theme.dark};
 `
 const SurveyMonkeyContainer = styled.div`
 `
 
 const Loading = styled.div`
-    height: 400x;
+    height: 400px;
     width: 100%;
     text-align: center;
     position: relative;
@@ -85,34 +84,60 @@ const Loading = styled.div`
         100% {
           transform: rotate(360deg);
         }
+    }      
+`
+
+const CloseButton = styled.button`
+    width: 100%;
+    padding: 10px 15px;
+    cursor: pointer;
+    background: ${theme.dark};
+    color: ${theme.white};
+    font-weight: 600;
+    border: none;
+    text-align: right;
+    border: 3px solid ${theme.dark};
+
+    &:hover {
+        background: ${theme.primary};
     }
-      
+    &:focus {
+        background: ${theme.primary};
+        outline: none;
+        border: 3px solid ${theme.focus};
+    }
 `
 
 export const FeedbackForm = ({
     formURL
 }) => {
     const [openFeedback, setOpenFeedback] = useState(false)
+    const [isClosed, setIsClosed] = useState(false)
     const [isLoaded, setIsLoaded] = useState(false)
     
     return(
-        <Outer>
-            {openFeedback ?
-                <FeedbackContainer>
-                    {!isLoaded && <Loading><div className="lds-dual-ring"></div></Loading>}
-                    <SurveyMonkeyContainer id="smcx-sdk"></SurveyMonkeyContainer>
-                    <Script
-                        url={formURL}
-                        onLoad={() => setIsLoaded(true)}
-                    />
-                </FeedbackContainer>
-                :
-                <FeedbackBar onClick={() => {setOpenFeedback(true)}} title="Give us some feedback">
-                    This site is currently in <strong>BETA</strong>, help us improve with feedback - <strong>Is there anything wrong with this page?</strong>
-                </FeedbackBar>
+        <>
+            {!isClosed &&
+                <Outer>
+                    {openFeedback ?
+                        <FeedbackContainer>
+                            <CloseButton onClick={() => {setIsClosed(true)}}>Close x</CloseButton>
+                            {!isLoaded && <Loading><div className="lds-dual-ring"></div></Loading>}
+                            <SurveyMonkeyContainer id="smcx-sdk"></SurveyMonkeyContainer>
+                            <Script
+                                url={formURL}
+                                onLoad={() => setIsLoaded(true)}
+                            />
+                        </FeedbackContainer>
+                        :
+                        <FeedbackBar onClick={() => {setOpenFeedback(true)}} title="Give us some feedback">
+                            This site is currently in <strong>BETA</strong>, help us improve with feedback - <strong>Is there anything wrong with this page?</strong>
+                        </FeedbackBar>
 
+                    }
+                </Outer>
             }
-        </Outer>
+        </>
     )
 }
 
