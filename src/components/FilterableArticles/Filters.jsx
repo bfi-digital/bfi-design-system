@@ -9,14 +9,14 @@ const Outer = styled.nav`
 `
 
 const Filter = styled.button`
-    color: ${theme.primary};
+    color: ${theme.black};
     font-weight: bold;
     border-radius: 100px;
     font-size: 1rem;
     padding: 5px 15px;
     margin-right: 10px;
-    background-color: ${theme.lightest};
-    border: none;
+    background-color: transparent;
+    border: 1px solid ${theme.darkGrey};
     transition: box-shadow .3s;
     cursor: pointer;
     margin-bottom: 10px;
@@ -24,7 +24,8 @@ const Filter = styled.button`
         border: 0;
     }
     &:hover{
-        background-color: ${theme.light}
+        border: 1px solid ${theme.primary};
+        background-color: ${theme.lightest};
     }
     &:focus{
         outline: none;
