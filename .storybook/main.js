@@ -29,21 +29,5 @@ module.exports = {
         config.resolve.extensions.push('.ts', '.tsx');
         return config;
     },
-
-    module: {
-      rules: [
-        {
-          test: /\.(png|jpe?g|gif|svg)$/i,
-          use: [
-            {
-              loader: 'file-loader',
-              options: {
-                name: '[path][name].[ext]',
-              },
-            },
-          ],
-        },
-      ],
-    },
 };
 
