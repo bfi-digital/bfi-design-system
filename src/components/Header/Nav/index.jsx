@@ -232,6 +232,11 @@ const HighlightLink = styled(Link)`
         color: ${theme.dark} !important;
         background: ${theme.grey};
     }
+    &:focus {
+        // border-radius: 7px;
+        box-shadow: ${theme.focus} 0px 0px 0px 4px;
+        outline: none !important;
+    }
 `
 
 const Nav = ({

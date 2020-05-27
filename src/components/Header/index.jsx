@@ -68,6 +68,14 @@ const MobileLogoLink = styled(Link)`
     }
 `
 
+const MobileMenuBuffer = styled.div`
+    width: 90px;
+
+    @media screen and (min-width: ${theme.m}){
+        display: none;
+    }
+`
+
 
 const TopSection = styled.div`
     display: none;
@@ -122,9 +130,6 @@ const SkipLink = styled.a`
         white-space: inherit !important;
         outline: none;
     }
-`
-const MobileMenuBuffer = styled.div`
-    width: 90px;
 `
 
 export const Header = ({

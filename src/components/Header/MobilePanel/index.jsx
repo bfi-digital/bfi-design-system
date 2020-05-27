@@ -23,6 +23,7 @@ const Panel = styled.nav`
     padding: 0px ${theme.horizontalPadding};
     animation: fadeIn 0.1s ease-out;
     overflow-y: scroll;
+    margin-top: 0;
     @media screen and (min-width: ${theme.m}){
         display: none;
     }
@@ -30,6 +31,7 @@ const Panel = styled.nav`
 
 const List = styled.ul`
     list-style: none;
+    margin-top: 0;
     padding-left: 0px;
     &:hover li button{
         color: ${theme.darkGrey};
@@ -37,13 +39,7 @@ const List = styled.ul`
 `
 
 const Item = styled.li`
-    border-bottom: 1px solid ${theme.grey};
-    transition: border-color 0.1s;
-    &:last-of-type{
-        border-bottom: none;
-    }
     &:hover {
-        border-color: ${theme.darkGrey};
         button{
             color: ${theme.black} !important;
         }
@@ -63,16 +59,53 @@ const ItemButton = styled.button`
     width: 100%;
     text-align: left;
     cursor: pointer;
+    
+    &:after {
+        content: "";
+        border-style: solid;
+        border-width: 0.25em 0.25em 0 0;
+        display: inline-block;
+        height: 0.45em;
+        left: 0;
+        position: relative;
+        top: 6px;
+        transform: rotate(45deg);
+        vertical-align: top;
+        width: 0.45em;
+        float: right;
+        margin-right: 15px;
+        transition: all 0.2s;
+    }
+
     &:focus {
         // border-radius: 7px;
-        box-shadow: #ED3732 0px 0px 0px 4px;
+        box-shadow: ${theme.focus} 0px 0px 0px 4px;
         outline: none !important;
+    }
+    &:focus, &:hover {
+        &:after {
+            margin-right: 5px;
+        }
+    }
+
+    &.selected {
+
+        &:after {
+            left: 0.25em;
+            transform: rotate(-135deg);
+            float: left;
+        }
+        &:focus, &:hover {
+            &:after {
+                margin-right: 20px;
+            }
+        }
     }
 `
 
 const ChildList = styled.ul`
     list-style: none;
-    padding-left: 20px;
+    padding-left: 0;
     &:hover a{
         color: ${theme.darkGrey}
     }
@@ -86,34 +119,39 @@ const ChildLink = styled(Link)`
     display: block;
     color: ${theme.black};
     text-decoration: none;
-    padding: 10px 0;
+    padding: 12px 0;
     transition: color 0.1s;
     &:hover{
         color: ${theme.black} !important;
     }
     &:focus {
         // border-radius: 7px;
-        box-shadow: #ED3732 0px 0px 0px 4px;
+        box-shadow: ${theme.focus} 0px 0px 0px 4px;
         outline: none !important;
     }
 `
 
 const QuickLinks = styled.div`
-    margin-top: 25px;
+    margin-top: 15px;
     padding-bottom: 15px;
+    margin-bottom: 10px;
     border-bottom: 1px solid ${theme.black};
 `
 
 const QuickLink = styled(Link)`
-    color: ${theme.dark};
+    color: ${theme.primary};
     font-weight: 700;
     text-decoration: none;
     padding: 10px 0;
     display: block;
     &:focus {
         // border-radius: 7px;
-        box-shadow: #ED3732 0px 0px 0px 4px;
+        box-shadow: ${theme.focus} 0px 0px 0px 4px;
         outline: none !important;
+        color: ${theme.dark};
+    }
+    &:hover {
+        color: ${theme.dark};
     }
 `
 
@@ -135,7 +173,11 @@ const HighlightLink = styled(Link)`
 
     &:hover {
         color: ${theme.dark} !important;
-        background: ${theme.grey};
+    }
+    &:focus {
+        // border-radius: 7px;
+        box-shadow: ${theme.focus} 0px 0px 0px 4px;
+        outline: none !important;
     }
 `
 
@@ -149,33 +191,51 @@ const MobilePanel = ({
 
     return(
         <Panel id="menu-panel" role="region">
-            <QuickLinks>
-                {quickLinks[0] &&
-                    <QuickLink to={quickLinks[0].url}>{quickLinks[0].title}</QuickLink>
-                }
-                {quickLinks[1] &&
-                    <QuickLink to={quickLinks[1].url}>{quickLinks[1].title}</QuickLink>
-                }
-                {quickLinks[2] &&
-                    <QuickLink to={quickLinks[2].url}>{quickLinks[2].title}</QuickLink>
-                }
-            </QuickLinks>
+            {selected === false && 
+                <QuickLinks>
+                    {quickLinks[0] &&
+                        <QuickLink to={quickLinks[0].url}>{quickLinks[0].title}</QuickLink>
+                    }
+                    {quickLinks[1] &&
+                        <QuickLink to={quickLinks[1].url}>{quickLinks[1].title}</QuickLink>
+                    }
+                    {quickLinks[2] &&
+                        <QuickLink to={quickLinks[2].url}>{quickLinks[2].title}</QuickLink>
+                    }
+                </QuickLinks>
+            }
             <List>
                 {navItems.map((navItem, i) =>
                     <Item key={i}>
-                        <ItemButton
-                            aria-controls={i}
-                            aria-expanded={selected === i ? "true" : "false"}
-                            onClick={() => selected === i ? setSelected(false) : setSelected(i)}
-                        >
-                            {navItem.title}
-                        </ItemButton>
+                        {selected === false ?
+                            <ItemButton
+                                aria-controls={i}
+                                aria-expanded={selected === i ? "true" : "false"}
+                                onClick={() => selected === i ? setSelected(false) : setSelected(i)}
+                                className={selected === i ? "selected" : ""}
+                            >
+                                {selected === i ? "Back" : navItem.title}
+                            </ItemButton>
+                            :
+                            <>
+                                {selected === i &&
+                                    <ItemButton
+                                        aria-controls={i}
+                                        aria-expanded="true"
+                                        onClick={() => setSelected(false)}
+                                        className="selected"
+                                    >
+                                        Back
+                                    </ItemButton>
+                                }
+                            </>
+                        }
                         <ChildList id={i}>
                             {selected === i &&
                                 <>
                                     <ChildItem>
                                         <ChildLink to={navItem.url} external={navItem.external}>
-                                            {navItem.title} home
+                                            {navItem.title}
                                         </ChildLink>
                                     </ChildItem>
                                     {navItem.children.map((child, j) =>
