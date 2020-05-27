@@ -151,7 +151,7 @@ export const quickLinksData = [
         url: "/"
     },
     {
-        title: "Join",
+        title: "Join & Support",
         url: "/"
     }
 ]

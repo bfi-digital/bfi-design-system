@@ -17,7 +17,7 @@ const Outer = styled.header`
     margin-bottom: ${props => props.isTransparent ? "-175px" : "0px"};
     position: relative;
     z-index: 999;
-    min-height: 60px;
+    min-height: 50px;
     position: sticky;
     top: 0px;
 
@@ -57,13 +57,14 @@ const LogoLink = styled(Link)`
 `
 
 const MobileLogoLink = styled(Link)`
-    padding: 6px 2px;
+    padding: 0;
     display: block;
     @media screen and (min-width: ${theme.m}){
         display: none;
     }
     img {
-        width: 46px;
+        width: 40px;
+        margin-top: 5px;
     }
 `
 
@@ -122,6 +123,9 @@ const SkipLink = styled.a`
         outline: none;
     }
 `
+const MobileMenuBuffer = styled.div`
+    width: 90px;
+`
 
 export const Header = ({
     navItems,
@@ -172,9 +176,15 @@ export const Header = ({
                 isSticky={isSticky}
             >
                 <Inner>
+                    <MenuButton 
+                        handleClick={() => setOpen(!open)}
+                        open={open}
+                        isWhite={overlay}
+                    />
                     <MobileLogoLink to="/">
                         <Logo src={logo} alt="British Film Institute"/>
                     </MobileLogoLink>
+                    <MobileMenuBuffer />
                     <Nav
                         navItems={navItems}
                         selected={selected}
@@ -182,14 +192,9 @@ export const Header = ({
                         isOverlaid={overlay}
                         isSticky={isSticky}
                     />
-                    <MenuButton 
-                        handleClick={() => setOpen(!open)}
-                        open={open}
-                        isWhite={overlay}
-                    />
                 </Inner>
             </Outer>
-            {open && <MobilePanel navItems={navItems} />}
+            {open && <MobilePanel navItems={navItems} quickLinks={quickLinks} />}
             <div id="content-start"></div>
         </>
     )

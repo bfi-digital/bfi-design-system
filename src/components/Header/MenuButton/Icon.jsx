@@ -3,7 +3,7 @@ import styled from "styled-components"
 import theme from "../../_theme"
 
 const Outer = styled.div`
-    margin-left: 10px;
+    margin-right: 10px;
     width: 15px;
     &:after, 
     &:before, 

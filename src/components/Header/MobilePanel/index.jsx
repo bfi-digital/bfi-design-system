@@ -15,7 +15,7 @@ const Panel = styled.nav`
     z-index: 999;
     position: fixed;
     /* offset header */
-    top: 64px;
+    top: 52px;
     left: 0px;
     width: 100%;
     bottom: 0px;
@@ -100,6 +100,8 @@ const ChildLink = styled(Link)`
 
 const QuickLinks = styled.div`
     margin-top: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid ${theme.black};
 `
 
 const QuickLink = styled(Link)`
@@ -115,14 +117,49 @@ const QuickLink = styled(Link)`
     }
 `
 
+const HighlightContainer = styled.div`
+    width: 100%;
+    margin-bottom: 25px;
+`
+const HighlightLink = styled(Link)`
+    width: 100%;
+    padding: 10px 0;
+    color: ${theme.primary} !important;
+    font-weight: 700;
+    text-decoration: none;
+    display: block;
+    -webkit-transition: background ease 0.3s;
+    -moz-transition: background ease 0.3s;
+    -o-transition: background ease 0.3s;
+    transition: background ease 0.3s;
+
+    &:hover {
+        color: ${theme.dark} !important;
+        background: ${theme.grey};
+    }
+`
+
+
 const MobilePanel = ({
-    navItems
+    navItems,
+    quickLinks
 }) => {
 
     const [ selected, setSelected ] = useState(false)
 
     return(
         <Panel id="menu-panel" role="region">
+            <QuickLinks>
+                {quickLinks[0] &&
+                    <QuickLink to={quickLinks[0].url}>{quickLinks[0].title}</QuickLink>
+                }
+                {quickLinks[1] &&
+                    <QuickLink to={quickLinks[1].url}>{quickLinks[1].title}</QuickLink>
+                }
+                {quickLinks[2] &&
+                    <QuickLink to={quickLinks[2].url}>{quickLinks[2].title}</QuickLink>
+                }
+            </QuickLinks>
             <List>
                 {navItems.map((navItem, i) =>
                     <Item key={i}>
@@ -148,17 +185,17 @@ const MobilePanel = ({
                                             </ChildLink>
                                         </ChildItem>
                                     )}
+                                    { navItem.highlightText && 
+                                        <HighlightContainer>
+                                            <HighlightLink to={navItem.highlightURL}>{navItem.highlightText}</HighlightLink>
+                                        </HighlightContainer>
+                                    }
                                 </>
                             }
                         </ChildList>
                     </Item>
                 )}
             </List>
-            <QuickLinks>
-                {/* todo: need to convert these to be dynamically pulled data from CMS */}
-                <QuickLink to="/">BFI Southbank</QuickLink>
-                <QuickLink to="/">Become a Member</QuickLink>
-            </QuickLinks>
         </Panel>
     )
 }
