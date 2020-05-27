@@ -8,8 +8,8 @@ import { Tag } from "../Tag"
 import { Image } from "../Image"
 import { Text } from "../Text"
 import { LinkSwitch as Link } from "../LinkSwitch"
-import SandSWhite from "./s-and-s-white.png"
-import SandSBlack from "./s-and-s-black.png"
+import sandswhite from "./s-and-s-white.png"
+import sandsblack from "./s-and-s-black.png"
 
 const Outer = styled.div`
     margin: 0 auto;
@@ -99,7 +99,7 @@ export const HeroArticle = ({
                 />
             }
             {brand === "sight-and-sound" &&
-                <BrandLogo className={image1920x1080 ? "with_image" : "without_image"}><img src={image1920x1080 ? SandSWhite : SandSBlack} alt={brand} /></BrandLogo>
+                <BrandLogo className={image1920x1080 ? "with_image" : "without_image"}><img src={image1920x1080 ? sandswhite : sandsblack} alt={brand} /></BrandLogo>
             }
         </ImageContainer>
     </Outer>

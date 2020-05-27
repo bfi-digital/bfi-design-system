@@ -89,6 +89,7 @@ const CallToAction = styled(Link)`
         left: 0;
         width: 100%;
         height: 100%;
+        z-index: 2;
     }
 `
 
@@ -131,7 +132,7 @@ const CategoryTag = styled.div`
     font-weight: 600;
     top: 15px;
     left: 0;
-    z-index: 5;
+    z-index: 1;
 
     @media screen and (min-width: ${theme.m}){
         padding-left: 25px;

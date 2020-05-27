@@ -7,8 +7,8 @@ import parse from "html-react-parser"
 import { FeedbackForm } from "../FeedbackForm"
 import { ImageSponsorLinks } from "../ImageSponsorLinks"
 
-import LotteryLogo from "./lottery-logo.svg"
-import DCMSLogo from "./dcms.svg"
+import lottery from "./lottery-logo.svg"
+import dcms from "./dcms.svg"
 
 import facebook from "./facebook.svg"
 import twitter from "./twitter.svg"
@@ -255,11 +255,11 @@ export const Footer = ({
                         <SubHeading>Supported by</SubHeading>
                         <ImageSponsorLinks images={[
                             {
-                                url: LotteryLogo,
+                                url: lottery,
                                 alt: "The BFI recieves National Lottery funding"
                             },
                             {
-                                url: DCMSLogo,
+                                url: dcms,
                                 alt: "Department for Digital Culture Media & Sport"
                             }
                         ]} />
