@@ -24,7 +24,7 @@ import { Footer } from "../Footer"
 import { Header } from "../Header"
 import { Headline } from "../Headline"
 // import { Hero } from "../Hero"
-import { HeroLanding } from "../HeroLanding"
+import { Hero } from "../Hero"
 // import { Highlights } from "../Highlights"
 import { Image } from "../Image"
 import { ImageGallery } from "../ImageGallery"
@@ -48,7 +48,7 @@ export default {
 export const discoveryPage = () =>
     <>
         <Header navItems={navItems} quickLinks={quickLinksData} overlay={true} />
-        <HeroLanding
+        <Hero
             withHeader
             image1920x1080="https://bfi-prototype.netlify.com/static/media/watch-banner.b01324c4.jpg"
             headline="Discover the world of cinema with the BFI"
@@ -242,7 +242,7 @@ export const discoveryPage = () =>
 export const industryPage = () =>
     <>
         <Header navItems={navItems} quickLinks={quickLinksData} overlay={true} />
-        <HeroLanding
+        <Hero
             withHeader
             image1920x1080="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1410/500/1/2020-03/industry.jpg"
             headline="We support filmmakers and champion films that push boundaries"
@@ -358,7 +358,7 @@ export const industryPage = () =>
 export const educationPage = () =>
     <>
         <Header navItems={navItems} quickLinks={quickLinksData} overlay={true} />
-        <HeroLanding
+        <Hero
             withHeader
             image1920x1080="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1440/670/1/2020-03/education.jpg"
             headline="Learn, teach and research about films, through films"

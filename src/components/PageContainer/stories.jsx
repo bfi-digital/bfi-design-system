@@ -23,7 +23,7 @@ import { FilterableArticles } from "../FilterableArticles"
 import { Footer } from "../Footer"
 import { Header } from "../Header"
 import { Headline } from "../Headline"
-import { Hero } from "../Hero"
+import { HeroPage } from "../HeroPage"
 import { HeroArticle } from "../HeroArticle"
 // import { Highlights } from "../Highlights"
 import { Image } from "../Image"
@@ -126,7 +126,7 @@ export const normalPage = () =>
     <>
         <Header navItems={navItems} quickLinks={quickLinksData} />
         <Wrapper>
-            <Hero 
+            <HeroPage
                 title="Headline goes here"
                 standfirst="God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs. Do you have any idea how long it takes those cups to decompose. Yes, Yes, without the oops! Yes, Yes, without the oops! Drive us out of here!"
                 breadcrumbs={crumbs}
@@ -168,7 +168,7 @@ export const normalPageWithHeroImage = () =>
     <>
         <Header navItems={navItems} quickLinks={quickLinksData} />
         <Wrapper>
-            <Hero 
+            <HeroPage
                 title="Headline goes here"
                 standfirst="God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs. Do you have any idea how long it takes those cups to decompose. Yes, Yes, without the oops! Yes, Yes, without the oops! Drive us out of here!"
                 breadcrumbs={crumbs}
@@ -213,7 +213,7 @@ export const actionPage = () =>
     <>
         <Header navItems={navItems} quickLinks={quickLinksData} />
         <Wrapper>
-            <Hero 
+            <HeroPage
                 title="Development Fund"
                 standfirst="We want to support work that takes risks and does something different. This means we fund projects that can’t find other, commercial finance at development stage."
                 breadcrumbs={crumbs}
@@ -1159,11 +1159,11 @@ export const ArticleSightAndSoundExampleNoImage = () =>
 export const FilmPage = () =>
     <>
         <Header navItems={navItems} quickLinks={quickLinksData}  overlay={true} />
-        <Hero 
+        <HeroPage
             image1920x1080="https://staging.core-cms.bfi.digital/sites/default/files/2020-05/image.jpeg"
-        >
-            <Headline level={0} text="Raging Bull"/>
-        </Hero>
+            title="Raging Bull"
+            standfirst="“Raging Bull is the most painful and heart-rending portrait of jealousy in the cinema – an Othello for our times. Boxing is the arena, not the subject.”<br />Roger Ebert, The Great Movies, 2002"
+        />
         <Wrapper>
             <Actions>
                 <Button to="#">Buy tickets</Button>
@@ -1174,7 +1174,6 @@ export const FilmPage = () =>
             <MainContent>
                 <LeadParagraph text="Starring Robert De Niro as the middleweight boxer Jake La Motta, Scorsese’s biopic is widely acknowledged as one of the greatest films of the 1980s." />
                 <Text>
-                    <p>“Raging Bull is the most painful and heart-rending portrait of jealousy in the cinema – an Othello for our times. Boxing is the arena, not the subject.”<br />Roger Ebert, The Great Movies, 2002</p>
                     <p>Scorsese’s biographical portrait of the 1940s boxing champion Jake La Motta is a study of seething male aggression to rank alongside his 1976 film Taxi Driver. Adapted from La Motta’s memoirs by Paul Schrader and Mardik Martin, the film opens in the early 1960s with an overweight La Motta practising his post-boxing cabaret routine. Through flashbacks we witness the dramas of his time in the ring, his abusive marriages, and his turbulent relationship with his brother and manager Joey (Joe Pesci).</p>
                     <p>The sequences between the ropes are extraordinarily immediate, with Michael Chapman’s mobile black and white cinematography closely attending every blow, and Thelma Schoonmaker’s editing brutally precise and dynamic. Robert De Niro famously gained weight to play the out of shape La Motta of later years.</p>
                     <p>Boxing drama Body and Soul (1947) and Stanley Kubrick’s early documentary Day of the Fight (1951) are among the films that influenced Raging Bull.</p>
