@@ -4,11 +4,10 @@ import styled from "styled-components"
 import { LinkSwitch as Link } from "../../LinkSwitch"
 
 const Wrapper = styled.div`
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 9999;
-    width: 100%;
+    display: none;
+    @media screen and (min-width: ${theme.m}){
+        display: block;
+    }
 `
 const QuickLink = styled(Link)`
     background: ${props => props.isTransparent ? (props.isSticky ? theme.white : "transparent") : theme.white};
@@ -26,12 +25,8 @@ const QuickLink = styled(Link)`
         color: ${props => props.isTransparent ? (!props.isSticky ? theme.grey : theme.dark) : theme.dark};
         background: ${theme.grey};
     }
-`
 
-const Positioner = styled.div`
-    position: absolute;
-    right: 10px;
-    top: 20px;
+    
 `
 
 const QuickLinks = ({links, Inner, isOverlaid, isSticky}) => {
@@ -39,17 +34,15 @@ const QuickLinks = ({links, Inner, isOverlaid, isSticky}) => {
         links ?
             <Wrapper>
                 <Inner>
-                    <Positioner>
-                        {links[0] &&
-                            <QuickLink to={links[0].url} isTransparent={isOverlaid} isSticky={isSticky}>{links[0].title}</QuickLink>
-                        }
-                        {links[1] &&
-                            <QuickLink to={links[1].url} isTransparent={isOverlaid} isSticky={isSticky}>{links[1].title}</QuickLink>
-                        }
-                        {links[2] &&
-                            <QuickLink to={links[2].url} isTransparent={isOverlaid} isSticky={isSticky}>{links[2].title}</QuickLink>
-                        }
-                    </Positioner>
+                    {links[0] &&
+                        <QuickLink to={links[0].url} isTransparent={isOverlaid} isSticky={isSticky}>{links[0].title}</QuickLink>
+                    }
+                    {links[1] &&
+                        <QuickLink to={links[1].url} isTransparent={isOverlaid} isSticky={isSticky}>{links[1].title}</QuickLink>
+                    }
+                    {links[2] &&
+                        <QuickLink to={links[2].url} isTransparent={isOverlaid} isSticky={isSticky}>{links[2].title}</QuickLink>
+                    }
                 </Inner>
             </Wrapper>
             :

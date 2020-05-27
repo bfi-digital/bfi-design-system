@@ -164,13 +164,6 @@ export const Header = ({
                         <Logo src={overlay ? logoWhite : logo} alt="British Film Institute"/>
                     </LogoLink>
                 </Inner>
-
-                <QuickLinks 
-                    links={quickLinks}
-                    Inner={QuickLinksInner} 
-                    isOverlaid={overlay} 
-                    isSticky={isSticky}
-                />
             </TopSection>
             <Outer 
                 ref={ref}
@@ -195,6 +188,12 @@ export const Header = ({
                         selected={selected}
                         setSelected={setSelected}
                         isOverlaid={overlay}
+                        isSticky={isSticky}
+                    />
+                    <QuickLinks 
+                        links={quickLinks}
+                        Inner={QuickLinksInner} 
+                        isOverlaid={overlay} 
                         isSticky={isSticky}
                     />
                 </Inner>
