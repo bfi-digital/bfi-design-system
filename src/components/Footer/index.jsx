@@ -26,8 +26,16 @@ const Inner = styled.div`
     max-width: ${theme.l};
     padding: 0px ${theme.horizontalPadding};
     margin: 0 auto;
+
+    &.dont_restrict {
+        padding: 0px;
+        @media screen and (min-width: ${theme.m}) {
+            padding: 0px ${theme.horizontalPadding};
+        }
+    }
+
     @media screen and (min-width: ${theme.xl + 200}) {
-        max-width: ${theme.xl}
+        max-width: ${theme.xl};
     }
 `
 
@@ -218,7 +226,7 @@ export const Footer = ({
     copyrightLinks
 }) => 
     <>  
-        <Inner>
+        <Inner className="dont_restrict">
             <FeedbackForm />
         </Inner>
         <Outer>
