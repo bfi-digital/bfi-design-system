@@ -133,6 +133,7 @@ export const ArticleGrid = ({
     articles,
     optionalTitle,
     optionalCTALink,
+    optionalCTATitle,
     pageWithSideBar,
     firstHighlighted,
     children
@@ -169,7 +170,7 @@ export const ArticleGrid = ({
             </Articles>
         }
         { optionalCTALink &&
-            <CentredButton to={optionalCTALink}>See more articles</CentredButton>
+            <CentredButton to={optionalCTALink}>{optionalCTATitle ? optionalCTATitle : "See more articles"}</CentredButton>
         }
         {children}
     </Outer>
