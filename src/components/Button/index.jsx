@@ -133,9 +133,9 @@ export const Button = ({
     title,
     ...props
 }) => {
-    if(level === 3) return <TertiaryButton title={title ? title : children} {...props}>{children}</TertiaryButton>
-    if(level === 2) return <SecondaryButton title={title ? title : children} {...props}>{children}</SecondaryButton>
-    return <PrimaryButton title={title ? title : children} {...props}>{children}</PrimaryButton>
+    if(level === 3) return <TertiaryButton title={title ? title : false} {...props}>{children}</TertiaryButton>
+    if(level === 2) return <SecondaryButton title={title ? title : false} {...props}>{children}</SecondaryButton>
+    return <PrimaryButton title={title ? title : false} {...props}>{children}</PrimaryButton>
 }
 
 Button.propTypes = {
