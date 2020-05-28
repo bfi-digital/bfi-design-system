@@ -10,15 +10,15 @@ const Outer = styled.section`
     width: 100%;
     max-width: calc(${theme.xl} + 125px);
     position: relative;
-    height: 40vh;
-    min-height: 200px;
+    height: auto;
+    min-height: 40vh;
     padding-top: ${props => props.withHeader ? "64px" : "0px"};
     background-image: url("${props => props.image}");
     background-size: cover;
     background-position: center center;
     display: flex;
     align-items: flex-end;
-    margin-top: 175px;
+    margin-top: ${props => props.withHeader ? "175px" : "0px"};
 
     h1{
         color: ${theme.white};

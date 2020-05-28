@@ -33,8 +33,38 @@ The Hero uses the featured image for a background, and has a white H1 for the ti
         <>
             <Header navItems={navItems} quickLinks={quickLinksData} overlay={true} />
             <Hero 
+                withHeader
                 image="https://bfi-prototype.netlify.com/static/media/watch-banner.b01324c4.jpg"
                 headline="Watch a new film, rediscover your old favourites, and get inspired." 
+            />
+        </>
+    </Story>
+</Preview>
+
+
+<Preview>
+    <Story name="Short Title">
+        <>
+            <Header navItems={navItems} quickLinks={quickLinksData} overlay={true} />
+            <Hero 
+                withHeader
+                image="https://bfi-prototype.netlify.com/static/media/watch-banner.b01324c4.jpg"
+                headline="Watch a new film" 
+            />
+        </>
+    </Story>
+</Preview>
+
+
+
+<Preview>
+    <Story name="Extra long title">
+        <>
+            <Header navItems={navItems} quickLinks={quickLinksData} overlay={true} />
+            <Hero 
+                withHeader
+                image="https://bfi-prototype.netlify.com/static/media/watch-banner.b01324c4.jpg"
+                headline="Watch a new film, rediscover your old favourites, and get inspired. Watch a new film, rediscover your old favourites, and get inspired." 
             />
         </>
     </Story>
