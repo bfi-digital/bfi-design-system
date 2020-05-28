@@ -160,7 +160,7 @@ export const ArticleCard = ({
         <PageImageContainer>
             <PageImage className="image" imageSrc={image480x270} alt={imageAltText} />
         </PageImageContainer>
-        <Headline level={4} text={title} />
+        <Headline level={7} text={title} />
         <Meta>
             <Date>{date}</Date>
             {author && <Author>By {author}</Author>}

@@ -200,7 +200,7 @@ export const NewsletterSignUp = ({
 }) => {
     return(
         <Outer>
-            <Headline level={3} text={newsletters[newsletterOption].title} />
+            <Headline level={6} text={newsletters[newsletterOption].title} />
             <p>{newsletters[newsletterOption].desc}</p>
             <NewsletterForm className="js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id={newsletters[newsletterOption].form}>
                 <NewsletterLabel>

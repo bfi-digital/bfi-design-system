@@ -167,7 +167,7 @@ export const ArticleCardHighlighted = ({
             type && <CategoryTag>{type}</CategoryTag>
         }
         <Content withCategory={category ? true : type ? true : false}>
-            <Headline level={4} text={title} />
+            <Headline level={7} text={title} />
             {standfirst && 
                 <Standfirst>{parse(standfirst)}</Standfirst>
             }

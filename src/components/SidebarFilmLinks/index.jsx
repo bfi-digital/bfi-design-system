@@ -25,7 +25,7 @@ export const SidebarFilmLinks = ({
     <Outer>
         {
             blockTitle &&
-                <Headline level={4} text={blockTitle} />
+                <Headline level={7} text={blockTitle} />
         }
         {films &&
             <List>

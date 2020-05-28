@@ -58,6 +58,20 @@ const H3 = styled.h3`
     }
 `
 
+const H3Fake = styled.p`
+    color: ${theme.black};
+    font-weight: 700;
+    font-size: 1.4375rem;
+    margin-block-start: 1.5em;
+    margin-block-end: 0.5em;
+    line-height: 1.3;
+    margin-top: 0;
+
+    @media screen and (min-width: ${theme.xl}){
+        font-size: 1.6875rem;
+    }
+`
+
 const H4 = styled.h4`
     font-family: "Open Sans";
     color: ${theme.black};
@@ -65,6 +79,22 @@ const H4 = styled.h4`
     font-size: 1rem;
     margin-bottom: 10px;
     line-height: 1.3;
+
+    @media screen and (min-width: ${theme.m}){
+        font-size: 1.125rem;
+    }
+    @media screen and (min-width: ${theme.xl}){
+        font-size: 1.563rem;
+    }
+`
+const H4Fake = styled.p`
+    font-family: "Open Sans";
+    color: ${theme.black};
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    line-height: 1.3;
+    margin-top: 0;
 
     @media screen and (min-width: ${theme.m}){
         font-size: 1.125rem;
@@ -99,6 +129,8 @@ export const Headline = ({
     if (level === 3) return <H3>{text}</H3>
     if (level === 4) return <H4>{text}</H4>
     if (level === 5) return <H5>{text}</H5>
+    if (level === 6) return <H3Fake>{text}</H3Fake>
+    if (level === 7) return <H4Fake>{text}</H4Fake>
     return null
 }
 

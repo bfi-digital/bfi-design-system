@@ -49,7 +49,7 @@ export const FilmShowing = ({
     times
 }) =>
     <Outer>
-        {name && <Headline level={4} text={name}/>}
+        {name && <Headline level={7} text={name}/>}
         <Date>{date}</Date>
         <Times>
             {times.map((time, i) =>

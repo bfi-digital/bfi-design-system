@@ -25,7 +25,7 @@ export const FilmShowingGrid = ({
 }) =>
     <>
         {title &&
-            <Headline level={3} text={title} />
+            <Headline level={6} text={title} />
         }
         <Outer>
             {showings.map(showing =>

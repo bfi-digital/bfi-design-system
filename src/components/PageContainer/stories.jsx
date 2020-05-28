@@ -1158,11 +1158,11 @@ export const ArticleSightAndSoundExampleNoImage = () =>
 
 export const FilmPage = () =>
     <>
-        <Header navItems={navItems} quickLinks={quickLinksData}  overlay={true} />
+        <Header navItems={navItems} quickLinks={quickLinksData} />
         <HeroPage
             image1920x1080="https://staging.core-cms.bfi.digital/sites/default/files/2020-05/image.jpeg"
             title="Raging Bull"
-            standfirst="“Raging Bull is the most painful and heart-rending portrait of jealousy in the cinema – an Othello for our times. Boxing is the arena, not the subject.”<br />Roger Ebert, The Great Movies, 2002"
+            standfirst="“Raging Bull is the most painful and heart-rending portrait of jealousy in the cinema – an Othello for our times. Boxing is the arena, not the subject.” Roger Ebert, The Great Movies, 2002"
         />
         <Wrapper>
             <Actions>

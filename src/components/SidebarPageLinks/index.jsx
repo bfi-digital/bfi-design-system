@@ -24,7 +24,7 @@ export const SidebarPageLinks = ({
 }) =>
     <Outer>
         { blockTitle &&
-            <Headline level={4} text={blockTitle} />
+            <Headline level={7} text={blockTitle} />
         }
         {links &&
             <List>
