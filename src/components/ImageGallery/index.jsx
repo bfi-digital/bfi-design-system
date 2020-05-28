@@ -209,7 +209,6 @@ export const ImageGallery = ({
 }) => {
     const [ openImage, setOpenImage ] = useState(0)
     const leftPress = useKeyPress("ArrowLeft")
-    const tabPress = useKeyPress("ArrowLeft")
     const rightPress = useKeyPress("ArrowRight")
     
     useEffect(() => {
