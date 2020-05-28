@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react"
 import styled, { createGlobalStyle } from "styled-components"
 import theme from "../_theme"
 import { Dialog } from "@reach/dialog"
-import VisuallyHidden from "@reach/visually-hidden"
 import PropTypes from "prop-types"
 
 const DialogStyles = createGlobalStyle`
@@ -40,7 +39,7 @@ const DialogStyles = createGlobalStyle`
         display: flex;
         justify-content: center;
         align-items: center;
-        animation: fadeIn 0.1s ease-out; 
+        animation: fadeIn 0.2s ease-out; 
         z-index: 9999;
         &:hover {
             cursor: zoom-out;
@@ -51,7 +50,8 @@ const DialogStyles = createGlobalStyle`
         outline: none;
         z-index: 1;
         display: inline-block;
-        animation: fadeGrow 0.1s ease-out; 
+        animation: fadeGrow 0.2s ease-out; 
+        position: relative;
     }
 `
 
@@ -154,6 +154,27 @@ const BigImage = styled.img`
     }
 `
 
+const CloseButton = styled.button`
+    position: absolute; 
+    top: 0;
+    right: -32px;
+    background: none;
+    border: none;
+    color: ${theme.white};
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 30px;
+    cursor: zoom-out;
+
+    &:hover {
+        opacity: 0.7;
+    }
+    &:focus-within {
+        outline: none;
+        border-bottom: solid 4px ${theme.focus};
+    }
+`
+
 const useKeyPress = function(targetKey) {
     const [keyPressed, setKeyPressed] = useState(false)
   
@@ -188,6 +209,7 @@ export const ImageGallery = ({
 }) => {
     const [ openImage, setOpenImage ] = useState(0)
     const leftPress = useKeyPress("ArrowLeft")
+    const tabPress = useKeyPress("ArrowLeft")
     const rightPress = useKeyPress("ArrowRight")
     
     useEffect(() => {
@@ -231,9 +253,6 @@ export const ImageGallery = ({
                     isOpen={openImage > 0 ? true : false} 
                     onDismiss={() => setOpenImage(0)}
                 >
-                    <VisuallyHidden>
-                        <button onClick={() => setOpenImage(0)}>Close</button>
-                    </VisuallyHidden>
                     <BigImage
                         itemprop="image"
                         src={images[openImage == 0 ? openImage : (openImage-1)].url}
@@ -245,6 +264,8 @@ export const ImageGallery = ({
                     {images[openImage == 0 ? openImage : (openImage-1)].copyright &&
                         <Small itemprop="copyrightHolder" white={true}>&copy; {images[openImage == 0 ? openImage : (openImage-1)].copyright}</Small>
                     }
+                    <CloseButton title="Close image" onClick={() => setOpenImage(0)}>x</CloseButton>
+
 
                 </Dialog>
             </>
