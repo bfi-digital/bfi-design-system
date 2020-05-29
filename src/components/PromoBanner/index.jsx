@@ -79,16 +79,20 @@ const Outer = styled.section`
     }
 
     h2::selection {
-        background: ${props => props.colorScheme === 1 ? theme.focus : theme.light} !important;
+        background: ${props => props.colorScheme <= 1 ? theme.primary : theme.light} !important;
+        color: ${props => props.colorScheme <= 1 ? theme.white : theme.black} !important;
     }
     p::selection {
-        background: ${props => props.colorScheme === 1 ? theme.focus : theme.light} !important;
+        background: ${props => props.colorScheme <= 1 ? theme.primary : theme.light} !important;
+        color: ${props => props.colorScheme <= 1 ? theme.white : theme.black} !important;
     }
     h2::-moz-selection {
-        background: ${props => props.colorScheme === 1 ? theme.focus : theme.light} !important;
+        background: ${props => props.colorScheme <= 1 ? theme.primary : theme.light} !important;
+        color: ${props => props.colorScheme <= 1 ? theme.white : theme.black} !important;
     }
     p::-moz-selection {
-        background: ${props => props.colorScheme === 1 ? theme.focus : theme.light} !important;
+        background: ${props => props.colorScheme <= 1 ? theme.primary : theme.light} !important;
+        color: ${props => props.colorScheme <= 1 ? theme.white : theme.black} !important;
     }
 `
 
