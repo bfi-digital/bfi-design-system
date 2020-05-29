@@ -77,6 +77,19 @@ const Outer = styled.section`
             display: none;
         }
     }
+
+    h2::selection {
+        background: ${props => props.colorScheme === 1 ? theme.focus : theme.light} !important;
+    }
+    p::selection {
+        background: ${props => props.colorScheme === 1 ? theme.focus : theme.light} !important;
+    }
+    h2::-moz-selection {
+        background: ${props => props.colorScheme === 1 ? theme.focus : theme.light} !important;
+    }
+    p::-moz-selection {
+        background: ${props => props.colorScheme === 1 ? theme.focus : theme.light} !important;
+    }
 `
 
 const Inner = styled.div`
