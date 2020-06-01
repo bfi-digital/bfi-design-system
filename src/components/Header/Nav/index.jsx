@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import { LinkSwitch as Link } from "../../LinkSwitch"
 import theme from "../../_theme"
 import styled from "styled-components"
@@ -324,7 +324,7 @@ const Nav = ({
                             >
                                 {navItem.title}
                             </ItemLink>
-                            <OpenMenuButton onClick={() => selected === i ? setSelected(false) : setSelected(i)} tabindex="1">{selected === i ? "Close" : "Open"} submenu</OpenMenuButton>
+                            <OpenMenuButton onClick={() => selected === i ? setSelected(false) : setSelected(i)}>{selected === i ? "Close" : "Open"} submenu</OpenMenuButton>
 
                             {selected === i &&
                                 <ChildBar>

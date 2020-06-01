@@ -227,7 +227,7 @@ export const Image = ({
                         />       
                         {caption && <Figcaption itemprop="caption description" white={true}>{caption}</Figcaption>}
                         {copyright && <Small itemprop="copyrightHolder" white={true} >&copy; {copyright}</Small>}
-                        <CloseButton title="Close image" onClick={() => setOpenImage(false)}>x</CloseButton>
+                        <CloseButton title="Close image" onClick={() => setOpenImage(false)}>&times;</CloseButton>
                     </Dialog>
                 </>
             }

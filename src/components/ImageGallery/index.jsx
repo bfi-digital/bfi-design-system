@@ -154,17 +154,15 @@ const BigImage = styled.img`
     }
 `
 
-const CloseButton = styled.button`
+const buttonStyles = `
     position: absolute; 
-    top: 0;
-    right: -32px;
     background: none;
     border: none;
     color: ${theme.white};
     font-weight: 500;
-    font-size: 30px;
-    line-height: 30px;
-    cursor: zoom-out;
+    font-size: 60px;
+    line-height: 60px;
+    cursor: pointer;
 
     &:hover {
         opacity: 0.7;
@@ -173,6 +171,24 @@ const CloseButton = styled.button`
         outline: none;
         border-bottom: solid 4px ${theme.focus};
     }
+`
+const LeftButton = styled.button`
+    ${buttonStyles}
+    left: -35px;
+    top: calc(50% - 30px);
+`
+const RightButton = styled.button`
+    ${buttonStyles}
+    right: -35px;
+    top: calc(50% - 30px);
+`
+
+
+const CloseButton = styled.button`
+    ${buttonStyles}
+    top: -40px;
+    right: -55px;
+    cursor: zoom-out;
 `
 
 const useKeyPress = function(targetKey) {
@@ -211,23 +227,30 @@ export const ImageGallery = ({
     const leftPress = useKeyPress("ArrowLeft")
     const rightPress = useKeyPress("ArrowRight")
     
-    useEffect(() => {
-        if (leftPress && openImage) {
+    function moveLeft(clicked) { 
+        if ((leftPress || clicked) && openImage) {
             if(openImage == 1) {
                 setOpenImage(images.length)
             } else {
                 setOpenImage(openImage-1)
             }
         }
-    }, [leftPress])
-    useEffect(() => {
-        if (rightPress && openImage) {
+    }
+    function moveRight(clicked) {
+        if ((rightPress || clicked) && openImage) {
             if(openImage == images.length) {
                 setOpenImage(1)
             } else {
                 setOpenImage(openImage+1)
             }
         }
+    }
+
+    useEffect(() => {
+        moveLeft()
+    }, [leftPress])
+    useEffect(() => {
+        moveRight()
     }, [rightPress])
 
     return(
@@ -252,6 +275,7 @@ export const ImageGallery = ({
                     isOpen={openImage > 0 ? true : false} 
                     onDismiss={() => setOpenImage(0)}
                 >
+                    <LeftButton title="Previous image" onClick={() => moveLeft(true)}>&lsaquo;</LeftButton>
                     <BigImage
                         itemprop="image"
                         src={images[openImage == 0 ? openImage : (openImage-1)].url}
@@ -263,7 +287,9 @@ export const ImageGallery = ({
                     {images[openImage == 0 ? openImage : (openImage-1)].copyright &&
                         <Small itemprop="copyrightHolder" white={true}>&copy; {images[openImage == 0 ? openImage : (openImage-1)].copyright}</Small>
                     }
-                    <CloseButton title="Close image" onClick={() => setOpenImage(0)}>x</CloseButton>
+                    <RightButton title="Next image" onClick={() => moveRight(true)}>&rsaquo;</RightButton>
+
+                    <CloseButton title="Close image" onClick={() => setOpenImage(0)}>&times;</CloseButton>
                 </Dialog>
             </>
         </Outer>
