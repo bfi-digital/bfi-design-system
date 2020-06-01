@@ -54,7 +54,7 @@ export const discoveryPage = () =>
             headline="Discover the world of cinema with the BFI"
         />
         <Wrapper>
-            <MainContent>
+            <MainContent role="main">
                 <PromoBanner 
                     colorScheme={1}
                     headline="Become a BFI member"
@@ -248,7 +248,7 @@ export const industryPage = () =>
             headline="We support filmmakers and champion films that push boundaries"
         />
         <Wrapper>
-            <MainContent>
+            <MainContent role="main">
                 <PromoBanner 
                     colorScheme={1}
                     headline="Get funding and support"
@@ -364,7 +364,7 @@ export const educationPage = () =>
             headline="Learn, teach and research about films, through films"
         />
         <Wrapper>
-            <MainContent>
+            <MainContent role="main">
                 <Headline
                     level={2}
                     text="Resources and opportunities"
@@ -449,7 +449,7 @@ export const serviceListPageExample = () =>
     <>
         <Header navItems={navItems} quickLinks={quickLinksData}/>
         <Wrapper>
-            <MainContent>
+            <MainContent role="main">
                 <Breadcrumbs 
                     breadcrumbs={crumbs} 
                 />
@@ -512,7 +512,7 @@ export const articlePostListPageExample = () =>
     <>
         <Header navItems={navItems} quickLinks={quickLinksData}/>
         <Wrapper>
-            <MainContent>
+            <MainContent role="main">
                 <Headline 
                     level={1} 
                     text="News &amp; Articles"
@@ -594,7 +594,7 @@ export const everyComponent = () =>
     <>
         <Header navItems={navItems} quickLinks={quickLinksData}/>
         <Wrapper>
-            <MainContent>
+            <MainContent role="main">
                 <Breadcrumbs 
                     breadcrumbs={crumbs} 
                 />

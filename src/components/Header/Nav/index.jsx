@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { LinkSwitch as Link } from "../../LinkSwitch"
 import theme from "../../_theme"
 import styled from "styled-components"
@@ -225,6 +225,7 @@ const Logo = styled.img`
 const HighlightContainer = styled.div`
     padding: 0 15px;
     width: 100%;
+    padding-right: 75px;
 `
 const HighlightLink = styled(Link)`
     padding: 25px 15px;
@@ -252,78 +253,118 @@ const HighlightLink = styled(Link)`
     }
 `
 
+const OpenMenuButton = styled.button`
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    clip: rect(0 0 0 0) !important;
+    -webkit-clip-path: inset(50%) !important;
+    clip-path: inset(50%) !important;
+    white-space: nowrap !important;
+    padding: 10px 25px;
+    font-weight: 700;
+    display: block;
+    text-decoration: none;
+    z-index: 99999;
+    color: ${theme.primary};
+    background: ${theme.white};
+    border: 1px solid ${theme.darkGrey};
+    margin-left: -8px;
+    
+    &:focus {
+        position: absolute !important;
+        width: auto !important;
+        height: auto !important;
+        overflow: visible !important;
+        clip: auto !important;
+        -webkit-clip-path: none !important;
+        clip-path: none !important;
+        white-space: inherit !important;
+        outline: none;
+    }
+`
+
 const Nav = ({
     navItems,
     selected,
     setSelected,
     isOverlaid,
     isSticky
-}) => 
-    <Outer>
-        <List>
-            {isSticky && 
-                <Link to="/">
-                    <BlackLogo><Logo src={logo} alt="British Film Institute"/></BlackLogo>
-                </Link>
-            }
-            {navItems.map((navItem, i) => {
-                const size = Math.ceil(navItem.children.length / 3)
-                return(
-                    <Item 
-                        key={i}
-                    >
-                        <ItemLink
-                            onMouseEnter={() => setSelected(i)}
-                            onFocus={() => setSelected(i)}
-                            aria-haspopup="true"
-                            to={navItem.url} 
-                            external={navItem.external}
-                            active={navItem.active}
-                            hovered={selected === i}
-                            // role="menuitem"
-                            isWhite={isOverlaid}
-                            isSticky={isSticky}
+}) => {
+
+
+    return(
+        <Outer>
+            <List>
+                {isSticky && 
+                    <Link to="/">
+                        <BlackLogo><Logo src={logo} alt="British Film Institute"/></BlackLogo>
+                    </Link>
+                }
+                {navItems.map((navItem, i) => {
+                    const size = Math.ceil(navItem.children.length / 3)
+                    return(
+                        <Item 
+                            key={i}
                         >
-                            {navItem.title}
-                        </ItemLink>
-                        {selected === i &&
-                            <ChildBar>
-                                <ChildList id={i}>
-                                    <InnerContainer>
-                                        <Column className={"row_"+size}>
-                                            {navItem.children.slice(0, size).map((child, j) =>
-                                                <ChildLink key={j} to={child.url}>
-                                                    <span>{child.title}</span>
-                                                </ChildLink>
-                                            )}
-                                        </Column>
-                                        <Column className={"row_"+size}>
-                                            {navItem.children.slice(size, (size*2)).map((child, j) =>
-                                                <ChildLink key={j} to={child.url}>
-                                                    <span>{child.title}</span>
-                                                </ChildLink>
-                                            )}
-                                        </Column>
-                                        <Column className={"row_"+size}>
-                                            {navItem.children.slice((size*2), (size*3)).map((child, j) =>
-                                                <ChildLink key={j} to={child.url}>
-                                                    <span>{child.title}</span>
-                                                </ChildLink>
-                                            )}
-                                        </Column>
-                                        { navItem.highlightText && 
-                                            <HighlightContainer>
-                                                <HighlightLink to={navItem.highlightURL}>{navItem.highlightText}</HighlightLink>
-                                            </HighlightContainer>
-                                        }
-                                    </InnerContainer>
-                                </ChildList>
-                            </ChildBar>
-                        }
-                    </Item>
-                )
-            })}
-        </List>
-    </Outer>
+                            <ItemLink
+                                onMouseEnter={() => setSelected(i)}
+                                onFocus={() => setSelected(false)}
+                                aria-haspopup="true"
+                                aria-expanded={selected === i}
+                                to={navItem.url} 
+                                external={navItem.external}
+                                active={navItem.active}
+                                hovered={selected === i}
+                                // role="menuitem"
+                                isWhite={isOverlaid}
+                                isSticky={isSticky}
+                            >
+                                {navItem.title}
+                            </ItemLink>
+                            <OpenMenuButton onClick={() => selected === i ? setSelected(false) : setSelected(i)} tabindex="1">{selected === i ? "Close" : "Open"} submenu</OpenMenuButton>
+
+                            {selected === i &&
+                                <ChildBar>
+                                    <ChildList id={i}>
+                                        <InnerContainer>
+                                            <Column className={"row_"+size}>
+                                                {navItem.children.slice(0, size).map((child, j) =>
+                                                    <ChildLink key={j} to={child.url}>
+                                                        <span>{child.title}</span>
+                                                    </ChildLink>
+                                                )}
+                                            </Column>
+                                            <Column className={"row_"+size}>
+                                                {navItem.children.slice(size, (size*2)).map((child, j) =>
+                                                    <ChildLink key={j} to={child.url}>
+                                                        <span>{child.title}</span>
+                                                    </ChildLink>
+                                                )}
+                                            </Column>
+                                            <Column className={"row_"+size}>
+                                                {navItem.children.slice((size*2), (size*3)).map((child, j) =>
+                                                    <ChildLink key={j} to={child.url}>
+                                                        <span>{child.title}</span>
+                                                    </ChildLink>
+                                                )}
+                                            </Column>
+                                            { navItem.highlightText && 
+                                                <HighlightContainer>
+                                                    <HighlightLink to={navItem.highlightURL}>{navItem.highlightText}</HighlightLink>
+                                                </HighlightContainer>
+                                            }
+                                        </InnerContainer>
+                                    </ChildList>
+                                </ChildBar>
+                            }
+                        </Item>
+                    )
+                })}
+            </List>
+        </Outer>
+    )
+}
 
 export default Nav

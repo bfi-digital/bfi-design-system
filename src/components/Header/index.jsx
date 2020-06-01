@@ -172,6 +172,8 @@ export const Header = ({
                 }}
                 isTransparent={overlay}
                 isSticky={isSticky}
+                role="navigation" 
+                aria-label="Main"
             >
                 <Inner>
                     <MenuButton 
@@ -198,7 +200,7 @@ export const Header = ({
                     />
                 </Inner>
             </Outer>
-            {open && <MobilePanel navItems={navItems} quickLinks={quickLinks} />}
+            {open && <MobilePanel navItems={navItems} quickLinks={quickLinks} role="navigation" aria-label="Mobile" />}
             <div id="content-start"></div>
         </>
     )
