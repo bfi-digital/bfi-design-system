@@ -271,7 +271,7 @@ const OpenMenuButton = styled.button`
     background: ${theme.white};
     border: 1px solid ${theme.darkGrey};
     margin-left: -8px;
-    
+
     &:focus {
         position: absolute !important;
         width: auto !important;
@@ -285,6 +285,7 @@ const OpenMenuButton = styled.button`
     }
 `
 
+
 const Nav = ({
     navItems,
     selected,
@@ -295,7 +296,7 @@ const Nav = ({
 
 
     return(
-        <Outer>
+        <Outer data-tracking="header-navigation" role="navigation" aria-label="Main">
             <List>
                 {isSticky && 
                     <Link to="/">

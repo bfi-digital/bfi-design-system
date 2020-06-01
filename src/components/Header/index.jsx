@@ -172,8 +172,6 @@ export const Header = ({
                 }}
                 isTransparent={overlay}
                 isSticky={isSticky}
-                role="navigation" 
-                aria-label="Main"
             >
                 <Inner>
                     <MenuButton 

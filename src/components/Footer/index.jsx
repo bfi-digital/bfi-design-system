@@ -159,7 +159,7 @@ const Copyright = styled.p`
     }
 `
 
-const LinkContainer = styled.div `
+const LinkContainer = styled.nav`
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -231,7 +231,7 @@ export const Footer = ({
         <Inner className="dont_restrict">
             <FeedbackForm />
         </Inner>
-        <Outer>
+        <Outer> 
             <TopRow>
                 <Inner className="container">
                     {menus.map(menu =>
@@ -242,7 +242,7 @@ export const Footer = ({
                                 <Heading>{menu.title}</Heading>
                             }
                             {menu.children.map(menuItem =>
-                                <LinkContainer key={menuItem.id}>
+                                <LinkContainer key={menuItem.id} data-tracking="footer-navigation" role="navigation" aria-label="Footer">
                                     <MenuItem to={menuItem.url}>{menuItem.title}</MenuItem>    
                                 </LinkContainer>
                             )}
