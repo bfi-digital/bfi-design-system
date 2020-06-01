@@ -108,7 +108,8 @@ export const HeroArticle = ({
                                 brandLogoInfo[0].overlayURL  
                                 : 
                                 brandLogoInfo[0].backgroundURL
-                            } alt={brandLogoInfo[0].alt} />
+                        } 
+                        alt={brandLogoInfo[0].alt} />
                     </BrandLogo>
                 } 
             </ImageContainer>

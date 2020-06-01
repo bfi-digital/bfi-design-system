@@ -3441,14 +3441,6 @@ Array [
           </a>
         </div>
       </div>
-      <div
-        className="sc-hqyNC dzYdVU"
-      >
-        <img
-          alt=""
-          src="test-file-stub"
-        />
-      </div>
     </div>
   </div>,
   <div
@@ -13264,14 +13256,6 @@ Array [
           HELP MUSICIANS, directed by Thomas Guthrie
         </small>
       </figure>
-      <div
-        className="sc-bmyXtO jIhMkF with_image"
-      >
-        <img
-          alt="sight-and-sound"
-          src="test-file-stub"
-        />
-      </div>
     </div>
   </div>,
   <div
@@ -14269,16 +14253,7 @@ Array [
     </div>
     <div
       className="sc-iGrrsa fGwCLs"
-    >
-      <div
-        className="sc-bmyXtO jIhMkF without_image"
-      >
-        <img
-          alt="sight-and-sound"
-          src="test-file-stub"
-        />
-      </div>
-    </div>
+    />
   </div>,
   <div
     className="sc-gpHHfC hRBoHV"
@@ -22189,14 +22164,6 @@ Array [
         </a>
       </div>
     </div>
-    <div
-      className="sc-hqyNC dzYdVU"
-    >
-      <img
-        alt=""
-        src="test-file-stub"
-      />
-    </div>
   </div>,
 ]
 `;
@@ -22249,14 +22216,6 @@ Array [
           Return to home
         </a>
       </div>
-    </div>
-    <div
-      className="sc-hqyNC dzYdVU"
-    >
-      <img
-        alt=""
-        src="test-file-stub"
-      />
     </div>
   </div>,
 ]
