@@ -18,30 +18,34 @@ Due to this component requiring connection with the front end framework to pull 
 <Preview>
     <Story name="All articles">
         <FilterableArticles
-            parameter="type"
             filters={[
                 {
-                    value: "review",
+                    url: "/",
+                    label: "All",
+                    currentlyActive: true
+                },
+                {
+                    url: "/",
                     label: "Review"
                 },
                 {
-                    value: "video",
+                    url: "/",
                     label: "Video"
                 },
                 {
-                    value: "opinion",
+                    url: "/",
                     label: "Opinion"
                 },
                 {
-                    value: "recommendations",
+                    url: "/",
                     label: "Recommendations"
                 },
                 {
-                    value: "long-read",
+                    url: "/",
                     label: "Long Read"
                 },
                 {
-                    value: "interviews",
+                    url: "/",
                     label: "Interviews"
                 }
             ]}

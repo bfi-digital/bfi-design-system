@@ -519,30 +519,34 @@ export const articlePostListPageExample = () =>
                 />
 
                 <FilterableArticles
-                    parameter="category"
                     filters={[
                         {
-                            value: "review",
+                            url: "/",
+                            label: "All",
+                            currentlyActive: true
+                        },
+                        {
+                            url: "/",
                             label: "Review"
                         },
                         {
-                            value: "video",
+                            url: "/",
                             label: "Video"
                         },
                         {
-                            value: "opinion",
+                            url: "/",
                             label: "Opinion"
                         },
                         {
-                            value: "recommendations",
+                            url: "/",
                             label: "Recommendations"
                         },
                         {
-                            value: "long-read",
+                            url: "/",
                             label: "Long Read"
                         },
                         {
-                            value: "interviews",
+                            url: "/",
                             label: "Interviews"
                         }
                     ]}

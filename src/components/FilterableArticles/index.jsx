@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { ArticleGrid } from "../ArticleGrid"
-import { Filters } from "./Filters"
+import { FilterLinks } from "../FilterLinks"
 import { Button } from "../Button"
 import PropTypes from "prop-types"
 
@@ -18,9 +18,7 @@ const CentredButton = styled(Button)`
 
 export const FilterableArticles = ({
     filters,
-    parameter,
     articles,
-    allAction,
     limit,
     includeHighlight,
     internalTitle,
@@ -32,11 +30,12 @@ export const FilterableArticles = ({
         <Outer>
             {!limit ?
                 <>
-                    <Filters 
+                    {/* <Filters 
                         filters={filters} 
                         parameter={parameter}
                         allAction={allAction}
-                    />
+                    /> */}
+                    <FilterLinks links={filters} />
                     {articles && articles.length > 0 ?
                         <ArticleGrid articles={articles} firstHighlighted={includeHighlight} optionalTitle={internalTitle} optionalCTALink={internalLink}>
                             {loadMore && <CentredButton href="#" onClick={loadMore}>Load more</CentredButton>}
