@@ -8,8 +8,7 @@ import { Tag } from "../Tag"
 import { Image } from "../Image"
 import { Text } from "../Text"
 import { LinkSwitch as Link } from "../LinkSwitch"
-import sandswhite from "./s-and-s-white.png"
-import sandsblack from "./s-and-s-black.png"
+
 
 const Outer = styled.div`
     margin: 0 auto;
@@ -62,48 +61,60 @@ export const HeroArticle = ({
     categoryLink,
     date,
     authors,
-    brand
-}) =>
-    <Outer>
-        <Meta>
-            {category && <Tag link={categoryLink}>{category}</Tag>}
-            {title && <Headline level={1} text={title}/>}
-            {standfirst && <LeadParagraph text={standfirst}/>}
-            <LowerContent>
-                <Text>
-                    {date && <span>{date}</span>}
-                    {authors &&
-                        authors.length > 0 &&
-                            <>
-                                {authors.length === 1 ?
-                                    <span> by <a href={authors[0].url}>{authors[0].name}</a></span>
-                                    :
-                                    <p>
-                                        By&nbsp;
-                                        {authors.map((author, index) =>
-                                            <><Link key={`author_${index}`} to={author.url}>{author.name}</Link>{(index < (authors.length-1) ? ", " : "")}</>
-                                        )}
-                                    </p>
-                                }
-                            </>
-                    }
-                </Text>
-            </LowerContent>
-        </Meta>
-        <ImageContainer>
-            {image1920x1080 &&
-                <Image
-                    alt={imageAltText}
-                    src={image1920x1080}
-                    copyright={imageCopyright}
-                />
-            }
-            {brand === "sight-and-sound" &&
-                <BrandLogo className={image1920x1080 ? "with_image" : "without_image"}><img src={image1920x1080 ? sandswhite : sandsblack} alt={brand} /></BrandLogo>
-            }
-        </ImageContainer>
-    </Outer>
-
+    brand,
+    brandLogos
+}) => {
+    const brandLogoInfo = brandLogos ? brandLogos.filter(function(logo) { return logo.logoBrand == brand }) : null
+    
+    return(
+        <Outer>
+            <Meta>
+                {category && <Tag link={categoryLink}>{category}</Tag>}
+                {title && <Headline level={1} text={title}/>}
+                {standfirst && <LeadParagraph text={standfirst}/>}
+                <LowerContent>
+                    <Text>
+                        {date && <span>{date}</span>}
+                        {authors &&
+                            authors.length > 0 &&
+                                <>
+                                    {authors.length === 1 ?
+                                        <span> by <a href={authors[0].url}>{authors[0].name}</a></span>
+                                        :
+                                        <p>
+                                            By&nbsp;
+                                            {authors.map((author, index) =>
+                                                <><Link key={`author_${index}`} to={author.url}>{author.name}</Link>{(index < (authors.length-1) ? ", " : "")}</>
+                                            )}
+                                        </p>
+                                    }
+                                </>
+                        }
+                    </Text>
+                </LowerContent>
+            </Meta>
+            <ImageContainer>
+                {image1920x1080 &&
+                    <Image
+                        alt={imageAltText}
+                        src={image1920x1080}
+                        copyright={imageCopyright}
+                    />
+                }
+                {brandLogoInfo &&
+                    <BrandLogo className={image1920x1080 ? "with_image" : "without_image"}>
+                        <img src={
+                            image1920x1080 ? 
+                                brandLogoInfo[0].overlayURL  
+                                : 
+                                brandLogoInfo[0].backgroundURL
+                            } alt={brandLogoInfo[0].alt} />
+                    </BrandLogo>
+                } 
+            </ImageContainer>
+        </Outer>
+    )
+}
 
 HeroArticle.propTypes = {
     /** 

@@ -7,8 +7,8 @@ import parse from "html-react-parser"
 import { FeedbackForm } from "../FeedbackForm"
 import { ImageSponsorLinks } from "../ImageSponsorLinks"
 
-import lottery from "./lottery-logo.svg"
-import dcms from "./dcms.svg"
+import lotteryLocal from "./lottery-logo.svg"
+import dcmsLocal from "./dcms.svg"
 
 import facebook from "./facebook.svg"
 import twitter from "./twitter.svg"
@@ -224,7 +224,8 @@ const Icon = styled.div`
 export const Footer = ({
     menus,
     copyrightText,
-    copyrightLinks
+    copyrightLinks,
+    sponsorImages
 }) => 
     <>  
         <Inner className="dont_restrict">
@@ -253,13 +254,13 @@ export const Footer = ({
                 <Inner className="container">  
                     <SupportLogos>
                         <SubHeading>Supported by</SubHeading>
-                        <ImageSponsorLinks images={[
+                        <ImageSponsorLinks images={sponsorImages ? sponsorImages : [
                             {
-                                url: lottery,
+                                url: lotteryLocal,
                                 alt: "The BFI recieves National Lottery funding"
                             },
                             {
-                                url: dcms,
+                                url: dcmsLocal,
                                 alt: "Department for Digital Culture Media & Sport"
                             }
                         ]} />
@@ -283,7 +284,6 @@ export const Footer = ({
                                 <Icon className="logo" url={youtube} alt="YouTube"/>
                             </ExternalMenuItem>
                         </IconLinkContainer>
-                        
                     </FollowMenu>
                 </Inner>
             </MiddleRow>

@@ -1,5 +1,7 @@
 import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
 import { ErrorPage } from "../../../components/ErrorPage/index"
+import travoltaLocal from "./images/travolta.gif"
+import kansasLocal from "./images/kansas.gif"
 
 <Meta title="Pattern Library|Structure/Error Page" component={ErrorPage} />
 
@@ -14,19 +16,46 @@ import { ErrorPage } from "../../../components/ErrorPage/index"
 
 <Preview>
     <Story name="404 Page">
-        <ErrorPage error={404} />
+        <ErrorPage error={404} gifs={[
+            {
+                url: travoltaLocal,
+                alt: "Error image"
+            },
+            {
+                url: kansasLocal,
+                alt: "Error image"
+            }
+        ]} />
     </Story>
 </Preview>
 
 <Preview>
     <Story name="500 Page">
-        <ErrorPage error={500} />
+        <ErrorPage error={500} gifs={[
+            {
+                url: travoltaLocal,
+                alt: "Error image"
+            },
+            {
+                url: kansasLocal,
+                alt: "Error image"
+            }
+        ]} />
     </Story>
 </Preview>
 
 <Preview>
     <Story name="403 Page">
-        <ErrorPage error={403} />
+        <ErrorPage error={403} gifs={[
+            {
+                url: travoltaLocal,
+                alt: "Error image"
+            },
+            {
+                url: kansasLocal,
+                alt: "Error image"
+            }
+        ]} />
     </Story>
 </Preview>
 
@@ -38,13 +67,31 @@ import { ErrorPage } from "../../../components/ErrorPage/index"
 
 <Preview>
     <Story name="503 Page">
-        <ErrorPage error={503} />
+        <ErrorPage error={503} gifs={[
+            {
+                url: travoltaLocal,
+                alt: "Error image"
+            },
+            {
+                url: kansasLocal,
+                alt: "Error image"
+            }
+        ]} />
     </Story>
 </Preview>
 
 <Preview>
     <Story name="No number Page">
-        <ErrorPage />
+        <ErrorPage gifs={[
+            {
+                url: travoltaLocal,
+                alt: "Error image"
+            },
+            {
+                url: kansasLocal,
+                alt: "Error image"
+            }
+        ]} />
     </Story>
 </Preview>
 

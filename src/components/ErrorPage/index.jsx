@@ -4,8 +4,6 @@ import parse from "html-react-parser"
 import theme from "../_theme"
 import PropTypes from "prop-types"
 import { Button } from "../Button"
-import travolta from "./travolta.gif"
-import kansas from "./kansas.gif"
 
 const PageBackground = styled.div`
     background: ${theme.lightGrey};
@@ -95,9 +93,10 @@ const errorPageData = [
 
 export const ErrorPage = ({
     error,
-    errorString
+    errorString,
+    gifs
 }) => {
-    const random = Math.floor(Math.random() * Math.floor(2))
+    const random = Math.floor(Math.random() * Math.floor(gifs ? gifs.length : 2))
 
     return(
         <>
@@ -119,9 +118,11 @@ export const ErrorPage = ({
                         <Button level={1} url="/">Return to home</Button>
                     </CTAContainer>
                 </Content>
-                <Image>
-                    <img src={random === 0 ? travolta : kansas} alt="" />
-                </Image>
+                {gifs &&
+                    <Image>
+                        <img src={gifs[random].url} alt={gifs[random].alt} />
+                    </Image>
+                }
             </ErrorContainer>
             
         </>
