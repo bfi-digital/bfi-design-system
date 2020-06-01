@@ -124,6 +124,7 @@ const DialogStyles = createGlobalStyle`
         z-index: 1;
         display: inline-block;
         animation: fadeGrow 0.1s ease-out; 
+        position: relative;
     }
 `
 const BigImage = styled.img`
@@ -149,6 +150,27 @@ const Small =styled.small`
     }
     @media screen and (min-width: ${theme.m}){
         font-size: 0.9rem;
+    }
+`
+
+const CloseButton = styled.button`
+    position: absolute; 
+    top: 0;
+    right: -32px;
+    background: none;
+    border: none;
+    color: ${theme.white};
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 30px;
+    cursor: zoom-out;
+
+    &:hover {
+        opacity: 0.7;
+    }
+    &:focus-within {
+        outline: none;
+        border-bottom: solid 4px ${theme.focus};
     }
 `
 
@@ -205,6 +227,7 @@ export const Image = ({
                         />       
                         {caption && <Figcaption itemprop="caption description" white={true}>{caption}</Figcaption>}
                         {copyright && <Small itemprop="copyrightHolder" white={true} >&copy; {copyright}</Small>}
+                        <CloseButton title="Close image" onClick={() => setOpenImage(false)}>x</CloseButton>
                     </Dialog>
                 </>
             }

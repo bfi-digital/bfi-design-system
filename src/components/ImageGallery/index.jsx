@@ -264,8 +264,6 @@ export const ImageGallery = ({
                         <Small itemprop="copyrightHolder" white={true}>&copy; {images[openImage == 0 ? openImage : (openImage-1)].copyright}</Small>
                     }
                     <CloseButton title="Close image" onClick={() => setOpenImage(0)}>x</CloseButton>
-
-
                 </Dialog>
             </>
         </Outer>
