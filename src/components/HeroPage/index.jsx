@@ -9,7 +9,7 @@ import { Image } from "../Image"
 
 const Outer = styled.div`
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
     width: 100%;
     flex: 0 0 100%;
     margin-bottom: 15px;
@@ -20,7 +20,7 @@ const Outer = styled.div`
     max-width: calc(${theme.xl} + 125px);
 
     p, ol {
-        max-width: 620px;
+        max-width: 775px;
     }
 
     &.without_image {
@@ -28,9 +28,9 @@ const Outer = styled.div`
     }
 
     &.with_image {
-        p, ol {
-            margin: 0 auto;
-        }
+        // p, ol {
+        //     margin: 0 auto;
+        // }
         p {
             margin-bottom: 30px;
         }
