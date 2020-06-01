@@ -192,17 +192,21 @@ const MobilePanel = ({
     return(
         <Panel id="menu-panel" role="region">
             {selected === false && 
-                <QuickLinks>
-                    {quickLinks[0] &&
-                        <QuickLink to={quickLinks[0].url}>{quickLinks[0].title}</QuickLink>
-                    }
-                    {quickLinks[1] &&
-                        <QuickLink to={quickLinks[1].url}>{quickLinks[1].title}</QuickLink>
-                    }
-                    {quickLinks[2] &&
-                        <QuickLink to={quickLinks[2].url}>{quickLinks[2].title}</QuickLink>
-                    }
-                </QuickLinks>
+                <>
+                    {quickLinks && 
+                        <QuickLinks>
+                            {quickLinks[0] &&
+                                <QuickLink to={quickLinks[0].url}>{quickLinks[0].title}</QuickLink>
+                            }
+                            {quickLinks[1] &&
+                                <QuickLink to={quickLinks[1].url}>{quickLinks[1].title}</QuickLink>
+                            }
+                            {quickLinks[2] &&
+                                <QuickLink to={quickLinks[2].url}>{quickLinks[2].title}</QuickLink>
+                            }
+                        </QuickLinks>
+                    }   
+                </>
             }
             <List>
                 {navItems.map((navItem, i) =>
