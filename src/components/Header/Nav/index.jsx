@@ -30,6 +30,13 @@ const ItemLink = styled(Link)`
     position: relative;
     margin-right: 15px;
 
+    @media screen and (min-width: ${theme.m}){
+        padding: 18px 11px;
+    }
+    @media screen and (min-width: ${theme.l}){
+        padding: 21px 15px;
+    }
+
     &:after{
         position: absolute;
         left: 15px;
@@ -38,8 +45,14 @@ const ItemLink = styled(Link)`
         display: block;
         content: "";
         border-bottom: ${props => props.active ? `2px solid ${props.isWhite ? (props.isSticky ? theme.black : theme.white) : theme.black}` : ""};
+        @media screen and (min-width: ${theme.m}){
+            left: 11px;
+            right: 11px;
+        }
         @media screen and (min-width: ${theme.l}){
             bottom: 17px;
+            left: 15px;
+            right: 15px;
         }
     }
     &:before{

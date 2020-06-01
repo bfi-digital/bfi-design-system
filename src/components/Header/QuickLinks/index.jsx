@@ -24,6 +24,13 @@ const QuickLink = styled(Link)`
         color: ${props => props.isTransparent ? (!props.isSticky ? theme.grey : theme.dark) : theme.dark};
         background: ${props => props.isTransparent ? (!props.isSticky ? "transparent" : theme.grey) : theme.grey};
     }
+
+    @media screen and (min-width: ${theme.m}){
+        padding: 18px 11px;
+    }
+    @media screen and (min-width: ${theme.l}){
+        padding: 21px 15px;
+    }
 `
 
 const QuickLinks = ({links, Inner, isOverlaid, isSticky}) => {

@@ -1,10 +1,21 @@
 import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
 import { PromoBanner } from "../../../components/PromoBanner/index"
+import minPadding from "./images/minumum-padding.png"
 
 <Meta title="Pattern Library|Slices/Promotional Banner" component={PromoBanner} />
 
 # Promotional Banner
- 
+
+About
+
+## Image governance
+
+The image in this component may be centrally cropped depending on the size of the screen the user is viewing it on. This is due to the nature of this component being set as a proportion of the screen size. Therefore it is important when choosing an image that this is taken into account. If there are any elements in the image that cannot be hidden then these will need to fall within a set range of padding, there should be at least an extra 90 pixels to the left and right, and 60 pixels to the top and bottom of the image background. 
+
+See this example for reference. In this example the iamge would need to include the blue background colour surrounding this image.
+
+<img src={minPadding} />
+
  
 ## Examples
 
