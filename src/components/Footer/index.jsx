@@ -242,8 +242,8 @@ export const Footer = ({
                                 <Heading>{menu.title}</Heading>
                             }
                             {menu.children.map(menuItem =>
-                                <LinkContainer key={menuItem.id} data-tracking="footer-navigation" role="navigation" aria-label="Footer">
-                                    <MenuItem to={menuItem.url}>{menuItem.title}</MenuItem>    
+                                <LinkContainer key={menuItem.id} role="navigation" aria-label="Footer">
+                                    <MenuItem to={menuItem.url} data-tracking="footer-navigation">{menuItem.title}</MenuItem>    
                                 </LinkContainer>
                             )}
                         </Menu>
@@ -268,19 +268,19 @@ export const Footer = ({
                     <FollowMenu>
                         <SubHeading>Follow us</SubHeading>
                         <IconLinkContainer>
-                            <ExternalMenuItem href="https://twitter.com/BFI">
+                            <ExternalMenuItem href="https://twitter.com/BFI" data-tracking="footer-navigation">
                                 <Icon className="logo" url={twitter} alt="Twitter"/>
                             </ExternalMenuItem>
-                            <ExternalMenuItem href="https://www.facebook.com/BritishFilmInstitute/">
+                            <ExternalMenuItem href="https://www.facebook.com/BritishFilmInstitute/" data-tracking="footer-navigation">
                                 <Icon className="logo" url={facebook} alt="Facebook"/>
                             </ExternalMenuItem>
-                            <ExternalMenuItem href="https://www.instagram.com/britishfilminstitute/">
+                            <ExternalMenuItem href="https://www.instagram.com/britishfilminstitute/" data-tracking="footer-navigation">
                                 <Icon className="logo" url={instagram} alt="Instagram"/>
                             </ExternalMenuItem>
-                            <ExternalMenuItem href="https://www.linkedin.com/company/british-film-institute">
+                            <ExternalMenuItem href="https://www.linkedin.com/company/british-film-institute" data-tracking="footer-navigation">
                                 <Icon className="logo" url={linkedin} alt="LinkedIn"/>
                             </ExternalMenuItem>
-                            <ExternalMenuItem href="https://www.youtube.com/user/BFIfilms">
+                            <ExternalMenuItem href="https://www.youtube.com/user/BFIfilms" data-tracking="footer-navigation">
                                 <Icon className="logo" url={youtube} alt="YouTube"/>
                             </ExternalMenuItem>
                         </IconLinkContainer>
@@ -291,7 +291,7 @@ export const Footer = ({
                 <Inner className="container">
                     <BottomLinks>
                         {copyrightLinks && copyrightLinks.map((copyrightLink, i) =>
-                            <MenuItem to={copyrightLink.url} key={"copyrightlink_"+i}>{copyrightLink.title}</MenuItem>    
+                            <MenuItem to={copyrightLink.url} key={"copyrightlink_"+i} data-tracking="footer-navigation">{copyrightLink.title}</MenuItem>    
                         )}
                     </BottomLinks>
                     <Copyright>{parse(copyrightText)}</Copyright>

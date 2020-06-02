@@ -33,9 +33,6 @@ const List = styled.ul`
     list-style: none;
     margin-top: 0;
     padding-left: 0px;
-    &:hover li button{
-        color: ${theme.darkGrey};
-    }
 `
 
 const Item = styled.li`
@@ -106,9 +103,6 @@ const ItemButton = styled.button`
 const ChildList = styled.ul`
     list-style: none;
     padding-left: 0;
-    &:hover a{
-        color: ${theme.darkGrey}
-    }
 `
 
 const ChildItem = styled.li`
@@ -120,9 +114,9 @@ const ChildLink = styled(Link)`
     color: ${theme.black};
     text-decoration: none;
     padding: 12px 0;
-    transition: color 0.1s;
+    transition: all 0.2s;
     &:hover{
-        color: ${theme.black} !important;
+        padding-left: 10px;
     }
     &:focus {
         // border-radius: 7px;

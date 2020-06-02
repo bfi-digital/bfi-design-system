@@ -116,7 +116,7 @@ const ChildList = styled.div`
     max-width: calc(${theme.xl} + 125px);
 
     &:hover a{
-        color: ${theme.darkGrey}
+        color: ${theme.darkGrey};
     }
     li {
         a {
@@ -296,10 +296,10 @@ const Nav = ({
 
 
     return(
-        <Outer data-tracking="header-navigation" role="navigation" aria-label="Main">
+        <Outer role="navigation" aria-label="Main">
             <List>
                 {isSticky && 
-                    <Link to="/">
+                    <Link to="/"> 
                         <BlackLogo><Logo src={logo} alt="British Film Institute"/></BlackLogo>
                     </Link>
                 }
@@ -321,6 +321,7 @@ const Nav = ({
                                 // role="menuitem"
                                 isWhite={isOverlaid}
                                 isSticky={isSticky}
+                                data-tracking="header-navigation"
                             >
                                 {navItem.title}
                             </ItemLink>
@@ -332,28 +333,28 @@ const Nav = ({
                                         <InnerContainer>
                                             <Column className={"row_"+size}>
                                                 {navItem.children.slice(0, size).map((child, j) =>
-                                                    <ChildLink key={j} to={child.url}>
+                                                    <ChildLink key={j} to={child.url}  data-tracking="header-navigation">
                                                         <span>{child.title}</span>
                                                     </ChildLink>
                                                 )}
                                             </Column>
                                             <Column className={"row_"+size}>
                                                 {navItem.children.slice(size, (size*2)).map((child, j) =>
-                                                    <ChildLink key={j} to={child.url}>
+                                                    <ChildLink key={j} to={child.url}  data-tracking="header-navigation">
                                                         <span>{child.title}</span>
                                                     </ChildLink>
                                                 )}
                                             </Column>
                                             <Column className={"row_"+size}>
                                                 {navItem.children.slice((size*2), (size*3)).map((child, j) =>
-                                                    <ChildLink key={j} to={child.url}>
+                                                    <ChildLink key={j} to={child.url}  data-tracking="header-navigation">
                                                         <span>{child.title}</span>
                                                     </ChildLink>
                                                 )}
                                             </Column>
                                             { navItem.highlightText && 
                                                 <HighlightContainer>
-                                                    <HighlightLink to={navItem.highlightURL}>{navItem.highlightText}</HighlightLink>
+                                                    <HighlightLink to={navItem.highlightURL} data-tracking="header-navigation">{navItem.highlightText}</HighlightLink>
                                                 </HighlightContainer>
                                             }
                                         </InnerContainer>
