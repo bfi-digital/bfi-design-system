@@ -49,6 +49,56 @@ Due to this component requiring connection with the front end framework to pull 
                     label: "Interviews"
                 }
             ]}
+            loadMore={true}
+        />
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="Limited articles with filters">
+        <FilterableArticles
+            filters={[
+                {
+                    url: "/",
+                    label: "All",
+                    currentlyActive: true
+                },
+                {
+                    url: "/",
+                    label: "Review"
+                },
+                {
+                    url: "/",
+                    label: "Video"
+                },
+                {
+                    url: "/",
+                    label: "Opinion"
+                },
+                {
+                    url: "/",
+                    label: "Recommendations"
+                },
+                {
+                    url: "/",
+                    label: "Long Read"
+                },
+                {
+                    url: "/",
+                    label: "Interviews"
+                }
+            ]}
+            limit={3}
+        />
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="Limited articles without filters">
+        <FilterableArticles
+            limit={4}
+            internalTitle="See all articles"
+            internalLink="/"
         />
     </Story>
 </Preview>

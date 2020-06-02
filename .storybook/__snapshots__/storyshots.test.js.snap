@@ -206,7 +206,7 @@ Array [
         className="sc-cEvuZC iHLLcd"
       >
         <nav
-          className="sc-kIPQKe dJBDfX"
+          className="sc-kIPQKe knCHPP"
         >
           <a
             className="sc-eXEjpC ijZNZw"
@@ -1692,69 +1692,69 @@ Array [
       >
         News & Articles
       </h2>
-      <nav
-        className="sc-kIPQKe dJBDfX"
-      >
-        <a
-          className="sc-eXEjpC ijZNZw"
-          disabled={false}
-          href="/"
-          title="Show all All articles"
-        >
-          All
-        </a>
-        <a
-          className="sc-eXEjpC ijZNZw"
-          disabled={false}
-          href="/"
-          title="Show all Review articles"
-        >
-          Review
-        </a>
-        <a
-          className="sc-eXEjpC ijZNZw"
-          disabled={false}
-          href="/"
-          title="Show all Video articles"
-        >
-          Video
-        </a>
-        <a
-          className="sc-eXEjpC ijZNZw"
-          disabled={false}
-          href="/"
-          title="Show all Opinion articles"
-        >
-          Opinion
-        </a>
-        <a
-          className="sc-eXEjpC ijZNZw"
-          disabled={false}
-          href="/"
-          title="Show all Recommendations articles"
-        >
-          Recommendations
-        </a>
-        <a
-          className="sc-eXEjpC ijZNZw"
-          disabled={false}
-          href="/"
-          title="Show all Long Read articles"
-        >
-          Long Read
-        </a>
-        <a
-          className="sc-eXEjpC ijZNZw"
-          disabled={false}
-          href="/"
-          title="Show all Interviews articles"
-        >
-          Interviews
-        </a>
-      </nav>
       <div
         className="sc-cEvuZC iHLLcd"
       >
+        <nav
+          className="sc-kIPQKe knCHPP"
+        >
+          <a
+            className="sc-eXEjpC ijZNZw"
+            disabled={false}
+            href="/"
+            title="Show all All articles"
+          >
+            All
+          </a>
+          <a
+            className="sc-eXEjpC ijZNZw"
+            disabled={false}
+            href="/"
+            title="Show all Review articles"
+          >
+            Review
+          </a>
+          <a
+            className="sc-eXEjpC ijZNZw"
+            disabled={false}
+            href="/"
+            title="Show all Video articles"
+          >
+            Video
+          </a>
+          <a
+            className="sc-eXEjpC ijZNZw"
+            disabled={false}
+            href="/"
+            title="Show all Opinion articles"
+          >
+            Opinion
+          </a>
+          <a
+            className="sc-eXEjpC ijZNZw"
+            disabled={false}
+            href="/"
+            title="Show all Recommendations articles"
+          >
+            Recommendations
+          </a>
+          <a
+            className="sc-eXEjpC ijZNZw"
+            disabled={false}
+            href="/"
+            title="Show all Long Read articles"
+          >
+            Long Read
+          </a>
+          <a
+            className="sc-eXEjpC ijZNZw"
+            disabled={false}
+            href="/"
+            title="Show all Interviews articles"
+          >
+            Interviews
+          </a>
+        </nav>
         <div
           className="sc-cMljjf gJNyVi"
         >
@@ -25341,7 +25341,7 @@ Array [
 
 exports[`Storyshots 2 All Components/Filter-esque Links Normal 1`] = `
 <nav
-  className="sc-kIPQKe dJBDfX"
+  className="sc-kIPQKe knCHPP"
 >
   <a
     className="sc-eXEjpC ijZNZw"

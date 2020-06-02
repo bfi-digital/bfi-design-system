@@ -5,6 +5,7 @@ import theme from "../_theme"
 const Outer = styled.nav`
     margin: 15px 0;
     padding: 15px 0;
+    padding-bottom: 0;
 `
 
 const FilterLink = styled.a`

@@ -19,7 +19,6 @@ import { FilmGrid } from "../FilmGrid"
 import { FilmShowing } from "../FilmShowing"
 // import { FilmShowingGrid } from "../FilmShowingGrid"
 import { FilterableArticles } from "../FilterableArticles"
-import { FilterLinks } from "../FilterLinks"
 import { Footer } from "../Footer"
 import { Header } from "../Header"
 import { Headline } from "../Headline"
@@ -147,8 +146,13 @@ export const discoveryPage = () =>
                     level={2} 
                     text="News &amp; Articles"
                 />
-                <FilterLinks
-                    links={[
+
+                <FilterableArticles
+                    limit={7}
+                    parameter="category"
+                    internalTitle="See all articles"
+                    internalLink="/"
+                    filters={[
                         {
                             url: "/",
                             label: "All"
@@ -178,12 +182,6 @@ export const discoveryPage = () =>
                             label: "Interviews"
                         }
                     ]}
-                />
-
-                <FilterableArticles
-                    limit={7}
-                    parameter="category"
-                    internalLink="#"
                 />
                 
                 <Divider istransparent={true} />

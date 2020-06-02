@@ -28,30 +28,19 @@ export const FilterableArticles = ({
 
     return(
         <Outer>
-            {!limit ?
+            {filters && <FilterLinks links={filters} /> }
+            {articles && articles.length > 0 ? 
                 <>
-                    {/* <Filters 
-                        filters={filters} 
-                        parameter={parameter}
-                        allAction={allAction}
-                    /> */}
-                    <FilterLinks links={filters} />
-                    {articles && articles.length > 0 ?
-                        <ArticleGrid articles={articles} firstHighlighted={includeHighlight} optionalTitle={internalTitle} optionalCTALink={internalLink}>
+                    {!limit ?
+                        <ArticleGrid articles={articles} firstHighlighted={includeHighlight}>
                             {loadMore && <CentredButton href="#" onClick={loadMore}>Load more</CentredButton>}
                         </ArticleGrid>
                         :
-                        <ArticleGrid articles={false} />
+                        <ArticleGrid articles={articles.slice(0,limit)} firstHighlighted={includeHighlight} optionalCTATitle={internalTitle} optionalCTALink={internalLink} />
                     }
                 </>
                 :
-                <>
-                    {articles && articles.length > 0 ? 
-                        <ArticleGrid articles={articles.slice(0,limit)} firstHighlighted={includeHighlight} optionalTitle={internalTitle} optionalCTALink={internalLink} />
-                        :
-                        <ArticleGrid articles={false} />
-                    }
-                </>
+                <ArticleGrid articles={false} />
             }
         </Outer>
     )
