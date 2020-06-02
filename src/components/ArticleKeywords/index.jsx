@@ -1,13 +1,12 @@
 import React from "react"
 import styled from "styled-components"
-import { Link } from "@reach/router"
 import PropTypes from "prop-types"
 import theme from "../_theme"
 
 const Outer = styled.div`
     margin-top: 50px;
 `
-const FilterLink = styled(Link)`
+const FilterLink = styled.a`
     color: ${theme.black};
     font-weight: bold;
     border-radius: 5px;
@@ -40,7 +39,7 @@ export const ArticleKeywords = ({
 }) =>
     <Outer>
         {keywords.map((keyword, i) =>
-            <FilterLink key={i} to={keyword.url}>{keyword.label}</FilterLink>
+            <FilterLink key={i} href={keyword.url} title={"Show all " + keyword.label + " articles"}>{keyword.label}</FilterLink>
         )}
     </Outer>
 
