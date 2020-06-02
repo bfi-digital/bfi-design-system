@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "@reach/router"
 import styled from "styled-components"
 import theme from "../_theme"
 
@@ -8,7 +7,7 @@ const Outer = styled.nav`
     padding: 15px 0;
 `
 
-const FilterLink = styled(Link)`
+const FilterLink = styled.a`
     color: ${theme.black};
     font-weight: bold;
     border-radius: 100px;

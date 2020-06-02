@@ -207,65 +207,51 @@ Array [
           className="sc-kIPQKe dJBDfX"
         >
           <a
-            aria-current="page"
             className="sc-eXEjpC ijZNZw"
             disabled={true}
-            href="/"
-            onClick={[Function]}
+            to="/"
           >
             All
           </a>
           <a
-            aria-current="page"
             className="sc-eXEjpC ijZNZw"
             disabled={false}
-            href="/"
-            onClick={[Function]}
+            to="/"
           >
             Review
           </a>
           <a
-            aria-current="page"
             className="sc-eXEjpC ijZNZw"
             disabled={false}
-            href="/"
-            onClick={[Function]}
+            to="/"
           >
             Video
           </a>
           <a
-            aria-current="page"
             className="sc-eXEjpC ijZNZw"
             disabled={false}
-            href="/"
-            onClick={[Function]}
+            to="/"
           >
             Opinion
           </a>
           <a
-            aria-current="page"
             className="sc-eXEjpC ijZNZw"
             disabled={false}
-            href="/"
-            onClick={[Function]}
+            to="/"
           >
             Recommendations
           </a>
           <a
-            aria-current="page"
             className="sc-eXEjpC ijZNZw"
             disabled={false}
-            href="/"
-            onClick={[Function]}
+            to="/"
           >
             Long Read
           </a>
           <a
-            aria-current="page"
             className="sc-eXEjpC ijZNZw"
             disabled={false}
-            href="/"
-            onClick={[Function]}
+            to="/"
           >
             Interviews
           </a>
@@ -1690,65 +1676,51 @@ Array [
         className="sc-kIPQKe dJBDfX"
       >
         <a
-          aria-current="page"
           className="sc-eXEjpC ijZNZw"
           disabled={false}
-          href="/"
-          onClick={[Function]}
+          to="/"
         >
           All
         </a>
         <a
-          aria-current="page"
           className="sc-eXEjpC ijZNZw"
           disabled={false}
-          href="/"
-          onClick={[Function]}
+          to="/"
         >
           Review
         </a>
         <a
-          aria-current="page"
           className="sc-eXEjpC ijZNZw"
           disabled={false}
-          href="/"
-          onClick={[Function]}
+          to="/"
         >
           Video
         </a>
         <a
-          aria-current="page"
           className="sc-eXEjpC ijZNZw"
           disabled={false}
-          href="/"
-          onClick={[Function]}
+          to="/"
         >
           Opinion
         </a>
         <a
-          aria-current="page"
           className="sc-eXEjpC ijZNZw"
           disabled={false}
-          href="/"
-          onClick={[Function]}
+          to="/"
         >
           Recommendations
         </a>
         <a
-          aria-current="page"
           className="sc-eXEjpC ijZNZw"
           disabled={false}
-          href="/"
-          onClick={[Function]}
+          to="/"
         >
           Long Read
         </a>
         <a
-          aria-current="page"
           className="sc-eXEjpC ijZNZw"
           disabled={false}
-          href="/"
-          onClick={[Function]}
+          to="/"
         >
           Interviews
         </a>
@@ -25086,32 +25058,28 @@ exports[`Storyshots 2 All Components/Filter-esque Links Normal 1`] = `
   <a
     className="sc-eXEjpC ijZNZw"
     disabled={false}
-    href="/#"
-    onClick={[Function]}
+    to="#"
   >
     Example link
   </a>
   <a
     className="sc-eXEjpC ijZNZw"
     disabled={false}
-    href="/#"
-    onClick={[Function]}
+    to="#"
   >
     Where to stream
   </a>
   <a
     className="sc-eXEjpC ijZNZw"
     disabled={false}
-    href="/#"
-    onClick={[Function]}
+    to="#"
   >
     Where to begin
   </a>
   <a
     className="sc-eXEjpC ijZNZw"
     disabled={false}
-    href="/#"
-    onClick={[Function]}
+    to="#"
   >
     Five Things
   </a>
