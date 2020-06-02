@@ -55,17 +55,21 @@ const pageLinksData = [
 
 const days = [
     {
+        id: "1",
         date: "24th February",
         times: [
             {
+                id: "10101",
                 time: "3:30pm",
                 url: "#"
             },
             {
+                id: "2222",
                 time: "6:30pm",
                 url: "#"
             },
             {
+                id: "333",
                 time: "8:45pm",
                 url: "#",
                 soldOut: true
@@ -73,42 +77,51 @@ const days = [
         ]
     },
     {
+        id: "2",
         date: "24th February",
         times: [
             {
+                id: "444",
                 time: "3:30pm",
                 url: "#",
                 soldOut: true
             },
             {
+                id: "555",
                 time: "6:30pm",
                 url: "#"
             }
         ]
     },
     {
+        id: "3",
         date: "24th February",
         times: [
             {
+                id: "666",
                 time: "3:30pm",
                 url: "#",
                 soldOut: true
             },
             {
+                id: "777",
                 time: "6:30pm",
                 url: "#"
             }
         ]
     },
     {
+        id: "4",
         date: "24th February",
         times: [
             {
+                id: "888",
                 time: "3:30pm",
                 url: "#",
                 soldOut: true
             },
             {
+                id: "999",
                 time: "6:30pm",
                 url: "#",
                 soldOut: true
@@ -1484,6 +1497,7 @@ export const everyComponent = () =>
                 />
                 <FilmGrid films={[
                     {
+                        uuid: "1234",
                         name: "La La Land",
                         image480x270: "http://placehold.it/480x270",
                         imageAltText: "Example image",
@@ -1493,6 +1507,7 @@ export const everyComponent = () =>
                         url: "#"
                     },
                     {
+                        uuid: "12345",
                         name: "The Lighthouse",
                         image480x270: "",
                         imageAltText: "Example image",
@@ -1503,6 +1518,7 @@ export const everyComponent = () =>
                         url: "#"
                     },
                     {
+                        uuid: "1234567",
                         name: "Santa Claus Conquers the Martians",
                         image480x270: "http://placehold.it/480x270",
                         imageAltText: "Example image",
@@ -1651,7 +1667,8 @@ export const everyComponent = () =>
                             channels: [
                                 "Southbank"
                             ],
-                            url: "#"
+                            url: "#",
+                            uuid: "1"
                         },
                         {
                             name: "The Lighthouse",
@@ -1659,7 +1676,8 @@ export const everyComponent = () =>
                                 "BFI Player",
                                 "Southbank"
                             ],
-                            url: "#"
+                            url: "#",
+                            uuid: "12"
                         },
                         {
                             name: "Santa Claus Conquers the Martians",
@@ -1668,7 +1686,8 @@ export const everyComponent = () =>
                             channels: [
                                 "BFI Player"
                             ],
-                            url: "#"
+                            url: "#",
+                            uuid: "123"
                         }
                     ]} 
                 />

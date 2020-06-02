@@ -712,7 +712,8 @@ export const everyComponent = () =>
                         channels: [
                             "Southbank"
                         ],
-                        url: "#"
+                        url: "#",
+                        uuid: "1"
                     },
                     {
                         name: "The Lighthouse",
@@ -722,7 +723,8 @@ export const everyComponent = () =>
                             "BFI Player",
                             "Southbank"
                         ],
-                        url: "#"
+                        url: "#",
+                        uuid: "2"
                     },
                     {
                         name: "Santa Claus Conquers the Martians",
@@ -731,7 +733,8 @@ export const everyComponent = () =>
                         channels: [
                             "BFI Player"
                         ],
-                        url: "#"
+                        url: "#",
+                        uuid: "3"
                     }
                 ]} />
                 <Headline 

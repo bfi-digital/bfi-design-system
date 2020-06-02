@@ -84,7 +84,7 @@ export const HeroArticle = ({
                                         <p>
                                             By&nbsp;
                                             {authors.map((author, index) =>
-                                                <><Link key={`author_${index}`} to={author.url}>{author.name}</Link>{(index < (authors.length-1) ? ", " : "")}</>
+                                                <span key={author.name}><Link to={author.url}>{author.name}</Link>{(index < (authors.length-1) ? ", " : "")}</span>
                                             )}
                                         </p>
                                     }

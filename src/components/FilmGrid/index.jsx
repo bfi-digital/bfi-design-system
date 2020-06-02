@@ -28,7 +28,7 @@ export const FilmGrid = ({
             <>
                 <Scroller>
                     {films.map(film =>
-                        <FilmCard key={film.uuid} inScroller={true} {...film}/>    
+                        <FilmCard key={film.uuid + "_scroll"} inScroller={true} {...film}/>    
                     )}
                 </Scroller>
                 { allFilmsUrl &&
@@ -38,7 +38,7 @@ export const FilmGrid = ({
             :
             <Outer>
                 {films.map(film =>
-                    <FilmCard key={film.uuid} {...film}/>    
+                    <FilmCard key={film.uuid + "_notscroll"} {...film}/>    
                 )}
                 { allFilmsUrl &&
                     <CentredButton to={allFilmsUrl}>See more films</CentredButton>

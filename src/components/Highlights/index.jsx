@@ -88,7 +88,7 @@ export const Highlights = ({
                     />
                     <Showings>
                         {todayShowings.map(film =>
-                            <FilmShowing key={film.title} {...film}/>
+                            <FilmShowing key={film.uuid} {...film}/>
                         )}
                     </Showings>
                 </Grid>
@@ -107,7 +107,7 @@ export const Highlights = ({
                     />
                     <Showings>
                         {weekShowings.map(film =>
-                            <FilmShowing key={film.title} {...film}/>
+                            <FilmShowing key={film.uuid} {...film}/>
                         )}
                     </Showings>
                 </Grid>

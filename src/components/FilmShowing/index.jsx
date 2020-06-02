@@ -53,7 +53,7 @@ export const FilmShowing = ({
         <Date>{date}</Date>
         <Times>
             {times.map((time, i) =>
-                <Time key={i}>
+                <Time key={time.id ? time.id : i}>
                     {time.soldOut ?
                         <SoldOut>
                             {time.time} - Sold out
