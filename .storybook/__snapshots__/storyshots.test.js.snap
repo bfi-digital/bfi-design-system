@@ -28952,13 +28952,13 @@ exports[`Storyshots 2 All Components/SidebarArticleLinks Example 1`] = `
   }
 >
   <section
-    className="sc-feryYK hgNhoV"
+    className="sc-gldTML kvGKef"
   >
     <ul
-      className="sc-cJOK fSTzMX"
+      className="sc-feryYK deYoQJ"
     >
       <li
-        className="sc-kcbnda BCjiF"
+        className="sc-kcbnda bmkInM"
       >
         <a
           className="sc-ejGVNB bUtUge"
@@ -28977,13 +28977,9 @@ exports[`Storyshots 2 All Components/SidebarArticleLinks Example 1`] = `
             className="sc-eLdqWK emldHY"
           >
             <div
-              className="sc-iIHSe bPzUOP"
+              className="sc-iIHSe bZcSIN type_tag"
             >
-              <div
-                className="sc-iELTvK jUEAuC"
-              >
-                What to watch
-              </div>
+              What to watch
             </div>
             <p
               className="sc-iiUIRa inNsDW articlecard_title"
@@ -28999,7 +28995,7 @@ exports[`Storyshots 2 All Components/SidebarArticleLinks Example 1`] = `
         </a>
       </li>
       <li
-        className="sc-kcbnda BCjiF"
+        className="sc-kcbnda bmkInM"
       >
         <a
           className="sc-ejGVNB bUtUge"
@@ -29018,13 +29014,9 @@ exports[`Storyshots 2 All Components/SidebarArticleLinks Example 1`] = `
             className="sc-eLdqWK emldHY"
           >
             <div
-              className="sc-iIHSe bPzUOP"
+              className="sc-iIHSe bZcSIN type_tag"
             >
-              <div
-                className="sc-iELTvK jUEAuC"
-              >
-                What to watch
-              </div>
+              What to watch
             </div>
             <p
               className="sc-iiUIRa inNsDW articlecard_title"
@@ -29040,7 +29032,7 @@ exports[`Storyshots 2 All Components/SidebarArticleLinks Example 1`] = `
         </a>
       </li>
       <li
-        className="sc-kcbnda BCjiF"
+        className="sc-kcbnda bmkInM"
       >
         <a
           className="sc-ejGVNB bUtUge"
@@ -29058,15 +29050,6 @@ exports[`Storyshots 2 All Components/SidebarArticleLinks Example 1`] = `
           <div
             className="sc-eLdqWK emldHY"
           >
-            <div
-              className="sc-iIHSe bPzUOP"
-            >
-              <div
-                className="sc-iELTvK jUEAuC"
-              >
-                What to watch
-              </div>
-            </div>
             <p
               className="sc-iiUIRa inNsDW articlecard_title"
             >

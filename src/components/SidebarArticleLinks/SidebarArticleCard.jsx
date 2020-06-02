@@ -2,7 +2,6 @@ import React from "react"
 import styled from "styled-components"
 import theme from "../_theme"
 import { LinkSwitch as Link } from "../LinkSwitch"
-import { Tag } from "../Tag"
 import placeholderImage from "./placeholder.png"
    
 const Outer = styled.li`
@@ -26,6 +25,9 @@ const Outer = styled.li`
         }
         p.articlecard_title {
             color: ${theme.dark};
+        }
+        .type_tag {
+            background: ${theme.lightest};
         }
     }
     &:hover, &:focus-within {
@@ -128,24 +130,20 @@ const Date = styled.p`
     color: ${theme.darkGrey};
     margin-top: 5px;
 `
-const Channels = styled.div`
-    margin: 0;
-    padding: 0;
-    div {
-        margin-right: 5px;
-        font-size: 0.8rem;
-    }
-`
-const StyledTag = styled(Tag)`
-    div {
-        background: ${theme.purple};
-        color: ${theme.white};
-    }
+
+const StyledTag = styled.div`
+    background: ${theme.white};
+    color: ${theme.black};
+    padding: 5px 10px;
+    margin-right: 5px;
+    font-size: 0.8rem;
+    display: inline-block;
+    margin-bottom: 10px;
 `
 export const SidebarArticleCard = ({
     image480x270,
     title,
-    category,
+    type,
     url,
     imageAltText,
     date,
@@ -157,11 +155,9 @@ export const SidebarArticleCard = ({
                 <PageImage className="image" imageSrc={image480x270 ? image480x270 : placeholderImage} alt={imageAltText} />
             </PageImageContainer>
             <Content>
-                <Channels>
-                    <StyledTag>{category}</StyledTag>
-                </Channels>
-                <Heading className="articlecard_title">{title}</Heading>
-                <Date>{date}</Date>
+                {type && <StyledTag className="type_tag">{type}</StyledTag> }
+                {title && <Heading className="articlecard_title">{title}</Heading>}
+                {date && <Date>{date}</Date>}
             </Content>
         </CallToAction>
     </Outer>

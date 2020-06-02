@@ -8,7 +8,7 @@ export default [
         date: "9 February 2017",
         url: "https://www.bfi.org.uk/news-opinion/news-bfi/lists/36-amazing-dance-scenes",
         uuid: "06347a64-5abd-59de-a6b9-be0d4a9e31e1",
-        category: "What to watch"
+        type: "What to watch"
     },
     {
         title: "The 100 Greatest Films of All Time",
@@ -19,7 +19,7 @@ export default [
         date: "23 March 2020",
         url: "https://www.bfi.org.uk/greatest-films-all-time",
         uuid: "4d1c842b-4d15-558b-82a4-5cb70546d6f3",
-        category: "What to watch"
+        type: "What to watch"
     },
     {
         title: "Stanley Kubrick, cinephile",
