@@ -461,7 +461,7 @@ export const ArticleFeatureExample = () =>
                 <FilterableArticles
                     limit={3}
                     includeHighlight={false}
-                    internalTitle="Other things to explore"
+                    optionalTitle="Other things to explore"
                 />
 
                 <AdvertisingContainer>
@@ -545,7 +545,7 @@ export const ArticleRecommendsExample = () =>
                 <FilterableArticles
                     limit={3}
                     includeHighlight={false}
-                    internalTitle="Other things to explore"
+                    optionalTitle="Other things to explore"
                 />
 
                 <AdvertisingContainer>
@@ -630,7 +630,7 @@ export const ArticleVideoExample = () =>
                 <FilterableArticles
                     limit={3}
                     includeHighlight={false}
-                    internalTitle="Other things to explore"
+                    optionalTitle="Other things to explore"
                 />
 
                 <AdvertisingContainer>
@@ -727,7 +727,7 @@ export const ArticleAnnouncementExample = () =>
                 <FilterableArticles
                     limit={3}
                     includeHighlight={false}
-                    internalTitle="Other things to explore"
+                    optionalTitle="Other things to explore"
                 />
 
                 <AdvertisingContainer>
@@ -878,7 +878,7 @@ export const ArticleListExample = () =>
                 <FilterableArticles
                     limit={3}
                     includeHighlight={false}
-                    internalTitle="Other things to explore"
+                    optionalTitle="Other things to explore"
                 />
 
                 <AdvertisingContainer>
@@ -1005,7 +1005,7 @@ export const ArticleSightAndSoundExample = () =>
                 <FilterableArticles
                     limit={3}
                     includeHighlight={false}
-                    internalTitle="Other things to explore"
+                    optionalTitle="Other things to explore"
                 />
 
                 <AdvertisingContainer>
@@ -1131,7 +1131,7 @@ export const ArticleSightAndSoundExampleNoImage = () =>
                 <FilterableArticles
                     limit={3}
                     includeHighlight={false}
-                    internalTitle="Other things to explore"
+                    optionalTitle="Other things to explore"
                 />
 
                 <AdvertisingContainer>

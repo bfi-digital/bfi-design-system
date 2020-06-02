@@ -21,8 +21,9 @@ export const FilterableArticles = ({
     articles,
     limit,
     includeHighlight,
-    internalTitle,
-    internalLink,
+    optionalTitle,
+    optionalCTATitle,
+    optionalCTALink,
     loadMore,
 }) => {
 
@@ -36,7 +37,7 @@ export const FilterableArticles = ({
                             {loadMore && <CentredButton href="#" onClick={loadMore}>Load more</CentredButton>}
                         </ArticleGrid>
                         :
-                        <ArticleGrid articles={articles.slice(0,limit)} firstHighlighted={includeHighlight} optionalCTATitle={internalTitle} optionalCTALink={internalLink} />
+                        <ArticleGrid articles={articles.slice(0,limit)} optionalTitle={filters ? false : optionalTitle} firstHighlighted={includeHighlight} optionalCTATitle={optionalCTATitle} optionalCTALink={optionalCTALink} />
                     }
                 </>
                 :
@@ -70,11 +71,15 @@ FilterableArticles.propTypes = {
     /** 
     * An optional title that will be included within the grey background
     **/
-    internalTitle: PropTypes.string,
+    optionalTitle: PropTypes.string,
     /** 
     * An optional link that will be used to add a link within the grey background - this should be used to send the user to all articles page
     **/
-    internalLink: PropTypes.string,
+    optionalCTALink: PropTypes.string,
+    /** 
+    * An optional title for the link that will be used to add a link within the grey background - this should be used to send the user to all articles page
+    **/
+    optionalCTATitle: PropTypes.string,
     /**
      * An optional function that is to be called when the 'load more' button is pressed. If omitted, the load more button is not shown.
      */

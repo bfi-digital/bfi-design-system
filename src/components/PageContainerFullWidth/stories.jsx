@@ -150,7 +150,7 @@ export const discoveryPage = () =>
                 <FilterableArticles
                     limit={7}
                     parameter="category"
-                    internalTitle="See all articles"
+                    optionalTitle="See all articles"
                     internalLink="/"
                     filters={[
                         {
