@@ -155,6 +155,7 @@ export const ArticleCardHighlighted = ({
     title,
     url,
     image480x270,
+    image48x27,
     imageAltText,
     standfirst,
     category,

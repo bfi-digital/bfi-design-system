@@ -22,6 +22,18 @@ import demoArticles from "../../../components/ArticleGrid/data"
 </Preview>
 
 <Preview>
+    <Story name="Multiple Articles without first highlighted">
+        <div style={{
+            padding: "10px",
+            maxWidth: "1000px",
+            margin: "0 auto"
+        }}>
+            <ArticleGrid articles={[...demoArticles, ...demoArticles, ...demoArticles, ...demoArticles, ...demoArticles, ...demoArticles, ...demoArticles]} />
+        </div>
+    </Story>
+</Preview>
+
+<Preview>
     <Story name="Three Articles with title and CTA">
         <div style={{
             padding: "10px",

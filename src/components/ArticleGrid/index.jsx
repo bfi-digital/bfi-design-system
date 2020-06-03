@@ -41,34 +41,42 @@ const Articles = styled.ul`
     flex-direction: row;
     flex-wrap: wrap;
 
-    .articleCard {
+
+    .articleCard, .loadingArticleCard {
         @media screen and (min-width: ${theme.s}){
             width: calc(50% - 7px);
             margin-right: 14px;
             margin-bottom: 20px;
-
-            &:nth-of-type(2n) {
-                margin-right: 0px;
-            }
         }
 
         @media screen and (min-width: ${theme.m}){
             width: ${props => props.lessColumns ? "calc(50% - 12.5px)" : "calc(33.333% - 16.666px)"};
             margin-bottom: 35px;
             margin-right: ${theme.standardSpace};
-
-            &:nth-of-type(2n) {
-                margin-right: ${props => props.lessColumns ? "0px" : "25px"};
-            }
-            &:nth-of-type(3n) {
-                margin-right: ${props => props.lessColumns ? "25px" : "0px"};
-            }
-            // &:nth-of-type(4n) {
-            //     margin-right: ${props => props.lessColumns ? "0px" : "25px"};
-            // }            
         }
         @media screen and (min-width: ${theme.l}){
             min-width: 275px;
+        }
+    }
+
+    &.noHighlight {
+        .articleCard {
+            @media screen and (min-width: ${theme.s}){
+                &:nth-of-type(2n) {
+                    margin-right: 0px;
+                }
+            }
+            @media screen and (min-width: ${theme.m}){
+                &:nth-of-type(2n) {
+                    margin-right: ${props => props.lessColumns ? "0px" : "25px"};
+                }
+                &:nth-of-type(3n) {
+                    margin-right: ${props => props.lessColumns ? "25px" : "0px"};
+                }
+                // &:nth-of-type(4n) {
+                //     margin-right: ${props => props.lessColumns ? "0px" : "25px"};
+                // }  
+            }
         }
     }
 
@@ -118,6 +126,11 @@ const Articles = styled.ul`
             }
         }   
     }
+    .loadingArticleCard {
+        &:nth-of-type(3n) {
+            margin-right: 0px;
+        }
+    }
 `
 const CentredButton = styled(Button)`
     margin: 30px auto;
@@ -138,12 +151,12 @@ export const ArticleGrid = ({
     firstHighlighted,
     children
 }) =>
-    <Outer pageWithSideBar={pageWithSideBar} className={firstHighlighted ? "withHighlight" : ""}>
+    <Outer pageWithSideBar={pageWithSideBar}>
         {optionalTitle && 
             <StyledHeadline level={2} text={optionalTitle} />
         }
         {articles ?
-            <Articles lessColumns={articles.length === 2 || articles.length === 4}>
+            <Articles lessColumns={articles.length === 2 || articles.length === 4} className={firstHighlighted ? "withHighlight" : "noHighlight"}>
                 {firstHighlighted  === true || articles.length === 1 ?
                     <>
                         <ArticleCardHighlighted key={articles[0].uuid} pageWithSideBar={pageWithSideBar} {...articles[0]}/>

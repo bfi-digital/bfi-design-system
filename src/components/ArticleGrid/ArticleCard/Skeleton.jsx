@@ -56,7 +56,7 @@ const Headline = styled.div`
 `
 
 export const Skeleton = () =>
-    <Outer className="articleCard">
+    <Outer className="loadingArticleCard">
         <Image/>
         <Inner>
             <Headline/>
