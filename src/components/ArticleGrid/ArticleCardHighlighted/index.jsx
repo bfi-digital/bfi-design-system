@@ -6,7 +6,7 @@ import { LinkSwitch as Link } from "../../LinkSwitch"
 import { Headline } from "../../Headline"
 import parse from "html-react-parser"
 
-const Outer = styled.div`
+const Outer = styled.li`
     position: relative;
     background: ${props => props.pageWithSideBar ? theme.lightGrey : theme.white};
     box-shadow: 0px 5px 0px ${theme.primary};
@@ -80,6 +80,9 @@ const CallToAction = styled(Link)`
         width: 100%;
         height: 100%;
         z-index: 2;
+    }
+    span {
+        display: none;
     }
 `
 
@@ -182,6 +185,14 @@ export const ArticleCardHighlighted = ({
             <PageImage className="image" imageSrc={image480x270} alt={imageAltText} />
         </PageImageContainer>
 
-        <CallToAction to={url} external={external} target={external ? "_blank" : "_self"} />
+        <CallToAction 
+            to={url}
+            external={external} 
+            rel="noreferrer" 
+            target={external ? "_blank" : "_self"}
+            title={"Read " + title}
+        >
+            <span>{title}</span>
+        </CallToAction>    
     </Outer>
 

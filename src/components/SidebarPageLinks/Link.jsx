@@ -112,7 +112,7 @@ export const PageLink = ({
     url
 }) =>
     <Outer>
-        <CallToAction external={external} to={url} target={external ? "_blank" : "_self"}>
+        <CallToAction external={external} rel="noreferrer" to={url} target={external ? "_blank" : "_self"}>
             <PageImageContainer>
                 <PageImage className="image" imageSrc={image} />
             </PageImageContainer>

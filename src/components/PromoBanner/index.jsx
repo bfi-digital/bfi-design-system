@@ -243,7 +243,7 @@ export const PromoBanner = ({
             <Headline level={2} text={headline}/>
             <Description className={image || oembedObject ? "with_image" : "without_image"}>{description}</Description>
             {callToActionUrl && (image || oembedObject) && 
-                <Button to={callToActionUrl} colorScheme={colorScheme === 1 || colorScheme === 2 ? 0 : 1} external={external} target={external ? "_blank" : "_self"}>
+                <Button to={callToActionUrl} colorScheme={colorScheme === 1 || colorScheme === 2 ? 0 : 1} external={external} rel="noreferrer" target={external ? "_blank" : "_self"}>
                     {callToActionTitle}
                 </Button>
             }
@@ -265,7 +265,7 @@ export const PromoBanner = ({
                     : 
                     <RightButton>
                         {callToActionUrl && 
-                        <Button to={callToActionUrl} colorScheme={colorScheme === 1 || colorScheme === 2 ? 0 : 1} external={external} target={external ? "_blank" : "_self"}>
+                        <Button to={callToActionUrl} colorScheme={colorScheme === 1 || colorScheme === 2 ? 0 : 1} external={external} rel="noreferrer" target={external ? "_blank" : "_self"}>
                             {callToActionTitle}
                         </Button>
                         }

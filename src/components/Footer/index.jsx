@@ -205,6 +205,9 @@ const linkStyles = `
             text-decoration: underline;
         }
     }
+    span.hidden_title {
+        display: none;
+    }
 `
 
 const MenuItem = styled(Link)`${linkStyles}`
@@ -271,20 +274,25 @@ export const Footer = ({
                     <FollowMenu>
                         <SubHeading>Follow us</SubHeading>
                         <IconLinkContainer>
-                            <ExternalMenuItem href="https://twitter.com/BFI" data-tracking="footer-navigation">
+                            <ExternalMenuItem href="https://twitter.com/BFI" data-tracking="footer-navigation" title="View our Twitter">
                                 <Icon className="logo" url={twitter} alt="Twitter"/>
+                                <span className="hidden_title">Twitter</span>
                             </ExternalMenuItem>
-                            <ExternalMenuItem href="https://www.facebook.com/BritishFilmInstitute/" data-tracking="footer-navigation">
+                            <ExternalMenuItem href="https://www.facebook.com/BritishFilmInstitute/" data-tracking="footer-navigation" title="View our Facebook">
                                 <Icon className="logo" url={facebook} alt="Facebook"/>
+                                <span className="hidden_title">Facebook</span>
                             </ExternalMenuItem>
-                            <ExternalMenuItem href="https://www.instagram.com/britishfilminstitute/" data-tracking="footer-navigation">
+                            <ExternalMenuItem href="https://www.instagram.com/britishfilminstitute/" data-tracking="footer-navigation" title="View our Instagram">
                                 <Icon className="logo" url={instagram} alt="Instagram"/>
+                                <span className="hidden_title">Instagram</span>
                             </ExternalMenuItem>
-                            <ExternalMenuItem href="https://www.linkedin.com/company/british-film-institute" data-tracking="footer-navigation">
+                            <ExternalMenuItem href="https://www.linkedin.com/company/british-film-institute" data-tracking="footer-navigation" title="View our LinedIn">
                                 <Icon className="logo" url={linkedin} alt="LinkedIn"/>
+                                <span className="hidden_title">LinkedIn</span>
                             </ExternalMenuItem>
-                            <ExternalMenuItem href="https://www.youtube.com/user/BFIfilms" data-tracking="footer-navigation">
+                            <ExternalMenuItem href="https://www.youtube.com/user/BFIfilms" data-tracking="footer-navigation" title="View our YouTube">
                                 <Icon className="logo" url={youtube} alt="YouTube"/>
+                                <span className="hidden_title">YouTube</span>
                             </ExternalMenuItem>
                         </IconLinkContainer>
                     </FollowMenu>

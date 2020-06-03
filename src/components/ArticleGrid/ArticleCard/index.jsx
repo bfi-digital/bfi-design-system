@@ -91,6 +91,9 @@ const CallToAction = styled(Link)`
         height: 100%;
         z-index: 2;
     }
+    span {
+        display: none;
+    }
 `
 
 const PageImageContainer = styled.div`
@@ -166,6 +169,14 @@ export const ArticleCard = ({
             {author && <Author>By {author}</Author>}
         </Meta>
 
-        <CallToAction to={url} external={external} target={external ? "_blank" : "_self"} />
+        <CallToAction 
+            to={url}
+            external={external} 
+            rel="noreferrer" 
+            target={external ? "_blank" : "_self"}
+            title={"Read " + title}
+        >
+            <span>{title}</span>
+        </CallToAction>
     </Outer>
 

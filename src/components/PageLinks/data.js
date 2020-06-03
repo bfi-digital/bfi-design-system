@@ -11,7 +11,8 @@ export const two = [
         url: "#",
         description: "We welcome production applications from new and established filmmakers.",
         callToAction: "",
-        image480x320: "http://placehold.it/480x270"
+        image480x320: "http://placehold.it/480x270",
+        external: true
     }
 ]
 
