@@ -11,7 +11,7 @@ export default {
 
 export const normal = () =>
     <Hero 
-        image1920x1080="https://bfi-prototype.netlify.com/static/media/watch-banner.b01324c4.jpg"
+        image1920x1080="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1920/1080/1/2020-03/Hero.jpg"
         headline="Watch a new film, rediscover your old favourites, and get inspired."
         copyright="Image: Firstname Surname"
     />
@@ -21,7 +21,7 @@ export const withHeader = () =>
         <Header navItems={navItems} quickLinks={quickLinksData} overlay={true} />
         <Hero 
             withHeader
-            image1920x1080="https://bfi-prototype.netlify.com/static/media/watch-banner.b01324c4.jpg"
+            image1920x1080="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1920/1080/1/2020-03/Hero.jpg"
             headline="Watch a new film, rediscover your old favourites, and get inspired."
         />
     </>

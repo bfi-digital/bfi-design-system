@@ -9,7 +9,6 @@ import { Image } from "../Image"
 import { Text } from "../Text"
 import { LinkSwitch as Link } from "../LinkSwitch"
 
-
 const Outer = styled.div`
     margin: 0 auto;
     text-align: center;
@@ -52,6 +51,7 @@ const BrandLogo = styled.div`
 `
 export const HeroArticle = ({
     image1920x1080,
+    image192x108,    
     imageAltText,
     imageCopyright,
     title,
@@ -97,6 +97,7 @@ export const HeroArticle = ({
                     <Image
                         alt={imageAltText}
                         src={image1920x1080}
+                        placeholder={image192x108}
                         copyright={imageCopyright}
                     />
                 }

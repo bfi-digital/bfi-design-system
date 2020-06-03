@@ -3,6 +3,7 @@ import { Headline } from "../Headline"
 import styled from "styled-components"
 import theme from "../_theme"
 import PropTypes from "prop-types"
+import ProgressiveImage from "react-progressive-graceful-image";
 
 const Outer = styled.section`
     margin: 0 auto;
@@ -98,22 +99,30 @@ const Copyright = styled.p`
 
 export const Hero = ({
     image1920x1080,
+    image192x108,
     headline,
     withHeader,
     copyright,
     children
 }) =>
-    <Outer 
-        image={image1920x1080} 
-        withHeader={withHeader}
+    <ProgressiveImage
+        src={image1920x1080}
+        placeholder={image192x108}
     >
-        <InnerGradient />
-        <Container>
-            {children}
-            {headline && <Headline level={0} text={headline}/>}
-            {copyright && <Copyright>{copyright}</Copyright>}
-        </Container>
-    </Outer>
+        {src => 
+            <Outer 
+                image={src} 
+                withHeader={withHeader}
+            >
+                <InnerGradient />
+                <Container>
+                    {children}
+                    {headline && <Headline level={0} text={headline}/>}
+                    {copyright && <Copyright>{copyright}</Copyright>}
+                </Container>
+            </Outer>
+        }
+    </ProgressiveImage>
 
 
 Hero.propTypes = {

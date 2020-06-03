@@ -185,7 +185,7 @@ export const normalPageWithHeroImage = () =>
                 title="Headline goes here"
                 standfirst="God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs. Do you have any idea how long it takes those cups to decompose. Yes, Yes, without the oops! Yes, Yes, without the oops! Drive us out of here!"
                 breadcrumbs={crumbs}
-                image1920x1080="https://bfi-prototype.netlify.com/static/media/watch-banner.b01324c4.jpg"
+                image1920x1080="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1920/1080/1/2020-03/Hero.jpg"
                 imageAltText="Alt text for the image"
                 imageCopyright="HELP MUSICIANS, directed by Thomas Guthrie"
             />
@@ -372,7 +372,7 @@ export const ArticleFeatureExample = () =>
     <>
         <Header navItems={navItems} quickLinks={quickLinksData}  />
         <HeroArticle 
-            image1920x1080="https://bfi-prototype.netlify.com/static/media/watch-banner.b01324c4.jpg"
+            image1920x1080="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1920/1080/1/2020-03/Hero.jpg"
             imageAltText="Alt text for the image"
             imageCopyright="HELP MUSICIANS, directed by Thomas Guthrie"
             title="Britain on Lockdown: How online videos have shaped the crisis"
@@ -915,7 +915,7 @@ export const ArticleSightAndSoundExample = () =>
     <>
         <Header navItems={navItems} quickLinks={quickLinksData}  />
         <HeroArticle 
-            image1920x1080="https://bfi-prototype.netlify.com/static/media/watch-banner.b01324c4.jpg"
+            image1920x1080="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1920/1080/1/2020-03/Hero.jpg"
             imageAltText="Alt text for the image"
             imageCopyright="HELP MUSICIANS, directed by Thomas Guthrie"
             title="Britain on Lockdown: How online videos have shaped the crisis"

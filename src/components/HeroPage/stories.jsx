@@ -13,7 +13,7 @@ export const normal = () =>
         maxWidth: "1400px"
     }}>
         <HeroPage 
-            image1920x1080="https://bfi-prototype.netlify.com/static/media/watch-banner.b01324c4.jpg"
+            image1920x1080="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1920/1080/1/2020-03/Hero.jpg"
             imageAltText="Alt text for the image"
             imageCopyright="HELP MUSICIANS, directed by Thomas Guthrie"
             title="Britain on Lockdown: How online videos have shaped the crisis"

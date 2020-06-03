@@ -11042,7 +11042,7 @@ Array [
         <img
           alt="Alt text for the image"
           className="sc-ipXKqB fWaeud"
-          src="https://bfi-prototype.netlify.com/static/media/watch-banner.b01324c4.jpg"
+          src="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1920/1080/1/2020-03/Hero.jpg"
         />
         <small
           className="sc-kLIISr dXNHdj"
@@ -14586,7 +14586,7 @@ Array [
         <img
           alt="Alt text for the image"
           className="sc-ipXKqB fWaeud"
-          src="https://bfi-prototype.netlify.com/static/media/watch-banner.b01324c4.jpg"
+          src="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1920/1080/1/2020-03/Hero.jpg"
         />
         <small
           className="sc-kLIISr dXNHdj"
@@ -21870,7 +21870,7 @@ Array [
           <img
             alt="Alt text for the image"
             className="sc-ipXKqB fWaeud"
-            src="https://bfi-prototype.netlify.com/static/media/watch-banner.b01324c4.jpg"
+            src="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1920/1080/1/2020-03/Hero.jpg"
           />
           <small
             className="sc-kLIISr dXNHdj"
@@ -26423,7 +26423,7 @@ exports[`Storyshots 2 All Components/Hero Page Normal 1`] = `
         <img
           alt="Alt text for the image"
           className="sc-ipXKqB fWaeud"
-          src="https://bfi-prototype.netlify.com/static/media/watch-banner.b01324c4.jpg"
+          src="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1920/1080/1/2020-03/Hero.jpg"
         />
         <small
           className="sc-kLIISr dXNHdj"
@@ -26705,7 +26705,7 @@ exports[`Storyshots 2 All Components/HeroArticle Normal 1`] = `
         <img
           alt="Alt text for the image"
           className="sc-ipXKqB fWaeud"
-          src="https://bfi-prototype.netlify.com/static/media/watch-banner.b01324c4.jpg"
+          src="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1920/1080/1/2020-03/Hero.jpg"
         />
         <small
           className="sc-kLIISr dXNHdj"

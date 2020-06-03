@@ -47,6 +47,7 @@ const ImageContainer = styled.div`
 `
 export const HeroPage = ({
     image1920x1080,
+    image192x108,
     imageAltText,
     imageCopyright,
     title,
@@ -65,6 +66,7 @@ export const HeroPage = ({
                 <Image
                     alt={imageAltText}
                     src={image1920x1080}
+                    placeholder={image192x108}
                     copyright={imageCopyright}
                 />
             </ImageContainer>

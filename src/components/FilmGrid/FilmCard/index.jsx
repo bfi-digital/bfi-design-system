@@ -139,10 +139,10 @@ export const FilmCard = ({
     >
         <ImageContainer>
             <ProgressiveImage
-                src={image480x270}
+                src={image480x270 != "" ? image480x270 : placeholderImage}
                 placeholder={image480x270 != "" ? image48x27 : placeholderImageSmall}
             >
-                {src => <Image src={src != "" ? src : placeholderImage} alt={imageAltText} />}
+                {src => <Image src={src} alt={imageAltText} />}
             </ProgressiveImage>
 
         </ImageContainer>
