@@ -18,28 +18,9 @@ import three, { two } from "../../../components/PageLinks/data"
 </Preview>
 
 <Preview>
-    <Story name="Nine Links">
-        <div style={{padding: "20px"}}>
-            <PageLinks links={[
-                ...three, ...three, ...three
-            ]} />
-        </div>
-    </Story>
-</Preview>
-
-<Preview>
     <Story name="Three Links with images">
         <div style={{padding: "20px"}}>
             <PageLinks links={three} withImages={true} />
-        </div>
-    </Story>
-</Preview>
-
-
-<Preview>
-    <Story name="Six Links">
-        <div style={{padding: "20px"}}>
-            <PageLinks links={[...three, ...three]} />
         </div>
     </Story>
 </Preview>
@@ -51,6 +32,38 @@ import three, { two } from "../../../components/PageLinks/data"
         </div>
     </Story>
 </Preview>
+
+<Preview>
+    <Story name="Six Links">
+        <div style={{padding: "20px"}}>
+            <PageLinks links={[...three, ...three]} />
+        </div>
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="Nine Links">
+        <div style={{padding: "20px"}}>
+            <PageLinks links={[
+                ...three, ...three, ...three
+            ]} />
+        </div>
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="Twelve Links">
+        <div style={{padding: "20px"}}>
+            <PageLinks links={[
+                ...three, ...three, ...three, ...three
+            ]} />
+        </div>
+    </Story>
+</Preview>
+
+
+
+
 
 ## Props 
 

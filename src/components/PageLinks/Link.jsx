@@ -65,7 +65,26 @@ const Outer = styled.li`
         transform: translate(0px, 3px);
     }
 `
+const RestyledOuter = styled(Outer)`
+    flex: 0 0 80%;
+    margin-right: 25px !important;
 
+    &:last-of-type {
+        margin-right: 0px !important;
+    }
+
+    @media screen and (min-width: ${theme.m}){
+        flex: 0 0 30%;
+        &:nth-of-type(even){
+            margin-right: 25px !important;
+        }
+    }
+    @media screen and (min-width: ${theme.l}){
+        &:nth-of-type(3n){
+            margin-right: 25px !important;
+        }
+    }
+`
 const Description = styled.p`
     color: ${theme.black};
     margin-bottom: 15px;
@@ -143,6 +162,8 @@ const PageImage = styled.div`
     -o-transition: all ease 0.3s;
     transition: all ease 0.3s;
 `
+const ConditionalWrapper = ({ condition, wrapper, wrapper2, children }) => 
+    condition ? wrapper(children) : wrapper2(children)
 
 export const PageLink = ({
     title,
@@ -151,9 +172,14 @@ export const PageLink = ({
     url,
     image480x320,
     external,
-    withImages
+    withImages,
+    inScroller
 }) =>
-    <Outer withImages={withImages}>
+    <ConditionalWrapper
+        condition={inScroller}
+        wrapper={children => <RestyledOuter withImages={withImages}>{children}</RestyledOuter>}
+        wrapper2={children => <Outer withImages={withImages}>{children}</Outer>}
+    >
         { withImages && 
             <PageImageContainer>
                 <PageImage className="image" imageSrc={image480x320} />
@@ -165,5 +191,5 @@ export const PageLink = ({
             <CTAText>{callToAction !== "" ? callToAction : "Read this page"}</CTAText>
             <Icon><Arrow colourFill={theme.dark} /></Icon>
         </CallToAction>
-    </Outer>
+    </ConditionalWrapper>
 

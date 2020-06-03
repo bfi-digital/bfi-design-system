@@ -47,6 +47,8 @@ const Outer = styled.ul`
         margin-bottom: 25px;
     }
 `
+const ConditionalWrapper = ({ condition, wrapper, wrapper2, children }) => 
+    condition ? wrapper(children) : wrapper2(children)
 
 export const PageLinks = ({
     links,
@@ -54,21 +56,15 @@ export const PageLinks = ({
     withImages = false
 }) =>
     links && 
-        <>
-            {links.length > 9 ?
-                <Scroller>
-                    {links.map((link, i) =>
-                        <PageLink key={i} {...link} colorScheme={colorScheme} withImages={withImages} inScroller={true} />    
-                    )}
-                </Scroller>
-                :
-                <Outer lessColumns={links.length === 2 || links.length === 4} className="pageLinks">
-                    {links.map((link, i) =>
-                        <PageLink key={i} {...link} colorScheme={colorScheme} withImages={withImages} />    
-                    )}
-                </Outer>
-            }
-        </>
+        <ConditionalWrapper
+            condition={links.length > 9}
+            wrapper={children => <Scroller>{children}</Scroller>}
+            wrapper2={children => <Outer lessColumns={links.length === 2 || links.length === 4} className="pageLinks">{children}</Outer>}
+        >
+            {links.map((link, i) =>
+                <PageLink key={i} {...link} colorScheme={colorScheme} withImages={withImages} inScroller={links.length > 9} />    
+            )}
+        </ConditionalWrapper>
 
 
 PageLinks.propTypes = {
