@@ -47,7 +47,7 @@ const Step = styled.li`
         width: 20px;
         height: 20px;
         border-radius: 100%;
-        font-size: 0.9rem;
+        font-size: ${theme.small_fontSize_m};
     }
     &:last-of-type{
         &:before{
@@ -71,7 +71,7 @@ const ShowButton = styled.button`
     background: none;
     border: none;
     background: none;
-    font-size: 1rem;
+    font-size: ${theme.fontSize_s};
     padding: 0;
 
     &:focus{

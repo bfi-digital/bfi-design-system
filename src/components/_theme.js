@@ -21,6 +21,21 @@ export default {
     l: "1040px", // desktops and larger
     xl: "1440px", // large desktops only
 
-    horizontalPadding: "20px"
+    // sizes & spacings
+    horizontalPadding: "20px",
 
+    fontSize_s: "1.05rem",
+    lineHeight_s: "1.5",
+
+    small_fontSize_m: "0.8rem",
+    fontSize_m: "1.14rem",
+    lineHeight_m: "1.6",
+    large_fontSize_m: "1.4rem",
+    large_lineHeight_m: "1.6",
+
+    fontSize_xl: "1.25rem",
+    lineHeight_xl: "1.6",
+    large_fontSize_xl: "1.6rem",
+    large_lineHeight_xl: "1.6",
+    
 }

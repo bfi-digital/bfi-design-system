@@ -7,12 +7,12 @@ import PropTypes from "prop-types"
 const Outer = styled.ol`
     list-style: none;
     color: ${theme.black};
-    font-size: 0.9rem;
+    font-size: ${theme.small_fontSize_m};
     padding-left: 0px;
-    line-height: 1.5;
+    line-height: ${theme.lineHeight_s};
     margin-top: 0;
     @media screen and (min-width: ${theme.l}){
-        font-size: 1rem;
+        font-size: ${theme.fontSize_s};
         max-width: calc( 0.7 * ${theme.l});
     }
     @media screen and (min-width: ${theme.xl}){

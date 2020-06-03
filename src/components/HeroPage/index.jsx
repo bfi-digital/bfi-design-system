@@ -13,14 +13,16 @@ const Outer = styled.div`
     width: 100%;
     flex: 0 0 100%;
     margin-bottom: 15px;
-    margin-top: 35px;
     
 
-    max-width: ${theme.xl};
+    max-width: calc(${theme.xl} - 100px);
     max-width: calc(${theme.xl} + 125px);
 
     p, ol {
         max-width: 775px;
+    }
+    h1 {
+        margin-block-start: 1em;
     }
 
     &.without_image {
@@ -57,15 +59,16 @@ export const HeroPage = ({
             {title && <Headline level={1} text={title}/>}
             {standfirst && <LeadParagraph text={standfirst}/>}
         </Meta>
-        <ImageContainer>
-            {image1920x1080 &&
+        {image1920x1080 &&
+            <ImageContainer>
+            
                 <Image
                     alt={imageAltText}
                     src={image1920x1080}
                     copyright={imageCopyright}
                 />
-            }
-        </ImageContainer>
+            </ImageContainer>
+        }
     </Outer>
 
 

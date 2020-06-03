@@ -19,11 +19,15 @@ const Quote = styled.q`
     font-size: 1.2rem;
     line-height: 1.4;
 
+    @media screen and (min-width: ${theme.m}){
+        max-width: calc(${theme.l} - 200px);
+    }
     @media screen and (min-width: ${theme.l}){
         font-size: 1.3rem;
     }
     @media screen and (min-width: ${theme.xl}){
         font-size: 1.5rem;
+        max-width: calc(${theme.xl} - 400px);
     }
 `
 
@@ -32,13 +36,14 @@ const Citation = styled.cite`
     display: block;
     font-style: normal;
     margin-top: 10px;
-    line-height: 1.5;
-    font-size: 1rem;
+    line-height: ${theme.lineHeight_s};
+    font-size: ${theme.fontSize_s};
     @media screen and (min-width: ${theme.l}){
-        font-size: 1.125rem;
+        font-size: ${theme.fontSize_m};
+        line-height: ${theme.lineHeight_m};
     }
     @media screen and (min-width: ${theme.xl}){
-        font-size: 1.25rem;
+        font-size: ${theme.fontSize_xl};
     }
 `
 

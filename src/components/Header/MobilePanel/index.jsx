@@ -47,7 +47,7 @@ const ItemButton = styled.button`
     text-decoration: none;
     background: none;
     border: none;
-    font-size: 1rem;
+    font-size: ${theme.fontSize_s};
     font-weight: 600;
     color: ${theme.black};
     transition: color 0.1s;

@@ -25,7 +25,8 @@ const PrimaryButton = styled(Link)`
     display: inline-block;
     position: relative;
     font-weight: bold;
-    font-size: 1.125rem;
+    font-size: ${theme.fontSize_m};
+    line-height: ${theme.lineHeight_m};
     color: ${props => colorSchemes[props.colorScheme].text};
     background: ${props => colorSchemes[props.colorScheme].background};
     text-decoration: none;
@@ -82,7 +83,7 @@ const SecondaryButton = styled(Link)`
     color: ${theme.black};
     font-weight: bold;
     // border-radius: 5px;
-    font-size: 1rem;
+    font-size: ${theme.fontSize_s};
     padding: 4px 15px;
     text-decoration: none;
     transition: box-shadow .3s;
@@ -105,7 +106,7 @@ const TertiaryButton = styled(Link)`
     color: ${theme.black};
     font-weight: bold;
     // border-radius: 5px;
-    font-size: 1rem;
+    font-size: ${theme.fontSize_s};
     padding: 10px 30px;
     text-decoration: none;
     margin: 0 auto;

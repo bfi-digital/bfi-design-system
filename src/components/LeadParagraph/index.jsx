@@ -5,21 +5,21 @@ import PropTypes from "prop-types"
 
 const Outer = styled.p`
     color: ${theme.black};
-    line-height: 1.5;
-    font-size: 1.0625rem;
+    font-size: ${theme.fontSize_m};
+    line-height: ${theme.lineHeight_m};
     margin-bottom: 30px;
     white-space: pre-wrap;
     margin-top: 0;
 
     @media screen and (min-width: ${theme.m}){
-        font-size: 1.1875rem;
+        font-size: ${theme.large_fontSize_m};
+        line-height: ${theme.large_lineHeight_m};
     }
     @media screen and (min-width: ${theme.l}){
-        font-size: 1.3125rem;
         max-width: calc(${theme.l} - 10%);
     }
     @media screen and (min-width: ${theme.xl}){
-        font-size: 1.5625rem;
+        font-size: ${theme.large_fontSize_xl};
         max-width: calc(${theme.xl} - 20%);
     }
 `

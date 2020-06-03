@@ -15,8 +15,8 @@ export const Wrapper = styled.div`
         flex-direction: row;
         margin: 60px auto;
     }
-    @media screen and (min-width: ${theme.xl + 200}){
-        max-width: ${theme.xl};
+    @media screen and (min-width: ${theme.xl}){
+        max-width: calc(${theme.xl} - 100px);
     }
     &:last-of-type{
         margin-bottom: 100px;
@@ -41,7 +41,10 @@ export const Wrapper = styled.div`
 
 export const MainContent = styled.article`
     flex: 1;
-
+    
+    & h2:first-child {
+        margin-block-start: 0.5em;
+    }
     iframe {
         border: none;
     }
@@ -52,8 +55,8 @@ export const WrapperFullWidth = styled.article`
 export const MaxWidth = styled.article`
     max-width: ${theme.l};
     margin: 0 auto;
-    @media screen and (min-width: ${theme.xl + 200}){
-        max-width: ${theme.xl};
+    @media screen and (min-width: ${theme.xl}){
+        max-width: calc(${theme.xl} - 100px);
     }
 `
 

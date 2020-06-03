@@ -9,7 +9,7 @@ const Button = styled.button`
     cursor: pointer;
     background: none;
     padding: 10px 10px;
-    font-size: 1rem;
+    font-size: ${theme.fontSize_s};
     font-weight: bold;
     display: flex;
     flex-direction: row;

@@ -4,7 +4,7 @@ import theme from "../_theme"
 import PropTypes from "prop-types"
 
 const HeroH1 = styled.h1`
-    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, "Open Sans", Arial, "Lucida Grande", sans-serif; 
     text-transform: uppercase;
     color: ${theme.black};
     font-weight: 800;
@@ -22,7 +22,6 @@ const HeroH1 = styled.h1`
 `
 
 const H1 = styled(HeroH1)`
-    font-family: "Open Sans";
     text-transform: none;
     margin-block-start: 0.75em;
     margin-block-end: 0.5em;
@@ -30,11 +29,12 @@ const H1 = styled(HeroH1)`
 `
 
 const H2 = styled.h2`
+    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, "Open Sans", Arial, "Lucida Grande", sans-serif; 
     color: ${theme.black};
     font-weight: 700;
-    font-size: 1.375rem;
+    font-size: 1.4375rem;
     margin-block-start: 1.75em;
-    margin-block-end: 0.5em;
+    margin-block-end: 0.75em;
     line-height: 1.3;
 
     @media screen and (min-width: ${theme.l}){
@@ -47,8 +47,8 @@ const H2 = styled.h2`
 
 const H3 = styled.h3`
     color: ${theme.black};
-    font-weight: 700;
-    font-size: 1.4375rem;
+    font-weight: 600;
+    font-size: 1.375rem;
     margin-block-start: 1.5em;
     margin-block-end: 0.5em;
     line-height: 1.3;
@@ -60,8 +60,8 @@ const H3 = styled.h3`
 
 const H3Fake = styled.p`
     color: ${theme.black};
-    font-weight: 700;
-    font-size: 1.4375rem;
+    font-weight: 600;
+    font-size: 1.375rem;
     margin-block-start: 1.5em;
     margin-block-end: 0.5em;
     line-height: 1.3;
@@ -76,12 +76,13 @@ const H4 = styled.h4`
     font-family: "Open Sans";
     color: ${theme.black};
     font-weight: 600;
-    font-size: 1rem;
+    font-size: ${theme.fontSize_s};
     margin-bottom: 10px;
     line-height: 1.3;
 
     @media screen and (min-width: ${theme.m}){
-        font-size: 1.125rem;
+        font-size: ${theme.fontSize_m};
+        line-height: ${theme.lineHeight_m};
     }
     @media screen and (min-width: ${theme.xl}){
         font-size: 1.563rem;
@@ -91,13 +92,14 @@ const H4Fake = styled.p`
     font-family: "Open Sans";
     color: ${theme.black};
     font-weight: 600;
-    font-size: 1rem;
+    font-size: ${theme.fontSize_s};
     margin-bottom: 10px;
     line-height: 1.3;
     margin-top: 0;
 
     @media screen and (min-width: ${theme.m}){
-        font-size: 1.125rem;
+        font-size: ${theme.fontSize_m};
+        line-height: ${theme.lineHeight_m};
     }
     @media screen and (min-width: ${theme.xl}){
         font-size: 1.563rem;
@@ -112,10 +114,11 @@ const H5 = styled.h5`
     line-height: 1.3;
 
     @media screen and (min-width: ${theme.m}){
-        font-size: 1rem;
+        font-size: ${theme.fontSize_s};
     }
     @media screen and (min-width: ${theme.xl}){
-        font-size: 1.125rem;
+        font-size: ${theme.fontSize_m};
+        line-height: ${theme.lineHeight_m};
     }
 `
 

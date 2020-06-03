@@ -62,8 +62,8 @@ const Container = styled.div`
     z-index: 1;
     position: relative;
 
-    @media screen and (min-width: ${theme.xl + 200}){
-        max-width: ${theme.xl};
+    @media screen and (min-width: ${theme.xl}){
+        max-width: calc(${theme.xl} - 100px);
     }
 
     ol + h1 {
@@ -84,7 +84,7 @@ const Container = styled.div`
 const Copyright = styled.p`
     color: ${theme.white};
     text-shadow: 0px 0px 30px ${theme.black}50;
-    font-size: 0.75rem;
+    font-size: ${theme.small_fontSize_m};
     position: absolute;
     bottom: 5px;
     display: none;

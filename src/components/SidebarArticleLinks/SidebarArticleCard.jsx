@@ -112,21 +112,22 @@ const Heading = styled.p`
     font-family: "Open Sans";
     color: ${theme.black};
     font-weight: 600;
-    font-size: 0.875rem;
+    font-size: ${theme.small_fontSize_m};
     line-height: 1.3;
     margin-top: 0;
     margin-bottom: 5px;
 
     @media screen and (min-width: ${theme.m}){
-        font-size: 1rem;
+        font-size: ${theme.fontSize_s};
     }
     @media screen and (min-width: ${theme.xl}){
-        font-size: 1.125rem;
+        font-size: ${theme.fontSize_m};
+        line-height: ${theme.lineHeight_m};
     }
 `
 const Date = styled.p`
     margin-bottom: 5px;
-    font-size: 0.8rem;
+    font-size: ${theme.small_fontSize_m};
     color: ${theme.darkGrey};
     margin-top: 5px;
 `
@@ -136,7 +137,7 @@ const StyledTag = styled.div`
     color: ${theme.black};
     padding: 5px 10px;
     margin-right: 5px;
-    font-size: 0.8rem;
+    font-size: ${theme.small_fontSize_m};
     display: inline-block;
     margin-bottom: 10px;
 `

@@ -5,14 +5,8 @@ import PropTypes from "prop-types"
 
 const Outer = styled.div`
     color: ${theme.black};
-    line-height: 1.5;
-    font-size: 1rem;
-    @media screen and (min-width: ${theme.l}){
-        font-size: 1.125rem;
-    }
-    @media screen and (min-width: ${theme.xl}){
-        font-size: 1.25rem;
-    }
+    line-height: ${theme.lineHeight_s};
+    font-size: ${theme.fontSize_s};
 
     p:first-of-type{
         margin-top: 0px;
@@ -81,6 +75,25 @@ const Outer = styled.div`
     }
 
     
+    @media screen and (min-width: ${theme.m}){
+        max-width: calc(${theme.l} - 200px);
+    }
+    @media screen and (min-width: ${theme.l}){
+        font-size: ${theme.fontSize_m};
+        line-height: ${theme.lineHeight_m};
+    }
+    @media screen and (min-width: ${theme.xl}){
+        font-size: ${theme.fontSize_xl};
+        max-width: calc(${theme.xl} - 400px);
+    }
+
+
+
+
+
+    // TABLE STYLES
+
+
     table { 
         width: 750px; 
         border-collapse: collapse; 

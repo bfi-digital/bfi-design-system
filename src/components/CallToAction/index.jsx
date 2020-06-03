@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 import { Button } from "../Button"
 
 export const Outer = styled.div`
-    margin: 20px 0;
+    margin: 1.75em 0;
     text-align: ${props => props.center ? "center" : "left"};
 `
 

@@ -143,7 +143,7 @@ const RightButton = styled.div`
 const Description = styled.p`
     margin-top: 0px;
     @media screen and (min-width: ${theme.m}){
-        font-size: 1.25rem;
+        font-size: ${theme.fontSize_xl};
         margin-bottom: 25px;
 
         &.without_image {

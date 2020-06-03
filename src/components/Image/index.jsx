@@ -31,7 +31,7 @@ const StyledImage = styled.img`
 const Figcaption = styled.figcaption`
     text-align: center;
     color: ${props => props.white ? theme.white : theme.darkGrey};
-    font-size: 0.9rem;
+    font-size: ${theme.small_fontSize_m};
     margin: 0 auto;
     display: block;
     &:hover {
@@ -142,14 +142,14 @@ const Small =styled.small`
     margin: 0 auto;
     display: block;
     font-style: italic;
-    font-size: 0.7rem;
+    font-size: ${theme.small_fontSize_m};
     margin-top: 5px;
 
     &:hover {
         cursor: default;
     }
     @media screen and (min-width: ${theme.m}){
-        font-size: 0.9rem;
+        font-size: ${theme.fontSize_s};
     }
 `
 

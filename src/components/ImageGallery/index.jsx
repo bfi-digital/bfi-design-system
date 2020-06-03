@@ -65,7 +65,7 @@ const Outer = styled.figure`
 const Caption = styled.figcaption`
     text-align: center;
     color: ${props => props.white ? theme.white : theme.darkGrey};
-    font-size: 0.9rem;
+    font-size: ${theme.small_fontSize_m};
     max-width: 70%;
     margin: 0 auto;
     display: block;
@@ -76,7 +76,7 @@ const Caption = styled.figcaption`
 const Small = styled.small`
     text-align: center;
     color: ${props => props.white ? theme.white : theme.darkGrey};
-    font-size: 0.9rem;
+    font-size: ${theme.small_fontSize_m};
     max-width: 70%;
     margin: 0 auto;
     display: block;

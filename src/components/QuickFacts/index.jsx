@@ -11,7 +11,7 @@ const Outer = styled.dl`
 `
 
 const Label = styled.dt`
-    font-size: 1rem;
+    font-size: ${theme.fontSize_s};
 
 `
 

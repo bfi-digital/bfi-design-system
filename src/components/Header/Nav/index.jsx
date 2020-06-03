@@ -78,9 +78,9 @@ const ItemLink = styled(Link)`
 
 const Item = styled.li`
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: ${theme.small_fontSize_m};
     @media screen and (min-width: ${theme.l}){
-        font-size: 1rem;
+        font-size: ${theme.fontSize_s};
     }
 `
 
@@ -211,7 +211,7 @@ const ChildLink = styled(Link)`
     }
     @media screen and (min-width: ${theme.l}){
         padding: 15px 15px;
-        font-size: 1rem;
+        font-size: ${theme.fontSize_s};
     }
 `
 

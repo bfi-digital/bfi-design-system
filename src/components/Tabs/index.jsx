@@ -17,7 +17,7 @@ const Li = styled.li`
     padding: 10px 0px;
     
     margin-right: 30px;
-    font-size: 1.25rem;
+    font-size: ${theme.fontSize_xl};
     border-bottom: ${props => props.active ? `3px solid ${theme.dark}` : "none"};
     padding-bottom: ${props => props.active ? "10px" : "11px"};
 `
@@ -30,7 +30,7 @@ const Button = styled.button`
     background: none;
     text-decoration: none;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: ${theme.fontSize_s};
     color: ${props => props.active ? theme.dark : theme.primary};
     position: relative;
 

@@ -25,7 +25,7 @@ const FeedbackBar = styled.button`
     width: 100%;
     color: ${theme.white};
     cursor: pointer;
-    font-size: 0.8rem; 
+    font-size: ${theme.small_fontSize_m}; 
     border: none;
     text-align: left;
 
@@ -42,7 +42,7 @@ const FeedbackBar = styled.button`
     }
 
     @media screen and (min-width: ${theme.m}){
-        font-size: 1rem;
+        font-size: ${theme.fontSize_s};
         padding: 15px ${theme.horizontalPadding};
     }
 `

@@ -125,7 +125,7 @@ const PageImage = styled.div`
 const Standfirst = styled.p`
     color: ${theme.black};
     margin-bottom: 15px;
-    line-height: 1.5;
+    line-height: ${theme.lineHeight_s};
 `
 const CategoryTag = styled.div`
     background: ${theme.primary};
@@ -138,11 +138,11 @@ const CategoryTag = styled.div`
     top: 15px;
     left: 0;
     z-index: 1;
-    font-size: 0.8rem;
+    font-size: ${theme.small_fontSize_m};
 
     @media screen and (min-width: ${theme.m}){
         padding-left: 25px;
-        font-size: 1rem;
+        font-size: ${theme.fontSize_s};
     }
 `
 

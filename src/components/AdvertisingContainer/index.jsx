@@ -20,7 +20,7 @@ const AdvertisingNotice = styled.p`
     color: ${theme.darkGrey};
     margin-top: 0;
     margin-bottom: 5px !important;
-    font-size: 0.8em;
+    font-size: ${theme.small_fontSize_m};
 `
 
 export const AdvertisingContainer = ({

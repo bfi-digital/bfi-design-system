@@ -6,8 +6,8 @@ export const Wrapper = styled.div`
     margin: 0 auto;
     padding: 40px ${theme.horizontalPadding};
     
-    @media screen and (min-width: ${theme.xl + 200}){
-        max-width: ${theme.xl};
+    @media screen and (min-width: ${theme.xl}){
+        max-width: calc(${theme.xl} - 100px);
         padding: 70px ${theme.horizontalPadding};
     }
 `
@@ -16,5 +16,9 @@ export const MainContent = styled.article`
     flex: 1;
     iframe {
         border: none;
+    }
+
+    & h2:first-child {
+        margin-block-start: 0.5em;
     }
 `

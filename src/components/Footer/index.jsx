@@ -35,8 +35,8 @@ const Inner = styled.div`
         }
     }
 
-    @media screen and (min-width: ${theme.xl + 200}) {
-        max-width: ${theme.xl};
+    @media screen and (min-width: ${theme.xl}) {
+        max-width: calc(${theme.xl} - 100px);
     }
 `
 
@@ -53,8 +53,8 @@ const TopRow = styled.section`
 
 const MiddleRow = styled.section`
     margin-bottom: 30px;
-    border-top: 1px solid ${theme.dark};
-    border-bottom: 1px solid ${theme.dark};
+    border-top: 1px solid ${theme.black};
+    border-bottom: 1px solid ${theme.black};
     padding-top: 35px;
     padding-bottom: 35px;
 
@@ -84,12 +84,11 @@ const FollowMenu = styled.div`
 
 
 const BottomRow = styled.section`
-    font-size: 0.8rem;
+    font-size: ${theme.small_fontSize_m};
     text-align: center;
 
     @media screen and (min-width: ${theme.m}) {
         text-align: left;
-        font-size: 0.85rem;
         .container {
             display: flex;
             flex-direction: row;

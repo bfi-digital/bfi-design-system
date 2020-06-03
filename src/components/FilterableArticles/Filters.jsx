@@ -12,7 +12,7 @@ const Filter = styled.button`
     color: ${theme.black};
     font-weight: bold;
     border-radius: 100px;
-    font-size: 1rem;
+    font-size: ${theme.fontSize_s};
     padding: 5px 15px;
     margin-right: 10px;
     background-color: transparent;

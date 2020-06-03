@@ -13,8 +13,7 @@ import { LinkSwitch as Link } from "../LinkSwitch"
 const Outer = styled.div`
     margin: 0 auto;
     text-align: center;
-    margin-top: 50px;
-    max-width: ${theme.xl};
+    max-width: calc(${theme.xl} - 100px);
     max-width: calc(${theme.xl} + 125px);
 `
 const Meta = styled.div`

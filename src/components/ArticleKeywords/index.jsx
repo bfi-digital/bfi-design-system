@@ -10,7 +10,7 @@ const FilterLink = styled.a`
     color: ${theme.black};
     font-weight: bold;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: ${theme.fontSize_s};
     padding: 5px 15px;
     text-decoration: none;
     margin-right: 10px;

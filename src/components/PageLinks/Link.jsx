@@ -69,7 +69,7 @@ const Outer = styled.li`
 const Description = styled.p`
     color: ${theme.black};
     margin-bottom: 15px;
-    line-height: 1.5;
+    line-height: ${theme.lineHeight_s};
 `
 
 const CallToAction = styled(Link)`

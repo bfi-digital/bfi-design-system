@@ -106,7 +106,7 @@ const NewsletterForm = styled.form`
         margin-top: 5px;
         padding: 10px 10px;
         padding-top: 12px;        
-        font-size: 1rem;
+        font-size: ${theme.fontSize_s};
         border: none;
         border-bottom: 5px solid ${theme.grey};
         transition: border .3s;
@@ -137,7 +137,8 @@ const SubmitButton = styled.button`
     display: inline-block;
     position: relative;
     font-weight: bold;
-    font-size: 1.125rem;
+    font-size: ${theme.fontSize_m};
+    line-height: ${theme.lineHeight_m};
     color: ${theme.white};
     background: ${theme.black};
     text-decoration: none;

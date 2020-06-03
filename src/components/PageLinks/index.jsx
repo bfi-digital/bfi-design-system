@@ -3,6 +3,7 @@ import styled from "styled-components"
 import theme from "../_theme"
 import { PageLink } from "./Link"
 import PropTypes from "prop-types"
+import { Scroller } from "../Scroller"
 
 const Outer = styled.ul`
     padding: 15px 0;
@@ -36,43 +37,14 @@ const Outer = styled.ul`
             min-width: 275px;
         }
     }
-`
-const ScrollerContainer = styled.div`
-    width: 100%;
-    overflow: scroll;
-    padding: 15px ${theme.horizontalPadding};
-`
-const ScrollerTrack = styled.ul`
-    width: ${props => props.num*285}px;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
 
-    @media screen and (min-width: ${theme.m}){
-        width: ${props => props.num*385}px;
+
+    & + .pageLinks {
+        margin-top: -15px;
+        padding-top: 0px;
     }
-    @media screen and (min-width: ${theme.l}){
-        width: ${props => props.num*435}px;
-    }
-
-    li {
-        display: inline-block;
-        margin-right: 25px;
-        width: 250px;
-
-        &:last-of-type {
-            margin-right: 0px;
-        }
-
-        @media screen and (min-width: ${theme.m}){
-            width: 350px;
-        }
-        @media screen and (min-width: ${theme.l}){
-            width: 400px;
-        }
-
+    &:last-of-type {
+        margin-bottom: 25px;
     }
 `
 
@@ -84,15 +56,13 @@ export const PageLinks = ({
     links && 
         <>
             {links.length > 9 ?
-                <ScrollerContainer>
-                    <ScrollerTrack num={links.length}>
-                        {links.map((link, i) =>
-                            <PageLink key={i} {...link} colorScheme={colorScheme} withImages={withImages} />    
-                        )}
-                    </ScrollerTrack>
-                </ScrollerContainer>
+                <Scroller>
+                    {links.map((link, i) =>
+                        <PageLink key={i} {...link} colorScheme={colorScheme} withImages={withImages} inScroller={true} />    
+                    )}
+                </Scroller>
                 :
-                <Outer lessColumns={links.length === 2 || links.length === 4}>
+                <Outer lessColumns={links.length === 2 || links.length === 4} className="pageLinks">
                     {links.map((link, i) =>
                         <PageLink key={i} {...link} colorScheme={colorScheme} withImages={withImages} />    
                     )}
