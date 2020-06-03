@@ -43,6 +43,8 @@ const Articles = styled.ul`
 
 
     .articleCard, .loadingArticleCard {
+        width: 100%;
+
         @media screen and (min-width: ${theme.s}){
             width: calc(50% - 7px);
             margin-right: 14px;

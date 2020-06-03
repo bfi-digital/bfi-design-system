@@ -17,16 +17,18 @@ const Outer = styled.li`
     min-height: 130px;
     width: 100%;
     padding: 15px;
-    padding-top: 155px;
+    padding-top: 203px;
 
     @media screen and (min-width: ${theme.m}){
         width: 190px;
         padding: ${theme.standardSpace};
-        padding-top: 175px;
+        padding-top: 185px;
     }
     @media screen and (min-width: ${theme.l}){
-        width: Arrow;
-        padding-top: 235px;
+        padding-top: 200px;
+    }
+    @media screen and (min-width: ${theme.xl}){
+        padding-top: 260px;
     }
 
 
@@ -104,13 +106,16 @@ const PageImageContainer = styled.div`
     position: absolute;
     top: 0;
     left: 0;
-    height: 140px;
+    height: 188px;
 
     @media screen and (min-width: ${theme.m}){
         height: 160px;
     }
     @media screen and (min-width: ${theme.l}){
-        height: 220px;
+        height: 175px;
+    }
+    @media screen and (min-width: ${theme.xl}){
+        height: 235px;
     }
 `
 const PageImage = styled.div`

@@ -82,7 +82,6 @@ const H4 = styled.h4`
 
     @media screen and (min-width: ${theme.m}){
         font-size: ${theme.fontSize_m};
-        line-height: ${theme.lineHeight_m};
     }
     @media screen and (min-width: ${theme.xl}){
         font-size: 1.563rem;
@@ -99,7 +98,6 @@ const H4Fake = styled.p`
 
     @media screen and (min-width: ${theme.m}){
         font-size: ${theme.fontSize_m};
-        line-height: ${theme.lineHeight_m};
     }
     @media screen and (min-width: ${theme.xl}){
         font-size: 1.563rem;
@@ -118,7 +116,6 @@ const H5 = styled.h5`
     }
     @media screen and (min-width: ${theme.xl}){
         font-size: ${theme.fontSize_m};
-        line-height: ${theme.lineHeight_m};
     }
 `
 

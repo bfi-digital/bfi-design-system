@@ -19,19 +19,21 @@ const Outer = styled.li`
     min-height: 130px;
     width: 100%;
     padding: 15px;
-    padding-top: ${props => props.withImages ? "135px" : "15px"};
-    
+    padding-top: ${props => props.withImages ? "203px" : "15px"};
 
     @media screen and (min-width: ${theme.m}){
         width: 190px;
         padding: ${theme.standardSpace};
-        padding-top: ${props => props.withImages ? "155px" : "25px"};
+        padding-top: ${props => props.withImages ? (props.lessColumns ? "275px" : "185px") : "25px"};
     }
     @media screen and (min-width: ${theme.l}){
         width: 220px;
-        padding-top: ${props => props.withImages ? "225px" : "25px"};
-    }
-
+        padding-top: ${props => props.withImages ? (props.lessColumns ? "298px" : "200px") : "25px"};
+    } 
+    @media screen and (min-width: ${theme.xl}){
+        width: 220px;
+        padding-top: ${props => props.withImages ? (props.lessColumns ? "355px" : "260px") : "25px"};
+    } 
 
     h4{
         margin-top: 0;
@@ -141,13 +143,16 @@ const PageImageContainer = styled.div`
     position: absolute;
     top: 0;
     left: 0;
-    height: 120px;
+    height: 188px;
 
     @media screen and (min-width: ${theme.m}){
-        height: 130px;
+        height: ${props => props.lessColumns ? "250px" : "160px"};
     }
     @media screen and (min-width: ${theme.l}){
-        height: 200px;
+        height: ${props => props.lessColumns ? "273px" : "175px"};
+    }
+    @media screen and (min-width: ${theme.xl}){
+        height: ${props => props.lessColumns ? "330px" : "235px"};
     }
 `
 const PageImage = styled.div`
@@ -175,15 +180,16 @@ export const PageLink = ({
     image48x32,
     external,
     withImages,
-    inScroller
+    inScroller,
+    lessColumns
 }) =>
     <ConditionalWrapper
         condition={inScroller}
-        wrapper={children => <RestyledOuter withImages={withImages}>{children}</RestyledOuter>}
-        wrapper2={children => <Outer withImages={withImages}>{children}</Outer>}
+        wrapper={children => <RestyledOuter withImages={withImages} lessColumns={lessColumns}>{children}</RestyledOuter>}
+        wrapper2={children => <Outer withImages={withImages} lessColumns={lessColumns}>{children}</Outer>}
     >
         { withImages && 
-            <PageImageContainer>
+            <PageImageContainer lessColumns={lessColumns}>
                 <ProgressiveImage
                     src={image480x320}
                     placeholder={image48x32}

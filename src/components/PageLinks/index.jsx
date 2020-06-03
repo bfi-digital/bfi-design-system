@@ -13,6 +13,8 @@ const Outer = styled.ul`
     flex-wrap: wrap;
 
     li {
+        width: 100%;
+
         @media screen and (min-width: ${theme.s}){
             width: calc(50% - 12.5px);
             margin-right: ${theme.standardSpace};
@@ -62,7 +64,7 @@ export const PageLinks = ({
             wrapper2={children => <Outer lessColumns={links.length === 2 || links.length === 4} className="pageLinks">{children}</Outer>}
         >
             {links.map((link, i) =>
-                <PageLink key={i} {...link} colorScheme={colorScheme} withImages={withImages} inScroller={links.length > 9} />    
+                <PageLink key={i} {...link} colorScheme={colorScheme} withImages={withImages} inScroller={links.length > 9} lessColumns={links.length === 2 || links.length === 4} />    
             )}
         </ConditionalWrapper>
 

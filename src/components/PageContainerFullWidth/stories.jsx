@@ -948,7 +948,7 @@ export const everyComponent = () =>
 
                 <Headline 
                     level={2} 
-                    text="Page links with iamges"
+                    text="Page links with images"
                 />
                 <PageLinks withImages={true} links={[
                     {
@@ -984,11 +984,20 @@ export const everyComponent = () =>
                         image48x32: "http://placehold.it/48x27"
                     }
                 ]} />
+                <p>three columns</p>
                 <PageLinks withImages={true} links={[
                     {
                         title: "Development fund",
                         description: "We welcome development applications from new and established filmmakers.",
                         url: "#",
+                        callToAction: "Apply to this fund",
+                        image480x320: "http://placehold.it/480x270",
+                        image48x32: "http://placehold.it/48x27"
+                    },
+                    {
+                        title: "Production Fund",
+                        url: "#",
+                        description: "We welcome production applications from new and established filmmakers.",
                         callToAction: "Apply to this fund",
                         image480x320: "http://placehold.it/480x270",
                         image48x32: "http://placehold.it/48x27"
