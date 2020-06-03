@@ -19,30 +19,25 @@ const CentredButton = styled(Button)`
     text-align: center;
 `
 
+const ConditionalWrapper = ({ condition, wrapper, wrapper2, children }) => 
+    condition ? wrapper(children) : wrapper2(children)
+
+
 export const FilmGrid = ({
     films,
     allFilmsUrl
 }) =>
     <>
-        {films.length === 4 || films.length === 5 || films.length > 6 ?
-            <>
-                <Scroller>
-                    {films.map(film =>
-                        <FilmCard key={film.uuid + "_scroll"} inScroller={true} {...film}/>    
-                    )}
-                </Scroller>
-                { allFilmsUrl &&
-                    <CentredButton to={allFilmsUrl}>See more films</CentredButton>
-                }
-            </>
-            :
-            <Outer>
-                {films.map(film =>
-                    <FilmCard key={film.uuid + "_notscroll"} {...film}/>    
-                )}
-                { allFilmsUrl &&
-                    <CentredButton to={allFilmsUrl}>See more films</CentredButton>
-                }
-            </Outer>
+        <ConditionalWrapper
+            condition={films.length === 4 || films.length === 5 || films.length > 6}
+            wrapper={children => <Scroller>{children}</Scroller>}
+            wrapper2={children => <Outer>{children}</Outer>}
+        >
+            {films.map(film =>
+                <FilmCard key={film.uuid + "_scroll"} inScroller={films.length === 4 || films.length === 5 || films.length > 6} {...film}/>    
+            )}
+        </ConditionalWrapper>
+        { allFilmsUrl &&
+            <CentredButton to={allFilmsUrl}>See more films</CentredButton>
         }
     </>

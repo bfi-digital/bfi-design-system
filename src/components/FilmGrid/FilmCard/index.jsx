@@ -107,7 +107,8 @@ const Image = styled.img`
 `
 
 const Title = styled.p`
-    font-size: 1.125rem;
+    font-size: ${theme.fontSize_m};
+    line-height: ${theme.lineHeight_m};
     margin-top: 5px;
     margin-bottom: 15px;
     font-weight: 700;
@@ -117,6 +118,8 @@ const Channels = styled.div`
     margin: 0;
     padding: 0;
 `
+const ConditionalWrapper = ({ condition, wrapper, wrapper2, children }) => 
+    condition ? wrapper(children) : wrapper2(children)
 
 export const FilmCard = ({
     image480x270,
@@ -126,30 +129,18 @@ export const FilmCard = ({
     imageAltText,
     inScroller
 }) =>
-    <>
-        {inScroller ? 
-            <RestyledOuter to={url} inScroller={inScroller}>
-                <ImageContainer>
-                    <Image src={image480x270 != "" ? image480x270 : placeholderImage} alt={imageAltText} />
-                </ImageContainer>
-                <Title className="filmcard_title">{name}</Title>
-                <Channels>
-                    {channels.map(channel =>
-                        <Tag key={channel}>{channel}</Tag>
-                    )}
-                </Channels>
-            </RestyledOuter>
-            :
-            <Outer to={url} inScroller={inScroller}>
-                <ImageContainer>
-                    <Image src={image480x270 ? image480x270 : placeholderImage} alt={imageAltText} />
-                </ImageContainer>
-                <Title>{name}</Title>
-                <Channels>
-                    {channels.map(channel =>
-                        <Tag key={channel}>{channel}</Tag>
-                    )}
-                </Channels>
-            </Outer>
-        }
-    </>
+    <ConditionalWrapper
+        condition={inScroller}
+        wrapper={children => <RestyledOuter to={url}>{children}</RestyledOuter>}
+        wrapper2={children => <Outer to={url}>{children}</Outer>}
+    >
+        <ImageContainer>
+            <Image src={image480x270 != "" ? image480x270 : placeholderImage} alt={imageAltText} />
+        </ImageContainer>
+        <Title className="filmcard_title">{name}</Title>
+        <Channels>
+            {channels.map(channel =>
+                <Tag key={channel}>{channel}</Tag>
+            )}
+        </Channels>
+    </ConditionalWrapper>
