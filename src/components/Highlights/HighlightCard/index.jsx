@@ -62,7 +62,7 @@ const CallToAction = styled(LinkSwitch)`
 `
 
 export const HighlightCard = ({
-    image480x320,
+    image480x270,
     imageAltText,
     caption,
     title,
@@ -72,7 +72,7 @@ export const HighlightCard = ({
     external
 }) =>
     <Outer>
-        <Img alt={imageAltText} src={image480x320}/>
+        <Img alt={imageAltText} src={image480x270}/>
         <Inner>
             <Caption>{caption}</Caption>
             <Headline>{title}</Headline>
@@ -85,7 +85,7 @@ HighlightCard.propTypes = {
     /** 
     * Image source
     **/
-    image480x320: PropTypes.string,
+    image480x270: PropTypes.string,
     /** 
     * Alternative text for the image
     **/

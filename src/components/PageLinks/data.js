@@ -4,16 +4,16 @@ export const two = [
         description: "We welcome development applications from new and established filmmakers.",
         url: "#",
         callToAction: "Apply to this fund",
-        image480x320: "http://placehold.it/480x270",
-        image48x32: "http://placehold.it/48x27"
+        image480x270: "http://placehold.it/480x270",
+        image48x27: "http://placehold.it/48x27"
     },
     {
         title: "Production Fund",
         url: "#",
         description: "We welcome production applications from new and established filmmakers.",
         callToAction: "",
-        image480x320: "http://placehold.it/480x270",
-        image48x32: "http://placehold.it/48x27",
+        image480x270: "http://placehold.it/480x270",
+        image48x27: "http://placehold.it/48x27",
         external: true
     }
 ]
@@ -25,7 +25,7 @@ export default [
         url: "#",
         description: "We support both majority and minority UK co-productions.",
         callToAction: "Filmmaking courses for 16 to 19-year-olds",
-        image480x320: "http://placehold.it/480x270",
-        image48x32: "http://placehold.it/48x27"
+        image480x270: "http://placehold.it/480x270",
+        image48x27: "http://placehold.it/48x27"
     }
 ]

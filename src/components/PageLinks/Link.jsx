@@ -176,8 +176,8 @@ export const PageLink = ({
     description,
     callToAction,
     url,
-    image480x320,
-    image48x32,
+    image480x270,
+    image48x27,
     external,
     withImages,
     inScroller,
@@ -191,8 +191,8 @@ export const PageLink = ({
         { withImages && 
             <PageImageContainer lessColumns={lessColumns}>
                 <ProgressiveImage
-                    src={image480x320}
-                    placeholder={image48x32}
+                    src={image480x270}
+                    placeholder={image48x27}
                 >
                     {src => <PageImage className="image" imageSrc={src} />}
                 </ProgressiveImage>

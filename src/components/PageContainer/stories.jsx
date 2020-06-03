@@ -1581,16 +1581,16 @@ export const everyComponent = () =>
                         description: "We welcome development applications from new and established filmmakers.",
                         url: "#",
                         callToAction: "Apply to this fund",
-                        image480x320: "http://placehold.it/480x270",
-                        image48x32: "http://placehold.it/48x27"
+                        image480x270: "http://placehold.it/480x270",
+                        image48x27: "http://placehold.it/48x27"
                     },
                     {
                         title: "Production Fund",
                         url: "#",
                         description: "We welcome production applications from new and established filmmakers.",
                         callToAction: "Apply to this fund",
-                        image480x320: "http://placehold.it/480x270",
-                        image48x32: "http://placehold.it/48x27"
+                        image480x270: "http://placehold.it/480x270",
+                        image48x27: "http://placehold.it/48x27"
                     }
                 ]} />
                 <Divider />

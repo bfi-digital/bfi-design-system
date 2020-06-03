@@ -3,8 +3,10 @@ import styled from "styled-components"
 import theme from "../../_theme"
 import { LinkSwitch } from "../../LinkSwitch"
 import { Tag } from "../../Tag"
+import ProgressiveImage from "react-progressive-graceful-image";
 import placeholderImage from "./placeholder.png"
-    
+import placeholderImageSmall from "./placeholder-small.png"
+
 const Outer = styled(LinkSwitch)`
     display: block;
     // border-radius: 5px;
@@ -123,6 +125,7 @@ const ConditionalWrapper = ({ condition, wrapper, wrapper2, children }) =>
 
 export const FilmCard = ({
     image480x270,
+    image48x27,
     name,
     channels,
     url,
@@ -135,7 +138,13 @@ export const FilmCard = ({
         wrapper2={children => <Outer to={url}>{children}</Outer>}
     >
         <ImageContainer>
-            <Image src={image480x270 != "" ? image480x270 : placeholderImage} alt={imageAltText} />
+            <ProgressiveImage
+                src={image480x270}
+                placeholder={image480x270 != "" ? image48x27 : placeholderImageSmall}
+            >
+                {src => <Image src={image480x270 != "" ? image480x270 : placeholderImage} alt={imageAltText} />}
+            </ProgressiveImage>
+
         </ImageContainer>
         <Title className="filmcard_title">{name}</Title>
         <Channels>

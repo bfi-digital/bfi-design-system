@@ -78,7 +78,7 @@ export const Highlights = ({
             <TabPanel i={2} openTab={openTab}>
                 <Grid>
                     <HighlightCard
-                        image480x320={todayHighlight.image480x320}
+                        image480x270={todayHighlight.image480x270}
                         imageAltText={todayHighlight.imageAltText}
                         caption={todayHighlight.caption}
                         title={todayHighlight.title}
@@ -97,7 +97,7 @@ export const Highlights = ({
             <TabPanel i={3} openTab={openTab}>
                 <Grid>
                     <HighlightCard
-                        image480x320={weekHighlight.image480x320}
+                        image480x270={weekHighlight.image480x270}
                         imageAltText={weekHighlight.imageAltText}
                         caption={weekHighlight.caption}
                         title={weekHighlight.title}

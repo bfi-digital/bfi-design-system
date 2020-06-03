@@ -24,7 +24,7 @@ export const normal = () =>
                 callToActionTitle: "Explore the programme"
             }}
             todayHighlight={{
-                image480x320: "https://placehold.it/480x320",
+                image480x270: "https://placehold.it/480x270",
                 imageAltText: "",
                 caption: "Current season",
                 title: "Fellini Season, Jan-Feb 2020",
@@ -34,7 +34,7 @@ export const normal = () =>
             }}
             todayShowings={demoShowings}
             weekHighlight={{
-                image480x320: "https://placehold.it/480x320",
+                image480x270: "https://placehold.it/480x270",
                 imageAltText: "",
                 caption: "Current season",
                 title: "Cronenberg Season, Jan-Feb 2020",
