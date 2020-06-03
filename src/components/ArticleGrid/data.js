@@ -12,7 +12,8 @@ export default [
     },
     {
         title: "The 100 Greatest Films of All Time",
-        image480x270: "https://www.bfi.org.uk/sites/bfi.org.uk/files/styles/api_original/public/news/vertigo-1958-012-madeleine-bouquet_1000x750.jpg",
+        image480x270: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/480/270/1/2020-03/cityoftinylights_01-h_2016.jpg",
+        image48x27: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/48/27/1/2020-03/cityoftinylights_01-h_2016.jpg",
         imageAltText: "Example image",
         standfirst: "In our biggest ever film critics&rsquo; poll, the list of best movies ever made has a new top film, ending the 50-year reign of Citizen Kane.",
         author: "Author name",

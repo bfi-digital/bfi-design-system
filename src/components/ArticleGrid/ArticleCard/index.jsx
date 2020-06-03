@@ -3,6 +3,7 @@ import styled from "styled-components"
 import theme from "../../_theme"
 import { LinkSwitch as Link } from "../../LinkSwitch"
 import { Headline } from "../../Headline"
+import ProgressiveImage from "react-progressive-graceful-image";
 
 const Outer = styled.li`
     position: relative;
@@ -147,6 +148,7 @@ export const ArticleCard = ({
     title,
     url,
     image480x270,
+    image48x27,
     imageAltText,
     category,
     date,
@@ -161,7 +163,12 @@ export const ArticleCard = ({
             type && <CategoryTag>{type}</CategoryTag>
         }
         <PageImageContainer>
-            <PageImage className="image" imageSrc={image480x270} alt={imageAltText} />
+            <ProgressiveImage
+                src={image480x270}
+                placeholder={image48x27}
+            >
+                {src => <PageImage className="image" imageSrc={src} alt={imageAltText} />}
+            </ProgressiveImage>
         </PageImageContainer>
         <Headline level={7} text={title} />
         <Meta>
