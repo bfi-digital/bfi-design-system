@@ -151,7 +151,7 @@ export const SidebarArticleCard = ({
     external
 }) =>
     <Outer>
-        <CallToAction external={external} to={url}>
+        <CallToAction external={external} to={url} target={external ? "_blank" : "_self"}>
             <PageImageContainer>
                 <PageImage className="image" imageSrc={image480x270 ? image480x270 : placeholderImage} alt={imageAltText} />
             </PageImageContainer>

@@ -15,7 +15,7 @@ export const CallToAction = ({
     external
 }) =>
     <Outer center={center}>
-        <Button to={linkURL} external={external}>
+        <Button to={linkURL} external={external} target={external ? "_blank" : "_self"}>
             {linkText}
         </Button>
     </Outer>

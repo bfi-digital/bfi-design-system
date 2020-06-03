@@ -182,6 +182,6 @@ export const ArticleCardHighlighted = ({
             <PageImage className="image" imageSrc={image480x270} alt={imageAltText} />
         </PageImageContainer>
 
-        <CallToAction to={url} external={external}/>
+        <CallToAction to={url} external={external} target={external ? "_blank" : "_self"} />
     </Outer>
 

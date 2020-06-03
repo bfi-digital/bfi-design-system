@@ -187,7 +187,7 @@ export const PageLink = ({
         }
         {title && <Headline level={7} text={title} />}
         {description && <Description>{parse(description)}</Description>}
-        <CallToAction external={external} to={url}>
+        <CallToAction external={external} to={url} target={external ? "_blank" : "_self"}>
             <CTAText>{callToAction !== "" ? callToAction : "Read this page"}</CTAText>
             <Icon><Arrow colourFill={theme.dark} /></Icon>
         </CallToAction>

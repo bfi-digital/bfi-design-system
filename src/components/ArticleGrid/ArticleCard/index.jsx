@@ -166,6 +166,6 @@ export const ArticleCard = ({
             {author && <Author>By {author}</Author>}
         </Meta>
 
-        <CallToAction to={url} external={external} />
+        <CallToAction to={url} external={external} target={external ? "_blank" : "_self"} />
     </Outer>
 

@@ -78,7 +78,7 @@ export const HighlightCard = ({
             <Headline>{title}</Headline>
             <Description>{description}</Description>
         </Inner>
-        <CallToAction external={external} to={callToActionUrl}>{callToActionTitle}</CallToAction>
+        <CallToAction external={external} to={callToActionUrl} target={external ? "_blank" : "_self"}>{callToActionTitle}</CallToAction>
     </Outer>
 
 HighlightCard.propTypes = {
