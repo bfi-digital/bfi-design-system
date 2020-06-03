@@ -123,19 +123,22 @@ export const discoveryPage = () =>
                         title: "100 great films streaming on Netflix and Amazon Prime",
                         url: "#",
                         callToAction: "Read this list",
-                        image480x320: "http://placehold.it/480x270"
+                        image480x320: "http://placehold.it/480x270",
+                        image48x32: "http://placehold.it/48x27"
                     },
                     {
                         title: "Production Fund",
                         url: "#",
                         callToAction: "Read this list",
-                        image480x320: "http://placehold.it/480x270"
+                        image480x320: "http://placehold.it/480x270",
+                        image48x32: "http://placehold.it/48x27"
                     },
                     {
                         title: "Production Fund",
                         url: "#",
                         callToAction: "Read this list",
-                        image480x320: "http://placehold.it/480x270"
+                        image480x320: "http://placehold.it/480x270",
+                        image48x32: "http://placehold.it/48x27"
                     }
                 ]} />
                 <CallToAction linkText="See more lists" linkURL="/" center={true} />
@@ -464,14 +467,16 @@ export const serviceListPageExample = () =>
                         description: "We welcome development applications from new and established filmmakers.",
                         url: "#",
                         callToAction: "Apply to this fund",
-                        image480x320: "http://placehold.it/480x270"
+                        image480x320: "http://placehold.it/480x270",
+                        image48x32: "http://placehold.it/48x27"
                     },
                     {
                         title: "Production Fund",
                         url: "#",
                         description: "We welcome production applications from new and established filmmakers.",
                         callToAction: "Apply to this fund",
-                        image480x320: "http://placehold.it/480x270"
+                        image480x320: "http://placehold.it/480x270",
+                        image48x32: "http://placehold.it/48x27"
                     }
                 ]} colorScheme={1}/>
                 
@@ -790,21 +795,24 @@ export const everyComponent = () =>
                         description: "We welcome development applications from new and established filmmakers.",
                         url: "#",
                         callToAction: "Apply to this fund",
-                        image480x320: "http://placehold.it/480x270"
+                        image480x320: "http://placehold.it/480x270",
+                        image48x32: "http://placehold.it/48x27"
                     },
                     {
                         title: "Production Fund",
                         url: "#",
                         description: "We welcome production applications from new and established filmmakers.",
                         callToAction: "Apply to this fund",
-                        image480x320: "http://placehold.it/480x270"
+                        image480x320: "http://placehold.it/480x270",
+                        image48x32: "http://placehold.it/48x27"
                     },
                     {
                         title: "Something Fund",
                         url: "#",
                         description: "We welcome production applications from new and established filmmakers.",
                         callToAction: "Apply to this fund",
-                        image480x320: "http://placehold.it/480x270"
+                        image480x320: "http://placehold.it/480x270",
+                        image48x32: "http://placehold.it/48x27"
                     }
                 ]} />
                 <PageLinks links={[
@@ -813,14 +821,16 @@ export const everyComponent = () =>
                         description: "We welcome development applications from new and established filmmakers.",
                         url: "#",
                         callToAction: "Apply to this fund",
-                        image480x320: "http://placehold.it/480x270"
+                        image480x320: "http://placehold.it/480x270",
+                        image48x32: "http://placehold.it/48x27"
                     },
                     {
                         title: "Production Fund",
                         url: "#",
                         description: "We welcome production applications from new and established filmmakers.",
                         callToAction: "Apply to this fund",
-                        image480x320: "http://placehold.it/480x270"
+                        image480x320: "http://placehold.it/480x270",
+                        image48x32: "http://placehold.it/48x27"
                     }
                 ]} />
                 <PageLinks links={[
@@ -829,7 +839,8 @@ export const everyComponent = () =>
                         description: "We welcome development applications from new and established filmmakers.",
                         url: "#",
                         callToAction: "Apply to this fund",
-                        image480x320: "http://placehold.it/480x270"
+                        image480x320: "http://placehold.it/480x270",
+                        image48x32: "http://placehold.it/48x27"
                     }
                 ]} />
                 <Headline 
@@ -842,84 +853,96 @@ export const everyComponent = () =>
                         description: "We welcome development applications from new and established filmmakers.",
                         url: "#",
                         callToAction: "Apply to this fund",
-                        image480x320: "http://placehold.it/480x270"
+                        image480x320: "http://placehold.it/480x270",
+                        image48x32: "http://placehold.it/48x27"
                     },
                     {
                         title: "Production Fund",
                         url: "#",
                         description: "We welcome production applications from new and established filmmakers.",
                         callToAction: "Apply to this fund",
-                        image480x320: "http://placehold.it/480x270"
+                        image480x320: "http://placehold.it/480x270",
+                        image48x32: "http://placehold.it/48x27"
                     },
                     {
                         title: "Something Fund",
                         url: "#",
                         description: "We welcome production applications from new and established filmmakers.",
                         callToAction: "Apply to this fund",
-                        image480x320: "http://placehold.it/480x270"
+                        image480x320: "http://placehold.it/480x270",
+                        image48x32: "http://placehold.it/48x27"
                     },
                     {
                         title: "Development fund",
                         description: "We welcome development applications from new and established filmmakers.",
                         url: "#",
                         callToAction: "Apply to this fund",
-                        image480x320: "http://placehold.it/480x270"
+                        image480x320: "http://placehold.it/480x270",
+                        image48x32: "http://placehold.it/48x27"
                     },
                     {
                         title: "Production Fund",
                         url: "#",
                         description: "We welcome production applications from new and established filmmakers.",
                         callToAction: "Apply to this fund",
-                        image480x320: "http://placehold.it/480x270"
+                        image480x320: "http://placehold.it/480x270",
+                        image48x32: "http://placehold.it/48x27"
                     },
                     {
                         title: "Something Fund",
                         url: "#",
                         description: "We welcome production applications from new and established filmmakers.",
                         callToAction: "Apply to this fund",
-                        image480x320: "http://placehold.it/480x270"
+                        image480x320: "http://placehold.it/480x270",
+                        image48x32: "http://placehold.it/48x27"
                     },
                     {
                         title: "Development fund",
                         description: "We welcome development applications from new and established filmmakers.",
                         url: "#",
                         callToAction: "Apply to this fund",
-                        image480x320: "http://placehold.it/480x270"
+                        image480x320: "http://placehold.it/480x270",
+                        image48x32: "http://placehold.it/48x27"
                     },
                     {
                         title: "Production Fund",
                         url: "#",
                         description: "We welcome production applications from new and established filmmakers.",
                         callToAction: "Apply to this fund",
-                        image480x320: "http://placehold.it/480x270"
+                        image480x320: "http://placehold.it/480x270",
+                        image48x32: "http://placehold.it/48x27"
                     },
                     {
                         title: "Something Fund",
                         url: "#",
                         description: "We welcome production applications from new and established filmmakers.",
                         callToAction: "Apply to this fund",
-                        image480x320: "http://placehold.it/480x270"
+                        image480x320: "http://placehold.it/480x270",
+                        image48x32: "http://placehold.it/48x27"
                     },
                     {
                         title: "Development fund",
                         description: "We welcome development applications from new and established filmmakers.",
                         url: "#",
                         callToAction: "Apply to this fund",
-                        image480x320: "http://placehold.it/480x270"
+                        image480x320: "http://placehold.it/480x270",
+                        image48x32: "http://placehold.it/48x27"
                     },
                     {
                         title: "Production Fund",
                         url: "#",
                         description: "We welcome production applications from new and established filmmakers.",
                         callToAction: "Apply to this fund",
-                        image480x320: "http://placehold.it/480x270"
+                        image480x320: "http://placehold.it/480x270",
+                        image48x32: "http://placehold.it/48x27"
                     },
                     {
                         title: "Something Fund",
                         url: "#",
                         description: "We welcome production applications from new and established filmmakers.",
                         callToAction: "Apply to this fund",
-                        image480x320: "http://placehold.it/480x270"
+                        image480x320: "http://placehold.it/480x270",
+                        image48x32: "http://placehold.it/48x27"
                     }
                 ]} />
 
@@ -933,28 +956,32 @@ export const everyComponent = () =>
                         description: "We welcome development applications from new and established filmmakers.",
                         url: "#",
                         callToAction: "Apply to this fund",
-                        image480x320: "http://placehold.it/480x270"
+                        image480x320: "http://placehold.it/480x270",
+                        image48x32: "http://placehold.it/48x27"
                     },
                     {
                         title: "Production Fund",
                         url: "#",
                         description: "We welcome production applications from new and established filmmakers.",
                         callToAction: "Apply to this fund",
-                        image480x320: "http://placehold.it/480x270"
+                        image480x320: "http://placehold.it/480x270",
+                        image48x32: "http://placehold.it/48x27"
                     },
                     {
                         title: "Something Fund",
                         url: "#",
                         description: "We welcome production applications from new and established filmmakers.",
                         callToAction: "Apply to this fund",
-                        image480x320: "http://placehold.it/480x270"
+                        image480x320: "http://placehold.it/480x270",
+                        image48x32: "http://placehold.it/48x27"
                     },
                     {
                         title: "Something Fund",
                         url: "#",
                         description: "We welcome production applications from new and established filmmakers.",
                         callToAction: "Apply to this fund",
-                        image480x320: "http://placehold.it/480x270"
+                        image480x320: "http://placehold.it/480x270",
+                        image48x32: "http://placehold.it/48x27"
                     }
                 ]} />
                 <PageLinks withImages={true} links={[
@@ -963,14 +990,16 @@ export const everyComponent = () =>
                         description: "We welcome development applications from new and established filmmakers.",
                         url: "#",
                         callToAction: "Apply to this fund",
-                        image480x320: "http://placehold.it/480x270"
+                        image480x320: "http://placehold.it/480x270",
+                        image48x32: "http://placehold.it/48x27"
                     },
                     {
                         title: "Production Fund",
                         url: "#",
                         description: "We welcome production applications from new and established filmmakers.",
                         callToAction: "Apply to this fund",
-                        image480x320: "http://placehold.it/480x270"
+                        image480x320: "http://placehold.it/480x270",
+                        image48x32: "http://placehold.it/48x27"
                     }
                 ]} />
                 <PageLinks withImages={true} links={[
@@ -979,7 +1008,8 @@ export const everyComponent = () =>
                         description: "We welcome development applications from new and established filmmakers.",
                         url: "#",
                         callToAction: "Apply to this fund",
-                        image480x320: "http://placehold.it/480x270"
+                        image480x320: "http://placehold.it/480x270",
+                        image48x32: "http://placehold.it/48x27"
                     }
                 ]} />
                 

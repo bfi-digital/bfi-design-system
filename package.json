@@ -65,6 +65,7 @@
     "moment": "^2.24.0",
     "query-string": "^6.12.1",
     "react-load-script": "0.0.6",
+    "react-progressive-graceful-image": "^0.6.11",
     "react-typeform-embed": "^0.2.1"
   },
   "jest": {
