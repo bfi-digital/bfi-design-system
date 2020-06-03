@@ -20,7 +20,7 @@ const Outer = styled.div`
     padding: 15px;
 
     @media screen and (min-width: ${theme.m}){
-        padding: 25px;
+        padding: ${theme.standardSpace};
     }
 
     h4{
@@ -84,7 +84,7 @@ const CallToAction = styled(Link)`
 `
 
 const Content = styled.div`
-    padding-right: 25px;
+    padding-right: ${theme.standardSpace};
     position: relative;
     padding-top: 180px;
     width: 100%;
@@ -141,7 +141,7 @@ const CategoryTag = styled.div`
     font-size: ${theme.small_fontSize_m};
 
     @media screen and (min-width: ${theme.m}){
-        padding-left: 25px;
+        padding-left: ${theme.standardSpace};
         font-size: ${theme.fontSize_s};
     }
 `

@@ -15,14 +15,14 @@ const Outer = styled.ul`
     li {
         @media screen and (min-width: ${theme.s}){
             width: calc(50% - 12.5px);
-            margin-right: 25px;
+            margin-right: ${theme.standardSpace};
             &:nth-of-type(even) {
                 margin-right: 0px;
             }
         }
         @media screen and (min-width: ${theme.m}){
             width: ${props => props.lessColumns ? "calc(50% - 12.5px)" : "calc(33.333% - 16.666px)"};
-            margin-right: 25px;
+            margin-right: ${theme.standardSpace};
             &:nth-of-type(even) {
                 margin-right: ${props => props.lessColumns ? "0px" : "25px"};
             }
@@ -44,7 +44,7 @@ const Outer = styled.ul`
         padding-top: 0px;
     }
     &:last-of-type {
-        margin-bottom: 25px;
+        margin-bottom: ${theme.standardSpace};
     }
 `
 const ConditionalWrapper = ({ condition, wrapper, wrapper2, children }) => 

@@ -637,18 +637,20 @@ export const everyComponent = () =>
                     <p>Fellini’s epic La dolce vita stands as a towering achievement of 1960s cinema. Set in Rome during the height of the ‘Hollywood on the Tiber’ era, the episodic narrative follows jaded journalist Marcello Rubini (Mastroianni) on the trail of gossip on VIPs, including Swedish-American film star Sylvia Rank (Ekberg).</p>
                 </Text>
                 <DownloadableFiles
-                    files={{
-                        title: "Young Audiences Content Fund production application guidelines",
-                        type: "PDF",
-                        url: "https://www.bfi.org.uk/sites/bfi.org.uk/files/downloads/bfi-young-audiences-content-fund-production-application-guidelines-2019-10.pdf",
-                        size: "1.2 MB"
-                    }}
+                    files={[
+                        {
+                            title: "File title",
+                            type: "PDF",
+                            url: "https://www.bfi.org.uk/sites/bfi.org.uk/files/downloads/bfi-young-audiences-content-fund-production-application-guidelines-2019-10.pdf",
+                            size: "1.2 MB"
+                        }
+                    ]}
                 />
                 <Text>
                     <p>The film caused a sensation on its initial release, angering censors and polarising opinion among critics and audiences, but is now rightly considered a masterpiece that’s had a profound influence on popular culture.</p>
                 </Text>
                 
-                <Button url="#" colorScheme={0}>Apply for funding</Button>
+                <CallToAction linkURL="#" linkText="Apply for funding" />
                 <Divider />
                 <Headline 
                     level={2} 

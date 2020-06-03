@@ -39,7 +39,7 @@ const Outer = styled.li`
         background: ${theme.grey};
     }
     &:last-of-type {
-        margin-bottom: 25px;
+        margin-bottom: ${theme.standardSpace};
         &:after {
             display: none;
         }

@@ -23,7 +23,7 @@ const Outer = styled.li`
 
     @media screen and (min-width: ${theme.m}){
         width: 190px;
-        padding: 25px;
+        padding: ${theme.standardSpace};
         padding-top: ${props => props.withImages ? "155px" : "25px"};
     }
     @media screen and (min-width: ${theme.l}){

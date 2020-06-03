@@ -27,7 +27,7 @@ export const Wrapper = styled.div`
     }
 
     aside {
-        padding-top: 25px;
+        padding-top: ${theme.standardSpace};
         padding-bottom: 0px;
         @media screen and (min-width: ${theme.m}){
             padding-top: 0px;
@@ -47,6 +47,9 @@ export const MainContent = styled.article`
     }
     iframe {
         border: none;
+    }
+    .map_embed {
+        margin-bottom: ${theme.standardSpace};
     }
 `
 export const WrapperFullWidth = styled.article`

@@ -1,11 +1,12 @@
 import React from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
+import theme from "../_theme"
 import { SidebarFilmCard } from "./SidebarFilmCard"
 import { Headline } from "../Headline"
 
 const Outer = styled.section`
-    margin-bottom: 25px;
+    margin-bottom: ${theme.standardSpace};
     h4 {
         margin: 0;
     }

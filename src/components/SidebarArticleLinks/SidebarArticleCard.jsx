@@ -53,7 +53,7 @@ const Outer = styled.li`
         transform: translate(0px, 3px);
     }
     &:last-of-type {
-        margin-bottom: 25px;
+        margin-bottom: ${theme.standardSpace};
         &:after {
             display: none;
         }

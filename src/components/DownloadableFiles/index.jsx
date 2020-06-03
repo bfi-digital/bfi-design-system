@@ -13,6 +13,6 @@ export const DownloadableFiles = ({
         {files.length > 0 ?
             files.map(file => <FileDownload key={file.title} {...file}/>)
             :
-            <p>No file to show</p>
+            <i>No file to show</i>
         }
     </Container>

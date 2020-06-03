@@ -83,7 +83,7 @@ const newsletters = [
 const Outer = styled.div`
     background: ${theme.lightest};
     margin: 0 auto;
-    margin-bottom: 25px;
+    margin-bottom: ${theme.standardSpace};
     padding: 15px;
     display: block;
 
@@ -97,7 +97,7 @@ const Outer = styled.div`
     }
 
     @media screen and (min-width: ${theme.m}){
-        padding: 25px;
+        padding: ${theme.standardSpace};
     }
 `
 const NewsletterForm = styled.form`
@@ -142,7 +142,7 @@ const SubmitButton = styled.button`
     color: ${theme.white};
     background: ${theme.black};
     text-decoration: none;
-    padding: 10px 25px;
+    padding: 10px ${theme.standardSpace};
     z-index: 2;
     width: 100%;
     text-align: center;

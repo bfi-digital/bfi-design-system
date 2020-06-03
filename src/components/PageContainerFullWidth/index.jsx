@@ -17,6 +17,9 @@ export const MainContent = styled.article`
     iframe {
         border: none;
     }
+    .map_embed {
+        margin-bottom: ${theme.standardSpace};
+    }
 
     & h2:first-child {
         margin-block-start: 0.5em;

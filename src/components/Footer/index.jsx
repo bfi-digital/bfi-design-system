@@ -67,8 +67,8 @@ const MiddleRow = styled.section`
     }
 `
 const SupportLogos = styled.div`
-    width: 75%;
-    margin-bottom: 25px;
+    width: 100%;
+    margin-bottom: ${theme.standardSpace};
 
     img {
         height: 60px;
@@ -76,10 +76,14 @@ const SupportLogos = styled.div`
     @media screen and (min-width: ${theme.m}) {
         margin-right: 60px;
         margin-bottom: 0;
+        width: 75%;
     }
 `
 const FollowMenu = styled.div`
-    width: 25%;
+    width: 100%;
+    @media screen and (min-width: ${theme.m}) {
+        width: 25%;
+    }
 `
 
 
@@ -140,7 +144,7 @@ const Heading = styled.h2`
     font-weight: bold;
     padding-top: 15px;
     border-top: 3px solid ${theme.black};
-    margin-bottom: 25px;
+    margin-bottom: ${theme.standardSpace};
 `
 
 const SubHeading = styled.h2`
@@ -154,7 +158,7 @@ const SubHeading = styled.h2`
 const Copyright = styled.p`
     @media screen and (min-width: ${theme.m}) {
         text-align: right;
-        padding-left: 25px;
+        padding-left: ${theme.standardSpace};
     }
 `
 
@@ -256,7 +260,7 @@ export const Footer = ({
                         <ImageSponsorLinks images={sponsorImages ? sponsorImages : [
                             {
                                 url: lotteryLocal,
-                                alt: "The BFI recieves National Lottery funding"
+                                alt: "BFI receives National Lottery funding"
                             },
                             {
                                 url: dcmsLocal,

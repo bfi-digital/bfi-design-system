@@ -26,7 +26,7 @@ const Showings = styled.div`
         flex-wrap: wrap;
         div{
             max-width: calc(50% - 12.5px);
-            margin-right: 25px;
+            margin-right: ${theme.standardSpace};
             min-height: calc(50% - 18px);
         }
         div:nth-of-type(even){

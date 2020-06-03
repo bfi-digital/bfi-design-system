@@ -14,7 +14,7 @@ const Outer = styled.div`
         width: 33%;
         min-width: 33%;
         max-width: 33%;
-        margin-right: 25px;
+        margin-right: ${theme.standardSpace};
         margin-bottom: 0px;
     }
 `

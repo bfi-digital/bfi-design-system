@@ -11,13 +11,13 @@ const Outer = styled.div`
     margin: 15px 0;
     padding: 15px 0;
     padding-top: 35px;
-    margin-top: 25px;
+    margin-top: ${theme.standardSpace};
     position: relative; 
     background: ${props => props.pageWithSideBar ? "transparent" : theme.lightGrey};
 
     h2 {
         margin-top: 0;
-        margin-bottom: 25px;
+        margin-bottom: ${theme.standardSpace};
         text-align: center;
     }
 
@@ -55,7 +55,7 @@ const Articles = styled.ul`
         @media screen and (min-width: ${theme.m}){
             width: ${props => props.lessColumns ? "calc(50% - 12.5px)" : "calc(33.333% - 16.666px)"};
             margin-bottom: 35px;
-            margin-right: 25px;
+            margin-right: ${theme.standardSpace};
 
             &:nth-of-type(2n) {
                 margin-right: ${props => props.lessColumns ? "0px" : "25px"};
@@ -81,11 +81,11 @@ const Articles = styled.ul`
                 }
             }
             @media screen and (min-width: ${theme.m}){
-                margin-right: 25px;
+                margin-right: ${theme.standardSpace};
                 margin-bottom: 35px;
 
                 &:nth-of-type(2n+1) {
-                    margin-right: 25px;
+                    margin-right: ${theme.standardSpace};
                 }
                 &:nth-of-type(3n+1) {
                     margin-right: 0px;
@@ -93,10 +93,10 @@ const Articles = styled.ul`
             }
             @media screen and (min-width: ${theme.l}){
                 &:nth-of-type(3n) {
-                    margin-right: 25px;
+                    margin-right: ${theme.standardSpace};
                 }
                 &:nth-of-type(3n+1) {
-                    margin-right: 25px;
+                    margin-right: ${theme.standardSpace};
                 }
                 &:nth-of-type(3n+2) {
                     margin-right: 0px;
@@ -114,7 +114,7 @@ const Articles = styled.ul`
             }
             @media screen and (min-width: ${theme.l}){
                 width: calc(66.666% - 8.332px);
-                margin-right: 25px;
+                margin-right: ${theme.standardSpace};
             }
         }   
     }

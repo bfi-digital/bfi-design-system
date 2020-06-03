@@ -10,7 +10,7 @@ const Outer = styled(LinkSwitch)`
     // border-radius: 5px;
     text-decoration: none;
     color: ${theme.black};
-    margin-bottom: 25px;
+    margin-bottom: ${theme.standardSpace};
     transition: box-shadow .3s;
     
     .filmcard_title {

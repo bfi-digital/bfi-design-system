@@ -1,14 +1,15 @@
 import React from "react"
 import styled from "styled-components"
 import parse from "html-react-parser"
+import theme from "../_theme"
 
-const VideoContainer = styled.div`
+const Container = styled.div`
     position: relative;
     width: 100%;
     height: 0;
     padding-bottom: 56.25%;
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: ${theme.standardSpace};
 
     iframe {
         position: absolute;
@@ -27,6 +28,6 @@ const VideoContainer = styled.div`
 export const Oembed = ({
     oembedObject
 }) =>
-    <VideoContainer>
+    <Container>
         {parse(oembedObject.html)}
-    </VideoContainer>
+    </Container>
