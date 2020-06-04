@@ -39,7 +39,7 @@ export const Oembed = ({
     oembedObject,
     isVideo
 }) =>
-    {isVideo ?
+    isVideo ?
         <VideoContainer>
             {parse(oembedObject.html)}
         </VideoContainer>
@@ -47,4 +47,4 @@ export const Oembed = ({
         <Container>
             {parse(oembedObject.html)}
         </Container>
-    }
+    

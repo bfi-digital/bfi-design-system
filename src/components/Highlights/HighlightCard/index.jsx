@@ -71,14 +71,14 @@ export const HighlightCard = ({
     callToActionTitle,
     external
 }) =>
-    <Outer>
+    <Outer className={external ? "external_link" : ""}>
         <Img alt={imageAltText} src={image480x270}/>
         <Inner>
             <Caption>{caption}</Caption>
             <Headline>{title}</Headline>
             <Description>{description}</Description>
         </Inner>
-        <CallToAction external={external} rel="noreferrer" to={callToActionUrl} target={external ? "_blank" : "_self"}>{callToActionTitle}</CallToAction>
+        <CallToAction external={external} rel={external ? "noreferrer" : ""}  to={callToActionUrl} target={external ? "_blank" : "_self"}>{callToActionTitle}</CallToAction>
     </Outer>
 
 HighlightCard.propTypes = {

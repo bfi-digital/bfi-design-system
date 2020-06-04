@@ -114,7 +114,7 @@ export const PageLink = ({
     url
 }) =>
     <Outer>
-        <CallToAction external={external} rel="noreferrer" to={url} target={external ? "_blank" : "_self"}>
+        <CallToAction external={external} className={external ? "external_link" : ""} rel={external ? "noreferrer" : ""} to={url} target={external ? "_blank" : "_self"}>
             <PageImageContainer>
                 <ProgressiveImage
                     src={image}

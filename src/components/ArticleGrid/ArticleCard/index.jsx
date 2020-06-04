@@ -184,7 +184,8 @@ export const ArticleCard = ({
         <CallToAction 
             to={url}
             external={external} 
-            rel="noreferrer" 
+            className={external ? "external_link" : ""}
+            rel={external ? "noreferrer" : ""} 
             target={external ? "_blank" : "_self"}
             title={"Read " + title}
         >

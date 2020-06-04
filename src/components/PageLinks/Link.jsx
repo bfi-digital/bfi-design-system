@@ -185,8 +185,8 @@ export const PageLink = ({
 }) =>
     <ConditionalWrapper
         condition={inScroller}
-        wrapper={children => <RestyledOuter withImages={withImages} lessColumns={lessColumns}>{children}</RestyledOuter>}
-        wrapper2={children => <Outer withImages={withImages} lessColumns={lessColumns}>{children}</Outer>}
+        wrapper={children => <RestyledOuter withImages={withImages} lessColumns={lessColumns} className={external ? "external_link" : ""}>{children}</RestyledOuter>}
+        wrapper2={children => <Outer withImages={withImages} lessColumns={lessColumns} className={external ? "external_link" : ""}>{children}</Outer>}
     >
         { withImages && 
             <PageImageContainer lessColumns={lessColumns}>
@@ -200,7 +200,7 @@ export const PageLink = ({
         }
         {title && <Headline level={7} text={title} />}
         {description && <Description>{parse(description)}</Description>}
-        <CallToAction external={external} rel="noreferrer" to={url} target={external ? "_blank" : "_self"} title={"Open " + title + (external ? " in a new tab" : "")}>
+        <CallToAction external={external} rel={external ? "noreferrer" : ""} to={url} target={external ? "_blank" : "_self"} title={"Open " + title + (external ? " in a new tab" : "")}>
             <CTAText>{callToAction !== "" ? callToAction : "Read this page"}</CTAText>
             <Icon><Arrow colourFill={theme.dark} /></Icon>
         </CallToAction>
