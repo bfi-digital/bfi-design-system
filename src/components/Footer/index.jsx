@@ -243,7 +243,7 @@ export const Footer = ({
                     {menus.map(menu =>
                         <Menu key={menu.id}>
                             {menu.titleLink ?
-                                <MenuItem className="title_link" to={menu.titleLink}><Heading>{menu.title}</Heading></MenuItem>
+                                <MenuItem className="title_link" to={menu.titleLink} data-tracking="footer-navigation"><Heading>{menu.title}</Heading></MenuItem>
                                 :
                                 <Heading>{menu.title}</Heading>
                             }
