@@ -197,6 +197,7 @@ const PlaceholderContainer = styled.img`
     display: block;
     width: ${props => props.width};
     height: auto;
+    max-width: 100%;
 `
 
 const useKeyPress = function(targetKey) {

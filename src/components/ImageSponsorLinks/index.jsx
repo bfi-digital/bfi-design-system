@@ -2,6 +2,7 @@ import React from "react"
 import theme from "../_theme"
 import PropTypes from "prop-types"
 import styled from "styled-components"
+import ProgressiveImage from "react-progressive-graceful-image";
 
 const Outer = styled.figure`
     display: block;
@@ -67,10 +68,17 @@ export const ImageSponsorLinks = ({
                         condition={image.link}
                         wrapper={children => <Link href={image.link} title={image.alt} target="_blank">{children}</Link>}
                     >
-                        <Image
+                        <ProgressiveImage
                             src={image.url}
-                            alt={image.alt}
-                        />
+                            placeholder={image.placeholder ? image.placeholder : image.url}
+                        >
+                            {src => 
+                                <Image
+                                    src={src}
+                                    alt={image.alt}
+                                />
+                            }
+                        </ProgressiveImage>
                     </ConditionalWrapper>
                 </ImageContainer>
             )}

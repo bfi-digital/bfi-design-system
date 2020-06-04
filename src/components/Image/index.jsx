@@ -177,6 +177,7 @@ const StyledImage = styled.img`
 const PlaceholderContainer = styled.img`
     width: ${props => props.width}px;
     height: auto;
+    max-width: 100%;
 `
 
 export const Image = ({
