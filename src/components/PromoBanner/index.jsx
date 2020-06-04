@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import styled from "styled-components"
 import theme from "../_theme"
 import parse from "html-react-parser"
+import ProgressiveImage from "react-progressive-graceful-image";
 
 import { Headline } from "../Headline"
 import { Button } from "../Button"
@@ -217,6 +218,7 @@ export const PromoBanner = ({
     callToActionUrl,
     callToActionTitle,
     image,
+    placeholder,
     reversed,
     colorScheme,
     backgroundColor,
@@ -257,17 +259,24 @@ export const PromoBanner = ({
             :
             <>
                 {image ? 
-                    <Image
-                        reversed={reversed}
-                        image={image} 
-                        pageWithSideBar={pageWithSideBar}
-                    />   
+                    <ProgressiveImage
+                        src={image}
+                        placeholder={placeholder}
+                    >
+                        {src => 
+                            <Image
+                                reversed={reversed}
+                                image={src} 
+                                pageWithSideBar={pageWithSideBar}
+                            /> 
+                        }
+                    </ProgressiveImage>
                     : 
                     <RightButton>
                         {callToActionUrl && 
-                        <Button to={callToActionUrl} colorScheme={colorScheme === 1 || colorScheme === 2 ? 0 : 1} external={external} rel="noreferrer" target={external ? "_blank" : "_self"}>
-                            {callToActionTitle}
-                        </Button>
+                            <Button to={callToActionUrl} colorScheme={colorScheme === 1 || colorScheme === 2 ? 0 : 1} external={external} rel="noreferrer" target={external ? "_blank" : "_self"}>
+                                {callToActionTitle}
+                            </Button>
                         }
                     </RightButton>
                 }
