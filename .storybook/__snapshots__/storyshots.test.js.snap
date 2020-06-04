@@ -1332,7 +1332,7 @@ exports[`Storyshots 2 All Components/Newsletter Sign Up Example 1`] = `
 
 exports[`Storyshots 2 All Components/Oembed Vimeo 1`] = `
 <div
-  className="sc-cJSrbW jIVhwI"
+  className="sc-cJSrbW jjcJYq"
 >
   <iframe
     allow="autoplay; fullscreen"
@@ -1348,7 +1348,7 @@ exports[`Storyshots 2 All Components/Oembed Vimeo 1`] = `
 
 exports[`Storyshots 2 All Components/Oembed Youtube 1`] = `
 <div
-  className="sc-cJSrbW jIVhwI"
+  className="sc-cJSrbW jjcJYq"
 >
   <iframe
     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"

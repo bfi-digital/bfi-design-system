@@ -29,10 +29,6 @@ const Container = styled.div`
     iframe, twitter-widget {
         max-width: 100%;
     }
-
-    .instagram-media {
-        min-height: 757px;
-    }
 `
 
 export const Oembed = ({
