@@ -3,7 +3,7 @@ import styled from "styled-components"
 import parse from "html-react-parser"
 import theme from "../_theme"
 
-const Container = styled.div`
+const VideoContainer = styled.div`
     position: relative;
     width: 100%;
     height: 0;
@@ -19,6 +19,16 @@ const Container = styled.div`
         height: 100%;
         max-width: 100%;
     }
+`
+const Container = styled.div`
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-bottom: ${theme.standardSpace};
+
+    iframe, twitter-widget {
+        max-width: 100%;
+    }
 
     .instagram-media {
         min-height: 757px;
@@ -26,8 +36,15 @@ const Container = styled.div`
 `
 
 export const Oembed = ({
-    oembedObject
+    oembedObject,
+    isVideo
 }) =>
-    <Container>
-        {parse(oembedObject.html)}
-    </Container>
+    {isVideo ?
+        <VideoContainer>
+            {parse(oembedObject.html)}
+        </VideoContainer>
+        :
+        <Container>
+            {parse(oembedObject.html)}
+        </Container>
+    }
