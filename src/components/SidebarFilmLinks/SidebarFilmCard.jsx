@@ -4,7 +4,9 @@ import theme from "../_theme"
 import { LinkSwitch as Link } from "../LinkSwitch"
 import { Tag } from "../Tag"
 import placeholderImage from "./placeholder.png"
-   
+import placeholderImageSmall from "./placeholder-small.png"
+import ProgressiveImage from "react-progressive-graceful-image";
+
 const Outer = styled.li`
     margin-bottom: 20px;
     position: relative;
@@ -122,6 +124,7 @@ const Channels = styled.div`
 `
 export const SidebarFilmCard = ({
     image480x270,
+    image48x27,
     name,
     channels,
     url,
@@ -131,7 +134,14 @@ export const SidebarFilmCard = ({
     <Outer>
         <CallToAction external={external} rel="noreferrer" to={url} target={external ? "_blank" : "_self"}>
             <PageImageContainer>
-                <PageImage className="image" imageSrc={image480x270 ? image480x270 : placeholderImage} alt={imageAltText} />
+                <ProgressiveImage
+                    src={image480x270 ? image480x270 : placeholderImage}
+                    placeholder={image48x27 ? image48x27 : placeholderImageSmall}
+                >
+                    {src => 
+                        <PageImage className="image" imageSrc={src} alt={imageAltText} />
+                    }
+                </ProgressiveImage>
             </PageImageContainer>
             <Content>
                 <Heading>{name}</Heading>

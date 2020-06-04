@@ -3,7 +3,9 @@ import styled from "styled-components"
 import theme from "../_theme"
 import { LinkSwitch as Link } from "../LinkSwitch"
 import placeholderImage from "./placeholder.png"
-   
+import placeholderImageSmall from "./placeholder-small.png"
+import ProgressiveImage from "react-progressive-graceful-image";
+
 const Outer = styled.li`
     margin-bottom: 20px;
     position: relative;
@@ -143,6 +145,7 @@ const StyledTag = styled.div`
 `
 export const SidebarArticleCard = ({
     image480x270,
+    image48x27,
     title,
     type,
     url,
@@ -153,7 +156,14 @@ export const SidebarArticleCard = ({
     <Outer>
         <CallToAction external={external} rel="noreferrer" to={url} target={external ? "_blank" : "_self"}>
             <PageImageContainer>
-                <PageImage className="image" imageSrc={image480x270 ? image480x270 : placeholderImage} alt={imageAltText} />
+                <ProgressiveImage
+                    src={image480x270 ? image480x270 : placeholderImage}
+                    placeholder={image48x27 ? image48x27 : placeholderImageSmall}
+                >
+                    {src => 
+                        <PageImage className="image" imageSrc={src} alt={imageAltText} />
+                    }
+                </ProgressiveImage>
             </PageImageContainer>
             <Content>
                 {type && <StyledTag className="type_tag">{type}</StyledTag> }
