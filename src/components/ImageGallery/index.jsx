@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from "react"
+import React, { useRef, useState, useEffect } from "react"
 import styled, { createGlobalStyle } from "styled-components"
 import theme from "../_theme"
 import { Dialog } from "@reach/dialog"
 import PropTypes from "prop-types"
+import ProgressiveImage from "react-progressive-graceful-image";
 
 const DialogStyles = createGlobalStyle`
    :root {
@@ -190,6 +191,13 @@ const CloseButton = styled.button`
     right: -55px;
     cursor: zoom-out;
 `
+const PlaceholderContainer = styled.img`
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: ${props => props.width};
+    height: auto;
+`
 
 const useKeyPress = function(targetKey) {
     const [keyPressed, setKeyPressed] = useState(false)
@@ -226,6 +234,20 @@ export const ImageGallery = ({
     const [ openImage, setOpenImage ] = useState(0)
     const leftPress = useKeyPress("ArrowLeft")
     const rightPress = useKeyPress("ArrowRight")
+
+    const [ imageWidth, setImageWidth ] = useState("100%")
+    const imgElement = React.useRef(null);
+    const placeholderImageBig = (
+        <PlaceholderContainer
+            itemprop="image"
+            isClickable={false}
+            src={images[openImage == 0 ? openImage : (openImage-1)].placeholder}
+            alt={images[openImage == 0 ? openImage : (openImage-1)].alt}
+            ref={imgElement}
+            width={imageWidth}
+            onLoad={() => setImageWidth((imgElement.current.naturalWidth) + "px")}
+        />
+    )      
     
     function moveLeft(clicked) { 
         if ((leftPress || clicked) && openImage) {
@@ -256,15 +278,39 @@ export const ImageGallery = ({
     return(
         <Outer itemscope itemtype="http://schema.org/ImageObject">
             <ImageHolder number={images.length}>
-                {images.map((image, i) =>                   
-                    <Button key={i} onClick={() => setOpenImage(i+1)}>
-                        <Image
-                            itemprop="image"
-                            src={image.url}
-                            alt={image.alt}
-                        />
-                    </Button>
-                )}
+                {
+                    images.map((img, i) => {
+                        const placeholderImage = (
+                            <PlaceholderContainer
+                                itemprop="image"
+                                isClickable={false}
+                                src={img.placeholder}
+                                alt={img.alt}
+                                width={"100%"}
+                            />
+                        )     
+ 
+                        return(
+                            <Button key={i} onClick={() => setOpenImage(i+1)}>
+                                <ProgressiveImage
+                                    src={img.url}
+                                    placeholder=""
+                                >
+                                    {(src, loading) => {
+                                        return loading ? 
+                                            placeholderImage 
+                                            : 
+                                            <Image
+                                                itemprop="image"
+                                                src={src}
+                                                alt={img.alt}
+                                            />
+                                    }}
+                                </ProgressiveImage>
+                            </Button>
+                        )
+                    })
+                }
             </ImageHolder>
             {galleryCaption && <Caption itemprop="caption description">{galleryCaption}</Caption>}
 
@@ -276,11 +322,22 @@ export const ImageGallery = ({
                     onDismiss={() => setOpenImage(0)}
                 >
                     <LeftButton title="Previous image" onClick={() => moveLeft(true)}>&lsaquo;</LeftButton>
-                    <BigImage
-                        itemprop="image"
+                    <ProgressiveImage
                         src={images[openImage == 0 ? openImage : (openImage-1)].url}
-                        alt={images[openImage == 0 ? openImage : (openImage-1)].alt}
-                    />       
+                        placeholder=""
+                    >
+                        {(src, loading) => {
+                            return loading ? 
+                                placeholderImageBig 
+                                : 
+                                <BigImage
+                                    itemprop="image"
+                                    src={src}
+                                    alt={images[openImage == 0 ? openImage : (openImage-1)].alt}
+                                />  
+                        }}
+                    </ProgressiveImage>
+                    
                     {images[openImage == 0 ? openImage : (openImage-1)].caption &&
                         <Caption itemprop="caption description" white={true}>{images[openImage == 0 ? openImage : (openImage-1)].caption}</Caption>
                     }

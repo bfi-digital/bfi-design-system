@@ -1,9 +1,10 @@
-import React, { useState } from "react"
+import React, { useRef, useState } from "react"
 import styled, { createGlobalStyle } from "styled-components"
 import theme from "../_theme"
 import PropTypes from "prop-types"
 import { Dialog } from "@reach/dialog"
 import VisuallyHidden from "@reach/visually-hidden"
+import ProgressiveImage from "react-progressive-graceful-image";
 
 const Figure = styled.figure`
     width: 100%;
@@ -21,11 +22,6 @@ const Figure = styled.figure`
         return "20px 0px"
     }};
     }
-`
-
-const StyledImage = styled.img`
-    width: 100%;
-    height: auto;
 `
 
 const Figcaption = styled.figcaption`
@@ -136,7 +132,7 @@ const BigImage = styled.img`
         cursor: default;
     }
 `
-const Small =styled.small`
+const Small = styled.small`
     text-align: center;
     color: ${props => props.white ? theme.white : theme.darkGrey};
     margin: 0 auto;
@@ -174,37 +170,69 @@ const CloseButton = styled.button`
     }
 `
 
+const StyledImage = styled.img`
+    width: 100%;
+    height: auto;
+`
+const PlaceholderContainer = styled.img`
+    width: ${props => props.width}px;
+    height: auto;
+`
+
 export const Image = ({
     src,
+    placeholder,
     alt,
     side,
     caption,
     copyright,
     isClickable
 }) => {
+    const imgElement = React.useRef(null);
+    const [ imageWidth, setImageWidth ] = useState(0)
 
     const [ openImage, setOpenImage ] = useState(false)
+        
+    const ConditionalWrapper = ({ condition, wrapper, children }) => 
+        condition ? wrapper(children) : children
     
+
+    const placeholderImage = (
+        <PlaceholderContainer
+            itemprop="image"
+            isClickable={false}
+            src={placeholder}
+            alt={alt}
+            ref={imgElement}
+            width={imageWidth}
+            onLoad={() => setImageWidth(imgElement.current.naturalWidth*10)}
+        />
+    )
     return(
         <>
             <Figure side={side} itemscope itemtype="http://schema.org/ImageObject">
-                { isClickable ?
-                    <Button onClick={() => setOpenImage(true)}>
-                        <StyledImage
-                            itemprop="image"
-                            isClickable={true}
-                            src={src}
-                            alt={alt}
-                        />
-                    </Button>
-                    :
-                    <StyledImage
-                        itemprop="image"
-                        isClickable={false}
+                <ConditionalWrapper
+                    condition={isClickable}
+                    wrapper={children => <Button onClick={() => setOpenImage(true)}>{children}</Button>}
+                >
+                    <ProgressiveImage
                         src={src}
-                        alt={alt}
-                    />
-                }
+                        placeholder=""
+                    >
+                        {(src2, loading) => {
+                            return loading ? 
+                                placeholderImage 
+                                : 
+                                <StyledImage
+                                    itemprop="image"
+                                    isClickable={false}
+                                    src={src2}
+                                    alt={alt}
+                                />
+                        }}
+                    </ProgressiveImage>
+                    
+                </ConditionalWrapper>
                 {caption && <Figcaption itemprop="caption description">{caption}</Figcaption>}
                 {copyright && <Small itemprop="copyrightHolder">&copy; {copyright}</Small>}
             </Figure>
@@ -220,11 +248,23 @@ export const Image = ({
                         <VisuallyHidden>
                             <button onClick={() => setOpenImage(false)}>Close</button>
                         </VisuallyHidden>
-                        <BigImage
+                        <ProgressiveImage
                             src={src}
-                            alt={alt}
-                            itemprop="image"
-                        />       
+                            placeholder=""
+                        >
+                            {(src2, loading) => {
+                                return loading ? 
+                                    placeholderImage 
+                                    : 
+                                    <StyledImage
+                                        itemprop="image"
+                                        isClickable={false}
+                                        src={src2}
+                                        alt={alt}
+                                    />
+                            }}
+                        </ProgressiveImage> 
+                          
                         {caption && <Figcaption itemprop="caption description" white={true}>{caption}</Figcaption>}
                         {copyright && <Small itemprop="copyrightHolder" white={true} >&copy; {copyright}</Small>}
                         <CloseButton title="Close image" onClick={() => setOpenImage(false)}>&times;</CloseButton>
