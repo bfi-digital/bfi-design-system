@@ -48,7 +48,7 @@ const PrimaryButton = styled(Link)`
     }
 
     &:hover, &:focus{
-        color: ${props => props.colorScheme === 1 ? theme.black : theme.white};
+        color: ${theme.white};
         
         :after {
             height: calc(100% + 5px);
