@@ -15,7 +15,7 @@ export const normal = () =>
             description="Become a BFI member for £37 a year and get priority booking for BFI London Film Festival, BFI Flare and at BFI Southbank all year around."
             image="http://placehold.it/600x600"
             callToActionTitle="Find out more"
-            callToActionUrl="#"
+            callToActionUrl="#13"
             secondImage="http://placehold.it/150x40"
             secondImageAltText="Test image"
         />
@@ -30,7 +30,7 @@ export const reversedImage = () =>
             description="Become a BFI member for £37 a year and get priority booking for BFI London Film Festival, BFI Flare and at BFI Southbank all year around."
             image="http://placehold.it/600x600"
             callToActionTitle="Find out more"
-            callToActionUrl="#"
+            callToActionUrl="#14"
         />
     </div>
 
@@ -41,6 +41,6 @@ export const bannerWithoutImage = () =>
             headline="Watch BFI-picked contemporary and classic films in cinema"
             description="Become a BFI member for £37 a year and get priority booking for BFI London Film Festival, BFI Flare and at BFI Southbank all year around."
             callToActionTitle="Find out more"
-            callToActionUrl="#"
+            callToActionUrl="#17"
         />
     </div>

@@ -58,7 +58,7 @@ export const discoveryPage = () =>
                     headline="Become a BFI member"
                     description="Get priority booking and enjoy special events for £37 a year."
                     callToActionTitle="Join today"
-                    callToActionUrl="#"
+                    callToActionUrl="#1"
                 />
                 {/* <Highlights
                     highlight={{
@@ -107,7 +107,7 @@ export const discoveryPage = () =>
                     description="From £2.50 per film, or £4.99 a month."
                     image="http://placehold.it/600x350"
                     callToActionTitle="Try 14 days free now"
-                    callToActionUrl="#"
+                    callToActionUrl="#2"
                     reversed={true}
                 />
                 
@@ -194,7 +194,7 @@ export const discoveryPage = () =>
                     description="Subscribe today - in print and/ or digital - and discover the world’s best cinema."
                     image="http://placehold.it/600x350"
                     callToActionTitle="Subscribe now"
-                    callToActionUrl="#"
+                    callToActionUrl="#3"
                 />
                 
                 <Divider istransparent={true} />
@@ -205,7 +205,7 @@ export const discoveryPage = () =>
                     description="National archive"
                     image="http://placehold.it/600x350"
                     callToActionTitle="Read more"
-                    callToActionUrl="#"
+                    callToActionUrl="#4"
                     reversed={true}
                 />
             </MainContent>
@@ -254,7 +254,7 @@ export const industryPage = () =>
                     headline="Get funding and support"
                     description="At BFI, we champion films that push boundaries. We’re passionate about discovering unfamiliar voices. We support filmmakers – from first features, to world-class shorts."
                     callToActionTitle="Find out more"
-                    callToActionUrl="#"
+                    callToActionUrl="#5"
                 />
                 <PageLinks links={[
                     {
@@ -289,7 +289,7 @@ export const industryPage = () =>
                     description="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
                     image="http://placehold.it/600x350"
                     callToActionTitle="Find out more"
-                    callToActionUrl="#"
+                    callToActionUrl="#6"
                     reversed={true}
                 />
 
@@ -301,7 +301,7 @@ export const industryPage = () =>
                     description="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
                     image="http://placehold.it/600x350"
                     callToActionTitle="Find out more"
-                    callToActionUrl="#"
+                    callToActionUrl="#7"
                 />
                 
                 <Divider istransparent={true} />
@@ -312,7 +312,7 @@ export const industryPage = () =>
                     description="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
                     image="http://placehold.it/600x350"
                     callToActionTitle="Find out more"
-                    callToActionUrl="#"
+                    callToActionUrl="#8"
                     reversed={true}
                 />
 
@@ -324,7 +324,7 @@ export const industryPage = () =>
                     description="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
                     image="http://placehold.it/600x350"
                     callToActionTitle="Find out more"
-                    callToActionUrl="#"
+                    callToActionUrl="#9"
                 />
 
             </MainContent>
@@ -398,7 +398,7 @@ export const educationPage = () =>
                     description="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
                     image="http://placehold.it/600x350"
                     callToActionTitle="Browse family programme"
-                    callToActionUrl="#"
+                    callToActionUrl="#10"
                 />
 
                 <Divider istransparent={true} />
@@ -409,7 +409,7 @@ export const educationPage = () =>
                     description="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
                     image="http://placehold.it/600x350"
                     callToActionTitle="Find out more"
-                    callToActionUrl="#"
+                    callToActionUrl="#11"
                     reversed={true}
                 />
 
@@ -654,7 +654,7 @@ export const everyComponent = () =>
                     <p>The film caused a sensation on its initial release, angering censors and polarising opinion among critics and audiences, but is now rightly considered a masterpiece that’s had a profound influence on popular culture.</p>
                 </Text>
                 
-                <CallToAction linkURL="#" linkText="Apply for funding" />
+                <CallToAction linkURL="#12" linkText="Apply for funding" />
                 <Divider />
                 <Headline 
                     level={2} 
@@ -1032,7 +1032,7 @@ export const everyComponent = () =>
                     description="Become a BFI member for £37 a year and get priority booking for BFI London Film Festival, BFI Flare and at BFI Southbank all year around."
                     image="http://placehold.it/600x600"
                     callToActionTitle="Find out more"
-                    callToActionUrl="#"
+                    callToActionUrl="#15"
                     secondImage="http://placehold.it/150x40"
                     secondImageAltText="Test image"
                 />

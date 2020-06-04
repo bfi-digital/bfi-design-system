@@ -11,14 +11,14 @@ export const normal = () =>
     <ArticleKeywords keywords={[
         {
             label: "Covid-19",
-            url: "#"
+            url: "#1"
         },
         {
             label: "BFI National Archive",
-            url: "#"
+            url: "#2"
         },
         {
             label: "Video",
-            url: "#"
+            url: "#3"
         }
     ]} />

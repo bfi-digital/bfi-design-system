@@ -64,7 +64,7 @@ export const Breadcrumbs = ({
 }) =>
     <Outer>
         {breadcrumbs.map((crumb) =>
-            <Crumb key={crumb.url}>
+            <Crumb key={crumb.url ? crumb.url : crumb.title}>
                 {crumb.url ? <BreadcrumbLink to={crumb.url}>{crumb.title}</BreadcrumbLink> : crumb.title}
             </Crumb>
         )}

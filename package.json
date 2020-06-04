@@ -73,7 +73,26 @@
       "<rootDir>/src/docs"
     ],
     "moduleNameMapper": {
-      "^.+\\.(mdx|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js"
+      "^.+\\.(mdx|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "src/components/PageLinks/stories.jsx": "<rootDir>/__mocks__/fileMock.js",
+      "src/components/ArticleGrid/stories.jsx": "<rootDir>/__mocks__/fileMock.js",
+      "src/components/FilmCardSingle/stories.jsx": "<rootDir>/__mocks__/fileMock.js",
+      "src/components/FilmGrid/stories.jsx": "<rootDir>/__mocks__/fileMock.js",
+      "src/components/Footer/stories.jsx": "<rootDir>/__mocks__/fileMock.js",
+      "src/components/Header/stories.jsx": "<rootDir>/__mocks__/fileMock.js",
+      "src/components/Hero/stories.jsx": "<rootDir>/__mocks__/fileMock.js",
+      "src/components/HeroArticle/stories.jsx": "<rootDir>/__mocks__/fileMock.js",
+      "src/components/HeroPage/stories.jsx": "<rootDir>/__mocks__/fileMock.js",
+      "src/components/Highlights/stories.jsx": "<rootDir>/__mocks__/fileMock.js",
+      "src/components/Image/stories.jsx": "<rootDir>/__mocks__/fileMock.js",
+      "src/components/ImageGallery/stories.jsx": "<rootDir>/__mocks__/fileMock.js",
+      "src/components/ImageSponsorLinks/stories.jsx": "<rootDir>/__mocks__/fileMock.js",
+      "src/components/PageContainer/stories.jsx": "<rootDir>/__mocks__/fileMock.js",
+      "src/components/PageContainerFullWidth/stories.jsx": "<rootDir>/__mocks__/fileMock.js",
+      "src/components/PromoBanner/stories.jsx": "<rootDir>/__mocks__/fileMock.js",
+      "src/components/SidebarArticleLinks/stories.jsx": "<rootDir>/__mocks__/fileMock.js",
+      "src/components/SidebarFilmLinks/stories.jsx": "<rootDir>/__mocks__/fileMock.js",
+      "src/components/SidebarPageLinks/stories.jsx": "<rootDir>/__mocks__/fileMock.js"
     }
   },
   "keywords": [

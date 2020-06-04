@@ -34,7 +34,7 @@ export const FilterableArticles = ({
                 <>
                     {!limit ?
                         <ArticleGrid articles={articles} firstHighlighted={includeHighlight}>
-                            {loadMore && <CentredButton href="#" onClick={loadMore}>Load more</CentredButton>}
+                            {loadMore && <CentredButton href="#4" onClick={loadMore}>Load more</CentredButton>}
                         </ArticleGrid>
                         :
                         <ArticleGrid articles={articles.slice(0,limit)} optionalTitle={filters ? false : optionalTitle} firstHighlighted={includeHighlight} optionalCTATitle={optionalCTATitle} optionalCTALink={optionalCTALink} />

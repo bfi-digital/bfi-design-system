@@ -378,37 +378,37 @@ export const ArticleFeatureExample = () =>
             title="Britain on Lockdown: How online videos have shaped the crisis"
             standfirst="As the BFI National Archive calls on the British public to help map the digital video response to coronavirus across the UK, our curators begin a regular new series highlighting the online videos that have made an impact during the lockdown period."
             category="Article category"
-            categoryLink="#"
+            categoryLink="#1"
             type="Feature"
             date="28 April 2020"
             authors={[
                 {
                     name: "Ros Cranston",
-                    url: "#"
+                    url: "#2"
                 },
                 {
                     name: "William Fowler",
-                    url: "#"
+                    url: "#3"
                 },
                 {
                     name: "Steve Foxon",
-                    url: "#"
+                    url: "#4"
                 },
                 {
                     name: "Will Massa",
-                    url: "#"
+                    url: "#5"
                 },
                 {
                     name: "Patrick Russell",
-                    url: "#"
+                    url: "#6"
                 },
                 {
                     name: "Jez Stewart",
-                    url: "#"
+                    url: "#7"
                 },
                 {
                     name: "James Taylor",
-                    url: "#"
+                    url: "#8"
                 }
             ]}
         />
@@ -504,7 +504,7 @@ export const ArticleRecommendsExample = () =>
             title="BFI Recommends: Carol"
             standfirst="The perfect adaptation: Todd Haynes’ exquisite film of Patricia Highsmith’s novel The Price of Salt is the latest in our daily series of recommendations, chosen by Emma Smart."
             category="BFI Recommends"
-            categoryLink="#"
+            categoryLink="#19"
             type="Feature"
             date="1 May 2020"
             authors={[
@@ -590,7 +590,7 @@ export const ArticleVideoExample = () =>
             title="Video: BFI CEO Ben Roberts talks to Screen about navigating the ongoing COVID-19 crisis"
             standfirst="The perfect adaptation: Todd Haynes’ exquisite film of Patricia Highsmith’s novel The Price of Salt is the latest in our daily series of recommendations, chosen by Emma Smart."
             category="Screen talk"
-            categoryLink="#"
+            categoryLink="#8"
             type="Video"
             date="1 May 2020"
         />
@@ -609,11 +609,11 @@ export const ArticleVideoExample = () =>
                     keywords={[
                         {
                             label: "Covid-19",
-                            url: "#"
+                            url: "#9"
                         },
                         {
                             label: "Video",
-                            url: "#"
+                            url: "#10"
                         }
                     ]}
                 />
@@ -677,7 +677,7 @@ export const ArticleAnnouncementExample = () =>
             title="£2m BFI COVID-19 Production Continuation Fund now open"
             standfirst="National Lottery funding is now available for UK independent productions in serious financial need as a result of unavoidable interruption due to COVID-19."
             category="Announcements"
-            categoryLink="#"
+            categoryLink="#11"
             type="Video"
             date="1 May 2020"
         />
@@ -771,13 +771,13 @@ export const ArticleListExample = () =>
             title="Five things to watch this weekend – 1-3 May"
             standfirst="Japanese ghost stories, Brits abroad and a seven-hour epic – what are you watching this weekend?"
             category="What to watch"
-            categoryLink="#"
+            categoryLink="#12"
             type="List"
             date="1 May 2020"
             authors={[
                 {
                     name: "Emma Smart",
-                    url: "#"
+                    url: "#13"
                 }
             ]}
         />
@@ -808,7 +808,7 @@ export const ArticleListExample = () =>
                     type="Film"
                     director="Masaki Kobayashi"
                     year="1946"
-                    filmLink="#"
+                    filmLink="#14"
                 />
                 <Oembed oembedObject={{
                     html: "\u003ciframe width=\"600\" height=\"337\" src=\"https://www.youtube.com/embed/YadApPG8W7Q?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen\u003e\u003c/iframe\u003e"
@@ -827,7 +827,7 @@ export const ArticleListExample = () =>
                     type="Film"
                     director="James Ivory"
                     year="1986"
-                    filmLink="#"
+                    filmLink="#20"
                 />
                 <Text>
                     <p><strong>Where’s it on?</strong> Film4, Sunday, 4.40pm</p>
@@ -921,7 +921,7 @@ export const ArticleSightAndSoundExample = () =>
             title="Britain on Lockdown: How online videos have shaped the crisis"
             standfirst="As the BFI National Archive calls on the British public to help map the digital video response to coronavirus across the UK, our curators begin a regular new series highlighting the online videos that have made an impact during the lockdown period."
             category="Article category"
-            categoryLink="#"
+            categoryLink="#15"
             type="Feature"
             date="28 April 2020"
             brand="sight-and-sound"
@@ -1047,7 +1047,7 @@ export const ArticleSightAndSoundExampleNoImage = () =>
             title="Britain on Lockdown: How online videos have shaped the crisis"
             standfirst="As the BFI National Archive calls on the British public to help map the digital video response to coronavirus across the UK, our curators begin a regular new series highlighting the online videos that have made an impact during the lockdown period."
             category="Article category"
-            categoryLink="#"
+            categoryLink="#16"
             type="Feature"
             date="28 April 2020"
             brand="sight-and-sound"
@@ -1179,8 +1179,8 @@ export const FilmPage = () =>
         />
         <Wrapper>
             <Actions>
-                <Button to="#">Buy tickets</Button>
-                <PlayButton to="#">Watch on BFI Player</PlayButton>
+                <Button to="#18">Buy tickets</Button>
+                <PlayButton to="#17">Watch on BFI Player</PlayButton>
             </Actions>
         </Wrapper>
         <Wrapper>           
@@ -1197,7 +1197,7 @@ export const FilmPage = () =>
                     text="Book tickets at BFI Southbank"
                 />
                 <FilmShowingGrid showings={days} />
-                <Button to="#" level={3}>All showings</Button>
+                <Button to="#21" level={3}>All showings</Button>
             </MainContent>
             <Sidebar>
                 <QuickFacts
@@ -1605,7 +1605,7 @@ export const everyComponent = () =>
                     description="Become a BFI member for £37 a year and get priority booking for BFI London Film Festival, BFI Flare and at BFI Southbank all year around."
                     image="http://placehold.it/600x600"
                     callToActionTitle="Find out more"
-                    callToActionUrl="#"
+                    callToActionUrl="#22"
                     secondImage="http://placehold.it/150x40"
                     secondImageAltText="Test image"
                 />
