@@ -29,5 +29,5 @@ export const normal = () =>
                 url: "#"
             }
         ]}
-        copyrightText="&copy; 2020 British Film Institute. All rights reserved. Registered charity 287780"
+        copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"
     />

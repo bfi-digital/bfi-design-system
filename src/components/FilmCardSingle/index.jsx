@@ -4,7 +4,7 @@ import theme from "../_theme"
 import PropTypes from "prop-types"
 import { Headline } from "../Headline"
 import { LinkSwitch as Link } from "../LinkSwitch"
-import ProgressiveImage from "react-progressive-graceful-image";
+import ProgressiveImage from "react-progressive-graceful-image"
 
 const Outer = styled.div`
     background: ${theme.lightest};

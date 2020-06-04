@@ -3,7 +3,7 @@ import styled, { createGlobalStyle } from "styled-components"
 import theme from "../_theme"
 import { Dialog } from "@reach/dialog"
 import PropTypes from "prop-types"
-import ProgressiveImage from "react-progressive-graceful-image";
+import ProgressiveImage from "react-progressive-graceful-image"
 
 const DialogStyles = createGlobalStyle`
    :root {
@@ -237,7 +237,7 @@ export const ImageGallery = ({
     const rightPress = useKeyPress("ArrowRight")
 
     const [ imageWidth, setImageWidth ] = useState("100%")
-    const imgElement = React.useRef(null);
+    const imgElement = useRef(null)
     const placeholderImageBig = (
         <PlaceholderContainer
             itemprop="image"
@@ -292,7 +292,7 @@ export const ImageGallery = ({
                         )     
  
                         return(
-                            <Button key={i} onClick={() => setOpenImage(i+1)}>
+                            <Button key={img.url} onClick={() => setOpenImage(i+1)}>
                                 <ProgressiveImage
                                     src={img.url}
                                     placeholder=""

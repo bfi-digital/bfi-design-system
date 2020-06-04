@@ -5,7 +5,7 @@ import { LinkSwitch as Link } from "../LinkSwitch"
 import { Tag } from "../Tag"
 import placeholderImage from "./placeholder.png"
 import placeholderImageSmall from "./placeholder-small.png"
-import ProgressiveImage from "react-progressive-graceful-image";
+import ProgressiveImage from "react-progressive-graceful-image"
 
 const Outer = styled.li`
     margin-bottom: 20px;

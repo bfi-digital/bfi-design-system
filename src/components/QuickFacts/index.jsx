@@ -25,8 +25,8 @@ export const QuickFacts = ({
     facts
 }) =>
     <Outer>
-        {facts.map((fact, i) =>
-            <Fragment key={i}>
+        {facts.map((fact) =>
+            <Fragment key={fact.label}>
                 {fact.label && <Label>{fact.label}</Label>}
                 <Value labelled={fact.label}>{fact.value || fact}</Value>
             </Fragment >

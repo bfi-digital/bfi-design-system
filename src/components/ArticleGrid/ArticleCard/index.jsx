@@ -3,7 +3,7 @@ import styled from "styled-components"
 import theme from "../../_theme"
 import { LinkSwitch as Link } from "../../LinkSwitch"
 import { Headline } from "../../Headline"
-import ProgressiveImage from "react-progressive-graceful-image";
+import ProgressiveImage from "react-progressive-graceful-image"
 
 const Outer = styled.li`
     position: relative;

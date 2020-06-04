@@ -30,8 +30,8 @@ export const SidebarFilmLinks = ({
         }
         {films &&
             <List>
-                {films.map((film, i) =>
-                    <SidebarFilmCard key={i} {...film} />    
+                {films.map((film) =>
+                    <SidebarFilmCard key={film.uuid} {...film} />    
                 )}
             </List>
         }

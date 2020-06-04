@@ -5,7 +5,7 @@ import { LinkSwitch as Link } from "../LinkSwitch"
 import { Headline } from "../Headline"
 import Arrow from "./arrow-right"
 import parse from "html-react-parser"
-import ProgressiveImage from "react-progressive-graceful-image";
+import ProgressiveImage from "react-progressive-graceful-image"
 
 const Outer = styled.li`
     position: relative;

@@ -4,7 +4,7 @@ import theme from "../_theme"
 import { LinkSwitch as Link } from "../LinkSwitch"
 import placeholderImage from "./placeholder.png"
 import placeholderImageSmall from "./placeholder-small.png"
-import ProgressiveImage from "react-progressive-graceful-image";
+import ProgressiveImage from "react-progressive-graceful-image"
 
 const Outer = styled.li`
     margin-bottom: 20px;

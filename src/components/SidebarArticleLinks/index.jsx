@@ -30,8 +30,8 @@ export const SidebarArticleLinks = ({
         }
         {articles && 
             <List>
-                {articles.map((article, i) =>
-                    <SidebarArticleCard key={i} {...article} />    
+                {articles.map((article) =>
+                    <SidebarArticleCard key={article.url} {...article} />    
                 )}
             </List>
         }

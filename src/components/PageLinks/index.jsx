@@ -63,8 +63,8 @@ export const PageLinks = ({
             wrapper={children => <Scroller>{children}</Scroller>}
             wrapper2={children => <Outer lessColumns={links.length === 2 || links.length === 4} className="pageLinks">{children}</Outer>}
         >
-            {links.map((link, i) =>
-                <PageLink key={i} {...link} colorScheme={colorScheme} withImages={withImages} inScroller={links.length > 9} lessColumns={links.length === 2 || links.length === 4} />    
+            {links.map((link) =>
+                <PageLink key={link.url} {...link} colorScheme={colorScheme} withImages={withImages} inScroller={links.length > 9} lessColumns={links.length === 2 || links.length === 4} />    
             )}
         </ConditionalWrapper>
 

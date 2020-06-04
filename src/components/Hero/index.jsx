@@ -3,7 +3,7 @@ import { Headline } from "../Headline"
 import styled from "styled-components"
 import theme from "../_theme"
 import PropTypes from "prop-types"
-import ProgressiveImage from "react-progressive-graceful-image";
+import ProgressiveImage from "react-progressive-graceful-image"
 
 const Outer = styled.section`
     margin: 0 auto;

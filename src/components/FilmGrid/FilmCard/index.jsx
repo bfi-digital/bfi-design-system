@@ -3,7 +3,7 @@ import styled from "styled-components"
 import theme from "../../_theme"
 import { LinkSwitch } from "../../LinkSwitch"
 import { Tag } from "../../Tag"
-import ProgressiveImage from "react-progressive-graceful-image";
+import ProgressiveImage from "react-progressive-graceful-image"
 import placeholderImage from "./placeholder.png"
 import placeholderImageSmall from "./placeholder-small.png"
 

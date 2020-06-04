@@ -38,8 +38,8 @@ export const ArticleKeywords = ({
     keywords
 }) =>
     <Outer>
-        {keywords.map((keyword, i) =>
-            <FilterLink key={i} href={keyword.url} title={"Show all " + keyword.label + " articles"}>{keyword.label}</FilterLink>
+        {keywords.map((keyword) =>
+            <FilterLink key={keyword.url} href={keyword.url} title={"Show all " + keyword.label + " articles"}>{keyword.label}</FilterLink>
         )}
     </Outer>
 

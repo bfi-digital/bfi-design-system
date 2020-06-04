@@ -7,7 +7,7 @@ export default [
         author: "Author name",
         date: "9 February 2017",
         url: "https://www.bfi.org.uk/news-opinion/news-bfi/lists/36-amazing-dance-scenes",
-        uuid: "06347a64-5abd-59de-a6b9-be0d4a9e31e1",
+        uuid: "06347a64-5abd-59de-a6b9-be0d4a9e31e7451",
         type: "What to watch"
     },
     {
@@ -18,7 +18,7 @@ export default [
         author: "Author name",
         date: "23 March 2020",
         url: "https://www.bfi.org.uk/greatest-films-all-time",
-        uuid: "4d1c842b-4d15-558b-82a4-5cb70546d6f3",
+        uuid: "4d1c842b-4d15-558b-82a4-5cb70546d6f1233",
         type: "What to watch"
     },
     {
@@ -29,7 +29,7 @@ export default [
         author: "Author name",
         date: "22 November 2019",
         url: "https://www.bfi.org.uk/news-opinion/sight-sound-magazine/polls-surveys/stanley-kubrick-cinephiles",
-        uuid: "d1a4a7ac-44fa-56b3-9522-b865a49080c2",
+        uuid: "d1a4a7ac-44fa-56b3-9522-b865a49080c22343",
         category: "What to watch"
     }
 ]

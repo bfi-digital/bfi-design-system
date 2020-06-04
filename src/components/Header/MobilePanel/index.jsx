@@ -204,7 +204,7 @@ const MobilePanel = ({
             }
             <List>
                 {navItems.map((navItem, i) =>
-                    <Item key={i}>
+                    <Item key={navItem.title}>
                         {selected === false ?
                             <ItemButton
                                 aria-controls={i}
@@ -236,8 +236,8 @@ const MobilePanel = ({
                                             {navItem.title}
                                         </ChildLink>
                                     </ChildItem>
-                                    {navItem.children.map((child, j) =>
-                                        <ChildItem key={j}>
+                                    {navItem.children.map((child) =>
+                                        <ChildItem key={child.title}>
                                             <ChildLink to={child.url} external={child.external}>
                                                 {child.title}
                                             </ChildLink>

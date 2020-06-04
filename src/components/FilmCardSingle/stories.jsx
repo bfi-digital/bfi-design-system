@@ -9,8 +9,8 @@ export default {
 
 export const filmInList = () =>
     <div style={{
-        padding: "20px",
-        maxWidth: "620px"
+        padding: "5px",
+        maxWidth: "1000px"
     }}>
         <FilmCardSingle 
             image225x225="https://player.bfi.org.uk/sites/default/files/styles/landscape_1440x810/public/hero-images/La-Dolce-vita-1.jpg"
@@ -21,13 +21,13 @@ export const filmInList = () =>
             listNumber="1"
             playerUrl="https://player.bfi.org.uk/subscription/film/watch-le-mepris-1963-online"
             southbankUrl="https://player.bfi.org.uk/subscription/film/watch-le-mepris-1963-online"
-        />
+        />  
     </div>
 
 export const filmNotInList = () =>
     <div style={{
-        padding: "20px",
-        maxWidth: "620px"
+        padding: "5px",
+        maxWidth: "1000px"
     }}>
         <FilmCardSingle 
             image225x225="https://player.bfi.org.uk/sites/default/files/styles/landscape_1440x810/public/hero-images/La-Dolce-vita-1.jpg"
@@ -41,8 +41,8 @@ export const filmNotInList = () =>
 
 export const filmNoLinks = () =>
     <div style={{
-        padding: "20px",
-        maxWidth: "620px"
+        padding: "5px",
+        maxWidth: "1000px"
     }}>
         <FilmCardSingle 
             image225x225="https://player.bfi.org.uk/sites/default/files/styles/landscape_1440x810/public/hero-images/La-Dolce-vita-1.jpg"

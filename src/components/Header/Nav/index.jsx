@@ -307,7 +307,7 @@ const Nav = ({
                     const size = Math.ceil(navItem.children.length / 3)
                     return(
                         <Item 
-                            key={i}
+                            key={navItem.title}
                         >
                             <ItemLink
                                 onMouseEnter={() => setSelected(i)}
@@ -332,22 +332,22 @@ const Nav = ({
                                     <ChildList id={i}>
                                         <InnerContainer>
                                             <Column className={"row_"+size}>
-                                                {navItem.children.slice(0, size).map((child, j) =>
-                                                    <ChildLink key={j} to={child.url}  data-tracking="header-navigation">
+                                                {navItem.children.slice(0, size).map((child) =>
+                                                    <ChildLink key={child.title} to={child.url}  data-tracking="header-navigation">
                                                         <span>{child.title}</span>
                                                     </ChildLink>
                                                 )}
                                             </Column>
                                             <Column className={"row_"+size}>
-                                                {navItem.children.slice(size, (size*2)).map((child, j) =>
-                                                    <ChildLink key={j} to={child.url}  data-tracking="header-navigation">
+                                                {navItem.children.slice(size, (size*2)).map((child) =>
+                                                    <ChildLink key={child.title} to={child.url}  data-tracking="header-navigation">
                                                         <span>{child.title}</span>
                                                     </ChildLink>
                                                 )}
                                             </Column>
                                             <Column className={"row_"+size}>
-                                                {navItem.children.slice((size*2), (size*3)).map((child, j) =>
-                                                    <ChildLink key={j} to={child.url}  data-tracking="header-navigation">
+                                                {navItem.children.slice((size*2), (size*3)).map((child) =>
+                                                    <ChildLink key={child.title} to={child.url}  data-tracking="header-navigation">
                                                         <span>{child.title}</span>
                                                     </ChildLink>
                                                 )}

@@ -4,7 +4,7 @@ import theme from "../_theme"
 import PropTypes from "prop-types"
 import { Dialog } from "@reach/dialog"
 import VisuallyHidden from "@reach/visually-hidden"
-import ProgressiveImage from "react-progressive-graceful-image";
+import ProgressiveImage from "react-progressive-graceful-image"
 
 const Figure = styled.figure`
     width: 100%;
@@ -189,7 +189,7 @@ export const Image = ({
     copyright,
     isClickable
 }) => {
-    const imgElement = React.useRef(null);
+    const imgElement = useRef(null)
     const [ imageWidth, setImageWidth ] = useState(0)
 
     const [ openImage, setOpenImage ] = useState(false)
@@ -257,9 +257,8 @@ export const Image = ({
                                 return loading ? 
                                     placeholderImage 
                                     : 
-                                    <StyledImage
+                                    <BigImage
                                         itemprop="image"
-                                        isClickable={false}
                                         src={src2}
                                         alt={alt}
                                     />

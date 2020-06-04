@@ -8,18 +8,12 @@ export default {
     decorators: [withA11y],
 }
 
-export const normal = () =>
+export const multipleArticlesWithHighlight = () =>
     <div style={{
         padding: "10px",
-        maxWidth: "1000px"
+        maxWidth: "1000px",
+        margin: "0 auto"
     }}>
-        <ArticleGrid articles={demoArticles} />
+        <ArticleGrid articles={[...demoArticles, ...demoArticles, ...demoArticles, ...demoArticles, ...demoArticles, ...demoArticles, ...demoArticles]} firstHighlighted />
     </div>
 
-export const loading = () =>
-    <div style={{
-        padding: "10px",
-        maxWidth: "1000px"
-    }}>
-        <ArticleGrid articles={false} />
-    </div>

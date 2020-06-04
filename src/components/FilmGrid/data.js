@@ -7,7 +7,7 @@ export default [
             "BFI Player"
         ],
         url: "#",
-        uuid: "06347a64-5abd-59de-a6b9-be0d4a9e31e1"
+        uuid: "06347a64-5abd-59de-a6b9-be0d4a9e31e1456"
     },
     {
         name: "The Lighthouse",

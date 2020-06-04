@@ -149,7 +149,7 @@ export const StepByStep = ({
             <Headline>{title}</Headline>
             <Steps>
                 {steps.map((step, i) =>
-                    <Step key={i}>
+                    <Step key={step.title}>
                         <ShowButton
                             aria-expanded={openSteps === i ? "true" : "false"}
                             onClick={() => {

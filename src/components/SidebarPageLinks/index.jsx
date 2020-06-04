@@ -29,8 +29,8 @@ export const SidebarPageLinks = ({
         }
         {links &&
             <List>
-                {links.map((link, i) =>
-                    <PageLink key={i} {...link} />    
+                {links.map((link) =>
+                    <PageLink key={link.url} {...link} />    
                 )}
             </List>
         }
