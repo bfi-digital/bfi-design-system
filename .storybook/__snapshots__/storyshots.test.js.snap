@@ -376,7 +376,7 @@ exports[`Storyshots 2 All Components/Call to Action Two Links 1`] = `
 
 exports[`Storyshots 2 All Components/Divider Normal 1`] = `
 <hr
-  className="sc-jTzLTM fPxcpp"
+  className="sc-jTzLTM ssjLw"
 />
 `;
 
@@ -1239,7 +1239,7 @@ exports[`Storyshots 2 All Components/Headline Hero H 1 1`] = `
 
 exports[`Storyshots 2 All Components/Headline Level 1 1`] = `
 <h1
-  className="sc-jAaTju sc-jDwBTQ bogNsI"
+  className="sc-jAaTju sc-jDwBTQ hgtqob"
 >
   My example headline
 </h1>
@@ -1286,7 +1286,7 @@ exports[`Storyshots 2 All Components/Newsletter Sign Up Example 1`] = `
   }
 >
   <div
-    className="sc-gisBJw hjqOCT"
+    className="sc-gisBJw cCzUIS"
   >
     <p
       className="sc-jlyJG OIlnw"
@@ -1298,7 +1298,7 @@ exports[`Storyshots 2 All Components/Newsletter Sign Up Example 1`] = `
     </p>
     <form
       action="https://www.createsend.com/t/subscribeerror?description="
-      className="sc-kjoXOD erBSHo js-cm-form"
+      className="sc-kjoXOD ggZsKi js-cm-form"
       data-id="191722FC90141D02184CB1B62AB3DC26D57AD7AD0DF253BE15DD122C605B740244DFF1ADDEE1A8DA861127EDFD99BF281A7016BD9F175EAF91CB858CC76D303F"
       id="subForm"
       method="post"
@@ -1332,7 +1332,7 @@ exports[`Storyshots 2 All Components/Newsletter Sign Up Example 1`] = `
 
 exports[`Storyshots 2 All Components/Oembed Vimeo 1`] = `
 <div
-  className="sc-cJSrbW jjcJYq"
+  className="sc-kgAjT iQePHG"
 >
   <iframe
     allow="autoplay; fullscreen"
@@ -1348,7 +1348,7 @@ exports[`Storyshots 2 All Components/Oembed Vimeo 1`] = `
 
 exports[`Storyshots 2 All Components/Oembed Youtube 1`] = `
 <div
-  className="sc-cJSrbW jjcJYq"
+  className="sc-kgAjT iQePHG"
 >
   <iframe
     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
