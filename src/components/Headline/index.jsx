@@ -26,6 +26,10 @@ const H1 = styled(HeroH1)`
     margin-block-start: 0.75em;
     margin-block-end: 0.5em;
     font-weight: 800;
+
+    & + h2 {
+        margin-block-start: 25px;
+    }
 `
 
 const H2 = styled.h2`

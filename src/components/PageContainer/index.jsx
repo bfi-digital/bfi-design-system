@@ -24,6 +24,10 @@ export const Wrapper = styled.div`
 
     article {
         max-width: none;
+
+        & h2:first-child {
+            margin-block-start: 0.5em;
+        }
     }
 
     aside {
