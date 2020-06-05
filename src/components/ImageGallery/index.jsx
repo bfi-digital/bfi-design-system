@@ -70,6 +70,7 @@ const Caption = styled.figcaption`
     max-width: 70%;
     margin: 0 auto;
     display: block;
+    margin-top: 10px;
     &:hover {
         cursor: default;
     }
@@ -198,6 +199,11 @@ const PlaceholderImg = styled.img`
     width: ${props => props.width};
     height: auto;
     max-width: 100%;
+    max-height: 90vh;
+    box-shadow: 0px 10px 40px ${theme.black}50;
+    &:hover {
+        cursor: default;
+    }
 `
 
 const useKeyPress = function(targetKey) {
@@ -246,7 +252,7 @@ export const ImageGallery = ({
             alt={images[openImage == 0 ? openImage : (openImage-1)].alt}
             ref={imgElement}
             width={imageWidth}
-            onLoad={() => setImageWidth((imgElement.current.naturalWidth) + "px")}
+            onLoad={() => setImageWidth((imgElement.current.naturalWidth*10) + "px")}
         />
     )      
     
@@ -294,7 +300,7 @@ export const ImageGallery = ({
                         return(
                             <Button key={img.url} onClick={() => setOpenImage(i+1)}>
                                 <ProgressiveImage
-                                    src={img.url}
+                                    src={img.thumb ? img.thumb : img.url}
                                     placeholder=""
                                 >
                                     {(src, loading) => {
@@ -335,7 +341,7 @@ export const ImageGallery = ({
                                     itemprop="image"
                                     src={src}
                                     alt={images[openImage == 0 ? openImage : (openImage-1)].alt}
-                                />  
+                                /> 
                         }}
                     </ProgressiveImage>
                     
