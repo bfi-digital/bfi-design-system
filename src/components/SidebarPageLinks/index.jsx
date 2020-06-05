@@ -6,7 +6,7 @@ import { PageLink } from "./Link"
 import { Headline } from "../Headline"
 
 const Outer = styled.section`
-    margin-bottom: ${theme.standardSpace};
+    margin-bottom: ${theme.standardSpace}px;
     h4 {
         margin: 0;
     }

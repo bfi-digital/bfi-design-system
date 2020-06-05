@@ -13,14 +13,10 @@ const Outer = styled.div`
     width: 100%;
     flex: 0 0 100%;
     margin-bottom: 15px;
-    
 
     max-width: calc(${theme.xl} - 100px);
     max-width: calc(${theme.xl} + 125px);
 
-    p, ol {
-        max-width: 775px;
-    }
     h1 {
         margin-block-start: 1em;
     }
@@ -37,6 +33,15 @@ const Outer = styled.div`
             margin-bottom: 30px;
         }
     }
+    p, ol {
+        max-width: 775px;
+    }
+    @media screen and (min-width: ${theme.m}){
+        p, ol {
+            max-width: 1000px;
+        }
+    }
+
 `
 const Meta = styled.div`
 

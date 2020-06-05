@@ -68,7 +68,7 @@ const MiddleRow = styled.section`
 `
 const SupportLogos = styled.div`
     width: 100%;
-    margin-bottom: ${theme.standardSpace};
+    margin-bottom: ${theme.standardSpace}px;
 
     img {
         height: 60px;
@@ -144,7 +144,7 @@ const Heading = styled.h2`
     font-weight: bold;
     padding-top: 15px;
     border-top: 3px solid ${theme.black};
-    margin-bottom: ${theme.standardSpace};
+    margin-bottom: ${theme.standardSpace}px;
 `
 
 const SubHeading = styled.h2`
@@ -158,7 +158,7 @@ const SubHeading = styled.h2`
 const Copyright = styled.p`
     @media screen and (min-width: ${theme.m}) {
         text-align: right;
-        padding-left: ${theme.standardSpace};
+        padding-left: ${theme.standardSpace}px;
     }
 `
 

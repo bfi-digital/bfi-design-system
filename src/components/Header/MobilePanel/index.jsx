@@ -151,7 +151,7 @@ const QuickLink = styled(Link)`
 
 const HighlightContainer = styled.div`
     width: 100%;
-    margin-bottom: ${theme.standardSpace};
+    margin-bottom: ${theme.standardSpace}px;
 `
 const HighlightLink = styled(Link)`
     width: 100%;

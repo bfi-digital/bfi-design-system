@@ -9,7 +9,7 @@ const VideoContainer = styled.div`
     height: 0;
     padding-bottom: 56.25%;
     text-align: center;
-    margin-bottom: ${theme.standardSpace};
+    margin-bottom: ${theme.standardSpace*2}px;
 
     iframe {
         position: absolute;
@@ -24,7 +24,7 @@ const Container = styled.div`
     position: relative;
     width: 100%;
     text-align: center;
-    margin-bottom: ${theme.standardSpace};
+    margin-bottom: ${theme.standardSpace*2}px;
 
     iframe, twitter-widget {
         max-width: 100%;

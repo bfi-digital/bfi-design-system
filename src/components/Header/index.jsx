@@ -99,7 +99,7 @@ const SkipLink = styled.a`
     -webkit-clip-path: inset(50%) !important;
     clip-path: inset(50%) !important;
     white-space: nowrap !important;
-    padding: 10px ${theme.standardSpace};
+    padding: 10px ${theme.standardSpace}px;
     background: ${theme.primary};
     font-weight: 700;
     display: block;

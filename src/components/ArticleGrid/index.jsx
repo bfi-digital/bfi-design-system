@@ -11,13 +11,13 @@ const Outer = styled.div`
     margin: 15px 0;
     padding: 15px 0;
     padding-top: 35px;
-    margin-top: ${theme.standardSpace};
+    margin-top: ${theme.standardSpace}px;
     position: relative; 
     background: ${props => props.pageWithSideBar ? "transparent" : theme.lightGrey};
 
     h2 {
         margin-top: 0;
-        margin-bottom: ${theme.standardSpace};
+        margin-bottom: ${theme.standardSpace*2}px;
         text-align: center;
     }
 
@@ -54,7 +54,7 @@ const Articles = styled.ul`
         @media screen and (min-width: ${theme.m}){
             width: ${props => props.lessColumns ? "calc(50% - 12.5px)" : "calc(33.333% - 16.666px)"};
             margin-bottom: 35px;
-            margin-right: ${theme.standardSpace};
+            margin-right: ${theme.standardSpace}px;
         }
         @media screen and (min-width: ${theme.l}){
             min-width: 275px;
@@ -91,11 +91,11 @@ const Articles = styled.ul`
                 }
             }
             @media screen and (min-width: ${theme.m}){
-                margin-right: ${theme.standardSpace};
+                margin-right: ${theme.standardSpace}px;
                 margin-bottom: 35px;
 
                 &:nth-of-type(2n+1) {
-                    margin-right: ${theme.standardSpace};
+                    margin-right: ${theme.standardSpace}px;
                 }
                 &:nth-of-type(3n+1) {
                     margin-right: 0px;
@@ -103,10 +103,10 @@ const Articles = styled.ul`
             }
             @media screen and (min-width: ${theme.l}){
                 &:nth-of-type(3n) {
-                    margin-right: ${theme.standardSpace};
+                    margin-right: ${theme.standardSpace}px;
                 }
                 &:nth-of-type(3n+1) {
-                    margin-right: ${theme.standardSpace};
+                    margin-right: ${theme.standardSpace}px;
                 }
                 &:nth-of-type(3n+2) {
                     margin-right: 0px;
@@ -124,7 +124,7 @@ const Articles = styled.ul`
             }
             @media screen and (min-width: ${theme.l}){
                 width: calc(66.666% - 8.332px);
-                margin-right: ${theme.standardSpace};
+                margin-right: ${theme.standardSpace}px;
             }
         }   
     }

@@ -64,7 +64,7 @@ const Image = styled.div`
     }
 `
 const CTAContainer = styled.div`
-    margin-top: ${theme.standardSpace};
+    margin-top: ${theme.standardSpace}px;
     width: 100%;
 `
 

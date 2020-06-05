@@ -191,7 +191,7 @@ const CloseButton = styled.button`
     right: -55px;
     cursor: zoom-out;
 `
-const PlaceholderContainer = styled.img`
+const PlaceholderImg = styled.img`
     margin: 0;
     padding: 0;
     display: block;
@@ -239,7 +239,7 @@ export const ImageGallery = ({
     const [ imageWidth, setImageWidth ] = useState("100%")
     const imgElement = useRef(null)
     const placeholderImageBig = (
-        <PlaceholderContainer
+        <PlaceholderImg
             itemprop="image"
             isClickable={false}
             src={images[openImage == 0 ? openImage : (openImage-1)].placeholder}
@@ -282,7 +282,7 @@ export const ImageGallery = ({
                 {
                     images.map((img, i) => {
                         const placeholderImage = (
-                            <PlaceholderContainer
+                            <PlaceholderImg
                                 itemprop="image"
                                 isClickable={false}
                                 src={img.placeholder}

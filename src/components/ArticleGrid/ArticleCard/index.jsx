@@ -21,7 +21,7 @@ const Outer = styled.li`
 
     @media screen and (min-width: ${theme.m}){
         width: 190px;
-        padding: ${theme.standardSpace};
+        padding: ${theme.standardSpace}px;
         padding-top: 185px;
     }
     @media screen and (min-width: ${theme.l}){
@@ -144,7 +144,7 @@ const CategoryTag = styled.div`
     z-index: 1;
 
     @media screen and (min-width: ${theme.m}){
-        padding-left: ${theme.standardSpace};
+        padding-left: ${theme.standardSpace}px;
     }
 `
 

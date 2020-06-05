@@ -6,7 +6,7 @@ import { SidebarArticleCard } from "./SidebarArticleCard"
 import { Headline } from "../Headline"
 
 const Outer = styled.section`
-    margin-bottom: ${theme.standardSpace};
+    margin-bottom: ${theme.standardSpace*2}px;
     h4 {
         margin: 0;
     }

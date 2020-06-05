@@ -24,7 +24,7 @@ export default {
     // sizes & spacings
     horizontalPadding: "20px",
 
-    standardSpace: "25px",
+    standardSpace: "25",
 
     fontSize_s: "1.05rem",
     lineHeight_s: "1.5",

@@ -21,7 +21,7 @@ const Outer = styled.li`
     padding: 15px;
 
     @media screen and (min-width: ${theme.m}){
-        padding: ${theme.standardSpace};
+        padding: ${theme.standardSpace}px;
     }
 
     h4{
@@ -88,7 +88,7 @@ const CallToAction = styled(Link)`
 `
 
 const Content = styled.div`
-    padding-right: ${theme.standardSpace};
+    padding-right: ${theme.standardSpace}px;
     position: relative;
     padding-top: 180px;
     width: 100%;
@@ -145,7 +145,7 @@ const CategoryTag = styled.div`
     font-size: ${theme.small_fontSize_m};
 
     @media screen and (min-width: ${theme.m}){
-        padding-left: ${theme.standardSpace};
+        padding-left: ${theme.standardSpace}px;
         font-size: ${theme.fontSize_s};
     }
 `

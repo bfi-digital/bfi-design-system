@@ -34,12 +34,12 @@ const Outer = styled.section`
     color: ${props => colorSchemes[props.colorScheme].text};
     position: relative;
 
-    margin-bottom: ${theme.standardSpace};
+    margin-bottom: ${theme.standardSpace*2}px;
     // & + .promoBanner {
     //     margin-top: 0px;
     // }
     // &:last-of-type {
-    //     margin-bottom: ${theme.standardSpace};
+    //     margin-bottom: ${theme.standardSpace*2}px;
     // }
 
     h2{
@@ -100,7 +100,7 @@ const Outer = styled.section`
 const Inner = styled.div`
     padding: 15px;
     @media screen and (min-width: ${theme.m}){
-        padding: ${theme.standardSpace};
+        padding: ${theme.standardSpace}px;
         width: ${props => props.pageWithSideBar ? "100%" : "50%"};
         display: flex;
         flex-direction: column;
@@ -127,7 +127,7 @@ const RightButton = styled.div`
 
 
     @media screen and (min-width: ${theme.m}){
-        padding: ${theme.standardSpace};
+        padding: ${theme.standardSpace}px;
         width: 33%;
         display: flex;
         flex-direction: column;
@@ -145,7 +145,7 @@ const Description = styled.p`
     margin-top: 0px;
     @media screen and (min-width: ${theme.m}){
         font-size: ${theme.fontSize_xl};
-        margin-bottom: ${theme.standardSpace};
+        margin-bottom: ${theme.standardSpace}px;
 
         &.without_image {
             margin-bottom: 0;

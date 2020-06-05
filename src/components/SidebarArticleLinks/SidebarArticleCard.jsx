@@ -55,7 +55,7 @@ const Outer = styled.li`
         transform: translate(0px, 3px);
     }
     &:last-of-type {
-        margin-bottom: ${theme.standardSpace};
+        margin-bottom: ${theme.standardSpace}px;
         &:after {
             display: none;
         }

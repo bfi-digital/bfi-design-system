@@ -9,7 +9,7 @@ import ProgressiveImage from "react-progressive-graceful-image"
 const Outer = styled.div`
     background: ${theme.lightest};
     margin: 0 auto;
-    margin-bottom: ${theme.standardSpace};
+    margin-bottom: ${theme.standardSpace}px;
     padding: 15px;
     display: block;
     @media screen and (min-width: ${theme.s}){

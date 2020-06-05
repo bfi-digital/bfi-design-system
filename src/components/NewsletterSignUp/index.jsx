@@ -83,9 +83,12 @@ const newsletters = [
 const Outer = styled.div`
     background: ${theme.lightest};
     margin: 0 auto;
-    margin-bottom: ${theme.standardSpace};
+    margin-bottom: ${theme.standardSpace*2}px;
     padding: 15px;
     display: block;
+    max-width: ${theme.l};
+    text-align: left;
+
 
     h3 {   
         margin-top: 0;
@@ -93,18 +96,29 @@ const Outer = styled.div`
     }
     p {
         margin-top: 0;
+        margin-bottom: ${theme.standardSpace};
         max-width: 75%;
+        @media screen and (min-width: ${theme.l}){
+            max-width: 100%;
+        }
     }
 
     @media screen and (min-width: ${theme.m}){
-        padding: ${theme.standardSpace};
+        padding: ${theme.standardSpace}px;
+    }
+    @media screen and (min-width: ${theme.xl}){
+        max-width: ${theme.m};
+        text-align: center;
     }
 `
 const NewsletterForm = styled.form`
+    label {
+        text-align: left;
+    }
     input {
         display: block;
         margin-top: 5px;
-        padding: 10px 10px;
+        padding: 13px 10px;
         padding-top: 12px;        
         font-size: ${theme.fontSize_s};
         border: none;
@@ -142,7 +156,7 @@ const SubmitButton = styled.button`
     color: ${theme.white};
     background: ${theme.black};
     text-decoration: none;
-    padding: 10px ${theme.standardSpace};
+    padding: 10px ${theme.standardSpace}px;
     z-index: 2;
     width: 100%;
     text-align: center;

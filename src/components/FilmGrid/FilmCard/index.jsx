@@ -12,7 +12,7 @@ const Outer = styled(LinkSwitch)`
     // border-radius: 5px;
     text-decoration: none;
     color: ${theme.black};
-    margin-bottom: ${theme.standardSpace};
+    margin-bottom: ${theme.standardSpace}px;
     transition: box-shadow .3s;
     
     .filmcard_title {

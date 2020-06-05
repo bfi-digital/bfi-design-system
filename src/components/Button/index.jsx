@@ -30,7 +30,7 @@ const PrimaryButton = styled(Link)`
     color: ${props => colorSchemes[props.colorScheme].text};
     background: ${props => colorSchemes[props.colorScheme].background};
     text-decoration: none;
-    padding: 10px ${theme.standardSpace};
+    padding: 10px ${theme.standardSpace}px;
     z-index: 2;
     width: 100%;
     text-align: center;

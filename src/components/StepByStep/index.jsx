@@ -5,12 +5,12 @@ import theme from "../_theme"
 import parse from "html-react-parser"
 
 const Outer = styled.section`
-    margin-bottom: ${theme.standardSpace};
+    margin-bottom: ${theme.standardSpace}px;
 `
 
 const Headline = styled.h3`
     font-weight: 700;
-    margin-bottom: ${theme.standardSpace};
+    margin-bottom: ${theme.standardSpace}px;
 `
 
 const Steps = styled.ol`
@@ -38,7 +38,7 @@ const Step = styled.li`
         content: counter(steps);
         position: absolute;
         top: 0px;
-        left: -${theme.standardSpace};
+        left: -${theme.standardSpace}px;
         display: flex;
         justify-content: center;
         align-items: center;

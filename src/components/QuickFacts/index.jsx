@@ -7,7 +7,7 @@ const Outer = styled.dl`
     color: ${theme.black};
     margin-top: 0px;
     line-height: 150%;
-    margin-bottom: ${theme.standardSpace};
+    margin-bottom: ${theme.standardSpace*2}px;
 `
 
 const Label = styled.dt`

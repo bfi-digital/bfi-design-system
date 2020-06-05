@@ -6,17 +6,18 @@ import { Button } from "../Button"
 
 export const Wrapper = styled.div`
     max-width: ${theme.l};
-    padding: 0px ${theme.horizontalPadding};
-    margin: 30px auto;
+    margin: 0 auto;
+    padding: ${theme.standardSpace}px ${theme.horizontalPadding};
 
     @media screen and (min-width: ${theme.m}){
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        margin: 60px auto;
+        padding: ${theme.standardSpace*2}px ${theme.horizontalPadding};
     }
     @media screen and (min-width: ${theme.xl}){
         max-width: calc(${theme.xl} - 100px);
+        padding: ${theme.standardSpace*2}px ${theme.horizontalPadding};
     }
     &:last-of-type{
         margin-bottom: 100px;
@@ -26,12 +27,12 @@ export const Wrapper = styled.div`
         max-width: none;
 
         & h2:first-child {
-            margin-block-start: 0.5em;
+            margin-block-start: 0;
         }
     }
 
     aside {
-        padding-top: ${theme.standardSpace};
+        padding-top: ${theme.standardSpace}px;
         padding-bottom: 0px;
         @media screen and (min-width: ${theme.m}){
             padding-top: 0px;
@@ -47,13 +48,13 @@ export const MainContent = styled.article`
     flex: 1;
     
     & h2:first-child {
-        margin-block-start: 0.5em;
+        margin-block-start: 0;
     }
     iframe {
         border: none;
     }
     .map_embed {
-        margin-bottom: ${theme.standardSpace};
+        margin-bottom: ${theme.standardSpace}px;
     }
 `
 export const WrapperFullWidth = styled.article`

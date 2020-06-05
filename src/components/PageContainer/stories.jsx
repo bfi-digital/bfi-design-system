@@ -1383,18 +1383,16 @@ export const everyComponent = () =>
     <>
         <Header navItems={navItems} quickLinks={quickLinksData} />
         <Wrapper>
+            <HeroPage
+                title="Headline goes here"
+                standfirst="God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs. Do you have any idea how long it takes those cups to decompose. Yes, Yes, without the oops! Yes, Yes, without the oops! Drive us out of here!"
+                breadcrumbs={crumbs}
+            />
             <MainContent role="main">
-                <Breadcrumbs 
-                    breadcrumbs={crumbs} 
-                />
                 <Headline 
-                    level={1} 
-                    text="Headline goes here"
+                    level={2} 
+                    text="Headline 2"
                 />
-                <LeadParagraph 
-                    text="God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs. Do you have any idea how long it takes those cups to decompose. Yes, Yes, without the oops! Yes, Yes, without the oops! Drive us out of here!"
-                />
-
                 <Text> 
                     <p>So you two dig up, dig up dinosaurs? Hey, you know how I&apos;m, like, always trying to save the planet? Here&apos;s my chance. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine?</p>
                     <p>Yes, Yes, without the oops! <a href="http://google.com</MainContent>">Yes, Yes, without the oops!</a> Drive us out of here!</p>
@@ -1586,6 +1584,7 @@ export const everyComponent = () =>
                     },
                     {
                         title: "Production Fund",
+                        external: true,
                         url: "#",
                         description: "We welcome production applications from new and established filmmakers.",
                         callToAction: "Apply to this fund",

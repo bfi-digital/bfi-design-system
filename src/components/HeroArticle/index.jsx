@@ -17,7 +17,7 @@ const Outer = styled.div`
 `
 const Meta = styled.div`
     max-width: 800px;
-    padding: 0 ${theme.standardSpace};
+    padding: 0 ${theme.standardSpace}px;
     margin: 0 auto; 
     @media screen and (min-width: ${theme.m}){
         padding: 0 50px;
@@ -25,7 +25,7 @@ const Meta = styled.div`
 `
 const LowerContent = styled.div`
     margin: 30px auto;
-    max-width: 4${theme.standardSpace};
+    max-width: 4${theme.standardSpace}px;
     p {
         margin-top: 0;
     }

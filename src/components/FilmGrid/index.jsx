@@ -6,6 +6,8 @@ import { Button } from "../Button"
 import { Scroller } from "../Scroller"
 
 const Outer = styled.section`
+    margin-bottom: ${theme.standardSpace*2}px;
+    
     @media screen and (min-width: ${theme.m}){
         display: flex;
         flex-direction: row;
