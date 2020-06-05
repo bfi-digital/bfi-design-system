@@ -25,23 +25,27 @@ export const FilterableArticles = ({
     optionalCTATitle,
     optionalCTALink,
     loadMore,
+    loading
 }) => {
 
     return(
         <Outer>
             {filters && <FilterLinks links={filters} /> }
-            {articles && articles.length > 0 ? 
-                <>
-                    {!limit ?
-                        <ArticleGrid articles={articles} firstHighlighted={includeHighlight}>
-                            {loadMore && <CentredButton href="#4" onClick={loadMore}>Load more</CentredButton>}
-                        </ArticleGrid>
-                        :
-                        <ArticleGrid articles={articles.slice(0,limit)} optionalTitle={filters ? false : optionalTitle} firstHighlighted={includeHighlight} optionalCTATitle={optionalCTATitle} optionalCTALink={optionalCTALink} />
-                    }
-                </>
+            {!loading ? 
+                articles && articles.length > 0 ? 
+                    <>
+                        {!limit ?
+                            <ArticleGrid articles={articles} firstHighlighted={includeHighlight}>
+                                {loadMore && <CentredButton href="#4" onClick={loadMore}>Load more</CentredButton>}
+                            </ArticleGrid>
+                            :
+                            <ArticleGrid articles={articles.slice(0,limit)} optionalTitle={filters ? false : optionalTitle} firstHighlighted={includeHighlight} optionalCTATitle={optionalCTATitle} optionalCTALink={optionalCTALink} />
+                        }
+                    </>
+                    :
+                    <p>No articles found.</p>
                 :
-                <ArticleGrid articles={false} />
+                <ArticleGrid articles={false} skeletons={limit} />
             }
         </Outer>
     )
@@ -83,10 +87,15 @@ FilterableArticles.propTypes = {
     /**
      * An optional function that is to be called when the 'load more' button is pressed. If omitted, the load more button is not shown.
      */
-    loadMore: PropTypes.func
+    loadMore: PropTypes.func,
+    /**
+     * A boolean to determine if the articles are currently loading
+     */
+    loading: PropTypes.bool
 }
 
 FilterableArticles.defaultProps = {
     parameter: "type",
-    includeHighlight: true
+    includeHighlight: true,
+    loading: false
 }

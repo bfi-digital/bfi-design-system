@@ -129,6 +129,18 @@ import demoArticles from "../../../components/ArticleGrid/data"
     </Story>
 </Preview>
 
+<Preview>
+    <Story name="Loading with limit">
+        <div style={{
+            padding: "10px",
+            maxWidth: "1000px",
+            margin: "0 auto"
+        }}>
+            <ArticleGrid articles={false} skeletons={3} />
+        </div>
+    </Story>
+</Preview>
+
 ## Props 
 
 <Props of={ArticleGrid} />

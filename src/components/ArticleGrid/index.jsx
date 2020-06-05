@@ -62,7 +62,7 @@ const Articles = styled.ul`
     }
 
     &.noHighlight {
-        .articleCard {
+        .articleCard, .loadingArticleCard {
             @media screen and (min-width: ${theme.s}){
                 &:nth-of-type(2n) {
                     margin-right: 0px;
@@ -151,7 +151,8 @@ export const ArticleGrid = ({
     optionalCTATitle,
     pageWithSideBar,
     firstHighlighted,
-    children
+    children,
+    skeletons = 6
 }) =>
     <Outer pageWithSideBar={pageWithSideBar}>
         {optionalTitle && 
@@ -175,13 +176,8 @@ export const ArticleGrid = ({
                 }
             </Articles>
             :
-            <Articles>
-                <Skeleton/>
-                <Skeleton/>
-                <Skeleton/>
-                <Skeleton/>
-                <Skeleton/>
-                <Skeleton/>
+            <Articles lessColumns={articles.length === 2 || articles.length === 4} className="noHighlight">
+                {[...Array(skeletons)].map((i) => <Skeleton key={i} /> )}
             </Articles>
         }
         { optionalCTALink &&
