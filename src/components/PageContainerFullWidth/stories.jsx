@@ -774,7 +774,7 @@ export const everyComponent = () =>
                     level={2} 
                     text="Checkout our YouTube"
                 />
-                <Oembed oembedObject={{
+                <Oembed isVideo oembedObject={{
                     author_url: "https://www.youtube.com/user/BFIfilms",
                     title: "Misbehaviour director Phillipa Lowthorpe and producer Suzanne Mackie | BFI Q\u0026A",
                     height: 337,

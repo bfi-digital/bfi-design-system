@@ -52,7 +52,7 @@ const youtubeExampleData = [
 ]
 
 export const vimeo = () =>
-    <Oembed oembedObject={vimeoExampleData[0]} />
+    <Oembed isVideo oembedObject={vimeoExampleData[0]} />
 
 export const youtube = () =>
-    <Oembed oembedObject={youtubeExampleData[0]} />
+    <Oembed isVideo oembedObject={youtubeExampleData[0]} />

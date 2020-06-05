@@ -5,11 +5,13 @@ import theme from "../_theme"
 
 const VideoContainer = styled.div`
     position: relative;
+    margin: 0 auto;
     width: 100%;
     height: 0;
     padding-bottom: 56.25%;
     text-align: center;
     margin-bottom: ${theme.standardSpace*2}px;
+    max-width: ${theme.l};
 
     iframe {
         position: absolute;

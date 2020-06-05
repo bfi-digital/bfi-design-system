@@ -428,7 +428,7 @@ export const ArticleFeatureExample = () =>
                     level={2} 
                     text="PE with Joe – 3 April 2020"
                 />
-                <Oembed oembedObject={{
+                <Oembed isVideo isVideo oembedObject={{
                     html: "\u003ciframe width=\"480\" height=\"270\" src=\"https://www.youtube.com/embed/vpqYxK6mmSU?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen\u003e\u003c/iframe\u003e"
                 }} />
 
@@ -596,7 +596,7 @@ export const ArticleVideoExample = () =>
         />
         <Wrapper>           
             <MainContent role="main">
-                <Oembed oembedObject={{
+                <Oembed isVideo oembedObject={{
                     html: "\u003ciframe width=\"480\" height=\"270\" src=\"https://www.youtube.com/embed/jEwTINVl4xM?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen\u003e\u003c/iframe\u003e"
                 }} />
                 <Text>
@@ -792,7 +792,7 @@ export const ArticleListExample = () =>
                     year="2019"
                     playerUrl="https://player.bfi.org.uk/rentals/film/watch-the-assistant-2019-online"
                 />
-                <Oembed oembedObject={{
+                <Oembed isVideo oembedObject={{
                     html: "\u003ciframe width=\"600\" height=\"337\" src=\"https://www.youtube.com/embed/GQTKC4p8dWY?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen\u003e\u003c/iframe\u003e"
                 }} />
                 <Text>
@@ -810,7 +810,7 @@ export const ArticleListExample = () =>
                     year="1946"
                     filmLink="#14"
                 />
-                <Oembed oembedObject={{
+                <Oembed isVideo oembedObject={{
                     html: "\u003ciframe width=\"600\" height=\"337\" src=\"https://www.youtube.com/embed/YadApPG8W7Q?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen\u003e\u003c/iframe\u003e"
                 }} />
                 <Text>
@@ -859,7 +859,7 @@ export const ArticleListExample = () =>
                     year="1994"
                     filmLink="https://www.bfi.org.uk/films-tv-people/4ce2b7d2993a2"
                 />
-                <Oembed oembedObject={{
+                <Oembed isVideo oembedObject={{
                     html: "\u003ciframe width=\"600\" height=\"337\" src=\"https://www.youtube.com/embed/UuyznqAILAM?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen\u003e\u003c/iframe\u003e"
                 }} />
                 <Text>
@@ -972,7 +972,7 @@ export const ArticleSightAndSoundExample = () =>
                     level={2} 
                     text="PE with Joe – 3 April 2020"
                 />
-                <Oembed oembedObject={{
+                <Oembed isVideo oembedObject={{
                     html: "\u003ciframe width=\"480\" height=\"270\" src=\"https://www.youtube.com/embed/vpqYxK6mmSU?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen\u003e\u003c/iframe\u003e"
                 }} />
 
@@ -1098,7 +1098,7 @@ export const ArticleSightAndSoundExampleNoImage = () =>
                     level={2} 
                     text="PE with Joe – 3 April 2020"
                 />
-                <Oembed oembedObject={{
+                <Oembed isVideo oembedObject={{
                     html: "\u003ciframe width=\"480\" height=\"270\" src=\"https://www.youtube.com/embed/vpqYxK6mmSU?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen\u003e\u003c/iframe\u003e"
                 }} />
 
@@ -1553,7 +1553,7 @@ export const everyComponent = () =>
                     level={2} 
                     text="Checkout our YouTube"
                 />
-                <Oembed oembedObject={{
+                <Oembed isVideo oembedObject={{
                     author_url: "https://www.youtube.com/user/BFIfilms",
                     title: "Misbehaviour director Phillipa Lowthorpe and producer Suzanne Mackie | BFI Q\u0026A",
                     height: 337,
