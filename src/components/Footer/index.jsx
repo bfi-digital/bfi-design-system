@@ -74,13 +74,19 @@ const SupportLogos = styled.div`
         height: 60px;
     }
     @media screen and (min-width: ${theme.m}) {
-        margin-right: 60px;
+        margin-right: 70px;
         margin-bottom: 0;
         width: 75%;
     }
+    @media screen and (min-width: ${theme.l}) {
+        margin-right: 170px;
+    }
+    @media screen and (min-width: ${theme.xl}) {
+        margin-right: 280px;
+    }
 `
 const FollowMenu = styled.div`
-    width: 100%;
+    width: 70%;
     @media screen and (min-width: ${theme.m}) {
         width: 25%;
     }
@@ -128,12 +134,18 @@ const Menu = styled.nav`
     width: 100%;
     @media screen and (min-width: ${theme.m}) {
         margin-top: 0px;
-        margin-left: 30px;
+        margin-left: 40px;
         width: 25%;
 
         &:first-of-type {
             margin-left: 0;
         }
+    }
+    @media screen and (min-width: ${theme.l}) {
+        margin-left: 60px;
+    }
+    @media screen and (min-width: ${theme.xl}) {
+        margin-left: 100px;
     }
 `
 
@@ -142,8 +154,6 @@ const Heading = styled.h2`
     display: block;
     font-size: 1.3rem;
     font-weight: bold;
-    padding-top: 15px;
-    border-top: 3px solid ${theme.black};
     margin-bottom: ${theme.standardSpace}px;
 `
 
@@ -200,9 +210,22 @@ const linkStyles = `
     }
 
     &.title_link {
+        display: block;
+        padding-top: 15px;
+        border-top: 3px solid ${theme.black};
         text-decoration: none;
+
         &:hover{
             text-decoration: underline;
+        }
+        &:focus{
+            background: none;
+            outline: none;
+            h2 {
+                outline: 2px solid ${theme.focus};
+                background: ${theme.dark};
+                color: ${theme.white};
+            }
         }
     }
     span.hidden_title {
