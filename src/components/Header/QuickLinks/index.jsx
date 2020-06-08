@@ -22,7 +22,7 @@ const QuickLink = styled(Link)`
 
     &:hover {
         color: ${props => props.isTransparent ? (!props.isSticky ? theme.grey : theme.black) : theme.black};
-        background: ${props => props.isTransparent ? (!props.isSticky ? "transparent" : theme.grey) : theme.grey};
+        background: ${props => props.isTransparent ? (!props.isSticky ? "transparent" : theme.lightGrey) : theme.lightGrey};
     }
 
     @media screen and (min-width: ${theme.m}){

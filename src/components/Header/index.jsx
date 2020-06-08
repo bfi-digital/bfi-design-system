@@ -108,8 +108,11 @@ const SkipLink = styled.a`
     color: ${theme.black};
     
     .inner {
-        max-width:  ${theme.l};
+        max-width: ${theme.l};
         margin: 0 auto;
+        @media screen and (min-width: ${theme.xl}){
+            max-width: calc(${theme.xl} - 100px);
+        }
     }
     .button_like {
         background: ${theme.white};

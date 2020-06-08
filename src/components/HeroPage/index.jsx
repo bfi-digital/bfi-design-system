@@ -14,7 +14,6 @@ const Outer = styled.div`
     flex: 0 0 100%;
     margin-bottom: 15px;
 
-    max-width: calc(${theme.xl} - 100px);
     max-width: calc(${theme.xl} + 125px);
 
     h1 {

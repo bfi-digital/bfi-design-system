@@ -85,10 +85,6 @@ const Item = styled.li`
 `
 
 const ChildBar = styled.div`
-    background: ${theme.white};
-    border-bottom: 1px solid ${theme.grey};
-    border-top: 1px solid ${theme.grey};
-
     @keyframes fadeIn{
         from{
             opacity: 0;
@@ -97,20 +93,38 @@ const ChildBar = styled.div`
             opacity: 1;
         }
     }
+
+    z-index: 998;
+    background: ${theme.white};
+    border-bottom: 1px solid ${theme.grey};
+    border-top: 1px solid ${theme.grey};
     margin: 0 auto;
     position: absolute;
     top: 61px;
     left: 0;
     width: 100%;
     animation: fadeIn 0.1s ease-out;
+    
     @media screen and (min-width: ${theme.l}){
         top: 64px;
     }
 `
-
+const Shadow = styled.div`
+    background: rgba(255,255,255,0.6);
+    width: 100%;
+    height: calc(100vh - 100%);
+    position: absolute;
+    top: 61px;
+    left: 0;
+    z-index: -1;
+    @media screen and (min-width: ${theme.l}){
+        top: 64px;
+    }
+`
 const ChildList = styled.div`
-    padding: ${theme.horizontalPadding} ${theme.horizontalPadding};
-    padding-bottom: 0px;
+    padding: 0px;
+    padding-top: 10px;
+    padding-left: 5px;
     margin: 0 auto;
     width: 100%;
     max-width: calc(${theme.xl} + 125px);
@@ -123,10 +137,12 @@ const ChildList = styled.div`
             margin-left: 0px !important;
         }
     }
+    @media screen and (min-width: ${theme.xl}){
+        max-width: calc(${theme.xl} - 100px);
+    }
+}
 `
 const InnerContainer = styled.div`
-    max-width: ${theme.l};
-    padding: 0 15px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -244,7 +260,7 @@ const HighlightLink = styled(Link)`
 
     &:hover {
         color: ${theme.dark} !important;
-        background: ${theme.grey};
+        background: ${theme.lightGrey};
     }
     &:focus {
         // border-radius: 7px;
@@ -284,7 +300,6 @@ const OpenMenuButton = styled.button`
         outline: none;
     }
 `
-
 
 const Nav = ({
     navItems,
@@ -328,38 +343,41 @@ const Nav = ({
                             <OpenMenuButton onClick={() => selected === i ? setSelected(false) : setSelected(i)}>{selected === i ? "Close" : "Open"} submenu</OpenMenuButton>
 
                             {selected === i &&
-                                <ChildBar>
-                                    <ChildList id={i}>
-                                        <InnerContainer>
-                                            <Column className={"row_"+size}>
-                                                {navItem.children.slice(0, size).map((child) =>
-                                                    <ChildLink key={child.title} to={child.url}  data-tracking="header-navigation">
-                                                        <span>{child.title}</span>
-                                                    </ChildLink>
-                                                )}
-                                            </Column>
-                                            <Column className={"row_"+size}>
-                                                {navItem.children.slice(size, (size*2)).map((child) =>
-                                                    <ChildLink key={child.title} to={child.url}  data-tracking="header-navigation">
-                                                        <span>{child.title}</span>
-                                                    </ChildLink>
-                                                )}
-                                            </Column>
-                                            <Column className={"row_"+size}>
-                                                {navItem.children.slice((size*2), (size*3)).map((child) =>
-                                                    <ChildLink key={child.title} to={child.url}  data-tracking="header-navigation">
-                                                        <span>{child.title}</span>
-                                                    </ChildLink>
-                                                )}
-                                            </Column>
-                                            { navItem.highlightText && 
-                                                <HighlightContainer>
-                                                    <HighlightLink to={navItem.highlightURL} data-tracking="header-navigation">{navItem.highlightText}</HighlightLink>
-                                                </HighlightContainer>
-                                            }
-                                        </InnerContainer>
-                                    </ChildList>
-                                </ChildBar>
+                                <>
+                                    <ChildBar>
+                                        <ChildList id={i}>
+                                            <InnerContainer>
+                                                <Column className={"row_"+size}>
+                                                    {navItem.children.slice(0, size).map((child) =>
+                                                        <ChildLink key={child.title} to={child.url}  data-tracking="header-navigation">
+                                                            <span>{child.title}</span>
+                                                        </ChildLink>
+                                                    )}
+                                                </Column>
+                                                <Column className={"row_"+size}>
+                                                    {navItem.children.slice(size, (size*2)).map((child) =>
+                                                        <ChildLink key={child.title} to={child.url}  data-tracking="header-navigation">
+                                                            <span>{child.title}</span>
+                                                        </ChildLink>
+                                                    )}
+                                                </Column>
+                                                <Column className={"row_"+size}>
+                                                    {navItem.children.slice((size*2), (size*3)).map((child) =>
+                                                        <ChildLink key={child.title} to={child.url}  data-tracking="header-navigation">
+                                                            <span>{child.title}</span>
+                                                        </ChildLink>
+                                                    )}
+                                                </Column>
+                                                { navItem.highlightText && 
+                                                    <HighlightContainer>
+                                                        <HighlightLink to={navItem.highlightURL} data-tracking="header-navigation">{navItem.highlightText}</HighlightLink>
+                                                    </HighlightContainer>
+                                                }
+                                            </InnerContainer>
+                                        </ChildList>
+                                    </ChildBar>
+                                    <Shadow onMouseEnter={() => { setSelected(false) }} />
+                                </>
                             }
                         </Item>
                     )
