@@ -175,10 +175,10 @@ const IconLinkContainer = styled(LinkContainer)`
 
 const linkStyles = `
     color: black;
-    text-decoration: underline;
+    text-decoration: none;
 
     &:hover{
-        text-decoration: none;
+        text-decoration: underline;
         div.logo {
             background: rgba(0,0,0,0.6);
         }

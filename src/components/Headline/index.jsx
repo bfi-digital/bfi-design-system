@@ -133,8 +133,8 @@ export const Headline = ({
     if (level === 3) return <H3>{text}</H3>
     if (level === 4) return <H4>{text}</H4>
     if (level === 5) return <H5>{text}</H5>
-    if (level === 6) return <H3Fake>{text}</H3Fake>
-    if (level === 7) return <H4Fake>{text}</H4Fake>
+    if (level === 6) return <H3Fake className="h3">{text}</H3Fake>
+    if (level === 7) return <H4Fake className="h4">{text}</H4Fake>
     return null
 }
 

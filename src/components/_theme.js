@@ -11,6 +11,7 @@ export default {
     primary: "#783DF6",
     focus: "#FF22C9",
     dark: "#310F7A",
+    darkPink: "#EF8DC6",
     light: "#E8DDFF",
     lightest: "#F3EEFF",
     lightFocus: "#F9DDE7",

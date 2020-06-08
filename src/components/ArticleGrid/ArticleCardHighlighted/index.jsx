@@ -24,10 +24,16 @@ const Outer = styled.li`
         padding: ${theme.standardSpace}px;
     }
 
-    h4{
+    .h3{
         margin-top: 0;
-        color: ${theme.black};
         margin-bottom: 10px;
+        font-size: 1.6875rem;
+        @media screen and (min-width: ${theme.l}){
+            font-size: 1.6875rem;
+        }
+        @media screen and (min-width: ${theme.xl}){
+            font-size: 2rem;
+        }
     }
     &:hover, &:focus-within {
         box-shadow: 0px 5px 0px ${theme.dark};
@@ -172,13 +178,13 @@ export const ArticleCardHighlighted = ({
             type && <CategoryTag>{type}</CategoryTag>
         }
         <Content withCategory={category ? true : type ? true : false}>
-            <Headline level={7} text={title} />
+            <Headline level={6} text={title} />
             {standfirst && 
                 <Standfirst>{parse(standfirst)}</Standfirst>
             }
 
             <Meta>
-                <Date>{date}</Date>
+                {/* <Date>{date}</Date> */}
                 {author && <Author>By {author}</Author>}
             </Meta>
         </Content>

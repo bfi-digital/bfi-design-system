@@ -10,8 +10,8 @@ const Wrapper = styled.div`
     }
 `
 const QuickLink = styled(Link)`
-    color: ${props => props.isTransparent ? (!props.isSticky ? theme.white : theme.primary) : theme.primary};
-    font-weight: 700;
+    color: ${props => props.isTransparent ? (!props.isSticky ? theme.white : theme.black) : theme.black};
+    font-weight: 600;
     text-decoration: none;
     padding: 21px 15px;
 
@@ -21,7 +21,7 @@ const QuickLink = styled(Link)`
     transition: background ease 0.3s;
 
     &:hover {
-        color: ${props => props.isTransparent ? (!props.isSticky ? theme.grey : theme.dark) : theme.dark};
+        color: ${props => props.isTransparent ? (!props.isSticky ? theme.grey : theme.black) : theme.black};
         background: ${props => props.isTransparent ? (!props.isSticky ? "transparent" : theme.grey) : theme.grey};
     }
 

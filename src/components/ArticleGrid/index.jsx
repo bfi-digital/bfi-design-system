@@ -13,7 +13,7 @@ const Outer = styled.div`
     padding-top: 35px;
     margin-top: ${theme.standardSpace}px;
     position: relative; 
-    background: ${props => props.pageWithSideBar ? "transparent" : theme.lightGrey};
+    background: ${props => props.pageWithSideBar ? "transparent" : theme.grey};
 
     h2 {
         margin-top: 0;
@@ -29,8 +29,8 @@ const Outer = styled.div`
         bottom: 0;
         left: -9999px;
         right: 0;
-        box-shadow: 9999px 0 0 ${theme.lightGrey};
-        border-left: 9999px solid ${theme.lightGrey};
+        box-shadow: 9999px 0 0 ${theme.grey};
+        border-left: 9999px solid ${theme.grey};
         z-index: -1;
     }
 `

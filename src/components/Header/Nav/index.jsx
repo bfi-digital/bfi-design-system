@@ -85,7 +85,7 @@ const Item = styled.li`
 `
 
 const ChildBar = styled.div`
-    background: ${theme.lightGrey};
+    background: ${theme.white};
     border-bottom: 1px solid ${theme.grey};
     border-top: 1px solid ${theme.grey};
 

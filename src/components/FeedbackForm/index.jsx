@@ -20,10 +20,10 @@ const Outer = styled.div`
 `
 
 const FeedbackBar = styled.button`
-    background: ${theme.dark};
+    background: ${theme.darkPink};
     padding: 10px;
     width: 100%;
-    color: ${theme.white};
+    color: ${theme.black};
     cursor: pointer;
     font-size: ${theme.small_fontSize_m}; 
     border: none;

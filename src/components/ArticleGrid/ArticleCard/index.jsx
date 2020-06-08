@@ -175,9 +175,9 @@ export const ArticleCard = ({
                 {src => <PageImage className="image" imageSrc={src} alt={imageAltText} />}
             </ProgressiveImage>
         </PageImageContainer>
-        <Headline level={7} text={title} />
+        <Headline level={6} text={title} />
         <Meta>
-            <Date>{date}</Date>
+            {/* <Date>{date}</Date> */}
             {author && <Author>By {author}</Author>}
         </Meta>
 
