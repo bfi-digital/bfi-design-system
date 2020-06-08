@@ -35,7 +35,7 @@ export const FilterableArticles = ({
                 articles && articles.length > 0 ? 
                     <>
                         {!limit ?
-                            <ArticleGrid articles={articles} firstHighlighted={includeHighlight}>
+                            <ArticleGrid articles={articles} firstHighlighted={includeHighlight} pageWithSideBar={true}>
                                 {loadMore && <CentredButton href="#4" onClick={loadMore}>Load more</CentredButton>}
                             </ArticleGrid>
                             :
