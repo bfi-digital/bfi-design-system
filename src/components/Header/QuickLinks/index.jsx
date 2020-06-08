@@ -14,6 +14,7 @@ const QuickLink = styled(Link)`
     font-weight: 600;
     text-decoration: none;
     padding: 21px 15px;
+    font-size: ${theme.fontSize_s};
 
     -webkit-transition: background ease 0.3s;
     -moz-transition: background ease 0.3s;

@@ -71,17 +71,17 @@ const ItemLink = styled(Link)`
         z-index: 99;
     }
     &:first-child {
-        margin-left: -15px;
+        margin-left: -5px;
+        @media screen and (min-width: ${theme.l}){
+            margin-left: -15px;
+        }
     }
 `
 
 
 const Item = styled.li`
     font-weight: 600;
-    font-size: ${theme.small_fontSize_m};
-    @media screen and (min-width: ${theme.l}){
-        font-size: ${theme.fontSize_s};
-    }
+    font-size: ${theme.fontSize_s};
 `
 
 const ChildBar = styled.div`
@@ -100,7 +100,7 @@ const ChildBar = styled.div`
     border-top: 1px solid ${theme.grey};
     margin: 0 auto;
     position: absolute;
-    top: 61px;
+    top: 59px;
     left: 0;
     width: 100%;
     animation: fadeIn 0.1s ease-out;
@@ -114,7 +114,7 @@ const Shadow = styled.div`
     width: 100%;
     height: calc(100vh - 100%);
     position: absolute;
-    top: 61px;
+    top: 59px;
     left: 0;
     z-index: -1;
     @media screen and (min-width: ${theme.l}){
