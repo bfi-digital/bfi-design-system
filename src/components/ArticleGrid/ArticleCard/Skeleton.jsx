@@ -4,7 +4,7 @@ import theme from "../../_theme"
 
 const Outer = styled.li`
     position: relative;
-    background: ${theme.white};
+    background: ${props => props.noBackground ? theme.lightGrey : theme.white};
     margin-bottom: 35px;
     display: flex;
     flex-direction: column;
@@ -55,8 +55,8 @@ const Headline = styled.div`
     width: 80%;
 `
 
-export const Skeleton = () =>
-    <Outer className="loadingArticleCard">
+export const Skeleton = ({noBackground}) =>
+    <Outer className="loadingArticleCard" noBackground={noBackground}>
         <Image/>
         <Inner>
             <Headline/>

@@ -181,7 +181,7 @@ export const ArticleGrid = ({
             </Articles>
             :
             <Articles lessColumns={articles.length === 2 || articles.length === 4} className="noHighlight skeletons">
-                {[...Array(skeletons)].map((i) => <Skeleton key={i} /> )}
+                {[...Array(skeletons)].map((i) => <Skeleton key={i} noBackground={pageWithSideBar} /> )}
             </Articles>
         }
         { optionalCTALink &&
