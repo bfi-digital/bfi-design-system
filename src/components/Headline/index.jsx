@@ -4,7 +4,7 @@ import theme from "../_theme"
 import PropTypes from "prop-types"
 
 const HeroH1 = styled.h1`
-    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, "Open Sans", Arial, "Lucida Grande", sans-serif; 
+    font-family: HelveticaNeueLTPro-Bd, "HelveticaNeue", "Helvetica Neue", Helvetica, "Open Sans", Arial, "Lucida Grande", sans-serif; 
     // text-transform: uppercase;
     color: ${theme.black};
     font-weight: 800;
@@ -33,7 +33,7 @@ const H1 = styled(HeroH1)`
 `
 
 const H2 = styled.h2`
-    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, "Open Sans", Arial, "Lucida Grande", sans-serif; 
+    font-family: HelveticaNeueLTPro-Bd, "HelveticaNeue", "Helvetica Neue", Helvetica, "Open Sans", Arial, "Lucida Grande", sans-serif; 
     color: ${theme.black};
     font-weight: 700;
     font-size: 1.4375rem;
