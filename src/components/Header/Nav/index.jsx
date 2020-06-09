@@ -137,6 +137,9 @@ const ChildList = styled.div`
             margin-left: 0px !important;
         }
     }
+    @media screen and (min-width: ${theme.m}){
+        max-width: ${theme.l};
+    }
     @media screen and (min-width: ${theme.xl}){
         max-width: calc(${theme.xl} - 100px);
     }

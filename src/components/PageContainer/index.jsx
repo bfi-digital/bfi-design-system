@@ -76,6 +76,7 @@ export const Sidebar = styled.aside`
 `
 
 export const Actions = styled.section`
+    margin-bottom: 15px;
     a{
         display: block;
         text-align: center;
@@ -89,7 +90,6 @@ export const Actions = styled.section`
             margin-right: 20px;
         }
     }
-
 `
 
 const Icon = styled.span`

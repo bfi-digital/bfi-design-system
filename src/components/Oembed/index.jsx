@@ -30,6 +30,7 @@ const Container = styled.div`
 
     iframe, twitter-widget {
         max-width: 100%;
+        margin: 10px auto !important;
     }
 `
 
