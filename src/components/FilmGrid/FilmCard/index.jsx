@@ -129,7 +129,6 @@ export const FilmCard = ({
     name,
     channels,
     url,
-    imageAltText,
     inScroller
 }) =>
     <ConditionalWrapper
@@ -142,7 +141,7 @@ export const FilmCard = ({
                 src={image480x270 != "" ? image480x270 : placeholderImage}
                 placeholder={image480x270 != "" ? image48x27 : placeholderImageSmall}
             >
-                {src => <Image src={src} alt={imageAltText} />}
+                {src => <Image src={src} alt="" />}
             </ProgressiveImage>
 
         </ImageContainer>
