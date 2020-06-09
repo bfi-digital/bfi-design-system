@@ -18,6 +18,7 @@ const Meta = styled.div`
     max-width: 800px;
     padding: 0 ${theme.standardSpace}px;
     margin: 0 auto; 
+    margin-top: ${theme.standardSpace*2}px;
     @media screen and (min-width: ${theme.m}){
         padding: 0 50px;
     }
