@@ -37,8 +37,8 @@ export const FilterableArticles = ({
                     <>
                         {!limit ?
                             <ArticleGrid articles={articles} firstHighlighted={includeHighlight} pageWithSideBar={true}>
+                                {loadMoreLoading && <ArticleGrid articles={false} skeletons={3} pageWithSideBar={true} />}
                                 {loadMore && <CentredButton href="#4" onClick={loadMore}>Load more</CentredButton>}
-                                {loadMoreLoading && <ArticleGrid articles={false} skeletons={3} />}
                             </ArticleGrid>
                             :
                             <ArticleGrid articles={articles.slice(0,limit)} optionalTitle={filters ? false : optionalTitle} firstHighlighted={includeHighlight} optionalCTATitle={optionalCTATitle} optionalCTALink={optionalCTALink} />
