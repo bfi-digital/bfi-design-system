@@ -96,7 +96,7 @@ const CloseButton = styled.button`
     background: ${theme.darkPink};
     color: ${theme.white};
     font-weight: 600;
-    border: none;
+    border: solid 4px ${theme.darkPink};
     text-align: right;
     border: 3px solid ${theme.darkPink};
 
@@ -104,9 +104,8 @@ const CloseButton = styled.button`
         background: ${theme.primary};
     }
     &:focus {
-        background: ${theme.primary};
         outline: none;
-        border: 3px solid ${theme.focus};
+        border: solid 4px ${theme.dark};
     }
 `
 
