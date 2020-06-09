@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import theme from "../_theme"
-import play from "./play.svg"
+import Play from "./Play"
 import { Button } from "../Button"
 
 export const Wrapper = styled.div`
@@ -69,6 +69,10 @@ export const MaxWidth = styled.article`
 `
 
 export const Sidebar = styled.aside`
+
+    .advertising_container {
+        max-width: 320px;
+    }
 `
 
 export const Actions = styled.section`
@@ -88,13 +92,15 @@ export const Actions = styled.section`
 
 `
 
-const Icon = styled.img`
+const Icon = styled.span`
     margin-left: 13px;
-    height: 14px;
+    svg {
+        height: 14px;
+    }
 `
 
 export const PlayButton = props =>
     <Button {...props}>
         {props.children}
-        <Icon src={play} alt=""/>
+        <Icon><Play /></Icon>
     </Button>

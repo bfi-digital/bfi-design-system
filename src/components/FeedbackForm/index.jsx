@@ -21,21 +21,23 @@ const Outer = styled.div`
 
 const FeedbackBar = styled.button`
     background: ${theme.darkPink};
+    border: solid 4px ${theme.darkPink};
     padding: 10px;
     width: 100%;
     color: ${theme.black};
     cursor: pointer;
     font-size: ${theme.small_fontSize_m}; 
-    border: none;
     text-align: left;
 
     strong {
         font-weight: 600;
     }
-
+    &:hover {
+        opacity: 0.9;
+    }
     &:focus {
         outline: none;
-        box-shadow: 0px 0px 0px 4px ${theme.focus};
+        border: solid 4px ${theme.dark};
     }
     &:active {
         transform: translate(0, 4px);   
@@ -47,7 +49,7 @@ const FeedbackBar = styled.button`
     }
 `
 const FeedbackContainer = styled.div`
-    border-bottom: 4px solid ${theme.dark};
+    border-bottom: 4px solid ${theme.darkPink};
 `
 const SurveyMonkeyContainer = styled.div`
 `
@@ -73,8 +75,8 @@ const Loading = styled.div`
         height: 64px;
         margin: 8px;
         border-radius: 50%;
-        border: 6px solid ${theme.dark};
-        border-color: ${theme.dark} transparent ${theme.dark} transparent;
+        border: 6px solid ${theme.darkPink};
+        border-color: ${theme.darkPink} transparent ${theme.darkPink} transparent;
         animation: lds-dual-ring 1.2s linear infinite;
     }
     @keyframes lds-dual-ring {
@@ -91,12 +93,12 @@ const CloseButton = styled.button`
     width: 100%;
     padding: 10px 15px;
     cursor: pointer;
-    background: ${theme.dark};
+    background: ${theme.darkPink};
     color: ${theme.white};
     font-weight: 600;
     border: none;
     text-align: right;
-    border: 3px solid ${theme.dark};
+    border: 3px solid ${theme.darkPink};
 
     &:hover {
         background: ${theme.primary};

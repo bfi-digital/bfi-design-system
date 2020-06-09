@@ -27,7 +27,7 @@ export const AdvertisingContainer = ({
     children,
     withCaption
 }) =>
-    <Outer>
+    <Outer className="advertising_container">
         {withCaption && 
             <AdvertisingNotice>Advertisement</AdvertisingNotice>
         }

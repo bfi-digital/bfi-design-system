@@ -4,6 +4,7 @@ import styled from "styled-components"
 import theme from "../_theme"
 import PropTypes from "prop-types"
 import ProgressiveImage from "react-progressive-graceful-image"
+import { LeadParagraph } from "../LeadParagraph"
 
 const Outer = styled.section`
     margin: 0 auto;
@@ -14,6 +15,7 @@ const Outer = styled.section`
     height: auto;
     min-height: 40vh;
     padding-top: ${props => props.withHeader ? "64px" : "0px"};
+    padding-bottom: 25px;
     background-image: url("${props => props.image}");
     background-size: cover;
     background-position: center center;
@@ -21,37 +23,61 @@ const Outer = styled.section`
     align-items: flex-end;
     margin-top: ${props => props.withHeader ? "175px" : "0px"};
 
-    h1{
+    h1 {
         color: ${theme.white};
         max-width: calc( 0.65 * ${theme.m});
         text-shadow: 0px 0px 30px ${theme.black}50;
-        margin-bottom: 50px;
+        margin-bottom: ${theme.standardSpace}px;
+    }
+    p {
+        color: ${theme.white};
+        margin-top: 0;
+    }
+
+    a {
+        color: ${theme.black} !important;
+        svg {
+            fill: ${theme.black} !important;
+        }
+        &:hover, &:focus {
+            color: ${theme.white} !important;
+            svg {
+                fill: ${theme.white} !important;
+            }
+        }
     }
 
     @media screen and (min-width: ${theme.m}){
         margin-top: 0px;
         min-height: 390px;
         align-items: flex-end;
-        padding-top: ${props => props.withHeader ? "175px" : "0px"};
+        padding-top: ${props => props.withHeader ? "225px" : "0px"};
 
         h1 {
             max-width: calc( 0.75 * ${theme.m});
         }
     }
+    @media screen and (min-width: ${theme.l}){
+        padding-top: ${props => props.withHeader ? "255px" : "0px"};
+    }
     @media screen and (min-width: ${theme.xl}){
         min-height: 500px;
+        padding-bottom: 40px;
+        padding-top: ${props => props.withHeader ? "300px" : "0px"};
+
         h1{
             max-width: calc( 0.4 * ${theme.xl});
-            margin-bottom: 75px;
         }
     }
 `
 
 const InnerGradient = styled.div`
-    background: linear-gradient(rgba(18, 12, 13, 0.3), rgba(18, 12, 13, 0.7));
+    background: linear-gradient(0deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.8) 25%, rgba(0,0,0,0.3) 100%);
     width: 100%;
     height: 100%;
     position: absolute;
+    top: 0;
+    left: 0;
     z-index: 0;
 `
 
@@ -76,9 +102,6 @@ const Container = styled.div`
         &:focus{
             background: ${theme.dark};
         }
-        &:after {
-            opacity: 0.7;
-        }
     }
 `
 
@@ -101,6 +124,7 @@ export const Hero = ({
     image1920x1080,
     image192x108,
     headline,
+    standfirst,
     withHeader,
     copyright,
     children
@@ -116,8 +140,9 @@ export const Hero = ({
             >
                 <InnerGradient />
                 <Container>
-                    {children}
                     {headline && <Headline level={0} text={headline}/>}
+                    {standfirst && <LeadParagraph text={standfirst}/>}
+                    {children}
                     {copyright && <Copyright>{copyright}</Copyright>}
                 </Container>
             </Outer>

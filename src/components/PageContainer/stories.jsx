@@ -23,6 +23,7 @@ import { FilterableArticles } from "../FilterableArticles"
 import { Footer } from "../Footer"
 import { Header } from "../Header"
 import { Headline } from "../Headline"
+import { Hero } from "../Hero"
 import { HeroPage } from "../HeroPage"
 import { HeroArticle } from "../HeroArticle"
 // import { Highlights } from "../Highlights"
@@ -1171,18 +1172,18 @@ export const ArticleSightAndSoundExampleNoImage = () =>
 
 export const FilmPage = () =>
     <>
-        <Header navItems={navItems} quickLinks={quickLinksData} />
-        <HeroPage
+        <Header navItems={navItems} quickLinks={quickLinksData} overlay={true} />
+        <Hero
+            withHeader
             image1920x1080="https://staging.core-cms.bfi.digital/sites/default/files/2020-05/image.jpeg"
-            title="Raging Bull"
-            standfirst="“Raging Bull is the most painful and heart-rending portrait of jealousy in the cinema – an Othello for our times. Boxing is the arena, not the subject.” Roger Ebert, The Great Movies, 2002"
-        />
-        <Wrapper>
+            headline="Raging Bull"
+            standfirst="Raging Bull is the most painful and heart-rending portrait of jealousy in the cinema – an Othello for our times. Boxing is the arena, not the subject.” Roger Ebert, The Great Movies, 2002"
+        >
             <Actions>
-                <Button to="#18">Buy tickets</Button>
-                <PlayButton to="#17">Watch on BFI Player</PlayButton>
+                <Button to="#18" level={1} colorScheme={1}>Buy tickets</Button>
+                <PlayButton to="#17" level={1} colorScheme={1}>Watch on BFI Player</PlayButton>
             </Actions>
-        </Wrapper>
+        </Hero>
         <Wrapper>           
             <MainContent role="main">
                 <LeadParagraph text="Starring Robert De Niro as the middleweight boxer Jake La Motta, Scorsese’s biopic is widely acknowledged as one of the greatest films of the 1980s." />

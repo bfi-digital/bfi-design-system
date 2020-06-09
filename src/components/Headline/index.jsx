@@ -5,19 +5,19 @@ import PropTypes from "prop-types"
 
 const HeroH1 = styled.h1`
     font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, "Open Sans", Arial, "Lucida Grande", sans-serif; 
-    text-transform: uppercase;
+    // text-transform: uppercase;
     color: ${theme.black};
     font-weight: 800;
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     letter-spacing: 1px;
     @media screen and (min-width: ${theme.m}){
-        font-size: 1.875rem;
+        font-size: 2.2rem;
     }
     @media screen and (min-width: ${theme.l}){
-        font-size: 2.0625rem;
+        font-size: 2.4rem;
     }
     @media screen and (min-width: ${theme.xl}){
-        font-size: 2.3125rem;
+        font-size: 2.8rem;
     }
 `
 
