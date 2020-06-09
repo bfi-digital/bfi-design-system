@@ -16,7 +16,7 @@ import demoArticles from "../../../components/ArticleGrid/data"
             maxWidth: "1000px",
             margin: "0 auto"
         }}>
-            <ArticleGrid articles={[...demoArticles, ...demoArticles, ...demoArticles, ...demoArticles, ...demoArticles, ...demoArticles, ...demoArticles]} firstHighlighted />
+            <ArticleGrid articles={[...demoArticles, ...demoArticles, ...demoArticles, ...demoArticles, ...demoArticles, ...demoArticles, ...demoArticles.slice(0, 2)]} firstHighlighted />
         </div>
     </Story>
 </Preview>
@@ -40,7 +40,7 @@ import demoArticles from "../../../components/ArticleGrid/data"
             maxWidth: "1000px",
             margin: "0 auto"
         }}>
-            <ArticleGrid articles={[...demoArticles, ...demoArticles, ...demoArticles, ...demoArticles, ...demoArticles, ...demoArticles, ...demoArticles]} firstHighlighted pageWithSideBar={true} />
+            <ArticleGrid articles={[...demoArticles, ...demoArticles, ...demoArticles, ...demoArticles, ...demoArticles, ...demoArticles, ...demoArticles.slice(0, 2)]} firstHighlighted pageWithSideBar={true} />
         </div>
     </Story>
 </Preview>
@@ -149,6 +149,21 @@ import demoArticles from "../../../components/ArticleGrid/data"
             margin: "0 auto"
         }}>
             <ArticleGrid articles={false} skeletons={3} />
+        </div>
+    </Story>
+</Preview>
+
+
+<Preview>
+    <Story name="Example of loading state">
+        <div style={{
+            padding: "10px",
+            maxWidth: "1000px",
+            margin: "0 auto"
+        }}>
+            <ArticleGrid articles={[...demoArticles, ...demoArticles, ...demoArticles, ...demoArticles, ...demoArticles, ...demoArticles, ...demoArticles.slice(0, 2)]} firstHighlighted pageWithSideBar={true}>
+                <ArticleGrid articles={false} skeletons={3} pageWithSideBar={true} />
+            </ArticleGrid>
         </div>
     </Story>
 </Preview>

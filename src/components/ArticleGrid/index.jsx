@@ -133,6 +133,10 @@ const Articles = styled.ul`
             margin-right: 0px;
         }
     }
+
+    &.skeletons {
+        margin-top: -60px;
+    }
 `
 const CentredButton = styled(Button)`
     margin: 30px auto;
@@ -176,7 +180,7 @@ export const ArticleGrid = ({
                 }
             </Articles>
             :
-            <Articles lessColumns={articles.length === 2 || articles.length === 4} className="noHighlight">
+            <Articles lessColumns={articles.length === 2 || articles.length === 4} className="noHighlight skeletons">
                 {[...Array(skeletons)].map((i) => <Skeleton key={i} /> )}
             </Articles>
         }

@@ -716,9 +716,9 @@ exports[`Storyshots 2 All Components/Feedback Form Example 1`] = `
       <strong>
         BETA
       </strong>
-      , help us improve with feedback - 
+      , help us improve - 
       <strong>
-        Is there anything wrong with this page?
+        Click here to submit feedback
       </strong>
     </button>
   </div>
@@ -1286,7 +1286,7 @@ exports[`Storyshots 2 All Components/Newsletter Sign Up Example 1`] = `
   }
 >
   <div
-    className="sc-gisBJw cCRMry"
+    className="sc-gisBJw ftfcBB"
   >
     <p
       className="sc-jlyJG OIlnw h3"
