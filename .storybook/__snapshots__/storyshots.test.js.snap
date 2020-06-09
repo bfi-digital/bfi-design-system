@@ -10,7 +10,7 @@ exports[`Storyshots 2 All Components/Advertising Container Failed To Load Exampl
   }
 >
   <div
-    className="sc-bdVaJa cTaNCo"
+    className="sc-bdVaJa cTaNCo advertising_container"
   >
     <p
       className="sc-bwzfXH kWPugd"
@@ -35,7 +35,7 @@ exports[`Storyshots 2 All Components/Advertising Container Mpu Example 1`] = `
   }
 >
   <div
-    className="sc-bdVaJa cTaNCo"
+    className="sc-bdVaJa cTaNCo advertising_container"
   >
     <p
       className="sc-bwzfXH kWPugd"
@@ -74,7 +74,7 @@ exports[`Storyshots 2 All Components/Advertising Container Native Example 1`] = 
     Promoted links from around the web
   </h4>
   <div
-    className="sc-bdVaJa cTaNCo"
+    className="sc-bdVaJa cTaNCo advertising_container"
   >
     <div
       style={
@@ -708,7 +708,7 @@ exports[`Storyshots 2 All Components/Feedback Form Example 1`] = `
     className="sc-hSdWYo fmDurM"
   >
     <button
-      className="sc-eHgmQL lXfat"
+      className="sc-eHgmQL iwJpUv"
       onClick={[Function]}
       title="Give us some feedback"
     >
@@ -737,7 +737,7 @@ exports[`Storyshots 2 All Components/FilmShowing A Showing 1`] = `
     className="sc-bRBYWo dTPvnj"
   >
     <p
-      className="sc-csuQGl lawImw"
+      className="sc-csuQGl lawImw h4"
     >
       La La Land
     </p>
@@ -804,7 +804,7 @@ exports[`Storyshots 2 All Components/FilmShowing Sold Out 1`] = `
     className="sc-bRBYWo dTPvnj"
   >
     <p
-      className="sc-csuQGl lawImw"
+      className="sc-csuQGl lawImw h4"
     >
       La La Land
     </p>
@@ -1011,7 +1011,7 @@ exports[`Storyshots 2 All Components/FilmShowingGrid Example 1`] = `
 exports[`Storyshots 2 All Components/FilmShowingGrid Example With Title 1`] = `
 Array [
   <p
-    className="sc-jlyJG OIlnw"
+    className="sc-jlyJG OIlnw h3"
   >
     La La Land
   </p>,
@@ -1231,7 +1231,7 @@ exports[`Storyshots 2 All Components/Filterable Articles Normal 1`] = `
 
 exports[`Storyshots 2 All Components/Headline Hero H 1 1`] = `
 <h1
-  className="sc-jAaTju guRuaw"
+  className="sc-jAaTju iXGZdS"
 >
   My example headline
 </h1>
@@ -1239,7 +1239,7 @@ exports[`Storyshots 2 All Components/Headline Hero H 1 1`] = `
 
 exports[`Storyshots 2 All Components/Headline Level 1 1`] = `
 <h1
-  className="sc-jAaTju sc-jDwBTQ hgtqob"
+  className="sc-jAaTju sc-jDwBTQ gmYMDl"
 >
   My example headline
 </h1>
@@ -1286,10 +1286,10 @@ exports[`Storyshots 2 All Components/Newsletter Sign Up Example 1`] = `
   }
 >
   <div
-    className="sc-gisBJw cCzUIS"
+    className="sc-gisBJw cCRMry"
   >
     <p
-      className="sc-jlyJG OIlnw"
+      className="sc-jlyJG OIlnw h3"
     >
       Get the latest from the BFI
     </p>

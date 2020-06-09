@@ -70,9 +70,9 @@ const Meta = styled.div`
         margin-top: 0;
     }
 `
-const Date = styled.p`
-    margin-bottom: 10px;
-`
+// const Date = styled.p`
+//     margin-bottom: 10px;
+// `
 const Author = styled.p`
     margin-bottom: 0;
 `
@@ -156,7 +156,6 @@ export const ArticleCard = ({
     image48x27,
     imageAltText,
     category,
-    date,
     author,
     type,
     external

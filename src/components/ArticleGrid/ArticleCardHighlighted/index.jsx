@@ -64,9 +64,9 @@ const Meta = styled.div`
     color: ${theme.darkGrey};
     margin-top: auto;
 `
-const Date = styled.p`
-    margin-bottom: 10px;
-`
+// const Date = styled.p`
+//     margin-bottom: 10px;
+// `
 const Author = styled.p`
     margin-bottom: 0;
 `
@@ -166,7 +166,6 @@ export const ArticleCardHighlighted = ({
     imageAltText,
     standfirst,
     category,
-    date,
     author,
     external,
     type
