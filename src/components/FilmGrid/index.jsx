@@ -32,7 +32,7 @@ export const FilmGrid = ({
     <>
         <ConditionalWrapper
             condition={films.length === 4 || films.length === 5 || films.length > 6}
-            wrapper={children => <Scroller>{children}</Scroller>}
+            wrapper={children => <Scroller withoutBreak={allFilmsUrl}>{children}</Scroller>}
             wrapper2={children => <Outer>{children}</Outer>}
         >
             {films.map(film =>

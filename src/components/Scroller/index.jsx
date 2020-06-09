@@ -8,6 +8,7 @@ import theme from "../_theme"
 
 const Outer = styled.div`
     position: relative;
+    margin-bottom: ${props => props.withoutBreak? "0" : (theme.standardSpace*2) + "px"};
 `
 const ScrollerTrack = styled.div`
     overflow: scroll;
@@ -57,11 +58,12 @@ const RightScrollerFade = styled.div`
 // `
 
 export const Scroller = ({
+    withoutBreak,
     children
 }) => {
 
     return(
-        <Outer>
+        <Outer withoutBreak={withoutBreak}>
             {/* <LeftScrollerFade className={children && "revealed"} /> */}
             <ScrollerTrack>
                 {children}

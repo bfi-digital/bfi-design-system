@@ -84,6 +84,7 @@ const Outer = styled.div`
     background: ${theme.lightest};
     margin: 0 auto;
     margin-bottom: ${theme.standardSpace*2}px;
+    margin-top: ${theme.standardSpace}px;
     padding: 15px;
     display: block;
     max-width: ${theme.l};
