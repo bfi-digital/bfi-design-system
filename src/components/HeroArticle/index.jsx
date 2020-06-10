@@ -75,33 +75,41 @@ export const HeroArticle = ({
                 {standfirst && <LeadParagraph text={standfirst}/>}
                 <LowerContent>
                     <Text>
-                        {authors && authors.length > 0 &&
+                        {authors && authors.length > 0 ?
                             authors.length > 1 ?
-                            <>
-                                <p>
-                                    {updatedDate && (updatedDate !== date) ? 
-                                        <><strong>Updated: </strong> {updatedDate}</>
-                                        : 
-                                        date
-                                    }
-                                </p>
-                                <p>
-                                    By&nbsp;
-                                    {authors.map((author, index) =>
-                                        <span key={author.name}><Link to={author.url}>{author.name}</Link>{(index < (authors.length-1) ? ", " : "")}</span>
-                                    )}
-                                </p>
-                            </>
+                                <>
+                                    <p>
+                                        {updatedDate && (updatedDate !== date) ? 
+                                            <><strong>Updated: </strong> {updatedDate}</>
+                                            : 
+                                            date
+                                        }
+                                    </p>
+                                    <p>
+                                        By&nbsp;
+                                        {authors.map((author, index) =>
+                                            <span key={author.name}><Link to={author.url}>{author.name}</Link>{(index < (authors.length-1) ? ", " : "")}</span>
+                                        )}
+                                    </p>
+                                </>
+                                :
+                                authors && authors.length === 1 &&
+                                    <p>   
+                                        {updatedDate && (updatedDate !== date) ? 
+                                            <><strong>Updated: </strong> {updatedDate}</>
+                                            : 
+                                            date
+                                        }
+                                        &nbsp;by <a href={authors[0].url}>{authors[0].name}</a>
+                                    </p>
                             :
-                            authors && authors.length === 1 &&
-                                <p>   
-                                    {updatedDate && (updatedDate !== date) ? 
-                                        <><strong>Updated: </strong> {updatedDate}</>
-                                        : 
-                                        date
-                                    }
-                                    &nbsp;by <a href={authors[0].url}>{authors[0].name}</a>
-                                </p>
+                            <p>
+                                {updatedDate && (updatedDate !== date) ? 
+                                    <><strong>Updated: </strong> {updatedDate}</>
+                                    : 
+                                    date
+                                }
+                            </p>
                         }
                     </Text>
                 </LowerContent>
