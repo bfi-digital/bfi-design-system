@@ -49,6 +49,7 @@ const BrandLogo = styled.div`
         height: auto;
     }
 `
+
 export const HeroArticle = ({
     image1920x1080,
     image192x108,    
@@ -59,6 +60,7 @@ export const HeroArticle = ({
     category,
     categoryLink,
     date,
+    updatedDate,
     authors,
     brand,
     brandLogos
@@ -73,21 +75,33 @@ export const HeroArticle = ({
                 {standfirst && <LeadParagraph text={standfirst}/>}
                 <LowerContent>
                     <Text>
-                        {date && <span>{date}</span>}
-                        {authors &&
-                            authors.length > 0 &&
+                        {authors && authors.length > 0 &&
+                            authors.length > 1 ?
                                 <>
-                                    {authors.length === 1 ?
-                                        <span> by <a href={authors[0].url}>{authors[0].name}</a></span>
-                                        :
-                                        <p>
-                                            By&nbsp;
-                                            {authors.map((author, index) =>
-                                                <span key={author.name}><Link to={author.url}>{author.name}</Link>{(index < (authors.length-1) ? ", " : "")}</span>
-                                            )}
-                                        </p>
-                                    }
+                                    <p>
+                                        {updatedDate ? 
+                                            <><strong>Updated: </strong> {updatedDate}</>
+                                            : 
+                                            date
+                                        }
+                                    </p>
+                                    <p>
+                                        By&nbsp;
+                                        {authors.map((author, index) =>
+                                            <span key={author.name}><Link to={author.url}>{author.name}</Link>{(index < (authors.length-1) ? ", " : "")}</span>
+                                        )}
+                                    </p>
                                 </>
+                                :
+                                authors && authors.length === 1 &&
+                                    <p>   
+                                        {updatedDate ? 
+                                            <><strong>Updated: </strong> {updatedDate}</>
+                                            : 
+                                            date
+                                        }
+                                        &nbsp;by <a href={authors[0].url}>{authors[0].name}</a>
+                                    </p>
                         }
                     </Text>
                 </LowerContent>
