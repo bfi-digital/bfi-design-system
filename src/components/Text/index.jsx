@@ -42,14 +42,14 @@ const Outer = styled.div`
             text-decoration: underline;
         }
     }
-    p + ul {
-        margin-top: -10px;
+    p + ul, p + ol {
+        margin-top: -5px;
     }
 
     ul{
         margin-top: 0;
         margin-bottom: 0;
-        padding-left: 15px;
+        padding-left: 10px;
         display: inline-block;
         list-style: none;
         li{
@@ -58,7 +58,7 @@ const Outer = styled.div`
             &:before{
                 content: "•";
                 color: ${theme.dark};
-                margin-right: 20px;
+                margin-right: 15px;
             }
         }
     }
@@ -66,7 +66,7 @@ const Outer = styled.div`
     ol{
         margin-top: 0;
         margin-bottom: 0;
-        padding-left: 15px;
+        padding-left: 25px;
         display: inline-block;
         li{
             padding-left: 10px;
