@@ -64,10 +64,10 @@ const Outer = styled.li`
 `
 const Meta = styled.div`
     color: ${theme.darkGrey};
-    margin-top: 10px;
+    margin-top: auto;
 
     p {
-        margin-top: 0;
+        margin-top: 10px;
     }
 `
 // const Date = styled.p`

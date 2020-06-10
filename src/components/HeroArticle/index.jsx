@@ -79,7 +79,7 @@ export const HeroArticle = ({
                             authors.length > 1 ?
                             <>
                                 <p>
-                                    {updatedDate ? 
+                                    {updatedDate && (updatedDate !== date) ? 
                                         <><strong>Updated: </strong> {updatedDate}</>
                                         : 
                                         date
@@ -95,7 +95,7 @@ export const HeroArticle = ({
                             :
                             authors && authors.length === 1 &&
                                 <p>   
-                                    {updatedDate ? 
+                                    {updatedDate && (updatedDate !== date) ? 
                                         <><strong>Updated: </strong> {updatedDate}</>
                                         : 
                                         date
