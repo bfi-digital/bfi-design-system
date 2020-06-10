@@ -12,9 +12,9 @@ export const Wrapper = styled.div`
         }
     }
 
-    div:last-of-type {
-        margin-bottom: 0;
-    }
+    // div:last-of-type {
+    //     margin-bottom: 0;
+    // }
     @media screen and (min-width: ${theme.m}){
         padding: ${theme.standardSpace*2}px ${theme.horizontalPadding};
     }

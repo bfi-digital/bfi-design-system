@@ -452,15 +452,10 @@ export const serviceListPageExample = () =>
         <Header navItems={navItems} quickLinks={quickLinksData}/>
         <Wrapper>
             <MainContent role="main">
-                <Breadcrumbs 
-                    breadcrumbs={crumbs} 
-                />
-                <Headline 
-                    level={1} 
-                    text="Find a fund to create films, TV or new formats of storytelling"
-                />
-                <LeadParagraph 
-                    text="If you’re an adventurous storyteller, we can help you with funding to create your film, TV, or emerging media like VR or AR."
+                <HeroPage
+                    title="Find a fund to create films, TV or new formats of storytelling"
+                    standfirst="If you’re an adventurous storyteller, we can help you with funding to create your film, TV, or emerging media like VR or AR."
+                    breadcrumbs={crumbs}
                 />
                 <PageLinks links={[
                     {

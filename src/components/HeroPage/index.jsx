@@ -21,7 +21,32 @@ const Outer = styled.div`
     }
 
     &.without_image {
-        text-align: left;
+        background: ${theme.lightest};
+        padding-top: ${theme.standardSpace}px;
+        padding-bottom: ${theme.standardSpace}px;
+        margin-bottom: ${theme.standardSpace}px;
+        position: relative; 
+        margin-top: -${theme.standardSpace}px;
+
+        @media screen and (min-width: ${theme.m}){
+            margin-top: -${theme.standardSpace*2}px;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: -9999px;
+            right: 0;
+            box-shadow: 9999px 0 0 ${theme.lightest};
+            border-left: 9999px solid ${theme.lightest};
+            z-index: -1;
+        }
     }
 
     &.with_image {
