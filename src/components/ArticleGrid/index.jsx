@@ -133,10 +133,6 @@ const Articles = styled.ul`
             margin-right: 0px;
         }
     }
-
-    &.skeletons {
-        margin-top: -60px;
-    }
 `
 const CentredButton = styled(Button)`
     margin: 30px auto;
@@ -156,7 +152,8 @@ export const ArticleGrid = ({
     pageWithSideBar,
     firstHighlighted,
     children,
-    skeletons = 6
+    skeletons = 6,
+    loadMoreLoading
 }) =>
     <Outer pageWithSideBar={pageWithSideBar}>
         {optionalTitle && 
@@ -181,7 +178,7 @@ export const ArticleGrid = ({
             </Articles>
             :
             <Articles lessColumns={articles.length === 2 || articles.length === 4} className="noHighlight skeletons">
-                {[...Array(skeletons)].map((i) => <Skeleton key={i} noBackground={pageWithSideBar} /> )}
+                {[...Array(skeletons)].map((i) => <Skeleton key={i} noBackground={pageWithSideBar} loadMoreLoading={loadMoreLoading} /> )}
             </Articles>
         }
         { optionalCTALink &&

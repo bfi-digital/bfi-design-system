@@ -1,5 +1,6 @@
 import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks'
 import { FilterableArticles } from "../../../components/FilterableArticles/index"
+import demoArticles from "../../../components/ArticleGrid/data"
 
 <Meta title="Pattern Library|Structure/Filterable Articles" component={FilterableArticles} />
 
@@ -17,6 +18,87 @@ Due to this component requiring connection with the front end framework to pull 
 
 <Preview>
     <Story name="All articles">
+        <FilterableArticles
+            articles={[...demoArticles, ...demoArticles, ...demoArticles.slice(0, 2)]}
+            filters={[
+                {
+                    url: "/",
+                    label: "All",
+                    currentlyActive: true
+                },
+                {
+                    url: "/",
+                    label: "Review"
+                },
+                {
+                    url: "/",
+                    label: "Video"
+                },
+                {
+                    url: "/",
+                    label: "Opinion"
+                },
+                {
+                    url: "/",
+                    label: "Recommendations"
+                },
+                {
+                    url: "/",
+                    label: "Long Read"
+                },
+                {
+                    url: "/",
+                    label: "Interviews"
+                }
+            ]}
+            loadMore={true}
+            loadMoreLoading={true}
+        />
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="Limited articles with filters">
+        <FilterableArticles
+            articles={demoArticles}
+            filters={[
+                {
+                    url: "/",
+                    label: "All",
+                    currentlyActive: true
+                },
+                {
+                    url: "/",
+                    label: "Review"
+                },
+                {
+                    url: "/",
+                    label: "Video"
+                },
+                {
+                    url: "/",
+                    label: "Opinion"
+                },
+                {
+                    url: "/",
+                    label: "Recommendations"
+                },
+                {
+                    url: "/",
+                    label: "Long Read"
+                },
+                {
+                    url: "/",
+                    label: "Interviews"
+                }
+            ]}
+            limit={3}
+        />
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="No articles found">
         <FilterableArticles
             filters={[
                 {
@@ -50,45 +132,6 @@ Due to this component requiring connection with the front end framework to pull 
                 }
             ]}
             loadMore={true}
-        />
-    </Story>
-</Preview>
-
-<Preview>
-    <Story name="Limited articles with filters">
-        <FilterableArticles
-            filters={[
-                {
-                    url: "/",
-                    label: "All",
-                    currentlyActive: true
-                },
-                {
-                    url: "/",
-                    label: "Review"
-                },
-                {
-                    url: "/",
-                    label: "Video"
-                },
-                {
-                    url: "/",
-                    label: "Opinion"
-                },
-                {
-                    url: "/",
-                    label: "Recommendations"
-                },
-                {
-                    url: "/",
-                    label: "Long Read"
-                },
-                {
-                    url: "/",
-                    label: "Interviews"
-                }
-            ]}
-            limit={3}
         />
     </Story>
 </Preview>
