@@ -72,7 +72,7 @@ export const HighlightCard = ({
     external
 }) =>
     <Outer className={external ? "external_link" : ""}>
-        <Img alt={imageAltText} src={image480x270}/>
+        <Img alt={imageAltText ? imageAltText : ""} src={image480x270}/>
         <Inner>
             <Caption>{caption}</Caption>
             <Headline>{title}</Headline>

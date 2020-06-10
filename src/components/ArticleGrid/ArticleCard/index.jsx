@@ -172,7 +172,7 @@ export const ArticleCard = ({
                 src={image480x270}
                 placeholder={image48x27}
             >
-                {src => <PageImage className="image" imageSrc={src} alt={imageAltText} />}
+                {src => <PageImage className="image" imageSrc={src} alt={imageAltText ? imageAltText : ""} />}
             </ProgressiveImage>
         </PageImageContainer>
         <Headline level={6} text={title} />

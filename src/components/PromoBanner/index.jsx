@@ -239,7 +239,7 @@ export const PromoBanner = ({
             {secondImage && 
                 <SecondImage 
                     src={secondImage} 
-                    alt={secondImageAlt}
+                    alt={secondImageAlt ? secondImageAlt : ""}
                 />
             }
             <Headline level={2} text={headline}/>

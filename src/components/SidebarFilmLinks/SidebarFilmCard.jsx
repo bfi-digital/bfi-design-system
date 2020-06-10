@@ -139,7 +139,7 @@ export const SidebarFilmCard = ({
                     placeholder={image48x27 ? image48x27 : placeholderImageSmall}
                 >
                     {src => 
-                        <PageImage className="image" imageSrc={src} alt={imageAltText} />
+                        <PageImage className="image" imageSrc={src} alt={imageAltText ? imageAltText : ""} />
                     }
                 </ProgressiveImage>
             </PageImageContainer>

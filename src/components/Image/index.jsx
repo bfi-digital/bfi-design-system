@@ -203,7 +203,7 @@ export const Image = ({
             itemprop="image"
             isClickable={false}
             src={placeholder}
-            alt={alt}
+            alt={alt ? alt : ""}
             ref={imgElement}
             width={imageWidth}
             onLoad={() => setImageWidth(imgElement.current.naturalWidth*10)}
@@ -228,7 +228,7 @@ export const Image = ({
                                     itemprop="image"
                                     isClickable={false}
                                     src={src2}
-                                    alt={alt}
+                                    alt={alt ? alt : ""}
                                 />
                         }}
                     </ProgressiveImage>
@@ -260,7 +260,7 @@ export const Image = ({
                                     <BigImage
                                         itemprop="image"
                                         src={src2}
-                                        alt={alt}
+                                        alt={alt ? alt : ""}
                                     />
                             }}
                         </ProgressiveImage> 
