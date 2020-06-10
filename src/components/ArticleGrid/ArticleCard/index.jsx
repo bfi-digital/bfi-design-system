@@ -32,10 +32,10 @@ const Outer = styled.li`
     }
 
 
-    h4{
+    .h3 {
         margin-top: 0;
         color: ${theme.black};
-        margin-bottom: 10px;
+        margin-bottom: 0px;
     }
 
     &:hover, &:focus-within {
@@ -75,6 +75,7 @@ const Meta = styled.div`
 // `
 const Author = styled.p`
     margin-bottom: 0;
+    margin-top: 15px;
 `
 
 const CallToAction = styled(Link)`
