@@ -186,7 +186,7 @@ export const ArticleCard = ({
             className={external ? "external_link" : ""}
             rel={external ? "noreferrer" : ""} 
             target={external ? "_blank" : "_self"}
-            title={"Read " + title}
+            title={"Read " + title + (external ? " in a new tab" : "")}
         >
             <span>{title}</span>
         </CallToAction>
