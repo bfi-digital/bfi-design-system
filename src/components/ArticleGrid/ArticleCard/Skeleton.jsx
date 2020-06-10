@@ -45,7 +45,17 @@ const Meta = styled.div`
 
 const Image = styled.div`
     background: ${theme.grey};
-    height: 140px;
+    height: 188px;
+
+    @media screen and (min-width: ${theme.m}){
+        height: 160px;
+    }
+    @media screen and (min-width: ${theme.l}){
+        height: 175px;
+    }
+    @media screen and (min-width: ${theme.xl}){
+        height: 235px;
+    }
 `
 
 const Headline = styled.div`
