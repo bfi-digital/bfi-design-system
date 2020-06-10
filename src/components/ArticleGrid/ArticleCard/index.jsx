@@ -146,6 +146,7 @@ const CategoryTag = styled.div`
 
     @media screen and (min-width: ${theme.m}){
         padding-left: ${theme.standardSpace}px;
+        padding-right: 15px;
     }
 `
 

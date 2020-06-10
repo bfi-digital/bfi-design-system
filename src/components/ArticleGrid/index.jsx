@@ -128,6 +128,11 @@ const Articles = styled.ul`
             }
         }   
     }
+    &.noBackground {
+        .articleCard, .articleCardHighlighted {
+            background: ${theme.lightGrey};
+        }
+    }
     .loadingArticleCard {
         &:nth-of-type(3n) {
             margin-right: 0px;
@@ -160,7 +165,10 @@ export const ArticleGrid = ({
             <StyledHeadline level={2} text={optionalTitle} />
         }
         {articles ?
-            <Articles lessColumns={articles.length === 2 || articles.length === 4} className={firstHighlighted ? "withHighlight" : "noHighlight"}>
+            <Articles 
+                lessColumns={(articles.length === 2 || articles.length === 4) && !firstHighlighted} 
+                className={(firstHighlighted ? "withHighlight" : "noHighlight") + (pageWithSideBar ? " noBackground" : " withBackground")}
+            >
                 {firstHighlighted  === true || articles.length === 1 ?
                     <>
                         <ArticleCardHighlighted key={articles[0].uuid} pageWithSideBar={pageWithSideBar} {...articles[0]}/>
