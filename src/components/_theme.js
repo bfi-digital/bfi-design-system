@@ -1,4 +1,6 @@
 export default {
+    headingFont: "HelveticaNeueLTPro-Bd, \"HelveticaNeue\", \"Helvetica Neue\", Helvetica, \"Open Sans\", Arial, \"Lucida Grande\", sans-serif",
+    bodyFont: "\"Open Sans\", \"HelveticaNeue\", \"Helvetica Neue\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
 
     // colour scheme
     black: "#000000",

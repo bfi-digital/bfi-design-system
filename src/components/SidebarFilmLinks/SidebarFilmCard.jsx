@@ -97,7 +97,7 @@ const Content = styled.div`
 `
 
 const Heading = styled.p`
-    font-family: "Open Sans";
+    font-family: ${theme.bodyFont};
     color: ${theme.black};
     font-weight: 600;
     font-size: ${theme.small_fontSize_m};

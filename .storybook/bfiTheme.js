@@ -13,7 +13,7 @@ export default create({
 //   appBorderRadius: 4,
 
   // Typography
-  fontBase: '"Open Sans", sans-serif',
+  fontBase: "\"Open Sans\", \"HelveticaNeue\", \"Helvetica Neue\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
 //   fontCode: 'monospace',
 
   // Text colors

@@ -13,7 +13,7 @@ export const Outer = styled.blockquote`
 
 const Quote = styled.q`
     color: ${theme.black};
-    font-family: HelveticaNeueLTPro-Bd, "HelveticaNeue", "Helvetica Neue", Helvetica, "Open Sans", Arial, "Lucida Grande", sans-serif; 
+    font-family: ${theme.headingFont}; 
     display: block;
     font-weight: 800;
     font-size: 1.2rem;

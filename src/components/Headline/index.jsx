@@ -4,7 +4,7 @@ import theme from "../_theme"
 import PropTypes from "prop-types"
 
 const HeroH1 = styled.h1`
-    font-family: HelveticaNeueLTPro-Bd, "HelveticaNeue", "Helvetica Neue", Helvetica, "Open Sans", Arial, "Lucida Grande", sans-serif; 
+    font-family: ${theme.headingFont}; 
     // text-transform: uppercase;
     color: ${theme.black};
     font-weight: 800;
@@ -33,7 +33,7 @@ const H1 = styled(HeroH1)`
 `
 
 const H2 = styled.h2`
-    font-family: HelveticaNeueLTPro-Bd, "HelveticaNeue", "Helvetica Neue", Helvetica, "Open Sans", Arial, "Lucida Grande", sans-serif; 
+    font-family: ${theme.headingFont}; 
     color: ${theme.black};
     font-weight: 700;
     font-size: 1.4375rem;
@@ -77,7 +77,7 @@ const H3Fake = styled.p`
 `
 
 const H4 = styled.h4`
-    font-family: "Open Sans";
+    font-family: ${theme.bodyFont};
     color: ${theme.black};
     font-weight: 600;
     font-size: ${theme.fontSize_s};
@@ -92,7 +92,7 @@ const H4 = styled.h4`
     }
 `
 const H4Fake = styled.p`
-    font-family: "Open Sans";
+    font-family: ${theme.bodyFont};
     color: ${theme.black};
     font-weight: 600;
     font-size: ${theme.fontSize_s};
@@ -109,7 +109,7 @@ const H4Fake = styled.p`
 `
 
 const H5 = styled.h5`
-    font-family: "Open Sans";
+    font-family: ${theme.bodyFont};
     color: ${theme.black};
     font-weight: 600;
     font-size: 0.875rem;

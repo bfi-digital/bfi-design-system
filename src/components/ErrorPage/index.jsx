@@ -22,6 +22,7 @@ const ErrorContainer = styled.div`
     }
 `
 const Heading = styled.h1`
+    font-family: ${theme.headingFont}; 
     position: relative;
     padding-bottom: 30px;
     margin-bottom: 30px;
