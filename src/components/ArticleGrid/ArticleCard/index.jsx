@@ -67,7 +67,7 @@ const Meta = styled.div`
     margin-top: auto;
 
     p {
-        margin-top: 10px;
+        margin-top: 15px;
     }
 `
 // const Date = styled.p`
