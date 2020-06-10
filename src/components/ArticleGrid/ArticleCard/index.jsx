@@ -64,7 +64,7 @@ const Outer = styled.li`
 `
 const Meta = styled.div`
     color: ${theme.darkGrey};
-    margin-top: auto;
+    margin-top: 10px;
 
     p {
         margin-top: 0;
