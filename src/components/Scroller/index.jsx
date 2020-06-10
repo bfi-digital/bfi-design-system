@@ -10,7 +10,7 @@ const Outer = styled.div`
     position: relative;
     margin-bottom: ${props => props.withoutBreak? "0" : (theme.standardSpace*2) + "px"};
 `
-const ScrollerTrack = styled.div`
+const ScrollerTrack = styled.ul`
     overflow: scroll;
     overflow-y: hidden;
     padding: 10px;
