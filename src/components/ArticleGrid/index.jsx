@@ -131,6 +131,10 @@ const Articles = styled.ul`
     &.noBackground {
         .articleCard, .articleCardHighlighted {
             background: ${theme.lightGrey};
+
+            &:hover, &:focus-within {
+                background: ${theme.lightest};
+            }
         }
     }
     .loadingArticleCard {
