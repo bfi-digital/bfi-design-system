@@ -6,6 +6,7 @@ import { LinkSwitch as Link } from "../LinkSwitch"
 const Outer = styled.div`
     display: inline-block;
     margin-right: 10px;
+    margin-left: 10px;
     padding: 5px 10px;
     font-weight: 600;
     background: ${props => props.withLink ? theme.primary : theme.light};

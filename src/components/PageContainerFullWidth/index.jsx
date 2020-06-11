@@ -10,6 +10,9 @@ export const Wrapper = styled.div`
         & h2:first-child {
             margin-block-start: 0;
         }
+        & .promoBanner:first-child {
+            margin-top: ${theme.standardSpace}px;
+        }
     }
 
     // div:last-of-type {

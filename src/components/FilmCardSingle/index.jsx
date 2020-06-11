@@ -3,6 +3,7 @@ import styled from "styled-components"
 import theme from "../_theme"
 import PropTypes from "prop-types"
 import { Headline } from "../Headline"
+import { Button } from "../Button"
 import { LinkSwitch as Link } from "../LinkSwitch"
 import ProgressiveImage from "react-progressive-graceful-image"
 
@@ -63,18 +64,14 @@ const Image = styled.div`
     }
 `
 const Meta = styled.div`
-    
+    margin-bottom: 10px;
 `
 
 const ContentLinks = styled.div`
-    margin-top: 20px;
+    margin-top: ${theme.standardSpace*2}px;
     p {
         maring-top: 0;
         margin-bottom: 5px;
-    }
-
-    @media screen and (min-width: ${theme.s}){
-        margin-top: 50px;
     }
 `
 
@@ -128,15 +125,19 @@ export const FilmCardSingle = ({
                 {director && year && <span> / </span>}
                 {year && <span>{year}</span>}
             </Meta>
+            {filmLink && <StyledLink to={filmLink}>Find out more</StyledLink>}
+
             <ContentLinks>
                 {playerUrl || southbankUrl ?
                     <>
                         <p>Now showing</p>
-                        {playerUrl && <StyledLink to={playerUrl}>On BFI Player</StyledLink>}
-                        {southbankUrl && <StyledLink to={southbankUrl}>At Southbank</StyledLink>}
+                        {playerUrl && <Button to={playerUrl}>On BFI Player</Button>}
+                        {southbankUrl && <Button to={southbankUrl}>At Southbank</Button>}
                     </>
                     :
-                    <>{filmLink && <StyledLink to={filmLink}>Find out more</StyledLink>}</>
+                    null
+                    // :
+                    // <>{filmLink && <StyledLink to={filmLink}>Find out more</StyledLink>}</>
                 }
             </ContentLinks>
         </Content>

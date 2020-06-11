@@ -1,0 +1,541 @@
+import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks'
+import { Wrapper, MainContent } from "../../../components/PageContainerFullWidth"
+import { Wrapper as WithSidebarWrapper, MainContent as WithSidebarMainContent, Sidebar, Actions, PlayButton, OriginalArticleDate } from "../../../components/PageContainer"
+
+import navItems, { quickLinksData } from "../../../components/Header/data"
+import footerMenus from "../../../components/Footer/data"
+import demoArticles from "../../../components/ArticleGrid/data"
+import demoFilms from "../../../components/FilmGrid/data"
+
+import { CallToAction } from "../../../components/CallToAction"
+import { FilterableArticles } from "../../../components/FilterableArticles"
+import { Footer } from "../../../components/Footer"
+import { Header } from "../../../components/Header"
+import { Headline } from "../../../components/Headline"
+import { Hero } from "../../../components/Hero"
+import { PageLinks } from "../../../components/PageLinks"
+import { FilmGrid } from "../../../components/FilmGrid"
+import { PromoBanner } from "../../../components/PromoBanner"
+
+import { AdvertisingContainer } from "../../../components/AdvertisingContainer"
+import { HeroArticle } from "../../../components/HeroArticle"
+import { FilmCardSingle } from "../../../components/FilmCardSingle"
+import { SidebarArticleLinks } from "../../../components/SidebarArticleLinks"
+import { Text } from "../../../components/Text"
+
+import { FilmShowingGrid } from "../../../components/FilmShowingGrid"
+import { LeadParagraph } from "../../../components/LeadParagraph"
+import { Button } from "../../../components/Button"
+import { QuickFacts } from "../../../components/QuickFacts"
+
+
+<Meta title="Pattern Library|Page Examples/1 Watch &amp; Discover" component={MainContent} />
+
+# Page
+
+
+## Pages
+
+<Preview>
+    <Story name="1 Landing Page">
+        <>
+            <Header navItems={navItems} quickLinks={quickLinksData} overlay={true} />
+            <Hero
+                withHeader
+                image1920x1080="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1920/1080/1/2020-03/Hero.jpg"
+                headline="Discover the world of cinema with the BFI"
+            />
+            <Wrapper>
+                <MainContent role="main">
+                    <>
+                        <PromoBanner 
+                            colorScheme={1}
+                            headline="Become a BFI member"
+                            description="Get priority booking and enjoy special events for £37 a year."
+                            callToActionTitle="Join today"
+                            callToActionUrl="#1"
+                        />
+                        <PromoBanner 
+                            colorScheme={0}
+                            headline="Watch the greatest global cinema online on BFI Player"
+                            description="From £2.50 per film, or £4.99 a month."
+                            image="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1000/0/0/2020-04/dolce-vita-la-1960-003-marcello-mastroianni-anita-ekberg-fountain-00n-hxe_0.jpg"
+                            placeholder="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/100/40/1/2020-04/dolce-vita-la-1960-003-marcello-mastroianni-anita-ekberg-fountain-00n-hxe_0.jpg"
+                            callToActionTitle="Explore BFI Player"
+                            callToActionUrl="http://player.bfi.org.uk"
+                            reversed={true}
+                            external={true}
+                        />
+                        <Headline 
+                            level={2} 
+                            text="What to watch"
+                        />
+                        <FilmGrid films={demoFilms} />
+                        <CallToAction linkText="See more Films" linkURL="http://player.bfi.org.uk" external={true} center={true} />
+                        <PromoBanner 
+                            colorScheme={0}
+                            headline="Japan 2020"
+                            description="Explore over 100 years of the greatest Japanese cinema in the latest season from BFI"
+                            image="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1000/0/0/2020-06/Japan_2020.jpg"
+                            placeholder="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/100/50/1/2020-06/Japan_2020.jpg"
+                            callToActionTitle="Explore BFI Player"
+                            callToActionUrl="http://player.bfi.org.uk"
+                            reversed={false}
+                            external={true}
+                        />
+                        <Headline 
+                            level={2} 
+                            text="Latest from BFI"
+                        />
+                        <FilterableArticles
+                            articles={demoArticles}
+                            filters={[
+                                {
+                                    url: "/",
+                                    label: "All"
+                                },
+                                {
+                                    url: "/",
+                                    label: "Review"
+                                },
+                                {
+                                    url: "/",
+                                    label: "Video"
+                                },
+                                {
+                                    url: "/",
+                                    label: "Opinion"
+                                },
+                                {
+                                    url: "/",
+                                    label: "Recommendations"
+                                },
+                                {
+                                    url: "/",
+                                    label: "Long Read"
+                                },
+                                {
+                                    url: "/",
+                                    label: "Interviews"
+                                }
+                            ]}
+                            loadMore={true}
+                        />
+                        <PromoBanner 
+                            colorScheme={0}
+                            headline="BFI National Archive"
+                            description="The BFI National Archive holds a magnificent collection of film and television, from the birth of cinema to today."
+                            image="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1000/0/0/2020-06/bfi-berkhamsted-archive-008-1000x750.jpg"
+                            placeholder="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/100/50/1/2020-06/bfi-berkhamsted-archive-008-1000x750.jpg"
+                            callToActionTitle="Find out more"
+                            callToActionUrl="#"
+                            reversed={false}
+                        />
+                        <Headline 
+                            level={2} 
+                            text="More to discover from BFI"
+                        />
+                        <PageLinks withImages={true} links={[
+                            {
+                                title: "BFI Southbank",
+                                url: "#",
+                                callToAction: "Find out more",
+                                image480x270: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/480/270/1/2020-04/bfi-southbank-2013-001-exterior-evening-2.jpg",
+                                image48x27: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/48/27/1/2020-04/bfi-southbank-2013-001-exterior-evening-2.jpg"
+                            },
+                            {
+                                title: "BFI IMAX",
+                                url: "#",
+                                callToAction: "Find out more",
+                                image480x270: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/480/270/1/2020-06/bfi-imax-001-1041x312.jpg",
+                                image48x27: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/48/27/1/2020-06/bfi-imax-001-1041x312.jpg"
+                            }
+                        ]} />
+                    </>
+                </MainContent>
+            </Wrapper>
+            <Footer
+                menus={footerMenus}
+                copyrightLinks={[
+                    {
+                        title: "Cookies & privacy",
+                        url: "#"
+                    },
+                    {
+                        title: "Terms & conditions",
+                        url: "#"
+                    },
+                    {
+                        title: "Accessibility",
+                        url: "#"
+                    },
+                    {
+                        title: "Help & FAQs",
+                        url: "#"
+                    }
+                ]}
+                copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"
+            />
+        </>
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="2 Article Example">
+        <>
+            <Header navItems={navItems} quickLinks={quickLinksData}  />
+            <HeroArticle 
+                title="BFI Recommends: Who’s Gonna Love Me Now?"
+                standfirst="A mid-week recommendation for this moving documentary about an ostracised gay Israeli man finding solace singing in the London Gay Men’s Chorus – chosen by Ros Cranston."
+                category="BFI Recommends"
+                categoryLink="/"
+                type="Feature"
+                date="2 June 2020"
+                authors={[
+                    {
+                        name: "Ros Cranston",
+                        url: "#"
+                    }
+                ]}
+            />
+            <WithSidebarWrapper>           
+                <WithSidebarMainContent role="main">
+                    <Text>
+                        <p>Saar Maoz came to London 17 years ago after being thrown out of his home on a kibbutz as punishment for over-enthusiastic partying as a teenager. Since then, he’s been rejected by his father and six siblings. Now in his late 30s, he wonders if it’s time to go home… Watching his story unfold we’re soon rooting for him as he attempts to re-establish his relationship with his extended family, who still live on the kibbutz, many of whom vehemently disapprove of his ‘irresponsible’ lifestyle and HIV+ status.</p>
+                    </Text>
+                    <FilmCardSingle 
+                        image225x225="https://www.bfi.org.uk/sites/bfi.org.uk/files/styles/api_16x9_full/public/news/whos-gonna-love-me-now-2016-003-saar-bowing-head-by-israeli-flag-1000x750.jpeg?itok=lXYQQz_5"
+                        title="Who’s Gonna Love Me Now?"
+                        type="Film"
+                        director="Tomer Heymann"
+                        year="2016"
+                        playerUrl="https://player.bfi.org.uk/subscription/film/watch-whos-gonna-love-me-now-2016-online"
+                        filmLink="/iframe.html?id=pattern-library-page-examples-1-watch-discover--3-film-page-example"
+                    />
+                    <Text>
+                        <p>For many years Saar found emotional support through the London Gay Men’s Chorus, and their stirring musical numbers punctuate this moving documentary that speaks to issues around identity and the power of family ties. There are beautifully observed moments throughout the film, hinting that all may not be as it initially appears. I particularly loved the scene in which the silent wife of Saar’s domineering brother listens as her husband holds court about the risks to his children posed by Saar being part of their lives – and then makes a gloriously unexpected intervention.</p>
+                        <p><a href="https://www.bfi.org.uk/people/ros-cranston">Ros Cranston</a><br/>Non-Fiction Curator<br/><a href="https://www.twitter.com/RosCranston">Ros Cranston</a></p>
+                    </Text>
+                </WithSidebarMainContent>
+                <Sidebar>
+                    <AdvertisingContainer>
+                        <div style={{width: "300px", height: "250px", background: "grey"}}></div>
+                    </AdvertisingContainer>
+                    <SidebarArticleLinks articles={[
+                        {
+                            title: "Industry programme and guests announced for BFI Flare: London LGBTQ+ Film Festival",
+                            image480x270: "https://www.bfi.org.uk/sites/bfi.org.uk/files/styles/full/public/news/savannah-knoop-001-1000x750.jpg?itok=ulIYIy7u",
+                            image48x27: "https://www.bfi.org.uk/sites/bfi.org.uk/files/styles/thumbnail/public/news/savannah-knoop-001-1000x750.jpg?itok=ulIYIy7u",
+                            imageAltText: "Example image",
+                            url: "https://www.bfi.org.uk/news-opinion/news-bfi/announcements/bfi-flare-industry-programme-talent-2019",
+                            uuid: "d1a4a7ac-44fa-56b3-9522-b865a49080c24562123",
+                            category: "Announcements",
+                            external: true
+                        },
+                        {
+                            title: "Two selected after BFI Film Fund pitching session",
+                            image480x270: "https://www.bfi.org.uk/sites/bfi.org.uk/files/styles/full/public/image/pussy-riot-a-punk-prayer-2012-001-performance.jpg?itok=NcPMfp_0",
+                            image48x27: "https://www.bfi.org.uk/sites/bfi.org.uk/files/styles/thumbnail/public/news/pussy-riot-a-punk-prayer-2012-001-performance-1000x750.jpg?itok=NbSZ4aAJ",
+                            imageAltText: "Example image",
+                            url: "https://www.bfi.org.uk/news-opinion/news-bfi/announcements/two-selected-after-bfi-film-fund-pitching-session",
+                            uuid: "d1a4a7ac-44fa-56b3-9522-b865a49080c21212113",
+                            external: true
+                        },
+                        {
+                            title: "10 great Jewish LGBT films",
+                            image480x270: "https://www.bfi.org.uk/sites/bfi.org.uk/files/styles/full/public/image/whos-gonna-love-me-now-2016-001-blue-topped-men.jpg?itok=ab7xHG24",
+                            image48x27: "https://www.bfi.org.uk/sites/bfi.org.uk/files/styles/thumbnail/public/image/whos-gonna-love-me-now-2016-001-blue-topped-men.jpg?itok=ab7xHG24",
+                            imageAltText: "Example image",
+                            url: "https://www.bfi.org.uk/news-opinion/news-bfi/lists/10-great-jewish-gay-lesbian-films",
+                            uuid: "d1a4a7ac-44fa-56b3-9522-b865a49080c212923",
+                            category: "10 Great",
+                            external: true
+                        }
+                    ]} blockTitle="What to read next" />
+                </Sidebar>
+            </WithSidebarWrapper>
+            <WithSidebarWrapper>
+                <WithSidebarMainContent role="main">
+                    <FilterableArticles
+                        limit={3}
+                        includeHighlight={false}
+                        optionalTitle="Other 'BFI Recommends' articles"
+                        greyBackground={true}
+                        articles={[
+                            {
+                                title: "36 amazing dance scenes",
+                                image480x270: "https://www.bfi.org.uk/sites/bfi.org.uk/files/styles/api_original/public/news/demoiselles-de-rochefort-les-1966-001-gene-kelly-1000x750.jpg?itok=fSF3NzTc",
+                                image48x27: "https://www.bfi.org.uk/sites/bfi.org.uk/files/styles/api_original/public/news/demoiselles-de-rochefort-les-1966-001-gene-kelly-1000x750.jpg?itok=fSF3NzTc",
+                                imageAltText: "Example image",
+                                standfirst: "As BFI Southbank hosts a two-month celebration of some of the great dance movies, writers from across the BFI pick out a favourite on-screen&nbsp;dancing moment that always gets their toes tapping.",
+                                author: "Josephine Botting, Jóse de Esteban, Jez Stewart, John Oliver & others",
+                                date: "9 February 2017",
+                                url: "https://www.bfi.org.uk/news-opinion/news-bfi/lists/36-amazing-dance-scenes",
+                                uuid: "06347a64-5abd-59de-a6b9-be0d4a9e31e1111",
+                                external: true,
+                                category: "BFI Recommends"
+                            },
+                            {
+                                title: "BFI Recommends: Drylongso",
+                                image480x270: "https://www.bfi.org.uk/sites/bfi.org.uk/files/styles/api_16x9_thumb/public/news/drylongso-1998-001-medium-shot-woman-and-young-man-at-the-back-looking-sceptical-1000x750.jpeg?itok=mlMAq87V",
+                                image48x27: "https://www.bfi.org.uk/sites/bfi.org.uk/files/styles/api_16x9_thumb/public/news/drylongso-1998-001-medium-shot-woman-and-young-man-at-the-back-looking-sceptical-1000x750.jpeg?itok=mlMAq87V",
+                                author: "Grace Barber-Plentie",
+                                imageAltText: "Example image",
+                                url: "https://www.bfi.org.uk/news-opinion/news-bfi/features/bfi-recommends-drylongso",
+                                uuid: "d1a4a7ac-44fa-56b3-9522-b865a49080c21212113",
+                                external: true,
+                                category: "BFI Recommends"
+                            },
+                            {
+                                title: "BFI Recommends: The Day the Earth Caught Fire",
+                                image480x270: "https://www.bfi.org.uk/sites/bfi.org.uk/files/styles/api_16x9_thumb/public/news/day-earth-caught-fire-1961-002-janet-munro-holding-edward-judd-tightly-1000x750.jpeg?itok=OsfHoYa4",
+                                image48x27: "https://www.bfi.org.uk/sites/bfi.org.uk/files/styles/api_16x9_thumb/public/news/day-earth-caught-fire-1961-002-janet-munro-holding-edward-judd-tightly-1000x750.jpeg?itok=OsfHoYa4",
+                                imageAltText: "Example image",
+                                author: "Kevin Lyons",
+                                url: "https://www.bfi.org.uk/news-opinion/news-bfi/lists/10-great-jewish-gay-lesbian-films",
+                                uuid: "d1a4a7ac-44fa-56b3-9522-b865a49080c212923",
+                                category: "BFI Recommends",
+                                external: true
+                            }
+                        ]} 
+                    />
+                    <AdvertisingContainer>
+                        <div style={{width: "1020px", height: "400px", background: "grey"}}></div>
+                    </AdvertisingContainer>
+                </WithSidebarMainContent>
+            </WithSidebarWrapper>
+            <Footer
+                menus={footerMenus}
+                copyrightLinks={[
+                    {
+                        title: "Cookies & privacy",
+                        url: "#"
+                    },
+                    {
+                        title: "Terms & conditions",
+                        url: "#"
+                    },
+                    {
+                        title: "Accessibility",
+                        url: "#"
+                    },
+                    {
+                        title: "Help & FAQs",
+                        url: "#"
+                    }
+                ]}
+                copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"
+            />
+        </>
+    </Story>
+</Preview>
+
+
+
+
+<Preview>
+    <Story name="3 Film Page Example">
+        <>
+            <Header navItems={navItems} quickLinks={quickLinksData} overlay={true} />
+            <Hero
+                withHeader
+                image1920x1080="https://www.bfi.org.uk/sites/bfi.org.uk/files/styles/api_16x9_full/public/news/whos-gonna-love-me-now-2016-003-saar-bowing-head-by-israeli-flag-1000x750.jpeg?itok=lXYQQz_5"
+                image192x108="https://www.bfi.org.uk/sites/bfi.org.uk/files/styles/api_16x9_thumb/public/news/whos-gonna-love-me-now-2016-003-saar-bowing-head-by-israeli-flag-1000x750.jpeg?itok=lXYQQz_5"
+                headline="Who’s Gonna Love Me Now?"
+                standfirst="A heartwarmer about a London-based man who is stuggling to reconcile with his Israeli family, while finding a new ‘family’ in the London Gay Men’s Chorus."
+            >
+                <Actions>
+                    <Button to="/" level={1} colorScheme={1}>Buy tickets</Button>
+                    <PlayButton to="https://player.bfi.org.uk/subscription/film/watch-whos-gonna-love-me-now-2016-online" external={true} level={1} colorScheme={1}>Watch on BFI Player</PlayButton>
+                </Actions>
+            </Hero>
+            <WithSidebarWrapper>           
+                <WithSidebarMainContent role="main">
+                    <LeadParagraph text="Starring Robert De Niro as the middleweight boxer Jake La Motta, Scorsese’s biopic is widely acknowledged as one of the greatest films of the 1980s." />
+                    <Text>
+                        <p>Saar is an Israeli living in London, driven away from his Kibbutz by his family’s response to his homosexuality and HIV-positive status, but also by his own fear of rejection. The lure of home and family is deep-rooted, however, and although he’s made a new life for himself within the close-knit, loving community of London Gay Men’s Chorus, he yearns for acceptance from his parents and siblings, in particular his stern father.</p>
+                        <p>Following Saar in the UK and his Israeli-based family over many years, the Heymann Brothers skilfully construct an intimate and nuanced portrait of a man growing up and coming to terms both with himself and his family, just as they do him. It’s a tender but affirmative exploration of the LGBT migrant experience and an assertion that minds and attitudes only change through communication.</p>
+                    </Text>
+                    
+                    <Headline 
+                        level={2} 
+                        text="Book tickets at BFI Southbank"
+                    />
+                    <FilmShowingGrid showings={[
+                        {
+                            id: "1",
+                            date: "15th June",
+                            times: [
+                                {
+                                    id: "10101",
+                                    time: "3:30pm",
+                                    url: "#"
+                                },
+                                {
+                                    id: "2222",
+                                    time: "6:30pm",
+                                    url: "#"
+                                },
+                                {
+                                    id: "333",
+                                    time: "8:45pm",
+                                    url: "#",
+                                    soldOut: true
+                                }
+                            ]
+                        },
+                        {
+                            id: "2",
+                            date: "18th June",
+                            times: [
+                                {
+                                    id: "444",
+                                    time: "3:30pm",
+                                    url: "#",
+                                    soldOut: true
+                                },
+                                {
+                                    id: "555",
+                                    time: "6:30pm",
+                                    url: "#"
+                                }
+                            ]
+                        },
+                        {
+                            id: "3",
+                            date: "20th June",
+                            times: [
+                                {
+                                    id: "666",
+                                    time: "3:30pm",
+                                    url: "#",
+                                    soldOut: true
+                                },
+                                {
+                                    id: "777",
+                                    time: "6:30pm",
+                                    url: "#"
+                                }
+                            ]
+                        },
+                        {
+                            id: "4",
+                            date: "26th June",
+                            times: [
+                                {
+                                    id: "888",
+                                    time: "3:30pm",
+                                    url: "#"
+                                },
+                                {
+                                    id: "999",
+                                    time: "6:30pm",
+                                    url: "#"
+                                }
+                            ]
+                        },
+                    ]} />
+                    <Button to="#21" level={3}>All showings</Button>
+                </WithSidebarMainContent>
+                <Sidebar>
+                    <QuickFacts
+                        facts={[
+                            {
+                                label: "Country",
+                                value: "United Kingdom"
+                            },
+                            {
+                                label: "Directed, written & produced by",
+                                value: "Tomer Heymann and Barak Heymann"
+                            },
+                            {
+                                label: "Genre",
+                                value: "Documentary"
+                            },
+                            {
+                                label: "Featuring",
+                                value: "Saar Maoz, John Moysen, Elimelekh, Alon, Katri, Reut"
+                            },
+                        ]}
+                    />
+                    <AdvertisingContainer>
+                        <div style={{width: "100%", height: "250px", background: "grey"}}></div>
+                    </AdvertisingContainer>
+                </Sidebar>
+            </WithSidebarWrapper>
+            <WithSidebarWrapper>
+                <WithSidebarMainContent role="main">  
+                    <FilterableArticles
+                        limit={3}
+                        includeHighlight={false}
+                        optionalTitle="Articles mentioning Who’s Gonna Love Me Now?"
+                        greyBackground={true}
+                        optionalCTATitle="See more articles"
+                        optionalCTALink="/"
+                        articles={[
+                            {
+                                title: "BFI Recommends: Who's Gonna Love Me Now?",
+                                image480x270: "https://www.bfi.org.uk/sites/bfi.org.uk/files/styles/api_16x9_thumb/public/news/whos-gonna-love-me-now-2016-003-saar-bowing-head-by-israeli-flag-1000x750.jpeg?itok=lXYQQz_5",
+                                image48x27: "https://www.bfi.org.uk/sites/bfi.org.uk/files/styles/api_16x9_thumb/public/news/whos-gonna-love-me-now-2016-003-saar-bowing-head-by-israeli-flag-1000x750.jpeg?itok=lXYQQz_5",
+                                imageAltText: "Example image",
+                                author: "Ros Cranston",
+                                date: "22 November 2019",
+                                url: "/iframe.html?id=pattern-library-page-examples-1-watch-discover--2-article-example",
+                                uuid: "d1a4a7ac-44fa-56b3-9522-b865a49080c212123222222",
+                                category: "BFI Recommends"
+                            },
+                            {
+                                title: "Two selected after BFI Film Fund pitching session",
+                                image480x270: "https://www.bfi.org.uk/sites/bfi.org.uk/files/styles/full/public/image/pussy-riot-a-punk-prayer-2012-001-performance.jpg?itok=NcPMfp_0",
+                                image48x27: "https://www.bfi.org.uk/sites/bfi.org.uk/files/styles/thumbnail/public/news/pussy-riot-a-punk-prayer-2012-001-performance-1000x750.jpg?itok=NbSZ4aAJ",
+                                imageAltText: "Example image",
+                                url: "https://www.bfi.org.uk/news-opinion/news-bfi/announcements/two-selected-after-bfi-film-fund-pitching-session",
+                                uuid: "d1a4a7ac-44fa-56b3-9522-b865a49080c21212113",
+                                external: true
+                            },
+                            {
+                                title: "10 great Jewish LGBT films",
+                                image480x270: "https://www.bfi.org.uk/sites/bfi.org.uk/files/styles/full/public/image/whos-gonna-love-me-now-2016-001-blue-topped-men.jpg?itok=ab7xHG24",
+                                image48x27: "https://www.bfi.org.uk/sites/bfi.org.uk/files/styles/thumbnail/public/image/whos-gonna-love-me-now-2016-001-blue-topped-men.jpg?itok=ab7xHG24",
+                                imageAltText: "Example image",
+                                url: "https://www.bfi.org.uk/news-opinion/news-bfi/lists/10-great-jewish-gay-lesbian-films",
+                                uuid: "d1a4a7ac-44fa-56b3-9522-b865a49080c212923",
+                                category: "10 Great",
+                                external: true
+                            }
+                        ]} 
+                    />
+                    <Headline 
+                        level={4} 
+                        text="Promoted links from around the web"
+                    />
+                    <AdvertisingContainer withCaption={false}>
+                        <div style={{width: "1020px", height: "400px", background: "grey"}}></div>
+                    </AdvertisingContainer>
+                </WithSidebarMainContent>
+            </WithSidebarWrapper>
+            <Footer
+                menus={footerMenus}
+                copyrightLinks={[
+                    {
+                        title: "Cookies & privacy",
+                        url: "#"
+                    },
+                    {
+                        title: "Terms & conditions",
+                        url: "#"
+                    },
+                    {
+                        title: "Accessibility",
+                        url: "#"
+                    },
+                    {
+                        title: "Help & FAQs",
+                        url: "#"
+                    }
+                ]}
+                copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"
+            />
+        </>
+    </Story>
+</Preview>

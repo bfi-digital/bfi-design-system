@@ -35,6 +35,8 @@ const Outer = styled.section`
     position: relative;
 
     margin-bottom: ${theme.standardSpace*2}px;
+    margin-top: ${theme.standardSpace*2}px;
+
     // & + .promoBanner {
     //     margin-top: 0px;
     // }
@@ -53,6 +55,8 @@ const Outer = styled.section`
 
     @media screen and (min-width: ${theme.m}){
         flex-direction: ${props => props.pageWithSideBar ? "column" : "row"};
+        margin-bottom: ${theme.standardSpace*2.5}px;
+        margin-top: ${theme.standardSpace*2.5}px;
 
         a {
             margin-top: auto;
@@ -74,6 +78,8 @@ const Outer = styled.section`
         }
     }
     @media screen and (min-width: ${theme.l}){
+        margin-bottom: ${theme.standardSpace*3}px;
+        margin-top: ${theme.standardSpace*3}px;
         &:before {
             display: none;
         }

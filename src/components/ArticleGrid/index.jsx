@@ -10,7 +10,7 @@ import { Skeleton } from "./ArticleCard/Skeleton"
 const Outer = styled.div`
     margin: 15px 0;
     padding: 15px 0;
-    padding-top: 35px;
+    padding-top: ${props => props.pageWithSideBar ? "15px" : "35px"};
     margin-top: ${theme.standardSpace}px;
     position: relative; 
     background: ${props => props.pageWithSideBar ? "transparent" : theme.grey};

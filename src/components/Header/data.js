@@ -1,7 +1,7 @@
 export default [
     {
         title: "Watch & Discover",
-        url: "#",
+        url: "/iframe.html?id=pattern-library-page-examples-1-watch-discover--1-landing-page",
         highlightText: "Discover more as a member",
         highlightURL: "/",
         active: true,
@@ -56,49 +56,6 @@ export default [
         ]
     },
     {
-        title: "Learn & Make",
-        url: "#",
-        highlightText: "Support us",
-        highlightURL: "/",
-        children:   [
-            {
-                id: 1,
-                title: "How We Support Education & Skills Development",
-                url: "/"
-            },
-            {
-                id: 2,
-                title: "Policies & Strategy",
-                url: "/"
-            },
-            {
-                id: 3,
-                title: "Events & activities for families",
-                url: "/"
-            },
-            {
-                id: 4,
-                title: "Opportunities for Young Creatives",
-                url: "/"
-            },
-            {
-                id: 5,
-                title: "Progress my career",
-                url: "/"
-            },
-            {
-                id: 6,
-                title: "Courses, conferences and resources for teachers",
-                url: "/"
-            },
-            {
-                id: 7,
-                title: "Use Reuben Library for your research",
-                url: "/"
-            }
-        ]  
-    },
-    {
         title: "Funding & Industry",
         url: "#",
         highlightText: "Our response to Covid-19",
@@ -141,7 +98,49 @@ export default [
             }
         ]
     },
-    
+    {
+        title: "Learn & Make",
+        url: "#",
+        highlightText: "Support us",
+        highlightURL: "/",
+        children:   [
+            {
+                id: 1,
+                title: "How We Support Education & Skills Development",
+                url: "/"
+            },
+            {
+                id: 2,
+                title: "Policies & Strategy",
+                url: "/"
+            },
+            {
+                id: 3,
+                title: "Events & activities for families",
+                url: "/"
+            },
+            {
+                id: 4,
+                title: "Opportunities for Young Creatives",
+                url: "/"
+            },
+            {
+                id: 5,
+                title: "Progress my career",
+                url: "/"
+            },
+            {
+                id: 6,
+                title: "Courses, conferences and resources for teachers",
+                url: "/"
+            },
+            {
+                id: 7,
+                title: "Use Reuben Library for your research",
+                url: "/"
+            }
+        ]  
+    },
 ]
 
 

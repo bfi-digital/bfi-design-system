@@ -26,7 +26,8 @@ export const FilterableArticles = ({
     optionalCTALink,
     loadMore,
     loadMoreLoading,
-    loading
+    loading,
+    greyBackground = false
 }) => {
 
     return(
@@ -36,18 +37,18 @@ export const FilterableArticles = ({
                 articles && articles.length > 0 ? 
                     <>
                         {!limit ?
-                            <ArticleGrid articles={articles} firstHighlighted={includeHighlight} pageWithSideBar={true}>
-                                {loadMoreLoading && <ArticleGrid articles={false} skeletons={3} pageWithSideBar={true} loadMoreLoading={loadMoreLoading} />}
+                            <ArticleGrid articles={articles} firstHighlighted={includeHighlight} pageWithSideBar={greyBackground ? false : true}>
+                                {loadMoreLoading && <ArticleGrid articles={false} skeletons={3} pageWithSideBar={greyBackground ? false : true} loadMoreLoading={loadMoreLoading} />}
                                 {loadMore && <CentredButton href="#4" onClick={loadMore}>Load more</CentredButton>}
                             </ArticleGrid>
                             :
-                            <ArticleGrid articles={articles.slice(0,limit)} optionalTitle={filters ? false : optionalTitle} firstHighlighted={includeHighlight} optionalCTATitle={optionalCTATitle} optionalCTALink={optionalCTALink} pageWithSideBar={true} />
+                            <ArticleGrid articles={articles.slice(0,limit)} optionalTitle={filters ? false : optionalTitle} firstHighlighted={includeHighlight} optionalCTATitle={optionalCTATitle} optionalCTALink={optionalCTALink} pageWithSideBar={greyBackground ? false : true} />
                         }
                     </>
                     :
                     <p>No articles found.</p>
                 :
-                <ArticleGrid articles={false} skeletons={limit} pageWithSideBar={true} />
+                <ArticleGrid articles={false} skeletons={limit} pageWithSideBar={greyBackground ? false : true} />
             }
         </Outer>
     )

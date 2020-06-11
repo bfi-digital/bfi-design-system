@@ -51,19 +51,19 @@ const Outer = styled.section`
         margin-top: 0px;
         min-height: 390px;
         align-items: flex-end;
-        padding-top: ${props => props.withHeader ? "225px" : "0px"};
+        padding-top: ${props => props.withHeader ? "275px" : "0px"};
 
         h1 {
-            max-width: calc( 0.75 * ${theme.m});
+            max-width: calc( 0.8 * ${theme.m});
         }
     }
     @media screen and (min-width: ${theme.l}){
-        padding-top: ${props => props.withHeader ? "255px" : "0px"};
+        padding-top: ${props => props.withHeader ? "325px" : "0px"};
     }
     @media screen and (min-width: ${theme.xl}){
         min-height: 500px;
         padding-bottom: 40px;
-        padding-top: ${props => props.withHeader ? "300px" : "0px"};
+        padding-top: ${props => props.withHeader ? "375px" : "0px"};
 
         h1{
             max-width: calc( 0.4 * ${theme.xl});
@@ -72,7 +72,7 @@ const Outer = styled.section`
 `
 
 const InnerGradient = styled.div`
-    background: linear-gradient(0deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.8) 25%, rgba(0,0,0,0.3) 100%);
+    background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.6) 25%, rgba(0,0,0,0.2) 100%);
     width: 100%;
     height: 100%;
     position: absolute;
