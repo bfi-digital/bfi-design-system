@@ -35,6 +35,9 @@ const Outer = styled.div`
         p {
             margin-bottom: 0;
         }
+        h1 {
+            margin-block-start: 0.5em;
+        }
         h1, p, ul, li, a {
             color: ${theme.white};
         }

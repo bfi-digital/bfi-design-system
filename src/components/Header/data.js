@@ -57,7 +57,7 @@ export default [
     },
     {
         title: "Funding & Industry",
-        url: "#",
+        url: "/iframe.html?id=pattern-library-page-examples-2-funding-industry--1-landing-page",
         highlightText: "Our response to Covid-19",
         highlightURL: "/",
         children: [
@@ -79,7 +79,7 @@ export default [
             {
                 id: 4,
                 title: "Get Funding & Support",
-                url: "/"
+                url: "/iframe.html?id=pattern-library-page-examples-2-funding-industry--2-service-list-page-example"
             },
             {
                 id: 5,
@@ -100,7 +100,7 @@ export default [
     },
     {
         title: "Learn & Make",
-        url: "#",
+        url: "/iframe.html?id=pattern-library-page-examples-1-watch-discover--1-landing-page",
         highlightText: "Support us",
         highlightURL: "/",
         children:   [

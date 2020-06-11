@@ -1,0 +1,280 @@
+import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks'
+import { Wrapper, MainContent } from "../../../components/PageContainerFullWidth"
+import { Wrapper as WithSidebarWrapper, MainContent as WithSidebarMainContent, Sidebar, Actions, PlayButton, OriginalArticleDate } from "../../../components/PageContainer"
+
+import navItems, { quickLinksData } from "../../../components/Header/data"
+import footerMenus from "../../../components/Footer/data"
+import demoArticles from "../../../components/ArticleGrid/data"
+import demoFilms from "../../../components/FilmGrid/data"
+
+import { CallToAction } from "../../../components/CallToAction"
+import { FilterableArticles } from "../../../components/FilterableArticles"
+import { Footer } from "../../../components/Footer"
+import { Header } from "../../../components/Header"
+import { Headline } from "../../../components/Headline"
+import { Hero } from "../../../components/Hero"
+import { PageLinks } from "../../../components/PageLinks"
+import { FilmGrid } from "../../../components/FilmGrid"
+import { PromoBanner } from "../../../components/PromoBanner"
+import { Divider } from "../../../components/Divider"
+
+import { AdvertisingContainer } from "../../../components/AdvertisingContainer"
+import { HeroPage } from "../../../components/HeroPage"
+import { FilmCardSingle } from "../../../components/FilmCardSingle"
+import { SidebarArticleLinks } from "../../../components/SidebarArticleLinks"
+import { Text } from "../../../components/Text"
+
+import { FilmShowingGrid } from "../../../components/FilmShowingGrid"
+import { LeadParagraph } from "../../../components/LeadParagraph"
+import { Button } from "../../../components/Button"
+import { QuickFacts } from "../../../components/QuickFacts"
+
+
+<Meta title="Pattern Library|Page Examples/2 Funding &amp; Industry" component={MainContent} />
+
+# Page
+
+
+## Pages
+
+<Preview>
+    <Story name="1 Landing Page">
+        <>
+            <Header navItems={navItems} quickLinks={quickLinksData} overlay={true} />
+            <Hero
+                withHeader
+                image1920x1080="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1920/1080/1/2020-03/industry.jpg"
+                image192x108="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/192/108/1/2020-03/industry.jpg"
+                headline="We support filmmakers and champion films that push boundaries."
+            />
+            <Wrapper>
+                <MainContent role="main">
+                    <>
+                        <PromoBanner 
+                            colorScheme={0}
+                            headline="COVID-19"
+                            description="Answering questions from the film industry"
+                            callToActionTitle="Find out more"
+                            callToActionUrl="#1"
+                        />
+                        <Headline 
+                            level={2} 
+                            text="Supporting filmmakers across the UK"
+                        />
+                        <LeadParagraph text="The BFI supports film culture across the UK. This includes investing Lottery funds in film development and production, and to increase audiences." />
+                        <LeadParagraph text="We aim to maximise the achievements of British film at home and abroad – from international strategy and industry diversity to certification and tax relief." />
+                        <PageLinks links={[
+                            {
+                                title: "Get Funding",
+                                url: "/iframe.html?id=pattern-library-page-examples-2-funding-industry--2-service-list-page-example",
+                                description: "The BFI uses National Lottery funds to develop and support original UK filmmakers and films, and to increase the audiences who can enjoy them.",
+                                callToAction: "Read this page"
+                            },
+                            {
+                                title: "BFI Diversity Standards",
+                                url: "#",
+                                description: "The BFI Diversity Standards encourage equality of opportunity and address under-representation in the screen industries.",
+                                callToAction: "Read this page"
+                            },
+                            {
+                                title: "BFI Network",
+                                url: "https://network.bfi.org.uk/",
+                                external: true,
+                                description: "Discovering, developing and funding new filmmakers",
+                                callToAction: "Read this page"
+                            }
+                        ]} />
+                        <PromoBanner 
+                            colorScheme={3}
+                            headline="Applying for tax relief &amp; British certification"
+                            description="Find out how to qualify your film, high-end television programme, animation programme, children’s television programme or video game as British"
+                            callToActionTitle="Find out more"
+                            callToActionUrl="#"
+                        />
+                        <PromoBanner 
+                            colorScheme={0}
+                            headline="See previously funded projects"
+                            description="Search the funding awards for films, projects and organisations made by the BFI since April 2011."
+                            callToActionTitle="See awards"
+                            callToActionUrl="#"
+                        />
+                        <Divider />
+                        <Headline 
+                            level={2} 
+                            text="Film industry statistics and reports"
+                        />
+                        <LeadParagraph text="We provide research data and market intelligence to anyone with an interest in the UK film industry and film culture." />
+                        <CallToAction linkText="Find out more" linkURL="#" />
+                    </>
+                </MainContent>
+            </Wrapper>
+            <Footer
+                menus={footerMenus}
+                copyrightLinks={[
+                    {
+                        title: "Cookies & privacy",
+                        url: "#"
+                    },
+                    {
+                        title: "Terms & conditions",
+                        url: "#"
+                    },
+                    {
+                        title: "Accessibility",
+                        url: "#"
+                    },
+                    {
+                        title: "Help & FAQs",
+                        url: "#"
+                    }
+                ]}
+                copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"
+            />
+        </>
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="2 Service List Page Example">
+        <>
+            <Header navItems={navItems} quickLinks={quickLinksData}  />
+            <Wrapper>      
+                <MainContent role="main">
+                    <HeroPage 
+                        title="Get funding"
+                        standfirst="The BFI uses National Lottery funds to develop and support original UK filmmakers and films, and to increase the audiences who can enjoy them."
+                    />     
+                    <LeadParagraph text="At BFI, we champion films that push boundaries. We’re passionate about discovering unfamiliar voices. We support filmmakers – from first features, to world-class shorts." />
+                    <PageLinks links={[
+                        {
+                            title: "Progress my career and grow my business",
+                            url: "#",
+                            description: "If you're an emerging filmmaker, apply for funding to build skills and experience to stand out in the industry.",
+                            callToAction: "Explore funding options"
+                        },
+                        {
+                            title: "Create film, TV, or new formats of storytelling",
+                            url: "#",
+                            description: "If you're an adventurous storyteller, we can help you with funding to create your film, tv or emerging media like VR or AR.",
+                            callToAction: "Explore funding options"
+                        },
+                        {
+                            title: "Bring great films to a wider audience",
+                            url: "/iframe.html?id=pattern-library-page-examples-2-funding-industry--3-sub-service-list-example",
+                            description: "We want to help film exhibitors and distributors show bold films to diverse UK audiences.",
+                            callToAction: "Explore funding options"
+                        }
+                    ]} />
+                    <Divider />
+                    <PageLinks withImages={true} links={[
+                        {
+                            title: "BFI Diversity Standards",
+                            url: "#",
+                            image480x270: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/480/270/1/2020-03/cityoftinylights_01-h_2016.jpg",
+                            image48x27: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/48/27/1/2020-03/cityoftinylights_01-h_2016.jpg",
+                            description: "The BFI Diversity Standards encourage equality of opportunity and address under-representation in the screen industries.",
+                            callToAction: "Explore funding options"
+                        },
+                        {
+                            title: "Our funding priorities",
+                            url: "#",
+                            image480x270: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/480/270/1/2020-04/www.curzoncinemas.png",
+                            image48x27: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/48/27/1/2020-04/www.curzoncinemas.png",
+                            description: "We have five core priorities that we use in our assessment of the applications to the Film Fund.",
+                            callToAction: "Explore funding options"
+                        },
+                        {
+                            title: "BFI NETWORK",
+                            url: "https://network.bfi.org.uk/",
+                            external: true,
+                            image480x270: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/480/270/1/2020-04/bfi-network-2018-1000x750.jpg",
+                            image48x27: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/48/27/1/2020-04/bfi-network-2018-1000x750.jpg",
+                            description: "Discovering, developing and funding new filmmakers.",
+                            callToAction: "Explore funding options"
+                        }
+                    ]} />
+                </MainContent>
+            </Wrapper>
+            <Footer
+                menus={footerMenus}
+                copyrightLinks={[
+                    {
+                        title: "Cookies & privacy",
+                        url: "#"
+                    },
+                    {
+                        title: "Terms & conditions",
+                        url: "#"
+                    },
+                    {
+                        title: "Accessibility",
+                        url: "#"
+                    },
+                    {
+                        title: "Help & FAQs",
+                        url: "#"
+                    }
+                ]}
+                copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"
+            />
+        </>
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="3 Sub Service List Example">
+        <>
+            <Header navItems={navItems} quickLinks={quickLinksData}  />
+            <Wrapper>      
+                <MainContent role="main">
+                    <HeroPage 
+                        title="Bring great films to a wider audience"
+                        standfirst="We want to help film exhibitors and distributors show bold films to diverse UK audiences."
+                    />     
+                    <PageLinks links={[
+                        {
+                            title: "Audience Fund",
+                            url: "#",
+                            description: "We aim to give everyone the opportunity to enjoy the most diverse range of great British and international filmmaking.",
+                            callToAction: "Apply to this fund"
+                        },
+                        {
+                            title: "Film Export Fund",
+                            url: "#",
+                            description: "Funding to drive export opportunities for British films selected by major international festivals.",
+                            callToAction: "Apply to this fund"
+                        },
+                        {
+                            title: "Film Audience Network",
+                            url: "#",
+                            description: "The BFI Film Audience Network is a unique collaboration of eight Film Hubs managed by leading film organisations across the UK.",
+                            callToAction: "Apply to this fund"
+                        }
+                    ]} />
+                </MainContent>
+            </Wrapper>
+            <Footer
+                menus={footerMenus}
+                copyrightLinks={[
+                    {
+                        title: "Cookies & privacy",
+                        url: "#"
+                    },
+                    {
+                        title: "Terms & conditions",
+                        url: "#"
+                    },
+                    {
+                        title: "Accessibility",
+                        url: "#"
+                    },
+                    {
+                        title: "Help & FAQs",
+                        url: "#"
+                    }
+                ]}
+                copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"
+            />
+        </>
+    </Story>
+</Preview>
