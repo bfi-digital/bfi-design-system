@@ -15,6 +15,7 @@ const Outer = styled.li`
     border-bottom: 5px solid ${theme.grey};
     animation: pulse 1s infinite;
     animation-fill-mode: forwards;
+    margin-top: ${props => props.loadMoreLoading ? "-60px" : "0"};
     &:nth-of-type(even){
         animation-delay: 0.5s
     }
@@ -44,8 +45,18 @@ const Meta = styled.div`
 `
 
 const Image = styled.div`
-    background: ${theme.grey};
-    height: 140px;
+    background: ${props => props.noBackground ? theme.grey : theme.lightGrey};
+    height: 188px;
+
+    @media screen and (min-width: ${theme.m}){
+        height: 160px;
+    }
+    @media screen and (min-width: ${theme.l}){
+        height: 175px;
+    }
+    @media screen and (min-width: ${theme.xl}){
+        height: 235px;
+    }
 `
 
 const Headline = styled.div`
@@ -55,9 +66,9 @@ const Headline = styled.div`
     width: 80%;
 `
 
-export const Skeleton = ({noBackground}) =>
-    <Outer className="loadingArticleCard" noBackground={noBackground}>
-        <Image/>
+export const Skeleton = ({noBackground, loadMoreLoading}) =>
+    <Outer className="loadingArticleCard" noBackground={noBackground} loadMoreLoading={loadMoreLoading}>
+        <Image noBackground={noBackground} />
         <Inner>
             <Headline/>
             <Meta/>

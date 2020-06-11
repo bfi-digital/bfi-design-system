@@ -37,17 +37,17 @@ export const FilterableArticles = ({
                     <>
                         {!limit ?
                             <ArticleGrid articles={articles} firstHighlighted={includeHighlight} pageWithSideBar={true}>
-                                {loadMoreLoading && <ArticleGrid articles={false} skeletons={3} pageWithSideBar={true} />}
+                                {loadMoreLoading && <ArticleGrid articles={false} skeletons={3} pageWithSideBar={true} loadMoreLoading={loadMoreLoading} />}
                                 {loadMore && <CentredButton href="#4" onClick={loadMore}>Load more</CentredButton>}
                             </ArticleGrid>
                             :
-                            <ArticleGrid articles={articles.slice(0,limit)} optionalTitle={filters ? false : optionalTitle} firstHighlighted={includeHighlight} optionalCTATitle={optionalCTATitle} optionalCTALink={optionalCTALink} />
+                            <ArticleGrid articles={articles.slice(0,limit)} optionalTitle={filters ? false : optionalTitle} firstHighlighted={includeHighlight} optionalCTATitle={optionalCTATitle} optionalCTALink={optionalCTALink} pageWithSideBar={true} />
                         }
                     </>
                     :
                     <p>No articles found.</p>
                 :
-                <ArticleGrid articles={false} skeletons={limit} />
+                <ArticleGrid articles={false} skeletons={limit} pageWithSideBar={true} />
             }
         </Outer>
     )

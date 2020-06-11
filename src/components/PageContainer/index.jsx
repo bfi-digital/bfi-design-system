@@ -99,6 +99,12 @@ const Icon = styled.span`
     }
 `
 
+export const OriginalArticleDate = styled.p`
+    font-style: italic;
+    margin-bottom: 0;
+    margin-top: ${theme.standardSpace*2}px;
+`
+
 export const PlayButton = props =>
     <Button {...props}>
         {props.children}

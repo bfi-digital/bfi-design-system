@@ -292,7 +292,7 @@ export const ImageGallery = ({
                                 itemprop="image"
                                 isClickable={false}
                                 src={img.placeholder}
-                                alt={img.alt}
+                                alt={img.alt ? img.alt : ""}
                                 width={"100%"}
                             />
                         )     
@@ -310,7 +310,7 @@ export const ImageGallery = ({
                                             <Image
                                                 itemprop="image"
                                                 src={src}
-                                                alt={img.alt}
+                                                alt={img.alt ? img.alt : ""}
                                             />
                                     }}
                                 </ProgressiveImage>

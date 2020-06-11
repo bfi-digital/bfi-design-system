@@ -1,5 +1,5 @@
 import React from "react"
-import { Wrapper, MainContent, Sidebar, Actions, PlayButton } from "./index"
+import { Wrapper, MainContent, Sidebar, Actions, PlayButton, OriginalArticleDate } from "./index"
 
 import navItems, { quickLinksData } from "../Header/data"
 import {longData as crumbs} from "../Breadcrumbs/data"
@@ -765,7 +765,7 @@ export const ArticleAnnouncementExample = () =>
 
 
 
-export const ArticleListExample = () =>
+export const ArticleListExampleWithUpdatedDate = () =>
     <>
         <Header navItems={navItems} quickLinks={quickLinksData}  />
         <HeroArticle 
@@ -775,6 +775,7 @@ export const ArticleListExample = () =>
             categoryLink="#12"
             type="List"
             date="1 May 2020"
+            updatedDate="11 June 2020"
             authors={[
                 {
                     name: "Emma Smart",
@@ -866,6 +867,8 @@ export const ArticleListExample = () =>
                 <Text>
                     <p>This is the week that sees Béla Tarr’s legendary Hungarian epic Sátántangó come in out of the cold. Finally released in a restored version on Blu-ray and to stream at Curzon Home Cinema, it comes down to us wrapped in an aura of untouchability. Voted the 35th best film ever made in the most recent Sight &amp; Sound critics’ poll, yet undeniably forbidding at seven hours long, it’s one every cinephile should make time for. If descriptions of a plot set in a collapsed collective farm in a godforsaken village sound crushingly bleak then they’ve done their work, but the majesty of Sátántangó is in the hallucinatory long-take style and mordant humour with which Tarr evokes this world and its inhabitants. It might sound perverse to pitch this as escapism, but the mud, despair and lowering skies of Sátántangó offer total atmospheric immersion like little else.</p>
                 </Text>
+
+                <OriginalArticleDate>Originally published: 1 May 2020</OriginalArticleDate>
             </MainContent>
             <Sidebar>
                 <AdvertisingContainer>

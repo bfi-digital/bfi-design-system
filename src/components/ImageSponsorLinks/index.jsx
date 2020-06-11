@@ -75,7 +75,7 @@ export const ImageSponsorLinks = ({
                             {src => 
                                 <Image
                                     src={src}
-                                    alt={image.alt}
+                                    alt={image.alt ? image.alt : ""}
                                 />
                             }
                         </ProgressiveImage>

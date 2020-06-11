@@ -102,7 +102,7 @@ export const HeroPage = ({
             <ImageContainer>
             
                 <Image
-                    alt={imageAltText}
+                    alt={imageAltText ? imageAltText : ""}
                     src={image1920x1080}
                     placeholder={image192x108}
                     copyright={imageCopyright}

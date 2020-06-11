@@ -122,7 +122,7 @@ exports[`Storyshots 2 All Components/Blockquote With Citation 1`] = `
   className="sc-ifAKCX eyPYQu"
 >
   <q
-    className="sc-EHOje gOENuR"
+    className="sc-EHOje ixJQSq"
   >
     Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.
   </q>
@@ -139,7 +139,7 @@ exports[`Storyshots 2 All Components/Blockquote Without Citation 1`] = `
   className="sc-ifAKCX eyPYQu"
 >
   <q
-    className="sc-EHOje gOENuR"
+    className="sc-EHOje ixJQSq"
   >
     Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.
   </q>
@@ -602,7 +602,7 @@ Array [
       className="sc-kEYyzF dJvjzu"
     >
       <h1
-        className="sc-ckVGcZ dEWqTh"
+        className="sc-ckVGcZ fDdlDu"
       >
         <span
           className="sc-jKJlTe RLSLR"
@@ -655,7 +655,7 @@ Array [
       className="sc-kEYyzF dJvjzu"
     >
       <h1
-        className="sc-ckVGcZ dEWqTh"
+        className="sc-ckVGcZ fDdlDu"
       >
         <span
           className="sc-jKJlTe RLSLR"
@@ -737,7 +737,7 @@ exports[`Storyshots 2 All Components/FilmShowing A Showing 1`] = `
     className="sc-bRBYWo dTPvnj"
   >
     <p
-      className="sc-csuQGl lawImw h4"
+      className="sc-csuQGl eUczfd h4"
     >
       La La Land
     </p>
@@ -804,7 +804,7 @@ exports[`Storyshots 2 All Components/FilmShowing Sold Out 1`] = `
     className="sc-bRBYWo dTPvnj"
   >
     <p
-      className="sc-csuQGl lawImw h4"
+      className="sc-csuQGl eUczfd h4"
     >
       La La Land
     </p>
@@ -1231,7 +1231,7 @@ exports[`Storyshots 2 All Components/Filterable Articles Normal 1`] = `
 
 exports[`Storyshots 2 All Components/Headline Hero H 1 1`] = `
 <h1
-  className="sc-jAaTju iXGZdS"
+  className="sc-jAaTju ldtndl"
 >
   My example headline
 </h1>
@@ -1239,7 +1239,7 @@ exports[`Storyshots 2 All Components/Headline Hero H 1 1`] = `
 
 exports[`Storyshots 2 All Components/Headline Level 1 1`] = `
 <h1
-  className="sc-jAaTju sc-jDwBTQ gmYMDl"
+  className="sc-jAaTju sc-jDwBTQ kICVkk"
 >
   My example headline
 </h1>
@@ -1247,7 +1247,7 @@ exports[`Storyshots 2 All Components/Headline Level 1 1`] = `
 
 exports[`Storyshots 2 All Components/Headline Level 2 1`] = `
 <h2
-  className="sc-gPEVay ePeRks"
+  className="sc-gPEVay fPDicg"
 >
   My example headline
 </h2>
@@ -1586,7 +1586,7 @@ exports[`Storyshots 2 All Components/Text Normal 1`] = `
   }
 >
   <div
-    className="sc-fYxtnH bTRKil"
+    className="sc-fYxtnH kuvHxT"
   >
     <p>
       We gotta burn the rain forest, 

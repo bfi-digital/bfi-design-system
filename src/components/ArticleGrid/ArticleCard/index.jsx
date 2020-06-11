@@ -67,7 +67,7 @@ const Meta = styled.div`
     margin-top: auto;
 
     p {
-        margin-top: 0;
+        margin-top: 15px;
     }
 `
 // const Date = styled.p`
@@ -146,6 +146,7 @@ const CategoryTag = styled.div`
 
     @media screen and (min-width: ${theme.m}){
         padding-left: ${theme.standardSpace}px;
+        padding-right: 15px;
     }
 `
 
@@ -172,7 +173,7 @@ export const ArticleCard = ({
                 src={image480x270}
                 placeholder={image48x27}
             >
-                {src => <PageImage className="image" imageSrc={src} alt={imageAltText} />}
+                {src => <PageImage className="image" imageSrc={src} alt={imageAltText ? imageAltText : ""} />}
             </ProgressiveImage>
         </PageImageContainer>
         <Headline level={6} text={title} />

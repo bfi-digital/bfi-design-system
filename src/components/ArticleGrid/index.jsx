@@ -128,14 +128,19 @@ const Articles = styled.ul`
             }
         }   
     }
+    &.noBackground {
+        .articleCard, .articleCardHighlighted {
+            background: ${theme.lightGrey};
+
+            &:hover, &:focus-within {
+                background: ${theme.lightest};
+            }
+        }
+    }
     .loadingArticleCard {
         &:nth-of-type(3n) {
             margin-right: 0px;
         }
-    }
-
-    &.skeletons {
-        margin-top: -60px;
     }
 `
 const CentredButton = styled(Button)`
@@ -156,14 +161,18 @@ export const ArticleGrid = ({
     pageWithSideBar,
     firstHighlighted,
     children,
-    skeletons = 6
+    skeletons = 6,
+    loadMoreLoading
 }) =>
     <Outer pageWithSideBar={pageWithSideBar}>
         {optionalTitle && 
             <StyledHeadline level={2} text={optionalTitle} />
         }
         {articles ?
-            <Articles lessColumns={articles.length === 2 || articles.length === 4} className={firstHighlighted ? "withHighlight" : "noHighlight"}>
+            <Articles 
+                lessColumns={(articles.length === 2 || articles.length === 4) && !firstHighlighted} 
+                className={(firstHighlighted ? "withHighlight" : "noHighlight") + (pageWithSideBar ? " noBackground" : " withBackground")}
+            >
                 {firstHighlighted  === true || articles.length === 1 ?
                     <>
                         <ArticleCardHighlighted key={articles[0].uuid} pageWithSideBar={pageWithSideBar} {...articles[0]}/>
@@ -181,7 +190,7 @@ export const ArticleGrid = ({
             </Articles>
             :
             <Articles lessColumns={articles.length === 2 || articles.length === 4} className="noHighlight skeletons">
-                {[...Array(skeletons)].map((i) => <Skeleton key={i} noBackground={pageWithSideBar} /> )}
+                {[...Array(skeletons)].map((i) => <Skeleton key={i} noBackground={pageWithSideBar} loadMoreLoading={loadMoreLoading} /> )}
             </Articles>
         }
         { optionalCTALink &&
