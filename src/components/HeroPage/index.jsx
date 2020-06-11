@@ -21,7 +21,7 @@ const Outer = styled.div`
     }
 
     &.without_image {
-        background: ${theme.lightest};
+        background: ${theme.primary};
         padding-top: ${theme.standardSpace}px;
         padding-bottom: ${theme.standardSpace}px;
         margin-bottom: ${theme.standardSpace}px;
@@ -35,6 +35,15 @@ const Outer = styled.div`
         p {
             margin-bottom: 0;
         }
+        h1, p, ul, li, a {
+            color: ${theme.white};
+        }
+        a {
+            background-image: linear-gradient(120deg, ${theme.lightFocus} 0%, ${theme.lightFocus} 100%);
+            &:hover, &:focus {
+                color: ${theme.black};
+            }
+        }
 
         &:before {
             content: "";
@@ -43,8 +52,8 @@ const Outer = styled.div`
             bottom: 0;
             left: -9999px;
             right: 0;
-            box-shadow: 9999px 0 0 ${theme.lightest};
-            border-left: 9999px solid ${theme.lightest};
+            box-shadow: 9999px 0 0 ${theme.primary};
+            border-left: 9999px solid ${theme.primary};
             z-index: -1;
         }
     }
