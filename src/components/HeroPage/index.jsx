@@ -21,7 +21,7 @@ const Outer = styled.div`
     }
 
     &.without_image {
-        background: ${theme.dark};
+        background: ${theme.primary};
         padding-top: ${theme.standardSpace}px;
         padding-bottom: ${theme.standardSpace}px;
         margin-bottom: ${theme.standardSpace}px;
@@ -52,8 +52,8 @@ const Outer = styled.div`
             bottom: 0;
             left: -9999px;
             right: 0;
-            box-shadow: 9999px 0 0 ${theme.dark};
-            border-left: 9999px solid ${theme.dark};
+            box-shadow: 9999px 0 0 ${theme.primary};
+            border-left: 9999px solid ${theme.primary};
             z-index: -1;
         }
     }
