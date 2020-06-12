@@ -144,7 +144,7 @@ export const FilmCardSingle = ({
         {image225x225 &&
             <ProgressiveImage
                 src={image225x225}
-                placeholder={image22x22}
+                placeholder={image22x22 ? image22x22 : image225x225}
             >
                 {src => <Image imageSrc={src} />}
             </ProgressiveImage>

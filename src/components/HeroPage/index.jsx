@@ -49,7 +49,7 @@ const Outer = styled.div`
             margin-bottom: 0;
         }
         h1 {
-            margin-block-start: ${theme.standardSpace}px;
+            margin-block-start: 0;
         }
         h1, p, ul, li, a {
             color: ${theme.white};
@@ -111,7 +111,7 @@ export const HeroPage = ({
 }) =>
     <Outer className={image1920x1080 ? "with_image" : (isServiceListPage ? "service_list_no_image" : "without_image")}>
         <Meta>
-            {breadcrumbs && <Breadcrumbs breadcrumbs={breadcrumbs} />}
+            {breadcrumbs && breadcrumbs.length > 0 && <Breadcrumbs breadcrumbs={breadcrumbs} />}
             {title && <Headline level={1} text={title}/>}
             {standfirst && <LeadParagraph text={standfirst}/>}
         </Meta>
