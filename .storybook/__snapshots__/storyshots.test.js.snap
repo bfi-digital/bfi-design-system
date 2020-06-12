@@ -1304,7 +1304,7 @@ exports[`Storyshots 2 All Components/Newsletter Sign Up Example 1`] = `
       method="post"
     >
       <label
-        className="sc-cHGsZl ccuEdm"
+        className="sc-cHGsZl iOeJJx"
       >
         Email
         <input
@@ -1320,7 +1320,7 @@ exports[`Storyshots 2 All Components/Newsletter Sign Up Example 1`] = `
         />
       </label>
       <button
-        className="sc-TOsTZ bQQsY"
+        className="sc-TOsTZ hoCeVX"
         type="submit"
       >
         Sign up
