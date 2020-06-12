@@ -3,7 +3,7 @@ import { Headline } from "../Headline"
 import styled from "styled-components"
 import theme from "../_theme"
 import PropTypes from "prop-types"
-import ProgressiveImage from "react-progressive-graceful-image"
+import LazyImage from "react-lazy-progressive-image"
 import { LeadParagraph } from "../LeadParagraph"
 
 const Outer = styled.section`
@@ -129,9 +129,12 @@ export const Hero = ({
     copyright,
     children
 }) =>
-    <ProgressiveImage
+    <LazyImage
         src={image1920x1080}
         placeholder={image192x108 ? image192x108 : image1920x1080}
+        visibilitySensorProps={{
+            partialVisibility: true
+        }}
     >
         {src => 
             <Outer 
@@ -147,7 +150,7 @@ export const Hero = ({
                 </Container>
             </Outer>
         }
-    </ProgressiveImage>
+    </LazyImage>
 
 
 Hero.propTypes = {

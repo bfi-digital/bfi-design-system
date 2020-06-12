@@ -673,28 +673,59 @@ export const everyComponent = () =>
                 <ImageGallery 
                     images={[
                         {
-                            url: "http://placehold.it/300x200",
+                            url: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1500/0/0/2020-03/girl-sweetvoiced_headtilted_04.jpg",
+                            thumb: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/500/0/0/2020-03/girl-sweetvoiced_headtilted_04.jpg",
+                            placeholder: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/50/0/0/2020-03/girl-sweetvoiced_headtilted_04.jpg",
                             alt: "Example image",
                             caption: "Example image"
                         },
                         {
-                            url: "http://placehold.it/300x300",
+                            url: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1500/0/0/2020-03/kiko's-saints_inside_04.jpg",
+                            thumb: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/500/0/0/2020-03/kiko's-saints_inside_04.jpg",
+                            placeholder: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/50/0/0/2020-03/kiko's-saints_inside_04.jpg",                            
                             alt: "Example image 2"
                         },
                         {
-                            url: "http://placehold.it/600x400",
+                            url: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1500/0/0/2020-03/sequin-in-a-blue-room_blurryface_01.jpg",
+                            thumb: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/500/0/0/2020-03/sequin-in-a-blue-room_blurryface_01.jpg",
+                            placeholder: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/50/0/0/2020-03/sequin-in-a-blue-room_blurryface_01.jpg",                            
                             alt: "Example image 3",
                             caption: "Example image 3"
                         },
                         {
-                            url: "http://placehold.it/1200x800",
+                            url: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1500/0/0/2020-04/sheer-qorma_heads_02.jpg",
+                            thumb: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/500/0/0/2020-04/sheer-qorma_heads_02.jpg",
+                            placeholder: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/50/0/0/2020-04/sheer-qorma_heads_02.jpg",                            
                             alt: "Example image 4",
                             caption: "Example image 4"
                         },
                         {
-                            url: "http://placehold.it/600x400",
+                            url: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1500/0/0/2020-04/sweet-mother_party_01.jpg",
+                            thumb: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/500/0/0/2020-04/sweet-mother_party_01.jpg",
+                            placeholder: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/50/0/0/2020-04/sweet-mother_party_01.jpg",                            
+                            alt: "Example image 4",
+                            caption: "Example image 4"
+                        },
+                        {
+                            url: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1500/0/0/2020-04/shear-avory-to-be-continued_phone_04.jpg",
+                            thumb: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/500/0/0/2020-04/shear-avory-to-be-continued_phone_04.jpg",
+                            placeholder: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/50/0/0/2020-04/shear-avory-to-be-continued_phone_04.jpg",                            
                             alt: "Example image 5",
                             caption: "Example image 5"
+                        },
+                        {
+                            url: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1500/0/0/2020-04/westworld-season-two-2018-evan-rachel-wood-james-marsden.jpeg",
+                            thumb: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/500/0/0/2020-04/westworld-season-two-2018-evan-rachel-wood-james-marsden.jpeg",
+                            placeholder: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/50/0/0/2020-04/westworld-season-two-2018-evan-rachel-wood-james-marsden.jpeg",
+                            alt: "Example image",
+                            caption: "Example image"
+                        },
+                        {
+                            url: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1500/0/0/2020-04/bacurau-2019-005-udo-kier-with-ladle-in-field-ORIGINAL.jpeg",
+                            thumb: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/500/0/0/2020-04/bacurau-2019-005-udo-kier-with-ladle-in-field-ORIGINAL.jpeg",
+                            placeholder: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/50/0/0/2020-04/bacurau-2019-005-udo-kier-with-ladle-in-field-ORIGINAL.jpeg",
+                            alt: "Example image",
+                            caption: "Example image"
                         }
                     ]}
                     galleryCaption="A gallery of images"

@@ -5,7 +5,7 @@ import { LinkSwitch as Link } from "../LinkSwitch"
 import { Headline } from "../Headline"
 import Arrow from "./arrow-right"
 import parse from "html-react-parser"
-import ProgressiveImage from "react-progressive-graceful-image"
+import LazyImage from "react-lazy-progressive-image"
 
 const Outer = styled.li`
     position: relative;
@@ -190,12 +190,12 @@ export const PageLink = ({
     >
         { withImages && 
             <PageImageContainer lessColumns={lessColumns}>
-                <ProgressiveImage
+                <LazyImage
                     src={image480x270}
                     placeholder={image48x27}
                 >
                     {src => <PageImage className="image" imageSrc={src} />}
-                </ProgressiveImage>
+                </LazyImage>
             </PageImageContainer>
         }
         {title && <Headline level={7} text={title} />}
