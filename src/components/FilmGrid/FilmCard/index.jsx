@@ -14,7 +14,8 @@ const Outer = styled(LinkSwitch)`
     color: ${theme.black};
     margin-bottom: ${theme.standardSpace}px;
     transition: box-shadow .3s;
-    
+    width: 100%;
+
     .filmcard_title {
         margin-top: 0;
         min-height: 35px;
@@ -22,17 +23,17 @@ const Outer = styled(LinkSwitch)`
         margin-bottom: 10px;
     }
 
-    @media screen and (min-width: ${theme.m}){
+    @media screen and (min-width: ${theme.s}){
         margin-right: 15px;
         margin-bottom: 15px;
 
-        max-width: calc(50% - 10px);
+        width: calc(50% - 10px);
         &:nth-of-type(even){
             margin-right: 0px;
         }
     }
-    @media screen and (min-width: ${theme.l}){
-        max-width: calc(33% - 10px);
+    @media screen and (min-width: ${theme.m}){
+        width: calc(33% - 10px);
         margin-bottom: 15px;
 
         &:nth-of-type(even){
@@ -96,12 +97,17 @@ const ImageContainer = styled.div`
     display: inline-block;
     width: 100%;
     height: auto;
+    padding-top: 56.25%;
+    overflow: hidden;
+    position: relative;
 `
 const Image = styled.img`
-    // border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
     height: auto;
-    display: block;
     -webkit-transition: all ease 0.3s;
     -moz-transition: all ease 0.3s;
     -o-transition: all ease 0.3s;

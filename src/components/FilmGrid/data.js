@@ -1,5 +1,15 @@
 export default [
     {
+        name: "Raging Bull",
+        image480x270: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/480/270/1/2020-05/image.jpeg",
+        image48x27: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/48/27/1/2020-05/image.jpeg",
+        imageAltText: "Example image",
+        channels: [
+        ],
+        url: "#",
+        uuid: "06347a64-5abd-59de-a6b9-be0d4a9e31e1456"
+    },
+    {
         name: "Parasite",
         image480x270: "https://player.bfi.org.uk/sites/default/files/styles/landscape_480x270/public/hero-images/parasite2-brighter.jpg",
         image48x27: "https://player.bfi.org.uk/sites/default/files/styles/landscape_480x270/public/hero-images/parasite2-brighter.jpg",

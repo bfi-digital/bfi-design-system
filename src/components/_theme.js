@@ -19,7 +19,7 @@ export default {
     lightFocus: "#F9DDE7",
 
     // breakpoints
-    s: "500px",
+    s: "550px",
     m: "768px", // tablets and larger
     l: "1040px", // desktops and larger
     xl: "1440px", // large desktops only
