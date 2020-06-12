@@ -20,7 +20,7 @@ const Outer = styled.div`
         margin-block-start: 1em;
     }
 
-    &.without_image {
+    &.service_list_no_image {
         background: ${theme.primary};
         padding-top: ${theme.standardSpace}px;
         padding-bottom: ${theme.standardSpace}px;
@@ -60,8 +60,6 @@ const Outer = styled.div`
                 color: ${theme.black};
             }
         }
-
-        
 
         &:before {
             content: "";
@@ -108,9 +106,10 @@ export const HeroPage = ({
     imageCopyright,
     title,
     standfirst,
-    breadcrumbs
+    breadcrumbs,
+    isServiceListPage = false
 }) =>
-    <Outer className={image1920x1080 ? "with_image" : "without_image"}>
+    <Outer className={image1920x1080 ? "with_image" : (isServiceListPage ? "service_list_no_image" : "without_image")}>
         <Meta>
             {breadcrumbs && <Breadcrumbs breadcrumbs={breadcrumbs} />}
             {title && <Headline level={1} text={title}/>}
@@ -154,5 +153,9 @@ HeroPage.propTypes = {
     /** 
     * The breadcrumb array
     **/
-    crumbs: PropTypes.array
+    crumbs: PropTypes.array,
+    /** 
+    * An optional definition to define if this is a service list page or a regular page
+    **/
+    isServiceListPage: PropTypes.bool
 }

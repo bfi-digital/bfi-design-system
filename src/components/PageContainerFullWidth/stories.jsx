@@ -456,6 +456,7 @@ export const serviceListPageExample = () =>
                     title="Find a fund to create films, TV or new formats of storytelling"
                     standfirst="If you’re an adventurous storyteller, we can help you with funding to create your film, TV, or emerging media like VR or AR."
                     breadcrumbs={crumbs}
+                    isServiceListPage={true}
                 />
                 <PageLinks links={[
                     {
@@ -598,6 +599,7 @@ export const everyComponent = () =>
                 title="Headline goes here"
                 standfirst="God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs. Do you have any idea how long it takes those cups to decompose. Yes, Yes, without the oops! Yes, Yes, without the oops! Drive us out of here!"
                 breadcrumbs={crumbs}
+                isServiceListPage={true}
             />
             <MainContent role="main">
                 <Text>
