@@ -132,6 +132,9 @@ export const Hero = ({
     <LazyImage
         src={image1920x1080}
         placeholder={image192x108 ? image192x108 : image1920x1080}
+        visibilitySensorProps={{
+            partialVisibility: true
+        }}
     >
         {src => 
             <Outer 

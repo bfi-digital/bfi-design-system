@@ -268,6 +268,9 @@ export const PromoBanner = ({
                     <LazyImage
                         src={image}
                         placeholder={placeholder}
+                        visibilitySensorProps={{
+                            partialVisibility: true
+                        }}
                     >
                         {src => 
                             <Image
