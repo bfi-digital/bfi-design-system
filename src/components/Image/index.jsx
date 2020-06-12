@@ -202,7 +202,7 @@ export const Image = ({
         <PlaceholderImg
             itemprop="image"
             isClickable={false}
-            src={placeholder}
+            src={placeholder ? placeholder : src}
             alt={alt ? alt : ""}
             ref={imgElement}
             width={imageWidth}

@@ -248,7 +248,7 @@ export const ImageGallery = ({
         <PlaceholderImg
             itemprop="image"
             isClickable={false}
-            src={images[openImage == 0 ? openImage : (openImage-1)].placeholder}
+            src={images[openImage == 0 ? openImage : (openImage-1)].placeholder ? images[openImage == 0 ? openImage : (openImage-1)].placeholder : images[openImage == 0 ? openImage : (openImage-1)].url}
             alt={images[openImage == 0 ? openImage : (openImage-1)].alt}
             ref={imgElement}
             width={imageWidth}
@@ -291,7 +291,7 @@ export const ImageGallery = ({
                             <PlaceholderImg
                                 itemprop="image"
                                 isClickable={false}
-                                src={img.placeholder}
+                                src={img.placeholder ? img.placeholder : img.url}
                                 alt={img.alt ? img.alt : ""}
                                 width={"100%"}
                             />

@@ -132,6 +132,7 @@ export const Hero = ({
     <ProgressiveImage
         src={image1920x1080}
         placeholder={image192x108}
+        placeholder={image192x108 ? image192x108 : image1920x1080}
     >
         {src => 
             <Outer 
