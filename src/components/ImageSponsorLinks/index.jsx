@@ -52,6 +52,10 @@ const Image = styled.img`
     display: block;
     width: auto;
     height: 75px;
+
+    @media screen and (min-width: ${theme.m}){
+        height: 100px;
+    }
 `
 
 const ConditionalWrapper = ({ condition, wrapper, children }) => 
