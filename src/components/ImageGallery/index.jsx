@@ -3,7 +3,7 @@ import styled, { createGlobalStyle } from "styled-components"
 import theme from "../_theme"
 import { Dialog } from "@reach/dialog"
 import PropTypes from "prop-types"
-import ProgressiveImage from "react-progressive-graceful-image"
+import LazyImage from "react-lazy-progressive-image"
 
 const DialogStyles = createGlobalStyle`
    :root {
@@ -299,7 +299,7 @@ export const ImageGallery = ({
  
                         return(
                             <Button key={img.url} onClick={() => setOpenImage(i+1)}>
-                                <ProgressiveImage
+                                <LazyImage
                                     src={img.thumb ? img.thumb : img.url}
                                     placeholder=""
                                 >
@@ -313,7 +313,7 @@ export const ImageGallery = ({
                                                 alt={img.alt ? img.alt : ""}
                                             />
                                     }}
-                                </ProgressiveImage>
+                                </LazyImage>
                             </Button>
                         )
                     })
@@ -329,7 +329,7 @@ export const ImageGallery = ({
                     onDismiss={() => setOpenImage(0)}
                 >
                     <LeftButton title="Previous image" onClick={() => moveLeft(true)}>&lsaquo;</LeftButton>
-                    <ProgressiveImage
+                    <LazyImage
                         src={images[openImage == 0 ? openImage : (openImage-1)].url}
                         placeholder=""
                     >
@@ -343,7 +343,7 @@ export const ImageGallery = ({
                                     alt={images[openImage == 0 ? openImage : (openImage-1)].alt}
                                 /> 
                         }}
-                    </ProgressiveImage>
+                    </LazyImage>
                     
                     {images[openImage == 0 ? openImage : (openImage-1)].caption &&
                         <Caption itemprop="caption description" white={true}>{images[openImage == 0 ? openImage : (openImage-1)].caption}</Caption>

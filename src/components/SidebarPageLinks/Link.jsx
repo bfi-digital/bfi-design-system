@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import theme from "../_theme"
 import { LinkSwitch as Link } from "../LinkSwitch"
-import ProgressiveImage from "react-progressive-graceful-image"
+import LazyImage from "react-lazy-progressive-image"
 
 const Outer = styled.li`
     margin-bottom: 20px;
@@ -116,14 +116,14 @@ export const PageLink = ({
     <Outer>
         <CallToAction external={external} className={external ? "external_link" : ""} rel={external ? "noreferrer" : ""} to={url} target={external ? "_blank" : "_self"}>
             <PageImageContainer>
-                <ProgressiveImage
+                <LazyImage
                     src={image}
                     placeholder={placeholder}
                 >
                     {src => 
                         <PageImage className="image" imageSrc={src} />
                     }
-                </ProgressiveImage>
+                </LazyImage>
             </PageImageContainer>
             
             <Heading className="pagelink_title">{title}</Heading>
