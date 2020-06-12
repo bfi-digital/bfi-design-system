@@ -30,23 +30,38 @@ const Outer = styled.div`
 
         @media screen and (min-width: ${theme.m}){
             margin-top: -${theme.standardSpace*2}px;
+            padding-top: ${theme.standardSpace*1.5}px;
+            padding-bottom: ${theme.standardSpace*1.5}px; 
         }
-
+        @media screen and (min-width: ${theme.l}){
+            margin-top: -${theme.standardSpace*2}px;
+            padding-top: ${theme.standardSpace*2}px;
+            padding-bottom: ${theme.standardSpace*2}px;        
+            margin-bottom: ${theme.standardSpace*1.5}px;
+        }
+        ol {
+            margin-bottom: ${theme.standardSpace}px;
+            @media screen and (min-width: ${theme.l}){
+                margin-bottom: ${theme.standardSpace*1.5}px;
+            }
+        }
         p {
             margin-bottom: 0;
         }
         h1 {
-            margin-block-start: 0.5em;
+            margin-block-start: ${theme.standardSpace}px;
         }
         h1, p, ul, li, a {
             color: ${theme.white};
         }
         a {
-            background-image: linear-gradient(120deg, ${theme.lightFocus} 0%, ${theme.lightFocus} 100%);
+            background-image: linear-gradient(120deg, ${theme.darkPink} 0%, ${theme.darkPink} 100%);
             &:hover, &:focus {
                 color: ${theme.black};
             }
         }
+
+        
 
         &:before {
             content: "";
