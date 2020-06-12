@@ -4,7 +4,7 @@ import theme from "../_theme"
 import PropTypes from "prop-types"
 import { Dialog } from "@reach/dialog"
 import VisuallyHidden from "@reach/visually-hidden"
-import LazyImage from "react-lazy-progressive-image";
+import LazyImage from "react-lazy-progressive-image"
 
 const Figure = styled.figure`
     width: 100%;

@@ -3,7 +3,7 @@ import styled, { createGlobalStyle } from "styled-components"
 import theme from "../_theme"
 import { Dialog } from "@reach/dialog"
 import PropTypes from "prop-types"
-import LazyImage from "react-lazy-progressive-image";
+import LazyImage from "react-lazy-progressive-image"
 
 const DialogStyles = createGlobalStyle`
    :root {

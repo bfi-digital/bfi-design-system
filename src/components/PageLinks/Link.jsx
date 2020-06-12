@@ -5,7 +5,7 @@ import { LinkSwitch as Link } from "../LinkSwitch"
 import { Headline } from "../Headline"
 import Arrow from "./arrow-right"
 import parse from "html-react-parser"
-import LazyImage from "react-lazy-progressive-image";
+import LazyImage from "react-lazy-progressive-image"
 
 const Outer = styled.li`
     position: relative;

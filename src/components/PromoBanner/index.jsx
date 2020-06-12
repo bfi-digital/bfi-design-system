@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import styled from "styled-components"
 import theme from "../_theme"
 import parse from "html-react-parser"
-import LazyImage from "react-lazy-progressive-image";
+import LazyImage from "react-lazy-progressive-image"
 
 import { Headline } from "../Headline"
 import { Button } from "../Button"

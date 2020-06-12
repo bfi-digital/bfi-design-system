@@ -3,7 +3,7 @@ import { Headline } from "../Headline"
 import styled from "styled-components"
 import theme from "../_theme"
 import PropTypes from "prop-types"
-import LazyImage from "react-lazy-progressive-image";
+import LazyImage from "react-lazy-progressive-image"
 import { LeadParagraph } from "../LeadParagraph"
 
 const Outer = styled.section`

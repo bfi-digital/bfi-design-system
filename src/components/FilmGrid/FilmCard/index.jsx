@@ -3,7 +3,7 @@ import styled from "styled-components"
 import theme from "../../_theme"
 import { LinkSwitch } from "../../LinkSwitch"
 import { Tag } from "../../Tag"
-import LazyImage from "react-lazy-progressive-image";
+import LazyImage from "react-lazy-progressive-image"
 import placeholderImage from "./placeholder.png"
 import placeholderImageSmall from "./placeholder-small.png"
 

@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import theme from "../_theme"
 import { LinkSwitch as Link } from "../LinkSwitch"
-import LazyImage from "react-lazy-progressive-image";
+import LazyImage from "react-lazy-progressive-image"
 
 const Outer = styled.li`
     margin-bottom: 20px;

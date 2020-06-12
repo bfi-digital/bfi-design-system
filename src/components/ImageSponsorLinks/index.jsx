@@ -2,7 +2,7 @@ import React from "react"
 import theme from "../_theme"
 import PropTypes from "prop-types"
 import styled from "styled-components"
-import LazyImage from "react-lazy-progressive-image";
+import LazyImage from "react-lazy-progressive-image"
 
 const Outer = styled.figure`
     display: block;

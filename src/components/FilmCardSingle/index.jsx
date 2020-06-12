@@ -5,7 +5,7 @@ import PropTypes from "prop-types"
 import { Headline } from "../Headline"
 import { Button } from "../Button"
 import { LinkSwitch as Link } from "../LinkSwitch"
-import LazyImage from "react-lazy-progressive-image";
+import LazyImage from "react-lazy-progressive-image"
 
 const Outer = styled.div`
     background: ${theme.lightest};
