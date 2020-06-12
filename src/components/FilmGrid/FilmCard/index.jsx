@@ -3,7 +3,7 @@ import styled from "styled-components"
 import theme from "../../_theme"
 import { LinkSwitch } from "../../LinkSwitch"
 import { Tag } from "../../Tag"
-import ProgressiveImage from "react-progressive-graceful-image"
+import LazyImage from "react-lazy-progressive-image";
 import placeholderImage from "./placeholder.png"
 import placeholderImageSmall from "./placeholder-small.png"
 
@@ -143,12 +143,12 @@ export const FilmCard = ({
         wrapper2={children => <Outer to={url}>{children}</Outer>}
     >
         <ImageContainer>
-            <ProgressiveImage
+            <LazyImage
                 src={image480x270 != "" ? image480x270 : placeholderImage}
                 placeholder={image480x270 != "" ? image48x27 : placeholderImageSmall}
             >
                 {src => <Image src={src} alt="" />}
-            </ProgressiveImage>
+            </LazyImage>
 
         </ImageContainer>
         <Title className="filmcard_title">{name}</Title>

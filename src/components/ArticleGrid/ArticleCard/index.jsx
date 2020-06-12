@@ -3,7 +3,7 @@ import styled from "styled-components"
 import theme from "../../_theme"
 import { LinkSwitch as Link } from "../../LinkSwitch"
 import { Headline } from "../../Headline"
-import ProgressiveImage from "react-progressive-graceful-image"
+import LazyImage from "react-lazy-progressive-image";
 
 const Outer = styled.li`
     position: relative;
@@ -169,12 +169,12 @@ export const ArticleCard = ({
             type && <CategoryTag>{type}</CategoryTag>
         }
         <PageImageContainer>
-            <ProgressiveImage
+            <LazyImage
                 src={image480x270}
                 placeholder={image48x27 ? image48x27 : image480x270}
             >
                 {src => <PageImage className="image" imageSrc={src} alt={imageAltText ? imageAltText : ""} />}
-            </ProgressiveImage>
+            </LazyImage>
         </PageImageContainer>
         <Headline level={6} text={title} />
         <Meta>

@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import styled from "styled-components"
 import theme from "../_theme"
 import parse from "html-react-parser"
-import ProgressiveImage from "react-progressive-graceful-image"
+import LazyImage from "react-lazy-progressive-image";
 
 import { Headline } from "../Headline"
 import { Button } from "../Button"
@@ -265,7 +265,7 @@ export const PromoBanner = ({
             :
             <>
                 {image ? 
-                    <ProgressiveImage
+                    <LazyImage
                         src={image}
                         placeholder={placeholder}
                     >
@@ -276,7 +276,7 @@ export const PromoBanner = ({
                                 pageWithSideBar={pageWithSideBar}
                             /> 
                         }
-                    </ProgressiveImage>
+                    </LazyImage>
                     : 
                     <RightButton>
                         {callToActionUrl && 

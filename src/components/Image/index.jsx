@@ -4,7 +4,7 @@ import theme from "../_theme"
 import PropTypes from "prop-types"
 import { Dialog } from "@reach/dialog"
 import VisuallyHidden from "@reach/visually-hidden"
-import ProgressiveImage from "react-progressive-graceful-image"
+import LazyImage from "react-lazy-progressive-image";
 
 const Figure = styled.figure`
     width: 100%;
@@ -216,7 +216,7 @@ export const Image = ({
                     condition={isClickable}
                     wrapper={children => <Button onClick={() => setOpenImage(true)}>{children}</Button>}
                 >
-                    <ProgressiveImage
+                    <LazyImage
                         src={src}
                         placeholder=""
                     >
@@ -231,7 +231,7 @@ export const Image = ({
                                     alt={alt ? alt : ""}
                                 />
                         }}
-                    </ProgressiveImage>
+                    </LazyImage>
                     
                 </ConditionalWrapper>
                 {caption && <Figcaption itemprop="caption description">{caption}</Figcaption>}
@@ -249,7 +249,7 @@ export const Image = ({
                         <VisuallyHidden>
                             <button onClick={() => setOpenImage(false)}>Close</button>
                         </VisuallyHidden>
-                        <ProgressiveImage
+                        <LazyImage
                             src={src}
                             placeholder=""
                         >
@@ -263,7 +263,7 @@ export const Image = ({
                                         alt={alt ? alt : ""}
                                     />
                             }}
-                        </ProgressiveImage> 
+                        </LazyImage> 
                           
                         {caption && <Figcaption itemprop="caption description" white={true}>{caption}</Figcaption>}
                         {copyright && <Small itemprop="copyrightHolder" white={true} >&copy; {copyright}</Small>}
