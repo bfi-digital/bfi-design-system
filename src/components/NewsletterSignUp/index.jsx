@@ -10,7 +10,7 @@ const newsletters = [
         form: "191722FC90141D02184CB1B62AB3DC26D57AD7AD0DF253BE15DD122C605B740244DFF1ADDEE1A8DA861127EDFD99BF281A7016BD9F175EAF91CB858CC76D303F",
         title: "Get the latest from the BFI",
         inputName: "cm-ydyddhy-ydyddhy",
-        desc: "Sign up for BFI news, features, video and podcasts"
+        desc: "Sign up for BFI news, features, videos and podcasts"
     },
     {
         form: "191722FC90141D02184CB1B62AB3DC26E20794FAFA78D9FA60ACCB19C164E45AE42D924DFE82298E9B8615EDF173C2AC653556BB282E9A62EE94B0F7297AF9AA",
@@ -44,7 +44,7 @@ const newsletters = [
     },
     {
         form: "191722FC90141D02184CB1B62AB3DC266C24093B2CB484B868889D98D3EF6CA5D0C132AD94A492E99475E96B8760E01D1D4AFECD893CA6C8CF7A3FA0B1961E2C",
-        title: "Sign up to BFI Industry emails",
+        title: "Sign up to BFI industry emails",
         inputName: "cm-ydlrldu-ydlrldu",
         desc: "Work in film or TV? Get the latest industry news and updates"
     },
@@ -68,7 +68,7 @@ const newsletters = [
     },
     {
         form: "191722FC90141D02184CB1B62AB3DC261B697C792BBA0DF49937A43CEB956A5B90AC27E4B65D1E775CB63E9F8D3310CF4B5BC15618F80CF3868E616AB50967F4",
-        title: "BFI Player: See Something Different",
+        title: "BFI Player: see something different",
         inputName: "cm-skdml-skdml",
         desc: "Get updates on the latest rentals, subscription classics and free archive"
     },
