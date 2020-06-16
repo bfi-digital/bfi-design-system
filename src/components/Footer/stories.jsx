@@ -14,19 +14,19 @@ export const normal = () =>
         copyrightLinks={[
             {
                 title: "Cookies & privacy",
-                url: "#"
+                url: "#1"
             },
             {
                 title: "Terms & conditions",
-                url: "#"
+                url: "#2"
             },
             {
                 title: "Accessibility",
-                url: "#"
+                url: "#3"
             },
             {
                 title: "Help & FAQs",
-                url: "#"
+                url: "#4"
             }
         ]}
         copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"

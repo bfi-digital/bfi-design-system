@@ -213,6 +213,10 @@ Header.propTypes = {
 	 **/
     navItems: PropTypes.array,
     /** 
+	 * An array of the quick links that will be displayed alongside the top level pillars. 
+	 **/
+    quickLinks: PropTypes.array,
+    /** 
 	 * A boolean to determine if the header is set to opaque or transparent - defaulting to false, it should only be set to true if the page/post contains a hero element.
 	 **/
     overlay: PropTypes.bool

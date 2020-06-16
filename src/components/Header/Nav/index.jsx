@@ -3,6 +3,7 @@ import { LinkSwitch as Link } from "../../LinkSwitch"
 import theme from "../../_theme"
 import styled from "styled-components"
 import logo from "../logo-black.svg"
+import PropTypes from "prop-types"
 
 const Outer = styled.nav`
     display: none;
@@ -394,3 +395,31 @@ const Nav = ({
 }
 
 export default Nav
+
+
+Nav.propTypes = {
+    /** 
+	 * An array of all the navigation items on the BFI website. Each element of the array contains a top level pillar with a `title` and a `url` field and a `children` array, containing all the sub pages of this pillar which also have a `title` and `url field. 
+	 **/
+    navItems: PropTypes.array,
+    /** 
+	 * A number to say if the current menu is selcted.
+	 **/
+    selected: PropTypes.number,
+    /** 
+	 * A function to set which nav is selected.
+	 **/
+    setSelected: PropTypes.func,
+    /** 
+	 * A boolean to determine if the header is overlaid
+	 **/
+    isOverlaid: PropTypes.bool,
+    /** 
+	 * A boolean to determine if the header is currently sticky to the top of the page
+	 **/
+    isSticky: PropTypes.bool
+}
+
+Nav.defaultProps = {
+    overlay: false
+}

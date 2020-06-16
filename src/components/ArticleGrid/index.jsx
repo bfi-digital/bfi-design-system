@@ -101,7 +101,7 @@ const Articles = styled.ul`
                     margin-right: 0px;
                 }
             }
-            @media screen and (min-width: ${theme.l}){
+            @media screen and (min-width: ${theme.m}){
                 &:nth-of-type(3n) {
                     margin-right: ${theme.standardSpace}px;
                 }
@@ -122,7 +122,7 @@ const Articles = styled.ul`
             @media screen and (min-width: ${theme.m}){
                 margin-bottom: 35px;
             }
-            @media screen and (min-width: ${theme.l}){
+            @media screen and (min-width: ${theme.m}){
                 width: calc(66.666% - 8.332px);
                 margin-right: ${theme.standardSpace}px;
             }

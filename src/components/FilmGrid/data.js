@@ -7,7 +7,7 @@ export default [
         channels: [
         ],
         url: "#",
-        uuid: "06347a64-5abd-59de-a6b9-be0d4a9e31e1456"
+        uuid: "06347a64-5abd-59de-a6b9-be0d4a9e31e145336"
     },
     {
         name: "Parasite",

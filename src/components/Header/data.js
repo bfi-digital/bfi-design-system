@@ -99,7 +99,7 @@ export default [
         ]
     },
     {
-        title: "Learn & Make",
+        title: "Learning & Training",
         url: "/iframe.html?id=pattern-library-page-examples-1-watch-discover--1-landing-page",
         highlightText: "Support us",
         highlightURL: "/",

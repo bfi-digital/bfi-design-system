@@ -44,12 +44,12 @@ import { Text } from "../Text"
 const pageLinksData = [
     {
         title: "BFI London Film Festival",
-        url: "#",
+        url: "#1",
         image: "https://www.bfi.org.uk/sites/bfi.org.uk/files/styles/16x9_small/public/sitestructure/lff-2019-1000x750.jpg?itok=vsVDKGIh"
     },
     {
         title: "BFI Flare: London LGBTIQ+ Film Festival",
-        url: "#",
+        url: "#2",
         image: "https://www.bfi.org.uk/sites/bfi.org.uk/files/styles/16x9_small/public/sitestructure/flare-2020-artwork-1000-750-v1.jpg?itok=0oZOJp2r"
     }
 ]
@@ -62,17 +62,17 @@ const days = [
             {
                 id: "10101",
                 time: "3:30pm",
-                url: "#"
+                url: "#3"
             },
             {
                 id: "2222",
                 time: "6:30pm",
-                url: "#"
+                url: "#4"
             },
             {
                 id: "333",
                 time: "8:45pm",
-                url: "#",
+                url: "#5",
                 soldOut: true
             }
         ]
@@ -84,13 +84,13 @@ const days = [
             {
                 id: "444",
                 time: "3:30pm",
-                url: "#",
+                url: "#6",
                 soldOut: true
             },
             {
                 id: "555",
                 time: "6:30pm",
-                url: "#"
+                url: "#7"
             }
         ]
     },
@@ -101,13 +101,13 @@ const days = [
             {
                 id: "666",
                 time: "3:30pm",
-                url: "#",
+                url: "#8",
                 soldOut: true
             },
             {
                 id: "777",
                 time: "6:30pm",
-                url: "#"
+                url: "#9"
             }
         ]
     },
@@ -118,13 +118,13 @@ const days = [
             {
                 id: "888",
                 time: "3:30pm",
-                url: "#",
+                url: "#10",
                 soldOut: true
             },
             {
                 id: "999",
                 time: "6:30pm",
-                url: "#",
+                url: "#11",
                 soldOut: true
             }
         ]
@@ -159,19 +159,19 @@ export const normalPage = () =>
             copyrightLinks={[
                 {
                     title: "Cookies & privacy",
-                    url: "#"
+                    url: "#1"
                 },
                 {
                     title: "Terms & conditions",
-                    url: "#"
+                    url: "#2"
                 },
                 {
                     title: "Accessibility",
-                    url: "#"
+                    url: "#3"
                 },
                 {
                     title: "Help & FAQs",
-                    url: "#"
+                    url: "#4"
                 }
             ]}
             copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"
@@ -204,19 +204,19 @@ export const normalPageWithHeroImage = () =>
             copyrightLinks={[
                 {
                     title: "Cookies & privacy",
-                    url: "#"
+                    url: "#1"
                 },
                 {
                     title: "Terms & conditions",
-                    url: "#"
+                    url: "#2"
                 },
                 {
                     title: "Accessibility",
-                    url: "#"
+                    url: "#3"
                 },
                 {
                     title: "Help & FAQs",
-                    url: "#"
+                    url: "#4"
                 }
             ]}
             copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"
@@ -346,19 +346,19 @@ export const actionPage = () =>
             copyrightLinks={[
                 {
                     title: "Cookies & privacy",
-                    url: "#"
+                    url: "#1"
                 },
                 {
                     title: "Terms & conditions",
-                    url: "#"
+                    url: "#2"
                 },
                 {
                     title: "Accessibility",
-                    url: "#"
+                    url: "#3"
                 },
                 {
                     title: "Help & FAQs",
-                    url: "#"
+                    url: "#4"
                 }
             ]}
             copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"
@@ -475,19 +475,19 @@ export const ArticleFeatureExample = () =>
             copyrightLinks={[
                 {
                     title: "Cookies & privacy",
-                    url: "#"
+                    url: "#1"
                 },
                 {
                     title: "Terms & conditions",
-                    url: "#"
+                    url: "#2"
                 },
                 {
                     title: "Accessibility",
-                    url: "#"
+                    url: "#3"
                 },
                 {
                     title: "Help & FAQs",
-                    url: "#"
+                    url: "#4"
                 }
             ]}
             copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"
@@ -559,19 +559,19 @@ export const ArticleRecommendsExample = () =>
             copyrightLinks={[
                 {
                     title: "Cookies & privacy",
-                    url: "#"
+                    url: "#1"
                 },
                 {
                     title: "Terms & conditions",
-                    url: "#"
+                    url: "#2"
                 },
                 {
                     title: "Accessibility",
-                    url: "#"
+                    url: "#3"
                 },
                 {
                     title: "Help & FAQs",
-                    url: "#"
+                    url: "#4"
                 }
             ]}
             copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"
@@ -644,19 +644,19 @@ export const ArticleVideoExample = () =>
             copyrightLinks={[
                 {
                     title: "Cookies & privacy",
-                    url: "#"
+                    url: "#1"
                 },
                 {
                     title: "Terms & conditions",
-                    url: "#"
+                    url: "#2"
                 },
                 {
                     title: "Accessibility",
-                    url: "#"
+                    url: "#3"
                 },
                 {
                     title: "Help & FAQs",
-                    url: "#"
+                    url: "#4"
                 }
             ]}
             copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"
@@ -741,19 +741,19 @@ export const ArticleAnnouncementExample = () =>
             copyrightLinks={[
                 {
                     title: "Cookies & privacy",
-                    url: "#"
+                    url: "#1"
                 },
                 {
                     title: "Terms & conditions",
-                    url: "#"
+                    url: "#2"
                 },
                 {
                     title: "Accessibility",
-                    url: "#"
+                    url: "#3"
                 },
                 {
                     title: "Help & FAQs",
-                    url: "#"
+                    url: "#4"
                 }
             ]}
             copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"
@@ -895,19 +895,19 @@ export const ArticleListExampleWithUpdatedDate = () =>
             copyrightLinks={[
                 {
                     title: "Cookies & privacy",
-                    url: "#"
+                    url: "#1"
                 },
                 {
                     title: "Terms & conditions",
-                    url: "#"
+                    url: "#2"
                 },
                 {
                     title: "Accessibility",
-                    url: "#"
+                    url: "#3"
                 },
                 {
                     title: "Help & FAQs",
-                    url: "#"
+                    url: "#4"
                 }
             ]}
             copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"
@@ -1022,19 +1022,19 @@ export const ArticleSightAndSoundExample = () =>
             copyrightLinks={[
                 {
                     title: "Cookies & privacy",
-                    url: "#"
+                    url: "#1"
                 },
                 {
                     title: "Terms & conditions",
-                    url: "#"
+                    url: "#2"
                 },
                 {
                     title: "Accessibility",
-                    url: "#"
+                    url: "#3"
                 },
                 {
                     title: "Help & FAQs",
-                    url: "#"
+                    url: "#4"
                 }
             ]}
             copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"
@@ -1148,19 +1148,19 @@ export const ArticleSightAndSoundExampleNoImage = () =>
             copyrightLinks={[
                 {
                     title: "Cookies & privacy",
-                    url: "#"
+                    url: "#1"
                 },
                 {
                     title: "Terms & conditions",
-                    url: "#"
+                    url: "#2"
                 },
                 {
                     title: "Accessibility",
-                    url: "#"
+                    url: "#3"
                 },
                 {
                     title: "Help & FAQs",
-                    url: "#"
+                    url: "#4"
                 }
             ]}
             copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"
@@ -1283,19 +1283,19 @@ export const FilmPage = () =>
             copyrightLinks={[
                 {
                     title: "Cookies & privacy",
-                    url: "#"
+                    url: "#1"
                 },
                 {
                     title: "Terms & conditions",
-                    url: "#"
+                    url: "#2"
                 },
                 {
                     title: "Accessibility",
-                    url: "#"
+                    url: "#3"
                 },
                 {
                     title: "Help & FAQs",
-                    url: "#"
+                    url: "#4"
                 }
             ]}
             copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"
@@ -1357,19 +1357,19 @@ export const sightAndSoundPageExample = () =>
             copyrightLinks={[
                 {
                     title: "Cookies & privacy",
-                    url: "#"
+                    url: "#1"
                 },
                 {
                     title: "Terms & conditions",
-                    url: "#"
+                    url: "#2"
                 },
                 {
                     title: "Accessibility",
-                    url: "#"
+                    url: "#3"
                 },
                 {
                     title: "Help & FAQs",
-                    url: "#"
+                    url: "#4"
                 }
             ]}
             copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"
@@ -1703,19 +1703,19 @@ export const everyComponent = () =>
             copyrightLinks={[
                 {
                     title: "Cookies & privacy",
-                    url: "#"
+                    url: "#1"
                 },
                 {
                     title: "Terms & conditions",
-                    url: "#"
+                    url: "#2"
                 },
                 {
                     title: "Accessibility",
-                    url: "#"
+                    url: "#3"
                 },
                 {
                     title: "Help & FAQs",
-                    url: "#"
+                    url: "#4"
                 }
             ]}
             copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"
