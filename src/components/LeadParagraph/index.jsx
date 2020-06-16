@@ -27,9 +27,7 @@ const Outer = styled.p`
 export const LeadParagraph = ({
     text
 }) =>
-    <Outer>
-        {text}
-    </Outer>
+    <Outer dangerouslySetInnerHTML={{__html: text }} />
 
 LeadParagraph.propTypes = {
     /** 
