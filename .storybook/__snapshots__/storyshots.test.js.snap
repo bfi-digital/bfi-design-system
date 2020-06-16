@@ -1271,9 +1271,12 @@ exports[`Storyshots 2 All Components/Lead paragraph Normal 1`] = `
 >
   <p
     className="sc-caSCKo eOduQd"
-  >
-    We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough, they won't want it anymore! We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough, they won't want it anymore!
-  </p>
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough, they won't want it anymore! We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough, they won't want it anymore!",
+      }
+    }
+  />
 </div>
 `;
 
@@ -1294,7 +1297,7 @@ exports[`Storyshots 2 All Components/Newsletter Sign Up Example 1`] = `
       Get the latest from the BFI
     </p>
     <p>
-      Sign up for BFI news, features, video and podcasts
+      Sign up for BFI news, features, videos and podcasts
     </p>
     <form
       action="https://www.createsend.com/t/subscribeerror?description="
