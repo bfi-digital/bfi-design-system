@@ -535,3 +535,208 @@ import { QuickFacts } from "../../../components/QuickFacts"
         </>
     </Story>
 </Preview>
+
+
+
+<Preview>
+    <Story name="3.2 Film Page Example no image">
+        <>
+            <Header navItems={navItems} quickLinks={quickLinksData} overlay={true} />
+            <Hero
+                withHeader
+                headline="Who’s Gonna Love Me Now?"
+                standfirst="A heartwarmer about a London-based man who is stuggling to reconcile with his Israeli family, while finding a new ‘family’ in the London Gay Men’s Chorus."
+            >
+                <Actions>
+                    <Button url="/" level={1} colorScheme={1}>Buy tickets</Button>
+                    <PlayButton url="https://player.bfi.org.uk/subscription/film/watch-whos-gonna-love-me-now-2016-online" external={true} level={1} colorScheme={1}>Watch on BFI Player</PlayButton>
+                </Actions>
+            </Hero>
+            <WithSidebarWrapper>           
+                <WithSidebarMainContent role="main">
+                    <LeadParagraph text="Starring <strong>Robert De Niro</strong> as the middleweight boxer Jake La Motta, Scorsese’s biopic is widely acknowledged as one of the greatest films of the 1980s." />
+                    <Text>
+                        <p>Saar is an Israeli living in London, driven away from his Kibbutz by his family’s response to his homosexuality and HIV-positive status, but also by his own fear of rejection. The lure of home and family is deep-rooted, however, and although he’s made a new life for himself within the close-knit, loving community of London Gay Men’s Chorus, he yearns for acceptance from his parents and siblings, in particular his stern father.</p>
+                        <p>Following Saar in the UK and his Israeli-based family over many years, the Heymann Brothers skilfully construct an intimate and nuanced portrait of a man growing up and coming to terms both with himself and his family, just as they do him. It’s a tender but affirmative exploration of the LGBT migrant experience and an assertion that minds and attitudes only change through communication.</p>
+                    </Text>
+                    
+                    <Headline 
+                        level={2} 
+                        text="Book tickets at BFI Southbank"
+                    />
+                    <FilmShowingGrid showings={[
+                        {
+                            id: "1",
+                            date: "15th June",
+                            times: [
+                                {
+                                    id: "10101",
+                                    time: "3:30pm",
+                                    url: "#"
+                                },
+                                {
+                                    id: "2222",
+                                    time: "6:30pm",
+                                    url: "#"
+                                },
+                                {
+                                    id: "333",
+                                    time: "8:45pm",
+                                    url: "#",
+                                    soldOut: true
+                                }
+                            ]
+                        },
+                        {
+                            id: "2",
+                            date: "18th June",
+                            times: [
+                                {
+                                    id: "444",
+                                    time: "3:30pm",
+                                    url: "#",
+                                    soldOut: true
+                                },
+                                {
+                                    id: "555",
+                                    time: "6:30pm",
+                                    url: "#"
+                                }
+                            ]
+                        },
+                        {
+                            id: "3",
+                            date: "20th June",
+                            times: [
+                                {
+                                    id: "666",
+                                    time: "3:30pm",
+                                    url: "#",
+                                    soldOut: true
+                                },
+                                {
+                                    id: "777",
+                                    time: "6:30pm",
+                                    url: "#"
+                                }
+                            ]
+                        },
+                        {
+                            id: "4",
+                            date: "26th June",
+                            times: [
+                                {
+                                    id: "888",
+                                    time: "3:30pm",
+                                    url: "#"
+                                },
+                                {
+                                    id: "999",
+                                    time: "6:30pm",
+                                    url: "#"
+                                }
+                            ]
+                        },
+                    ]} />
+                    <Button to="#21" level={3}>All showings</Button>
+                </WithSidebarMainContent>
+                <Sidebar>
+                    <QuickFacts
+                        facts={[
+                            {
+                                label: "Country",
+                                value: "United Kingdom"
+                            },
+                            {
+                                label: "Directed, written & produced by",
+                                value: "Tomer Heymann and Barak Heymann"
+                            },
+                            {
+                                label: "Genre",
+                                value: "Documentary"
+                            },
+                            {
+                                label: "Featuring",
+                                value: "Saar Maoz, John Moysen, Elimelekh, Alon, Katri, Reut"
+                            },
+                        ]}
+                    />
+                    <AdvertisingContainer>
+                        <div style={{width: "100%", height: "250px", background: "grey"}}></div>
+                    </AdvertisingContainer>
+                </Sidebar>
+            </WithSidebarWrapper>
+            <WithSidebarWrapper>
+                <WithSidebarMainContent role="main">  
+                    <FilterableArticles
+                        limit={3}
+                        includeHighlight={false}
+                        optionalTitle="Articles mentioning Who’s Gonna Love Me Now?"
+                        greyBackground={true}
+                        optionalCTATitle="See more articles"
+                        optionalCTALink="/"
+                        articles={[
+                            {
+                                title: "BFI Recommends: Who's Gonna Love Me Now?",
+                                image480x270: "https://www.bfi.org.uk/sites/bfi.org.uk/files/styles/api_16x9_thumb/public/news/whos-gonna-love-me-now-2016-003-saar-bowing-head-by-israeli-flag-1000x750.jpeg?itok=lXYQQz_5",
+                                image48x27: "https://www.bfi.org.uk/sites/bfi.org.uk/files/styles/api_16x9_thumb/public/news/whos-gonna-love-me-now-2016-003-saar-bowing-head-by-israeli-flag-1000x750.jpeg?itok=lXYQQz_5",
+                                imageAltText: "Example image",
+                                author: "Ros Cranston",
+                                date: "22 November 2019",
+                                url: "/iframe.html?id=pattern-library-page-examples-1-watch-discover--2-article-example",
+                                uuid: "d1a4a7ac-44fa-56b3-9522-b865a49080c212123222222",
+                                category: "BFI Recommends"
+                            },
+                            {
+                                title: "Two selected after BFI Film Fund pitching session",
+                                image480x270: "https://www.bfi.org.uk/sites/bfi.org.uk/files/styles/full/public/image/pussy-riot-a-punk-prayer-2012-001-performance.jpg?itok=NcPMfp_0",
+                                imageAltText: "Example image",
+                                url: "https://www.bfi.org.uk/news-opinion/news-bfi/announcements/two-selected-after-bfi-film-fund-pitching-session",
+                                uuid: "d1a4a7ac-44fa-56b3-9522-b865a49080c21212113",
+                                external: true
+                            },
+                            {
+                                title: "10 great Jewish LGBT films",
+                                image480x270: "https://www.bfi.org.uk/sites/bfi.org.uk/files/styles/full/public/image/whos-gonna-love-me-now-2016-001-blue-topped-men.jpg?itok=ab7xHG24",
+                                imageAltText: "Example image",
+                                url: "https://www.bfi.org.uk/news-opinion/news-bfi/lists/10-great-jewish-gay-lesbian-films",
+                                uuid: "d1a4a7ac-44fa-56b3-9522-b865a49080c212923",
+                                category: "10 Great",
+                                external: true
+                            }
+                        ]} 
+                    />
+                    <Headline 
+                        level={4} 
+                        text="Promoted links from around the web"
+                    />
+                    <AdvertisingContainer withCaption={false}>
+                        <div style={{width: "1020px", height: "400px", background: "grey"}}></div>
+                    </AdvertisingContainer>
+                </WithSidebarMainContent>
+            </WithSidebarWrapper>
+            <Footer
+                menus={footerMenus}
+                copyrightLinks={[
+                    {
+                        title: "Cookies & privacy",
+                        url: "#1"
+                    },
+                    {
+                        title: "Terms & conditions",
+                        url: "#2"
+                    },
+                    {
+                        title: "Accessibility",
+                        url: "#3"
+                    },
+                    {
+                        title: "Help & FAQs",
+                        url: "#4"
+                    }
+                ]}
+                copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"
+            />
+        </>
+    </Story>
+</Preview>

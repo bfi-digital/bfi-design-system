@@ -22,18 +22,7 @@ const Outer = styled.section`
     display: flex;
     align-items: flex-end;
     margin-top: ${props => props.withHeader ? "175px" : "0px"};
-
-    h1 {
-        color: ${theme.white};
-        max-width: calc( 0.65 * ${theme.m});
-        text-shadow: 0px 0px 30px ${theme.black}50;
-        margin-bottom: ${theme.standardSpace}px;
-    }
-    p {
-        color: ${theme.white};
-        margin-top: 0;
-    }
-
+    
     a {
         color: ${theme.black} !important;
         svg {
@@ -46,6 +35,67 @@ const Outer = styled.section`
             }
         }
     }
+
+    &.with_image {
+        h1 {
+            color: ${theme.white};
+            max-width: calc( 0.65 * ${theme.m});
+            text-shadow: 0px 0px 30px ${theme.black}50;
+            margin-bottom: ${theme.standardSpace}px;
+        }
+        p {
+            color: ${theme.white};
+            margin-top: 0;
+        }
+    }
+
+
+    &.hero_without_image {
+        background: ${theme.primary};
+        padding-bottom: ${theme.standardSpace}px;
+        margin-bottom: ${theme.standardSpace}px;
+        position: relative; 
+        padding-top: ${theme.standardSpace}px;
+
+        @media screen and (min-width: ${theme.m}){
+            padding-top: 175px;
+            padding-bottom: ${theme.standardSpace*1.5}px; 
+        }
+        @media screen and (min-width: ${theme.l}){
+            padding-top: 200px;
+            padding-bottom: ${theme.standardSpace*2}px;        
+            margin-bottom: ${theme.standardSpace*1.5}px;
+        }
+        
+        h1, p, ul, li, a {
+            color: ${theme.white};
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: -9999px;
+            right: 0;
+            box-shadow: 9999px 0 0 ${theme.primary};
+            border-left: 9999px solid ${theme.primary};
+            z-index: -1;
+        }
+
+        a {
+            &:after {
+                background: ${theme.darkPink};
+            }
+            &:hover, &:focus {
+                color: ${theme.black} !important;
+                svg {
+                    fill: ${theme.black} !important;
+                }
+            }
+        }
+    }
+
 
     @media screen and (min-width: ${theme.m}){
         margin-top: 0px;
@@ -140,8 +190,9 @@ export const Hero = ({
             <Outer 
                 image={src} 
                 withHeader={withHeader}
+                className={image1920x1080 ? "with_image" : "hero_without_image"}
             >
-                <InnerGradient />
+                {image1920x1080 && <InnerGradient /> }
                 <Container>
                     {headline && <Headline level={0} text={headline}/>}
                     {standfirst && <LeadParagraph text={standfirst}/>}
