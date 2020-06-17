@@ -207,7 +207,7 @@ const Video = styled.div`
     @media screen and (min-width: ${theme.l}){
         margin-right: 0px;
         margin-left: 0px;
-        max-width: ${props => props.pageWithSideBar ? "100%" : "50%"};
+        max-width: ${props => props.pageWithSideBar ? "100%" : "60%"};
     }
     iframe {
         position: absolute;
@@ -241,7 +241,7 @@ export const PromoBanner = ({
         backgroundColor={backgroundColor}
         pageWithSideBar={pageWithSideBar}
     >
-        <Inner className={image || oembedObject ? "with_image" : "without_image"} reversed={reversed} pageWithSideBar={pageWithSideBar}>
+        <Inner className={oembedObject ? "with_image with_video" : (image ? "with_image" : "without_image")} reversed={reversed} pageWithSideBar={pageWithSideBar}>
             {secondImage && 
                 <SecondImage 
                     src={secondImage} 
