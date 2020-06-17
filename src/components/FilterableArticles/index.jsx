@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import theme from "../_theme"
 import { ArticleGrid } from "../ArticleGrid"
 import { FilterLinks } from "../FilterLinks"
 import { Button } from "../Button"
@@ -7,6 +8,10 @@ import PropTypes from "prop-types"
 
 const Outer = styled.div`
     margin-bottom: 50px;
+
+    h2 {
+        margin-bottom: ${theme.standardSpace}px;
+    }
 `
 
 const CentredButton = styled(Button)`

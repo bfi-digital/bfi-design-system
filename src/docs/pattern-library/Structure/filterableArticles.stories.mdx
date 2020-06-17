@@ -98,6 +98,20 @@ Due to this component requiring connection with the front end framework to pull 
 </Preview>
 
 <Preview>
+    <Story name="Limited articles with grey background">
+        <FilterableArticles
+            articles={demoArticles.slice(0,3)}
+            limit={3}
+            includeHighlight={false}
+            greyBackground
+            optionalTitle="Other things to explore"
+            optionalCTALink="/"
+            optionalCTATitle="See more"
+        />
+    </Story>
+</Preview>
+
+<Preview>
     <Story name="No articles found">
         <FilterableArticles
             filters={[
