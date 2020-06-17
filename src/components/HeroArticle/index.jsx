@@ -119,7 +119,7 @@ export const HeroArticle = ({
                     <Image
                         alt={imageAltText ? imageAltText : ""}
                         src={image1920x1080}
-                        placeholder={image192x108}
+                        placeholder={image192x108 ? image192x108 : image1920x1080}
                         copyright={imageCopyright}
                     />
                 }

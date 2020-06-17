@@ -87,7 +87,6 @@ const Outer = styled.div`
     margin-top: ${theme.standardSpace}px;
     padding: 15px;
     display: block;
-    max-width: ${theme.l};
     text-align: left;
 
 

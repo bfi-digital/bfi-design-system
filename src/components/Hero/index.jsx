@@ -18,7 +18,7 @@ const Outer = styled.section`
     padding-bottom: 25px;
     background-image: url("${props => props.image}");
     background-size: cover;
-    background-position: center center;
+    background-position: top center;
     display: flex;
     align-items: flex-end;
     margin-top: ${props => props.withHeader ? "175px" : "0px"};
@@ -46,6 +46,7 @@ const Outer = styled.section`
         p {
             color: ${theme.white};
             margin-top: 0;
+            text-shadow: 0px 0px 30px ${theme.black}50;
         }
     }
 

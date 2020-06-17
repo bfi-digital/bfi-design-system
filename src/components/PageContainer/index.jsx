@@ -72,7 +72,9 @@ export const MaxWidth = styled.article`
 `
 
 export const Sidebar = styled.aside`
-
+    & section:first-child {
+        margin-top: 0;
+    }
     .advertising_container {
         max-width: 320px;
     }
