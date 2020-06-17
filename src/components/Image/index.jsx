@@ -7,20 +7,33 @@ import VisuallyHidden from "@reach/visually-hidden"
 import LazyImage from "react-lazy-progressive-image"
 
 const Figure = styled.figure`
-    width: 100%;
+    width: ${props => props.isSmall ? "40%" : "100%"};
+    float: ${props => props.isSmall && props.side ? props.side : null};
     height: auto;
     margin-left: 0;
     margin-right: 0;
+
+    margin: ${props => {
+        if(props.isSmall && props.side === "left") return "10px 20px 20px 0px"
+        if(props.isSmall && props.side === "right") return "10px 0px 20px 20px"
+        return "0px"
+    }};
     
     @media screen and (min-width: ${theme.m}){
         float: ${props => props.side ? props.side : null};
         max-width: ${props => props.side ? "40%" : "100%"};
-        width: ${props => props.side ? "auto" : "100%"};
+        width: ${props => props.side ? (props.isSmall ? "20%" : "40%") : "100%"};
         margin: ${props => {
         if(props.side === "left") return "20px 40px 40px 0px"
         if(props.side === "right") return "20px 0px 40px 40px"
         return "20px 0px"
     }};
+    }
+    @media screen and (min-width: ${theme.l}){
+        width: ${props => props.side ? (props.isSmall ? "20%" : "40%") : "100%"};
+    }
+    @media screen and (min-width: ${theme.xl}){
+        width: ${props => props.side ? (props.isSmall ? "20%" : "40%") : "100%"};
     }
 `
 
@@ -64,6 +77,7 @@ const Button = styled.button`
             mix-blend-mode: multiply;
         }
     }
+
     @media screen and (min-width: ${theme.m}){
         margin-right: 10px;
         /* width: calc( 33.33% - 6.67px); */
@@ -174,72 +188,49 @@ const StyledImage = styled.img`
     width: 100%;
     height: auto;
 `
-const PlaceholderImg = styled.img`
-    width: ${props => props.width}px;
-    height: auto;
-    max-width: 100%;
-`
 
 export const Image = ({
     src,
     placeholder,
     alt,
     side,
+    isSmall,
     caption,
     copyright,
     isClickable
 }) => {
-    const imgElement = useRef(null)
-    const [ imageWidth, setImageWidth ] = useState(0)
-
     const [ openImage, setOpenImage ] = useState(false)
         
     const ConditionalWrapper = ({ condition, wrapper, children }) => 
         condition ? wrapper(children) : children
-    
 
-    const placeholderImage = (
-        <PlaceholderImg
-            itemprop="image"
-            isClickable={false}
-            src={placeholder ? placeholder : src}
-            alt={alt ? alt : ""}
-            ref={imgElement}
-            width={imageWidth}
-            onLoad={() => setImageWidth(imgElement.current.naturalWidth*10)}
-        />
-    )
     return(
         <>
-            <Figure side={side} itemscope itemtype="http://schema.org/ImageObject">
-                <ConditionalWrapper
-                    condition={isClickable}
-                    wrapper={children => <Button onClick={() => setOpenImage(true)}>{children}</Button>}
-                >
-                    <LazyImage
-                        src={src}
-                        placeholder={placeholder}
-                        visibilitySensorProps={{
-                            partialVisibility: true
-                        }}
-                    >
-                        {(src2, loading) => {
-                            return loading ? 
-                                placeholderImage 
-                                : 
-                                <StyledImage
-                                    itemprop="image"
-                                    isClickable={false}
-                                    src={src2}
-                                    alt={alt ? alt : ""}
-                                />
-                        }}
-                    </LazyImage>
-                    
-                </ConditionalWrapper>
-                {caption && <Figcaption itemprop="caption description">{caption}</Figcaption>}
-                {copyright && <Small itemprop="copyrightHolder">&copy; {copyright}</Small>}
-            </Figure>
+            <LazyImage
+                src={src}
+                placeholder={placeholder}
+                visibilitySensorProps={{
+                    partialVisibility: true
+                }}
+            >
+                {(src, loading) => 
+                    <Figure className={"loading_" + loading} side={side} isSmall={isSmall} itemscope itemtype="http://schema.org/ImageObject">
+                        <ConditionalWrapper
+                            condition={isClickable}
+                            wrapper={children => <Button onClick={() => setOpenImage(true)}>{children}</Button>}
+                        >
+                            <StyledImage
+                                itemprop="image"
+                                isClickable={false}
+                                src={src}
+                                alt={alt ? alt : ""}
+                            />
+                        </ConditionalWrapper>                
+                        {caption && <Figcaption itemprop="caption description">{caption}</Figcaption>}
+                        {copyright && <Small itemprop="copyrightHolder">&copy; {copyright}</Small>}
+                    </Figure>
+                }
+            </LazyImage>
 
             {isClickable &&
                 <>
@@ -256,16 +247,13 @@ export const Image = ({
                             src={src}
                             placeholder={placeholder}
                         >
-                            {(src2, loading) => {
-                                return loading ? 
-                                    placeholderImage 
-                                    : 
-                                    <BigImage
-                                        itemprop="image"
-                                        src={src2}
-                                        alt={alt ? alt : ""}
-                                    />
-                            }}
+                            {src => 
+                                <BigImage
+                                    itemprop="image"
+                                    src={src}
+                                    alt={alt ? alt : ""}
+                                />
+                            }
                         </LazyImage> 
                           
                         {caption && <Figcaption itemprop="caption description" white={true}>{caption}</Figcaption>}
@@ -292,6 +280,10 @@ Image.propTypes = {
     **/
     side: PropTypes.string,
     /** 
+    * Optional boolean to set the image to be smaller
+    **/
+    isSmall: PropTypes.bool,
+    /** 
     * A visible caption for the image. Optional
     **/
     caption: PropTypes.string,
@@ -306,5 +298,6 @@ Image.propTypes = {
 }
 
 Image.defaultProps = {
-    isClickable: false
+    isClickable: false,
+    isSmall: false
 }

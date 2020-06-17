@@ -17,7 +17,7 @@ const Outer = styled.div`
 
     h2 {
         margin-top: 0;
-        margin-bottom: ${theme.standardSpace*2}px;
+        margin-bottom: ${theme.standardSpace}px;
         text-align: center;
     }
 
@@ -144,7 +144,7 @@ const Articles = styled.ul`
     }
 `
 const CentredButton = styled(Button)`
-    margin: 30px auto;
+    margin: ${theme.standardSpace}px auto;
     max-width: 250px;
     display: block;
     text-align: center;

@@ -45,7 +45,7 @@ const Outer = styled.section`
         }
         p {
             color: ${theme.white};
-            margin-top: 0;
+            margin-top: -15px;
             text-shadow: 0px 0px 30px ${theme.black}50;
         }
     }
