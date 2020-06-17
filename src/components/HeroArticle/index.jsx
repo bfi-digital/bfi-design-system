@@ -2,10 +2,10 @@ import React from "react"
 import styled from "styled-components"
 import theme from "../_theme"
 import PropTypes from "prop-types"
+import LazyImage from "react-lazy-progressive-image"
 import { Headline } from "../Headline"
 import { LeadParagraph } from "../LeadParagraph"
 import { Tag } from "../Tag"
-import { Image } from "../Image"
 import { Text } from "../Text"
 import { LinkSwitch as Link } from "../LinkSwitch"
 
@@ -45,8 +45,38 @@ const BrandLogo = styled.div`
     }
     
     img {
-        width: 400px;
+        width: 260px;
         height: auto;
+        
+        @media screen and (min-width: ${theme.m}){
+            width: 350px;
+        }
+        @media screen and (min-width: ${theme.l}){
+            width: 400px;
+        }
+        @media screen and (min-width: ${theme.xl}){
+            width: 450px;
+        }
+    }
+`
+const StyledImage = styled.img`
+    width: 100%;
+    height: auto;
+`
+const Small = styled.small`
+    text-align: center;
+    color: ${props => props.white ? theme.white : theme.darkGrey};
+    margin: 0 auto;
+    display: block;
+    font-style: italic;
+    font-size: ${theme.small_fontSize_m};
+    margin-top: 5px;
+
+    &:hover {
+        cursor: default;
+    }
+    @media screen and (min-width: ${theme.m}){
+        font-size: ${theme.fontSize_s};
     }
 `
 
@@ -114,27 +144,41 @@ export const HeroArticle = ({
                     </Text>
                 </LowerContent>
             </Meta>
-            <ImageContainer>
-                {image1920x1080 &&
-                    <Image
-                        alt={imageAltText ? imageAltText : ""}
-                        src={image1920x1080}
-                        placeholder={image192x108 ? image192x108 : image1920x1080}
-                        copyright={imageCopyright}
-                    />
-                }
-                {brandLogoInfo &&
-                    <BrandLogo className={image1920x1080 ? "with_image" : "without_image"}>
-                        <img src={
-                            image1920x1080 ? 
-                                brandLogoInfo[0].overlayURL  
-                                : 
-                                brandLogoInfo[0].backgroundURL
-                        } 
-                        alt={brandLogoInfo[0].alt} />
-                    </BrandLogo>
-                } 
-            </ImageContainer>
+            {(image1920x1080 || brandLogoInfo) && 
+                <ImageContainer>
+                    {image1920x1080 &&
+                        <LazyImage
+                            src={image1920x1080}
+                            placeholder={image192x108}
+                            visibilitySensorProps={{
+                                partialVisibility: true
+                            }}
+                        >
+                            {src => 
+                                <>
+                                    <StyledImage
+                                        itemprop="image"
+                                        src={src}
+                                        alt={imageAltText ? imageAltText : ""}
+                                    />
+                                    {imageCopyright && <Small itemprop="copyrightHolder">&copy; {imageCopyright}</Small>}
+                                </>
+                            }
+                        </LazyImage>
+                    }
+                    {brandLogoInfo &&
+                        <BrandLogo className={image1920x1080 ? "with_image" : "without_image"}>
+                            <img src={
+                                image1920x1080 ? 
+                                    brandLogoInfo[0].overlayURL  
+                                    : 
+                                    brandLogoInfo[0].backgroundURL
+                            } 
+                            alt={brandLogoInfo[0].alt} />
+                        </BrandLogo>
+                    } 
+                </ImageContainer>
+            }
         </Outer>
     )
 }

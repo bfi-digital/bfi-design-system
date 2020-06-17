@@ -218,7 +218,7 @@ export const Image = ({
                 >
                     <LazyImage
                         src={src}
-                        placeholder=""
+                        placeholder={placeholder}
                         visibilitySensorProps={{
                             partialVisibility: true
                         }}
@@ -254,7 +254,7 @@ export const Image = ({
                         </VisuallyHidden>
                         <LazyImage
                             src={src}
-                            placeholder=""
+                            placeholder={placeholder}
                         >
                             {(src2, loading) => {
                                 return loading ? 

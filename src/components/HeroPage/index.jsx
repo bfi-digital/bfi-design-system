@@ -2,10 +2,10 @@ import React from "react"
 import styled from "styled-components"
 import theme from "../_theme"
 import PropTypes from "prop-types"
+import LazyImage from "react-lazy-progressive-image"
 import { Headline } from "../Headline"
 import { LeadParagraph } from "../LeadParagraph"
 import { Breadcrumbs } from "../Breadcrumbs"
-import { Image } from "../Image"
 
 const Outer = styled.div`
     margin: 0 auto;
@@ -99,6 +99,27 @@ const Meta = styled.div`
 const ImageContainer = styled.div`
     position: relative;
 `
+const StyledImage = styled.img`
+    width: 100%;
+    height: auto;
+`
+const Small = styled.small`
+    text-align: center;
+    color: ${props => props.white ? theme.white : theme.darkGrey};
+    margin: 0 auto;
+    display: block;
+    font-style: italic;
+    font-size: ${theme.small_fontSize_m};
+    margin-top: 5px;
+
+    &:hover {
+        cursor: default;
+    }
+    @media screen and (min-width: ${theme.m}){
+        font-size: ${theme.fontSize_s};
+    }
+`
+
 export const HeroPage = ({
     image1920x1080,
     image192x108,
@@ -117,13 +138,24 @@ export const HeroPage = ({
         </Meta>
         {image1920x1080 &&
             <ImageContainer>
-            
-                <Image
-                    alt={imageAltText ? imageAltText : ""}
+                <LazyImage
                     src={image1920x1080}
                     placeholder={image192x108}
-                    copyright={imageCopyright}
-                />
+                    visibilitySensorProps={{
+                        partialVisibility: true
+                    }}
+                >
+                    {src => 
+                        <>
+                            <StyledImage
+                                itemprop="image"
+                                src={src}
+                                alt={imageAltText ? imageAltText : ""}
+                            />
+                            {imageCopyright && <Small itemprop="copyrightHolder">&copy; {imageCopyright}</Small>}
+                        </>
+                    }
+                </LazyImage>
             </ImageContainer>
         }
     </Outer>
