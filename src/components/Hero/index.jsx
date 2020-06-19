@@ -39,9 +39,18 @@ const Outer = styled.section`
     &.with_image {
         h1 {
             color: ${theme.white};
-            max-width: calc( 0.65 * ${theme.m});
             text-shadow: 0px 0px 30px ${theme.black}50;
             margin-bottom: ${theme.standardSpace}px;
+            font-size: 2.4rem;
+            @media screen and (min-width: ${theme.m}){
+                font-size: 2.6rem;
+            }
+            @media screen and (min-width: ${theme.l}){
+                font-size: 2.8rem;
+            }
+            @media screen and (min-width: ${theme.xl}){
+                font-size: 3rem;
+            }
         }
         p {
             color: ${theme.white};
@@ -117,7 +126,7 @@ const Outer = styled.section`
         padding-top: ${props => props.withHeader ? "375px" : "0px"};
 
         h1{
-            max-width: calc( 0.4 * ${theme.xl});
+            max-width: calc( 0.5 * ${theme.xl});
         }
     }
 `

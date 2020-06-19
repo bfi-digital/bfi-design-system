@@ -247,7 +247,7 @@ export const industryPage = () =>
         <Hero
             withHeader
             image1920x1080="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1410/500/1/2020-03/industry.jpg"
-            headline="We support filmmakers and champion films that push boundaries"
+            headline="We support filmmakers and champion films that push boundaries."
         />
         <Wrapper>
             <MainContent role="main">
