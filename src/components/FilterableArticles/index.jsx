@@ -12,6 +12,19 @@ const Outer = styled.div`
     h2 {
         margin-bottom: ${theme.standardSpace}px;
     }
+    
+    &.remove_last {
+        ul {
+            li:last-of-type {
+                @media screen and (min-width: ${theme.s}){
+                    display: none;
+                }
+                @media screen and (min-width: ${theme.m}){
+                    display: flex;
+                }   
+            }
+        }
+    }
 `
 
 const CentredButton = styled(Button)`
@@ -36,7 +49,7 @@ export const FilterableArticles = ({
 }) => {
 
     return(
-        <Outer>
+        <Outer className={limit >= 8 ? "remove_last" : ""}>
             {filters && <FilterLinks links={filters} /> }
             {!loading ? 
                 articles && articles.length > 0 ? 
