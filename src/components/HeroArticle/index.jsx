@@ -37,8 +37,8 @@ const BrandLogo = styled.div`
 
     &.with_image {
         position: absolute;
-        top: 0px;
-        right: 0px;
+        top: ${theme.standardSpace}px;
+        right: ${theme.standardSpace}px;
     }
     &.without_image {
         text-align: center;
