@@ -1612,7 +1612,7 @@ export const everyComponent = () =>
                     secondImage="http://placehold.it/150x40"
                     secondImageAltText="Test image"
                 />
-                <ArticleGrid pageWithSideBar={true} articles={demoArticles.slice(0,2)} />
+                <ArticleGrid pageWithSideBar={true} articles={demoArticles} />
                 <Headline 
                     level={2} 
                     text="A promo banner with a video!"
