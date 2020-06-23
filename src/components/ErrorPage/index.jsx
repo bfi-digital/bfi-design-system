@@ -119,7 +119,7 @@ export const ErrorPage = ({
                         <Button level={1} url="/">Return to home</Button>
                     </CTAContainer>
                 </Content>
-                {gifs &&
+                {gifs && gifs.length > random &&
                     <Image>
                         <img src={gifs[random].url} alt={gifs[random].alt} />
                     </Image>
