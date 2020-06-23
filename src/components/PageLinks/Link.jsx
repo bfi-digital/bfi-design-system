@@ -172,7 +172,6 @@ const ConditionalWrapper = ({ condition, wrapper, wrapper2, children }) =>
     condition ? wrapper(children) : wrapper2(children)
 
 export const PageLink = ({
-    key,
     title,
     description,
     callToAction,
@@ -186,8 +185,8 @@ export const PageLink = ({
 }) =>
     <ConditionalWrapper
         condition={inScroller}
-        wrapper={children => <RestyledOuter key={key} withImages={withImages} lessColumns={lessColumns} className={external ? "external_link" : ""}>{children}</RestyledOuter>}
-        wrapper2={children => <Outer key={key} withImages={withImages} lessColumns={lessColumns} className={external ? "external_link" : ""}>{children}</Outer>}
+        wrapper={children => <RestyledOuter withImages={withImages} lessColumns={lessColumns} className={external ? "external_link" : ""}>{children}</RestyledOuter>}
+        wrapper2={children => <Outer withImages={withImages} lessColumns={lessColumns} className={external ? "external_link" : ""}>{children}</Outer>}
     >
         { withImages && 
             <PageImageContainer lessColumns={lessColumns}>

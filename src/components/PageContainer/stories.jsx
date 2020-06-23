@@ -178,6 +178,45 @@ export const normalPage = () =>
         />
     </>
 
+export const normalPageNoSideBar = () =>
+    <>
+        <Header navItems={navItems} quickLinks={quickLinksData} />
+        <Wrapper>
+            <HeroPage
+                title="Headline goes here"
+                standfirst="God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs. Do you have any idea how long it takes those cups to decompose. Yes, Yes, without the oops! Yes, Yes, without the oops! Drive us out of here!"
+                breadcrumbs={crumbs}
+            />
+            <MainContent role="main">
+                <Text> 
+                    So you two dig up, dig up dinosaurs? Hey, you know how I&apos;m, like, always trying to save the planet? Here&apos;s my chance. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? Yeah, but your scientists were so preoccupied with whether or not they could, they didn&apos;t stop to think if they should.
+                </Text>
+            </MainContent>
+        </Wrapper>
+        <Footer
+            menus={footerMenus}
+            copyrightLinks={[
+                {
+                    title: "Cookies & privacy",
+                    url: "#1"
+                },
+                {
+                    title: "Terms & conditions",
+                    url: "#2"
+                },
+                {
+                    title: "Accessibility",
+                    url: "#3"
+                },
+                {
+                    title: "Help & FAQs",
+                    url: "#4"
+                }
+            ]}
+            copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"
+        />
+    </>
+
 export const normalPageWithHeroImage = () =>
     <>
         <Header navItems={navItems} quickLinks={quickLinksData} />
