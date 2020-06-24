@@ -1289,7 +1289,7 @@ exports[`Storyshots 2 All Components/Newsletter Sign Up Example 1`] = `
   }
 >
   <div
-    className="sc-gisBJw cdGpax"
+    className="sc-gisBJw kaqUPC"
   >
     <p
       className="sc-jlyJG OIlnw h3"
@@ -1359,6 +1359,7 @@ exports[`Storyshots 2 All Components/Oembed Youtube 1`] = `
     frameBorder="0"
     height="270"
     src="https://www.youtube.com/embed/vpqYxK6mmSU?feature=oembed"
+    title="Misbehaviour director Phillipa Lowthorpe and producer Suzanne Mackie | BFI Q&A"
     width="480"
   />
 </div>
