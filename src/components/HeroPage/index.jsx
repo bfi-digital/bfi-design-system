@@ -47,9 +47,11 @@ const Outer = styled.div`
         }
         p {
             margin-bottom: 0;
+            margin-top: 1em;
         }
         h1 {
             margin-block-start: 0;
+            margin-block-end: 0;
         }
         h1, p, ul, li, a {
             color: ${theme.white};
