@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react"
+import React, { useState, useEffect } from "react"
 import styled, { createGlobalStyle } from "styled-components"
 import theme from "../_theme"
 import { Dialog } from "@reach/dialog"
@@ -192,19 +192,6 @@ const CloseButton = styled.button`
     right: -55px;
     cursor: zoom-out;
 `
-const PlaceholderImg = styled.img`
-    margin: 0;
-    padding: 0;
-    display: block;
-    width: ${props => props.width};
-    height: auto;
-    max-width: 100%;
-    max-height: 90vh;
-    box-shadow: 0px 10px 40px ${theme.black}50;
-    &:hover {
-        cursor: default;
-    }
-`
 
 const useKeyPress = function(targetKey) {
     const [keyPressed, setKeyPressed] = useState(false)
@@ -241,9 +228,6 @@ export const ImageGallery = ({
     const [ openImage, setOpenImage ] = useState(0)
     const leftPress = useKeyPress("ArrowLeft")
     const rightPress = useKeyPress("ArrowRight")
-
-    const [ imageWidth, setImageWidth ] = useState("100%")
-    const imgElement = useRef(null) 
     
     function moveLeft(clicked) { 
         if ((leftPress || clicked) && openImage) {

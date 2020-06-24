@@ -132,7 +132,7 @@ export const FeedbackForm = ({
                         </FeedbackContainer>
                         :
                         <FeedbackBar onClick={() => {setOpenFeedback(true)}} title="Give us some feedback">
-                            This site is currently in <strong>BETA</strong>, help us improve - <strong>Click here to submit feedback</strong>
+                            <strong>Click here to submit feedback</strong> and help us improve this new site.
                         </FeedbackBar>
 
                     }

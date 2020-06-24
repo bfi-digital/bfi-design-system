@@ -259,7 +259,7 @@ export const PromoBanner = ({
         { oembedObject ?
             <Video reversed={reversed} pageWithSideBar={pageWithSideBar}>
                 <VideoInner>
-                    {parse(oembedObject.html.replace("></iframe>", " title=\"" + (oembedObject.title ? oembedObject.title : "Video player") + "\"></iframe>"))}
+                    {parse(oembedObject.html.replace("></iframe>", " title=\"" + (oembedObject.title ? (oembedObject.title + " video") : "Video player") + "\"></iframe>"))}
                 </VideoInner>
             </Video>
             :

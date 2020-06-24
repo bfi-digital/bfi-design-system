@@ -40,10 +40,10 @@ export const Oembed = ({
 }) =>
     isVideo ?
         <VideoContainer>
-            {parse(oembedObject.html.replace("></iframe>", " title=\"" + (oembedObject.title ? oembedObject.title : "Video player") + "\"></iframe>"))}
+            {parse(oembedObject.html.replace("></iframe>", " title=\"" + (oembedObject.title ? (oembedObject.title + " video") : "Video player") + "\"></iframe>"))}
         </VideoContainer>
         :
         <Container>
-            {parse(oembedObject.html.replace("></iframe>", " title=\"" + (oembedObject.title ? oembedObject.title : "Iframe container") + "\"></iframe>"))}
+            {parse(oembedObject.html.replace("></iframe>", " title=\"" + (oembedObject.title ? (oembedObject.title + " embed") : "Iframe container") + "\"></iframe>"))}
         </Container>
     
