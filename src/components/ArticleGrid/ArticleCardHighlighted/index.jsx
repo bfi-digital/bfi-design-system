@@ -163,7 +163,6 @@ export const ArticleCardHighlighted = ({
     url,
     image480x270,
     image48x27,
-    imageAltText,
     standfirst,
     category,
     author,
@@ -193,7 +192,7 @@ export const ArticleCardHighlighted = ({
                 src={image480x270}
                 placeholder={image48x27 ? image48x27 : image480x270}
             >
-                {src => <PageImage className="image" imageSrc={src} alt={imageAltText ? imageAltText : ""} />}
+                {src => <PageImage className="image" imageSrc={src} alt="" />}
             </LazyImage>
         </PageImageContainer>
 
