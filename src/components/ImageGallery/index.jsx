@@ -243,18 +243,7 @@ export const ImageGallery = ({
     const rightPress = useKeyPress("ArrowRight")
 
     const [ imageWidth, setImageWidth ] = useState("100%")
-    const imgElement = useRef(null)
-    const placeholderImageBig = (
-        <PlaceholderImg
-            itemprop="image"
-            isClickable={false}
-            src={images[openImage == 0 ? openImage : (openImage-1)].thumb ? images[openImage == 0 ? openImage : (openImage-1)].thumb : images[openImage == 0 ? openImage : (openImage-1)].url}
-            alt={images[openImage == 0 ? openImage : (openImage-1)].alt}
-            ref={imgElement}
-            width={imageWidth}
-            onLoad={() => setImageWidth((imgElement.current.naturalWidth*10) + "px")}
-        />
-    )      
+    const imgElement = useRef(null) 
     
     function moveLeft(clicked) { 
         if ((leftPress || clicked) && openImage) {
@@ -287,32 +276,19 @@ export const ImageGallery = ({
             <ImageHolder number={images.length}>
                 {
                     images.map((img, i) => {
-                        const placeholderImage = (
-                            <PlaceholderImg
-                                itemprop="image"
-                                isClickable={false}
-                                src={img.placeholder ? img.placeholder : img.url}
-                                alt={img.alt ? img.alt : ""}
-                                width={"100%"}
-                            />
-                        )     
- 
                         return(
                             <Button key={img.url} onClick={() => setOpenImage(i+1)}>
                                 <LazyImage
                                     src={img.thumb ? img.thumb : img.url}
-                                    placeholder=""
+                                    placeholder={img.placeholder ? img.placeholder : img.url}
                                 >
-                                    {(src, loading) => {
-                                        return loading ? 
-                                            placeholderImage 
-                                            : 
-                                            <Image
-                                                itemprop="image"
-                                                src={src}
-                                                alt={img.alt ? img.alt : ""}
-                                            />
-                                    }}
+                                    {src =>
+                                        <Image
+                                            itemprop="image"
+                                            src={src}
+                                            alt={img.alt ? img.alt : ""}
+                                        />
+                                    }
                                 </LazyImage>
                             </Button>
                         )
@@ -331,18 +307,15 @@ export const ImageGallery = ({
                     <LeftButton title="Previous image" onClick={() => moveLeft(true)}>&lsaquo;</LeftButton>
                     <LazyImage
                         src={images[openImage == 0 ? openImage : (openImage-1)].url}
-                        placeholder=""
+                        placeholder={images[openImage == 0 ? openImage : (openImage-1)].thumb ? images[openImage == 0 ? openImage : (openImage-1)].thumb : images[openImage == 0 ? openImage : (openImage-1)].url}
                     >
-                        {(src, loading) => {
-                            return loading ? 
-                                placeholderImageBig 
-                                : 
-                                <BigImage
-                                    itemprop="image"
-                                    src={src}
-                                    alt={images[openImage == 0 ? openImage : (openImage-1)].alt}
-                                /> 
-                        }}
+                        {src => 
+                            <BigImage
+                                itemprop="image"
+                                src={src}
+                                alt={images[openImage == 0 ? openImage : (openImage-1)].alt}
+                            /> 
+                        }
                     </LazyImage>
                     
                     {images[openImage == 0 ? openImage : (openImage-1)].caption &&
