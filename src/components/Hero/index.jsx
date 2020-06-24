@@ -14,7 +14,7 @@ const Outer = styled.section`
     position: relative;
     height: auto;
     min-height: 40vh;
-    padding-top: ${props => props.withHeader ? "64px" : "0px"};
+    padding-top: ${props => props.withHeader ? "64px" : "75px"};
     padding-bottom: 25px;
     background-image: url("${props => props.image}");
     background-size: cover;
@@ -111,19 +111,19 @@ const Outer = styled.section`
         margin-top: 0px;
         min-height: 390px;
         align-items: flex-end;
-        padding-top: ${props => props.withHeader ? "275px" : "0px"};
+        padding-top: ${props => props.withHeader ? "275px" : "211px"};
 
         h1 {
             max-width: calc( 0.8 * ${theme.m});
         }
     }
     @media screen and (min-width: ${theme.l}){
-        padding-top: ${props => props.withHeader ? "325px" : "0px"};
+        padding-top: ${props => props.withHeader ? "325px" : "261px"};
     }
     @media screen and (min-width: ${theme.xl}){
         min-height: 500px;
         padding-bottom: 40px;
-        padding-top: ${props => props.withHeader ? "375px" : "0px"};
+        padding-top: ${props => props.withHeader ? "375px" : "311px"};
 
         h1{
             max-width: calc( 0.5 * ${theme.xl});
@@ -132,7 +132,7 @@ const Outer = styled.section`
 `
 
 const InnerGradient = styled.div`
-    background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.6) 25%, rgba(0,0,0,0.2) 100%);
+    background: ${props => props.withHeader ? "linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.6) 25%, rgba(0,0,0,0.2) 100%)" : "linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.5) 25%, rgba(0,0,0,0) 100%)"};
     width: 100%;
     height: 100%;
     position: absolute;
@@ -202,7 +202,7 @@ export const Hero = ({
                 withHeader={withHeader}
                 className={image1920x1080 ? "with_image" : "hero_without_image"}
             >
-                {image1920x1080 && <InnerGradient /> }
+                {image1920x1080 && <InnerGradient withHeader={withHeader} /> }
                 <Container>
                     {headline && <Headline level={0} text={headline}/>}
                     {standfirst && <LeadParagraph text={standfirst}/>}
