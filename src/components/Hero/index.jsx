@@ -116,6 +116,9 @@ const Outer = styled.section`
         h1 {
             max-width: calc( 0.8 * ${theme.m});
         }
+        p {
+            max-width: 90%;
+        }
     }
     @media screen and (min-width: ${theme.l}){
         padding-top: ${props => props.withHeader ? "325px" : "261px"};
