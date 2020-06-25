@@ -21,7 +21,7 @@ const Outer = styled.div`
     }
 
     &.service_list_no_image {
-        background: ${theme.primary};
+        background: ${theme.lightest};
         padding-top: ${theme.standardSpace}px;
         padding-bottom: ${theme.standardSpace}px;
         margin-bottom: ${theme.standardSpace}px;
@@ -53,15 +53,6 @@ const Outer = styled.div`
             margin-block-start: 0;
             margin-block-end: 0;
         }
-        h1, p, ul, li, a {
-            color: ${theme.white};
-        }
-        a {
-            background-image: linear-gradient(120deg, ${theme.darkPink} 0%, ${theme.darkPink} 100%);
-            &:hover, &:focus {
-                color: ${theme.black};
-            }
-        }
 
         &:before {
             content: "";
@@ -70,8 +61,8 @@ const Outer = styled.div`
             bottom: 0;
             left: -9999px;
             right: 0;
-            box-shadow: 9999px 0 0 ${theme.primary};
-            border-left: 9999px solid ${theme.primary};
+            box-shadow: 9999px 0 0 ${theme.lightest};
+            border-left: 9999px solid ${theme.lightest};
             z-index: -1;
         }
     }
@@ -93,7 +84,7 @@ const Outer = styled.div`
         @media screen and (min-width: ${theme.m}){
             display: flex;
             margin-bottom: ${theme.standardSpace*1.5}px;
-            background: linear-gradient(90deg,${theme.lightest}, ${theme.lightest} 44%,#fff 0);
+            background: linear-gradient(90deg,${theme.lightest}, ${theme.lightest} 42%,#fff 0);
             position: relative;
             &:before {
                 content: "";
@@ -135,6 +126,7 @@ const Outer = styled.div`
             }
         }
         @media screen and (min-width: ${theme.xl}){
+            background: linear-gradient(90deg,${theme.lightest}, ${theme.lightest} 44%,#fff 0);
             .page_meta {
                 p {
                     font-size: 1.6rem;
