@@ -150,7 +150,7 @@ const NewsletterLabel = styled.label`
 const SubmitButton = styled.button`
     display: inline-block;
     position: relative;
-    font-weight: fontWeight_bold;
+    font-weight: ${theme.fontWeight_bold};
     font-size: ${theme.fontSize_m};
     line-height: ${theme.lineHeight_m};
     color: ${theme.white};

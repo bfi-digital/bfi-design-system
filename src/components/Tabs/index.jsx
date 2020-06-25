@@ -23,7 +23,7 @@ const Li = styled.li`
 `
 
 const Button = styled.button`
-    font-weight: fontWeight_bold;
+    font-weight: ${theme.fontWeight_bold};
     text-decoration: none;
     padding: 0px;
     border: none;

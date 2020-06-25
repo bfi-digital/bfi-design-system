@@ -10,7 +10,7 @@ const Outer = styled.nav`
 
 const Filter = styled.button`
     color: ${theme.black};
-    font-weight: fontWeight_bold;
+    font-weight: ${theme.fontWeight_bold};
     border-radius: 100px;
     font-size: ${theme.fontSize_s};
     padding: 5px 15px;

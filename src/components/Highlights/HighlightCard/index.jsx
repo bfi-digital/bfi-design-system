@@ -48,7 +48,7 @@ const Description = styled.p`
 const CallToAction = styled(LinkSwitch)`
     background: ${theme.black};
     display: block;
-    font-weight: fontWeight_bold;
+    font-weight: ${theme.fontWeight_bold};
     color: ${theme.white};
     text-align: center;
     padding: 12px 20px;

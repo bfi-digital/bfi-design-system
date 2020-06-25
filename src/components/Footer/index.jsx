@@ -153,7 +153,7 @@ const Heading = styled.h2`
     margin-top: 0px;
     display: block;
     font-size: 1.3rem;
-    font-weight: fontWeight_bold;
+    font-weight: ${theme.fontWeight_bold};
     margin-bottom: ${theme.standardSpace}px;
 `
 
@@ -161,7 +161,7 @@ const SubHeading = styled.h2`
     margin-top: 0px;
     display: block;
     font-size: 1.3rem;
-    font-weight: fontWeight_bold;
+    font-weight: ${theme.fontWeight_bold};
     margin-bottom: 15px;
 `
 
