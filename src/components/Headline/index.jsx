@@ -38,7 +38,7 @@ const H2 = styled.h2`
     font-weight: 700;
     font-size: 1.4375rem;
     margin-block-start: 1.75em;
-    margin-block-end: 0.75em;
+    margin-block-end: 0.5em;
     line-height: 1.3;
 
     @media screen and (min-width: ${theme.l}){
