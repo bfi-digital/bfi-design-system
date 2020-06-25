@@ -30,7 +30,7 @@ const FeedbackBar = styled.button`
     text-align: left;
 
     strong {
-        font-weight: 600;
+        font-weight: ${theme.fontWeight_semiBold};
     }
     &:hover {
         opacity: 0.9;
@@ -95,7 +95,7 @@ const CloseButton = styled.button`
     cursor: pointer;
     background: ${theme.darkPink};
     color: ${theme.white};
-    font-weight: 600;
+    font-weight: ${theme.fontWeight_semiBold};
     border: solid 4px ${theme.darkPink};
     text-align: right;
     border: 3px solid ${theme.darkPink};

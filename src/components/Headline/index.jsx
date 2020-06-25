@@ -7,7 +7,7 @@ const HeroH1 = styled.h1`
     font-family: ${theme.headingFont}; 
     // text-transform: uppercase;
     color: ${theme.black};
-    font-weight: 800;
+    font-weight: fontWeight_bold;
     font-size: 2.2rem;
     letter-spacing: 1px;
     @media screen and (min-width: ${theme.m}){
@@ -25,7 +25,7 @@ const H1 = styled(HeroH1)`
     text-transform: none;
     margin-block-start: 0.75em;
     margin-block-end: 0.5em;
-    font-weight: 800;
+    font-weight: fontWeight_bold;
 
     & + h2 {
         margin-block-start: 25px;
@@ -43,15 +43,17 @@ const H2 = styled.h2`
 
     @media screen and (min-width: ${theme.l}){
         font-size: 1.6875rem;
+        margin-block-start: 2em;
     }
     @media screen and (min-width: ${theme.xl}){
+        margin-block-start: 2.25em;
         font-size: 2rem;
     }
 `
 
 const H3 = styled.h3`
     color: ${theme.black};
-    font-weight: 600;
+    font-weight: ${theme.fontWeight_semiBold};
     font-size: 1.375rem;
     margin-block-start: 1.5em;
     margin-block-end: 0.5em;
@@ -64,7 +66,7 @@ const H3 = styled.h3`
 
 const H3Fake = styled.p`
     color: ${theme.black};
-    font-weight: 600;
+    font-weight: ${theme.fontWeight_semiBold};
     font-size: 1.375rem;
     margin-block-start: 1.5em;
     margin-block-end: 0.5em;
@@ -79,7 +81,7 @@ const H3Fake = styled.p`
 const H4 = styled.h4`
     font-family: ${theme.bodyFont};
     color: ${theme.black};
-    font-weight: 600;
+    font-weight: ${theme.fontWeight_semiBold};
     font-size: ${theme.fontSize_s};
     margin-bottom: 10px;
     line-height: 1.3;
@@ -94,7 +96,7 @@ const H4 = styled.h4`
 const H4Fake = styled.p`
     font-family: ${theme.bodyFont};
     color: ${theme.black};
-    font-weight: 600;
+    font-weight: ${theme.fontWeight_semiBold};
     font-size: ${theme.fontSize_s};
     margin-bottom: 10px;
     line-height: 1.3;
@@ -111,7 +113,7 @@ const H4Fake = styled.p`
 const H5 = styled.h5`
     font-family: ${theme.bodyFont};
     color: ${theme.black};
-    font-weight: 600;
+    font-weight: ${theme.fontWeight_semiBold};
     font-size: 0.875rem;
     line-height: 1.3;
 

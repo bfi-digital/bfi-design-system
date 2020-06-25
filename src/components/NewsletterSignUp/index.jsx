@@ -140,7 +140,7 @@ const NewsletterForm = styled.form`
 `
 const NewsletterLabel = styled.label`
     display: inline-block;
-    font-weight: 600;
+    font-weight: ${theme.fontWeight_semiBold};
     width: 100%;
 
     @media screen and (min-width: ${theme.s}){
@@ -150,7 +150,7 @@ const NewsletterLabel = styled.label`
 const SubmitButton = styled.button`
     display: inline-block;
     position: relative;
-    font-weight: bold;
+    font-weight: fontWeight_bold;
     font-size: ${theme.fontSize_m};
     line-height: ${theme.lineHeight_m};
     color: ${theme.white};

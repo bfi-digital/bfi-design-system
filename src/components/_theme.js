@@ -29,6 +29,9 @@ export default {
 
     standardSpace: "25",
 
+    fontWeight_semiBold: "600",
+    fontWeight_bold: "700",
+
     fontSize_s: "1.05rem",
     lineHeight_s: "1.5",
 

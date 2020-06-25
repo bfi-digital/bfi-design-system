@@ -139,7 +139,7 @@ const CategoryTag = styled.div`
     padding-left: 15px;
     padding-right: 10px;
     position: absolute;
-    font-weight: 600;
+    font-weight: ${theme.fontWeight_semiBold};
     top: 15px;
     left: 0;
     z-index: 1;

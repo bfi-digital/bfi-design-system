@@ -119,7 +119,7 @@ const Title = styled.p`
     line-height: ${theme.lineHeight_m};
     margin-top: 5px;
     margin-bottom: 15px;
-    font-weight: 700;
+    font-weight: ${theme.fontWeight_semiBold};
 `
 
 const Channels = styled.div`

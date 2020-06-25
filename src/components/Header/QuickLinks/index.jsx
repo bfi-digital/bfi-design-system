@@ -11,7 +11,7 @@ const Wrapper = styled.div`
 `
 const QuickLink = styled(Link)`
     color: ${props => props.isTransparent ? (!props.isSticky ? theme.white : theme.black) : theme.black};
-    font-weight: 600;
+    font-weight: ${theme.fontWeight_semiBold};
     text-decoration: none;
     padding: 21px 15px;
     font-size: ${theme.fontSize_s};

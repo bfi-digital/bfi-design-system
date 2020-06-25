@@ -7,7 +7,7 @@ const Outer = styled.div`
     display: inline-block;
     margin-right: 10px;
     padding: 5px 10px;
-    font-weight: 600;
+    font-weight: ${theme.fontWeight_semiBold};
     background: ${props => props.withLink ? theme.primary : theme.light};
     color: ${theme.black};
     position: relative;

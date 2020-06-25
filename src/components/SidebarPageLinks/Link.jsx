@@ -19,7 +19,7 @@ const Outer = styled.li`
         display: inline-block;
         vertical-align: top;
         width: 60%;
-        font-weight: 600;
+        font-weight: ${theme.fontWeight_semiBold};
     }
     &:hover, &:focus-within {
         .image {
@@ -94,7 +94,7 @@ const CallToAction = styled(Link)`
 const Heading = styled.p`
     font-family: ${theme.bodyFont};
     color: ${theme.black};
-    font-weight: 600;
+    font-weight: ${theme.fontWeight_semiBold};
     font-size: ${theme.small_fontSize_m};
     line-height: 1.3;
 

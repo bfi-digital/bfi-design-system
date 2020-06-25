@@ -81,7 +81,7 @@ const ItemLink = styled(Link)`
 
 
 const Item = styled.li`
-    font-weight: 600;
+    font-weight: ${theme.fontWeight_semiBold};
     font-size: ${theme.fontSize_s};
 `
 const ChildBarContainer = styled.div`

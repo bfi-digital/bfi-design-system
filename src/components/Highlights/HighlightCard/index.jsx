@@ -32,7 +32,7 @@ const Inner = styled.div`
 
 const Caption = styled.p`
     margin: 0px;
-    font-weight: 600;
+    font-weight: ${theme.fontWeight_semiBold};
 `
 
 const Headline = styled.h4`
@@ -48,7 +48,7 @@ const Description = styled.p`
 const CallToAction = styled(LinkSwitch)`
     background: ${theme.black};
     display: block;
-    font-weight: bold;
+    font-weight: fontWeight_bold;
     color: ${theme.white};
     text-align: center;
     padding: 12px 20px;

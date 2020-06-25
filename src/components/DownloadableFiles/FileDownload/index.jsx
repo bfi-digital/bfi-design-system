@@ -62,12 +62,12 @@ const FileDetails= styled.div`
 const Title = styled.span`
     display: block;
     color: ${theme.primary};
-    font-weight: 800;
+    font-weight: 700;
 `
 const Type = styled.span`
     color: ${theme.darkGrey};
     margin-right: 5px;
-    font-weight: 600;
+    font-weight: ${theme.fontWeight_semiBold};
 `
 const Size = styled.span`
     color: ${theme.darkGrey};

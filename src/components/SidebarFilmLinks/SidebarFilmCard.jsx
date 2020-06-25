@@ -99,7 +99,7 @@ const Content = styled.div`
 const Heading = styled.p`
     font-family: ${theme.bodyFont};
     color: ${theme.black};
-    font-weight: 600;
+    font-weight: ${theme.fontWeight_semiBold};
     font-size: ${theme.small_fontSize_m};
     line-height: 1.3;
     margin-top: 0;

@@ -101,7 +101,7 @@ const ShowButtonText = styled.span`
     font-weight: 400;
     color: ${theme.black};
     text-decoration: none;
-    font-weight: 600;
+    font-weight: ${theme.fontWeight_semiBold};
     position: relative;
     background-image: linear-gradient(120deg, ${theme.primary} 0%, ${theme.primary} 100%);
     background-repeat: no-repeat;

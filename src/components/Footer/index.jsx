@@ -113,7 +113,7 @@ const BottomLinks = styled.div`
     
     a {
         margin-right: 15px;
-        font-weight: 600;
+        font-weight: ${theme.fontWeight_semiBold};
         text-decoration: underline;
     }
     @media screen and (min-width: ${theme.m}) {
@@ -153,7 +153,7 @@ const Heading = styled.h2`
     margin-top: 0px;
     display: block;
     font-size: 1.3rem;
-    font-weight: bold;
+    font-weight: fontWeight_bold;
     margin-bottom: ${theme.standardSpace}px;
 `
 
@@ -161,7 +161,7 @@ const SubHeading = styled.h2`
     margin-top: 0px;
     display: block;
     font-size: 1.3rem;
-    font-weight: bold;
+    font-weight: fontWeight_bold;
     margin-bottom: 15px;
 `
 

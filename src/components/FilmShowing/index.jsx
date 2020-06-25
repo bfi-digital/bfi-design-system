@@ -36,7 +36,7 @@ const SoldOut = styled.span`
     margin: 0px;
     border: 2px solid ${theme.darkGrey};
     color: ${theme.darkGrey};
-    font-weight: bold;
+    font-weight: fontWeight_bold;
     // border-radius: 5px;
     font-size: ${theme.fontSize_s};
     padding: 4px 15px;

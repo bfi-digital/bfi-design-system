@@ -98,7 +98,7 @@ const CallToAction = styled(Link)`
     margin-top: auto;
     color: ${theme.dark};
     text-decoration: none;
-    font-weight: 600;
+    font-weight: ${theme.fontWeight_semiBold};
     transition: box-shadow .3s; 
     width: 100%;
     

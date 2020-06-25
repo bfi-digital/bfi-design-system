@@ -24,7 +24,7 @@ const colorSchemes = [
 const PrimaryButton = styled(Link)`
     display: inline-block;
     position: relative;
-    font-weight: bold;
+    font-weight: fontWeight_bold;
     font-size: ${theme.fontSize_m};
     line-height: ${theme.lineHeight_m};
     color: ${props => colorSchemes[props.colorScheme].text};
@@ -81,7 +81,7 @@ const PrimaryButton = styled(Link)`
 const SecondaryButton = styled(Link)`
     border: 2px solid ${theme.black};
     color: ${theme.black};
-    font-weight: bold;
+    font-weight: fontWeight_bold;
     // border-radius: 5px;
     font-size: ${theme.fontSize_s};
     padding: 4px 15px;
@@ -104,7 +104,7 @@ const SecondaryButton = styled(Link)`
 const TertiaryButton = styled(Link)`
     border: 2px solid ${theme.black};
     color: ${theme.black};
-    font-weight: bold;
+    font-weight: fontWeight_bold;
     // border-radius: 5px;
     font-size: ${theme.fontSize_s};
     padding: 10px 30px;

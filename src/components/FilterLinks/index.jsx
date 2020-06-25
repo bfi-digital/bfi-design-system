@@ -10,7 +10,7 @@ const Outer = styled.nav`
 
 const FilterLink = styled.a`
     color: ${theme.black};
-    font-weight: bold;
+    font-weight: fontWeight_bold;
     border-radius: 100px;
     font-size: ${theme.fontSize_s};
     padding: 5px 15px;
@@ -47,7 +47,7 @@ const FilterLink = styled.a`
 export const FilterLinks = ({
     links
 }) => 
-    <Outer>
+    <Outer className="filter_links">
         {links.map((link) =>
             <FilterLink key={link.url} href={link.url} disabled={link.currentlyActive ? true : false} title={"Show all " + link.label + " articles"}>{link.label}</FilterLink>
         )}
