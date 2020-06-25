@@ -145,7 +145,7 @@ export const normalPage = () =>
                 standfirst="God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs. Do you have any idea how long it takes those cups to decompose. Yes, Yes, without the oops! Yes, Yes, without the oops! Drive us out of here!"
                 breadcrumbs={crumbs}
             />
-            <MainContent role="main">
+            <MainContent>
                 <Text> 
                     So you two dig up, dig up dinosaurs? Hey, you know how I&apos;m, like, always trying to save the planet? Here&apos;s my chance. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? Yeah, but your scientists were so preoccupied with whether or not they could, they didn&apos;t stop to think if they should.
                 </Text>
@@ -187,7 +187,7 @@ export const normalPageNoSideBar = () =>
                 standfirst="God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs. Do you have any idea how long it takes those cups to decompose. Yes, Yes, without the oops! Yes, Yes, without the oops! Drive us out of here!"
                 breadcrumbs={crumbs}
             />
-            <MainContent role="main">
+            <MainContent>
                 <Text> 
                     So you two dig up, dig up dinosaurs? Hey, you know how I&apos;m, like, always trying to save the planet? Here&apos;s my chance. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? Yeah, but your scientists were so preoccupied with whether or not they could, they didn&apos;t stop to think if they should.
                 </Text>
@@ -229,7 +229,7 @@ export const normalPageWithHeroImage = () =>
                 imageAltText="Alt text for the image"
                 imageCopyright="HELP MUSICIANS, directed by Thomas Guthrie"
             />
-            <MainContent role="main">
+            <MainContent>
                 <Text> 
                     So you two dig up, dig up dinosaurs? Hey, you know how I&apos;m, like, always trying to save the planet? Here&apos;s my chance. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? Yeah, but your scientists were so preoccupied with whether or not they could, they didn&apos;t stop to think if they should.
                 </Text>
@@ -271,7 +271,7 @@ export const actionPage = () =>
                 standfirst="We want to support work that takes risks and does something different. This means we fund projects that can’t find other, commercial finance at development stage."
                 breadcrumbs={crumbs}
             />
-            <MainContent role="main">
+            <MainContent>
                 <Text> 
                     <p>The BFI Development Fund supports live action or animated fiction projects, including:</p>
                     <ul>
@@ -453,7 +453,7 @@ export const ArticleFeatureExample = () =>
             ]}
         />
         <Wrapper>           
-            <MainContent role="main">
+            <MainContent>
                 <Text>
                     <p>Today the BFI launches a public campaign, Britain on Lockdown, calling on the public to recommend those online videos that best represent how Britain has experienced the impact of coronavirus.</p>
 
@@ -497,7 +497,7 @@ export const ArticleFeatureExample = () =>
         </Wrapper>
 
         <Wrapper>
-            <MainContent role="main">
+            <MainContent>
                 <FilterableArticles
                     limit={3}
                     includeHighlight={false}
@@ -555,7 +555,7 @@ export const ArticleRecommendsExample = () =>
             ]}
         />
         <Wrapper>           
-            <MainContent role="main">
+            <MainContent>
                 <Text>
                     <p>My love affair with Carol began a long time ago, before the film was even made. A friend gave me a copy of Patricia Highsmith’s The Price of Salt (the book on which Carol is based) with a knowing smile and told me I might like it. She wasn’t wrong. I loved it: devouring it in one sitting and then immediately turning back to the first page to read it again. Highsmith’s writing is instinctually cinematic and I remember thinking all those years ago that this needed to be made into a film. I desperately wanted to see Carol and Therese’s love affair on the big screen, and I fervently hoped for the right creative team to come along and make my wish come true. Because Carol needed to be flawless as a film – my love for the book would accept nothing less…</p>
 
@@ -581,7 +581,7 @@ export const ArticleRecommendsExample = () =>
         </Wrapper>
 
         <Wrapper>
-            <MainContent role="main">
+            <MainContent>
                 <FilterableArticles
                     limit={3}
                     includeHighlight={false}
@@ -635,7 +635,7 @@ export const ArticleVideoExample = () =>
             date="1 May 2020"
         />
         <Wrapper>           
-            <MainContent role="main">
+            <MainContent>
                 <Oembed isVideo oembedObject={{
                     html: "\u003ciframe width=\"480\" height=\"270\" src=\"https://www.youtube.com/embed/jEwTINVl4xM?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen\u003e\u003c/iframe\u003e"
                 }} />
@@ -666,7 +666,7 @@ export const ArticleVideoExample = () =>
         </Wrapper>
 
         <Wrapper>
-            <MainContent role="main">
+            <MainContent>
                 <FilterableArticles
                     limit={3}
                     includeHighlight={false}
@@ -722,7 +722,7 @@ export const ArticleAnnouncementExample = () =>
             date="1 May 2020"
         />
         <Wrapper>           
-            <MainContent role="main">
+            <MainContent>
                 <Text>
                     <p>The BFI today opens the £2m BFI COVID-19 Production Continuation Fund, a temporary new fund for UK independent productions unavoidably interrupted as a direct result of the COVID-19 pandemic. National Lottery funding – up to £150,000 per project – is available for productions in critical financial need to help cover unexpected additional costs, aiming to ensure producers are in a position to restart when it is safe and practical to do so. The deadline for applications is Wednesday 27 May.</p>
 
@@ -763,7 +763,7 @@ export const ArticleAnnouncementExample = () =>
         </Wrapper>
 
         <Wrapper>
-            <MainContent role="main">
+            <MainContent>
                 <FilterableArticles
                     limit={3}
                     includeHighlight={false}
@@ -823,7 +823,7 @@ export const ArticleListExampleWithUpdatedDate = () =>
             ]}
         />
         <Wrapper>           
-            <MainContent role="main">
+            <MainContent>
                 <FilmCardSingle
                     listNumber={1}
                     image225x225="https://player.bfi.org.uk/sites/default/files/styles/landscape_1440x810/public/hero-images/assistant2.jpg?itok=4PvazePC"
@@ -917,7 +917,7 @@ export const ArticleListExampleWithUpdatedDate = () =>
         </Wrapper>
 
         <Wrapper>
-            <MainContent role="main">
+            <MainContent>
                 <FilterableArticles
                     limit={3}
                     includeHighlight={false}
@@ -1000,7 +1000,7 @@ export const ArticleSightAndSoundExample = () =>
             ]}
         />
         <Wrapper>           
-            <MainContent role="main">
+            <MainContent>
                 <Text>
                     <p>Today the BFI launches a public campaign, Britain on Lockdown, calling on the public to recommend those online videos that best represent how Britain has experienced the impact of coronavirus.</p>
 
@@ -1044,7 +1044,7 @@ export const ArticleSightAndSoundExample = () =>
         </Wrapper>
 
         <Wrapper>
-            <MainContent role="main">
+            <MainContent>
                 <FilterableArticles
                     limit={3}
                     includeHighlight={false}
@@ -1126,7 +1126,7 @@ export const ArticleSightAndSoundExampleNoImage = () =>
             ]}
         />
         <Wrapper>           
-            <MainContent role="main">
+            <MainContent>
                 <Text>
                     <p>Today the BFI launches a public campaign, Britain on Lockdown, calling on the public to recommend those online videos that best represent how Britain has experienced the impact of coronavirus.</p>
 
@@ -1170,7 +1170,7 @@ export const ArticleSightAndSoundExampleNoImage = () =>
         </Wrapper>
 
         <Wrapper>
-            <MainContent role="main">
+            <MainContent>
                 <FilterableArticles
                     limit={3}
                     includeHighlight={false}
@@ -1227,7 +1227,7 @@ export const FilmPage = () =>
             </Actions>
         </Hero>
         <Wrapper>           
-            <MainContent role="main">
+            <MainContent>
                 <LeadParagraph text="Starring Robert De Niro as the middleweight boxer Jake La Motta, Scorsese’s biopic is widely acknowledged as one of the greatest films of the 1980s." />
                 <Text>
                     <p>Scorsese’s biographical portrait of the 1940s boxing champion Jake La Motta is a study of seething male aggression to rank alongside his 1976 film Taxi Driver. Adapted from La Motta’s memoirs by Paul Schrader and Mardik Martin, the film opens in the early 1960s with an overweight La Motta practising his post-boxing cabaret routine. Through flashbacks we witness the dramas of his time in the ring, his abusive marriages, and his turbulent relationship with his brother and manager Joey (Joe Pesci).</p>
@@ -1270,7 +1270,7 @@ export const FilmPage = () =>
             </Sidebar>
         </Wrapper>
         <Wrapper>
-            <MainContent role="main">  
+            <MainContent>  
                 <ArticleGrid articles={
                     [{
                         title: "Joe Pesci: seven essential films",
@@ -1350,7 +1350,7 @@ export const sightAndSoundPageExample = () =>
     <>
         <Header navItems={navItems} quickLinks={quickLinksData} />
         <Wrapper>
-            <MainContent role="main">
+            <MainContent>
                 <Breadcrumbs 
                     breadcrumbs={[
                         {
@@ -1431,7 +1431,7 @@ export const everyComponent = () =>
                 standfirst="God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs. Do you have any idea how long it takes those cups to decompose. Yes, Yes, without the oops! Yes, Yes, without the oops! Drive us out of here!"
                 breadcrumbs={crumbs}
             />
-            <MainContent role="main">
+            <MainContent>
                 <Headline 
                     level={2} 
                     text="Headline 2"

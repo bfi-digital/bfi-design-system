@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import theme from "../_theme"
+import React from "react"
 
 export const Wrapper = styled.div`
     max-width: ${theme.l};
@@ -27,7 +28,7 @@ export const Wrapper = styled.div`
     }
 `
 
-export const MainContent = styled.article`
+const MainContentWrappper = styled.article`
     flex: 1;
     iframe {
         border: none;
@@ -39,4 +40,11 @@ export const MainContent = styled.article`
     & h2:first-child {
         margin-block-start: 0;
     }
+    &.landing_page {
+        h2, .filter_links {
+            text-align: center;
+        }
+    }
 `
+export const MainContent = ({landingPage, children}) =>
+    <MainContentWrappper role="main" className={landingPage ? "landing_page" : ""}>{children}</MainContentWrappper>

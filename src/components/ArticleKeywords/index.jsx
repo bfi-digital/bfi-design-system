@@ -8,7 +8,7 @@ const Outer = styled.div`
 `
 const FilterLink = styled.a`
     color: ${theme.black};
-    font-weight: bold;
+    font-weight: 700;
     border-radius: 5px;
     font-size: ${theme.fontSize_s};
     padding: 5px 15px;

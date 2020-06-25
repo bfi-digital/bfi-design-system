@@ -47,7 +47,7 @@ import { QuickFacts } from "../../../components/QuickFacts"
                 headline="Discover the world of cinema with the BFI"
             />
             <Wrapper>
-               <MainContent role="main">
+               <MainContent landingPage>
                     <>
                         <PromoBanner 
                             colorScheme={1}
@@ -71,8 +71,10 @@ import { QuickFacts } from "../../../components/QuickFacts"
                             level={2} 
                             text="What to watch"
                         />
-                        <FilmGrid films={demoFilms} />
-                        <CallToAction linkText="See more Films" linkURL="http://player.bfi.org.uk" external={true} center={true} />
+                        <FilmGrid 
+                            films={demoFilms}
+                            allFilmsUrl="#"
+                        />
                         <PromoBanner 
                             colorScheme={0}
                             headline="Japan 2020"
@@ -88,8 +90,11 @@ import { QuickFacts } from "../../../components/QuickFacts"
                             level={2} 
                             text="Latest from BFI"
                         />
-                        <FilterableArticles
+                    <FilterableArticles
                             articles={demoArticles}
+                            optionalCTATitle="See all articles"
+                            optionalCTALink="#"
+                            limit={8}
                             filters={[
                                 {
                                     url: "/",
@@ -121,7 +126,6 @@ import { QuickFacts } from "../../../components/QuickFacts"
                                 }
                             ]}
                         />
-                        <CallToAction linkText="See all Articles" linkURL="#" center={true} />
                         <PromoBanner 
                             colorScheme={0}
                             headline="BFI National Archive"
@@ -200,7 +204,7 @@ import { QuickFacts } from "../../../components/QuickFacts"
                 ]}
             />
             <WithSidebarWrapper>           
-                <WithSidebarMainContent role="main">
+                <WithSidebarMainContent>
                     <Text>
                         <p>Saar Maoz came to London 17 years ago after being thrown out of his home on a kibbutz as punishment for over-enthusiastic partying as a teenager. Since then, he’s been rejected by his father and six siblings. Now in his late 30s, he wonders if it’s time to go home… Watching his story unfold we’re soon rooting for him as he attempts to re-establish his relationship with his extended family, who still live on the kibbutz, many of whom vehemently disapprove of his ‘irresponsible’ lifestyle and HIV+ status.</p>
                     </Text>
@@ -253,7 +257,7 @@ import { QuickFacts } from "../../../components/QuickFacts"
                 </Sidebar>
             </WithSidebarWrapper>
             <WithSidebarWrapper>
-                <WithSidebarMainContent role="main">
+                <WithSidebarMainContent>
                     <FilterableArticles
                         limit={3}
                         includeHighlight={false}
@@ -347,7 +351,7 @@ import { QuickFacts } from "../../../components/QuickFacts"
                 </Actions>
             </Hero>
             <WithSidebarWrapper>           
-                <WithSidebarMainContent role="main">
+                <WithSidebarMainContent>
                     <LeadParagraph text="Starring <strong>Robert De Niro</strong> as the middleweight boxer Jake La Motta, Scorsese’s biopic is widely acknowledged as one of the greatest films of the 1980s." />
                     <Text>
                         <p>Saar is an Israeli living in London, driven away from his Kibbutz by his family’s response to his homosexuality and HIV-positive status, but also by his own fear of rejection. The lure of home and family is deep-rooted, however, and although he’s made a new life for himself within the close-knit, loving community of London Gay Men’s Chorus, he yearns for acceptance from his parents and siblings, in particular his stern father.</p>
@@ -461,7 +465,7 @@ import { QuickFacts } from "../../../components/QuickFacts"
                 </Sidebar>
             </WithSidebarWrapper>
             <WithSidebarWrapper>
-                <WithSidebarMainContent role="main">  
+                <WithSidebarMainContent>  
                     <FilterableArticles
                         limit={3}
                         includeHighlight={false}
@@ -552,7 +556,7 @@ import { QuickFacts } from "../../../components/QuickFacts"
                 </Actions>
             </Hero>
             <WithSidebarWrapper>           
-                <WithSidebarMainContent role="main">
+                <WithSidebarMainContent>
                     <LeadParagraph text="Starring <strong>Robert De Niro</strong> as the middleweight boxer Jake La Motta, Scorsese’s biopic is widely acknowledged as one of the greatest films of the 1980s." />
                     <Text>
                         <p>Saar is an Israeli living in London, driven away from his Kibbutz by his family’s response to his homosexuality and HIV-positive status, but also by his own fear of rejection. The lure of home and family is deep-rooted, however, and although he’s made a new life for himself within the close-knit, loving community of London Gay Men’s Chorus, he yearns for acceptance from his parents and siblings, in particular his stern father.</p>
@@ -666,7 +670,7 @@ import { QuickFacts } from "../../../components/QuickFacts"
                 </Sidebar>
             </WithSidebarWrapper>
             <WithSidebarWrapper>
-                <WithSidebarMainContent role="main">  
+                <WithSidebarMainContent>  
                     <FilterableArticles
                         limit={3}
                         includeHighlight={false}

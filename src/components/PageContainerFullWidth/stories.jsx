@@ -52,7 +52,7 @@ export const discoveryPage = () =>
             headline="Discover the world of cinema with the BFI"
         />
         <Wrapper>
-            <MainContent role="main">
+            <MainContent landingPage>
                 <PromoBanner 
                     colorScheme={1}
                     headline="Become a BFI member"
@@ -250,7 +250,7 @@ export const industryPage = () =>
             headline="We support filmmakers and champion films that push boundaries."
         />
         <Wrapper>
-            <MainContent role="main">
+            <MainContent landingPage>
                 <PromoBanner 
                     colorScheme={1}
                     headline="Get funding and support"
@@ -366,7 +366,7 @@ export const educationPage = () =>
             headline="Learn, teach and research about films, through films"
         />
         <Wrapper>
-            <MainContent role="main">
+            <MainContent landingPage>
                 <Headline
                     level={2}
                     text="Resources and opportunities"
@@ -448,7 +448,7 @@ export const serviceListPageExampleWithoutImage = () =>
     <>
         <Header navItems={navItems} quickLinks={quickLinksData}/>
         <Wrapper>
-            <MainContent role="main">
+            <MainContent>
                 <HeroPage
                     title="Find a fund to create films, TV or new formats of storytelling"
                     standfirst="If you’re an adventurous storyteller, we can help you with funding to create your film, TV, or emerging media like VR or AR."
@@ -506,7 +506,7 @@ export const serviceListPageExampleWithImage = () =>
     <>
         <Header navItems={navItems} quickLinks={quickLinksData}/>
         <Wrapper>
-            <MainContent role="main">
+            <MainContent>
                 <HeroPage
                     title="BFI National Archive"
                     standfirst="The BFI national archive holds a magnificent collection of film and television, from the birth of cinema to today. "
@@ -569,7 +569,7 @@ export const articlePostListPageExample = () =>
     <>
         <Header navItems={navItems} quickLinks={quickLinksData}/>
         <Wrapper>
-            <MainContent role="main">
+            <MainContent>
                 <Headline 
                     level={1} 
                     text="News &amp; Articles"
@@ -657,7 +657,7 @@ export const everyComponent = () =>
                 breadcrumbs={crumbs}
                 isServiceListPage={true}
             />
-            <MainContent role="main">
+            <MainContent>
                 <Text>
                     <p>So you two dig up, dig up dinosaurs? Hey, you know how I&apos;m, like, always trying to save the planet? Here&quot;s my chance. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine?</p>
                     <p>Yes, Yes, without the oops! <a href="http://google.com</MainContent>">Yes, Yes, without the oops!</a> Drive us out of here!</p>

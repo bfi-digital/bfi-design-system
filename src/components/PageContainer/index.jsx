@@ -47,7 +47,7 @@ export const Wrapper = styled.div`
     }
 `
 
-export const MainContent = styled.article`
+const MainContentWrapper = styled.article`
     flex: 1;
     
     & h2:first-child {
@@ -60,6 +60,9 @@ export const MainContent = styled.article`
         margin-bottom: ${theme.standardSpace}px;
     }
 `
+export const MainContent = ({children}) =>
+    <MainContentWrapper role="main">{children}</MainContentWrapper>
+
 export const WrapperFullWidth = styled.article`
     margin: 35px auto;
 `
@@ -70,6 +73,7 @@ export const MaxWidth = styled.article`
         max-width: calc(${theme.xl} - 100px);
     }
 `
+
 
 export const Sidebar = styled.aside`
     & section:first-child {

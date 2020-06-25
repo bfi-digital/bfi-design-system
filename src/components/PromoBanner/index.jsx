@@ -47,6 +47,7 @@ const Outer = styled.section`
     h2{
         margin-top: 0px;
         color: ${props => colorSchemes[props.colorScheme].text};
+        text-align: left !important;
     }
     a{
         margin-top: 10px;
