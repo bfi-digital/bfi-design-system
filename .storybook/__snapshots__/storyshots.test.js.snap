@@ -94,21 +94,21 @@ exports[`Storyshots 2 All Components/Article Keywords Normal 1`] = `
   className="sc-htpNat dVmOzA"
 >
   <a
-    className="sc-bxivhb giTrHs"
+    className="sc-bxivhb dExULi"
     href="#1"
     title="Show all Covid-19 articles"
   >
     Covid-19
   </a>
   <a
-    className="sc-bxivhb giTrHs"
+    className="sc-bxivhb dExULi"
     href="#2"
     title="Show all BFI National Archive articles"
   >
     BFI National Archive
   </a>
   <a
-    className="sc-bxivhb giTrHs"
+    className="sc-bxivhb dExULi"
     href="#3"
     title="Show all Video articles"
   >
@@ -122,7 +122,7 @@ exports[`Storyshots 2 All Components/Blockquote With Citation 1`] = `
   className="sc-ifAKCX eyPYQu"
 >
   <q
-    className="sc-EHOje ixJQSq"
+    className="sc-EHOje cLAAzw"
   >
     Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.
   </q>
@@ -139,7 +139,7 @@ exports[`Storyshots 2 All Components/Blockquote Without Citation 1`] = `
   className="sc-ifAKCX eyPYQu"
 >
   <q
-    className="sc-EHOje ixJQSq"
+    className="sc-EHOje cLAAzw"
   >
     Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.
   </q>
@@ -234,7 +234,7 @@ exports[`Storyshots 2 All Components/Button Primary 1`] = `
   }
 >
   <a
-    className="sc-iwsKbI gVnELS"
+    className="sc-iwsKbI jqbHl"
     colorScheme={0}
     href="#1"
     target="_self"
@@ -254,7 +254,7 @@ exports[`Storyshots 2 All Components/Button Secondary 1`] = `
   }
 >
   <a
-    className="sc-gZMcBi bZAbYs"
+    className="sc-gZMcBi fqvYBX"
     colorScheme={0}
     href="#2"
     target="_self"
@@ -274,7 +274,7 @@ exports[`Storyshots 2 All Components/Button Tertiary 1`] = `
   }
 >
   <a
-    className="sc-gqjmRU gLkfoN"
+    className="sc-gqjmRU gECnC"
     colorScheme={0}
     href="#3"
     target="_self"
@@ -297,7 +297,7 @@ exports[`Storyshots 2 All Components/Call to Action External Link 1`] = `
     className="sc-VigVT DmOWC"
   >
     <a
-      className="sc-iwsKbI gVnELS external_link"
+      className="sc-iwsKbI jqbHl external_link"
       colorScheme={0}
       href="https://google.com"
       rel="noreferrer"
@@ -322,7 +322,7 @@ exports[`Storyshots 2 All Components/Call to Action Internal Link 1`] = `
     className="sc-VigVT DmOWC"
   >
     <a
-      className="sc-iwsKbI gVnELS"
+      className="sc-iwsKbI jqbHl"
       colorScheme={0}
       href="/"
       rel=""
@@ -347,7 +347,7 @@ exports[`Storyshots 2 All Components/Call to Action Two Links 1`] = `
     className="sc-VigVT DmOWC"
   >
     <a
-      className="sc-iwsKbI gVnELS"
+      className="sc-iwsKbI jqbHl"
       colorScheme={0}
       href="/"
       rel=""
@@ -361,7 +361,7 @@ exports[`Storyshots 2 All Components/Call to Action Two Links 1`] = `
     className="sc-VigVT DmOWC"
   >
     <a
-      className="sc-iwsKbI gVnELS external_link"
+      className="sc-iwsKbI jqbHl external_link"
       colorScheme={0}
       href="https://google.com"
       rel="noreferrer"
@@ -434,7 +434,7 @@ exports[`Storyshots 2 All Components/Downloadable File Multiple Files 1`] = `
           className="sc-cSHVUG dHrOYn file-details"
         >
           <span
-            className="sc-kAzzGY eFtfuN file-title"
+            className="sc-kAzzGY ganEPy file-title"
           >
             File title
           </span>
@@ -494,7 +494,7 @@ exports[`Storyshots 2 All Components/Downloadable File Multiple Files 1`] = `
           className="sc-cSHVUG dHrOYn file-details"
         >
           <span
-            className="sc-kAzzGY eFtfuN file-title"
+            className="sc-kAzzGY ganEPy file-title"
           >
             Young Audiences Content Fund production application guidelines
           </span>
@@ -569,7 +569,7 @@ exports[`Storyshots 2 All Components/Downloadable File Single File 1`] = `
           className="sc-cSHVUG dHrOYn file-details"
         >
           <span
-            className="sc-kAzzGY eFtfuN file-title"
+            className="sc-kAzzGY ganEPy file-title"
           >
             File title
           </span>
@@ -629,7 +629,7 @@ Array [
         className="sc-iAyFgw eBVreh"
       >
         <a
-          className="sc-iwsKbI gVnELS"
+          className="sc-iwsKbI jqbHl"
           colorScheme={0}
           href="/"
           target="_self"
@@ -682,7 +682,7 @@ Array [
         className="sc-iAyFgw eBVreh"
       >
         <a
-          className="sc-iwsKbI gVnELS"
+          className="sc-iwsKbI jqbHl"
           colorScheme={0}
           href="/"
           target="_self"
@@ -749,7 +749,7 @@ exports[`Storyshots 2 All Components/FilmShowing A Showing 1`] = `
         className="sc-fBuWsC huyAwE"
       >
         <a
-          className="sc-gZMcBi bZAbYs"
+          className="sc-gZMcBi fqvYBX"
           colorScheme={0}
           href="#"
           target="_self"
@@ -763,7 +763,7 @@ exports[`Storyshots 2 All Components/FilmShowing A Showing 1`] = `
         className="sc-fBuWsC huyAwE"
       >
         <a
-          className="sc-gZMcBi bZAbYs"
+          className="sc-gZMcBi fqvYBX"
           colorScheme={0}
           href="#"
           target="_self"
@@ -777,7 +777,7 @@ exports[`Storyshots 2 All Components/FilmShowing A Showing 1`] = `
         className="sc-fBuWsC huyAwE"
       >
         <span
-          className="sc-fMiknA fmRpS"
+          className="sc-fMiknA fJcssL"
         >
           8:45pm
            - Sold out
@@ -816,7 +816,7 @@ exports[`Storyshots 2 All Components/FilmShowing Sold Out 1`] = `
         className="sc-fBuWsC huyAwE"
       >
         <span
-          className="sc-fMiknA fmRpS"
+          className="sc-fMiknA fJcssL"
         >
            - Sold out
         </span>
@@ -825,7 +825,7 @@ exports[`Storyshots 2 All Components/FilmShowing Sold Out 1`] = `
         className="sc-fBuWsC huyAwE"
       >
         <span
-          className="sc-fMiknA fmRpS"
+          className="sc-fMiknA fJcssL"
         >
            - Sold out
         </span>
@@ -854,7 +854,7 @@ exports[`Storyshots 2 All Components/FilmShowingGrid Example 1`] = `
         className="sc-fBuWsC huyAwE"
       >
         <a
-          className="sc-gZMcBi bZAbYs"
+          className="sc-gZMcBi fqvYBX"
           colorScheme={0}
           href="#"
           id="10101"
@@ -869,7 +869,7 @@ exports[`Storyshots 2 All Components/FilmShowingGrid Example 1`] = `
         className="sc-fBuWsC huyAwE"
       >
         <a
-          className="sc-gZMcBi bZAbYs"
+          className="sc-gZMcBi fqvYBX"
           colorScheme={0}
           href="#"
           id="202020"
@@ -884,7 +884,7 @@ exports[`Storyshots 2 All Components/FilmShowingGrid Example 1`] = `
         className="sc-fBuWsC huyAwE"
       >
         <span
-          className="sc-fMiknA fmRpS"
+          className="sc-fMiknA fJcssL"
         >
           8:45pm
            - Sold out
@@ -907,7 +907,7 @@ exports[`Storyshots 2 All Components/FilmShowingGrid Example 1`] = `
         className="sc-fBuWsC huyAwE"
       >
         <span
-          className="sc-fMiknA fmRpS"
+          className="sc-fMiknA fJcssL"
         >
           3:30pm
            - Sold out
@@ -917,7 +917,7 @@ exports[`Storyshots 2 All Components/FilmShowingGrid Example 1`] = `
         className="sc-fBuWsC huyAwE"
       >
         <a
-          className="sc-gZMcBi bZAbYs"
+          className="sc-gZMcBi fqvYBX"
           colorScheme={0}
           href="#"
           id="5050505"
@@ -945,7 +945,7 @@ exports[`Storyshots 2 All Components/FilmShowingGrid Example 1`] = `
         className="sc-fBuWsC huyAwE"
       >
         <span
-          className="sc-fMiknA fmRpS"
+          className="sc-fMiknA fJcssL"
         >
           3:30pm
            - Sold out
@@ -955,7 +955,7 @@ exports[`Storyshots 2 All Components/FilmShowingGrid Example 1`] = `
         className="sc-fBuWsC huyAwE"
       >
         <a
-          className="sc-gZMcBi bZAbYs"
+          className="sc-gZMcBi fqvYBX"
           colorScheme={0}
           href="#"
           id="70707"
@@ -983,7 +983,7 @@ exports[`Storyshots 2 All Components/FilmShowingGrid Example 1`] = `
         className="sc-fBuWsC huyAwE"
       >
         <span
-          className="sc-fMiknA fmRpS"
+          className="sc-fMiknA fJcssL"
         >
           3:30pm
            - Sold out
@@ -993,7 +993,7 @@ exports[`Storyshots 2 All Components/FilmShowingGrid Example 1`] = `
         className="sc-fBuWsC huyAwE"
       >
         <span
-          className="sc-fMiknA fmRpS"
+          className="sc-fMiknA fJcssL"
         >
           6:30pm
            - Sold out
@@ -1029,7 +1029,7 @@ Array [
           className="sc-fBuWsC huyAwE"
         >
           <a
-            className="sc-gZMcBi bZAbYs"
+            className="sc-gZMcBi fqvYBX"
             colorScheme={0}
             href="#"
             id="10101"
@@ -1044,7 +1044,7 @@ Array [
           className="sc-fBuWsC huyAwE"
         >
           <a
-            className="sc-gZMcBi bZAbYs"
+            className="sc-gZMcBi fqvYBX"
             colorScheme={0}
             href="#"
             id="202020"
@@ -1059,7 +1059,7 @@ Array [
           className="sc-fBuWsC huyAwE"
         >
           <span
-            className="sc-fMiknA fmRpS"
+            className="sc-fMiknA fJcssL"
           >
             8:45pm
              - Sold out
@@ -1082,7 +1082,7 @@ Array [
           className="sc-fBuWsC huyAwE"
         >
           <span
-            className="sc-fMiknA fmRpS"
+            className="sc-fMiknA fJcssL"
           >
             3:30pm
              - Sold out
@@ -1092,7 +1092,7 @@ Array [
           className="sc-fBuWsC huyAwE"
         >
           <a
-            className="sc-gZMcBi bZAbYs"
+            className="sc-gZMcBi fqvYBX"
             colorScheme={0}
             href="#"
             id="5050505"
@@ -1120,7 +1120,7 @@ Array [
           className="sc-fBuWsC huyAwE"
         >
           <span
-            className="sc-fMiknA fmRpS"
+            className="sc-fMiknA fJcssL"
           >
             3:30pm
              - Sold out
@@ -1130,7 +1130,7 @@ Array [
           className="sc-fBuWsC huyAwE"
         >
           <a
-            className="sc-gZMcBi bZAbYs"
+            className="sc-gZMcBi fqvYBX"
             colorScheme={0}
             href="#"
             id="70707"
@@ -1158,7 +1158,7 @@ Array [
           className="sc-fBuWsC huyAwE"
         >
           <span
-            className="sc-fMiknA fmRpS"
+            className="sc-fMiknA fJcssL"
           >
             3:30pm
              - Sold out
@@ -1168,7 +1168,7 @@ Array [
           className="sc-fBuWsC huyAwE"
         >
           <span
-            className="sc-fMiknA fmRpS"
+            className="sc-fMiknA fJcssL"
           >
             6:30pm
              - Sold out
@@ -1182,10 +1182,10 @@ Array [
 
 exports[`Storyshots 2 All Components/Filter-esque Links Normal 1`] = `
 <nav
-  className="sc-eqIVtm inmmeD"
+  className="sc-eqIVtm inmmeD filter_links"
 >
   <a
-    className="sc-fAjcbJ lprkOg"
+    className="sc-fAjcbJ gHhqbj"
     disabled={false}
     href="#1"
     title="Show all Example link articles"
@@ -1193,7 +1193,7 @@ exports[`Storyshots 2 All Components/Filter-esque Links Normal 1`] = `
     Example link
   </a>
   <a
-    className="sc-fAjcbJ lprkOg"
+    className="sc-fAjcbJ gHhqbj"
     disabled={false}
     href="#2"
     title="Show all Where to stream articles"
@@ -1201,7 +1201,7 @@ exports[`Storyshots 2 All Components/Filter-esque Links Normal 1`] = `
     Where to stream
   </a>
   <a
-    className="sc-fAjcbJ lprkOg"
+    className="sc-fAjcbJ gHhqbj"
     disabled={false}
     href="#3"
     title="Show all Where to begin articles"
@@ -1209,7 +1209,7 @@ exports[`Storyshots 2 All Components/Filter-esque Links Normal 1`] = `
     Where to begin
   </a>
   <a
-    className="sc-fAjcbJ lprkOg"
+    className="sc-fAjcbJ gHhqbj"
     disabled={false}
     href="#4"
     title="Show all Five Things articles"
@@ -1227,7 +1227,7 @@ exports[`Storyshots 2 All Components/Filterable Articles Normal 1`] = `
 
 exports[`Storyshots 2 All Components/Headline Hero H 1 1`] = `
 <h1
-  className="sc-jAaTju gogvSo"
+  className="sc-jAaTju eyKmhr"
 >
   My example headline
 </h1>
@@ -1235,7 +1235,7 @@ exports[`Storyshots 2 All Components/Headline Hero H 1 1`] = `
 
 exports[`Storyshots 2 All Components/Headline Level 1 1`] = `
 <h1
-  className="sc-jAaTju sc-jDwBTQ lhPywc"
+  className="sc-jAaTju sc-jDwBTQ jRgTZN"
 >
   My example headline
 </h1>
@@ -1243,7 +1243,7 @@ exports[`Storyshots 2 All Components/Headline Level 1 1`] = `
 
 exports[`Storyshots 2 All Components/Headline Level 2 1`] = `
 <h2
-  className="sc-gPEVay fPDicg"
+  className="sc-gPEVay hvbBPb"
 >
   My example headline
 </h2>
@@ -1319,7 +1319,7 @@ exports[`Storyshots 2 All Components/Newsletter Sign Up Example 1`] = `
         />
       </label>
       <button
-        className="sc-TOsTZ hoCeVX"
+        className="sc-TOsTZ bWtYkc"
         type="submit"
       >
         Sign up
@@ -1505,7 +1505,7 @@ exports[`Storyshots 2 All Components/Tabs Primary 1`] = `
     >
       <button
         aria-selected={true}
-        className="sc-gGBfsJ jMTWuu"
+        className="sc-gGBfsJ gTJAFv"
         id="tab1"
         onClick={[Function]}
         role="tab"
@@ -1519,7 +1519,7 @@ exports[`Storyshots 2 All Components/Tabs Primary 1`] = `
     >
       <button
         aria-selected={false}
-        className="sc-gGBfsJ fGEaGN"
+        className="sc-gGBfsJ jpHZm"
         id="tab2"
         onClick={[Function]}
         role="tab"
@@ -1533,7 +1533,7 @@ exports[`Storyshots 2 All Components/Tabs Primary 1`] = `
     >
       <button
         aria-selected={false}
-        className="sc-gGBfsJ fGEaGN"
+        className="sc-gGBfsJ jpHZm"
         id="tab3"
         onClick={[Function]}
         role="tab"

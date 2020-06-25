@@ -24,7 +24,7 @@ export const Wrapper = styled.div`
     }
 
     article {
-        max-width: none;
+        max-width: 100%;
 
         & h2:first-child {
             margin-block-start: 0;
