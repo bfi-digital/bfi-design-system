@@ -76,17 +76,73 @@ const Outer = styled.div`
         }
     }
 
-    &.with_image {
-        // p, ol {
-        //     margin: 0 auto;
-        // }
-        p {
-            margin-bottom: 30px;
-        }
-    }
     p, ol {
         max-width: 775px;
+        margin-bottom: ${theme.standardSpace}px;
     }
+
+    &.with_image {
+        @media screen and (max-width: ${theme.m}){
+            h1, p, ol {
+                text-align: center;
+            }
+            h1 {
+                margin-block-start: 0;
+            }
+        }
+        @media screen and (min-width: ${theme.m}){
+            display: flex;
+            margin-bottom: ${theme.standardSpace*1.5}px;
+            background: linear-gradient(90deg,${theme.lightest}, ${theme.lightest} 44%,#fff 0);
+            position: relative;
+            &:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: -9999px;
+                right: 0;
+                border-left: 9999px solid ${theme.lightest};
+                z-index: -1;
+                display: ${props => props.pageWithSideBar ? "none" : "default"}
+            }
+
+            .page_meta {
+                flex: 0 0 50%;
+                align-self: center;
+                height: fit-content;
+                padding-left: ${theme.standardSpace*0.75}px;
+
+                h1 {
+                    margin-block-start: 0.5em;
+                }
+                p {
+                    margin-bottom: 0.5em;
+                    font-size: 1.2rem;
+                }
+                ol {
+                    max-width: 80%;
+                }
+            }
+        }
+        @media screen and (min-width: ${theme.l}){
+            .page_meta {
+                padding-left: ${theme.standardSpace}px;
+
+                p {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+        @media screen and (min-width: ${theme.xl}){
+            .page_meta {
+                p {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+    
     @media screen and (min-width: ${theme.m}){
         p, ol {
             max-width: 1000px;
@@ -100,10 +156,43 @@ const Meta = styled.div`
 
 const ImageContainer = styled.div`
     position: relative;
+    width: 100%;
+    
+    @media screen and (max-width: ${theme.m}){
+        padding: ${theme.standardSpace}px ${theme.standardSpace/2}px;
+        background: linear-gradient(90deg,${theme.lightest}, ${theme.lightest} 80%,#fff 0);
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: -9999px;
+            right: 0;
+            border-left: 9999px solid ${theme.lightest};
+            z-index: -1;
+            display: ${props => props.pageWithSideBar ? "none" : "default"}
+        }
+    }
+
+    @media screen and (min-width: ${theme.m}){
+        padding-right: ${theme.standardSpace*0.75}px;
+        order: -1;
+        height: fit-content;
+        align-self: center;
+        padding-top: ${theme.standardSpace*2}px;
+        padding-bottom: ${theme.standardSpace*2}px;
+    }
+    @media screen and (min-width: ${theme.l}){
+        padding-right: ${theme.standardSpace}px;
+    }
 `
+
 const StyledImage = styled.img`
     width: 100%;
     height: auto;
+    flex: 0 0 50%;
 `
 const Small = styled.small`
     text-align: center;
@@ -133,7 +222,7 @@ export const HeroPage = ({
     isServiceListPage = false
 }) =>
     <Outer className={image1920x1080 ? "with_image" : (isServiceListPage ? "service_list_no_image" : "without_image")}>
-        <Meta>
+        <Meta className="page_meta">
             <Breadcrumbs breadcrumbs={breadcrumbs} />
             {title && <Headline level={1} text={title}/>}
             {standfirst && <LeadParagraph text={standfirst}/>}

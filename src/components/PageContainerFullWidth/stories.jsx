@@ -447,16 +447,17 @@ export const educationPage = () =>
 
 
 
-export const serviceListPageExample = () =>
+export const serviceListPageExampleWithImage = () =>
     <>
         <Header navItems={navItems} quickLinks={quickLinksData}/>
         <Wrapper>
             <MainContent role="main">
                 <HeroPage
-                    title="Find a fund to create films, TV or new formats of storytelling"
-                    standfirst="If you’re an adventurous storyteller, we can help you with funding to create your film, TV, or emerging media like VR or AR."
-                    breadcrumbs={crumbs}
+                    title="BFI National Archive"
+                    standfirst="The BFI national archive holds a magnificent collection of film and television, from the birth of cinema to today. "
                     isServiceListPage={true}
+                    image1920x1080="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1920/1080/1/2020-03/Hero.jpg"
+                    image192x108="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/192/108/1/2020-03/Hero.jpg"
                 />
                 <PageLinks links={[
                     {

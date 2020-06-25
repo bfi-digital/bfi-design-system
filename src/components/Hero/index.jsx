@@ -117,7 +117,7 @@ const Outer = styled.section`
             max-width: calc( 0.8 * ${theme.m});
         }
         p {
-            max-width: 90%;
+            max-width: 80%;
         }
     }
     @media screen and (min-width: ${theme.l}){
