@@ -112,7 +112,7 @@ const Inner = styled.div`
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding-left: ${props => props.reversed ? "25px" : props.pageWithSideBar ? "25px" : "0"};
+        padding-left: ${props => props.reversed ? (theme.standardSpace + "px") : props.pageWithSideBar ? (theme.standardSpace + "px") : "0"};
         
         &.without_image {
             width: 66%;

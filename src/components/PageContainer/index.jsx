@@ -62,6 +62,19 @@ const MainContentWrapper = styled.article`
     .map_embed {
         margin-bottom: ${theme.standardSpace}px;
     }
+
+    @media screen and (min-width: ${theme.m}){
+        .article_grid_block {
+            .articleCard, .loadingArticleCard {
+                margin-right: ${theme.standardSpace}px !important;
+                width: calc(50% - 12.5px);
+
+                &:nth-of-type(2n) {
+                    margin-right: 0 !important;
+                }
+            }
+        }
+    }
 `
 export const MainContent = ({children}) =>
     <MainContentWrapper role="main">{children}</MainContentWrapper>

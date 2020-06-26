@@ -26,13 +26,13 @@ const Outer = styled.ul`
             width: ${props => props.lessColumns ? "calc(50% - 12.5px)" : "calc(33.333% - 16.666px)"};
             margin-right: ${theme.standardSpace}px;
             &:nth-of-type(even) {
-                margin-right: ${props => props.lessColumns ? "0px" : "25px"};
+                margin-right: ${props => props.lessColumns ? "0px" : (theme.standardSpace + "px")};
             }
             &:nth-of-type(3n) {
-                margin-right: ${props => props.lessColumns ? "25px" : "0px"};
+                margin-right: ${props => props.lessColumns ? (theme.standardSpace + "px") : "0px"};
             }
             &:nth-of-type(4n) {
-                margin-right: ${props => props.lessColumns ? "0px" : "25px"};
+                margin-right: ${props => props.lessColumns ? "0px" : (theme.standardSpace + "px")};
             }
         }
         @media screen and (min-width: ${theme.l}){

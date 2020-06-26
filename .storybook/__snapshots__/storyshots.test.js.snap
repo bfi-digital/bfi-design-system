@@ -294,7 +294,7 @@ exports[`Storyshots 2 All Components/Call to Action External Link 1`] = `
   }
 >
   <div
-    className="sc-VigVT DmOWC"
+    className="sc-VigVT kvGEUv call_to_action_block"
   >
     <a
       className="sc-iwsKbI cVQbh external_link"
@@ -319,7 +319,7 @@ exports[`Storyshots 2 All Components/Call to Action Internal Link 1`] = `
   }
 >
   <div
-    className="sc-VigVT DmOWC"
+    className="sc-VigVT kvGEUv call_to_action_block"
   >
     <a
       className="sc-iwsKbI cVQbh"
@@ -344,7 +344,7 @@ exports[`Storyshots 2 All Components/Call to Action Two Links 1`] = `
   }
 >
   <div
-    className="sc-VigVT DmOWC"
+    className="sc-VigVT kvGEUv call_to_action_block"
   >
     <a
       className="sc-iwsKbI cVQbh"
@@ -358,7 +358,7 @@ exports[`Storyshots 2 All Components/Call to Action Two Links 1`] = `
     </a>
   </div>
   <div
-    className="sc-VigVT DmOWC"
+    className="sc-VigVT kvGEUv call_to_action_block"
   >
     <a
       className="sc-iwsKbI cVQbh external_link"

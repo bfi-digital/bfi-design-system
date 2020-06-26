@@ -572,6 +572,8 @@ export const ArticleRecommendsExample = () =>
                     year="2014"
                     playerUrl="https://player.bfi.org.uk/rentals/film/watch-carol-2014-online"
                 />
+
+                <ArticleGrid pageWithSideBar articles={[...demoArticles.slice(0, 5)]} />
             </MainContent>
             <Sidebar>
                 <AdvertisingContainer>

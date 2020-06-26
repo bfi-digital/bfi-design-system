@@ -70,13 +70,13 @@ const Articles = styled.ul`
             }
             @media screen and (min-width: ${theme.m}){
                 &:nth-of-type(2n) {
-                    margin-right: ${props => props.lessColumns ? "0px" : "25px"};
+                    margin-right: ${props => props.lessColumns ? "0px" : (theme.standardSpace + "px")};
                 }
                 &:nth-of-type(3n) {
-                    margin-right: ${props => props.lessColumns ? "25px" : "0px"};
+                    margin-right: ${props => props.lessColumns ? (theme.standardSpace + "px") : "0px"};
                 }
                 // &:nth-of-type(4n) {
-                //     margin-right: ${props => props.lessColumns ? "0px" : "25px"};
+                //     margin-right: ${props => props.lessColumns ? "0px" : (theme.standardSpace + "px")};
                 // }  
             }
         }
@@ -164,7 +164,7 @@ export const ArticleGrid = ({
     skeletons = 6,
     loadMoreLoading
 }) =>
-    <Outer pageWithSideBar={pageWithSideBar}>
+    <Outer pageWithSideBar={pageWithSideBar} className="article_grid_block">
         {optionalTitle && 
             <StyledHeadline level={2} text={optionalTitle} />
         }
