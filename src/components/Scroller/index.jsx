@@ -15,6 +15,11 @@ const ScrollerTrack = styled.ul`
     overflow-y: hidden;
     padding: 10px;
     display: flex;
+    padding-left: 0;
+
+    &:focus-within {
+        padding-left: 5px;
+    }
 
     &::-webkit-scrollbar {
         height: 10px;
