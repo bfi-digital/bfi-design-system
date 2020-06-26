@@ -24,6 +24,16 @@ import { CallToAction } from "../../../components/CallToAction/index"
     </Story>
 </Preview>
 
+<Preview>
+    <Story name="Multiple Links">
+        <div style={{padding: "20px"}}>
+            <CallToAction linkText="Internal Link 1" linkURL="/" />
+            <CallToAction linkText="Internal Link 2" linkURL="/" />
+            <CallToAction linkText="External Link" linkURL="https://google.com" external={true} />
+        </div>
+    </Story>
+</Preview>
+
 ## Props of each file
 
 <Props of={CallToAction} />

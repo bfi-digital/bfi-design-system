@@ -14,7 +14,7 @@ export const CallToAction = ({
     center,
     external
 }) =>
-    <Outer center={center}>
+    <Outer center={center} className="call_to_action_block">
         <Button to={linkURL} external={external} className={external ? "external_link" : ""} rel={external ? "noreferrer" : ""}  target={external ? "_blank" : "_self"}>
             {linkText}
         </Button>

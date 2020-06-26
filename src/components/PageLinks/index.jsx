@@ -41,7 +41,7 @@ const Outer = styled.ul`
     }
 
 
-    & + .pageLinks {
+    & + .page_links_block {
         margin-top: -15px;
         padding-top: 0px;
     }
@@ -60,8 +60,8 @@ export const PageLinks = ({
     links && 
         <ConditionalWrapper
             condition={links.length > 9}
-            wrapper={children => <Scroller>{children}</Scroller>}
-            wrapper2={children => <Outer lessColumns={links.length === 2 || links.length === 4} className="pageLinks">{children}</Outer>}
+            wrapper={children => <Scroller className="page_links_block">{children}</Scroller>}
+            wrapper2={children => <Outer lessColumns={links.length === 2 || links.length === 4} className="page_links_block">{children}</Outer>}
         >
             {links.map((link) =>
                 <PageLink key={link.url} {...link} colorScheme={colorScheme} withImages={withImages} inScroller={links.length > 9} lessColumns={links.length === 2 || links.length === 4} />    

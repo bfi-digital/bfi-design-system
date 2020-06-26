@@ -43,6 +43,10 @@ export const Wrapper = styled.div`
             margin-right: 0px;
         }
     }
+
+    .page_links_block + .call_to_action_block {
+        text-align: center;
+    }
 `
 
 const MainContentWrapper = styled.article`
