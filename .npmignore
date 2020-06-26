@@ -5,3 +5,6 @@ netlify.toml
 .circleci
 .babelrc
 rollup.config.js
+*.gif
+*.png
+*.svg
