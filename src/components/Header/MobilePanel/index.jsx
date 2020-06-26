@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import { LinkSwitch as Link } from "../../LinkSwitch"
 import theme from "../../_theme"
 import styled from "styled-components"
+import { RemoveScrollBar } from 'react-remove-scroll-bar';
 
 const Panel = styled.nav`
     @keyframes fadeIn{
@@ -182,6 +183,7 @@ const MobilePanel = ({
 
     return(
         <Panel id="menu-panel" role="region">
+            <RemoveScrollBar />
             {selected === false && 
                 <>
                     {quickLinks && 
