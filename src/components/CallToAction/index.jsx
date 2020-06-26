@@ -1,11 +1,20 @@
 import React from "react"
 import styled from "styled-components"
 import PropTypes from "prop-types"
+import theme from "../_theme"
 import { Button } from "../Button"
 
 export const Outer = styled.div`
     margin: 1.75em 0;
     text-align: ${props => props.center ? "center" : "left"};
+    display: ${props => props.center ? "block" : "inline-block"};
+
+    & + .call_to_action_block {
+        
+        a { 
+            margin-left: ${theme.standardSpace/2}px;
+        }
+    }
 `
 
 export const CallToAction = ({

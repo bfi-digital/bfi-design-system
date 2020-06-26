@@ -18,6 +18,7 @@ export const Wrapper = styled.div`
 
     .page_links_block + .call_to_action_block {
         text-align: center;
+        display: block;
     }
 
     @media screen and (min-width: ${theme.xl}){
