@@ -13,11 +13,9 @@ export const Wrapper = styled.div`
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        padding: ${theme.standardSpace*2}px ${theme.horizontalPadding};
     }
     @media screen and (min-width: ${theme.xl}){
         max-width: calc(${theme.xl} - 100px);
-        padding: ${theme.standardSpace*2}px ${theme.horizontalPadding};
     }
     &:last-of-type{
         margin-bottom: 100px;
