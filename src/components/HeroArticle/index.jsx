@@ -22,6 +22,19 @@ const Meta = styled.div`
     @media screen and (min-width: ${theme.m}){
         padding: 0 50px;
     }
+
+    h1 {
+        font-size: ${props => props.titleLength > 35 ? "1.8rem" : (props.titleLength > 25 ? "2.1rem" : "2.3rem")};
+        @media screen and (min-width: ${theme.m}){
+            font-size: ${props => props.titleLength > 35 ? "2rem" : (props.titleLength > 25 ? "2.3rem" : "2.5rem")};
+        }  
+        @media screen and (min-width: ${theme.l}){
+            font-size: ${props => props.titleLength > 35 ? "2.2rem" : (props.titleLength > 25 ? "2.5rem" : "2.7rem")};
+        }       
+        @media screen and (min-width: ${theme.xl}){
+            font-size: ${props => props.titleLength > 35 ? "2.3rem" : (props.titleLength > 25 ? "2.6rem" : "3rem")};
+        }
+    }
 `
 const LowerContent = styled.div`
     margin: 30px auto;
@@ -99,7 +112,7 @@ export const HeroArticle = ({
     
     return(
         <Outer>
-            <Meta>
+            <Meta titleLength={title.length}>
                 {category && <Tag link={categoryLink}>{category}</Tag>}
                 {title && <Headline level={1} text={title}/>}
                 {standfirst && <LeadParagraph text={standfirst}/>}

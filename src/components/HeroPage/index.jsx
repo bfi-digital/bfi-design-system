@@ -143,7 +143,24 @@ const Outer = styled.div`
 
 `
 const Meta = styled.div`
+    h1 {
+        @media screen and (max-width: ${theme.m}){
+            font-size: ${props => props.titleLength > 35 ? "1.8rem" : (props.titleLength > 25 ? "2.1rem" : "2.3rem")};
+            max-width: 90%;
+            margin: 0 auto;
+            margin-block-end: 0.5em;
+        }
 
+        @media screen and (min-width: ${theme.m}){
+            font-size: ${props => props.titleLength > 35 ? "2rem" : (props.titleLength > 25 ? "2.3rem" : "2.5rem")};
+        }  
+        @media screen and (min-width: ${theme.l}){
+            font-size: ${props => props.titleLength > 35 ? "2.2rem" : (props.titleLength > 25 ? "2.5rem" : "2.7rem")};
+        }       
+        @media screen and (min-width: ${theme.xl}){
+            font-size: ${props => props.titleLength > 35 ? "2.3rem" : (props.titleLength > 25 ? "2.6rem" : "3rem")};
+        }
+    }
 `
 
 const ImageContainer = styled.div`
@@ -214,7 +231,7 @@ export const HeroPage = ({
     isServiceListPage = false
 }) =>
     <Outer className={image1920x1080 ? "with_image" : (isServiceListPage ? "service_list_no_image" : "without_image")}>
-        <Meta className="page_meta">
+        <Meta className="page_meta" titleLength={title.length}>
             <Breadcrumbs breadcrumbs={breadcrumbs} />
             {title && <Headline level={1} text={title}/>}
             {standfirst && <LeadParagraph text={standfirst}/>}

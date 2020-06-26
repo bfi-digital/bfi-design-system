@@ -42,14 +42,18 @@ const Outer = styled.section`
             text-shadow: 0px 0px 30px ${theme.black}50;
             margin-bottom: ${theme.standardSpace}px;
             font-size: 2.4rem;
+            font-size: ${props => props.titleLength > 65 ? "2rem" : (props.titleLength > 45 ? "2.4rem" : "2.6rem")};
             @media screen and (min-width: ${theme.m}){
                 font-size: 2.6rem;
+                font-size: ${props => props.titleLength > 65 ? "2.4rem" : (props.titleLength > 45 ? "2.6rem" : "2.9rem")};
             }
             @media screen and (min-width: ${theme.l}){
                 font-size: 2.8rem;
+                font-size: ${props => props.titleLength > 65 ? "2.6rem" : (props.titleLength > 45 ? "2.8rem" : "3.2rem")};
             }
             @media screen and (min-width: ${theme.xl}){
                 font-size: 3rem;
+                font-size: ${props => props.titleLength > 65 ? "2.8rem" : (props.titleLength > 45 ? "3rem" : "3.6rem")};
             }
         }
         p {
@@ -204,6 +208,7 @@ export const Hero = ({
                 image={src} 
                 withHeader={withHeader}
                 className={image1920x1080 ? "with_image" : "hero_without_image"}
+                titleLength={headline.length}
             >
                 {image1920x1080 && <InnerGradient withHeader={withHeader} /> }
                 <Container>
