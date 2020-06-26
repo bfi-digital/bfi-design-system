@@ -115,9 +115,6 @@ const ChildLink = styled(Link)`
     text-decoration: none;
     padding: 12px 0;
     transition: all 0.2s;
-    &:hover{
-        padding-left: 10px;
-    }
     &:focus {
         // border-radius: 7px;
         box-shadow: ${theme.focus} 0px 0px 0px 4px;
