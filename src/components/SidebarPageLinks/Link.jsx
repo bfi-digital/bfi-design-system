@@ -17,7 +17,7 @@ const Outer = styled.li`
     .pagelink_title {
         margin: 0;
         display: inline-block;
-        vertical-align: top;
+        vertical-align: middle;
         width: 60%;
         font-weight: ${theme.fontWeight_semiBold};
     }
@@ -51,9 +51,9 @@ const Outer = styled.li`
     }
 `
 const PageImageContainer = styled.div`
-    background: ${theme.light};
+    background: ${props => props.withImage ? theme.light : "transparent"};
     display: inline-block;
-    width: calc(40% - 10px);
+    width: ${props => props.withImage ? "calc(40% - 10px)" : "calc(40% - 10px)"};
     height: 100px;
     // border-radius: 4px;
     margin-right: 10px;
@@ -77,6 +77,7 @@ const CallToAction = styled(Link)`
     text-decoration: none;
     color: ${theme.black};
     display: block;
+    min-height: 100px;
 
     &:after{
         content: "";
@@ -97,6 +98,7 @@ const Heading = styled.p`
     font-weight: ${theme.fontWeight_semiBold};
     font-size: ${theme.small_fontSize_m};
     line-height: 1.3;
+    vertical-align: middle;
 
     @media screen and (min-width: ${theme.m}){
         font-size: ${theme.fontSize_s};
@@ -115,18 +117,20 @@ export const PageLink = ({
 }) =>
     <Outer>
         <CallToAction external={external} className={external ? "external_link" : ""} rel={external ? "noreferrer" : ""} to={url} target={external ? "_blank" : "_self"}>
-            <PageImageContainer>
-                <LazyImage
-                    src={image}
-                    placeholder={placeholder}
-                >
-                    {src => 
-                        <PageImage className="image" imageSrc={src} />
-                    }
-                </LazyImage>
-            </PageImageContainer>
-            
             <Heading className="pagelink_title">{title}</Heading>
+            
+            <PageImageContainer withImage={image}>
+                { image && 
+                    <LazyImage
+                        src={image}
+                        placeholder={placeholder}
+                    >
+                        {src => 
+                            <PageImage className="image" imageSrc={src} />
+                        }
+                    </LazyImage>
+                }
+            </PageImageContainer>
         </CallToAction>
     </Outer>
 
