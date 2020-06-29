@@ -7,14 +7,38 @@ import theme from "../_theme"
 const colorSchemes = [
     {
         shadow: theme.primary,
-        hoverBackground: theme.darkGrey,
+        activeBackground: theme.dark,
         text: theme.white,
         background: theme.black,
         focus: theme.focus
     },
     {
         shadow: theme.primary,
-        hoverBackground: theme.lightest,
+        activeBackground: theme.dark,
+        text: theme.black,
+        background: theme.white,
+        focus: theme.focus
+    },
+    // BFIPlayer rental
+    {
+        shadow: theme.playerRentals,
+        activeBackground: theme.playerRentals,
+        text: theme.black,
+        background: theme.white,
+        focus: theme.focus
+    },
+    // BFIPlayer subscription
+    {
+        shadow: theme.playerSubs,
+        activeBackground: theme.playerSubs,
+        text: theme.black,
+        background: theme.white,
+        focus: theme.focus
+    },
+    // BFIPlayer free
+    {
+        shadow: theme.playerFree,
+        activeBackground: theme.playerFree,
         text: theme.black,
         background: theme.white,
         focus: theme.focus
@@ -65,7 +89,7 @@ const PrimaryButton = styled(Link)`
         }
     }
     &:active{
-        background: ${props => colorSchemes[props.colorScheme].background};
+        background: ${props => colorSchemes[props.colorScheme].activeBackground} !important;
         box-shadow: none;
         transform: translate(0, 5px);   
         :after {
@@ -133,11 +157,12 @@ export const Button = ({
     children,
     title,
     colorScheme = 0,
+    playerPillar,
     ...props
 }) => {
     if(level === 3) return <TertiaryButton title={title ? title : false} colorScheme={colorScheme} {...props}>{children}</TertiaryButton>
     if(level === 2) return <SecondaryButton title={title ? title : false} colorScheme={colorScheme} {...props}>{children}</SecondaryButton>
-    return <PrimaryButton title={title ? title : false} colorScheme={colorScheme} {...props}>{children}</PrimaryButton>
+    return <PrimaryButton title={title ? title : false} colorScheme={playerPillar === "rentals" ? 2 : playerPillar === "subscription" ? 3 : playerPillar === "free" ? 4 : colorScheme} {...props}>{children}</PrimaryButton>
 }
 
 Button.propTypes = {
@@ -146,7 +171,9 @@ Button.propTypes = {
     // A number between 1 and 3
     level: PropTypes.number,
     colorScheme: PropTypes.number,
-    title: PropTypes.string
+    title: PropTypes.string,
+    // If button links to player, add the pillar for this to theme it
+    playerPillar: PropTypes.string
 }
 
 Button.defaultProps = {

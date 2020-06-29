@@ -18,6 +18,10 @@ export default {
     lightest: "#F3EEFF",
     lightFocus: "#F9DDE7",
 
+    playerRentals: "#cf474a",
+    playerSubs: "#836c46",
+    playerFree: "#25856E",
+
     // breakpoints
     s: "550px",
     m: "768px", // tablets and larger

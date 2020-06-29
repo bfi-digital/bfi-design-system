@@ -1225,7 +1225,7 @@ export const FilmPage = () =>
         >
             <Actions>
                 <Button to="#18" level={1} colorScheme={1}>Buy tickets</Button>
-                <PlayButton to="#17" level={1} colorScheme={1}>Watch on BFI Player</PlayButton>
+                <PlayButton to="#17" level={1} colorScheme={1}>Subscribe to watch on BFI Player</PlayButton>
             </Actions>
         </Hero>
         <Wrapper>           
