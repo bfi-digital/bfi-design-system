@@ -1,6 +1,5 @@
 import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks'
-import { Wrapper, MainContent } from "../../../components/PageContainerFullWidth"
-import { Wrapper as WithSidebarWrapper, MainContent as WithSidebarMainContent, Sidebar, Actions, PlayButton, OriginalArticleDate } from "../../../components/PageContainer"
+import { Wrapper, MainContent, Sidebar, Actions, PlayButton, OriginalArticleDate } from "../../../components/PageContainer"
 
 import navItems, { quickLinksData } from "../../../components/Header/data"
 import footerMenus from "../../../components/Footer/data"
@@ -47,7 +46,7 @@ import { QuickFacts } from "../../../components/QuickFacts"
             />
             
             <Wrapper>
-               <MainContent landingPage>
+               <MainContent  classes="landing_page">
                     <>
                         <PromoBanner 
                             colorScheme={1}
@@ -203,8 +202,8 @@ import { QuickFacts } from "../../../components/QuickFacts"
                     }
                 ]}
             />
-            <WithSidebarWrapper>           
-                <WithSidebarMainContent>
+            <Wrapper>           
+                <MainContent>
                     <Text>
                         <p>Saar Maoz came to London 17 years ago after being thrown out of his home on a kibbutz as punishment for over-enthusiastic partying as a teenager. Since then, he’s been rejected by his father and six siblings. Now in his late 30s, he wonders if it’s time to go home… Watching his story unfold we’re soon rooting for him as he attempts to re-establish his relationship with his extended family, who still live on the kibbutz, many of whom vehemently disapprove of his ‘irresponsible’ lifestyle and HIV+ status.</p>
                     </Text>
@@ -221,7 +220,7 @@ import { QuickFacts } from "../../../components/QuickFacts"
                         <p>For many years Saar found emotional support through the London Gay Men’s Chorus, and their stirring musical numbers punctuate this moving documentary that speaks to issues around identity and the power of family ties. There are beautifully observed moments throughout the film, hinting that all may not be as it initially appears. I particularly loved the scene in which the silent wife of Saar’s domineering brother listens as her husband holds court about the risks to his children posed by Saar being part of their lives – and then makes a gloriously unexpected intervention.</p>
                         <p><a href="https://www.bfi.org.uk/people/ros-cranston">Ros Cranston</a><br/>Non-Fiction Curator<br/><a href="https://www.twitter.com/RosCranston">Ros Cranston</a></p>
                     </Text>
-                </WithSidebarMainContent>
+                </MainContent>
                 <Sidebar>
                     <AdvertisingContainer>
                         <div style={{width: "300px", height: "250px", background: "grey"}}></div>
@@ -255,9 +254,9 @@ import { QuickFacts } from "../../../components/QuickFacts"
                         }
                     ]} blockTitle="What to read next" />
                 </Sidebar>
-            </WithSidebarWrapper>
-            <WithSidebarWrapper>
-                <WithSidebarMainContent>
+            </Wrapper>
+            <Wrapper>
+                <MainContent>
                     <FilterableArticles
                         limit={3}
                         includeHighlight={false}
@@ -304,8 +303,8 @@ import { QuickFacts } from "../../../components/QuickFacts"
                     <AdvertisingContainer>
                         <div style={{width: "1020px", height: "400px", background: "grey"}}></div>
                     </AdvertisingContainer>
-                </WithSidebarMainContent>
-            </WithSidebarWrapper>
+                </MainContent>
+            </Wrapper>
             <Footer
                 menus={footerMenus}
                 copyrightLinks={[
@@ -347,11 +346,11 @@ import { QuickFacts } from "../../../components/QuickFacts"
             >
                 <Actions>
                     <Button url="/" level={1} colorScheme={1}>Buy tickets</Button>
-                    <PlayButton playerPillar="subscription" url="https://player.bfi.org.uk/subscription/film/watch-whos-gonna-love-me-now-2016-online" external={true} level={1} colorScheme={1}>Subscribe to watch on BFI Player</PlayButton>
+                    <PlayButton playerPillar="subscription" url="https://player.bfi.org.uk/subscribe/9879" external={true} level={1} colorScheme={1}>Subscribe to watch on BFI Player</PlayButton>
                 </Actions>
             </Hero>
-            <WithSidebarWrapper>           
-                <WithSidebarMainContent>
+            <Wrapper>           
+                <MainContent>
                     <Text>
                         <p>Saar is an Israeli living in London, driven away from his Kibbutz by his family’s response to his homosexuality and HIV-positive status, but also by his own fear of rejection. The lure of home and family is deep-rooted, however, and although he’s made a new life for himself within the close-knit, loving community of London Gay Men’s Chorus, he yearns for acceptance from his parents and siblings, in particular his stern father.</p>
                         <p>Following Saar in the UK and his Israeli-based family over many years, the Heymann Brothers skilfully construct an intimate and nuanced portrait of a man growing up and coming to terms both with himself and his family, just as they do him. It’s a tender but affirmative exploration of the LGBT migrant experience and an assertion that minds and attitudes only change through communication.</p>
@@ -436,7 +435,7 @@ import { QuickFacts } from "../../../components/QuickFacts"
                         },
                     ]} />
                     <Button to="#21" level={3}>All showings</Button>
-                </WithSidebarMainContent>
+                </MainContent>
                 <Sidebar>
                     <QuickFacts
                         facts={[
@@ -462,9 +461,9 @@ import { QuickFacts } from "../../../components/QuickFacts"
                         <div style={{width: "100%", height: "250px", background: "grey"}}></div>
                     </AdvertisingContainer>
                 </Sidebar>
-            </WithSidebarWrapper>
-            <WithSidebarWrapper>
-                <WithSidebarMainContent>  
+            </Wrapper>
+            <Wrapper>
+                <MainContent>  
                     <FilterableArticles
                         limit={3}
                         greyBackground
@@ -504,15 +503,8 @@ import { QuickFacts } from "../../../components/QuickFacts"
                             }
                         ]} 
                     />
-                    <Headline 
-                        level={4} 
-                        text="Promoted links from around the web"
-                    />
-                    <AdvertisingContainer withCaption={false}>
-                        <div style={{width: "1020px", height: "400px", background: "grey"}}></div>
-                    </AdvertisingContainer>
-                </WithSidebarMainContent>
-            </WithSidebarWrapper>
+                </MainContent>
+            </Wrapper>
             <Footer
                 menus={footerMenus}
                 copyrightLinks={[
@@ -555,8 +547,8 @@ import { QuickFacts } from "../../../components/QuickFacts"
                     <PlayButton playerPillar="subscription" url="https://player.bfi.org.uk/subscription/film/watch-whos-gonna-love-me-now-2016-online" external={true} level={1} colorScheme={1}>Subscribe to watch on BFI Player</PlayButton>
                 </Actions>
             </Hero>
-            <WithSidebarWrapper>           
-                <WithSidebarMainContent>
+            <Wrapper>           
+                <MainContent>
                     <Text>
                         <p>Saar is an Israeli living in London, driven away from his Kibbutz by his family’s response to his homosexuality and HIV-positive status, but also by his own fear of rejection. The lure of home and family is deep-rooted, however, and although he’s made a new life for himself within the close-knit, loving community of London Gay Men’s Chorus, he yearns for acceptance from his parents and siblings, in particular his stern father.</p>
                         <p>Following Saar in the UK and his Israeli-based family over many years, the Heymann Brothers skilfully construct an intimate and nuanced portrait of a man growing up and coming to terms both with himself and his family, just as they do him. It’s a tender but affirmative exploration of the LGBT migrant experience and an assertion that minds and attitudes only change through communication.</p>
@@ -641,7 +633,7 @@ import { QuickFacts } from "../../../components/QuickFacts"
                         },
                     ]} />
                     <Button to="#21" level={3}>All showings</Button>
-                </WithSidebarMainContent>
+                </MainContent>
                 <Sidebar>
                     <QuickFacts
                         facts={[
@@ -667,9 +659,9 @@ import { QuickFacts } from "../../../components/QuickFacts"
                         <div style={{width: "100%", height: "250px", background: "grey"}}></div>
                     </AdvertisingContainer>
                 </Sidebar>
-            </WithSidebarWrapper>
-            <WithSidebarWrapper>
-                <WithSidebarMainContent>  
+            </Wrapper>
+            <Wrapper>
+                <MainContent>  
                     <FilterableArticles
                         limit={3}
                         includeHighlight={false}
@@ -708,15 +700,8 @@ import { QuickFacts } from "../../../components/QuickFacts"
                             }
                         ]} 
                     />
-                    <Headline 
-                        level={4} 
-                        text="Promoted links from around the web"
-                    />
-                    <AdvertisingContainer withCaption={false}>
-                        <div style={{width: "1020px", height: "400px", background: "grey"}}></div>
-                    </AdvertisingContainer>
-                </WithSidebarMainContent>
-            </WithSidebarWrapper>
+                </MainContent>
+            </Wrapper>
             <Footer
                 menus={footerMenus}
                 copyrightLinks={[

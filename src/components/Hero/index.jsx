@@ -5,7 +5,7 @@ import theme from "../_theme"
 import PropTypes from "prop-types"
 import LazyImage from "react-lazy-progressive-image"
 import { LeadParagraph } from "../LeadParagraph"
-import { Wrapper } from "../PageContainerFullWidth"
+import { Wrapper } from "../PageContainer"
 
 const Outer = styled.section`
     margin: 0 auto;
@@ -24,6 +24,18 @@ const Outer = styled.section`
     align-items: flex-end;
     margin-top: ${props => props.withHeader ? "175px" : "0px"};
     
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -9999px;
+        right: 0;
+        box-shadow: 9999px 0 0 ${theme.lightGrey};
+        border-left: 9999px solid ${theme.lightGrey};
+        z-index: -1;
+    }
+
     a {
         color: ${theme.black} !important;
         svg {
@@ -79,21 +91,12 @@ const Outer = styled.section`
             padding-bottom: ${theme.standardSpace*2}px;        
             margin-bottom: ${theme.standardSpace*1.5}px;
         }
-        
-        h1, p, ul, li, a {
-            color: ${theme.white};
-        }
-
         &:before {
-            content: "";
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: -9999px;
-            right: 0;
             box-shadow: 9999px 0 0 ${theme.primary};
             border-left: 9999px solid ${theme.primary};
-            z-index: -1;
+        }
+        h1, p, ul, li, a {
+            color: ${theme.white};
         }
 
         a {

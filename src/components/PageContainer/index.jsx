@@ -17,6 +17,7 @@ export const Wrapper = styled.div`
     @media screen and (min-width: ${theme.xl}){
         max-width: calc(${theme.xl} - 100px);
     }
+
     &:last-of-type{
         margin-bottom: 100px;
     }
@@ -28,7 +29,7 @@ export const Wrapper = styled.div`
             margin-block-start: 0;
         }
         & .promoBanner:first-child {
-            margin-top: 0;
+            margin-top: 0; 
         }
     }
 
@@ -62,22 +63,32 @@ const MainContentWrapper = styled.article`
     .map_embed {
         margin-bottom: ${theme.standardSpace}px;
     }
+    &.landing_page {
+        h2, .filter_links {
+            text-align: center;
+        }
+        & .promoBanner:first-child {
+            margin-top: ${theme.standardSpace}px;
+        }
+    }
 
     @media screen and (min-width: ${theme.m}){
-        .article_grid_block {
-            .articleCard, .loadingArticleCard {
-                margin-right: ${theme.standardSpace}px !important;
-                width: calc(50% - 12.5px);
+        &.page_with_sidebar {
+            .article_grid_block, .page_links_block {
+                li {
+                    margin-right: ${theme.standardSpace}px !important;
+                    width: calc(50% - 12.5px);
 
-                &:nth-of-type(2n) {
-                    margin-right: 0 !important;
+                    &:nth-of-type(2n) {
+                        margin-right: 0 !important;
+                    }
                 }
             }
         }
     }
 `
-export const MainContent = ({children}) =>
-    <MainContentWrapper role="main">{children}</MainContentWrapper>
+export const MainContent = ({classes, children}) =>
+    <MainContentWrapper role="main" className={classes}>{children}</MainContentWrapper>
 
 export const WrapperFullWidth = styled.article`
     margin: 35px auto;

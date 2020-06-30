@@ -1,6 +1,5 @@
 import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks'
-import { Wrapper, MainContent } from "../../../components/PageContainerFullWidth"
-import { Wrapper as WithSidebarWrapper, MainContent as WithSidebarMainContent, Sidebar, Actions, PlayButton, OriginalArticleDate } from "../../../components/PageContainer"
+import { Wrapper, MainContent, Sidebar, Actions, PlayButton, OriginalArticleDate } from "../../../components/PageContainer"
 
 import navItems, { quickLinksData } from "../../../components/Header/data"
 import footerMenus from "../../../components/Footer/data"
@@ -29,6 +28,7 @@ import { LeadParagraph } from "../../../components/LeadParagraph"
 import { Button } from "../../../components/Button"
 import { QuickFacts } from "../../../components/QuickFacts"
 
+import { StepByStep } from "../../../components/StepByStep"
 
 <Meta title="Pattern Library|Page Examples/2 Funding &amp; Industry" component={MainContent} />
 
@@ -48,7 +48,7 @@ import { QuickFacts } from "../../../components/QuickFacts"
                 headline="We support filmmakers and champion films that push boundaries."
             />
             <Wrapper>
-                <MainContent landingPage>
+                <MainContent  classes="landing_page">
                     <>
                         <PromoBanner 
                             colorScheme={0}
@@ -273,6 +273,96 @@ import { QuickFacts } from "../../../components/QuickFacts"
                     {
                         title: "Help & FAQs",
                         url: "#"
+                    }
+                ]}
+                copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"
+            />
+        </>
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="4 Funding Example">
+        <>
+            <Header navItems={navItems} quickLinks={quickLinksData} />
+             <Wrapper>
+                <HeroPage
+                    title="Audience Fund"
+                    standfirst="We want to support work that takes risks and does something different. This means we fund projects that can’t find other, commercial finance at development stage."
+                    breadcrumbs={[
+                        {
+                            title: "Funding & Industry",
+                            url: "/iframe.html?id=pattern-library-page-examples-2-funding-industry--1-landing-page"
+                        },
+                        {
+                            title: "Get funding",
+                            url: "/iframe.html?id=pattern-library-page-examples-2-funding-industry--2-service-list-page-example"
+                        },
+                        {
+                            title: "Bring great films to a wider audience",
+                            url: "/iframe.html?id=pattern-library-page-examples-2-funding-industry--3-sub-service-list-example"
+                        },
+                        {
+                            title: "Audience Fund"
+                        }
+                    ]}
+                />
+                <MainContent classes="page_with_sidebar">
+                    <Headline 
+                        level={2} 
+                        text="Content about fund"
+                    />
+                    <Text> 
+                        <p>Content about funding.</p>
+                    </Text>
+                    <CallToAction linkURL="/" linkText="Apply for funding" />
+                </MainContent>
+                <Sidebar>
+                    <StepByStep 
+                        title="Applying for film funding"
+                        steps={[
+                            {
+                                title: "Is this fund right for you?",
+                                description: "The BFI Audience Fund supports audience facing film projects and organisations of national scale and significant cultural ambition."
+                            },
+                            {
+                                title: "Prepare your supporting materials",
+                                description: "The BFI Audience Fund supports audience facing film projects and organisations of national scale and significant cultural ambition."
+                            },
+                            {
+                                title: "Apply",
+                                description: "The BFI Audience Fund supports audience facing film projects and organisations of national scale and significant cultural ambition."
+                            },
+                            {
+                                title: "Wait to hear from us",
+                                description: "The BFI Audience Fund supports audience facing film projects and organisations of national scale and significant cultural ambition."
+                            },
+                            {
+                                title: "Your decision",
+                                description: "The BFI Audience Fund supports audience facing film projects and organisations of national scale and significant cultural ambition."
+                            },
+                        ]} 
+                    />
+                </Sidebar>
+            </Wrapper>
+            <Footer
+                menus={footerMenus}
+                copyrightLinks={[
+                    {
+                        title: "Cookies & privacy",
+                        url: "#1"
+                    },
+                    {
+                        title: "Terms & conditions",
+                        url: "#2"
+                    },
+                    {
+                        title: "Accessibility",
+                        url: "#3"
+                    },
+                    {
+                        title: "Help & FAQs",
+                        url: "#4"
                     }
                 ]}
                 copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"

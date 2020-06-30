@@ -44,4 +44,3 @@ export * from "./components/Text"
 
 // Page scaffolds
 export * from "./components/PageContainer"
-export * from "./components/PageContainerFullWidth"
