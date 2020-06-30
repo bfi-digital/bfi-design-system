@@ -234,7 +234,7 @@ exports[`Storyshots 2 All Components/Button Primary 1`] = `
   }
 >
   <a
-    className="sc-iwsKbI cVQbh"
+    className="sc-iwsKbI dNhSqb"
     colorScheme={0}
     href="#1"
     target="_self"
@@ -297,7 +297,7 @@ exports[`Storyshots 2 All Components/Call to Action External Link 1`] = `
     className="sc-VigVT kvGEUv call_to_action_block"
   >
     <a
-      className="sc-iwsKbI cVQbh external_link"
+      className="sc-iwsKbI dNhSqb external_link"
       colorScheme={0}
       href="https://google.com"
       rel="noreferrer"
@@ -322,7 +322,7 @@ exports[`Storyshots 2 All Components/Call to Action Internal Link 1`] = `
     className="sc-VigVT kvGEUv call_to_action_block"
   >
     <a
-      className="sc-iwsKbI cVQbh"
+      className="sc-iwsKbI dNhSqb"
       colorScheme={0}
       href="/"
       rel=""
@@ -347,7 +347,7 @@ exports[`Storyshots 2 All Components/Call to Action Two Links 1`] = `
     className="sc-VigVT kvGEUv call_to_action_block"
   >
     <a
-      className="sc-iwsKbI cVQbh"
+      className="sc-iwsKbI dNhSqb"
       colorScheme={0}
       href="/"
       rel=""
@@ -361,7 +361,7 @@ exports[`Storyshots 2 All Components/Call to Action Two Links 1`] = `
     className="sc-VigVT kvGEUv call_to_action_block"
   >
     <a
-      className="sc-iwsKbI cVQbh external_link"
+      className="sc-iwsKbI dNhSqb external_link"
       colorScheme={0}
       href="https://google.com"
       rel="noreferrer"
@@ -629,7 +629,7 @@ Array [
         className="sc-iAyFgw eBVreh"
       >
         <a
-          className="sc-iwsKbI cVQbh"
+          className="sc-iwsKbI dNhSqb"
           colorScheme={0}
           href="/"
           target="_self"
@@ -682,7 +682,7 @@ Array [
         className="sc-iAyFgw eBVreh"
       >
         <a
-          className="sc-iwsKbI cVQbh"
+          className="sc-iwsKbI dNhSqb"
           colorScheme={0}
           href="/"
           target="_self"
