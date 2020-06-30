@@ -5,6 +5,7 @@ import theme from "../_theme"
 import PropTypes from "prop-types"
 import LazyImage from "react-lazy-progressive-image"
 import { LeadParagraph } from "../LeadParagraph"
+import { Wrapper } from "../PageContainerFullWidth"
 
 const Outer = styled.section`
     margin: 0 auto;
@@ -40,19 +41,17 @@ const Outer = styled.section`
         h1 {
             color: ${theme.white};
             text-shadow: 0px 0px 30px ${theme.black}50;
-            margin-bottom: ${theme.standardSpace}px;
+            margin-bottom: 0px;
             font-size: 2.4rem;
             font-size: ${props => props.titleLength > 65 ? "2rem" : (props.titleLength > 45 ? "2.4rem" : "2.6rem")};
             @media screen and (min-width: ${theme.m}){
-                font-size: 2.6rem;
+                margin-bottom: ${theme.standardSpace}px;
                 font-size: ${props => props.titleLength > 65 ? "2.4rem" : (props.titleLength > 45 ? "2.6rem" : "2.9rem")};
             }
             @media screen and (min-width: ${theme.l}){
-                font-size: 2.8rem;
                 font-size: ${props => props.titleLength > 65 ? "2.6rem" : (props.titleLength > 45 ? "2.8rem" : "3.2rem")};
             }
             @media screen and (min-width: ${theme.xl}){
-                font-size: 3rem;
                 font-size: ${props => props.titleLength > 65 ? "2.8rem" : (props.titleLength > 45 ? "3rem" : "3.6rem")};
             }
         }
@@ -115,6 +114,8 @@ const Outer = styled.section`
         margin-top: 0px;
         min-height: 390px;
         align-items: flex-end;
+        max-height: 80vh;
+
         padding-top: ${props => props.withHeader ? "275px" : "211px"};
 
         h1 {
@@ -187,6 +188,23 @@ const Copyright = styled.p`
 
 `
 
+const ChildContainerDesktop = styled.div`
+    display: none;
+    @media screen and (min-width: ${theme.m}){
+        display: block;
+    }
+`
+const ChildContainerMobile = styled.div`
+    display: block;
+    a {
+        color: ${theme.white};
+        background: ${theme.black};
+    }
+    @media screen and (min-width: ${theme.m}){
+        display: none;
+    }
+`
+
 export const Hero = ({
     image1920x1080,
     image192x108,
@@ -204,20 +222,30 @@ export const Hero = ({
         }}
     >
         {src => 
-            <Outer 
-                image={src} 
-                withHeader={withHeader}
-                className={image1920x1080 ? "with_image" : "hero_without_image"}
-                titleLength={headline.length}
-            >
-                {image1920x1080 && <InnerGradient withHeader={withHeader} /> }
-                <Container>
-                    {headline && <Headline level={0} text={headline}/>}
-                    {standfirst && <LeadParagraph text={standfirst}/>}
-                    {children}
-                    {copyright && <Copyright>{copyright}</Copyright>}
-                </Container>
-            </Outer>
+            <>
+                <Outer 
+                    image={src} 
+                    withHeader={withHeader}
+                    className={image1920x1080 ? "with_image" : "hero_without_image"}
+                    titleLength={headline.length}
+                >
+                    {image1920x1080 && <InnerGradient withHeader={withHeader} /> }
+                    <Container>
+                        {headline && <Headline level={0} text={headline}/>}
+                        <ChildContainerDesktop>
+                            {standfirst && <LeadParagraph text={standfirst}/>}
+                            {children}
+                        </ChildContainerDesktop>
+                        {copyright && <Copyright>{copyright}</Copyright>}
+                    </Container>
+                </Outer>
+                <ChildContainerMobile>
+                    <Wrapper>
+                        {standfirst && <LeadParagraph text={standfirst}/>}
+                        {children}
+                    </Wrapper>
+                </ChildContainerMobile>
+            </>
         }
     </LazyImage>
 
