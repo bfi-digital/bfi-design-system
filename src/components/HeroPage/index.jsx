@@ -17,6 +17,7 @@ const Outer = styled.div`
     max-width: calc(${theme.xl} + 125px);
 
     h1 {
+        margin-left: 0;
         margin-block-start: 1em;
     }
 
@@ -29,12 +30,11 @@ const Outer = styled.div`
         margin-top: -${theme.standardSpace}px;
 
         @media screen and (min-width: ${theme.m}){
-            margin-top: -${theme.standardSpace*2}px;
+            margin-top: -${theme.standardSpace}px;
             padding-top: ${theme.standardSpace*1.5}px;
             padding-bottom: ${theme.standardSpace*1.5}px; 
         }
         @media screen and (min-width: ${theme.l}){
-            margin-top: -${theme.standardSpace*2}px;
             padding-top: ${theme.standardSpace*2}px;
             padding-bottom: ${theme.standardSpace*2}px;        
             margin-bottom: ${theme.standardSpace*1.5}px;
