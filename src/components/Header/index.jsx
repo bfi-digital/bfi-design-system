@@ -146,7 +146,9 @@ export const Header = ({
     const ref = useRef(null)
 
     const handleScroll = () => {
-        setSticky(ref.current.getBoundingClientRect().top <= 0 && overlay ? false : true)
+        if (overlay) { 
+            setSticky(ref.current.getBoundingClientRect().top <= 0)   
+        }
     }
     useEffect(() => {
         window.addEventListener("scroll", handleScroll)
@@ -158,6 +160,7 @@ export const Header = ({
     return(
         <>
             <SkipLink href="#content-start"><div className="inner"><div className="button_like">Skip to content</div></div></SkipLink>
+            {/* Remove this conditional if wanting to add in branding to the header */}
             { overlay &&
                 <TopSection 
                     isTransparent={overlay}
