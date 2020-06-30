@@ -189,7 +189,7 @@ const Copyright = styled.p`
 `
 
 const ChildContainerDesktop = styled.div`
-    display: none;
+    display: ${props => props.with_image ? "none" : "block"};
     @media screen and (min-width: ${theme.m}){
         display: block;
     }
@@ -232,19 +232,21 @@ export const Hero = ({
                     {image1920x1080 && <InnerGradient withHeader={withHeader} /> }
                     <Container>
                         {headline && <Headline level={0} text={headline}/>}
-                        <ChildContainerDesktop>
+                        <ChildContainerDesktop withImage={image1920x1080 ? true : false}>
                             {standfirst && <LeadParagraph text={standfirst}/>}
                             {children}
                         </ChildContainerDesktop>
                         {copyright && <Copyright>{copyright}</Copyright>}
                     </Container>
                 </Outer>
-                <ChildContainerMobile>
-                    <Wrapper>
-                        {standfirst && <LeadParagraph text={standfirst}/>}
-                        {children}
-                    </Wrapper>
-                </ChildContainerMobile>
+                {image1920x1080 && 
+                    <ChildContainerMobile>
+                        <Wrapper>
+                            {standfirst && <LeadParagraph text={standfirst}/>}
+                            {children}
+                        </Wrapper>
+                    </ChildContainerMobile>
+                }
             </>
         }
     </LazyImage>
