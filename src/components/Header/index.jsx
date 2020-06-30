@@ -142,11 +142,11 @@ export const Header = ({
 }) => {
     const [open, setOpen] = useState(false)
     const [selected, setSelected] = useState(false)
-    const [isSticky, setSticky] = useState(false)
+    const [isSticky, setSticky] = useState(overlay ? false : true)
     const ref = useRef(null)
 
     const handleScroll = () => {
-        setSticky(ref.current.getBoundingClientRect().top <= 0)
+        setSticky(ref.current.getBoundingClientRect().top <= 0 && overlay ? false : true)
     }
     useEffect(() => {
         window.addEventListener("scroll", handleScroll)
@@ -158,16 +158,18 @@ export const Header = ({
     return(
         <>
             <SkipLink href="#content-start"><div className="inner"><div className="button_like">Skip to content</div></div></SkipLink>
-            <TopSection 
-                isTransparent={overlay}
-                isSticky={isSticky}
-            >
-                <Inner>
-                    <LogoLink to="/">
-                        <Logo src={overlay ? logoWhite : logo} alt="British Film Institute"/>
-                    </LogoLink>
-                </Inner>
-            </TopSection>
+            { overlay &&
+                <TopSection 
+                    isTransparent={overlay}
+                    isSticky={isSticky}
+                >
+                    <Inner>
+                        <LogoLink to="/">
+                            <Logo src={overlay ? logoWhite : logo} alt="British Film Institute"/>
+                        </LogoLink>
+                    </Inner>
+                </TopSection>
+            }   
             <Outer 
                 ref={ref}
                 onMouseLeave={() => {
