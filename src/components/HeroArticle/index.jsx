@@ -49,16 +49,27 @@ const ImageContainer = styled.div`
 const BrandLogo = styled.div`
 
     &.with_image {
-        position: absolute;
-        top: ${theme.standardSpace}px;
-        right: ${theme.standardSpace}px;
+        display: none;
+        @media screen and (min-width: ${theme.m}){
+            display: block;
+            position: absolute;
+            top: ${theme.standardSpace}px;
+            right: ${theme.standardSpace}px;
+        }
     }
     &.without_image {
         text-align: center;
     }
+    &.mobile_logo {
+        display: block;
+        margin-top: -15px;
+        @media screen and (min-width: ${theme.m}){
+            display: none;
+        }
+    }
     
     img {
-        width: 260px;
+        width: 300px;
         height: auto;
         
         @media screen and (min-width: ${theme.m}){
@@ -146,7 +157,15 @@ export const HeroArticle = ({
                     </Text>
                 </LowerContent>
             </Meta>
-            {(image1920x1080 || brandLogoInfo) && 
+            {brandLogoInfo &&
+                <BrandLogo className={image1920x1080 ? "without_image mobile_logo" : "without_image"}>
+                    <img src={
+                            brandLogoInfo[0].backgroundURL  
+                    } 
+                    alt={brandLogoInfo[0].alt} />
+                </BrandLogo>
+            } 
+            {(image1920x1080) && 
                 <ImageContainer>
                     {image1920x1080 &&
                         <LazyImage
@@ -168,17 +187,14 @@ export const HeroArticle = ({
                             }
                         </LazyImage>
                     }
-                    {brandLogoInfo &&
-                        <BrandLogo className={image1920x1080 ? "with_image" : "without_image"}>
+                    {brandLogoInfo && 
+                        <BrandLogo className="with_image">
                             <img src={
-                                image1920x1080 ? 
                                     brandLogoInfo[0].overlayURL  
-                                    : 
-                                    brandLogoInfo[0].backgroundURL
                             } 
                             alt={brandLogoInfo[0].alt} />
                         </BrandLogo>
-                    } 
+                    }
                 </ImageContainer>
             }
         </Outer>
