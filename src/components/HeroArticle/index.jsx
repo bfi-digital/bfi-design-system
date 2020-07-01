@@ -159,10 +159,7 @@ export const HeroArticle = ({
             </Meta>
             {brandLogoInfo &&
                 <BrandLogo className={image1920x1080 ? "without_image mobile_logo" : "without_image"}>
-                    <img src={
-                            brandLogoInfo[0].backgroundURL  
-                    } 
-                    alt={brandLogoInfo[0].alt} />
+                    <img src={brandLogoInfo[0].backgroundURL} alt={brandLogoInfo[0].alt} />
                 </BrandLogo>
             } 
             {(image1920x1080) && 
@@ -189,10 +186,7 @@ export const HeroArticle = ({
                     }
                     {brandLogoInfo && 
                         <BrandLogo className="with_image">
-                            <img src={
-                                    brandLogoInfo[0].overlayURL  
-                            } 
-                            alt={brandLogoInfo[0].alt} />
+                            <img src={brandLogoInfo[0].overlayURL} alt={brandLogoInfo[0].alt} />
                         </BrandLogo>
                     }
                 </ImageContainer>
