@@ -7,6 +7,7 @@ import { Scroller } from "../Scroller"
 
 const Outer = styled.ul`
     padding: 15px 0;
+    padding-bottom: 0;
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -44,9 +45,6 @@ const Outer = styled.ul`
     & + .page_links_block {
         margin-top: -15px;
         padding-top: 0px;
-    }
-    &:last-of-type {
-        margin-bottom: ${theme.standardSpace*2}px;
     }
 `
 const ConditionalWrapper = ({ condition, wrapper, wrapper2, children }) => 
