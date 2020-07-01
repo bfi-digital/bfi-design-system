@@ -64,11 +64,12 @@ const RightScrollerFade = styled.div`
 
 export const Scroller = ({
     withoutBreak,
+    classes,
     children
 }) => {
 
     return(
-        <Outer withoutBreak={withoutBreak}>
+        <Outer withoutBreak={withoutBreak} className={classes}>
             {/* <LeftScrollerFade className={children && "revealed"} /> */}
             <ScrollerTrack>
                 {children}
