@@ -123,7 +123,7 @@ const NewsletterForm = styled.form`
         font-size: ${theme.fontSize_s};
         border: 3px solid ${theme.black};
         border-right: none;
-        border-bottom: 5px solid ${theme.black};
+        border-bottom: 5px solid ${theme.primary};
         transition: border .3s;
         width: 100%;
 
@@ -131,7 +131,7 @@ const NewsletterForm = styled.form`
             border-bottom: 5px solid ${theme.lightFocus};
         }
         &:focus {
-            border-bottom: 5px solid ${theme.focus};
+            border-color: 5px solid ${theme.focus};
             outline: none;
         }
         @media screen and (min-width: ${theme.m}){
