@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { Headline } from "../Headline"
 import styled from "styled-components"
 import theme from "../_theme"
@@ -209,50 +209,54 @@ const ChildContainerMobile = styled.div`
 `
 
 export const Hero = ({
-    image1920x1080,
-    image192x108,
+    images,
     headline,
     standfirst,
     withHeader,
     copyright,
     children
-}) =>
-    <LazyImage
-        src={image1920x1080}
-        placeholder={image192x108 ? image192x108 : image1920x1080}
-        visibilitySensorProps={{
-            partialVisibility: true
-        }}
-    >
-        {src => 
-            <>
-                <Outer 
-                    image={src} 
-                    withHeader={withHeader}
-                    className={image1920x1080 ? "with_image" : "hero_without_image"}
-                    titleLength={headline.length}
-                >
-                    {image1920x1080 && <InnerGradient withHeader={withHeader} /> }
-                    <Container>
-                        {headline && <Headline level={0} text={headline}/>}
-                        <ChildContainerDesktop withImage={image1920x1080 ? true : false}>
-                            {standfirst && <LeadParagraph text={standfirst}/>}
-                            {children}
-                        </ChildContainerDesktop>
-                        {copyright && <Copyright>{copyright}</Copyright>}
-                    </Container>
-                </Outer>
-                {image1920x1080 && 
-                    <ChildContainerMobile>
-                        <Wrapper>
-                            {standfirst && <LeadParagraph text={standfirst}/>}
-                            {children}
-                        </Wrapper>
-                    </ChildContainerMobile>
-                }
-            </>
-        }
-    </LazyImage>
+}) => {
+    const [currentImage, setCurrentImage] = useState(0)
+
+    return(
+        <LazyImage
+            src={images[currentImage].image1920x1080}
+            placeholder={images[currentImage].image192x108 ? images[currentImage].image192x108 : images[currentImage].image1920x1080}
+            visibilitySensorProps={{
+                partialVisibility: true
+            }}
+        >
+            {src => 
+                <>
+                    <Outer 
+                        image={src} 
+                        withHeader={withHeader}
+                        className={images[currentImage].image1920x1080 ? "with_image" : "hero_without_image"}
+                        titleLength={headline.length}
+                    >
+                        {images[currentImage].image1920x1080 && <InnerGradient withHeader={withHeader} /> }
+                        <Container>
+                            {headline && <Headline level={0} text={headline}/>}
+                            <ChildContainerDesktop withImage={images[currentImage].image1920x1080 ? true : false}>
+                                {standfirst && <LeadParagraph text={standfirst}/>}
+                                {children}
+                            </ChildContainerDesktop>
+                            {copyright && <Copyright>{copyright}</Copyright>}
+                        </Container>
+                    </Outer>
+                    {images[currentImage].image1920x1080 && 
+                        <ChildContainerMobile>
+                            <Wrapper>
+                                {standfirst && <LeadParagraph text={standfirst}/>}
+                                {children}
+                            </Wrapper>
+                        </ChildContainerMobile>
+                    }
+                </>
+            }
+        </LazyImage>
+    )
+}
 
 
 Hero.propTypes = {
