@@ -119,13 +119,16 @@ export const FilmCardSingle = ({
         {listNumber && <Number>{listNumber}</Number>}
         <Content>
             {type && <span>{type}</span>}
-            {title && <Headline level={6} text={title}/>}
+            {filmLink && title ? 
+                <StyledLink to={filmLink}><Headline level={6} text={title}/></StyledLink>
+                :
+                <Headline level={6} text={title}/>
+            }
             <Meta>
                 {director && <span>{director}</span>}
                 {director && year && <span> / </span>}
                 {year && <span>{year}</span>}
             </Meta>
-            {filmLink && <StyledLink to={filmLink}>Find out more</StyledLink>}
 
             <ContentLinks>
                 {playerUrl || southbankUrl ?
