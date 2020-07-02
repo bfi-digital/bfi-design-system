@@ -15,6 +15,10 @@ const Outer = styled.div`
             margin-bottom: 0;
         }
     }
+
+    &:focus-within {
+        box-shadow: 0px 0px 0px 4px ${theme.focus};
+    }
 `
 const AdvertisingNotice = styled.p`
     color: ${theme.darkGrey};
