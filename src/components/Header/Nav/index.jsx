@@ -237,8 +237,10 @@ const ChildLink = styled(Link)`
     }
 `
 
-const BlackLogo = styled(Item)`
-    margin-right: 30px;
+const BlackLogoLink = styled(Link)`
+    margin-right: 20px;
+    padding: 10px;
+    margin-left: -10px;
 `
 const Logo = styled.img`
     width: 40px;
@@ -319,9 +321,9 @@ const Nav = ({
         <Outer role="navigation" aria-label="Main">
             <List>
                 {isSticky && 
-                    <Link to="/"> 
-                        <BlackLogo><Logo src={logo} alt="British Film Institute"/></BlackLogo>
-                    </Link>
+                    <BlackLogoLink to="/"> 
+                        <Item><Logo src={logo} alt="British Film Institute"/></Item>
+                    </BlackLogoLink>
                 }
                 {navItems.map((navItem, i) => {
                     const size = Math.ceil(navItem.children.length / 3)
