@@ -121,13 +121,14 @@ const NewsletterForm = styled.form`
         padding: 13px 10px;
         padding-top: 12px;        
         font-size: ${theme.fontSize_s};
-        border: none;
-        border-bottom: 5px solid ${theme.grey};
+        border: 3px solid ${theme.black};
+        border-right: none;
+        border-bottom: 5px solid ${theme.black};
         transition: border .3s;
         width: 100%;
 
         &:hover {
-            border-bottom: 5px solid ${theme.darkGrey};
+            border-bottom: 5px solid ${theme.lightFocus};
         }
         &:focus {
             border-bottom: 5px solid ${theme.focus};
@@ -163,18 +164,19 @@ const SubmitButton = styled.button`
     cursor: pointer;
     border: none;
     width: 100%;
+    border: 2px solid ${theme.black};
     @media screen and (min-width: ${theme.s}){
         width: auto;
     }
 
     :after {
         content: "";
-        width: 100%;
+        width: calc(100% + 4px);
         height: 5px;
         transition: height .3s;
         position: absolute;
         bottom: -5px;
-        left: 0;
+        left: -2px;
         background: ${theme.primary};
         z-index: -1;
     }
@@ -183,7 +185,7 @@ const SubmitButton = styled.button`
         color: ${theme.white};
         
         :after {
-            height: calc(100% + 5px);
+            height: calc(100% + 7px);
         }
     }
     &:focus{
