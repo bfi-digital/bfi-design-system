@@ -18,10 +18,6 @@ export const Wrapper = styled.div`
         max-width: calc(${theme.xl} - 100px);
     }
 
-    &:last-of-type{
-        margin-bottom: 100px;
-    }
-
     article {
         max-width: 100%;
 
