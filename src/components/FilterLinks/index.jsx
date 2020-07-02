@@ -54,8 +54,8 @@ export const FilterLinks = ({
                 href={link.url} 
                 disabled={link.currentlyActive ? true : false} 
                 title={"Show all " + (link.label === "All" ? "" : ("\"" + link.label + "\" ")) + "articles"}
-                >
-                    {link.label}
+            >
+                {link.label}
             </FilterLink>
         )}
     </Outer>

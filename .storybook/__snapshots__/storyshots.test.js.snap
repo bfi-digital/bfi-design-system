@@ -10,7 +10,7 @@ exports[`Storyshots 2 All Components/Advertising Container Failed To Load Exampl
   }
 >
   <div
-    className="sc-bdVaJa cTaNCo advertising_container"
+    className="sc-bdVaJa kVwYCR advertising_container"
   >
     <p
       className="sc-bwzfXH kWPugd"
@@ -35,7 +35,7 @@ exports[`Storyshots 2 All Components/Advertising Container Mpu Example 1`] = `
   }
 >
   <div
-    className="sc-bdVaJa cTaNCo advertising_container"
+    className="sc-bdVaJa kVwYCR advertising_container"
   >
     <p
       className="sc-bwzfXH kWPugd"
@@ -74,7 +74,7 @@ exports[`Storyshots 2 All Components/Advertising Container Native Example 1`] = 
     Promoted links from around the web
   </h4>
   <div
-    className="sc-bdVaJa cTaNCo advertising_container"
+    className="sc-bdVaJa kVwYCR advertising_container"
   >
     <div
       style={
@@ -1188,7 +1188,7 @@ exports[`Storyshots 2 All Components/Filter-esque Links Normal 1`] = `
     className="sc-fAjcbJ enduCd"
     disabled={false}
     href="#1"
-    title="Show all Example link articles"
+    title="Show all \\"Example link\\" articles"
   >
     Example link
   </a>
@@ -1196,7 +1196,7 @@ exports[`Storyshots 2 All Components/Filter-esque Links Normal 1`] = `
     className="sc-fAjcbJ enduCd"
     disabled={false}
     href="#2"
-    title="Show all Where to stream articles"
+    title="Show all \\"Where to stream\\" articles"
   >
     Where to stream
   </a>
@@ -1204,7 +1204,7 @@ exports[`Storyshots 2 All Components/Filter-esque Links Normal 1`] = `
     className="sc-fAjcbJ enduCd"
     disabled={false}
     href="#3"
-    title="Show all Where to begin articles"
+    title="Show all \\"Where to begin\\" articles"
   >
     Where to begin
   </a>
@@ -1212,7 +1212,7 @@ exports[`Storyshots 2 All Components/Filter-esque Links Normal 1`] = `
     className="sc-fAjcbJ enduCd"
     disabled={false}
     href="#4"
-    title="Show all Five Things articles"
+    title="Show all \\"Five Things\\" articles"
   >
     Five Things
   </a>
@@ -1297,7 +1297,7 @@ exports[`Storyshots 2 All Components/Newsletter Sign Up Example 1`] = `
     </p>
     <form
       action="https://www.createsend.com/t/subscribeerror?description="
-      className="sc-kjoXOD ggZsKi js-cm-form"
+      className="sc-kjoXOD mNhyh js-cm-form"
       data-id="191722FC90141D02184CB1B62AB3DC26D57AD7AD0DF253BE15DD122C605B740244DFF1ADDEE1A8DA861127EDFD99BF281A7016BD9F175EAF91CB858CC76D303F"
       id="subForm"
       method="post"
@@ -1319,7 +1319,7 @@ exports[`Storyshots 2 All Components/Newsletter Sign Up Example 1`] = `
         />
       </label>
       <button
-        className="sc-TOsTZ eWGiJF"
+        className="sc-TOsTZ gARmso"
         type="submit"
       >
         Sign up
