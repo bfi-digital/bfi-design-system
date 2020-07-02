@@ -49,6 +49,13 @@ export const FilterLinks = ({
 }) => 
     <Outer className="filter_links">
         {links.map((link) =>
-            <FilterLink key={link.url} href={link.url} disabled={link.currentlyActive ? true : false} title={"Show all " + link.label + " articles"}>{link.label}</FilterLink>
+            <FilterLink 
+                key={link.url} 
+                href={link.url} 
+                disabled={link.currentlyActive ? true : false} 
+                title={"Show all " + (link.label === "All" ? "" : ("\"" + link.label + "\" ")) + "articles"}
+                >
+                    {link.label}
+            </FilterLink>
         )}
     </Outer>
