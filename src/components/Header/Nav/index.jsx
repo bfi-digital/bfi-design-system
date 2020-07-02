@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useCallback } from "react"
 import { LinkSwitch as Link } from "../../LinkSwitch"
 import theme from "../../_theme"
 import styled from "styled-components"
@@ -108,9 +108,6 @@ const ChildBar = styled.div`
     border-bottom: 1px solid ${theme.grey};
     border-top: 1px solid ${theme.grey};
     margin: 0 auto;
-    max-width: ${props => props.isSticky ? "100%" : "calc("+theme.xl+" + 125px)"};
-    
-    max-width: ${props => props.isWhite ? (props.isSticky ? "100%" : "calc("+theme.xl+" + 125px)") : "100%"};
 `
 const Shadow = styled.div`
     background: rgba(255,255,255,0.6);
@@ -315,7 +312,19 @@ const Nav = ({
     isOverlaid,
     isSticky
 }) => {
+    const escFunction = useCallback((event) => {
+        if(event.keyCode === 27) {
+            setSelected(false)
+        }
+    }, [])
 
+    useEffect(() => {
+        document.addEventListener("keydown", escFunction, false)
+    
+        return () => {
+            document.removeEventListener("keydown", escFunction, false)
+        }
+    }, [])
 
     return(
         <Outer role="navigation" aria-label="Main">
