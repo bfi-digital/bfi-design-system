@@ -164,7 +164,7 @@ export const Header = ({
             >
                 <Inner>
                     <LogoLink to="/">
-                        <Logo src={overlay ? logoWhite : logo} alt="British Film Institute"/>
+                        <Logo src={overlay ? logoWhite : logo} alt="Home"/>
                     </LogoLink>
                 </Inner>
             </TopSection>
@@ -183,7 +183,7 @@ export const Header = ({
                         isWhite={overlay}
                     />
                     <MobileLogoLink to="/">
-                        <Logo src={logo} alt="British Film Institute"/>
+                        <Logo src={logo} alt="Home"/>
                     </MobileLogoLink>
                     <MobileMenuBuffer />
                     <Nav
