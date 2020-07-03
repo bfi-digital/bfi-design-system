@@ -331,7 +331,7 @@ const Nav = ({
             <List>
                 {isSticky && 
                     <BlackLogoLink to="/"> 
-                        <Item><Logo src={logo} alt="British Film Institute"/></Item>
+                        <Item><Logo src={logo} alt="Home"/></Item>
                     </BlackLogoLink>
                 }
                 {navItems.map((navItem, i) => {
