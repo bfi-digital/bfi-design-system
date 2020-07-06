@@ -34,6 +34,18 @@ import demoArticles from "../../../components/ArticleGrid/data"
 </Preview>
 
 <Preview>
+    <Story name="Multiple Articles limited to 3 with load more">
+        <div style={{
+            padding: "10px",
+            maxWidth: "1000px",
+            margin: "0 auto"
+        }}>
+            <ArticleGrid limitArticles articles={[...demoArticles, ...demoArticles]} />
+        </div>
+    </Story>
+</Preview>
+
+<Preview>
     <Story name="Multiple Articles with first highlighted no grey background">
         <div style={{
             padding: "10px",

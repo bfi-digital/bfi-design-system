@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import styled from "styled-components"
 import theme from "../_theme"
 import { ArticleCard } from "./ArticleCard"
@@ -162,39 +162,64 @@ export const ArticleGrid = ({
     firstHighlighted,
     children,
     skeletons = 6,
-    loadMoreLoading
-}) =>
-    <Outer pageWithSideBar={pageWithSideBar} className="article_grid_block">
-        {optionalTitle && 
-            <StyledHeadline level={2} text={optionalTitle} />
-        }
-        {articles ?
-            <Articles 
-                lessColumns={(articles.length === 2 || articles.length === 4) && !firstHighlighted} 
-                className={(firstHighlighted ? "withHighlight" : "noHighlight") + (pageWithSideBar ? " noBackground" : " withBackground")}
-            >
-                {firstHighlighted  === true || articles.length === 1 ?
-                    <>
-                        <ArticleCardHighlighted key={articles[0].uuid} pageWithSideBar={pageWithSideBar} {...articles[0]}/>
-                        {articles.length > 1 &&
-                            articles.slice(1).map(article =>
-                                <ArticleCard key={article.uuid} pageWithSideBar={pageWithSideBar} {...article}/>    
-                            )
+    loadMoreLoading,
+    limitArticles
+}) => {
+    const [currentNumber, setCurrentNumber] = useState(3)
+
+    return(
+        <Outer pageWithSideBar={pageWithSideBar} className="article_grid_block">
+            {optionalTitle && 
+                <StyledHeadline level={2} text={optionalTitle} />
+            }
+            {limitArticles ? 
+                <>
+                    <Articles 
+                        lessColumns={(articles.length === 2)} 
+                        className={(firstHighlighted ? "withHighlight" : "noHighlight") + (pageWithSideBar ? " noBackground" : " withBackground")}
+                    >
+                        {articles.slice(0, currentNumber).map(article =>
+                            <ArticleCard key={article.uuid} pageWithSideBar={pageWithSideBar} {...article}/>    
+                        )
                         }
-                    </>
-                    :
-                    articles.map(article =>
-                        <ArticleCard key={article.uuid} pageWithSideBar={pageWithSideBar} {...article}/>    
-                    )
-                }
-            </Articles>
-            :
-            <Articles lessColumns={articles.length === 2 || articles.length === 4} className="noHighlight skeletons">
-                {[...Array(skeletons)].map((i) => <Skeleton key={i} noBackground={pageWithSideBar} loadMoreLoading={loadMoreLoading} /> )}
-            </Articles>
-        }
-        { optionalCTALink &&
-            <CentredButton to={optionalCTALink}>{optionalCTATitle ? optionalCTATitle : "See more articles"}</CentredButton>
-        }
-        {children}
-    </Outer>
+                    </Articles>
+                    {currentNumber < articles.length &&
+                        <CentredButton href="#4" onClick={() => setCurrentNumber(currentNumber+3)}>Load more</CentredButton>
+                    }
+                </>
+                :
+                <>
+                    {articles ?
+                        <Articles 
+                            lessColumns={(articles.length === 2 || articles.length === 4) && !firstHighlighted} 
+                            className={(firstHighlighted ? "withHighlight" : "noHighlight") + (pageWithSideBar ? " noBackground" : " withBackground")}
+                        >
+                            {firstHighlighted  === true || articles.length === 1 ?
+                                <>
+                                    <ArticleCardHighlighted key={articles[0].uuid} pageWithSideBar={pageWithSideBar} {...articles[0]}/>
+                                    {articles.length > 1 &&
+                                        articles.slice(1).map(article =>
+                                            <ArticleCard key={article.uuid} pageWithSideBar={pageWithSideBar} {...article}/>    
+                                        )
+                                    }
+                                </>
+                                :
+                                articles.map(article =>
+                                    <ArticleCard key={article.uuid} pageWithSideBar={pageWithSideBar} {...article}/>    
+                                )
+                            }
+                        </Articles>
+                        :
+                        <Articles lessColumns={articles.length === 2 || articles.length === 4} className="noHighlight skeletons">
+                            {[...Array(skeletons)].map((i) => <Skeleton key={i} noBackground={pageWithSideBar} loadMoreLoading={loadMoreLoading} /> )}
+                        </Articles>
+                    }
+                    { optionalCTALink &&
+                        <CentredButton to={optionalCTALink}>{optionalCTATitle ? optionalCTATitle : "See more articles"}</CentredButton>
+                    }
+                    {children}
+                </>
+            }
+        </Outer>
+    )
+}
