@@ -18,7 +18,7 @@ export const Wrapper = styled.div`
         max-width: calc(${theme.xl} - 100px);
     }
 
-    article {
+    article:not(.landing_page) {
         max-width: 100%;
 
         & h2:first-child {
@@ -26,6 +26,11 @@ export const Wrapper = styled.div`
         }
         & .promoBanner:first-child {
             margin-top: 0; 
+        }
+    }
+    article.landing_page {
+        & h2:first-child {
+            margin-block-start: 0;
         }
     }
 
@@ -50,8 +55,11 @@ export const Wrapper = styled.div`
 const MainContentWrapper = styled.article`
     flex: 1;
     
-    & h2:first-child {
+    &:not(.landing_page) h2:first-child {
         margin-block-start: 0;
+    }
+    &.landing_page h2:first-child {
+        margin-block-start: 1em;
     }
     iframe {
         border: none;

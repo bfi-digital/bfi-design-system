@@ -44,10 +44,11 @@ const Outer = styled.section`
     //     margin-bottom: ${theme.standardSpace*2}px;
     // }
 
-    h2{
+    h2 {
         margin-top: 0px;
         color: ${props => colorSchemes[props.colorScheme].text};
         text-align: left !important;
+        margin-bottom: 0;
     }
     a{
         margin-top: 10px;
@@ -62,8 +63,8 @@ const Outer = styled.section`
         a {
             margin-top: auto;
         }
-        h2 {
-            margin-bottom: 20px;
+        p {
+            margin-top: 20px;
         }
         &:before {
             content: "";
@@ -250,7 +251,7 @@ export const PromoBanner = ({
                 />
             }
             <Headline level={2} text={headline}/>
-            <Description className={image || oembedObject ? "with_image" : "without_image"}>{description}</Description>
+            {description && <Description className={image || oembedObject ? "with_image" : "without_image"}>{description}</Description>} 
             {callToActionUrl && (image || oembedObject) && 
                 <Button to={callToActionUrl} colorScheme={colorScheme === 1 || colorScheme === 2 ? 0 : 1} external={external} rel={external ? "noreferrer" : ""}  target={external ? "_blank" : "_self"}>
                     {callToActionTitle}

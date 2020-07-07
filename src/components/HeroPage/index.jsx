@@ -67,9 +67,14 @@ const Outer = styled.div`
         }
     }
 
-    p, ol {
+    p {
         max-width: 775px;
         margin-bottom: ${theme.standardSpace}px;
+    }
+    ol {
+        max-width: 775px;
+        margin-bottom: ${theme.standardSpace*1.5}px;
+        margin-top: ${theme.standardSpace*0.75}px;
     }
 
     &.with_image {
