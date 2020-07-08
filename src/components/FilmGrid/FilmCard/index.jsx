@@ -89,28 +89,30 @@ const Outer = styled(LinkSwitch)`
     }
 `
 const RestyledOuter = styled(Outer)`
-    flex: none;
-    width: 100%;
     margin-right: 15px !important;
+    flex: 0 0 80%;
 
     &:last-of-type {
-        margin-right: 0px !important;
+        margin-right: 25px !important;
     }
-    @media screen and (min-width: ${theme.s}){
-        width: 100%;
+    &:first-of-type {
+        margin-left: 20px !important;
     }
     @media screen and (min-width: ${theme.m}){
-        flex: none;
-        width: 100%;
+        flex: 0 0 45%;
         &:nth-of-type(even){
             margin-right: 15px !important;
         }
+        &:last-of-type {
+            margin-right: 30px !important;
+        }
     }
     @media screen and (min-width: ${theme.l}){
-        flex: none;
-        width: 100%;
         &:nth-of-type(3n){
             margin-right: 15px !important;
+        }
+        &:first-of-type {
+            margin-left: 10px !important;
         }
     }
 `
