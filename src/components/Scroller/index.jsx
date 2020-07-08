@@ -148,7 +148,7 @@ export const Scroller = ({
         <Outer withoutBreak={withoutBreak} className={classes}>
             {showLeft && 
                 <LeftScrollerFade 
-                    onClick={() => scrollLeftClick(window.innerWidth < 550 ? 405 : (window.innerWidth > 768 && window.innerWidth < 1440 ? 750 : 1175))} 
+                    onClick={() => scrollLeftClick(window.innerWidth < 550 ? 300 : (window.innerWidth > 768 && window.innerWidth < 1440 ? 750 : 1175))} 
                     className="left_scroll"
                 >
                     <svg viewBox="0 0 10 25"><path d="M.22 13c-.3-.45-.29-1.04.01-1.5L7.7.27a.6.6 0 0 1 .86-.16l1.18.82c.28.2.36.58.17.86L2.93 12.28 9.9 23.21c.18.29.1.67-.18.86l-1.2.8a.6.6 0 0 1-.85-.18L.22 13z"></path></svg>
@@ -160,7 +160,7 @@ export const Scroller = ({
             </ScrollerTrack>
             {showRight && 
                 <RightScrollerFade 
-                    onClick={() => scrollRightClick(window.innerWidth < 550 ? 405 : (window.innerWidth > 768 && window.innerWidth < 1440 ? 750 : 1175))} 
+                    onClick={() => scrollRightClick(window.innerWidth < 550 ? 300 : (window.innerWidth > 768 && window.innerWidth < 1440 ? 750 : 1175))} 
                     className="right_scroll"
                 >
                     <svg viewBox="0 0 10 25"><path d="M.22 13c-.3-.45-.29-1.04.01-1.5L7.7.27a.6.6 0 0 1 .86-.16l1.18.82c.28.2.36.58.17.86L2.93 12.28 9.9 23.21c.18.29.1.67-.18.86l-1.2.8a.6.6 0 0 1-.85-.18L.22 13z"></path></svg>
