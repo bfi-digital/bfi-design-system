@@ -45,7 +45,7 @@ const Outer = styled.div`
 `
 
 export const Tag = ({ link, children }) =>
-    <Outer withLink={link ? true : false}>
+    <Outer withLink={link ? true : false} className="tag">
         {link ? 
             <Link to={link}>{children}</Link>
             :

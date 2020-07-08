@@ -15,12 +15,16 @@ const Outer = styled(LinkSwitch)`
     margin-bottom: ${theme.standardSpace}px;
     transition: box-shadow .3s;
     width: 100%;
+    position: relative;
 
     .filmcard_title {
         margin-top: 0;
         min-height: 35px;
         margin-top: 5px;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
+    }
+    .tag {
+        background: ${theme.lightest}a1;
     }
 
     @media screen and (min-width: ${theme.s}){
@@ -57,10 +61,29 @@ const Outer = styled(LinkSwitch)`
         p {
             color: ${theme.dark};
         }
+        .filmcard_description {
+            transform: translateY(0);
+        }
+        .filmcard_description_background {
+            opacity: 1;
+        }
+        .tag {
+            background: ${theme.lightest};
+        }
     }
     &:focus{
         outline: none;
         box-shadow: 0px 0px 0px 5px white, 0px 0px 0px 9px ${theme.focus};
+
+        .highlight_banner {
+            background: ${theme.primary};
+        }
+        .filmcard_description {
+            transform: translateY(0);
+        }
+        .filmcard_description_background {
+            opacity: 1;
+        }
     }
     &::-moz-focus-inner {
         border: 0;
@@ -70,24 +93,33 @@ const Outer = styled(LinkSwitch)`
             color: ${theme.dark};
         }
     }
+    
 `
 const RestyledOuter = styled(Outer)`
-    flex: 0 0 80%;
     margin-right: 15px !important;
+    flex: 0 0 80%;
 
     &:last-of-type {
-        margin-right: 0px !important;
+        margin-right: 25px !important;
     }
-
+    &:first-of-type {
+        margin-left: 20px !important;
+    }
     @media screen and (min-width: ${theme.m}){
-        flex: 0 0 30%;
+        flex: 0 0 45%;
         &:nth-of-type(even){
             margin-right: 15px !important;
+        }
+        &:last-of-type {
+            margin-right: 30px !important;
         }
     }
     @media screen and (min-width: ${theme.l}){
         &:nth-of-type(3n){
             margin-right: 15px !important;
+        }
+        &:first-of-type {
+            margin-left: 10px !important;
         }
     }
 `
@@ -108,10 +140,10 @@ const Image = styled.img`
     width: 100%;
     height: 100%;
     height: auto;
-    -webkit-transition: all ease 0.3s;
-    -moz-transition: all ease 0.3s;
-    -o-transition: all ease 0.3s;
-    transition: all ease 0.3s;
+    -webkit-transition: all ease 0.4s;
+    -moz-transition: all ease 0.4s;
+    -o-transition: all ease 0.4s;
+    transition: all ease 0.4s;
 `
 
 const Title = styled.p`
@@ -126,6 +158,43 @@ const Channels = styled.div`
     margin: 0;
     padding: 0;
 `
+
+const HighlightBanner = styled.div`
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px 15px;
+    background: ${theme.primary}BF;
+    color: ${theme.white};
+    z-index: 1;
+    font-weight: ${theme.fontWeight_semiBold};
+`
+const DescriptionBG = styled.div`
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 75%;
+    opacity: 0;
+    transition: opacity 0.4s
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.75) 60%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.75) 60%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.75) 60%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#99000000',GradientType=0 ); /* IE6-9 */
+`
+const Description = styled.div`
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 15px;
+    color: ${theme.white};
+    z-index: 1;
+    font-size: ${theme.fontSize_s};
+    width: 100%;
+    transform: translateY(100%);
+    transition: .3s ease-in-out;
+`
+
 const ConditionalWrapper = ({ condition, wrapper, wrapper2, children }) => 
     condition ? wrapper(children) : wrapper2(children)
 
@@ -135,13 +204,16 @@ export const FilmCard = ({
     name,
     channels,
     url,
+    highlightBannerText,
+    description,
     inScroller
 }) =>
     <ConditionalWrapper
         condition={inScroller}
-        wrapper={children => <RestyledOuter to={url}>{children}</RestyledOuter>}
+        wrapper={children => <RestyledOuter to={url} className="filmcard_scroller">{children}</RestyledOuter>}
         wrapper2={children => <Outer to={url}>{children}</Outer>}
     >
+        { highlightBannerText && <HighlightBanner className="highlight_banner">{highlightBannerText}</HighlightBanner> }
         <ImageContainer>
             <LazyImage
                 src={image480x270 != "" ? image480x270 : placeholderImage}
@@ -149,7 +221,8 @@ export const FilmCard = ({
             >
                 {src => <Image src={src} alt="" />}
             </LazyImage>
-
+            { description && <DescriptionBG className="filmcard_description_background" /> }
+            { description && <Description className="filmcard_description">{description}</Description> }
         </ImageContainer>
         <Title className="filmcard_title">{name}</Title>
         <Channels>
