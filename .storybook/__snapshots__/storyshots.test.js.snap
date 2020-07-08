@@ -1571,7 +1571,7 @@ exports[`Storyshots 2 All Components/Tabs Primary 1`] = `
 
 exports[`Storyshots 2 All Components/Tag Primary 1`] = `
 <div
-  className="sc-jnlKLf fiOvEF"
+  className="sc-jnlKLf fiOvEF tag"
 >
   Example tag
 </div>

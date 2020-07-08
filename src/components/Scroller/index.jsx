@@ -118,10 +118,10 @@ export const Scroller = ({
 
     const scrollRightClick = (scrollOffset) => {
         scrollRef.current.scrollLeft += scrollOffset
-    };
+    }
     const scrollLeftClick = (scrollOffset) => {
         scrollRef.current.scrollLeft -= scrollOffset
-    };
+    }
 
     const handleScroll = () => {
         const currentScroll = scrollRef.current
@@ -142,7 +142,7 @@ export const Scroller = ({
         } else {
             setShowRight(false)
         }
-    };
+    }
       
     return(
         <Outer withoutBreak={withoutBreak} className={classes}>

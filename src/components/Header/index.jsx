@@ -85,10 +85,6 @@ const TopSection = styled.div`
         padding-top: 15px;
     }
 `
-const QuickLinksInner = styled(Inner)`
-    position: relative;
-`
-
 const SkipLink = styled.a`
     position: absolute !important;
     width: 1px !important;
@@ -200,7 +196,6 @@ export const Header = ({
                     />
                     <QuickLinks 
                         links={quickLinks}
-                        Inner={QuickLinksInner} 
                         isOverlaid={overlay} 
                         isSticky={isSticky}
                     />

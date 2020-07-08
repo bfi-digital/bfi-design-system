@@ -34,7 +34,7 @@ const QuickLink = styled(Link)`
     }
 `
 
-const QuickLinks = ({links, Inner, isOverlaid, isSticky}) => {
+const QuickLinks = ({links, isOverlaid, isSticky}) => {
     return(
         links ?
             <Wrapper>
