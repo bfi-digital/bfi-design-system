@@ -1,7 +1,7 @@
 /**
  * @jest-environment jsdom
  */
-import React, { useRef } from "react"
+import React, { useRef, useState } from "react"
 import styled from "styled-components"
 import theme from "../_theme"
 
@@ -31,8 +31,7 @@ const ScrollerTrack = styled.div`
     scroll-behavior: smooth;
     scroll-snap-type: x proximity;
     &::-webkit-scrollbar {
-        height: 12px;
-        width: 12px;
+        height: 20px;
         border: 1px solid ${theme.grey};
         background: ${theme.grey};
         cursor: move;
@@ -50,15 +49,10 @@ const ScrollerTrack = styled.div`
         border-radius: 1px;
     }
 
-    &::-webkit-scrollbar {
-        height: 10px;
-        width: 10px;
-        border: 1px solid ${theme.grey};
-        background:     ${theme.grey};
-    }
-    &::-webkit-scrollbar-thumb:horizontal{
-        background: ${theme.primary};
-        border-radius: 1px;
+    @media screen and (min-width: ${theme.m}){
+        &::-webkit-scrollbar {
+            height: 13px;
+        }
     }
 `
 
@@ -67,8 +61,6 @@ const RightScrollerFade = styled.div`
     cursor: pointer;
     position: absolute;
     top: 10px;
-    width: 50px;
-    height: calc(100% - 20px);
     color: white;
     right: 0px;
     user-select: none;
@@ -80,7 +72,6 @@ const RightScrollerFade = styled.div`
     align-items: center;
     -webkit-box-pack: center;
     justify-content: center;
-    opacity: 0;
 
     svg {
         width: 18px; 
@@ -90,8 +81,16 @@ const RightScrollerFade = styled.div`
         transform: rotate(180deg);
     }
 
-    &.revealed {
-        opacity: 1;
+    opacity: 1;
+    width: 35px;
+    height: calc(100% - 30px);
+    @media screen and (min-width: ${theme.m}){
+        opacity: 0;
+        width: 45px;
+        height: calc(100% - 23px);
+    }
+    @media screen and (min-width: ${theme.xl}){
+        width: 55px;
     }
 `
 const LeftScrollerFade = styled(RightScrollerFade)`
@@ -113,33 +112,60 @@ export const Scroller = ({
     noOfChildren = 10,
     children
 }) => {
-    const scrollRef = useRef(null);
-    
-    const scrollRight = (scrollOffset) => {
-        scrollRef.current.scrollLeft += scrollOffset;
+    const scrollRef = useRef(null)
+    const [showLeft, setShowLeft] = useState(false)
+    const [showRight, setShowRight] = useState(true)
+
+    const scrollRightClick = (scrollOffset) => {
+        scrollRef.current.scrollLeft += scrollOffset
     };
-    const scrollLeft = (scrollOffset) => {
-        scrollRef.current.scrollLeft -= scrollOffset;
+    const scrollLeftClick = (scrollOffset) => {
+        scrollRef.current.scrollLeft -= scrollOffset
+    };
+
+    const handleScroll = () => {
+        const currentScroll = scrollRef.current
+        let offset = currentScroll.scrollWidth - 600
+        if(window.innerWidth > 768 && window.innerWidth < 1440) {
+            offset = currentScroll.scrollWidth - 1100
+        } else if (window.innerWidth > 1440) {
+            offset = currentScroll.scrollWidth - 1400
+        }
+
+        if (currentScroll.scrollLeft > 100) {
+            setShowLeft(true)
+        } else {
+            setShowLeft(false)
+        }
+        if (currentScroll.scrollLeft < offset) {
+            setShowRight(true)
+        } else {
+            setShowRight(false)
+        }
     };
       
     return(
         <Outer withoutBreak={withoutBreak} className={classes}>
-            <LeftScrollerFade 
-                onClick={() => scrollLeft(window.innerWidth < 550 ? 405 : (window.innerWidth > 768 && window.innerWidth < 1040 ? 750 : 1175))} 
-                className="left_scroll"
-            >
-                <svg viewBox="0 0 10 25"><path d="M.22 13c-.3-.45-.29-1.04.01-1.5L7.7.27a.6.6 0 0 1 .86-.16l1.18.82c.28.2.36.58.17.86L2.93 12.28 9.9 23.21c.18.29.1.67-.18.86l-1.2.8a.6.6 0 0 1-.85-.18L.22 13z"></path></svg>
-            </LeftScrollerFade>
-            <ScrollerTrack noOfChildren={noOfChildren} ref={scrollRef}>
+            {showLeft && 
+                <LeftScrollerFade 
+                    onClick={() => scrollLeftClick(window.innerWidth < 550 ? 405 : (window.innerWidth > 768 && window.innerWidth < 1040 ? 750 : 1175))} 
+                    className="left_scroll"
+                >
+                    <svg viewBox="0 0 10 25"><path d="M.22 13c-.3-.45-.29-1.04.01-1.5L7.7.27a.6.6 0 0 1 .86-.16l1.18.82c.28.2.36.58.17.86L2.93 12.28 9.9 23.21c.18.29.1.67-.18.86l-1.2.8a.6.6 0 0 1-.85-.18L.22 13z"></path></svg>
+                </LeftScrollerFade>
+            }
+            <ScrollerTrack noOfChildren={noOfChildren} ref={scrollRef} onScroll={handleScroll}>
                 {children}
                 <LastItem />
             </ScrollerTrack>
-            <RightScrollerFade 
-                onClick={() => scrollRight(window.innerWidth < 550 ? 405 : (window.innerWidth > 768 && window.innerWidth < 1040 ? 750 : 1175))} 
-                className="right_scroll"
-            >
-                <svg viewBox="0 0 10 25"><path d="M.22 13c-.3-.45-.29-1.04.01-1.5L7.7.27a.6.6 0 0 1 .86-.16l1.18.82c.28.2.36.58.17.86L2.93 12.28 9.9 23.21c.18.29.1.67-.18.86l-1.2.8a.6.6 0 0 1-.85-.18L.22 13z"></path></svg>
-            </RightScrollerFade>
+            {showRight && 
+                <RightScrollerFade 
+                    onClick={() => scrollRightClick(window.innerWidth < 550 ? 405 : (window.innerWidth > 768 && window.innerWidth < 1040 ? 750 : 1175))} 
+                    className="right_scroll"
+                >
+                    <svg viewBox="0 0 10 25"><path d="M.22 13c-.3-.45-.29-1.04.01-1.5L7.7.27a.6.6 0 0 1 .86-.16l1.18.82c.28.2.36.58.17.86L2.93 12.28 9.9 23.21c.18.29.1.67-.18.86l-1.2.8a.6.6 0 0 1-.85-.18L.22 13z"></path></svg>
+                </RightScrollerFade>
+            }
         </Outer>
     )
 }

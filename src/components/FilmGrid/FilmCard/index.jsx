@@ -23,6 +23,9 @@ const Outer = styled(LinkSwitch)`
         margin-top: 5px;
         margin-bottom: 5px;
     }
+    .tag {
+        background: ${theme.lightest}a1;
+    }
 
     @media screen and (min-width: ${theme.s}){
         margin-right: 15px;
@@ -64,6 +67,9 @@ const Outer = styled(LinkSwitch)`
         .filmcard_description_background {
             opacity: 1;
         }
+        .tag {
+            background: ${theme.lightest};
+        }
     }
     &:focus{
         outline: none;
@@ -87,6 +93,7 @@ const Outer = styled(LinkSwitch)`
             color: ${theme.dark};
         }
     }
+    
 `
 const RestyledOuter = styled(Outer)`
     margin-right: 15px !important;
