@@ -38,17 +38,15 @@ const QuickLinks = ({links, Inner, isOverlaid, isSticky}) => {
     return(
         links ?
             <Wrapper>
-                <Inner>
-                    {links[0] &&
-                        <QuickLink to={links[0].url} isTransparent={isOverlaid} isSticky={isSticky}>{links[0].title}</QuickLink>
-                    }
-                    {links[1] &&
-                        <QuickLink to={links[1].url} isTransparent={isOverlaid} isSticky={isSticky}>{links[1].title}</QuickLink>
-                    }
-                    {links[2] &&
-                        <QuickLink to={links[2].url} isTransparent={isOverlaid} isSticky={isSticky}>{links[2].title}</QuickLink>
-                    }
-                </Inner>
+                {links[0] &&
+                    <QuickLink to={links[0].url} isTransparent={isOverlaid} isSticky={isSticky}>{links[0].title}</QuickLink>
+                }
+                {links[1] &&
+                    <QuickLink to={links[1].url} isTransparent={isOverlaid} isSticky={isSticky}>{links[1].title}</QuickLink>
+                }
+                {links[2] &&
+                    <QuickLink to={links[2].url} isTransparent={isOverlaid} isSticky={isSticky}>{links[2].title}</QuickLink>
+                }
             </Wrapper>
             :
             null
