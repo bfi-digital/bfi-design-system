@@ -4,22 +4,17 @@
 import React from "react"
 import styled from "styled-components"
 import theme from "../_theme"
-// import ScrollContainer from "react-indiana-drag-scroll"
 
 const Outer = styled.div`
     position: relative;
     margin-bottom: ${props => props.withoutBreak? "0" : (theme.standardSpace*2) + "px"};
 `
-const ScrollerTrack = styled.ul`
+const ScrollerTrack = styled.div`
     overflow: scroll;
     overflow-y: hidden;
     padding: 10px;
     display: flex;
     padding-left: 0;
-
-    &:focus-within {
-        padding-left: 5px;
-    }
 
     &::-webkit-scrollbar {
         height: 10px;
