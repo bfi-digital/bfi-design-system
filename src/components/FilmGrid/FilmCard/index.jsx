@@ -218,6 +218,9 @@ export const FilmCard = ({
             <LazyImage
                 src={image480x270 != "" ? image480x270 : placeholderImage}
                 placeholder={image480x270 != "" ? image48x27 : placeholderImageSmall}
+                visibilitySensorProps={{
+                    partialVisibility: true
+                }}
             >
                 {src => <Image src={src} alt="" />}
             </LazyImage>
