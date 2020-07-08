@@ -8,68 +8,77 @@ import theme from "../_theme"
 const Outer = styled.div`
     position: relative;
     margin-bottom: ${props => props.withoutBreak? "0" : (theme.standardSpace*2) + "px"};
-`
-const ScrollerTrack = styled.div`
-    overflow: scroll;
+    
     overflow-y: hidden;
-    padding: 10px;
-    display: flex;
-    padding-left: 0;
-
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
     &::-webkit-scrollbar {
-        height: 10px;
-        width: 10px;
+        height: 12px;
+        width: 12px;
         border: 1px solid ${theme.grey};
-        background:     ${theme.grey};
+        background: ${theme.grey};
+        cursor: move;
+        cursor: grab;
+        cursor: -moz-grab;
+        cursor: -webkit-grab;
+        &:active {
+            cursor: grabbing;
+            cursor: -moz-grabbing;
+            cursor: -webkit-grabbing;
+        }
     }
     &::-webkit-scrollbar-thumb:horizontal{
         background: ${theme.primary};
         border-radius: 1px;
     }
+
+    margin-left: -20px;
+    width: calc(100% + 40px);
+    @media screen and (min-width: ${theme.l}){
+        margin-left: 0;
+        width: 100%;
+    }
 `
-const RightScrollerFade = styled.div`
-    width: 80px;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    opacity: 0;
-    background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.3) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.3) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+const ScrollerTrack = styled.div`
+    display: grid;
+    grid-gap: calc(${theme.standardSpace}px / 2);
+    grid-template-rows: minmax(150px, 1fr);
+    padding-top: 15px;
+    padding-bottom: calc(.75 * ${theme.standardSpace}px);
+    margin-bottom: calc(-.25 * ${theme.standardSpace}px);
+    
+    & > .filmcard_scroller:last-child {
+        margin-right: ${theme.standardSpace}px;
+    }
+    &::before {
+        content: "";
+    }
+    &::after {
+      content: "";
+    }
+
+    grid-template-columns: 20px repeat(${props => props.noOfChildren}, 85%) 20px;
 
     @media screen and (min-width: ${theme.m}){
-        width: 45px;
+        grid-template-columns: 20px repeat(${props => props.noOfChildren}, 45%) 20px;
     }
-
-    &.revealed {
-        opacity: 1;
+    @media screen and (min-width: ${theme.l}){
+        grid-template-columns: 10px repeat(${props => props.noOfChildren}, 40%) 15px;
     }
 `
-// const LeftScrollerFade = styled(RightScrollerFade)`
-//     right: auto;
-//     left: 0;
-//     background: -moz-linear-gradient(right,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 100%); /* FF3.6-15 */
-//     background: -webkit-linear-gradient(right,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.3) 100%); /* Chrome10-25,Safari5.1-6 */
-//     background: linear-gradient(to left,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.3) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-//     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
-//     transition: opacity 0.25s;
-// `
 
 export const Scroller = ({
     withoutBreak,
     classes,
+    noOfChildren = 10,
     children
 }) => {
 
     return(
         <Outer withoutBreak={withoutBreak} className={classes}>
-            {/* <LeftScrollerFade className={children && "revealed"} /> */}
-            <ScrollerTrack>
+            <ScrollerTrack noOfChildren={noOfChildren}>
                 {children}
             </ScrollerTrack>
-            <RightScrollerFade className={children && "revealed"} />
         </Outer>
         
     )

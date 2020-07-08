@@ -28,9 +28,12 @@ export const Wrapper = styled.div`
             margin-top: 0; 
         }
     }
-    article.landing_page {
-        & h2:first-child {
-            margin-block-start: 0;
+    article {
+        max-width: 100%;
+        &.landing_page {
+            & h2:first-child {
+                margin-block-start: 0;
+            }
         }
     }
 

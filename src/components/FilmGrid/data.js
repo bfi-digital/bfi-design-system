@@ -7,7 +7,9 @@ export default [
         channels: [
         ],
         url: "#",
-        uuid: "06347a64-5abd-59de-a6b9-be0d4a9e31e145336"
+        uuid: "06347a64-5abd-59de-a6b9-be0d4a9e31e145336",
+        highlightBannerText: "Now Showing",
+        description: "Raging Bull is the most painful and heart-rending portrait of jealousy in the cinema – an Othello for our times. Boxing is the arena, not the subject.” Roger Ebert, The Great Movies, 2002"
     },
     {
         name: "Parasite",
@@ -19,7 +21,8 @@ export default [
             "Southbank"
         ],
         url: "#",
-        uuid: "06347a64-5abd-59de-a6b9-be0d4a9e31e1456"
+        uuid: "06347a64-5abd-59de-a6b9-be0d4a9e31e1456",
+        description: "You should watch parasite!"
     },
     {
         name: "The Flavour of Green Tea Over Rice",
@@ -30,7 +33,8 @@ export default [
             "BFI Player"
         ],
         url: "#",
-        uuid: "06347a64-5abd-59de-a6b9-be0d4a9e31e2"
+        uuid: "06347a64-5abd-59de-a6b9-be0d4a9e31e2",
+        highlightBannerText: "Japan 2020"
     },
     {
         name: "Good Morning",
