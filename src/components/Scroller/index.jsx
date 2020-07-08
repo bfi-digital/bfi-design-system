@@ -32,12 +32,15 @@ const ScrollerTrack = styled.div`
     scroll-snap-type: x proximity;
     &::-webkit-scrollbar {
         height: 20px;
+        width: 20px;
         border: 1px solid ${theme.grey};
         background: ${theme.grey};
         cursor: move;
         cursor: grab;
         cursor: -moz-grab;
         cursor: -webkit-grab;
+        -webkit-appearance: none;
+        -webkit-overflow-scrolling: auto;
         &:active {
             cursor: grabbing;
             cursor: -moz-grabbing;
@@ -52,6 +55,7 @@ const ScrollerTrack = styled.div`
     @media screen and (min-width: ${theme.m}){
         &::-webkit-scrollbar {
             height: 13px;
+            width: 13px;
         }
     }
 `
