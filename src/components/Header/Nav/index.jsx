@@ -100,10 +100,10 @@ const ChildBarContainer = styled.div`
     width: 100%;
 
     @media screen and (max-width: ${theme.m_sub}) and (min-width: ${theme.m}){
-        top: 44px;
+        top: 43px;
     }
     @media screen and (min-width: ${theme.m_sub}){
-        top: 53px;
+        top: 51px;
     }        
     @media screen and (min-width: ${theme.l}){
         top: 64px;
