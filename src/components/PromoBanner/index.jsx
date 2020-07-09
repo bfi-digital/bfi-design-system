@@ -11,19 +11,23 @@ import { Button } from "../Button"
 const colorSchemes = [
     {
         background: theme.black,
-        text: theme.white
+        text: theme.white,
+        buttonColor: 1
     },
     {
         background: theme.lightest,
-        text: theme.black
+        text: theme.black,
+        buttonColor: 0
     },
     {
         background: theme.lightGrey,
-        text: theme.black
+        text: theme.black,
+        buttonColor: 0
     },
     {
         background: theme.dark,
-        text: theme.white
+        text: theme.white,
+        buttonColor: 1
     },
 ]
 
@@ -253,7 +257,7 @@ export const PromoBanner = ({
             <Headline level={2} text={headline}/>
             {description && <Description className={image || oembedObject ? "with_image" : "without_image"}>{description}</Description>} 
             {callToActionUrl && (image || oembedObject) && 
-                <Button to={callToActionUrl} colorScheme={colorScheme === 1 || colorScheme === 2 ? 0 : 1} external={external} rel={external ? "noreferrer" : ""}  target={external ? "_blank" : "_self"}>
+                <Button to={callToActionUrl} colorScheme={colorSchemes[colorScheme].buttonColor} external={external} rel={external ? "noreferrer" : ""}  target={external ? "_blank" : "_self"}>
                     {callToActionTitle}
                 </Button>
             }
@@ -285,7 +289,7 @@ export const PromoBanner = ({
                     : 
                     <RightButton>
                         {callToActionUrl && 
-                            <Button to={callToActionUrl} colorScheme={colorScheme === 1 || colorScheme === 2 ? 0 : 1} external={external} rel={external ? "noreferrer" : ""} target={external ? "_blank" : "_self"}>
+                            <Button to={callToActionUrl} colorScheme={colorSchemes[colorScheme].buttonColor} external={external} rel={external ? "noreferrer" : ""} target={external ? "_blank" : "_self"}>
                                 {callToActionTitle}
                             </Button>
                         }
