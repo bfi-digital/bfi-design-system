@@ -70,39 +70,52 @@ const RightScrollerFade = styled.div`
     user-select: none;
     transition: opacity 0.2s ease 0s, padding-left 0.2s ease 0s;
     margin: 0px;
-    background: linear-gradient(to left, rgba(0, 0, 0, 0.55) 0%, transparent 100%);
     display: flex;
     -webkit-box-align: center;
     align-items: center;
     -webkit-box-pack: center;
     justify-content: center;
 
-    svg {
-        width: 18px; 
-        height: auto; 
-        fill: rgb(255, 255, 255); 
-        display: block; 
-        transform: rotate(180deg);
-    }
-
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.6) 0%, transparent 100%);
     opacity: 1;
-    width: 35px;
+    width: 55px;
     height: calc(100% - 30px);
     @media screen and (min-width: ${theme.m}){
+        background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, transparent 100%);
         opacity: 0;
-        width: 45px;
+        width: 65px;
         height: calc(100% - 23px);
     }
     @media screen and (min-width: ${theme.xl}){
-        width: 55px;
+        width: 75px;
+    }
+
+
+    svg {
+        width: 18px; 
+        height: auto; 
+        display: block; 
+        transform: rotate(180deg);
+        fill: ${theme.white}; 
+        @media screen and (min-width: ${theme.m}){
+            fill: ${theme.black}; 
+            margin-left: 20px;
+        }
     }
 `
 const LeftScrollerFade = styled(RightScrollerFade)`
     left: 0px;
     right: auto;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.55) 0%, transparent 100%);
+    @media screen and (min-width: ${theme.m}){
+        background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, transparent 100%);
+    }
     svg {
         transform: rotate(0deg);
+        @media screen and (min-width: ${theme.m}){
+            margin-left: 0px;
+            margin-right: 20px;
+        }
     }
 `
 const LastItem = styled.div`
