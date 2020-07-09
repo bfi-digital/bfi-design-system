@@ -11,7 +11,7 @@ const VideoContainer = styled.div`
     padding-bottom: 56.25%;
     text-align: center;
     margin-bottom: ${theme.standardSpace*2}px;
-    max-width: ${theme.l};
+    max-width: 100%;
 
     iframe {
         position: absolute;
