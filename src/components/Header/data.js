@@ -1,6 +1,6 @@
 export default [
     {
-        title: "Watch & Discover",
+        title: "Watch and Discover",
         url: "/iframe.html?id=pattern-library-page-examples-1-watch-discover--1-landing-page",
         highlightText: "Discover more as a member",
         highlightURL: "/",
@@ -56,7 +56,7 @@ export default [
         ]
     },
     {
-        title: "Funding & Industry",
+        title: "Funding and Industry",
         url: "/iframe.html?id=pattern-library-page-examples-2-funding-industry--1-landing-page",
         highlightText: "Our response to Covid-19",
         highlightURL: "/",
@@ -99,7 +99,7 @@ export default [
         ]
     },
     {
-        title: "Learning & Training",
+        title: "Learning and Training",
         url: "/iframe.html?id=pattern-library-page-examples-1-watch-discover--1-landing-page",
         highlightText: "Support us",
         highlightURL: "/",
@@ -150,7 +150,7 @@ export const quickLinksData = [
         url: "/"
     },
     {
-        title: "Join",
+        title: "Become a member",
         url: "/"
     }
 ]

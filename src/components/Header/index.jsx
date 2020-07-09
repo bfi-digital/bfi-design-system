@@ -25,6 +25,23 @@ const Outer = styled.header`
         background: ${props => props.isTransparent ? (!props.isSticky ? "transparent" : theme.white) : theme.white};
         border-bottom: 1px solid ${props => props.isTransparent ? (!props.isSticky ? "transparent" : theme.grey) : theme.grey};
     }
+
+    a {
+        font-size: ${theme.fontSize_s};
+
+        @media screen and (max-width: ${theme.m_sub}) and (min-width: ${theme.m}){
+            padding: 12px 8px;
+            font-size: 13px;
+        }
+        @media screen and (min-width: ${theme.m_sub}){
+            padding: 15px 12px;
+            font-size: 15px;
+        }
+        @media screen and (min-width: ${theme.l}){
+            padding: 21px 15px;
+            font-size: ${theme.fontSize_s};
+        }
+    }
 `
 
 const Inner = styled.div`
@@ -49,6 +66,15 @@ const Inner = styled.div`
 
 const Logo = styled.img`
     width: 75px;
+    @media screen and (min-width: ${theme.m}){
+        width: 50px;
+    }
+    @media screen and (min-width: ${theme.l}){
+        width: 65px;
+    }
+    @media screen and (min-width: ${theme.xl}){
+        width: 75px;
+    }
 `
 
 const LogoLink = styled(Link)`
@@ -128,6 +154,16 @@ const SkipLink = styled.a`
         clip-path: none !important;
         white-space: inherit !important;
         outline: none;
+
+        @media screen and (max-width: ${theme.m_sub}) and (min-width: ${theme.m}){
+            padding-bottom: 52px;
+        }
+        @media screen and (min-width: ${theme.m_sub}){
+            padding-bottom: 48px;
+        }
+        @media screen and (min-width: ${theme.l}){
+            padding-bottom: 20px;
+        }
     }
 `
 

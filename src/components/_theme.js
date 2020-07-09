@@ -25,6 +25,7 @@ export default {
     // breakpoints
     s: "550px",
     m: "768px", // tablets and larger
+    m_sub: "895px", // for that awkward bit inbetween
     l: "1040px", // desktops and larger
     xl: "1440px", // large desktops only
 

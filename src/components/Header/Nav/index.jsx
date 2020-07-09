@@ -31,13 +31,6 @@ const ItemLink = styled(Link)`
     position: relative;
     margin-right: 15px;
 
-    @media screen and (min-width: ${theme.m}){
-        padding: 18px 11px;
-    }
-    @media screen and (min-width: ${theme.l}){
-        padding: 21px 15px;
-    }
-
     &:after{
         position: absolute;
         left: 15px;
@@ -46,9 +39,16 @@ const ItemLink = styled(Link)`
         display: block;
         content: "";
         border-bottom: ${props => props.active ? `2px solid ${props.isWhite ? (props.isSticky ? theme.black : theme.white) : theme.black}` : ""};
-        @media screen and (min-width: ${theme.m}){
-            left: 11px;
-            right: 11px;
+        
+        @media screen and (max-width: ${theme.m_sub}) and (min-width: ${theme.m}){
+            left: 8px;
+            right: 8px;
+            bottom: 8px;
+        }
+        @media screen and (min-width: ${theme.m_sub}){
+            left: 13px;
+            right: 13px;
+            bottom: 11px;
         }
         @media screen and (min-width: ${theme.l}){
             bottom: 17px;
@@ -82,7 +82,6 @@ const ItemLink = styled(Link)`
 
 const Item = styled.li`
     font-weight: ${theme.fontWeight_semiBold};
-    font-size: ${theme.fontSize_s};
 `
 const ChildBarContainer = styled.div`
     @keyframes fadeIn{
@@ -99,6 +98,13 @@ const ChildBarContainer = styled.div`
     top: 59px;
     left: 0;
     width: 100%;
+
+    @media screen and (max-width: ${theme.m_sub}) and (min-width: ${theme.m}){
+        top: 44px;
+    }
+    @media screen and (min-width: ${theme.m_sub}){
+        top: 53px;
+    }        
     @media screen and (min-width: ${theme.l}){
         top: 64px;
     }
@@ -224,6 +230,16 @@ const ChildLink = styled(Link)`
         bottom: 0;
         left: 15px;
         position: absolute;
+        @media screen and (max-width: ${theme.m_sub}) and (min-width: ${theme.m}){
+            left: 8px;
+            width: calc(100% - 15px);
+        }
+        @media screen and (min-width: ${theme.m_sub}){
+            left: 12px;
+        }
+        @media screen and (min-width: ${theme.l}){
+            left: 15px;
+        }
     }
     &:hover {
         color: ${theme.black} !important;
@@ -236,7 +252,7 @@ const ChildLink = styled(Link)`
 
 const BlackLogoLink = styled(Link)`
     margin-right: 20px;
-    padding: 10px;
+    padding: 10px !important;
     margin-left: -10px;
 `
 const Logo = styled.img`
