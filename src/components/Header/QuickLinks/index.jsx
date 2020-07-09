@@ -14,7 +14,7 @@ const QuickLink = styled(Link)`
     font-weight: ${props => props.isTransparent ? (!props.isSticky ? theme.fontWeight_semiBold : theme.fontWeight_bold) : theme.fontWeight_bold};
     text-decoration: none;
     padding: 21px 15px;
-    text-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    text-shadow: ${props => props.isTransparent ?(!props.isSticky ? "0px 0px 10px rgba(0,0,0,0.3)" : "none") : "none"};
 
     -webkit-transition: background ease 0.3s;
     -moz-transition: background ease 0.3s;
