@@ -82,6 +82,7 @@ const ItemLink = styled(Link)`
 
 const Item = styled.li`
     font-weight: ${theme.fontWeight_semiBold};
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.3);
 `
 const ChildBarContainer = styled.div`
     @keyframes fadeIn{
