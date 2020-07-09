@@ -188,6 +188,7 @@ const MobilePanel = ({
                 <>
                     {quickLinks && 
                         <QuickLinks>
+                            <QuickLink to="/">Home</QuickLink>
                             {quickLinks[0] &&
                                 <QuickLink to={quickLinks[0].url}>{quickLinks[0].title}</QuickLink>
                             }
