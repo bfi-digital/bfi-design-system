@@ -121,7 +121,7 @@ const NewsletterForm = styled.form`
         padding: 13px 10px;
         padding-top: 12px;        
         font-size: ${theme.fontSize_s};
-        border: 3px solid ${theme.black};
+        border: 2px solid ${theme.black};
         border-right: none;
         border-bottom: 5px solid ${theme.primary};
         transition: border .3s;
@@ -131,7 +131,8 @@ const NewsletterForm = styled.form`
             border-bottom: 5px solid ${theme.lightFocus};
         }
         &:focus {
-            border-color: 5px solid ${theme.focus};
+            border: 2px solid ${theme.lightFocus};
+            border-bottom: 5px solid ${theme.focus};
             outline: none;
         }
         @media screen and (min-width: ${theme.m}){
@@ -164,7 +165,7 @@ const SubmitButton = styled.button`
     cursor: pointer;
     border: none;
     width: 100%;
-    border: 2px solid ${theme.black};
+    border: 1px solid ${theme.black};
     @media screen and (min-width: ${theme.s}){
         width: auto;
     }
