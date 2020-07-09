@@ -1297,7 +1297,7 @@ exports[`Storyshots 2 All Components/Newsletter Sign Up Example 1`] = `
     </p>
     <form
       action="https://www.createsend.com/t/subscribeerror?description="
-      className="sc-kjoXOD hXgqdk js-cm-form"
+      className="sc-kjoXOD gptRQR js-cm-form"
       data-id="191722FC90141D02184CB1B62AB3DC26D57AD7AD0DF253BE15DD122C605B740244DFF1ADDEE1A8DA861127EDFD99BF281A7016BD9F175EAF91CB858CC76D303F"
       id="subForm"
       method="post"
@@ -1319,7 +1319,7 @@ exports[`Storyshots 2 All Components/Newsletter Sign Up Example 1`] = `
         />
       </label>
       <button
-        className="sc-TOsTZ gARmso"
+        className="sc-TOsTZ kdSURG"
         type="submit"
       >
         Sign up
@@ -1331,7 +1331,7 @@ exports[`Storyshots 2 All Components/Newsletter Sign Up Example 1`] = `
 
 exports[`Storyshots 2 All Components/Oembed Vimeo 1`] = `
 <div
-  className="sc-kgAjT iQePHG"
+  className="sc-kgAjT bNEkYX"
 >
   <iframe
     allow="autoplay; fullscreen"
@@ -1347,7 +1347,7 @@ exports[`Storyshots 2 All Components/Oembed Vimeo 1`] = `
 
 exports[`Storyshots 2 All Components/Oembed Youtube 1`] = `
 <div
-  className="sc-kgAjT iQePHG"
+  className="sc-kgAjT bNEkYX"
 >
   <iframe
     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
