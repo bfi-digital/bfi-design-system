@@ -327,7 +327,7 @@ const Nav = ({
     }, [])
 
     return(
-        <Outer role="navigation" aria-label="Main">
+        <Outer role="navigation" aria-label="Main" onMouseLeave={() => { setSelected(false) }}>
             <List>
                 {isSticky && 
                     <BlackLogoLink to="/"> 
