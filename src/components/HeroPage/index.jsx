@@ -152,7 +152,6 @@ const Meta = styled.div`
         @media screen and (max-width: ${theme.m}){
             font-size: ${props => props.titleLength > 35 ? "1.8rem" : (props.titleLength > 25 ? "2.1rem" : "2.3rem")};
             max-width: 90%;
-            margin: 0 auto;
             margin-block-end: 0.5em;
         }
 
