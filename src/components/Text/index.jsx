@@ -155,7 +155,7 @@ const Outer = styled.div`
 export const Text = ({
     children
 }) =>
-    <Outer>
+    <Outer className="text_block">
         {children}
     </Outer>
 

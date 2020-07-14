@@ -34,6 +34,16 @@ export const Wrapper = styled.div`
             & h2:first-child {
                 margin-block-start: 0;
             }
+            .text_block, .lead_paragraph {
+                margin: 0 auto;
+
+                @media screen and (min-width: ${theme.m}){
+                    max-width: calc(${theme.l} - 400px);
+                }
+                @media screen and (min-width: ${theme.xl}){
+                    max-width: calc(${theme.xl} - 600px);
+                }
+            }
         }
     }
 
