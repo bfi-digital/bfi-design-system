@@ -16,7 +16,7 @@ const QuickLink = styled(Link)`
     padding: 21px 15px;
     text-shadow: ${props => props.isTransparent ?(!props.isSticky ? "0px 0px 10px rgba(0,0,0,0.3)" : "none") : "none"};
     position: relative;
-    transition: all 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
 
     &:before {
         content: "";

@@ -49,7 +49,7 @@ export const FilterableArticles = ({
 }) => {
 
     return(
-        <Outer className={limit >= 8 ? "remove_last" : ""}>
+        <Outer className={limit >= 7 ? "remove_last" : ""}>
             {filters && <FilterLinks links={filters} /> }
             {!loading ? 
                 articles && articles.length > 0 ? 

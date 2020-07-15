@@ -58,6 +58,12 @@ const Outer = styled.li`
         box-shadow: 0px 1px 0px ${theme.primary};
         transform: translate(0px, 3px);
     }
+    @media screen and (min-width: ${theme.m}){
+        min-height: 375px;
+    }
+    @media screen and (min-width: ${theme.l}){
+        min-height: 450px;
+    }
 `
 
 const Meta = styled.div`
@@ -69,6 +75,7 @@ const Meta = styled.div`
 // `
 const Author = styled.p`
     margin-bottom: 0;
+    margin-top: ${theme.standardSpace}px;
 `
 
 const CallToAction = styled(Link)`
@@ -96,12 +103,12 @@ const CallToAction = styled(Link)`
 const Content = styled.div`
     padding-right: ${theme.standardSpace}px;
     position: relative;
-    padding-top: 180px;
+    padding-top: 225px;
     width: 100%;
     
     @media screen and (min-width: ${theme.m}){
         padding-top: ${props => props.withCategory ? "40px" : "0px"};
-        width: 55%;
+        width: 33%;
         height: 100%;
     }
 `
@@ -112,10 +119,10 @@ const PageImageContainer = styled.div`
     right: 0;
     position: absolute;
     width: 100%;
-    height: 175px;
+    height: 228px;
 
     @media screen and (min-width: ${theme.m}){
-        width: 45%;
+        width: 66%;
         height: 100%;
     }
 `

@@ -108,7 +108,7 @@ const Articles = styled.ul`
                 &:nth-of-type(3n+1) {
                     margin-right: ${theme.standardSpace}px;
                 }
-                &:nth-of-type(3n+2) {
+                &:nth-of-type(3n+1) {
                     margin-right: 0px;
                 } 
             }
@@ -121,10 +121,6 @@ const Articles = styled.ul`
             }
             @media screen and (min-width: ${theme.m}){
                 margin-bottom: 35px;
-            }
-            @media screen and (min-width: ${theme.m}){
-                width: calc(66.666% - 8.332px);
-                margin-right: ${theme.standardSpace}px;
             }
         }   
     }

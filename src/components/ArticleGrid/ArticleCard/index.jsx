@@ -17,7 +17,7 @@ const Outer = styled.li`
     min-height: 130px;
     width: 100%;
     padding: 15px;
-    padding-top: 203px;
+    padding-top: 243px;
 
     @media screen and (min-width: ${theme.m}){
         width: 190px;
@@ -107,7 +107,7 @@ const PageImageContainer = styled.div`
     position: absolute;
     top: 0;
     left: 0;
-    height: 188px;
+    height: 228px;
 
     @media screen and (min-width: ${theme.m}){
         height: 160px;

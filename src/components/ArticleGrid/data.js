@@ -76,17 +76,5 @@ export default [
         url: "https://www.bfi.org.uk/news-opinion/news-bfi/announcements/line-we-are-one-global-film-festival",
         uuid: "d1a4a7ac-44fa-56b3-9522-b865a49080c21212367",
         external: true
-    },
-    {
-        title: "Akira Kurosawa: 10 essential films",
-        image480x270: "https://www.bfi.org.uk/sites/bfi.org.uk/files/styles/api_16x9_thumb/public/news/akira-kurosawa-00m-huc-1000x750.jpg?itok=DT22rpHH",
-        image48x27: "https://www.bfi.org.uk/sites/bfi.org.uk/files/styles/api_16x9_thumb/public/news/akira-kurosawa-00m-huc-1000x750.jpg?itok=DT22rpHH",
-        imageAltText: "Example image",
-        author: "Jasper Sharp",
-        date: "22 November 2019",
-        category: "10 great",
-        url: "https://www.bfi.org.uk/news-opinion/news-bfi/lists/akira-kurosawa-10-essential-films",
-        uuid: "d1a4a7ac-44fa-56b3-9522-b865a49080c21212378",
-        external: true
     }
 ]
