@@ -29,6 +29,18 @@ const colorSchemes = [
         text: theme.white,
         buttonColor: 1
     },
+    // player rentals
+    {
+        background: theme.black,
+        text: theme.white,
+        buttonColor: 2
+    },
+    // player subscription
+    {
+        background: theme.black,
+        text: theme.white,
+        buttonColor: 3
+    },
 ]
 
 const Outer = styled.section`
