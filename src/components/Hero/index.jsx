@@ -141,7 +141,6 @@ const Outer = styled.section`
         }
     }
 `
-
 const InnerGradient = styled.div`
     width: 100%;
     height: 100%;
@@ -154,7 +153,6 @@ const InnerGradient = styled.div`
     background: ${props => props.withHeader ? "linear-gradient(to bottom, rgba(0,0,0,0.45) 0%,rgba(0,0,0,0.45) 1%,rgba(255,255,255,0) 50%,rgba(0,0,0,65) 100%)" : "linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.45) 25%, rgba(0,0,0,0) 100%)"};
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99000000', endColorstr='#000000',GradientType=0 );
 `
-
 const Container = styled.div`
     max-width: ${theme.l};
     width: 100%;

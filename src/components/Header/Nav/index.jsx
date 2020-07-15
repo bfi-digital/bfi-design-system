@@ -34,43 +34,67 @@ const ItemLink = styled(Link)`
 
     &:after{
         position: absolute;
+        display: block;
+        content: "";
+        height: 2px;
+        background-color: ${props => props.isWhite ? (props.isSticky ? theme.black : theme.white) : theme.black};
+        width: ${props => props.active ? "calc(100% - 30px)" : "0"};
         left: 15px;
         right: 15px;
         bottom: 15px;
-        display: block;
-        content: "";
-        border-bottom: ${props => props.active ? `2px solid ${props.isWhite ? (props.isSticky ? theme.black : theme.white) : theme.black}` : ""};
-        
+        transition: all 0.3s ease-in-out;
+
         @media screen and (max-width: ${theme.m_sub}) and (min-width: ${theme.m}){
             left: 8px;
             right: 8px;
             bottom: 8px;
+            width: ${props => props.active ? "calc(100% - 16px)" : "0"};
         }
         @media screen and (min-width: ${theme.m_sub}){
             left: 13px;
             right: 13px;
             bottom: 11px;
+            width: ${props => props.active ? "calc(100% - 26px)" : "0"};
         }
         @media screen and (min-width: ${theme.l}){
             bottom: 17px;
             left: 15px;
             right: 15px;
+            width: ${props => props.active ? "calc(100% - 30px)" : "0"};
         }
     }
+    &:hover {
+        &:after {
+            opacity: ${props => props.active ? "1" : "0.8"};
+            visibility: visible;
+            width: calc(100% - 30px);
+            @media screen and (max-width: ${theme.m_sub}) and (min-width: ${theme.m}){
+                width: calc(100% - 16px);
+            }
+            @media screen and (min-width: ${theme.m_sub}){
+                width: calc(100% - 26px);
+            }
+            @media screen and (min-width: ${theme.l}){
+                width: calc(100% - 30px);
+            }
+        }
+    }
+
+
     &:before{
         display: block;
         content: "";
         position: absolute;
         margin: 0 auto;
-        bottom: -1px;
+        bottom: 0px;
         left: 50%;
         transform: translateX(-50%);
         width: 0; 
         height: 0; 
         border-left: 8px solid transparent;
         border-right: 8px solid transparent;
-        border-bottom: 8px solid ${props => props.hovered ? theme.grey : "transparent"};
-        z-index: 99;
+        border-bottom: 8px solid ${props => props.hovered ? (props => props.isWhite ? (props.isSticky ? theme.lightGrey : theme.white) : theme.lightGrey) : "transparent"};
+        z-index: 999;
     }
     &:first-child {
         margin-left: -5px;
@@ -99,7 +123,7 @@ const ChildBarContainer = styled.div`
     top: 59px;
     left: 0;
     width: 100%;
-
+    
     @media screen and (max-width: ${theme.m_sub}) and (min-width: ${theme.m}){
         top: 43px;
     }
@@ -109,9 +133,14 @@ const ChildBarContainer = styled.div`
     @media screen and (min-width: ${theme.l}){
         top: 64px;
     }
+    @media screen and (min-width: ${theme.xl}){
+        max-width:${props => props.isWhite ? (props.isSticky ? "none" : "calc(" + theme.xl + " + 125px)") : "none"};
+        margin: 0 auto;
+        left: ${props => props.isWhite ? (props.isSticky ? "0" : "calc(50% - 782.5px)") : "0"};
+    }
 `
 const ChildBar = styled.div`
-    background: ${theme.white};
+    background: ${props => props.isWhite ? (props.isSticky ? theme.lightGrey : theme.white) : theme.lightGrey};
     border-bottom: 1px solid ${theme.grey};
     border-top: 1px solid ${theme.grey};
     margin: 0 auto;
@@ -378,7 +407,7 @@ const Nav = ({
 
                             {selected === i &&
                                 <>
-                                    <ChildBarContainer>
+                                    <ChildBarContainer isSticky={isSticky} isWhite={isOverlaid}>
                                         <ChildBar isSticky={isSticky} isWhite={isOverlaid}>
                                             <ChildList id={i}>
                                                 <InnerContainer>
