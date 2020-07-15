@@ -75,6 +75,7 @@ const Outer = styled.section`
         flex-direction: ${props => props.pageWithSideBar ? "column" : "row"};
         margin-bottom: ${theme.standardSpace*2.5}px;
         margin-top: ${theme.standardSpace*2.5}px;
+        min-height: 280px;
 
         a {
             margin-top: auto;
