@@ -258,6 +258,7 @@ const BlackLogoLink = styled(Link)`
 `
 const Logo = styled.img`
     width: 40px;
+    height: 41px;
     vertical-align: middle;
 `
 const HighlightContainer = styled.div`

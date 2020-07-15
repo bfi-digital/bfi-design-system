@@ -65,15 +65,15 @@ const Inner = styled.div`
 `
 
 const Logo = styled.img`
-    width: 75px;
+    width: 65px;
     @media screen and (min-width: ${theme.m}){
-        width: 50px;
+        width: 45px;
     }
     @media screen and (min-width: ${theme.l}){
-        width: 65px;
+        width: 55px;
     }
     @media screen and (min-width: ${theme.xl}){
-        width: 75px;
+        width: 65px;
     }
 `
 
@@ -90,6 +90,7 @@ const MobileLogoLink = styled(Link)`
     }
     img {
         width: 40px;
+        height: 41px;
         margin-top: 5px;
     }
 `
