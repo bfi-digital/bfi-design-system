@@ -190,6 +190,9 @@ export const Header = ({
         }
     }, [])
 
+
+    useEffect(() => handleScroll(), []);
+
     return(
         <>
             <SkipLink href="#content-start"><div className="inner"><div className="button_like">Skip to content</div></div></SkipLink>
