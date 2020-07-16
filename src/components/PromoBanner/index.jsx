@@ -140,7 +140,9 @@ const Inner = styled.div`
     }
 
     &.with_image {
-        min-height: 280px;
+        @media screen and (min-width: ${theme.m}){
+            min-height: 280px;
+        }
     }
 `
 

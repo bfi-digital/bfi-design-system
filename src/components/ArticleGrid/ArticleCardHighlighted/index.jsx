@@ -105,6 +105,8 @@ const Content = styled.div`
     position: relative;
     padding-top: 225px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
     
     @media screen and (min-width: ${theme.m}){
         padding-top: ${props => props.withCategory ? "40px" : "0px"};
