@@ -94,21 +94,21 @@ exports[`Storyshots 2 All Components/Article Keywords Normal 1`] = `
   className="sc-htpNat dVmOzA"
 >
   <a
-    className="sc-bxivhb dExULi"
+    className="sc-bxivhb GDko"
     href="#1"
     title="Show all Covid-19 articles"
   >
     Covid-19
   </a>
   <a
-    className="sc-bxivhb dExULi"
+    className="sc-bxivhb GDko"
     href="#2"
     title="Show all BFI National Archive articles"
   >
     BFI National Archive
   </a>
   <a
-    className="sc-bxivhb dExULi"
+    className="sc-bxivhb GDko"
     href="#3"
     title="Show all Video articles"
   >
