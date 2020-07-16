@@ -58,13 +58,13 @@ const Outer = styled.section`
             font-size: ${props => props.titleLength > 65 ? "2rem" : (props.titleLength > 45 ? "2.4rem" : "2.6rem")};
             @media screen and (min-width: ${theme.m}){
                 margin-bottom: ${theme.standardSpace}px;
-                font-size: ${props => props.titleLength > 65 ? "2.4rem" : (props.titleLength > 45 ? "2.6rem" : "2.9rem")};
+                font-size: ${props => props.titleLength > 65 ? "2.4rem" : (props.titleLength > 45 ? "2.8rem" : "3.1rem")};
             }
             @media screen and (min-width: ${theme.l}){
-                font-size: ${props => props.titleLength > 65 ? "2.6rem" : (props.titleLength > 45 ? "2.8rem" : "3.2rem")};
+                font-size: ${props => props.titleLength > 65 ? "2.6rem" : (props.titleLength > 45 ? "3rem" : "3.4rem")};
             }
             @media screen and (min-width: ${theme.xl}){
-                font-size: ${props => props.titleLength > 65 ? "2.8rem" : (props.titleLength > 45 ? "3rem" : "3.6rem")};
+                font-size: ${props => props.titleLength > 65 ? "2.8rem" : (props.titleLength > 45 ? "3.2rem" : "3.8rem")};
             }
         }
         p {
