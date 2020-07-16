@@ -79,9 +79,6 @@ const Outer = styled.div`
 
     &.with_image {
         @media screen and (max-width: ${theme.m}){
-            h1, p, ol {
-                text-align: center;
-            }
             h1 {
                 margin-block-start: 0;
             }
