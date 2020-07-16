@@ -7,6 +7,8 @@ const Outer = styled.div`
     margin-top: 50px;
 `
 const FilterLink = styled.a`
+    display: block;
+    text-align: center;
     color: ${theme.black};
     font-weight: 700;
     border-radius: 5px;
@@ -32,6 +34,10 @@ const FilterLink = styled.a`
     &:active{
         color: ${theme.white};
         background: ${theme.primary}
+    }
+    @media screen and (min-width: ${theme.s}){
+        display: inline-block;
+        text-align: left;
     }
 `
 export const ArticleKeywords = ({
