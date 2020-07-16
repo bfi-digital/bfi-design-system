@@ -138,6 +138,10 @@ const Inner = styled.div`
     @media screen and (min-width: ${theme.l}){
         padding: 30px;
     }
+
+    &.with_image {
+        min-height: 280px;
+    }
 `
 
 const RightButton = styled.div`
