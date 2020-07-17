@@ -124,7 +124,7 @@ const RestyledOuter = styled(Outer)`
         }
     }
     @media screen and (min-width: ${theme.xl}){
-        flex: 0 0 30%;
+        flex: 0 0 31%;
     }
 `
 
@@ -200,6 +200,7 @@ const Description = styled.div`
     width: 100%;
     transform: translateY(100%);
     transition: .3s ease-in-out;
+    max-height: 75%;
 
     @media screen and (max-width: 400px){
         display: none;
