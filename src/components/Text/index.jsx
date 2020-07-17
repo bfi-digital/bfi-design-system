@@ -74,6 +74,25 @@ const Outer = styled.div`
         }
     }
 
+    abbr {
+        speak: spell-out;
+        cursor: help;
+        position: relative;
+        text-decoration-line: underline;
+        text-decoration-style: dotted;
+
+        &:hover::after {
+            position: absolute;
+            top: calc(100% + 5px);
+            left: 50%;
+            display: block;
+            padding: 10px 15px;
+            width: max-content;
+            background: ${theme.lightest}F2;
+            content: attr(title);
+        }
+    }
+
     
     @media screen and (min-width: ${theme.m}){
         max-width: calc(${theme.l} - 200px);
