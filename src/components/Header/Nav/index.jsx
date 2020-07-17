@@ -125,10 +125,10 @@ const ChildBarContainer = styled.div`
     width: 100%;
     
     @media screen and (max-width: ${theme.m_sub}) and (min-width: ${theme.m}){
-        top: 43px;
+        top: 42px;
     }
     @media screen and (min-width: ${theme.m_sub}){
-        top: 51px;
+        top: 50px;
     }        
     @media screen and (min-width: ${theme.l}){
         top: 64px;
@@ -244,9 +244,9 @@ const ChildLink = styled(Link)`
     text-decoration: none;
     padding: 10px 15px;
     width: 100%;
-    min-height: 75px;
     display: table;
     position: relative;
+    min-height: 75px;
 
     span {
         display: table-cell;
@@ -274,9 +274,14 @@ const ChildLink = styled(Link)`
     &:hover {
         color: ${theme.black} !important;
     }
+
+    @media screen and (max-width: ${theme.m_sub}) and (min-width: ${theme.m}){
+        min-height: 65px;    
+    }
     @media screen and (min-width: ${theme.l}){
         padding: 15px 15px;
         font-size: ${theme.fontSize_s};
+        min-height: 88px;    
     }
 `
 
