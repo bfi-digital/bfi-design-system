@@ -185,6 +185,9 @@ const DescriptionBG = styled.div`
     background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.75) 60%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.75) 60%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#99000000',GradientType=0 ); /* IE6-9 */
+    @media screen and (max-width: 400px){
+        display: none;
+    }  
 `
 const Description = styled.div`
     position: absolute;
@@ -197,6 +200,10 @@ const Description = styled.div`
     width: 100%;
     transform: translateY(100%);
     transition: .3s ease-in-out;
+
+    @media screen and (max-width: 400px){
+        display: none;
+    }   
 `
 
 const ConditionalWrapper = ({ condition, wrapper, wrapper2, children }) => 
