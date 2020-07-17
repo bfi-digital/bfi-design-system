@@ -56,7 +56,7 @@ export const Wrapper = styled.div`
         @media screen and (min-width: ${theme.m}){
             padding-top: 0px;
             padding-bottom: 0px;
-            width: 33%;
+            width: calc(34% - 50px);
             margin-left: 50px;
             margin-right: 0px;
         }
@@ -94,6 +94,8 @@ const MainContentWrapper = styled.article`
 
     @media screen and (min-width: ${theme.m}){
         &.page_with_sidebar {
+            width: 66%;
+
             .article_grid_block, .page_links_block {
                 li {
                     margin-right: ${theme.standardSpace}px !important;
