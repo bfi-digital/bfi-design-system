@@ -18,9 +18,8 @@ const Outer = styled.div`
     }
 `
 const Content = styled.div`
-    padding-right: 20px;
     display: inline-block; 
-    width: calc(100% - 47px);
+    width: 100%;
 
     .h3 {
         margin-top: 2px;
@@ -45,7 +44,7 @@ const Number = styled.div`
     color: ${theme.primary};
     font-weight: 700;
     display: inline-block; 
-    width: 27px;
+    width: 100%;
     vertical-align: top;
     margin-top: -10px;
     margin-right: 15px;
@@ -84,7 +83,12 @@ const ContentLinks = styled.div`
         margin-bottom: 10px;
     }
     a {
-        margin-right: 15px;
+        margin-bottom: 15px;
+        margin-right: 0px;
+
+        @media screen and (min-width: ${theme.s}) {
+            margin-right: 15px;
+        }
     }
 `
 
