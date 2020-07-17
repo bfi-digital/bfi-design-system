@@ -70,6 +70,13 @@ const PageImageContainer = styled.div`
     // border-radius: 4px;
     margin-right: 15px;
     vertical-align: middle;
+
+    @media screen and (min-width: ${theme.m}){
+        height: 150px;
+    }
+    @media screen and (min-width: ${theme.l}){
+        height: 100px;
+    }
 `
 const PageImage = styled.div`
     width: 100%;

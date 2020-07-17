@@ -70,6 +70,13 @@ const PageImageContainer = styled.div`
     // border-radius: 4px;
     margin-right: 10px;
     vertical-align: middle;
+
+    @media screen and (min-width: ${theme.m}){
+        height: 150px;
+    }
+    @media screen and (min-width: ${theme.l}){
+        height: 100px;
+    }
 `
 const PageImage = styled.div`
     width: 100%;
@@ -102,6 +109,13 @@ const CallToAction = styled(Link)`
     }
     &:focus{
         outline: none;
+    }
+
+    @media screen and (min-width: ${theme.m}){
+        min-height: 150px;
+    }
+    @media screen and (min-width: ${theme.l}){
+        min-height: 100px;
     }
 `
 const Heading = styled.p`
