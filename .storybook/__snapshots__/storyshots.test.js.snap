@@ -294,7 +294,7 @@ exports[`Storyshots 2 All Components/Call to Action External Link 1`] = `
   }
 >
   <div
-    className="sc-VigVT kvGEUv call_to_action_block"
+    className="sc-VigVT cWHdRL call_to_action_block"
   >
     <a
       className="sc-iwsKbI dNhSqb external_link"
@@ -319,7 +319,7 @@ exports[`Storyshots 2 All Components/Call to Action Internal Link 1`] = `
   }
 >
   <div
-    className="sc-VigVT kvGEUv call_to_action_block"
+    className="sc-VigVT cWHdRL call_to_action_block"
   >
     <a
       className="sc-iwsKbI dNhSqb"
@@ -344,7 +344,7 @@ exports[`Storyshots 2 All Components/Call to Action Two Links 1`] = `
   }
 >
   <div
-    className="sc-VigVT kvGEUv call_to_action_block"
+    className="sc-VigVT cWHdRL call_to_action_block"
   >
     <a
       className="sc-iwsKbI dNhSqb"
@@ -358,7 +358,7 @@ exports[`Storyshots 2 All Components/Call to Action Two Links 1`] = `
     </a>
   </div>
   <div
-    className="sc-VigVT kvGEUv call_to_action_block"
+    className="sc-VigVT cWHdRL call_to_action_block"
   >
     <a
       className="sc-iwsKbI dNhSqb external_link"
@@ -1285,7 +1285,7 @@ exports[`Storyshots 2 All Components/Newsletter Sign Up Example 1`] = `
   }
 >
   <div
-    className="sc-gisBJw kaqUPC"
+    className="sc-gisBJw yQmwE"
   >
     <p
       className="sc-jlyJG OIlnw h3"
@@ -1586,7 +1586,7 @@ exports[`Storyshots 2 All Components/Text Normal 1`] = `
   }
 >
   <div
-    className="sc-fYxtnH kuaYxS text_block"
+    className="sc-fYxtnH exNOOa text_block"
   >
     <p>
       We gotta burn the rain forest, 
