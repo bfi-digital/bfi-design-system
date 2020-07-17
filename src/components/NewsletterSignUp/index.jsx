@@ -107,7 +107,7 @@ const Outer = styled.div`
         padding: ${theme.standardSpace}px;
     }
     @media screen and (min-width: ${theme.l}){
-        max-width: ${theme.m};
+        max-width: ${theme.l};
         text-align: center;
     }
 `

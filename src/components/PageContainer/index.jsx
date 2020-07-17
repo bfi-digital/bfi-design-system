@@ -53,12 +53,27 @@ export const Wrapper = styled.div`
         & h2:first-child {
             margin-block-start: 0;
         }
+        @media screen and (max-width: ${theme.m}){
+            width: 100%;
+            section {
+                width: 100%;
+            }
+        }
         @media screen and (min-width: ${theme.m}){
+            width: 100%;
+            section {
+                width: 75%;
+            }
+        }
+        @media screen and (min-width: ${theme.l}){
             padding-top: 0px;
             padding-bottom: 0px;
             width: calc(34% - 50px);
             margin-left: 50px;
             margin-right: 0px;
+            section {
+                width: 100%;
+            }
         }
     }
 
@@ -104,6 +119,12 @@ const MainContentWrapper = styled.article`
                     &:nth-of-type(2n) {
                         margin-right: 0 !important;
                     }
+                }
+            }
+
+            .scroller__filmcard {
+                @media screen and (min-width: ${theme.l}){
+                    flex: 0 0 54%;
                 }
             }
         }

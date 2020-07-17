@@ -11,7 +11,6 @@ const Outer = styled.li`
     // border-radius: 5px;
     
     &:last-child {
-        border: none;
         margin-bottom: 0px;
     }
     .pagelink_title {
@@ -49,8 +48,17 @@ const Outer = styled.li`
     }
     &:last-of-type {
         margin-bottom: ${theme.standardSpace}px;
-        &:after {
-            display: none;
+    }
+    &:first-of-type {
+        margin-top: 25px;
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: -10px;
+            height: 1px;
+            width: 100%;
+            background: ${theme.grey};
         }
     }
 `

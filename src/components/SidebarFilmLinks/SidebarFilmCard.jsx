@@ -43,9 +43,6 @@ const Outer = styled.li`
     }
     &:last-of-type {
         margin-bottom: ${theme.standardSpace}px;
-        &:after {
-            display: none;
-        }
     }
 `
 const PageImageContainer = styled.div`

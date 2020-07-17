@@ -1313,10 +1313,11 @@ export const normalPage = () =>
                 standfirst="God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs. Do you have any idea how long it takes those cups to decompose. Yes, Yes, without the oops! Yes, Yes, without the oops! Drive us out of here!"
                 breadcrumbs={crumbs}
             />
-            <MainContent>
+            <MainContent classes="page_with_sidebar">
                 <Text> 
                     So you two dig up, dig up dinosaurs? Hey, you know how I&apos;m, like, always trying to save the planet? Here&apos;s my chance. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? Yeah, but your scientists were so preoccupied with whether or not they could, they didn&apos;t stop to think if they should.
                 </Text>
+                <FilmGrid films={demoFilms} />
             </MainContent>
             <Sidebar>
                 <SidebarPageLinks links={pageLinksData} blockTitle="Related pages" />

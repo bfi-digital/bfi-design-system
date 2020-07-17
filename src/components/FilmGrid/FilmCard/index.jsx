@@ -222,7 +222,7 @@ export const FilmCard = ({
 }) =>
     <ConditionalWrapper
         condition={inScroller}
-        wrapper={children => <RestyledOuter to={url} className="filmcard_scroller">{children}</RestyledOuter>}
+        wrapper={children => <RestyledOuter to={url} className="scroller__filmcard">{children}</RestyledOuter>}
         wrapper2={children => <Outer to={url}>{children}</Outer>}
     >
         { highlightBannerText && <HighlightBanner className="highlight_banner">{highlightBannerText}</HighlightBanner> }

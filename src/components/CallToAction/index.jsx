@@ -10,9 +10,10 @@ export const Outer = styled.div`
     display: ${props => props.center ? "block" : "inline-block"};
 
     & + .call_to_action_block {
-        
         a { 
-            margin-left: ${theme.standardSpace/2}px;
+            @media screen and (min-width: ${theme.m}){
+                margin-left: ${theme.standardSpace/2}px;
+            }
         }
     }
 `

@@ -7,12 +7,13 @@ const Outer = styled.div`
     color: ${theme.black};
     line-height: ${theme.lineHeight_s};
     font-size: ${theme.fontSize_s};
+    margin-bottom: 20px;
 
     p:first-of-type{
         margin-top: 0px;
     }
 
-    p, ol, ul{
+    ol, ul{
         margin-bottom: 20px;
     }
 
