@@ -14,7 +14,6 @@ const Outer = styled.div`
     padding: 15px;
     display: block;
     @media screen and (min-width: ${theme.s}){
-        display: flex;
         padding: 20px;
     }
 `
@@ -23,9 +22,18 @@ const Content = styled.div`
     display: inline-block; 
     width: calc(100% - 47px);
 
-    h3 {
+    .h3 {
         margin-top: 2px;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
+        font-size: 1.4375rem;
+        line-height: 1.3;
+
+        @media screen and (min-width: ${theme.l}){
+            font-size: 1.6875rem;
+        }
+        @media screen and (min-width: ${theme.xl}){
+            font-size: 2rem;
+        }
     }
 
     @media screen and (min-width: ${theme.s}){
@@ -33,7 +41,7 @@ const Content = styled.div`
     }
 `
 const Number = styled.div`
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: ${theme.primary};
     font-weight: 700;
     display: inline-block; 
@@ -43,7 +51,7 @@ const Number = styled.div`
     margin-right: 15px;
 
     @media screen and (min-width: ${theme.s}){
-        margin-top: 15px;
+        margin-top: 10px;
         margin-right: 20px;
         width: auto;
     }
@@ -52,15 +60,17 @@ const Image = styled.div`
     width: 100%;  
     margin-top: 15px;
     background: url("${props => props.imageSrc}");
-    height: 220px;
     background-position: center center;
     background-size: cover;
     display: block;
     margin-left: auto;
+    overflow: hidden;
+    height: 0;
+    padding-top: 56.25%;
     
     @media screen and (min-width: ${theme.s}){
-        margin-top: 0;
-        width: 220px;
+        width: 100%;
+        margin-top: 35px;
     }
 `
 const Meta = styled.div`
@@ -68,37 +78,34 @@ const Meta = styled.div`
 `
 
 const ContentLinks = styled.div`
-    margin-top: ${theme.standardSpace*2}px;
+    margin-top: 35px;
     p {
-        maring-top: 0;
-        margin-bottom: 5px;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    a {
+        margin-right: 15px;
     }
 `
 
 const StyledLink = styled(Link)`
     margin-right: 10px;
     color: ${theme.black};
-    text-decoration: none;
-    font-weight: ${theme.fontWeight_semiBold};
+    text-decoration: underline;
+    font-weight: ${theme.fontWeight_bold};
     position: relative;
-    background-image: linear-gradient(120deg, ${theme.primary} 0%, ${theme.primary} 100%);
-    background-repeat: no-repeat;
-    background-size: 100% 2px;
-    background-position: 0 100%;
     transition: all 0.15s ease-in-out;
+    display: block;
 
     &:hover{
-        color: ${theme.white};
-        background-size: 100% 100%;
+        text-decoration: none;
     }
     &:focus{
-        background-size: 100% 100%;
-        color: ${theme.white};
-        outline: none;
-        background-image: linear-gradient(120deg, ${theme.focus} 0%, ${theme.focus} 100%);
+        outline: 2px solid ${theme.focus};
     }
     &:active{
         outline: none;
+        color: ${theme.dark};
         text-decoration: underline;
     }
 `
@@ -125,24 +132,18 @@ export const FilmCardSingle = ({
                 <Headline level={6} text={title}/>
             }
             <Meta>
+                {year && <strong>{year}</strong>}
+                {director && year && <span> - </span>}
                 {director && <span>{director}</span>}
-                {director && year && <span> / </span>}
-                {year && <span>{year}</span>}
             </Meta>
 
-            <ContentLinks>
-                {playerUrl || southbankUrl ?
-                    <>
-                        <p>Now showing</p>
-                        {playerUrl && <Button to={playerUrl}>On BFI Player</Button>}
-                        {southbankUrl && <Button to={southbankUrl}>At Southbank</Button>}
-                    </>
-                    :
-                    null
-                    // :
-                    // <>{filmLink && <StyledLink to={filmLink}>Find out more</StyledLink>}</>
-                }
-            </ContentLinks>
+            {(playerUrl || southbankUrl) &&
+                <ContentLinks>
+                    <p>Now showing</p>
+                    {playerUrl && <Button to={playerUrl}>On BFI Player</Button>}
+                    {southbankUrl && <Button to={southbankUrl}>At Southbank</Button>}
+                </ContentLinks>
+            }
         </Content>
         {image225x225 &&
             <LazyImage
