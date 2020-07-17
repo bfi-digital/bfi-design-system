@@ -18,7 +18,7 @@ export const Wrapper = styled.div`
         max-width: calc(${theme.xl} - 100px);
     }
 
-    article:not(.landing_page) {
+    article.child_page {
         max-width: 100%;
 
         & h2:first-child {
@@ -86,7 +86,7 @@ export const Wrapper = styled.div`
 const MainContentWrapper = styled.article`
     flex: 1;
     
-    &:not(.landing_page) h2:first-child {
+    &.child_page h2:first-child {
         margin-block-start: 0;
     }
     &.landing_page h2:first-child {
