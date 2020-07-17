@@ -25,6 +25,7 @@ const Outer = styled.li`
         }
         p {
             color: ${theme.dark};
+            text-decoration: none;
         }
     }
     &:focus-within{
@@ -74,7 +75,8 @@ const CallToAction = styled(Link)`
     text-decoration: none;
     color: ${theme.black};
     display: block;
-    
+    min-height: 100px;
+
     &:after{
         content: "";
         display: block;
@@ -91,9 +93,9 @@ const CallToAction = styled(Link)`
 
 const Content = styled.div`
     margin: 0;
-    display: inline-block;
-    vertical-align: top;
     width: 60%;
+    display: inline-block;
+    vertical-align: middle;
 `
 
 const Heading = styled.p`
@@ -104,6 +106,7 @@ const Heading = styled.p`
     line-height: 1.3;
     margin-top: 0;
     margin-bottom: 5px;
+    text-decoration: underline;
 
     @media screen and (min-width: ${theme.m}){
         font-size: ${theme.fontSize_s};
@@ -133,16 +136,6 @@ export const SidebarFilmCard = ({
 }) =>
     <Outer>
         <CallToAction external={external} className={external ? "external_link" : ""} rel={external ? "noreferrer" : ""} to={url} target={external ? "_blank" : "_self"}>
-            <PageImageContainer>
-                <LazyImage
-                    src={image480x270 ? image480x270 : placeholderImage}
-                    placeholder={image48x27 ? image48x27 : placeholderImageSmall}
-                >
-                    {src => 
-                        <PageImage className="image" imageSrc={src} alt={imageAltText ? imageAltText : ""} />
-                    }
-                </LazyImage>
-            </PageImageContainer>
             <Content>
                 <Heading>{name}</Heading>
                 <Channels>
@@ -151,6 +144,16 @@ export const SidebarFilmCard = ({
                     )}
                 </Channels>
             </Content>
+                <PageImageContainer>
+                    <LazyImage
+                        src={image480x270 ? image480x270 : placeholderImage}
+                        placeholder={image48x27 ? image48x27 : placeholderImageSmall}
+                    >
+                        {src => 
+                            <PageImage className="image" imageSrc={src} alt={imageAltText ? imageAltText : ""} />
+                        }
+                    </LazyImage>
+                </PageImageContainer>
         </CallToAction>
     </Outer>
 

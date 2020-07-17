@@ -50,6 +50,9 @@ export const Wrapper = styled.div`
     aside {
         padding-top: ${theme.standardSpace}px;
         padding-bottom: 0px;
+        & h2:first-child {
+            margin-block-start: 0;
+        }
         @media screen and (min-width: ${theme.m}){
             padding-top: 0px;
             padding-bottom: 0px;

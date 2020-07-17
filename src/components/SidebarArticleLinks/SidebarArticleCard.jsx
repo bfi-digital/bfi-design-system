@@ -30,6 +30,7 @@ const Outer = styled.li`
         }
         .type_tag {
             background: ${theme.lightest};
+            color: ${theme.black};
         }
     }
     &:hover, &:focus-within {
@@ -127,7 +128,7 @@ const Heading = styled.p`
         line-height: ${theme.lineHeight_m};
     }
 `
-const Date = styled.p`
+const Author = styled.p`
     margin-bottom: 5px;
     font-size: ${theme.small_fontSize_m};
     color: ${theme.darkGrey};
@@ -135,13 +136,13 @@ const Date = styled.p`
 `
 
 const StyledTag = styled.div`
-    background: ${theme.white};
-    color: ${theme.black};
-    padding: 5px 10px;
     margin-right: 5px;
     font-size: ${theme.small_fontSize_m};
     display: inline-block;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
+    background: ${theme.primary};
+    color: ${theme.white};
+    padding: 3px 5px;
 `
 export const SidebarArticleCard = ({
     image480x270,
@@ -150,7 +151,7 @@ export const SidebarArticleCard = ({
     type,
     url,
     imageAltText,
-    date,
+    author,
     external
 }) =>
     <Outer>
@@ -168,7 +169,7 @@ export const SidebarArticleCard = ({
             <Content>
                 {type && <StyledTag className="type_tag">{type}</StyledTag> }
                 {title && <Heading className="articlecard_title">{title}</Heading>}
-                {date && <Date>{date}</Date>}
+                {author && <Author>By {author}</Author>}
             </Content>
         </CallToAction>
     </Outer>

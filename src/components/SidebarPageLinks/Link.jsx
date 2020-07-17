@@ -19,7 +19,9 @@ const Outer = styled.li`
         display: inline-block;
         vertical-align: middle;
         width: 60%;
+        padding-right: 10px;
         font-weight: ${theme.fontWeight_semiBold};
+        text-decoration: underline;
     }
     &:hover, &:focus-within {
         .image {
@@ -28,7 +30,9 @@ const Outer = styled.li`
         }
         .pagelink_title {
             color: ${theme.dark};
+            text-decoration: none;
         }
+        
     }
     &:focus-within{
         box-shadow: 0px 0px 0px 3px ${theme.focus};
