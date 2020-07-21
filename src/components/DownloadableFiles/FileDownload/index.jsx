@@ -77,7 +77,8 @@ export const FileDownload = ({
     title,
     type,
     url,
-    size
+    size,
+    onClick
 }) => {
     const [isHovered, setIsHovered] = useState(false)
 
@@ -88,6 +89,7 @@ export const FileDownload = ({
                 download
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
+		onClick={onClick}
             >
                 <DownloadFileIcon colourFill={isHovered ? theme.dark : theme.primary} />
                 <FileDetails className="file-details">
