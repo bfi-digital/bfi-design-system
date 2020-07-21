@@ -31,9 +31,6 @@ export const Wrapper = styled.div`
     article {
         max-width: 100%;
         &.landing_page {
-            & h2:first-child {
-                margin-block-start: 0;
-            }
             .text_block, .lead_paragraph {
                 margin: 0 auto;
 
