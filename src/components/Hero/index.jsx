@@ -70,7 +70,7 @@ const Outer = styled.section`
         p {
             color: ${theme.white};
             margin-top: -15px;
-            text-shadow: 0px 0px 30px ${theme.black}50;
+            text-shadow: 0px 0px 30px ${theme.black}D1;
         }
     }
 
@@ -170,7 +170,7 @@ const Container = styled.div`
     }
     li, a {
         color: ${theme.white};
-        text-shadow: 0px 0px 30px ${theme.black}50;
+        text-shadow: 0px 0px 30px ${theme.black}D1;
         &:focus{
             background: ${theme.dark};
         }
@@ -179,7 +179,7 @@ const Container = styled.div`
 
 const Copyright = styled.p`
     color: ${theme.white};
-    text-shadow: 0px 0px 30px ${theme.black}50;
+    text-shadow: 0px 0px 30px ${theme.black}D1;
     font-size: ${theme.small_fontSize_m};
     position: absolute;
     bottom: 5px;
