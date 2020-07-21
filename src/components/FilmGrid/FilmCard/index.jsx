@@ -168,7 +168,7 @@ const HighlightBanner = styled.div`
     top: 0;
     right: 0;
     padding: 5px 15px;
-    background: ${theme.primary}BF;
+    background: ${theme.primary}E8;
     color: ${theme.white};
     z-index: 1;
     font-weight: ${theme.fontWeight_semiBold};
@@ -180,7 +180,7 @@ const DescriptionBG = styled.div`
     width: 100%;
     height: 75%;
     opacity: 0;
-    transition: opacity 0.4s
+    transition: opacity 0.4s;
     background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.75) 60%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.75) 60%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.75) 60%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */

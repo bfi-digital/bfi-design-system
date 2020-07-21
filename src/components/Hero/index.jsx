@@ -52,7 +52,7 @@ const Outer = styled.section`
     &.with_image {
         h1 {
             color: ${theme.white};
-            text-shadow: 0px 0px 30px ${theme.black}50;
+            text-shadow: 0px 0px 30px ${theme.black}D1;
             margin-bottom: 0px;
             font-size: 2.4rem;
             font-size: ${props => props.titleLength > 65 ? "2rem" : (props.titleLength > 45 ? "2.4rem" : "2.6rem")};
