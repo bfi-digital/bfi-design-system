@@ -11,12 +11,25 @@ const Outer = styled.ol`
     padding-left: 0px;
     line-height: ${theme.lineHeight_s};
     margin-top: 0;
+    display: none;
+
+    @media screen and (min-width: ${theme.m}){
+        display: block;
+    }
     @media screen and (min-width: ${theme.l}){
         font-size: ${theme.fontSize_s};
         max-width: calc( 0.7 * ${theme.l});
     }
     @media screen and (min-width: ${theme.xl}){
         max-width: calc( 0.7 * ${theme.xl});
+    }
+`
+const MobileOuter = styled.div`
+    display: block;
+    font-size: ${theme.small_fontSize_m};
+
+    @media screen and (min-width: ${theme.m}){
+        display: none;
     }
 `
 
@@ -62,8 +75,8 @@ const BreadcrumbLink = styled(Link)`
 export const Breadcrumbs = ({
     breadcrumbs
 }) =>
-    <>
-        {breadcrumbs && breadcrumbs.length > 0 &&
+    breadcrumbs && breadcrumbs.length > 0 &&
+        <>
             <Outer>
                 {breadcrumbs.map((crumb) =>
                     <Crumb key={crumb.url ? crumb.url : crumb.title}>
@@ -71,8 +84,14 @@ export const Breadcrumbs = ({
                     </Crumb>
                 )}
             </Outer>
-        }
-    </>
+            {breadcrumbs.length > 1 &&
+                <MobileOuter>
+                    <Crumb key={breadcrumbs[breadcrumbs.length - 2].url ? breadcrumbs[breadcrumbs.length - 2].url : breadcrumbs[breadcrumbs.length - 2].title}>
+                        <BreadcrumbLink to={breadcrumbs[breadcrumbs.length - 2].url}>&#60;&nbsp;Go back to {breadcrumbs[breadcrumbs.length - 2].title}</BreadcrumbLink>
+                    </Crumb>
+                </MobileOuter>
+            }
+        </>
 
 
 Breadcrumbs.propTypes = {

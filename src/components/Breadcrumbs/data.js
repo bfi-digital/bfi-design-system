@@ -29,3 +29,13 @@ export const longData = [
         title: "Development Fund"
     }
 ]
+
+export const shortData = [
+    {
+        title: "Industry",
+        url: "#4"
+    },
+    {
+        title: "Get funding",
+    }
+]

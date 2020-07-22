@@ -1,6 +1,6 @@
 import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks'
 import { Breadcrumbs } from "../../../components/Breadcrumbs/index"
-import data, {longData as data2} from "../../../components/Breadcrumbs/data"
+import data, {longData as data2, shortData as data3} from "../../../components/Breadcrumbs/data"
 
 <Meta title="Pattern Library|Structure/Breadcrumbs" component={Breadcrumbs} />
 
@@ -25,6 +25,12 @@ Breadcrumbs are limited to 8 columns of width on larger screens or 70% of the wi
 <Preview>
     <Story name="Long data">
         <Breadcrumbs breadcrumbs={data2} />
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="Short data">
+        <Breadcrumbs breadcrumbs={data3} />
     </Story>
 </Preview>
 
