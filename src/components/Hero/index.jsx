@@ -6,6 +6,7 @@ import PropTypes from "prop-types"
 import LazyImage from "react-lazy-progressive-image"
 import { LeadParagraph } from "../LeadParagraph"
 import { Wrapper } from "../PageContainer"
+import cameraIcon from "./camera_icon.svg"
 
 const Outer = styled.section`
     margin: 0 auto;
@@ -215,6 +216,57 @@ const ChildContainerMobile = styled.div`
         display: none;
     }
 `
+const CaptionCreditIconWrapper = styled.div`
+    position: absolute;
+    width: 100%;
+    display: none;
+
+    @media screen and (min-width: ${theme.m}){
+        top: 83px;
+        max-width: calc(100% - 30px);
+        right: 30px;
+        display: block;
+    }
+    @media screen and (min-width: ${theme.l}){
+        max-width: 950px;
+        top: 62px;
+        left: calc(50% - 465px);
+    }
+    @media screen and (min-width: ${theme.xl}){
+        max-width: 1285px;
+        top: 62px;
+        left: calc(50% - 650px);
+    }
+`
+const CaptionCreditIcon = styled.div`
+    width: 30px;
+    height: 30px;
+    float: right;
+    cursor: help;
+    cursor: help;
+    position: relative;
+    opacity: 0.8;
+    background: url(${cameraIcon});
+    background-size: 100%;
+    &:hover {
+        opacity: 1;
+
+        &::after {
+            position: absolute;
+            top: calc(100% + 5px);
+            right: calc(100% - 30px);
+            display: block;
+            padding: 10px 15px;
+            width: max-content;
+            background: ${theme.lightest};
+            content: attr(title);
+            z-index: 9999;
+            -webkit-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.4);
+            -moz-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.4);
+            box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.4);
+        }
+    }
+`
 
 export const Hero = ({
     image1920x1080,
@@ -223,7 +275,8 @@ export const Hero = ({
     standfirst,
     withHeader,
     copyright,
-    children
+    children,
+    captionCredit
 }) =>
     <LazyImage
         src={image1920x1080}
@@ -241,6 +294,7 @@ export const Hero = ({
                     titleLength={headline.length}
                 >
                     {image1920x1080 && <InnerGradient withHeader={withHeader} /> }
+                    {captionCredit && <CaptionCreditIconWrapper><CaptionCreditIcon src={cameraIcon} title={captionCredit} alt="" /></CaptionCreditIconWrapper> }
                     <Container>
                         {headline && <Headline level={0} text={headline}/>}
                         <ChildContainerDesktop className={image1920x1080 ? "child_with_image" : "child_without_image"}>

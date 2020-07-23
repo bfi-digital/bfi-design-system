@@ -91,6 +91,9 @@ const Outer = styled.div`
             width: max-content;
             background: ${theme.lightest}F2;
             content: attr(title);
+            -webkit-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.4);
+            -moz-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.4);
+            box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.4);
         }
     }
 
