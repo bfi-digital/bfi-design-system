@@ -254,14 +254,11 @@ export const Footer = ({
     menus,
     copyrightText,
     copyrightLinks,
-    sponsorImages,
-    helpscout_app_id,
-    helpscout_secret,
-    helpscout_token
+    sponsorImages
 }) => 
     <>  
         <Inner className="dont_restrict">
-            <FeedbackForm secret={helpscout_app_id} secret={helpscout_secret} token={helpscout_token} />
+            <FeedbackForm app_id="XA9zvMTVJ8RF1FJvIOFbWZv1xgIff9oO" secret="YfhhOvgt7TjmFJUv9ePdd8hZ0N3h0AA0" token="9FR6GJjGemKntenWqsv9Sbv9CMY20V4K" />
         </Inner>
         <Outer> 
             <TopRow>
