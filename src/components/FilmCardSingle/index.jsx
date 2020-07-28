@@ -115,8 +115,8 @@ const StyledLink = styled(Link)`
 `
 
 export const FilmCardSingle = ({
-    image225x225,
-    image22x22,
+    image960x540,
+    image96x54,
     title,
     type,
     director,
@@ -149,10 +149,10 @@ export const FilmCardSingle = ({
                 </ContentLinks>
             }
         </Content>
-        {image225x225 &&
+        {image960x540 &&
             <LazyImage
-                src={image225x225}
-                placeholder={image22x22 ? image22x22 : image225x225}
+                src={image960x540}
+                placeholder={image96x54 ? image96x54 : image960x540}
             >
                 {src => <Image imageSrc={src} />}
             </LazyImage>
@@ -164,7 +164,7 @@ FilmCardSingle.propTypes = {
     /** 
 	 * Url to the image for the article hero
     **/
-    image225x225: PropTypes.string,
+    image960x540: PropTypes.string,
     /** 
 	 * Content title 
     **/
