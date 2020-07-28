@@ -74,6 +74,11 @@ const Image = styled.div`
 `
 const Meta = styled.div`
     margin-bottom: 10px;
+
+    p {
+        margin-bottom: 5px;
+        margin-top: 0px;
+    }
 `
 
 const ContentLinks = styled.div`
@@ -136,9 +141,8 @@ export const FilmCardSingle = ({
                 <Headline level={6} text={title}/>
             }
             <Meta>
-                {year && <strong>{year}</strong>}
-                {director && year && <span> - </span>}
-                {director && <span>{director}</span>}
+                {year && <p>{year}</p>}
+                {director && <p>Directed by {director}</p>}
             </Meta>
 
             {(playerUrl || southbankUrl) &&
