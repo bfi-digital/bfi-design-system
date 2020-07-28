@@ -102,6 +102,9 @@ const MainContentWrapper = styled.article`
         & .promoBanner:first-child {
             margin-top: ${theme.standardSpace}px;
         }
+        .promoBanner h2 {
+            margin-top: 0px;
+        }
     }
 
     @media screen and (min-width: ${theme.m}){
