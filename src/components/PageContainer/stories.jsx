@@ -671,6 +671,8 @@ export const articlePostListPageExample = () =>
                     text="News &amp; Articles"
                 />
 
+                <LeadParagraph text="Standfirst for article page would go here." />
+
                 <FilterableArticles
                     filters={[
                         {
