@@ -607,6 +607,7 @@ export const serviceListPageExampleWithImage = () =>
                     title="BFI National Archive"
                     standfirst="The BFI national archive holds a magnificent collection of film and television, from the birth of cinema to today. "
                     isServiceListPage={true}
+                    breadcrumbs={crumbs}
                     image1920x1080="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1920/1080/1/2020-03/Hero.jpg"
                     image192x108="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/192/108/1/2020-03/Hero.jpg"
                 />
