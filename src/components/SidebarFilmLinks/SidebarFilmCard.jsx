@@ -154,16 +154,16 @@ export const SidebarFilmCard = ({
                     )}
                 </Channels>
             </Content>
-                <PageImageContainer>
-                    <LazyImage
-                        src={image480x270 ? image480x270 : placeholderImage}
-                        placeholder={image48x27 ? image48x27 : placeholderImageSmall}
-                    >
-                        {src => 
-                            <PageImage className="image" imageSrc={src} alt={imageAltText ? imageAltText : ""} />
-                        }
-                    </LazyImage>
-                </PageImageContainer>
+            <PageImageContainer>
+                <LazyImage
+                    src={image480x270 ? image480x270 : placeholderImage}
+                    placeholder={image48x27 ? image48x27 : placeholderImageSmall}
+                >
+                    {src => 
+                        <PageImage className="image" imageSrc={src} alt={imageAltText ? imageAltText : ""} />
+                    }
+                </LazyImage>
+            </PageImageContainer>
         </CallToAction>
     </Outer>
 

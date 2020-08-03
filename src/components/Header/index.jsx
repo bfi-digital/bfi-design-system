@@ -191,7 +191,7 @@ export const Header = ({
     }, [])
 
 
-    useEffect(() => handleScroll(), []);
+    useEffect(() => handleScroll(), [])
 
     return(
         <>

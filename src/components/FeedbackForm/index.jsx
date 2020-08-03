@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import styled from "styled-components"
 import theme from "../_theme"
-import PropTypes from "prop-types"
+// import PropTypes from "prop-types"
 import { Text } from "../Text"
 
 const Outer = styled.div`
@@ -51,43 +51,43 @@ const FeedbackBar = styled.button`
 const FeedbackContainer = styled.div`
     border-bottom: 4px solid ${theme.darkPink};
 `
-const SurveyMonkeyContainer = styled.div`
-`
+// const SurveyMonkeyContainer = styled.div`
+// `
 
-const Loading = styled.div`
-    height: 400px;
-    width: 100%;
-    text-align: center;
-    position: relative;
+// const Loading = styled.div`
+//     height: 400px;
+//     width: 100%;
+//     text-align: center;
+//     position: relative;
 
-    .lds-dual-ring {
-        display: inline-block;
-        width: 80px;
-        height: 80px;
-        position: absolute;
-        top: calc(50% - 40px);
-        left: calc(50% - 40px);
-    }
-    .lds-dual-ring:after {
-        content: " ";
-        display: block;
-        width: 64px;
-        height: 64px;
-        margin: 8px;
-        border-radius: 50%;
-        border: 6px solid ${theme.darkPink};
-        border-color: ${theme.darkPink} transparent ${theme.darkPink} transparent;
-        animation: lds-dual-ring 1.2s linear infinite;
-    }
-    @keyframes lds-dual-ring {
-        0% {
-          transform: rotate(0deg);
-        }
-        100% {
-          transform: rotate(360deg);
-        }
-    }      
-`
+//     .lds-dual-ring {
+//         display: inline-block;
+//         width: 80px;
+//         height: 80px;
+//         position: absolute;
+//         top: calc(50% - 40px);
+//         left: calc(50% - 40px);
+//     }
+//     .lds-dual-ring:after {
+//         content: " ";
+//         display: block;
+//         width: 64px;
+//         height: 64px;
+//         margin: 8px;
+//         border-radius: 50%;
+//         border: 6px solid ${theme.darkPink};
+//         border-color: ${theme.darkPink} transparent ${theme.darkPink} transparent;
+//         animation: lds-dual-ring 1.2s linear infinite;
+//     }
+//     @keyframes lds-dual-ring {
+//         0% {
+//           transform: rotate(0deg);
+//         }
+//         100% {
+//           transform: rotate(360deg);
+//         }
+//     }      
+// `
 
 const CloseButton = styled.button`
     width: 100%;
@@ -219,11 +219,11 @@ export const FeedbackForm = ({
 }) => {
     const [openFeedback, setOpenFeedback] = useState(false)
     const [isClosed, setIsClosed] = useState(false)
-    const [isLoaded, setIsLoaded] = useState(false)
+    // const [isLoaded, setIsLoaded] = useState(false)
     const [isComplete, setIsComplete] = useState(false)
 
     const useInput = initialValue => {
-        const [value, setValue] = useState(initialValue);
+        const [value, setValue] = useState(initialValue)
 
         return {
             value,
@@ -232,19 +232,19 @@ export const FeedbackForm = ({
             bind: {
                 value,
                 onChange: event => {
-                    setValue(event.target.value);
+                    setValue(event.target.value)
                 }
             }
-        };
-    };
-    const { value, bind, reset } = useInput("");
+        }
+    }
+    const { value, bind, reset } = useInput("")
     
     const handleSubmit = (evt) => {
-        var today = new Date();
-        var dd = String(today.getDate()).padStart(2, '0');
-        var mm = String(today.getMonth() + 1).padStart(2, '0');
-        var yyyy = today.getFullYear();
-        var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+        var today = new Date()
+        var dd = String(today.getDate()).padStart(2, "0")
+        var mm = String(today.getMonth() + 1).padStart(2, "0")
+        var yyyy = today.getFullYear()
+        var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds()
 
         fetch("https://api.helpscout.net/v2/conversations/", {
             method: "POST",
@@ -256,7 +256,7 @@ export const FeedbackForm = ({
             body: JSON.stringify({
                 "client_id": app_id,
                 "client_secret": secret,
-                "subject" : "Website feedback - " + (mm + '/' + dd + '/' + yyyy) + " " + time,
+                "subject" : "Website feedback - " + (mm + "/" + dd + "/" + yyyy) + " " + time,
                 "customer" : {
                     "email" : "chris@wearefuturegov.com",
                     "firstName" : "Website",
@@ -269,17 +269,17 @@ export const FeedbackForm = ({
                 "threads" : [ {
                     "type" : "customer",
                     "customer" : {
-                    "email" : "chris@wearefuturegov.com"
+                        "email" : "chris@wearefuturegov.com"
                     },
                     "text" : "Page submitted from: " + window.location.href + "\n\n\n" + value
                 } ]
             })
         }).then(function(response) {
             console.log(response)
-            reset();
-            return response.json();
-        });
-        evt.preventDefault();
+            reset()
+            return response.json()
+        })
+        evt.preventDefault()
     }
 
     return(
@@ -299,7 +299,7 @@ export const FeedbackForm = ({
                                                 <label htmlFor="feedback">Your feedback</label>
                                                 <textarea name="feedback" id="feedback" required {...bind} />
                                                 <button type="submit">Send feedback</button>
-                                                <Text><p>You can read our <a href="#">Privacy Policy[needs link]</a></p></Text>
+                                                <Text><p>You can read our <a href="[needs link]">Privacy Policy[needs link]</a></p></Text>
                                             </FeedbackFormContainer>
                                         </>
                                         :
