@@ -112,6 +112,15 @@ const Outer = styled.div`
     }
 `
 const NewsletterForm = styled.form`
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    @media screen and (min-width: ${theme.l}){
+        justify-content: center;
+    }
+
+
     label {
         text-align: left;
     }
@@ -166,6 +175,7 @@ const SubmitButton = styled.button`
     border: none;
     width: 100%;
     border: 1px solid ${theme.black};
+    margin-bottom: 4px;
     @media screen and (min-width: ${theme.s}){
         width: auto;
     }
