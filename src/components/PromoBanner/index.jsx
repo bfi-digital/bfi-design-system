@@ -131,6 +131,10 @@ const Inner = styled.div`
         align-items: flex-start;
         padding-left: ${props => props.reversed ? (theme.standardSpace + "px") : props.pageWithSideBar ? (theme.standardSpace + "px") : "0"};
         
+        *{
+            max-width: 100%;
+        }
+
         &.without_image {
             width: 66%;
         }
