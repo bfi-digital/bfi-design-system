@@ -75,7 +75,7 @@ const BreadcrumbLink = styled(Link)`
 export const Breadcrumbs = ({
     breadcrumbs
 }) =>
-    breadcrumbs && breadcrumbs.length > 0 &&
+    (breadcrumbs && breadcrumbs.length > 0) ?
         <>
             <Outer>
                 {breadcrumbs.map((crumb) =>
@@ -92,6 +92,7 @@ export const Breadcrumbs = ({
                 </MobileOuter>
             }
         </>
+    : null
 
 
 Breadcrumbs.propTypes = {
