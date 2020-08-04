@@ -271,6 +271,7 @@ export const ImageGallery = ({
                                             itemprop="image"
                                             src={src}
                                             alt={img.alt ? img.alt : ""}
+                                            loading="lazy"
                                         />
                                     }
                                 </LazyImage>
@@ -298,6 +299,7 @@ export const ImageGallery = ({
                                 itemprop="image"
                                 src={src}
                                 alt={images[openImage == 0 ? openImage : (openImage-1)].alt}
+                                loading="lazy"
                             /> 
                         }
                     </LazyImage>

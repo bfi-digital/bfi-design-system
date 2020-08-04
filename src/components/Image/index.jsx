@@ -224,6 +224,7 @@ export const Image = ({
                                 isClickable={false}
                                 src={src}
                                 alt={alt ? alt : ""}
+                                loading="lazy"
                             />
                         </ConditionalWrapper>                
                         {caption && <Figcaption itemprop="caption description">{caption}</Figcaption>}
@@ -252,6 +253,7 @@ export const Image = ({
                                     itemprop="image"
                                     src={src}
                                     alt={alt ? alt : ""}
+                                    loading="lazy"
                                 />
                             }
                         </LazyImage> 

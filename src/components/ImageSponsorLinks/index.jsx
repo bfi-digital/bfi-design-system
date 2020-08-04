@@ -80,6 +80,7 @@ export const ImageSponsorLinks = ({
                                 <Image
                                     src={src}
                                     alt={image.alt ? image.alt : ""}
+                                    loading="lazy"
                                 />
                             }
                         </LazyImage>
