@@ -233,7 +233,7 @@ export const NewsletterSignUp = ({
             <NewsletterForm className="js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id={newsletters[newsletterOption].form}>
                 <NewsletterLabel>
                     Email 
-                    <input autoComplete="Email" aria-label="Email" className="js-cm-email-input qa-input-email" id="fieldEmail" maxLength="200" name={newsletters[newsletterOption].inputName} required type="email" placeholder="Your email..." />
+                    <input autoComplete="Email" title="Your Email (required)" aria-label="Email" className="js-cm-email-input qa-input-email" id="fieldEmail" maxLength="200" name={newsletters[newsletterOption].inputName} required type="email" placeholder="Your email..." />
                 </NewsletterLabel>
                 <SubmitButton type="submit">Sign up</SubmitButton>
             </NewsletterForm>

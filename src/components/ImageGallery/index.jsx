@@ -261,7 +261,7 @@ export const ImageGallery = ({
                 {
                     images.map((img, i) => {
                         return(
-                            <Button key={img.url} onClick={() => setOpenImage(i+1)}>
+                            <Button key={img.url} onClick={() => setOpenImage(i+1)} title="View image larger">
                                 <LazyImage
                                     src={img.thumb ? img.thumb : img.url}
                                     placeholder={img.placeholder ? img.placeholder : img.url}
