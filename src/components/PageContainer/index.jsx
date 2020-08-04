@@ -82,7 +82,8 @@ export const Wrapper = styled.div`
 
 const MainContentWrapper = styled.article`
     /* flex: 1; */
-    flex: 0 1 100%;
+    /* flex: 0 1 100%; */
+    flex: 1 1 0;
     
     &.child_page h2:first-child {
         margin-block-start: 0;
