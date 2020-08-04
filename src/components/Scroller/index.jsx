@@ -8,8 +8,8 @@ import theme from "../_theme"
 const Outer = styled.div`
     position: relative;
     margin-bottom: ${props => props.withoutBreak? "0" : (theme.standardSpace*2) + "px"};
-    margin-left: -20px;
-    width: calc(100% + 40px);
+    width: calc(100% + 10px);
+    margin-left: -5px;
     @media screen and (min-width: ${theme.l}){
         margin-left: 0;
         width: 100%;
@@ -29,7 +29,25 @@ const ScrollerTrack = styled.div`
     overflow-y: hidden;
     overflow-x: scroll;
     scroll-behavior: smooth;
-    scroll-snap-type: x proximity;
+    scroll-snap-type: x mandatory;
+    a {
+        scroll-snap-align: start;
+        scroll-snap-stop: normal;
+        padding-left: 25px;
+        
+        &:focus {
+            box-shadow: none;
+            &:after {
+                content: "";
+                width: calc(100% - 15px);
+                height: calc(100% + 5px);
+                position: absolute;
+                left: 15px;
+                top: -10px;
+                border: 5px solid ${theme.focus};
+            }
+        }
+    }
     &::-webkit-scrollbar {
         height: 20px;
         width: 20px;
@@ -78,11 +96,11 @@ const RightScrollerFade = styled.div`
 
     background: linear-gradient(to left, rgba(0, 0, 0, 0.6) 0%, transparent 100%);
     opacity: 1;
-    width: 55px;
+    width: 45px;
     height: calc(100% - 30px);
     @media screen and (min-width: ${theme.m}){
         background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, transparent 100%);
-        opacity: 0;
+        opacity: 1;
         width: 65px;
         height: calc(100% - 23px);
     }
@@ -146,9 +164,11 @@ export const Scroller = ({
         if(window.innerWidth > 768 && window.innerWidth < 1440) {
             offset = currentScroll.scrollWidth - 1100
         } else if (window.innerWidth > 1440) {
-            offset = currentScroll.scrollWidth - 1400
+            offset = currentScroll.scrollWidth - 1000
         }
-
+        console.log("offset = " + offset)
+        console.log("currentScroll.scrollWidth = " + currentScroll.scrollWidth)
+        console.log("window.innerWidth = " + window.innerWidth)
         if (currentScroll.scrollLeft > 100) {
             setShowLeft(true)
         } else {
@@ -165,7 +185,7 @@ export const Scroller = ({
         <Outer withoutBreak={withoutBreak} className={classes}>
             {showLeft && 
                 <LeftScrollerFade 
-                    onClick={() => scrollLeftClick(window.innerWidth < 550 ? 300 : (window.innerWidth > 768 && window.innerWidth < 1440 ? 750 : 1175))} 
+                    onClick={() => scrollLeftClick(300)} 
                     className="left_scroll"
                 >
                     <svg viewBox="0 0 10 25"><path d="M.22 13c-.3-.45-.29-1.04.01-1.5L7.7.27a.6.6 0 0 1 .86-.16l1.18.82c.28.2.36.58.17.86L2.93 12.28 9.9 23.21c.18.29.1.67-.18.86l-1.2.8a.6.6 0 0 1-.85-.18L.22 13z"></path></svg>
@@ -177,7 +197,7 @@ export const Scroller = ({
             </ScrollerTrack>
             {showRight && 
                 <RightScrollerFade 
-                    onClick={() => scrollRightClick(window.innerWidth < 550 ? 300 : (window.innerWidth > 768 && window.innerWidth < 1440 ? 750 : 1175))} 
+                    onClick={() => scrollRightClick(300)} 
                     className="right_scroll"
                 >
                     <svg viewBox="0 0 10 25"><path d="M.22 13c-.3-.45-.29-1.04.01-1.5L7.7.27a.6.6 0 0 1 .86-.16l1.18.82c.28.2.36.58.17.86L2.93 12.28 9.9 23.21c.18.29.1.67-.18.86l-1.2.8a.6.6 0 0 1-.85-.18L.22 13z"></path></svg>

@@ -102,9 +102,6 @@ const RestyledOuter = styled(Outer)`
     &:last-of-type {
         margin-right: 25px !important;
     }
-    &:first-of-type {
-        margin-left: 20px !important;
-    }
     @media screen and (min-width: ${theme.m}){
         flex: 0 0 45%;
         &:nth-of-type(even){
