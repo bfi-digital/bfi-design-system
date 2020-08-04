@@ -309,7 +309,7 @@ export const Footer = ({
                                 <Icon className="logo" url={instagram} alt="Instagram"/>
                                 <span className="hidden_title">Instagram</span>
                             </ExternalMenuItem>
-                            <ExternalMenuItem href="https://www.linkedin.com/company/british-film-institute" data-tracking="footer-navigation" title="View our LinedIn">
+                            <ExternalMenuItem href="https://www.linkedin.com/company/british-film-institute" data-tracking="footer-navigation" title="View our LinkedIn">
                                 <Icon className="logo" url={linkedin} alt="LinkedIn"/>
                                 <span className="hidden_title">LinkedIn</span>
                             </ExternalMenuItem>
