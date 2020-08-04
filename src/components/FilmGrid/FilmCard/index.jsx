@@ -37,7 +37,7 @@ const Outer = styled(LinkSwitch)`
         }
     }
     @media screen and (min-width: ${theme.m}){
-        width: calc(33% - 10px);
+        width: calc(50% - 15px);
         margin-bottom: 15px;
 
         &:nth-of-type(even){
@@ -234,7 +234,7 @@ export const FilmCard = ({
                     partialVisibility: true
                 }}
             >
-                {src => <Image src={src} alt="" />}
+                {src => <Image src={src} alt="" loading="lazy" />}
             </LazyImage>
             { description && <DescriptionBG className="filmcard_description_background" /> }
             { description && <Description className="filmcard_description">{description}</Description> }
