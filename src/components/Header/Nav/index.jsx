@@ -414,7 +414,7 @@ const Nav = ({
 
                             {selected === i &&
                                 <>
-                                    <ChildBarContainer isSticky={isSticky} isWhite={isOverlaid}>
+                                    <ChildBarContainer isSticky={isSticky} isWhite={isOverlaid} onMouseLeave={() => { setSelected(false) }}>
                                         <ChildBar isSticky={isSticky} isWhite={isOverlaid}>
                                             <ChildList id={i}>
                                                 <InnerContainer>
@@ -448,7 +448,7 @@ const Nav = ({
                                             </ChildList>
                                         </ChildBar>
                                     </ChildBarContainer>
-                                    <Shadow onMouseEnter={() => { setSelected(false) }} />
+                                    <Shadow />
                                 </>
                             }
                         </Item>
