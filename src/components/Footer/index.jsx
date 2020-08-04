@@ -258,7 +258,8 @@ export const Footer = ({
 }) => 
     <>  
         <Inner className="dont_restrict">
-            <FeedbackForm app_id="XA9zvMTVJ8RF1FJvIOFbWZv1xgIff9oO" secret="YfhhOvgt7TjmFJUv9ePdd8hZ0N3h0AA0" token="9FR6GJjGemKntenWqsv9Sbv9CMY20V4K" />
+            {/* <FeedbackForm app_id="XA9zvMTVJ8RF1FJvIOFbWZv1xgIff9oO" secret="YfhhOvgt7TjmFJUv9ePdd8hZ0N3h0AA0" token="9FR6GJjGemKntenWqsv9Sbv9CMY20V4K" /> */}
+            <FeedbackForm />
         </Inner>
         <Outer> 
             <TopRow>
