@@ -1,6 +1,6 @@
 {
   "name": "bfi-design-system",
-  "version": "0.2.10",
+  "version": "0.2.11",
   "author": "FutureGov <dev@wearefuturegov.com> (https://wearefuturegov.com)",
   "homepage": "https://gerwig.netlify.com",
   "description": "Next-gen design system for the British Film Institute",
@@ -8,7 +8,6 @@
   "main": "dist/bundle.js",
   "scripts": {
     "build": "rollup -c",
-
     "storybook": "start-storybook",
     "build-storybook": "build-storybook",
     "pretest": "eslint src/ --ext .jsx",
@@ -16,12 +15,9 @@
     "prepare": "jest && rollup -c",
     "lint": "eslint src/ --ext .jsx",
     "typecheck": "tsc",
-
-
     "dev": "npm-run-all --parallel dev:*",
     "dev:storybook": "start-storybook",
     "dev:build": "rollup -cw"
-
   },
   "license": "ISC",
   "devDependencies": {
