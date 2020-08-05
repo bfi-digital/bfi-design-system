@@ -15,8 +15,20 @@ export const multipleEvents = () =>
         margin: "0 auto"
     }}>
         <EventGrid 
-            // events={false}
-            events={[...demoEvents, ...demoEvents, ...demoEvents, ...demoEvents, ...demoEvents, ...demoEvents, ...demoEvents]} 
+            events={[...demoEvents, ...demoEvents, ...demoEvents, ...demoEvents, ...demoEvents, ...demoEvents, ...demoEvents]}
         />
     </div>
 
+export const multipleEventsWithFavouriting = () =>
+    <div style={{
+        padding: "10px",
+        maxWidth: "1000px",
+        margin: "0 auto"
+    }}>
+        <EventGrid 
+            events={[...demoEvents, ...demoEvents]}
+            favouritable={true}
+            onFavourite={e => console.log(e)} 
+            onUnfavourite={e => console.log(e)} 
+        />
+    </div>

@@ -8,8 +8,6 @@ const Outer = styled.li`
     margin-bottom: 35px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
     position: relative;
     overflow: hidden;
     min-height: 130px;
@@ -36,11 +34,6 @@ const Outer = styled.li`
 
 const Inner = styled.div`
     padding: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
 `
 
 const Meta = styled.div`
@@ -48,7 +41,22 @@ const Meta = styled.div`
     background: ${theme.grey};
     height: 18px;
     width: 30%;
-    margin: 20px 0px;
+    margin-top: 15px;
+`
+
+const Image = styled.div`
+    background: ${props => props.noBackground ? theme.grey : theme.lightGrey};
+    height: 188px;
+
+    @media screen and (min-width: ${theme.m}){
+        height: 160px;
+    }
+    @media screen and (min-width: ${theme.l}){
+        height: 175px;
+    }
+    @media screen and (min-width: ${theme.xl}){
+        height: 235px;
+    }
 `
 
 const Headline = styled.div`
@@ -56,16 +64,14 @@ const Headline = styled.div`
     background: ${theme.grey};
     height: 21px;
     width: 80%;
-    margin: 10px 0px;
 `
 
 export const Skeleton = ({noBackground, loadMoreLoading}) =>
-    <Outer className="loadingEventCard" noBackground={noBackground} loadMoreLoading={loadMoreLoading}>
+    <Outer className="loadingArticleCard" noBackground={noBackground} loadMoreLoading={loadMoreLoading}>
+        <Image noBackground={noBackground} />
         <Inner>
+            <Headline/>
             <Meta/>
-            <Headline/>
-            <Headline/>
-            <Headline/>
             <Meta/>
         </Inner>
     </Outer>

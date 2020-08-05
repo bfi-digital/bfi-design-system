@@ -732,6 +732,1917 @@ Array [
 ]
 `;
 
+exports[`Storyshots 2 All Components/EventGrid Multiple Events 1`] = `
+<div
+  style={
+    Object {
+      "margin": "0 auto",
+      "maxWidth": "1000px",
+      "padding": "10px",
+    }
+  }
+>
+  <div
+    className="sc-fBuWsC cAqdRw article_grid_block"
+  >
+    <ul
+      className="sc-fMiknA cWVXVM noHighlight withBackground"
+    >
+      <li
+        className="sc-iRbamj jHoPMF eventCard"
+      >
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Upcoming
+          </p>
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Facebook Live
+          </p>
+        </div>
+        <p
+          className="sc-cMljjf hmecoU h3"
+        >
+          36 amazing dance scenes
+        </p>
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Josephine Botting, Jóse de Esteban, Jez Stewart, John Oliver & others
+          </p>
+        </div>
+        <a
+          className="sc-csuQGl kElefg external_link"
+          href="https://www.bfi.org.uk/news-opinion/news-bfi/lists/36-amazing-dance-scenes"
+          rel="noreferrer"
+          target="_blank"
+          title="Read 36 amazing dance scenes in a new tab"
+        >
+          <span>
+            36 amazing dance scenes
+          </span>
+        </a>
+      </li>
+      <li
+        className="sc-iRbamj jHoPMF eventCard"
+      >
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Upcoming
+          </p>
+        </div>
+        <p
+          className="sc-cMljjf hmecoU h3"
+        >
+          International Tea Day: Ozu and the everyday magic of The Flavour of Green Tea over Rice
+        </p>
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Hayley Scanlon
+          </p>
+        </div>
+        <a
+          className="sc-csuQGl kElefg external_link"
+          href="https://www.bfi.org.uk/news-opinion/news-bfi/features/flavour-green-tea-over-rice-yasujiro-ozu"
+          rel="noreferrer"
+          target="_blank"
+          title="Read International Tea Day: Ozu and the everyday magic of The Flavour of Green Tea over Rice in a new tab"
+        >
+          <span>
+            International Tea Day: Ozu and the everyday magic of The Flavour of Green Tea over Rice
+          </span>
+        </a>
+      </li>
+      <li
+        className="sc-iRbamj jHoPMF eventCard"
+      >
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Facebook Live
+          </p>
+        </div>
+        <p
+          className="sc-cMljjf hmecoU h3"
+        >
+          BFI Recommends: Who's Gonna Love Me Now?
+        </p>
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Ros Cranston
+          </p>
+        </div>
+        <a
+          className="sc-csuQGl kElefg"
+          href="/iframe.html?id=pattern-library-page-examples-1-watch-discover--2-article-example"
+          rel=""
+          target="_self"
+          title="Read BFI Recommends: Who's Gonna Love Me Now?"
+        >
+          <span>
+            BFI Recommends: Who's Gonna Love Me Now?
+          </span>
+        </a>
+      </li>
+      <li
+        className="sc-iRbamj jHoPMF eventCard"
+      >
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Facebook Live
+          </p>
+        </div>
+        <p
+          className="sc-cMljjf hmecoU h3"
+        >
+          Where to begin with Josef von Sternberg
+        </p>
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Jasper Sharp
+          </p>
+        </div>
+        <a
+          className="sc-csuQGl kElefg external_link"
+          href="https://www.bfi.org.uk/news-opinion/news-bfi/features/where-begin-josef-von-sternberg"
+          rel="noreferrer"
+          target="_blank"
+          title="Read Where to begin with Josef von Sternberg in a new tab"
+        >
+          <span>
+            Where to begin with Josef von Sternberg
+          </span>
+        </a>
+      </li>
+      <li
+        className="sc-iRbamj jHoPMF eventCard"
+      >
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Upcoming
+          </p>
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            YouTube livestream
+          </p>
+        </div>
+        <p
+          className="sc-cMljjf hmecoU h3"
+        >
+          Five Bruce Springsteen songs and how they influenced my drag-racing drama Run
+        </p>
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Josh Slater-Williams
+          </p>
+        </div>
+        <a
+          className="sc-csuQGl kElefg external_link"
+          href="https://www.bfi.org.uk/news-opinion/news-bfi/interviews/run-bruce-springsteen-scott-graham"
+          rel="noreferrer"
+          target="_blank"
+          title="Read Five Bruce Springsteen songs and how they influenced my drag-racing drama Run in a new tab"
+        >
+          <span>
+            Five Bruce Springsteen songs and how they influenced my drag-racing drama Run
+          </span>
+        </a>
+      </li>
+      <li
+        className="sc-iRbamj jHoPMF eventCard"
+      >
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Facebook Live
+          </p>
+        </div>
+        <p
+          className="sc-cMljjf hmecoU h3"
+        >
+          Anime: the little word that conquered the world
+        </p>
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Nick Bradshaw
+          </p>
+        </div>
+        <a
+          className="sc-csuQGl kElefg external_link"
+          href="https://www.bfi.org.uk/news-opinion/sight-sound-magazine/features/rise-of-anime"
+          rel="noreferrer"
+          target="_blank"
+          title="Read Anime: the little word that conquered the world in a new tab"
+        >
+          <span>
+            Anime: the little word that conquered the world
+          </span>
+        </a>
+      </li>
+      <li
+        className="sc-iRbamj jHoPMF eventCard"
+      >
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Facebook Live
+          </p>
+        </div>
+        <p
+          className="sc-cMljjf hmecoU h3"
+        >
+          Line-up announced for We Are One: A Global Film Festival
+        </p>
+        <div
+          className="sc-jlyJG bOQHJX"
+        />
+        <a
+          className="sc-csuQGl kElefg external_link"
+          href="https://www.bfi.org.uk/news-opinion/news-bfi/announcements/line-we-are-one-global-film-festival"
+          rel="noreferrer"
+          target="_blank"
+          title="Read Line-up announced for We Are One: A Global Film Festival in a new tab"
+        >
+          <span>
+            Line-up announced for We Are One: A Global Film Festival
+          </span>
+        </a>
+      </li>
+      <li
+        className="sc-iRbamj jHoPMF eventCard"
+      >
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Upcoming
+          </p>
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Facebook Live
+          </p>
+        </div>
+        <p
+          className="sc-cMljjf hmecoU h3"
+        >
+          36 amazing dance scenes
+        </p>
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Josephine Botting, Jóse de Esteban, Jez Stewart, John Oliver & others
+          </p>
+        </div>
+        <a
+          className="sc-csuQGl kElefg external_link"
+          href="https://www.bfi.org.uk/news-opinion/news-bfi/lists/36-amazing-dance-scenes"
+          rel="noreferrer"
+          target="_blank"
+          title="Read 36 amazing dance scenes in a new tab"
+        >
+          <span>
+            36 amazing dance scenes
+          </span>
+        </a>
+      </li>
+      <li
+        className="sc-iRbamj jHoPMF eventCard"
+      >
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Upcoming
+          </p>
+        </div>
+        <p
+          className="sc-cMljjf hmecoU h3"
+        >
+          International Tea Day: Ozu and the everyday magic of The Flavour of Green Tea over Rice
+        </p>
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Hayley Scanlon
+          </p>
+        </div>
+        <a
+          className="sc-csuQGl kElefg external_link"
+          href="https://www.bfi.org.uk/news-opinion/news-bfi/features/flavour-green-tea-over-rice-yasujiro-ozu"
+          rel="noreferrer"
+          target="_blank"
+          title="Read International Tea Day: Ozu and the everyday magic of The Flavour of Green Tea over Rice in a new tab"
+        >
+          <span>
+            International Tea Day: Ozu and the everyday magic of The Flavour of Green Tea over Rice
+          </span>
+        </a>
+      </li>
+      <li
+        className="sc-iRbamj jHoPMF eventCard"
+      >
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Facebook Live
+          </p>
+        </div>
+        <p
+          className="sc-cMljjf hmecoU h3"
+        >
+          BFI Recommends: Who's Gonna Love Me Now?
+        </p>
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Ros Cranston
+          </p>
+        </div>
+        <a
+          className="sc-csuQGl kElefg"
+          href="/iframe.html?id=pattern-library-page-examples-1-watch-discover--2-article-example"
+          rel=""
+          target="_self"
+          title="Read BFI Recommends: Who's Gonna Love Me Now?"
+        >
+          <span>
+            BFI Recommends: Who's Gonna Love Me Now?
+          </span>
+        </a>
+      </li>
+      <li
+        className="sc-iRbamj jHoPMF eventCard"
+      >
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Facebook Live
+          </p>
+        </div>
+        <p
+          className="sc-cMljjf hmecoU h3"
+        >
+          Where to begin with Josef von Sternberg
+        </p>
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Jasper Sharp
+          </p>
+        </div>
+        <a
+          className="sc-csuQGl kElefg external_link"
+          href="https://www.bfi.org.uk/news-opinion/news-bfi/features/where-begin-josef-von-sternberg"
+          rel="noreferrer"
+          target="_blank"
+          title="Read Where to begin with Josef von Sternberg in a new tab"
+        >
+          <span>
+            Where to begin with Josef von Sternberg
+          </span>
+        </a>
+      </li>
+      <li
+        className="sc-iRbamj jHoPMF eventCard"
+      >
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Upcoming
+          </p>
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            YouTube livestream
+          </p>
+        </div>
+        <p
+          className="sc-cMljjf hmecoU h3"
+        >
+          Five Bruce Springsteen songs and how they influenced my drag-racing drama Run
+        </p>
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Josh Slater-Williams
+          </p>
+        </div>
+        <a
+          className="sc-csuQGl kElefg external_link"
+          href="https://www.bfi.org.uk/news-opinion/news-bfi/interviews/run-bruce-springsteen-scott-graham"
+          rel="noreferrer"
+          target="_blank"
+          title="Read Five Bruce Springsteen songs and how they influenced my drag-racing drama Run in a new tab"
+        >
+          <span>
+            Five Bruce Springsteen songs and how they influenced my drag-racing drama Run
+          </span>
+        </a>
+      </li>
+      <li
+        className="sc-iRbamj jHoPMF eventCard"
+      >
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Facebook Live
+          </p>
+        </div>
+        <p
+          className="sc-cMljjf hmecoU h3"
+        >
+          Anime: the little word that conquered the world
+        </p>
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Nick Bradshaw
+          </p>
+        </div>
+        <a
+          className="sc-csuQGl kElefg external_link"
+          href="https://www.bfi.org.uk/news-opinion/sight-sound-magazine/features/rise-of-anime"
+          rel="noreferrer"
+          target="_blank"
+          title="Read Anime: the little word that conquered the world in a new tab"
+        >
+          <span>
+            Anime: the little word that conquered the world
+          </span>
+        </a>
+      </li>
+      <li
+        className="sc-iRbamj jHoPMF eventCard"
+      >
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Facebook Live
+          </p>
+        </div>
+        <p
+          className="sc-cMljjf hmecoU h3"
+        >
+          Line-up announced for We Are One: A Global Film Festival
+        </p>
+        <div
+          className="sc-jlyJG bOQHJX"
+        />
+        <a
+          className="sc-csuQGl kElefg external_link"
+          href="https://www.bfi.org.uk/news-opinion/news-bfi/announcements/line-we-are-one-global-film-festival"
+          rel="noreferrer"
+          target="_blank"
+          title="Read Line-up announced for We Are One: A Global Film Festival in a new tab"
+        >
+          <span>
+            Line-up announced for We Are One: A Global Film Festival
+          </span>
+        </a>
+      </li>
+      <li
+        className="sc-iRbamj jHoPMF eventCard"
+      >
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Upcoming
+          </p>
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Facebook Live
+          </p>
+        </div>
+        <p
+          className="sc-cMljjf hmecoU h3"
+        >
+          36 amazing dance scenes
+        </p>
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Josephine Botting, Jóse de Esteban, Jez Stewart, John Oliver & others
+          </p>
+        </div>
+        <a
+          className="sc-csuQGl kElefg external_link"
+          href="https://www.bfi.org.uk/news-opinion/news-bfi/lists/36-amazing-dance-scenes"
+          rel="noreferrer"
+          target="_blank"
+          title="Read 36 amazing dance scenes in a new tab"
+        >
+          <span>
+            36 amazing dance scenes
+          </span>
+        </a>
+      </li>
+      <li
+        className="sc-iRbamj jHoPMF eventCard"
+      >
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Upcoming
+          </p>
+        </div>
+        <p
+          className="sc-cMljjf hmecoU h3"
+        >
+          International Tea Day: Ozu and the everyday magic of The Flavour of Green Tea over Rice
+        </p>
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Hayley Scanlon
+          </p>
+        </div>
+        <a
+          className="sc-csuQGl kElefg external_link"
+          href="https://www.bfi.org.uk/news-opinion/news-bfi/features/flavour-green-tea-over-rice-yasujiro-ozu"
+          rel="noreferrer"
+          target="_blank"
+          title="Read International Tea Day: Ozu and the everyday magic of The Flavour of Green Tea over Rice in a new tab"
+        >
+          <span>
+            International Tea Day: Ozu and the everyday magic of The Flavour of Green Tea over Rice
+          </span>
+        </a>
+      </li>
+      <li
+        className="sc-iRbamj jHoPMF eventCard"
+      >
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Facebook Live
+          </p>
+        </div>
+        <p
+          className="sc-cMljjf hmecoU h3"
+        >
+          BFI Recommends: Who's Gonna Love Me Now?
+        </p>
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Ros Cranston
+          </p>
+        </div>
+        <a
+          className="sc-csuQGl kElefg"
+          href="/iframe.html?id=pattern-library-page-examples-1-watch-discover--2-article-example"
+          rel=""
+          target="_self"
+          title="Read BFI Recommends: Who's Gonna Love Me Now?"
+        >
+          <span>
+            BFI Recommends: Who's Gonna Love Me Now?
+          </span>
+        </a>
+      </li>
+      <li
+        className="sc-iRbamj jHoPMF eventCard"
+      >
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Facebook Live
+          </p>
+        </div>
+        <p
+          className="sc-cMljjf hmecoU h3"
+        >
+          Where to begin with Josef von Sternberg
+        </p>
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Jasper Sharp
+          </p>
+        </div>
+        <a
+          className="sc-csuQGl kElefg external_link"
+          href="https://www.bfi.org.uk/news-opinion/news-bfi/features/where-begin-josef-von-sternberg"
+          rel="noreferrer"
+          target="_blank"
+          title="Read Where to begin with Josef von Sternberg in a new tab"
+        >
+          <span>
+            Where to begin with Josef von Sternberg
+          </span>
+        </a>
+      </li>
+      <li
+        className="sc-iRbamj jHoPMF eventCard"
+      >
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Upcoming
+          </p>
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            YouTube livestream
+          </p>
+        </div>
+        <p
+          className="sc-cMljjf hmecoU h3"
+        >
+          Five Bruce Springsteen songs and how they influenced my drag-racing drama Run
+        </p>
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Josh Slater-Williams
+          </p>
+        </div>
+        <a
+          className="sc-csuQGl kElefg external_link"
+          href="https://www.bfi.org.uk/news-opinion/news-bfi/interviews/run-bruce-springsteen-scott-graham"
+          rel="noreferrer"
+          target="_blank"
+          title="Read Five Bruce Springsteen songs and how they influenced my drag-racing drama Run in a new tab"
+        >
+          <span>
+            Five Bruce Springsteen songs and how they influenced my drag-racing drama Run
+          </span>
+        </a>
+      </li>
+      <li
+        className="sc-iRbamj jHoPMF eventCard"
+      >
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Facebook Live
+          </p>
+        </div>
+        <p
+          className="sc-cMljjf hmecoU h3"
+        >
+          Anime: the little word that conquered the world
+        </p>
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Nick Bradshaw
+          </p>
+        </div>
+        <a
+          className="sc-csuQGl kElefg external_link"
+          href="https://www.bfi.org.uk/news-opinion/sight-sound-magazine/features/rise-of-anime"
+          rel="noreferrer"
+          target="_blank"
+          title="Read Anime: the little word that conquered the world in a new tab"
+        >
+          <span>
+            Anime: the little word that conquered the world
+          </span>
+        </a>
+      </li>
+      <li
+        className="sc-iRbamj jHoPMF eventCard"
+      >
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Facebook Live
+          </p>
+        </div>
+        <p
+          className="sc-cMljjf hmecoU h3"
+        >
+          Line-up announced for We Are One: A Global Film Festival
+        </p>
+        <div
+          className="sc-jlyJG bOQHJX"
+        />
+        <a
+          className="sc-csuQGl kElefg external_link"
+          href="https://www.bfi.org.uk/news-opinion/news-bfi/announcements/line-we-are-one-global-film-festival"
+          rel="noreferrer"
+          target="_blank"
+          title="Read Line-up announced for We Are One: A Global Film Festival in a new tab"
+        >
+          <span>
+            Line-up announced for We Are One: A Global Film Festival
+          </span>
+        </a>
+      </li>
+      <li
+        className="sc-iRbamj jHoPMF eventCard"
+      >
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Upcoming
+          </p>
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Facebook Live
+          </p>
+        </div>
+        <p
+          className="sc-cMljjf hmecoU h3"
+        >
+          36 amazing dance scenes
+        </p>
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Josephine Botting, Jóse de Esteban, Jez Stewart, John Oliver & others
+          </p>
+        </div>
+        <a
+          className="sc-csuQGl kElefg external_link"
+          href="https://www.bfi.org.uk/news-opinion/news-bfi/lists/36-amazing-dance-scenes"
+          rel="noreferrer"
+          target="_blank"
+          title="Read 36 amazing dance scenes in a new tab"
+        >
+          <span>
+            36 amazing dance scenes
+          </span>
+        </a>
+      </li>
+      <li
+        className="sc-iRbamj jHoPMF eventCard"
+      >
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Upcoming
+          </p>
+        </div>
+        <p
+          className="sc-cMljjf hmecoU h3"
+        >
+          International Tea Day: Ozu and the everyday magic of The Flavour of Green Tea over Rice
+        </p>
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Hayley Scanlon
+          </p>
+        </div>
+        <a
+          className="sc-csuQGl kElefg external_link"
+          href="https://www.bfi.org.uk/news-opinion/news-bfi/features/flavour-green-tea-over-rice-yasujiro-ozu"
+          rel="noreferrer"
+          target="_blank"
+          title="Read International Tea Day: Ozu and the everyday magic of The Flavour of Green Tea over Rice in a new tab"
+        >
+          <span>
+            International Tea Day: Ozu and the everyday magic of The Flavour of Green Tea over Rice
+          </span>
+        </a>
+      </li>
+      <li
+        className="sc-iRbamj jHoPMF eventCard"
+      >
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Facebook Live
+          </p>
+        </div>
+        <p
+          className="sc-cMljjf hmecoU h3"
+        >
+          BFI Recommends: Who's Gonna Love Me Now?
+        </p>
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Ros Cranston
+          </p>
+        </div>
+        <a
+          className="sc-csuQGl kElefg"
+          href="/iframe.html?id=pattern-library-page-examples-1-watch-discover--2-article-example"
+          rel=""
+          target="_self"
+          title="Read BFI Recommends: Who's Gonna Love Me Now?"
+        >
+          <span>
+            BFI Recommends: Who's Gonna Love Me Now?
+          </span>
+        </a>
+      </li>
+      <li
+        className="sc-iRbamj jHoPMF eventCard"
+      >
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Facebook Live
+          </p>
+        </div>
+        <p
+          className="sc-cMljjf hmecoU h3"
+        >
+          Where to begin with Josef von Sternberg
+        </p>
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Jasper Sharp
+          </p>
+        </div>
+        <a
+          className="sc-csuQGl kElefg external_link"
+          href="https://www.bfi.org.uk/news-opinion/news-bfi/features/where-begin-josef-von-sternberg"
+          rel="noreferrer"
+          target="_blank"
+          title="Read Where to begin with Josef von Sternberg in a new tab"
+        >
+          <span>
+            Where to begin with Josef von Sternberg
+          </span>
+        </a>
+      </li>
+      <li
+        className="sc-iRbamj jHoPMF eventCard"
+      >
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Upcoming
+          </p>
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            YouTube livestream
+          </p>
+        </div>
+        <p
+          className="sc-cMljjf hmecoU h3"
+        >
+          Five Bruce Springsteen songs and how they influenced my drag-racing drama Run
+        </p>
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Josh Slater-Williams
+          </p>
+        </div>
+        <a
+          className="sc-csuQGl kElefg external_link"
+          href="https://www.bfi.org.uk/news-opinion/news-bfi/interviews/run-bruce-springsteen-scott-graham"
+          rel="noreferrer"
+          target="_blank"
+          title="Read Five Bruce Springsteen songs and how they influenced my drag-racing drama Run in a new tab"
+        >
+          <span>
+            Five Bruce Springsteen songs and how they influenced my drag-racing drama Run
+          </span>
+        </a>
+      </li>
+      <li
+        className="sc-iRbamj jHoPMF eventCard"
+      >
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Facebook Live
+          </p>
+        </div>
+        <p
+          className="sc-cMljjf hmecoU h3"
+        >
+          Anime: the little word that conquered the world
+        </p>
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Nick Bradshaw
+          </p>
+        </div>
+        <a
+          className="sc-csuQGl kElefg external_link"
+          href="https://www.bfi.org.uk/news-opinion/sight-sound-magazine/features/rise-of-anime"
+          rel="noreferrer"
+          target="_blank"
+          title="Read Anime: the little word that conquered the world in a new tab"
+        >
+          <span>
+            Anime: the little word that conquered the world
+          </span>
+        </a>
+      </li>
+      <li
+        className="sc-iRbamj jHoPMF eventCard"
+      >
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Facebook Live
+          </p>
+        </div>
+        <p
+          className="sc-cMljjf hmecoU h3"
+        >
+          Line-up announced for We Are One: A Global Film Festival
+        </p>
+        <div
+          className="sc-jlyJG bOQHJX"
+        />
+        <a
+          className="sc-csuQGl kElefg external_link"
+          href="https://www.bfi.org.uk/news-opinion/news-bfi/announcements/line-we-are-one-global-film-festival"
+          rel="noreferrer"
+          target="_blank"
+          title="Read Line-up announced for We Are One: A Global Film Festival in a new tab"
+        >
+          <span>
+            Line-up announced for We Are One: A Global Film Festival
+          </span>
+        </a>
+      </li>
+      <li
+        className="sc-iRbamj jHoPMF eventCard"
+      >
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Upcoming
+          </p>
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Facebook Live
+          </p>
+        </div>
+        <p
+          className="sc-cMljjf hmecoU h3"
+        >
+          36 amazing dance scenes
+        </p>
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Josephine Botting, Jóse de Esteban, Jez Stewart, John Oliver & others
+          </p>
+        </div>
+        <a
+          className="sc-csuQGl kElefg external_link"
+          href="https://www.bfi.org.uk/news-opinion/news-bfi/lists/36-amazing-dance-scenes"
+          rel="noreferrer"
+          target="_blank"
+          title="Read 36 amazing dance scenes in a new tab"
+        >
+          <span>
+            36 amazing dance scenes
+          </span>
+        </a>
+      </li>
+      <li
+        className="sc-iRbamj jHoPMF eventCard"
+      >
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Upcoming
+          </p>
+        </div>
+        <p
+          className="sc-cMljjf hmecoU h3"
+        >
+          International Tea Day: Ozu and the everyday magic of The Flavour of Green Tea over Rice
+        </p>
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Hayley Scanlon
+          </p>
+        </div>
+        <a
+          className="sc-csuQGl kElefg external_link"
+          href="https://www.bfi.org.uk/news-opinion/news-bfi/features/flavour-green-tea-over-rice-yasujiro-ozu"
+          rel="noreferrer"
+          target="_blank"
+          title="Read International Tea Day: Ozu and the everyday magic of The Flavour of Green Tea over Rice in a new tab"
+        >
+          <span>
+            International Tea Day: Ozu and the everyday magic of The Flavour of Green Tea over Rice
+          </span>
+        </a>
+      </li>
+      <li
+        className="sc-iRbamj jHoPMF eventCard"
+      >
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Facebook Live
+          </p>
+        </div>
+        <p
+          className="sc-cMljjf hmecoU h3"
+        >
+          BFI Recommends: Who's Gonna Love Me Now?
+        </p>
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Ros Cranston
+          </p>
+        </div>
+        <a
+          className="sc-csuQGl kElefg"
+          href="/iframe.html?id=pattern-library-page-examples-1-watch-discover--2-article-example"
+          rel=""
+          target="_self"
+          title="Read BFI Recommends: Who's Gonna Love Me Now?"
+        >
+          <span>
+            BFI Recommends: Who's Gonna Love Me Now?
+          </span>
+        </a>
+      </li>
+      <li
+        className="sc-iRbamj jHoPMF eventCard"
+      >
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Facebook Live
+          </p>
+        </div>
+        <p
+          className="sc-cMljjf hmecoU h3"
+        >
+          Where to begin with Josef von Sternberg
+        </p>
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Jasper Sharp
+          </p>
+        </div>
+        <a
+          className="sc-csuQGl kElefg external_link"
+          href="https://www.bfi.org.uk/news-opinion/news-bfi/features/where-begin-josef-von-sternberg"
+          rel="noreferrer"
+          target="_blank"
+          title="Read Where to begin with Josef von Sternberg in a new tab"
+        >
+          <span>
+            Where to begin with Josef von Sternberg
+          </span>
+        </a>
+      </li>
+      <li
+        className="sc-iRbamj jHoPMF eventCard"
+      >
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Upcoming
+          </p>
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            YouTube livestream
+          </p>
+        </div>
+        <p
+          className="sc-cMljjf hmecoU h3"
+        >
+          Five Bruce Springsteen songs and how they influenced my drag-racing drama Run
+        </p>
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Josh Slater-Williams
+          </p>
+        </div>
+        <a
+          className="sc-csuQGl kElefg external_link"
+          href="https://www.bfi.org.uk/news-opinion/news-bfi/interviews/run-bruce-springsteen-scott-graham"
+          rel="noreferrer"
+          target="_blank"
+          title="Read Five Bruce Springsteen songs and how they influenced my drag-racing drama Run in a new tab"
+        >
+          <span>
+            Five Bruce Springsteen songs and how they influenced my drag-racing drama Run
+          </span>
+        </a>
+      </li>
+      <li
+        className="sc-iRbamj jHoPMF eventCard"
+      >
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Facebook Live
+          </p>
+        </div>
+        <p
+          className="sc-cMljjf hmecoU h3"
+        >
+          Anime: the little word that conquered the world
+        </p>
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Nick Bradshaw
+          </p>
+        </div>
+        <a
+          className="sc-csuQGl kElefg external_link"
+          href="https://www.bfi.org.uk/news-opinion/sight-sound-magazine/features/rise-of-anime"
+          rel="noreferrer"
+          target="_blank"
+          title="Read Anime: the little word that conquered the world in a new tab"
+        >
+          <span>
+            Anime: the little word that conquered the world
+          </span>
+        </a>
+      </li>
+      <li
+        className="sc-iRbamj jHoPMF eventCard"
+      >
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Facebook Live
+          </p>
+        </div>
+        <p
+          className="sc-cMljjf hmecoU h3"
+        >
+          Line-up announced for We Are One: A Global Film Festival
+        </p>
+        <div
+          className="sc-jlyJG bOQHJX"
+        />
+        <a
+          className="sc-csuQGl kElefg external_link"
+          href="https://www.bfi.org.uk/news-opinion/news-bfi/announcements/line-we-are-one-global-film-festival"
+          rel="noreferrer"
+          target="_blank"
+          title="Read Line-up announced for We Are One: A Global Film Festival in a new tab"
+        >
+          <span>
+            Line-up announced for We Are One: A Global Film Festival
+          </span>
+        </a>
+      </li>
+      <li
+        className="sc-iRbamj jHoPMF eventCard"
+      >
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Upcoming
+          </p>
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Facebook Live
+          </p>
+        </div>
+        <p
+          className="sc-cMljjf hmecoU h3"
+        >
+          36 amazing dance scenes
+        </p>
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Josephine Botting, Jóse de Esteban, Jez Stewart, John Oliver & others
+          </p>
+        </div>
+        <a
+          className="sc-csuQGl kElefg external_link"
+          href="https://www.bfi.org.uk/news-opinion/news-bfi/lists/36-amazing-dance-scenes"
+          rel="noreferrer"
+          target="_blank"
+          title="Read 36 amazing dance scenes in a new tab"
+        >
+          <span>
+            36 amazing dance scenes
+          </span>
+        </a>
+      </li>
+      <li
+        className="sc-iRbamj jHoPMF eventCard"
+      >
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Upcoming
+          </p>
+        </div>
+        <p
+          className="sc-cMljjf hmecoU h3"
+        >
+          International Tea Day: Ozu and the everyday magic of The Flavour of Green Tea over Rice
+        </p>
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Hayley Scanlon
+          </p>
+        </div>
+        <a
+          className="sc-csuQGl kElefg external_link"
+          href="https://www.bfi.org.uk/news-opinion/news-bfi/features/flavour-green-tea-over-rice-yasujiro-ozu"
+          rel="noreferrer"
+          target="_blank"
+          title="Read International Tea Day: Ozu and the everyday magic of The Flavour of Green Tea over Rice in a new tab"
+        >
+          <span>
+            International Tea Day: Ozu and the everyday magic of The Flavour of Green Tea over Rice
+          </span>
+        </a>
+      </li>
+      <li
+        className="sc-iRbamj jHoPMF eventCard"
+      >
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Facebook Live
+          </p>
+        </div>
+        <p
+          className="sc-cMljjf hmecoU h3"
+        >
+          BFI Recommends: Who's Gonna Love Me Now?
+        </p>
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Ros Cranston
+          </p>
+        </div>
+        <a
+          className="sc-csuQGl kElefg"
+          href="/iframe.html?id=pattern-library-page-examples-1-watch-discover--2-article-example"
+          rel=""
+          target="_self"
+          title="Read BFI Recommends: Who's Gonna Love Me Now?"
+        >
+          <span>
+            BFI Recommends: Who's Gonna Love Me Now?
+          </span>
+        </a>
+      </li>
+      <li
+        className="sc-iRbamj jHoPMF eventCard"
+      >
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Facebook Live
+          </p>
+        </div>
+        <p
+          className="sc-cMljjf hmecoU h3"
+        >
+          Where to begin with Josef von Sternberg
+        </p>
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Jasper Sharp
+          </p>
+        </div>
+        <a
+          className="sc-csuQGl kElefg external_link"
+          href="https://www.bfi.org.uk/news-opinion/news-bfi/features/where-begin-josef-von-sternberg"
+          rel="noreferrer"
+          target="_blank"
+          title="Read Where to begin with Josef von Sternberg in a new tab"
+        >
+          <span>
+            Where to begin with Josef von Sternberg
+          </span>
+        </a>
+      </li>
+      <li
+        className="sc-iRbamj jHoPMF eventCard"
+      >
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Upcoming
+          </p>
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            YouTube livestream
+          </p>
+        </div>
+        <p
+          className="sc-cMljjf hmecoU h3"
+        >
+          Five Bruce Springsteen songs and how they influenced my drag-racing drama Run
+        </p>
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Josh Slater-Williams
+          </p>
+        </div>
+        <a
+          className="sc-csuQGl kElefg external_link"
+          href="https://www.bfi.org.uk/news-opinion/news-bfi/interviews/run-bruce-springsteen-scott-graham"
+          rel="noreferrer"
+          target="_blank"
+          title="Read Five Bruce Springsteen songs and how they influenced my drag-racing drama Run in a new tab"
+        >
+          <span>
+            Five Bruce Springsteen songs and how they influenced my drag-racing drama Run
+          </span>
+        </a>
+      </li>
+      <li
+        className="sc-iRbamj jHoPMF eventCard"
+      >
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Facebook Live
+          </p>
+        </div>
+        <p
+          className="sc-cMljjf hmecoU h3"
+        >
+          Anime: the little word that conquered the world
+        </p>
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Nick Bradshaw
+          </p>
+        </div>
+        <a
+          className="sc-csuQGl kElefg external_link"
+          href="https://www.bfi.org.uk/news-opinion/sight-sound-magazine/features/rise-of-anime"
+          rel="noreferrer"
+          target="_blank"
+          title="Read Anime: the little word that conquered the world in a new tab"
+        >
+          <span>
+            Anime: the little word that conquered the world
+          </span>
+        </a>
+      </li>
+      <li
+        className="sc-iRbamj jHoPMF eventCard"
+      >
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Facebook Live
+          </p>
+        </div>
+        <p
+          className="sc-cMljjf hmecoU h3"
+        >
+          Line-up announced for We Are One: A Global Film Festival
+        </p>
+        <div
+          className="sc-jlyJG bOQHJX"
+        />
+        <a
+          className="sc-csuQGl kElefg external_link"
+          href="https://www.bfi.org.uk/news-opinion/news-bfi/announcements/line-we-are-one-global-film-festival"
+          rel="noreferrer"
+          target="_blank"
+          title="Read Line-up announced for We Are One: A Global Film Festival in a new tab"
+        >
+          <span>
+            Line-up announced for We Are One: A Global Film Festival
+          </span>
+        </a>
+      </li>
+      <li
+        className="sc-iRbamj jHoPMF eventCard"
+      >
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Upcoming
+          </p>
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Facebook Live
+          </p>
+        </div>
+        <p
+          className="sc-cMljjf hmecoU h3"
+        >
+          36 amazing dance scenes
+        </p>
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Josephine Botting, Jóse de Esteban, Jez Stewart, John Oliver & others
+          </p>
+        </div>
+        <a
+          className="sc-csuQGl kElefg external_link"
+          href="https://www.bfi.org.uk/news-opinion/news-bfi/lists/36-amazing-dance-scenes"
+          rel="noreferrer"
+          target="_blank"
+          title="Read 36 amazing dance scenes in a new tab"
+        >
+          <span>
+            36 amazing dance scenes
+          </span>
+        </a>
+      </li>
+      <li
+        className="sc-iRbamj jHoPMF eventCard"
+      >
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Upcoming
+          </p>
+        </div>
+        <p
+          className="sc-cMljjf hmecoU h3"
+        >
+          International Tea Day: Ozu and the everyday magic of The Flavour of Green Tea over Rice
+        </p>
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Hayley Scanlon
+          </p>
+        </div>
+        <a
+          className="sc-csuQGl kElefg external_link"
+          href="https://www.bfi.org.uk/news-opinion/news-bfi/features/flavour-green-tea-over-rice-yasujiro-ozu"
+          rel="noreferrer"
+          target="_blank"
+          title="Read International Tea Day: Ozu and the everyday magic of The Flavour of Green Tea over Rice in a new tab"
+        >
+          <span>
+            International Tea Day: Ozu and the everyday magic of The Flavour of Green Tea over Rice
+          </span>
+        </a>
+      </li>
+      <li
+        className="sc-iRbamj jHoPMF eventCard"
+      >
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Facebook Live
+          </p>
+        </div>
+        <p
+          className="sc-cMljjf hmecoU h3"
+        >
+          BFI Recommends: Who's Gonna Love Me Now?
+        </p>
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Ros Cranston
+          </p>
+        </div>
+        <a
+          className="sc-csuQGl kElefg"
+          href="/iframe.html?id=pattern-library-page-examples-1-watch-discover--2-article-example"
+          rel=""
+          target="_self"
+          title="Read BFI Recommends: Who's Gonna Love Me Now?"
+        >
+          <span>
+            BFI Recommends: Who's Gonna Love Me Now?
+          </span>
+        </a>
+      </li>
+      <li
+        className="sc-iRbamj jHoPMF eventCard"
+      >
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Facebook Live
+          </p>
+        </div>
+        <p
+          className="sc-cMljjf hmecoU h3"
+        >
+          Where to begin with Josef von Sternberg
+        </p>
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Jasper Sharp
+          </p>
+        </div>
+        <a
+          className="sc-csuQGl kElefg external_link"
+          href="https://www.bfi.org.uk/news-opinion/news-bfi/features/where-begin-josef-von-sternberg"
+          rel="noreferrer"
+          target="_blank"
+          title="Read Where to begin with Josef von Sternberg in a new tab"
+        >
+          <span>
+            Where to begin with Josef von Sternberg
+          </span>
+        </a>
+      </li>
+      <li
+        className="sc-iRbamj jHoPMF eventCard"
+      >
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Upcoming
+          </p>
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            YouTube livestream
+          </p>
+        </div>
+        <p
+          className="sc-cMljjf hmecoU h3"
+        >
+          Five Bruce Springsteen songs and how they influenced my drag-racing drama Run
+        </p>
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Josh Slater-Williams
+          </p>
+        </div>
+        <a
+          className="sc-csuQGl kElefg external_link"
+          href="https://www.bfi.org.uk/news-opinion/news-bfi/interviews/run-bruce-springsteen-scott-graham"
+          rel="noreferrer"
+          target="_blank"
+          title="Read Five Bruce Springsteen songs and how they influenced my drag-racing drama Run in a new tab"
+        >
+          <span>
+            Five Bruce Springsteen songs and how they influenced my drag-racing drama Run
+          </span>
+        </a>
+      </li>
+      <li
+        className="sc-iRbamj jHoPMF eventCard"
+      >
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Facebook Live
+          </p>
+        </div>
+        <p
+          className="sc-cMljjf hmecoU h3"
+        >
+          Anime: the little word that conquered the world
+        </p>
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Nick Bradshaw
+          </p>
+        </div>
+        <a
+          className="sc-csuQGl kElefg external_link"
+          href="https://www.bfi.org.uk/news-opinion/sight-sound-magazine/features/rise-of-anime"
+          rel="noreferrer"
+          target="_blank"
+          title="Read Anime: the little word that conquered the world in a new tab"
+        >
+          <span>
+            Anime: the little word that conquered the world
+          </span>
+        </a>
+      </li>
+      <li
+        className="sc-iRbamj jHoPMF eventCard"
+      >
+        <div
+          className="sc-jlyJG bOQHJX"
+        >
+          <p
+            className="sc-gipzik kIuEoi"
+          >
+            Facebook Live
+          </p>
+        </div>
+        <p
+          className="sc-cMljjf hmecoU h3"
+        >
+          Line-up announced for We Are One: A Global Film Festival
+        </p>
+        <div
+          className="sc-jlyJG bOQHJX"
+        />
+        <a
+          className="sc-csuQGl kElefg external_link"
+          href="https://www.bfi.org.uk/news-opinion/news-bfi/announcements/line-we-are-one-global-film-festival"
+          rel="noreferrer"
+          target="_blank"
+          title="Read Line-up announced for We Are One: A Global Film Festival in a new tab"
+        >
+          <span>
+            Line-up announced for We Are One: A Global Film Festival
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
 exports[`Storyshots 2 All Components/Feedback Form Example 1`] = `
 <div
   style={

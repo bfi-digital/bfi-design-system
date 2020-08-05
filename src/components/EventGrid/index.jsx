@@ -33,13 +33,12 @@ const Outer = styled.div`
         z-index: -1;
     }
 `
-const Articles = styled.ul`
+const Events = styled.ul`
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
 
     .eventCard, .loadingEventCard {
         width: 100%;
@@ -102,7 +101,11 @@ export const EventGrid = ({
     children,
     skeletons = 6,
     loadMoreLoading,
-    limitArticles
+    limitEvents,
+
+    favouritable,
+    onFavourite,
+    onUnfavourite
 }) => {
     const [currentNumber, setCurrentNumber] = useState(3)
 
@@ -111,17 +114,17 @@ export const EventGrid = ({
             {optionalTitle && 
                 <StyledHeadline level={2} text={optionalTitle} />
             }
-            {limitArticles ? 
+            {limitEvents ? 
                 <>
-                    <Articles 
+                    <Events 
                         lessColumns={(events.length === 2)} 
                         className={"noHighlight" + (pageWithSideBar ? " noBackground" : " withBackground")}
                     >
                         {events.slice(0, currentNumber).map(article =>
-                            <EventCard key={article.uuid} pageWithSideBar={pageWithSideBar} {...article}/>    
+                            <EventCard favouritable={favouritable} onFavourite={onFavourite} onUnfavourite={onUnfavourite} key={article.uuid} pageWithSideBar={pageWithSideBar} {...article}/>    
                         )
                         }
-                    </Articles>
+                    </Events>
                     {currentNumber < events.length &&
                         <CentredButton href="#4" onClick={() => setCurrentNumber(currentNumber+3)}>Load more</CentredButton>
                     }
@@ -129,18 +132,18 @@ export const EventGrid = ({
                 :
                 <>
                     {events ?
-                        <Articles 
+                        <Events 
                             lessColumns={(events.length === 2 || events.length === 4) && !firstHighlighted} 
                             className={"noHighlight" + (pageWithSideBar ? " noBackground" : " withBackground")}
                         >
                             {events.map(article =>
-                                <EventCard key={article.uuid} pageWithSideBar={pageWithSideBar} {...article}/>    
+                                <EventCard favouritable={favouritable} onFavourite={onFavourite} onUnfavourite={onUnfavourite} key={article.uuid} pageWithSideBar={pageWithSideBar} {...article}/>    
                             )}
-                        </Articles>
+                        </Events>
                         :
-                        <Articles lessColumns={events.length === 2 || events.length === 4} className="noHighlight skeletons">
+                        <Events lessColumns={events.length === 2 || events.length === 4} className="noHighlight skeletons">
                             {[...Array(skeletons)].map((i) => <Skeleton key={i} noBackground={pageWithSideBar} loadMoreLoading={loadMoreLoading} /> )}
-                        </Articles>
+                        </Events>
                     }
                     { optionalCTALink &&
                         <CentredButton to={optionalCTALink}>{optionalCTATitle ? optionalCTATitle : "See more events"}</CentredButton>
