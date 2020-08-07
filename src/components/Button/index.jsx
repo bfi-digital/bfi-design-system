@@ -59,6 +59,10 @@ const PrimaryButton = styled(Link)`
     width: 100%;
     text-align: center;
 
+    svg {
+        fill: ${props => colorSchemes[props.colorScheme].text};
+    }
+
     :after {
         content: "";
         width: 100%;
@@ -73,6 +77,10 @@ const PrimaryButton = styled(Link)`
 
     &:hover, &:focus{
         color: ${theme.white};
+
+        svg {
+            fill: ${theme.white};
+        }
         
         :after {
             height: calc(100% + 5px);

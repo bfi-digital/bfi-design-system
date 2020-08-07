@@ -12,6 +12,7 @@ import { Footer } from "../../../components/Footer"
 import { Header } from "../../../components/Header"
 import { Headline } from "../../../components/Headline"
 import { Hero } from "../../../components/Hero"
+import { HeroShow } from "../../../components/HeroShow"
 import { PageLinks } from "../../../components/PageLinks"
 import { FilmGrid } from "../../../components/FilmGrid"
 import { PromoBanner } from "../../../components/PromoBanner"
@@ -85,17 +86,17 @@ import { ShowDateTimeSidebar } from "../../../components/ShowDateTimeSidebar"
     <Story name="2 Show Page Example 1">
         <>
             <Header navItems={navItems} quickLinks={quickLinksData} />
-            <Hero
-                image1920x1080="https://www.bfi.org.uk/sites/bfi.org.uk/files/styles/api_16x9_full/public/news/whos-gonna-love-me-now-2016-003-saar-bowing-head-by-israeli-flag-1000x750.jpeg?itok=lXYQQz_5"
-                image192x108="https://www.bfi.org.uk/sites/bfi.org.uk/files/styles/api_16x9_thumb/public/news/whos-gonna-love-me-now-2016-003-saar-bowing-head-by-israeli-flag-1000x750.jpeg?itok=lXYQQz_5"
-                headline="Lynn + Lucy"
-                standfirst="LFF Standfirst .... Lynn (Roxanne Scrimshaw) and Lucy (Nichola Burley) have been friends their whole lives; inseparable at school ...."
+            <HeroShow
+                image1920x1080="https://player.bfi.org.uk/sites/default/files/styles/landscape_960x540/public/hero-images/lynn_lucy-1920.jpg?itok=KIE4JhQI"
+                image192x108="https://player.bfi.org.uk/sites/default/files/styles/landscape_960x540/public/hero-images/lynn_lucy-1920.jpg?itok=KIE4JhQI"
+                title="Lynn + Lucy"
+                standfirst="Lynn + Lucy premieres online at London Film Festival. A lifelong friendship is tested by tragedy in this atmospheric and intense first feature from acclaimed British shorts director Fyzal Boulifa."
+                dateTimeStart="2020-10-08T13:00"
             >
                 <Actions>
-                    <Button url="/" level={1} colorScheme={1}>Buy tickets</Button>
-                    <PlayButton playerPillar="subscription" url="https://player.bfi.org.uk/subscribe/9879" external={true} level={1} colorScheme={1}>Subscribe to watch on BFI Player</PlayButton>
+                    <PlayButton playerPillar="subscription" url="https://player.bfi.org.uk/subscribe/9879" external={true} level={1} colorScheme={1}>Pre-book to watch on BFI Player</PlayButton>
                 </Actions>
-            </Hero>
+            </HeroShow>
             <Wrapper>           
                 <MainContent>
                     <Text>

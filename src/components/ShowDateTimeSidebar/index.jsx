@@ -63,23 +63,21 @@ export const ShowDateTimeSidebar = ({
             {datesAreOnSameDay && <strong>Date &amp; Time</strong> }
             <DateP>
                 {!datesAreOnSameDay && <strong>From: </strong>}
-                <time dateTime={dateTimeStart}>
-                    {!datesAreOnSameDay && <span><Moment local format="HH:mm">{dateTimeStart} BST</Moment></span>}
-                    <Moment format="dddd Do MMMM YYYY" date={dateTimeStart} />
-                </time>
+                {!datesAreOnSameDay && <span><Moment local format="HH:mm">{dateTimeStart} BST</Moment></span>}
+                <Moment format="dddd Do MMMM YYYY" date={dateTimeStart} />
             </DateP>
             {!datesAreOnSameDay && 
                 <DateP>
                     <strong>To: </strong>
                     <span><Moment local format="HH:mm">{dateTimeEnd} BST</Moment></span>
-                    <time dateTime={dateTimeEnd}><Moment format="dddd Do MMMM YYYY" date={dateTimeEnd} /></time>
+                    <Moment format="dddd Do MMMM YYYY" date={dateTimeEnd} />
                 </DateP>
             }
             {datesAreOnSameDay && 
                 <TimeP>
-                    <time dateTime={dateTimeStart}><Moment local format="HH:mm">{dateTimeStart}</Moment></time>
+                    <Moment local format="HH:mm">{dateTimeStart}</Moment>
                     &nbsp;&ndash;&nbsp;
-                    <time dateTime={dateTimeEnd}><Moment local format="HH:mm">{dateTimeEnd}</Moment></time>
+                    <Moment local format="HH:mm">{dateTimeEnd}</Moment>
                 </TimeP>
             }
 
