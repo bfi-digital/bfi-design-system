@@ -67,8 +67,10 @@
     "isomorphic-unfetch": "^3.0.0",
     "moment": "^2.27.0",
     "query-string": "^6.13.1",
+    "react-add-to-calendar": "^0.1.5",
     "react-lazy-progressive-image": "^1.5.5",
     "react-load-script": "0.0.6",
+    "react-moment": "^0.9.7",
     "react-remove-scroll-bar": "^2.1.0",
     "react-typeform-embed": "^0.2.1"
   },

@@ -133,7 +133,7 @@ export const EventGrid = ({
                 <>
                     {events ?
                         <Events 
-                            lessColumns={(events.length === 2 || events.length === 4) && !firstHighlighted} 
+                            lessColumns={(events.length === 2 || events.length === 4)} 
                             className={"noHighlight" + (pageWithSideBar ? " noBackground" : " withBackground")}
                         >
                             {events.map(article =>

@@ -1,0 +1,185 @@
+import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks'
+import { Wrapper, MainContent, Sidebar, Actions, PlayButton, OriginalArticleDate } from "../../../components/PageContainer"
+
+import navItems, { quickLinksData } from "../../../components/Header/data"
+import footerMenus from "../../../components/Footer/data"
+import demoArticles from "../../../components/ArticleGrid/data"
+import demoFilms from "../../../components/FilmGrid/data"
+
+import { CallToAction } from "../../../components/CallToAction"
+import { FilterableArticles } from "../../../components/FilterableArticles"
+import { Footer } from "../../../components/Footer"
+import { Header } from "../../../components/Header"
+import { Headline } from "../../../components/Headline"
+import { Hero } from "../../../components/Hero"
+import { PageLinks } from "../../../components/PageLinks"
+import { FilmGrid } from "../../../components/FilmGrid"
+import { PromoBanner } from "../../../components/PromoBanner"
+
+import { AdvertisingContainer } from "../../../components/AdvertisingContainer"
+import { HeroArticle } from "../../../components/HeroArticle"
+import { FilmCardSingle } from "../../../components/FilmCardSingle"
+import { SidebarArticleLinks } from "../../../components/SidebarArticleLinks"
+import { Text } from "../../../components/Text"
+
+import { FilmShowingGrid } from "../../../components/FilmShowingGrid"
+import { LeadParagraph } from "../../../components/LeadParagraph"
+import { Button } from "../../../components/Button"
+import { QuickFacts } from "../../../components/QuickFacts"
+import { ShowDateTimeSidebar } from "../../../components/ShowDateTimeSidebar"
+
+<Meta title="Pattern Library|Page Examples/3 London Film Festival" component={MainContent} />
+
+# Page
+
+
+## Pages
+
+<Preview>
+    <Story name="1 Landing Page">
+        <>
+            <Header navItems={navItems} quickLinks={quickLinksData} overlay={true} />
+            <Hero
+                withHeader
+                image1920x1080="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1920/1080/1/2020-03/Hero.jpg"
+                image192x108="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/192/108/1/2020-03/Hero.jpg"
+                headline="London Film Festival"
+            />
+            
+            <Wrapper>
+               <MainContent  classes="landing_page">
+                    <>
+                        <Text>
+                            <p>LFF Homepage content</p>
+                        </Text>
+                    </>
+                </MainContent>
+            </Wrapper>
+            <Footer
+                menus={footerMenus}
+                copyrightLinks={[
+                    {
+                        title: "Cookies & privacy",
+                        url: "#12"
+                    },
+                    {
+                        title: "Terms & conditions",
+                        url: "#2"
+                    },
+                    {
+                        title: "Accessibility",
+                        url: "#4"
+                    },
+                    {
+                        title: "Help & FAQs",
+                        url: "#5"
+                    }
+                ]}
+                copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"
+            />
+        </>
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="2 Show Page Example 1">
+        <>
+            <Header navItems={navItems} quickLinks={quickLinksData} />
+            <Hero
+                image1920x1080="https://www.bfi.org.uk/sites/bfi.org.uk/files/styles/api_16x9_full/public/news/whos-gonna-love-me-now-2016-003-saar-bowing-head-by-israeli-flag-1000x750.jpeg?itok=lXYQQz_5"
+                image192x108="https://www.bfi.org.uk/sites/bfi.org.uk/files/styles/api_16x9_thumb/public/news/whos-gonna-love-me-now-2016-003-saar-bowing-head-by-israeli-flag-1000x750.jpeg?itok=lXYQQz_5"
+                headline="Lynn + Lucy"
+                standfirst="LFF Standfirst .... Lynn (Roxanne Scrimshaw) and Lucy (Nichola Burley) have been friends their whole lives; inseparable at school ...."
+            >
+                <Actions>
+                    <Button url="/" level={1} colorScheme={1}>Buy tickets</Button>
+                    <PlayButton playerPillar="subscription" url="https://player.bfi.org.uk/subscribe/9879" external={true} level={1} colorScheme={1}>Subscribe to watch on BFI Player</PlayButton>
+                </Actions>
+            </Hero>
+            <Wrapper>           
+                <MainContent>
+                    <Text>
+                        <p>Our August BFI Film Academy Lab will offer an insight into the role of a scripted format Producer - from identifying stories with the most potential, to getting them off the ground and onto the screen.</p>
+                        <p>Our panel of industry experts will explore the various types of producers in the Film &amp; TV industry and the responsibilities involved. They will outline the skills and experience needed to excel in scripted production roles and the various career paths you can take to become the UK’s next top Producer!</p>
+                        <p>Confirmed panelists:</p>
+                        <ul>
+                            <li>Lauren Dark: Senior Commissioning Executive , Film4</li>
+                            <li>Di Barton: Line Producer + Production Executive, Sister Pictures</li>
+                        </ul>
+                        <p>Session host:</p>
+                        <ul>
+                            <li>Rowan Woods: Film Programme Manager, British Council + LFF Episodic &amp; Industry Programmer, BFI</li>
+                        </ul>
+                        <p>More panelists will be announced SOON!</p>
+                    </Text>
+                    
+                    <Headline 
+                        level={2} 
+                        text="Book tickets at BFI Southbank"
+                    />
+                </MainContent>
+                <Sidebar>
+                    <ShowDateTimeSidebar
+                        dateTimeStart="2020-10-08T13:00"
+                        dateTimeEnd="2020-10-08T14:28"
+                        title="Lynn + Lucy on BFIPlayer - London Film Festival 2020"
+                        description="Lynn + Lucy premieres online at London Film Festival. With your ticket you can enjoy Lynn + Lucy any time for two weeks from the premiere date."
+                        location="https://player.bfi.org.uk/subscription/film/watch-lynn-lucy-2019-online"
+                        otherInfo="Screening on BFI Player"
+                    />
+                    <QuickFacts
+                        facts={[
+                            {
+                                label: "Length",
+                                value: "88 minutes"
+                            },
+                            {
+                                label: "Directed by",
+                                value: "Fyzal Boulifa"
+                            },
+                            {
+                                label: "Written by",
+                                value: "Fyzal Boulifa"
+                            },
+                            {
+                                label: "Featuring",
+                                value: "Roxanne Scrimshaw, Nichola Burley, Kacey Ainsworth"
+                            },
+                            {
+                                label: "Country",
+                                value: "United Kingdom"
+                            },
+                        ]}
+                    />
+                </Sidebar>
+            </Wrapper>
+            <Wrapper>
+                <MainContent>  
+                    <p>full width stuff goes here</p>
+                </MainContent>
+            </Wrapper>
+            <Footer
+                menus={footerMenus}
+                copyrightLinks={[
+                    {
+                        title: "Cookies & privacy",
+                        url: "#1"
+                    },
+                    {
+                        title: "Terms & conditions",
+                        url: "#2"
+                    },
+                    {
+                        title: "Accessibility",
+                        url: "#3"
+                    },
+                    {
+                        title: "Help & FAQs",
+                        url: "#4"
+                    }
+                ]}
+                copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"
+            />
+        </>
+    </Story>
+</Preview>

@@ -3,7 +3,6 @@ import styled from "styled-components"
 import theme from "../_theme"
 import PropTypes from "prop-types"
 import Script from "react-load-script"
-import { Text } from "../Text"
 
 const Outer = styled.div`
     overflow: hidden;
