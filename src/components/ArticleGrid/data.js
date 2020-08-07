@@ -42,7 +42,7 @@ export default [
         date: "22 November 2019",
         url: "https://www.bfi.org.uk/news-opinion/news-bfi/features/where-begin-josef-von-sternberg",
         uuid: "d1a4a7ac-44fa-56b3-9522-b865a49080c212123221",
-        category: "Where to begin",
+        category: "where to begin",
         external: true
     },
     {

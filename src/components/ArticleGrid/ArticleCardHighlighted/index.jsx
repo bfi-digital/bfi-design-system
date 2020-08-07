@@ -159,6 +159,10 @@ const CategoryTag = styled.div`
     z-index: 1;
     font-size: ${theme.small_fontSize_m};
 
+    &::first-letter {
+        text-transform: uppercase;
+    }
+    
     @media screen and (min-width: ${theme.m}){
         padding-left: ${theme.standardSpace}px;
         font-size: ${theme.fontSize_s};
