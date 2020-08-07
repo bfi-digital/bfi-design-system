@@ -28,8 +28,7 @@ const Container = styled.div`
     text-align: center;
     margin-bottom: ${theme.standardSpace*2}px;
 
-    iframe, twitter-widget {
-        max-width: 100%;
+    iframe, twitter-widget, .twitter-tweet {
         margin: 10px auto !important;
     }
 `
