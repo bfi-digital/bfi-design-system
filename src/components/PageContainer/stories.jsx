@@ -1737,7 +1737,7 @@ export const ArticleRecommendsExample = () =>
                 </Text>
                 
                 <FilmCardSingle 
-                    image225x225="https://player.bfi.org.uk/sites/default/files/styles/landscape_480x270/public/hero-images/carol-1920.jpg"
+                    image960x540="https://player.bfi.org.uk/sites/default/files/styles/landscape_480x270/public/hero-images/carol-1920.jpg"
                     title="Carol"
                     type="Film"
                     director="Todd Haynes"
@@ -2000,7 +2000,7 @@ export const ArticleListExampleWithUpdatedDate = () =>
             <MainContent>
                 <FilmCardSingle
                     listNumber={1}
-                    image225x225="https://player.bfi.org.uk/sites/default/files/styles/landscape_1440x810/public/hero-images/assistant2.jpg?itok=4PvazePC"
+                    image960x540="https://player.bfi.org.uk/sites/default/files/styles/landscape_1440x810/public/hero-images/assistant2.jpg?itok=4PvazePC"
                     title="The Assistant"
                     type="Film"
                     director="Kitty Green"
@@ -2018,7 +2018,7 @@ export const ArticleListExampleWithUpdatedDate = () =>
 
                 <FilmCardSingle
                     listNumber={2}
-                    image225x225="https://player.bfi.org.uk/sites/default/files/styles/landscape_1440x810/public/hero-images/kwaidan1.jpg?itok=cls1MQ_E"
+                    image960x540="https://player.bfi.org.uk/sites/default/files/styles/landscape_1440x810/public/hero-images/kwaidan1.jpg?itok=cls1MQ_E"
                     title="Kwaidan"
                     type="Film"
                     director="Masaki Kobayashi"
@@ -2037,7 +2037,7 @@ export const ArticleListExampleWithUpdatedDate = () =>
 
                 <FilmCardSingle
                     listNumber={3}
-                    image225x225="https://www.bfi.org.uk/films-tv-people/sites/bfi.org.uk.films-tv-people/files/styles/gallery_full/public/image/room-with-a-view-bfi-00m-nuz.jpg?itok=XDugDJoM"
+                    image960x540="https://www.bfi.org.uk/films-tv-people/sites/bfi.org.uk.films-tv-people/files/styles/gallery_full/public/image/room-with-a-view-bfi-00m-nuz.jpg?itok=XDugDJoM"
                     title="A Room with a View"
                     type="Film"
                     director="James Ivory"
@@ -2052,7 +2052,7 @@ export const ArticleListExampleWithUpdatedDate = () =>
 
                 <FilmCardSingle
                     listNumber={4}
-                    image225x225="https://player.bfi.org.uk/sites/default/files/styles/landscape_1440x810/public/hero-images/tristana1-under2MB.jpg?itok=AjP4Dsas"
+                    image960x540="https://player.bfi.org.uk/sites/default/files/styles/landscape_1440x810/public/hero-images/tristana1-under2MB.jpg?itok=AjP4Dsas"
                     title="Tristana"
                     type="Film"
                     director="Luis Buñuel"
@@ -2067,7 +2067,7 @@ export const ArticleListExampleWithUpdatedDate = () =>
 
                 <FilmCardSingle
                     listNumber={5}
-                    image225x225="https://www.bfi.org.uk/films-tv-people/sites/bfi.org.uk.films-tv-people/files/styles/gallery_full/public/image/satanatango.jpg?itok=jJ_1dlo3"
+                    image960x540="https://www.bfi.org.uk/films-tv-people/sites/bfi.org.uk.films-tv-people/files/styles/gallery_full/public/image/satanatango.jpg?itok=jJ_1dlo3"
                     title="Sátántangó"
                     type="Film"
                     director="Béla Tarr"

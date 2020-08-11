@@ -13,7 +13,7 @@ export const filmInList = () =>
         maxWidth: "1000px"
     }}>
         <FilmCardSingle 
-            image225x225="https://player.bfi.org.uk/sites/default/files/styles/landscape_1440x810/public/hero-images/La-Dolce-vita-1.jpg"
+            image960x540="https://player.bfi.org.uk/sites/default/files/styles/landscape_1440x810/public/hero-images/La-Dolce-vita-1.jpg"
             title="Le Mépris"
             type="Film"
             director="Jean-Luc Godard"
@@ -30,7 +30,7 @@ export const filmNotInList = () =>
         maxWidth: "1000px"
     }}>
         <FilmCardSingle 
-            image225x225="https://player.bfi.org.uk/sites/default/files/styles/landscape_1440x810/public/hero-images/La-Dolce-vita-1.jpg"
+            image960x540="https://player.bfi.org.uk/sites/default/files/styles/landscape_1440x810/public/hero-images/La-Dolce-vita-1.jpg"
             title="Le Mépris"
             type="Film"
             director="Jean-Luc Godard"
@@ -45,7 +45,7 @@ export const filmNoLinks = () =>
         maxWidth: "1000px"
     }}>
         <FilmCardSingle 
-            image225x225="https://player.bfi.org.uk/sites/default/files/styles/landscape_1440x810/public/hero-images/La-Dolce-vita-1.jpg"
+            image960x540="https://player.bfi.org.uk/sites/default/files/styles/landscape_1440x810/public/hero-images/La-Dolce-vita-1.jpg"
             title="Le Mépris"
             type="Film"
             director="Jean-Luc Godard"

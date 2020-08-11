@@ -125,6 +125,7 @@ export const FilmCardSingle = ({
     title,
     type,
     director,
+    country,
     year,
     listNumber,
     playerUrl,
@@ -141,7 +142,13 @@ export const FilmCardSingle = ({
                 <Headline level={6} text={title}/>
             }
             <Meta>
-                {year && <p>{year}</p>}
+                {(year || country) && 
+                    <p>
+                        {year && year}
+                        &nbsp;
+                        {country && country}
+                    </p>
+                }
                 {director && <p>Directed by {director}</p>}
             </Meta>
 
@@ -181,6 +188,10 @@ FilmCardSingle.propTypes = {
 	 * Director of content
     **/
     director: PropTypes.string,
+    /** 
+	 * Content country
+    **/
+    country: PropTypes.string,
     /** 
 	 * Content releae year
     **/
