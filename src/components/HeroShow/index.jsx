@@ -23,6 +23,7 @@ const Outer = styled.div`
     h1 {
         margin-left: 0;
         margin-block-start: 1em;
+        margin-block-end: 0.25em;
     }
 
     p {

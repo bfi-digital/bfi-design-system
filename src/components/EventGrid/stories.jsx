@@ -1,7 +1,7 @@
-import React from "react"
+// import React from "react"
 import { withA11y } from "@storybook/addon-a11y"
-import { EventGrid } from "./index"
-import demoEvents from "./data"
+// import { EventGrid } from "./index"
+// import demoEvents from "./data"
 
 export default {
     title: "2 All Components/EventGrid",
