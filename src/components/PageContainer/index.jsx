@@ -32,7 +32,6 @@ export const Wrapper = styled.div`
         max-width: 100%;
         &.landing_page {
             .text_block, .lead_paragraph {
-                margin: 0 auto;
 
                 @media screen and (min-width: ${theme.m}){
                     max-width: calc(${theme.l} - 400px);
@@ -98,9 +97,9 @@ const MainContentWrapper = styled.article`
         margin-bottom: ${theme.standardSpace}px;
     }
     &.landing_page {
-        h2, .filter_links {
-            text-align: center;
-        }
+        // h2, .filter_links {
+        //     text-align: center;
+        // }
         & .promoBanner:first-child {
             margin-top: ${theme.standardSpace}px;
         }
