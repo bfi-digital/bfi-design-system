@@ -47,7 +47,7 @@ export const FilterableArticles = ({
                                 {loadMore && <CentredButton href="#4" onClick={loadMore}>Load more</CentredButton>}
                             </ArticleGrid>
                             :
-                            <ArticleGrid articles={articles.slice(0,limit)} optionalTitle={filters ? false : optionalTitle} firstHighlighted={includeHighlight} optionalCTATitle={optionalCTATitle} optionalCTALink={optionalCTALink} pageWithSideBar={greyBackground ? false : true} />
+                            <ArticleGrid articles={articles.slice(0,limit)} optionalTitle={filters.length > 0 ? false : optionalTitle} firstHighlighted={includeHighlight} optionalCTATitle={optionalCTATitle} optionalCTALink={optionalCTALink} pageWithSideBar={greyBackground ? false : true} />
                         }
                     </>
                     :
