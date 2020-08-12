@@ -4,10 +4,12 @@ import Moment from "react-moment"
 import theme from "../_theme"
 import PropTypes from "prop-types"
 import LazyImage from "react-lazy-progressive-image"
+import AnchorLink from "react-anchor-link-smooth-scroll"
+import parse from "html-react-parser"
 import { Headline } from "../Headline"
 import { LeadParagraph } from "../LeadParagraph"
 import { Wrapper } from "../PageContainer"
-import AnchorLink from "react-anchor-link-smooth-scroll"
+
 
 const StyledWrapper = styled(Wrapper)`
     max-width: calc(${theme.xl} + 125px) !important;
@@ -23,7 +25,7 @@ const Outer = styled.div`
 
     h1 {
         margin-left: 0;
-        margin-block-start: 0.25em;
+        margin-block-start: 0;
         margin-block-end: 0.25em;
     }
 
@@ -56,7 +58,6 @@ const Outer = styled.div`
             }
 
             .page_meta {
-                height: 100%;
                 padding: ${theme.standardSpace*0.75}px ${(theme.standardSpace*0.75)*2}px;
 
                 p {
@@ -99,6 +100,8 @@ const Meta = styled.div`
     padding: ${theme.standardSpace}px;
     display: flex;
     flex-direction: column;
+    height: fit-content;
+    align-self: center;
     
     @media screen and (min-width: ${theme.m}){
         flex: 0 0 50%;
@@ -251,6 +254,34 @@ const StyledAnchorLink = styled(AnchorLink)`
     }
 `
 
+const VideoInner = styled.div`
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+`
+const Video = styled.div`
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+
+    @media screen and (min-width: ${theme.m}){
+        height: auto;
+        order: -1;
+    }
+    @media screen and (min-width: ${theme.l}){
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+`
+
 export const HeroShow = ({
     image1920x1080,
     image192x108,
@@ -258,6 +289,7 @@ export const HeroShow = ({
     title,
     standfirst,
     dateTimeStart,
+    oembedObject,
     children
 }) =>
     <StyledWrapper>
@@ -278,24 +310,31 @@ export const HeroShow = ({
                     <StyledAnchorLink offset="175" href="#performance-list">View all showings</StyledAnchorLink>
                 }
             </Meta>
-            {image1920x1080 &&
-                <ImageContainer>
-                    <LazyImage
-                        src={image1920x1080}
-                        placeholder={image192x108}
-                        visibilitySensorProps={{
-                            partialVisibility: true
-                        }}
-                    >
-                        {src => 
-                            <StyledImage
-                                itemprop="image"
-                                src={src}
-                                alt={imageAltText ? imageAltText : ""}
-                            />
-                        }
-                    </LazyImage>
-                </ImageContainer>
+            {oembedObject ?
+                <Video>
+                    <VideoInner>
+                        {parse(oembedObject.html.replace("></iframe>", " title=\"" + (oembedObject.title ? (oembedObject.title + " video") : "Video player") + "\"></iframe>"))}
+                    </VideoInner>
+                </Video>
+                :
+                image1920x1080 &&
+                    <ImageContainer>
+                        <LazyImage
+                            src={image1920x1080}
+                            placeholder={image192x108}
+                            visibilitySensorProps={{
+                                partialVisibility: true
+                            }}
+                        >
+                            {src => 
+                                <StyledImage
+                                    itemprop="image"
+                                    src={src}
+                                    alt={imageAltText ? imageAltText : ""}
+                                />
+                            }
+                        </LazyImage>
+                    </ImageContainer>
             }
         </Outer>
     </StyledWrapper>

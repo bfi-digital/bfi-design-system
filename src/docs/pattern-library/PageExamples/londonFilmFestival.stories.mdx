@@ -383,3 +383,98 @@ import demoPerformances from "../../../components/ShowPerformanceList/data"
         </>
     </Story>
 </Preview>
+
+
+<Preview>
+    <Story name="2.4 Show - film - multi performances with video">
+        <>
+            <Header navItems={navItems} quickLinks={quickLinksData} />
+            <HeroShow
+                image1920x1080="https://player.bfi.org.uk/sites/default/files/styles/landscape_960x540/public/hero-images/lynn_lucy-1920.jpg?itok=KIE4JhQI"
+                image192x108="https://player.bfi.org.uk/sites/default/files/styles/landscape_960x540/public/hero-images/lynn_lucy-1920.jpg?itok=KIE4JhQI"
+                oembedObject={{ html: "\u003ciframe width=\"480\" height=\"270\" src=\"https://www.youtube.com/embed/jp__9PIwOEA?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen\u003e\u003c/iframe\u003e"}}
+                title="Lynn + Lucy"
+                standfirst="Lynn + Lucy premieres online at London Film Festival. A lifelong friendship is tested by tragedy in this atmospheric and intense first feature from acclaimed British shorts director Fyzal Boulifa."
+            >
+                <Actions>
+                    <PlayButton playerPillar="subscription" url="https://player.bfi.org.uk/subscription/film/watch-lynn-lucy-2019-online" external={true} level={1} colorScheme={1}>Pre-book to watch on BFI Player</PlayButton>
+                </Actions>
+            </HeroShow>
+            <Wrapper>           
+                <MainContent>
+                    <Text>
+                        <p>Our August BFI Film Academy Lab will offer an insight into the role of a scripted format Producer - from identifying stories with the most potential, to getting them off the ground and onto the screen.</p>
+                        <p>Our panel of industry experts will explore the various types of producers in the Film &amp; TV industry and the responsibilities involved. They will outline the skills and experience needed to excel in scripted production roles and the various career paths you can take to become the UK’s next top Producer!</p>
+                        <p>Confirmed panelists:</p>
+                        <ul>
+                            <li>Lauren Dark: Senior Commissioning Executive , Film4</li>
+                            <li>Di Barton: Line Producer + Production Executive, Sister Pictures</li>
+                        </ul>
+                        <p>Session host:</p>
+                        <ul>
+                            <li>Rowan Woods: Film Programme Manager, British Council + LFF Episodic &amp; Industry Programmer, BFI</li>
+                        </ul>
+                        <p>More panelists will be announced SOON!</p>
+                    </Text>
+                </MainContent>
+                <Sidebar>
+                    <QuickFacts
+                        facts={[
+                            {
+                                label: "Length",
+                                value: "88 minutes"
+                            },
+                            {
+                                label: "Directed by",
+                                value: "Fyzal Boulifa"
+                            },
+                            {
+                                label: "Written by",
+                                value: "Fyzal Boulifa"
+                            },
+                            {
+                                label: "Featuring",
+                                value: "Roxanne Scrimshaw, Nichola Burley, Kacey Ainsworth"
+                            },
+                            {
+                                label: "Country",
+                                value: "United Kingdom"
+                            },
+                        ]}
+                    />
+                </Sidebar>
+            </Wrapper>
+            <Wrapper>
+                <MainContent>
+                    <ShowPerformanceList 
+                        performances={demoPerformances} 
+                        showTitle="Lynn + Lucy" 
+                        showDescription="Lynn + Lucy premieres online at London Film Festival. With your ticket you can enjoy Lynn + Lucy any time for two weeks from the premiere date."
+                    />
+                </MainContent>
+            </Wrapper>
+            <Footer
+                menus={footerMenus}
+                copyrightLinks={[
+                    {
+                        title: "Cookies & privacy",
+                        url: "#1"
+                    },
+                    {
+                        title: "Terms & conditions",
+                        url: "#2"
+                    },
+                    {
+                        title: "Accessibility",
+                        url: "#3"
+                    },
+                    {
+                        title: "Help & FAQs",
+                        url: "#4"
+                    }
+                ]}
+                copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"
+            />
+        </>
+    </Story>
+</Preview>
