@@ -290,7 +290,7 @@ exports[`Storyshots 2 All Components/Button Secondary 1`] = `
   }
 >
   <a
-    className="sc-gqjmRU gCUCOY"
+    className="sc-VigVT dNkdxS"
     colorScheme={0}
     href="#2"
     target="_self"
@@ -310,7 +310,7 @@ exports[`Storyshots 2 All Components/Button Tertiary 1`] = `
   }
 >
   <a
-    className="sc-VigVT ibQHyZ"
+    className="sc-jTzLTM buzsPQ"
     colorScheme={0}
     href="#3"
     target="_self"
@@ -330,7 +330,7 @@ exports[`Storyshots 2 All Components/Call to Action External Link 1`] = `
   }
 >
   <div
-    className="sc-jTzLTM hWVfUG call_to_action_block"
+    className="sc-fjdhpX josSNq call_to_action_block"
   >
     <a
       className="sc-gZMcBi ikvtgj external_link"
@@ -355,7 +355,7 @@ exports[`Storyshots 2 All Components/Call to Action Internal Link 1`] = `
   }
 >
   <div
-    className="sc-jTzLTM hWVfUG call_to_action_block"
+    className="sc-fjdhpX josSNq call_to_action_block"
   >
     <a
       className="sc-gZMcBi ikvtgj"
@@ -380,7 +380,7 @@ exports[`Storyshots 2 All Components/Call to Action Two Links 1`] = `
   }
 >
   <div
-    className="sc-jTzLTM hWVfUG call_to_action_block"
+    className="sc-fjdhpX josSNq call_to_action_block"
   >
     <a
       className="sc-gZMcBi ikvtgj"
@@ -394,7 +394,7 @@ exports[`Storyshots 2 All Components/Call to Action Two Links 1`] = `
     </a>
   </div>
   <div
-    className="sc-jTzLTM hWVfUG call_to_action_block"
+    className="sc-fjdhpX josSNq call_to_action_block"
   >
     <a
       className="sc-gZMcBi ikvtgj external_link"
@@ -412,7 +412,7 @@ exports[`Storyshots 2 All Components/Call to Action Two Links 1`] = `
 
 exports[`Storyshots 2 All Components/Divider Normal 1`] = `
 <hr
-  className="sc-fjdhpX cXKptB"
+  className="sc-jzJRlG eYNkah"
 />
 `;
 
@@ -425,13 +425,13 @@ exports[`Storyshots 2 All Components/Downloadable File Multiple Files 1`] = `
   }
 >
   <div
-    className="sc-kpOJdX kRGtcP"
+    className="sc-dxgOiQ daoCbE"
   >
     <div
-      className="sc-jzJRlG hQUtuz"
+      className="sc-cSHVUG crNoaq"
     >
       <a
-        className="sc-cSHVUG sOpRq"
+        className="sc-kAzzGY khSqpd"
         download={true}
         href="https://www.bfi.org.uk/sites/bfi.org.uk/files/downloads/bfi-young-audiences-content-fund-production-application-guidelines-2019-10.pdf"
         onMouseEnter={[Function]}
@@ -467,20 +467,20 @@ exports[`Storyshots 2 All Components/Downloadable File Multiple Files 1`] = `
           </g>
         </svg>
         <div
-          className="sc-kAzzGY hBGVeQ file-details"
+          className="sc-chPdSV lfQhzU file-details"
         >
           <span
-            className="sc-chPdSV fGARol file-title"
+            className="sc-kgoBCf dLjfnM file-title"
           >
             File title
           </span>
           <span
-            className="sc-kgoBCf cxOeCo"
+            className="sc-kGXeez cftvVV"
           >
             PDF
           </span>
           <span
-            className="sc-kGXeez iphgLr"
+            className="sc-kpOJdX bsGaYk"
           >
             1.2 MB
           </span>
@@ -488,10 +488,10 @@ exports[`Storyshots 2 All Components/Downloadable File Multiple Files 1`] = `
       </a>
     </div>
     <div
-      className="sc-jzJRlG hQUtuz"
+      className="sc-cSHVUG crNoaq"
     >
       <a
-        className="sc-cSHVUG sOpRq"
+        className="sc-kAzzGY khSqpd"
         download={true}
         href="https://www.bfi.org.uk/sites/bfi.org.uk/files/downloads/bfi-young-audiences-content-fund-production-application-guidelines-2019-10.pdf"
         onMouseEnter={[Function]}
@@ -527,20 +527,20 @@ exports[`Storyshots 2 All Components/Downloadable File Multiple Files 1`] = `
           </g>
         </svg>
         <div
-          className="sc-kAzzGY hBGVeQ file-details"
+          className="sc-chPdSV lfQhzU file-details"
         >
           <span
-            className="sc-chPdSV fGARol file-title"
+            className="sc-kgoBCf dLjfnM file-title"
           >
             Young Audiences Content Fund production application guidelines
           </span>
           <span
-            className="sc-kgoBCf cxOeCo"
+            className="sc-kGXeez cftvVV"
           >
             PDF
           </span>
           <span
-            className="sc-kGXeez iphgLr"
+            className="sc-kpOJdX bsGaYk"
           >
             279.06 KB
           </span>
@@ -560,13 +560,13 @@ exports[`Storyshots 2 All Components/Downloadable File Single File 1`] = `
   }
 >
   <div
-    className="sc-kpOJdX kRGtcP"
+    className="sc-dxgOiQ daoCbE"
   >
     <div
-      className="sc-jzJRlG hQUtuz"
+      className="sc-cSHVUG crNoaq"
     >
       <a
-        className="sc-cSHVUG sOpRq"
+        className="sc-kAzzGY khSqpd"
         download={true}
         href="https://www.bfi.org.uk/sites/bfi.org.uk/files/downloads/bfi-young-audiences-content-fund-production-application-guidelines-2019-10.pdf"
         onMouseEnter={[Function]}
@@ -602,20 +602,20 @@ exports[`Storyshots 2 All Components/Downloadable File Single File 1`] = `
           </g>
         </svg>
         <div
-          className="sc-kAzzGY hBGVeQ file-details"
+          className="sc-chPdSV lfQhzU file-details"
         >
           <span
-            className="sc-chPdSV fGARol file-title"
+            className="sc-kgoBCf dLjfnM file-title"
           >
             File title
           </span>
           <span
-            className="sc-kgoBCf cxOeCo"
+            className="sc-kGXeez cftvVV"
           >
             PDF
           </span>
           <span
-            className="sc-kGXeez iphgLr"
+            className="sc-kpOJdX bsGaYk"
           >
             1.2 MB
           </span>
@@ -629,30 +629,30 @@ exports[`Storyshots 2 All Components/Downloadable File Single File 1`] = `
 exports[`Storyshots 2 All Components/ErrorPage Error 404 1`] = `
 Array [
   <div
-    className="sc-dxgOiQ dWKARr"
+    className="sc-ckVGcZ bQICAJ"
   />,
   <div
-    className="sc-ckVGcZ lghhVZ"
+    className="sc-jKJlTe cFrwU"
   >
     <div
-      className="sc-kkGfuU uSGoD"
+      className="sc-iAyFgw cwjdBz"
     >
       <h1
-        className="sc-jKJlTe cVhIDW"
+        className="sc-eNQAEJ gLXqMP"
       >
         <span
-          className="sc-eNQAEJ bGENRH"
+          className="sc-hMqMXs hKPCBo"
         >
           404
         </span>
         <span
-          className="sc-hMqMXs bIVqTe"
+          className="sc-kEYyzF cXUhpx"
         >
           Page not found
         </span>
       </h1>
       <div
-        className="sc-kEYyzF eDBIsB"
+        className="sc-kkGfuU kUNnRZ"
       >
         <p>
           Sorry, something went wrong and we cannot find the page you are looking for.
@@ -662,7 +662,7 @@ Array [
         </p>
       </div>
       <div
-        className="sc-hSdWYo ggfqSs"
+        className="sc-eHgmQL jgBeHL"
       >
         <a
           className="sc-gZMcBi ikvtgj"
@@ -682,30 +682,30 @@ Array [
 exports[`Storyshots 2 All Components/ErrorPage Error 500 1`] = `
 Array [
   <div
-    className="sc-dxgOiQ dWKARr"
+    className="sc-ckVGcZ bQICAJ"
   />,
   <div
-    className="sc-ckVGcZ lghhVZ"
+    className="sc-jKJlTe cFrwU"
   >
     <div
-      className="sc-kkGfuU uSGoD"
+      className="sc-iAyFgw cwjdBz"
     >
       <h1
-        className="sc-jKJlTe cVhIDW"
+        className="sc-eNQAEJ gLXqMP"
       >
         <span
-          className="sc-eNQAEJ bGENRH"
+          className="sc-hMqMXs hKPCBo"
         >
           500
         </span>
         <span
-          className="sc-hMqMXs bIVqTe"
+          className="sc-kEYyzF cXUhpx"
         >
           Internal Server Error
         </span>
       </h1>
       <div
-        className="sc-kEYyzF eDBIsB"
+        className="sc-kkGfuU kUNnRZ"
       >
         <p>
           Sorry, this page doesn't seem to be working.
@@ -715,7 +715,7 @@ Array [
         </p>
       </div>
       <div
-        className="sc-hSdWYo ggfqSs"
+        className="sc-eHgmQL jgBeHL"
       >
         <a
           className="sc-gZMcBi ikvtgj"
@@ -741,10 +741,10 @@ exports[`Storyshots 2 All Components/Feedback Form Example 1`] = `
   }
 >
   <div
-    className="sc-eHgmQL leqHEP"
+    className="sc-cvbbAY jPGGjU"
   >
     <button
-      className="sc-cvbbAY bWJAsY"
+      className="sc-jWBwVP eFulLK"
       onClick={[Function]}
       title="Give us some feedback"
     >
@@ -766,10 +766,10 @@ exports[`Storyshots 2 All Components/Feedback Form Helpscout Example 1`] = `
   }
 >
   <div
-    className="sc-gPEVay dqPMEy"
+    className="sc-iRbamj jQWoYR"
   >
     <button
-      className="sc-iRbamj lbMPbo"
+      className="sc-jlyJG fCXEic"
       onClick={[Function]}
       title="Give us some feedback"
     >
@@ -791,26 +791,26 @@ exports[`Storyshots 2 All Components/FilmShowing A Showing 1`] = `
   }
 >
   <div
-    className="sc-gisBJw hpcbDR"
+    className="sc-kjoXOD bsTIhq"
   >
     <h4
-      className="sc-fAjcbJ bItUoI h4"
+      className="sc-caSCKo cBnArw h4"
     >
       La La Land
     </h4>
     <p
-      className="sc-kjoXOD fQjOoC"
+      className="sc-cHGsZl gBsYkR"
     >
       24th February
     </p>
     <ul
-      className="sc-cHGsZl zbBeq"
+      className="sc-TOsTZ thZdb"
     >
       <li
-        className="sc-TOsTZ hWllIn"
+        className="sc-kgAjT fAezwI"
       >
         <a
-          className="sc-gqjmRU gCUCOY"
+          className="sc-VigVT dNkdxS"
           colorScheme={0}
           href="#"
           target="_self"
@@ -821,10 +821,10 @@ exports[`Storyshots 2 All Components/FilmShowing A Showing 1`] = `
         </a>
       </li>
       <li
-        className="sc-TOsTZ hWllIn"
+        className="sc-kgAjT fAezwI"
       >
         <a
-          className="sc-gqjmRU gCUCOY"
+          className="sc-VigVT dNkdxS"
           colorScheme={0}
           href="#"
           target="_self"
@@ -835,10 +835,10 @@ exports[`Storyshots 2 All Components/FilmShowing A Showing 1`] = `
         </a>
       </li>
       <li
-        className="sc-TOsTZ hWllIn"
+        className="sc-kgAjT fAezwI"
       >
         <span
-          className="sc-kgAjT cSNovu"
+          className="sc-cJSrbW DqKqv"
         >
           8:45pm
            - Sold out
@@ -858,35 +858,35 @@ exports[`Storyshots 2 All Components/FilmShowing Sold Out 1`] = `
   }
 >
   <div
-    className="sc-gisBJw hpcbDR"
+    className="sc-kjoXOD bsTIhq"
   >
     <h4
-      className="sc-fAjcbJ bItUoI h4"
+      className="sc-caSCKo cBnArw h4"
     >
       La La Land
     </h4>
     <p
-      className="sc-kjoXOD fQjOoC"
+      className="sc-cHGsZl gBsYkR"
     >
       24th February
     </p>
     <ul
-      className="sc-cHGsZl zbBeq"
+      className="sc-TOsTZ thZdb"
     >
       <li
-        className="sc-TOsTZ hWllIn"
+        className="sc-kgAjT fAezwI"
       >
         <span
-          className="sc-kgAjT cSNovu"
+          className="sc-cJSrbW DqKqv"
         >
            - Sold out
         </span>
       </li>
       <li
-        className="sc-TOsTZ hWllIn"
+        className="sc-kgAjT fAezwI"
       >
         <span
-          className="sc-kgAjT cSNovu"
+          className="sc-cJSrbW DqKqv"
         >
            - Sold out
         </span>
@@ -898,24 +898,24 @@ exports[`Storyshots 2 All Components/FilmShowing Sold Out 1`] = `
 
 exports[`Storyshots 2 All Components/FilmShowingGrid Example 1`] = `
 <section
-  className="sc-cJSrbW BylFb"
+  className="sc-ksYbfQ idWHsL"
 >
   <div
-    className="sc-gisBJw hpcbDR"
+    className="sc-kjoXOD bsTIhq"
   >
     <p
-      className="sc-kjoXOD fQjOoC"
+      className="sc-cHGsZl gBsYkR"
     >
       24th February
     </p>
     <ul
-      className="sc-cHGsZl zbBeq"
+      className="sc-TOsTZ thZdb"
     >
       <li
-        className="sc-TOsTZ hWllIn"
+        className="sc-kgAjT fAezwI"
       >
         <a
-          className="sc-gqjmRU gCUCOY"
+          className="sc-VigVT dNkdxS"
           colorScheme={0}
           href="#"
           id="10101"
@@ -927,10 +927,10 @@ exports[`Storyshots 2 All Components/FilmShowingGrid Example 1`] = `
         </a>
       </li>
       <li
-        className="sc-TOsTZ hWllIn"
+        className="sc-kgAjT fAezwI"
       >
         <a
-          className="sc-gqjmRU gCUCOY"
+          className="sc-VigVT dNkdxS"
           colorScheme={0}
           href="#"
           id="202020"
@@ -942,10 +942,10 @@ exports[`Storyshots 2 All Components/FilmShowingGrid Example 1`] = `
         </a>
       </li>
       <li
-        className="sc-TOsTZ hWllIn"
+        className="sc-kgAjT fAezwI"
       >
         <span
-          className="sc-kgAjT cSNovu"
+          className="sc-cJSrbW DqKqv"
         >
           8:45pm
            - Sold out
@@ -954,31 +954,31 @@ exports[`Storyshots 2 All Components/FilmShowingGrid Example 1`] = `
     </ul>
   </div>
   <div
-    className="sc-gisBJw hpcbDR"
+    className="sc-kjoXOD bsTIhq"
   >
     <p
-      className="sc-kjoXOD fQjOoC"
+      className="sc-cHGsZl gBsYkR"
     >
       24th February
     </p>
     <ul
-      className="sc-cHGsZl zbBeq"
+      className="sc-TOsTZ thZdb"
     >
       <li
-        className="sc-TOsTZ hWllIn"
+        className="sc-kgAjT fAezwI"
       >
         <span
-          className="sc-kgAjT cSNovu"
+          className="sc-cJSrbW DqKqv"
         >
           3:30pm
            - Sold out
         </span>
       </li>
       <li
-        className="sc-TOsTZ hWllIn"
+        className="sc-kgAjT fAezwI"
       >
         <a
-          className="sc-gqjmRU gCUCOY"
+          className="sc-VigVT dNkdxS"
           colorScheme={0}
           href="#"
           id="5050505"
@@ -992,31 +992,31 @@ exports[`Storyshots 2 All Components/FilmShowingGrid Example 1`] = `
     </ul>
   </div>
   <div
-    className="sc-gisBJw hpcbDR"
+    className="sc-kjoXOD bsTIhq"
   >
     <p
-      className="sc-kjoXOD fQjOoC"
+      className="sc-cHGsZl gBsYkR"
     >
       24th February
     </p>
     <ul
-      className="sc-cHGsZl zbBeq"
+      className="sc-TOsTZ thZdb"
     >
       <li
-        className="sc-TOsTZ hWllIn"
+        className="sc-kgAjT fAezwI"
       >
         <span
-          className="sc-kgAjT cSNovu"
+          className="sc-cJSrbW DqKqv"
         >
           3:30pm
            - Sold out
         </span>
       </li>
       <li
-        className="sc-TOsTZ hWllIn"
+        className="sc-kgAjT fAezwI"
       >
         <a
-          className="sc-gqjmRU gCUCOY"
+          className="sc-VigVT dNkdxS"
           colorScheme={0}
           href="#"
           id="70707"
@@ -1030,31 +1030,31 @@ exports[`Storyshots 2 All Components/FilmShowingGrid Example 1`] = `
     </ul>
   </div>
   <div
-    className="sc-gisBJw hpcbDR"
+    className="sc-kjoXOD bsTIhq"
   >
     <p
-      className="sc-kjoXOD fQjOoC"
+      className="sc-cHGsZl gBsYkR"
     >
       24th February
     </p>
     <ul
-      className="sc-cHGsZl zbBeq"
+      className="sc-TOsTZ thZdb"
     >
       <li
-        className="sc-TOsTZ hWllIn"
+        className="sc-kgAjT fAezwI"
       >
         <span
-          className="sc-kgAjT cSNovu"
+          className="sc-cJSrbW DqKqv"
         >
           3:30pm
            - Sold out
         </span>
       </li>
       <li
-        className="sc-TOsTZ hWllIn"
+        className="sc-kgAjT fAezwI"
       >
         <span
-          className="sc-kgAjT cSNovu"
+          className="sc-cJSrbW DqKqv"
         >
           6:30pm
            - Sold out
@@ -1068,29 +1068,29 @@ exports[`Storyshots 2 All Components/FilmShowingGrid Example 1`] = `
 exports[`Storyshots 2 All Components/FilmShowingGrid Example With Title 1`] = `
 Array [
   <p
-    className="sc-dVhcbM ilwmLd h3"
+    className="sc-eqIVtm jipbPB h3"
   >
     La La Land
   </p>,
   <section
-    className="sc-cJSrbW BylFb"
+    className="sc-ksYbfQ idWHsL"
   >
     <div
-      className="sc-gisBJw hpcbDR"
+      className="sc-kjoXOD bsTIhq"
     >
       <p
-        className="sc-kjoXOD fQjOoC"
+        className="sc-cHGsZl gBsYkR"
       >
         24th February
       </p>
       <ul
-        className="sc-cHGsZl zbBeq"
+        className="sc-TOsTZ thZdb"
       >
         <li
-          className="sc-TOsTZ hWllIn"
+          className="sc-kgAjT fAezwI"
         >
           <a
-            className="sc-gqjmRU gCUCOY"
+            className="sc-VigVT dNkdxS"
             colorScheme={0}
             href="#"
             id="10101"
@@ -1102,10 +1102,10 @@ Array [
           </a>
         </li>
         <li
-          className="sc-TOsTZ hWllIn"
+          className="sc-kgAjT fAezwI"
         >
           <a
-            className="sc-gqjmRU gCUCOY"
+            className="sc-VigVT dNkdxS"
             colorScheme={0}
             href="#"
             id="202020"
@@ -1117,10 +1117,10 @@ Array [
           </a>
         </li>
         <li
-          className="sc-TOsTZ hWllIn"
+          className="sc-kgAjT fAezwI"
         >
           <span
-            className="sc-kgAjT cSNovu"
+            className="sc-cJSrbW DqKqv"
           >
             8:45pm
              - Sold out
@@ -1129,31 +1129,31 @@ Array [
       </ul>
     </div>
     <div
-      className="sc-gisBJw hpcbDR"
+      className="sc-kjoXOD bsTIhq"
     >
       <p
-        className="sc-kjoXOD fQjOoC"
+        className="sc-cHGsZl gBsYkR"
       >
         24th February
       </p>
       <ul
-        className="sc-cHGsZl zbBeq"
+        className="sc-TOsTZ thZdb"
       >
         <li
-          className="sc-TOsTZ hWllIn"
+          className="sc-kgAjT fAezwI"
         >
           <span
-            className="sc-kgAjT cSNovu"
+            className="sc-cJSrbW DqKqv"
           >
             3:30pm
              - Sold out
           </span>
         </li>
         <li
-          className="sc-TOsTZ hWllIn"
+          className="sc-kgAjT fAezwI"
         >
           <a
-            className="sc-gqjmRU gCUCOY"
+            className="sc-VigVT dNkdxS"
             colorScheme={0}
             href="#"
             id="5050505"
@@ -1167,31 +1167,31 @@ Array [
       </ul>
     </div>
     <div
-      className="sc-gisBJw hpcbDR"
+      className="sc-kjoXOD bsTIhq"
     >
       <p
-        className="sc-kjoXOD fQjOoC"
+        className="sc-cHGsZl gBsYkR"
       >
         24th February
       </p>
       <ul
-        className="sc-cHGsZl zbBeq"
+        className="sc-TOsTZ thZdb"
       >
         <li
-          className="sc-TOsTZ hWllIn"
+          className="sc-kgAjT fAezwI"
         >
           <span
-            className="sc-kgAjT cSNovu"
+            className="sc-cJSrbW DqKqv"
           >
             3:30pm
              - Sold out
           </span>
         </li>
         <li
-          className="sc-TOsTZ hWllIn"
+          className="sc-kgAjT fAezwI"
         >
           <a
-            className="sc-gqjmRU gCUCOY"
+            className="sc-VigVT dNkdxS"
             colorScheme={0}
             href="#"
             id="70707"
@@ -1205,31 +1205,31 @@ Array [
       </ul>
     </div>
     <div
-      className="sc-gisBJw hpcbDR"
+      className="sc-kjoXOD bsTIhq"
     >
       <p
-        className="sc-kjoXOD fQjOoC"
+        className="sc-cHGsZl gBsYkR"
       >
         24th February
       </p>
       <ul
-        className="sc-cHGsZl zbBeq"
+        className="sc-TOsTZ thZdb"
       >
         <li
-          className="sc-TOsTZ hWllIn"
+          className="sc-kgAjT fAezwI"
         >
           <span
-            className="sc-kgAjT cSNovu"
+            className="sc-cJSrbW DqKqv"
           >
             3:30pm
              - Sold out
           </span>
         </li>
         <li
-          className="sc-TOsTZ hWllIn"
+          className="sc-kgAjT fAezwI"
         >
           <span
-            className="sc-kgAjT cSNovu"
+            className="sc-cJSrbW DqKqv"
           >
             6:30pm
              - Sold out
@@ -1243,10 +1243,10 @@ Array [
 
 exports[`Storyshots 2 All Components/Filter-esque Links Normal 1`] = `
 <nav
-  className="sc-ksYbfQ gxLpUQ filter_links"
+  className="sc-hmzhuo jDAeNT filter_links"
 >
   <a
-    className="sc-hmzhuo iFqYbj"
+    className="sc-frDJqD hZZEXw"
     disabled={false}
     href="#1"
     title="Show all \\"Example link\\" articles"
@@ -1254,7 +1254,7 @@ exports[`Storyshots 2 All Components/Filter-esque Links Normal 1`] = `
     Example link
   </a>
   <a
-    className="sc-hmzhuo iFqYbj"
+    className="sc-frDJqD hZZEXw"
     disabled={false}
     href="#2"
     title="Show all \\"Where to stream\\" articles"
@@ -1262,7 +1262,7 @@ exports[`Storyshots 2 All Components/Filter-esque Links Normal 1`] = `
     Where to stream
   </a>
   <a
-    className="sc-hmzhuo iFqYbj"
+    className="sc-frDJqD hZZEXw"
     disabled={false}
     href="#3"
     title="Show all \\"Where to begin\\" articles"
@@ -1270,7 +1270,7 @@ exports[`Storyshots 2 All Components/Filter-esque Links Normal 1`] = `
     Where to begin
   </a>
   <a
-    className="sc-hmzhuo iFqYbj"
+    className="sc-frDJqD hZZEXw"
     disabled={false}
     href="#4"
     title="Show all \\"Five Things\\" articles"
@@ -1288,7 +1288,7 @@ exports[`Storyshots 2 All Components/Filterable Articles Normal 1`] = `
 
 exports[`Storyshots 2 All Components/Headline Hero H 1 1`] = `
 <h1
-  className="sc-hzDkRC iVIlRX"
+  className="sc-jhAzac gGHCmk"
 >
   My example headline
 </h1>
@@ -1296,7 +1296,7 @@ exports[`Storyshots 2 All Components/Headline Hero H 1 1`] = `
 
 exports[`Storyshots 2 All Components/Headline Level 1 1`] = `
 <h1
-  className="sc-hzDkRC sc-jhAzac cMmCgP"
+  className="sc-jhAzac sc-fBuWsC bOQjiW"
 >
   My example headline
 </h1>
@@ -1304,7 +1304,7 @@ exports[`Storyshots 2 All Components/Headline Level 1 1`] = `
 
 exports[`Storyshots 2 All Components/Headline Level 2 1`] = `
 <h2
-  className="sc-fBuWsC kRvaPt"
+  className="sc-fMiknA eFQPVV"
 >
   My example headline
 </h2>
@@ -1312,7 +1312,7 @@ exports[`Storyshots 2 All Components/Headline Level 2 1`] = `
 
 exports[`Storyshots 2 All Components/Headline Level 3 1`] = `
 <h3
-  className="sc-fMiknA brAuRv"
+  className="sc-dVhcbM iHzQjc"
 >
   My example headline
 </h3>
@@ -1321,7 +1321,7 @@ exports[`Storyshots 2 All Components/Headline Level 3 1`] = `
 exports[`Storyshots 2 All Components/Hero Show Normal 1`] = `
 Array [
   <a
-    className="sc-RefOD hhDycq"
+    className="sc-iQKALj bwXNjF"
     href="#content-start"
   >
     <div
@@ -1335,20 +1335,20 @@ Array [
     </div>
   </a>,
   <header
-    className="sc-hwwEjo guddBN"
+    className="sc-kPVwWT cbKPWv"
     onMouseLeave={[Function]}
   >
     <div
-      className="sc-kPVwWT cPNXtr"
+      className="sc-kfGgVZ gDkaOa"
     >
       <button
         aria-controls="menu-panel"
         aria-expanded="false"
-        className="sc-cIShpX dxjLVo"
+        className="sc-kafWEX bCYNWO"
         onClick={[Function]}
       >
         <div
-          className="sc-ktHwxA eVvCDT"
+          className="sc-cIShpX dxOVsg"
           open={false}
         >
           <div />
@@ -1356,51 +1356,51 @@ Array [
         Menu
       </button>
       <a
-        className="sc-kIPQKe bncFqZ"
+        className="sc-eXEjpC jClvJQ"
         href="/"
         target="_self"
       >
         <img
           alt="Home"
-          className="sc-kfGgVZ cWxgbA"
+          className="sc-esjQYD ipRRwY"
           src="test-file-stub"
         />
       </a>
       <div
-        className="sc-eXEjpC hmhltX"
+        className="sc-ibxdXY jSFOMM"
       />
       <nav
         aria-label="Main"
-        className="sc-kafWEX eFzJby"
+        className="sc-feJyhm fIDVJf"
         onMouseLeave={[Function]}
         role="navigation"
       >
         <ul
-          className="sc-feJyhm kreuLO"
+          className="sc-iELTvK VHqMN"
         >
           <a
-            className="sc-dqBHgY fpWHhy"
+            className="sc-gxMtzJ bPQDOa"
             href="/"
             target="_self"
           >
             <li
-              className="sc-cmTdod cfGFXc"
+              className="sc-jwKygS kXhQfa"
             >
               <img
                 alt="Home"
-                className="sc-gxMtzJ jTPsqr"
+                className="sc-dfVpRl kicfWV"
                 src="test-file-stub"
               />
             </li>
           </a>
           <li
-            className="sc-cmTdod cfGFXc"
+            className="sc-jwKygS kXhQfa"
           >
             <a
               active={true}
               aria-expanded={false}
               aria-haspopup="true"
-              className="sc-iELTvK jYIiKq"
+              className="sc-cmTdod csdvZo"
               data-tracking="header-navigation"
               hovered={false}
               href="/iframe.html?id=pattern-library-page-examples-1-watch-discover--1-landing-page"
@@ -1413,7 +1413,7 @@ Array [
               Watch and Discover
             </a>
             <button
-              className="sc-iyvyFf iEdDcy"
+              className="sc-hwwEjo gJMcKb"
               onClick={[Function]}
             >
               Open
@@ -1421,12 +1421,12 @@ Array [
             </button>
           </li>
           <li
-            className="sc-cmTdod cfGFXc"
+            className="sc-jwKygS kXhQfa"
           >
             <a
               aria-expanded={false}
               aria-haspopup="true"
-              className="sc-iELTvK fEPmqz"
+              className="sc-cmTdod cgUCrV"
               data-tracking="header-navigation"
               hovered={false}
               href="/iframe.html?id=pattern-library-page-examples-2-funding-industry--1-landing-page"
@@ -1439,7 +1439,7 @@ Array [
               Funding and Industry
             </a>
             <button
-              className="sc-iyvyFf iEdDcy"
+              className="sc-hwwEjo gJMcKb"
               onClick={[Function]}
             >
               Open
@@ -1447,12 +1447,12 @@ Array [
             </button>
           </li>
           <li
-            className="sc-cmTdod cfGFXc"
+            className="sc-jwKygS kXhQfa"
           >
             <a
               aria-expanded={false}
               aria-haspopup="true"
-              className="sc-iELTvK fEPmqz"
+              className="sc-cmTdod cgUCrV"
               data-tracking="header-navigation"
               hovered={false}
               href="/iframe.html?id=pattern-library-page-examples-1-watch-discover--1-landing-page"
@@ -1465,7 +1465,7 @@ Array [
               Learning and Training
             </a>
             <button
-              className="sc-iyvyFf iEdDcy"
+              className="sc-hwwEjo gJMcKb"
               onClick={[Function]}
             >
               Open
@@ -1475,10 +1475,10 @@ Array [
         </ul>
       </nav>
       <div
-        className="sc-frDJqD gMGSfa"
+        className="sc-kvZOFW dJeEas"
       >
         <a
-          className="sc-kvZOFW ixboaA"
+          className="sc-hqyNC ejHKFP"
           href="/"
           isSticky={true}
           isTransparent={false}
@@ -1487,7 +1487,7 @@ Array [
           Shop
         </a>
         <a
-          className="sc-kvZOFW ixboaA"
+          className="sc-hqyNC ejHKFP"
           href="/"
           isSticky={true}
           isTransparent={false}
@@ -1513,7 +1513,7 @@ exports[`Storyshots 2 All Components/Lead paragraph Normal 1`] = `
   }
 >
   <p
-    className="sc-iQKALj beAyyZ lead_paragraph"
+    className="sc-bwCtUz lbOyBo lead_paragraph"
     dangerouslySetInnerHTML={
       Object {
         "__html": "We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough, they won't want it anymore! We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough, they won't want it anymore!",
@@ -1532,10 +1532,10 @@ exports[`Storyshots 2 All Components/Newsletter Sign Up Example 1`] = `
   }
 >
   <div
-    className="sc-bwCtUz dCVybb"
+    className="sc-hrWEMg qtVci"
   >
     <p
-      className="sc-dVhcbM ilwmLd h3"
+      className="sc-eqIVtm jipbPB h3"
     >
       Get the latest from the BFI
     </p>
@@ -1544,13 +1544,13 @@ exports[`Storyshots 2 All Components/Newsletter Sign Up Example 1`] = `
     </p>
     <form
       action="https://www.createsend.com/t/subscribeerror?description="
-      className="sc-hrWEMg fyHgrM js-cm-form"
+      className="sc-eTuwsz fUJzzk js-cm-form"
       data-id="191722FC90141D02184CB1B62AB3DC26D57AD7AD0DF253BE15DD122C605B740244DFF1ADDEE1A8DA861127EDFD99BF281A7016BD9F175EAF91CB858CC76D303F"
       id="subForm"
       method="post"
     >
       <label
-        className="sc-eTuwsz cskWjE"
+        className="sc-gwVKww jyjofO"
       >
         Email
         <input
@@ -1567,7 +1567,7 @@ exports[`Storyshots 2 All Components/Newsletter Sign Up Example 1`] = `
         />
       </label>
       <button
-        className="sc-gwVKww hOHjSw"
+        className="sc-hXRMBi fJqnsJ"
         type="submit"
       >
         Sign up
@@ -1579,7 +1579,7 @@ exports[`Storyshots 2 All Components/Newsletter Sign Up Example 1`] = `
 
 exports[`Storyshots 2 All Components/Oembed Vimeo 1`] = `
 <div
-  className="sc-hXRMBi hedvJd"
+  className="sc-epnACN HbNuO"
 >
   <iframe
     allow="autoplay; fullscreen"
@@ -1595,7 +1595,7 @@ exports[`Storyshots 2 All Components/Oembed Vimeo 1`] = `
 
 exports[`Storyshots 2 All Components/Oembed Youtube 1`] = `
 <div
-  className="sc-hXRMBi hedvJd"
+  className="sc-epnACN HbNuO"
 >
   <iframe
     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -1619,111 +1619,111 @@ exports[`Storyshots 2 All Components/StepByStep Primary 1`] = `
   }
 >
   <section
-    className="sc-iQNlJl ebsrAz"
+    className="sc-bsbRJL goXPtQ"
   >
     <h3
-      className="sc-bsbRJL ctucnu"
+      className="sc-hZSUBg fDeVcq"
     >
       Applying for film funding
     </h3>
     <ol
-      className="sc-hZSUBg ijijvf"
+      className="sc-cMhqgX fousEH"
     >
       <li
-        className="sc-cMhqgX hmRSHM"
+        className="sc-iuJeZd kUorTA"
       >
         <button
           aria-expanded="false"
-          className="sc-esOvli coqjDn"
+          className="sc-cmthru euFFoJ"
           onClick={[Function]}
         >
           <strong
-            className="sc-iuJeZd kfmgMd"
+            className="sc-esOvli ifrfny"
           >
             Is this fund right for you?
           </strong>
           <span
-            className="sc-cmthru bwkAHE"
+            className="sc-hMFtBS eGsvAN"
           >
             Show
           </span>
         </button>
       </li>
       <li
-        className="sc-cMhqgX hmRSHM"
+        className="sc-iuJeZd kUorTA"
       >
         <button
           aria-expanded="false"
-          className="sc-esOvli coqjDn"
+          className="sc-cmthru euFFoJ"
           onClick={[Function]}
         >
           <strong
-            className="sc-iuJeZd kfmgMd"
+            className="sc-esOvli ifrfny"
           >
             Prepare your supporting materials
           </strong>
           <span
-            className="sc-cmthru bwkAHE"
+            className="sc-hMFtBS eGsvAN"
           >
             Show
           </span>
         </button>
       </li>
       <li
-        className="sc-cMhqgX hmRSHM"
+        className="sc-iuJeZd kUorTA"
       >
         <button
           aria-expanded="false"
-          className="sc-esOvli coqjDn"
+          className="sc-cmthru euFFoJ"
           onClick={[Function]}
         >
           <strong
-            className="sc-iuJeZd kfmgMd"
+            className="sc-esOvli ifrfny"
           >
             Apply
           </strong>
           <span
-            className="sc-cmthru bwkAHE"
+            className="sc-hMFtBS eGsvAN"
           >
             Show
           </span>
         </button>
       </li>
       <li
-        className="sc-cMhqgX hmRSHM"
+        className="sc-iuJeZd kUorTA"
       >
         <button
           aria-expanded="false"
-          className="sc-esOvli coqjDn"
+          className="sc-cmthru euFFoJ"
           onClick={[Function]}
         >
           <strong
-            className="sc-iuJeZd kfmgMd"
+            className="sc-esOvli ifrfny"
           >
             Wait to hear from us
           </strong>
           <span
-            className="sc-cmthru bwkAHE"
+            className="sc-hMFtBS eGsvAN"
           >
             Show
           </span>
         </button>
       </li>
       <li
-        className="sc-cMhqgX hmRSHM"
+        className="sc-iuJeZd kUorTA"
       >
         <button
           aria-expanded="false"
-          className="sc-esOvli coqjDn"
+          className="sc-cmthru euFFoJ"
           onClick={[Function]}
         >
           <strong
-            className="sc-iuJeZd kfmgMd"
+            className="sc-esOvli ifrfny"
           >
             Your decision
           </strong>
           <span
-            className="sc-cmthru bwkAHE"
+            className="sc-hMFtBS eGsvAN"
           >
             Show
           </span>
@@ -1744,16 +1744,16 @@ exports[`Storyshots 2 All Components/Tabs Primary 1`] = `
   }
 >
   <ul
-    className="sc-cLQEGU dQImTq"
+    className="sc-gqPbQI dzrOnA"
     role="tablist"
   >
     <li
-      className="sc-gqPbQI jCWGHu"
+      className="sc-hORach gUEVRu"
       role="presentation"
     >
       <button
         aria-selected={true}
-        className="sc-hORach gKXYVY"
+        className="sc-bMVAic fnTKDs"
         id="tab1"
         onClick={[Function]}
         role="tab"
@@ -1762,12 +1762,12 @@ exports[`Storyshots 2 All Components/Tabs Primary 1`] = `
       </button>
     </li>
     <li
-      className="sc-gqPbQI juFJF"
+      className="sc-hORach lmSglb"
       role="presentation"
     >
       <button
         aria-selected={false}
-        className="sc-hORach hDrVRP"
+        className="sc-bMVAic emQbcd"
         id="tab2"
         onClick={[Function]}
         role="tab"
@@ -1776,12 +1776,12 @@ exports[`Storyshots 2 All Components/Tabs Primary 1`] = `
       </button>
     </li>
     <li
-      className="sc-gqPbQI juFJF"
+      className="sc-hORach lmSglb"
       role="presentation"
     >
       <button
         aria-selected={false}
-        className="sc-hORach hDrVRP"
+        className="sc-bMVAic emQbcd"
         id="tab3"
         onClick={[Function]}
         role="tab"
@@ -1819,7 +1819,7 @@ exports[`Storyshots 2 All Components/Tabs Primary 1`] = `
 
 exports[`Storyshots 2 All Components/Tag Primary 1`] = `
 <div
-  className="sc-bMVAic boZFOF tag"
+  className="sc-bAeIUo cLMKbd tag"
 >
   Example tag
 </div>
@@ -1834,7 +1834,7 @@ exports[`Storyshots 2 All Components/Text Normal 1`] = `
   }
 >
   <div
-    className="sc-jDwBTQ hHltUl text_block"
+    className="sc-gPEVay kAGHuZ text_block"
   >
     <p>
       We gotta burn the rain forest, 

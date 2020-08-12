@@ -7,6 +7,7 @@ import LazyImage from "react-lazy-progressive-image"
 import { Headline } from "../Headline"
 import { LeadParagraph } from "../LeadParagraph"
 import { Wrapper } from "../PageContainer"
+import AnchorLink from "react-anchor-link-smooth-scroll"
 
 const StyledWrapper = styled(Wrapper)`
     max-width: calc(${theme.xl} + 125px) !important;
@@ -22,7 +23,7 @@ const Outer = styled.div`
 
     h1 {
         margin-left: 0;
-        margin-block-start: 1em;
+        margin-block-start: 0.25em;
         margin-block-end: 0.25em;
     }
 
@@ -172,14 +173,81 @@ const ButtonContainer = styled.div`
     }
 `
 
-const DateNumber = styled(Moment)`
+const DateWrapper = styled.div`
+    margin-bottom: 1em;
     line-height: 1.15;
     font-size: 1.5rem;
+
+    time {
+        display: block
+    }
 
     @media screen and (min-width: ${theme.m}){
         font-size: 1.4rem;
     @media screen and (min-width: ${theme.l}){
         font-size: 1.75rem;
+    }
+`
+
+const StyledAnchorLink = styled(AnchorLink)`
+    display: inline-block;
+    position: relative;
+    font-weight: ${theme.fontWeight_bold};
+    font-size: ${theme.fontSize_m};
+    line-height: ${theme.lineHeight_m};
+    color: ${theme.black};
+    background: ${theme.white};
+    text-decoration: none;
+    padding: 10px ${theme.standardSpace}px;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+
+    svg {
+        fill: ${theme.black};
+    }
+
+    :after {
+        content: "";
+        width: 100%;
+        height: 5px;
+        transition: height .3s;
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        background: ${theme.primary};
+        z-index: -1;
+    }
+
+    &:hover, &:focus{
+        color: ${theme.white};
+
+        svg {
+            fill: ${theme.white};
+        }
+        
+        :after {
+            height: calc(100% + 5px);
+        }
+    }
+    &:focus{
+        box-shadow: 0px 0px 0px 4px ${theme.focus};
+        outline: none;
+        height: auto;
+
+        :after {
+            bottom: 0;
+            height: 100%;
+        }
+    }
+    &:active{
+        background: ${theme.primary} !important;
+        box-shadow: none;
+        transform: translate(0, 5px);   
+        :after {
+            height: 1px;
+            bottom: -1px;
+        }
     }
 `
 
@@ -196,14 +264,19 @@ export const HeroShow = ({
         <Outer className={image1920x1080 ? "with_image" : "without_image"}>
             <Meta className="page_meta" titleLength={title.length}>
                 {dateTimeStart && 
-                    <>
-                        <DateNumber format="MMM">{dateTimeStart}</DateNumber>
-                        <DateNumber format="DD">{dateTimeStart}</DateNumber>
-                    </>
+                    <DateWrapper>
+                        <Moment format="MMM">{dateTimeStart}</Moment>
+                        <Moment format="DD">{dateTimeStart}</Moment>
+                    </DateWrapper>
                 }
                 {title && <Headline level={1} text={title}/>}
                 {standfirst && <LeadParagraph text={standfirst}/>}
-                {children && <ButtonContainer>{children}</ButtonContainer>}
+                {dateTimeStart ?
+                    children && <ButtonContainer>{children}</ButtonContainer>
+                    :
+                    // <Button href="#performance-list" colorScheme={1}>View all showings</Button>
+                    <StyledAnchorLink offset="175" href="#performance-list">View all showings</StyledAnchorLink>
+                }
             </Meta>
             {image1920x1080 &&
                 <ImageContainer>

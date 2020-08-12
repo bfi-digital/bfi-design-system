@@ -42,7 +42,15 @@ const colorSchemes = [
         text: theme.black,
         background: theme.white,
         focus: theme.focus
-    }
+    },
+    // BFIPlayer subscription BLACK
+    {
+        shadow: theme.playerSubs,
+        activeBackground: theme.playerSubs,
+        text: theme.white,
+        background: theme.black,
+        focus: theme.focus
+    },
 ]
 
 const PrimaryButton = styled(Link)`
@@ -110,6 +118,25 @@ const PrimaryButton = styled(Link)`
     }
 `
 
+const DisabledButton = styled.div`
+    background: ${theme.darkGrey};
+    color: ${theme.white};
+    cursor: not-allowed;
+    display: inline-block;
+    position: relative;
+    font-weight: ${theme.fontWeight_bold};
+    font-size: ${theme.fontSize_m};
+    line-height: ${theme.lineHeight_m};
+    text-decoration: none;
+    padding: 10px ${theme.standardSpace}px;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    @media screen and (min-width: ${theme.m}){
+        width: auto;
+    }
+`
+
 const SecondaryButton = styled(Link)`
     border: 2px solid ${theme.black};
     color: ${theme.black};
@@ -166,11 +193,13 @@ export const Button = ({
     title,
     colorScheme = 0,
     playerPillar,
+    disabled,
     ...props
 }) => {
+    if(disabled) return <DisabledButton title={title ? title : false} colorScheme={colorScheme} disabled={disabled} {...props}>{children}</DisabledButton>
     if(level === 3) return <TertiaryButton title={title ? title : false} colorScheme={colorScheme} {...props}>{children}</TertiaryButton>
     if(level === 2) return <SecondaryButton title={title ? title : false} colorScheme={colorScheme} {...props}>{children}</SecondaryButton>
-    return <PrimaryButton title={title ? title : false} colorScheme={playerPillar === "rentals" ? 2 : playerPillar === "subscription" ? 3 : playerPillar === "free" ? 4 : colorScheme} {...props}>{children}</PrimaryButton>
+    return <PrimaryButton title={title ? title : false} colorScheme={playerPillar === "rentals" ? 2 : playerPillar === "subscription" ? 3 : playerPillar === "free" ? 4 : playerPillar === "blackSubscription" ? 5 : colorScheme} {...props}>{children}</PrimaryButton>
 }
 
 Button.propTypes = {
@@ -181,9 +210,11 @@ Button.propTypes = {
     colorScheme: PropTypes.number,
     title: PropTypes.string,
     // If button links to player, add the pillar for this to theme it
-    playerPillar: PropTypes.string
+    playerPillar: PropTypes.string,
+    disabled: PropTypes.bool
 }
 
 Button.defaultProps = {
-    colorScheme: 0
+    colorScheme: 0,
+    disabled: false
 }

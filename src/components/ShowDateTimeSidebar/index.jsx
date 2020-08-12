@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import theme from "../_theme"
 import Moment from "react-moment"
-import AddToCalendar from "react-add-to-calendar"
+import { ShowAddToCalendar } from "../ShowAddToCalendar"
 
 const Outer = styled.div`
     font-size: 1.2rem;
@@ -10,16 +10,12 @@ const Outer = styled.div`
     margin-top: 0px;
     line-height: 150%;
     margin-bottom: ${theme.standardSpace*2}px;
+
+    & p:first-child {
+        margin-top: 0;
+    }
 `
-const AddToCalOuter = styled.button`
-    background: transparent;
-    color: ${theme.primary};
-    font-weight: bold;
-    border: none;
-    font-size: 1.2rem;
-    padding: 0;
-    cursor: pointer;
-`
+
 const DateP = styled.span`
     display: block;
     margin-bottom: 5px;
@@ -44,32 +40,20 @@ export const ShowDateTimeSidebar = ({
         first.getDate() === second.getDate()
     const datesAreOnSameDay = datesAreOnSameDayCheck(new Date(dateTimeStart), new Date(dateTimeEnd))
 
-    let calendarEvent = {
-        title: title,
-        description: description,
-        location: location,
-        startTime: dateTimeStart,
-        endTime: dateTimeEnd
-    }
-    let calendarItems = [
-        { apple: "Apple Calendar" },
-        { google: "Google" },
-        { outlookcom: "Outlook" }
-    ]
-    let calendarIcon = { "calendar-plus-o": "left" }
-
     return(
         <Outer>
+            {otherInfo && <p>{otherInfo}</p>}
+
             {datesAreOnSameDay && <strong>Date &amp; Time</strong> }
             <DateP>
                 {!datesAreOnSameDay && <strong>From: </strong>}
-                {!datesAreOnSameDay && <span><Moment local format="HH:mm">{dateTimeStart} BST</Moment></span>}
+                {!datesAreOnSameDay && <span><Moment local format="HH:mm">{dateTimeStart}</Moment> BST</span>}
                 <Moment format="dddd Do MMMM YYYY" date={dateTimeStart} />
             </DateP>
             {!datesAreOnSameDay && 
                 <DateP>
                     <strong>To: </strong>
-                    <span><Moment local format="HH:mm">{dateTimeEnd} BST</Moment></span>
+                    <span><Moment local format="HH:mm">{dateTimeEnd}</Moment> BST</span>
                     <Moment format="dddd Do MMMM YYYY" date={dateTimeEnd} />
                 </DateP>
             }
@@ -81,12 +65,8 @@ export const ShowDateTimeSidebar = ({
                 </TimeP>
             }
 
-            {otherInfo && <p>{otherInfo}</p>}
-            {/* NEED TO UPDATE THIS TO MAKE IT ACCESSIBLE, MAYBE LOOK AT http://leibowitz.me/react-add-to-calendar-hoc/ */}
             {datesAreOnSameDay && 
-                <AddToCalOuter>
-                    <AddToCalendar event={calendarEvent} listItems={calendarItems} buttonTemplate={calendarIcon} displayItemIcons={true} />
-                </AddToCalOuter>
+                <ShowAddToCalendar title={title} description={description} location={location} dateTimeStart={dateTimeStart} dateTimeEnd={dateTimeEnd} />
             }
         </Outer>
     )
