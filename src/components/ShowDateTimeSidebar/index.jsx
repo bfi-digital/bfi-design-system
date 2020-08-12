@@ -32,7 +32,7 @@ export const ShowDateTimeSidebar = ({
     location,
     dateTimeStart,
     dateTimeEnd,
-    otherInfo
+    performanceInfo
 }) => {
     const datesAreOnSameDayCheck = (first, second) =>
         first.getFullYear() === second.getFullYear() &&
@@ -42,7 +42,7 @@ export const ShowDateTimeSidebar = ({
 
     return(
         <Outer>
-            {otherInfo && <p>{otherInfo}</p>}
+            {performanceInfo && <p>{performanceInfo}</p>}
 
             {datesAreOnSameDay && <strong>Date &amp; Time</strong> }
             <DateP>

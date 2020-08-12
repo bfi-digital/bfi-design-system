@@ -66,7 +66,7 @@ export const ShowPerformanceList = ({
                 {performances.map((performance) =>
                     <Performance key={performance.id}>
                         <PerformanceDetails>
-                            <p>{performance.otherInfo}</p>
+                            <p>{performance.performanceInfo}</p>
 
                             {datesAreOnSameDayCheck(new Date(performance.dateTimeStart), new Date(performance.dateTimeEnd)) ? 
                                 <>
@@ -82,7 +82,7 @@ export const ShowPerformanceList = ({
                                     <ShowAddToCalendar 
                                         title={showTitle} 
                                         description={showDescription} 
-                                        location={performance.bfiBrand == "southbank" ? "BFI Southbank, Belvedere Rd, Bishop's, London SE1 8XT" : performance.ctaURL} 
+                                        location={performance.platform == "southbank" ? "BFI Southbank, Belvedere Rd, Bishop's, London SE1 8XT" : performance.ctaURL} 
                                         dateTimeStart={performance.dateTimeStart} 
                                         dateTimeEnd={performance.dateTimeEnd} 
                                     />
@@ -100,16 +100,16 @@ export const ShowPerformanceList = ({
                             }
                         </PerformanceDetails>
                         <PerformanceCTA>
-                            {performance.soldOut ? 
-                                <Button level={1} disabled>Sold out</Button>
-                                :
-                                performance.bfiBrand == "southbank" ? 
+                            {performance.availability === "Available" ? 
+                                performance.platform == "southbank" ? 
                                     <Button level={1} url={performance.ctaURL}  external={true}>Watch it at BFI Southbank</Button>
                                     : 
-                                    performance.bfiBrand == "player" ? 
+                                    performance.platform == "player" ? 
                                         <PlayButton playerPillar="blackSubscription" url={performance.ctaURL} external={true} level={1} colorScheme={1}>Pre-book to watch on BFI Player</PlayButton>
                                         : 
                                         <Button level={1} url={performance.ctaURL}  external={true}>other button text needed</Button>
+                                :
+                                <Button level={1} disabled>{performance.availability}</Button>
                             }
                         </PerformanceCTA>
                     </Performance>
