@@ -4,7 +4,7 @@ import { withA11y } from "@storybook/addon-a11y"
 // import demoEvents from "./data"
 
 export default {
-    title: "2 All Components/EventGrid",
+    title: "4 Components/All/EventGrid",
     decorators: [withA11y],
 }
 

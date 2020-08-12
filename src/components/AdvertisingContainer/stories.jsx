@@ -3,7 +3,7 @@ import { withA11y } from "@storybook/addon-a11y"
 import { AdvertisingContainer } from "./index"
 
 export default {
-    title: "2 All Components/Advertising Container",
+    title: "4 Components/All/Advertising Container",
     decorators: [withA11y]
 }
 

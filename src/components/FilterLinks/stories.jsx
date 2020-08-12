@@ -3,7 +3,7 @@ import { withA11y } from "@storybook/addon-a11y"
 import { FilterLinks } from "./index"
 
 export default {
-    title: "2 All Components/Filter-esque Links",
+    title: "4 Components/All/Filter-esque Links",
     decorators: [withA11y]
 }
 

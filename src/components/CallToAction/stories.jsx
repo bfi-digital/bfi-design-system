@@ -3,7 +3,7 @@ import { withA11y } from "@storybook/addon-a11y"
 import { CallToAction } from "./index"
 
 export default {
-    title: "2 All Components/Call to Action",
+    title: "4 Components/All/Call to Action",
     decorators: [withA11y]
 }
 

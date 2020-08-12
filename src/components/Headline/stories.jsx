@@ -3,7 +3,7 @@ import { withA11y } from "@storybook/addon-a11y"
 import { Headline } from "./index"
 
 export default {
-    title: "2 All Components/Headline",
+    title: "4 Components/All/Headline",
     decorators: [withA11y],
 }
 

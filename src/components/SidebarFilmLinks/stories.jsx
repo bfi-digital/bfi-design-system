@@ -4,7 +4,7 @@ import { SidebarFilmLinks } from "./index"
 import demoFilms from "./data"
 
 export default {
-    title: "2 All Components/SidebarFilmLinks",
+    title: "4 Components/All/SidebarFilmLinks",
     decorators: [withA11y]
 }
 

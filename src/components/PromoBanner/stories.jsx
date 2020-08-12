@@ -3,7 +3,7 @@ import { withA11y } from "@storybook/addon-a11y"
 import { PromoBanner } from "./index"
 
 export default {
-    title: "2 All Components/PromoBanner",
+    title: "4 Components/All/PromoBanner",
     decorators: [withA11y]
 }
 

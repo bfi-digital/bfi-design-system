@@ -3,7 +3,7 @@ import { withA11y } from "@storybook/addon-a11y"
 import { ImageGallery } from "./index"
 
 export default {
-    title: "2 All Components/ImageGallery",
+    title: "4 Components/All/ImageGallery",
     decorators: [withA11y]
 }
 

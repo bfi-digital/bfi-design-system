@@ -3,7 +3,7 @@ import { withA11y } from "@storybook/addon-a11y"
 import { HeroArticle } from "./index"
  
 export default {
-    title: "2 All Components/HeroArticle",
+    title: "4 Components/All/HeroArticle",
     decorators: [withA11y],
 }
 

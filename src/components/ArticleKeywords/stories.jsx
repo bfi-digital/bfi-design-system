@@ -3,7 +3,7 @@ import { withA11y } from "@storybook/addon-a11y"
 import { ArticleKeywords } from "./index"
 
 export default {
-    title: "2 All Components/Article Keywords",
+    title: "4 Components/All/Article Keywords",
     decorators: [withA11y]
 }
 

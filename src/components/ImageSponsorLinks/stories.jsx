@@ -3,7 +3,7 @@ import { withA11y } from "@storybook/addon-a11y"
 import { ImageSponsorLinks } from "./index"
 
 export default {
-    title: "2 All Components/Image Sponsor Links",
+    title: "4 Components/All/Image Sponsor Links",
     decorators: [withA11y]
 }
 

@@ -4,7 +4,7 @@ import { PageLinks } from "./index"
 import three, { two } from "./data"
 
 export default {
-    title: "2 All Components/PageLinks",
+    title: "4 Components/All/PageLinks",
     decorators: [withA11y],
 }
 

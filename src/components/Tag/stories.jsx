@@ -3,7 +3,7 @@ import { withA11y } from "@storybook/addon-a11y"
 import { Tag } from "./index"
 
 export default {
-    title: "2 All Components/Tag",
+    title: "4 Components/All/Tag",
     decorators: [withA11y]
 }
 

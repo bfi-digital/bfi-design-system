@@ -4,7 +4,7 @@ import { ArticleGrid } from "./index"
 import demoArticles from "./data"
 
 export default {
-    title: "2 All Components/ArticleGrid",
+    title: "4 Components/All/ArticleGrid",
     decorators: [withA11y],
 }
 

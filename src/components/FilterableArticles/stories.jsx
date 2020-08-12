@@ -2,7 +2,7 @@ import * as React from "react"
 import { withA11y } from "@storybook/addon-a11y"
 
 export default {
-    title: "2 All Components/Filterable Articles",
+    title: "4 Components/All/Filterable Articles",
     decorators: [withA11y]
 }
 

@@ -4,7 +4,7 @@ import { FilmGrid } from "./index"
 import demoFilms from "./data"
 
 export default {
-    title: "2 All Components/FilmGrid",
+    title: "4 Components/All/FilmGrid",
     decorators: [withA11y],
 }
 

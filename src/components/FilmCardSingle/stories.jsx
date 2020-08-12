@@ -3,7 +3,7 @@ import { withA11y } from "@storybook/addon-a11y"
 import { FilmCardSingle } from "./index"
  
 export default {
-    title: "2 All Components/FilmCardSingle",
+    title: "4 Components/All/FilmCardSingle",
     decorators: [withA11y],
 }
 

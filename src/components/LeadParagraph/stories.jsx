@@ -3,7 +3,7 @@ import { withA11y } from "@storybook/addon-a11y"
 import { LeadParagraph } from "./index"
 
 export default {
-    title: "2 All Components/Lead paragraph",
+    title: "4 Components/All/Lead paragraph",
     decorators: [withA11y],
 }
 

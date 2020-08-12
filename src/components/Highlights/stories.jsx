@@ -4,7 +4,7 @@ import { Highlights } from "./index"
 import demoShowings from "./data"
 
 export default {
-    title: "2 All Components/Highlights",
+    title: "4 Components/All/Highlights",
     decorators: [withA11y],
 }
 

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots 2 All Components/Advertising Container Failed To Load Example 1`] = `
+exports[`Storyshots 4 Components/All/Advertising Container Failed To Load Example 1`] = `
 <div
   style={
     Object {
@@ -24,7 +24,7 @@ exports[`Storyshots 2 All Components/Advertising Container Failed To Load Exampl
 </div>
 `;
 
-exports[`Storyshots 2 All Components/Advertising Container Mpu Example 1`] = `
+exports[`Storyshots 4 Components/All/Advertising Container Mpu Example 1`] = `
 <div
   style={
     Object {
@@ -55,7 +55,7 @@ exports[`Storyshots 2 All Components/Advertising Container Mpu Example 1`] = `
 </div>
 `;
 
-exports[`Storyshots 2 All Components/Advertising Container Native Example 1`] = `
+exports[`Storyshots 4 Components/All/Advertising Container Native Example 1`] = `
 <div
   style={
     Object {
@@ -89,7 +89,7 @@ exports[`Storyshots 2 All Components/Advertising Container Native Example 1`] = 
 </div>
 `;
 
-exports[`Storyshots 2 All Components/Article Keywords Normal 1`] = `
+exports[`Storyshots 4 Components/All/Article Keywords Normal 1`] = `
 <div
   className="sc-htpNat dVmOzA"
 >
@@ -117,7 +117,7 @@ exports[`Storyshots 2 All Components/Article Keywords Normal 1`] = `
 </div>
 `;
 
-exports[`Storyshots 2 All Components/Blockquote With Citation 1`] = `
+exports[`Storyshots 4 Components/All/Blockquote With Citation 1`] = `
 <blockquote
   className="sc-ifAKCX eyPYQu"
 >
@@ -134,7 +134,7 @@ exports[`Storyshots 2 All Components/Blockquote With Citation 1`] = `
 </blockquote>
 `;
 
-exports[`Storyshots 2 All Components/Blockquote Without Citation 1`] = `
+exports[`Storyshots 4 Components/All/Blockquote Without Citation 1`] = `
 <blockquote
   className="sc-ifAKCX eyPYQu"
 >
@@ -146,7 +146,7 @@ exports[`Storyshots 2 All Components/Blockquote Without Citation 1`] = `
 </blockquote>
 `;
 
-exports[`Storyshots 2 All Components/Breadcrumbs Normal 1`] = `
+exports[`Storyshots 4 Components/All/Breadcrumbs Normal 1`] = `
 Array [
   <ol
     className="sc-gzVnrw gCTEXN"
@@ -198,7 +198,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots 2 All Components/Breadcrumbs Wrapping 1`] = `
+exports[`Storyshots 4 Components/All/Breadcrumbs Wrapping 1`] = `
 Array [
   <ol
     className="sc-gzVnrw gCTEXN"
@@ -261,7 +261,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots 2 All Components/Button Primary 1`] = `
+exports[`Storyshots 4 Components/All/Button Primary 1`] = `
 <div
   style={
     Object {
@@ -281,7 +281,7 @@ exports[`Storyshots 2 All Components/Button Primary 1`] = `
 </div>
 `;
 
-exports[`Storyshots 2 All Components/Button Secondary 1`] = `
+exports[`Storyshots 4 Components/All/Button Secondary 1`] = `
 <div
   style={
     Object {
@@ -301,7 +301,7 @@ exports[`Storyshots 2 All Components/Button Secondary 1`] = `
 </div>
 `;
 
-exports[`Storyshots 2 All Components/Button Tertiary 1`] = `
+exports[`Storyshots 4 Components/All/Button Tertiary 1`] = `
 <div
   style={
     Object {
@@ -321,7 +321,7 @@ exports[`Storyshots 2 All Components/Button Tertiary 1`] = `
 </div>
 `;
 
-exports[`Storyshots 2 All Components/Call to Action External Link 1`] = `
+exports[`Storyshots 4 Components/All/Call to Action External Link 1`] = `
 <div
   style={
     Object {
@@ -346,7 +346,7 @@ exports[`Storyshots 2 All Components/Call to Action External Link 1`] = `
 </div>
 `;
 
-exports[`Storyshots 2 All Components/Call to Action Internal Link 1`] = `
+exports[`Storyshots 4 Components/All/Call to Action Internal Link 1`] = `
 <div
   style={
     Object {
@@ -371,7 +371,7 @@ exports[`Storyshots 2 All Components/Call to Action Internal Link 1`] = `
 </div>
 `;
 
-exports[`Storyshots 2 All Components/Call to Action Two Links 1`] = `
+exports[`Storyshots 4 Components/All/Call to Action Two Links 1`] = `
 <div
   style={
     Object {
@@ -410,13 +410,13 @@ exports[`Storyshots 2 All Components/Call to Action Two Links 1`] = `
 </div>
 `;
 
-exports[`Storyshots 2 All Components/Divider Normal 1`] = `
+exports[`Storyshots 4 Components/All/Divider Normal 1`] = `
 <hr
   className="sc-jzJRlG eYNkah"
 />
 `;
 
-exports[`Storyshots 2 All Components/Downloadable File Multiple Files 1`] = `
+exports[`Storyshots 4 Components/All/Downloadable File Multiple Files 1`] = `
 <div
   style={
     Object {
@@ -551,7 +551,7 @@ exports[`Storyshots 2 All Components/Downloadable File Multiple Files 1`] = `
 </div>
 `;
 
-exports[`Storyshots 2 All Components/Downloadable File Single File 1`] = `
+exports[`Storyshots 4 Components/All/Downloadable File Single File 1`] = `
 <div
   style={
     Object {
@@ -626,7 +626,7 @@ exports[`Storyshots 2 All Components/Downloadable File Single File 1`] = `
 </div>
 `;
 
-exports[`Storyshots 2 All Components/ErrorPage Error 404 1`] = `
+exports[`Storyshots 4 Components/All/ErrorPage Error 404 1`] = `
 Array [
   <div
     className="sc-ckVGcZ bQICAJ"
@@ -679,7 +679,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots 2 All Components/ErrorPage Error 500 1`] = `
+exports[`Storyshots 4 Components/All/ErrorPage Error 500 1`] = `
 Array [
   <div
     className="sc-ckVGcZ bQICAJ"
@@ -732,7 +732,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots 2 All Components/Feedback Form Example 1`] = `
+exports[`Storyshots 4 Components/All/Feedback Form Example 1`] = `
 <div
   style={
     Object {
@@ -757,7 +757,7 @@ exports[`Storyshots 2 All Components/Feedback Form Example 1`] = `
 </div>
 `;
 
-exports[`Storyshots 2 All Components/Feedback Form Helpscout Example 1`] = `
+exports[`Storyshots 4 Components/All/Feedback Form Helpscout Example 1`] = `
 <div
   style={
     Object {
@@ -782,7 +782,7 @@ exports[`Storyshots 2 All Components/Feedback Form Helpscout Example 1`] = `
 </div>
 `;
 
-exports[`Storyshots 2 All Components/FilmShowing A Showing 1`] = `
+exports[`Storyshots 4 Components/All/FilmShowing A Showing 1`] = `
 <div
   style={
     Object {
@@ -849,7 +849,7 @@ exports[`Storyshots 2 All Components/FilmShowing A Showing 1`] = `
 </div>
 `;
 
-exports[`Storyshots 2 All Components/FilmShowing Sold Out 1`] = `
+exports[`Storyshots 4 Components/All/FilmShowing Sold Out 1`] = `
 <div
   style={
     Object {
@@ -896,7 +896,7 @@ exports[`Storyshots 2 All Components/FilmShowing Sold Out 1`] = `
 </div>
 `;
 
-exports[`Storyshots 2 All Components/FilmShowingGrid Example 1`] = `
+exports[`Storyshots 4 Components/All/FilmShowingGrid Example 1`] = `
 <section
   className="sc-ksYbfQ idWHsL"
 >
@@ -1065,7 +1065,7 @@ exports[`Storyshots 2 All Components/FilmShowingGrid Example 1`] = `
 </section>
 `;
 
-exports[`Storyshots 2 All Components/FilmShowingGrid Example With Title 1`] = `
+exports[`Storyshots 4 Components/All/FilmShowingGrid Example With Title 1`] = `
 Array [
   <p
     className="sc-eqIVtm jipbPB h3"
@@ -1241,7 +1241,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots 2 All Components/Filter-esque Links Normal 1`] = `
+exports[`Storyshots 4 Components/All/Filter-esque Links Normal 1`] = `
 <nav
   className="sc-hmzhuo jDAeNT filter_links"
 >
@@ -1280,13 +1280,13 @@ exports[`Storyshots 2 All Components/Filter-esque Links Normal 1`] = `
 </nav>
 `;
 
-exports[`Storyshots 2 All Components/Filterable Articles Normal 1`] = `
+exports[`Storyshots 4 Components/All/Filterable Articles Normal 1`] = `
 <p>
   Due to this component requiring connection with the front end framework to pull data from the API, it is not possible to display an example of this component within Storybook.
 </p>
 `;
 
-exports[`Storyshots 2 All Components/Headline Hero H 1 1`] = `
+exports[`Storyshots 4 Components/All/Headline Hero H 1 1`] = `
 <h1
   className="sc-jhAzac gGHCmk"
 >
@@ -1294,7 +1294,7 @@ exports[`Storyshots 2 All Components/Headline Hero H 1 1`] = `
 </h1>
 `;
 
-exports[`Storyshots 2 All Components/Headline Level 1 1`] = `
+exports[`Storyshots 4 Components/All/Headline Level 1 1`] = `
 <h1
   className="sc-jhAzac sc-fBuWsC bOQjiW"
 >
@@ -1302,7 +1302,7 @@ exports[`Storyshots 2 All Components/Headline Level 1 1`] = `
 </h1>
 `;
 
-exports[`Storyshots 2 All Components/Headline Level 2 1`] = `
+exports[`Storyshots 4 Components/All/Headline Level 2 1`] = `
 <h2
   className="sc-fMiknA eFQPVV"
 >
@@ -1310,7 +1310,7 @@ exports[`Storyshots 2 All Components/Headline Level 2 1`] = `
 </h2>
 `;
 
-exports[`Storyshots 2 All Components/Headline Level 3 1`] = `
+exports[`Storyshots 4 Components/All/Headline Level 3 1`] = `
 <h3
   className="sc-dVhcbM iHzQjc"
 >
@@ -1318,7 +1318,7 @@ exports[`Storyshots 2 All Components/Headline Level 3 1`] = `
 </h3>
 `;
 
-exports[`Storyshots 2 All Components/Hero Show Normal 1`] = `
+exports[`Storyshots 4 Components/All/Hero Show Normal 1`] = `
 Array [
   <a
     className="sc-iQKALj bwXNjF"
@@ -1504,7 +1504,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots 2 All Components/Lead paragraph Normal 1`] = `
+exports[`Storyshots 4 Components/All/Lead paragraph Normal 1`] = `
 <div
   style={
     Object {
@@ -1523,7 +1523,7 @@ exports[`Storyshots 2 All Components/Lead paragraph Normal 1`] = `
 </div>
 `;
 
-exports[`Storyshots 2 All Components/Newsletter Sign Up Example 1`] = `
+exports[`Storyshots 4 Components/All/Newsletter Sign Up Example 1`] = `
 <div
   style={
     Object {
@@ -1577,7 +1577,7 @@ exports[`Storyshots 2 All Components/Newsletter Sign Up Example 1`] = `
 </div>
 `;
 
-exports[`Storyshots 2 All Components/Oembed Vimeo 1`] = `
+exports[`Storyshots 4 Components/All/Oembed Vimeo 1`] = `
 <div
   className="sc-epnACN HbNuO"
 >
@@ -1593,7 +1593,7 @@ exports[`Storyshots 2 All Components/Oembed Vimeo 1`] = `
 </div>
 `;
 
-exports[`Storyshots 2 All Components/Oembed Youtube 1`] = `
+exports[`Storyshots 4 Components/All/Oembed Youtube 1`] = `
 <div
   className="sc-epnACN HbNuO"
 >
@@ -1609,7 +1609,7 @@ exports[`Storyshots 2 All Components/Oembed Youtube 1`] = `
 </div>
 `;
 
-exports[`Storyshots 2 All Components/StepByStep Primary 1`] = `
+exports[`Storyshots 4 Components/All/StepByStep Primary 1`] = `
 <div
   style={
     Object {
@@ -1734,7 +1734,7 @@ exports[`Storyshots 2 All Components/StepByStep Primary 1`] = `
 </div>
 `;
 
-exports[`Storyshots 2 All Components/Tabs Primary 1`] = `
+exports[`Storyshots 4 Components/All/Tabs Primary 1`] = `
 <div
   style={
     Object {
@@ -1817,7 +1817,7 @@ exports[`Storyshots 2 All Components/Tabs Primary 1`] = `
 </div>
 `;
 
-exports[`Storyshots 2 All Components/Tag Primary 1`] = `
+exports[`Storyshots 4 Components/All/Tag Primary 1`] = `
 <div
   className="sc-bAeIUo cLMKbd tag"
 >
@@ -1825,7 +1825,7 @@ exports[`Storyshots 2 All Components/Tag Primary 1`] = `
 </div>
 `;
 
-exports[`Storyshots 2 All Components/Text Normal 1`] = `
+exports[`Storyshots 4 Components/All/Text Normal 1`] = `
 <div
   style={
     Object {

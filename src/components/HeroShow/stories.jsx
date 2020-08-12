@@ -5,7 +5,7 @@ import { Header } from "../Header/index"
 import navItems, { quickLinksData } from "../Header/data"
 
 export default {
-    title: "2 All Components/Hero Show",
+    title: "4 Components/All/Hero Show",
     decorators: [withA11y],
 }
 

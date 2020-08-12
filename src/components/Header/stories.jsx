@@ -4,7 +4,7 @@ import { Header } from "./index"
 import navItems, { quickLinksData } from "./data"
 
 export default {
-    title: "2 All Components/Header",
+    title: "4 Components/All/Header",
     decorators: [withA11y],
     parameters: {
         backgrounds: [

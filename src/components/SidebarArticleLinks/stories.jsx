@@ -4,7 +4,7 @@ import { SidebarArticleLinks } from "./index"
 import demoArticles from "./data"
 
 export default {
-    title: "2 All Components/SidebarArticleLinks",
+    title: "4 Components/All/SidebarArticleLinks",
     decorators: [withA11y]
 }
 

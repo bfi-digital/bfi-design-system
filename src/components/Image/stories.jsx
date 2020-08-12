@@ -4,7 +4,7 @@ import { Image } from "./index"
 import { Text } from "../Text"
 
 export default {
-    title: "2 All Components/Image",
+    title: "4 Components/All/Image",
     decorators: [withA11y]
 }
 

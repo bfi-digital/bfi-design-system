@@ -135,7 +135,7 @@ const days = [
 
 
 export default {
-    title: "1 Page Examples/Pages"
+    title: "3 Page Examples/Other page examples"
 }
 
 
