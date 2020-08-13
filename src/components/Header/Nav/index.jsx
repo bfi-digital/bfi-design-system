@@ -133,13 +133,6 @@ const ChildBarContainer = styled.div`
     @media screen and (min-width: ${theme.l}){
         top: 64px;
     }
-    @media screen and (min-width: ${theme.xl}){
-        max-width: ${props => props.isWhite ? (props.isSticky ? "none" : "calc(" + theme.xl + " + 125px)") : "none"};
-        margin: 0 auto;
-        left: ${props => props.isWhite ? (props.isSticky ? "0" : "calc(50% - ((" + theme.xl + " + 125px)/2))") : "0"};
-        
-        ;
-    }
 `
 const ChildBar = styled.div`
     background: ${props => props.isWhite ? (props.isSticky ? theme.lightGrey : theme.white) : theme.lightGrey};
