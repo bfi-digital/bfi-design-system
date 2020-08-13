@@ -8,8 +8,8 @@ import theme from "../_theme"
 const Outer = styled.div`
     position: relative;
     margin-bottom: ${props => props.withoutBreak? "0" : (theme.standardSpace*2) + "px"};
-    width: calc(100% + 10px);
-    margin-left: -5px;
+    margin-left: -20px;
+    width: calc(100% + 40px);
     @media screen and (min-width: ${theme.l}){
         margin-left: 0;
         width: 100%;
@@ -104,6 +104,9 @@ const RightScrollerFade = styled.div`
         width: 65px;
         height: calc(100% - 23px);
     }
+    @media screen and (min-width: 1100px){
+        right: -60px;
+    }
     @media screen and (min-width: ${theme.xl}){
         width: 75px;
     }
@@ -134,6 +137,9 @@ const LeftScrollerFade = styled(RightScrollerFade)`
             margin-left: 0px;
             margin-right: 20px;
         }
+    }
+    @media screen and (min-width: 1100px){
+        left: -60px;
     }
 `
 const LastItem = styled.div`
