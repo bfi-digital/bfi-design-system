@@ -18,7 +18,6 @@ const Outer = styled.div`
     h2 {
         margin-top: 0;
         margin-bottom: ${theme.standardSpace}px;
-        text-align: center;
     }
 
     &:before {
