@@ -90,17 +90,11 @@ const StyledImage = styled.img`
 const Small = styled.small`
     text-align: center;
     color: ${props => props.white ? theme.white : theme.darkGrey};
+    font-size: ${theme.small_fontSize_m};
     margin: 0 auto;
     display: block;
-    font-style: italic;
-    font-size: ${theme.small_fontSize_m};
-    margin-top: 5px;
-
     &:hover {
         cursor: default;
-    }
-    @media screen and (min-width: ${theme.m}){
-        font-size: ${theme.fontSize_s};
     }
 `
 
