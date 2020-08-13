@@ -1,5 +1,5 @@
 import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks'
-import { Wrapper, MainContent, Sidebar, Actions, PlayButton, OriginalArticleDate } from "../../../components/PageContainer"
+import { Wrapper, MainContent, MainContentWrapper, Sidebar, Actions, PlayButton, OriginalArticleDate } from "../../../components/PageContainer"
 
 import navItems, { quickLinksData } from "../../../components/Header/data"
 import footerMenus from "../../../components/Footer/data"
@@ -259,12 +259,13 @@ import { QuickFacts } from "../../../components/QuickFacts"
                 </Sidebar>
             </Wrapper>
             <Wrapper>
-                <MainContent>
+                <MainContentWrapper>
                     <FilterableArticles
                         limit={3}
                         includeHighlight={false}
                         optionalTitle="Other 'BFI Recommends' articles"
                         greyBackground={true}
+                        filters={[]}
                         articles={[
                             {
                                 title: "36 amazing dance scenes",
@@ -306,7 +307,7 @@ import { QuickFacts } from "../../../components/QuickFacts"
                     <AdvertisingContainer>
                         <div style={{width: "1020px", height: "400px", background: "grey"}}></div>
                     </AdvertisingContainer>
-                </MainContent>
+                </MainContentWrapper>
             </Wrapper>
             <Footer
                 menus={footerMenus}
@@ -470,7 +471,7 @@ import { QuickFacts } from "../../../components/QuickFacts"
                 </Sidebar>
             </Wrapper>
             <Wrapper>
-                <MainContent>  
+                <MainContentWrapper>  
                     <FilterableArticles
                         limit={3}
                         greyBackground
@@ -479,6 +480,7 @@ import { QuickFacts } from "../../../components/QuickFacts"
                         greyBackground={true}
                         optionalCTATitle="See more articles"
                         optionalCTALink="/"
+                        filters={[]}
                         articles={[
                             {
                                 title: "BFI Recommends: Who's Gonna Love Me Now?",
@@ -510,7 +512,7 @@ import { QuickFacts } from "../../../components/QuickFacts"
                             }
                         ]} 
                     />
-                </MainContent>
+                </MainContentWrapper>
             </Wrapper>
             <Footer
                 menus={footerMenus}
@@ -668,7 +670,7 @@ import { QuickFacts } from "../../../components/QuickFacts"
                 </Sidebar>
             </Wrapper>
             <Wrapper>
-                <MainContent>  
+                <MainContentWrapper>  
                     <FilterableArticles
                         limit={3}
                         includeHighlight={false}
@@ -676,6 +678,7 @@ import { QuickFacts } from "../../../components/QuickFacts"
                         greyBackground={true}
                         optionalCTATitle="See more articles"
                         optionalCTALink="/"
+                        filters={[]}
                         articles={[
                             {
                                 title: "BFI Recommends: Who's Gonna Love Me Now?",
@@ -707,7 +710,7 @@ import { QuickFacts } from "../../../components/QuickFacts"
                             }
                         ]} 
                     />
-                </MainContent>
+                </MainContentWrapper>
             </Wrapper>
             <Footer
                 menus={footerMenus}

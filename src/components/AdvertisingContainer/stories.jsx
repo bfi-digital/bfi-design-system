@@ -16,7 +16,6 @@ export const mpuExample = () =>
 
 export const nativeExample = () =>
     <div style={{width: "600px", margin: "20px"}}>
-        <h4 style={{marginBottom: "10px"}}>Promoted links from around the web</h4>
         <AdvertisingContainer withCaption={false}>
             <div style={{width: "580px", height: "400px", background: "grey"}}></div>
         </AdvertisingContainer>

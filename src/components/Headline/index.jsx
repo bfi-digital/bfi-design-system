@@ -93,7 +93,7 @@ const H4 = styled.h4`
         font-size: 1.563rem;
     }
 `
-const H4Fake = styled.h4`
+const H4Fake = styled.p`
     font-family: ${theme.bodyFont};
     color: ${theme.black};
     font-weight: ${theme.fontWeight_semiBold};

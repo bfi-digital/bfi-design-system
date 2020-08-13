@@ -1,5 +1,5 @@
 import React from "react"
-import { Wrapper, MainContent, Sidebar, Actions, PlayButton, OriginalArticleDate } from "./index"
+import { Wrapper, MainContent, MainContentWrapper, Sidebar, Actions, PlayButton, OriginalArticleDate } from "./index"
 
 import navItems, { quickLinksData } from "../Header/data"
 import {longData as crumbs} from "../Breadcrumbs/data"
@@ -706,11 +706,6 @@ export const articlePostListPageExample = () =>
                             label: "Interviews"
                         }
                     ]}
-                />
-                
-                <Headline 
-                    level={3} 
-                    text="Promoted links from around the web"
                 />
                 <AdvertisingContainer withCaption={false}>
                     <div style={{width: "100%", height: "400px", background: "grey"}}></div>
@@ -1669,7 +1664,7 @@ export const ArticleFeatureExample = () =>
         </Wrapper>
 
         <Wrapper>
-            <MainContent>
+            <MainContentWrapper>
                 <FilterableArticles
                     limit={3}
                     includeHighlight={false}
@@ -1679,7 +1674,7 @@ export const ArticleFeatureExample = () =>
                 <AdvertisingContainer>
                     <div style={{width: "1020px", height: "400px", background: "grey"}}></div>
                 </AdvertisingContainer>
-            </MainContent>
+            </MainContentWrapper>
         </Wrapper>
         <Footer
             menus={footerMenus}
@@ -1755,7 +1750,7 @@ export const ArticleRecommendsExample = () =>
         </Wrapper>
 
         <Wrapper>
-            <MainContent>
+            <MainContentWrapper>
                 <FilterableArticles
                     limit={3}
                     includeHighlight={false}
@@ -1765,7 +1760,7 @@ export const ArticleRecommendsExample = () =>
                 <AdvertisingContainer>
                     <div style={{width: "1020px", height: "400px", background: "grey"}}></div>
                 </AdvertisingContainer>
-            </MainContent>
+            </MainContentWrapper>
         </Wrapper>
         <Footer
             menus={footerMenus}
@@ -1840,7 +1835,7 @@ export const ArticleVideoExample = () =>
         </Wrapper>
 
         <Wrapper>
-            <MainContent>
+            <MainContentWrapper>
                 <FilterableArticles
                     limit={3}
                     includeHighlight={false}
@@ -1850,7 +1845,7 @@ export const ArticleVideoExample = () =>
                 <AdvertisingContainer>
                     <div style={{width: "1020px", height: "400px", background: "grey"}}></div>
                 </AdvertisingContainer>
-            </MainContent>
+            </MainContentWrapper>
         </Wrapper>
         <Footer
             menus={footerMenus}
@@ -1937,7 +1932,7 @@ export const ArticleAnnouncementExample = () =>
         </Wrapper>
 
         <Wrapper>
-            <MainContent>
+            <MainContentWrapper>
                 <FilterableArticles
                     limit={3}
                     includeHighlight={false}
@@ -1947,7 +1942,7 @@ export const ArticleAnnouncementExample = () =>
                 <AdvertisingContainer>
                     <div style={{width: "1020px", height: "400px", background: "grey"}}></div>
                 </AdvertisingContainer>
-            </MainContent>
+            </MainContentWrapper>
         </Wrapper>
         <Footer
             menus={footerMenus}
@@ -2091,7 +2086,7 @@ export const ArticleListExampleWithUpdatedDate = () =>
         </Wrapper>
 
         <Wrapper>
-            <MainContent>
+            <MainContentWrapper>
                 <FilterableArticles
                     limit={3}
                     includeHighlight={false}
@@ -2101,7 +2096,7 @@ export const ArticleListExampleWithUpdatedDate = () =>
                 <AdvertisingContainer>
                     <div style={{width: "1020px", height: "400px", background: "grey"}}></div>
                 </AdvertisingContainer>
-            </MainContent>
+            </MainContentWrapper>
         </Wrapper>
         <Footer
             menus={footerMenus}
@@ -2218,7 +2213,7 @@ export const ArticleSightAndSoundExample = () =>
         </Wrapper>
 
         <Wrapper>
-            <MainContent>
+            <MainContentWrapper>
                 <FilterableArticles
                     limit={3}
                     includeHighlight={false}
@@ -2228,7 +2223,7 @@ export const ArticleSightAndSoundExample = () =>
                 <AdvertisingContainer>
                     <div style={{width: "1020px", height: "400px", background: "grey"}}></div>
                 </AdvertisingContainer>
-            </MainContent>
+            </MainContentWrapper>
         </Wrapper>
         <Footer
             menus={footerMenus}
@@ -2344,7 +2339,7 @@ export const ArticleSightAndSoundExampleNoImage = () =>
         </Wrapper>
 
         <Wrapper>
-            <MainContent>
+            <MainContentWrapper>
                 <FilterableArticles
                     limit={3}
                     includeHighlight={false}
@@ -2354,7 +2349,7 @@ export const ArticleSightAndSoundExampleNoImage = () =>
                 <AdvertisingContainer>
                     <div style={{width: "1020px", height: "400px", background: "grey"}}></div>
                 </AdvertisingContainer>
-            </MainContent>
+            </MainContentWrapper>
         </Wrapper>
         <Footer
             menus={footerMenus}
@@ -2444,7 +2439,7 @@ export const FilmPage = () =>
             </Sidebar>
         </Wrapper>
         <Wrapper>
-            <MainContent>  
+            <MainContentWrapper>  
                 <ArticleGrid articles={
                     [{
                         title: "Joe Pesci: seven essential films",
@@ -2481,14 +2476,10 @@ export const FilmPage = () =>
                     }]
                 } />
 
-                <Headline 
-                    level={4} 
-                    text="Promoted links from around the web"
-                />
                 <AdvertisingContainer withCaption={false}>
                     <div style={{width: "1020px", height: "400px", background: "grey"}}></div>
                 </AdvertisingContainer>
-            </MainContent>
+            </MainContentWrapper>
         </Wrapper>
 
         <Footer

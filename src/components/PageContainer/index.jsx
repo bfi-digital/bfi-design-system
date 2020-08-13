@@ -79,7 +79,7 @@ export const Wrapper = styled.div`
     }
 `
 
-const MainContentWrapper = styled.article`
+export const MainContentWrapper = styled.article`
     /* flex: 1; */
     /* flex: 0 1 100%; */
     flex: 1 1 0;

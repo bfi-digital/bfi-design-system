@@ -64,15 +64,6 @@ exports[`Storyshots 4 Components/All/Advertising Container Native Example 1`] = 
     }
   }
 >
-  <h4
-    style={
-      Object {
-        "marginBottom": "10px",
-      }
-    }
-  >
-    Promoted links from around the web
-  </h4>
   <div
     className="sc-bdVaJa kVwYCR advertising_container"
   >
@@ -793,11 +784,11 @@ exports[`Storyshots 4 Components/All/FilmShowing A Showing 1`] = `
   <div
     className="sc-kjoXOD bsTIhq"
   >
-    <h4
+    <p
       className="sc-caSCKo cBnArw h4"
     >
       La La Land
-    </h4>
+    </p>
     <p
       className="sc-cHGsZl gBsYkR"
     >
@@ -860,11 +851,11 @@ exports[`Storyshots 4 Components/All/FilmShowing Sold Out 1`] = `
   <div
     className="sc-kjoXOD bsTIhq"
   >
-    <h4
+    <p
       className="sc-caSCKo cBnArw h4"
     >
       La La Land
-    </h4>
+    </p>
     <p
       className="sc-cHGsZl gBsYkR"
     >
@@ -1378,21 +1369,21 @@ Array [
         <ul
           className="sc-iELTvK VHqMN"
         >
-          <a
-            className="sc-gxMtzJ bPQDOa"
-            href="/"
-            target="_self"
+          <li
+            className="sc-jwKygS kXhQfa"
           >
-            <li
-              className="sc-jwKygS kXhQfa"
+            <a
+              className="sc-gxMtzJ bPQDOa"
+              href="/"
+              target="_self"
             >
               <img
                 alt="Home"
                 className="sc-dfVpRl kicfWV"
                 src="test-file-stub"
               />
-            </li>
-          </a>
+            </a>
+          </li>
           <li
             className="sc-jwKygS kXhQfa"
           >

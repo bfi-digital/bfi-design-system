@@ -310,7 +310,7 @@ export const Footer = ({
                     </SupportLogos>
                     <FollowMenu>
                         <SubHeading>Follow us</SubHeading>
-                    <IconLinkContainer>
+                        <IconLinkContainer>
                             <ExternalMenuItem href="https://twitter.com/BFI" data-tracking="footer-navigation" title="View our Twitter">
                                 <Icon className="logo" url={twitter} alt="Twitter"/>
                                 <span className="hidden_title">Twitter</span>
@@ -331,7 +331,7 @@ export const Footer = ({
                                 <Icon className="logo" url={youtube} alt="YouTube"/>
                                 <span className="hidden_title">YouTube</span>
                             </ExternalMenuItem>
-                    </IconLinkContainer>
+                        </IconLinkContainer>
                     </FollowMenu>
                 </Inner>
             </MiddleRow>

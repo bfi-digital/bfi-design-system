@@ -171,7 +171,7 @@ const Container = styled.div`
     }
     li, a {
         color: ${theme.white};
-        text-shadow: 0px 0px 30px ${theme.black}D1;
+        // text-shadow: 0px 0px 30px ${theme.black}D1;
         &:focus{
             background: ${theme.dark};
         }
