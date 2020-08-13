@@ -73,7 +73,7 @@ const Outer = styled.div`
                 padding: ${theme.standardSpace}px ${theme.standardSpace*2}px;
 
                 p {
-                    font-size: 1.4rem;
+                    font-size: 1.2rem;
                 }
             }
         }
@@ -81,7 +81,7 @@ const Outer = styled.div`
             background: ${theme.black};
             .page_meta {
                 p {
-                    font-size: 1.6rem;
+                    font-size: 1.3rem;
                 }
             }
         }
@@ -118,19 +118,15 @@ const Meta = styled.div`
     }
     h1 {
         @media screen and (max-width: ${theme.m}){
-            font-size: ${props => props.titleLength > 35 ? "1.5rem" : (props.titleLength > 25 ? "1.8rem" : "2rem")};
+            font-size: ${props => props.titleLength > 35 ? "1.8rem" : (props.titleLength > 25 ? "2.1rem" : "2.3rem")};
             max-width: 90%;
             margin-block-end: 0.5em;
         }
-
-        @media screen and (min-width: ${theme.m}){
-            font-size: ${props => props.titleLength > 35 ? "2rem" : (props.titleLength > 25 ? "2.3rem" : "2.5rem")};
-        }  
         @media screen and (min-width: ${theme.l}){
-            font-size: ${props => props.titleLength > 35 ? "2.2rem" : (props.titleLength > 25 ? "2.5rem" : "2.7rem")};
+            font-size: ${props => props.titleLength > 35 ? "2rem" : (props.titleLength > 25 ? "2.3rem" : "2.5rem")};
         }       
         @media screen and (min-width: ${theme.xl}){
-            font-size: ${props => props.titleLength > 35 ? "2.3rem" : (props.titleLength > 25 ? "2.6rem" : "3rem")};
+            font-size: ${props => props.titleLength > 35 ? "2.1rem" : (props.titleLength > 25 ? "2.4rem" : "2.7rem")};
         }
     }
 `
