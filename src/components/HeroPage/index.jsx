@@ -215,6 +215,10 @@ const Small = styled.small`
     }
 `
 
+const BreadcrumbContainer = styled.div`
+    margin-bottom: ${theme.standardSpace}px;
+`
+
 export const HeroPage = ({
     image1920x1080,
     image192x108,
@@ -225,35 +229,38 @@ export const HeroPage = ({
     breadcrumbs,
     isServiceListPage = false
 }) =>
-    <Outer className={image1920x1080 ? "with_image" : (isServiceListPage ? "service_list_no_image" : "without_image")}>
-        <Meta className="page_meta" titleLength={title.length}>
-            <Breadcrumbs breadcrumbs={breadcrumbs} />
-            {title && <Headline level={1} text={title}/>}
-            {standfirst && <LeadParagraph text={standfirst}/>}
-        </Meta>
-        {image1920x1080 &&
-            <ImageContainer>
-                <LazyImage
-                    src={image1920x1080}
-                    placeholder={image192x108}
-                    visibilitySensorProps={{
-                        partialVisibility: true
-                    }}
-                >
-                    {src => 
-                        <>
-                            <StyledImage
-                                itemprop="image"
-                                src={src}
-                                alt={imageAltText ? imageAltText : ""}
-                            />
-                            {imageCopyright && <Small itemprop="copyrightHolder">&copy; {imageCopyright}</Small>}
-                        </>
-                    }
-                </LazyImage>
-            </ImageContainer>
-        }
-    </Outer>
+    <>
+        <BreadcrumbContainer><Breadcrumbs breadcrumbs={breadcrumbs} /></BreadcrumbContainer>
+
+        <Outer className={image1920x1080 ? "with_image" : (isServiceListPage ? "service_list_no_image" : "without_image")}>
+            <Meta className="page_meta" titleLength={title.length}>
+                {title && <Headline level={1} text={title}/>}
+                {standfirst && <LeadParagraph text={standfirst}/>}
+            </Meta>
+            {image1920x1080 &&
+                <ImageContainer>
+                    <LazyImage
+                        src={image1920x1080}
+                        placeholder={image192x108}
+                        visibilitySensorProps={{
+                            partialVisibility: true
+                        }}
+                    >
+                        {src => 
+                            <>
+                                <StyledImage
+                                    itemprop="image"
+                                    src={src}
+                                    alt={imageAltText ? imageAltText : ""}
+                                />
+                                {imageCopyright && <Small itemprop="copyrightHolder">&copy; {imageCopyright}</Small>}
+                            </>
+                        }
+                    </LazyImage>
+                </ImageContainer>
+            }
+        </Outer>
+    </>
 
 
 HeroPage.propTypes = {
