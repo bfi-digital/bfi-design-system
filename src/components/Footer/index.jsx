@@ -28,6 +28,10 @@ const Inner = styled.div`
     padding: 0px ${theme.horizontalPadding};
     margin: 0 auto;
 
+    ul {
+        padding: 0;
+    }
+
     &.dont_restrict {
         padding: 0px;
         @media screen and (min-width: ${theme.m}) {
@@ -108,7 +112,7 @@ const BottomRow = styled.section`
     }
 `
 
-const BottomLinks = styled.div`
+const BottomLinks = styled.ul`
     margin-bottom: 20px;
     
     a {
@@ -172,13 +176,16 @@ const Copyright = styled.p`
     }
 `
 
-const LinkContainer = styled.nav`
+const LinkContainer = styled.li`
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-bottom: 20px;
 `
-const IconLinkContainer = styled(LinkContainer)`
+const IconLinkContainer = styled.div`
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
 `
@@ -264,18 +271,24 @@ export const Footer = ({
         <Outer> 
             <TopRow>
                 <Inner className="container">
-                    {menus.map(menu =>
-                        <Menu key={menu.id}>
-                            {menu.titleLink ?
-                                <MenuItem className="title_link" to={menu.titleLink} data-tracking="footer-navigation"><Heading>{menu.title}</Heading></MenuItem>
-                                :
-                                <Heading>{menu.title}</Heading>
-                            }
-                            {menu.children.map(menuItem =>
-                                <LinkContainer key={menuItem.id} role="navigation" aria-label="Footer">
-                                    <MenuItem to={menuItem.url} data-tracking="footer-navigation">{menuItem.title}</MenuItem>    
-                                </LinkContainer>
-                            )}
+                    {menus.map((menu, index) =>
+                        <Menu key={menu.id} role="navigation" aria-label={"Footer-"+index}>
+                            <ul>
+                                {menu.titleLink ?
+                                    <LinkContainer key={index}>
+                                        <MenuItem className="title_link" to={menu.titleLink} data-tracking="footer-navigation">
+                                            <Heading>{menu.title}</Heading>
+                                        </MenuItem>
+                                    </LinkContainer>
+                                    :
+                                    <Heading>{menu.title}</Heading>
+                                }
+                                {menu.children.map(menuItem =>
+                                    <LinkContainer key={menuItem.id}>
+                                        <MenuItem to={menuItem.url} data-tracking="footer-navigation">{menuItem.title}</MenuItem>    
+                                    </LinkContainer>
+                                )}
+                            </ul>
                         </Menu>
                     )}
                 </Inner>
@@ -297,7 +310,7 @@ export const Footer = ({
                     </SupportLogos>
                     <FollowMenu>
                         <SubHeading>Follow us</SubHeading>
-                        <IconLinkContainer>
+                    <IconLinkContainer>
                             <ExternalMenuItem href="https://twitter.com/BFI" data-tracking="footer-navigation" title="View our Twitter">
                                 <Icon className="logo" url={twitter} alt="Twitter"/>
                                 <span className="hidden_title">Twitter</span>
@@ -318,7 +331,7 @@ export const Footer = ({
                                 <Icon className="logo" url={youtube} alt="YouTube"/>
                                 <span className="hidden_title">YouTube</span>
                             </ExternalMenuItem>
-                        </IconLinkContainer>
+                    </IconLinkContainer>
                     </FollowMenu>
                 </Inner>
             </MiddleRow>
@@ -326,7 +339,9 @@ export const Footer = ({
                 <Inner className="container">
                     <BottomLinks>
                         {copyrightLinks && copyrightLinks.map((copyrightLink) =>
-                            <MenuItem to={copyrightLink.url} key={copyrightLink.url} data-tracking="footer-navigation">{copyrightLink.title}</MenuItem>    
+                            <LinkContainer key={copyrightLink.title}>
+                                <MenuItem to={copyrightLink.url} key={copyrightLink.url} data-tracking="footer-navigation">{copyrightLink.title}</MenuItem>    
+                            </LinkContainer>
                         )}
                     </BottomLinks>
                     <Copyright>{parse(copyrightText)}</Copyright>
