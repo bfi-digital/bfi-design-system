@@ -195,7 +195,6 @@ export const ArticleCardHighlighted = ({
             }
 
             <Meta>
-                {/* <Date>{date}</Date> */}
                 {author && <Author>By {author}</Author>}
             </Meta>
         </Content>

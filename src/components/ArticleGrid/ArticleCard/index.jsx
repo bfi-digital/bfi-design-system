@@ -181,7 +181,6 @@ export const ArticleCard = ({
         </PageImageContainer>
         <Headline level={6} text={title} />
         <Meta>
-            {/* <Date>{date}</Date> */}
             {author && <Author>By {author}</Author>}
         </Meta>
 

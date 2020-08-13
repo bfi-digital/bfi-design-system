@@ -384,9 +384,11 @@ const Nav = ({
         <Outer role="navigation" aria-label="Main" onMouseLeave={() => { setSelected(false) }}>
             <List>
                 {isSticky && 
-                    <BlackLogoLink to="/"> 
-                        <Item><Logo src={logo} alt="Home"/></Item>
-                    </BlackLogoLink>
+                    <Item>
+                        <BlackLogoLink to="/"> 
+                            <Logo src={logo} alt="Home"/>
+                        </BlackLogoLink>
+                    </Item>
                 }
                 {navItems.map((navItem, i) => {
                     const size = Math.ceil(navItem.children.length / 3)
