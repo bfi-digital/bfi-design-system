@@ -162,8 +162,8 @@ const Outer = styled.div`
         
         thead tr { 
             position: absolute;
-            top: -9999px;
-            left: -9999px;
+            top: -9998px;
+            left: -9998px;
         }
         
         tr { border: 1px solid ${theme.grey}; }

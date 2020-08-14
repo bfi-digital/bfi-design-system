@@ -59,7 +59,7 @@ const Outer = styled.div`
             position: absolute;
             top: 0;
             bottom: 0;
-            left: -9999px;
+            left: -9998px;
             right: 0;
             box-shadow: 9999px 0 0 ${theme.lightest};
             border-left: 9999px solid ${theme.lightest};
@@ -93,7 +93,7 @@ const Outer = styled.div`
                 position: absolute;
                 top: 0;
                 bottom: 0;
-                left: -9999px;
+                left: -9998px;
                 right: 0;
                 border-left: 9999px solid ${theme.lightest};
                 z-index: -1;
@@ -178,7 +178,7 @@ const ImageContainer = styled.div`
             position: absolute;
             top: 0;
             bottom: 0;
-            left: -9999px;
+            left: -9998px;
             right: 0;
             border-left: 9999px solid ${theme.lightest};
             z-index: -1;
