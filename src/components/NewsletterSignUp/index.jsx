@@ -106,12 +106,19 @@ const Outer = styled.div`
     @media screen and (min-width: ${theme.m}){
         padding: ${theme.standardSpace}px;
     }
+    @media screen and (min-width: ${theme.l}){
+        text-align: center;
+    }
 `
 const NewsletterForm = styled.form`
     display: flex;
     flex-direction: row;
     align-items: flex-end;
     justify-content: flex-start;
+    @media screen and (min-width: ${theme.l}){
+        justify-content: center;
+    }
+
 
     label {
         text-align: left;
