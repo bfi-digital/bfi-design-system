@@ -15,7 +15,7 @@ const Quote = styled.q`
     color: ${theme.black};
     font-family: ${theme.headingFont}; 
     display: block;
-    font-weight: 700;
+    font-weight: normal;
     font-size: 1.2rem;
     line-height: 1.4;
 

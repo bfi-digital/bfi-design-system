@@ -26,6 +26,7 @@ const Heading = styled.h1`
     position: relative;
     padding-bottom: 30px;
     margin-bottom: 30px;
+    font-weight: normal;
 
     &:after {
         content: "";
