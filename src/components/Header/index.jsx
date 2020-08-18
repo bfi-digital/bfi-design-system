@@ -66,14 +66,18 @@ const Inner = styled.div`
 
 const Logo = styled.img`
     width: 65px;
+    height: 66px;
     @media screen and (min-width: ${theme.m}){
         width: 45px;
+        height: 46px;
     }
     @media screen and (min-width: ${theme.l}){
         width: 55px;
+        height: 56px;
     }
     @media screen and (min-width: ${theme.xl}){
         width: 65px;
+        height: 66px;
     }
 `
 
