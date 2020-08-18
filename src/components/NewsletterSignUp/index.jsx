@@ -169,15 +169,18 @@ const SubmitButton = styled.button`
     color: ${theme.white};
     background: ${theme.black};
     text-decoration: none;
-    padding: 10px ${theme.standardSpace}px;
+    padding: 9.5px ${theme.standardSpace-1}px;
     z-index: 2;
     width: 100%;
     text-align: center;
     cursor: pointer;
     border: none;
     width: 100%;
-    border: 1px solid ${theme.black};
+    border: 2px solid ${theme.black};
     margin-bottom: 4px;
+    left: -2px;
+    top: 1px;
+
     @media screen and (min-width: ${theme.s}){
         width: auto;
     }
@@ -213,11 +216,9 @@ const SubmitButton = styled.button`
     }
     &:active{
         background: ${theme.black};
-        box-shadow: none;
-        transform: translate(0, 5px);   
+        box-shadow: 0px 0px 0px 4px ${theme.focus};
         :after {
-            height: 1px;
-            bottom: -1px;
+            height: 5px;
         }
     }
     @media screen and (min-width: ${theme.m}){
