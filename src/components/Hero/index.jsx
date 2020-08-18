@@ -130,12 +130,12 @@ const Outer = styled.section`
         }
     }
     @media screen and (min-width: ${theme.l}){
-        padding-top: ${props => props.withHeader ? "325px" : "261px"};
+        padding-top: ${props => props.withHeader ? "375px" : "261px"};
     }
     @media screen and (min-width: ${theme.xl}){
         min-height: 500px;
         padding-bottom: 40px;
-        padding-top: ${props => props.withHeader ? "375px" : "311px"};
+        padding-top: ${props => props.withHeader ? "425px" : "311px"};
 
         h1{
             max-width: calc( 0.5 * ${theme.xl});
