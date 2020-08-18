@@ -197,7 +197,7 @@ const linkStyles = `
     &:hover{
         text-decoration: underline;
         div.logo {
-            background: rgba(0,0,0,0.6);
+            opacity: 0.6;
         }
     }
     &:focus{
@@ -253,8 +253,7 @@ const Icon = styled.div`
     display: inline-block;
 
     background-color: ${theme.black};
-    -webkit-mask: url(${props => props.url}) no-repeat center;
-    mask: url(${props => props.url}) no-repeat center;
+    background: url(${props => props.url}) no-repeat center;
 `
 
 export const Footer = ({
