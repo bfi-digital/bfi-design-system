@@ -30,22 +30,32 @@ const ScrollerTrack = styled.div`
     overflow-x: scroll;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
-    a {
-        scroll-snap-align: start;
-        scroll-snap-stop: bold;
-        padding-left: 25px;
-        
-        &:focus {
-            box-shadow: none;
-            &:after {
-                content: "";
-                width: calc(100% - 15px);
-                height: calc(100% + 5px);
-                position: absolute;
-                left: 15px;
-                top: -10px;
-                border: 5px solid ${theme.focus};
+
+    &.film_grid {
+        a {
+            scroll-snap-align: start;
+            scroll-snap-stop: bold;
+            padding-left: 25px;
+            
+            &:focus {
+                box-shadow: none;
+                &:after {
+                    content: "";
+                    width: calc(100% - 15px);
+                    height: calc(100% + 5px);
+                    position: absolute;
+                    left: 15px;
+                    top: -10px;
+                    border: 5px solid ${theme.focus};
+                }
             }
+        }
+    }
+    &.page_links_block {
+        li {
+            scroll-snap-align: start;
+            scroll-snap-stop: bold;
+            margin-right: 40px !important;
         }
     }
     &::-webkit-scrollbar {
@@ -197,7 +207,7 @@ export const Scroller = ({
                     <svg viewBox="0 0 10 25"><path d="M.22 13c-.3-.45-.29-1.04.01-1.5L7.7.27a.6.6 0 0 1 .86-.16l1.18.82c.28.2.36.58.17.86L2.93 12.28 9.9 23.21c.18.29.1.67-.18.86l-1.2.8a.6.6 0 0 1-.85-.18L.22 13z"></path></svg>
                 </LeftScrollerFade>
             }
-            <ScrollerTrack noOfChildren={noOfChildren} ref={scrollRef} onScroll={handleScroll}>
+            <ScrollerTrack noOfChildren={noOfChildren} ref={scrollRef} onScroll={handleScroll} className={classes}>
                 {children}
                 <LastItem />
             </ScrollerTrack>
