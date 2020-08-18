@@ -30,6 +30,8 @@ import { QuickFacts } from "../../../components/QuickFacts"
 import { ShowDateTimeSidebar } from "../../../components/ShowDateTimeSidebar"
 import { ShowPerformanceList } from "../../../components/ShowPerformanceList"
 import demoPerformances from "../../../components/ShowPerformanceList/data"
+import { TabNavigation } from "../../../components/TabNavigation"
+import demoTabs from "../../../components/TabNavigation/data"
 
 <Meta title="3 Page examples/3 London Film Festival" component={MainContent} />
 
@@ -451,6 +453,43 @@ import demoPerformances from "../../../components/ShowPerformanceList/data"
                         showTitle="Lynn + Lucy" 
                         showDescription="Lynn + Lucy premieres online at London Film Festival. With your ticket you can enjoy Lynn + Lucy any time for two weeks from the premiere date."
                     />
+                </MainContent>
+            </Wrapper>
+            <Footer
+                menus={footerMenus}
+                copyrightLinks={[
+                    {
+                        title: "Cookies & privacy",
+                        url: "#1"
+                    },
+                    {
+                        title: "Terms & conditions",
+                        url: "#2"
+                    },
+                    {
+                        title: "Accessibility",
+                        url: "#3"
+                    },
+                    {
+                        title: "Help & FAQs",
+                        url: "#4"
+                    }
+                ]}
+                copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"
+            />
+        </>
+    </Story>
+</Preview>
+
+
+<Preview>
+    <Story name="3 Programme - view all strands">
+        <>
+            <Header navItems={navItems} quickLinks={quickLinksData} />
+            <Wrapper>           
+                <MainContent>
+                    <Headline level={1} text="View all strands" />
+                    <TabNavigation tabs={demoTabs} />
                 </MainContent>
             </Wrapper>
             <Footer

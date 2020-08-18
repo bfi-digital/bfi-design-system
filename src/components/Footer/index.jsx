@@ -253,6 +253,10 @@ const linkStyles = `
     span.hidden_title {
         display: none;
     }
+
+    h2 {
+        margin-bottom: ${theme.standardSpace*0.5}px;
+    }
 `
 
 const MenuItem = styled(Link)`${linkStyles}`
