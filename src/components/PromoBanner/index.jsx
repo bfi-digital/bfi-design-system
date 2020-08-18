@@ -226,7 +226,7 @@ const SecondImage = styled.img`
 `
 const VideoInner = styled.div`
     width: 100%;
-    height: 0;
+    height: 100%;
     padding-bottom: 56.25%;
     position: relative;
 `
