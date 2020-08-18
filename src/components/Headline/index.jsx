@@ -7,7 +7,7 @@ const HeroH1 = styled.h1`
     font-family: ${theme.headingFont}; 
     // text-transform: uppercase;
     color: ${theme.black};
-    font-weight: normal;
+    font-weight: bold;
     font-size: 2.2rem;
     letter-spacing: 1px;
     @media screen and (min-width: ${theme.m}){
@@ -25,7 +25,7 @@ const H1 = styled(HeroH1)`
     text-transform: none;
     margin-block-start: 0.75em;
     margin-block-end: 0.5em;
-    font-weight: ${theme.fontWeight_bold};
+    font-weight: bold;
 
     & + h2 {
         margin-block-start: 25px;
@@ -35,7 +35,7 @@ const H1 = styled(HeroH1)`
 const H2 = styled.h2`
     font-family: ${theme.headingFont}; 
     color: ${theme.black};
-    font-weight: normal;
+    font-weight: bold;
     font-size: 1.4375rem;
     margin-block-start: 1.75em;
     margin-block-end: 0.5em;

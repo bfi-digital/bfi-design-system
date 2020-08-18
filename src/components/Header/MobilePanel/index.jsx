@@ -107,7 +107,7 @@ const ChildList = styled.ul`
 `
 
 const ChildItem = styled.li`
-    font-weight: normal;
+    font-weight: bold;
 `
 
 const ChildLink = styled(Link)`

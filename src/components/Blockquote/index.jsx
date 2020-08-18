@@ -15,7 +15,7 @@ const Quote = styled.q`
     color: ${theme.black};
     font-family: ${theme.headingFont}; 
     display: block;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 1.2rem;
     line-height: 1.4;
 
@@ -34,7 +34,7 @@ const Quote = styled.q`
 const Citation = styled.cite`
     color: ${theme.black};
     display: block;
-    font-style: normal;
+    font-style: bold;
     margin-top: 10px;
     line-height: ${theme.lineHeight_s};
     font-size: ${theme.fontSize_s};

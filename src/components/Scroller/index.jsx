@@ -32,7 +32,7 @@ const ScrollerTrack = styled.div`
     scroll-snap-type: x mandatory;
     a {
         scroll-snap-align: start;
-        scroll-snap-stop: normal;
+        scroll-snap-stop: bold;
         padding-left: 25px;
         
         &:focus {

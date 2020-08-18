@@ -66,7 +66,15 @@ export const ShowPerformanceList = ({
                 {performances.map((performance) =>
                     <Performance key={performance.id}>
                         <PerformanceDetails>
-                            <p>{performance.performanceInfo}</p>
+                            <p>
+                                {performance.performanceInfo}
+                                {performance.screen && 
+                                    <>
+                                        &nbsp;&ndash;&nbsp;
+                                        {performance.screen}
+                                    </>
+                                }
+                            </p>
 
                             {datesAreOnSameDayCheck(new Date(performance.dateTimeStart), new Date(performance.dateTimeEnd)) ? 
                                 <>
