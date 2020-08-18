@@ -90,6 +90,9 @@ const ImageHolder = styled.div`
     ${props => props.number > 1 ? `
         @media screen and (min-width: ${theme.m}){
             display: flex;
+            -webkit-flex-direction: row;
+            -moz-flex-direction: row;
+            -ms-flex-direction: row;
             flex-direction: row;
             align-items: flex-start;
             flex-wrap: wrap;

@@ -37,6 +37,9 @@ const Events = styled.ul`
     margin: 0;
     padding: 0;
     display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
     flex-direction: row;
     flex-wrap: wrap;
 

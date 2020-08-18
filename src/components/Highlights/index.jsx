@@ -15,6 +15,9 @@ const Outer = styled.div`
 const Grid = styled.div`
     @media screen and (min-width: ${theme.m}){
         display: flex;
+        -webkit-flex-direction: row;
+        -moz-flex-direction: row;
+        -ms-flex-direction: row;
         flex-direction: row;
     }
 `
@@ -22,6 +25,9 @@ const Grid = styled.div`
 const Showings = styled.div`
     @media screen and (min-width: ${theme.m}){
         display: flex;
+        -webkit-flex-direction: row;
+        -moz-flex-direction: row;
+        -ms-flex-direction: row;
         flex-direction: row;
         flex-wrap: wrap;
         div{

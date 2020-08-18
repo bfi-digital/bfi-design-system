@@ -45,6 +45,9 @@ const colorSchemes = [
 
 const Outer = styled.section`
     display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
     background-color: ${props => colorSchemes[props.colorScheme].background};
     color: ${props => colorSchemes[props.colorScheme].text};
@@ -127,6 +130,9 @@ const Inner = styled.div`
         padding: ${theme.standardSpace}px;
         width: ${props => props.pageWithSideBar ? "100%" : "50%"};
         display: flex;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
         flex-direction: column;
         align-items: flex-start;
         padding-left: ${props => props.reversed ? (theme.standardSpace + "px") : props.pageWithSideBar ? (theme.standardSpace + "px") : "0"};
@@ -164,6 +170,9 @@ const RightButton = styled.div`
         padding: ${theme.standardSpace}px;
         width: 33%;
         display: flex;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
         flex-direction: column;
         align-items: flex-end;
         a {

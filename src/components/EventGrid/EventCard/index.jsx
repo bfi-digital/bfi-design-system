@@ -13,6 +13,9 @@ const Outer = styled.li`
     box-shadow: 0px 5px 0px ${theme.primary};
     margin-bottom: 35px;
     display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
     position: relative;
     overflow: hidden;

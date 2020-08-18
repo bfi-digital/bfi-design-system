@@ -99,6 +99,9 @@ const Meta = styled.div`
     color: ${theme.white};
     padding: ${theme.standardSpace}px;
     display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
     height: fit-content;
     align-self: center;

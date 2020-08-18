@@ -10,6 +10,9 @@ const Outer = styled.section`
     
     @media screen and (min-width: ${theme.s}){
         display: flex;
+        -webkit-flex-direction: row;
+        -moz-flex-direction: row;
+        -ms-flex-direction: row;
         flex-direction: row;
         flex-wrap: wrap;
     }

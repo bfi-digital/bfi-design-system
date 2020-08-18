@@ -10,6 +10,9 @@ const Outer = styled.ul`
     padding-bottom: 0;
     list-style: none;
     display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
     flex-direction: row;
     flex-wrap: wrap;
 

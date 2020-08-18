@@ -112,6 +112,9 @@ const Outer = styled.div`
 `
 const NewsletterForm = styled.form`
     display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
     flex-direction: row;
     align-items: flex-end;
     justify-content: flex-start;

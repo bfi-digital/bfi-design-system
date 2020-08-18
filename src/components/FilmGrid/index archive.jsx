@@ -8,6 +8,9 @@ import arrow from "./arrow.svg"
 const Outer = styled.section`
     @media screen and (min-width: ${theme.m}){
         display: flex;
+        -webkit-flex-direction: row;
+        -moz-flex-direction: row;
+        -ms-flex-direction: row;
         flex-direction: row;
         flex-wrap: wrap;
     }
@@ -59,6 +62,9 @@ const ScrollerTrack = styled.div`
     padding-top: 9px;
     list-style: none;
     display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
     flex-direction: row;
     flex-wrap: wrap;
 

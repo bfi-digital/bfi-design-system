@@ -12,6 +12,9 @@ export const Wrapper = styled.div`
     @media screen and (min-width: ${theme.m}){
         display: flex;
         flex-wrap: wrap;
+        -webkit-flex-direction: row;
+        -moz-flex-direction: row;
+        -ms-flex-direction: row;
         flex-direction: row;
     }
     @media screen and (min-width: ${theme.xl}){
@@ -83,6 +86,7 @@ export const MainContentWrapper = styled.article`
     /* flex: 1; */
     /* flex: 0 1 100%; */
     flex: 1 1 0;
+    width: 100%;
     
     &.child_page h2:first-child {
         margin-block-start: 0;

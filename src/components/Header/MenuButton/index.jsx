@@ -12,6 +12,9 @@ const Button = styled.button`
     font-size: ${theme.fontSize_s};
     font-weight: ${theme.fontWeight_bold};
     display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
     flex-direction: row;
     justify-content: center;
     align-items: center;

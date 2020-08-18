@@ -46,6 +46,9 @@ const Outer = styled.header`
 
 const Inner = styled.div`
     display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;

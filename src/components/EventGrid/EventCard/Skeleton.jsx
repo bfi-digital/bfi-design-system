@@ -7,6 +7,9 @@ const Outer = styled.li`
     background: ${props => props.noBackground ? theme.lightGrey : theme.white};
     margin-bottom: 35px;
     display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
     position: relative;
     overflow: hidden;

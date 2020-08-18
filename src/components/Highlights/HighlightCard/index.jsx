@@ -8,6 +8,9 @@ const Outer = styled.div`
     // border-radius: 5px;
     background-color: ${theme.lightest};
     display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
     margin-bottom: 35px;
     @media screen and (min-width: ${theme.m}){
@@ -27,7 +30,7 @@ const Img = styled.img`
 
 const Inner = styled.div`
     padding: 15px;
-    flex: 1;
+    flex: 1 0 0;
 `
 
 const Caption = styled.p`

@@ -49,6 +49,9 @@ const TopRow = styled.section`
     @media screen and (min-width: ${theme.m}) {
         .container {
             display: flex;
+            -webkit-flex-direction: row;
+            -moz-flex-direction: row;
+            -ms-flex-direction: row;
             flex-direction: row;
             justify-content: space-between;
         }
@@ -65,6 +68,9 @@ const MiddleRow = styled.section`
     @media screen and (min-width: ${theme.m}) {
         .container {
             display: flex;
+            -webkit-flex-direction: row;
+            -moz-flex-direction: row;
+            -ms-flex-direction: row;
             flex-direction: row;
             justify-content: space-between;
         }
@@ -105,6 +111,9 @@ const BottomRow = styled.section`
         text-align: left;
         .container {
             display: flex;
+            -webkit-flex-direction: row;
+            -moz-flex-direction: row;
+            -ms-flex-direction: row;
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
@@ -178,11 +187,17 @@ const Copyright = styled.p`
 
 const LinkContainer = styled.li`
     display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
     flex-direction: row;
     align-items: center;
     margin-bottom: 20px;
 `
 const IconLinkContainer = styled.div`
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
     flex-direction: row;
     align-items: center;
     margin-bottom: 20px;

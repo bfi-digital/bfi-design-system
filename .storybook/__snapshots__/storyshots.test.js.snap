@@ -113,12 +113,12 @@ exports[`Storyshots 4 Components/All/Blockquote With Citation 1`] = `
   className="sc-ifAKCX eyPYQu"
 >
   <q
-    className="sc-EHOje cLAAzw"
+    className="sc-EHOje kRnApF"
   >
     Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.
   </q>
   <cite
-    className="sc-bZQynM duZfSN"
+    className="sc-bZQynM fHIncc"
   >
     Ian Malcolm
   </cite>
@@ -130,7 +130,7 @@ exports[`Storyshots 4 Components/All/Blockquote Without Citation 1`] = `
   className="sc-ifAKCX eyPYQu"
 >
   <q
-    className="sc-EHOje cLAAzw"
+    className="sc-EHOje kRnApF"
   >
     Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.
   </q>
@@ -143,7 +143,7 @@ Array [
     className="sc-gzVnrw gCTEXN"
   >
     <li
-      className="sc-dnqmqq ksyAmQ"
+      className="sc-dnqmqq kFkmld"
     >
       <a
         className="sc-iwsKbI jUiLjq"
@@ -154,7 +154,7 @@ Array [
       </a>
     </li>
     <li
-      className="sc-dnqmqq ksyAmQ"
+      className="sc-dnqmqq kFkmld"
     >
       <a
         className="sc-iwsKbI jUiLjq"
@@ -165,7 +165,7 @@ Array [
       </a>
     </li>
     <li
-      className="sc-dnqmqq ksyAmQ"
+      className="sc-dnqmqq kFkmld"
     >
       Find a fund to create films, TV or new formats of storytelling
     </li>
@@ -174,7 +174,7 @@ Array [
     className="sc-htoDjs ivtyUq"
   >
     <li
-      className="sc-dnqmqq ksyAmQ"
+      className="sc-dnqmqq kFkmld"
     >
       <a
         className="sc-iwsKbI jUiLjq"
@@ -195,7 +195,7 @@ Array [
     className="sc-gzVnrw gCTEXN"
   >
     <li
-      className="sc-dnqmqq ksyAmQ"
+      className="sc-dnqmqq kFkmld"
     >
       <a
         className="sc-iwsKbI jUiLjq"
@@ -206,7 +206,7 @@ Array [
       </a>
     </li>
     <li
-      className="sc-dnqmqq ksyAmQ"
+      className="sc-dnqmqq kFkmld"
     >
       <a
         className="sc-iwsKbI jUiLjq"
@@ -217,7 +217,7 @@ Array [
       </a>
     </li>
     <li
-      className="sc-dnqmqq ksyAmQ"
+      className="sc-dnqmqq kFkmld"
     >
       <a
         className="sc-iwsKbI jUiLjq"
@@ -228,7 +228,7 @@ Array [
       </a>
     </li>
     <li
-      className="sc-dnqmqq ksyAmQ"
+      className="sc-dnqmqq kFkmld"
     >
       Development Fund
     </li>
@@ -237,7 +237,7 @@ Array [
     className="sc-htoDjs ivtyUq"
   >
     <li
-      className="sc-dnqmqq ksyAmQ"
+      className="sc-dnqmqq kFkmld"
     >
       <a
         className="sc-iwsKbI jUiLjq"
@@ -629,7 +629,7 @@ Array [
       className="sc-iAyFgw cwjdBz"
     >
       <h1
-        className="sc-eNQAEJ gLXqMP"
+        className="sc-eNQAEJ iJxOlS"
       >
         <span
           className="sc-hMqMXs hKPCBo"
@@ -682,7 +682,7 @@ Array [
       className="sc-iAyFgw cwjdBz"
     >
       <h1
-        className="sc-eNQAEJ gLXqMP"
+        className="sc-eNQAEJ iJxOlS"
       >
         <span
           className="sc-hMqMXs hKPCBo"
@@ -1279,7 +1279,7 @@ exports[`Storyshots 4 Components/All/Filterable Articles Normal 1`] = `
 
 exports[`Storyshots 4 Components/All/Headline Hero H 1 1`] = `
 <h1
-  className="sc-jhAzac gGHCmk"
+  className="sc-jhAzac cKCjSn"
 >
   My example headline
 </h1>
@@ -1287,7 +1287,7 @@ exports[`Storyshots 4 Components/All/Headline Hero H 1 1`] = `
 
 exports[`Storyshots 4 Components/All/Headline Level 1 1`] = `
 <h1
-  className="sc-jhAzac sc-fBuWsC bOQjiW"
+  className="sc-jhAzac sc-fBuWsC hcDyZj"
 >
   My example headline
 </h1>
@@ -1295,7 +1295,7 @@ exports[`Storyshots 4 Components/All/Headline Level 1 1`] = `
 
 exports[`Storyshots 4 Components/All/Headline Level 2 1`] = `
 <h2
-  className="sc-fMiknA eFQPVV"
+  className="sc-fMiknA HqCgN"
 >
   My example headline
 </h2>
@@ -1330,12 +1330,12 @@ Array [
     onMouseLeave={[Function]}
   >
     <div
-      className="sc-kfGgVZ gDkaOa"
+      className="sc-kfGgVZ esXqqL"
     >
       <button
         aria-controls="menu-panel"
         aria-expanded="false"
-        className="sc-kafWEX bCYNWO"
+        className="sc-kafWEX drUOhO"
         onClick={[Function]}
       >
         <div
@@ -1353,7 +1353,7 @@ Array [
       >
         <img
           alt="Home"
-          className="sc-esjQYD ipRRwY"
+          className="sc-esjQYD bfSXal"
           src="test-file-stub"
         />
       </a>
@@ -1367,7 +1367,7 @@ Array [
         role="navigation"
       >
         <ul
-          className="sc-iELTvK VHqMN"
+          className="sc-iELTvK eSRqFl"
         >
           <li
             className="sc-jwKygS kXhQfa"
@@ -1523,7 +1523,7 @@ exports[`Storyshots 4 Components/All/Newsletter Sign Up Example 1`] = `
   }
 >
   <div
-    className="sc-hrWEMg gCNisU"
+    className="sc-hrWEMg cQWHJi"
   >
     <p
       className="sc-eqIVtm jipbPB h3"
@@ -1535,7 +1535,7 @@ exports[`Storyshots 4 Components/All/Newsletter Sign Up Example 1`] = `
     </p>
     <form
       action="https://www.createsend.com/t/subscribeerror?description="
-      className="sc-eTuwsz cTGrdO js-cm-form"
+      className="sc-eTuwsz dfvQkq js-cm-form"
       data-id="191722FC90141D02184CB1B62AB3DC26D57AD7AD0DF253BE15DD122C605B740244DFF1ADDEE1A8DA861127EDFD99BF281A7016BD9F175EAF91CB858CC76D303F"
       id="subForm"
       method="post"
@@ -1825,7 +1825,7 @@ exports[`Storyshots 4 Components/All/Text Normal 1`] = `
   }
 >
   <div
-    className="sc-gPEVay kAGHuZ text_block"
+    className="sc-gPEVay eVasWp text_block"
   >
     <p>
       We gotta burn the rain forest, 

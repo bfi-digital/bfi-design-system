@@ -13,6 +13,9 @@ const Outer = styled.figure`
 `
 const ImagesHolder = styled.div`
     display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
     flex-direction: row;
     align-items: flex-start;
     flex-wrap: wrap;

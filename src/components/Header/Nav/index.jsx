@@ -17,6 +17,9 @@ const Outer = styled.nav`
 const List = styled.ul`
     list-style: none;
     display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
     flex-direction: row;
     align-items: center;
     margin: 0px;
@@ -180,6 +183,9 @@ const InnerContainer = styled.div`
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
     flex-direction: row;
 `
 const Column = styled.div`
