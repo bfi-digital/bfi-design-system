@@ -20,18 +20,18 @@ const Outer = styled.li`
     min-height: 130px;
     width: 100%;
     padding: 15px;
-    padding-top: 243px;
+    padding-top: ${props => props.lessColumns ? "243px" : "243px"};;
 
     @media screen and (min-width: ${theme.m}){
         width: 190px;
         padding: ${theme.standardSpace}px;
-        padding-top: 185px;
+        padding-top: ${props => props.lessColumns ? "225px" : "185px"};;
     }
     @media screen and (min-width: ${theme.l}){
-        padding-top: 200px;
+        padding-top: ${props => props.lessColumns ? "240px" : "200px"};;
     }
     @media screen and (min-width: ${theme.xl}){
-        padding-top: 260px;
+        padding-top: ${props => props.lessColumns ? "300px" : "260px"};;
     }
 
 
@@ -113,13 +113,13 @@ const PageImageContainer = styled.div`
     height: 228px;
 
     @media screen and (min-width: ${theme.m}){
-        height: 160px;
+        height: ${props => props.lessColumns ? "205px" : "160px"};;
     }
     @media screen and (min-width: ${theme.l}){
-        height: 175px;
+        height: ${props => props.lessColumns ? "220px" : "175px"};;
     }
     @media screen and (min-width: ${theme.xl}){
-        height: 235px;
+        height: ${props => props.lessColumns ? "270px" : "235px"};;
     }
 `
 const PageImage = styled.div`
@@ -166,15 +166,16 @@ export const ArticleCard = ({
     category,
     author,
     type,
+    lessColumns,
     external
 }) =>
-    <Outer className="articleCard" pageWithSideBar={pageWithSideBar} withCategory={category ? true : false}>
+    <Outer className="articleCard" pageWithSideBar={pageWithSideBar} withCategory={category ? true : false} lessColumns={lessColumns}>
         {category ? 
             <CategoryTag>{category}</CategoryTag> 
             :
             type && <CategoryTag>{type}</CategoryTag>
         }
-        <PageImageContainer>
+        <PageImageContainer lessColumns={lessColumns}>
             <LazyImage
                 src={image480x270}
                 placeholder={image48x27 ? image48x27 : image480x270}

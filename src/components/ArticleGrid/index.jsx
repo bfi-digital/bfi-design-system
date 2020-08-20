@@ -177,7 +177,7 @@ export const ArticleGrid = ({
                         className={(firstHighlighted ? "withHighlight" : "noHighlight") + (pageWithSideBar ? " noBackground" : " withBackground")}
                     >
                         {articles.slice(0, currentNumber).map(article =>
-                            <ArticleCard key={article.uuid} pageWithSideBar={pageWithSideBar} {...article}/>    
+                            <ArticleCard key={article.uuid} pageWithSideBar={pageWithSideBar} lessColumns={articles.length === 2 || articles.length === 4} {...article}/>    
                         )
                         }
                     </Articles>
@@ -197,13 +197,13 @@ export const ArticleGrid = ({
                                     <ArticleCardHighlighted key={articles[0].uuid} pageWithSideBar={pageWithSideBar} {...articles[0]}/>
                                     {articles.length > 1 &&
                                         articles.slice(1).map(article =>
-                                            <ArticleCard key={article.uuid} pageWithSideBar={pageWithSideBar} {...article}/>    
+                                            <ArticleCard key={article.uuid} pageWithSideBar={pageWithSideBar} lessColumns={articles.length === 2 || articles.length === 4} {...article}/>    
                                         )
                                     }
                                 </>
                                 :
                                 articles.map(article =>
-                                    <ArticleCard key={article.uuid} pageWithSideBar={pageWithSideBar} {...article}/>    
+                                    <ArticleCard key={article.uuid} pageWithSideBar={pageWithSideBar} lessColumns={articles.length === 2 || articles.length === 4} {...article}/>    
                                 )
                             }
                         </Articles>
