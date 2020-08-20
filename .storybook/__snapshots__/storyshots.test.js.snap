@@ -1558,7 +1558,7 @@ exports[`Storyshots 4 Components/All/Newsletter Sign Up Example 1`] = `
         />
       </label>
       <button
-        className="sc-hXRMBi fJqnsJ"
+        className="sc-hXRMBi ccfBUP"
         type="submit"
       >
         Sign up
