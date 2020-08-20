@@ -46,7 +46,7 @@ const Outer = styled.button`
     }
     .react-add-to-calendar__icon--left.fa-calendar-plus-o {
         vertical-align: top;
-        margin-top: 7px;
+        margin-top: 5px;
     }
 
     .react-add-to-calendar {

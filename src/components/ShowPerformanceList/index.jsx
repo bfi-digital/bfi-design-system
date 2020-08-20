@@ -8,9 +8,19 @@ import { PlayButton } from "../PageContainer"
 import { ShowAddToCalendar } from "../ShowAddToCalendar"
 
 const Outer = styled.div`
+    font-size: ${theme.fontSize_s};
+
     h2:first-child {
         margin-block-start: 0;
         margin-block-end: ${theme.standardSpace}px;
+    }
+
+    @media screen and (min-width: ${theme.l}){
+        font-size: ${theme.fontSize_m};
+        line-height: ${theme.lineHeight_m};
+    }
+    @media screen and (min-width: ${theme.xl}){
+        font-size: ${theme.fontSize_xl};
     }
 `
 const PerformanceList = styled.ul`
@@ -19,9 +29,6 @@ const PerformanceList = styled.ul`
 `
 const Performance = styled.li`
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding: ${theme.standardSpace}px;
     margin-bottom: ${theme.standardSpace}px;
     background: ${theme.lightGrey};
@@ -37,13 +44,31 @@ const Performance = styled.li`
     strong {
         font-weight: ${theme.fontWeight_semiBold};
     }
+
+    @media screen and (min-width: ${theme.m}){
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 `
 
 const PerformanceDetails = styled.div`
-
+    margin-bottom: 15px;
+    @media screen and (min-width: ${theme.m}){
+        margin-bottom: 0px;
+    }
 `
 const PerformanceCTA = styled.div`
 
+`
+const DetailsContainer = styled.div`
+    display: flex;
+    p {
+        margin-top: 0;
+        &:first-of-type {
+            margin-right: 20px;
+        }
+    }
 `
 
 export const ShowPerformanceList = ({
@@ -96,15 +121,18 @@ export const ShowPerformanceList = ({
                                     />
                                 </>
                                 :
-                                <p>
-                                    <strong>From: </strong>
-                                    &nbsp;&nbsp;
-                                    <span><Moment local format="dddd Do MMMM YYYY - HH:mm">{performance.dateTimeStart}</Moment> BST</span>
-                                    <br />
-                                    <strong>To: </strong>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <span><Moment local format="dddd Do MMMM YYYY - HH:mm">{performance.dateTimeEnd}</Moment> BST</span>
-                                </p>
+                                <DetailsContainer>
+                                    <p>
+                                        <strong>From: </strong>
+                                        <br/>
+                                        <strong>To: </strong>
+                                    </p>
+                                    <p>
+                                        <span><Moment local format="dddd Do MMMM YYYY - HH:mm">{performance.dateTimeStart}</Moment> BST</span>
+                                        <br />
+                                        <span><Moment local format="dddd Do MMMM YYYY - HH:mm">{performance.dateTimeEnd}</Moment> BST</span>
+                                    </p>
+                                </DetailsContainer>
                             }
                         </PerformanceDetails>
                         <PerformanceCTA>
