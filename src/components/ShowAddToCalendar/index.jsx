@@ -3,16 +3,23 @@ import styled from "styled-components"
 import theme from "../_theme"
 import AddToCalendar from "react-add-to-calendar"
 
-const Outer = styled.div`
+const Outer = styled.button`
     margin-top: 15px;
     @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
     background: transparent;
     color: ${theme.primary};
     font-weight: bold;
     border: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 0;
     cursor: pointer;
+    padding-left: 7px;
+    margin-left: -7px;
+
+    &:focus {
+        outline: 2px solid ${theme.focus};
+        border-radius: 0;
+    }
 
     ul {
         list-style-type: none;
@@ -29,26 +36,41 @@ const Outer = styled.div`
         a:hover {
             text-decoration: none;
         }
+        a:focus {
+            outline: 2px solid ${theme.focus};
+            border-radius: 0;
+        }
         i {
             margin-right: 5px;
         }
     }
+    .react-add-to-calendar__icon--left.fa-calendar-plus-o {
+        vertical-align: top;
+        margin-top: 7px;
+    }
 
+    .react-add-to-calendar {
+        display: inline-block;
+        margin-left: 5px;
+    }
     .react-add-to-calendar__dropdown {
         background: ${theme.lightest};
         padding: 15px 25px;
-        margin-left: -5px;
+        margin-left: -32px;
     }
     .react-add-to-calendar__button {
         display: block;
         border: 3px solid transparent;
-        margin-left: -5px;
-        padding-left: 2px;
+        padding-left: 30px;
+        margin-left: -32px;
 
         &.open {
             border: 3px solid ${theme.lightest};
             color: ${theme.dark};
         }
+    }
+    .react-add-to-calendar__icon--right {
+        margin-left: 7px;
     }
 `
 
@@ -72,10 +94,13 @@ export const ShowAddToCalendar = ({
         { google: "Google" },
         { outlookcom: "Outlook" }
     ]
-
+    const onButtonClick = e => {
+        var link = document.getElementById('calendar_button');
+        link.childNodes[1].childNodes[0].childNodes[0].click();
+    };
+     
     return(
-        <Outer>
-            {/* NEED TO UPDATE THIS TO MAKE IT ACCESSIBLE, MAYBE LOOK AT http://leibowitz.me/react-add-to-calendar-hoc/ */}
+        <Outer onClick={onButtonClick} id="calendar_button">
             <i class="react-add-to-calendar__icon--left fa fa-calendar-plus-o"></i>
             <AddToCalendar 
                 event={calendarEvent} 
