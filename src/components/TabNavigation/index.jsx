@@ -83,6 +83,8 @@ const StyledLink = styled(Link)`
 
     &.active {
         font-weight: ${theme.fontWeight_semiBold};
+        opacity: 1 !important;
+        cursor: default;
     }
 `
 
@@ -90,10 +92,10 @@ export const TabNavigation = ({
     tabs
 }) => {
     return( 
-        <Outer>
+        <Outer role="tablist">
             {tabs.map((tab, index) =>
-                <Tab key={index}>
-                    <StyledLink to={tab.url} className={tab.isActive ? "active" : ""}>{tab.title}</StyledLink> 
+                <Tab key={index} role="presentation">
+                    <StyledLink role="tab" to={tab.url} className={tab.isActive ? "active" : ""}>{tab.title}</StyledLink> 
                 </Tab>
             )}
         </Outer>
