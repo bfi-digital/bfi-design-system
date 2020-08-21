@@ -108,6 +108,7 @@ export const ShowAddToCalendar = ({
                 buttonTemplate={icon} 
                 displayItemIcons={true} 
                 buttonClassOpen="open"
+                buttonLabel="Add to calendar"
             />
         </Outer>
     )
