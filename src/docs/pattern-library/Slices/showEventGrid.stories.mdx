@@ -1,0 +1,163 @@
+import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+import { ShowEventGrid } from "../../../components/ShowEventGrid/index"
+import demoEvents from "../../../components/ShowEventGrid/data"
+
+<Meta title="2 Pattern Library/Slices/Show Grid (Event)" component={ShowEventGrid} />
+
+# Show Event Grid
+ 
+ 
+## Examples
+
+<Preview>
+    <Story name="Multiple Events with first highlighted">
+        <div style={{
+            padding: "10px",
+            maxWidth: "1000px",
+            margin: "0 auto"
+        }}>
+            <ShowEventGrid events={[...demoEvents, ...demoEvents, ...demoEvents, ...demoEvents, ...demoEvents, ...demoEvents, ...demoEvents.slice(0, 2)]} firstHighlighted />
+        </div>
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="Multiple Events without first highlighted">
+        <div style={{
+            padding: "10px",
+            maxWidth: "1000px",
+            margin: "0 auto"
+        }}>
+            <ShowEventGrid events={[...demoEvents, ...demoEvents, ...demoEvents, ...demoEvents, ...demoEvents, ...demoEvents, ...demoEvents]} />
+        </div>
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="Multiple Events with first highlighted no grey background">
+        <div style={{
+            padding: "10px",
+            maxWidth: "1000px",
+            margin: "0 auto"
+        }}>
+            <ShowEventGrid events={[...demoEvents, ...demoEvents, ...demoEvents, ...demoEvents, ...demoEvents, ...demoEvents, ...demoEvents.slice(0, 2)]} firstHighlighted pageWithSideBar={true}>
+                <ShowEventGrid events={false} skeletons={3} pageWithSideBar={true} />
+            </ShowEventGrid>
+        </div>
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="1 Event">
+        <div style={{
+            padding: "10px",
+            maxWidth: "1000px",
+            margin: "0 auto"
+        }}>
+            <ShowEventGrid events={[demoEvents[0]]} />
+        </div>
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="2 Events">
+        <div style={{
+            padding: "10px",
+            maxWidth: "1000px",
+            margin: "0 auto"
+        }}>
+            <ShowEventGrid events={demoEvents.slice(0, 2)} />
+        </div>
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="3 Events">
+        <div style={{
+            padding: "10px",
+            maxWidth: "1000px",
+            margin: "0 auto"
+        }}>
+            <ShowEventGrid events={demoEvents.slice(0, 3)} />
+        </div>
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="4 Events">
+        <div style={{
+            padding: "10px",
+            maxWidth: "1000px",
+            margin: "0 auto"
+        }}>
+            <ShowEventGrid events={[...demoEvents.slice(0, 4)]} />
+        </div>
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="5 Events">
+        <div style={{
+            padding: "10px",
+            maxWidth: "1000px",
+            margin: "0 auto"
+        }}>
+            <ShowEventGrid events={[...demoEvents.slice(0, 5)]} />
+        </div>
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="6 Events">
+        <div style={{
+            padding: "10px",
+            maxWidth: "1000px",
+            margin: "0 auto"
+        }}>
+            <ShowEventGrid events={[...demoEvents.slice(0, 6)]} />
+        </div>
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="Loading">
+        <div style={{
+            padding: "10px",
+            maxWidth: "1000px",
+            margin: "0 auto"
+        }}>
+            <ShowEventGrid events={false} />
+        </div>
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="Loading with limit">
+        <div style={{
+            padding: "10px",
+            maxWidth: "1000px",
+            margin: "0 auto"
+        }}>
+            <ShowEventGrid events={false} skeletons={3} />
+        </div>
+    </Story>
+</Preview>
+
+
+<Preview>
+    <Story name="Example of loading state">
+        <div style={{
+            padding: "10px",
+            maxWidth: "1000px",
+            margin: "0 auto"
+        }}>
+            <ShowEventGrid events={[...demoEvents, ...demoEvents, ...demoEvents, ...demoEvents, ...demoEvents, ...demoEvents, ...demoEvents.slice(0, 2)]} firstHighlighted pageWithSideBar={true}>
+                <ShowEventGrid events={false} skeletons={3} pageWithSideBar={true} />
+            </ShowEventGrid>
+        </div>
+    </Story>
+</Preview>
+
+## Props 
+
+<Props of={ShowEventGrid} />

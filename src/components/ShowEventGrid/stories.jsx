@@ -1,10 +1,10 @@
 // import React from "react"
 import { withA11y } from "@storybook/addon-a11y"
-// import { EventGrid } from "./index"
+// import { ShowEventGrid } from "./index"
 // import demoEvents from "./data"
 
 export default {
-    title: "4 Components/All/EventGrid",
+    title: "4 Components/All/ShowEventGrid",
     decorators: [withA11y],
 }
 
@@ -14,7 +14,7 @@ export default {
 //         maxWidth: "1000px",
 //         margin: "0 auto"
 //     }}>
-//         <EventGrid 
+//         <ShowEventGrid 
 //             events={[...demoEvents, ...demoEvents, ...demoEvents, ...demoEvents, ...demoEvents, ...demoEvents, ...demoEvents]}
 //         />
 //     </div>
@@ -25,7 +25,7 @@ export default {
 //         maxWidth: "1000px",
 //         margin: "0 auto"
 //     }}>
-//         <EventGrid 
+//         <ShowEventGrid 
 //             events={[...demoEvents, ...demoEvents]}
 //             favouritable={true}
 //             onFavourite={e => console.log(e)} 

@@ -32,6 +32,8 @@ import { ShowPerformanceList } from "../../../components/ShowPerformanceList"
 import demoPerformances from "../../../components/ShowPerformanceList/data"
 import { TabNavigation } from "../../../components/TabNavigation"
 import demoTabs from "../../../components/TabNavigation/data"
+import { ShowEventGrid } from "../../../components/ShowEventGrid"
+import demoEvents from "../../../components/ShowEventGrid/data"
 
 <Meta title="3 Page examples/3 London Film Festival" component={MainContent} />
 
@@ -418,6 +420,10 @@ import demoTabs from "../../../components/TabNavigation/data"
                         </ul>
                         <p>More panelists will be announced SOON!</p>
                     </Text>
+                    <ShowEventGrid 
+                        events={[...demoEvents]}
+                        pageWithSideBar
+                    />
                 </MainContent>
                 <Sidebar>
                     <QuickFacts
@@ -483,12 +489,87 @@ import demoTabs from "../../../components/TabNavigation/data"
 
 
 <Preview>
-    <Story name="3 Programme - view all strands">
+    <Story name="3.1 Programme - view all strands">
         <>
             <Header navItems={navItems} quickLinks={quickLinksData} />
             <Wrapper>           
                 <MainContent>
                     <Headline level={1} text="View all strands" />
+                    <TabNavigation tabs={demoTabs} />
+                    <TabNavigation tabs={demoTabs} />
+                </MainContent>
+            </Wrapper>
+            <Footer
+                menus={footerMenus}
+                copyrightLinks={[
+                    {
+                        title: "Cookies & privacy",
+                        url: "#1"
+                    },
+                    {
+                        title: "Terms & conditions",
+                        url: "#2"
+                    },
+                    {
+                        title: "Accessibility",
+                        url: "#3"
+                    },
+                    {
+                        title: "Help & FAQs",
+                        url: "#4"
+                    }
+                ]}
+                copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"
+            />
+        </>
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="3.2 Programme - view all films">
+        <>
+            <Header navItems={navItems} quickLinks={quickLinksData} />
+            <Wrapper>           
+                <MainContent>
+                    <Headline level={1} text="View all strands" />
+                    <TabNavigation tabs={demoTabs} />
+                    <TabNavigation tabs={demoTabs} />
+                </MainContent>
+            </Wrapper>
+            <Footer
+                menus={footerMenus}
+                copyrightLinks={[
+                    {
+                        title: "Cookies & privacy",
+                        url: "#1"
+                    },
+                    {
+                        title: "Terms & conditions",
+                        url: "#2"
+                    },
+                    {
+                        title: "Accessibility",
+                        url: "#3"
+                    },
+                    {
+                        title: "Help & FAQs",
+                        url: "#4"
+                    }
+                ]}
+                copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"
+            />
+        </>
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="3.3 Programme - view all events">
+        <>
+            <Header navItems={navItems} quickLinks={quickLinksData} />
+            <Wrapper>           
+                <MainContent>
+                    <Headline level={1} text="View all strands" />
+                    <TabNavigation tabs={demoTabs} />
                     <TabNavigation tabs={demoTabs} />
                 </MainContent>
             </Wrapper>

@@ -9,9 +9,8 @@ import heartFilled from "./heart-filled.svg"
 
 const Outer = styled.li`
     position: relative;
-    background: ${props => props.pageWithSideBar ? theme.lightGrey : theme.white};
+    background: ${theme.lightGrey};
     box-shadow: 0px 5px 0px ${theme.primary};
-    margin-bottom: 35px;
     display: flex;
     -webkit-flex-direction: column;
     -moz-flex-direction: column;
@@ -22,18 +21,53 @@ const Outer = styled.li`
     min-height: 130px;
     width: 100%;
     padding: 15px;
-    padding-top: ${props => props.withImage ? "258px" : "45px"};
+    padding-top: ${props => props.withImage ? `${(theme.standardSpace*0.75)+197}px` : "45px"};
+    margin-bottom: ${theme.standardSpace*0.75}px;
+    margin-right: ${theme.standardSpace*0.5}px;
 
+    @media screen and (min-width: ${theme.s}){
+        width: calc(50% - 12.5px);
+        margin-right: ${theme.standardSpace*0.5}px;
+        margin-bottom: 20px;
+        &:nth-of-type(2n) {
+            margin-right: 0;
+        }
+        &:nth-of-type(3n) {
+            margin-right: ${theme.standardSpace*0.5}px;
+        }
+    }
     @media screen and (min-width: ${theme.m}){
-        width: 190px;
+        width: calc(33.333% - 25px);
+        margin-bottom: 35px;
+        margin-right: ${theme.standardSpace}px;
         padding: ${theme.standardSpace}px;
-        padding-top: ${props => props.withImage ? "120px" : "45px"};
+        padding-top: ${props => props.withImage ? "188px" : "45px"};
+        &:nth-of-type(2n) {
+            margin-right: ${theme.standardSpace}px;
+        }
+        &:nth-of-type(3n) {
+            margin-right: 0;
+        }
     }
     @media screen and (min-width: ${theme.l}){
-        padding-top: ${props => props.withImage ? "215px" : "45px"};
+        width: calc(25% - 14.5px);
+        margin-bottom: ${theme.standardSpace}px;
+        margin-right: ${theme.standardSpace*0.75}px;
+        padding: ${theme.standardSpace*0.75}px;
+        padding-top: ${props => props.withImage ? `${(theme.standardSpace*0.75)+150}px` : "45px"};
+
+        &:nth-of-type(2n) {
+            margin-right: ${theme.standardSpace*0.75}px;
+        }
+        &:nth-of-type(3n) {
+            margin-right: ${theme.standardSpace*0.75}px;
+        }
+        &:nth-of-type(4n) {
+            margin-right: 0;
+        }
     }
     @media screen and (min-width: ${theme.xl}){
-        padding-top: ${props => props.withImage ? "275px" : "45px"};
+        padding-top: ${props => props.withImage ? `${(theme.standardSpace*0.75)+135}px` : "40px"};
     }
 
 
@@ -112,16 +146,16 @@ const PageImageContainer = styled.div`
     position: absolute;
     top: 0;
     left: 0;
-    height: 228px;
+    height: 197px;
 
     @media screen and (min-width: ${theme.m}){
         height: 160px;
     }
     @media screen and (min-width: ${theme.l}){
-        height: 175px;
+        height: 150px;
     }
     @media screen and (min-width: ${theme.xl}){
-        height: 235px;
+        height: 135px;
     }
 `
 const PageImage = styled.div`
@@ -145,7 +179,7 @@ const CategoryTag = styled.div`
     padding-right: 10px;
     position: absolute;
     font-weight: ${theme.fontWeight_semiBold};
-    top: ${props => props.withImage ? "213px" : "0px"};
+    top: ${props => props.withImage ? "180px" : "0px"};
     right: ${props => props.withImage ? "15px" : "0px"};
     z-index: 1;
 
@@ -155,10 +189,10 @@ const CategoryTag = styled.div`
         top: ${props => props.withImage ? "145px" : "0px"};
     }
     @media screen and (min-width: ${theme.l}){
-        top: ${props => props.withImage ? "160px" : "0px"};
+        top: ${props => props.withImage ? "133px" : "0px"};
     }
     @media screen and (min-width: ${theme.xl}){
-        top: ${props => props.withImage ? "220px" : "0px"};
+        top: ${props => props.withImage ? "117px" : "0px"};
     }
 `
 
@@ -186,14 +220,12 @@ const FavButton = styled.button`
 `
 
 export const EventCard = ({
-    pageWithSideBar,
     title,
     url,
     image480x270,
     image48x27,
     format,
     dateTime,
-    // type,
     external,
     
     favouritable,
@@ -201,7 +233,7 @@ export const EventCard = ({
     onFavourite,
     onUnfavourite
 }) =>
-    <Outer className="eventCard" pageWithSideBar={pageWithSideBar} withImage={image480x270 && image48x27}>
+    <Outer withImage={image480x270 && image48x27}>
 
         {format && <CategoryTag withImage={image480x270 && image48x27}>{format}</CategoryTag>}
 

@@ -100,7 +100,7 @@ export const ShowAddToCalendar = ({
     };
      
     return(
-        <Outer onClick={onButtonClick} id="calendar_button">
+        <Outer onClick={onButtonClick} id="calendar_button" aria-haspopup="listbox">
             <i class="react-add-to-calendar__icon--left fa fa-calendar-plus-o"></i>
             <AddToCalendar 
                 event={calendarEvent} 
