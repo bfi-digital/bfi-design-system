@@ -34,5 +34,16 @@ export default [
         paywall: "paid",
         ctaURL: "https://whatson.bfi.org.uk/Online/default.asp",
         ctaText: "Watch it at BFI Southbank"
+    },
+    {
+        id: "3",
+        performanceInfo: "BFI Player without end date",
+        dateTimeStart: "2020-10-15T18:00",
+        availability: "Available",
+        platform: "player",
+        location: "BFI Southbank",
+        screen: "",
+        paywall: "paid",
+        ctaURL: "https://player.bfi.org.uk/subscription/film/watch-lynn-lucy-2019-online"
     }
 ]

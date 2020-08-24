@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import theme from "../_theme"
 import Moment from "react-moment"
+import "moment-timezone"
 import { ShowAddToCalendar } from "../ShowAddToCalendar"
 
 const Outer = styled.div`
@@ -34,11 +35,12 @@ export const ShowDateTimeSidebar = ({
     dateTimeEnd,
     performanceInfo
 }) => {
+    const processedStartDateTime = new Date(dateTimeStart)
     const datesAreOnSameDayCheck = (first, second) =>
         first.getFullYear() === second.getFullYear() &&
         first.getMonth() === second.getMonth() &&
         first.getDate() === second.getDate()
-    const datesAreOnSameDay = datesAreOnSameDayCheck(new Date(dateTimeStart), new Date(dateTimeEnd))
+    const datesAreOnSameDay = dateTimeEnd ? datesAreOnSameDayCheck(processedStartDateTime, new Date(dateTimeEnd)) : true
 
     return(
         <Outer>
@@ -47,26 +49,38 @@ export const ShowDateTimeSidebar = ({
             {datesAreOnSameDay && <strong>Date &amp; Time</strong> }
             <DateP>
                 {!datesAreOnSameDay && <strong>From: </strong>}
-                {!datesAreOnSameDay && <span><Moment local format="HH:mm">{dateTimeStart}</Moment> BST</span>}
+                {!datesAreOnSameDay && <span><Moment tz="Europe/London" format="HH:mm z">{dateTimeStart}</Moment></span>}
                 <Moment format="dddd Do MMMM YYYY" date={dateTimeStart} />
             </DateP>
             {!datesAreOnSameDay && 
                 <DateP>
                     <strong>To: </strong>
-                    <span><Moment local format="HH:mm">{dateTimeEnd}</Moment> BST</span>
+                    <span><Moment tz="Europe/London" format="HH:mm z">{dateTimeEnd}</Moment></span>
                     <Moment format="dddd Do MMMM YYYY" date={dateTimeEnd} />
                 </DateP>
             }
             {datesAreOnSameDay && 
                 <TimeP>
-                    <Moment local format="HH:mm">{dateTimeStart}</Moment>
-                    &nbsp;&ndash;&nbsp;
-                    <Moment local format="HH:mm">{dateTimeEnd}</Moment>
+                    <Moment tz="Europe/London" format="HH:mm">{dateTimeStart}</Moment>
+                    {dateTimeEnd ? 
+                        <>
+                            &nbsp;&ndash;&nbsp;
+                            <Moment tz="Europe/London" format="HH:mm z">{dateTimeEnd}</Moment>
+                        </>
+                        :
+                        <span>&nbsp;<Moment tz="Europe/London" format="z">{performance.dateTimeEnd}</Moment></span>
+                    }
                 </TimeP>
             }
 
             {datesAreOnSameDay && 
-                <ShowAddToCalendar title={title} description={description} location={location} dateTimeStart={dateTimeStart} dateTimeEnd={dateTimeEnd} />
+                <ShowAddToCalendar 
+                    title={title} 
+                    description={description} 
+                    location={location} 
+                    dateTimeStart={dateTimeStart} 
+                    dateTimeEnd={dateTimeEnd ? dateTimeEnd : processedStartDateTime.setHours(processedStartDateTime.getHours() + 2)} 
+                />
             }
         </Outer>
     )

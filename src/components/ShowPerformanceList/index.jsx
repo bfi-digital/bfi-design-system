@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import theme from "../_theme"
 import Moment from "react-moment"
+import "moment-timezone"
 import { Headline } from "../Headline"
 import { Button } from "../Button"
 import { PlayButton } from "../PageContainer"
@@ -106,10 +107,14 @@ export const ShowPerformanceList = ({
                                     <p>
                                         <strong>
                                             <Moment format="dddd Do MMMM YYYY">{performance.dateTimeStart}</Moment><br />
-                                            <Moment local format="HH:mm">{performance.dateTimeStart}</Moment>
-                                            &nbsp;&ndash;&nbsp;
-                                            <Moment local format="HH:mm">{performance.dateTimeEnd}</Moment>
-                                            &nbsp;BST
+                                            <Moment tz="Europe/London" format="HH:mm">{performance.dateTimeStart}</Moment>
+                                            {performance.dateTimeEnd &&
+                                                <>
+                                                    &nbsp;&ndash;&nbsp;
+                                                    <Moment tz="Europe/London" format="HH:mm">{performance.dateTimeEnd}</Moment>
+                                                </>
+                                            }
+                                            &nbsp;<Moment tz="Europe/London" format="z">{performance.dateTimeEnd}</Moment>
                                         </strong>
                                     </p>
                                     <ShowAddToCalendar 
@@ -117,20 +122,32 @@ export const ShowPerformanceList = ({
                                         description={showDescription} 
                                         location={performance.platform == "southbank" ? "BFI Southbank, Belvedere Rd, Bishop's, London SE1 8XT" : performance.ctaURL} 
                                         dateTimeStart={performance.dateTimeStart} 
-                                        dateTimeEnd={performance.dateTimeEnd} 
+                                        dateTimeEnd={performance.dateTimeEnd ? performance.dateTimeEnd : new Date(performance.dateTimeEnd).setHours(new Date(performance.dateTimeEnd).getHours() + 2)} 
                                     />
                                 </>
                                 :
                                 <DetailsContainer>
                                     <p>
-                                        <strong>From: </strong>
+                                        {performance.dateTimeEnd ? 
+                                            <strong>From: </strong>
+                                            :
+                                            <strong>Date: </strong>
+                                        }
                                         <br/>
-                                        <strong>To: </strong>
+                                        {performance.dateTimeEnd && <strong>To: </strong> }
                                     </p>
                                     <p>
-                                        <span><Moment local format="dddd Do MMMM YYYY - HH:mm">{performance.dateTimeStart}</Moment> BST</span>
-                                        <br />
-                                        <span><Moment local format="dddd Do MMMM YYYY - HH:mm">{performance.dateTimeEnd}</Moment> BST</span>
+                                        <span>
+                                            <Moment tz="Europe/London" format="dddd Do MMMM YYYY - HH:mm z">{performance.dateTimeStart}</Moment> 
+                                        </span>
+                                        {performance.dateTimeEnd &&
+                                            <>
+                                                <br />
+                                                <span>
+                                                    <Moment tz="Europe/London" format="dddd Do MMMM YYYY - HH:mm z">{performance.dateTimeEnd}</Moment>
+                                                </span>
+                                            </>
+                                        }
                                     </p>
                                 </DetailsContainer>
                             }
