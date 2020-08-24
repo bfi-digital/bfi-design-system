@@ -33,7 +33,7 @@ const Outer = styled.div`
         z-index: -1;
     }
 `
-const Articles = styled.ul`
+const Articles = styled.div`
     margin: 0;
     padding: 0;
     display: flex;

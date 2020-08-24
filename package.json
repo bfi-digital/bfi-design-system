@@ -1,6 +1,6 @@
 {
   "name": "bfi-design-system",
-  "version": "0.2.17",
+  "version": "0.2.18",
   "author": "FutureGov <dev@wearefuturegov.com> (https://wearefuturegov.com)",
   "homepage": "https://gerwig.netlify.com",
   "description": "Next-gen design system for the British Film Institute",
@@ -12,7 +12,7 @@
     "build-storybook": "build-storybook",
     "pretest": "eslint src/ --ext .jsx",
     "test": "jest",
-    "prepare": "jest && rollup -c",
+    "prepare": "rollup -c",
     "lint": "eslint src/ --ext .jsx",
     "typecheck": "tsc",
     "dev": "npm-run-all --parallel dev:*",
@@ -77,7 +77,8 @@
   },
   "jest": {
     "transformIgnorePatterns": [
-      "<rootDir>/src/docs"
+      "<rootDir>/src/docs",
+      "<rootDir>/src/components/FilmGrid"
     ],
     "moduleNameMapper": {
       "^.+\\.(mdx|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",

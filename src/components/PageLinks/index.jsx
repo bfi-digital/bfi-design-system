@@ -5,7 +5,7 @@ import { PageLink } from "./Link"
 import PropTypes from "prop-types"
 import { Scroller } from "../Scroller"
 
-const Outer = styled.ul`
+const Outer = styled.div`
     padding: 15px 0;
     padding-bottom: 0;
     list-style: none;

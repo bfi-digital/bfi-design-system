@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 import theme from "../_theme"
-import Moment from "react-moment"
 import { LinkSwitch as Link } from "../LinkSwitch"
 
 const Outer = styled.ul`

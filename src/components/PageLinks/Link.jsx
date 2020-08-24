@@ -7,7 +7,7 @@ import Arrow from "./arrow-right"
 import parse from "html-react-parser"
 import LazyImage from "react-lazy-progressive-image"
 
-const Outer = styled.li`
+const Outer = styled.div`
     position: relative;
     background: ${theme.lightGrey};
     box-shadow: 0px 5px 0px ${theme.primary};
@@ -188,7 +188,7 @@ export const PageLink = ({
 }) =>
     <ConditionalWrapper
         condition={inScroller}
-        wrapper={children => <RestyledOuter withImages={withImages} lessColumns={lessColumns} className={external ? "external_link" : ""}>{children}</RestyledOuter>}
+        wrapper={children => <RestyledOuter withImages={withImages} lessColumns={lessColumns} className={external ? "external_link scrollcard" : "scrollcard"}>{children}</RestyledOuter>}
         wrapper2={children => <Outer withImages={withImages} lessColumns={lessColumns} className={external ? "external_link" : ""}>{children}</Outer>}
     >
         { withImages && 

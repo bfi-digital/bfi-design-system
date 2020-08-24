@@ -94,14 +94,13 @@ export const ShowAddToCalendar = ({
         { google: "Google" },
         { outlookcom: "Outlook" }
     ]
-    const onButtonClick = e => {
-        var link = document.getElementById('calendar_button');
-        link.childNodes[1].childNodes[0].childNodes[0].click();
-    };
+    const onButtonClick = () => {
+        var link = document.getElementById("calendar_button")
+        link.childNodes[1].childNodes[0].childNodes[0].click()
+    }
      
     return(
         <Outer onClick={onButtonClick} id="calendar_button" aria-haspopup="listbox">
-            <i class="react-add-to-calendar__icon--left fa fa-calendar-plus-o"></i>
             <AddToCalendar 
                 event={calendarEvent} 
                 listItems={calendarItems} 

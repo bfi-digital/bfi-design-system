@@ -10,19 +10,7 @@ import demoEvents from "../../../components/ShowEventGrid/data"
 ## Examples
 
 <Preview>
-    <Story name="Multiple Events with first highlighted">
-        <div style={{
-            padding: "10px",
-            maxWidth: "1000px",
-            margin: "0 auto"
-        }}>
-            <ShowEventGrid events={[...demoEvents, ...demoEvents, ...demoEvents, ...demoEvents, ...demoEvents, ...demoEvents, ...demoEvents.slice(0, 2)]} firstHighlighted />
-        </div>
-    </Story>
-</Preview>
-
-<Preview>
-    <Story name="Multiple Events without first highlighted">
+    <Story name="Multiple Events in long list">
         <div style={{
             padding: "10px",
             maxWidth: "1000px",
@@ -34,15 +22,13 @@ import demoEvents from "../../../components/ShowEventGrid/data"
 </Preview>
 
 <Preview>
-    <Story name="Multiple Events with first highlighted no grey background">
+    <Story name="Multiple Events in scroller">
         <div style={{
             padding: "10px",
             maxWidth: "1000px",
             margin: "0 auto"
         }}>
-            <ShowEventGrid events={[...demoEvents, ...demoEvents, ...demoEvents, ...demoEvents, ...demoEvents, ...demoEvents, ...demoEvents.slice(0, 2)]} firstHighlighted pageWithSideBar={true}>
-                <ShowEventGrid events={false} skeletons={3} pageWithSideBar={true} />
-            </ShowEventGrid>
+            <ShowEventGrid asScroller events={[...demoEvents, ...demoEvents, ...demoEvents, ...demoEvents, ...demoEvents, ...demoEvents, ...demoEvents]} />
         </div>
     </Story>
 </Preview>
@@ -120,40 +106,18 @@ import demoEvents from "../../../components/ShowEventGrid/data"
 </Preview>
 
 <Preview>
-    <Story name="Loading">
+    <Story name="Events with favouriting example">
         <div style={{
             padding: "10px",
             maxWidth: "1000px",
             margin: "0 auto"
         }}>
-            <ShowEventGrid events={false} />
-        </div>
-    </Story>
-</Preview>
-
-<Preview>
-    <Story name="Loading with limit">
-        <div style={{
-            padding: "10px",
-            maxWidth: "1000px",
-            margin: "0 auto"
-        }}>
-            <ShowEventGrid events={false} skeletons={3} />
-        </div>
-    </Story>
-</Preview>
-
-
-<Preview>
-    <Story name="Example of loading state">
-        <div style={{
-            padding: "10px",
-            maxWidth: "1000px",
-            margin: "0 auto"
-        }}>
-            <ShowEventGrid events={[...demoEvents, ...demoEvents, ...demoEvents, ...demoEvents, ...demoEvents, ...demoEvents, ...demoEvents.slice(0, 2)]} firstHighlighted pageWithSideBar={true}>
-                <ShowEventGrid events={false} skeletons={3} pageWithSideBar={true} />
-            </ShowEventGrid>
+            <ShowEventGrid 
+                events={[...demoEvents, ...demoEvents]}
+                favouritable={true}
+                onFavourite={e => console.log(e)} 
+                onUnfavourite={e => console.log(e)} 
+            />
         </div>
     </Story>
 </Preview>

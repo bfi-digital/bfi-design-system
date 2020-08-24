@@ -52,7 +52,14 @@ const ScrollerTrack = styled.div`
         }
     }
     &.page_links_block {
-        li {
+        .scrollcard {
+            scroll-snap-align: start;
+            scroll-snap-stop: bold;
+            margin-right: 40px !important;
+        }
+    }
+    &.showevent_grid_block_scroller {
+        .scrollcard {
             scroll-snap-align: start;
             scroll-snap-stop: bold;
             margin-right: 40px !important;
@@ -198,7 +205,7 @@ export const Scroller = ({
     }
       
     return(
-        <Outer withoutBreak={withoutBreak} className={classes}>
+        <Outer withoutBreak={withoutBreak}>
             {showLeft && 
                 <LeftScrollerFade 
                     onClick={() => scrollLeftClick(300)} 

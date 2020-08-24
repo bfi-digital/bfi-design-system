@@ -887,357 +887,12 @@ exports[`Storyshots 4 Components/All/FilmShowing Sold Out 1`] = `
 </div>
 `;
 
-exports[`Storyshots 4 Components/All/FilmShowingGrid Example 1`] = `
-<section
-  className="sc-ksYbfQ idWHsL"
->
-  <div
-    className="sc-kjoXOD bsTIhq"
-  >
-    <p
-      className="sc-cHGsZl gBsYkR"
-    >
-      24th February
-    </p>
-    <ul
-      className="sc-TOsTZ thZdb"
-    >
-      <li
-        className="sc-kgAjT fAezwI"
-      >
-        <a
-          className="sc-VigVT dNkdxS"
-          colorScheme={0}
-          href="#"
-          id="10101"
-          target="_self"
-          time="3:30pm"
-          title="Book this at BFI Southbank"
-        >
-          3:30pm
-        </a>
-      </li>
-      <li
-        className="sc-kgAjT fAezwI"
-      >
-        <a
-          className="sc-VigVT dNkdxS"
-          colorScheme={0}
-          href="#"
-          id="202020"
-          target="_self"
-          time="6:30pm"
-          title="Book this at BFI Southbank"
-        >
-          6:30pm
-        </a>
-      </li>
-      <li
-        className="sc-kgAjT fAezwI"
-      >
-        <span
-          className="sc-cJSrbW DqKqv"
-        >
-          8:45pm
-           - Sold out
-        </span>
-      </li>
-    </ul>
-  </div>
-  <div
-    className="sc-kjoXOD bsTIhq"
-  >
-    <p
-      className="sc-cHGsZl gBsYkR"
-    >
-      24th February
-    </p>
-    <ul
-      className="sc-TOsTZ thZdb"
-    >
-      <li
-        className="sc-kgAjT fAezwI"
-      >
-        <span
-          className="sc-cJSrbW DqKqv"
-        >
-          3:30pm
-           - Sold out
-        </span>
-      </li>
-      <li
-        className="sc-kgAjT fAezwI"
-      >
-        <a
-          className="sc-VigVT dNkdxS"
-          colorScheme={0}
-          href="#"
-          id="5050505"
-          target="_self"
-          time="6:30pm"
-          title="Book this at BFI Southbank"
-        >
-          6:30pm
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div
-    className="sc-kjoXOD bsTIhq"
-  >
-    <p
-      className="sc-cHGsZl gBsYkR"
-    >
-      24th February
-    </p>
-    <ul
-      className="sc-TOsTZ thZdb"
-    >
-      <li
-        className="sc-kgAjT fAezwI"
-      >
-        <span
-          className="sc-cJSrbW DqKqv"
-        >
-          3:30pm
-           - Sold out
-        </span>
-      </li>
-      <li
-        className="sc-kgAjT fAezwI"
-      >
-        <a
-          className="sc-VigVT dNkdxS"
-          colorScheme={0}
-          href="#"
-          id="70707"
-          target="_self"
-          time="6:30pm"
-          title="Book this at BFI Southbank"
-        >
-          6:30pm
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div
-    className="sc-kjoXOD bsTIhq"
-  >
-    <p
-      className="sc-cHGsZl gBsYkR"
-    >
-      24th February
-    </p>
-    <ul
-      className="sc-TOsTZ thZdb"
-    >
-      <li
-        className="sc-kgAjT fAezwI"
-      >
-        <span
-          className="sc-cJSrbW DqKqv"
-        >
-          3:30pm
-           - Sold out
-        </span>
-      </li>
-      <li
-        className="sc-kgAjT fAezwI"
-      >
-        <span
-          className="sc-cJSrbW DqKqv"
-        >
-          6:30pm
-           - Sold out
-        </span>
-      </li>
-    </ul>
-  </div>
-</section>
-`;
-
-exports[`Storyshots 4 Components/All/FilmShowingGrid Example With Title 1`] = `
-Array [
-  <p
-    className="sc-eqIVtm jipbPB h3"
-  >
-    La La Land
-  </p>,
-  <section
-    className="sc-ksYbfQ idWHsL"
-  >
-    <div
-      className="sc-kjoXOD bsTIhq"
-    >
-      <p
-        className="sc-cHGsZl gBsYkR"
-      >
-        24th February
-      </p>
-      <ul
-        className="sc-TOsTZ thZdb"
-      >
-        <li
-          className="sc-kgAjT fAezwI"
-        >
-          <a
-            className="sc-VigVT dNkdxS"
-            colorScheme={0}
-            href="#"
-            id="10101"
-            target="_self"
-            time="3:30pm"
-            title="Book this at BFI Southbank"
-          >
-            3:30pm
-          </a>
-        </li>
-        <li
-          className="sc-kgAjT fAezwI"
-        >
-          <a
-            className="sc-VigVT dNkdxS"
-            colorScheme={0}
-            href="#"
-            id="202020"
-            target="_self"
-            time="6:30pm"
-            title="Book this at BFI Southbank"
-          >
-            6:30pm
-          </a>
-        </li>
-        <li
-          className="sc-kgAjT fAezwI"
-        >
-          <span
-            className="sc-cJSrbW DqKqv"
-          >
-            8:45pm
-             - Sold out
-          </span>
-        </li>
-      </ul>
-    </div>
-    <div
-      className="sc-kjoXOD bsTIhq"
-    >
-      <p
-        className="sc-cHGsZl gBsYkR"
-      >
-        24th February
-      </p>
-      <ul
-        className="sc-TOsTZ thZdb"
-      >
-        <li
-          className="sc-kgAjT fAezwI"
-        >
-          <span
-            className="sc-cJSrbW DqKqv"
-          >
-            3:30pm
-             - Sold out
-          </span>
-        </li>
-        <li
-          className="sc-kgAjT fAezwI"
-        >
-          <a
-            className="sc-VigVT dNkdxS"
-            colorScheme={0}
-            href="#"
-            id="5050505"
-            target="_self"
-            time="6:30pm"
-            title="Book this at BFI Southbank"
-          >
-            6:30pm
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div
-      className="sc-kjoXOD bsTIhq"
-    >
-      <p
-        className="sc-cHGsZl gBsYkR"
-      >
-        24th February
-      </p>
-      <ul
-        className="sc-TOsTZ thZdb"
-      >
-        <li
-          className="sc-kgAjT fAezwI"
-        >
-          <span
-            className="sc-cJSrbW DqKqv"
-          >
-            3:30pm
-             - Sold out
-          </span>
-        </li>
-        <li
-          className="sc-kgAjT fAezwI"
-        >
-          <a
-            className="sc-VigVT dNkdxS"
-            colorScheme={0}
-            href="#"
-            id="70707"
-            target="_self"
-            time="6:30pm"
-            title="Book this at BFI Southbank"
-          >
-            6:30pm
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div
-      className="sc-kjoXOD bsTIhq"
-    >
-      <p
-        className="sc-cHGsZl gBsYkR"
-      >
-        24th February
-      </p>
-      <ul
-        className="sc-TOsTZ thZdb"
-      >
-        <li
-          className="sc-kgAjT fAezwI"
-        >
-          <span
-            className="sc-cJSrbW DqKqv"
-          >
-            3:30pm
-             - Sold out
-          </span>
-        </li>
-        <li
-          className="sc-kgAjT fAezwI"
-        >
-          <span
-            className="sc-cJSrbW DqKqv"
-          >
-            6:30pm
-             - Sold out
-          </span>
-        </li>
-      </ul>
-    </div>
-  </section>,
-]
-`;
-
 exports[`Storyshots 4 Components/All/Filter-esque Links Normal 1`] = `
 <nav
-  className="sc-hmzhuo jDAeNT filter_links"
+  className="sc-ksYbfQ gxLpUQ filter_links"
 >
   <a
-    className="sc-frDJqD hZZEXw"
+    className="sc-hmzhuo iFqYbj"
     disabled={false}
     href="#1"
     title="Show all \\"Example link\\" articles"
@@ -1245,7 +900,7 @@ exports[`Storyshots 4 Components/All/Filter-esque Links Normal 1`] = `
     Example link
   </a>
   <a
-    className="sc-frDJqD hZZEXw"
+    className="sc-hmzhuo iFqYbj"
     disabled={false}
     href="#2"
     title="Show all \\"Where to stream\\" articles"
@@ -1253,7 +908,7 @@ exports[`Storyshots 4 Components/All/Filter-esque Links Normal 1`] = `
     Where to stream
   </a>
   <a
-    className="sc-frDJqD hZZEXw"
+    className="sc-hmzhuo iFqYbj"
     disabled={false}
     href="#3"
     title="Show all \\"Where to begin\\" articles"
@@ -1261,7 +916,7 @@ exports[`Storyshots 4 Components/All/Filter-esque Links Normal 1`] = `
     Where to begin
   </a>
   <a
-    className="sc-frDJqD hZZEXw"
+    className="sc-hmzhuo iFqYbj"
     disabled={false}
     href="#4"
     title="Show all \\"Five Things\\" articles"
@@ -1312,7 +967,7 @@ exports[`Storyshots 4 Components/All/Headline Level 3 1`] = `
 exports[`Storyshots 4 Components/All/Hero Show Normal 1`] = `
 Array [
   <a
-    className="sc-iQKALj bwXNjF"
+    className="sc-RefOD hhDycq"
     href="#content-start"
   >
     <div
@@ -1326,20 +981,20 @@ Array [
     </div>
   </a>,
   <header
-    className="sc-kPVwWT cbKPWv"
+    className="sc-hwwEjo guddBN"
     onMouseLeave={[Function]}
   >
     <div
-      className="sc-kfGgVZ esXqqL"
+      className="sc-kPVwWT hiTrkJ"
     >
       <button
         aria-controls="menu-panel"
         aria-expanded="false"
-        className="sc-kafWEX drUOhO"
+        className="sc-cIShpX JSwHD"
         onClick={[Function]}
       >
         <div
-          className="sc-cIShpX dxOVsg"
+          className="sc-ktHwxA eVvCDT"
           open={false}
         >
           <div />
@@ -1347,51 +1002,51 @@ Array [
         Menu
       </button>
       <a
-        className="sc-eXEjpC jClvJQ"
+        className="sc-kIPQKe bncFqZ"
         href="/"
         target="_self"
       >
         <img
           alt="Home"
-          className="sc-esjQYD bfSXal"
+          className="sc-kfGgVZ ihoNnt"
           src="test-file-stub"
         />
       </a>
       <div
-        className="sc-ibxdXY jSFOMM"
+        className="sc-eXEjpC hmhltX"
       />
       <nav
         aria-label="Main"
-        className="sc-feJyhm fIDVJf"
+        className="sc-kafWEX eFzJby"
         onMouseLeave={[Function]}
         role="navigation"
       >
         <ul
-          className="sc-iELTvK eSRqFl"
+          className="sc-feJyhm czpLUC"
         >
           <li
-            className="sc-jwKygS kXhQfa"
+            className="sc-cmTdod cfGFXc"
           >
             <a
-              className="sc-gxMtzJ bPQDOa"
+              className="sc-dqBHgY fpWHhy"
               href="/"
               target="_self"
             >
               <img
                 alt="Home"
-                className="sc-dfVpRl kicfWV"
+                className="sc-gxMtzJ jTPsqr"
                 src="test-file-stub"
               />
             </a>
           </li>
           <li
-            className="sc-jwKygS kXhQfa"
+            className="sc-cmTdod cfGFXc"
           >
             <a
               active={true}
               aria-expanded={false}
               aria-haspopup="true"
-              className="sc-cmTdod csdvZo"
+              className="sc-iELTvK jYIiKq"
               data-tracking="header-navigation"
               hovered={false}
               href="/iframe.html?id=pattern-library-page-examples-1-watch-discover--1-landing-page"
@@ -1404,7 +1059,7 @@ Array [
               Watch and Discover
             </a>
             <button
-              className="sc-hwwEjo gJMcKb"
+              className="sc-iyvyFf iEdDcy"
               onClick={[Function]}
             >
               Open
@@ -1412,12 +1067,12 @@ Array [
             </button>
           </li>
           <li
-            className="sc-jwKygS kXhQfa"
+            className="sc-cmTdod cfGFXc"
           >
             <a
               aria-expanded={false}
               aria-haspopup="true"
-              className="sc-cmTdod cgUCrV"
+              className="sc-iELTvK fEPmqz"
               data-tracking="header-navigation"
               hovered={false}
               href="/iframe.html?id=pattern-library-page-examples-2-funding-industry--1-landing-page"
@@ -1430,7 +1085,7 @@ Array [
               Funding and Industry
             </a>
             <button
-              className="sc-hwwEjo gJMcKb"
+              className="sc-iyvyFf iEdDcy"
               onClick={[Function]}
             >
               Open
@@ -1438,12 +1093,12 @@ Array [
             </button>
           </li>
           <li
-            className="sc-jwKygS kXhQfa"
+            className="sc-cmTdod cfGFXc"
           >
             <a
               aria-expanded={false}
               aria-haspopup="true"
-              className="sc-cmTdod cgUCrV"
+              className="sc-iELTvK fEPmqz"
               data-tracking="header-navigation"
               hovered={false}
               href="/iframe.html?id=pattern-library-page-examples-1-watch-discover--1-landing-page"
@@ -1456,7 +1111,7 @@ Array [
               Learning and Training
             </a>
             <button
-              className="sc-hwwEjo gJMcKb"
+              className="sc-iyvyFf iEdDcy"
               onClick={[Function]}
             >
               Open
@@ -1466,10 +1121,10 @@ Array [
         </ul>
       </nav>
       <div
-        className="sc-kvZOFW dJeEas"
+        className="sc-frDJqD gMGSfa"
       >
         <a
-          className="sc-hqyNC ejHKFP"
+          className="sc-kvZOFW ixboaA"
           href="/"
           isSticky={true}
           isTransparent={false}
@@ -1478,7 +1133,7 @@ Array [
           Shop
         </a>
         <a
-          className="sc-hqyNC ejHKFP"
+          className="sc-kvZOFW ixboaA"
           href="/"
           isSticky={true}
           isTransparent={false}
@@ -1504,7 +1159,7 @@ exports[`Storyshots 4 Components/All/Lead paragraph Normal 1`] = `
   }
 >
   <p
-    className="sc-bwCtUz lbOyBo lead_paragraph"
+    className="sc-iQKALj beAyyZ lead_paragraph"
     dangerouslySetInnerHTML={
       Object {
         "__html": "We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough, they won't want it anymore! We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough, they won't want it anymore!",
@@ -1523,7 +1178,7 @@ exports[`Storyshots 4 Components/All/Newsletter Sign Up Example 1`] = `
   }
 >
   <div
-    className="sc-hrWEMg cQWHJi"
+    className="sc-bwCtUz kEEnht"
   >
     <p
       className="sc-eqIVtm jipbPB h3"
@@ -1535,13 +1190,13 @@ exports[`Storyshots 4 Components/All/Newsletter Sign Up Example 1`] = `
     </p>
     <form
       action="https://www.createsend.com/t/subscribeerror?description="
-      className="sc-eTuwsz dfvQkq js-cm-form"
+      className="sc-hrWEMg cHYTDo js-cm-form"
       data-id="191722FC90141D02184CB1B62AB3DC26D57AD7AD0DF253BE15DD122C605B740244DFF1ADDEE1A8DA861127EDFD99BF281A7016BD9F175EAF91CB858CC76D303F"
       id="subForm"
       method="post"
     >
       <label
-        className="sc-gwVKww jyjofO"
+        className="sc-eTuwsz cskWjE"
       >
         Email
         <input
@@ -1558,7 +1213,7 @@ exports[`Storyshots 4 Components/All/Newsletter Sign Up Example 1`] = `
         />
       </label>
       <button
-        className="sc-hXRMBi ccfBUP"
+        className="sc-gwVKww kHGxHn"
         type="submit"
       >
         Sign up
@@ -1570,7 +1225,7 @@ exports[`Storyshots 4 Components/All/Newsletter Sign Up Example 1`] = `
 
 exports[`Storyshots 4 Components/All/Oembed Vimeo 1`] = `
 <div
-  className="sc-epnACN HbNuO"
+  className="sc-hXRMBi hedvJd"
 >
   <iframe
     allow="autoplay; fullscreen"
@@ -1586,7 +1241,7 @@ exports[`Storyshots 4 Components/All/Oembed Vimeo 1`] = `
 
 exports[`Storyshots 4 Components/All/Oembed Youtube 1`] = `
 <div
-  className="sc-epnACN HbNuO"
+  className="sc-hXRMBi hedvJd"
 >
   <iframe
     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -1610,111 +1265,111 @@ exports[`Storyshots 4 Components/All/StepByStep Primary 1`] = `
   }
 >
   <section
-    className="sc-bsbRJL goXPtQ"
+    className="sc-gojNiO gycndO"
   >
     <h3
-      className="sc-hZSUBg fDeVcq"
+      className="sc-daURTG cIUdmr"
     >
       Applying for film funding
     </h3>
     <ol
-      className="sc-cMhqgX fousEH"
+      className="sc-bXGyLb FGVBv"
     >
       <li
-        className="sc-iuJeZd kUorTA"
+        className="sc-lkqHmb dUunEj"
       >
         <button
           aria-expanded="false"
-          className="sc-cmthru euFFoJ"
+          className="sc-cbkKFq esygBu"
           onClick={[Function]}
         >
           <strong
-            className="sc-esOvli ifrfny"
+            className="sc-eLExRp Fammn"
           >
             Is this fund right for you?
           </strong>
           <span
-            className="sc-hMFtBS eGsvAN"
+            className="sc-krvtoX cxbYse"
           >
             Show
           </span>
         </button>
       </li>
       <li
-        className="sc-iuJeZd kUorTA"
+        className="sc-lkqHmb dUunEj"
       >
         <button
           aria-expanded="false"
-          className="sc-cmthru euFFoJ"
+          className="sc-cbkKFq esygBu"
           onClick={[Function]}
         >
           <strong
-            className="sc-esOvli ifrfny"
+            className="sc-eLExRp Fammn"
           >
             Prepare your supporting materials
           </strong>
           <span
-            className="sc-hMFtBS eGsvAN"
+            className="sc-krvtoX cxbYse"
           >
             Show
           </span>
         </button>
       </li>
       <li
-        className="sc-iuJeZd kUorTA"
+        className="sc-lkqHmb dUunEj"
       >
         <button
           aria-expanded="false"
-          className="sc-cmthru euFFoJ"
+          className="sc-cbkKFq esygBu"
           onClick={[Function]}
         >
           <strong
-            className="sc-esOvli ifrfny"
+            className="sc-eLExRp Fammn"
           >
             Apply
           </strong>
           <span
-            className="sc-hMFtBS eGsvAN"
+            className="sc-krvtoX cxbYse"
           >
             Show
           </span>
         </button>
       </li>
       <li
-        className="sc-iuJeZd kUorTA"
+        className="sc-lkqHmb dUunEj"
       >
         <button
           aria-expanded="false"
-          className="sc-cmthru euFFoJ"
+          className="sc-cbkKFq esygBu"
           onClick={[Function]}
         >
           <strong
-            className="sc-esOvli ifrfny"
+            className="sc-eLExRp Fammn"
           >
             Wait to hear from us
           </strong>
           <span
-            className="sc-hMFtBS eGsvAN"
+            className="sc-krvtoX cxbYse"
           >
             Show
           </span>
         </button>
       </li>
       <li
-        className="sc-iuJeZd kUorTA"
+        className="sc-lkqHmb dUunEj"
       >
         <button
           aria-expanded="false"
-          className="sc-cmthru euFFoJ"
+          className="sc-cbkKFq esygBu"
           onClick={[Function]}
         >
           <strong
-            className="sc-esOvli ifrfny"
+            className="sc-eLExRp Fammn"
           >
             Your decision
           </strong>
           <span
-            className="sc-hMFtBS eGsvAN"
+            className="sc-krvtoX cxbYse"
           >
             Show
           </span>
@@ -1735,16 +1390,16 @@ exports[`Storyshots 4 Components/All/Tabs Primary 1`] = `
   }
 >
   <ul
-    className="sc-gqPbQI dzrOnA"
+    className="sc-fOKMvo iHjMrJ"
     role="tablist"
   >
     <li
-      className="sc-hORach gUEVRu"
+      className="sc-dUjcNx igKfOF"
       role="presentation"
     >
       <button
         aria-selected={true}
-        className="sc-bMVAic fnTKDs"
+        className="sc-gHboQg bMMQtR"
         id="tab1"
         onClick={[Function]}
         role="tab"
@@ -1753,12 +1408,12 @@ exports[`Storyshots 4 Components/All/Tabs Primary 1`] = `
       </button>
     </li>
     <li
-      className="sc-hORach lmSglb"
+      className="sc-dUjcNx fJvQUV"
       role="presentation"
     >
       <button
         aria-selected={false}
-        className="sc-bMVAic emQbcd"
+        className="sc-gHboQg eHuYua"
         id="tab2"
         onClick={[Function]}
         role="tab"
@@ -1767,12 +1422,12 @@ exports[`Storyshots 4 Components/All/Tabs Primary 1`] = `
       </button>
     </li>
     <li
-      className="sc-hORach lmSglb"
+      className="sc-dUjcNx fJvQUV"
       role="presentation"
     >
       <button
         aria-selected={false}
-        className="sc-bMVAic emQbcd"
+        className="sc-gHboQg eHuYua"
         id="tab3"
         onClick={[Function]}
         role="tab"
@@ -1810,7 +1465,7 @@ exports[`Storyshots 4 Components/All/Tabs Primary 1`] = `
 
 exports[`Storyshots 4 Components/All/Tag Primary 1`] = `
 <div
-  className="sc-bAeIUo cLMKbd tag"
+  className="sc-iQNlJl aQaND tag"
 >
   Example tag
 </div>

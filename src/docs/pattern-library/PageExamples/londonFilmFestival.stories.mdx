@@ -54,7 +54,7 @@ import demoEvents from "../../../components/ShowEventGrid/data"
             />
             
             <Wrapper>
-               <MainContent  classes="landing_page">
+               <MainContent classes="landing_page">
                     <>
                         <Text>
                             <p>LFF Homepage content</p>
@@ -104,7 +104,7 @@ import demoEvents from "../../../components/ShowEventGrid/data"
                 </Actions>
             </HeroShow>
             <Wrapper>           
-                <MainContent>
+                <MainContent classes="page_with_sidebar">
                     <Text>
                         <p>Our August BFI Film Academy Lab will offer an insight into the role of a scripted format Producer - from identifying stories with the most potential, to getting them off the ground and onto the screen.</p>
                         <p>Our panel of industry experts will explore the various types of producers in the Film &amp; TV industry and the responsibilities involved. They will outline the skills and experience needed to excel in scripted production roles and the various career paths you can take to become the UK’s next top Producer!</p>
@@ -161,7 +161,7 @@ import demoEvents from "../../../components/ShowEventGrid/data"
                 </Sidebar>
             </Wrapper>
             <Wrapper>
-                <MainContent>  
+                <MainContent classes="page_with_sidebar">  
                     <p>full width stuff goes here</p>
                 </MainContent>
             </Wrapper>
@@ -207,7 +207,7 @@ import demoEvents from "../../../components/ShowEventGrid/data"
                 </Actions>
             </HeroShow>
             <Wrapper>           
-                <MainContent>
+                <MainContent classes="page_with_sidebar">
                     <Text>
                         <p>Our August BFI Film Academy Lab will offer an insight into the role of a scripted format Producer - from identifying stories with the most potential, to getting them off the ground and onto the screen.</p>
                         <p>Our panel of industry experts will explore the various types of producers in the Film &amp; TV industry and the responsibilities involved. They will outline the skills and experience needed to excel in scripted production roles and the various career paths you can take to become the UK’s next top Producer!</p>
@@ -264,7 +264,7 @@ import demoEvents from "../../../components/ShowEventGrid/data"
                 </Sidebar>
             </Wrapper>
             <Wrapper>
-                <MainContent>  
+                <MainContent classes="page_with_sidebar">  
                     <p>full width stuff goes here</p>
                 </MainContent>
             </Wrapper>
@@ -310,7 +310,7 @@ import demoEvents from "../../../components/ShowEventGrid/data"
                 </Actions>
             </HeroShow>
             <Wrapper>           
-                <MainContent>
+                <MainContent classes="page_with_sidebar">
                     <Text>
                         <p>Our August BFI Film Academy Lab will offer an insight into the role of a scripted format Producer - from identifying stories with the most potential, to getting them off the ground and onto the screen.</p>
                         <p>Our panel of industry experts will explore the various types of producers in the Film &amp; TV industry and the responsibilities involved. They will outline the skills and experience needed to excel in scripted production roles and the various career paths you can take to become the UK’s next top Producer!</p>
@@ -354,7 +354,7 @@ import demoEvents from "../../../components/ShowEventGrid/data"
                 </Sidebar>
             </Wrapper>
             <Wrapper>
-                <MainContent>
+                <MainContent classes="page_with_sidebar">
                     <ShowPerformanceList 
                         performances={demoPerformances} 
                         showTitle="Lynn + Lucy" 
@@ -405,7 +405,7 @@ import demoEvents from "../../../components/ShowEventGrid/data"
                 </Actions>
             </HeroShow>
             <Wrapper>           
-                <MainContent>
+                <MainContent classes="page_with_sidebar">
                     <Text>
                         <p>Our August BFI Film Academy Lab will offer an insight into the role of a scripted format Producer - from identifying stories with the most potential, to getting them off the ground and onto the screen.</p>
                         <p>Our panel of industry experts will explore the various types of producers in the Film &amp; TV industry and the responsibilities involved. They will outline the skills and experience needed to excel in scripted production roles and the various career paths you can take to become the UK’s next top Producer!</p>
@@ -420,9 +420,11 @@ import demoEvents from "../../../components/ShowEventGrid/data"
                         </ul>
                         <p>More panelists will be announced SOON!</p>
                     </Text>
+                    <Headline level={2} text="Related events" />
                     <ShowEventGrid 
                         events={[...demoEvents]}
-                        pageWithSideBar
+                        pageWithSidebar
+                        asScroller
                     />
                 </MainContent>
                 <Sidebar>
@@ -453,7 +455,7 @@ import demoEvents from "../../../components/ShowEventGrid/data"
                 </Sidebar>
             </Wrapper>
             <Wrapper>
-                <MainContent>
+                <MainContent classes="page_with_sidebar">
                     <ShowPerformanceList 
                         performances={demoPerformances} 
                         showTitle="Lynn + Lucy" 
@@ -493,7 +495,7 @@ import demoEvents from "../../../components/ShowEventGrid/data"
         <>
             <Header navItems={navItems} quickLinks={quickLinksData} />
             <Wrapper>           
-                <MainContent>
+                <MainContent classes="page_with_sidebar">
                     <Headline level={1} text="View all strands" />
                     <TabNavigation tabs={demoTabs} />
                     <TabNavigation tabs={demoTabs} />
@@ -530,7 +532,7 @@ import demoEvents from "../../../components/ShowEventGrid/data"
         <>
             <Header navItems={navItems} quickLinks={quickLinksData} />
             <Wrapper>           
-                <MainContent>
+                <MainContent classes="page_with_sidebar">
                     <Headline level={1} text="View all strands" />
                     <TabNavigation tabs={demoTabs} />
                     <TabNavigation tabs={demoTabs} />
@@ -567,7 +569,7 @@ import demoEvents from "../../../components/ShowEventGrid/data"
         <>
             <Header navItems={navItems} quickLinks={quickLinksData} />
             <Wrapper>           
-                <MainContent>
+                <MainContent classes="page_with_sidebar">
                     <Headline level={1} text="View all strands" />
                     <TabNavigation tabs={demoTabs} />
                     <TabNavigation tabs={demoTabs} />

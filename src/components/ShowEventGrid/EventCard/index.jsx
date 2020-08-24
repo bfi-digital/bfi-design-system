@@ -7,7 +7,7 @@ import LazyImage from "react-lazy-progressive-image"
 import heart from "./heart.svg"
 import heartFilled from "./heart-filled.svg"
 
-const Outer = styled.li`
+const Outer = styled.div`
     position: relative;
     background: ${theme.lightGrey};
     box-shadow: 0px 5px 0px ${theme.primary};
@@ -19,22 +19,20 @@ const Outer = styled.li`
     position: relative;
     overflow: hidden;
     min-height: 130px;
-    width: 100%;
     padding: 15px;
-    padding-top: ${props => props.withImage ? `${(theme.standardSpace*0.75)+197}px` : "45px"};
-    margin-bottom: ${theme.standardSpace*0.75}px;
+    padding-top: ${props => props.withImage ? `${(theme.standardSpace*0.75)+130}px` : "45px"};
+    width: calc(50% - 6.5px);
     margin-right: ${theme.standardSpace*0.5}px;
+    margin-bottom: ${theme.standardSpace*0.75}px;
 
-    @media screen and (min-width: ${theme.s}){
-        width: calc(50% - 12.5px);
+    &:nth-of-type(2n) {
+        margin-right: 0;
+    }
+    &:nth-of-type(3n) {
         margin-right: ${theme.standardSpace*0.5}px;
-        margin-bottom: 20px;
-        &:nth-of-type(2n) {
-            margin-right: 0;
-        }
-        &:nth-of-type(3n) {
-            margin-right: ${theme.standardSpace*0.5}px;
-        }
+    }
+    @media screen and (min-width: ${theme.s}){
+        padding-top: ${props => props.withImage ? `${(theme.standardSpace*0.75)+160}px` : "45px"};
     }
     @media screen and (min-width: ${theme.m}){
         width: calc(33.333% - 25px);
@@ -75,6 +73,13 @@ const Outer = styled.li`
         margin-top: 0;
         color: ${theme.black};
         margin-bottom: 0px;
+
+        @media screen and (max-width: ${theme.s}){
+            font-size: ${theme.fontSize_m};
+        }
+        @media screen and (min-width: ${theme.l}){
+            font-size: ${theme.fontSize_m};
+        }
     }
 
     &:hover, &:focus-within {
@@ -108,10 +113,33 @@ const Meta = styled.div`
     p {
         margin-top: 15px;
     }
+    @media screen and (max-width: ${theme.s}){
+        font-size: ${theme.small_fontSize_m};
+        right: 0;
+    }
 `
-// const Date = styled.p`
-//     margin-bottom: 10px;
-// `
+
+const InsideScroller = styled(Outer)`
+    flex: 0 0 40%;
+    margin-right: 25px !important;
+
+    &:last-of-type {
+        margin-right: 0px !important;
+    }
+
+    @media screen and (min-width: ${theme.m}){
+        flex: ${props => props.pageWithSideBar ? "0 0 35%" : "0 0 23%"};
+        &:nth-of-type(even){
+            margin-right: 25px !important;
+        }
+    }
+    @media screen and (min-width: ${theme.l}){
+        &:nth-of-type(3n){
+            margin-right: 25px !important;
+        }
+    }
+`
+
 const Author = styled.p`
     margin-bottom: 0;
     margin-top: 15px;
@@ -146,9 +174,9 @@ const PageImageContainer = styled.div`
     position: absolute;
     top: 0;
     left: 0;
-    height: 197px;
+    height: 130px;
 
-    @media screen and (min-width: ${theme.m}){
+    @media screen and (min-width: ${theme.s}){
         height: 160px;
     }
     @media screen and (min-width: ${theme.l}){
@@ -179,10 +207,17 @@ const CategoryTag = styled.div`
     padding-right: 10px;
     position: absolute;
     font-weight: ${theme.fontWeight_semiBold};
-    top: ${props => props.withImage ? "180px" : "0px"};
+    top: ${props => props.withImage ? "115px" : "0px"};
     right: ${props => props.withImage ? "15px" : "0px"};
     z-index: 1;
 
+    @media screen and (max-width: ${theme.s}){
+        font-size: ${theme.small_fontSize_m};
+        right: 0;
+    }
+    @media screen and (min-width: ${theme.s}){
+        top: ${props => props.withImage ? "140px" : "0px"};
+    }
     @media screen and (min-width: ${theme.m}){
         padding-right: 15px;
         padding-left: 15px;
@@ -227,57 +262,65 @@ export const EventCard = ({
     format,
     dateTime,
     external,
+    inScroller,
+    pageWithSideBar,
     
     favouritable,
     favourited,
     onFavourite,
     onUnfavourite
-}) =>
-    <Outer withImage={image480x270 && image48x27}>
-
-        {format && <CategoryTag withImage={image480x270 && image48x27}>{format}</CategoryTag>}
-
-        {image480x270 && image48x27 &&
-            <PageImageContainer>
-                <LazyImage
-                    src={image480x270}
-                    placeholder={image48x27 ? image48x27 : image480x270}
-                >
-                    {src => <PageImage className="image" imageSrc={src} alt="" />}
-                </LazyImage>
-            </PageImageContainer>
-        }
-
-        <Headline level={6} text={title} />
-        <Meta>
-            {/* <Date>{date}</Date> */}
-            {dateTime && <Author>{dateTime}</Author>}
-        </Meta>
-
-        <CallToAction 
-            to={url}
-            external={external} 
-            className={external ? "external_link" : ""}
-            rel={external ? "noreferrer" : ""} 
-            target={external ? "_blank" : "_self"}
-            title={"Read " + title + (external ? " in a new tab" : "")}
+}) => {
+    const ConditionalWrapper = ({ condition, wrapper, wrapper2, children }) => 
+        condition ? wrapper(children) : wrapper2(children)
+    return(
+        <ConditionalWrapper
+            condition={inScroller}
+            wrapper={children => <InsideScroller pageWithSideBar={pageWithSideBar} withImage={image480x270 && image48x27} className="scrollcard">{children}</InsideScroller>}
+            wrapper2={children => <Outer withImage={image480x270 && image48x27}>{children}</Outer>}
         >
-            <span>{title}</span>
-        </CallToAction>
+            {format && <CategoryTag withImage={image480x270 && image48x27}>{format}</CategoryTag>}
 
-        {favouritable &&
-            <>
-                {favourited ?
-                    <FavButton onClick={onFavourite} title="Add to favourites">
-                        <img src={heart} alt="Favourite event"/>
-                    </FavButton>
-                    :
-                    <FavButton onClick={onUnfavourite} title="Remove from favourites">
-                        <img src={heartFilled} alt="Remove from favourites"/>
-                    </FavButton>
-                }
-            </>
-        }
+            {image480x270 && image48x27 &&
+                <PageImageContainer>
+                    <LazyImage
+                        src={image480x270}
+                        placeholder={image48x27 ? image48x27 : image480x270}
+                    >
+                        {src => <PageImage className="image" imageSrc={src} alt="" />}
+                    </LazyImage>
+                </PageImageContainer>
+            }
 
-    </Outer>
+            <Headline level={6} text={title} />
+            <Meta>
+                {dateTime && <Author>{dateTime}</Author>}
+            </Meta>
+
+            <CallToAction 
+                to={url}
+                external={external} 
+                className={external ? "external_link" : ""}
+                rel={external ? "noreferrer" : ""} 
+                target={external ? "_blank" : "_self"}
+                title={"Read " + title + (external ? " in a new tab" : "")}
+            >
+                <span>{title}</span>
+            </CallToAction>
+
+            {favouritable &&
+                <>
+                    {favourited ?
+                        <FavButton onClick={onFavourite} title="Add to favourites">
+                            <img src={heart} alt="Favourite event"/>
+                        </FavButton>
+                        :
+                        <FavButton onClick={onUnfavourite} title="Remove from favourites">
+                            <img src={heartFilled} alt="Remove from favourites"/>
+                        </FavButton>
+                    }
+                </>
+            }
+        </ConditionalWrapper>
+    )
+}
 
