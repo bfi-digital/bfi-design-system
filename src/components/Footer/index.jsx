@@ -279,13 +279,16 @@ export const Footer = ({
     menus,
     copyrightText,
     copyrightLinks,
-    sponsorImages
-}) => 
-    <>  
-        <Inner className="dont_restrict">
-            <FeedbackForm app_id="XA9zvMTVJ8RF1FJvIOFbWZv1xgIff9oO" secret="YfhhOvgt7TjmFJUv9ePdd8hZ0N3h0AA0" token="9FR6GJjGemKntenWqsv9Sbv9CMY20V4K" />
-        </Inner>
-        <Outer> 
+    sponsorImages,
+    feedbackFormSubmissionFunction,
+}) =>
+    <>
+        { feedbackFormSubmissionFunction &&
+          <Inner className="dont_restrict">
+            <FeedbackForm submissionFunction={feedbackFormSubmissionFunction}/>
+          </Inner>
+        }
+        <Outer>
             <TopRow>
                 <Inner className="container">
                     {menus.map((menu, index) =>
@@ -302,7 +305,7 @@ export const Footer = ({
                                 }
                                 {menu.children.map(menuItem =>
                                     <LinkContainer key={menuItem.id}>
-                                        <MenuItem to={menuItem.url} data-tracking="footer-navigation">{menuItem.title}</MenuItem>    
+                                        <MenuItem to={menuItem.url} data-tracking="footer-navigation">{menuItem.title}</MenuItem>
                                     </LinkContainer>
                                 )}
                             </ul>
@@ -311,7 +314,7 @@ export const Footer = ({
                 </Inner>
             </TopRow>
             <MiddleRow>
-                <Inner className="container">  
+                <Inner className="container">
                     <SupportLogos>
                         <SubHeading>Supported by</SubHeading>
                         <ImageSponsorLinks images={sponsorImages ? sponsorImages : [
@@ -357,7 +360,7 @@ export const Footer = ({
                     <BottomLinks>
                         {copyrightLinks && copyrightLinks.map((copyrightLink) =>
                             <LinkContainer key={copyrightLink.title}>
-                                <MenuItem to={copyrightLink.url} key={copyrightLink.url} data-tracking="footer-navigation">{copyrightLink.title}</MenuItem>    
+                                <MenuItem to={copyrightLink.url} key={copyrightLink.url} data-tracking="footer-navigation">{copyrightLink.title}</MenuItem>
                             </LinkContainer>
                         )}
                     </BottomLinks>
@@ -368,15 +371,15 @@ export const Footer = ({
     </>
 
 Footer.propTypes = {
-    /** 
+    /**
     * An array of the menus the footer should display. Each menu has a title which is a 2nd level link and a list of 3rd level links underneath it.
     **/
     menus: PropTypes.array,
-    /** 
+    /**
     * A HTML string for the copyright notice
     **/
     copyrightText: PropTypes.string,
-    /** 
+    /**
     * An array of the links for the bottom menu links next to the copyright text
     **/
     copyrightLinks: PropTypes.array,
