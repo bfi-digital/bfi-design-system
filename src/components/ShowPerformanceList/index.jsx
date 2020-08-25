@@ -71,7 +71,11 @@ const DetailsContainer = styled.div`
         }
     }
 `
-
+const StyledButton = styled(Button)`
+    &::first-letter {
+        text-transform: uppercase;
+    }
+`
 export const ShowPerformanceList = ({
     showTitle,
     performances,
@@ -81,7 +85,8 @@ export const ShowPerformanceList = ({
         first.getFullYear() === second.getFullYear() &&
         first.getMonth() === second.getMonth() &&
         first.getDate() === second.getDate()
-
+    const ConditionalWrapper = ({ condition, wrapper, wrapper2, children }) => 
+        condition ? wrapper(children) : wrapper2(children)
     return( 
         <Outer>
             <Headline
@@ -127,19 +132,21 @@ export const ShowPerformanceList = ({
                                 </>
                                 :
                                 <DetailsContainer>
-                                    <p>
-                                        {performance.dateTimeEnd ? 
+                                    {performance.dateTimeEnd &&
+                                        <p>
                                             <strong>From: </strong>
-                                            :
-                                            <strong>Date: </strong>
-                                        }
-                                        <br/>
-                                        {performance.dateTimeEnd && <strong>To: </strong> }
-                                    </p>
+                                            <br/>
+                                            <strong>To: </strong>
+                                        </p>
+                                    }
                                     <p>
-                                        <span>
+                                        <ConditionalWrapper
+                                            condition={performance.dateTimeEnd}
+                                            wrapper={children => <span>{children}</span>}
+                                            wrapper2={children => <strong>{children}</strong>}
+                                        >
                                             <Moment tz="Europe/London" format="dddd Do MMMM YYYY - HH:mm z">{performance.dateTimeStart}</Moment> 
-                                        </span>
+                                        </ConditionalWrapper>
                                         {performance.dateTimeEnd &&
                                             <>
                                                 <br />
@@ -155,14 +162,14 @@ export const ShowPerformanceList = ({
                         <PerformanceCTA>
                             {performance.availability === "available" ? 
                                 performance.platform == "southbank" ? 
-                                    <Button level={1} url={performance.ctaURL}  external={true}>Watch it at BFI Southbank</Button>
+                                    <StyledButton level={1} url={performance.ctaURL}  external={true}>Watch it at BFI Southbank</StyledButton>
                                     : 
                                     performance.platform == "player" ? 
                                         <PlayButton playerPillar="blackSubscription" url={performance.ctaURL} external={true} level={1} colorScheme={1}>Pre-book to watch on BFI Player</PlayButton>
                                         : 
-                                        <Button level={1} url={performance.ctaURL}  external={true}>other button text needed</Button>
+                                        <StyledButton level={1} url={performance.ctaURL}  external={true}>other button text needed</StyledButton>
                                 :
-                                <Button level={1} disabled>{performance.availability}</Button>
+                                <StyledButton level={1} disabled>{performance.availability}</StyledButton>
                             }
                         </PerformanceCTA>
                     </Performance>
