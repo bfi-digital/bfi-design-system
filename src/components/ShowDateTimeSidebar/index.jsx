@@ -68,7 +68,7 @@ export const ShowDateTimeSidebar = ({
                             <Moment tz="Europe/London" format="HH:mm z">{dateTimeEnd}</Moment>
                         </>
                         :
-                        <span>&nbsp;<Moment tz="Europe/London" format="z">{performance.dateTimeEnd}</Moment></span>
+                        <span>&nbsp;<Moment tz="Europe/London" format="z">{dateTimeEnd}</Moment></span>
                     }
                 </TimeP>
             }
