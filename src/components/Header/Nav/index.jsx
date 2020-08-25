@@ -288,7 +288,7 @@ const ChildLink = styled(Link)`
 
 const BlackLogoLink = styled(Link)`
     margin-right: 20px;
-    padding: 10px !important;
+    padding: 20px 10px !important;
     margin-left: -10px;
 `
 const Logo = styled.img`
