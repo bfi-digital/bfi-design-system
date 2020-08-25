@@ -2,10 +2,11 @@ import React from "react"
 import styled from "styled-components"
 import theme from "../_theme"
 import AddToCalendar from "react-add-to-calendar"
+import FontAwesomeCss from "./fontawesome/font-awesome.min.css"
 
 const Outer = styled.button`
+    @import url(${FontAwesomeCss});
     margin-top: 15px;
-    @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
     background: transparent;
     color: ${theme.primary};
     font-weight: bold;
@@ -101,6 +102,7 @@ export const ShowAddToCalendar = ({
      
     return(
         <Outer onClick={onButtonClick} id="calendar_button" aria-haspopup="listbox">
+            <i class="react-add-to-calendar__icon--left fa fa-calendar-plus-o"></i>
             <AddToCalendar 
                 event={calendarEvent} 
                 listItems={calendarItems} 
