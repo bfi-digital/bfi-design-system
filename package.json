@@ -1,6 +1,6 @@
 {
   "name": "bfi-design-system",
-  "version": "0.2.20",
+  "version": "0.2.21",
   "author": "FutureGov <dev@wearefuturegov.com> (https://wearefuturegov.com)",
   "homepage": "https://gerwig.netlify.com",
   "description": "Next-gen design system for the British Film Institute",
@@ -69,6 +69,7 @@
     "query-string": "^6.13.1",
     "react-add-to-calendar": "^0.1.5",
     "react-anchor-link-smooth-scroll": "^1.0.12",
+    "react-fontawesome": "^1.7.1",
     "react-lazy-progressive-image": "^1.5.5",
     "react-load-script": "0.0.6",
     "react-moment": "^0.9.7",
