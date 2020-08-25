@@ -7,7 +7,7 @@ import theme from "../_theme"
 
 const Outer = styled.div`
     position: relative;
-    margin-bottom: ${props => props.withoutBreak? "0" : (theme.standardSpace*2) + "px"};
+    margin-bottom: ${props => props.withoutBreak? "0" : (theme.standardSpace*3) + "px"};
     margin-left: -20px;
     width: calc(100% + 40px);
     @media screen and (min-width: ${theme.l}){

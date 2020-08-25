@@ -1,5 +1,5 @@
 import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks'
-import { Wrapper, MainContent, Sidebar, Actions, PlayButton, OriginalArticleDate } from "../../../components/PageContainer"
+import { Wrapper, MainContent, MainContentWrapper, Sidebar, Actions, PlayButton, OriginalArticleDate } from "../../../components/PageContainer"
 
 import navItems, { quickLinksData } from "../../../components/Header/data"
 import footerMenus from "../../../components/Footer/data"
@@ -420,12 +420,6 @@ import demoEvents from "../../../components/ShowEventGrid/data"
                         </ul>
                         <p>More panelists will be announced SOON!</p>
                     </Text>
-                    <Headline level={2} text="Related events" />
-                    <ShowEventGrid 
-                        events={[...demoEvents]}
-                        pageWithSidebar
-                        asScroller
-                    />
                 </MainContent>
                 <Sidebar>
                     <QuickFacts
@@ -455,13 +449,18 @@ import demoEvents from "../../../components/ShowEventGrid/data"
                 </Sidebar>
             </Wrapper>
             <Wrapper>
-                <MainContent classes="page_with_sidebar">
+                <MainContentWrapper>
                     <ShowPerformanceList 
                         performances={demoPerformances} 
                         showTitle="Lynn + Lucy" 
                         showDescription="Lynn + Lucy premieres online at London Film Festival. With your ticket you can enjoy Lynn + Lucy any time for two weeks from the premiere date."
                     />
-                </MainContent>
+                    <Headline level={2} text="Related events" />
+                    <ShowEventGrid 
+                        events={[...demoEvents.slice(0, 3)]}
+                        asScroller
+                    />
+                </MainContentWrapper>
             </Wrapper>
             <Footer
                 menus={footerMenus}

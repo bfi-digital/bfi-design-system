@@ -54,7 +54,7 @@ export const ShowEventGrid = ({
     
     return(
         <ConditionalWrapper
-            condition={asScroller}
+            condition={asScroller && events.length > 4}
             wrapper={children => <Scroller noOfChildren={events.length} classes="showevent_grid_block_scroller">{children}</Scroller>}
             wrapper2={children => <Events className="showevent_grid_block">{children}</Events>}
         >

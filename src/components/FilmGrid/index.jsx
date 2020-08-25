@@ -34,7 +34,7 @@ export const FilmGrid = ({
 }) =>
     <>
         <ConditionalWrapper
-            condition={films.length >= 3}
+            condition={films.length > 3}
             wrapper={children => <Scroller withoutBreak={allFilmsUrl} noOfChildren={films.length} classes="film_grid">{children}</Scroller>}
             wrapper2={children => <Outer>{children}</Outer>}
         >

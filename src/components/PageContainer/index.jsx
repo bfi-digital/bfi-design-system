@@ -111,6 +111,10 @@ export const MainContentWrapper = styled.article`
             margin-top: 0px;
         }
     }
+    h2:first-child {
+        margin-block-start: 0;
+        margin-block-end: ${theme.standardSpace}px;
+    }
 
     @media screen and (min-width: ${theme.m}){
         &.page_with_sidebar {
