@@ -188,8 +188,8 @@ export const PageLink = ({
 }) =>
     <ConditionalWrapper
         condition={inScroller}
-        wrapper={children => <RestyledOuter withImages={withImages} lessColumns={lessColumns} className={external ? "external_link scrollcard" : "scrollcard"}>{children}</RestyledOuter>}
-        wrapper2={children => <Outer withImages={withImages} lessColumns={lessColumns} className={external ? "external_link" : ""}>{children}</Outer>}
+        wrapper={children => <RestyledOuter withImages={withImages} lessColumns={lessColumns} className={external ? "external_link scrollcard pageCard" : "scrollcard pageCard"}>{children}</RestyledOuter>}
+        wrapper2={children => <Outer withImages={withImages} lessColumns={lessColumns} className={external ? "external_link pageCard" : "pageCard"}>{children}</Outer>}
     >
         { withImages && 
             <PageImageContainer lessColumns={lessColumns}>

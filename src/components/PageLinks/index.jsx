@@ -16,7 +16,7 @@ const Outer = styled.div`
     flex-direction: row;
     flex-wrap: wrap;
 
-    li {
+    .pageCard {
         width: 100%;
 
         @media screen and (min-width: ${theme.s}){

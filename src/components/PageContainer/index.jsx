@@ -117,7 +117,7 @@ export const MainContentWrapper = styled.article`
             width: 66%;
 
             .article_grid_block, .page_links_block {
-                li {
+                .pageCard, .articleCard {
                     margin-right: ${theme.standardSpace}px !important;
                     width: calc(50% - 12.5px);
 
