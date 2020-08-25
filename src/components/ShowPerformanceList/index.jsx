@@ -153,7 +153,7 @@ export const ShowPerformanceList = ({
                             }
                         </PerformanceDetails>
                         <PerformanceCTA>
-                            {performance.availability === "Available" ? 
+                            {performance.availability === "available" ? 
                                 performance.platform == "southbank" ? 
                                     <Button level={1} url={performance.ctaURL}  external={true}>Watch it at BFI Southbank</Button>
                                     : 
