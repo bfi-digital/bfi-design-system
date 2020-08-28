@@ -1,7 +1,7 @@
 export default [
     {
         id: "1",
-        performanceInfo: "Avaliable to watch on BFI Player",
+        performanceInfo: "Available to watch on BFI Player",
         dateTimeStart: "2020-10-08T18:00",
         dateTimeEnd: "2020-10-18T23:55",
         availability: "available",
