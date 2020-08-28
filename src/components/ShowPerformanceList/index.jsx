@@ -35,7 +35,7 @@ const Performance = styled.li`
     background: ${theme.lightGrey};
 
     p {
-        margin-bottom: 0;
+        margin-bottom: 7px;
         margin-top: ${theme.standardSpace/4}px;
 
         &:first-of-type {
@@ -85,6 +85,11 @@ export const ShowPerformanceList = ({
         first.getFullYear() === second.getFullYear() &&
         first.getMonth() === second.getMonth() &&
         first.getDate() === second.getDate()
+    
+    const dateIsInPast = (firstDate, secondDate) => {
+        return firstDate.setHours(0,0,0,0) > secondDate.setHours(0,0,0,0)
+    }
+
     const ConditionalWrapper = ({ condition, wrapper, wrapper2, children }) => 
         condition ? wrapper(children) : wrapper2(children)
     return( 
@@ -97,15 +102,7 @@ export const ShowPerformanceList = ({
                 {performances.map((performance) =>
                     <Performance key={performance.id}>
                         <PerformanceDetails>
-                            <p>
-                                {performance.performanceInfo}
-                                {performance.screen && 
-                                    <>
-                                        &nbsp;&ndash;&nbsp;
-                                        {performance.screen}
-                                    </>
-                                }
-                            </p>
+                            {getPerformanceInfo(performance)}
 
                             {datesAreOnSameDayCheck(new Date(performance.dateTimeStart), new Date(performance.dateTimeEnd)) ? 
                                 <>
@@ -125,7 +122,7 @@ export const ShowPerformanceList = ({
                                     <ShowAddToCalendar 
                                         title={showTitle} 
                                         description={showDescription} 
-                                        location={performance.platform == "southbank" ? "BFI Southbank, Belvedere Rd, Bishop's, London SE1 8XT" : performance.ctaURL} 
+                                        location={performance.platform === "southbank" ? "BFI Southbank, Belvedere Rd, Bishop's, London SE1 8XT" : performance.ctaURL} 
                                         dateTimeStart={performance.dateTimeStart} 
                                         dateTimeEnd={performance.dateTimeEnd ? performance.dateTimeEnd : new Date(performance.dateTimeEnd).setHours(new Date(performance.dateTimeEnd).getHours() + 2)} 
                                     />
@@ -160,21 +157,56 @@ export const ShowPerformanceList = ({
                             }
                         </PerformanceDetails>
                         <PerformanceCTA>
-                            {performance.availability === "available" ? 
-                                performance.platform == "southbank" ? 
-                                    <StyledButton level={1} url={performance.ctaURL}  external={true}>Watch it at BFI Southbank</StyledButton>
-                                    : 
-                                    performance.platform == "player" ? 
-                                        <PlayButton playerPillar="blackSubscription" url={performance.ctaURL} external={true} level={1} colorScheme={1}>Pre-book to watch on BFI Player</PlayButton>
-                                        : 
-                                        <StyledButton level={1} url={performance.ctaURL}  external={true}>other button text needed</StyledButton>
-                                :
-                                <StyledButton level={1} disabled>{performance.availability}</StyledButton>
-                            }
+                            {getPerformanceButton(performance)}
                         </PerformanceCTA>
                     </Performance>
                 )}
             </PerformanceList>
         </Outer>
     )
+
+    function getPerformanceInfo(performance) {
+        let info
+        performance.performanceInfo ? 
+            info = <span>{performance.performanceInfo}</span>
+            :
+            performance.platform === "southbank" ? 
+                info = <span>{performance.availability === "soldout" ? "No longer available to see " : "Screening" } at BFI Southbank</span>
+                :
+                performance.platform === "player" ?
+                    info = <span>{performance.availability === "soldout" ? "No longer available" : performance.availability === "unavaiable" ? "Soon to be available" : "Available"} to watch on BFI Player</span>
+                    :
+                    performance.platform === "youtube" ?
+                        info = <span>Watch on YouTube</span>     
+                        : 
+                        null
+
+    return <p>{info}{performance.screen && <span>&nbsp;&ndash;&nbsp;{performance.screen}</span>}</p>
+    }
+
+    function getPerformanceButton(performance) {
+        let button
+
+        performance.availability === "available" ? 
+            performance.platform === "southbank" ? 
+                button = <StyledButton level={1} url={performance.ctaURL} external={true}>Book tickets</StyledButton>
+                : 
+                performance.platform === "player" || performance.platform === "youtube" ? 
+                    performance.paywall === "free" ?
+                        button = <PlayButton url={performance.ctaURL} external={true} level={1}>Watch now</PlayButton>
+                        :
+                        button = <StyledButton level={1} url={performance.ctaURL} external={true}>Book tickets</StyledButton>
+                    :
+                    performance.platform === "xr" ?
+                        button = <StyledButton level={1} url={performance.ctaURL} external={true}>More info</StyledButton>
+                        :
+                        performance.platform === "external" ? 
+                            button = <StyledButton level={1} url={performance.ctaURL} external={true}>Check availability</StyledButton>
+                            :null
+            :
+            button = <StyledButton level={1} disabled>{performance.availability === "soldout" ? "Sold out" : (dateIsInPast(new Date(performance.dateTimeStart), new Date()) ? "Coming soon" : "No longer available")}</StyledButton>
+        
+            return button;
+    }
 }
+

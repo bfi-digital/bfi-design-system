@@ -30,45 +30,42 @@ const TimeP = styled.span`
 export const ShowDateTimeSidebar = ({
     title,
     description,
-    location,
-    dateTimeStart,
-    dateTimeEnd,
-    performanceInfo
+    singlePerformance
 }) => {
-    const processedStartDateTime = new Date(dateTimeStart)
+    const processedStartDateTime = new Date(singlePerformance.dateTimeStart)
     const datesAreOnSameDayCheck = (first, second) =>
         first.getFullYear() === second.getFullYear() &&
         first.getMonth() === second.getMonth() &&
         first.getDate() === second.getDate()
-    const datesAreOnSameDay = dateTimeEnd ? datesAreOnSameDayCheck(processedStartDateTime, new Date(dateTimeEnd)) : true
+    const datesAreOnSameDay = singlePerformance.dateTimeEnd ? datesAreOnSameDayCheck(processedStartDateTime, new Date(singlePerformance.dateTimeEnd)) : true
 
     return(
         <Outer>
-            {performanceInfo && <p>{performanceInfo}</p>}
+            {getPerformanceInfo(singlePerformance)}
 
             {datesAreOnSameDay && <strong>Date &amp; Time</strong> }
             <DateP>
                 {!datesAreOnSameDay && <strong>From: </strong>}
-                {!datesAreOnSameDay && <span><Moment tz="Europe/London" format="HH:mm z">{dateTimeStart}</Moment></span>}
-                <Moment format="dddd Do MMMM YYYY" date={dateTimeStart} />
+                {!datesAreOnSameDay && <span><Moment tz="Europe/London" format="HH:mm z">{singlePerformance.dateTimeStart}</Moment></span>}
+                <Moment format="dddd Do MMMM YYYY" date={singlePerformance.dateTimeStart} />
             </DateP>
             {!datesAreOnSameDay && 
                 <DateP>
                     <strong>To: </strong>
-                    <span><Moment tz="Europe/London" format="HH:mm z">{dateTimeEnd}</Moment></span>
-                    <Moment format="dddd Do MMMM YYYY" date={dateTimeEnd} />
+                    <span><Moment tz="Europe/London" format="HH:mm z">{singlePerformance.dateTimeEnd}</Moment></span>
+                    <Moment format="dddd Do MMMM YYYY" date={singlePerformance.dateTimeEnd} />
                 </DateP>
             }
             {datesAreOnSameDay && 
                 <TimeP>
-                    <Moment tz="Europe/London" format="HH:mm">{dateTimeStart}</Moment>
-                    {dateTimeEnd ? 
+                    <Moment tz="Europe/London" format="HH:mm">{singlePerformance.dateTimeStart}</Moment>
+                    {singlePerformance.dateTimeEnd ? 
                         <>
                             &nbsp;&ndash;&nbsp;
-                            <Moment tz="Europe/London" format="HH:mm z">{dateTimeEnd}</Moment>
+                            <Moment tz="Europe/London" format="HH:mm z">{singlePerformance.dateTimeEnd}</Moment>
                         </>
                         :
-                        <span>&nbsp;<Moment tz="Europe/London" format="z">{dateTimeStart}</Moment></span>
+                        <span>&nbsp;<Moment tz="Europe/London" format="z">{singlePerformance.dateTimeStart}</Moment></span>
                     }
                 </TimeP>
             }
@@ -77,11 +74,30 @@ export const ShowDateTimeSidebar = ({
                 <ShowAddToCalendar 
                     title={title} 
                     description={description} 
-                    location={location} 
-                    dateTimeStart={dateTimeStart} 
-                    dateTimeEnd={dateTimeEnd ? dateTimeEnd : processedStartDateTime.setHours(processedStartDateTime.getHours() + 2)} 
+                    location={singlePerformance.platform} 
+                    dateTimeStart={singlePerformance.dateTimeStart} 
+                    dateTimeEnd={singlePerformance.dateTimeEnd ? singlePerformance.dateTimeEnd : processedStartDateTime.setHours(processedStartDateTime.getHours() + 2)} 
                 />
             }
         </Outer>
     )
+
+    function getPerformanceInfo(performance) {
+        let info
+        performance.performanceInfo ? 
+            info = <span>{performance.performanceInfo}</span>
+            :
+            performance.platform === "southbank" ? 
+                info = <span>{performance.availability === "soldout" ? "No longer available to see " : "Screening" } at BFI Southbank</span>
+                :
+                performance.platform === "player" ?
+                    info = <span>{performance.availability === "soldout" ? "No longer available" : performance.availability === "unavaiable" ? "Soon to be available" : "Available"} to watch on BFI Player</span>
+                    :
+                    performance.platform === "youtube" ?
+                        info = <span>Watch on YouTube</span>     
+                        : 
+                        null
+
+    return <p>{info}{performance.screen && <span>&nbsp;&ndash;&nbsp;{performance.screen}</span>}</p>
+    }
 }
