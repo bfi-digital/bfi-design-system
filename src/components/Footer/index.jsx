@@ -284,9 +284,9 @@ export const Footer = ({
 }) =>
     <>
         { feedbackFormSubmissionFunction &&
-          <Inner className="dont_restrict">
-            <FeedbackForm submissionFunction={feedbackFormSubmissionFunction}/>
-          </Inner>
+            <Inner className="dont_restrict">
+                <FeedbackForm submissionFunction={feedbackFormSubmissionFunction}/>
+            </Inner>
         }
         <Outer>
             <TopRow>

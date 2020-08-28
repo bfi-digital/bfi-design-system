@@ -223,7 +223,7 @@ export const FeedbackForm = ({
                                         <label htmlFor="feedback">Your feedback</label>
                                         <textarea name="feedback" id="feedback" required {...bind} />
                                         <button type="submit">Send feedback</button>
-                                        <Text><p>You can read our <a href="[needs link]">Privacy Policy[needs link]</a></p></Text>
+                                        <Text><p>You can read our <a href="https://www.bfi.org.uk/bfi-privacy-policy">Privacy Policy here</a>.</p></Text>
                                     </FeedbackFormContainer>
                                 </FeedbackInner>
                                 :
