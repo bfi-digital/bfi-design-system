@@ -16,6 +16,7 @@ import { HeroShow } from "../../../components/HeroShow"
 import { PageLinks } from "../../../components/PageLinks"
 import { FilmGrid } from "../../../components/FilmGrid"
 import { PromoBanner } from "../../../components/PromoBanner"
+import { ImageSponsorLinks } from "../../../components/ImageSponsorLinks"
 
 import { AdvertisingContainer } from "../../../components/AdvertisingContainer"
 import { HeroArticle } from "../../../components/HeroArticle"
@@ -123,6 +124,13 @@ import demoEvents from "../../../components/ShowEventGrid/data"
                     <Headline 
                         level={2} 
                         text="Headline"
+                    />
+                    <ImageSponsorLinks 
+                        images={[{
+                            url: "https://i.pinimg.com/originals/6e/79/ac/6e79ac75e164ffa85f36f772fdaa41aa.png",
+                            alt: "American Express",
+                            link: "http://bfi.org.uk"
+                        },]}
                     />
                 </MainContent>
                 <Sidebar>
