@@ -304,21 +304,11 @@ export const PromoBanner = ({
             :
             <>
                 {image ? 
-                    <LazyImage
-                        src={image}
-                        placeholder={placeholder}
-                        visibilitySensorProps={{
-                            partialVisibility: true
-                        }}
-                    >
-                        {src => 
-                            <Image
-                                reversed={reversed}
-                                image={src} 
-                                pageWithSideBar={pageWithSideBar}
-                            /> 
-                        }
-                    </LazyImage>
+                    <Image
+                        reversed={reversed}
+                        image={image} 
+                        pageWithSideBar={pageWithSideBar}
+                    /> 
                     : 
                     <RightButton>
                         {callToActionUrl && 
