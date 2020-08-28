@@ -72,6 +72,7 @@ const DetailsContainer = styled.div`
     }
 `
 const StyledButton = styled(Button)`
+    min-width: 180px;
     &::first-letter {
         text-transform: uppercase;
     }
