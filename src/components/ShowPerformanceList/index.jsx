@@ -181,7 +181,7 @@ export const ShowPerformanceList = ({
                         : 
                         null
 
-    return <p>{info}{performance.screen && <span>&nbsp;&ndash;&nbsp;{performance.screen}</span>}</p>
+        return <p>{info}{performance.screen && <span>&nbsp;&ndash;&nbsp;{performance.screen}</span>}</p>
     }
 
     function getPerformanceButton(performance) {
@@ -206,7 +206,7 @@ export const ShowPerformanceList = ({
             :
             button = <StyledButton level={1} disabled>{performance.availability === "soldout" ? "Sold out" : (dateIsInPast(new Date(performance.dateTimeStart), new Date()) ? "Coming soon" : "No longer available")}</StyledButton>
         
-            return button;
+        return button
     }
 }
 

@@ -98,6 +98,6 @@ export const ShowDateTimeSidebar = ({
                         : 
                         null
 
-    return <p>{info}{performance.screen && <span>&nbsp;&ndash;&nbsp;{performance.screen}</span>}</p>
+        return <p>{info}{performance.screen && <span>&nbsp;&ndash;&nbsp;{performance.screen}</span>}</p>
     }
 }

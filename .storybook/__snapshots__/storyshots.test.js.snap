@@ -1240,111 +1240,111 @@ exports[`Storyshots 4 Components/All/StepByStep Primary 1`] = `
   }
 >
   <section
-    className="sc-gqPbQI ijoUlg"
+    className="sc-RefOD jAxErH"
   >
     <h3
-      className="sc-hORach gQiZFU"
+      className="sc-iQKALj kfuYeK"
     >
       Applying for film funding
     </h3>
     <ol
-      className="sc-bMVAic dvhtul"
+      className="sc-bwCtUz keEjuE"
     >
       <li
-        className="sc-bAeIUo dQxaHa"
+        className="sc-hrWEMg jhcweA"
       >
         <button
           aria-expanded="false"
-          className="sc-GMQeP gGjhiA"
+          className="sc-gwVKww brFEHK"
           onClick={[Function]}
         >
           <strong
-            className="sc-iujRgT VUpjn"
+            className="sc-eTuwsz hLoIwZ"
           >
             Is this fund right for you?
           </strong>
           <span
-            className="sc-exAgwC gGprLq"
+            className="sc-hXRMBi dBoOsb"
           >
             Show
           </span>
         </button>
       </li>
       <li
-        className="sc-bAeIUo dQxaHa"
+        className="sc-hrWEMg jhcweA"
       >
         <button
           aria-expanded="false"
-          className="sc-GMQeP gGjhiA"
+          className="sc-gwVKww brFEHK"
           onClick={[Function]}
         >
           <strong
-            className="sc-iujRgT VUpjn"
+            className="sc-eTuwsz hLoIwZ"
           >
             Prepare your supporting materials
           </strong>
           <span
-            className="sc-exAgwC gGprLq"
+            className="sc-hXRMBi dBoOsb"
           >
             Show
           </span>
         </button>
       </li>
       <li
-        className="sc-bAeIUo dQxaHa"
+        className="sc-hrWEMg jhcweA"
       >
         <button
           aria-expanded="false"
-          className="sc-GMQeP gGjhiA"
+          className="sc-gwVKww brFEHK"
           onClick={[Function]}
         >
           <strong
-            className="sc-iujRgT VUpjn"
+            className="sc-eTuwsz hLoIwZ"
           >
             Apply
           </strong>
           <span
-            className="sc-exAgwC gGprLq"
+            className="sc-hXRMBi dBoOsb"
           >
             Show
           </span>
         </button>
       </li>
       <li
-        className="sc-bAeIUo dQxaHa"
+        className="sc-hrWEMg jhcweA"
       >
         <button
           aria-expanded="false"
-          className="sc-GMQeP gGjhiA"
+          className="sc-gwVKww brFEHK"
           onClick={[Function]}
         >
           <strong
-            className="sc-iujRgT VUpjn"
+            className="sc-eTuwsz hLoIwZ"
           >
             Wait to hear from us
           </strong>
           <span
-            className="sc-exAgwC gGprLq"
+            className="sc-hXRMBi dBoOsb"
           >
             Show
           </span>
         </button>
       </li>
       <li
-        className="sc-bAeIUo dQxaHa"
+        className="sc-hrWEMg jhcweA"
       >
         <button
           aria-expanded="false"
-          className="sc-GMQeP gGjhiA"
+          className="sc-gwVKww brFEHK"
           onClick={[Function]}
         >
           <strong
-            className="sc-iujRgT VUpjn"
+            className="sc-eTuwsz hLoIwZ"
           >
             Your decision
           </strong>
           <span
-            className="sc-exAgwC gGprLq"
+            className="sc-hXRMBi dBoOsb"
           >
             Show
           </span>
@@ -1365,16 +1365,16 @@ exports[`Storyshots 4 Components/All/Tabs Primary 1`] = `
   }
 >
   <ul
-    className="sc-gojNiO dsIMLl"
+    className="sc-iQNlJl fhMkze"
     role="tablist"
   >
     <li
-      className="sc-daURTG fvYJEr"
+      className="sc-bsbRJL cMxSFY"
       role="presentation"
     >
       <button
         aria-selected={true}
-        className="sc-bXGyLb Jdnwj"
+        className="sc-hZSUBg bIXJvm"
         id="tab1"
         onClick={[Function]}
         role="tab"
@@ -1383,12 +1383,12 @@ exports[`Storyshots 4 Components/All/Tabs Primary 1`] = `
       </button>
     </li>
     <li
-      className="sc-daURTG dHHrmx"
+      className="sc-bsbRJL iwCSYq"
       role="presentation"
     >
       <button
         aria-selected={false}
-        className="sc-bXGyLb gOrbQx"
+        className="sc-hZSUBg bIvpwT"
         id="tab2"
         onClick={[Function]}
         role="tab"
@@ -1397,12 +1397,12 @@ exports[`Storyshots 4 Components/All/Tabs Primary 1`] = `
       </button>
     </li>
     <li
-      className="sc-daURTG dHHrmx"
+      className="sc-bsbRJL iwCSYq"
       role="presentation"
     >
       <button
         aria-selected={false}
-        className="sc-bXGyLb gOrbQx"
+        className="sc-hZSUBg bIvpwT"
         id="tab3"
         onClick={[Function]}
         role="tab"
@@ -1440,7 +1440,7 @@ exports[`Storyshots 4 Components/All/Tabs Primary 1`] = `
 
 exports[`Storyshots 4 Components/All/Tag Primary 1`] = `
 <div
-  className="sc-RefOD exexON tag"
+  className="sc-cMhqgX eRqJAQ tag"
 >
   Example tag
 </div>
@@ -1455,7 +1455,7 @@ exports[`Storyshots 4 Components/All/Text Normal 1`] = `
   }
 >
   <div
-    className="sc-lkqHmb jcokbG text_block"
+    className="sc-iuJeZd dsYbil text_block"
   >
     <p>
       We gotta burn the rain forest, 
