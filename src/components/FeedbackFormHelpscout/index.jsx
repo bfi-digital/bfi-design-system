@@ -176,9 +176,7 @@ const FeedbackFormContainer = styled.form`
 `
 
 export const FeedbackForm = ({
-    token,
-    secret,
-    app_id
+    submissionFunction, // (feedback, url) => Promise<Response>
 }) => {
     const [openFeedback, setOpenFeedback] = useState(false)
     const [isClosed, setIsClosed] = useState(false)
@@ -200,43 +198,9 @@ export const FeedbackForm = ({
         }
     }
     const { value, bind, reset } = useInput("")
-    
-    const handleSubmit = (evt) => {
-        var today = new Date()
-        var dd = String(today.getDate()).padStart(2, "0")
-        var mm = String(today.getMonth() + 1).padStart(2, "0")
-        var yyyy = today.getFullYear()
-        var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds()
 
-        fetch("https://api.helpscout.net/v2/conversations/", {
-            method: "POST",
-            headers: new Headers({
-                "Accept": "application/json",
-                "Content-Type": "application/json",
-                "Authorization": ("Bearer " + token)
-            }),
-            body: JSON.stringify({
-                "client_id": app_id,
-                "client_secret": secret,
-                "subject" : "Website feedback - " + (mm + "/" + dd + "/" + yyyy) + " " + time,
-                "customer" : {
-                    "email" : "chris@wearefuturegov.com",
-                    "firstName" : "Website",
-                    "lastName" : "Feedback"
-                },
-                "mailboxId" : 224219,
-                "type" : "email",
-                "status" : "active",
-                "createdAt" : "2012-10-10T12:00:00Z",
-                "threads" : [ {
-                    "type" : "customer",
-                    "customer" : {
-                        "email" : "chris@wearefuturegov.com"
-                    },
-                    "text" : "Page submitted from: " + window.location.href + "\n\n\n" + value
-                } ]
-            })
-        }).then(function(response) {
+    const handleSubmit = (evt) => {
+        submissionFunction(value, window.location.href).then(function(response) {
             console.log(response)
             reset()
             return response.json()
@@ -253,20 +217,14 @@ export const FeedbackForm = ({
                             <CloseButton onClick={() => {setIsClosed(true)}}>Close x</CloseButton>
                             {!isComplete ?
                                 <FeedbackInner>
-                                    {token && secret && app_id ?
-                                        <>
-                                            <Text><p>We’d like to hear your thoughts as we’re always trying to improve our services.
-                                            Please do not share any personal information.</p></Text>
-                                            <FeedbackFormContainer onSubmit={handleSubmit}>
-                                                <label htmlFor="feedback">Your feedback</label>
-                                                <textarea name="feedback" id="feedback" required {...bind} />
-                                                <button type="submit">Send feedback</button>
-                                                <Text><p>You can read our <a href="[needs link]">Privacy Policy[needs link]</a></p></Text>
-                                            </FeedbackFormContainer>
-                                        </>
-                                        :
-                                        <Text><p>Sorry, this form is currently not working. If you are seeing this message, then the form API is missing required fields.</p></Text>
-                                    }
+                                    <Text><p>We’d like to hear your thoughts as we’re always trying to improve our services.
+                                    Please do not share any personal information.</p></Text>
+                                    <FeedbackFormContainer onSubmit={handleSubmit}>
+                                        <label htmlFor="feedback">Your feedback</label>
+                                        <textarea name="feedback" id="feedback" required {...bind} />
+                                        <button type="submit">Send feedback</button>
+                                        <Text><p>You can read our <a href="https://www.bfi.org.uk/bfi-privacy-policy">Privacy Policy here</a>.</p></Text>
+                                    </FeedbackFormContainer>
                                 </FeedbackInner>
                                 :
                                 <FeedbackInnerComplete>
