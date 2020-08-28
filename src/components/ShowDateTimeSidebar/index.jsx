@@ -51,7 +51,7 @@ export const ShowDateTimeSidebar = ({
             </DateP>
             {!datesAreOnSameDay && 
                 <DateP>
-                    <strong>To: </strong>
+                    <strong>Until: </strong>
                     <span><Moment tz="Europe/London" format="HH:mm z">{singlePerformance.dateTimeEnd}</Moment></span>
                     <Moment format="dddd Do MMMM YYYY" date={singlePerformance.dateTimeEnd} />
                 </DateP>

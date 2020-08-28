@@ -134,7 +134,7 @@ export const ShowPerformanceList = ({
                                         <p>
                                             <strong>From: </strong>
                                             <br/>
-                                            <strong>To: </strong>
+                                            <strong>Until: </strong>
                                         </p>
                                     }
                                     <p>
