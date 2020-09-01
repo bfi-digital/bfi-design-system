@@ -32,9 +32,11 @@ import { ShowDateTimeSidebar } from "../../../components/ShowDateTimeSidebar"
 import { ShowPerformanceList } from "../../../components/ShowPerformanceList"
 import demoPerformances from "../../../components/ShowPerformanceList/data"
 import { TabNavigation } from "../../../components/TabNavigation"
-import demoTabs from "../../../components/TabNavigation/data"
+import { demoTabs1, demoTabs2 }  from "../../../components/TabNavigation/data"
 import { ShowEventGrid } from "../../../components/ShowEventGrid"
 import demoEvents from "../../../components/ShowEventGrid/data"
+import { ShowFilmGrid } from "../../../components/ShowFilmGrid"
+import { loveDemo, debateDemo } from "../../../components/ShowFilmGrid/data"
 
 <Meta title="3 Page examples/3 London Film Festival" component={MainContent} />
 
@@ -105,7 +107,7 @@ import demoEvents from "../../../components/ShowEventGrid/data"
                 </Actions>
             </HeroShow>
             <Wrapper>           
-                <MainContent classes="page_with_sidebar">
+                <MainContent>
                     <Text>
                         <p>Our August BFI Film Academy Lab will offer an insight into the role of a scripted format Producer - from identifying stories with the most potential, to getting them off the ground and onto the screen.</p>
                         <p>Our panel of industry experts will explore the various types of producers in the Film &amp; TV industry and the responsibilities involved. They will outline the skills and experience needed to excel in scripted production roles and the various career paths you can take to become the UK’s next top Producer!</p>
@@ -176,7 +178,7 @@ import demoEvents from "../../../components/ShowEventGrid/data"
                 </Sidebar>
             </Wrapper>
             <Wrapper>
-                <MainContent classes="page_with_sidebar">  
+                <MainContent>  
                     <p>full width stuff goes here</p>
                 </MainContent>
             </Wrapper>
@@ -222,7 +224,7 @@ import demoEvents from "../../../components/ShowEventGrid/data"
                 </Actions>
             </HeroShow>
             <Wrapper>           
-                <MainContent classes="page_with_sidebar">
+                <MainContent>
                     <Text>
                         <p>Our August BFI Film Academy Lab will offer an insight into the role of a scripted format Producer - from identifying stories with the most potential, to getting them off the ground and onto the screen.</p>
                         <p>Our panel of industry experts will explore the various types of producers in the Film &amp; TV industry and the responsibilities involved. They will outline the skills and experience needed to excel in scripted production roles and the various career paths you can take to become the UK’s next top Producer!</p>
@@ -286,7 +288,7 @@ import demoEvents from "../../../components/ShowEventGrid/data"
                 </Sidebar>
             </Wrapper>
             <Wrapper>
-                <MainContent classes="page_with_sidebar">  
+                <MainContent>  
                     <p>full width stuff goes here</p>
                 </MainContent>
             </Wrapper>
@@ -332,7 +334,7 @@ import demoEvents from "../../../components/ShowEventGrid/data"
                 </Actions>
             </HeroShow>
             <Wrapper>           
-                <MainContent classes="page_with_sidebar">
+                <MainContent>
                     <Text>
                         <p>Our August BFI Film Academy Lab will offer an insight into the role of a scripted format Producer - from identifying stories with the most potential, to getting them off the ground and onto the screen.</p>
                         <p>Our panel of industry experts will explore the various types of producers in the Film &amp; TV industry and the responsibilities involved. They will outline the skills and experience needed to excel in scripted production roles and the various career paths you can take to become the UK’s next top Producer!</p>
@@ -376,7 +378,7 @@ import demoEvents from "../../../components/ShowEventGrid/data"
                 </Sidebar>
             </Wrapper>
             <Wrapper>
-                <MainContent classes="page_with_sidebar">
+                <MainContent>
                     <ShowPerformanceList 
                         performances={demoPerformances} 
                         showTitle="Lynn + Lucy" 
@@ -427,7 +429,7 @@ import demoEvents from "../../../components/ShowEventGrid/data"
                 </Actions>
             </HeroShow>
             <Wrapper>           
-                <MainContent classes="page_with_sidebar">
+                <MainContent>
                     <Text>
                         <p>Our August BFI Film Academy Lab will offer an insight into the role of a scripted format Producer - from identifying stories with the most potential, to getting them off the ground and onto the screen.</p>
                         <p>Our panel of industry experts will explore the various types of producers in the Film &amp; TV industry and the responsibilities involved. They will outline the skills and experience needed to excel in scripted production roles and the various career paths you can take to become the UK’s next top Producer!</p>
@@ -516,10 +518,26 @@ import demoEvents from "../../../components/ShowEventGrid/data"
         <>
             <Header navItems={navItems} quickLinks={quickLinksData} />
             <Wrapper>           
-                <MainContent classes="page_with_sidebar">
+                <MainContent>
                     <Headline level={1} text="View all strands" />
-                    <TabNavigation tabs={demoTabs} />
-                    <TabNavigation tabs={demoTabs} />
+                    <TabNavigation tabs={demoTabs1} />
+                    <PromoBanner 
+                        colorScheme={0}
+                        headline="Love"
+                        description="Sweet, passionate, tough – love is a complex and many splendoured thing."
+                        image="https://i.imgur.com/5430sUB.jpg"
+                        placeholder="http://placehold.it/50x50"
+                    />
+                    <ShowFilmGrid films={loveDemo} asScroller />
+                    <PromoBanner 
+                        colorScheme={0}
+                        headline="Debate"
+                        description="Sweet, passionate, tough – love is a complex and many splendoured thing."
+                        image="https://i.imgur.com/yt3rRVE.jpg"
+                        placeholder="http://placehold.it/50x50"
+                    />
+                    <ShowFilmGrid films={debateDemo} asScroller />
+                    <TabNavigation tabs={demoTabs1} />
                 </MainContent>
             </Wrapper>
             <Footer
@@ -553,10 +571,10 @@ import demoEvents from "../../../components/ShowEventGrid/data"
         <>
             <Header navItems={navItems} quickLinks={quickLinksData} />
             <Wrapper>           
-                <MainContent classes="page_with_sidebar">
+                <MainContent>
                     <Headline level={1} text="View all strands" />
-                    <TabNavigation tabs={demoTabs} />
-                    <TabNavigation tabs={demoTabs} />
+                    <TabNavigation tabs={demoTabs2} />
+                    <TabNavigation tabs={demoTabs2} />
                 </MainContent>
             </Wrapper>
             <Footer
@@ -590,10 +608,10 @@ import demoEvents from "../../../components/ShowEventGrid/data"
         <>
             <Header navItems={navItems} quickLinks={quickLinksData} />
             <Wrapper>           
-                <MainContent classes="page_with_sidebar">
+                <MainContent>
                     <Headline level={1} text="View all strands" />
-                    <TabNavigation tabs={demoTabs} />
-                    <TabNavigation tabs={demoTabs} />
+                    <TabNavigation tabs={demoTabs3} />
+                    <TabNavigation tabs={demoTabs3} />
                 </MainContent>
             </Wrapper>
             <Footer

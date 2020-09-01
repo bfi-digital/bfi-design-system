@@ -81,9 +81,6 @@ const Outer = styled.section`
         a {
             margin-top: auto;
         }
-        p {
-            margin-top: 20px;
-        }
         &:before {
             content: "";
             position: absolute;
