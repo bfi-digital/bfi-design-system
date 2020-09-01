@@ -74,7 +74,7 @@ const Outer = styled.section`
 
 
     @media screen and (min-width: ${theme.m}){
-        flex-direction: ${props => props.pageWithSideBar ? "column" : "row"};
+        flex-direction: ${props => props.pageWithSidebar ? "column" : "row"};
         margin-bottom: ${theme.standardSpace*2.5}px;
         margin-top: ${theme.standardSpace*2.5}px;
 
@@ -94,7 +94,7 @@ const Outer = styled.section`
             box-shadow: 9999px 0 0 ${props => colorSchemes[props.colorScheme].background};
             border-left: 9999px solid ${props => colorSchemes[props.colorScheme].background};
             z-index: -1;
-            display: ${props => props.pageWithSideBar ? "none" : "default"}
+            display: ${props => props.pageWithSidebar ? "none" : "default"}
         }
     }
     @media screen and (min-width: ${theme.l}){
@@ -127,14 +127,14 @@ const Inner = styled.div`
     padding: 15px;
     @media screen and (min-width: ${theme.m}){
         padding: ${theme.standardSpace}px;
-        width: ${props => props.pageWithSideBar ? "100%" : "50%"};
+        width: ${props => props.pageWithSidebar ? "100%" : "50%"};
         display: flex;
         -webkit-flex-direction: column;
         -moz-flex-direction: column;
         -ms-flex-direction: column;
         flex-direction: column;
         align-items: flex-start;
-        padding-left: ${props => props.reversed ? (theme.standardSpace + "px") : props.pageWithSideBar ? (theme.standardSpace + "px") : "0"};
+        padding-left: ${props => props.reversed ? (theme.standardSpace + "px") : props.pageWithSidebar ? (theme.standardSpace + "px") : "0"};
         
         *{
             max-width: 100%;
@@ -206,11 +206,11 @@ const Image = styled.div`
     width: 100%;
 
     @media screen and (min-width: ${theme.m}){
-        order: ${props => props.reversed || props.pageWithSideBar ? "-1" : "1"};
-        width: ${props => props.pageWithSideBar ? "100%" : "50%"};
-        height: ${props => props.pageWithSideBar ? "250px" : "auto"};
-        margin-right: ${props => props.pageWithSideBar ? "0" : props.reversed ? "0px" : "-20px"};
-        margin-left: ${props => props.pageWithSideBar ? "0" : props.reversed ? "-20px" : "20px"};
+        order: ${props => props.reversed || props.pageWithSidebar ? "-1" : "1"};
+        width: ${props => props.pageWithSidebar ? "100%" : "50%"};
+        height: ${props => props.pageWithSidebar ? "250px" : "auto"};
+        margin-right: ${props => props.pageWithSidebar ? "0" : props.reversed ? "0px" : "-20px"};
+        margin-left: ${props => props.pageWithSidebar ? "0" : props.reversed ? "-20px" : "20px"};
     }
     @media screen and (min-width: ${theme.l}){
         margin-right: 0px;
@@ -237,15 +237,15 @@ const Video = styled.div`
 
     @media screen and (min-width: ${theme.m}){
         order: ${props => props.reversed ? "-1" : "1"};
-        max-width: ${props => props.pageWithSideBar ? "100%" : "75%"};
+        max-width: ${props => props.pageWithSidebar ? "100%" : "75%"};
         height: auto;
-        margin-right: ${props => props.pageWithSideBar ? "0" : props.reversed ? "0" : "-20px"};
-        margin-left: ${props => props.pageWithSideBar ? "0" : props.reversed ? "-20px" : "-20px"};
+        margin-right: ${props => props.pageWithSidebar ? "0" : props.reversed ? "0" : "-20px"};
+        margin-left: ${props => props.pageWithSidebar ? "0" : props.reversed ? "-20px" : "-20px"};
     }
     @media screen and (min-width: ${theme.l}){
         margin-right: 0px;
         margin-left: 0px;
-        max-width: ${props => props.pageWithSideBar ? "100%" : "66%"};
+        max-width: ${props => props.pageWithSidebar ? "100%" : "66%"};
     }
     iframe {
         position: absolute;
@@ -284,17 +284,17 @@ export const PromoBanner = ({
     secondImageAlt,
     external,
     oembedObject,
-    pageWithSideBar
+    pageWithSidebar
 }) =>
     <Outer 
         className={external ? "external_link promoBanner" : "promoBanner"}
         reversed={reversed} 
         colorScheme={colorScheme} 
         backgroundColor={backgroundColor}
-        pageWithSideBar={pageWithSideBar}
+        pageWithSidebar={pageWithSidebar}
         id={slugify(headline)}
     >
-        <Inner className={image ? "with_image" : "without_image"} reversed={reversed} pageWithSideBar={pageWithSideBar}>
+        <Inner className={image ? "with_image" : "without_image"} reversed={reversed} pageWithSidebar={pageWithSidebar}>
             {secondImage && 
                 <SecondImage 
                     src={secondImage} 
@@ -310,7 +310,7 @@ export const PromoBanner = ({
             }
         </Inner> 
         { oembedObject ?
-            <Video reversed={reversed} pageWithSideBar={pageWithSideBar}>
+            <Video reversed={reversed} pageWithSidebar={pageWithSidebar}>
                 <VideoInner>
                     {parse(oembedObject.html.replace("></iframe>", " title=\"" + (oembedObject.title ? (oembedObject.title + " video") : "Video player") + "\"></iframe>"))}
                 </VideoInner>
@@ -321,7 +321,7 @@ export const PromoBanner = ({
                     <Image
                         reversed={reversed}
                         image={image} 
-                        pageWithSideBar={pageWithSideBar}
+                        pageWithSidebar={pageWithSidebar}
                     /> 
                     : 
                     <RightButton>
@@ -384,5 +384,5 @@ PromoBanner.propTypes = {
     /** 
     * Boolean to define if this is on a page with a sidebar or not. Default is false
     **/
-    pageWithSideBar: PropTypes.bool
+    pageWithSidebar: PropTypes.bool
 }

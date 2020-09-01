@@ -30,19 +30,22 @@ const ConditionalWrapper = ({ condition, wrapper, wrapper2, children }) =>
 
 export const ShowFilmGrid = ({
     films,
-    allFilmsUrl
+    asScroller,
+    pageWithSidebar
 }) =>
     <>
         <ConditionalWrapper
-            condition={films.length >= 3}
-            wrapper={children => <Scroller withoutBreak={allFilmsUrl} noOfChildren={films.length} classes="film_grid">{children}</Scroller>}
+            condition={asScroller && films.length > 3}
+            wrapper={children => <Scroller noOfChildren={films.length} classes="film_grid">{children}</Scroller>}
             wrapper2={children => <Outer>{children}</Outer>}
         >
             {films.map(film =>
-                <FilmCard key={film.uuid + "_scroll"} inScroller={films.length >= 3} {...film}/>    
+                <FilmCard 
+                    key={film.uuid + "_scroll"} 
+                    inScroller={asScroller && films.length > 3}                    
+                    pageWithSidebar={pageWithSidebar}
+                    {...film}
+                />    
             )}
         </ConditionalWrapper>
-        { allFilmsUrl &&
-            <CentredButton to={allFilmsUrl}>See more films</CentredButton>
-        }
     </>

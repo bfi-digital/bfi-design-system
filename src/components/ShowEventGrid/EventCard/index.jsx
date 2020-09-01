@@ -146,7 +146,7 @@ const InsideScroller = styled(Outer)`
     }
 
     @media screen and (min-width: ${theme.m}){
-        flex: ${props => props.pageWithSideBar ? "0 0 35%" : "0 0 23%"};
+        flex: ${props => props.pageWithSidebar ? "0 0 35%" : "0 0 23%"};
         &:nth-of-type(even){
             margin-right: 25px !important;
         }
@@ -281,7 +281,7 @@ export const EventCard = ({
     dateTime,
     external,
     inScroller,
-    pageWithSideBar,
+    pageWithSidebar,
 
     strandColorScheme = 0,
     strandTitle,
@@ -296,7 +296,7 @@ export const EventCard = ({
     return(
         <ConditionalWrapper
             condition={inScroller}
-            wrapper={children => <InsideScroller pageWithSideBar={pageWithSideBar} withImage={image480x270 && image48x27} strandColorScheme={strandColorScheme} className="scrollcard">{children}</InsideScroller>}
+            wrapper={children => <InsideScroller pageWithSidebar={pageWithSidebar} withImage={image480x270 && image48x27} strandColorScheme={strandColorScheme} className="scrollcard">{children}</InsideScroller>}
             wrapper2={children => <Outer withImage={image480x270 && image48x27} strandColorScheme={strandColorScheme}>{children}</Outer>}
         >
             {platform && <PlatformTag withImage={image480x270 && image48x27} strandColorScheme={strandColorScheme}>{platform}{strandTitle && ` | ${strandTitle} strand`}</PlatformTag>}

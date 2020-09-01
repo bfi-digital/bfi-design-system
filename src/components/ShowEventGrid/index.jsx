@@ -60,12 +60,12 @@ export const ShowEventGrid = ({
         >
             {events.map(event =>
                 <EventCard 
-                    inScroller={asScroller} 
+                    inScroller={asScroller && events.length > 4} 
                     favouritable={favouritable} 
                     onFavourite={onFavourite} 
                     onUnfavourite={onUnfavourite} 
                     key={event.uuid} 
-                    pageWithSideBar={pageWithSidebar}
+                    pageWithSidebar={pageWithSidebar}
                     {...event}
                 />    
             )}

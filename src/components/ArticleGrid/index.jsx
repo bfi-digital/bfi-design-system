@@ -10,10 +10,10 @@ import { Skeleton } from "./ArticleCard/Skeleton"
 const Outer = styled.div`
     margin: 15px 0;
     padding: 15px 0;
-    padding-top: ${props => props.pageWithSideBar ? "15px" : "35px"};
+    padding-top: ${props => props.pageWithSidebar ? "15px" : "35px"};
     margin-top: ${theme.standardSpace}px;
     position: relative; 
-    background: ${props => props.pageWithSideBar ? "transparent" : theme.grey};
+    background: ${props => props.pageWithSidebar ? "transparent" : theme.grey};
 
     h2 {
         margin-top: 0;
@@ -21,7 +21,7 @@ const Outer = styled.div`
     }
 
     &:before {
-        display: ${props => props.pageWithSideBar ? "none" : "block"};
+        display: ${props => props.pageWithSidebar ? "none" : "block"};
         content: "";
         position: absolute;
         top: 0;
@@ -156,7 +156,7 @@ export const ArticleGrid = ({
     optionalTitle,
     optionalCTALink,
     optionalCTATitle,
-    pageWithSideBar,
+    pageWithSidebar,
     firstHighlighted,
     children,
     skeletons = 6,
@@ -166,7 +166,7 @@ export const ArticleGrid = ({
     const [currentNumber, setCurrentNumber] = useState(3)
 
     return(
-        <Outer pageWithSideBar={pageWithSideBar} className="article_grid_block">
+        <Outer pageWithSidebar={pageWithSidebar} className="article_grid_block">
             {optionalTitle && 
                 <StyledHeadline level={2} text={optionalTitle} />
             }
@@ -174,10 +174,10 @@ export const ArticleGrid = ({
                 <>
                     <Articles 
                         lessColumns={(articles.length === 2)} 
-                        className={(firstHighlighted ? "withHighlight" : "noHighlight") + (pageWithSideBar ? " noBackground" : " withBackground")}
+                        className={(firstHighlighted ? "withHighlight" : "noHighlight") + (pageWithSidebar ? " noBackground" : " withBackground")}
                     >
                         {articles.slice(0, currentNumber).map(article =>
-                            <ArticleCard key={article.uuid} pageWithSideBar={pageWithSideBar} lessColumns={articles.length === 2 || articles.length === 4} {...article}/>    
+                            <ArticleCard key={article.uuid} pageWithSidebar={pageWithSidebar} lessColumns={articles.length === 2 || articles.length === 4} {...article}/>    
                         )
                         }
                     </Articles>
@@ -190,26 +190,26 @@ export const ArticleGrid = ({
                     {articles ?
                         <Articles 
                             lessColumns={(articles.length === 2 || articles.length === 4) && !firstHighlighted} 
-                            className={(firstHighlighted ? "withHighlight" : "noHighlight") + (pageWithSideBar ? " noBackground" : " withBackground")}
+                            className={(firstHighlighted ? "withHighlight" : "noHighlight") + (pageWithSidebar ? " noBackground" : " withBackground")}
                         >
                             {firstHighlighted  === true || articles.length === 1 ?
                                 <>
-                                    <ArticleCardHighlighted key={articles[0].uuid} pageWithSideBar={pageWithSideBar} {...articles[0]}/>
+                                    <ArticleCardHighlighted key={articles[0].uuid} pageWithSidebar={pageWithSidebar} {...articles[0]}/>
                                     {articles.length > 1 &&
                                         articles.slice(1).map(article =>
-                                            <ArticleCard key={article.uuid} pageWithSideBar={pageWithSideBar} lessColumns={articles.length === 2 || articles.length === 4} {...article}/>    
+                                            <ArticleCard key={article.uuid} pageWithSidebar={pageWithSidebar} lessColumns={articles.length === 2 || articles.length === 4} {...article}/>    
                                         )
                                     }
                                 </>
                                 :
                                 articles.map(article =>
-                                    <ArticleCard key={article.uuid} pageWithSideBar={pageWithSideBar} lessColumns={articles.length === 2 || articles.length === 4} {...article}/>    
+                                    <ArticleCard key={article.uuid} pageWithSidebar={pageWithSidebar} lessColumns={articles.length === 2 || articles.length === 4} {...article}/>    
                                 )
                             }
                         </Articles>
                         :
                         <Articles lessColumns={articles.length === 2 || articles.length === 4} className="noHighlight skeletons">
-                            {[...Array(skeletons)].map((i) => <Skeleton key={i} noBackground={pageWithSideBar} loadMoreLoading={loadMoreLoading} /> )}
+                            {[...Array(skeletons)].map((i) => <Skeleton key={i} noBackground={pageWithSidebar} loadMoreLoading={loadMoreLoading} /> )}
                         </Articles>
                     }
                     { optionalCTALink &&

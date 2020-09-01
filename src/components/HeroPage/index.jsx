@@ -97,7 +97,7 @@ const Outer = styled.div`
                 right: 0;
                 border-left: 9999px solid ${theme.lightest};
                 z-index: -1;
-                display: ${props => props.pageWithSideBar ? "none" : "default"}
+                display: ${props => props.pageWithSidebar ? "none" : "default"}
             }
 
             .page_meta {
@@ -182,7 +182,7 @@ const ImageContainer = styled.div`
             right: 0;
             border-left: 9999px solid ${theme.lightest};
             z-index: -1;
-            display: ${props => props.pageWithSideBar ? "none" : "default"}
+            display: ${props => props.pageWithSidebar ? "none" : "default"}
         }
     }
 

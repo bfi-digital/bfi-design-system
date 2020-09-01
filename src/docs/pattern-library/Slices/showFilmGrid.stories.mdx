@@ -21,16 +21,15 @@ import demoFilms from "../../../components/ShowFilmGrid/data"
 </Preview>
 
 <Preview>
-    <Story name="Show grid (Film) with CTA">
+    <Story name="Show grid (Film) as scroller">
         <div style={{
             padding: "5px",
             maxWidth: "1000px"
         }}>
-            <ShowFilmGrid films={demoFilms} allFilmsUrl="http://google.com"/>
+            <ShowFilmGrid films={demoFilms} asScroller />
         </div>
     </Story>
 </Preview>
-
 
 <Preview>
     <Story name="Show grid (Film) 1">
@@ -60,7 +59,7 @@ import demoFilms from "../../../components/ShowFilmGrid/data"
             padding: "5px",
             maxWidth: "1000px"
         }}>
-            <ShowFilmGrid films={demoFilms.slice(0,3)} allFilmsUrl="http://google.com" />
+            <ShowFilmGrid films={demoFilms.slice(0,3)} />
         </div>
     </Story>
 </Preview>
@@ -83,6 +82,40 @@ import demoFilms from "../../../components/ShowFilmGrid/data"
             maxWidth: "1000px"
         }}>
             <ShowFilmGrid films={demoFilms.slice(0,6)} />
+        </div>
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="Show grid (Film) 6 as scroller">
+        <div style={{
+            padding: "5px",
+            maxWidth: "1000px"
+        }}>
+            <ShowFilmGrid films={demoFilms.slice(0,6)} asScroller />
+        </div>
+    </Story>
+</Preview>
+
+
+<Preview>
+    <Story name="Show grid (Film) - page with sidebar">
+        <div style={{
+            padding: "5px",
+            maxWidth: "600px"
+        }}>
+            <ShowFilmGrid films={demoFilms} pageWithSidebar />
+        </div>
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="Show grid (Film) as scroller - page with sidebar">
+        <div style={{
+            padding: "5px",
+            maxWidth: "600px"
+        }}>
+            <ShowFilmGrid films={demoFilms} asScroller pageWithSidebar />
         </div>
     </Story>
 </Preview>

@@ -9,7 +9,7 @@ import LazyImage from "react-lazy-progressive-image"
 
 const Outer = styled.div`
     position: relative;
-    background: ${props => props.pageWithSideBar ? theme.lightGrey : theme.white};
+    background: ${props => props.pageWithSidebar ? theme.lightGrey : theme.white};
     box-shadow: 0px 5px 0px ${theme.primary};
     margin-bottom: 35px;
     display: flex;
@@ -177,7 +177,7 @@ const CategoryTag = styled.div`
 
 
 export const ArticleCardHighlighted = ({
-    pageWithSideBar,
+    pageWithSidebar,
     title,
     url,
     image480x270,
@@ -188,7 +188,7 @@ export const ArticleCardHighlighted = ({
     external,
     type
 }) =>
-    <Outer className="articleCardHighlighted" pageWithSideBar={pageWithSideBar}>
+    <Outer className="articleCardHighlighted" pageWithSidebar={pageWithSidebar}>
         {category ? 
             <CategoryTag>{category}</CategoryTag> 
             :

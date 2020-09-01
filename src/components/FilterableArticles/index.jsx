@@ -42,18 +42,18 @@ export const FilterableArticles = ({
                 articles && articles.length > 0 ? 
                     <>
                         {!limit ?
-                            <ArticleGrid articles={articles.length > 29 ? articles.slice(0, -1) : articles} firstHighlighted={includeHighlight} pageWithSideBar={greyBackground ? false : true}>
-                                {loadMoreLoading && <ArticleGrid articles={false} skeletons={3} pageWithSideBar={greyBackground ? false : true} loadMoreLoading={loadMoreLoading} />}
+                            <ArticleGrid articles={articles.length > 29 ? articles.slice(0, -1) : articles} firstHighlighted={includeHighlight} pageWithSidebar={greyBackground ? false : true}>
+                                {loadMoreLoading && <ArticleGrid articles={false} skeletons={3} pageWithSidebar={greyBackground ? false : true} loadMoreLoading={loadMoreLoading} />}
                                 {loadMore && <CentredButton href="#4" onClick={loadMore}>Load more</CentredButton>}
                             </ArticleGrid>
                             :
-                            <ArticleGrid articles={articles.slice(0,limit)} optionalTitle={filters.length > 0 ? false : optionalTitle} firstHighlighted={includeHighlight} optionalCTATitle={optionalCTATitle} optionalCTALink={optionalCTALink} pageWithSideBar={greyBackground ? false : true} />
+                            <ArticleGrid articles={articles.slice(0,limit)} optionalTitle={filters.length > 0 ? false : optionalTitle} firstHighlighted={includeHighlight} optionalCTATitle={optionalCTATitle} optionalCTALink={optionalCTALink} pageWithSidebar={greyBackground ? false : true} />
                         }
                     </>
                     :
                     <p>No articles found.</p>
                 :
-                <ArticleGrid articles={false} skeletons={limit} pageWithSideBar={greyBackground ? false : true} />
+                <ArticleGrid articles={false} skeletons={limit} pageWithSidebar={greyBackground ? false : true} />
             }
         </Outer>
     )

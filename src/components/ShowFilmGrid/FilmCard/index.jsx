@@ -55,14 +55,14 @@ const Outer = styled(LinkSwitch)`
         }
     }
     @media screen and (min-width: ${theme.m}){
-        width: calc(33% - 15px);
+        width: ${props => props.pageWithSidebar ? "calc(50% - 15px)" : "calc(33% - 15px)"};
         margin-bottom: 15px;
 
         &:nth-of-type(even){
-            margin-right: 15px;
+            margin-right: ${props => props.pageWithSidebar ? "0" : "15px"};
         }
         &:nth-of-type(3n){
-            margin-right: 0px;
+            margin-right: ${props => props.pageWithSidebar ? "15px" : "0"};
         }
     }
     &:hover, &:focus-within {
@@ -121,7 +121,7 @@ const RestyledOuter = styled(Outer)`
         margin-right: 25px !important;
     }
     @media screen and (min-width: ${theme.m}){
-        flex: 0 0 45%;
+        flex: ${props => props.pageWithSidebar ? "0 0 65%" : "0 0 45%"};
         &:nth-of-type(even){
             margin-right: 15px !important;
         }
@@ -130,7 +130,7 @@ const RestyledOuter = styled(Outer)`
         }
     }
     @media screen and (min-width: ${theme.l}){
-        flex: 0 0 37%;
+        flex: ${props => props.pageWithSidebar ? "0 0 65%" : "0 0 37%"};
         &:nth-of-type(3n){
             margin-right: 15px !important;
         }
@@ -139,7 +139,7 @@ const RestyledOuter = styled(Outer)`
         }
     }
     @media screen and (min-width: ${theme.xl}){
-        flex: 0 0 31%;
+        flex: ${props => props.pageWithSidebar ? "0 0 65%" : "0 0 31%"};
     }
 `
 
@@ -233,13 +233,14 @@ export const FilmCard = ({
     url,
     highlightBannerText,
     description,
+    pageWithSidebar,
     inScroller,
     strandColorScheme = 0
 }) =>
     <ConditionalWrapper
         condition={inScroller}
-        wrapper={children => <RestyledOuter to={url} className="scroller__filmcard">{children}</RestyledOuter>}
-        wrapper2={children => <Outer to={url}>{children}</Outer>}
+        wrapper={children => <RestyledOuter to={url} className="scroller__filmcard" pageWithSidebar={pageWithSidebar}>{children}</RestyledOuter>}
+        wrapper2={children => <Outer to={url} pageWithSidebar={pageWithSidebar}>{children}</Outer>}
     >
         { highlightBannerText && <HighlightBanner className="highlight_banner" strandColorScheme={strandColorScheme}>{highlightBannerText}</HighlightBanner> }
         <ImageContainer>

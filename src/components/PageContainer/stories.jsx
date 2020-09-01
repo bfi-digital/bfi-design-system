@@ -1740,7 +1740,7 @@ export const ArticleRecommendsExample = () =>
                     playerUrl="https://player.bfi.org.uk/rentals/film/watch-carol-2014-online"
                 />
 
-                <ArticleGrid pageWithSideBar articles={[...demoArticles.slice(0, 5)]} />
+                <ArticleGrid pageWithSidebar articles={[...demoArticles.slice(0, 5)]} />
             </MainContent>
             <Sidebar>
                 <AdvertisingContainer>
@@ -2806,7 +2806,7 @@ export const everyComponentWithSidebar = () =>
                     text="Click this promotion!"
                 />
                 <PromoBanner 
-                    pageWithSideBar={true}
+                    pageWithSidebar={true}
                     colorScheme={0}
                     headline="Watch BFI-picked contemporary and classic films in cinema"
                     description="Become a BFI member for £37 a year and get priority booking for BFI London Film Festival, BFI Flare and at BFI Southbank all year around."
@@ -2816,13 +2816,13 @@ export const everyComponentWithSidebar = () =>
                     secondImage="http://placehold.it/150x40"
                     secondImageAltText="Test image"
                 />
-                <ArticleGrid pageWithSideBar={true} articles={demoArticles} />
+                <ArticleGrid pageWithSidebar={true} articles={demoArticles} />
                 <Headline 
                     level={2} 
                     text="A promo banner with a video!"
                 />
                 <PromoBanner 
-                    pageWithSideBar={true}
+                    pageWithSidebar={true}
                     colorScheme={2}
                     reversed={true}
                     headline="Watch BFI-picked contemporary and classic films in cinema"
