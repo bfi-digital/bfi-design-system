@@ -228,7 +228,7 @@ export const FeedbackForm = ({
                                 </FeedbackInner>
                                 :
                                 <FeedbackInnerComplete>
-                                    <Text><p>Feeedback sent! [Content needed]</p></Text>
+                                    <Text><p>Thank you for your feedback.</p></Text>
                                 </FeedbackInnerComplete>
                             }
                         </FeedbackContainer>
