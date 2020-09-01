@@ -22,6 +22,21 @@ export default {
     playerSubs: "#836c46",
     playerFree: "#25856E",
 
+    // LFF Strand colours
+    strandLove: "#e61e26",
+    strandDebate: "#0070af",
+    strandCult: "#c0198d",
+    strandLaugh: "#987001",
+    strandDare: "#632b86",
+    strandJourney: "#00828e",
+    strandCreate: "#310d35",
+    strandFamily: "#2a2c76",
+    strandExperimenta: "#098642",
+    strandTreasures: "#a5662a",
+    strandExpanded: "#5d1650",
+    strandEpisodic: "#044e43",
+    strandEvents: "#d14627",
+
     // breakpoints
     s: "550px",
     m: "768px", // tablets and larger

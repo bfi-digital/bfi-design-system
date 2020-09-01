@@ -7,10 +7,28 @@ import LazyImage from "react-lazy-progressive-image"
 import heart from "./heart.svg"
 import heartFilled from "./heart-filled.svg"
 
+const strandColors = [
+    theme.primary,
+    theme.strandLove,
+    theme.strandDebate,
+    theme.strandCult,
+    theme.strandLaugh,
+    theme.strandDare,
+    theme.strandJourney,
+    theme.strandCreate,
+    theme.strandFamily,
+    theme.strandExperimenta,
+    theme.strandTreasures,
+    theme.strandExpanded,
+    theme.strandEpisodic,
+    theme.strandEvents,
+]
+
 const Outer = styled.div`
     position: relative;
     background: ${theme.lightGrey};
-    box-shadow: 0px 5px 0px ${theme.primary};
+    box-shadow: 0px 5px 0px ${props => strandColors[props.strandColorScheme]};
+
     display: flex;
     -webkit-flex-direction: column;
     -moz-flex-direction: column;
@@ -102,7 +120,7 @@ const Outer = styled.div`
         }
     }
     &:active{
-        box-shadow: 0px 1px 0px ${theme.primary};
+        box-shadow: 0px 1px 0px ${props => strandColors[props.strandColorScheme]};
         transform: translate(0px, 3px);
     }
 `
@@ -199,8 +217,8 @@ const PageImage = styled.div`
     transition: all ease 0.3s;
 `
 
-const CategoryTag = styled.div`
-    background: ${theme.primary};
+const PlatformTag = styled.div`
+    background: ${props => strandColors[props.strandColorScheme]};
     color: ${theme.white};
     padding: 5px;
     padding-left: 15px;
@@ -259,11 +277,14 @@ export const EventCard = ({
     url,
     image480x270,
     image48x27,
-    format,
+    platform,
     dateTime,
     external,
     inScroller,
     pageWithSideBar,
+
+    strandColorScheme = 0,
+    strandTitle,
     
     favouritable,
     favourited,
@@ -275,10 +296,10 @@ export const EventCard = ({
     return(
         <ConditionalWrapper
             condition={inScroller}
-            wrapper={children => <InsideScroller pageWithSideBar={pageWithSideBar} withImage={image480x270 && image48x27} className="scrollcard">{children}</InsideScroller>}
-            wrapper2={children => <Outer withImage={image480x270 && image48x27}>{children}</Outer>}
+            wrapper={children => <InsideScroller pageWithSideBar={pageWithSideBar} withImage={image480x270 && image48x27} strandColorScheme={strandColorScheme} className="scrollcard">{children}</InsideScroller>}
+            wrapper2={children => <Outer withImage={image480x270 && image48x27} strandColorScheme={strandColorScheme}>{children}</Outer>}
         >
-            {format && <CategoryTag withImage={image480x270 && image48x27}>{format}</CategoryTag>}
+            {platform && <PlatformTag withImage={image480x270 && image48x27} strandColorScheme={strandColorScheme}>{platform}{strandTitle && ` - ${strandTitle}`}</PlatformTag>}
 
             {image480x270 && image48x27 &&
                 <PageImageContainer>

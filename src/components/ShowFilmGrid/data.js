@@ -8,8 +8,9 @@ export default [
         ],
         url: "#",
         uuid: "06347a64-5abd-59de-a6b9-be0d4a9e31e145336",
-        highlightBannerText: "Now Showing",
-        description: "Raging Bull is the most painful and heart-rending portrait of jealousy in the cinema – an Othello for our times. Boxing is the arena, not the subject.” Roger Ebert, The Great Movies, 2002"
+        description: "Raging Bull is the most painful and heart-rending portrait of jealousy in the cinema – an Othello for our times. Boxing is the arena, not the subject.” Roger Ebert, The Great Movies, 2002",
+        highlightBannerText: "Love",
+        strandColorScheme: 1
     },
     {
         name: "Parasite",
@@ -22,7 +23,9 @@ export default [
         ],
         url: "#",
         uuid: "06347a64-5abd-59de-a6b9-be0d4a9e31e1456",
-        description: "You should watch parasite!"
+        description: "You should watch parasite!",
+        highlightBannerText: "Debate",
+        strandColorScheme: 2
     },
     {
         name: "The Flavour of Green Tea Over Rice",
@@ -34,7 +37,8 @@ export default [
         ],
         url: "#",
         uuid: "06347a64-5abd-59de-a6b9-be0d4a9e31e2",
-        highlightBannerText: "Japan 2020"
+        highlightBannerText: "Cult",
+        strandColorScheme: 3    
     },
     {
         name: "Good Morning",
@@ -45,7 +49,9 @@ export default [
             "BFI Player"
         ],
         url: "#",
-        uuid: "06347a64-5abd-59de-a6b9-be0d4a9e321e3"
+        uuid: "06347a64-5abd-59de-a6b9-be0d4a9e321e3",
+        highlightBannerText: "Laugh",
+        strandColorScheme: 4
     },
     {
         name: "Tokyo Story",
@@ -56,7 +62,9 @@ export default [
             "BFI Player"
         ],
         url: "#",
-        uuid: "06347a64-5abd-59de-a61b9-be0d4a9e31e4"
+        uuid: "06347a64-5abd-59de-a61b9-be0d4a9e31e4",
+        highlightBannerText: "Dare",
+        strandColorScheme: 5
     },
     {
         name: "The Assistant",
@@ -67,7 +75,9 @@ export default [
             "BFI Player"
         ],
         url: "#",
-        uuid: "06347a64-5abd-59de-a6b96-be0d4a9e31e5"
+        uuid: "06347a64-5abd-59de-a6b96-be0d4a9e31e5",
+        highlightBannerText: "Journey",
+        strandColorScheme: 6
     },
     {
         name: "Waves",
@@ -79,7 +89,9 @@ export default [
             "Southbank"
         ],
         url: "#",
-        uuid: "06347a64-5abd-59de4-a6b9-be0d4a9e31e6"
+        uuid: "06347a64-5abd-59de4-a6b9-be0d4a9e31e6",
+        highlightBannerText: "Create",
+        strandColorScheme: 7
     },
     {
         name: "Days of Bagnold Summer",
@@ -90,6 +102,8 @@ export default [
             "BFI Player"
         ],
         url: "#",
-        uuid: "06347a64-5abd3-59de-a6b9-be0d4a9e31e345"
+        uuid: "06347a64-5abd3-59de-a6b9-be0d4a9e31e345",
+        highlightBannerText: "Family",
+        strandColorScheme: 8
     },
 ]

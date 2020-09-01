@@ -7,6 +7,24 @@ import LazyImage from "react-lazy-progressive-image"
 import placeholderImage from "./placeholder.png"
 import placeholderImageSmall from "./placeholder-small.png"
 
+
+const strandColors = [
+    theme.primary,
+    theme.strandLove,
+    theme.strandDebate,
+    theme.strandCult,
+    theme.strandLaugh,
+    theme.strandDare,
+    theme.strandJourney,
+    theme.strandCreate,
+    theme.strandFamily,
+    theme.strandExperimenta,
+    theme.strandTreasures,
+    theme.strandExpanded,
+    theme.strandEpisodic,
+    theme.strandEvents,
+]
+
 const Outer = styled(LinkSwitch)`
     display: block;
     // border-radius: 5px;
@@ -165,7 +183,7 @@ const HighlightBanner = styled.div`
     top: 0;
     right: 0;
     padding: 5px 15px;
-    background: ${theme.primary}E8;
+    background: ${props => strandColors[props.strandColorScheme]}E8;
     color: ${theme.white};
     z-index: 1;
     font-weight: ${theme.fontWeight_semiBold};
@@ -215,14 +233,15 @@ export const FilmCard = ({
     url,
     highlightBannerText,
     description,
-    inScroller
+    inScroller,
+    strandColorScheme = 0
 }) =>
     <ConditionalWrapper
         condition={inScroller}
         wrapper={children => <RestyledOuter to={url} className="scroller__filmcard">{children}</RestyledOuter>}
         wrapper2={children => <Outer to={url}>{children}</Outer>}
     >
-        { highlightBannerText && <HighlightBanner className="highlight_banner">{highlightBannerText}</HighlightBanner> }
+        { highlightBannerText && <HighlightBanner className="highlight_banner" strandColorScheme={strandColorScheme}>{highlightBannerText}</HighlightBanner> }
         <ImageContainer>
             <LazyImage
                 src={image480x270 != "" ? image480x270 : placeholderImage}
