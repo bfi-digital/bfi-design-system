@@ -2,7 +2,6 @@ import React from "react"
 import styled from "styled-components"
 import theme from "../_theme"
 import { FilmCard } from "./FilmCard"
-import { Button } from "../Button"
 import { Scroller } from "../Scroller"
 
 const Outer = styled.section`
@@ -16,12 +15,6 @@ const Outer = styled.section`
         flex-direction: row;
         flex-wrap: wrap;
     }
-`
-const CentredButton = styled(Button)`
-    margin: 30px auto;
-    max-width: 250px;
-    display: block;
-    text-align: center;
 `
 
 const ConditionalWrapper = ({ condition, wrapper, wrapper2, children }) => 

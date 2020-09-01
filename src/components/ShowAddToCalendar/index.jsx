@@ -1,11 +1,12 @@
 import React from "react"
 import styled from "styled-components"
 import theme from "../_theme"
-import "./css/font-awesome.min.css"
+import fsCss from "!!raw-loader!./css/font-awesome.min.css"
 import AddToCalendar from "react-add-to-calendar"
 import FontAwesome from "react-fontawesome"
 
 const Outer = styled.button`
+    ${fsCss}
     margin-top: 15px;
     background: transparent;
     color: ${theme.primary};
