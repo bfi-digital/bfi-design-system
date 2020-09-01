@@ -8,7 +8,7 @@ export const ShowGridAll = ({
 }) =>
     showType === "film" ?
         <ShowFilmGrid films={shows} />
-    :
-    showType === "event" &&
-        <ShowEventGrid events={shows} />
+        :
+        showType === "event" &&
+            <ShowEventGrid events={shows} />
 

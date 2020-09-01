@@ -32,10 +32,11 @@ import { ShowDateTimeSidebar } from "../../../components/ShowDateTimeSidebar"
 import { ShowPerformanceList } from "../../../components/ShowPerformanceList"
 import demoPerformances from "../../../components/ShowPerformanceList/data"
 import { TabNavigation } from "../../../components/TabNavigation"
-import { demoTabs1, demoTabs2 }  from "../../../components/TabNavigation/data"
+import { demoTabs1, demoTabs2, demoTabs3 }  from "../../../components/TabNavigation/data"
 import { ShowEventGrid } from "../../../components/ShowEventGrid"
 import demoEvents from "../../../components/ShowEventGrid/data"
 import { ShowFilmGrid } from "../../../components/ShowFilmGrid"
+import { ShowGridAll } from "../../../components/ShowGridAll"
 import showDemoFilms from "../../../components/ShowFilmGrid/data"
 import { loveDemo, debateDemo } from "../../../components/ShowFilmGrid/data"
 
@@ -575,7 +576,7 @@ import { loveDemo, debateDemo } from "../../../components/ShowFilmGrid/data"
                 <MainContent>
                     <Headline level={1} text="View all films" />
                     <TabNavigation tabs={demoTabs2} />
-                    <ShowFilmGrid films={showDemoFilms} />
+                    <ShowGridAll shows={showDemoFilms} showType="film" />
                     <TabNavigation tabs={demoTabs2} />
                 </MainContent>
             </Wrapper>
@@ -613,6 +614,7 @@ import { loveDemo, debateDemo } from "../../../components/ShowFilmGrid/data"
                 <MainContent>
                     <Headline level={1} text="View all events" />
                     <TabNavigation tabs={demoTabs3} />
+                    <ShowGridAll shows={demoEvents} showType="event" />
                     <TabNavigation tabs={demoTabs3} />
                 </MainContent>
             </Wrapper>
