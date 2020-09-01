@@ -209,6 +209,9 @@ export const ArticleCardHighlighted = ({
             <LazyImage
                 src={image480x270}
                 placeholder={image48x27 ? image48x27 : image480x270}
+                visibilitySensorProps={{
+                    partialVisibility: true
+                }}
             >
                 {src => <PageImage className="image" imageSrc={src} alt="" />}
             </LazyImage>

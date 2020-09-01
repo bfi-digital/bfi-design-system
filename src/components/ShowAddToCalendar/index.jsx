@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import theme from "../_theme"
+import "./css/font-awesome.min.css"
 import AddToCalendar from "react-add-to-calendar"
 import FontAwesome from "react-fontawesome"
 

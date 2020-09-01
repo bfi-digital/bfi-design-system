@@ -16,6 +16,7 @@ import { HeroShow } from "../../../components/HeroShow"
 import { PageLinks } from "../../../components/PageLinks"
 import { FilmGrid } from "../../../components/FilmGrid"
 import { PromoBanner } from "../../../components/PromoBanner"
+import { ImageSponsorLinks } from "../../../components/ImageSponsorLinks"
 
 import { AdvertisingContainer } from "../../../components/AdvertisingContainer"
 import { HeroArticle } from "../../../components/HeroArticle"
@@ -124,15 +125,29 @@ import demoEvents from "../../../components/ShowEventGrid/data"
                         level={2} 
                         text="Headline"
                     />
+                    <ImageSponsorLinks 
+                        images={[{
+                            url: "https://i.pinimg.com/originals/6e/79/ac/6e79ac75e164ffa85f36f772fdaa41aa.png",
+                            alt: "American Express",
+                            link: "http://bfi.org.uk"
+                        }]}
+                    />
                 </MainContent>
                 <Sidebar>
                     <ShowDateTimeSidebar
-                        dateTimeStart="2020-10-08T13:00"
-                        dateTimeEnd="2020-10-08T14:28"
                         title="Lynn + Lucy on BFIPlayer - London Film Festival 2020"
                         description="Lynn + Lucy premieres online at London Film Festival. With your ticket you can enjoy Lynn + Lucy any time for two weeks from the premiere date."
-                        location="https://player.bfi.org.uk/subscription/film/watch-lynn-lucy-2019-online"
-                        performanceInfo="Screening on BFI Player"
+                        singlePerformance={{
+                            id: "3",
+                            performanceInfo: "BFI Player without end date",
+                            dateTimeStart: "2020-10-15T18:00",
+                            availability: "available",
+                            platform: "player",
+                            location: "BFI Southbank",
+                            screen: "",
+                            paywall: "paid",
+                            ctaURL: "https://player.bfi.org.uk/subscription/film/watch-lynn-lucy-2019-online"
+                        }}
                     />
                     <QuickFacts
                         facts={[
@@ -230,12 +245,19 @@ import demoEvents from "../../../components/ShowEventGrid/data"
                 </MainContent>
                 <Sidebar>
                     <ShowDateTimeSidebar
-                        dateTimeStart="2020-10-08T18:00"
-                        dateTimeEnd="2020-10-18T23:55"
                         title="Lynn + Lucy on BFIPlayer - London Film Festival 2020"
                         description="Lynn + Lucy premieres online at London Film Festival. With your ticket you can enjoy Lynn + Lucy any time for two weeks from the premiere date."
-                        location="https://player.bfi.org.uk/subscription/film/watch-lynn-lucy-2019-online"
-                        performanceInfo="Screening on BFI Player"
+                        singlePerformance={{
+                            id: "2",
+                            dateTimeStart: "2020-10-08T13:00",
+                            dateTimeEnd: "2020-10-18T14:28",
+                            availability: "available",
+                            platform: "southbank",
+                            location: "BFI Southbank",
+                            screen: "Screen 3",
+                            paywall: "free",
+                            ctaURL: "https://whatson.bfi.org.uk/Online/default.asp",
+                        }}
                     />
                     <QuickFacts
                         facts={[

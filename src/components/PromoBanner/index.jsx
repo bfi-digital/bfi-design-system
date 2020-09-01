@@ -3,7 +3,6 @@ import PropTypes from "prop-types"
 import styled from "styled-components"
 import theme from "../_theme"
 import parse from "html-react-parser"
-import LazyImage from "react-lazy-progressive-image"
 
 import { Headline } from "../Headline"
 import { Button } from "../Button"
@@ -263,7 +262,6 @@ export const PromoBanner = ({
     callToActionUrl,
     callToActionTitle,
     image,
-    placeholder,
     reversed,
     colorScheme,
     backgroundColor,
@@ -304,21 +302,11 @@ export const PromoBanner = ({
             :
             <>
                 {image ? 
-                    <LazyImage
-                        src={image}
-                        placeholder={placeholder}
-                        visibilitySensorProps={{
-                            partialVisibility: true
-                        }}
-                    >
-                        {src => 
-                            <Image
-                                reversed={reversed}
-                                image={src} 
-                                pageWithSideBar={pageWithSideBar}
-                            /> 
-                        }
-                    </LazyImage>
+                    <Image
+                        reversed={reversed}
+                        image={image} 
+                        pageWithSideBar={pageWithSideBar}
+                    /> 
                     : 
                     <RightButton>
                         {callToActionUrl && 

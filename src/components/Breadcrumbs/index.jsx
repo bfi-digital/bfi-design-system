@@ -87,7 +87,7 @@ export const Breadcrumbs = ({
             {breadcrumbs.length > 1 &&
                 <MobileOuter>
                     <Crumb key={breadcrumbs[breadcrumbs.length - 2].url ? breadcrumbs[breadcrumbs.length - 2].url : breadcrumbs[breadcrumbs.length - 2].title}>
-                        <BreadcrumbLink to={breadcrumbs[breadcrumbs.length - 2].url}>&#60;&nbsp;Go back to {breadcrumbs[breadcrumbs.length - 2].title}</BreadcrumbLink>
+                        <BreadcrumbLink to={breadcrumbs[breadcrumbs.length - 2].url}>&#60;&nbsp; {breadcrumbs[breadcrumbs.length - 2].title}</BreadcrumbLink>
                     </Crumb>
                 </MobileOuter>
             }

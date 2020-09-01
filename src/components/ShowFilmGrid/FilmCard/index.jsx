@@ -37,7 +37,7 @@ const Outer = styled(LinkSwitch)`
         }
     }
     @media screen and (min-width: ${theme.m}){
-        width: calc(50% - 15px);
+        width: calc(33% - 15px);
         margin-bottom: 15px;
 
         &:nth-of-type(even){
