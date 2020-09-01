@@ -94,7 +94,7 @@ const Outer = styled(LinkSwitch)`
         box-shadow: 0px 0px 0px 5px white, 0px 0px 0px 9px ${theme.focus};
 
         .highlight_banner {
-            background: ${theme.primary};
+            background: ${props => strandColors[props.strandColorScheme]};
         }
         .filmcard_description {
             transform: translateY(0);
@@ -144,7 +144,7 @@ const RestyledOuter = styled(Outer)`
 `
 
 const ImageContainer = styled.div`
-    background: ${theme.light};
+    background: ${props => props.strandColorScheme === 0 ? theme.light : `${strandColors[props.strandColorScheme]}33`};
     display: inline-block;
     width: 100%;
     height: auto;
@@ -239,11 +239,11 @@ export const FilmCard = ({
 }) =>
     <ConditionalWrapper
         condition={inScroller}
-        wrapper={children => <RestyledOuter to={url} className="scroller__filmcard" pageWithSidebar={pageWithSidebar}>{children}</RestyledOuter>}
-        wrapper2={children => <Outer to={url} pageWithSidebar={pageWithSidebar}>{children}</Outer>}
+        wrapper={children => <RestyledOuter to={url} className="scroller__filmcard" pageWithSidebar={pageWithSidebar} strandColorScheme={strandColorScheme}>{children}</RestyledOuter>}
+        wrapper2={children => <Outer to={url} pageWithSidebar={pageWithSidebar} strandColorScheme={strandColorScheme}>{children}</Outer>}
     >
         { highlightBannerText && <HighlightBanner className="highlight_banner" strandColorScheme={strandColorScheme}>{highlightBannerText}</HighlightBanner> }
-        <ImageContainer>
+        <ImageContainer strandColorScheme={strandColorScheme}>
             <LazyImage
                 src={image480x270 != "" ? image480x270 : placeholderImage}
                 placeholder={image480x270 != "" ? image48x27 : placeholderImageSmall}
