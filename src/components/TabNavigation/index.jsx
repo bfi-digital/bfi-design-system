@@ -7,7 +7,7 @@ const Outer = styled.ul`
     list-style-type: none;
     padding-left: 0;
     display: flex;
-    margin: ${theme.standardSpace}px 0;
+    margin: ${theme.standardSpace*2}px 0;
 `
 const Tab = styled.li`
     margin-right: ${theme.standardSpace*0.5}px;

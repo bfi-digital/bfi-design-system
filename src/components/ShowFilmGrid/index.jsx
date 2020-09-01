@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import theme from "../_theme"
 import { FilmCard } from "./FilmCard"
+import { Button } from "../Button"
 import { Scroller } from "../Scroller"
 
 const Outer = styled.section`

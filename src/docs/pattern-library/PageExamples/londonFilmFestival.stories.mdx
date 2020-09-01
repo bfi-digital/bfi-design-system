@@ -36,6 +36,7 @@ import { demoTabs1, demoTabs2 }  from "../../../components/TabNavigation/data"
 import { ShowEventGrid } from "../../../components/ShowEventGrid"
 import demoEvents from "../../../components/ShowEventGrid/data"
 import { ShowFilmGrid } from "../../../components/ShowFilmGrid"
+import showDemoFilms from "../../../components/ShowFilmGrid/data"
 import { loveDemo, debateDemo } from "../../../components/ShowFilmGrid/data"
 
 <Meta title="3 Page examples/3 London Film Festival" component={MainContent} />
@@ -572,8 +573,9 @@ import { loveDemo, debateDemo } from "../../../components/ShowFilmGrid/data"
             <Header navItems={navItems} quickLinks={quickLinksData} />
             <Wrapper>           
                 <MainContent>
-                    <Headline level={1} text="View all strands" />
+                    <Headline level={1} text="View all films" />
                     <TabNavigation tabs={demoTabs2} />
+                    <ShowFilmGrid films={showDemoFilms} />
                     <TabNavigation tabs={demoTabs2} />
                 </MainContent>
             </Wrapper>
@@ -609,7 +611,7 @@ import { loveDemo, debateDemo } from "../../../components/ShowFilmGrid/data"
             <Header navItems={navItems} quickLinks={quickLinksData} />
             <Wrapper>           
                 <MainContent>
-                    <Headline level={1} text="View all strands" />
+                    <Headline level={1} text="View all events" />
                     <TabNavigation tabs={demoTabs3} />
                     <TabNavigation tabs={demoTabs3} />
                 </MainContent>
