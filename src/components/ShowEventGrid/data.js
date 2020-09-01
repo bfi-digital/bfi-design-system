@@ -11,7 +11,7 @@ export default [
         uuid: "06347a64-5abd-59de-a6b9-be0d4a9e31e1111",
         external: true,
         category: "BFI Recommends",
-        platform: "Facebook Live",
+        platform: "Youtube",
         upcoming: true,
         favourited: true,
         strandTitle: "Love",
@@ -38,7 +38,7 @@ export default [
         url: "/iframe.html?id=pattern-library-page-examples-1-watch-discover--2-article-example",
         uuid: "d1a4a7ac-44fa-56b3-9522-b865a49080c212123222222",
         category: "BFI Recommends",
-        platform: "Facebook Live"
+        platform: "Facebook"
     },
     {
         title: "Where to begin with Josef von Sternberg",
@@ -51,7 +51,7 @@ export default [
         uuid: "d1a4a7ac-44fa-56b3-9522-b865a49080c212123221",
         category: "Where to begin",
         external: true,
-        platform: "Facebook Live"
+        platform: "Youtube"
     },
     {
         title: "Five Bruce Springsteen songs and how they influenced my drag-racing drama Run",
@@ -63,7 +63,7 @@ export default [
         url: "https://www.bfi.org.uk/news-opinion/news-bfi/interviews/run-bruce-springsteen-scott-graham",
         uuid: "d1a4a7ac-44fa-56b3-9522-b865a49080c21212334",
         external: true,
-        platform: "YouTube livestream",
+        platform: "Instagram",
         upcoming: true
     },
     {
@@ -74,7 +74,7 @@ export default [
         url: "https://www.bfi.org.uk/news-opinion/sight-sound-magazine/features/rise-of-anime",
         uuid: "d1a4a7ac-44fa-56b3-9522-b865a49080c21212368",
         external: true,
-        platform: "Facebook Live",
+        platform: "Youtube",
         favourited: true
     },
     {
@@ -83,7 +83,7 @@ export default [
         url: "https://www.bfi.org.uk/news-opinion/news-bfi/announcements/line-we-are-one-global-film-festival",
         uuid: "d1a4a7ac-44fa-56b3-9522-b865a49080c21212367",
         external: true,
-        platform: "Facebook Live",
+        platform: "Youtube",
         favourited: true
     }
 ]

@@ -299,7 +299,7 @@ export const EventCard = ({
             wrapper={children => <InsideScroller pageWithSideBar={pageWithSideBar} withImage={image480x270 && image48x27} strandColorScheme={strandColorScheme} className="scrollcard">{children}</InsideScroller>}
             wrapper2={children => <Outer withImage={image480x270 && image48x27} strandColorScheme={strandColorScheme}>{children}</Outer>}
         >
-            {platform && <PlatformTag withImage={image480x270 && image48x27} strandColorScheme={strandColorScheme}>{platform}{strandTitle && ` - ${strandTitle}`}</PlatformTag>}
+            {platform && <PlatformTag withImage={image480x270 && image48x27} strandColorScheme={strandColorScheme}>{platform}{strandTitle && ` | ${strandTitle} strand`}</PlatformTag>}
 
             {image480x270 && image48x27 &&
                 <PageImageContainer>
