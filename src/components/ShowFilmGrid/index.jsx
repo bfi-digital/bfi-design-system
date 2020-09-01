@@ -41,7 +41,7 @@ export const ShowFilmGrid = ({
         >
             {films.map(film =>
                 <FilmCard 
-                    key={film.uuid + "_scroll"} 
+                    key={film.id} 
                     inScroller={asScroller && films.length > 3}                    
                     pageWithSidebar={pageWithSidebar}
                     {...film}

@@ -64,7 +64,7 @@ export const ShowEventGrid = ({
                     favouritable={favouritable} 
                     onFavourite={onFavourite} 
                     onUnfavourite={onUnfavourite} 
-                    key={event.uuid} 
+                    key={event.id} 
                     pageWithSidebar={pageWithSidebar}
                     {...event}
                 />    
