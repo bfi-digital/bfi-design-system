@@ -59,7 +59,7 @@ export const SidebarStrandBanner = ({
     strand
 }) =>
     <Outer color={strand.colorScheme} to={strand.url} title={`View the ${strand.title} Strand`}>
-        <Title>Part of {strand.title} Strand</Title>
+        <Title>Part of {strand.title} strand</Title>
         <Sponsor>{strand.sponsors && `Sponsored by ${strand.sponsors[0].title}` }</Sponsor>
         <LazyImage
             src={strand.image}
