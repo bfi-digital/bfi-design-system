@@ -92,7 +92,6 @@ export const ShowAddToCalendar = ({
     let calendarItems = [
         { apple: "Apple Calendar" },
         { google: "Google" },
-        { outlookcom: "Outlook" }
     ]
     const onButtonClick = () => {
         var link = document.getElementById("calendar_button")
