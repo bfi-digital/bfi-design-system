@@ -39,7 +39,7 @@ export const FilmGrid = ({
             wrapper2={children => <Outer>{children}</Outer>}
         >
             {films.map(film =>
-                <FilmCard key={film.uuid + "_scroll"} inScroller={films.length >= 3} {...film}/>    
+                <FilmCard key={film.uuid + "_scroll"} inScroller={films.length > 3} {...film}/>    
             )}
         </ConditionalWrapper>
         { allFilmsUrl &&
