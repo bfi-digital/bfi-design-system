@@ -60,18 +60,20 @@ export const SidebarStrandBanner = ({
 }) =>
     <Outer color={strand.colorScheme} to={strand.url} title={`View the ${strand.title} Strand`}>
         <Title>Part of {strand.title} strand</Title>
-        <Sponsor>{strand.sponsors && `Sponsored by ${strand.sponsors[0].title}` }</Sponsor>
-        <LazyImage
-            src={strand.image}
-            placeholder={strand.placeholder}
-        >
-            {(src) => 
-                <StyledImage
-                    itemprop="image"
-                    src={src}
-                    alt=""
-                    loading="lazy"
-                />
-            }
-        </LazyImage>
+        {strand.sponsors && <Sponsor>Sponsored by {strand.sponsors[0].title}</Sponsor>}
+        {strand.image && 
+            <LazyImage
+                src={strand.image}
+                placeholder={strand.placeholder}
+            >
+                {(src) => 
+                    <StyledImage
+                        itemprop="image"
+                        src={src}
+                        alt=""
+                        loading="lazy"
+                    />
+                }
+            </LazyImage>
+        }
     </Outer>
