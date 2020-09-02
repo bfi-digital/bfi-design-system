@@ -61,7 +61,7 @@ const Outer = styled.button`
     .react-add-to-calendar__button {
         display: block;
         border: 3px solid transparent;
-        padding-left: 30px;
+        padding-left: 37px;
         margin-left: -32px;
 
         &.open {
