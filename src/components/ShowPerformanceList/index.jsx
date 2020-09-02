@@ -190,13 +190,13 @@ export const ShowPerformanceList = ({
 
         performance.availability === "available" ? 
             performance.platform === "southbank" ? 
-                button = <StyledButton level={1} url={performance.ctaURL} external={true}>Book tickets</StyledButton>
+                button = <StyledButton level={1} url={performance.ctaURL} external={true}>Book ticket</StyledButton>
                 : 
                 performance.platform === "player" || performance.platform === "youtube" ? 
                     performance.paywall === "free" ?
                         button = <PlayButton url={performance.ctaURL} external={true} level={1}>Watch now</PlayButton>
                         :
-                        button = <StyledButton level={1} url={performance.ctaURL} external={true}>Book tickets</StyledButton>
+                        button = <StyledButton level={1} url={performance.ctaURL} external={true}>Book ticket</StyledButton>
                     :
                     performance.platform === "xr" ?
                         button = <StyledButton level={1} url={performance.ctaURL} external={true}>More info</StyledButton>
