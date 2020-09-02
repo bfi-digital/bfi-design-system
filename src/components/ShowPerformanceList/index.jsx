@@ -175,7 +175,7 @@ export const ShowPerformanceList = ({
                 info = <span>{performance.availability === "soldout" ? "No longer available to see " : "Screening" } at BFI Southbank</span>
                 :
                 performance.platform === "player" ?
-                    info = <span>{performance.availability === "soldout" ? "No longer available" : performance.availability === "unavaiable" ? "Soon to be available" : "Available"} to watch on BFI Player</span>
+                    info = <span>{performance.availability === "soldout" ? "No longer available" : performance.availability === "unavailable" ? "Soon to be available" : "Available"} to watch on BFI Player</span>
                     :
                     performance.platform === "youtube" ?
                         info = <span>Watch on YouTube</span>     
