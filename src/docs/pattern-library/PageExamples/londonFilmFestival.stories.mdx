@@ -39,6 +39,8 @@ import { ShowFilmGrid } from "../../../components/ShowFilmGrid"
 import { ShowGridAll } from "../../../components/ShowGridAll"
 import showDemoFilms from "../../../components/ShowFilmGrid/data"
 import { loveDemo, debateDemo } from "../../../components/ShowFilmGrid/data"
+import { SidebarStrandBanner } from "../../../components/SidebarStrandBanner/index"
+import strandExample, { strand2 } from "../../../components/SidebarStrandBanner/data"
 
 <Meta title="3 Page examples/3 London Film Festival" component={MainContent} />
 
@@ -153,6 +155,7 @@ import { loveDemo, debateDemo } from "../../../components/ShowFilmGrid/data"
                             ctaURL: "https://player.bfi.org.uk/subscription/film/watch-lynn-lucy-2019-online"
                         }}
                     />
+                    <SidebarStrandBanner strand={strandExample} />
                     <QuickFacts
                         facts={[
                             {
@@ -263,6 +266,7 @@ import { loveDemo, debateDemo } from "../../../components/ShowFilmGrid/data"
                             ctaURL: "https://whatson.bfi.org.uk/Online/default.asp",
                         }}
                     />
+                    <SidebarStrandBanner strand={strandExample} />
                     <QuickFacts
                         facts={[
                             {
@@ -353,6 +357,7 @@ import { loveDemo, debateDemo } from "../../../components/ShowFilmGrid/data"
                     </Text>
                 </MainContent>
                 <Sidebar>
+                    <SidebarStrandBanner strand={strand2} />
                     <QuickFacts
                         facts={[
                             {
@@ -448,6 +453,7 @@ import { loveDemo, debateDemo } from "../../../components/ShowFilmGrid/data"
                     </Text>
                 </MainContent>
                 <Sidebar>
+                    <SidebarStrandBanner strand={strand2} />
                     <QuickFacts
                         facts={[
                             {
