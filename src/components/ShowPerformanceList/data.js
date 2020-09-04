@@ -41,5 +41,16 @@ export default [
         screen: "",
         paywall: "paid",
         ctaURL: "https://player.bfi.org.uk/subscription/film/watch-lynn-lucy-2019-online"
+    },
+    {
+        id: "3",
+        performanceInfo: "BFI Player without end date or time",
+        dateTimeStart: "2020-10-15T00:00",
+        availability: "available",
+        platform: "player",
+        location: "BFI Southbank",
+        screen: "",
+        paywall: "paid",
+        ctaURL: "https://player.bfi.org.uk/subscription/film/watch-lynn-lucy-2019-online"
     }
 ]

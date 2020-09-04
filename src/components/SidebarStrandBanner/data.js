@@ -19,10 +19,5 @@ export const strand2 = {
     colorScheme: 2,
     url: "http://localhost:56722/iframe.html?id=3-page-examples-3-london-film-festival--31-programme-view-all-strands#debate",
     image: "https://i.imgur.com/yt3rRVE.jpg",
-    placeholder: "https://i.imgur.com/yt3rRVE.jpg",
-    sponsors: [
-        { 
-            title: "Sponsor 2"
-        }
-    ]
+    placeholder: "https://i.imgur.com/yt3rRVE.jpg"
 }

@@ -109,15 +109,19 @@ export const ShowPerformanceList = ({
                                 <>
                                     <p>
                                         <strong>
-                                            <Moment format="dddd Do MMMM YYYY">{performance.dateTimeStart}</Moment><br />
-                                            <Moment tz="Europe/London" format="HH:mm">{performance.dateTimeStart}</Moment>
-                                            {performance.dateTimeEnd &&
+                                            <Moment format="dddd D MMMM YYYY">{performance.dateTimeStart}</Moment><br />
+                                            {performance.dateTimeStart.substr(performance.dateTimeStart.length - 5) !== "00:00" && 
                                                 <>
-                                                    &nbsp;&ndash;&nbsp;
-                                                    <Moment tz="Europe/London" format="HH:mm">{performance.dateTimeEnd}</Moment>
+                                                    <Moment tz="Europe/London" format="HH:mm">{performance.dateTimeStart}</Moment>
+                                                    {performance.dateTimeEnd &&
+                                                        <>
+                                                            &nbsp;&ndash;&nbsp;
+                                                            <Moment tz="Europe/London" format="HH:mm">{performance.dateTimeEnd}</Moment>
+                                                        </>
+                                                    }
+                                                    &nbsp;<Moment tz="Europe/London" format="z">{performance.dateTimeEnd}</Moment>
                                                 </>
                                             }
-                                            &nbsp;<Moment tz="Europe/London" format="z">{performance.dateTimeEnd}</Moment>
                                         </strong>
                                     </p>
                                     <ShowAddToCalendar 
@@ -143,13 +147,21 @@ export const ShowPerformanceList = ({
                                             wrapper={children => <span>{children}</span>}
                                             wrapper2={children => <strong>{children}</strong>}
                                         >
-                                            <Moment tz="Europe/London" format="dddd Do MMMM YYYY - HH:mm z">{performance.dateTimeStart}</Moment> 
+                                            {performance.dateTimeStart.substr(performance.dateTimeStart.length - 5) !== "00:00" ?
+                                                <Moment tz="Europe/London" format="dddd D MMMM YYYY - HH:mm z">{performance.dateTimeStart}</Moment> 
+                                                :
+                                                <Moment tz="Europe/London" format="dddd D MMMM YYYY">{performance.dateTimeStart}</Moment> 
+                                            }
                                         </ConditionalWrapper>
                                         {performance.dateTimeEnd &&
                                             <>
                                                 <br />
                                                 <span>
-                                                    <Moment tz="Europe/London" format="dddd Do MMMM YYYY - HH:mm z">{performance.dateTimeEnd}</Moment>
+                                                    {performance.dateTimeStart.substr(performance.dateTimeStart.length - 5) !== "00:00" ?
+                                                        <Moment tz="Europe/London" format="dddd D MMMM YYYY - HH:mm z">{performance.dateTimeEnd}</Moment>
+                                                        :
+                                                        <Moment tz="Europe/London" format="dddd D MMMM YYYY">{performance.dateTimeEnd}</Moment>
+                                                    }
                                                 </span>
                                             </>
                                         }
@@ -190,16 +202,16 @@ export const ShowPerformanceList = ({
 
         performance.availability === "available" ? 
             performance.platform === "southbank" ? 
-                button = <StyledButton level={1} url={performance.ctaURL} external={true}>Book ticket</StyledButton>
+                button = <StyledButton level={1} url={performance.ctaURL} external={true}>Book now</StyledButton>
                 : 
                 performance.platform === "player" || performance.platform === "youtube" ? 
                     performance.paywall === "free" ?
                         button = <PlayButton url={performance.ctaURL} external={true} level={1}>Watch now</PlayButton>
                         :
-                        button = <StyledButton level={1} url={performance.ctaURL} external={true}>Book ticket</StyledButton>
+                        button = <StyledButton level={1} url={performance.ctaURL} external={true}>Book now</StyledButton>
                     :
                     performance.platform === "xr" ?
-                        button = <StyledButton level={1} url={performance.ctaURL} external={true}>More info</StyledButton>
+                        button = <StyledButton level={1} url={performance.ctaURL} external={true}>Watch now</StyledButton>
                         :
                         performance.platform === "external" ? 
                             button = <StyledButton level={1} url={performance.ctaURL} external={true}>Check availability</StyledButton>

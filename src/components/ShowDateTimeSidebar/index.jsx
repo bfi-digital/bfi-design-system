@@ -43,20 +43,25 @@ export const ShowDateTimeSidebar = ({
         <Outer>
             {getPerformanceInfo(singlePerformance)}
 
-            {datesAreOnSameDay && <strong>Date &amp; Time</strong> }
+            {datesAreOnSameDay && <strong>Start time</strong> }
             <DateP>
                 {!datesAreOnSameDay && <strong>From: </strong>}
-                {!datesAreOnSameDay && <span><Moment tz="Europe/London" format="HH:mm z">{singlePerformance.dateTimeStart}</Moment></span>}
-                <Moment format="dddd Do MMMM YYYY" date={singlePerformance.dateTimeStart} />
+                {!datesAreOnSameDay && singlePerformance.dateTimeStart.substr(singlePerformance.dateTimeStart.length - 5) !== "00:00" && 
+                    <span><Moment tz="Europe/London" format="HH:mm z">{singlePerformance.dateTimeStart}</Moment></span>
+                }
+                <Moment format="dddd D MMMM YYYY" date={singlePerformance.dateTimeStart} />
             </DateP>
             {!datesAreOnSameDay && 
                 <DateP>
                     <strong>Until: </strong>
-                    <span><Moment tz="Europe/London" format="HH:mm z">{singlePerformance.dateTimeEnd}</Moment></span>
-                    <Moment format="dddd Do MMMM YYYY" date={singlePerformance.dateTimeEnd} />
+                    { singlePerformance.dateTimeStart.substr(singlePerformance.dateTimeStart.length - 5) !== "00:00" && 
+                        <span><Moment tz="Europe/London" format="HH:mm z">{singlePerformance.dateTimeEnd}</Moment></span>
+                    }
+                    <Moment format="dddd D MMMM YYYY" date={singlePerformance.dateTimeEnd} />
                 </DateP>
             }
-            {datesAreOnSameDay && 
+            {datesAreOnSameDay && singlePerformance.dateTimeStart.substr(singlePerformance.dateTimeStart.length - 5) !== "00:00" && 
+
                 <TimeP>
                     <Moment tz="Europe/London" format="HH:mm">{singlePerformance.dateTimeStart}</Moment>
                     {singlePerformance.dateTimeEnd ? 
