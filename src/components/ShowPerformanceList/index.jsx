@@ -217,7 +217,7 @@ export const ShowPerformanceList = ({
                             button = <StyledButton level={1} url={performance.ctaURL} external={true}>Check availability</StyledButton>
                             :null
             :
-            button = <StyledButton level={1} disabled>{performance.availability === "soldout" ? "Sold out" : (dateIsInPast(new Date(performance.dateTimeStart), new Date()) ? "Coming soon" : "No longer available")}</StyledButton>
+            button = <StyledButton level={1} disabled>{performance.availability === "soldout" ? "Sold out" : (dateIsInPast(new Date(performance.dateTimeStart), new Date()) ? "Check back for tickets" : "No longer available")}</StyledButton>
         
         return button
     }
