@@ -1,6 +1,13 @@
 import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
 import { LFFIWCBanner } from "../../../components/LFFIWCBanner/index"
 
+
+import watchImg from "../PageExamples/images/watch.png"
+import secondImg from "../PageExamples/images/second_hand.png"
+import minImg from "../PageExamples/images/min_hand.png"
+import hourImg from "../PageExamples/images/hour_hand.png"
+import iwcLogo from "../PageExamples/images/logo.png"
+
 <Meta title="2 Pattern Library/Structure/LFF IWC Banner" component={LFFIWCBanner} />
 
 # Programme Banner
@@ -13,7 +20,7 @@ import { LFFIWCBanner } from "../../../components/LFFIWCBanner/index"
             padding: "5px",
             maxWidth: "1000px"
         }}>
-            <LFFIWCBanner />
+            <LFFIWCBanner watchImg={watchImg} secondImg={secondImg} hourImg={hourImg} minImg={minImg} iwcLogo={iwcLogo} />
         </div>
     </Story>
 </Preview>

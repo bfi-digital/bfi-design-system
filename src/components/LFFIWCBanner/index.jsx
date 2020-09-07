@@ -2,11 +2,6 @@ import React, { useEffect, useState } from "react"
 import styled from "styled-components"
 import theme from "../_theme"
 import PropTypes from "prop-types"
-import watchImg from "./images/watch.png"
-import secondImg from "./images/second_hand.png"
-import minImg from "./images/min_hand.png"
-import hourImg from "./images/hour_hand.png"
-import logo from "./images/logo.png"
 import { Button } from "../Button"
 import { LeadParagraph } from "../LeadParagraph"
 
@@ -150,7 +145,12 @@ export const LFFIWCBanner = ({
     content,
     festivalDate,
     ctaLink,
-    ctaText
+    ctaText,
+    watchImg,
+    hourImg,
+    minImg,
+    secondImg,
+    iwcLogo
 }) => {
     const [timeLeft, setTimeLeft] = useState(calculateTimeLeft(festivalDate))
     const [degHour, setDegHour] = useState(0)
@@ -199,7 +199,7 @@ export const LFFIWCBanner = ({
                             <Time>{timeLeft.minutes}</Time>
                             <TimeTitle>Mins</TimeTitle>
                         </TimeContainer>
-                        <LogoImg src={logo} />
+                        <LogoImg src={iwcLogo} />
                     </CountdownContainerInner>
                 </CountdownContainer>
             </IWC>

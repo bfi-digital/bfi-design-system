@@ -44,6 +44,12 @@ import { SidebarStrandBanner } from "../../../components/SidebarStrandBanner/ind
 import strandExample, { strand2 } from "../../../components/SidebarStrandBanner/data"
 import { LFFIWCBanner } from "../../../components/LFFIWCBanner/index"
 
+import watchImg from "./images/watch.png"
+import secondImg from "./images/second_hand.png"
+import minImg from "./images/min_hand.png"
+import hourImg from "./images/hour_hand.png"
+import iwcLogo from "./images/logo.png"
+
 <Meta title="3 Page examples/3 London Film Festival" component={MainContent} />
 
 # Page
@@ -62,7 +68,7 @@ import { LFFIWCBanner } from "../../../components/LFFIWCBanner/index"
             />
             <Wrapper>
                <MainContent classes="landing_page">
-                    <LFFIWCBanner />
+                    <LFFIWCBanner watchImg={watchImg} secondImg={secondImg} hourImg={hourImg} minImg={minImg} iwcLogo={iwcLogo} />
                     <Headline 
                         level={2} 
                         text="Cinema at home"
