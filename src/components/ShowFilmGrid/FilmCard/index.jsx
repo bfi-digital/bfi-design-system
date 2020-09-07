@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import theme from "../../_theme"
 import { LinkSwitch } from "../../LinkSwitch"
-import { Tag } from "../../Tag"
+// import { Tag } from "../../Tag"
 import LazyImage from "react-lazy-progressive-image"
 import placeholderImage from "./placeholder.png"
 import placeholderImageSmall from "./placeholder-small.png"
@@ -176,10 +176,10 @@ const Title = styled.p`
     font-weight: ${theme.fontWeight_semiBold};
 `
 
-const Channels = styled.div`
-    margin: 0;
-    padding: 0;
-`
+// const Channels = styled.div`
+//     margin: 0;
+//     padding: 0;
+// `
 
 const HighlightBanner = styled.div`
     position: absolute;
@@ -232,7 +232,7 @@ export const FilmCard = ({
     image480x270,
     image48x27,
     name,
-    channels,
+    // channels,
     url,
     highlightBannerText,
     description,

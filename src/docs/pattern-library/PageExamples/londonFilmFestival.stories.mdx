@@ -42,6 +42,7 @@ import showDemoFilms from "../../../components/ShowFilmGrid/data"
 import { loveDemo, debateDemo } from "../../../components/ShowFilmGrid/data"
 import { SidebarStrandBanner } from "../../../components/SidebarStrandBanner/index"
 import strandExample, { strand2 } from "../../../components/SidebarStrandBanner/data"
+import { LFFIWCBanner } from "../../../components/LFFIWCBanner/index"
 
 <Meta title="3 Page examples/3 London Film Festival" component={MainContent} />
 
@@ -56,18 +57,16 @@ import strandExample, { strand2 } from "../../../components/SidebarStrandBanner/
             <Header navItems={navItems} quickLinks={quickLinksData} overlay={true} />
             <Hero
                 withHeader
-                image1920x1080="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1920/1080/1/2020-03/Hero.jpg"
-                image192x108="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/192/108/1/2020-03/Hero.jpg"
-                headline="London Film Festival"
+                image1920x1080="https://i.imgur.com/Rr9kMHg.png"
+                headline="London Film Festival 2020"
             />
-            
             <Wrapper>
                <MainContent classes="landing_page">
-                    <>
-                        <Text>
-                            <p>LFF Homepage content</p>
-                        </Text>
-                    </>
+                    <LFFIWCBanner />
+                    <Headline 
+                        level={2} 
+                        text="Cinema at home"
+                    />
                 </MainContent>
             </Wrapper>
             <Footer
