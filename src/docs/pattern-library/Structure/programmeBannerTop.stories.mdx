@@ -1,0 +1,47 @@
+import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+import { ProgrammeBannerTop } from "../../../components/ProgrammeBannerTop/index"
+import { Header } from "../../../components/Header/index"
+import navItems, { quickLinksData } from "../../../components/Header/data"
+
+<Meta title="2 Pattern Library/Structure/Programme Banner" component={ProgrammeBannerTop} />
+
+# Programme Banner
+
+## Examples 
+
+<Preview>
+    <Story name="LFF Example">
+        <ProgrammeBannerTop image="https://i.imgur.com/Mp50VE4.png" />
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="LFF Example with link">
+        <ProgrammeBannerTop image="https://i.imgur.com/Mp50VE4.png" link="http://google.com" title="London Film Festival" />
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="LFF Example with other components">
+        <>
+            <Header navItems={navItems} quickLinks={quickLinksData} />
+            <ProgrammeBannerTop image="https://i.imgur.com/Mp50VE4.png" link="http://google.com" title="London Film Festival" />
+            <div style={{
+                height: "200vh",
+                width: "100%",
+                background: "linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%)"
+            }}></div>
+        </>
+    </Story>
+</Preview>
+
+
+<Preview>
+    <Story name="No image example">
+        <ProgrammeBannerTop />
+    </Story>
+</Preview>
+
+## Props 
+
+<Props of={ProgrammeBannerTop} />
