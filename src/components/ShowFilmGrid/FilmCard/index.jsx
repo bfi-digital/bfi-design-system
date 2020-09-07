@@ -43,6 +43,9 @@ const Outer = styled(LinkSwitch)`
     }
     .tag {
         background: ${theme.lightest}a1;
+        &::first-letter {
+            text-transform: uppercase;
+        } 
     }
 
     @media screen and (min-width: ${theme.s}){
@@ -257,9 +260,9 @@ export const FilmCard = ({
             { description && <Description className="filmcard_description">{description}</Description> }
         </ImageContainer>
         <Title className="filmcard_title">{name}</Title>
-        <Channels>
+        {/* <Channels>
             {channels.map(channel =>
                 <Tag key={channel}>{channel}</Tag>
             )}
-        </Channels>
+        </Channels> */}
     </ConditionalWrapper>
