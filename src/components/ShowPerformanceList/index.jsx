@@ -100,80 +100,83 @@ export const ShowPerformanceList = ({
                 text={`See ${showTitle} in London Film Festival`}
             />
             <PerformanceList id="performance-list">
-                {performances.map((performance) =>
-                    <Performance key={performance.id}>
-                        <PerformanceDetails>
-                            {getPerformanceInfo(performance)}
+                {performances.map((performance) => {
+                    let performanceTimeCheck = (new Date(performance.dateTimeStart).getHours() === 0) && (new Date(performance.dateTimeStart).getMinutes() === 0) ? false : true
+                    return(
+                        <Performance key={performance.id}>
+                            <PerformanceDetails>
+                                {getPerformanceInfo(performance)}
 
-                            {datesAreOnSameDayCheck(new Date(performance.dateTimeStart), new Date(performance.dateTimeEnd)) ? 
-                                <>
-                                    <p>
-                                        <strong>
-                                            <Moment format="dddd D MMMM YYYY">{performance.dateTimeStart}</Moment><br />
-                                            {performance.dateTimeStart.substr(performance.dateTimeStart.length - 5) !== "00:00" && 
+                                {datesAreOnSameDayCheck(new Date(performance.dateTimeStart), new Date(performance.dateTimeEnd)) ? 
+                                    <>
+                                        <p>
+                                            <strong>
+                                                <Moment format="dddd D MMMM YYYY">{performance.dateTimeStart}</Moment><br />
+                                                {performanceTimeCheck && 
+                                                    <>
+                                                        <Moment tz="Europe/London" format="HH:mm">{performance.dateTimeStart}</Moment>
+                                                        {performance.dateTimeEnd &&
+                                                            <>
+                                                                &nbsp;&ndash;&nbsp;
+                                                                <Moment tz="Europe/London" format="HH:mm">{performance.dateTimeEnd}</Moment>
+                                                            </>
+                                                        }
+                                                        &nbsp;<Moment tz="Europe/London" format="z">{performance.dateTimeEnd}</Moment>
+                                                    </>
+                                                }
+                                            </strong>
+                                        </p>
+                                        <ShowAddToCalendar 
+                                            title={showTitle} 
+                                            description={showDescription} 
+                                            location={performance.platform === "southbank" ? "BFI Southbank, Belvedere Rd, Bishop's, London SE1 8XT" : performance.ctaURL} 
+                                            dateTimeStart={performance.dateTimeStart} 
+                                            dateTimeEnd={performance.dateTimeEnd ? performance.dateTimeEnd : new Date(performance.dateTimeEnd).setHours(new Date(performance.dateTimeEnd).getHours() + 2)} 
+                                        />
+                                    </>
+                                    :
+                                    <DetailsContainer>
+                                        {performance.dateTimeEnd &&
+                                            <p>
+                                                <strong>From: </strong>
+                                                <br/>
+                                                <strong>Until: </strong>
+                                            </p>
+                                        }
+                                        <p>
+                                            <ConditionalWrapper
+                                                condition={performance.dateTimeEnd}
+                                                wrapper={children => <span>{children}</span>}
+                                                wrapper2={children => <strong>{children}</strong>}
+                                            >
+                                                {performanceTimeCheck ?
+                                                    <Moment tz="Europe/London" format="dddd D MMMM YYYY - HH:mm z">{performance.dateTimeStart}</Moment> 
+                                                    :
+                                                    <Moment tz="Europe/London" format="dddd D MMMM YYYY">{performance.dateTimeStart}</Moment> 
+                                                }
+                                            </ConditionalWrapper>
+                                            {performance.dateTimeEnd &&
                                                 <>
-                                                    <Moment tz="Europe/London" format="HH:mm">{performance.dateTimeStart}</Moment>
-                                                    {performance.dateTimeEnd &&
-                                                        <>
-                                                            &nbsp;&ndash;&nbsp;
-                                                            <Moment tz="Europe/London" format="HH:mm">{performance.dateTimeEnd}</Moment>
-                                                        </>
-                                                    }
-                                                    &nbsp;<Moment tz="Europe/London" format="z">{performance.dateTimeEnd}</Moment>
+                                                    <br />
+                                                    <span>
+                                                        {performanceTimeCheck ?
+                                                            <Moment tz="Europe/London" format="dddd D MMMM YYYY - HH:mm z">{performance.dateTimeEnd}</Moment>
+                                                            :
+                                                            <Moment tz="Europe/London" format="dddd D MMMM YYYY">{performance.dateTimeEnd}</Moment>
+                                                        }
+                                                    </span>
                                                 </>
                                             }
-                                        </strong>
-                                    </p>
-                                    <ShowAddToCalendar 
-                                        title={showTitle} 
-                                        description={showDescription} 
-                                        location={performance.platform === "southbank" ? "BFI Southbank, Belvedere Rd, Bishop's, London SE1 8XT" : performance.ctaURL} 
-                                        dateTimeStart={performance.dateTimeStart} 
-                                        dateTimeEnd={performance.dateTimeEnd ? performance.dateTimeEnd : new Date(performance.dateTimeEnd).setHours(new Date(performance.dateTimeEnd).getHours() + 2)} 
-                                    />
-                                </>
-                                :
-                                <DetailsContainer>
-                                    {performance.dateTimeEnd &&
-                                        <p>
-                                            <strong>From: </strong>
-                                            <br/>
-                                            <strong>Until: </strong>
                                         </p>
-                                    }
-                                    <p>
-                                        <ConditionalWrapper
-                                            condition={performance.dateTimeEnd}
-                                            wrapper={children => <span>{children}</span>}
-                                            wrapper2={children => <strong>{children}</strong>}
-                                        >
-                                            {performance.dateTimeStart.substr(performance.dateTimeStart.length - 5) !== "00:00" ?
-                                                <Moment tz="Europe/London" format="dddd D MMMM YYYY - HH:mm z">{performance.dateTimeStart}</Moment> 
-                                                :
-                                                <Moment tz="Europe/London" format="dddd D MMMM YYYY">{performance.dateTimeStart}</Moment> 
-                                            }
-                                        </ConditionalWrapper>
-                                        {performance.dateTimeEnd &&
-                                            <>
-                                                <br />
-                                                <span>
-                                                    {performance.dateTimeStart.substr(performance.dateTimeStart.length - 5) !== "00:00" ?
-                                                        <Moment tz="Europe/London" format="dddd D MMMM YYYY - HH:mm z">{performance.dateTimeEnd}</Moment>
-                                                        :
-                                                        <Moment tz="Europe/London" format="dddd D MMMM YYYY">{performance.dateTimeEnd}</Moment>
-                                                    }
-                                                </span>
-                                            </>
-                                        }
-                                    </p>
-                                </DetailsContainer>
-                            }
-                        </PerformanceDetails>
-                        <PerformanceCTA>
-                            {getPerformanceButton(performance)}
-                        </PerformanceCTA>
-                    </Performance>
-                )}
+                                    </DetailsContainer>
+                                }
+                            </PerformanceDetails>
+                            <PerformanceCTA>
+                                {getPerformanceButton(performance)}
+                            </PerformanceCTA>
+                        </Performance>
+                    )
+                })}
             </PerformanceList>
         </Outer>
     )

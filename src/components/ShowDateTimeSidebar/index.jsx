@@ -38,7 +38,8 @@ export const ShowDateTimeSidebar = ({
         first.getMonth() === second.getMonth() &&
         first.getDate() === second.getDate()
     const datesAreOnSameDay = singlePerformance.dateTimeEnd ? datesAreOnSameDayCheck(processedStartDateTime, new Date(singlePerformance.dateTimeEnd)) : true
-
+    const performanceTimeCheck = (new Date(singlePerformance.dateTimeStart).getHours() === 0) && (new Date(singlePerformance.dateTimeStart).getMinutes() === 0) ? false : true;
+    
     return(
         <Outer>
             {getPerformanceInfo(singlePerformance)}
@@ -46,7 +47,7 @@ export const ShowDateTimeSidebar = ({
             {datesAreOnSameDay && <strong>Start time</strong> }
             <DateP>
                 {!datesAreOnSameDay && <strong>From: </strong>}
-                {!datesAreOnSameDay && singlePerformance.dateTimeStart.substr(singlePerformance.dateTimeStart.length - 5) !== "00:00" && 
+                {!datesAreOnSameDay && performanceTimeCheck && 
                     <span><Moment tz="Europe/London" format="HH:mm z">{singlePerformance.dateTimeStart}</Moment></span>
                 }
                 <Moment format="dddd D MMMM YYYY" date={singlePerformance.dateTimeStart} />
@@ -54,13 +55,13 @@ export const ShowDateTimeSidebar = ({
             {!datesAreOnSameDay && 
                 <DateP>
                     <strong>Until: </strong>
-                    { singlePerformance.dateTimeStart.substr(singlePerformance.dateTimeStart.length - 5) !== "00:00" && 
+                    { performanceTimeCheck && 
                         <span><Moment tz="Europe/London" format="HH:mm z">{singlePerformance.dateTimeEnd}</Moment></span>
                     }
                     <Moment format="dddd D MMMM YYYY" date={singlePerformance.dateTimeEnd} />
                 </DateP>
             }
-            {datesAreOnSameDay && singlePerformance.dateTimeStart.substr(singlePerformance.dateTimeStart.length - 5) !== "00:00" && 
+            {datesAreOnSameDay && performanceTimeCheck && 
 
                 <TimeP>
                     <Moment tz="Europe/London" format="HH:mm">{singlePerformance.dateTimeStart}</Moment>
