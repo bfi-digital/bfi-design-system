@@ -390,7 +390,9 @@ const Nav = ({
                     </Item>
                 }
                 {navItems.map((navItem, i) => {
-                    const size = Math.ceil(navItem.children.length / 3)
+                    const tempNavArray = navItem.children.slice(0, -1);
+                    const size = Math.ceil(tempNavArray.length / 3);
+
                     return(
                         <Item 
                             key={navItem.title}
@@ -420,31 +422,35 @@ const Nav = ({
                                             <ChildList id={i}>
                                                 <InnerContainer>
                                                     <Column className={"row_"+size}>
-                                                        {navItem.children.slice(0, size).map((child) =>
+                                                        {tempNavArray.slice(0, size).map((child) =>
                                                             <ChildLink key={child.title} to={child.url}  data-tracking="header-navigation">
                                                                 <span>{child.title}</span>
                                                             </ChildLink>
                                                         )}
                                                     </Column>
                                                     <Column className={"row_"+size}>
-                                                        {navItem.children.slice(size, (size*2)).map((child) =>
+                                                        {tempNavArray.slice(size, (size*2)).map((child) =>
                                                             <ChildLink key={child.title} to={child.url}  data-tracking="header-navigation">
                                                                 <span>{child.title}</span>
                                                             </ChildLink>
                                                         )}
                                                     </Column>
                                                     <Column className={"row_"+size}>
-                                                        {navItem.children.slice((size*2), (size*3)).map((child) =>
+                                                        {tempNavArray.slice((size*2), (size*3)).map((child) =>
                                                             <ChildLink key={child.title} to={child.url}  data-tracking="header-navigation">
                                                                 <span>{child.title}</span>
                                                             </ChildLink>
                                                         )}
                                                     </Column>
+                                                    {/* convert to this if making a custom highlight text option 
                                                     { navItem.highlightText && 
                                                         <HighlightContainer>
                                                             <HighlightLink to={navItem.highlightURL} data-tracking="header-navigation">{navItem.highlightText}</HighlightLink>
                                                         </HighlightContainer>
-                                                    }
+                                                    } */}
+                                                    <HighlightContainer>
+                                                        <HighlightLink to={navItem.children[navItem.children.length - 1].url} data-tracking="header-navigation">{navItem.children[navItem.children.length - 1].title}</HighlightLink>
+                                                    </HighlightContainer>
                                                 </InnerContainer>
                                             </ChildList>
                                         </ChildBar>
