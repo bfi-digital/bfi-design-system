@@ -52,6 +52,11 @@ export default [
                 id: 9,
                 title: "Sight & Sound",
                 url: "/"
+            },
+            {
+                id: 10,
+                title: "Discover more as a member",
+                url: "/"
             }
         ]
     },
@@ -95,6 +100,11 @@ export default [
                 id: 7,
                 title: "Film Industry Statistics & Insights",
                 url: "/"
+            },
+            {
+                id: 8,
+                title: "Our response to Covid-19",
+                url: "/"
             }
         ]
     },
@@ -137,6 +147,11 @@ export default [
             {
                 id: 7,
                 title: "Use Reuben Library for your research",
+                url: "/"
+            },
+            {
+                id: 8,
+                title: "Support us",
                 url: "/"
             }
         ]  

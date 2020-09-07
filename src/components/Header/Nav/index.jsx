@@ -390,8 +390,8 @@ const Nav = ({
                     </Item>
                 }
                 {navItems.map((navItem, i) => {
-                    const tempNavArray = navItem.children.slice(0, -1);
-                    const size = Math.ceil(tempNavArray.length / 3);
+                    const tempNavArray = navItem.children.slice(0, -1)
+                    const size = Math.ceil(tempNavArray.length / 3)
 
                     return(
                         <Item 
