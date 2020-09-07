@@ -180,10 +180,10 @@ export const LFFIWCBanner = ({
             </Content>
             <IWC>
                 <WatchContainer>
-                    <Watch src={watchImg} />
-                    <HourHand src={hourImg} deg={degHour} />
-                    <MinHand src={minImg} deg={degMin} />
-                    <SecondHand src={secondImg} deg={degSec} />
+                    <Watch src={watchImg} alt="" />
+                    <HourHand src={hourImg} alt="" deg={degHour} />
+                    <MinHand src={minImg} alt="" deg={degMin} />
+                    <SecondHand src={secondImg} alt="" deg={degSec} />
                 </WatchContainer>
                 <CountdownContainer>
                     <CountdownContainerInner>
