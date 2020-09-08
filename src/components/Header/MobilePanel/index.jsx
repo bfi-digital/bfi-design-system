@@ -236,18 +236,21 @@ const MobilePanel = ({
                                             {navItem.title}
                                         </ChildLink>
                                     </ChildItem>
-                                    {navItem.children.map((child) =>
+                                    {navItem.children.slice(0, -1).map((child) =>
                                         <ChildItem key={child.title}>
                                             <ChildLink to={child.url} external={child.external}>
                                                 {child.title}
                                             </ChildLink>
                                         </ChildItem>
                                     )}
-                                    { navItem.highlightText && 
+                                    {/* { navItem.highlightText && 
                                         <HighlightContainer>
                                             <HighlightLink to={navItem.highlightURL}>{navItem.highlightText}</HighlightLink>
                                         </HighlightContainer>
-                                    }
+                                    } */}
+                                    <HighlightContainer>
+                                        <HighlightLink to={navItem.children[navItem.children.length - 1].url} data-tracking="header-navigation">{navItem.children[navItem.children.length - 1].title}</HighlightLink>
+                                    </HighlightContainer>
                                 </>
                             }
                         </ChildList>
