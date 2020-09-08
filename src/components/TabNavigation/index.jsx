@@ -8,10 +8,44 @@ const Outer = styled.ul`
     padding-left: 0;
     display: flex;
     margin: ${theme.standardSpace*2}px 0;
+    width: 100%;
+
+    @media screen and (max-width: ${theme.s}){
+        overflow-x: scroll;
+        overflow-y: hidden;
+
+        &::-webkit-scrollbar {
+            height: 10px;
+            width: 10px;
+            border: 1px solid ${theme.grey};
+            background: ${theme.grey};
+            cursor: move;
+            cursor: grab;
+            cursor: -moz-grab;
+            cursor: -webkit-grab;
+            -webkit-appearance: none;
+            -webkit-overflow-scrolling: auto;
+            &:active {
+                cursor: grabbing;
+                cursor: -moz-grabbing;
+                cursor: -webkit-grabbing;
+            }
+        }
+        &::-webkit-scrollbar-thumb:horizontal{
+            background: ${theme.primary};
+            border-radius: 1px;
+        }
+    }
 `
 const Tab = styled.li`
     margin-right: ${theme.standardSpace*0.5}px;
     font-size: ${theme.fontSize_xl};
+    text-align: center;
+    @media screen and (max-width: ${theme.s}){
+        text-align: left;
+        min-width: fit-content;
+        margin-bottom: 15px;
+    }
 `
 const StyledLink = styled(Link)`
     color: ${theme.black};
@@ -20,7 +54,14 @@ const StyledLink = styled(Link)`
     position: relative;
     transition: opacity 0.3s ease-in-out;
     padding: 21px 15px;
+    @media screen and (max-width: ${theme.s}){
+        padding: 3px;
+        margin-right: 15px;
 
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
     &:before {
         content: "";
         position: absolute;
@@ -34,6 +75,9 @@ const StyledLink = styled(Link)`
         left: 15px;
         right: 15px;
         bottom: 15px;
+        @media screen and (max-width: ${theme.s}){
+            display: none;
+        }
         @media screen and (max-width: ${theme.m_sub}) and (min-width: ${theme.m}){
             left: 8px;
             right: 8px;
@@ -69,6 +113,9 @@ const StyledLink = styled(Link)`
 
     &:first-of-type {
         margin-left: -15px;
+        @media screen and (max-width: ${theme.s}){
+            margin-left: 0px;
+        }
     }
 
     &:hover {
@@ -84,6 +131,10 @@ const StyledLink = styled(Link)`
         font-weight: ${theme.fontWeight_semiBold};
         opacity: 1 !important;
         cursor: default;
+        @media screen and (max-width: ${theme.s}){
+            font-weight: ${theme.fontWeight_bold};
+            color: ${theme.primary}
+        }
     }
 `
 
