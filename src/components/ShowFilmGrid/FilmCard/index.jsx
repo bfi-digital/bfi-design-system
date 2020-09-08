@@ -58,7 +58,7 @@ const Outer = styled(LinkSwitch)`
         }
     }
     @media screen and (min-width: ${theme.m}){
-        width: ${props => props.pageWithSidebar ? "calc(50% - 15px)" : "calc(33% - 7px)"};
+        width: ${props => props.pageWithSidebar ? "calc(50% - 15px)" : "calc(33% - 8px)"};
         margin-bottom: 15px;
 
         &:nth-of-type(even){
