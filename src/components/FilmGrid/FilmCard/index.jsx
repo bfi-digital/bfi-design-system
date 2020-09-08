@@ -117,7 +117,7 @@ const RestyledOuter = styled(Outer)`
             margin-right: 15px !important;
         }
         &:first-of-type {
-            margin-left: 10px !important;
+            margin-left: 0px !important;
         }
     }
     @media screen and (min-width: ${theme.xl}){

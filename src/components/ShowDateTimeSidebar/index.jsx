@@ -38,7 +38,7 @@ export const ShowDateTimeSidebar = ({
         first.getMonth() === second.getMonth() &&
         first.getDate() === second.getDate()
     const datesAreOnSameDay = singlePerformance.dateTimeEnd ? datesAreOnSameDayCheck(processedStartDateTime, new Date(singlePerformance.dateTimeEnd)) : true
-    const performanceTimeCheck = (new Date(singlePerformance.dateTimeStart).getHours() === 0) && (new Date(singlePerformance.dateTimeStart).getMinutes() === 0) ? false : true;
+    const performanceTimeCheck = (new Date(singlePerformance.dateTimeStart).getHours() === 0) && (new Date(singlePerformance.dateTimeStart).getMinutes() === 0) ? false : true
     
     return(
         <Outer>

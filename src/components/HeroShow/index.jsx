@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import Moment from "react-moment"
 import theme from "../_theme"
 import PropTypes from "prop-types"
 import LazyImage from "react-lazy-progressive-image"
@@ -175,22 +174,6 @@ const ButtonContainer = styled.div`
     }
 `
 
-const DateWrapper = styled.div`
-    margin-bottom: 1em;
-    line-height: 1.15;
-    font-size: 1.5rem;
-
-    time {
-        display: block
-    }
-
-    @media screen and (min-width: ${theme.m}){
-        font-size: 1.4rem;
-    @media screen and (min-width: ${theme.l}){
-        font-size: 1.75rem;
-    }
-`
-
 const StyledAnchorLink = styled(AnchorLink)`
     display: inline-block;
     position: relative;
@@ -289,24 +272,19 @@ export const HeroShow = ({
     standfirst,
     dateTimeStart,
     oembedObject,
+    showType,
     children
 }) =>
     <StyledWrapper>
         <Outer className={image1920x1080 ? "with_image" : "without_image"}>
             <Meta className="page_meta" titleLength={title.length}>
-                {dateTimeStart && 
-                    <DateWrapper>
-                        <Moment format="MMM">{dateTimeStart}</Moment>
-                        <Moment format="DD">{dateTimeStart}</Moment>
-                    </DateWrapper>
-                }
                 {title && <Headline level={1} text={title}/>}
                 {standfirst && <LeadParagraph text={standfirst}/>}
                 {dateTimeStart ?
                     children && <ButtonContainer>{children}</ButtonContainer>
                     :
                     // <Button href="#performance-list" colorScheme={1}>View all showings</Button>
-                    <StyledAnchorLink offset="175" href="#performance-list">View all showings</StyledAnchorLink>
+                    <StyledAnchorLink offset="175" href="#performance-list">View all {showType === "event" ? "times" : "screenings"}</StyledAnchorLink>
                 }
             </Meta>
             {oembedObject ?

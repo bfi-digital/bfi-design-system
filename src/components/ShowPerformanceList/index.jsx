@@ -80,6 +80,7 @@ const StyledButton = styled(Button)`
 export const ShowPerformanceList = ({
     showTitle,
     performances,
+    showType,
     showDescription
 }) => {
     const datesAreOnSameDayCheck = (first, second) => 
@@ -97,7 +98,7 @@ export const ShowPerformanceList = ({
         <Outer>
             <Headline
                 level={2} 
-                text={`See ${showTitle} in London Film Festival`}
+                text={`${showTitle} ${showType === "event" ? "times" : "screenings"}`}
             />
             <PerformanceList id="performance-list">
                 {performances.map((performance) => {

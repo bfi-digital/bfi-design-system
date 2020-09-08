@@ -36,6 +36,10 @@ const ScrollerTrack = styled.div`
             scroll-snap-align: start;
             scroll-snap-stop: bold;
             padding-left: 25px;
+
+            &:first-of-type {
+                padding-left: 0;
+            }
             
             &:focus {
                 box-shadow: none;

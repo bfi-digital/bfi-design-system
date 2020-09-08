@@ -138,7 +138,13 @@ const RestyledOuter = styled(Outer)`
             margin-right: 15px !important;
         }
         &:first-of-type {
-            margin-left: 10px !important;
+            margin-left: 0px !important;
+            &:focus {
+                &:after {
+                    left: -4px !important;
+                    width: calc(100% -4px) !important;
+                }
+            }
         }
     }
     @media screen and (min-width: ${theme.xl}){
