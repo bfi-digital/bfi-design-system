@@ -502,13 +502,12 @@ import iwcLogo from "./images/logo.png"
                         showTitle="Lynn + Lucy" 
                         showDescription="Lynn + Lucy premieres online at London Film Festival. With your ticket you can enjoy Lynn + Lucy any time for two weeks from the premiere date."
                     />
-                    <Headline level={2} text="You may also enjoy" />
-                    <Headline level={3} text="Check out these films" />
+                    <Headline level={2} text="Related films" />
                     <ShowFilmGrid 
                         films={[...loveDemo.slice(0, 2) ,...debateDemo.slice(0, 3)]}
                         asScroller
                     />
-                    <Headline level={3} text="Check out these events" />
+                    <Headline level={2} text="Related events" />
                     <ShowEventGrid 
                         events={[...demoEvents.slice(0, 8)]}
                         asScroller
