@@ -216,7 +216,7 @@ const Image = styled.div`
 `
 
 const SecondImage = styled.img`
-    margin-bottom: 15px;
+    margin-bottom: ${props => props.marginBottom ? "15px" : "0"};
     max-width: 100%;
     height: auto;
 `
@@ -252,6 +252,11 @@ const Video = styled.div`
         height: 100%;
     }
 `
+const Prefix = styled.p`
+    font-size: ${theme.small_fontSize_m};
+    margin-top: 25px;
+    margin-bottom: 5px;
+`
 
 function slugify(string) {
     const a = "àáâäæãåāăąçćčđďèéêëēėęěğǵḧîïíīįìłḿñńǹňôöòóœøōõőṕŕřßśšşșťțûüùúūǘůűųẃẍÿýžźż·/_,:;"
@@ -279,6 +284,7 @@ export const PromoBanner = ({
     backgroundColor,
     secondImage,
     secondImageAlt,
+    secondImagePrefix,
     external,
     oembedObject,
     pageWithSidebar
@@ -292,8 +298,9 @@ export const PromoBanner = ({
         id={slugify(headline)}
     >
         <Inner className={image ? "with_image" : "without_image"} reversed={reversed} pageWithSidebar={pageWithSidebar}>
-            {secondImage && 
+            {secondImage && !secondImagePrefix && 
                 <SecondImage 
+                    marginBottom
                     src={secondImage} 
                     alt={secondImageAlt ? secondImageAlt : ""}
                 />
@@ -304,6 +311,15 @@ export const PromoBanner = ({
                 <Button to={callToActionUrl} colorScheme={colorSchemes[colorScheme].buttonColor} external={external} rel={external ? "noreferrer" : ""}  target={external ? "_blank" : "_self"}>
                     {callToActionTitle}
                 </Button>
+            }
+            {secondImage && secondImagePrefix && 
+                <>
+                    <Prefix>{secondImagePrefix}</Prefix>
+                    <SecondImage 
+                        src={secondImage} 
+                        alt={secondImageAlt ? secondImageAlt : ""}
+                    />
+                </>
             }
         </Inner> 
         { oembedObject ?
@@ -370,6 +386,10 @@ PromoBanner.propTypes = {
     * Alt text for opitonal second image
     **/
     secondImageAltText: PropTypes.string,
+    /** 
+    * An optional prefix for the second image - if this is set then the second image will apear below the content, if its not the second image will appaear above the title
+    **/
+    secondImagePrefix: PropTypes.string,
     /** 
     * Boolean for whether link is external. Default is false
     **/
