@@ -5,7 +5,7 @@ import theme from "../../components/_theme"
 <Meta title="1 Docs/Visual Language/2 Colour" />
 
 # Colour
-The primary colours are black and white, a strong secondary colour is used throughout the BFI.org website to add visual flare and highlight call to action. This colour is a deep red which envokes the feeling of film linking to old cinema seating and curtains, and the luxery of the red carpet.
+The primary colours are black and white, a strong secondary colour is used throughout the BFI.org website to add visual flare and highlight call to action. 
 
 
 ### Colours must always be accessible
@@ -14,8 +14,8 @@ When using colours, ensure that they work for everyone, especially those who are
 All colour contrasts of text and interactive elements must meet [level AA of the Web Content Accessibility Guidelines (WCAG 2.1)](https://www.w3.org/TR/WCAG21/#contrast-minimum).
 
 - The primary colour is black on white for text.
-- For calls to action the main red colour can be used on white backgrounds and is fully accessible.
-- For highlights the main red colour can also be used on the lightest red shade.
+- For calls to action the main purple colour can be used on white backgrounds and is fully accessible.
+- For highlights the main purple colour can also be used on the lightest purple shade.
 - The dark maroon can be used on the light shade.
 - The bright neon highlight colour should not be used for text - it should only be used to highlight, for example it is used to denote when an element is focused on the website, or it is used as a tone treatment on images on hover.
 
@@ -28,14 +28,30 @@ Colour should be used to help guide a user to what matters on the page, supporti
 <ColorPalette>
     <ColorItem 
         title="BFI.org Primary colours" 
-        subtitle="BFI's primary colours for web are white and an off-black." 
+        subtitle="BFI's primary colours for web are white and and pure black." 
         colors={[theme.black, theme.white]} />
     <ColorItem 
         title="BFI.org secondary colour" 
-        subtitle="BFI's secondary colour, a deep red that envokes the feeling of film, with a connection to movie screenings, cinema seats & curtains, and the luxery of red carpet." 
+        subtitle="BFI's secondary colour, a deep purple used to represent bfi.org as a service whcih is used to highlight what elements are interactive for users." 
         colors={[theme.primary]} />
     <ColorItem 
         title="Shades & highlights" 
-        subtitle="A dark shade, a bright shade used only for highlights, and two lighter shades used for backgrounds." 
+        subtitle="A darker contrasting shade, a bright neon shade used only for highlights and focus states, and two lighter shades used for backgrounds and to differntiate content." 
         colors={[theme.dark, theme.focus, theme.light, theme.lightest]} />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <ColorItem 
+        title="Other BFI Colours" 
+        subtitle="There are also colours used to imply to users that a service relates to another BFI service, such as the different pillars within BFI Player - free, rental and subscription." 
+        colors={[theme.playerFree, theme.playerRentals, theme.playerSubs]} />
+    <br />
+    <br />
+    <ColorItem 
+        title="Unique colours - LFF 2020" 
+        subtitle="Sometimes specific events require their own colours, for example LFF 2020 has a colour related to each strand: Lov, Debate, Cult, Laugh, Dare, Journey, Create, Family, Experimenta, Treasures, Expanded, Episodic, Events." 
+        colors={[theme.strandLove, theme.strandDebate, theme.strandCult, theme.strandLaugh, theme.strandDare, theme.strandJourney, theme.strandCreate, theme.strandFamily, theme.strandExperimenta, theme.strandTreasures, theme.strandExpanded, theme.strandEpisodic, theme.strandEvents]} />
 </ColorPalette>
