@@ -76,7 +76,7 @@ export const Wrapper = styled.div`
         }
     }
 
-    .page_links_block + .call_to_action_block {
+    .page_links_block + .call_to_action_block, .article_grid_block + .call_to_action_block, .show_film_block + .call_to_action_block, .show_event_block + .call_to_action_block {
         text-align: center;
         display: block;
     }
