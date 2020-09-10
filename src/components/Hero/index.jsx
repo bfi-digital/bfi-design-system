@@ -7,6 +7,7 @@ import LazyImage from "react-lazy-progressive-image"
 import { LeadParagraph } from "../LeadParagraph"
 import { Wrapper } from "../PageContainer"
 import cameraIcon from "./camera_icon.svg"
+import parse from "html-react-parser"
 
 const Outer = styled.section`
     margin: 0 auto;
@@ -15,12 +16,13 @@ const Outer = styled.section`
     max-width: calc(${theme.xl} + 125px);
     position: relative;
     height: auto;
-    min-height: 40vh;
-    padding-top: ${props => props.withHeader ? "64px" : "75px"};
+    min-height: ${props => props.noTitleText ? "none" : "40vh"};
+    padding-top: ${props => props.noTitleText ? "calc(56.25% - 25px)" : (props.withHeader ? "64px" : "75px")};
     padding-bottom: 25px;
     background-image: url("${props => props.image}");
-    background-size: cover;
-    background-position: top center;
+    background-size: ${props => props.noTitleText ? "contain" : "cover"};
+    background-repeat: no-repeat;
+    background-position: ${props => props.noTitleText ? "center" : "top center"};
     display: flex;
     align-items: flex-end;
     margin-top: ${props => props.withHeader ? "175px" : "0px"};
@@ -120,7 +122,7 @@ const Outer = styled.section`
         align-items: flex-end;
         max-height: 80vh;
 
-        padding-top: ${props => props.withHeader ? "275px" : "211px"};
+        padding-top: ${props => props.noTitleText ? "calc(56.25% - 25px)" : (props.withHeader ? "275px" : "211px")};
 
         h1 {
             max-width: calc( 0.8 * ${theme.m});
@@ -130,12 +132,13 @@ const Outer = styled.section`
         }
     }
     @media screen and (min-width: ${theme.l}){
-        padding-top: ${props => props.withHeader ? "375px" : "261px"};
+        padding-top: ${props => props.noTitleText ? "calc(56.25% - 25px)" : (props.withHeader ? "375px" : "261px")};
     }
     @media screen and (min-width: ${theme.xl}){
         min-height: 500px;
         padding-bottom: 40px;
-        padding-top: ${props => props.withHeader ? "425px" : "311px"};
+        background-size: cover;
+        padding-top: ${props => props.noTitleText ? "775px" : (props.withHeader ? "425px" : "311px")};
 
         h1{
             max-width: calc( 0.5 * ${theme.xl});
@@ -144,14 +147,32 @@ const Outer = styled.section`
 `
 const InnerGradient = styled.div`
     width: 100%;
-    height: 100%;
+    height: ${props => props.youtubeID && props.noTitleText ? "33%" : "100%"};
     position: absolute;
     top: 0;
     left: 0;
     z-index: 0;
-    background: ${props => props.withHeader ? "-moz-linear-gradient(top, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.45) 1%, rgba(0,0,0,0) 50%, rgba(0,0,0,65) 100%)" : "-moz-linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.45) 25%, rgba(0,0,0,0) 100%)"};
-    background: ${props => props.withHeader ? "-webkit-linear-gradient(top, rgba(0,0,0,0.45) 0%,rgba(0,0,0,0.45) 1%,rgba(0,0,0,0) 50%,rgba(0,0,0,65) 100%)" : "-webkit-linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.45) 25%, rgba(0,0,0,0) 100%)"};
-    background: ${props => props.withHeader ? "linear-gradient(to bottom, rgba(0,0,0,0.45) 0%,rgba(0,0,0,0.45) 1%,rgba(0,0,0,0) 50%,rgba(0,0,0,65) 100%)" : "linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.45) 25%, rgba(0,0,0,0) 100%)"};
+    background: ${props => props.noTitleText ? 
+            `-moz-linear-gradient(top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) ${props.youtubeID  ? "100%" : "60%"}, rgba(0,0,0,0) ${props.youtubeID  ? "100%" : "60%"})` 
+            : (props.withHeader ? 
+                "-moz-linear-gradient(top, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.45) 1%, rgba(0,0,0,0) 50%, rgba(0,0,0,65) 100%)" 
+                : 
+                "-moz-linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.45) 25%, rgba(0,0,0,0) 100%)"
+        )};
+    background: ${props => props.noTitleText ? 
+            `-webkit-linear-gradient(top, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0) ${props.youtubeID  ? "100%" : "60%"},rgba(0,0,0,0) ${props.youtubeID  ? "100%" : "60%"})` 
+            : (props.withHeader ? 
+                    "-webkit-linear-gradient(top, rgba(0,0,0,0.45) 0%,rgba(0,0,0,0.45) 1%,rgba(0,0,0,0) 50%,rgba(0,0,0,65) 100%)" 
+                    : 
+                    "-webkit-linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.45) 25%, rgba(0,0,0,0) 100%)"
+            )};
+    background: ${props => props.noTitleText ? 
+            `linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0) ${props.youtubeID  ? "100%" : "60%"},rgba(0,0,0,0) ${props.youtubeID  ? "100%" : "60%"})` 
+            : (props.withHeader ? 
+                    "linear-gradient(to bottom, rgba(0,0,0,0.45) 0%,rgba(0,0,0,0.45) 1%,rgba(0,0,0,0) 50%,rgba(0,0,0,65) 100%)" 
+                    : 
+                    "linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.45) 25%, rgba(0,0,0,0) 100%)"
+            )};
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99000000', endColorstr='#000000',GradientType=0 );
 `
 const Container = styled.div`
@@ -267,6 +288,50 @@ const CaptionCreditIcon = styled.div`
         }
     }
 `
+const VideoContainer = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+`
+const VideoInner = styled.div`
+    width: 100%;
+    height: 100%;
+    padding-bottom: 56.25%;
+    padding-bottom: ${props => props.noTitleText ? "calc(56.25% - 25px)" : "365px"};
+    position: relative;
+    @media screen and (min-width: ${theme.m}){
+        padding-bottom: ${props => props.noTitleText ? "calc(56.25% - 25px)" : "613px"};
+    }
+    @media screen and (min-width: ${theme.l}){
+        padding-bottom: ${props => props.noTitleText ? "calc(56.25% - 25px)" : "613px"};
+    }
+    @media screen and (min-width: ${theme.xl}){
+        padding-bottom: ${props => props.noTitleText ? "815px" : "692px"};
+    }
+`
+const Video = styled.div`
+    order: -1;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+
+    @media screen and (min-width: ${theme.m}){
+        max-width: 100%;
+        height: auto;
+    }
+    @media screen and (min-width: ${theme.l}){
+
+    }
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+`
 
 export const Hero = ({
     image1920x1080,
@@ -276,7 +341,9 @@ export const Hero = ({
     withHeader,
     copyright,
     children,
-    captionCredit
+    captionCredit,
+    noTitleText,
+    youtubeID
 }) =>
     <LazyImage
         src={image1920x1080}
@@ -292,11 +359,27 @@ export const Hero = ({
                     withHeader={withHeader}
                     className={image1920x1080 ? "with_image" : "hero_without_image"}
                     titleLength={headline.length}
+                    noTitleText={noTitleText}
                 >
-                    {image1920x1080 && <InnerGradient withHeader={withHeader} /> }
-                    {captionCredit && <CaptionCreditIconWrapper><CaptionCreditIcon src={cameraIcon} title={captionCredit} alt="" /></CaptionCreditIconWrapper> }
+                    { youtubeID &&
+                        <VideoContainer>
+                            <Video>
+                                <VideoInner noTitleText={noTitleText}>
+                                    {parse("\u003ciframe width=\"480\" height=\"270\" src=\"https://www.youtube.com/embed/"+ youtubeID +"?feature=oembed&rel=0&loop=1&modestbranding=1&autohide=1&mute=1&showinfo=0&controls=0&autoplay=1\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\"\u003e\u003c/iframe\u003e")}
+                                </VideoInner>
+                            </Video>
+                        </VideoContainer>
+                    }
+                    {image1920x1080 && 
+                        <InnerGradient withHeader={withHeader} noTitleText={noTitleText} youtubeID={youtubeID} /> 
+                    }
+                    {captionCredit && 
+                        <CaptionCreditIconWrapper>
+                            <CaptionCreditIcon src={cameraIcon} title={captionCredit} alt="" />
+                        </CaptionCreditIconWrapper> 
+                    }
                     <Container>
-                        {headline && <Headline level={0} text={headline}/>}
+                        {headline && <Headline level={0} text={headline} visuallyHidden={noTitleText} />}
                         <ChildContainerDesktop className={image1920x1080 ? "child_with_image" : "child_without_image"}>
                             {standfirst && <LeadParagraph text={standfirst}/>}
                             {children}
@@ -333,6 +416,13 @@ Hero.propTypes = {
     /** 
     * A string giving the copyright attribution of the background image
     **/
-    copyright: PropTypes.string
-    
+    copyright: PropTypes.string,
+    /**
+     * An optional boolean - if set to true, this hero will not display the H1 title to allow the image to stand on its own
+     */
+    noTitleText: PropTypes.bool,
+    /** 
+    * Optional video embed which will sit on top of the image - needs to be provided as just a youtube ID
+    **/
+    youtubeID: PropTypes.string,
 }

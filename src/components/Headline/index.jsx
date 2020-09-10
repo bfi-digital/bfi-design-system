@@ -32,6 +32,25 @@ const HeroH1 = styled.h1`
     @media screen and (min-width: ${theme.xl}){
         font-size: 2.8rem;
     }
+
+    &.visuallyHidden {
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+    &.visuallyHidden:active,
+    &.visuallyHidden:focus {
+        clip: auto;
+        height: auto;
+        margin: 0;
+        overflow: visible;
+        position: static;
+    }
 `
 
 const H1 = styled(HeroH1)`
@@ -140,16 +159,17 @@ const H5 = styled.h5`
 
 export const Headline = ({
     level,
-    text
+    text,
+    visuallyHidden
 }) => {
-    if (level === 0) return <HeroH1>{text}</HeroH1>
-    if (level === 1) return <H1>{text}</H1>
-    if (level === 2) return <H2>{text}</H2>
-    if (level === 3) return <H3>{text}</H3>
-    if (level === 4) return <H4>{text}</H4>
-    if (level === 5) return <H5>{text}</H5>
-    if (level === 6) return <H3Fake className="h3">{text}</H3Fake>
-    if (level === 7) return <H4Fake className="h4">{text}</H4Fake>
+    if (level === 0) return <HeroH1 className={visuallyHidden ? "visuallyHidden" : ""} aria-label={visuallyHidden ? text : ""}>{text}</HeroH1>
+    if (level === 1) return <H1 className={visuallyHidden ? "visuallyHidden" : ""} aria-label={visuallyHidden ? text : ""}>{text}</H1>
+    if (level === 2) return <H2 className={visuallyHidden ? "visuallyHidden" : ""} aria-label={visuallyHidden ? text : ""}>{text}</H2>
+    if (level === 3) return <H3 className={visuallyHidden ? "visuallyHidden" : ""} aria-label={visuallyHidden ? text : ""}>{text}</H3>
+    if (level === 4) return <H4 className={visuallyHidden ? "visuallyHidden" : ""} aria-label={visuallyHidden ? text : ""}>{text}</H4>
+    if (level === 5) return <H5 className={visuallyHidden ? "visuallyHidden" : ""} aria-label={visuallyHidden ? text : ""}>{text}</H5>
+    if (level === 6) return <H3Fake className={visuallyHidden ? "visuallyHidden h3" : "h3"} aria-label={visuallyHidden ? text : ""}>{text}</H3Fake>
+    if (level === 7) return <H4Fake className={visuallyHidden ? "visuallyHidden h4" : "h4"} aria-label={visuallyHidden ? text : ""}>{text}</H4Fake>
     return null
 }
 
@@ -162,7 +182,11 @@ Headline.propTypes = {
     /** 
 	 * A select option, restricted to level 2 & 3 in Drupal, but with options for 1 & 4 for use in the frontend
 	 **/
-    level: PropTypes.number
+    level: PropTypes.number,
+    /** 
+	 * A boolean if set to true will hide the heading while keeping it accessibly read by screenreaders
+	 **/
+    visuallyHidden: PropTypes.bool,
 }
 Headline.defaultProps = {
     level: 2
