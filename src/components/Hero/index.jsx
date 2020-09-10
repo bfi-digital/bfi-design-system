@@ -153,26 +153,26 @@ const InnerGradient = styled.div`
     left: 0;
     z-index: 0;
     background: ${props => props.noTitleText ? 
-            `-moz-linear-gradient(top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) ${props.youtubeID  ? "100%" : "60%"}, rgba(0,0,0,0) ${props.youtubeID  ? "100%" : "60%"})` 
-            : (props.withHeader ? 
-                "-moz-linear-gradient(top, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.45) 1%, rgba(0,0,0,0) 50%, rgba(0,0,0,65) 100%)" 
-                : 
-                "-moz-linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.45) 25%, rgba(0,0,0,0) 100%)"
+        `-moz-linear-gradient(top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) ${props.youtubeID  ? "100%" : "60%"}, rgba(0,0,0,0) ${props.youtubeID  ? "100%" : "60%"})` 
+        : (props.withHeader ? 
+            "-moz-linear-gradient(top, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.45) 1%, rgba(0,0,0,0) 50%, rgba(0,0,0,65) 100%)" 
+            : 
+            "-moz-linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.45) 25%, rgba(0,0,0,0) 100%)"
         )};
     background: ${props => props.noTitleText ? 
-            `-webkit-linear-gradient(top, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0) ${props.youtubeID  ? "100%" : "60%"},rgba(0,0,0,0) ${props.youtubeID  ? "100%" : "60%"})` 
-            : (props.withHeader ? 
-                    "-webkit-linear-gradient(top, rgba(0,0,0,0.45) 0%,rgba(0,0,0,0.45) 1%,rgba(0,0,0,0) 50%,rgba(0,0,0,65) 100%)" 
-                    : 
-                    "-webkit-linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.45) 25%, rgba(0,0,0,0) 100%)"
-            )};
+        `-webkit-linear-gradient(top, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0) ${props.youtubeID  ? "100%" : "60%"},rgba(0,0,0,0) ${props.youtubeID  ? "100%" : "60%"})` 
+        : (props.withHeader ? 
+            "-webkit-linear-gradient(top, rgba(0,0,0,0.45) 0%,rgba(0,0,0,0.45) 1%,rgba(0,0,0,0) 50%,rgba(0,0,0,65) 100%)" 
+            : 
+            "-webkit-linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.45) 25%, rgba(0,0,0,0) 100%)"
+        )};
     background: ${props => props.noTitleText ? 
-            `linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0) ${props.youtubeID  ? "100%" : "60%"},rgba(0,0,0,0) ${props.youtubeID  ? "100%" : "60%"})` 
-            : (props.withHeader ? 
-                    "linear-gradient(to bottom, rgba(0,0,0,0.45) 0%,rgba(0,0,0,0.45) 1%,rgba(0,0,0,0) 50%,rgba(0,0,0,65) 100%)" 
-                    : 
-                    "linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.45) 25%, rgba(0,0,0,0) 100%)"
-            )};
+        `linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0) ${props.youtubeID  ? "100%" : "60%"},rgba(0,0,0,0) ${props.youtubeID  ? "100%" : "60%"})` 
+        : (props.withHeader ? 
+            "linear-gradient(to bottom, rgba(0,0,0,0.45) 0%,rgba(0,0,0,0.45) 1%,rgba(0,0,0,0) 50%,rgba(0,0,0,65) 100%)" 
+            : 
+            "linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.45) 25%, rgba(0,0,0,0) 100%)"
+        )};
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99000000', endColorstr='#000000',GradientType=0 );
 `
 const Container = styled.div`

@@ -760,6 +760,7 @@ exports[`Storyshots 4 Components/All/FilmShowing A Showing 1`] = `
     className="sc-jhAzac hteybv"
   >
     <p
+      aria-label=""
       className="sc-bRBYWo hgyCjh h4"
     >
       La La Land
@@ -827,6 +828,7 @@ exports[`Storyshots 4 Components/All/FilmShowing Sold Out 1`] = `
     className="sc-jhAzac hteybv"
   >
     <p
+      aria-label=""
       className="sc-bRBYWo hgyCjh h4"
     >
       La La Land
@@ -909,7 +911,8 @@ exports[`Storyshots 4 Components/All/Filterable Articles Normal 1`] = `
 
 exports[`Storyshots 4 Components/All/Headline Hero H 1 1`] = `
 <h1
-  className="sc-gPEVay dOeZON"
+  aria-label=""
+  className="sc-gPEVay kRReeo"
 >
   My example headline
 </h1>
@@ -917,7 +920,8 @@ exports[`Storyshots 4 Components/All/Headline Hero H 1 1`] = `
 
 exports[`Storyshots 4 Components/All/Headline Level 1 1`] = `
 <h1
-  className="sc-gPEVay sc-iRbamj fxTbTh"
+  aria-label=""
+  className="sc-gPEVay sc-iRbamj hRYZjy"
 >
   My example headline
 </h1>
@@ -925,6 +929,7 @@ exports[`Storyshots 4 Components/All/Headline Level 1 1`] = `
 
 exports[`Storyshots 4 Components/All/Headline Level 2 1`] = `
 <h2
+  aria-label=""
   className="sc-jlyJG cstgVP"
 >
   My example headline
@@ -933,6 +938,7 @@ exports[`Storyshots 4 Components/All/Headline Level 2 1`] = `
 
 exports[`Storyshots 4 Components/All/Headline Level 3 1`] = `
 <h3
+  aria-label=""
   className="sc-gipzik ihFthR"
 >
   My example headline
@@ -1156,6 +1162,7 @@ exports[`Storyshots 4 Components/All/Newsletter Sign Up Example 1`] = `
     className="sc-iQNlJl fkVVHn"
   >
     <p
+      aria-label=""
       className="sc-csuQGl dUMyku h3"
     >
       Get the latest from the BFI
