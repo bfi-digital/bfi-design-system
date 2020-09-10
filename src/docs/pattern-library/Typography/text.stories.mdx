@@ -1,14 +1,23 @@
 import { Meta, Story, Props, Preview } from "@storybook/addon-docs/blocks"
 import { Text } from "../../../components/Text/index"
 
-<Meta title="2 Pattern Library/Typography/Text" component={Text} />
+<Meta title="2 Pattern Library/2 Typography/Text" component={Text} />
 
 # Text
- 
-Use this for adding any normal body copy to pages/posts. This is a minimal WYSIWYG editor, that allows for some basic text styling such as Bold/Italic/Underline/etc and to create inline links to internal and external urls. It also has the option for creating unordered and ordered lists.
 
+This is component used to display body content text. 
 
-## Example
+On pages they have a minimal WYSIWYG editor which connects to this Text component, it allows for some basic text styling such as Bold/Italic/Underline/etc and to create inline links to internal and external urls. It also has the option for creating unordered and ordered lists.
+
+On articles there is a more complicated WYSIWYG which includes all article slices, each block of text that within an article is seperated and displayed within a Text component like this.
+
+This component can also be used to style tables which you can see in various states within the examples.
+
+## Props 
+
+<Props of={Text} />
+
+## Examples
 
 <Preview>
     <Story name="Normal">
@@ -515,7 +524,3 @@ Use this for adding any normal body copy to pages/posts. This is a minimal WYSIW
         </div>
     </Story>
 </Preview>
-
-## Props 
-
-<Props of={Text} />

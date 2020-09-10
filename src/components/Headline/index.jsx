@@ -176,15 +176,15 @@ export const Headline = ({
 
 Headline.propTypes = {
     /** 
-	 * The text of the heading, with a character limit of {INSERT CHARLIMIT}
+	 * The text of the heading
 	 **/
     text: PropTypes.string,
     /** 
-	 * A select option, restricted to level 2 & 3 in Drupal, but with options for 1 & 4 for use in the frontend
+	 * A select option, restricted to level 2 & 3 in Drupal, but with options for all other sizes for use in the frontend
 	 **/
     level: PropTypes.number,
     /** 
-	 * A boolean if set to true will hide the heading while keeping it accessibly read by screenreaders
+	 * A boolean if set to true will hide the heading while keeping it accessibly able to be read by screenreaders
 	 **/
     visuallyHidden: PropTypes.bool,
 }

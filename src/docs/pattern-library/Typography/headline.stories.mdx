@@ -1,13 +1,15 @@
 import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
 import { Headline } from "../../../components/Headline/index"
 
-<Meta title="2 Pattern Library/Typography/Headline" component={Headline} />
+<Meta title="2 Pattern Library/2 Typography/Headline" component={Headline} />
 
 # Headline
  
 **Used for all titles and sub titles of all levels**
 
-Use headings consistently and in a semantic hierarchy to create a clear segmentation of content throughout articles and service pages.
+It is really important to use headings consistently and in a semantic hierarchy to create a clear segmentation of content throughout articles and service pages. 
+
+This is required on an accessibility level, so for example there should never be a H3 that does not sit underneath a H2.
 
 There should only ever be one level 1 heading on each page.
 
@@ -15,58 +17,63 @@ There should only ever be one level 1 heading on each page.
 
 4 sizes are supported for headings, the hierarchy of titles should be taken into consideration and used in a semantic order:
 - H1 is used only as the primary heading of the page, and only used once.
-- H2 used as a main subheading which divides a section of content.
-- H3 used as a sub sub heading which should be used to sub section content underneath a corresponding H2 section.
-- H4 is used only as a visual flourish on cards of content, these cards will almost always be sitting under at least a section with a H2 sub heading.
+- H2 used as a main subheading which divides the sections of content on a page.
+- H3 used as a sub sub heading which should be used to create sub sections of content underneath a corresponding H2 section.
+- H4 is a final sectioning which should only be used if trying to differentiate content within a sub section.
+
+There are also options of the H3 and H4 without HTML markup, this is so that these can be used within components to create styled titles that may not sit within the correct and accesible semantic ordering - for example page link card titles.
+
+## Props 
+
+<Props of={Headline} />
+
+## Examples 
 
 <Preview>
-    <Story name="Hero Level 1">
-        <Headline level={0} text="Example headline level 1" />
+    <Story name="Level 0 - Hero H1">
+        <Headline level={0} text="Example headline level 1 on top of heros" />
     </Story>
 </Preview>
 
 <Preview>
-    <Story name="Level 1">
-        <Headline level={1} text="Example headline level 1" />
+    <Story name="Level 1 - H1">
+        <Headline level={1} text="Example headline level 1 for regular pages" />
     </Story>
 </Preview>
 
 <Preview>
-    <Story name="Level 2">
+    <Story name="Level 2 - H2">
         <Headline level={2} text="Example headline level 2" />
     </Story>
 </Preview>
 
 <Preview>
-    <Story name="Level 3">
+    <Story name="Level 3 - H3">
         <Headline level={3} text="Example headline level 3" />
     </Story>
 </Preview>
 
 <Preview>
-    <Story name="Level 3 without the HTML markup">
+    <Story name="Level 6 H3 without the HTML markup">
         <Headline level={6} text="Example headline level 4 without the HTML markup" />
     </Story>
 </Preview>
 
 <Preview>
-    <Story name="Level 4">
+    <Story name="Level 4 - H4">
         <Headline level={4} text="Example headline level 4" />
     </Story>
 </Preview>
 
 <Preview>
-    <Story name="Level 4 without the HTML markup">
+    <Story name="Level 7 H4 without the HTML markup">
         <Headline level={7} text="Example headline level 4 without the HTML markup" />
     </Story>
 </Preview>
 
 <Preview>
-    <Story name="Level 5">
+    <Story name="Level 5 - H5">
         <Headline level={5} text="Example headline level 5" />
     </Story>
 </Preview>
 
-## Props 
-
-<Props of={Headline} />
