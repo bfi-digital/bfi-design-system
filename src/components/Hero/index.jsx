@@ -9,7 +9,6 @@ import { Wrapper } from "../PageContainer"
 import cameraIcon from "./camera_icon.svg"
 import playIcon from "./play_icon.svg"
 import pauseIcon from "./pause_icon.svg"
-import parse from "html-react-parser"
 
 const Outer = styled.section`
     margin: 0 auto;

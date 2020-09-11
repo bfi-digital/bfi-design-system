@@ -313,9 +313,11 @@ export const EventCard = ({
             }
 
             <Headline level={6} text={title} />
-            <Meta>
-                {dateTime && <Author>{dateTime}</Author>}
-            </Meta>
+            {dateTime && 
+                <Meta>
+                    <Author>{dateTime}</Author>
+                </Meta>
+            }
 
             <CallToAction 
                 to={url}
