@@ -26,6 +26,7 @@ const Outer = styled.section`
     display: flex;
     align-items: flex-end;
     margin-top: ${props => props.withHeader ? "175px" : "0px"};
+    overflow: hidden;
     
     &:before {
         content: "";
@@ -147,27 +148,27 @@ const Outer = styled.section`
 `
 const InnerGradient = styled.div`
     width: 100%;
-    height: ${props => props.youtubeID && props.noTitleText ? "33%" : "100%"};
+    height: ${props => props.videoMP4 && props.noTitleText ? "33%" : "100%"};
     position: absolute;
     top: 0;
     left: 0;
     z-index: 0;
     background: ${props => props.noTitleText ? 
-        `-moz-linear-gradient(top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) ${props.youtubeID  ? "100%" : "60%"}, rgba(0,0,0,0) ${props.youtubeID  ? "100%" : "60%"})` 
+        `-moz-linear-gradient(top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) ${props.withVideo  ? "100%" : "60%"}, rgba(0,0,0,0) ${props.withVideo  ? "100%" : "60%"})` 
         : (props.withHeader ? 
             "-moz-linear-gradient(top, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.45) 1%, rgba(0,0,0,0) 50%, rgba(0,0,0,65) 100%)" 
             : 
             "-moz-linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.45) 25%, rgba(0,0,0,0) 100%)"
         )};
     background: ${props => props.noTitleText ? 
-        `-webkit-linear-gradient(top, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0) ${props.youtubeID  ? "100%" : "60%"},rgba(0,0,0,0) ${props.youtubeID  ? "100%" : "60%"})` 
+        `-webkit-linear-gradient(top, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0) ${props.withVideo  ? "100%" : "60%"},rgba(0,0,0,0) ${props.withVideo  ? "100%" : "60%"})` 
         : (props.withHeader ? 
             "-webkit-linear-gradient(top, rgba(0,0,0,0.45) 0%,rgba(0,0,0,0.45) 1%,rgba(0,0,0,0) 50%,rgba(0,0,0,65) 100%)" 
             : 
             "-webkit-linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.45) 25%, rgba(0,0,0,0) 100%)"
         )};
     background: ${props => props.noTitleText ? 
-        `linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0) ${props.youtubeID  ? "100%" : "60%"},rgba(0,0,0,0) ${props.youtubeID  ? "100%" : "60%"})` 
+        `linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0) ${props.withVideo  ? "100%" : "60%"},rgba(0,0,0,0) ${props.withVideo  ? "100%" : "60%"})` 
         : (props.withHeader ? 
             "linear-gradient(to bottom, rgba(0,0,0,0.45) 0%,rgba(0,0,0,0.45) 1%,rgba(0,0,0,0) 50%,rgba(0,0,0,65) 100%)" 
             : 
@@ -288,34 +289,32 @@ const CaptionCreditIcon = styled.div`
         }
     }
 `
-const VideoContainer = styled.div`
+const VideoContainer = styled.figure`
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    margin: 0;
 `
 const VideoInner = styled.div`
-    width: 100%;
-    height: 100%;
+    width: ${props => props.noTitleText ? "auto" : "100%"};
+    height: ${props => props.noTitleText ? "0" : "100%"};
     padding-bottom: 56.25%;
-    padding-bottom: ${props => props.noTitleText ? "calc(56.25% - 25px)" : "365px"};
     position: relative;
-    @media screen and (min-width: ${theme.m}){
-        padding-bottom: ${props => props.noTitleText ? "calc(56.25% - 25px)" : "613px"};
-    }
-    @media screen and (min-width: ${theme.l}){
-        padding-bottom: ${props => props.noTitleText ? "calc(56.25% - 25px)" : "613px"};
-    }
-    @media screen and (min-width: ${theme.xl}){
-        padding-bottom: ${props => props.noTitleText ? "815px" : "692px"};
-    }
+    top: 50%;
+    transform: translateY(-50%);
 `
-const Video = styled.div`
-    order: -1;
+const Video = styled.video`
     background-size: cover;
     background-position: center center;
     width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 
     @media screen and (min-width: ${theme.m}){
         max-width: 100%;
@@ -323,13 +322,6 @@ const Video = styled.div`
     }
     @media screen and (min-width: ${theme.l}){
 
-    }
-    iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
     }
 `
 
@@ -343,7 +335,8 @@ export const Hero = ({
     children,
     captionCredit,
     noTitleText,
-    youtubeID
+    videoMP4,
+    videoWEBM
 }) =>
     <LazyImage
         src={image1920x1080}
@@ -361,17 +354,18 @@ export const Hero = ({
                     titleLength={headline.length}
                     noTitleText={noTitleText}
                 >
-                    { youtubeID &&
+                    { (videoMP4 || videoWEBM) &&
                         <VideoContainer>
-                            <Video>
-                                <VideoInner noTitleText={noTitleText}>
-                                    {parse("\u003ciframe width=\"480\" height=\"270\" src=\"https://www.youtube.com/embed/"+ youtubeID +"?feature=oembed&rel=0&loop=1&modestbranding=1&autohide=1&mute=1&showinfo=0&controls=0&autoplay=1\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\"\u003e\u003c/iframe\u003e")}
-                                </VideoInner>
-                            </Video>
+                            <VideoInner noTitleText={noTitleText}>
+                                <Video playsInline autoPlay muted loop>
+                                    <source src={videoMP4} type="video/mp4" />
+                                    <source src={videoWEBM} type="video/webm; codecs=vp9,vorbis" />
+                                </Video>
+                            </VideoInner>
                         </VideoContainer>
                     }
                     {image1920x1080 && 
-                        <InnerGradient withHeader={withHeader} noTitleText={noTitleText} youtubeID={youtubeID} /> 
+                        <InnerGradient withHeader={withHeader} noTitleText={noTitleText} withVideo={(videoMP4 || videoWEBM)} /> 
                     }
                     {captionCredit && 
                         <CaptionCreditIconWrapper>
@@ -422,7 +416,11 @@ Hero.propTypes = {
      */
     noTitleText: PropTypes.bool,
     /** 
-    * Optional video embed which will sit on top of the image - needs to be provided as just a youtube ID
+    * Optional video embed which will sit on top of the image needs to be an mp4
     **/
-    youtubeID: PropTypes.string,
+    videoMP4: PropTypes.string,
+    /** 
+    * Optional 2nd video embed which be used as a backup source as a webm
+    **/
+    videoWEBM: PropTypes.string,
 }
