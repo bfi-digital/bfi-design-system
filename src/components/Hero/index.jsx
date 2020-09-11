@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useRef, useState, useEffect } from "react"
 import { Headline } from "../Headline"
 import styled from "styled-components"
 import theme from "../_theme"
@@ -7,6 +7,8 @@ import LazyImage from "react-lazy-progressive-image"
 import { LeadParagraph } from "../LeadParagraph"
 import { Wrapper } from "../PageContainer"
 import cameraIcon from "./camera_icon.svg"
+import playIcon from "./play_icon.svg"
+import pauseIcon from "./pause_icon.svg"
 import parse from "html-react-parser"
 
 const Outer = styled.section`
@@ -143,6 +145,13 @@ const Outer = styled.section`
 
         h1{
             max-width: calc( 0.5 * ${theme.xl});
+        }
+    }
+
+
+    &:hover {
+        .playButton {
+            opacity: 0.25;
         }
     }
 `
@@ -282,7 +291,7 @@ const CaptionCreditIcon = styled.div`
             width: max-content;
             background: ${theme.lightest};
             content: attr(title);
-            z-index: 9999;
+            z-index: 9998;
             -webkit-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.4);
             -moz-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.4);
             box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.4);
@@ -320,8 +329,33 @@ const Video = styled.video`
         max-width: 100%;
         height: auto;
     }
-    @media screen and (min-width: ${theme.l}){
+`
 
+const PlayButton = styled.button`
+    z-index: 9999;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    cursor: pointer;
+    position: absolute; 
+    top: 50%;
+    left: calc(50% - 25px);
+    border: none;
+    background: url(${props => props.backgroundImage});
+    background-size: 100%;
+    border-radius: 100%;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+
+    &:hover {
+        opacity: 1 !important;
+    }
+    &:focus {
+        outline: none;
+        opacity: 1 !important;
+        border: solid 3px ${theme.focus};
     }
 `
 
@@ -337,61 +371,78 @@ export const Hero = ({
     noTitleText,
     videoMP4,
     videoWEBM
-}) =>
-    <LazyImage
-        src={image1920x1080}
-        placeholder={image192x108 ? image192x108 : image1920x1080}
-        visibilitySensorProps={{
-            partialVisibility: true
-        }}
-    >
-        {src => 
-            <>
-                <Outer 
-                    image={src} 
-                    withHeader={withHeader}
-                    className={image1920x1080 ? "with_image" : "hero_without_image"}
-                    titleLength={headline.length}
-                    noTitleText={noTitleText}
-                >
-                    { (videoMP4 || videoWEBM) &&
-                        <VideoContainer>
-                            <VideoInner noTitleText={noTitleText}>
-                                <Video playsInline autoPlay muted loop>
-                                    <source src={videoMP4} type="video/mp4" />
-                                    <source src={videoWEBM} type="video/webm; codecs=vp9,vorbis" />
-                                </Video>
-                            </VideoInner>
-                        </VideoContainer>
-                    }
-                    {image1920x1080 && 
-                        <InnerGradient withHeader={withHeader} noTitleText={noTitleText} withVideo={(videoMP4 || videoWEBM)} /> 
-                    }
-                    {captionCredit && 
-                        <CaptionCreditIconWrapper>
-                            <CaptionCreditIcon src={cameraIcon} title={captionCredit} alt="" />
-                        </CaptionCreditIconWrapper> 
-                    }
-                    <Container>
-                        {headline && <Headline level={0} text={headline} visuallyHidden={noTitleText} />}
-                        <ChildContainerDesktop className={image1920x1080 ? "child_with_image" : "child_without_image"}>
-                            {standfirst && <LeadParagraph text={standfirst}/>}
-                            {children}
-                        </ChildContainerDesktop>
-                        {copyright && <Copyright>{copyright}</Copyright>}
-                    </Container>
-                </Outer>
-                {image1920x1080 && (children || standfirst) && 
-                    <ChildContainerMobile>
-                        <Wrapper>
-                            {standfirst && <LeadParagraph text={standfirst}/>}
-                            {children}
-                        </Wrapper>
-                    </ChildContainerMobile>
-                }
-            </>
+}) => {
+    const [isPaused, setIsPaused] = useState(true)
+    const vidRef = useRef(null)
+
+    useEffect(() => {
+        if(isPaused) {
+            vidRef.current.play()
+        } else {
+            vidRef.current.pause()
         }
-    </LazyImage>
+    }, [isPaused])
+    
+    return(
+        <LazyImage
+            src={image1920x1080}
+            placeholder={image192x108 ? image192x108 : image1920x1080}
+            visibilitySensorProps={{
+                partialVisibility: true
+            }}
+        >
+            {src => 
+                <>
+                    <Outer 
+                        image={src} 
+                        withHeader={withHeader}
+                        className={image1920x1080 ? "with_image" : "hero_without_image"}
+                        titleLength={headline.length}
+                        noTitleText={noTitleText}
+                    >
+                        { (videoMP4 || videoWEBM) &&
+                            <>
+                                <VideoContainer>
+                                    <VideoInner noTitleText={noTitleText}>
+                                        <Video playsInline autoPlay muted loop ref={vidRef}>
+                                            <source src={videoMP4} type="video/mp4" />
+                                            <source src={videoWEBM} type="video/webm; codecs=vp9,vorbis" />
+                                        </Video>
+                                    </VideoInner>
+                                </VideoContainer>
+                                <PlayButton className="playButton" onClick={() => setIsPaused(isPaused => !isPaused)} backgroundImage={isPaused ? pauseIcon : playIcon} alt={isPaused ? "Pause" : "Play"} title={isPaused ? "Pause" : "Play"}></PlayButton>
+                            </>
+                        }
+                        {image1920x1080 && 
+                            <InnerGradient withHeader={withHeader} noTitleText={noTitleText} withVideo={(videoMP4 || videoWEBM)} /> 
+                        }
+                        {captionCredit && 
+                            <CaptionCreditIconWrapper>
+                                <CaptionCreditIcon src={cameraIcon} title={captionCredit} alt="" />
+                            </CaptionCreditIconWrapper> 
+                        }
+                        <Container>
+                            {headline && <Headline level={0} text={headline} visuallyHidden={noTitleText} />}
+                            <ChildContainerDesktop className={image1920x1080 ? "child_with_image" : "child_without_image"}>
+                                {standfirst && <LeadParagraph text={standfirst}/>}
+                                {children}
+                            </ChildContainerDesktop>
+                            {copyright && <Copyright>{copyright}</Copyright>}
+                        </Container>
+                    </Outer>
+                    {image1920x1080 && (children || standfirst) && 
+                        <ChildContainerMobile>
+                            <Wrapper>
+                                {standfirst && <LeadParagraph text={standfirst}/>}
+                                {children}
+                            </Wrapper>
+                        </ChildContainerMobile>
+                    }
+                </>
+            }
+        </LazyImage>
+    )
+}
 
 
 Hero.propTypes = {
