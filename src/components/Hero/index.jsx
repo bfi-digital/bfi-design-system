@@ -375,10 +375,12 @@ export const Hero = ({
     const vidRef = useRef(null)
 
     useEffect(() => {
-        if(isPaused) {
-            vidRef.current.play()
-        } else {
-            vidRef.current.pause()
+        if(videoMP4 || videoWEBM) {
+            if(isPaused) {
+                vidRef.current.play()
+            } else {
+                vidRef.current.pause()
+            }
         }
     }, [isPaused])
     
