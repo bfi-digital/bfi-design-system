@@ -58,7 +58,7 @@ const newsletters = [
         form: "191722FC90141D02184CB1B62AB3DC26EA829FBE2645495F11B171412C235E5638D1C0BF2034E0F8D771836826AFB98228EC7D996823E64C4D9F94E260EAB6D2",
         title: "Sign up to Sight & Sound emails",
         inputName: "cm-ydlrldk-ydlrldk",
-        desc: "New features, classic pieces and the latest reviews and recommendations"
+        desc: "Get the weekly film bulletin every Friday plus new issue alerts featuring the latest features, reviews and competitions"
     },
     {
         form: "191722FC90141D02184CB1B62AB3DC268D328A874E0F895EEE04E7052B9B84C84D6210E2EC779036D3356362AC3AEB38E283B77D5A266D01EF89F8F2E187AE1D",
@@ -77,6 +77,30 @@ const newsletters = [
         title: "Are you a member of BFI FAN?",
         inputName: "cm-sujdry-sujdry",
         desc: "Get the weekly Indie Box Office column plus updates for FAN members"
+    },
+    {
+        form: "191722FC90141D02184CB1B62AB3DC26B9671E217444A96CD508A6FFFF80693A0D23C9F6B46D386E0484ABFBF2752989B1E0F7378E88EC411230879FD164102E",
+        title: "Sign up to BFI Film Academy emails",
+        inputName: "cm-gkdhjj-gkdhjj",
+        desc: "Find out about BFI Film Academy’s range of accessible courses and resources for 16-25 year olds, whether you want to take your first steps in film or improve on existing skills"
+    },
+    {
+        form: "191722FC90141D02184CB1B62AB3DC26042E52A84A13269FA18BF6D9F3020290B04C59098D32A10ED64947A8F0B80B962446124E8824322B38F18E9BCBBA1F12",
+        title: "Sign up to BFI Distribution emails",
+        inputName: "cm-vlloi-vlloi",
+        desc: "Are you an exhibitor? Be the first to know about our latest theatrical releases and find out how to book"
+    },
+    {
+        form: "191722FC90141D02184CB1B62AB3DC26F0CF54A9D2F1C378EE3A05CB0E6818E9F26B5FB7F1074C69A5E57298A83A83CFE165C5CC9F31F371B9CCA46E93E81FD4",
+        title: "Sign up to LFF industry emails",
+        inputName: "cm-yhvtjh-yhvtjh",
+        desc: "Stay up to date with film industry updates from the BFI London Film Festival team"
+    },
+    {
+        form: "191722FC90141D02184CB1B62AB3DC264EEB0E43773EC558EB741FC9259EC1981A37F6EF1248DE31DCBC255BAE61AFDEBD59AAC112AF48DD0CE5BE428FD75B08",
+        title: "Sign up for We Are UK Film emails",
+        inputName: "cm-xuruut-xuruut",
+        desc: "Get the latest on UK activity around key international film festivals"
     }
 ]
 
