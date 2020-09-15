@@ -11,17 +11,19 @@ const HeroH1 = styled.h1`
     font-size: 2.2rem;
     letter-spacing: 1px;
 
-    overflow-wrap: break-word;
-    word-wrap: break-word;
+    @media screen and (max-width: ${theme.s}){
+        overflow-wrap: break-word;
+        word-wrap: break-word;
 
-    -ms-word-break: break-all;
-    word-break: break-all;
-    word-break: break-word;
+        -ms-word-break: break-all;
+        word-break: break-all;
+        word-break: break-word;
 
-    -ms-hyphens: auto;
-    -moz-hyphens: auto;
-    -webkit-hyphens: auto;
-    hyphens: auto;
+        -ms-hyphens: auto;
+        -moz-hyphens: auto;
+        -webkit-hyphens: auto;
+        hyphens: auto;
+    }
 
     @media screen and (min-width: ${theme.m}){
         font-size: 2.4rem;
