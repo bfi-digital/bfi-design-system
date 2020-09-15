@@ -217,7 +217,7 @@ const PageImage = styled.div`
     transition: all ease 0.3s;
 `
 
-const PlatformTag = styled.div`
+const HighlightTag = styled.div`
     background: ${props => strandColors[props.strandColorScheme]};
     color: ${theme.white};
     padding: 5px;
@@ -281,7 +281,6 @@ export const EventCard = ({
     url,
     image480x270,
     image48x27,
-    platform,
     dateTime,
     external,
     inScroller,
@@ -303,7 +302,7 @@ export const EventCard = ({
             wrapper={children => <InsideScroller pageWithSidebar={pageWithSidebar} withImage={image480x270 && image48x27} strandColorScheme={strandColorScheme} className="scrollcard">{children}</InsideScroller>}
             wrapper2={children => <Outer withImage={image480x270 && image48x27} strandColorScheme={strandColorScheme}>{children}</Outer>}
         >
-            {platform && <PlatformTag withImage={image480x270 && image48x27} strandColorScheme={strandColorScheme}>{platform}{strandTitle && ` | ${strandTitle} strand`}</PlatformTag>}
+            {strandTitle && <HighlightTag withImage={image480x270 && image48x27} strandColorScheme={strandColorScheme}>{strandTitle}</HighlightTag>}
 
             {image480x270 && image48x27 &&
                 <PageImageContainer>
