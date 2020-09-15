@@ -254,8 +254,11 @@ const Video = styled.div`
 `
 const Prefix = styled.p`
     font-size: ${theme.small_fontSize_m};
-    margin-top: 25px;
+    margin-top: 0;
     margin-bottom: 5px;
+`
+const PrefixContainer = styled.div`
+    margin-bottom: 25px;
 `
 
 function slugify(string) {
@@ -307,19 +310,19 @@ export const PromoBanner = ({
             }
             <Headline level={2} text={headline}/>
             {description && <Description className={image || oembedObject ? "with_image" : "without_image"}>{description}</Description>} 
-            {callToActionUrl && (image || oembedObject) && 
-                <Button to={callToActionUrl} colorScheme={colorSchemes[colorScheme].buttonColor} external={external} rel={external ? "noreferrer" : ""}  target={external ? "_blank" : "_self"}>
-                    {callToActionTitle}
-                </Button>
-            }
             {secondImage && secondImagePrefix && 
-                <>
+                <PrefixContainer>
                     <Prefix>{secondImagePrefix}</Prefix>
                     <SecondImage 
                         src={secondImage} 
                         alt={secondImageAlt ? secondImageAlt : ""}
                     />
-                </>
+                </PrefixContainer>
+            }
+            {callToActionUrl && (image || oembedObject) && 
+                <Button to={callToActionUrl} colorScheme={colorSchemes[colorScheme].buttonColor} external={external} rel={external ? "noreferrer" : ""}  target={external ? "_blank" : "_self"}>
+                    {callToActionTitle}
+                </Button>
             }
         </Inner> 
         { oembedObject ?
