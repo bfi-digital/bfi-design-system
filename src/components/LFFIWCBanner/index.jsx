@@ -22,6 +22,7 @@ const calculateTimeLeft = (festivalDate) => {
 }
 
 const Outer = styled.div`
+    margin-top: ${theme.standardSpace}px;
     
     @media screen and (min-width: ${theme.m}) {
         display: flex;
