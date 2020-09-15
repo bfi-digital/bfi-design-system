@@ -229,6 +229,10 @@ const PlatformTag = styled.div`
     right: ${props => props.withImage ? "15px" : "0px"};
     z-index: 1;
 
+    &::first-letter {
+        text-transform: uppercase;
+    }
+
     @media screen and (max-width: ${theme.s}){
         font-size: ${theme.small_fontSize_m};
         right: 0;
