@@ -912,7 +912,7 @@ exports[`Storyshots 4 Components/All/Filterable Articles Normal 1`] = `
 exports[`Storyshots 4 Components/All/Headline Hero H 1 1`] = `
 <h1
   aria-label=""
-  className="sc-gPEVay kRReeo"
+  className="sc-gPEVay fFDMHI"
 >
   My example headline
 </h1>
@@ -921,7 +921,7 @@ exports[`Storyshots 4 Components/All/Headline Hero H 1 1`] = `
 exports[`Storyshots 4 Components/All/Headline Level 1 1`] = `
 <h1
   aria-label=""
-  className="sc-gPEVay sc-iRbamj hRYZjy"
+  className="sc-gPEVay sc-iRbamj eGckxE"
 >
   My example headline
 </h1>
