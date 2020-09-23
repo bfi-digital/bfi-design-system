@@ -98,7 +98,7 @@ export const ShowPerformanceList = ({
         <Outer>
             <Headline
                 level={2} 
-                text={`${showTitle} ${showType === "event" ? "times" : "screenings"}`}
+                text={`${showTitle} ${showType === "event" ? "dates and times" : "screenings"}`}
             />
             <PerformanceList id="performance-list">
                 {performances.map((performance) => {

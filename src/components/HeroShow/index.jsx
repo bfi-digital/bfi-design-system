@@ -284,7 +284,7 @@ export const HeroShow = ({
                     children && <ButtonContainer>{children}</ButtonContainer>
                     :
                     // <Button href="#performance-list" colorScheme={1}>View all showings</Button>
-                    <StyledAnchorLink offset="175" href="#performance-list">View all {showType === "event" ? "times" : "screenings"}</StyledAnchorLink>
+                    <StyledAnchorLink offset="175" href="#performance-list">View all {showType === "event" ? "dates and times" : "screenings"}</StyledAnchorLink>
                 }
             </Meta>
             {oembedObject ?
