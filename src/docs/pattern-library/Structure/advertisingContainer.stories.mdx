@@ -5,6 +5,16 @@ import { AdvertisingContainer } from "../../../components/AdvertisingContainer/i
 
 # Advertising Container
 
+The advertising container should be used as a wraper around any adverts that appear within the website. 
+
+The reason for this is to help the users understand what are and what are not adverts within the BFI website, so that they do not confuse advertising with content on the BFI website.
+
+The wrapper simply adds a small grey box around the advert content, and adds the text "advertisement" above it if the `withCaption` option is set - this should always be true, unless the advertisement comes with an additional title that preceds the advert and explains to the user that it is an advert, such as "Sponsored links from around the web". 
+
+## Props 
+
+<Props of={AdvertisingContainer} />
+
 ## Examples 
 
 <Preview>
@@ -34,7 +44,3 @@ import { AdvertisingContainer } from "../../../components/AdvertisingContainer/i
         </div>
     </Story>
 </Preview>
-
-## Props 
-
-<Props of={AdvertisingContainer} />

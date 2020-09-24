@@ -5,8 +5,13 @@ import kansasLocal from "./images/kansas.gif"
 
 <Meta title="2 Pattern Library/1 Structure/Error Page" component={ErrorPage} />
 
-# ErrorPage
- 
+# Error Page
+
+This component is used as the main body content for all error pages within BFI.org.
+
+It displays the error number, as well as a string of content - this content is automatically displayed depending on the error code, it includes a fallback generic message, as well as an override to allow a custom message for the error page.
+
+The component includes the ability to provide an array of gifs - these will be displayed alongside the error message with a random gif selected from the array to display. Providing a place to show more of the friendly personality of the BFI, the idea for the gifs is to call on the place classic film has within modern internet culture, with memes such as confused Travolta from Pulp Fiction being so widespread, or the ability to use any film as a metaphor for the error/page missing message.
  
 ## Props 
 

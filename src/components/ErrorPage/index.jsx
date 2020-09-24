@@ -139,5 +139,9 @@ ErrorPage.propTypes = {
     /** 
 	 * An optional string to support the error message
 	 **/
-    errorString: PropTypes.string
+    errorString: PropTypes.string,
+    /** 
+	 * An optional array of gifs that will be randomly placed on the page
+	 **/
+    gifs: PropTypes.array
 }
