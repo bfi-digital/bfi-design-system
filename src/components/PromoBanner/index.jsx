@@ -55,13 +55,6 @@ const Outer = styled.section`
     margin-bottom: ${theme.standardSpace*2}px;
     margin-top: ${theme.standardSpace*2}px;
 
-    // & + .promoBanner {
-    //     margin-top: 0px;
-    // }
-    // &:last-of-type {
-    //     margin-bottom: ${theme.standardSpace*2}px;
-    // }
-
     h2 {
         margin-top: 0px !important;
         color: ${props => colorSchemes[props.colorScheme].text};
@@ -71,7 +64,18 @@ const Outer = styled.section`
     a{
         margin-top: 10px;
     }
-
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -9998px;
+        right: 0;
+        box-shadow: 9999px 0 0 ${props => colorSchemes[props.colorScheme].background};
+        border-left: 9999px solid ${props => colorSchemes[props.colorScheme].background};
+        z-index: -1;
+        display: ${props => props.pageWithSidebar ? "none" : "default"}
+    }
 
     @media screen and (min-width: ${theme.m}){
         flex-direction: ${props => props.pageWithSidebar ? "column" : "row"};
@@ -80,18 +84,6 @@ const Outer = styled.section`
 
         a {
             margin-top: auto;
-        }
-        &:before {
-            content: "";
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: -9998px;
-            right: 0;
-            box-shadow: 9999px 0 0 ${props => colorSchemes[props.colorScheme].background};
-            border-left: 9999px solid ${props => colorSchemes[props.colorScheme].background};
-            z-index: -1;
-            display: ${props => props.pageWithSidebar ? "none" : "default"}
         }
     }
     @media screen and (min-width: ${theme.l}){
@@ -121,7 +113,7 @@ const Outer = styled.section`
 `
 
 const Inner = styled.div`
-    padding: 15px;
+    padding: 20px 0;
     @media screen and (min-width: ${theme.m}){
         padding: ${theme.standardSpace}px;
         width: ${props => props.pageWithSidebar ? "100%" : "50%"};
@@ -200,7 +192,8 @@ const Image = styled.div`
     background-image: url("${props => props.image}");
     background-size: cover;
     background-position: center center;
-    width: 100%;
+    width: calc(100% + 40px);
+    margin-left: -20px;
 
     @media screen and (min-width: ${theme.m}){
         order: ${props => props.reversed || props.pageWithSidebar ? "-1" : "1"};
@@ -210,6 +203,7 @@ const Image = styled.div`
         margin-left: ${props => props.pageWithSidebar ? "0" : props.reversed ? "-20px" : "20px"};
     }
     @media screen and (min-width: ${theme.l}){
+        width: 100%;
         margin-right: 0px;
         margin-left: 0px;
     }
