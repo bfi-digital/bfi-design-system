@@ -121,7 +121,9 @@ const Outer = styled.div`
     p {
         margin-top: 0;
         margin-bottom: ${theme.standardSpace}px;
-        max-width: 75%;
+        @media screen and (min-width: ${theme.m}){
+            max-width: 75%;
+        }
         @media screen and (min-width: ${theme.l}){
             max-width: 100%;
         }
