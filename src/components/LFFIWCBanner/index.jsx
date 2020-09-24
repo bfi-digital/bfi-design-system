@@ -73,6 +73,12 @@ const CountdownContainer = styled.div`
 `
 const CountdownContainerInner = styled.div`
     height: fit-content;
+
+    a {
+        &:hover {
+            opacity: 0.8;
+        }
+    }
 `
 const LogoImg = styled.img`
     width: 75%;
@@ -153,7 +159,8 @@ export const LFFIWCBanner = ({
     secondImg,
     iwcLogo
 }) => {
-    const [timeLeft, setTimeLeft] = useState(calculateTimeLeft(festivalDate))
+    const [dateInPast, setDateInPast] = useState(false)
+    const [timeLeft, setTimeLeft] = useState(calculateTimeLeft(festivalDate, setDateInPast))
     const [degHour, setDegHour] = useState(0)
     const [degMin, setDegMin] = useState(0)
     const [degSec, setDegSec] = useState(0)
@@ -168,6 +175,12 @@ export const LFFIWCBanner = ({
         }, 1000)
         return () => clearTimeout(timer)
     })
+
+    useEffect(() => {
+        if(!timeLeft.days && !timeLeft.hours && !timeLeft.minutes) {
+            setDateInPast(true)
+        }
+    }, [timeLeft])
 
     return(
         <Outer>
@@ -188,19 +201,25 @@ export const LFFIWCBanner = ({
                 </WatchContainer>
                 <CountdownContainer>
                     <CountdownContainerInner>
-                        <TimeContainer>
-                            <Time>{timeLeft.days}</Time>
-                            <TimeTitle>Days</TimeTitle>
-                        </TimeContainer>
-                        <TimeContainer>
-                            <Time>{timeLeft.hours}</Time>
-                            <TimeTitle>Hours</TimeTitle>
-                        </TimeContainer>
-                        <TimeContainer>
-                            <Time>{timeLeft.minutes}</Time>
-                            <TimeTitle>Mins</TimeTitle>
-                        </TimeContainer>
-                        <LogoImg src={iwcLogo} />
+                        {!dateInPast &&
+                            <>
+                            <TimeContainer>
+                                <Time>{timeLeft.days}</Time>
+                                <TimeTitle>Days</TimeTitle>
+                            </TimeContainer>
+                            <TimeContainer>
+                                <Time>{timeLeft.hours}</Time>
+                                <TimeTitle>Hours</TimeTitle>
+                            </TimeContainer>
+                            <TimeContainer>
+                                <Time>{timeLeft.minutes}</Time>
+                                <TimeTitle>Mins</TimeTitle>
+                            </TimeContainer>
+                            </>
+                        }
+                        <a href="https://www.iwc.com/gb/en/home.html" target="_blank" title="Go to IWC's website">
+                            <LogoImg src={iwcLogo} alt="IWC Schaffhausen" />
+                        </a>
                     </CountdownContainerInner>
                 </CountdownContainer>
             </IWC>
