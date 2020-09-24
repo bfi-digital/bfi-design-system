@@ -10,7 +10,7 @@ const Outer = styled.ul`
     margin: ${theme.standardSpace*2}px 0;
     width: 100%;
 
-    @media screen and (max-width: ${theme.s}){
+    @media screen and (max-width: ${theme.m}){
         overflow-x: scroll;
         overflow-y: hidden;
 
@@ -41,7 +41,7 @@ const Tab = styled.li`
     margin-right: ${theme.standardSpace*0.5}px;
     font-size: ${theme.fontSize_xl};
     text-align: center;
-    @media screen and (max-width: ${theme.s}){
+    @media screen and (max-width: ${theme.m}){
         text-align: left;
         min-width: fit-content;
         margin-bottom: 15px;
@@ -54,7 +54,7 @@ const StyledLink = styled(Link)`
     position: relative;
     transition: opacity 0.3s ease-in-out;
     padding: 21px 15px;
-    @media screen and (max-width: ${theme.s}){
+    @media screen and (max-width: ${theme.m}){
         padding: 3px;
         margin-right: 15px;
 
@@ -75,7 +75,7 @@ const StyledLink = styled(Link)`
         left: 15px;
         right: 15px;
         bottom: 15px;
-        @media screen and (max-width: ${theme.s}){
+        @media screen and (max-width: ${theme.m}){
             display: none;
         }
         @media screen and (max-width: ${theme.m_sub}) and (min-width: ${theme.m}){
@@ -113,7 +113,7 @@ const StyledLink = styled(Link)`
 
     &:first-of-type {
         margin-left: -15px;
-        @media screen and (max-width: ${theme.s}){
+        @media screen and (max-width: ${theme.m}){
             margin-left: 0px;
         }
     }
@@ -131,7 +131,7 @@ const StyledLink = styled(Link)`
         font-weight: ${theme.fontWeight_semiBold};
         opacity: 1 !important;
         cursor: default;
-        @media screen and (max-width: ${theme.s}){
+        @media screen and (max-width: ${theme.m}){
             font-weight: ${theme.fontWeight_bold};
             color: ${theme.primary}
         }
