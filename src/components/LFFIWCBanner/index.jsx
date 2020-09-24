@@ -203,21 +203,21 @@ export const LFFIWCBanner = ({
                     <CountdownContainerInner>
                         {!dateInPast &&
                             <>
-                            <TimeContainer>
-                                <Time>{timeLeft.days}</Time>
-                                <TimeTitle>Days</TimeTitle>
-                            </TimeContainer>
-                            <TimeContainer>
-                                <Time>{timeLeft.hours}</Time>
-                                <TimeTitle>Hours</TimeTitle>
-                            </TimeContainer>
-                            <TimeContainer>
-                                <Time>{timeLeft.minutes}</Time>
-                                <TimeTitle>Mins</TimeTitle>
-                            </TimeContainer>
+                                <TimeContainer>
+                                    <Time>{timeLeft.days}</Time>
+                                    <TimeTitle>Days</TimeTitle>
+                                </TimeContainer>
+                                <TimeContainer>
+                                    <Time>{timeLeft.hours}</Time>
+                                    <TimeTitle>Hours</TimeTitle>
+                                </TimeContainer>
+                                <TimeContainer>
+                                    <Time>{timeLeft.minutes}</Time>
+                                    <TimeTitle>Mins</TimeTitle>
+                                </TimeContainer>
                             </>
                         }
-                        <a href="https://www.iwc.com/gb/en/home.html" target="_blank" title="Go to IWC's website">
+                        <a href="https://www.iwc.com/gb/en/home.html" target="_blank" rel="noreferrer" title="Go to IWC's website">
                             <LogoImg src={iwcLogo} alt="IWC Schaffhausen" />
                         </a>
                     </CountdownContainerInner>

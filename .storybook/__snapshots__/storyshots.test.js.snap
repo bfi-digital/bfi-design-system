@@ -912,7 +912,7 @@ exports[`Storyshots 4 Components/All/Filterable Articles Normal 1`] = `
 exports[`Storyshots 4 Components/All/Headline Hero H 1 1`] = `
 <h1
   aria-label=""
-  className="sc-gPEVay fFDMHI"
+  className="sc-gPEVay kJDheQ"
 >
   My example headline
 </h1>
@@ -921,7 +921,7 @@ exports[`Storyshots 4 Components/All/Headline Hero H 1 1`] = `
 exports[`Storyshots 4 Components/All/Headline Level 1 1`] = `
 <h1
   aria-label=""
-  className="sc-gPEVay sc-iRbamj eGckxE"
+  className="sc-gPEVay sc-iRbamj bSuuoU"
 >
   My example headline
 </h1>
@@ -930,7 +930,7 @@ exports[`Storyshots 4 Components/All/Headline Level 1 1`] = `
 exports[`Storyshots 4 Components/All/Headline Level 2 1`] = `
 <h2
   aria-label=""
-  className="sc-jlyJG cstgVP"
+  className="sc-jlyJG tKcxe"
 >
   My example headline
 </h2>
@@ -1159,7 +1159,7 @@ exports[`Storyshots 4 Components/All/Newsletter Sign Up Example 1`] = `
   }
 >
   <div
-    className="sc-iQNlJl fkVVHn"
+    className="sc-iQNlJl iKMSMw"
   >
     <p
       aria-label=""
@@ -1168,11 +1168,11 @@ exports[`Storyshots 4 Components/All/Newsletter Sign Up Example 1`] = `
       Get the latest from the BFI
     </p>
     <p>
-      Sign up for BFI news, features, videos and podcasts
+      Sign up for BFI news, features, videos and podcasts.
     </p>
     <form
       action="https://www.createsend.com/t/subscribeerror?description="
-      className="sc-bsbRJL jpqlze js-cm-form"
+      className="sc-bsbRJL dFTaXQ js-cm-form"
       data-id="191722FC90141D02184CB1B62AB3DC26D57AD7AD0DF253BE15DD122C605B740244DFF1ADDEE1A8DA861127EDFD99BF281A7016BD9F175EAF91CB858CC76D303F"
       id="subForm"
       method="post"
@@ -1195,7 +1195,7 @@ exports[`Storyshots 4 Components/All/Newsletter Sign Up Example 1`] = `
         />
       </label>
       <button
-        className="sc-cMhqgX PTnHV"
+        className="sc-cMhqgX vDxPv"
         type="submit"
       >
         Sign up

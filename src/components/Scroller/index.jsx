@@ -69,7 +69,7 @@ const ScrollerTrack = styled.div`
             margin-right: 40px !important;
         }
     }
-    &::-webkit-scrollbar, ::-webkit-scrollbar-thumb {
+    &::-webkit-scrollbar {
         height: 20px;
         width: 20px;
         border: 1px solid ${theme.grey};
@@ -79,7 +79,7 @@ const ScrollerTrack = styled.div`
         cursor: -moz-grab;
         cursor: -webkit-grab;
         -webkit-appearance: none;
-        -webkit-overflow-scrolling: auto;
+        -webkit-overflow-scrolling: auto !important;
         &:active {
             cursor: grabbing;
             cursor: -moz-grabbing;
@@ -88,7 +88,10 @@ const ScrollerTrack = styled.div`
     }
     &::-webkit-scrollbar-thumb:horizontal{
         background: ${theme.primary};
-        border-radius: 1px;
+        border-radius: 2px;
+    }
+    &::-webkit-scrollbar-track {
+        background-color: ${theme.lightGrey};
     }
 
     @media screen and (min-width: ${theme.m}){
@@ -193,9 +196,6 @@ export const Scroller = ({
         } else if (window.innerWidth > 1440) {
             offset = currentScroll.scrollWidth - 1000
         }
-        console.log("offset = " + offset)
-        console.log("currentScroll.scrollWidth = " + currentScroll.scrollWidth)
-        console.log("window.innerWidth = " + window.innerWidth)
         if (currentScroll.scrollLeft > 100) {
             setShowLeft(true)
         } else {

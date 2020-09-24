@@ -12,6 +12,15 @@ const Outer = styled.ul`
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
 
+    @media screen and (max-width: ${theme.s}){
+        width: calc(100% + 20px);
+        padding: 5px;
+        background: ${theme.lightGrey}
+        li {
+            margin-bottom: 0;
+        }
+    }
+
     @media screen and (max-width: ${theme.m}){
         overflow-x: scroll;
         overflow-y: hidden;
@@ -19,7 +28,7 @@ const Outer = styled.ul`
             scroll-snap-align: start;
             scroll-snap-stop: always;
         }
-        &::-webkit-scrollbar, ::-webkit-scrollbar-thumb {
+        &::-webkit-scrollbar {
             height: 10px;
             width: 10px;
             border: 1px solid ${theme.grey};
@@ -30,6 +39,8 @@ const Outer = styled.ul`
             cursor: -webkit-grab;
             -webkit-appearance: none;
             -webkit-overflow-scrolling: auto;
+            -webkit-overflow-scrolling: touch;
+
             &:active {
                 cursor: grabbing;
                 cursor: -moz-grabbing;
@@ -38,7 +49,10 @@ const Outer = styled.ul`
         }
         &::-webkit-scrollbar-thumb:horizontal{
             background: ${theme.primary};
-            border-radius: 1px;
+            border-radius: 2px;
+        }
+        &::-webkit-scrollbar-track {
+            background-color: ${theme.grey};
         }
     }
 `
