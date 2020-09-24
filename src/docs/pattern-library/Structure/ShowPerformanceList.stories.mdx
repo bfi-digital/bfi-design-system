@@ -1,0 +1,29 @@
+import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+import { ShowPerformanceList } from "../../../components/ShowPerformanceList/index"
+import demoPerformances from "../../../components/ShowPerformanceList/data"
+
+<Meta title="2 Pattern Library/1 Structure/Show Performance List" component={ShowPerformanceList} />
+
+# Programme Banner
+
+## Examples 
+
+<Preview>
+    <Story name="LFF 2020 Example">
+        <div style={{
+            padding: "5px",
+            maxWidth: "1000px"
+        }}>
+             <ShowPerformanceList 
+                performances={demoPerformances} 
+                showTitle="Lynn + Lucy" 
+                showDescription="Lynn + Lucy premieres online at London Film Festival. With your ticket you can enjoy Lynn + Lucy any time for two weeks from the premiere date."
+            />
+        </div>
+    </Story>
+</Preview>
+
+
+## Props 
+
+<Props of={ShowPerformanceList} />

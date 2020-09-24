@@ -24,7 +24,7 @@ export default [
         performanceInfo: "Booking will be available soon!",
         dateTimeStart: "2020-10-08T18:00",
         dateTimeEnd: "2020-10-08T23:00",
-        availability: "unavaliable",
+        availability: "unavailable",
         platform: "southbank",
         location: "BFI Southbank",
         screen: "Screen 2",
@@ -32,7 +32,18 @@ export default [
         ctaURL: "https://whatson.bfi.org.uk/Online/default.asp",
     },
     {
-        id: "3",
+        id: "4",
+        dateTimeStart: "2020-10-08T18:00",
+        dateTimeEnd: "2020-10-08T23:00",
+        availability: "unavailable",
+        platform: "southbank",
+        location: "BFI Southbank",
+        screen: "Screen 2",
+        paywall: "free",
+        ctaURL: "https://whatson.bfi.org.uk/Online/default.asp",
+    },
+    {
+        id: "5",
         performanceInfo: "BFI Player without end date",
         dateTimeStart: "2020-10-15T18:00",
         availability: "available",
@@ -43,7 +54,7 @@ export default [
         ctaURL: "https://player.bfi.org.uk/subscription/film/watch-lynn-lucy-2019-online"
     },
     {
-        id: "3",
+        id: "6",
         performanceInfo: "BFI Player without end date or time",
         dateTimeStart: "2020-10-15T00:00",
         availability: "available",

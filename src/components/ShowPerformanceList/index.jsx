@@ -222,10 +222,11 @@ export const ShowPerformanceList = ({
                             :null
             :
             button = <StyledButton level={1} disabled>
-                {performance.availability === "soldout" ? "Sold out"
-                    : (dateIsInPast(new Date(performance.dateTimeStart), new Date()) ? 
-                        (performance.paywall === "free" && performance.platform !== "southbank" ? "Coming soon" : "Check back for tickets") 
-                        : "No longer available")}
+                {performance.availability === "unavailable" && performance.paywall === "free" ? "Coming soon" :
+                    performance.availability === "soldout" ? "Sold out"
+                        : (dateIsInPast(new Date(performance.dateTimeStart), new Date()) ? 
+                            (performance.paywall === "free" && performance.platform !== "southbank" ? "Coming soon" : "Check back for tickets") 
+                            : "No longer available")}
             </StyledButton>
         
         return button
