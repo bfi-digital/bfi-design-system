@@ -4,28 +4,15 @@ import theme from "../_theme"
 import PropTypes from "prop-types"
 
 const HeroH1 = styled.h1`
-    font-family: ${theme.headingFont}; 
     // text-transform: uppercase;
+    font-family: ${theme.bodyFont}; 
     color: ${theme.black};
     font-weight: bold;
     font-size: 2.2rem;
     letter-spacing: 1px;
 
-    @media screen and (max-width: ${theme.s}){
-        overflow-wrap: break-word;
-        word-wrap: break-word;
-
-        -ms-word-break: break-all;
-        word-break: break-all;
-        word-break: break-word;
-
-        -ms-hyphens: auto;
-        -moz-hyphens: auto;
-        -webkit-hyphens: auto;
-        hyphens: auto;
-    }
-
     @media screen and (min-width: ${theme.m}){
+        font-family: ${theme.headingFont}; 
         font-size: 2.4rem;
     }
     @media screen and (min-width: ${theme.l}){
@@ -67,14 +54,16 @@ const H1 = styled(HeroH1)`
 `
 
 const H2 = styled.h2`
-    font-family: ${theme.headingFont}; 
+    font-family: ${theme.bodyFont}; 
     color: ${theme.black};
     font-weight: bold;
     font-size: 1.4375rem;
     margin-block-start: 1.75em;
     margin-block-end: 0.5em;
     line-height: 1.3;
-
+    @media screen and (min-width: ${theme.m}){
+        font-family: ${theme.headingFont}; 
+    ]
     @media screen and (min-width: ${theme.l}){
         font-size: 1.6875rem;
         margin-block-start: 2em;
