@@ -135,13 +135,15 @@ const Outer = styled.div`
     }
 `
 const NewsletterForm = styled.form`
-    display: flex;
-    -webkit-flex-direction: row;
-    -moz-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: flex-start;
+    @media screen and (min-width: ${theme.m}){
+        display: flex;
+        -webkit-flex-direction: row;
+        -moz-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: flex-start;
+    }
     @media screen and (min-width: ${theme.l}){
         justify-content: center;
     }
@@ -157,7 +159,7 @@ const NewsletterForm = styled.form`
         padding-top: 12px;        
         font-size: ${theme.fontSize_s};
         border: 2px solid ${theme.black};
-        border-right: none;
+        
         border-bottom: 5px solid ${theme.primary};
         transition: border .3s;
         width: 100%;
@@ -172,6 +174,7 @@ const NewsletterForm = styled.form`
         }
         @media screen and (min-width: ${theme.m}){
             width: 300px;
+            border-right: none;
         }
     }
 `
@@ -202,13 +205,12 @@ const SubmitButton = styled.button`
     width: 100%;
     border: 2px solid ${theme.black};
     margin-bottom: 4px;
-    left: -2px;
+    
     top: 1px;
 
     @media screen and (min-width: ${theme.s}){
         width: auto;
     }
-
     :after {
         content: "";
         width: calc(100% + 4px);
@@ -247,6 +249,7 @@ const SubmitButton = styled.button`
     }
     @media screen and (min-width: ${theme.m}){
         width: auto;
+        left: -2px;
     }
 `
 
