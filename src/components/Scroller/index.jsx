@@ -38,7 +38,7 @@ const ScrollerTrack = styled.div`
             padding-left: 25px;
 
             &:first-of-type {
-                padding-left: 0;
+                margin-left: -15px;
             }
             
             &:focus {
@@ -69,7 +69,7 @@ const ScrollerTrack = styled.div`
             margin-right: 40px !important;
         }
     }
-    &::-webkit-scrollbar {
+    &::-webkit-scrollbar, ::-webkit-scrollbar-thumb {
         height: 20px;
         width: 20px;
         border: 1px solid ${theme.grey};

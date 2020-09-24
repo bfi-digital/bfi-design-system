@@ -9,7 +9,6 @@ const HeroH1 = styled.h1`
     color: ${theme.black};
     font-weight: bold;
     font-size: 2.2rem;
-    letter-spacing: 1px;
 
     @media screen and (min-width: ${theme.m}){
         font-family: ${theme.headingFont}; 

@@ -9,12 +9,17 @@ const Outer = styled.ul`
     display: flex;
     margin: ${theme.standardSpace*2}px 0;
     width: 100%;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
 
     @media screen and (max-width: ${theme.m}){
         overflow-x: scroll;
         overflow-y: hidden;
-
-        &::-webkit-scrollbar {
+        li {
+            scroll-snap-align: start;
+            scroll-snap-stop: always;
+        }
+        &::-webkit-scrollbar, ::-webkit-scrollbar-thumb {
             height: 10px;
             width: 10px;
             border: 1px solid ${theme.grey};
@@ -133,7 +138,7 @@ const StyledLink = styled(Link)`
         cursor: default;
         @media screen and (max-width: ${theme.m}){
             font-weight: ${theme.fontWeight_bold};
-            color: ${theme.primary}
+            color: ${theme.primary};
         }
     }
 `
@@ -142,7 +147,7 @@ export const TabNavigation = ({
     tabs
 }) => {
     return( 
-        <Outer role="tablist">
+        <Outer role="tablist" className="tab_navigation">
             {tabs.map((tab, index) =>
                 <Tab key={index} role="presentation">
                     <StyledLink role="tab" to={tab.url} className={tab.isActive ? "active" : ""}>{tab.title}</StyledLink> 
