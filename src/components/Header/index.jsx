@@ -17,13 +17,17 @@ const Outer = styled.header`
     margin-bottom: ${props => props.isTransparent ? "-175px" : "0px"};
     position: relative;
     z-index: 999;
-    min-height: 50px;
+    min-height: 45px;
+    
     position: sticky;
     top: 0px;
 
     @media screen and (min-width: ${theme.m}){
         background: ${props => props.isTransparent ? (!props.isSticky ? "transparent" : theme.white) : theme.white};
         border-bottom: 1px solid ${props => props.isTransparent ? (!props.isSticky ? "transparent" : theme.grey) : theme.grey};
+    }
+    @media screen and (min-width: ${theme.l}){
+        min-height: 50px;
     }
 
     a {
@@ -42,6 +46,7 @@ const Outer = styled.header`
             font-size: ${theme.fontSize_s};
         }
     }
+
 `
 
 const Inner = styled.div`
