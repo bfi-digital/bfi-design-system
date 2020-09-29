@@ -60,9 +60,6 @@ const H2 = styled.h2`
     margin-block-start: 1.75em;
     margin-block-end: 0.5em;
     line-height: 1.3;
-    @media screen and (min-width: ${theme.m}){
-        font-family: ${theme.headingFont}; 
-    ]
     @media screen and (min-width: ${theme.l}){
         font-size: 1.6875rem;
         margin-block-start: 2em;
@@ -75,8 +72,8 @@ const H2 = styled.h2`
 
 const H3 = styled.h3`
     color: ${theme.black};
-    font-weight: ${theme.fontWeight_semiBold};
-    font-size: 1.375rem;
+    font-weight: bold;
+    font-size: 1.25rem;
     margin-block-start: 1.5em;
     margin-block-end: 0.5em;
     line-height: 1.3;
@@ -88,8 +85,8 @@ const H3 = styled.h3`
 
 const H3Fake = styled.p`
     color: ${theme.black};
-    font-weight: ${theme.fontWeight_semiBold};
-    font-size: 1.375rem;
+    font-weight: bold;
+    font-size: 1.25rem;
     margin-block-start: 1.5em;
     margin-block-end: 0.5em;
     line-height: 1.3;
