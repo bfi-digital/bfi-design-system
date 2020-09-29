@@ -6,6 +6,7 @@ import LazyImage from "react-lazy-progressive-image"
 import { Headline } from "../Headline"
 import { LeadParagraph } from "../LeadParagraph"
 import { Breadcrumbs } from "../Breadcrumbs"
+import cameraIcon from "./camera_icon.svg"
 
 const Outer = styled.div`
     margin: 0 auto;
@@ -219,11 +220,59 @@ const BreadcrumbContainer = styled.div`
     margin-bottom: ${theme.standardSpace}px;
 `
 
+const CaptionCreditIconWrapper = styled.div`
+    position: absolute;
+    width: 100%;
+    display: none;
+
+    @media screen and (min-width: ${theme.m}){
+        bottom: 70px;
+        max-width: calc(100% - 55px);
+        right: 40px;
+        display: block;
+    }
+`
+const CaptionCreditIcon = styled.button`
+    border: none;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    float: right;
+    cursor: help;
+    cursor: help;
+    position: relative;
+    opacity: 0.8;
+    background: url(${cameraIcon});
+    background-size: 100%;
+    &:hover, &:focus {
+        opacity: 1;
+
+        &::after {
+            position: absolute;
+            top: calc(100% + 5px);
+            right: calc(100% - 30px);
+            display: block;
+            padding: 10px 15px;
+            width: max-content;
+            background: ${theme.lightest};
+            content: attr(title);
+            z-index: 9998;
+            -webkit-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.4);
+            -moz-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.4);
+            box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.4);
+        }
+    }
+    &:focus {
+        border: solid 3px ${theme.focus};
+        outline: none;
+    }
+`
+
 export const HeroPage = ({
     image1920x1080,
     image192x108,
     imageAltText,
-    imageCopyright,
+    captionCredit,
     title,
     standfirst,
     breadcrumbs,
@@ -253,7 +302,11 @@ export const HeroPage = ({
                                     src={src}
                                     alt={imageAltText ? imageAltText : ""}
                                 />
-                                {imageCopyright && <Small itemprop="copyrightHolder">&copy; {imageCopyright}</Small>}
+                                {captionCredit && 
+                                    <CaptionCreditIconWrapper>
+                                        <CaptionCreditIcon src={cameraIcon} title={captionCredit} alt="Image caption and credit" aria-label="Image caption and credit" itemprop="copyrightHolder" />
+                                    </CaptionCreditIconWrapper> 
+                                }
                             </>
                         }
                     </LazyImage>

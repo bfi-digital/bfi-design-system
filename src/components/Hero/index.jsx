@@ -268,7 +268,9 @@ const CaptionCreditIconWrapper = styled.div`
         left: calc(50% - 650px);
     }
 `
-const CaptionCreditIcon = styled.div`
+const CaptionCreditIcon = styled.button`
+    border: none;
+    border-radius: 100%;
     width: 30px;
     height: 30px;
     float: right;
@@ -278,7 +280,7 @@ const CaptionCreditIcon = styled.div`
     opacity: 0.8;
     background: url(${cameraIcon});
     background-size: 100%;
-    &:hover {
+    &:hover, &:focus {
         opacity: 1;
 
         &::after {
@@ -295,6 +297,10 @@ const CaptionCreditIcon = styled.div`
             -moz-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.4);
             box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.4);
         }
+    }
+    &:focus {
+        border: solid 3px ${theme.focus};
+        outline: none;
     }
 `
 const VideoContainer = styled.figure`
@@ -419,7 +425,7 @@ export const Hero = ({
                         }
                         {captionCredit && 
                             <CaptionCreditIconWrapper>
-                                <CaptionCreditIcon src={cameraIcon} title={captionCredit} alt="" />
+                                <CaptionCreditIcon src={cameraIcon} title={captionCredit} alt="Image caption and credit" aria-label="Image caption and credit" itemprop="copyrightHolder" />
                             </CaptionCreditIconWrapper> 
                         }
                         <Container>
