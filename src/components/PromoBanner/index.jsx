@@ -203,7 +203,6 @@ const Image = styled.div`
         margin-left: ${props => props.pageWithSidebar ? "0" : props.reversed ? "-20px" : "20px"};
     }
     @media screen and (min-width: ${theme.l}){
-        width: 100%;
         margin-right: 0px;
         margin-left: 0px;
     }
