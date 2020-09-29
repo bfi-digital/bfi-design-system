@@ -8,6 +8,7 @@ import parse from "html-react-parser"
 import { Headline } from "../Headline"
 import { LeadParagraph } from "../LeadParagraph"
 import { Wrapper } from "../PageContainer"
+import cameraIcon from "./camera_icon.svg"
 
 
 const StyledWrapper = styled(Wrapper)`
@@ -264,6 +265,54 @@ const Video = styled.div`
     }
 `
 
+const CaptionCreditIconWrapper = styled.div`
+    position: absolute;
+    width: 100%;
+    display: none;
+
+    @media screen and (min-width: ${theme.m}){
+        bottom: 15px;
+        max-width: 100%;
+        right: 15px;
+        display: block;
+    }
+`
+const CaptionCreditIcon = styled.button`
+    border: none;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    float: right;
+    cursor: help;
+    cursor: help;
+    position: relative;
+    opacity: 0.8;
+    background: url(${cameraIcon});
+    background-size: 100%;
+    &:hover, &:focus {
+        opacity: 1;
+
+        &::after {
+            position: absolute;
+            top: calc(100% + 5px);
+            right: calc(100% - 30px);
+            display: block;
+            padding: 10px 15px;
+            width: max-content;
+            background: ${theme.lightest};
+            content: attr(title);
+            z-index: 9998;
+            -webkit-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.4);
+            -moz-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.4);
+            box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.4);
+        }
+    }
+    &:focus {
+        border: solid 3px ${theme.focus};
+        outline: none;
+    }
+`
+
 export const HeroShow = ({
     image1920x1080,
     image192x108,
@@ -273,6 +322,7 @@ export const HeroShow = ({
     dateTimeStart,
     oembedObject,
     showType,
+    captionCredit,
     children
 }) =>
     <StyledWrapper>
@@ -304,11 +354,18 @@ export const HeroShow = ({
                             }}
                         >
                             {src => 
-                                <StyledImage
-                                    itemprop="image"
-                                    src={src}
-                                    alt={imageAltText ? imageAltText : ""}
-                                />
+                                <>
+                                    <StyledImage
+                                        itemprop="image"
+                                        src={src}
+                                        alt={imageAltText ? imageAltText : ""}
+                                    />
+                                    {captionCredit && 
+                                        <CaptionCreditIconWrapper>
+                                            <CaptionCreditIcon src={cameraIcon} title={captionCredit} alt="Image caption and credit" aria-label="Image caption and credit" itemprop="copyrightHolder" />
+                                        </CaptionCreditIconWrapper> 
+                                    }
+                                </>
                             }
                         </LazyImage>
                     </ImageContainer>

@@ -1,6 +1,8 @@
 import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
 import { HeroShow } from "../../../components/HeroShow/index"
 import {longData as crumbs} from "../../../components/Breadcrumbs/data"
+import { Actions } from "../../../components/PageContainer"
+import { Button } from "../../../components/Button"
 
 <Meta title="2 Pattern Library/1 Structure/Hero Show" component={HeroShow} />
 
@@ -27,34 +29,56 @@ The hero page uses the featured image for a background, and has a white H1 for t
             maxWidth: "1000px",
             margin: "0 auto"
         }}>
-            <HeroShow 
+            <HeroShow
                 image1920x1080="https://player.bfi.org.uk/sites/default/files/styles/landscape_960x540/public/hero-images/lynn_lucy-1920.jpg?itok=KIE4JhQI"
                 image192x108="https://player.bfi.org.uk/sites/default/files/styles/landscape_960x540/public/hero-images/lynn_lucy-1920.jpg?itok=KIE4JhQI"
                 title="Lynn + Lucy"
                 standfirst="Lynn + Lucy premieres online at London Film Festival. A lifelong friendship is tested by tragedy in this atmospheric and intense first feature from acclaimed British shorts director Fyzal Boulifa."
-                dateTimeStart="2020-10-08T13:00"
-                dateTimeEnd="2020-10-08T14:28"
-            />
+                dateTimeStart="2020-10-15T13:00"
+            >
+                <Actions>
+                    <Button url="https://player.bfi.org.uk/subscription/film/watch-lynn-lucy-2019-online" external={true} level={1} colorScheme={1}>Book now</Button>
+                </Actions>
+            </HeroShow>
         </div>
     </Story>
-</Preview>
-
-<Preview>
-    <Story name="Film with 1 performance - full festival">
+    <Story name="Film with multi performances and credit">
         <div style={{
             padding: "10px",
             maxWidth: "1000px",
             margin: "0 auto"
         }}>
-            <HeroShow 
+            <HeroShow
                 image1920x1080="https://player.bfi.org.uk/sites/default/files/styles/landscape_960x540/public/hero-images/lynn_lucy-1920.jpg?itok=KIE4JhQI"
                 image192x108="https://player.bfi.org.uk/sites/default/files/styles/landscape_960x540/public/hero-images/lynn_lucy-1920.jpg?itok=KIE4JhQI"
                 title="Lynn + Lucy"
                 standfirst="Lynn + Lucy premieres online at London Film Festival. A lifelong friendship is tested by tragedy in this atmospheric and intense first feature from acclaimed British shorts director Fyzal Boulifa."
-                dateTimeStart="2020-10-08T13:00"
-                dateTimeEnd="2020-10-18T23:55"
-            />
+                captionCredit="This is a caption - Tim Apple"
+            >
+                <Actions>
+                    <Button url="https://player.bfi.org.uk/subscription/film/watch-lynn-lucy-2019-online" external={true} level={1} colorScheme={1}>Book now</Button>
+                </Actions>
+            </HeroShow>
+        </div>
+    </Story>
+    <Story name="Film with multi performances and video">
+        <div style={{
+            padding: "10px",
+            maxWidth: "1000px",
+            margin: "0 auto"
+        }}>
+            <HeroShow
+                image1920x1080="https://player.bfi.org.uk/sites/default/files/styles/landscape_960x540/public/hero-images/lynn_lucy-1920.jpg?itok=KIE4JhQI"
+                image192x108="https://player.bfi.org.uk/sites/default/files/styles/landscape_960x540/public/hero-images/lynn_lucy-1920.jpg?itok=KIE4JhQI"
+                title="Lynn + Lucy"
+                standfirst="Lynn + Lucy premieres online at London Film Festival. A lifelong friendship is tested by tragedy in this atmospheric and intense first feature from acclaimed British shorts director Fyzal Boulifa."
+                captionCredit="This is a caption - Tim Apple"
+                oembedObject={{ html: "\u003ciframe width=\"480\" height=\"270\" src=\"https://www.youtube.com/embed/jp__9PIwOEA?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen\u003e\u003c/iframe\u003e"}}
+            >
+                <Actions>
+                    <Button url="https://player.bfi.org.uk/subscription/film/watch-lynn-lucy-2019-online" external={true} level={1} colorScheme={1}>Book now</Button>
+                </Actions>
+            </HeroShow>
         </div>
     </Story>
 </Preview>
-
