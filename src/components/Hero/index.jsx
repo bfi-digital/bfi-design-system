@@ -330,6 +330,11 @@ const Video = styled.video`
     width: 100%;
     height: 100%;
 
+    @media screen and (max-width: ${theme.m}){
+        width: auto;
+        transform: ${props => props.noTitleText ? "none" : "translateX(-25%)"};
+    }
+
     @media screen and (min-width: ${theme.m}){
         max-width: 100%;
         height: auto;
@@ -411,7 +416,7 @@ export const Hero = ({
                             <>
                                 <VideoContainer>
                                     <VideoInner noTitleText={noTitleText}>
-                                        <Video playsInline autoPlay muted loop ref={vidRef}>
+                                        <Video playsInline autoPlay muted loop ref={vidRef} noTitleText={noTitleText}>
                                             <source src={videoMP4} type="video/mp4" />
                                             <source src={videoWEBM} type="video/webm; codecs=vp9,vorbis" />
                                         </Video>
