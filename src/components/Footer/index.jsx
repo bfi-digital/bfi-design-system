@@ -138,6 +138,9 @@ const BottomLinks = styled.ul`
                 text-decoration: underline;
             }
         }
+        li {
+            display: inline-block;
+        }
     }
 `
 
