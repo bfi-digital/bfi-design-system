@@ -22,11 +22,19 @@ const calculateTimeLeft = (festivalDate) => {
 }
 
 const Outer = styled.div`
-    margin-top: ${theme.standardSpace}px;
-    
+    margin-bottom: ${theme.standardSpace*1.5}px;
+    margin-top: ${theme.standardSpace*1.5}px;
+
     @media screen and (min-width: ${theme.m}) {
         display: flex;
         justify-content: center;
+        margin-bottom: ${theme.standardSpace*2}px;
+        margin-top: ${theme.standardSpace*2}px;
+    }
+
+    @media screen and (min-width: ${theme.l}){
+        margin-bottom: ${theme.standardSpace*2.5}px;
+        margin-top: ${theme.standardSpace*2.5}px;
     }
 `
 

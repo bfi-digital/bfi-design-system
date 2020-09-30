@@ -52,8 +52,8 @@ const Outer = styled.section`
     color: ${props => colorSchemes[props.colorScheme].text};
     position: relative;
 
-    margin-bottom: ${theme.standardSpace*2}px;
-    margin-top: ${theme.standardSpace*2}px;
+    margin-bottom: ${theme.standardSpace*1.5}px;
+    margin-top: ${theme.standardSpace*1.5}px;
 
     h2 {
         margin-top: 0px !important;
@@ -79,16 +79,16 @@ const Outer = styled.section`
 
     @media screen and (min-width: ${theme.m}){
         flex-direction: ${props => props.pageWithSidebar ? "column" : "row"};
-        margin-bottom: ${theme.standardSpace*2.5}px;
-        margin-top: ${theme.standardSpace*2.5}px;
+        margin-bottom: ${theme.standardSpace*2}px;
+        margin-top: ${theme.standardSpace*2}px;
 
         a {
             margin-top: auto;
         }
     }
     @media screen and (min-width: ${theme.l}){
-        margin-bottom: ${theme.standardSpace*3}px;
-        margin-top: ${theme.standardSpace*3}px;
+        margin-bottom: ${theme.standardSpace*2.5}px;
+        margin-top: ${theme.standardSpace*2.5}px;
         &:before {
             display: none;
         }
