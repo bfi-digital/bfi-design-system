@@ -6,7 +6,9 @@ import demoArticles from "../../../components/ArticleGrid/data"
 
 # Filterable Articles
  
+This component combines the [FilterLinks](/?path=/docs/2-pattern-library-1-structure-filter-links--normal) component with the [ArticleGrid](/?path=/docs/2-pattern-library-4-slices-article-grid--multiple-articles-with-first-highlighted) slice in order for the BFI Web Frontent to create an infinite scrolling page of articles. 
 
+Importantly there needs to be a function passed to this component called `loadMore` which will provide the functionality to load additional articles from the API.
 
 ## Props 
 
@@ -14,7 +16,6 @@ import demoArticles from "../../../components/ArticleGrid/data"
 
 
 ## Examples
-Due to this component requiring connection with the front end framework to pull data from the API, it is not possible to display an example of this component within Storybook.
 
 <Preview>
     <Story name="All articles">

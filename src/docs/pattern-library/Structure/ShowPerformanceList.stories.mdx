@@ -4,7 +4,17 @@ import demoPerformances from "../../../components/ShowPerformanceList/data"
 
 <Meta title="2 Pattern Library/1 Structure/Show Performance List" component={ShowPerformanceList} />
 
-# Programme Banner
+# Show performance List
+
+This component is embedded automatically within the show page template if the show in question contains more than one performance.
+
+This list of performances is displayed underneath the body content of the show, but is linked to from the hero so that the user can get access to the primary call to actions as quickly and easy as possible. 
+
+It provides a list of the performances of a show with contextual information that will adapt automatically depending on the performance.
+
+A performance can have many states, it can be avaliable/unavaliable/sold out, or it can be in the future, or past, and it can be set over a period of days or a single date. All of this detail is used to create each performance listing.
+
+If a performance is running on a single day rather than over the course of multiple it will also be provided an add to calendar button functionality - the reason for it not being avaliable on days spanning multiple days is to not cause frustrations for users who download the calendar invite and have days/weeks blocked out in their calendar. *within the design system the calendar icons will not appear as they require [Font Awesome](https://fontawesome.com/v4.7.0/) to be installed* Font aAesome has not been installed on the designs system in order to minimise its size.
 
 ## Examples 
 
