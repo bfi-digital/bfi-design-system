@@ -283,7 +283,7 @@ export const PromoBanner = ({
     secondImagePrefix,
     external,
     oembedObject,
-    pageWithSidebar
+    pageWithSidebar = false
 }) =>
     <Outer 
         className={external ? "external_link promoBanner" : "promoBanner"}
