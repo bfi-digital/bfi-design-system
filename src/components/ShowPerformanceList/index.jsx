@@ -203,23 +203,44 @@ export const ShowPerformanceList = ({
     function getPerformanceButton(performance) {
         let button
 
-        performance.availability === "available" ? 
-            performance.platform === "southbank" ? 
-                button = <StyledButton level={1} url={performance.ctaURL} external={true}>Book now</StyledButton>
-                : 
-                performance.platform === "player" || performance.platform === "youtube" ? 
-                    performance.paywall === "free" ?
-                        button = <PlayButton url={performance.ctaURL} external={true} level={1}>Watch now</PlayButton>
-                        :
-                        button = <StyledButton level={1} url={performance.ctaURL} external={true}>Book now</StyledButton>
+        if(performance.availability === "available"){
+            performance.availability === "available" ?
+                performance.platform === "southbank" ?
+                    button = <StyledButton level={1} url={performance.ctaURL} external={true}>Book now</StyledButton>
                     :
-                    performance.platform === "xr" ?
-                        button = <StyledButton level={1} url={performance.ctaURL} external={true}>Watch now</StyledButton>
+                    performance.platform === "player" || performance.platform === "youtube" ?
+                        performance.paywall === "free" ?
+                            button = <PlayButton url={performance.ctaURL} external={true} level={1}>Watch now</PlayButton>
+                            :
+                            button = <StyledButton level={1} url={performance.ctaURL} external={true}>Book now</StyledButton>
                         :
-                        performance.platform === "external" ? 
-                            button = <StyledButton level={1} url={performance.ctaURL} external={true}>Check availability</StyledButton>
-                            :null
-            :
+                        performance.platform === "xr" ?
+                            button = <StyledButton level={1} url={performance.ctaURL} external={true}>Watch now</StyledButton>
+                            :
+                            performance.platform === "external" ?
+                                button = <StyledButton level={1} url={performance.ctaURL} external={true}>Check availability</StyledButton>
+                                :null
+                :button =""            
+        }
+        else if(performance.availability === "On sale now"){
+            performance.availability === "On sale now" ?
+                performance.platform === "southbank" ?
+                    button = <StyledButton level={1} url={performance.ctaURL} external={true}>Book now</StyledButton>
+                    :
+                    performance.platform === "player" || performance.platform === "youtube" ?
+                        performance.paywall === "free" ?
+                            button = <PlayButton url={performance.ctaURL} external={true} level={1}>Book now</PlayButton>
+                            :
+                            button = <StyledButton level={1} url={performance.ctaURL} external={true}>Book now</StyledButton>
+                        :
+                        performance.platform === "xr" ?
+                            button = <StyledButton level={1} url={performance.ctaURL} external={true}>Watch now</StyledButton>
+                            :
+                            performance.platform === "external" ?
+                                button = <StyledButton level={1} url={performance.ctaURL} external={true}>Check availability</StyledButton>
+                                :null
+                :button =""
+        }else{
             button = <StyledButton level={1} disabled>
                 {performance.availability === "unavailable" && performance.paywall === "free" ? "Coming soon" :
                     performance.availability === "soldout" ? "Sold out"
@@ -227,32 +248,7 @@ export const ShowPerformanceList = ({
                             (performance.paywall === "free" && performance.platform !== "southbank" ? "Coming soon" : "Check back for tickets") 
                             : "No longer available")}
             </StyledButton>
-
-        performance.availability === "On sale now" ?
-            performance.platform === "southbank" ?
-                button = <StyledButton level={1} url={performance.ctaURL} external={true}>Book now</StyledButton>
-                :
-                performance.platform === "player" || performance.platform === "youtube" ?
-                    performance.paywall === "free" ?
-                        button = <PlayButton url={performance.ctaURL} external={true} level={1}>Book now</PlayButton>
-                        :
-                        button = <StyledButton level={1} url={performance.ctaURL} external={true}>Book now</StyledButton>
-                    :
-                    performance.platform === "xr" ?
-                        button = <StyledButton level={1} url={performance.ctaURL} external={true}>Watch now</StyledButton>
-                        :
-                        performance.platform === "external" ?
-                            button = <StyledButton level={1} url={performance.ctaURL} external={true}>Check availability</StyledButton>
-                            :null
-            :
-            button = <StyledButton level={1} disabled>
-                {performance.availability === "unavailable" && performance.paywall === "free" ? "Coming soon" :
-                    performance.availability === "soldout" ? "Sold out"
-                        : (dateIsInPast(new Date(performance.dateTimeStart), new Date()) ?
-                            (performance.paywall === "free" && performance.platform !== "southbank" ? "Coming soon" : "Check back for tickets")
-                            : "No longer available")}
-            </StyledButton>
-        
+        }
         return button
     }
 }
