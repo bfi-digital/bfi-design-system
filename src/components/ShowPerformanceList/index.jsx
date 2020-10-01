@@ -191,13 +191,12 @@ export const ShowPerformanceList = ({
                 info = <span>{performance.availability === "soldout" ? "No longer available to see " : "Screening" } at BFI Southbank</span>
                 :
                 performance.platform === "player" ?
-                    info = <span>{performance.availability === "soldout" ? "No longer available" : performance.availability === "unavailable" ? "Soon to be available" : "Available"} to watch on BFI Player</span>
+                    info = <span>{performance.availability === "soldout" ? "No longer available" : performance.availability === "unavailable" ? "Soon to be available" : "Available"} on BFI Player</span>
                     :
                     performance.platform === "youtube" ?
                         info = <span>Watch on YouTube</span>     
                         : 
                         null
-
         return <p>{info}{performance.screen && <span>&nbsp;&ndash;&nbsp;{performance.screen}</span>}</p>
     }
 
@@ -226,6 +225,31 @@ export const ShowPerformanceList = ({
                     performance.availability === "soldout" ? "Sold out"
                         : (dateIsInPast(new Date(performance.dateTimeStart), new Date()) ? 
                             (performance.paywall === "free" && performance.platform !== "southbank" ? "Coming soon" : "Check back for tickets") 
+                            : "No longer available")}
+            </StyledButton>
+
+        performance.availability === "On sale now" ?
+            performance.platform === "southbank" ?
+                button = <StyledButton level={1} url={performance.ctaURL} external={true}>Book now</StyledButton>
+                :
+                performance.platform === "player" || performance.platform === "youtube" ?
+                    performance.paywall === "free" ?
+                        button = <PlayButton url={performance.ctaURL} external={true} level={1}>Book now</PlayButton>
+                        :
+                        button = <StyledButton level={1} url={performance.ctaURL} external={true}>Book now</StyledButton>
+                    :
+                    performance.platform === "xr" ?
+                        button = <StyledButton level={1} url={performance.ctaURL} external={true}>Watch now</StyledButton>
+                        :
+                        performance.platform === "external" ?
+                            button = <StyledButton level={1} url={performance.ctaURL} external={true}>Check availability</StyledButton>
+                            :null
+            :
+            button = <StyledButton level={1} disabled>
+                {performance.availability === "unavailable" && performance.paywall === "free" ? "Coming soon" :
+                    performance.availability === "soldout" ? "Sold out"
+                        : (dateIsInPast(new Date(performance.dateTimeStart), new Date()) ?
+                            (performance.paywall === "free" && performance.platform !== "southbank" ? "Coming soon" : "Check back for tickets")
                             : "No longer available")}
             </StyledButton>
         
