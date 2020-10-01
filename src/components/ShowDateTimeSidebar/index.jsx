@@ -94,16 +94,16 @@ export const ShowDateTimeSidebar = ({
             info = <span>{performance.performanceInfo}</span>
             :
             performance.platform === "southbank" ? 
-                info = <span>{performance.availability === "soldout" ? "No longer available to see " : "Screening" } at BFI Southbank</span>
+                info = <span>{performance.availability === "soldout" ? "No longer available to see " : "Screening" } at {performance.screen? performance.screen: "BFI Southbank"}</span>
                 :
                 performance.platform === "player" ?
-                    info = <span>{performance.availability === "soldout" ? "No longer available" : performance.availability === "unavailable" ? "Soon to be available" : "Available"} on BFI Player</span>
+                    info = <span>{performance.availability === "soldout" ? "No longer available" : performance.availability === "unavailable" ? "Soon to be available" : "Available"} on {performance.screen? performance.screen: "BFI Player"}</span>
                     :
                     performance.platform === "youtube" ?
                         info = <span>Watch on YouTube</span>     
                         : 
                         null
 
-        return <p>{info}{performance.screen && <span>&nbsp;&ndash;&nbsp;{performance.screen}</span>}</p>
+        return <p>{info}</p>
     }
 }
