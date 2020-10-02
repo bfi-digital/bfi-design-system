@@ -252,20 +252,10 @@ const CaptionCreditIconWrapper = styled.div`
     display: none;
 
     @media screen and (min-width: ${theme.m}){
-        top: 83px;
-        max-width: calc(100% - 30px);
-        right: 30px;
+        bottom: 70px;
+        max-width: calc(100% - 55px);
+        right: 40px;
         display: block;
-    }
-    @media screen and (min-width: ${theme.l}){
-        max-width: 950px;
-        top: 62px;
-        left: calc(50% - 465px);
-    }
-    @media screen and (min-width: ${theme.xl}){
-        max-width: 1285px;
-        top: 62px;
-        left: calc(50% - 650px);
     }
 `
 const CaptionCreditIcon = styled.button`
@@ -376,8 +366,8 @@ export const Hero = ({
     standfirst,
     withHeader,
     copyright,
+    imageCaption,
     children,
-    captionCredit,
     noTitleText,
     videoMP4,
     videoWEBM
@@ -428,10 +418,15 @@ export const Hero = ({
                         {image1920x1080 && 
                             <InnerGradient withHeader={withHeader} noTitleText={noTitleText} withVideo={(videoMP4 || videoWEBM)} /> 
                         }
-                        {captionCredit && 
-                            <CaptionCreditIconWrapper>
-                                <CaptionCreditIcon src={cameraIcon} title={captionCredit} alt="Image caption and credit" aria-label="Image caption and credit" itemprop="copyrightHolder" />
-                            </CaptionCreditIconWrapper> 
+                        {imageCaption &&
+                                    <CaptionCreditIconWrapper>
+                                        <CaptionCreditIcon src={cameraIcon}
+                                            title={copyright?
+                                                (imageCaption +". " + "\u00A9 " + copyright+". "): imageCaption+"." }
+                                            alt="Image caption and credit"
+                                            aria-label="Image caption and credit"
+                                            itemprop="copyrightHolder" />
+                                    </CaptionCreditIconWrapper>
                         }
                         <Container>
                             {headline && <Headline level={0} text={headline} visuallyHidden={noTitleText} />}

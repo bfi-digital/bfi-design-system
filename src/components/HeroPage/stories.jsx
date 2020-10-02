@@ -15,7 +15,8 @@ export const normal = () =>
         <HeroPage 
             image1920x1080="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1920/1080/1/2020-03/Hero.jpg"
             imageAltText="Alt text for the image"
-            imageCopyright="HELP MUSICIANS, directed by Thomas Guthrie"
+            imageCaption="BFI Southbank"
+            imageCopyRight="HELP MUSICIANS, directed by Thomas Guthrie"
             title="Britain on Lockdown: How online videos have shaped the crisis"
             standfirst="As the BFI National Archive calls on the British public to help map the digital video response to coronavirus across the UK, our curators begin a regular new series highlighting the online videos that have made an impact during the lockdown period."
             category="Article category"

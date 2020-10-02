@@ -262,7 +262,8 @@ export const HeroPage = ({
     image1920x1080,
     image192x108,
     imageAltText,
-    captionCredit,
+    imageCopyRight,
+    imageCaption,
     title,
     standfirst,
     breadcrumbs,
@@ -292,10 +293,15 @@ export const HeroPage = ({
                                     src={src}
                                     alt={imageAltText ? imageAltText : ""}
                                 />
-                                {captionCredit && 
+                                {imageCaption &&
                                     <CaptionCreditIconWrapper>
-                                        <CaptionCreditIcon src={cameraIcon} title={captionCredit} alt="Image caption and credit" aria-label="Image caption and credit" itemprop="copyrightHolder" />
-                                    </CaptionCreditIconWrapper> 
+                                        <CaptionCreditIcon src={cameraIcon}
+                                            title={imageCopyRight?
+                                                (imageCaption +". " + "\u00A9 " + imageCopyRight+". "): imageCaption+"." }
+                                            alt="Image caption and credit"
+                                            aria-label="Image caption and credit"
+                                            itemprop="copyrightHolder" />
+                                    </CaptionCreditIconWrapper>
                                 }
                             </>
                         }

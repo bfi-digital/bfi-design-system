@@ -13,7 +13,9 @@ export const normal = () =>
     <Hero 
         image1920x1080="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1920/1080/1/2020-03/Hero.jpg"
         headline="Watch a new film, rediscover your old favourites, and get inspired."
-        copyright="Image: Firstname Surname"
+        copyright="HELP MUSICIANS, directed by Thomas Guthrie"
+        imageCaption="BFI Southbank"
+        imageCopyRight=""
     />
 
 export const withHeader = () =>

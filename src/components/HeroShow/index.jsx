@@ -322,7 +322,8 @@ export const HeroShow = ({
     dateTimeStart,
     oembedObject,
     showType,
-    captionCredit,
+    imageCopyRight,
+    imageCaption,
     children
 }) =>
     <StyledWrapper>
@@ -360,10 +361,15 @@ export const HeroShow = ({
                                         src={src}
                                         alt={imageAltText ? imageAltText : ""}
                                     />
-                                    {captionCredit && 
-                                        <CaptionCreditIconWrapper>
-                                            <CaptionCreditIcon src={cameraIcon} title={captionCredit} alt="Image caption and credit" aria-label="Image caption and credit" itemprop="copyrightHolder" />
-                                        </CaptionCreditIconWrapper> 
+                                    {imageCaption &&
+                                    <CaptionCreditIconWrapper>
+                                        <CaptionCreditIcon src={cameraIcon}
+                                            title={imageCopyRight?
+                                                (imageCaption +". " + "\u00A9 " + imageCopyRight+". "): imageCaption+"." }
+                                            alt="Image caption and credit"
+                                            aria-label="Image caption and credit"
+                                            itemprop="copyrightHolder" />
+                                    </CaptionCreditIconWrapper>
                                     }
                                 </>
                             }
