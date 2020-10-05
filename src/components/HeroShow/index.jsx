@@ -365,7 +365,7 @@ export const HeroShow = ({
                                     <CaptionCreditIconWrapper>
                                         <CaptionCreditIcon src={cameraIcon}
                                             title={imageCopyRight?
-                                                (imageCaption +". " + "\u00A9 " + imageCopyRight+". "): imageCaption+"." }
+                                                (imageCaption +" " + "\u00A9 " + imageCopyRight): imageCaption}
                                             alt="Image caption and credit"
                                             aria-label="Image caption and credit"
                                             itemprop="copyrightHolder" />

@@ -421,8 +421,8 @@ export const Hero = ({
                         {imageCaption &&
                                     <CaptionCreditIconWrapper>
                                         <CaptionCreditIcon src={cameraIcon}
-                                            title={copyright?
-                                                (imageCaption +". " + "\u00A9 " + copyright+". "): imageCaption+"." }
+                                            title={copyright ?
+                                                (imageCaption +" " + "\u00A9 " + copyright): imageCaption}
                                             alt="Image caption and credit"
                                             aria-label="Image caption and credit"
                                             itemprop="copyrightHolder" />
