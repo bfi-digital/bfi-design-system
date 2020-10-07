@@ -7,6 +7,7 @@ import { Headline } from "../Headline"
 import { LeadParagraph } from "../LeadParagraph"
 import { Breadcrumbs } from "../Breadcrumbs"
 import cameraIcon from "./camera_icon.svg"
+import cameraIconMobile from "./camera_icon_mobile.svg"
 
 const Outer = styled.div`
     margin: 0 auto;
@@ -28,10 +29,8 @@ const Outer = styled.div`
         padding-bottom: ${theme.standardSpace}px;
         margin-bottom: ${theme.standardSpace}px;
         position: relative; 
-        margin-top: -${theme.standardSpace}px;
 
         @media screen and (min-width: ${theme.m}){
-            margin-top: -${theme.standardSpace}px;
             padding-top: ${theme.standardSpace*1.5}px;
             padding-bottom: ${theme.standardSpace*1.5}px; 
         }
@@ -207,7 +206,7 @@ const StyledImage = styled.img`
 `
 
 const BreadcrumbContainer = styled.div`
-    margin-bottom: ${theme.standardSpace}px;
+    margin-bottom: 15px;
 `
 
 const CaptionCreditIconWrapper = styled.div`
@@ -234,6 +233,9 @@ const CaptionCreditIcon = styled.button`
     opacity: 0.8;
     background: url(${cameraIcon});
     background-size: 100%;
+    filter: drop-shadow( 0px 1px 0px rgba(0, 0, 0, .5));
+    -webkit-filter: drop-shadow( 0px 1px 0px rgba(0, 0, 0, .5));
+    
     &:hover, &:focus {
         opacity: 1;
 
@@ -257,12 +259,26 @@ const CaptionCreditIcon = styled.button`
         outline: none;
     }
 `
+const MobileCaptionWrapper = styled.div`
+    font-size: ${theme.small_fontSize_m};
+    margin-top: 10px;
+
+    @media screen and (min-width: ${theme.m}){
+        display: none;
+    }
+`
+const MobileCaptionCreditIcon = styled.img`
+    width: 15px;
+    height: auto;
+    margin-right: 5px;
+    margin-bottom: -3px;
+`
 
 export const HeroPage = ({
     image1920x1080,
     image192x108,
     imageAltText,
-    imageCopyRight,
+    copyright,
     imageCaption,
     title,
     standfirst,
@@ -270,7 +286,9 @@ export const HeroPage = ({
     isServiceListPage = false
 }) =>
     <>
-        <BreadcrumbContainer><Breadcrumbs breadcrumbs={breadcrumbs} /></BreadcrumbContainer>
+        {breadcrumbs && 
+            <BreadcrumbContainer><Breadcrumbs breadcrumbs={breadcrumbs} /></BreadcrumbContainer>
+        }
 
         <Outer className={image1920x1080 ? "with_image" : (isServiceListPage ? "service_list_no_image" : "without_image")}>
             <Meta className="page_meta" titleLength={title.length}>
@@ -296,8 +314,8 @@ export const HeroPage = ({
                                 {imageCaption &&
                                     <CaptionCreditIconWrapper>
                                         <CaptionCreditIcon src={cameraIcon}
-                                            title={imageCopyRight?
-                                                (imageCaption +" "+ "\u00A9 " + imageCopyRight): imageCaption}
+                                            title={copyright?
+                                                (imageCaption +" "+ "\u00A9 " + copyright): imageCaption}
                                             alt="Image caption and credit"
                                             aria-label="Image caption and credit"
                                             itemprop="copyrightHolder" />
@@ -306,9 +324,16 @@ export const HeroPage = ({
                             </>
                         }
                     </LazyImage>
+                    {imageCaption &&
+                        <MobileCaptionWrapper>
+                            <MobileCaptionCreditIcon src={cameraIconMobile} alt="" />
+                            {copyright ? (imageCaption +" " + "\u00A9 " + copyright): imageCaption}
+                        </MobileCaptionWrapper>
+                    }
                 </ImageContainer>
             }
         </Outer>
+        
     </>
 
 
@@ -324,7 +349,7 @@ HeroPage.propTypes = {
     /** 
     * Optional copyright text for the hero image.
     **/
-    imageCopyright: PropTypes.string,
+    copyright: PropTypes.string,
     /** 
     * The text for the title which will be used as the H1 for this page/post
     **/

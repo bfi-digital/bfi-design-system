@@ -43,6 +43,23 @@ The image can also have a credit or caption added to it which will include an ac
     </Story>
 </Preview>
 
+
+<Preview>
+    <Story name="Page example without image or breadcrumbs">
+        <div style={{
+            padding: "10px",
+            maxWidth: "1000px",
+            margin: "0 auto"
+        }}>
+            <HeroPage 
+                title="Development Fund"
+                standfirst="We want to support work that takes risks and does something different. This means we fund projects that can’t find other, commercial finance at development stage."
+                isServiceListPage
+            />
+        </div>
+    </Story>
+</Preview>
+
 <Preview>
     <Story name="Page example with image">
         <div style={{
@@ -54,6 +71,24 @@ The image can also have a credit or caption added to it which will include an ac
                 title="Development Fund"
                 standfirst="We want to support work that takes risks and does something different. This means we fund projects that can’t find other, commercial finance at development stage."
                 breadcrumbs={crumbs}
+                image1920x1080="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1920/1080/1/2020-03/Hero.jpg"
+                image192x108="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/192/108/1/2020-03/Hero.jpg"
+                imageAltText="Alt text for the image"
+            />
+        </div>
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="Page example with image no breadcrumbs">
+        <div style={{
+            padding: "10px",
+            maxWidth: "1000px",
+            margin: "0 auto"
+        }}>
+            <HeroPage 
+                title="Development Fund"
+                standfirst="We want to support work that takes risks and does something different. This means we fund projects that can’t find other, commercial finance at development stage."
                 image1920x1080="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1920/1080/1/2020-03/Hero.jpg"
                 image192x108="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/192/108/1/2020-03/Hero.jpg"
                 imageAltText="Alt text for the image"
@@ -77,7 +112,8 @@ The image can also have a credit or caption added to it which will include an ac
                 image192x108="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/192/108/1/2020-03/Hero.jpg"
                 imageAltText="Alt text for the image"
                 imageAltText="Image alt text"
-                captionCredit="Image copyright"
+                copyright="Tim Apple"
+                imageCaption="This is a caption"
             />
         </div>
     </Story>

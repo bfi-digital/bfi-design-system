@@ -945,192 +945,6 @@ exports[`Storyshots 4 Components/All/Headline Level 3 1`] = `
 </h3>
 `;
 
-exports[`Storyshots 4 Components/All/Hero Show Normal 1`] = `
-Array [
-  <a
-    className="sc-iyvyFf fAOpLk"
-    href="#content-start"
-  >
-    <div
-      className="inner"
-    >
-      <div
-        className="button_like"
-      >
-        Skip to content
-      </div>
-    </div>
-  </a>,
-  <header
-    className="sc-elJkPf WYco"
-    onMouseLeave={[Function]}
-  >
-    <div
-      className="sc-jtRfpW gmhOEc"
-    >
-      <button
-        aria-controls="menu-panel"
-        aria-expanded="false"
-        className="sc-uJMKN jEiZHe"
-        onClick={[Function]}
-      >
-        <div
-          className="sc-jqCOkK jVpyba"
-          open={false}
-        >
-          <div />
-        </div>
-        Menu
-      </button>
-      <a
-        className="sc-gxMtzJ edGQKQ"
-        href="/"
-        target="_self"
-      >
-        <img
-          alt="Home"
-          className="sc-kTUwUJ gTEfuL"
-          src="test-file-stub"
-        />
-      </a>
-      <div
-        className="sc-dfVpRl iZjHpU"
-      />
-      <nav
-        aria-label="Main"
-        className="sc-bbmXgH DvyMD"
-        onMouseLeave={[Function]}
-        role="navigation"
-      >
-        <ul
-          className="sc-gGBfsJ hxvxQz"
-        >
-          <li
-            className="sc-fYxtnH hezWIt"
-          >
-            <a
-              className="sc-cmTdod iQFRIO"
-              href="/"
-              target="_self"
-            >
-              <img
-                alt="Home"
-                className="sc-jwKygS hBjOAf"
-                src="test-file-stub"
-              />
-            </a>
-          </li>
-          <li
-            className="sc-fYxtnH hezWIt"
-          >
-            <a
-              active={true}
-              aria-expanded={false}
-              aria-haspopup="true"
-              className="sc-jnlKLf jimsQl"
-              data-tracking="header-navigation"
-              hovered={false}
-              href="/iframe.html?id=pattern-library-page-examples-1-watch-discover--1-landing-page"
-              isSticky={true}
-              isWhite={false}
-              onFocus={[Function]}
-              onMouseEnter={[Function]}
-              target="_self"
-            >
-              Watch and Discover
-            </a>
-            <button
-              className="sc-bYSBpT fiuaab"
-              onClick={[Function]}
-            >
-              Open
-               submenu
-            </button>
-          </li>
-          <li
-            className="sc-fYxtnH hezWIt"
-          >
-            <a
-              aria-expanded={false}
-              aria-haspopup="true"
-              className="sc-jnlKLf dXIOFi"
-              data-tracking="header-navigation"
-              hovered={false}
-              href="/iframe.html?id=pattern-library-page-examples-2-funding-industry--1-landing-page"
-              isSticky={true}
-              isWhite={false}
-              onFocus={[Function]}
-              onMouseEnter={[Function]}
-              target="_self"
-            >
-              Funding and Industry
-            </a>
-            <button
-              className="sc-bYSBpT fiuaab"
-              onClick={[Function]}
-            >
-              Open
-               submenu
-            </button>
-          </li>
-          <li
-            className="sc-fYxtnH hezWIt"
-          >
-            <a
-              aria-expanded={false}
-              aria-haspopup="true"
-              className="sc-jnlKLf dXIOFi"
-              data-tracking="header-navigation"
-              hovered={false}
-              href="/iframe.html?id=pattern-library-page-examples-1-watch-discover--1-landing-page"
-              isSticky={true}
-              isWhite={false}
-              onFocus={[Function]}
-              onMouseEnter={[Function]}
-              target="_self"
-            >
-              Learning and Training
-            </a>
-            <button
-              className="sc-bYSBpT fiuaab"
-              onClick={[Function]}
-            >
-              Open
-               submenu
-            </button>
-          </li>
-        </ul>
-      </nav>
-      <div
-        className="sc-gisBJw hTjmjc"
-      >
-        <a
-          className="sc-kjoXOD juAPPm"
-          href="/"
-          isSticky={true}
-          isTransparent={false}
-          target="_self"
-        >
-          Shop
-        </a>
-        <a
-          className="sc-kjoXOD juAPPm"
-          href="/"
-          isSticky={true}
-          isTransparent={false}
-          target="_self"
-        >
-          Become a member
-        </a>
-      </div>
-    </div>
-  </header>,
-  <div
-    id="content-start"
-  />,
-]
-`;
-
 exports[`Storyshots 4 Components/All/Lead paragraph Normal 1`] = `
 <div
   style={
@@ -1140,7 +954,7 @@ exports[`Storyshots 4 Components/All/Lead paragraph Normal 1`] = `
   }
 >
   <p
-    className="sc-hwwEjo gnELbr lead_paragraph"
+    className="sc-gisBJw iSkMRt lead_paragraph"
     dangerouslySetInnerHTML={
       Object {
         "__html": "We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough, they won't want it anymore! We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough, they won't want it anymore!",
@@ -1159,7 +973,7 @@ exports[`Storyshots 4 Components/All/Newsletter Sign Up Example 1`] = `
   }
 >
   <div
-    className="sc-iQNlJl iKMSMw"
+    className="sc-bbmXgH hWpDeQ"
   >
     <p
       aria-label=""
@@ -1172,13 +986,13 @@ exports[`Storyshots 4 Components/All/Newsletter Sign Up Example 1`] = `
     </p>
     <form
       action="https://www.createsend.com/t/subscribeerror?description="
-      className="sc-bsbRJL dFTaXQ js-cm-form"
+      className="sc-gGBfsJ kcgUuw js-cm-form"
       data-id="191722FC90141D02184CB1B62AB3DC26D57AD7AD0DF253BE15DD122C605B740244DFF1ADDEE1A8DA861127EDFD99BF281A7016BD9F175EAF91CB858CC76D303F"
       id="subForm"
       method="post"
     >
       <label
-        className="sc-hZSUBg jJlVko"
+        className="sc-jnlKLf PvLJs"
       >
         Email
         <input
@@ -1195,7 +1009,7 @@ exports[`Storyshots 4 Components/All/Newsletter Sign Up Example 1`] = `
         />
       </label>
       <button
-        className="sc-cMhqgX vDxPv"
+        className="sc-fYxtnH smrZa"
         type="submit"
       >
         Sign up
@@ -1207,7 +1021,7 @@ exports[`Storyshots 4 Components/All/Newsletter Sign Up Example 1`] = `
 
 exports[`Storyshots 4 Components/All/Oembed Vimeo 1`] = `
 <div
-  className="sc-iuJeZd jNEgPr"
+  className="sc-tilXH bJFGLR"
 >
   <iframe
     allow="autoplay; fullscreen"
@@ -1223,7 +1037,7 @@ exports[`Storyshots 4 Components/All/Oembed Vimeo 1`] = `
 
 exports[`Storyshots 4 Components/All/Oembed Youtube 1`] = `
 <div
-  className="sc-iuJeZd jNEgPr"
+  className="sc-tilXH bJFGLR"
 >
   <iframe
     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -1239,10 +1053,10 @@ exports[`Storyshots 4 Components/All/Oembed Youtube 1`] = `
 
 exports[`Storyshots 4 Components/All/Programme Banner LFF Example 1`] = `
 <div
-  className="sc-cmthru gVoaYG"
+  className="sc-ktHwxA gBPRic"
 >
   <div
-    className="sc-cLQEGU fNZFOa"
+    className="sc-kafWEX diKJIy"
   />
 </div>
 `;
@@ -1259,111 +1073,111 @@ exports[`Storyshots 4 Components/All/StepByStep Primary 1`] = `
   }
 >
   <section
-    className="sc-gqPbQI ijoUlg"
+    className="sc-feJyhm jCTgLN"
   >
     <h3
-      className="sc-hORach gQiZFU"
+      className="sc-iELTvK egiwNi"
     >
       Applying for film funding
     </h3>
     <ol
-      className="sc-bMVAic dvhtul"
+      className="sc-cmTdod dSgaxZ"
     >
       <li
-        className="sc-bAeIUo dQxaHa"
+        className="sc-jwKygS igUmsW"
       >
         <button
           aria-expanded="false"
-          className="sc-GMQeP gGjhiA"
+          className="sc-lhVmIH fjjdHZ"
           onClick={[Function]}
         >
           <strong
-            className="sc-iujRgT VUpjn"
+            className="sc-btzYZH kftlUy"
           >
             Is this fund right for you?
           </strong>
           <span
-            className="sc-exAgwC gGprLq"
+            className="sc-bYSBpT irBHlf"
           >
             Show
           </span>
         </button>
       </li>
       <li
-        className="sc-bAeIUo dQxaHa"
+        className="sc-jwKygS igUmsW"
       >
         <button
           aria-expanded="false"
-          className="sc-GMQeP gGjhiA"
+          className="sc-lhVmIH fjjdHZ"
           onClick={[Function]}
         >
           <strong
-            className="sc-iujRgT VUpjn"
+            className="sc-btzYZH kftlUy"
           >
             Prepare your supporting materials
           </strong>
           <span
-            className="sc-exAgwC gGprLq"
+            className="sc-bYSBpT irBHlf"
           >
             Show
           </span>
         </button>
       </li>
       <li
-        className="sc-bAeIUo dQxaHa"
+        className="sc-jwKygS igUmsW"
       >
         <button
           aria-expanded="false"
-          className="sc-GMQeP gGjhiA"
+          className="sc-lhVmIH fjjdHZ"
           onClick={[Function]}
         >
           <strong
-            className="sc-iujRgT VUpjn"
+            className="sc-btzYZH kftlUy"
           >
             Apply
           </strong>
           <span
-            className="sc-exAgwC gGprLq"
+            className="sc-bYSBpT irBHlf"
           >
             Show
           </span>
         </button>
       </li>
       <li
-        className="sc-bAeIUo dQxaHa"
+        className="sc-jwKygS igUmsW"
       >
         <button
           aria-expanded="false"
-          className="sc-GMQeP gGjhiA"
+          className="sc-lhVmIH fjjdHZ"
           onClick={[Function]}
         >
           <strong
-            className="sc-iujRgT VUpjn"
+            className="sc-btzYZH kftlUy"
           >
             Wait to hear from us
           </strong>
           <span
-            className="sc-exAgwC gGprLq"
+            className="sc-bYSBpT irBHlf"
           >
             Show
           </span>
         </button>
       </li>
       <li
-        className="sc-bAeIUo dQxaHa"
+        className="sc-jwKygS igUmsW"
       >
         <button
           aria-expanded="false"
-          className="sc-GMQeP gGjhiA"
+          className="sc-lhVmIH fjjdHZ"
           onClick={[Function]}
         >
           <strong
-            className="sc-iujRgT VUpjn"
+            className="sc-btzYZH kftlUy"
           >
             Your decision
           </strong>
           <span
-            className="sc-exAgwC gGprLq"
+            className="sc-bYSBpT irBHlf"
           >
             Show
           </span>
@@ -1384,16 +1198,16 @@ exports[`Storyshots 4 Components/All/Tabs Primary 1`] = `
   }
 >
   <ul
-    className="sc-gojNiO dsIMLl"
+    className="sc-jtRfpW dqyIpF"
     role="tablist"
   >
     <li
-      className="sc-daURTG fvYJEr"
+      className="sc-kTUwUJ iZnmTP"
       role="presentation"
     >
       <button
         aria-selected={true}
-        className="sc-bXGyLb Jdnwj"
+        className="sc-dqBHgY egdDKP"
         id="tab1"
         onClick={[Function]}
         role="tab"
@@ -1402,12 +1216,12 @@ exports[`Storyshots 4 Components/All/Tabs Primary 1`] = `
       </button>
     </li>
     <li
-      className="sc-daURTG dHHrmx"
+      className="sc-kTUwUJ jGqsRI"
       role="presentation"
     >
       <button
         aria-selected={false}
-        className="sc-bXGyLb gOrbQx"
+        className="sc-dqBHgY dSCwjl"
         id="tab2"
         onClick={[Function]}
         role="tab"
@@ -1416,12 +1230,12 @@ exports[`Storyshots 4 Components/All/Tabs Primary 1`] = `
       </button>
     </li>
     <li
-      className="sc-daURTG dHHrmx"
+      className="sc-kTUwUJ jGqsRI"
       role="presentation"
     >
       <button
         aria-selected={false}
-        className="sc-bXGyLb gOrbQx"
+        className="sc-dqBHgY dSCwjl"
         id="tab3"
         onClick={[Function]}
         role="tab"
@@ -1459,7 +1273,7 @@ exports[`Storyshots 4 Components/All/Tabs Primary 1`] = `
 
 exports[`Storyshots 4 Components/All/Tag Primary 1`] = `
 <div
-  className="sc-lkqHmb bjmveY tag"
+  className="sc-gxMtzJ hBpnUQ tag"
 >
   Example tag
 </div>
@@ -1474,7 +1288,7 @@ exports[`Storyshots 4 Components/All/Text Normal 1`] = `
   }
 >
   <div
-    className="sc-eLExRp jiHkMk text_block"
+    className="sc-dfVpRl hzQQoz text_block"
   >
     <p>
       We gotta burn the rain forest, 

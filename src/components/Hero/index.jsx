@@ -7,6 +7,7 @@ import LazyImage from "react-lazy-progressive-image"
 import { LeadParagraph } from "../LeadParagraph"
 import { Wrapper } from "../PageContainer"
 import cameraIcon from "./camera_icon.svg"
+import cameraIconMobile from "./camera_icon_mobile.svg"
 import playIcon from "./play_icon.svg"
 import pauseIcon from "./pause_icon.svg"
 
@@ -252,9 +253,8 @@ const CaptionCreditIconWrapper = styled.div`
     display: none;
 
     @media screen and (min-width: ${theme.m}){
-        bottom: 70px;
-        max-width: calc(100% - 55px);
-        right: 40px;
+        bottom: 30px;
+        right: 30px;
         display: block;
     }
 `
@@ -270,12 +270,15 @@ const CaptionCreditIcon = styled.button`
     opacity: 0.8;
     background: url(${cameraIcon});
     background-size: 100%;
+    filter: drop-shadow( 0px 1px 0px rgba(0, 0, 0, .5));
+    -webkit-filter: drop-shadow( 0px 1px 0px rgba(0, 0, 0, .5));
+    
     &:hover, &:focus {
         opacity: 1;
 
         &::after {
             position: absolute;
-            top: calc(100% + 5px);
+            bottom: calc(100% + 5px);
             right: calc(100% - 30px);
             display: block;
             padding: 10px 15px;
@@ -359,6 +362,22 @@ const PlayButton = styled.button`
     }
 `
 
+const MobileCaptionWrapper = styled.div`
+    font-size: ${theme.small_fontSize_m};
+    padding: 0px ${theme.horizontalPadding};
+    margin-top: 10px;
+
+    @media screen and (min-width: ${theme.m}){
+        display: none;
+    }
+`
+const MobileCaptionCreditIcon = styled.img`
+    width: 15px;
+    height: auto;
+    margin-right: 5px;
+    margin-bottom: -3px;
+`
+
 export const Hero = ({
     image1920x1080,
     image192x108,
@@ -386,68 +405,76 @@ export const Hero = ({
     }, [isPaused])
     
     return(
-        <LazyImage
-            src={image1920x1080}
-            placeholder={image192x108 ? image192x108 : image1920x1080}
-            visibilitySensorProps={{
-                partialVisibility: true
-            }}
-        >
-            {src => 
-                <>
-                    <Outer 
-                        image={src} 
-                        withHeader={withHeader}
-                        className={image1920x1080 ? "with_image" : "hero_without_image"}
-                        titleLength={headline.length}
-                        noTitleText={noTitleText}
-                    >
-                        { (videoMP4 || videoWEBM) &&
-                            <>
-                                <VideoContainer>
-                                    <VideoInner noTitleText={noTitleText}>
-                                        <Video playsInline autoPlay muted loop ref={vidRef} noTitleText={noTitleText}>
-                                            <source src={videoMP4} type="video/mp4" />
-                                            <source src={videoWEBM} type="video/webm; codecs=vp9,vorbis" />
-                                        </Video>
-                                    </VideoInner>
-                                </VideoContainer>
-                                <PlayButton className="playButton" onClick={() => setIsPaused(isPaused => !isPaused)} backgroundImage={isPaused ? pauseIcon : playIcon} alt={isPaused ? "Pause" : "Play"} title={isPaused ? "Pause" : "Play"}></PlayButton>
-                            </>
+        <>
+            <LazyImage
+                src={image1920x1080}
+                placeholder={image192x108 ? image192x108 : image1920x1080}
+                visibilitySensorProps={{
+                    partialVisibility: true
+                }}
+            >
+                {src => 
+                    <>
+                        <Outer 
+                            image={src} 
+                            withHeader={withHeader}
+                            className={image1920x1080 ? "with_image" : "hero_without_image"}
+                            titleLength={headline.length}
+                            noTitleText={noTitleText}
+                        >
+                            { (videoMP4 || videoWEBM) &&
+                                <>
+                                    <VideoContainer>
+                                        <VideoInner noTitleText={noTitleText}>
+                                            <Video playsInline autoPlay muted loop ref={vidRef} noTitleText={noTitleText}>
+                                                <source src={videoMP4} type="video/mp4" />
+                                                <source src={videoWEBM} type="video/webm; codecs=vp9,vorbis" />
+                                            </Video>
+                                        </VideoInner>
+                                    </VideoContainer>
+                                    <PlayButton className="playButton" onClick={() => setIsPaused(isPaused => !isPaused)} backgroundImage={isPaused ? pauseIcon : playIcon} alt={isPaused ? "Pause" : "Play"} title={isPaused ? "Pause" : "Play"}></PlayButton>
+                                </>
+                            }
+                            {image1920x1080 && 
+                                <InnerGradient withHeader={withHeader} noTitleText={noTitleText} withVideo={(videoMP4 || videoWEBM)} /> 
+                            }
+                            {imageCaption &&
+                                <CaptionCreditIconWrapper>
+                                    <CaptionCreditIcon src={cameraIcon}
+                                        title={copyright ?
+                                            (imageCaption +" " + "\u00A9 " + copyright): imageCaption}
+                                        alt="Image caption and credit"
+                                        aria-label="Image caption and credit"
+                                        itemprop="copyrightHolder" />
+                                </CaptionCreditIconWrapper>
+                            }
+                            <Container>
+                                {headline && <Headline level={0} text={headline} visuallyHidden={noTitleText} />}
+                                <ChildContainerDesktop className={image1920x1080 ? "child_with_image" : "child_without_image"}>
+                                    {standfirst && <LeadParagraph text={standfirst}/>}
+                                    {children}
+                                </ChildContainerDesktop>
+                                {copyright && <Copyright>{copyright}</Copyright>}
+                            </Container>
+                        </Outer>
+                        {image1920x1080 && (children || standfirst) && 
+                            <ChildContainerMobile>
+                                <Wrapper>
+                                    {standfirst && <LeadParagraph text={standfirst}/>}
+                                    {children}
+                                </Wrapper>
+                            </ChildContainerMobile>
                         }
-                        {image1920x1080 && 
-                            <InnerGradient withHeader={withHeader} noTitleText={noTitleText} withVideo={(videoMP4 || videoWEBM)} /> 
-                        }
-                        {imageCaption &&
-                                    <CaptionCreditIconWrapper>
-                                        <CaptionCreditIcon src={cameraIcon}
-                                            title={copyright ?
-                                                (imageCaption +" " + "\u00A9 " + copyright): imageCaption}
-                                            alt="Image caption and credit"
-                                            aria-label="Image caption and credit"
-                                            itemprop="copyrightHolder" />
-                                    </CaptionCreditIconWrapper>
-                        }
-                        <Container>
-                            {headline && <Headline level={0} text={headline} visuallyHidden={noTitleText} />}
-                            <ChildContainerDesktop className={image1920x1080 ? "child_with_image" : "child_without_image"}>
-                                {standfirst && <LeadParagraph text={standfirst}/>}
-                                {children}
-                            </ChildContainerDesktop>
-                            {copyright && <Copyright>{copyright}</Copyright>}
-                        </Container>
-                    </Outer>
-                    {image1920x1080 && (children || standfirst) && 
-                        <ChildContainerMobile>
-                            <Wrapper>
-                                {standfirst && <LeadParagraph text={standfirst}/>}
-                                {children}
-                            </Wrapper>
-                        </ChildContainerMobile>
-                    }
-                </>
+                    </>
+                }
+            </LazyImage>
+            {imageCaption &&
+                <MobileCaptionWrapper>
+                    <MobileCaptionCreditIcon src={cameraIconMobile} alt="" />
+                    {copyright ? (imageCaption +" " + "\u00A9 " + copyright): imageCaption}
+                </MobileCaptionWrapper>
             }
-        </LazyImage>
+        </>
     )
 }
 
