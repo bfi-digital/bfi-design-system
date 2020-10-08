@@ -215,7 +215,7 @@ export const ShowPerformanceList = ({
                             button = <StyledButton level={1} url={performance.ctaURL} external={true}>Book now</StyledButton>
                         :
                         performance.platform === "xr" ?
-                            button = <StyledButton level={1} url={performance.ctaURL} external={true}>Watch now</StyledButton>
+                            button = <StyledButton level={1} url={performance.ctaURL} external={true}>Find out more</StyledButton>
                             :
                             performance.platform === "external" ?
                                 button = <StyledButton level={1} url={performance.ctaURL} external={true}>Check availability</StyledButton>
@@ -234,7 +234,7 @@ export const ShowPerformanceList = ({
                             button = <StyledButton level={1} url={performance.ctaURL} external={true}>Book now</StyledButton>
                         :
                         performance.platform === "xr" ?
-                            button = <StyledButton level={1} url={performance.ctaURL} external={true}>Watch now</StyledButton>
+                            button = <StyledButton level={1} url={performance.ctaURL} external={true}>Find out more</StyledButton>
                             :
                             performance.platform === "external" ?
                                 button = <StyledButton level={1} url={performance.ctaURL} external={true}>Check availability</StyledButton>
