@@ -324,18 +324,17 @@ export const HeroShow = ({
     showType,
     imageCopyRight,
     imageCaption,
-    children
+    children,
+    totalPerformances,
 }) =>
     <StyledWrapper>
         <Outer className={image1920x1080 ? "with_image" : "without_image"}>
             <Meta className="page_meta" titleLength={title.length}>
                 {title && <Headline level={1} text={title}/>}
                 {standfirst && <LeadParagraph text={standfirst}/>}
-                {dateTimeStart != "" ?
+                {dateTimeStart ?
                     children && <ButtonContainer>{children}</ButtonContainer>
-                    :
-                    // <Button href="#performance-list" colorScheme={1}>View all showings</Button>
-                    <StyledAnchorLink offset="175" href="#performance-list">View all {showType === "event" ? "dates and times" : "screenings"}</StyledAnchorLink>
+                    : totalPerformances > 0 ? <StyledAnchorLink offset="175" href="#performance-list">View all {showType === "event" ? "dates and times" : "screenings"}</StyledAnchorLink>: ""
                 }
             </Meta>
             {oembedObject ?
