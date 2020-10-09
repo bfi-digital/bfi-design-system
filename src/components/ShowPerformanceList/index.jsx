@@ -188,10 +188,10 @@ export const ShowPerformanceList = ({
             info = <span>{performance.performanceInfo}</span>
             :
             performance.platform === "southbank" ? 
-                info = <span>{performance.availability === "soldout" ? "No longer available to see " : "Screening" } at {performance.screen? performance.screen: "BFI Southbank"}</span>
+                info = <span>{performance.paywall === "free" ? "Screening for free " : "Screening" } at {performance.screen? performance.screen: "BFI Southbank"}</span>
                 :
                 performance.platform === "player" ?
-                    info = <span>{performance.availability === "soldout" ? "No longer available" : performance.availability === "unavailable" ? "Soon to be available" : "Available"} on {performance.screen? performance.screen: "BFI Player"} </span>
+                    info = <span>{performance.paywall === "free" ? "Available for free " : "Available" } on {performance.screen? performance.screen: "BFI Player"} </span>
                     :
                     performance.platform === "youtube" ?
                         info = <span>Watch on YouTube</span>     

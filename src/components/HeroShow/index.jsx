@@ -331,7 +331,7 @@ export const HeroShow = ({
             <Meta className="page_meta" titleLength={title.length}>
                 {title && <Headline level={1} text={title}/>}
                 {standfirst && <LeadParagraph text={standfirst}/>}
-                {dateTimeStart ?
+                {dateTimeStart != "" ?
                     children && <ButtonContainer>{children}</ButtonContainer>
                     :
                     // <Button href="#performance-list" colorScheme={1}>View all showings</Button>
