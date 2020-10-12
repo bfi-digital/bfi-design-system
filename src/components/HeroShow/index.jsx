@@ -276,6 +276,12 @@ const CaptionCreditIconWrapper = styled.div`
         right: 15px;
         display: block;
     }
+    @media screen and (max-width: ${theme.s}){
+       right: 20px;
+       bottom: 20px;
+       display: block;
+       max-width: calc(100% - 55px);
+    }
 `
 const CaptionCreditIcon = styled.button`
     border: none;
@@ -297,6 +303,8 @@ const CaptionCreditIcon = styled.button`
             top: calc(100% + 5px);
             right: calc(100% - 30px);
             display: block;
+            max-width: 550px;
+            text-align: left;
             padding: 10px 15px;
             width: max-content;
             background: ${theme.lightest};
@@ -305,6 +313,24 @@ const CaptionCreditIcon = styled.button`
             -webkit-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.4);
             -moz-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.4);
             box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.4);
+
+            @media screen and (max-width: ${theme.s}){
+              max-width:250px;
+              right: calc(100% - 50px);
+              top: calc(100% - 220px);
+            }
+
+            @media screen and (max-width: ${theme.l}) and (min-width: 400px){
+              max-width:300px;
+              right: calc(100% - 50px);
+              top: calc(100% - 180px);
+            }
+
+            @media screen and (min-width: ${theme.m}) and (max-width: ${theme.l}){
+              max-width:350px;
+              top: calc(100% - 170px);
+           }
+
         }
     }
     &:focus {

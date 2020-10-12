@@ -1,9 +1,9 @@
 import * as React from "react"
 import { withA11y } from "@storybook/addon-a11y"
-import { HeroPage } from "./index"
+import { HeroShow } from "./index"
  
 export default {
-    title: "4 Components/All/Hero Page",
+    title: "4 Components/All/Hero Show",
     decorators: [withA11y],
 }
 
@@ -12,7 +12,7 @@ export const normal = () =>
         padding: "20px",
         maxWidth: "1400px"
     }}>
-        <HeroPage 
+        <HeroShow 
             image1920x1080="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1920/1080/1/2020-03/Hero.jpg"
             imageAltText="Alt text for the image"
             imageCaption="BFI SouthbankAs the BFI National Archive calls on the British public to help map the digital video response to coronavirus across the UK, our curators begin a regular new series highlighting the online videos that have made an impact during the lockdown period."

@@ -220,6 +220,13 @@ const CaptionCreditIconWrapper = styled.div`
         right: 40px;
         display: block;
     }
+    @media screen and (max-width: ${theme.s}){
+        right: 30px;
+        bottom: 40px;
+        display: block;
+        max-width: calc(100% - 55px);
+    }
+
 `
 const CaptionCreditIcon = styled.button`
     border: none;
@@ -244,6 +251,9 @@ const CaptionCreditIcon = styled.button`
             top: calc(100% + 5px);
             right: calc(100% - 30px);
             display: block;
+            width: max-content;
+            max-width: 580px;
+            text-align: left;
             padding: 10px 15px;
             width: max-content;
             background: ${theme.lightest};
@@ -252,6 +262,21 @@ const CaptionCreditIcon = styled.button`
             -webkit-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.4);
             -moz-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.4);
             box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.4);
+
+            @media screen and (max-width: ${theme.s}){
+              max-width:260px;
+              right: calc(100% - 60px);
+              top: calc(100% - 180px);
+            }
+
+            @media screen and (max-width: ${theme.l}) and (min-width: 400px){
+              max-width:280px;
+              right: calc(100% - 60px);
+            }
+
+            @media screen and (min-width: ${theme.m}) and (max-width: ${theme.l}){
+              max-width:350px;
+           }
         }
     }
     &:focus {
@@ -324,12 +349,12 @@ export const HeroPage = ({
                             </>
                         }
                     </LazyImage>
-                    {imageCaption &&
+                    {/* {imageCaption &&
                         <MobileCaptionWrapper>
                             <MobileCaptionCreditIcon src={cameraIconMobile} alt="" />
                             {copyright ? (imageCaption +" " + "\u00A9 " + copyright): imageCaption}
                         </MobileCaptionWrapper>
-                    }
+                    } */}
                 </ImageContainer>
             }
         </Outer>

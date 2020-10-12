@@ -238,7 +238,7 @@ const ChildContainerDesktop = styled.div`
     }
 `
 const ChildContainerMobile = styled.div`
-    display: block;
+    display: none;
     a {
         color: ${theme.white};
         background: ${theme.black};
@@ -257,6 +257,18 @@ const CaptionCreditIconWrapper = styled.div`
         right: 30px;
         display: block;
     }
+
+    @media screen and (max-width: ${theme.s}){
+        right: 10px;
+        bottom: 10px;
+        display: block;
+    }
+
+    @media screen and (max-width: ${theme.l}) and (min-width: 400px){
+        right: 10px;
+        bottom: 10px;
+        display: block;
+    }
 `
 const CaptionCreditIcon = styled.button`
     border: none;
@@ -270,8 +282,6 @@ const CaptionCreditIcon = styled.button`
     opacity: 0.8;
     background: url(${cameraIcon});
     background-size: 100%;
-    filter: drop-shadow( 0px 1px 0px rgba(0, 0, 0, .5));
-    -webkit-filter: drop-shadow( 0px 1px 0px rgba(0, 0, 0, .5));
     
     &:hover, &:focus {
         opacity: 1;
@@ -283,12 +293,28 @@ const CaptionCreditIcon = styled.button`
             display: block;
             padding: 10px 15px;
             width: max-content;
+            max-width: 1000px;
+            text-align: left;
             background: ${theme.lightest};
             content: attr(title);
             z-index: 9998;
             -webkit-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.4);
             -moz-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.4);
             box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.4);
+
+           @media screen and (max-width: ${theme.s}){
+              max-width:260px;
+              right: calc(100% - 30px);
+            }
+
+            @media screen and (max-width: ${theme.l}) and (min-width: 400px){
+              max-width:350px;
+              right: calc(100% - 30px);
+            }
+
+            @media screen and (min-width: ${theme.m}) and (max-width: ${theme.l}){
+             max-width: 700px;
+           }
         }
     }
     &:focus {
@@ -468,12 +494,12 @@ export const Hero = ({
                     </>
                 }
             </LazyImage>
-            {imageCaption &&
+            {/* {imageCaption &&
                 <MobileCaptionWrapper>
                     <MobileCaptionCreditIcon src={cameraIconMobile} alt="" />
                     {copyright ? (imageCaption +" " + "\u00A9 " + copyright): imageCaption}
                 </MobileCaptionWrapper>
-            }
+            } */}
         </>
     )
 }
