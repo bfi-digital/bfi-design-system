@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import styled from "styled-components"
 import theme from "../_theme"
 import PropTypes from "prop-types"
@@ -220,6 +220,14 @@ const CaptionCreditIconWrapper = styled.div`
         right: 40px;
         display: block;
     }
+
+    @media screen and (min-width: ${theme.s}) and (max-width: ${theme.l}){
+        right: 40px;
+        bottom: 70px;
+        display: block;
+        ${'' /* max-width: calc(100% - 10px); */}
+    }
+
     @media screen and (max-width: ${theme.s}){
         right: 30px;
         bottom: 40px;
@@ -234,18 +242,17 @@ const CaptionCreditIcon = styled.button`
     width: 30px;
     height: 30px;
     float: right;
-    cursor: help;
-    cursor: help;
+    cursor: pointer;
     position: relative;
     opacity: 0.8;
     background: url(${cameraIcon});
     background-size: 100%;
     filter: drop-shadow( 0px 1px 0px rgba(0, 0, 0, .5));
     -webkit-filter: drop-shadow( 0px 1px 0px rgba(0, 0, 0, .5));
-    
-    &:hover, &:focus {
-        opacity: 1;
 
+    &.add_caption {
+        &:focus {
+         opacity: 1;
         &::after {
             position: absolute;
             top: calc(100% + 5px);
@@ -257,7 +264,7 @@ const CaptionCreditIcon = styled.button`
             padding: 10px 15px;
             width: max-content;
             background: ${theme.lightest};
-            content: attr(title);
+            content: attr(data-title);
             z-index: 9998;
             -webkit-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.4);
             -moz-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.4);
@@ -265,24 +272,35 @@ const CaptionCreditIcon = styled.button`
 
             @media screen and (max-width: ${theme.s}){
               max-width:260px;
-              right: calc(100% - 60px);
+              left: calc(100% - 255px);
               top: calc(100% - 180px);
+            }
+
+            @media screen and (min-width: ${theme.l}) {
+              max-width:480px;
+              right: calc(100% - 80px);
             }
 
             @media screen and (max-width: ${theme.l}) and (min-width: 400px){
               max-width:280px;
-              right: calc(100% - 60px);
+              left: calc(100% - 320px);
+              top: calc(100% - 180px);
             }
 
             @media screen and (min-width: ${theme.m}) and (max-width: ${theme.l}){
               max-width:350px;
+              top: calc(100% - 142px);
            }
         }
     }
-    &:focus {
-        border: solid 3px ${theme.focus};
-        outline: none;
+        &:focus {
+          border: solid 3px ${theme.focus};
+          outline: none;
+        }
     }
+    &.remove_caption{
+        outline: none;
+   }
 `
 const MobileCaptionWrapper = styled.div`
     font-size: ${theme.small_fontSize_m};
@@ -309,18 +327,20 @@ export const HeroPage = ({
     standfirst,
     breadcrumbs,
     isServiceListPage = false
-}) =>
-    <>
-        {breadcrumbs && 
+}) => {
+    const [textDisplay, setTextDisplay] = useState(false)
+    return (
+        <>
+            {breadcrumbs &&
             <BreadcrumbContainer><Breadcrumbs breadcrumbs={breadcrumbs} /></BreadcrumbContainer>
-        }
+            }
 
-        <Outer className={image1920x1080 ? "with_image" : (isServiceListPage ? "service_list_no_image" : "without_image")}>
-            <Meta className="page_meta" titleLength={title.length}>
-                {title && <Headline level={1} text={title}/>}
-                {standfirst && <LeadParagraph text={standfirst}/>}
-            </Meta>
-            {image1920x1080 &&
+            <Outer className={image1920x1080 ? "with_image" : (isServiceListPage ? "service_list_no_image" : "without_image")}>
+                <Meta className="page_meta" titleLength={title.length}>
+                    {title && <Headline level={1} text={title}/>}
+                    {standfirst && <LeadParagraph text={standfirst}/>}
+                </Meta>
+                {image1920x1080 &&
                 <ImageContainer>
                     <LazyImage
                         src={image1920x1080}
@@ -338,8 +358,10 @@ export const HeroPage = ({
                                 />
                                 {imageCaption &&
                                     <CaptionCreditIconWrapper>
-                                        <CaptionCreditIcon src={cameraIcon}
-                                            title={copyright?
+                                        <CaptionCreditIcon className={textDisplay? "add_caption": "remove_caption"}
+                                            onClick={()=>{setTextDisplay(!textDisplay)}}
+                                            src={cameraIcon}
+                                            data-title={copyright?
                                                 (imageCaption +" "+ "\u00A9 " + copyright): imageCaption}
                                             alt="Image caption and credit"
                                             aria-label="Image caption and credit"
@@ -356,10 +378,12 @@ export const HeroPage = ({
                         </MobileCaptionWrapper>
                     } */}
                 </ImageContainer>
-            }
-        </Outer>
+                }
+            </Outer>
         
-    </>
+        </>
+    )
+}
 
 
 HeroPage.propTypes = {

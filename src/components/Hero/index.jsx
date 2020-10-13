@@ -270,22 +270,21 @@ const CaptionCreditIconWrapper = styled.div`
         display: block;
     }
 `
-const CaptionCreditIcon = styled.button`
+const CaptionCreditIcon = styled.button` 
     border: none;
     border-radius: 100%;
     width: 30px;
     height: 30px;
     float: right;
-    cursor: help;
-    cursor: help;
+    cursor: pointer;
     position: relative;
     opacity: 0.8;
     background: url(${cameraIcon});
-    background-size: 100%;
-    
-    &:hover, &:focus {
-        opacity: 1;
+    background-size: 100%; 
 
+   &.add_caption{
+     &:focus {
+        opacity: 1;
         &::after {
             position: absolute;
             bottom: calc(100% + 5px);
@@ -296,31 +295,36 @@ const CaptionCreditIcon = styled.button`
             max-width: 1000px;
             text-align: left;
             background: ${theme.lightest};
-            content: attr(title);
+            content: attr(data-toggle);
             z-index: 9998;
             -webkit-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.4);
             -moz-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.4);
             box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.4);
 
-           @media screen and (max-width: ${theme.s}){
-              max-width:260px;
-              right: calc(100% - 30px);
+        @media screen and (max-width: ${theme.s}){
+            max-width:260px;
+            right: calc(100% - 30px);
             }
 
             @media screen and (max-width: ${theme.l}) and (min-width: 400px){
-              max-width:350px;
-              right: calc(100% - 30px);
+            max-width:350px;
+            right: calc(100% - 30px);
             }
 
             @media screen and (min-width: ${theme.m}) and (max-width: ${theme.l}){
-             max-width: 700px;
+            max-width: 700px;
            }
         }
-    }
-    &:focus {
+     }
+     &:focus {
         border: solid 3px ${theme.focus};
-        outline: none;
+        outline: none; 
     }
+   } 
+
+    &.remove_caption{
+      outline: none; 
+   }
 `
 const VideoContainer = styled.figure`
     position: absolute;
@@ -418,6 +422,7 @@ export const Hero = ({
     videoWEBM
 }) => {
     const [isPaused, setIsPaused] = useState(true)
+    const [textDisplay, setTextDisplay] = useState(false)
     const vidRef = useRef(null)
 
     useEffect(() => {
@@ -429,7 +434,7 @@ export const Hero = ({
             }
         }
     }, [isPaused])
-    
+   
     return(
         <>
             <LazyImage
@@ -466,9 +471,10 @@ export const Hero = ({
                             }
                             {imageCaption &&
                                 <CaptionCreditIconWrapper>
-                                    <CaptionCreditIcon src={cameraIcon}
-                                        title={copyright ?
-                                            (imageCaption +" " + "\u00A9 " + copyright): imageCaption}
+                                    <CaptionCreditIcon className={textDisplay? "add_caption": "remove_caption"} src={cameraIcon}
+                                        onClick={()=>{setTextDisplay(!textDisplay)}}
+                                        data-toggle={(copyright ?
+                                            (imageCaption +" " + "\u00A9 " + copyright): imageCaption)}
                                         alt="Image caption and credit"
                                         aria-label="Image caption and credit"
                                         itemprop="copyrightHolder" />
