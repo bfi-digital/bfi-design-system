@@ -1,6 +1,6 @@
 {
   "name": "bfi-design-system",
-  "version": "0.2.61",
+  "version": "0.2.62",
   "author": "FutureGov <dev@wearefuturegov.com> (https://wearefuturegov.com)",
   "homepage": "https://gerwig.netlify.com",
   "description": "Next-gen design system for the British Film Institute",
@@ -79,7 +79,8 @@
   "jest": {
     "transformIgnorePatterns": [
       "<rootDir>/src/docs",
-      "<rootDir>/src/components/FilmGrid"
+      "<rootDir>/src/components/FilmGrid",
+      "<rootDir>/src/components/HeroShow"
     ],
     "moduleNameMapper": {
       "^.+\\.(mdx|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
