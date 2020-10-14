@@ -303,18 +303,16 @@ const CaptionCreditIcon = styled.button`
             box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.4);
             font-size: ${theme.small_fontSize_m};
 
-        @media screen and (max-width: ${theme.s}){
-            max-width:260px;
-            right: calc(100% - 30px);
+            @media screen and (max-width: ${theme.s}){
+              max-width:260px;
             }
 
             @media screen and (max-width: ${theme.l}) and (min-width: 400px){
-            max-width:350px;
-            right: calc(100% - 30px);
+              max-width:350px;
             }
 
             @media screen and (min-width: ${theme.m}) and (max-width: ${theme.l}){
-            max-width: 700px;
+              max-width: 700px;
            }
         }
      }

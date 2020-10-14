@@ -257,7 +257,7 @@ const CaptionCreditIcon = styled.button`
         &::after {
             position: absolute;
             bottom: calc(100% + 5px);
-            right: calc(100% - 30px);
+            right: calc(100% - 45px);
             display: block;
             width: max-content;
             max-width: 580px;
@@ -274,17 +274,15 @@ const CaptionCreditIcon = styled.button`
 
             @media screen and (max-width: ${theme.s}){
               max-width:260px;
-              left: calc(100% - 250px);
+              right: calc(100% - 60px);
             }
 
             @media screen and (min-width: ${theme.l}) {
               max-width:480px;
-              right: calc(100% - 80px);
             }
 
             @media screen and (max-width: ${theme.l}) and (min-width: 400px){
               max-width:280px;
-              left: calc(100% - 320px);
             }
 
             @media screen and (min-width: ${theme.m}) and (max-width: ${theme.l}){
