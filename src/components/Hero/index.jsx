@@ -7,7 +7,6 @@ import LazyImage from "react-lazy-progressive-image"
 import { LeadParagraph } from "../LeadParagraph"
 import { Wrapper } from "../PageContainer"
 import cameraIcon from "./camera_icon.svg"
-import cameraIconMobile from "./camera_icon_mobile.svg"
 import playIcon from "./play_icon.svg"
 import pauseIcon from "./pause_icon.svg"
 
@@ -117,7 +116,6 @@ const Outer = styled.section`
             }
         }
     }
-
 
     @media screen and (min-width: ${theme.m}){
         margin-top: 0px;
@@ -285,6 +283,9 @@ const CaptionCreditIcon = styled.button`
    &.add_caption{
      &:focus {
         opacity: 1;
+        color: transparent;
+        text-shadow: 0 0 0 #000;
+        border:0;
         &::after {
             position: absolute;
             bottom: calc(100% + 5px);
@@ -300,6 +301,7 @@ const CaptionCreditIcon = styled.button`
             -webkit-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.4);
             -moz-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.4);
             box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.4);
+            font-size: ${theme.small_fontSize_m};
 
         @media screen and (max-width: ${theme.s}){
             max-width:260px;
@@ -323,7 +325,10 @@ const CaptionCreditIcon = styled.button`
    } 
 
     &.remove_caption{
-      outline: none; 
+      outline: none;
+      color: transparent;
+      text-shadow: 0 0 0 #000;
+      border:0;
    }
 `
 const VideoContainer = styled.figure`
@@ -391,23 +396,6 @@ const PlayButton = styled.button`
         border: solid 3px ${theme.focus};
     }
 `
-
-const MobileCaptionWrapper = styled.div`
-    font-size: ${theme.small_fontSize_m};
-    padding: 0px ${theme.horizontalPadding};
-    margin-top: 10px;
-
-    @media screen and (min-width: ${theme.m}){
-        display: none;
-    }
-`
-const MobileCaptionCreditIcon = styled.img`
-    width: 15px;
-    height: auto;
-    margin-right: 5px;
-    margin-bottom: -3px;
-`
-
 export const Hero = ({
     image1920x1080,
     image192x108,
@@ -426,6 +414,11 @@ export const Hero = ({
     const vidRef = useRef(null)
 
     useEffect(() => {
+        document.addEventListener("click", event => {
+            if (event.target.matches("button")) {
+                event.target.focus()
+            }
+        })
         if(videoMP4 || videoWEBM) {
             if(isPaused) {
                 vidRef.current.play()
@@ -472,7 +465,7 @@ export const Hero = ({
                             {imageCaption &&
                                 <CaptionCreditIconWrapper>
                                     <CaptionCreditIcon className={textDisplay? "add_caption": "remove_caption"} src={cameraIcon}
-                                        onClick={()=>{setTextDisplay(!textDisplay)}}
+                                        onClick={()=>setTextDisplay(!textDisplay)}
                                         data-toggle={(copyright ?
                                             (imageCaption +" " + "\u00A9 " + copyright): imageCaption)}
                                         alt="Image caption and credit"
@@ -500,16 +493,9 @@ export const Hero = ({
                     </>
                 }
             </LazyImage>
-            {/* {imageCaption &&
-                <MobileCaptionWrapper>
-                    <MobileCaptionCreditIcon src={cameraIconMobile} alt="" />
-                    {copyright ? (imageCaption +" " + "\u00A9 " + copyright): imageCaption}
-                </MobileCaptionWrapper>
-            } */}
         </>
     )
 }
-
 
 Hero.propTypes = {
     /** 

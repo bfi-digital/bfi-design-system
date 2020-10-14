@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import styled from "styled-components"
 import theme from "../_theme"
 import PropTypes from "prop-types"
@@ -7,7 +7,6 @@ import { Headline } from "../Headline"
 import { LeadParagraph } from "../LeadParagraph"
 import { Breadcrumbs } from "../Breadcrumbs"
 import cameraIcon from "./camera_icon.svg"
-import cameraIconMobile from "./camera_icon_mobile.svg"
 
 const Outer = styled.div`
     margin: 0 auto;
@@ -225,7 +224,6 @@ const CaptionCreditIconWrapper = styled.div`
         right: 40px;
         bottom: 70px;
         display: block;
-        ${'' /* max-width: calc(100% - 10px); */}
     }
 
     @media screen and (max-width: ${theme.s}){
@@ -234,7 +232,6 @@ const CaptionCreditIconWrapper = styled.div`
         display: block;
         max-width: calc(100% - 55px);
     }
-
 `
 const CaptionCreditIcon = styled.button`
     border: none;
@@ -253,6 +250,10 @@ const CaptionCreditIcon = styled.button`
     &.add_caption {
         &:focus {
          opacity: 1;
+         opacity: 1;
+         color: transparent;
+         text-shadow: 0 0 0 #000;
+         border:0;
         &::after {
             position: absolute;
             top: calc(100% + 5px);
@@ -261,6 +262,7 @@ const CaptionCreditIcon = styled.button`
             width: max-content;
             max-width: 580px;
             text-align: left;
+            font-size: ${theme.small_fontSize_m};
             padding: 10px 15px;
             width: max-content;
             background: ${theme.lightest};
@@ -272,8 +274,8 @@ const CaptionCreditIcon = styled.button`
 
             @media screen and (max-width: ${theme.s}){
               max-width:260px;
-              left: calc(100% - 255px);
-              top: calc(100% - 180px);
+              left: calc(100% - 250px);
+              top: calc(100% - 175px);
             }
 
             @media screen and (min-width: ${theme.l}) {
@@ -284,13 +286,13 @@ const CaptionCreditIcon = styled.button`
             @media screen and (max-width: ${theme.l}) and (min-width: 400px){
               max-width:280px;
               left: calc(100% - 320px);
-              top: calc(100% - 180px);
+              top: calc(100% - 160px);
             }
 
             @media screen and (min-width: ${theme.m}) and (max-width: ${theme.l}){
               max-width:350px;
               top: calc(100% - 142px);
-           }
+            }
         }
     }
         &:focus {
@@ -299,24 +301,12 @@ const CaptionCreditIcon = styled.button`
         }
     }
     &.remove_caption{
-        outline: none;
+       outline: none;
+       color: transparent;
+       text-shadow: 0 0 0 #000;
+       border:0;
    }
 `
-const MobileCaptionWrapper = styled.div`
-    font-size: ${theme.small_fontSize_m};
-    margin-top: 10px;
-
-    @media screen and (min-width: ${theme.m}){
-        display: none;
-    }
-`
-const MobileCaptionCreditIcon = styled.img`
-    width: 15px;
-    height: auto;
-    margin-right: 5px;
-    margin-bottom: -3px;
-`
-
 export const HeroPage = ({
     image1920x1080,
     image192x108,
@@ -329,6 +319,13 @@ export const HeroPage = ({
     isServiceListPage = false
 }) => {
     const [textDisplay, setTextDisplay] = useState(false)
+    useEffect(() => {
+        document.addEventListener("click", event => {
+            if (event.target.matches("button")) {
+                event.target.focus()
+            }
+        })
+    }, [])
     return (
         <>
             {breadcrumbs &&
@@ -359,7 +356,7 @@ export const HeroPage = ({
                                 {imageCaption &&
                                     <CaptionCreditIconWrapper>
                                         <CaptionCreditIcon className={textDisplay? "add_caption": "remove_caption"}
-                                            onClick={()=>{setTextDisplay(!textDisplay)}}
+                                            onClick={()=>setTextDisplay(!textDisplay)}
                                             src={cameraIcon}
                                             data-title={copyright?
                                                 (imageCaption +" "+ "\u00A9 " + copyright): imageCaption}
@@ -371,12 +368,6 @@ export const HeroPage = ({
                             </>
                         }
                     </LazyImage>
-                    {/* {imageCaption &&
-                        <MobileCaptionWrapper>
-                            <MobileCaptionCreditIcon src={cameraIconMobile} alt="" />
-                            {copyright ? (imageCaption +" " + "\u00A9 " + copyright): imageCaption}
-                        </MobileCaptionWrapper>
-                    } */}
                 </ImageContainer>
                 }
             </Outer>

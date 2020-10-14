@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import styled from "styled-components"
 import theme from "../_theme"
 import PropTypes from "prop-types"
@@ -321,7 +321,10 @@ const CaptionCreditIcon = styled.button`
   &.add_caption {
     &:focus {
     opacity: 1;
-
+    outline:none;
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+    border:0;
     &::after {
       position: absolute;
       top: calc(100% + 5px);
@@ -337,6 +340,7 @@ const CaptionCreditIcon = styled.button`
       -webkit-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.4);
       -moz-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.4);
       box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.4);
+      font-size: ${theme.small_fontSize_m};
 
       @media screen and (max-width: ${theme.s}) {
         max-width: 250px;
@@ -364,6 +368,9 @@ const CaptionCreditIcon = styled.button`
   }
   &.remove_caption {
     outline: none;
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+    border:0;
  }
 `
 
@@ -382,6 +389,14 @@ export const HeroShow = ({
     totalPerformances,
 }) => {
     const [textDisplay, setTextDisplay] = useState(false)
+    useEffect(() => {
+        document.addEventListener("click", event => {
+            if (event.target.matches("button")) {
+                event.target.focus()
+            }
+        })
+    }, [])
+
     return (
         <StyledWrapper>
             <Outer className={image1920x1080 ? "with_image" : "without_image"}>
@@ -433,7 +448,7 @@ export const HeroShow = ({
                                         {imageCaption && (
                                             <CaptionCreditIconWrapper>
                                                 <CaptionCreditIcon className={textDisplay? "add_caption": "remove_caption"}
-                                                    onClick={()=>{setTextDisplay(!textDisplay)}}
+                                                    onClick={()=>setTextDisplay(!textDisplay)}
                                                     src={cameraIcon}
                                                     data-title={
                                                         imageCopyRight
