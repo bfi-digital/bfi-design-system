@@ -60,6 +60,7 @@ const Tab = styled.li`
     margin-right: ${theme.standardSpace*0.5}px;
     font-size: ${theme.fontSize_xl};
     text-align: center;
+    white-space: nowrap;
     @media screen and (max-width: ${theme.m}){
         text-align: left;
         min-width: fit-content;
