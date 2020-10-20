@@ -9,52 +9,49 @@ const Outer = styled.ul`
     display: flex;
     margin: ${theme.standardSpace*2}px 0;
     width: 100%;
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
 
     @media screen and (max-width: ${theme.s}){
         width: calc(100% + 20px);
         padding: 5px;
+        padding-bottom: 15px;
         background: ${theme.lightGrey}
         li {
             margin-bottom: 0;
         }
     }
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 22px;
+    li {
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
+    }
+    &::-webkit-scrollbar {
+        height: 10px;
+        width: 10px;
+        border: 1px solid ${theme.grey};
+        background: ${theme.grey};
+        cursor: move;
+        cursor: grab;
+        cursor: -moz-grab;
+        cursor: -webkit-grab;
+        -webkit-appearance: none;
+        -webkit-overflow-scrolling: auto;
+        -webkit-overflow-scrolling: touch;
 
-    ${'' /* @media screen and (max-width: ${theme.m}){ */}
-        overflow-x: scroll;
-        overflow-y: hidden;
-        li {
-            scroll-snap-align: start;
-            scroll-snap-stop: always;
+        &:active {
+            cursor: grabbing;
+            cursor: -moz-grabbing;
+            cursor: -webkit-grabbing;
         }
-        &::-webkit-scrollbar {
-            height: 10px;
-            width: 10px;
-            border: 1px solid ${theme.grey};
-            background: ${theme.grey};
-            cursor: move;
-            cursor: grab;
-            cursor: -moz-grab;
-            cursor: -webkit-grab;
-            -webkit-appearance: none;
-            -webkit-overflow-scrolling: auto;
-            -webkit-overflow-scrolling: touch;
-
-            &:active {
-                cursor: grabbing;
-                cursor: -moz-grabbing;
-                cursor: -webkit-grabbing;
-            }
-        }
-        &::-webkit-scrollbar-thumb:horizontal{
-            background: ${theme.primary};
-            border-radius: 2px;
-        }
-        &::-webkit-scrollbar-track {
-            background-color: ${theme.grey};
-        }
-    ${'' /* } */}
+    }
+    &::-webkit-scrollbar-thumb:horizontal{
+        background: ${theme.primary};
+        border-radius: 2px;
+    }
+    &::-webkit-scrollbar-track {
+        background-color: ${theme.grey};
+    }
 `
 const Tab = styled.li`
     margin-right: ${theme.standardSpace*0.5}px;
