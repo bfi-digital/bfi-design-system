@@ -21,7 +21,7 @@ const Outer = styled.ul`
         }
     }
 
-    @media screen and (max-width: ${theme.m}){
+    ${'' /* @media screen and (max-width: ${theme.m}){ */}
         overflow-x: scroll;
         overflow-y: hidden;
         li {
@@ -54,7 +54,7 @@ const Outer = styled.ul`
         &::-webkit-scrollbar-track {
             background-color: ${theme.grey};
         }
-    }
+    ${'' /* } */}
 `
 const Tab = styled.li`
     margin-right: ${theme.standardSpace*0.5}px;
