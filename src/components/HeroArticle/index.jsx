@@ -175,8 +175,8 @@ export const HeroArticle = ({
                                         alt={imageAltText ? imageAltText : ""}
                                     />
                                     {imageCaption &&
-                                      imageCopyright? <Small itemprop="copyrightHolder">{imageCaption + ". "} &copy; {imageCopyright+ "."}</Small>
-                                        :<Small itemprop="copyrightHolder">{imageCaption+ "."}</Small>}
+                                      imageCopyright? <Small itemprop="copyrightHolder">{imageCaption} &copy; {imageCopyright}</Small>
+                                        :<Small itemprop="copyrightHolder">{imageCaption}</Small>}
                                 </>
                             }
                         </LazyImage>
