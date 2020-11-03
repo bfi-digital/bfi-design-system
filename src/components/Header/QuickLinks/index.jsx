@@ -72,13 +72,13 @@ const QuickLinks = ({links, isOverlaid, isSticky}) => {
         links ?
             <Wrapper>
                 {links[0] &&
-                    <QuickLink to={links[0].url} isTransparent={isOverlaid} isSticky={isSticky}>{links[0].title}</QuickLink>
+                    <QuickLink to={links[0].url} data-tracking="quick-links-navigation"  isTransparent={isOverlaid} isSticky={isSticky}>{links[0].title}</QuickLink>
                 }
                 {links[1] &&
-                    <QuickLink to={links[1].url} isTransparent={isOverlaid} isSticky={isSticky}>{links[1].title}</QuickLink>
+                    <QuickLink to={links[1].url} data-tracking="quick-links-navigation"  isTransparent={isOverlaid} isSticky={isSticky}>{links[1].title}</QuickLink>
                 }
                 {links[2] &&
-                    <QuickLink to={links[2].url} isTransparent={isOverlaid} isSticky={isSticky}>{links[2].title}</QuickLink>
+                    <QuickLink to={links[2].url} data-tracking="quick-links-navigation"  isTransparent={isOverlaid} isSticky={isSticky}>{links[2].title}</QuickLink>
                 }
             </Wrapper>
             :

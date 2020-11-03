@@ -52,6 +52,7 @@ export * from "./components/TabNavigation"
 export * from "./components/Tabs"
 export * from "./components/Tag"
 export * from "./components/Text"
+export * from "./components/TemporaryAnnouncement"
 
 // Page scaffolds
 export * from "./components/PageContainer"
