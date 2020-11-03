@@ -8,6 +8,7 @@ const Outer = styled.div`
     line-height: ${theme.lineHeight_s};
     font-size: ${theme.fontSize_s};
     margin-bottom: 20px;
+    display: ${props => props.children ? "block" : "none"};
 
     p:first-of-type{
         margin-top: 0px;
@@ -178,7 +179,7 @@ const Outer = styled.div`
 export const TemporaryAnnouncement = ({
     children
 }) =>
-    <Outer className="text_block">
+    <Outer className="temporary_announcement">
         {children}
     </Outer>
 
