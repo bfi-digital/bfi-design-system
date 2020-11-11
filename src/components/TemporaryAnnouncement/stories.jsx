@@ -10,7 +10,7 @@ export default {
 export const normal = () =>
     <div style={{padding: "20px"}}>
         <TemporaryAnnouncement>
-            <p>.... We gotta burn the rain forest, <strong>dump toxic waste</strong>, pollute the air, and <a href="http://google.com">rip up the OZONE!</a> &apos;Cause maybe if we screw up this planet enough, they won&apos;t want it anymore! We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! &apos;Cause maybe if we screw up this planet enough, they won&apos;t want it anymore!</p>
+            <p>We gotta burn the rain forest, <strong>dump toxic waste</strong>, pollute the air, and <a href="http://google.com">rip up the OZONE!</a> &apos;Cause maybe if we screw up this planet enough, they won&apos;t want it anymore! We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! &apos;Cause maybe if we screw up this planet enough, they won&apos;t want it anymore!</p>
 
             <ol>
                 <li>What do they got in there? King Kong?</li>
