@@ -56,7 +56,7 @@ const newsletters = [
     },
     {
         form: "191722FC90141D02184CB1B62AB3DC26EA829FBE2645495F11B171412C235E5638D1C0BF2034E0F8D771836826AFB98228EC7D996823E64C4D9F94E260EAB6D2",
-        title: "Sign up for Sight & Sound’s Weekly Film Bulletin newsletter and more",
+        title: "Sign up for Sight & Sound’s Weekly Film Bulletin and more",
         inputName: "cm-ydlrldk-ydlrldk",
         desc: "News, reviews and archive features every Friday, and information about our latest magazine once a month."
     },
