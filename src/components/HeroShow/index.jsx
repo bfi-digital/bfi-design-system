@@ -391,6 +391,20 @@ export const HeroShow = ({
         })
     }, [])
 
+    if(oembedObject){
+        if (oembedObject.html.includes("youtube") && !oembedObject.html.includes("cc_load_policy=1")) {
+            oembedObject.html = oembedObject.html.replace(
+                "?feature=oembed",
+                "?feature=oembed&cc_load_policy=1"
+            )
+        }
+        if (oembedObject.html.includes("vimeo") && !oembedObject.html.includes("texttrack")) {
+            const parts = oembedObject.html.split(" ")
+            parts[1] = parts[1].replace(/"/g, "") + "?texttrack=en"
+            parts[1] = "src="+ "\""+parts[1].slice(4)+"\""
+            oembedObject.html = parts.join(" ")
+        }
+    }
     return (
         <StyledWrapper>
             <Outer className={image1920x1080 ? "with_image" : "without_image"}>

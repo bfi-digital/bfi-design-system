@@ -284,26 +284,42 @@ export const PromoBanner = ({
     external,
     oembedObject,
     pageWithSidebar = false
-}) =>
-    <Outer 
-        className={external ? "external_link promoBanner" : "promoBanner"}
-        reversed={reversed} 
-        colorScheme={colorScheme} 
-        backgroundColor={backgroundColor}
-        pageWithSidebar={pageWithSidebar}
-        id={slugify(headline)}
-    >
-        <Inner className={image ? "with_image" : "without_image"} reversed={reversed} pageWithSidebar={pageWithSidebar}>
-            {secondImage && !secondImagePrefix && 
+}) => {
+
+    if(oembedObject){
+        if (oembedObject.html.includes("youtube") && !oembedObject.html.includes("cc_load_policy=1")) {
+            oembedObject.html = oembedObject.html.replace(
+                "?feature=oembed",
+                "?feature=oembed&cc_load_policy=1"
+            )
+        }
+        if (oembedObject.html.includes("vimeo") && !oembedObject.html.includes("texttrack")) {
+            const parts = oembedObject.html.split(" ")
+            parts[1] = parts[1].replace(/"/g, "") + "?texttrack=en"
+            parts[1] = "src="+ "\""+parts[1].slice(4)+"\""
+            oembedObject.html = parts.join(" ")
+        }
+    }
+    return (
+        <Outer 
+            className={external ? "external_link promoBanner" : "promoBanner"}
+            reversed={reversed} 
+            colorScheme={colorScheme} 
+            backgroundColor={backgroundColor}
+            pageWithSidebar={pageWithSidebar}
+            id={slugify(headline)}
+        >
+            <Inner className={image ? "with_image" : "without_image"} reversed={reversed} pageWithSidebar={pageWithSidebar}>
+                {secondImage && !secondImagePrefix && 
                 <SecondImage 
                     marginBottom
                     src={secondImage} 
                     alt={secondImageAlt ? secondImageAlt : ""}
                 />
-            }
-            <Headline level={2} text={headline}/>
-            {description && <Description className={image || oembedObject ? "with_image" : "without_image"}>{description}</Description>} 
-            {secondImage && secondImagePrefix && 
+                }
+                <Headline level={2} text={headline}/>
+                {description && <Description className={image || oembedObject ? "with_image" : "without_image"}>{description}</Description>} 
+                {secondImage && secondImagePrefix && 
                 <PrefixContainer>
                     <Prefix>{secondImagePrefix}</Prefix>
                     <SecondImage 
@@ -311,39 +327,42 @@ export const PromoBanner = ({
                         alt={secondImageAlt ? secondImageAlt : ""}
                     />
                 </PrefixContainer>
-            }
-            {callToActionUrl && (image || oembedObject) && 
+                }
+                {callToActionUrl && (image || oembedObject) && 
                 <Button to={callToActionUrl} colorScheme={colorSchemes[colorScheme].buttonColor} external={external} rel={external ? "noreferrer" : ""}  target={external ? "_blank" : "_self"}>
                     {callToActionTitle}
                 </Button>
-            }
-        </Inner> 
-        { oembedObject ?
-            <Video reversed={reversed} pageWithSidebar={pageWithSidebar}>
-                <VideoInner>
-                    {parse(oembedObject.html.replace("></iframe>", " title=\"" + (oembedObject.title ? (oembedObject.title + " video") : "Video player") + "\"></iframe>"))}
-                </VideoInner>
-            </Video>
-            :
-            <>
-                {image ? 
-                    <Image
-                        reversed={reversed}
-                        image={image} 
-                        pageWithSidebar={pageWithSidebar}
-                    /> 
-                    : 
-                    <RightButton>
-                        {callToActionUrl && 
+                }
+            </Inner> 
+            { oembedObject ?
+                <Video reversed={reversed} pageWithSidebar={pageWithSidebar}>
+                    <VideoInner>
+                        {parse(oembedObject.html.replace("></iframe>", " title=\"" + (oembedObject.title ? (oembedObject.title + " video") : "Video player") + "\"></iframe>"))}
+                    </VideoInner>
+                </Video>
+                :
+                <>
+                    {image ? 
+                        <Image
+                            reversed={reversed}
+                            image={image} 
+                            pageWithSidebar={pageWithSidebar}
+                        /> 
+                        : 
+                        <RightButton>
+                            {callToActionUrl && 
                             <Button to={callToActionUrl} colorScheme={colorSchemes[colorScheme].buttonColor} external={external} rel={external ? "noreferrer" : ""} target={external ? "_blank" : "_self"}>
                                 {callToActionTitle}
                             </Button>
-                        }
-                    </RightButton>
-                }
-            </>
-        }
-    </Outer>
+                            }
+                        </RightButton>
+                    }
+                </>
+            }
+        </Outer>
+    )
+}
+    
 
 PromoBanner.propTypes = {
     /** 

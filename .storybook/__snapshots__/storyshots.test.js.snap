@@ -1028,7 +1028,7 @@ exports[`Storyshots 4 Components/All/Oembed Vimeo 1`] = `
     allowFullScreen={true}
     frameBorder="0"
     height="270"
-    src="https://player.vimeo.com/video/143029218?app_id=122963"
+    src="https://player.vimeo.com/video/143029218?app_id=122963?texttrack=en"
     title="Film is Fragile - Film needs your help! | BFI Trailer"
     width="480"
   />
@@ -1044,7 +1044,7 @@ exports[`Storyshots 4 Components/All/Oembed Youtube 1`] = `
     allowFullScreen={true}
     frameBorder="0"
     height="270"
-    src="https://www.youtube.com/embed/vpqYxK6mmSU?feature=oembed"
+    src="https://www.youtube.com/embed/vpqYxK6mmSU?feature=oembed&cc_load_policy=1"
     title="Misbehaviour director Phillipa Lowthorpe and producer Suzanne Mackie | BFI Q&A video"
     width="480"
   />
