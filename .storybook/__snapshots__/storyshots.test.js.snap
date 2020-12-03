@@ -147,6 +147,7 @@ Array [
     >
       <a
         className="sc-iwsKbI jUiLjq"
+        data-tracking="breadcrumb"
         href="#1"
         target="_self"
       >
@@ -158,6 +159,7 @@ Array [
     >
       <a
         className="sc-iwsKbI jUiLjq"
+        data-tracking="breadcrumb"
         href="#2"
         target="_self"
       >
@@ -178,6 +180,7 @@ Array [
     >
       <a
         className="sc-iwsKbI jUiLjq"
+        data-tracking="breadcrumb"
         href="#2"
         target="_self"
       >
@@ -199,6 +202,7 @@ Array [
     >
       <a
         className="sc-iwsKbI jUiLjq"
+        data-tracking="breadcrumb"
         href="#4"
         target="_self"
       >
@@ -210,6 +214,7 @@ Array [
     >
       <a
         className="sc-iwsKbI jUiLjq"
+        data-tracking="breadcrumb"
         href="#5"
         target="_self"
       >
@@ -221,6 +226,7 @@ Array [
     >
       <a
         className="sc-iwsKbI jUiLjq"
+        data-tracking="breadcrumb"
         href="#6"
         target="_self"
       >
@@ -241,6 +247,7 @@ Array [
     >
       <a
         className="sc-iwsKbI jUiLjq"
+        data-tracking="breadcrumb"
         href="#6"
         target="_self"
       >
