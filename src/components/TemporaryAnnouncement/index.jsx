@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import theme from "../_theme"
 import PropTypes from "prop-types"
+import {Divider} from "../Divider/index"
 
 const Outer = styled.div`
     color: ${theme.black};
@@ -177,12 +178,13 @@ const Outer = styled.div`
 `
 
 export const TemporaryAnnouncement = ({
-    children
+    children,
 }) =>
-    <Outer className="temporary_announcement">
-        {children}
-    </Outer>
-
+    <><Divider /> 
+        <Outer className="temporary_announcement">
+            {children}
+        </Outer>
+        <Divider /></>
 TemporaryAnnouncement.propTypes = {
     /** 
 	 * Block of html from the WYSIWYG

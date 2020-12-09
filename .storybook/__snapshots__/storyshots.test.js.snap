@@ -1294,6 +1294,9 @@ exports[`Storyshots 4 Components/All/TemporaryAnnouncement Normal 1`] = `
     }
   }
 >
+  <hr
+    className="sc-jzJRlG eYNkah"
+  />
   <div
     className="sc-dfVpRl gyDLRR temporary_announcement"
   >
@@ -1342,6 +1345,9 @@ exports[`Storyshots 4 Components/All/TemporaryAnnouncement Normal 1`] = `
       </li>
     </ul>
   </div>
+  <hr
+    className="sc-jzJRlG eYNkah"
+  />
 </div>
 `;
 
