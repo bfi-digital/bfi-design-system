@@ -180,7 +180,7 @@ const Break = styled.hr`
     margin: 25px auto;
     width: 100%;
     opacity: ${props => props.istransparent ? "0" : "0.15"};
-
+    display: ${props => props.istransparent ? "none" : "block"};
     @media screen and (min-width: ${theme.m}){
         margin: 25px auto;
     }
