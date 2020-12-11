@@ -1295,7 +1295,7 @@ exports[`Storyshots 4 Components/All/TemporaryAnnouncement Normal 1`] = `
   }
 >
   <hr
-    className="sc-jzJRlG eYNkah"
+    className="sc-gzOgki dHxXcc"
   />
   <div
     className="sc-dfVpRl gyDLRR temporary_announcement"
@@ -1346,7 +1346,7 @@ exports[`Storyshots 4 Components/All/TemporaryAnnouncement Normal 1`] = `
     </ul>
   </div>
   <hr
-    className="sc-jzJRlG eYNkah"
+    className="sc-gzOgki dHxXcc"
   />
 </div>
 `;
@@ -1360,7 +1360,7 @@ exports[`Storyshots 4 Components/All/Text Normal 1`] = `
   }
 >
   <div
-    className="sc-gzOgki clYBjR text_block"
+    className="sc-iyvyFf kCbIpO text_block"
   >
     <p>
       We gotta burn the rain forest, 
