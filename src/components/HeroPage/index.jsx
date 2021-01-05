@@ -4,7 +4,8 @@ import theme from "../_theme"
 import PropTypes from "prop-types"
 import LazyImage from "react-lazy-progressive-image"
 import { Headline } from "../Headline"
-import { LeadParagraph } from "../LeadParagraph"
+
+import {Text} from "../Text"
 import { Breadcrumbs } from "../Breadcrumbs"
 import cameraIcon from "./camera_icon.svg"
 
@@ -330,7 +331,7 @@ export const HeroPage = ({
             <Outer className={image1920x1080 ? "with_image" : (isServiceListPage ? "service_list_no_image" : "without_image")}>
                 <Meta className="page_meta" titleLength={title.length}>
                     {title && <Headline level={1} text={title}/>}
-                    {standfirst && <LeadParagraph text={standfirst}/>}
+                    {standfirst && <Text>{standfirst}</Text>}
                 </Meta>
                 {image1920x1080 &&
                 <ImageContainer>
