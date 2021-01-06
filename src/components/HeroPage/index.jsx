@@ -4,9 +4,9 @@ import theme from "../_theme"
 import PropTypes from "prop-types"
 import LazyImage from "react-lazy-progressive-image"
 import { Headline } from "../Headline"
-import { LeadParagraph } from "../LeadParagraph"
 import { Breadcrumbs } from "../Breadcrumbs"
 import cameraIcon from "./camera_icon.svg"
+import parse from "html-react-parser"
 
 const Outer = styled.div`
     margin: 0 auto;
@@ -204,6 +204,27 @@ const StyledImage = styled.img`
     flex: 0 0 50%;
 `
 
+const StandFirst = styled.p`
+    color: ${theme.black};
+    font-size: ${theme.fontSize_m};
+    line-height: ${theme.lineHeight_m};
+    margin-bottom: 30px;
+    white-space: pre-wrap;
+    margin-top: 0;
+
+    @media screen and (min-width: ${theme.m}){
+        font-size: ${theme.large_fontSize_m};
+        line-height: ${theme.large_lineHeight_m};
+    }
+    @media screen and (min-width: ${theme.l}){
+        max-width: calc(${theme.l} - 10%);
+    }
+    @media screen and (min-width: ${theme.xl}){
+        font-size: ${theme.large_fontSize_xl};
+        max-width: calc(${theme.xl} - 20%);
+    }
+`
+
 const BreadcrumbContainer = styled.div`
     margin-bottom: 15px;
 `
@@ -330,7 +351,7 @@ export const HeroPage = ({
             <Outer className={image1920x1080 ? "with_image" : (isServiceListPage ? "service_list_no_image" : "without_image")}>
                 <Meta className="page_meta" titleLength={title.length}>
                     {title && <Headline level={1} text={title}/>}
-                    {standfirst && <LeadParagraph text={standfirst}/>}
+                    <StandFirst className="lead_paragraph">{standfirst && parse(standfirst)}</StandFirst>
                 </Meta>
                 {image1920x1080 &&
                 <ImageContainer>
