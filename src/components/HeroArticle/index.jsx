@@ -4,7 +4,7 @@ import theme from "../_theme"
 import PropTypes from "prop-types"
 import LazyImage from "react-lazy-progressive-image"
 import { Headline } from "../Headline"
-import { LeadParagraph } from "../LeadParagraph"
+import parse from "html-react-parser"
 import { Tag } from "../Tag"
 import { Text } from "../Text"
 import { LinkSwitch as Link } from "../LinkSwitch"
@@ -83,6 +83,27 @@ const BrandLogo = styled.div`
         }
     }
 `
+const StandFirst = styled.p`
+    color: ${theme.black};
+    font-size: ${theme.fontSize_m};
+    line-height: ${theme.lineHeight_m};
+    margin-bottom: 30px;
+    white-space: pre-wrap;
+    margin-top: 0;
+
+    @media screen and (min-width: ${theme.m}){
+        font-size: ${theme.large_fontSize_m};
+        line-height: ${theme.large_lineHeight_m};
+    }
+    @media screen and (min-width: ${theme.l}){
+        max-width: calc(${theme.l} - 10%);
+    }
+    @media screen and (min-width: ${theme.xl}){
+        font-size: ${theme.large_fontSize_xl};
+        max-width: calc(${theme.xl} - 20%);
+    }
+`
+
 const StyledImage = styled.img`
     width: 100%;
     height: auto;
@@ -121,7 +142,7 @@ export const HeroArticle = ({
             <Meta titleLength={title.length}>
                 {category && <Tag link={categoryLink}>{category}</Tag>}
                 {title && <Headline level={1} text={title}/>}
-                {standfirst && <LeadParagraph text={standfirst}/>}
+                {standfirst &&  <StandFirst className="lead_paragraph"> {parse(standfirst)}</StandFirst> }
                 <LowerContent>
                     <Text>
                         {authors && authors.length > 0 ?

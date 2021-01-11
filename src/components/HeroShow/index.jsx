@@ -4,9 +4,8 @@ import theme from "../_theme"
 import PropTypes from "prop-types"
 import LazyImage from "react-lazy-progressive-image"
 import AnchorLink from "react-anchor-link-smooth-scroll"
-import parse from "html-react-parser"
 import { Headline } from "../Headline"
-import { LeadParagraph } from "../LeadParagraph"
+import parse from "html-react-parser"
 import { Wrapper } from "../PageContainer"
 import cameraIcon from "./camera_icon.svg"
 
@@ -281,6 +280,27 @@ const Video = styled.div`
   }
 `
 
+const StandFirst = styled.p`
+    color: ${theme.black};
+    font-size: ${theme.fontSize_m};
+    line-height: ${theme.lineHeight_m};
+    margin-bottom: 30px;
+    white-space: pre-wrap;
+    margin-top: 0;
+
+    @media screen and (min-width: ${theme.m}){
+        font-size: ${theme.large_fontSize_m};
+        line-height: ${theme.large_lineHeight_m};
+    }
+    @media screen and (min-width: ${theme.l}){
+        max-width: calc(${theme.l} - 10%);
+    }
+    @media screen and (min-width: ${theme.xl}){
+        font-size: ${theme.large_fontSize_xl};
+        max-width: calc(${theme.xl} - 20%);
+    }
+`
+
 const CaptionCreditIconWrapper = styled.div`
   position: absolute;
   width: 100%;
@@ -410,7 +430,9 @@ export const HeroShow = ({
             <Outer className={image1920x1080 ? "with_image" : "without_image"}>
                 <Meta className="page_meta" titleLength={title.length}>
                     {title && <Headline level={1} text={title} />}
-                    {standfirst && <LeadParagraph text={standfirst} />}
+                    {standfirst &&
+                      <StandFirst className="lead_paragraph">{parse(standfirst)}</StandFirst>
+                    }
                     {dateTimeStart ? (
                         children && <ButtonContainer>{children}</ButtonContainer>
                     ) : totalPerformances > 0 ? (

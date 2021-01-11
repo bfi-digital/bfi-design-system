@@ -351,7 +351,10 @@ export const HeroPage = ({
             <Outer className={image1920x1080 ? "with_image" : (isServiceListPage ? "service_list_no_image" : "without_image")}>
                 <Meta className="page_meta" titleLength={title.length}>
                     {title && <Headline level={1} text={title}/>}
-                    <StandFirst className="lead_paragraph">{standfirst && parse(standfirst)}</StandFirst>
+                    {standfirst &&
+                      <StandFirst className="lead_paragraph">{parse(standfirst)}</StandFirst>
+                    }
+
                 </Meta>
                 {image1920x1080 &&
                 <ImageContainer>

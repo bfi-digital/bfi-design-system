@@ -9,6 +9,7 @@ import { Wrapper } from "../PageContainer"
 import cameraIcon from "./camera_icon.svg"
 import playIcon from "./play_icon.svg"
 import pauseIcon from "./pause_icon.svg"
+import parse from "html-react-parser"
 
 const Outer = styled.section`
     margin: 0 auto;
@@ -236,7 +237,7 @@ const ChildContainerDesktop = styled.div`
     }
 `
 const ChildContainerMobile = styled.div`
-    display: none;
+    display: block;
     a {
         color: ${theme.white};
         background: ${theme.black};
@@ -367,6 +368,27 @@ const Video = styled.video`
     }
 `
 
+const StandFirst = styled.p`
+    color: ${theme.black};
+    font-size: ${theme.fontSize_m};
+    line-height: ${theme.lineHeight_m};
+    margin-bottom: 30px;
+    white-space: pre-wrap;
+    margin-top: 0;
+
+    @media screen and (min-width: ${theme.m}){
+        font-size: ${theme.large_fontSize_m};
+        line-height: ${theme.large_lineHeight_m};
+    }
+    @media screen and (min-width: ${theme.l}){
+        max-width: calc(${theme.l} - 10%);
+    }
+    @media screen and (min-width: ${theme.xl}){
+        font-size: ${theme.large_fontSize_xl};
+        max-width: calc(${theme.xl} - 20%);
+    }
+`
+
 const PlayButton = styled.button`
     z-index: 9999;
     width: 50px;
@@ -474,7 +496,7 @@ export const Hero = ({
                             <Container>
                                 {headline && <Headline level={0} text={headline} visuallyHidden={noTitleText} />}
                                 <ChildContainerDesktop className={image1920x1080 ? "child_with_image" : "child_without_image"}>
-                                    {standfirst && <LeadParagraph text={standfirst}/>}
+                                    {standfirst &&  <StandFirst className="lead_paragraph">{parse(standfirst)}</StandFirst> }
                                     {children}
                                 </ChildContainerDesktop>
                                 {copyright && <Copyright>{copyright}</Copyright>}
