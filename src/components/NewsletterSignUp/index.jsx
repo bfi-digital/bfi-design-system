@@ -82,7 +82,7 @@ const newsletters = [
         form: "191722FC90141D02184CB1B62AB3DC26B9671E217444A96CD508A6FFFF80693A0D23C9F6B46D386E0484ABFBF2752989B1E0F7378E88EC411230879FD164102E",
         title: "Sign up to BFI Film Academy emails",
         inputName: "cm-gkdhjj-gkdhjj",
-        desc: "Find out about BFI Film Academy’s range of accessible courses and resources for 16-25 year olds, whether you want to take your first steps in film or improve on existing skills."
+        desc: "Keep up to date on all the BFI Film Academy news and be the first to find out about our new courses, events and resources, whether you want to take your first steps in film or develop your existing skills."
     },
     {
         form: "191722FC90141D02184CB1B62AB3DC26042E52A84A13269FA18BF6D9F3020290B04C59098D32A10ED64947A8F0B80B962446124E8824322B38F18E9BCBBA1F12",
