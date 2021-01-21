@@ -83,6 +83,9 @@ const Outer = styled(LinkSwitch)`
             color: ${theme.dark};
         }
         .filmcard_description {
+            @media screen and (min-width: ${theme.l}){
+              display: block;
+            } 
             transform: translateY(0);
         }
         .filmcard_description_background {
@@ -225,7 +228,7 @@ const Description = styled.div`
     transform: translateY(100%);
     transition: .3s ease-in-out;
     max-height: 75%;
-
+    display: none;
     @media screen and (max-width: 400px){
         display: none;
     }   

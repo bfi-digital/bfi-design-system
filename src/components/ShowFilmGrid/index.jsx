@@ -24,6 +24,7 @@ const ConditionalWrapper = ({ condition, wrapper, wrapper2, children }) =>
 export const ShowFilmGrid = ({
     films,
     asScroller,
+    description,
     pageWithSidebar
 }) =>
     <>
@@ -37,6 +38,7 @@ export const ShowFilmGrid = ({
                     key={film.id} 
                     inScroller={asScroller && films.length > 3}                    
                     pageWithSidebar={pageWithSidebar}
+                    description={description}
                     {...film}
                 />    
             )}

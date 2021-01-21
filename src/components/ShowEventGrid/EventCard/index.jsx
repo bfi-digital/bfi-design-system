@@ -116,7 +116,6 @@ const Outer = styled.div`
         .filmcard_description {
             @media screen and (min-width: ${theme.l}){
               display: block;
-              max-height: 75%;
             } 
             transform: translateY(0);
         }
