@@ -103,7 +103,26 @@ const Outer = styled.div`
     &:hover, &:focus-within {
         box-shadow: 0px 5px 0px ${theme.dark};
         background: ${theme.lightest};
-
+        img {
+            filter: grayscale(100%) contrast(1) blur(0px);
+            mix-blend-mode: multiply;
+        }
+        .placeholder {
+            opacity: 0.5;
+        }
+        p {
+            color: ${theme.dark};
+        }
+        .filmcard_description {
+            @media screen and (min-width: ${theme.l}){
+              display: block;
+              max-height: 75%;
+            } 
+            transform: translateY(0);
+        }
+        .filmcard_description_background {
+            opacity: 1;
+        }
         a svg{
             transform: translateX(4px);
         }
@@ -117,6 +136,20 @@ const Outer = styled.div`
         transition: box-shadow .3s;
         a {
             outline: none;
+        }
+    }
+    &:focus{
+        outline: none;
+        box-shadow: 0px 0px 0px 5px white, 0px 0px 0px 9px ${theme.focus};
+
+        .highlight_banner {
+            background: ${theme.primary};
+        }
+        .filmcard_description {
+            transform: translateY(0);
+        }
+        .filmcard_description_background {
+            opacity: 1;
         }
     }
     &:active{
@@ -252,6 +285,39 @@ const HighlightTag = styled.div`
         top: ${props => props.withImage ? "117px" : "0px"};
     }
 `
+const DescriptionBG = styled.div`
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 75%;
+    opacity: 0;
+    transition: opacity 0.4s;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.75) 60%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.75) 60%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.75) 60%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#99000000',GradientType=0 ); /* IE6-9 */
+    @media screen and (max-width: 400px){
+        display: none;
+    }  
+`
+const Description = styled.div`
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 15px;
+    color: ${theme.white};
+    z-index: 1;
+    font-size: ${theme.fontSize_s};
+    width: 100%;
+    transform: translateY(100%);
+    transition: .3s ease-in-out;
+    max-height: 75%;
+    display: none;
+    @media screen and (max-width: 400px){
+        display: none;
+    }   
+`
 
 const FavButton = styled.button`
     display: flex;
@@ -288,7 +354,7 @@ export const EventCard = ({
 
     strandColorScheme = 0,
     strandTitle,
-    
+    description,
     favouritable,
     favourited,
     onFavourite,
@@ -312,6 +378,8 @@ export const EventCard = ({
                     >
                         {src => <PageImage className="image" imageSrc={src} alt="" />}
                     </LazyImage>
+                    { description && <DescriptionBG className="filmcard_description_background" /> }
+                    { description && <Description className="filmcard_description">{description.substr(0,90)}</Description> }
                 </PageImageContainer>
             }
 
