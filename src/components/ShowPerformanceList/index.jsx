@@ -5,7 +5,6 @@ import Moment from "react-moment"
 import "moment-timezone"
 import { Headline } from "../Headline"
 import { Button } from "../Button"
-import { PlayButton } from "../PageContainer"
 import { ShowAddToCalendar } from "../ShowAddToCalendar"
 
 const Outer = styled.div`
@@ -82,7 +81,6 @@ const StyledDates = styled.div`
     time + time {
         margin-top: 5px;
     }
-    
 `
 
 const DetailsContainer = styled.div`
@@ -112,10 +110,6 @@ export const ShowPerformanceList = ({
         first.getMonth() === second.getMonth() &&
         first.getDate() === second.getDate()
     
-    const dateIsInPast = (firstDate, secondDate) => {
-        return firstDate.setHours(0,0,0,0) > secondDate.setHours(0,0,0,0)
-    }
-
     const ConditionalWrapper = ({ condition, wrapper, wrapper2, children }) => 
         condition ? wrapper(children) : wrapper2(children)
     return( 
@@ -202,7 +196,6 @@ export const ShowPerformanceList = ({
                                 </PerformanceCTA>
                                 {getPerformanceOnSaleDates(performance)}
                             </PerformanceCTADateWrapper>
-                            
                         </Performance>
                     )
                 })}
@@ -280,4 +273,3 @@ export const ShowPerformanceList = ({
         }
     }
 }
-

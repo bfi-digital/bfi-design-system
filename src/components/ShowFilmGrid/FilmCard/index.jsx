@@ -83,13 +83,15 @@ const Outer = styled(LinkSwitch)`
             color: ${theme.dark};
         }
         .filmcard_description {
-            @media screen and (min-width: ${theme.l}){
+            @media screen and (min-width: 991px){
               display: block;
             } 
             transform: translateY(0);
         }
         .filmcard_description_background {
+            @media screen and (min-width: 991px){
             opacity: 1;
+            }
         }
         .tag {
             background: ${theme.lightest};
@@ -103,10 +105,14 @@ const Outer = styled(LinkSwitch)`
             background: ${props => strandColors[props.strandColorScheme]};
         }
         .filmcard_description {
+            @media screen and (min-width: 991px){
             transform: translateY(0);
+            }
         }
         .filmcard_description_background {
+            @media screen and (min-width: 991px){
             opacity: 1;
+            }
         }
     }
     &::-moz-focus-inner {
