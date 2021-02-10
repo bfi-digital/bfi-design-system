@@ -1,12 +1,12 @@
 export default [
     {
-      id: "1",
-      dateTimeStart: "2020-10-08T18:00",
-      dateTimeEnd: "2020-10-18T23:55",
-      availability: "available",
-      platform: "youtube",
-      bookingRequired: false,
-      ctaURL: "https://player.bfi.org.uk/subscription/film/watch-lynn-lucy-2019-online",
+        id: "1",
+        dateTimeStart: "2020-10-08T18:00",
+        dateTimeEnd: "2020-10-18T23:55",
+        availability: "available",
+        platform: "youtube",
+        bookingRequired: false,
+        ctaURL: "https://player.bfi.org.uk/subscription/film/watch-lynn-lucy-2019-online",
     },
     {
         id: "2",
@@ -50,8 +50,19 @@ export default [
         platform: "player",
         location: "BFI Southbank",
         screen: "",
+        paywall: "paid",
+        ctaURL: "https://player.bfi.org.uk/subscription/film/watch-lynn-lucy-2019-online",
         bookingRequired: true,
-        ctaURL: "https://player.bfi.org.uk/subscription/film/watch-lynn-lucy-2019-online"
+        on_sale_dates: [
+            {
+                type: "public",
+                on_sale: "2021-02-23 00:00:00"
+            },
+            {
+                type: "priority",
+                on_sale: "2021-02-19 00:00:00"
+            }
+        ],
     },
     {
         id: "6",
