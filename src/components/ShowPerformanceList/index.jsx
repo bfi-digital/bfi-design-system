@@ -59,8 +59,28 @@ const PerformanceDetails = styled.div`
     }
 `
 
+const PerformanceCTADateWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+`
+
 const PerformanceCTA = styled.div`
-    align-self: flex-end;
+    @media screen and (min-width: ${theme.s}){
+        align-self: flex-end;
+    }
+`
+
+const StyledDates = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 10px;
+    time {
+        font-size: 1.05rem;
+    }
+    time + time {
+        margin-top: 5px;
+    }
 `
 
 const DetailsContainer = styled.div`
@@ -110,7 +130,7 @@ export const ShowPerformanceList = ({
                                     <>
                                         <p>
                                             <strong>
-                                                <Moment format="dddd D MMMM YYYY">{performance.dateTimeStart}</Moment><br />
+                                                <Moment format="dddd D MMMM">{performance.dateTimeStart}</Moment><br />
                                                 {performanceTimeCheck && 
                                                     <>
                                                         <Moment tz="Europe/London" format="HH:mm">{performance.dateTimeStart}</Moment>
@@ -120,7 +140,7 @@ export const ShowPerformanceList = ({
                                                                 <Moment tz="Europe/London" format="HH:mm">{performance.dateTimeEnd}</Moment>
                                                             </>
                                                         }
-                                                        &nbsp;<Moment tz="Europe/London" format="z">{performance.dateTimeEnd}</Moment>
+                                                        
                                                     </>
                                                 }
                                             </strong>
@@ -149,9 +169,9 @@ export const ShowPerformanceList = ({
                                                 wrapper2={children => <strong>{children}</strong>}
                                             >
                                                 {performanceTimeCheck ?
-                                                    <Moment tz="Europe/London" format="dddd D MMMM YYYY - HH:mm z">{performance.dateTimeStart}</Moment> 
+                                                    <Moment tz="Europe/London" format="dddd D MMMM - HH:mm">{performance.dateTimeStart}</Moment> 
                                                     :
-                                                    <Moment tz="Europe/London" format="dddd D MMMM YYYY">{performance.dateTimeStart}</Moment> 
+                                                    <Moment tz="Europe/London" format="dddd D MMMM">{performance.dateTimeStart}</Moment> 
                                                 }
                                             </ConditionalWrapper>
                                             {performance.dateTimeEnd &&
@@ -159,9 +179,9 @@ export const ShowPerformanceList = ({
                                                     <br />
                                                     <span>
                                                         {performanceTimeCheck ?
-                                                            <Moment tz="Europe/London" format="dddd D MMMM YYYY - HH:mm z">{performance.dateTimeEnd}</Moment>
+                                                            <Moment tz="Europe/London" format="dddd D MMMM - HH:mm">{performance.dateTimeEnd}</Moment>
                                                             :
-                                                            <Moment tz="Europe/London" format="dddd D MMMM YYYY">{performance.dateTimeEnd}</Moment>
+                                                            <Moment tz="Europe/London" format="dddd D MMMM">{performance.dateTimeEnd}</Moment>
                                                         }
                                                     </span>
                                                 </>
@@ -170,9 +190,12 @@ export const ShowPerformanceList = ({
                                     </DetailsContainer>
                                 }
                             </PerformanceDetails>
-                            <PerformanceCTA>
-                                {getPerformanceButton(performance)}
-                            </PerformanceCTA>
+                            <PerformanceCTADateWrapper>
+                                <PerformanceCTA>
+                                    {getPerformanceButton(performance)}
+                                </PerformanceCTA>
+                                {getPerformanceOnSaleDates(performance)}
+                            </PerformanceCTADateWrapper>
                         </Performance>
                     )
                 })}
@@ -196,6 +219,44 @@ export const ShowPerformanceList = ({
                         : 
                         null
         return <p>{info}</p>
+    }
+
+    function getPerformanceOnSaleDates(performance) {
+        
+        let priorityDate
+        let publicDate
+        if (performance.on_sale_dates) {
+            performance.on_sale_dates.map(date => {
+                if (date.type === "priority") {
+                    return priorityDate = date.on_sale
+                }
+                return publicDate = date.on_sale
+            })
+        }
+
+        const currentDate = new Date().getTime() / 1000
+        const unixPriorityDate = new Date(priorityDate).getTime() / 1000
+        const unixPublicDate = new Date(publicDate).getTime() / 1000        
+
+        let showDate
+    
+        if ((isNaN(unixPublicDate) && isNaN(unixPriorityDate))) {
+            showDate = false
+        } else {
+            if (unixPublicDate && unixPriorityDate > currentDate) {
+                showDate = true
+            }
+        }
+
+        return (
+            showDate ?
+                <StyledDates>
+                    {priorityDate && <time dateTime={unixPriorityDate}>Priority booking opens <Moment tz="Europe/London" format="dddd D MMMM - HH:mm">{priorityDate}</Moment></time>}
+                    {publicDate && <time dateTime={unixPublicDate}>General booking opens <Moment tz="Europe/London" format="dddd D MMMM - HH:mm">{publicDate}</Moment></time>}
+                </StyledDates>
+                :
+                <></>
+        )
     }
 
     function getPerformanceButton(performance) {
