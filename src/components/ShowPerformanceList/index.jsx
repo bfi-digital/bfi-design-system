@@ -2,6 +2,9 @@ import React from "react"
 import styled from "styled-components"
 import theme from "../_theme"
 import Moment from "react-moment"
+import dayjs from "dayjs"
+import isBetween from "dayjs/plugin/isBetween"
+dayjs.extend(isBetween)
 import "moment-timezone"
 import { Headline } from "../Headline"
 import { Button } from "../Button"
@@ -109,7 +112,7 @@ export const ShowPerformanceList = ({
         first.getFullYear() === second.getFullYear() &&
         first.getMonth() === second.getMonth() &&
         first.getDate() === second.getDate()
-    
+    console.log('show performances', performances);
     const ConditionalWrapper = ({ condition, wrapper, wrapper2, children }) => 
         condition ? wrapper(children) : wrapper2(children)
     return( 
@@ -221,55 +224,67 @@ export const ShowPerformanceList = ({
         return <p>{info}</p>
     }
 
-    function getPerformanceOnSaleDates(performance) {
-        
+    function getPerformanceOnSaleDates(performance) {        
         let priorityDate
         let publicDate
         if (performance.on_sale_dates) {
             performance.on_sale_dates.map(date => {
                 if (date.type === "priority") {
                     return priorityDate = date.on_sale
+                } 
+                if (date.type === "public") {
+                    return publicDate = date.on_sale    
                 }
-                return publicDate = date.on_sale
+                return date.on_sale
             })
         }
 
-        const currentDate = new Date().getTime() / 1000
-        const unixPriorityDate = new Date(priorityDate).getTime() / 1000
-        const unixPublicDate = new Date(publicDate).getTime() / 1000        
-
-        let showDate
-    
-        if ((isNaN(unixPublicDate) && isNaN(unixPriorityDate))) {
-            showDate = false
-        } else {
-            if (unixPublicDate && unixPriorityDate > currentDate) {
-                showDate = true
-            }
+        let showDate = false
+        if (performance.on_sale_dates && (dayjs().isBefore(dayjs(priorityDate), dayjs(publicDate)))) {
+            showDate = true
         }
 
         return (
             showDate ?
                 <StyledDates>
-                    {priorityDate && <time dateTime={unixPriorityDate}>Priority booking opens <Moment tz="Europe/London" format="dddd D MMMM - HH:mm">{priorityDate}</Moment></time>}
-                    {publicDate && <time dateTime={unixPublicDate}>General booking opens <Moment tz="Europe/London" format="dddd D MMMM - HH:mm">{publicDate}</Moment></time>}
+                    {priorityDate && <time dateTime={dayjs(priorityDate).unix()}>Priority booking opens <Moment tz="Europe/London" format="dddd D MMMM - HH:mm">{priorityDate}</Moment></time>}
+                    {publicDate && <time dateTime={dayjs(publicDate).unix()}>General booking opens <Moment tz="Europe/London" format="dddd D MMMM - HH:mm">{publicDate}</Moment></time>}
                 </StyledDates>
                 :
                 <></>
         )
     }
 
-    function getPerformanceButton(performance) {
-        let button
-        if (performance.ctaURL) {
-            if (performance.bookingRequired === "paid" || performance.bookingRequired === "Paid") {
+    function getPerformanceButton(performance) {        
+        const betweenTimes = dayjs().isBetween(dayjs(performance.dateTimeStart), dayjs(performance.dateTimeEnd))
+        const performanceStarted = dayjs().isAfter(dayjs(performance.dateTimeStart))
+        const performanceEnded = dayjs().isAfter(dayjs(performance.dateTimeEnd))
+
+        let button = null
+
+        if (performanceEnded) {
+            button = null
+        } else if (performance.availability === "On sale now") {
+            button = <StyledButton level={1} url={performance.ctaURL} external={true}>Book now</StyledButton>
+        } else if (performance.availability === "Sold out") {
+            button = <StyledButton level={1} external={false} disabled>Sold out</StyledButton> 
+        } else if (performance.availability === "Available soon") {
+            button = <StyledButton level={1} external={false} disabled>Check back for tickets</StyledButton>
+        } else if (performance.ctaURL && (performance.bookingRequired === "paid" || performance.bookingRequired === "Paid")) {
+            if (performanceStarted) {
+                button = null
+            } else {
                 button = <StyledButton level={1} url={performance.ctaURL} external={true}>Book now</StyledButton>
-            } else if (performance.bookingRequired === "free" || performance.bookingRequired === "Free") {
+            }
+        } else if (performance.ctaURL && (performance.bookingRequired === "free" || performance.bookingRequired === "Free")) {
+            if (!performanceStarted) {
+                button = <StyledButton level={1} url={performance.ctaURL} external={true}>Coming soon</StyledButton>
+            } else if (betweenTimes) {
                 button = <StyledButton level={1} url={performance.ctaURL} external={true}>Watch now</StyledButton>
             } else {
                 button = null
             }
-            return button
         }
+        return button 
     }
 }
