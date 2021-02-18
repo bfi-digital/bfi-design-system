@@ -239,20 +239,16 @@ export const ShowPerformanceList = ({
             })
         }
 
-        const currentDate = new Date().getTime() / 1000
-        const unixPriorityDate = new Date(priorityDate).getTime() / 1000
-        const unixPublicDate = new Date(publicDate).getTime() / 1000        
-
         let showDate = false
-        if (performance.on_sale_dates && (unixPublicDate && unixPriorityDate > currentDate)) {
+        if (performance.on_sale_dates && (dayjs().isBefore(dayjs(priorityDate), dayjs(publicDate)))) {
             showDate = true
         }
 
         return (
             showDate ?
                 <StyledDates>
-                    {priorityDate && <time dateTime={unixPriorityDate}>Priority booking opens <Moment tz="Europe/London" format="dddd D MMMM - HH:mm">{priorityDate}</Moment></time>}
-                    {publicDate && <time dateTime={unixPublicDate}>General booking opens <Moment tz="Europe/London" format="dddd D MMMM - HH:mm">{publicDate}</Moment></time>}
+                    {priorityDate && <time dateTime={dayjs(priorityDate).unix()}>Priority booking opens <Moment tz="Europe/London" format="dddd D MMMM - HH:mm">{priorityDate}</Moment></time>}
+                    {publicDate && <time dateTime={dayjs(publicDate).unix()}>General booking opens <Moment tz="Europe/London" format="dddd D MMMM - HH:mm">{publicDate}</Moment></time>}
                 </StyledDates>
                 :
                 <></>
@@ -261,53 +257,34 @@ export const ShowPerformanceList = ({
 
     function getPerformanceButton(performance) {        
         const betweenTimes = dayjs().isBetween(dayjs(performance.dateTimeStart), dayjs(performance.dateTimeEnd))
-        console.log('betweenTimes', betweenTimes)
         const performanceStarted = dayjs().isAfter(dayjs(performance.dateTimeStart))
-        console.log('started', performanceStarted);
         const performanceEnded = dayjs().isAfter(dayjs(performance.dateTimeEnd))
-        console.log('ended', performanceEnded);
 
         let button = null
 
-        if (performance.availability) {
-            if (performance.availability === "On sale now") {
+        if (performanceEnded) {
+            button = null
+        } else if (performance.availability === "On sale now") {
+            button = <StyledButton level={1} url={performance.ctaURL} external={true}>Book now</StyledButton>
+        } else if (performance.availability === "Sold out") {
+            button = <StyledButton level={1} external={false} disabled>Sold out</StyledButton> 
+        } else if (performance.availability === "Available soon") {
+            button = <StyledButton level={1} external={false} disabled>Check back for tickets</StyledButton>
+        } else if (performance.ctaURL && (performance.bookingRequired === "paid" || performance.bookingRequired === "Paid")) {
+            if (performanceStarted) {
+                button = null
+            } else {
                 button = <StyledButton level={1} url={performance.ctaURL} external={true}>Book now</StyledButton>
             }
-
-            if (performance.availability === "Sold out") {
-                button = <StyledButton level={1} external={false} disabled>Sold out</StyledButton>
-            }
-
-            if (performance.availability === "Available soon") {
-                button = <StyledButton level={1} external={false} disabled>Check back for tickets</StyledButton>
-            }
-            return button
-        }
-        
-        if (performance.ctaURL) {
-            if (performance.bookingRequired === "paid" || performance.bookingRequired === "Paid") {
-                if (performanceStarted) {
-                    button = null
-                }
-                button = <StyledButton level={1} url={performance.ctaURL} external={true}>Book now</StyledButton>
-            }
-
-            if (performance.bookingRequired === "free" || performance.bookingRequired === "Free") {
-                // Booking NOT required and performance has NOT started
-                if (!performanceStarted) {
-                    console.log('coming soon');
-                    button = <StyledButton level={1} url={performance.ctaURL} external={true}>Coming soon</StyledButton>
-                }
-                // Booking NOT required and performance has started
-                if (betweenTimes) {
-                    button = <StyledButton level={1} url={performance.ctaURL} external={true}>Watch now</StyledButton>
-                }
-                // Booking NOT required and performance has finished
+        } else if (performance.ctaURL && (performance.bookingRequired === "free" || performance.bookingRequired === "Free")) {
+            if (!performanceStarted) {
+                button = <StyledButton level={1} url={performance.ctaURL} external={true}>Coming soon</StyledButton>
+            } else if (betweenTimes) {
+                button = <StyledButton level={1} url={performance.ctaURL} external={true}>Watch now</StyledButton>
+            } else {
                 button = null
             }
         }
-
         return button 
-
     }
 }

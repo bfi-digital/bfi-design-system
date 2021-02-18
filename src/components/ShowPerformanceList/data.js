@@ -1,8 +1,8 @@
 export default [
     {
         id: "1",
-        dateTimeStart: "2020-10-08T18:00",
-        dateTimeEnd: "2020-10-18T23:55",
+        dateTimeStart: "2021-10-08T18:00",
+        dateTimeEnd: "2021-10-18T23:55",
         availability: "On sale now",
         platform: "youtube",
         bookingRequired: "Free",
@@ -10,8 +10,8 @@ export default [
     },
     {
         id: "2",
-        dateTimeStart: "2020-10-08T13:00",
-        dateTimeEnd: "2020-10-08T14:28",
+        dateTimeStart: "2021-10-08T13:00",
+        dateTimeEnd: "2021-10-08T14:28",
         availability: "Available soon",
         platform: "southbank",
         location: "BFI Southbank",
@@ -32,8 +32,8 @@ export default [
     {
         id: "3",
         performanceInfo: "Booking will be available soon!",
-        dateTimeStart: "2020-10-08T18:00",
-        dateTimeEnd: "2020-10-08T23:00",
+        dateTimeStart: "2021-10-08T18:00",
+        dateTimeEnd: "2021-10-08T23:00",
         availability: "Sold out",
         platform: "southbank",
         location: "BFI Southbank",
@@ -43,8 +43,8 @@ export default [
     },
     {
         id: "4",
-        dateTimeStart: "2021-2-16T15:00",
-        dateTimeEnd: "2021-2-21T23:00",
+        dateTimeStart: "2021-02-26T15:00",
+        dateTimeEnd: "2021-02-27T23:00",
         availability: "unavailable",
         platform: "southbank",
         location: "BFI Southbank",
@@ -65,8 +65,8 @@ export default [
     {
         id: "5",
         performanceInfo: "BFI Player without end date",
-        dateTimeStart: "2021-10-15T18:00",
-        dateTimeEnd: "2021-10-15T18:00",
+        dateTimeStart: "2021-02-15T18:00",
+        dateTimeEnd: "2021-02-27T18:00",
         availability: "available",
         platform: "player",
         location: "BFI Southbank",
@@ -88,7 +88,7 @@ export default [
     {
         id: "6",
         performanceInfo: "BFI Player without end date or time",
-        dateTimeStart: "2020-10-15T00:00",
+        dateTimeStart: "2021-10-15T00:00",
         availability: "available",
         platform: "player",
         location: "BFI Southbank",
