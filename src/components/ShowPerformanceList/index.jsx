@@ -278,7 +278,7 @@ export const ShowPerformanceList = ({
             }
         } else if (performance.ctaURL && (performance.bookingRequired === "free" || performance.bookingRequired === "Free")) {
             if (!performanceStarted) {
-                button = <StyledButton level={1} url={performance.ctaURL} external={true}>Coming soon</StyledButton>
+                button = <StyledButton level={1} url={performance.ctaURL} external={true} disabled>Coming soon</StyledButton>
             } else if (betweenTimes) {
                 button = <StyledButton level={1} url={performance.ctaURL} external={true}>Watch now</StyledButton>
             } else {

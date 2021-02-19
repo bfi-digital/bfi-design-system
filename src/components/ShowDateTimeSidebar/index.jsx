@@ -48,17 +48,17 @@ export const ShowDateTimeSidebar = ({
             <DateP>
                 {!datesAreOnSameDay && <strong>From: </strong>}
                 {!datesAreOnSameDay && performanceTimeCheck && 
-                    <span><Moment tz="Europe/London" format="HH:mm z">{singlePerformance.dateTimeStart}</Moment></span>
+                    <span><Moment tz="Europe/London" format="HH:mm">{singlePerformance.dateTimeStart}</Moment></span>
                 }
-                <Moment format="dddd D MMMM YYYY" date={singlePerformance.dateTimeStart} />
+                <Moment format="dddd D MMMM" date={singlePerformance.dateTimeStart} />
             </DateP>
             {!datesAreOnSameDay && 
                 <DateP>
                     <strong>Until: </strong>
                     { performanceTimeCheck && 
-                        <span><Moment tz="Europe/London" format="HH:mm z">{singlePerformance.dateTimeEnd}</Moment></span>
+                        <span><Moment tz="Europe/London" format="HH:mm">{singlePerformance.dateTimeEnd}</Moment></span>
                     }
-                    <Moment format="dddd D MMMM YYYY" date={singlePerformance.dateTimeEnd} />
+                    <Moment format="dddd D MMMM" date={singlePerformance.dateTimeEnd} />
                 </DateP>
             }
             {datesAreOnSameDay && performanceTimeCheck && 
@@ -68,10 +68,10 @@ export const ShowDateTimeSidebar = ({
                     {singlePerformance.dateTimeEnd ? 
                         <>
                             &nbsp;&ndash;&nbsp;
-                            <Moment tz="Europe/London" format="HH:mm z">{singlePerformance.dateTimeEnd}</Moment>
+                            <Moment tz="Europe/London" format="HH:mm">{singlePerformance.dateTimeEnd}</Moment>
                         </>
                         :
-                        <span>&nbsp;<Moment tz="Europe/London" format="z">{singlePerformance.dateTimeStart}</Moment></span>
+                        <span>&nbsp;<Moment tz="Europe/London">{singlePerformance.dateTimeStart}</Moment></span>
                     }
                 </TimeP>
             }
