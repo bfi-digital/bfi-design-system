@@ -22,10 +22,9 @@ export const CallToAction = ({
     linkText,
     linkURL,
     center,
-    external
 }) =>
     <Outer center={center} className="call_to_action_block">
-        <Button to={linkURL} external={external} className={external ? "external_link" : ""} rel={external ? "noreferrer" : ""}  target={external ? "_blank" : "_self"}>
+        <Button to={linkURL}>
             {linkText}
         </Button>
     </Outer>
@@ -44,10 +43,8 @@ CallToAction.propTypes = {
 	 * An optional choice to set this call to action to be center aligned - this should be used only for links to further content with article/film/page grids, rather than for call to actions on pages.
 	 **/
     center: PropTypes.bool,
-    external: PropTypes.bool
 }
 
 CallToAction.defaultProps = {
     center: false,
-    external: false
 }
