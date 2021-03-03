@@ -138,11 +138,10 @@ export const PageLink = ({
     title,
     image,
     placeholder,
-    external,
     url
 }) =>
     <Outer>
-        <CallToAction external={external} className={external ? "external_link" : ""} rel={external ? "noreferrer" : ""} to={url} target={external ? "_blank" : "_self"}>
+        <CallToAction to={url}>
             <Heading className="pagelink_title">{title}</Heading>
             
             <PageImageContainer withImage={image}>

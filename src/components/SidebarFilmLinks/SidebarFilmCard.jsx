@@ -142,10 +142,9 @@ export const SidebarFilmCard = ({
     channels,
     url,
     imageAltText,
-    external
 }) =>
     <Outer>
-        <CallToAction external={external} className={external ? "external_link" : ""} rel={external ? "noreferrer" : ""} to={url} target={external ? "_blank" : "_self"}>
+        <CallToAction to={url}>
             <Content>
                 <Heading>{name}</Heading>
                 <Channels>

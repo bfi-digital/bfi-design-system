@@ -159,10 +159,9 @@ export const SidebarArticleCard = ({
     url,
     imageAltText,
     author,
-    external
 }) =>
     <Outer>
-        <CallToAction external={external} className={external ? "external_link" : ""} rel={external ? "noreferrer" : ""} to={url} target={external ? "_blank" : "_self"}>
+        <CallToAction to={url}>
             <PageImageContainer>
                 <LazyImage
                     src={image480x270 ? image480x270 : placeholderImage}

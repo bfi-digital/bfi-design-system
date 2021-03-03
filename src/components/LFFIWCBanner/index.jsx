@@ -225,7 +225,7 @@ export const LFFIWCBanner = ({
                                 </TimeContainer>
                             </>
                         }
-                        <a href="https://www.iwc.com/gb/en/home.html" target="_blank" rel="noreferrer" title="Go to IWC's website">
+                        <a href="https://www.iwc.com/gb/en/home.html" title="Go to IWC's website">
                             <LogoImg src={iwcLogo} alt="IWC Schaffhausen" />
                         </a>
                     </CountdownContainerInner>

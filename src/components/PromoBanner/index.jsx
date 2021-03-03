@@ -329,7 +329,7 @@ export const PromoBanner = ({
                 </PrefixContainer>
                 }
                 {callToActionUrl && (image || oembedObject) && 
-                <Button to={callToActionUrl} colorScheme={colorSchemes[colorScheme].buttonColor} external={external} rel={external ? "noreferrer" : ""}  target={external ? "_blank" : "_self"}>
+                <Button to={callToActionUrl} colorScheme={colorSchemes[colorScheme].buttonColor}>
                     {callToActionTitle}
                 </Button>
                 }
@@ -351,7 +351,7 @@ export const PromoBanner = ({
                         : 
                         <RightButton>
                             {callToActionUrl && 
-                            <Button to={callToActionUrl} colorScheme={colorSchemes[colorScheme].buttonColor} external={external} rel={external ? "noreferrer" : ""} target={external ? "_blank" : "_self"}>
+                            <Button to={callToActionUrl} colorScheme={colorSchemes[colorScheme].buttonColor}>
                                 {callToActionTitle}
                             </Button>
                             }

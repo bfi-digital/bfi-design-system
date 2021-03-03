@@ -221,9 +221,7 @@ export const ArticleCardHighlighted = ({
             to={url}
             external={external} 
             className={external ? "external_link" : ""}
-            rel={external ? "noreferrer" : ""} 
-            target={external ? "_blank" : "_self"}
-            title={"Read " + title + (external ? " in a new tab" : "")}
+            title={"Read " + title}
         >
             <span>{title}</span>
         </CallToAction>    
