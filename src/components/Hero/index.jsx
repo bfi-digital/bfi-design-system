@@ -359,7 +359,6 @@ const Video = styled.video`
 
     @media screen and (max-width: ${theme.m}){
         width: auto;
-        transform: ${props => props.noTitleText ? "none" : "translateX(-25%)"};
     }
 
     @media screen and (min-width: ${theme.m}){
@@ -390,7 +389,7 @@ const StandFirst = styled.p`
 `
 
 const PlayButton = styled.button`
-    z-index: 9999;
+    z-index: 2;
     width: 50px;
     height: 50px;
     opacity: 0;
