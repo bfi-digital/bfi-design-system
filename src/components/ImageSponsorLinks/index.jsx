@@ -73,7 +73,7 @@ export const ImageSponsorLinks = ({
                 <ImageContainer key={image.url}>
                     <ConditionalWrapper
                         condition={image.link}
-                        wrapper={children => <Link href={image.link} title={image.alt} target="_blank">{children}</Link>}
+                        wrapper={children => <Link href={image.link} title={image.alt}>{children}</Link>}
                     >
                         <LazyImage
                             src={image.url}
