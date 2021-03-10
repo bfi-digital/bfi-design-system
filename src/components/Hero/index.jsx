@@ -396,7 +396,8 @@ const PlayButton = styled.button`
     cursor: pointer;
     position: absolute; 
     top: 50%;
-    left: calc(50% - 25px);
+    left: 50%;
+    transform: translate(-50%, -50%);
     border: none;
     background: url(${props => props.backgroundImage});
     background-size: 100%;
