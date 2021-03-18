@@ -18,8 +18,8 @@ const Outer = styled.section`
     max-width: calc(${theme.xl} + 125px);
     position: relative;
     height: auto;
-    min-height: ${props => props.noTitleText ? "none" : "40vh"};
-    padding-top: ${props => props.noTitleText ? "calc(56.25% - 25px)" : (props.withHeader ? "64px" : "75px")};
+    /* min-height: ${props => props.noTitleText ? "none" : "40vh"}; */
+    padding-top: calc(56.25% - 25px);
     padding-bottom: 25px;
     background-image: url("${props => props.image}");
     background-size: ${props => props.noTitleText ? "contain" : "cover"};
@@ -493,15 +493,16 @@ export const Hero = ({
                                         itemprop="copyrightHolder" />
                                 </CaptionCreditIconWrapper>
                             }
-                            <Container>
-                                {headline && <Headline level={0} text={headline} visuallyHidden={noTitleText} />}
-                                <ChildContainerDesktop className={image1920x1080 ? "child_with_image" : "child_without_image"}>
-                                    {standfirst &&  <StandFirst className="lead_paragraph">{parse(standfirst)}</StandFirst> }
-                                    {children}
-                                </ChildContainerDesktop>
-                                {copyright && <Copyright>{copyright}</Copyright>}
-                            </Container>
+                           
                         </Outer>
+                        <Container>
+                            {headline && <Headline level={0} text={headline} visuallyHidden={noTitleText} />}
+                            <ChildContainerDesktop className={image1920x1080 ? "child_with_image" : "child_without_image"}>
+                                {standfirst &&  <StandFirst className="lead_paragraph">{parse(standfirst)}</StandFirst> }
+                                {children}
+                            </ChildContainerDesktop>
+                            {copyright && <Copyright>{copyright}</Copyright>}
+                        </Container>
                         {image1920x1080 && (children || standfirst) && 
                             <ChildContainerMobile>
                                 <Wrapper>
