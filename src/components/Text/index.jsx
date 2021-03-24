@@ -9,6 +9,66 @@ const Outer = styled.div`
     font-size: ${theme.fontSize_s};
     margin-bottom: 20px;
 
+    h2 {
+        font-family: ${theme.bodyFont}; 
+        color: ${theme.black};
+        font-weight: bold;
+        font-size: 1.4375rem;
+        margin-block-start: 1.75em;
+        margin-block-end: 0.5em;
+        line-height: 1.3;
+        @media screen and (min-width: ${theme.l}){
+            font-size: 1.6875rem;
+            margin-block-start: 2em;
+        }
+        @media screen and (min-width: ${theme.xl}){
+            margin-block-start: 2.25em;
+            font-size: 2rem;
+        }
+    }
+
+    h3 {
+        color: ${theme.black};
+        font-weight: bold;
+        font-size: 1.25rem;
+        margin-block-start: 1.5em;
+        margin-block-end: 0.5em;
+        line-height: 1.3;
+        @media screen and (min-width: ${theme.xl}){
+            font-size: 1.6875rem;
+        }
+    }
+
+    h4 {
+        font-family: ${theme.bodyFont};
+        color: ${theme.black};
+        font-weight: ${theme.fontWeight_semiBold};
+        font-size: ${theme.fontSize_s};
+        margin-bottom: 10px;
+        line-height: 1.3;
+        @media screen and (min-width: ${theme.m}){
+            font-size: ${theme.fontSize_m};
+        }
+        @media screen and (min-width: ${theme.xl}){
+            font-size: 1.563rem;
+        }
+    }
+
+    h5 {
+        font-family: ${theme.bodyFont};
+        color: ${theme.black};
+        font-weight: ${theme.fontWeight_semiBold};
+        font-size: 0.875rem;
+        line-height: 1.3;
+        @media screen and (min-width: ${theme.m}){
+            font-size: ${theme.fontSize_s};
+        }
+        @media screen and (min-width: ${theme.xl}){
+            font-size: ${theme.fontSize_m};
+        }
+    }
+
+
     p:first-of-type{
         margin-top: 0px;
     }
