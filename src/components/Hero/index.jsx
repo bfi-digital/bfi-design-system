@@ -10,6 +10,7 @@ import cameraIcon from "./camera_icon.svg"
 import playIcon from "./play_icon.svg"
 import pauseIcon from "./pause_icon.svg"
 import parse from "html-react-parser"
+import useMobile from "../../hooks/mediaHook"
 
 const Outer = styled.section`
     margin: 0 auto;
@@ -431,6 +432,11 @@ export const Hero = ({
 }) => {
     const [isPaused, setIsPaused] = useState(true)
     const [textDisplay, setTextDisplay] = useState(false)
+    const [video, setVideo] = useState(false)
+    const [image, setImage] = useState(true)
+    const mobile = useMobile("768px", false)
+    const videoOnDesktop = video && !mobile
+    const videoAndMobile = video && mobile
     const vidRef = useRef(null)
 
     useEffect(() => {
@@ -439,7 +445,9 @@ export const Hero = ({
                 event.target.focus()
             }
         })
-        if(videoMP4 || videoWEBM) {
+        if (videoMP4 || videoWEBM) {
+            setVideo(true)
+            setImage(false)
             if(isPaused) {
                 vidRef.current.play()
             } else {
@@ -493,16 +501,28 @@ export const Hero = ({
                                         itemprop="copyrightHolder" />
                                 </CaptionCreditIconWrapper>
                             }
-                           
+                            {(image || videoOnDesktop) && (
+                                <Container>
+                                    {headline && <Headline level={0} text={headline} visuallyHidden={noTitleText} />}
+                                    <ChildContainerDesktop className={image1920x1080 ? "child_with_image" : "child_without_image"}>
+                                        {standfirst &&  <StandFirst className="lead_paragraph">{parse(standfirst)}</StandFirst> }
+                                        {children}
+                                    </ChildContainerDesktop>
+                                    {copyright && <Copyright>{copyright}</Copyright>}
+                                </Container>
+                            )}
                         </Outer>
-                        <Container>
-                            {headline && <Headline level={0} text={headline} visuallyHidden={noTitleText} />}
-                            <ChildContainerDesktop className={image1920x1080 ? "child_with_image" : "child_without_image"}>
-                                {standfirst &&  <StandFirst className="lead_paragraph">{parse(standfirst)}</StandFirst> }
-                                {children}
-                            </ChildContainerDesktop>
-                            {copyright && <Copyright>{copyright}</Copyright>}
-                        </Container>
+                        {!image && videoAndMobile && (
+                            <Container>
+                                {headline && <Headline level={0} text={headline} visuallyHidden={noTitleText} />}
+                                <ChildContainerDesktop className={image1920x1080 ? "child_with_image" : "child_without_image"}>
+                                    {standfirst && <StandFirst className="lead_paragraph">{parse(standfirst)}</StandFirst>}
+                                    {children}
+                                </ChildContainerDesktop>
+                                {copyright && <Copyright>{copyright}</Copyright>}
+                            </Container>
+                        )}
+                        
                         {image1920x1080 && (children || standfirst) && 
                             <ChildContainerMobile>
                                 <Wrapper>
