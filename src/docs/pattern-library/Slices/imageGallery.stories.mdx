@@ -1,4 +1,5 @@
 import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+import { Wrapper } from "../../../components/PageContainer/index";
 import { ImageGallery } from "../../../components/ImageGallery/index"
 import { Text } from "../../../components/Text/index"
 
@@ -11,73 +12,148 @@ import { Text } from "../../../components/Text/index"
 
 <Preview>
     <Story name="Image gallery">
-        <div style={{
-            padding: "20px",
-            maxWidth: "1000px",
-            margin: "0 auto"
-        }}>    
-            
-            <ImageGallery 
+        <Wrapper>
+            <ImageGallery
                 images={[
                     {
                         url: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1500/0/0/2020-03/girl-sweetvoiced_headtilted_04.jpg",
                         thumb: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/500/0/0/2020-03/girl-sweetvoiced_headtilted_04.jpg",
                         placeholder: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/50/0/0/2020-03/girl-sweetvoiced_headtilted_04.jpg",
-                        alt: "Example image",
-                        caption: "Example image"
+                        alt: "Example image 1",
+                        caption: "Example image 1",
+                        orientation: "landscape",
+                    },
+                    {
+                        url: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1500/0/0/2021-01/donnie-darko-2001-jake-gyllenhaal-portrait-with-axe.jpg",
+                        thumb: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/500/0/0/2021-01/donnie-darko-2001-jake-gyllenhaal-portrait-with-axe.jpg",
+                        placeholder: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/50/0/0/2021-01/donnie-darko-2001-jake-gyllenhaal-portrait-with-axe.jpg",
+                        alt: "Example image 2",
+                        caption: "Example image 2",
+                        orientation: "portrait",
                     },
                     {
                         url: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1500/0/0/2020-03/kiko's-saints_inside_04.jpg",
                         thumb: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/500/0/0/2020-03/kiko's-saints_inside_04.jpg",
                         placeholder: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/50/0/0/2020-03/kiko's-saints_inside_04.jpg",                            
-                        alt: "Example image 2"
+                        alt: "Example image 3",
+                        orientation: "landscape",
                     },
                     {
                         url: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1500/0/0/2020-03/sequin-in-a-blue-room_blurryface_01.jpg",
                         thumb: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/500/0/0/2020-03/sequin-in-a-blue-room_blurryface_01.jpg",
                         placeholder: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/50/0/0/2020-03/sequin-in-a-blue-room_blurryface_01.jpg",                            
-                        alt: "Example image 3",
-                        caption: "Example image 3"
+                        alt: "Example image 4",
+                        caption: "Example image 4",
+                        orientation: "landscape",
                     },
                     {
-                        url: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1500/0/0/2020-04/sheer-qorma_heads_02.jpg",
-                        thumb: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/500/0/0/2020-04/sheer-qorma_heads_02.jpg",
-                        placeholder: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/50/0/0/2020-04/sheer-qorma_heads_02.jpg",                            
-                        alt: "Example image 4",
-                        caption: "Example image 4"
+                        url: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1200/1800/1/2021-01/hive-2021-woman-in-car.jpg",
+                        thumb: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/600/900/1/2021-01/hive-2021-woman-in-car.jpg",
+                        placeholder: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/60/90/1/2021-01/hive-2021-woman-in-car.jpg",
+                        alt: "Example image 5",
+                        caption: "Example image 5",
+                        orientation: "portrait",
+                    },
+                    {
+                        url: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1200/1400/1/2021-01/napoleon-1927-napoleon-standing-rock.jpg",
+                        thumb: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/600/700/1/2021-01/napoleon-1927-napoleon-standing-rock.jpg",
+                        placeholder: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/60/100/1/2021-01/napoleon-1927-napoleon-standing-rock.jpg",
+                        alt: "Example image 6",
+                        caption: "Example image 6",
+                        orientation: "portrait",
                     },
                     {
                         url: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1500/0/0/2020-04/sweet-mother_party_01.jpg",
                         thumb: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/500/0/0/2020-04/sweet-mother_party_01.jpg",
                         placeholder: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/50/0/0/2020-04/sweet-mother_party_01.jpg",                            
-                        alt: "Example image 4",
-                        caption: "Example image 4"
+                        alt: "Example image 7",
+                        caption: "Example image 7",
+                        orientation: "landscape",
+                    },
+                    {
+                        url: "https://core-cms.bfi.org.uk/sites/default/files/styles/responsive/public/1200/1600/1/2021-01/wild-indian-2021-man-in-suit-looking-down.jpg",
+                        thumb: "https://core-cms.bfi.org.uk/sites/default/files/styles/responsive/public/600/800/1/2021-01/wild-indian-2021-man-in-suit-looking-down.jpg",
+                        placeholder: "https://core-cms.bfi.org.uk/sites/default/files/styles/responsive/public/60/80/1/2021-01/wild-indian-2021-man-in-suit-looking-down.jpg",
+                        alt: "Example image 8",
+                        caption: "Example image 8",
+                        orientation: "portrait",
                     },
                     {
                         url: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1500/0/0/2020-04/shear-avory-to-be-continued_phone_04.jpg",
                         thumb: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/500/0/0/2020-04/shear-avory-to-be-continued_phone_04.jpg",
-                        placeholder: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/50/0/0/2020-04/shear-avory-to-be-continued_phone_04.jpg",                            
-                        alt: "Example image 5",
-                        caption: "Example image 5"
+                        placeholder: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/50/0/0/2020-04/shear-avory-to-be-continued_phone_04.jpg",
+                        alt: "Example image 9",
+                        caption: "Example image 9",
+                        orientation: "landscape",
                     },
                     {
                         url: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1500/0/0/2020-04/westworld-season-two-2018-evan-rachel-wood-james-marsden.jpeg",
                         thumb: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/500/0/0/2020-04/westworld-season-two-2018-evan-rachel-wood-james-marsden.jpeg",
                         placeholder: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/50/0/0/2020-04/westworld-season-two-2018-evan-rachel-wood-james-marsden.jpeg",
-                        alt: "Example image",
-                        caption: "Example image"
+                        alt: "Example image 10",
+                        caption: "Example image 10",
+                        orientation: "landscape",
+                    },
+                    {
+                        url: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1500/0/0/2021-01/days-of-being-wild-1990-woman-buttoning-blouse.jpg",
+                        thumb: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/500/0/0/2021-01/days-of-being-wild-1990-woman-buttoning-blouse.jpg",
+                        placeholder: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/50/0/0/2021-01/days-of-being-wild-1990-woman-buttoning-blouse.jpg",
+                        alt: "Example image 11",
+                        caption: "Example image 11",
+                        orientation: "portrait",
                     },
                     {
                         url: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1500/0/0/2020-04/bacurau-2019-005-udo-kier-with-ladle-in-field-ORIGINAL.jpeg",
                         thumb: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/500/0/0/2020-04/bacurau-2019-005-udo-kier-with-ladle-in-field-ORIGINAL.jpeg",
                         placeholder: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/50/0/0/2020-04/bacurau-2019-005-udo-kier-with-ladle-in-field-ORIGINAL.jpeg",
-                        alt: "Example image",
-                        caption: "Example image"
-                    }
+                        alt: "Example image 12",
+                        caption: "Example image 12",
+                        orientation: "landscape",
+                    },
+                    {
+                        url: "https://core-cms.bfi.org.uk/sites/default/files/styles/responsive/public/1200/0/0/2021-04/i-start-counting-1970-jenny-agutter-by-wall.jpg",
+                        thumb: "https://core-cms.bfi.org.uk/sites/default/files/styles/responsive/public/600/0/0/2021-04/i-start-counting-1970-jenny-agutter-by-wall.jpg",
+                        placeholder: "https://core-cms.bfi.org.uk/sites/default/files/styles/responsive/public/60/0/0/2021-04/i-start-counting-1970-jenny-agutter-by-wall.jpg",
+                        alt: "Example image 13",
+                        caption: "Example image 13",
+                        orientation: "portrait",
+                    },
+                    {
+                        url: "https://core-cms.bfi.org.uk/sites/default/files/styles/responsive/public/1500/0/0/2021-01/superior-2021-red-dress-woman-looking-in-mirror.jpg",
+                        thumb: "https://core-cms.bfi.org.uk/sites/default/files/styles/responsive/public/1500/0/0/2021-01/superior-2021-red-dress-woman-looking-in-mirror.jpg",
+                        placeholder: "https://core-cms.bfi.org.uk/sites/default/files/styles/responsive/public/1500/0/0/2021-01/superior-2021-red-dress-woman-looking-in-mirror.jpg",
+                        alt: "Example image 14",
+                        caption: "Example image 14",
+                        orientation: "landscape",
+                    },
+                    {
+                        url: "https://core-cms.bfi.org.uk/sites/default/files/styles/responsive/public/700/1100/1/2021-01/ghost-and-mrs-muir-the-1947-rex-harrison-gene-tierney.jpg",
+                        thumb: "https://core-cms.bfi.org.uk/sites/default/files/styles/responsive/public/350/550/1/2021-01/ghost-and-mrs-muir-the-1947-rex-harrison-gene-tierney.jpg",
+                        placeholder: "https://core-cms.bfi.org.uk/sites/default/files/styles/responsive/public/70/110/1/2021-01/ghost-and-mrs-muir-the-1947-rex-harrison-gene-tierney.jpg",
+                        alt: "Example image 15",
+                        caption: "Example image 15",
+                        orientation: "portrait",
+                    },
+                    {
+                        url: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1500/0/0/2020-04/sheer-qorma_heads_02.jpg",
+                        thumb: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/500/0/0/2020-04/sheer-qorma_heads_02.jpg",
+                        placeholder: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/50/0/0/2020-04/sheer-qorma_heads_02.jpg",
+                        alt: "Example image 16",
+                        caption: "Example image 16",
+                        orientation: "landscape",
+                    },
+                    {
+                        url: "https://core-cms.bfi.org.uk/sites/default/files/styles/responsive/public/1500/0/0/2021-01/sabaya-2021-women-in-burqas.jpg",
+                        thumb: "https://core-cms.bfi.org.uk/sites/default/files/styles/responsive/public/500/0/0/2021-01/sabaya-2021-women-in-burqas.jpg",
+                        placeholder: "https://core-cms.bfi.org.uk/sites/default/files/styles/responsive/public/50/0/0/2021-01/sabaya-2021-women-in-burqas.jpg",
+                        alt: "Example image 17",
+                        caption: "Example image 17",
+                        orientation: "landscape",
+                    },
                 ]}
                 galleryCaption="A gallery of images"
             />
-        </div>
+        </Wrapper>
     </Story>
 </Preview>
 

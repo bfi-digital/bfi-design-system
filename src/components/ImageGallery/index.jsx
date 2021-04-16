@@ -4,6 +4,7 @@ import theme from "../_theme"
 import { Dialog } from "@reach/dialog"
 import PropTypes from "prop-types"
 import LazyImage from "react-lazy-progressive-image"
+import { Masonry } from "masonic"
 
 const DialogStyles = createGlobalStyle`
    :root {
@@ -86,22 +87,8 @@ const Small = styled.small`
     }
 `
 
-const ImageHolder = styled.div`
-    ${props => props.number > 1 ? `
-        @media screen and (min-width: ${theme.m}){
-            display: flex;
-            -webkit-flex-direction: row;
-            -moz-flex-direction: row;
-            -ms-flex-direction: row;
-            flex-direction: row;
-            align-items: flex-start;
-            flex-wrap: wrap;
-            width: 100%;
-        }
-    ` : null}
-`
-
 const Button = styled.button`
+    display: flex;
     border: none;
     background: ${theme.light};
     cursor: pointer;
@@ -128,17 +115,6 @@ const Button = styled.button`
             mix-blend-mode: multiply;
         }
     }
-    margin-bottom: 10px;
-    @media screen and (min-width: ${theme.m}){
-        margin-right: 10px;
-        /* width: calc( 33.33% - 6.67px); */
-        flex: 1 0 calc(33% - 10px);
-        max-width: 50%;
-
-        &:nth-child(3){
-            margin-right: 0px;
-        }
-    }
 `
 
 const Image = styled.img`
@@ -146,7 +122,53 @@ const Image = styled.img`
     padding: 0;
     display: block;
     width: 100%;
+    object-fit: cover;
+    object-position: center;
+    
+    &[data-orientation="landscape"] {
+        height: 100px;
+        
+        @media screen and (min-width: ${theme.m}){
+            height: 150px;
+        }
+        
+        @media screen and (min-width: ${theme.l}){
+            height: 250px;
+        }
+    }
+    
+    &[data-orientation="portrait"] {
+        height: 210px;
+        
+        @media screen and (min-width: ${theme.m}){
+            height: 310px;
+        }
+        
+        @media screen and (min-width: ${theme.l}){
+            height: 510px;
+        }
+    }
 `
+
+const Thumbnail = ({index: key, data: {img, setOpenImage}}) => (
+    <Button key={key} onClick={() => setOpenImage(key+1)} title="View image larger">
+        <LazyImage
+            key={key}
+            src={img.thumb ? img.thumb : img.url}
+            placeholder={img.placeholder ? img.placeholder : img.url}
+        >
+            {src =>
+                <Image
+                    itemprop="image"
+                    src={src}
+                    alt={img.alt ? img.alt : ""}
+                    loading="lazy"
+                    data-orientation={img.orientation}
+                />
+            }
+        </LazyImage>
+    </Button>
+)
 
 const BigImage = styled.img`
     width: auto;
@@ -228,10 +250,11 @@ export const ImageGallery = ({
     galleryCaption
 }) => {
     const [ openImage, setOpenImage ] = useState(0)
+    const [ imageItems ] = useState([])
     const leftPress = useKeyPress("ArrowLeft")
     const rightPress = useKeyPress("ArrowRight")
-    
-    function moveLeft(clicked) { 
+
+    function moveLeft(clicked) {
         if ((leftPress || clicked) && openImage) {
             if(openImage == 1) {
                 setOpenImage(images.length)
@@ -257,31 +280,25 @@ export const ImageGallery = ({
         moveRight()
     }, [rightPress])
 
+    useEffect(() => {
+        images.map((img, i) => {
+            imageItems.push({
+                img: img,
+                key: i,
+                setOpenImage: setOpenImage,
+            })
+        })
+    }, [])
+
     return(
         <Outer itemscope itemtype="http://schema.org/ImageObject">
-            <ImageHolder number={images.length}>
-                {
-                    images.map((img, i) => {
-                        return(
-                            <Button key={img.url} onClick={() => setOpenImage(i+1)} title="View image larger">
-                                <LazyImage
-                                    src={img.thumb ? img.thumb : img.url}
-                                    placeholder={img.placeholder ? img.placeholder : img.url}
-                                >
-                                    {src =>
-                                        <Image
-                                            itemprop="image"
-                                            src={src}
-                                            alt={img.alt ? img.alt : ""}
-                                            loading="lazy"
-                                        />
-                                    }
-                                </LazyImage>
-                            </Button>
-                        )
-                    })
-                }
-            </ImageHolder>
+            <Masonry
+                items={imageItems}
+                columnGutter={10}
+                columnCount={3}
+                render={Thumbnail}
+            />
+
             {galleryCaption && <Caption itemprop="caption description">{galleryCaption}</Caption>}
 
             <>
