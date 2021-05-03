@@ -102,6 +102,22 @@ const Outer = styled.div`
             outline: none;
             text-decoration: underline;
         }
+        
+        &[name]::before {
+            content: "\\00a0";
+            position: relative;
+            top: -70px;
+            margin-left: -5px;
+            width: 0;
+            height: 0;
+            color: transparent;
+            overflow: hidden;
+            pointer-events: none;
+            
+            @media screen and (min-width: ${theme.m}){
+                top: -90px;
+            }
+        }
     }
     p + ul, p + ol {
         margin-top: -5px;
