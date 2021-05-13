@@ -5,12 +5,12 @@ import theme from "../_theme"
 
 const Break = styled.hr`
     border: 1px solid ${theme.darkGrey};
-    margin: ${props => props.istransparent ? ((theme.standardSpace*0.5) + "px") : (theme.standardSpace + "px")} auto;
+    margin: ${props => props.istransparent ? `${theme.standardSpace}px` : `${theme.standardSpace * 1.33}px`} auto;
     width: 100%;
     opacity: ${props => props.istransparent ? "0" : "0.15"};
 
     @media screen and (min-width: ${theme.m}){
-        margin: ${props => props.istransparent ? ((theme.standardSpace*0.75) + "px") : ((theme.standardSpace*1.5) + "px")} auto;
+        margin: ${props => props.istransparent ? `${theme.standardSpace * 1.33}px` : `${theme.standardSpace * 2}px`} auto;
     }
 `
 export const Divider = ({
@@ -20,7 +20,7 @@ export const Divider = ({
 
 
 Divider.propTypes = {
-    /** 
+    /**
     * Optionally hide the divider so it creates a space between content without being shown
     **/
     istransparent: PropTypes.bool,
