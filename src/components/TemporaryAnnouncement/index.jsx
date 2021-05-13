@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import theme from "../_theme"
 import PropTypes from "prop-types"
+import {Divider} from "../Divider";
 
 const Outer = styled.div`
     color: ${theme.black};
@@ -175,24 +176,18 @@ const Outer = styled.div`
         }
     }
 `
-const Break = styled.hr`
-    border: 1px solid ${theme.darkGrey};
-    margin: 25px auto;
-    width: 100%;
-    opacity: ${props => props.istransparent ? "0" : "0.15"};
-    display: ${props => props.istransparent ? "none" : "block"};
-    @media screen and (min-width: ${theme.m}){
-        margin: 25px auto;
-    }
-`
+
 export const TemporaryAnnouncement = ({
     children,
 }) =>
-    <><Break istransparent={children? false: true} />
+    <>
+        <Divider istransparent={children ? false : true} />
         <Outer className="temporary_announcement">
             {children}
         </Outer>
-        <Break istransparent={children? false: true} /></>
+        <Divider istransparent={children ? false : true} />
+    </>
+
 TemporaryAnnouncement.propTypes = {
     /** 
 	 * Block of html from the WYSIWYG
