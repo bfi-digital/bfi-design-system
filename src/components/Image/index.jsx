@@ -208,22 +208,25 @@ export const Image = ({
                 }}
             >
                 {(src, loading) => 
-                    <Figure className={"loading_" + loading} side={side} isSmall={isSmall} itemscope itemtype="http://schema.org/ImageObject">
-                        <ConditionalWrapper
-                            condition={isClickable}
-                            wrapper={children => <Button onClick={() => setOpenImage(true)}>{children}</Button>}
-                        >
-                            <StyledImage
-                                itemprop="image"
-                                isClickable={false}
-                                src={src}
-                                alt={alt ? alt : ""}
-                                loading="lazy"
-                            />
-                        </ConditionalWrapper>                
-                        {caption && <Figcaption itemprop="caption description">{caption}</Figcaption>}
-                        {copyright && <Small itemprop="copyrightHolder">&copy; {copyright}</Small>}
-                    </Figure>
+                    <>
+                        { side ? <div style={{clear: "both"}} /> : null }
+                        <Figure className={"loading_" + loading} side={side} isSmall={isSmall} itemscope itemtype="http://schema.org/ImageObject">
+                            <ConditionalWrapper
+                                condition={isClickable}
+                                wrapper={children => <Button onClick={() => setOpenImage(true)}>{children}</Button>}
+                            >
+                                <StyledImage
+                                    itemprop="image"
+                                    isClickable={false}
+                                    src={src}
+                                    alt={alt ? alt : ""}
+                                    loading="lazy"
+                                />
+                            </ConditionalWrapper>                
+                            {caption && <Figcaption itemprop="caption description">{caption}</Figcaption>}
+                            {copyright && <Small itemprop="copyrightHolder">&copy; {copyright}</Small>}
+                        </Figure>
+                    </>
                 }
             </LazyImage>
 
@@ -272,7 +275,8 @@ Image.propTypes = {
     **/
     alt: PropTypes.string,
     /** 
-    * Which side should the image be on. String. False by default. Say "left" or "right"
+    * Which side should the image be on. String. False by default. Say "left"
+    * or "right"
     **/
     side: PropTypes.string,
     /** 
@@ -288,7 +292,8 @@ Image.propTypes = {
     **/
     copyright: PropTypes.string,
     /** 
-    * Say whether the images should be clickable, leading to a light box. True by default
+    * Say whether the images should be clickable, leading to a light box. True
+    * by default
     **/
     isClickable: PropTypes.bool
 }
