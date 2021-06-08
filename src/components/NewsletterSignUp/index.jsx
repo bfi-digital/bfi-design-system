@@ -255,17 +255,33 @@ const SubmitButton = styled.button`
     }
 `
 
-export const NewsletterSignUp = ({
-    newsletterOption
-}) => {
+export const NewsletterSignUp = ({newsletterOption, form, inputName, title, desc}) => {
     return(
         <Outer>
-            <Headline level={6} text={newsletters[newsletterOption].title} />
-            <p>{newsletters[newsletterOption].desc}</p>
-            <NewsletterForm className="js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id={newsletters[newsletterOption].form}>
+            <Headline level={6} text={title || newsletters[newsletterOption].title} />
+            <p>{desc || newsletters[newsletterOption].desc}</p>
+            <NewsletterForm
+                className="js-cm-form"
+                id="subForm"
+                action="https://www.createsend.com/t/subscribeerror?
+                description="
+                method="post"
+                data-id={form || newsletters[newsletterOption].form}
+            >
                 <NewsletterLabel>
                     Email 
-                    <input autoComplete="Email" title="Your Email (required)" aria-label="Email" className="js-cm-email-input qa-input-email" id="fieldEmail" maxLength="200" name={newsletters[newsletterOption].inputName} required type="email" placeholder="Your email..." />
+                    <input
+                        required
+                        autoComplete="Email"
+                        title="Your Email (required)"
+                        aria-label="Email"
+                        className="js-cm-email-input qa-input-email"
+                        id="fieldEmail"
+                        maxLength="200"
+                        name={inputName || newsletters[newsletterOption].inputName}
+                        type="email"
+                        placeholder="Your email..."
+                    />
                 </NewsletterLabel>
                 <SubmitButton type="submit">Sign up</SubmitButton>
             </NewsletterForm>
@@ -277,12 +293,17 @@ export const NewsletterSignUp = ({
 }
 
 NewsletterSignUp.propTypes = {
-    /** 
-     * The number that sets which newsletter sign up form this is.
-    **/
-    newsletterOption: PropTypes.number
+    newsletterOption: PropTypes.number,
+    form: PropTypes.string,
+    inputName: PropTypes.string,
+    title: PropTypes.string,
+    desc: PropTypes.string,
 }
 
 NewsletterSignUp.defaultProps = {
-    newsletterOption: 0
+    newsletterOption: 0,
+    form: "",
+    inputName: "",
+    title: "",
+    desc: "",
 }
