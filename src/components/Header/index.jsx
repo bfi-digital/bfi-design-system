@@ -216,7 +216,7 @@ export const Header = ({
                 >
                     <Inner>
                         <LogoLink to="/">
-                            <Logo src={overlay ? logoWhite : logo} alt="Home"/>
+                            <Logo src={overlay ? logoWhite : logo} alt="BFI home"/>
                         </LogoLink>
                     </Inner>
                 </TopSection>
