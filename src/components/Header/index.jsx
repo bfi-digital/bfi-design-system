@@ -236,7 +236,7 @@ export const Header = ({
                         isWhite={overlay}
                     />
                     <MobileLogoLink to="/">
-                        <Logo src={logo} alt="Home"/>
+                        <Logo src={logo} alt="BFI home"/>
                     </MobileLogoLink>
                     <MobileMenuBuffer />
                     <Nav

@@ -385,7 +385,7 @@ const Nav = ({
                 {isSticky && 
                     <Item>
                         <BlackLogoLink to="/"> 
-                            <Logo src={logo} alt="Home"/>
+                            <Logo src={logo} alt="BFI home"/>
                         </BlackLogoLink>
                     </Item>
                 }
