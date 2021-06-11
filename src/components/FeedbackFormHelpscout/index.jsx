@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, {useRef, useState} from "react"
 import styled from "styled-components"
 import theme from "../_theme"
 // import PropTypes from "prop-types"
@@ -182,6 +182,8 @@ export const FeedbackForm = ({
     const [isClosed, setIsClosed] = useState(false)
     const [isComplete, setIsComplete] = useState(false)
 
+    const closeButtonRef = useRef()
+
     const useInput = initialValue => {
         const [value, setValue] = useState(initialValue)
 
@@ -205,6 +207,7 @@ export const FeedbackForm = ({
             reset()
             return response.json()
         })
+        closeButtonRef.current && closeButtonRef.current.focus()
         evt.preventDefault()
     }
 
@@ -214,7 +217,7 @@ export const FeedbackForm = ({
                 <Outer>
                     {openFeedback ?
                         <FeedbackContainer>
-                            <CloseButton onClick={() => {setIsClosed(true)}}>Close x</CloseButton>
+                            <CloseButton ref={closeButtonRef} onClick={() => {setIsClosed(true)}}>Close x</CloseButton>
                             {!isComplete ?
                                 <FeedbackInner>
                                     <Text><p>We’d like to hear your thoughts as we’re always trying to improve our services.
@@ -228,7 +231,7 @@ export const FeedbackForm = ({
                                 </FeedbackInner>
                                 :
                                 <FeedbackInnerComplete>
-                                    <Text><p>Thank you for your feedback.</p></Text>
+                                    <Text><p role="alert">Thank you for your feedback.</p></Text>
                                 </FeedbackInnerComplete>
                             }
                         </FeedbackContainer>
