@@ -335,23 +335,23 @@ export const Footer = ({
                         <SubHeading>Follow us</SubHeading>
                         <IconLinkContainer>
                             <ExternalMenuItem href="https://twitter.com/BFI" data-tracking="footer-navigation" title="View our Twitter">
-                                <Icon className="logo" url={twitter} alt="Twitter"/>
+                                <Icon className="logo" url={twitter} title="Twitter"/>
                                 <span className="hidden_title">Twitter</span>
                             </ExternalMenuItem>
                             <ExternalMenuItem href="https://www.facebook.com/BritishFilmInstitute/" data-tracking="footer-navigation" title="View our Facebook">
-                                <Icon className="logo" url={facebook} alt="Facebook"/>
+                                <Icon className="logo" url={facebook} title="Facebook"/>
                                 <span className="hidden_title">Facebook</span>
                             </ExternalMenuItem>
                             <ExternalMenuItem href="https://www.instagram.com/britishfilminstitute/" data-tracking="footer-navigation" title="View our Instagram">
-                                <Icon className="logo" url={instagram} alt="Instagram"/>
+                                <Icon className="logo" url={instagram} title="Instagram"/>
                                 <span className="hidden_title">Instagram</span>
                             </ExternalMenuItem>
                             <ExternalMenuItem href="https://www.linkedin.com/company/british-film-institute" data-tracking="footer-navigation" title="View our LinkedIn">
-                                <Icon className="logo" url={linkedin} alt="LinkedIn"/>
+                                <Icon className="logo" url={linkedin} title="LinkedIn"/>
                                 <span className="hidden_title">LinkedIn</span>
                             </ExternalMenuItem>
                             <ExternalMenuItem href="https://www.youtube.com/user/BFIfilms" data-tracking="footer-navigation" title="View our YouTube">
-                                <Icon className="logo" url={youtube} alt="YouTube"/>
+                                <Icon className="logo" url={youtube} title="YouTube"/>
                                 <span className="hidden_title">YouTube</span>
                             </ExternalMenuItem>
                         </IconLinkContainer>
