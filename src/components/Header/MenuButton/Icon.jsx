@@ -2,12 +2,12 @@ import React from "react"
 import styled from "styled-components"
 import theme from "../../_theme"
 
-const Outer = styled.div`
+const Outer = styled.span`
     margin-right: 10px;
     width: 15px;
     &:after, 
     &:before, 
-    div {
+    span {
         // background-color: ${props => props.isWhite ? theme.white : theme.black};
         background-color: ${theme.black};
         // border-radius: 3px;
@@ -31,7 +31,7 @@ const Icon = ({
     isWhite
 }) =>
     <Outer open={open} isWhite={isWhite}>
-        <div></div>
+        <span />
     </Outer>
 
 export default Icon
