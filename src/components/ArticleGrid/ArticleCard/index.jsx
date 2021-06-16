@@ -180,7 +180,7 @@ export const ArticleCard = ({
                 src={image480x270}
                 placeholder={image48x27 ? image48x27 : image480x270}
             >
-                {src => <PageImage className="image" imageSrc={src} alt="" />}
+                {src => <PageImage className="image" imageSrc={src} />}
             </LazyImage>
         </PageImageContainer>
         <Headline level={6} text={title} />
