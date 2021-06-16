@@ -24,8 +24,10 @@ const Outer = styled.ol`
         max-width: calc( 0.7 * ${theme.xl});
     }
 `
-const MobileOuter = styled.div`
+const MobileOuter = styled.ol`
     display: block;
+    margin: 0;
+    padding: 0;
     font-size: ${theme.small_fontSize_m};
 
     @media screen and (min-width: ${theme.m}){
