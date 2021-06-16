@@ -292,7 +292,6 @@ const CaptionCreditIcon = styled.button`
             opacity: 1;
             color: transparent;
             text-shadow: 0 0 0 #000;
-            border:0;
         
             &::after {
                 position: absolute;
@@ -330,7 +329,6 @@ const CaptionCreditIcon = styled.button`
         outline: none;
         color: transparent;
         text-shadow: 0 0 0 #000;
-        border:0;
    }
 `
 const VideoContainer = styled.figure`
