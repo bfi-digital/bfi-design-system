@@ -20,6 +20,7 @@ const VideoContainer = styled.div`
         width: 100%;
         height: 100%;
         max-width: 100%;
+        border: 0;
     }
 `
 const Container = styled.div`
@@ -49,6 +50,11 @@ export const Oembed = ({
         parts[1] = "src="+ "\""+parts[1].slice(4)+"\""      
         oembedObject.html = parts.join(" ")
     }
+
+    if (oembedObject.html.includes("youtube") || oembedObject.html.includes("vimeo")) {
+        oembedObject.html = oembedObject.html.replace("frameborder=\"0\"", "")
+    }
+
     return (
         isVideo ?
             <VideoContainer>
