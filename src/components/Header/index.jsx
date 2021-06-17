@@ -253,8 +253,8 @@ export const Header = ({
                     />
                 </Inner>
             </Outer>
-            {open && <MobilePanel navItems={navItems} quickLinks={quickLinks} role="navigation" aria-label="Mobile" />}
-            <div id="content-start"></div>
+            <MobilePanel open={open} navItems={navItems} quickLinks={quickLinks} role="navigation" aria-label="Mobile" />
+            <div id="content-start" />
         </>
     )
 }

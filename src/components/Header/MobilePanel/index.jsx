@@ -15,6 +15,7 @@ const Panel = styled.nav`
     }
     z-index: 999;
     position: fixed;
+    display: ${props => props.open ? "block" : "none"};
     /* offset header */
     top: 52px;
     left: 0px;
@@ -176,47 +177,50 @@ const HighlightLink = styled(Link)`
 
 const MobilePanel = ({
     navItems,
-    quickLinks
+    quickLinks,
+    open = false,
 }) => {
 
     const [ selected, setSelected ] = useState(false)
 
     return(
-        <Panel id="menu-panel" role="region">
-            <RemoveScrollBar />
-            {selected === false && 
+        <Panel id="menu-panel" role="region" open={open}>
+            {open &&
+            <>
+                <RemoveScrollBar/>
+                {selected === false &&
                 <>
-                    {quickLinks && 
-                        <QuickLinks>
-                            <QuickLink to="/">Home</QuickLink>
-                            {quickLinks[0] &&
-                                <QuickLink to={quickLinks[0].url}>{quickLinks[0].title}</QuickLink>
-                            }
-                            {quickLinks[1] &&
-                                <QuickLink to={quickLinks[1].url}>{quickLinks[1].title}</QuickLink>
-                            }
-                            {quickLinks[2] &&
-                                <QuickLink to={quickLinks[2].url}>{quickLinks[2].title}</QuickLink>
-                            }
-                        </QuickLinks>
-                    }   
+                    {quickLinks &&
+                    <QuickLinks>
+                        <QuickLink to="/">Home</QuickLink>
+                        {quickLinks[0] &&
+                        <QuickLink to={quickLinks[0].url}>{quickLinks[0].title}</QuickLink>
+                        }
+                        {quickLinks[1] &&
+                        <QuickLink to={quickLinks[1].url}>{quickLinks[1].title}</QuickLink>
+                        }
+                        {quickLinks[2] &&
+                        <QuickLink to={quickLinks[2].url}>{quickLinks[2].title}</QuickLink>
+                        }
+                    </QuickLinks>
+                    }
                 </>
-            }
-            <List>
-                {navItems.map((navItem, i) =>
-                    <Item key={navItem.title}>
-                        {selected === false ?
-                            <ItemButton
-                                aria-controls={i}
-                                aria-expanded={selected === i ? "true" : "false"}
-                                onClick={() => selected === i ? setSelected(false) : setSelected(i)}
-                                className={selected === i ? "selected" : ""}
-                            >
-                                {selected === i ? "Back" : navItem.title}
-                            </ItemButton>
-                            :
-                            <>
-                                {selected === i &&
+                }
+                <List>
+                    {navItems.map((navItem, i) =>
+                        <Item key={navItem.title}>
+                            {selected === false ?
+                                <ItemButton
+                                    aria-controls={i}
+                                    aria-expanded={selected === i ? "true" : "false"}
+                                    onClick={() => selected === i ? setSelected(false) : setSelected(i)}
+                                    className={selected === i ? "selected" : ""}
+                                >
+                                    {selected === i ? "Back" : navItem.title}
+                                </ItemButton>
+                                :
+                                <>
+                                    {selected === i &&
                                     <ItemButton
                                         aria-controls={i}
                                         aria-expanded="true"
@@ -225,11 +229,11 @@ const MobilePanel = ({
                                     >
                                         Back
                                     </ItemButton>
-                                }
-                            </>
-                        }
-                        <ChildList id={i}>
-                            {selected === i &&
+                                    }
+                                </>
+                            }
+                            <ChildList id={i}>
+                                {selected === i &&
                                 <>
                                     <ChildItem>
                                         <ChildLink to={navItem.url} external={navItem.external}>
@@ -249,14 +253,17 @@ const MobilePanel = ({
                                         </HighlightContainer>
                                     } */}
                                     <HighlightContainer>
-                                        <HighlightLink to={navItem.children[navItem.children.length - 1].url} data-tracking="header-navigation">{navItem.children[navItem.children.length - 1].title}</HighlightLink>
+                                        <HighlightLink to={navItem.children[navItem.children.length - 1].url}
+                                            data-tracking="header-navigation">{navItem.children[navItem.children.length - 1].title}</HighlightLink>
                                     </HighlightContainer>
                                 </>
-                            }
-                        </ChildList>
-                    </Item>
-                )}
-            </List>
+                                }
+                            </ChildList>
+                        </Item>
+                    )}
+                </List>
+            </>
+            }
         </Panel>
     )
 }
