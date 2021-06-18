@@ -13,6 +13,8 @@ const Break = styled.hr`
     @media screen and (min-width: ${theme.m}){
         margin: ${props => props.spacing === "none" ? 0 : (props.istransparent ? `${theme.standardSpace * 1.33}px auto` : `${theme.standardSpace * 2}px auto`)};
     }
+    
+    ${props => props.istransparent ? "+ .call_to_action_block {margin-top: 0}" : ""}
 `
 export const Divider = ({
     istransparent,
