@@ -9,3 +9,12 @@ export default {
 
 export const normal = () =>
     <Divider />
+
+export const transparent = () =>
+    <Divider istransparent={true} />
+
+export const noSpacing = () =>
+    <Divider spacing="none" />
+
+export const clearFloat = () =>
+    <Divider clearFloat={true} />
