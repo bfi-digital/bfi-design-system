@@ -268,59 +268,53 @@ const CaptionCreditIcon = styled.button`
     filter: drop-shadow( 0px 1px 0px rgba(0, 0, 0, .5));
     -webkit-filter: drop-shadow( 0px 1px 0px rgba(0, 0, 0, .5));
 
+    &:focus {
+        border: solid 3px ${theme.focus};
+        outline: none; 
+    }
+
     &.add_caption {
         &:focus {
-         opacity: 1;
-         opacity: 1;
-         color: transparent;
-         text-shadow: 0 0 0 #000;
-         border:0;
-        &::after {
-            position: absolute;
-            bottom: calc(100% + 5px);
-            right: calc(100% - 45px);
-            display: block;
-            width: max-content;
-            max-width: 580px;
-            text-align: left;
-            font-size: ${theme.small_fontSize_m};
-            padding: 10px 15px;
-            width: max-content;
-            background: ${theme.lightest};
-            content: attr(data-title);
-            z-index: 9998;
-            -webkit-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.4);
-            -moz-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.4);
-            box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.4);
-
-            @media screen and (max-width: ${theme.s}){
-              max-width:260px;
-              right: calc(100% - 60px);
-            }
-
-            @media screen and (min-width: ${theme.l}) {
-              max-width:480px;
-            }
-
-            @media screen and (max-width: ${theme.l}) and (min-width: 400px){
-              max-width:280px;
-            }
-
-            @media screen and (min-width: ${theme.m}) and (max-width: ${theme.l}){
-              max-width:350px;
+            opacity: 1;
+            color: transparent;
+            text-shadow: 0 0 0 #000;
+        
+            &::after {
+                position: absolute;
+                bottom: calc(100% + 5px);
+                right: calc(100% - 30px);
+                display: block;
+                padding: 10px 15px;
+                width: max-content;
+                max-width: 1000px;
+                text-align: left;
+                background: ${theme.lightest};
+                content: attr(data-toggle);
+                z-index: 9998;
+                -webkit-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.4);
+                -moz-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.4);
+                box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.4);
+                font-size: ${theme.small_fontSize_m};
+    
+                @media screen and (max-width: ${theme.s}){
+                    max-width:260px;
+                }
+    
+                @media screen and (max-width: ${theme.l}) and (min-width: 400px){
+                    max-width:350px;
+                }
+    
+                @media screen and (min-width: ${theme.m}) and (max-width: ${theme.l}){
+                    max-width: 700px;
+                }
             }
         }
     }
-        &:focus {
-          border: solid 3px ${theme.focus};
-          outline: none;
-        }
-    }
+
     &.remove_caption{
-       outline: none;
-       color: transparent;
-       text-shadow: 0 0 0 #000;
-       border:0;
+        outline: none;
+        color: transparent;
+        text-shadow: 0 0 0 #000;
    }
 `
 export const HeroPage = ({
