@@ -329,7 +329,7 @@ export const PromoBanner = ({
                 </PrefixContainer>
                 }
                 {callToActionUrl && (image || oembedObject) && 
-                <Button to={callToActionUrl} colorScheme={colorSchemes[colorScheme].buttonColor}>
+                <Button to={callToActionUrl} colorScheme={colorSchemes[colorScheme].buttonColor} title={headline}>
                     {callToActionTitle}
                 </Button>
                 }
