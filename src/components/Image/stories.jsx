@@ -32,7 +32,8 @@ export const fullWidth = () =>
     <div style={{padding: "20px"}}>
         <Image
             alt="Alt text"
-            src="http://placehold.it/1440x768"
+            src="https://via.placeholder.com/1440x768"
+            placeholder="https://via.placeholder.com/144x77"
             caption="Example image caption"
         />
         <Text>{exampleText}</Text>
@@ -43,7 +44,8 @@ export const leftAndBig = () =>
         <Image
             side="left"
             alt="Alt text"
-            src="http://placehold.it/600x400"
+            src="https://via.placeholder.com/600x400"
+            placeholder="https://via.placeholder.com/60x40"
             caption="Example image caption"
         />
         <Text>{exampleText}</Text>
@@ -55,7 +57,8 @@ export const rightAndSmall = () =>
             isClickable={true}
             side="right"
             alt="Alt text"
-            src="http://placehold.it/250x200"
+            src="https://via.placeholder.com/250x200"
+            placeholder="https://via.placeholder.com/25x20"
             caption="Example image caption"
         />
         <Text>{exampleText}</Text>

@@ -200,6 +200,7 @@ export const Image = ({
 
     return(
         <>
+            { side && <div style={{clear: "both"}} /> }
             <LazyImage
                 src={src}
                 placeholder={placeholder}
@@ -209,7 +210,6 @@ export const Image = ({
             >
                 {(src, loading) => 
                     <>
-                        { side ? <div style={{clear: "both"}} /> : null }
                         <Figure className={"loading_" + loading} side={side} isSmall={isSmall} itemscope itemtype="http://schema.org/ImageObject">
                             <ConditionalWrapper
                                 condition={isClickable}
