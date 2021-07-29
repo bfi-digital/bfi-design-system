@@ -371,8 +371,7 @@ export const HeroPage = ({
                                         <CaptionCreditIcon className={textDisplay? "add_caption": "remove_caption"}
                                             onClick={()=>setTextDisplay(!textDisplay)}
                                             src={cameraIcon}
-                                            data-title={copyright?
-                                                (imageCaption +" "+ "\u00A9 " + copyright): imageCaption}
+                                            data-toggle={(copyright ? (imageCaption +" " + "\u00A9 " + copyright): imageCaption)}
                                             alt="Image caption and credit"
                                             aria-label="Image caption and credit"
                                             itemprop="copyrightHolder" />
