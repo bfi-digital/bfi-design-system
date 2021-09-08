@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import theme from "../_theme"
 import PropTypes from "prop-types"
-import {Divider} from "../Divider";
+import {Divider} from "../Divider"
 
 const Outer = styled.div`
     color: ${theme.black};

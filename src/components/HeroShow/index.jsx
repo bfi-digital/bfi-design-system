@@ -480,7 +480,7 @@ export const HeroShow = ({
                                                 <CaptionCreditIcon className={textDisplay? "add_caption": "remove_caption"}
                                                     onClick={()=>setTextDisplay(!textDisplay)}
                                                     src={cameraIcon}
-                                                    data-title={
+                                                    data-toggle={
                                                         imageCopyRight
                                                             ? imageCaption + " " + "\u00A9 " + imageCopyRight
                                                             : imageCaption
