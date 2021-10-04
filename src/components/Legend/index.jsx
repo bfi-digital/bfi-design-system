@@ -5,6 +5,7 @@ import theme from "../_theme"
 
 const Outer = styled.legend`
     position: relative;
+    width: 100%;
     display: flex;
     margin-bottom: 25px;
     color: ${theme.black};
@@ -34,7 +35,7 @@ export const Legend = ({
     <Outer><span>{ title }</span></Outer>
 
 Legend.propTypes = {
-    title: PropTypes.string
+    title: PropTypes.string.isRequired
 }
 
 Legend.defaultProps = {
