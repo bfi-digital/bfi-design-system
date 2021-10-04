@@ -54,6 +54,8 @@ export * from "./components/Tag"
 export * from "./components/Text"
 export * from "./components/TemporaryAnnouncement"
 export * from "./components/Legend"
+export * from "./components/FormCard"
+export * from "./components/Checkbox"
 export * from "./components/Selectbox"
 
 // Page scaffolds
