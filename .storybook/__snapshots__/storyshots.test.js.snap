@@ -597,32 +597,31 @@ exports[`Storyshots 4 Components/All/Downloadable File Single File 1`] = `
 `;
 
 exports[`Storyshots 4 Components/All/ErrorPage Error 404 1`] = `
-Array [
+<div
+  className="ErrorPage__Wrapper-sc-1xadvd1-0 ErrorPage__ErrorPageWrapper-sc-1xadvd1-1 bqUFOf"
+>
   <div
-    className="ErrorPage__PageBackground-sc-1xadvd1-0 CZWfa"
-  />,
-  <div
-    className="ErrorPage__ErrorContainer-sc-1xadvd1-1 iPshly"
+    className="ErrorPage__ErrorContainer-sc-1xadvd1-2 kNOAZT"
   >
     <div
-      className="ErrorPage__Content-sc-1xadvd1-6 fIGcRM"
+      className="ErrorPage__Content-sc-1xadvd1-7 glQjFW"
     >
       <h1
-        className="ErrorPage__Heading-sc-1xadvd1-2 bobxG"
+        className="ErrorPage__Heading-sc-1xadvd1-3 gGKxtI"
       >
         <span
-          className="ErrorPage__ErrorNumber-sc-1xadvd1-3 bWhtyO"
+          className="ErrorPage__ErrorNumber-sc-1xadvd1-4 iJOuQl"
         >
           404
         </span>
         <span
-          className="ErrorPage__ErrorTitle-sc-1xadvd1-4 igtsER"
+          className="ErrorPage__ErrorTitle-sc-1xadvd1-5 iNpVEs"
         >
           Page not found
         </span>
       </h1>
       <div
-        className="ErrorPage__ErrorSummary-sc-1xadvd1-5 dDFlMX"
+        className="ErrorPage__ErrorSummary-sc-1xadvd1-6 fxbPzr"
       >
         <p>
           Sorry, something went wrong and we cannot find the page you are looking for.
@@ -632,7 +631,7 @@ Array [
         </p>
       </div>
       <div
-        className="ErrorPage__CTAContainer-sc-1xadvd1-8 hrFkxy"
+        className="ErrorPage__CTAContainer-sc-1xadvd1-9 LFaRE"
       >
         <a
           className="Button__PrimaryButton-sc-1bcggl7-0 eeAcNk"
@@ -643,37 +642,36 @@ Array [
         </a>
       </div>
     </div>
-  </div>,
-]
+  </div>
+</div>
 `;
 
 exports[`Storyshots 4 Components/All/ErrorPage Error 500 1`] = `
-Array [
+<div
+  className="ErrorPage__Wrapper-sc-1xadvd1-0 ErrorPage__ErrorPageWrapper-sc-1xadvd1-1 bqUFOf"
+>
   <div
-    className="ErrorPage__PageBackground-sc-1xadvd1-0 CZWfa"
-  />,
-  <div
-    className="ErrorPage__ErrorContainer-sc-1xadvd1-1 iPshly"
+    className="ErrorPage__ErrorContainer-sc-1xadvd1-2 kNOAZT"
   >
     <div
-      className="ErrorPage__Content-sc-1xadvd1-6 fIGcRM"
+      className="ErrorPage__Content-sc-1xadvd1-7 glQjFW"
     >
       <h1
-        className="ErrorPage__Heading-sc-1xadvd1-2 bobxG"
+        className="ErrorPage__Heading-sc-1xadvd1-3 gGKxtI"
       >
         <span
-          className="ErrorPage__ErrorNumber-sc-1xadvd1-3 bWhtyO"
+          className="ErrorPage__ErrorNumber-sc-1xadvd1-4 iJOuQl"
         >
           500
         </span>
         <span
-          className="ErrorPage__ErrorTitle-sc-1xadvd1-4 igtsER"
+          className="ErrorPage__ErrorTitle-sc-1xadvd1-5 iNpVEs"
         >
           Internal Server Error
         </span>
       </h1>
       <div
-        className="ErrorPage__ErrorSummary-sc-1xadvd1-5 dDFlMX"
+        className="ErrorPage__ErrorSummary-sc-1xadvd1-6 fxbPzr"
       >
         <p>
           Sorry, this page doesn't seem to be working.
@@ -683,7 +681,7 @@ Array [
         </p>
       </div>
       <div
-        className="ErrorPage__CTAContainer-sc-1xadvd1-8 hrFkxy"
+        className="ErrorPage__CTAContainer-sc-1xadvd1-9 LFaRE"
       >
         <a
           className="Button__PrimaryButton-sc-1bcggl7-0 eeAcNk"
@@ -694,8 +692,8 @@ Array [
         </a>
       </div>
     </div>
-  </div>,
-]
+  </div>
+</div>
 `;
 
 exports[`Storyshots 4 Components/All/Feedback Form Example 1`] = `
