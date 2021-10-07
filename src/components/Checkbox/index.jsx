@@ -139,9 +139,11 @@ export const Checkbox = ({
   name,
   label,
   value,
+  onChange,
+  checked
 }) => 
     <Outer>
-      <Input id={ `Checkbox-${id}`} name={ name } type="checkbox" value={ value } />
+      <Input id={ `Checkbox-${id}`} name={ name } type="checkbox" value={ value } onChange={onChange} checked={checked} />
       <Checkmark className="checkmark"></Checkmark>
       <Label for={ `Checkbox-${id}`}><span>{ label }</span></Label>
     </Outer>
@@ -151,7 +153,7 @@ Checkbox.propTypes = {
   name: PropTypes.string,
   label: PropTypes.string,
   value: PropTypes.string,
-  // onChange: PropTypes
+  onChange: PropTypes.func
 }
 
 Checkbox.defaultProps = {

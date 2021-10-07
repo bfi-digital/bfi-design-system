@@ -7,6 +7,7 @@ import { Legend } from "../Legend"
 import { FormCard } from "../FormCard"
 
 const Outer = styled.fieldset`
+    width: 100%;
     border: 0;
 `;
 
@@ -38,7 +39,7 @@ export const FormGroup = ({
         <List>
             {items.map((item) =>
                 <Item>
-                    <FormCard id={ item.id } badge={ item.badge } heading={ item.heading } description={ item.description }></FormCard>
+                    <FormCard id={ item.preferenceSettingId } frequency={ item.frequency } heading={ item.preferenceSettingName } description={ item.description }></FormCard>
                 </Item>
             )}
         </List>

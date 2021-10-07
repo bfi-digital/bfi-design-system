@@ -70,5 +70,5 @@ const items = [
 
 export const normal = () =>
     <div style={{padding: "20px"}}>
-        <Selectbox items={ items }></Selectbox>
+        <Selectbox label="What is your location? (Optional)" items={ items }></Selectbox>
     </div>

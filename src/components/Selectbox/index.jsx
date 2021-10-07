@@ -20,7 +20,8 @@ const Label = styled.label`
 
 const Control = styled.div`
   position: relative;
-  min-width: 416px;
+  max-width: 416px;
+  width: 100%;
   display: flex;
   align-items: center;
 
@@ -96,11 +97,13 @@ const Option = styled.option`
 
 export const Selectbox = ({
   items,
+  label,
 }) => 
     <Outer>
-      <Label>What is your location? (Optional)</Label>
+      <Label>{ label }</Label>
       <Control>
         <Select>
+          <Option selected>Please select one</Option>
           {items.map((item) =>
             <Option value={ item.value }>{ item.label}</Option>
             )}
@@ -110,10 +113,12 @@ export const Selectbox = ({
     </Outer>
 
 Selectbox.propTypes = {
-  items: PropTypes.array
+  items: PropTypes.array,
+  label: PropTypes.string
   // onChange: PropTypes
 }
 
 Selectbox.defaultProps = {
-  items: []
+  items: [],
+  label: '',
 }

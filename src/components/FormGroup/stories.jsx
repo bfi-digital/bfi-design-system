@@ -15,28 +15,28 @@ const group =
         {
             id: '9459f381-cf0b-4b7b-8929-408b5dd77163',
             heading: 'BFI Southbank',
-            badge: 'Weekly',
+            frequency: 'Weekly',
             description: 'The best classic and new cinema, TV, live events and Q&As at the home of cinema in London',
             initialValue: '',
         },
         {
             id: '0616d110-399e-4e5d-8927-426debe83eda',
             heading: '25 & Under',
-            badge: 'Monthly',
+            frequency: 'Monthly',
             description: 'Are you 25 or under? Sign up to hear about our... about programme',
             initialValue: ''
         },
         {
             id: 'aacf0a7c-a7b3-42e9-8a80-51218505bcf9',
             heading: 'BFI Flare',
-            badge: 'Quarterly',
+            frequency: 'Quarterly',
             description: 'The latest news and ticket release updates from the ... LGBTIQ+ Film Festival',
             initialValue: '',
         },
         {
             id: 'd3df04df-b899-4467-85cf-1e556e268203',
             heading: 'BFI London Film Festival',
-            badge: 'Yearly',
+            frequency: 'Yearly',
             description: '#LFF news, competitions and ticket release updates ...',
             initialValue: '',
         }

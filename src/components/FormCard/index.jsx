@@ -9,7 +9,7 @@ const Outer = styled.div`
     padding: 15px 25px 25px 25px;
     background-color: ${theme.lightGrey};
 `
-const Badge = styled.div`
+const Frequency = styled.div`
     display: inline-block;
     padding: 6px 15px 6px 25px;
     margin-left: -25px;
@@ -34,27 +34,26 @@ const Text = styled.p`
 
 export const FormCard = ({
     id,
-    badge,
+    frequency,
     heading,
     description,
 }) => 
     <Outer>
-        <Badge>{ badge }</Badge>
+        {frequency && <Frequency>{ frequency }</Frequency>}
         <Heading>{ heading }</Heading>
         <Text>{ description }</Text>
         <Checkbox id={ id } name={ id } label="Subscribe to this" value=""></Checkbox>
     </Outer>
-
 FormCard.propTypes = {
     id: PropTypes.string,
-    badge: PropTypes.string,
+    frequency: PropTypes.string,
     heading: PropTypes.string,
     description: PropTypes.string
 }
 
 FormCard.defaultProps = {
     id: "",
-    badge: "",
+    frequency: "",
     heading: "",
     description: ""
 }
