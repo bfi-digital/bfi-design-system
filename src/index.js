@@ -53,6 +53,7 @@ export * from "./components/Tabs"
 export * from "./components/Tag"
 export * from "./components/Text"
 export * from "./components/TemporaryAnnouncement"
+export * from "./components/Legend"
 
 // Page scaffolds
 export * from "./components/PageContainer"
