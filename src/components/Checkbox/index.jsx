@@ -5,8 +5,6 @@ import theme from "../_theme"
 
 const Outer = styled.div`
   position: relative;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
 `;
 
 const Checkmark = styled.div`
@@ -119,6 +117,7 @@ const Label = styled.label`
 
   span {
     position: relative;
+    font-weight: ${theme.fontWeight_semiBold};
 
     &:after {
       content: "";

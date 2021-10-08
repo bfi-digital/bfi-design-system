@@ -37,6 +37,19 @@ const InputEl = styled.input`
     border-bottom: 5px solid ${theme.focus};
     outline: none;
   }
+
+  ::placeholder,
+  ::-webkit-input-placeholder {
+    font-size: ${theme.fontSize_s};
+    font-weight: ${theme.fontWeight_semiBold};
+    color: ${theme.black};
+  }
+
+  :-ms-input-placeholder {
+    font-size: ${theme.fontSize_s};
+    font-weight: ${theme.fontWeight_semiBold};
+    color: ${theme.black};
+  }
 `;
 
 export const Input = ({
