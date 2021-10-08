@@ -133,27 +133,30 @@ const Label = styled.label`
   }
 `;
 
-export const Checkbox = ({
-  id,
-  name,
-  label,
-  value,
-  onChange,
-  checked
-}) => 
-    <Outer>
-      <Input id={ `Checkbox-${id}`} name={ name } type="checkbox" value={ value } onChange={onChange} checked={checked} />
-      <Checkmark className="checkmark"></Checkmark>
-      <Label for={ `Checkbox-${id}`}><span>{ label }</span></Label>
-    </Outer>
+export const Checkbox = ({ id, name, label, value, onChange, checked }) => (
+  <Outer>
+    <Input
+      id={`Checkbox-${id}`}
+      name={name}
+      type="checkbox"
+      value={value}
+      onChange={onChange}
+      checked={checked}
+    />
+    <Checkmark className="checkmark"></Checkmark>
+    <Label for={`Checkbox-${id}`}>
+      <span>{label}</span>
+    </Label>
+  </Outer>
+);
 
 Checkbox.propTypes = {
   id: PropTypes.string,
   name: PropTypes.string,
   label: PropTypes.string,
   value: PropTypes.string,
-  onChange: PropTypes.func
-}
+  onChange: PropTypes.func,
+};
 
 Checkbox.defaultProps = {
   id: "",

@@ -90,32 +90,28 @@ const Select = styled.select`
 
 const Option = styled.option``;
 
-export const Selectbox = ({
-  placeholder,
-  items,
-  label,
-}) => 
-    <Outer>
-      <Label>{ label }</Label>
-      <Control>
-        <Select>
-          {placeholder && <Option selected>{placeholder}</Option>}
-          {items.map((item) =>
-            <Option value={ item.value }>{ item.label}</Option>
-            )}
-          
-        </Select>
-      </Control>
-    </Outer>
+export const Selectbox = ({ placeholder, items, label, onChange }) => (
+  <Outer>
+    <Label>{label}</Label>
+    <Control>
+      <Select onChange={onChange}>
+        {placeholder && <Option selected>{placeholder}</Option>}
+        {items.map((item) => (
+          <Option value={item.value}>{item.label}</Option>
+        ))}
+      </Select>
+    </Control>
+  </Outer>
+);
 
 Selectbox.propTypes = {
   items: PropTypes.array,
   label: PropTypes.string,
   placeholder: PropTypes.string,
-  // onChange: PropTypes
-}
+  onChange: PropTypes.func,
+};
 
 Selectbox.defaultProps = {
   items: [],
-  label: '',
-}
+  label: "",
+};
