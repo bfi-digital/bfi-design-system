@@ -61,6 +61,7 @@ export * from "./components/UPCHero";
 export * from "./components/UPCHero/preferences";
 export * from "./components/UPCHero/input";
 export * from "./components/FormField";
+export * from "./components/Fieldset";
 
 // Page scaffolds
 export * from "./components/PageContainer";

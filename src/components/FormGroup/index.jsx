@@ -4,12 +4,8 @@ import PropTypes from "prop-types"
 import theme from "../_theme"
 // import { Checkbox } from "../Checkbox"
 import { Legend } from "../Legend"
+import { Fieldset } from "../Fieldset"
 import { FormCard } from "../FormCard"
-
-const Outer = styled.fieldset`
-    width: 100%;
-    border: 0;
-`;
 
 const List = styled.ul`
     list-style: none;
@@ -34,7 +30,7 @@ export const FormGroup = ({
     title,
     items
 }) => 
-    <Outer>
+    <Fieldset>
         <Legend title={title}></Legend>
         <List>
             {items.map((item) =>
@@ -43,7 +39,7 @@ export const FormGroup = ({
                 </Item>
             )}
         </List>
-    </Outer>
+    </Fieldset>
 
 FormGroup.propTypes = {
     title: PropTypes.string,

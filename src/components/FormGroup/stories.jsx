@@ -42,51 +42,6 @@ const group =
         }
     ]
 };
-// const data = [
-//     {
-//         groupName: '',
-//         items: [
-//             {
-//                 id: '',
-//                 title: '',
-//                 frequency: '',
-//                 description: '',
-//                 initialValue
-//             }
-//         ]
-//     },
-//     {
-//         groupName: '',
-//         items: [
-//             {
-//                 id: '',
-//                 title: '',
-//                 frequency: '',
-//                 description: '',
-//                 initialValue
-//             }
-//         ]
-//     },
-//     {
-//         groupName: '',
-//         items: [
-//             {
-//                 id: '',
-//                 title: '',
-//                 frequency: '',
-//                 description: '',
-//                 initialValue
-//             }
-//         ]
-//     },
-// ]
-    
-// location
-// frequency
-// title
-// description
-// id
-// InitialValue
 
 export const normal = () =>
     <div style={{padding: "20px"}}>
