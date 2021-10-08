@@ -66,8 +66,6 @@ const items = [
     },
 ]
 
-
-
 export const normal = () =>
     <div style={{padding: "20px"}}>
         <Selectbox items={ items }></Selectbox>
