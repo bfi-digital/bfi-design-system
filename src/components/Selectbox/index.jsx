@@ -7,8 +7,6 @@ const Outer = styled.div`
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 1rem;
-  margin-top: 1rem;  
 `;
 
 const Label = styled.label`
@@ -96,6 +94,7 @@ const Option = styled.option`
 `;
 
 export const Selectbox = ({
+  placeholder,
   items,
   label,
 }) => 
@@ -103,7 +102,7 @@ export const Selectbox = ({
       <Label>{ label }</Label>
       <Control>
         <Select>
-          <Option selected>Please select one</Option>
+          {placeholder && <Option selected>{placeholder}</Option>}
           {items.map((item) =>
             <Option value={ item.value }>{ item.label}</Option>
             )}
@@ -114,7 +113,8 @@ export const Selectbox = ({
 
 Selectbox.propTypes = {
   items: PropTypes.array,
-  label: PropTypes.string
+  label: PropTypes.string,
+  placeholder: PropTypes.string,
   // onChange: PropTypes
 }
 
