@@ -134,7 +134,7 @@ const Label = styled.label`
   }
 `;
 
-export const Checkbox = ({ id, name, label, value }) => (
+export const Checkbox = ({ id, name, label, value, onChange }) => (
   <Outer>
     <Input id={`Checkbox-${id}`} name={name} type="checkbox" value={value} onChange={onChange} />
     <Checkmark className="checkmark"></Checkmark>
