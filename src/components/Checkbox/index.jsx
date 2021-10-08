@@ -1,7 +1,7 @@
-import React from "react"
-import styled from "styled-components"
-import PropTypes from "prop-types"
-import theme from "../_theme"
+import React from "react";
+import styled from "styled-components";
+import PropTypes from "prop-types";
+import theme from "../_theme";
 
 const Outer = styled.div`
   position: relative;
@@ -134,29 +134,27 @@ const Label = styled.label`
   }
 `;
 
-export const Checkbox = ({
-  id,
-  name,
-  label,
-  value,
-}) => 
-    <Outer>
-      <Input id={ `Checkbox-${id}`} name={ name } type="checkbox" value={ value } />
-      <Checkmark className="checkmark"></Checkmark>
-      <Label for={ `Checkbox-${id}`}><span>{ label }</span></Label>
-    </Outer>
+export const Checkbox = ({ id, name, label, value }) => (
+  <Outer>
+    <Input id={`Checkbox-${id}`} name={name} type="checkbox" value={value} onChange={onChange} />
+    <Checkmark className="checkmark"></Checkmark>
+    <Label for={`Checkbox-${id}`}>
+      <span>{label}</span>
+    </Label>
+  </Outer>
+);
 
 Checkbox.propTypes = {
   id: PropTypes.string,
   name: PropTypes.string,
   label: PropTypes.string,
   value: PropTypes.string,
-  // onChange: PropTypes
-}
+  onChange: PropTypes.func,
+};
 
 Checkbox.defaultProps = {
-  id: '',
-  name: '',
-  label: '',
-  value: '',
-}
+  id: "",
+  name: "",
+  label: "",
+  value: "",
+};
