@@ -66,8 +66,6 @@ const items = [
     },
 ]
 
-
-
 export const normal = () =>
     <div style={{padding: "20px"}}>
         <Selectbox label="What is your location? (Optional)" items={ items } placeholder="Please select one"></Selectbox>

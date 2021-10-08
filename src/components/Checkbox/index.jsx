@@ -1,7 +1,7 @@
-import React from "react"
-import styled from "styled-components"
-import PropTypes from "prop-types"
-import theme from "../_theme"
+import React from "react";
+import styled from "styled-components";
+import PropTypes from "prop-types";
+import theme from "../_theme";
 
 const Outer = styled.div`
   position: relative;
@@ -156,8 +156,8 @@ Checkbox.propTypes = {
 }
 
 Checkbox.defaultProps = {
-  id: '',
-  name: '',
-  label: '',
-  value: '',
-}
+  id: "",
+  name: "",
+  label: "",
+  value: "",
+};

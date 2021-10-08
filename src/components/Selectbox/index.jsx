@@ -1,7 +1,7 @@
-import React from "react"
-import styled from "styled-components"
-import PropTypes from "prop-types"
-import theme from "../_theme"
+import React from "react";
+import styled from "styled-components";
+import PropTypes from "prop-types";
+import theme from "../_theme";
 
 const Outer = styled.div`
   position: relative;
@@ -44,8 +44,7 @@ const Control = styled.div`
     transition: background-color 0.25s, height 0.25s;
     transform-origin: bottom;
   }
-  
-  
+
   &:after {
     content: "";
     position: absolute;
@@ -54,8 +53,8 @@ const Control = styled.div`
     bottom: auto;
     left: auto;
     display: block;
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     transform: translateY(-50%);
     border-left: 11px solid transparent;
     border-right: 11px solid transparent;
@@ -69,7 +68,7 @@ const Select = styled.select`
   -moz-appearance: none;
   appearance: none;
   flex-basis: 100%;
-  padding: 14px 12px 18px; 
+  padding: 14px 12px 18px;
   background-color: ${theme.white};
   border: 2px solid ${theme.black};
   border-radius: 0;
@@ -81,7 +80,7 @@ const Select = styled.select`
     border: 2px solid ${theme.lightFocus};
   }
 
-  &:active, 
+  &:active,
   &:focus {
     outline: 0;
     border-radius: 0;
@@ -89,9 +88,7 @@ const Select = styled.select`
   }
 `;
 
-const Option = styled.option`
-  
-`;
+const Option = styled.option``;
 
 export const Selectbox = ({
   placeholder,
