@@ -65,6 +65,7 @@ export const Input = ({
   value,
   placeholder,
   style,
+  onChange,
 }) => (
   <Control>
     <Label>
@@ -81,6 +82,7 @@ export const Input = ({
         value={value}
         placeholder={placeholder}
         style={style}
+        onChange={onChange}
         ></InputEl>
     </Label>
   </Control>
@@ -98,10 +100,15 @@ Input.propTypes = {
   type: PropTypes.string,
   value: PropTypes.string,
   placeholder: PropTypes.string,
+  onChange: PropTypes.func
 };
 
 Input.defaultProps = {
+  label: "",
+  id: "",
+  name: "",
   heading: "",
   text: "",
   email: "",
+  value: "",
 };
