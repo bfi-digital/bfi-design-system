@@ -205,7 +205,7 @@ const CallToActionGroup = styled.div`
     }
 `
 
-export const NewsletterSignUp = ({title, desc, changePreferencesUrl, onSignUp}) => {
+export const NewsletterSignUpUserPreferenceCentre = ({title, desc, changePreferencesUrl, onSignUp}) => {
     const [email, setEmail] = useState("")
     function handleSubmit(e) {
         e.preventDefault()
@@ -250,14 +250,14 @@ export const NewsletterSignUp = ({title, desc, changePreferencesUrl, onSignUp}) 
     )
 }
 
-NewsletterSignUp.propTypes = {
+NewsletterSignUpUserPreferenceCentre.propTypes = {
     title: PropTypes.string.isRequired,
     desc: PropTypes.string.isRequired,
     changePreferencesUrl: PropTypes.string.isRequired,
     onSignUp: PropTypes.func
 }
 
-NewsletterSignUp.defaultProps = {
+NewsletterSignUpUserPreferenceCentre.defaultProps = {
     title: "",
     desc: "",
 }
