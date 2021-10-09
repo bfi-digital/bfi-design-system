@@ -5,8 +5,6 @@ import theme from "../_theme";
 
 const Outer = styled.div`
   position: relative;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
 `;
 
 const Checkmark = styled.div`
@@ -119,6 +117,7 @@ const Label = styled.label`
 
   span {
     position: relative;
+    font-weight: ${theme.fontWeight_semiBold};
 
     &:after {
       content: "";
@@ -134,9 +133,16 @@ const Label = styled.label`
   }
 `;
 
-export const Checkbox = ({ id, name, label, value, onChange }) => (
+export const Checkbox = ({ id, name, label, value, onChange, checked }) => (
   <Outer>
-    <Input id={`Checkbox-${id}`} name={name} type="checkbox" value={value} onChange={onChange} />
+    <Input
+      id={`Checkbox-${id}`}
+      name={name}
+      type="checkbox"
+      value={value}
+      onChange={onChange}
+      checked={checked}
+    />
     <Checkmark className="checkmark"></Checkmark>
     <Label for={`Checkbox-${id}`}>
       <span>{label}</span>

@@ -7,8 +7,6 @@ const Outer = styled.div`
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 1rem;
-  margin-top: 1rem;  
 `;
 
 const Label = styled.label`
@@ -20,7 +18,8 @@ const Label = styled.label`
 
 const Control = styled.div`
   position: relative;
-  min-width: 416px;
+  max-width: 416px;
+  width: 100%;
   display: flex;
   align-items: center;
 
