@@ -209,7 +209,7 @@ export const NewsletterSignUpUserPreferenceCentre = ({title, desc, changePrefere
     const [email, setEmail] = useState("")
     function handleSubmit(e) {
         e.preventDefault()
-        if(typeof onSignup === "function") {
+        if(typeof onSignUp === "function") {
             onSignUp(email)
         }
 
