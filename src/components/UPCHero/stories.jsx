@@ -1,7 +1,6 @@
 import * as React from "react";
 import { withA11y } from "@storybook/addon-a11y";
 import { UPCHero } from "./index";
-import { UPCHeroPreferences } from "./preferences";
 import { UPCHeroConfirm } from "./confirm";
 
 export default {
@@ -15,15 +14,6 @@ export const normal = () => (
       heading="seanhol1984 let’s get you set up"
       text="Tell us what you are interested in, and we will only send you emails based on your choices. You can change this at any time."
     ></UPCHero>
-  </div>
-);
-
-export const preferences = () => (
-  <div>
-    <UPCHeroPreferences
-      heading="seanhol1984 let’s get you set up"
-      text="Tell us what you are interested in, and we will only send you emails based on your choices. You can change this at any time."
-    ></UPCHeroPreferences>
   </div>
 );
 
