@@ -2,8 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import theme from "../_theme";
-import { UPCHero } from "./index";
-
 
 const Control = styled.div`
   max-width: 416px;
@@ -83,7 +81,7 @@ export const Input = ({
         placeholder={placeholder}
         style={style}
         onChange={onChange}
-        ></InputEl>
+      ></InputEl>
     </Label>
   </Control>
 );
@@ -100,7 +98,7 @@ Input.propTypes = {
   type: PropTypes.string,
   value: PropTypes.string,
   placeholder: PropTypes.string,
-  onChange: PropTypes.func
+  onChange: PropTypes.func,
 };
 
 Input.defaultProps = {
