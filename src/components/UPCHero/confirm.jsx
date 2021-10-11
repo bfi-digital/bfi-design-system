@@ -3,7 +3,7 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 import theme from "../_theme";
 import { UPCHero } from "./index";
-import { Input } from "./input";
+import { Input } from "../Input";
 
 const SubmitButton = styled.button`
     display: inline-block;
