@@ -1,52 +1,61 @@
-import React from "react"
-import styled from "styled-components"
-import PropTypes from "prop-types"
-import theme from "../_theme"
+import React from "react";
+import styled from "styled-components";
+import PropTypes from "prop-types";
+import theme from "../_theme";
 // import { Checkbox } from "../Checkbox"
-import { Legend } from "../Legend"
-import { Fieldset } from "../Fieldset"
-import { FormCard } from "../FormCard"
+import { Legend } from "../Legend";
+import { FormCard } from "../FormCard";
+
+const Outer = styled.fieldset`
+  width: 100%;
+  border: 0;
+`;
 
 const List = styled.ul`
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 -13px;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -13px;
+  padding: 0;
 `;
 
 const Item = styled.li`
-    flex-basis: 100%;
-    padding-right: 13px;
-    padding-left: 13px;
-    margin-bottom: 25px;
+  flex-basis: 100%;
+  padding-right: 13px;
+  padding-left: 13px;
+  margin-bottom: 25px;
 
-    @media screen and (min-width: ${theme.m}){
-        flex-basis: 50%;
-    }
+  @media screen and (min-width: ${theme.m}) {
+    flex-basis: 50%;
+  }
 `;
 
-export const FormGroup = ({
-    title,
-    items
-}) => 
-    <Fieldset>
-        <Legend title={title}></Legend>
-        <List>
-            {items.map((item) =>
-                <Item>
-                    <FormCard id={ item.preferenceSettingId } frequency={ item.frequency } heading={ item.preferenceSettingName } description={ item.description }></FormCard>
-                </Item>
-            )}
-        </List>
-    </Fieldset>
+export const FormGroup = ({ title, items, onChange }) => (
+  <Outer>
+    <Legend title={title}></Legend>
+    <List>
+      {items.map((item) => (
+        <Item>
+          <FormCard
+            id={item.preferenceSettingId}
+            frequency={item.frequency}
+            heading={item.preferenceSettingName}
+            description={item.description}
+            onChange={onChange}
+          ></FormCard>
+        </Item>
+      ))}
+    </List>
+  </Outer>
+);
 
 FormGroup.propTypes = {
-    title: PropTypes.string,
-    items: PropTypes.array
-}
+  title: PropTypes.string,
+  items: PropTypes.array,
+  onChange: PropTypes.func
+};
 
 FormGroup.defaultProps = {
-    title: "",
-    items: []
-}
+  title: "",
+  items: [],
+};
