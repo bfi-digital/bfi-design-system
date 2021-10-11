@@ -16,6 +16,7 @@ const ButtonInputEl = styled.button`
   z-index: 2;
   width: 100%;
   text-align: center;
+  border: 0;
 
   svg {
     fill: ${theme.white};
