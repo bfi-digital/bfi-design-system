@@ -1,4 +1,3 @@
-
 // Normal components
 export * from "./components/AdvertisingContainer"
 export * from "./components/ArticleGrid"
@@ -32,6 +31,7 @@ export * from "./components/LeadParagraph"
 export * from "./components/LinkSwitch"
 export * from "./components/LFFIWCBanner"
 export * from "./components/NewsletterSignUp"
+export * from "./components/NewsletterSignUpUserPreferenceCentre"
 export * from "./components/Oembed"
 export * from "./components/PageLinks"
 export * from "./components/PromoBanner"
@@ -58,6 +58,11 @@ export * from "./components/FormGroup"
 export * from "./components/FormCard"
 export * from "./components/Checkbox"
 export * from "./components/Selectbox"
+export * from "./components/UPCHero"
+export * from "./components/UPCHero/preferences"
+export * from "./components/UPCHero/input"
+export * from "./components/FormField"
+export * from "./components/Fieldset"
 
 // Page scaffolds
 export * from "./components/PageContainer"

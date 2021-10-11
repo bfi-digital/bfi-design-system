@@ -9,8 +9,15 @@ const Outer = styled.legend`
     display: flex;
     margin-bottom: 25px;
     color: ${theme.black};
-    font-size: ${theme.large_fontSize_xl};
+    font-size: 17px;
     font-weight: ${theme.fontWeight_semiBold};
+    line-height: 1.29;
+    
+    
+    @media screen and (min-width: ${theme.l}){
+        font-size: ${theme.large_fontSize_xl};
+        line-height: 1.3;
+    }
 
     &:after {
         content: "";
@@ -18,7 +25,7 @@ const Outer = styled.legend`
         bottom: 0;
         display: block;
         width: 100%;
-        height: 2px;
+        height: 4px;
         background-color: ${theme.primary};
     }
 

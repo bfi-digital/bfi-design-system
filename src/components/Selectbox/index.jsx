@@ -1,14 +1,12 @@
-import React from "react"
-import styled from "styled-components"
-import PropTypes from "prop-types"
-import theme from "../_theme"
+import React from "react";
+import styled from "styled-components";
+import PropTypes from "prop-types";
+import theme from "../_theme";
 
 const Outer = styled.div`
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 1rem;
-  margin-top: 1rem;  
 `;
 
 const Label = styled.label`
@@ -46,8 +44,7 @@ const Control = styled.div`
     transition: background-color 0.25s, height 0.25s;
     transform-origin: bottom;
   }
-  
-  
+
   &:after {
     content: "";
     position: absolute;
@@ -56,8 +53,8 @@ const Control = styled.div`
     bottom: auto;
     left: auto;
     display: block;
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     transform: translateY(-50%);
     border-left: 11px solid transparent;
     border-right: 11px solid transparent;
@@ -71,7 +68,7 @@ const Select = styled.select`
   -moz-appearance: none;
   appearance: none;
   flex-basis: 100%;
-  padding: 14px 12px 18px; 
+  padding: 14px 12px 18px;
   background-color: ${theme.white};
   border: 2px solid ${theme.black};
   border-radius: 0;
@@ -83,7 +80,7 @@ const Select = styled.select`
     border: 2px solid ${theme.lightFocus};
   }
 
-  &:active, 
+  &:active,
   &:focus {
     outline: 0;
     border-radius: 0;
@@ -91,34 +88,30 @@ const Select = styled.select`
   }
 `;
 
-const Option = styled.option`
-  
-`;
+const Option = styled.option``;
 
-export const Selectbox = ({
-  items,
-  label,
-}) => 
-    <Outer>
-      <Label>{ label }</Label>
-      <Control>
-        <Select>
-          <Option selected>Please select one</Option>
-          {items.map((item) =>
-            <Option value={ item.value }>{ item.label}</Option>
-            )}
-          
-        </Select>
-      </Control>
-    </Outer>
+export const Selectbox = ({ placeholder, items, label, onChange }) => (
+  <Outer>
+    <Label>{label}</Label>
+    <Control>
+      <Select onChange={onChange}>
+        {placeholder && <Option selected>{placeholder}</Option>}
+        {items.map((item) => (
+          <Option value={item.value}>{item.label}</Option>
+        ))}
+      </Select>
+    </Control>
+  </Outer>
+);
 
 Selectbox.propTypes = {
   items: PropTypes.array,
-  label: PropTypes.string
-  // onChange: PropTypes
-}
+  label: PropTypes.string,
+  placeholder: PropTypes.string,
+  onChange: PropTypes.func,
+};
 
 Selectbox.defaultProps = {
   items: [],
-  label: '',
-}
+  label: "",
+};

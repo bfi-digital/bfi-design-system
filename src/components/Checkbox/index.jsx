@@ -1,12 +1,10 @@
-import React from "react"
-import styled from "styled-components"
-import PropTypes from "prop-types"
-import theme from "../_theme"
+import React from "react";
+import styled from "styled-components";
+import PropTypes from "prop-types";
+import theme from "../_theme";
 
 const Outer = styled.div`
   position: relative;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
 `;
 
 const Checkmark = styled.div`
@@ -119,6 +117,7 @@ const Label = styled.label`
 
   span {
     position: relative;
+    font-weight: ${theme.fontWeight_semiBold};
 
     &:after {
       content: "";
@@ -134,31 +133,34 @@ const Label = styled.label`
   }
 `;
 
-export const Checkbox = ({
-  id,
-  name,
-  label,
-  value,
-  onChange,
-  checked
-}) => 
-    <Outer>
-      <Input id={ `Checkbox-${id}`} name={ name } type="checkbox" value={ value } onChange={onChange} checked={checked} />
-      <Checkmark className="checkmark"></Checkmark>
-      <Label for={ `Checkbox-${id}`}><span>{ label }</span></Label>
-    </Outer>
+export const Checkbox = ({ id, name, label, value, onChange, checked }) => (
+  <Outer>
+    <Input
+      id={`Checkbox-${id}`}
+      name={name}
+      type="checkbox"
+      value={value}
+      onChange={onChange}
+      checked={checked}
+    />
+    <Checkmark className="checkmark"></Checkmark>
+    <Label for={`Checkbox-${id}`}>
+      <span>{label}</span>
+    </Label>
+  </Outer>
+);
 
 Checkbox.propTypes = {
   id: PropTypes.string,
   name: PropTypes.string,
   label: PropTypes.string,
   value: PropTypes.string,
-  onChange: PropTypes.func
-}
+  onChange: PropTypes.func,
+};
 
 Checkbox.defaultProps = {
-  id: '',
-  name: '',
-  label: '',
-  value: '',
-}
+  id: "",
+  name: "",
+  label: "",
+  value: "",
+};

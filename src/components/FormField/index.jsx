@@ -6,6 +6,7 @@ import { Checkbox } from "../Checkbox"
 
 const Outer = styled.div`
     width: 100%;
+    margin-bottom: 25px;
 `
 export const FormField = ({ children}) => 
     <Outer>
