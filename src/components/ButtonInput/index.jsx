@@ -100,7 +100,7 @@ export const ButtonInput = ({
   if (disabled)
     return (
       <DisabledButtonInput
-        title={title ? title : false}
+        title={title ? title : ''}
         disabled={disabled}
         type={buttonType}
         onClick={onClick}
@@ -111,7 +111,7 @@ export const ButtonInput = ({
     );
   return (
     <ButtonInputEl
-      title={title ? title : false}
+      title={title ? title : ''}
       disabled={disabled}
       type={buttonType}
       onClick={onClick}
