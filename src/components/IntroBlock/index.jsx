@@ -24,7 +24,6 @@ const IntroBlockWrapper = styled.div/* less */ `
   }
 `
 
-
 function IntroImage({ src, alt = "", caption, copyright }) {
     return (
         <CaptionedImage src={src} alt={alt}>
@@ -34,7 +33,7 @@ function IntroImage({ src, alt = "", caption, copyright }) {
     )
 }
 
-export function IntroBlock({ title, standfirst, children, ...imgArgs }) {
+export function IntroBlock({ title, standfirst, ...imgArgs }) {
     return (
         <IntroBlockWrapper>
             {imgArgs.src && <IntroImage {...imgArgs} />}
