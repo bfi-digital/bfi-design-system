@@ -1,0 +1,49 @@
+import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks'
+import { CaptionedImage } from "../../../components/CaptionedImage/index"
+import kansas from '../Structure/images/kansas.gif';
+
+<Meta title="2 Pattern Library/3 Elements/CaptionedImage" component={CaptionedImage} />
+
+# CaptionedImage
+
+An image with a togglable caption.
+
+## Examples
+
+<Preview>
+    <Story name="Normal">
+        <CaptionedImage src={kansas} alt="Scene from Wizard of Oz">
+            This is the image caption.
+        </CaptionedImage>
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="More text">
+        <CaptionedImage src={kansas} alt="Scene from Wizard of Oz">
+            This is the image caption, it is a bit larger.
+            Ut aut fuga aut excepturi hic. Sed dolores nihil quaerat nihil id.
+            Distinctio ut ipsam non. Aut eos beatae unde labore est et recusandae assumenda.
+            Animi ea voluptas impedit sed enim facere numquam sunt. Maiores omnis debitis
+            atque voluptatem qui consequatur vero enim.
+        </CaptionedImage>
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="Resized">
+        <div style={{width: "200px"}}>
+            <CaptionedImage src={kansas} alt="Scene from Wizard of Oz" style={{width: "100%"}}>
+                This is the image caption, it is a bit larger.
+                Ut aut fuga aut excepturi hic. Sed dolores nihil quaerat nihil id.
+                Distinctio ut ipsam non. Aut eos beatae unde labore est et recusandae assumenda.
+                Animi ea voluptas impedit sed enim facere numquam sunt. Maiores omnis debitis
+                atque voluptatem qui consequatur vero enim.
+            </CaptionedImage>
+        </div>
+    </Story>
+</Preview>
+
+## Props
+
+<Props of={CaptionedImage} />

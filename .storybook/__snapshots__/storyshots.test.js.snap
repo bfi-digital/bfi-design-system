@@ -1369,3 +1369,132 @@ exports[`Storyshots 4 Components/All/Text Normal 1`] = `
   </div>
 </div>
 `;
+
+exports[`Storyshots CaptionedImage Normal 1`] = `
+<figure
+  className="CaptionedImage__Figure-sc-1oce98k-0 ghJUGx"
+>
+  <img
+    alt="Alt text"
+    src="http://example.com"
+  />
+  <figcaption
+    className="CaptionedImage__FigCaptionWrapper-sc-1oce98k-1 kNbQOb"
+    tabIndex="0"
+  >
+    <div
+      className="CaptionedImage__FigCaptionContents-sc-1oce98k-2 ijFVQV"
+    >
+      Caption goes here
+    </div>
+  </figcaption>
+</figure>
+`;
+
+exports[`Storyshots IntroBlock Full 1`] = `
+<div
+  className="IntroBlock__IntroBlockWrapper-sc-1hzzhy-0 hiAVp"
+>
+  <figure
+    className="CaptionedImage__Figure-sc-1oce98k-0 ghJUGx"
+  >
+    <img
+      alt="Alt text"
+      src="http://example.com/img.jpg"
+    />
+    <figcaption
+      className="CaptionedImage__FigCaptionWrapper-sc-1oce98k-1 kNbQOb"
+      tabIndex="0"
+    >
+      <div
+        className="CaptionedImage__FigCaptionContents-sc-1oce98k-2 ijFVQV"
+      >
+        Caption text is here
+        <cite>
+          Copyright text goes here
+        </cite>
+      </div>
+    </figcaption>
+  </figure>
+  <div>
+    <h1
+      aria-label=""
+      className="Headline__HeroH1-uipteu-0 Headline__H1-uipteu-1 cXoiEu"
+    >
+      Page title
+    </h1>
+    <p
+      className="LeadParagraph__Outer-sc-1bghl13-0 boLSbq lead_paragraph"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "Page standfirst text is here",
+        }
+      }
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots IntroBlock No Copyright 1`] = `
+<div
+  className="IntroBlock__IntroBlockWrapper-sc-1hzzhy-0 hiAVp"
+>
+  <figure
+    className="CaptionedImage__Figure-sc-1oce98k-0 ghJUGx"
+  >
+    <img
+      alt="Alt text"
+      src="http://example.com/img.jpg"
+    />
+    <figcaption
+      className="CaptionedImage__FigCaptionWrapper-sc-1oce98k-1 kNbQOb"
+      tabIndex="0"
+    >
+      <div
+        className="CaptionedImage__FigCaptionContents-sc-1oce98k-2 ijFVQV"
+      >
+        Caption text is here
+      </div>
+    </figcaption>
+  </figure>
+  <div>
+    <h1
+      aria-label=""
+      className="Headline__HeroH1-uipteu-0 Headline__H1-uipteu-1 cXoiEu"
+    >
+      Page title
+    </h1>
+    <p
+      className="LeadParagraph__Outer-sc-1bghl13-0 boLSbq lead_paragraph"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "Page standfirst text is here",
+        }
+      }
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots IntroBlock No Image 1`] = `
+<div
+  className="IntroBlock__IntroBlockWrapper-sc-1hzzhy-0 hiAVp"
+>
+  <div>
+    <h1
+      aria-label=""
+      className="Headline__HeroH1-uipteu-0 Headline__H1-uipteu-1 cXoiEu"
+    >
+      Page title
+    </h1>
+    <p
+      className="LeadParagraph__Outer-sc-1bghl13-0 boLSbq lead_paragraph"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "Page standfirst text is here",
+        }
+      }
+    />
+  </div>
+</div>
+`;
