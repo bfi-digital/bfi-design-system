@@ -4,8 +4,17 @@ import PropTypes from "prop-types";
 import theme from "../_theme";
 
 const Control = styled.div`
-  max-width: 416px;
   width: 100%;
+  
+  @media screen and (min-width: ${theme.m}) {
+    max-width: 416px;
+  }
+
+  .FormField--inline & {
+    @media screen and (max-width: ${theme.m}) {
+      margin-bottom: 1px;
+    }
+  }
 `;
 
 const Label = styled.label`
