@@ -53,6 +53,7 @@ const InputEl = styled.input`
 export const Input = ({
   label,
   required,
+  disabled,
   autoComplete,
   title,
   ariaLabel,
@@ -70,6 +71,7 @@ export const Input = ({
       {label}
       <InputEl
         required={required}
+        disabled={disabled}
         autoComplete={autoComplete}
         title={title}
         aria-label={ariaLabel}
@@ -88,6 +90,7 @@ export const Input = ({
 
 Input.propTypes = {
   required: PropTypes.bool,
+  disabled: PropTypes.bool,
   autoComplete: PropTypes.string,
   title: PropTypes.string,
   ariaLabel: PropTypes.string,
