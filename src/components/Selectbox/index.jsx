@@ -95,9 +95,9 @@ export const Selectbox = ({ placeholder, items, label, value, onChange }) => (
     <Label>{label}</Label>
     <Control>
       <Select onChange={onChange} value={value}>
-        {placeholder && <Option value="" selected>{placeholder}</Option>}
+        {placeholder && <Option value="">{placeholder}</Option>}
         {items.map((item) => (
-          <Option value={item.value}>{item.label}</Option>
+          <Option key={item.value} value={item.value}>{item.label}</Option>
         ))}
       </Select>
     </Control>
