@@ -12,7 +12,7 @@ const ButtonInputEl = styled.button`
   color: ${theme.white};
   background: ${theme.black};
   text-decoration: none;
-  padding: 11px ${theme.standardSpace}px 15px;
+  padding: 13px ${theme.standardSpace}px 13px;
   z-index: 2;
   width: 100%;
   text-align: center;
@@ -75,10 +75,10 @@ const ButtonInputEl = styled.button`
     }
   }
 
-  .FormField--inline & {
+  .FormField-group & {
     
     @media screen and (min-width: ${theme.m}) {
-      left: -2px;
+      /* left: -2px; */
     }
 
     &:active {
@@ -102,7 +102,7 @@ const DisabledButtonInput = styled.div`
   font-size: ${theme.fontSize_m};
   line-height: ${theme.lineHeight_m};
   text-decoration: none;
-  padding: 10px ${theme.standardSpace}px;
+  padding: 13px ${theme.standardSpace}px 13px;
   z-index: 2;
   width: 100%;
   text-align: center;

@@ -8,27 +8,20 @@ const Outer = styled.div`
   width: 100%;
   margin-bottom: 25px;
 
-  &.FormField--inline {
+  &.FormField--group {
+    @media screen and (min-width: ${theme.m}) {
+      max-width: 420px;
+    }
+  }
+
+  .FormField-group {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
+    margin-bottom: 10px;
     
     @media screen and (min-width: ${theme.m}) {
       flex-wrap: nowrap;
-    }
-
-    button {
-      /* bottom: 5px; */
-      /* left: -2px;
-
-      &:active {
-        box-shadow: none;
-        transform: translate(0, 0);
-
-        :after {
-          bottom: 0;
-        }
-      } */
     }
   }
 `;

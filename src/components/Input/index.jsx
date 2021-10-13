@@ -10,7 +10,7 @@ const Control = styled.div`
     max-width: 416px;
   }
 
-  .FormField--inline & {
+  .FormField-group & {
     @media screen and (max-width: ${theme.m}) {
       margin-bottom: 1px;
     }
@@ -71,6 +71,10 @@ const InputEl = styled.input`
       font-weight: ${theme.fontWeight_semiBold};
       color: ${theme.black};
     }
+  }
+
+  .FormField-group & {
+    border-right: 0;
   }
 `;
 
