@@ -8,7 +8,7 @@ const Outer = styled.div`
   padding-bottom: 25px;
   background-color: ${theme.lightest};
 
-  @media screen and (min-width: ${theme.m}) {
+  @media screen and (min-width: ${theme.l}) {
     padding-top: 50px;
     padding-bottom: 50px;
   }
@@ -28,6 +28,10 @@ const Container = styled.div`
 `;
 
 const Content = styled.div`
+  @media screen and (min-width: ${theme.m}) {
+    max-width: 80%;
+  }
+
   @media screen and (min-width: ${theme.xl}) {
     max-width: 54%;
   }
@@ -40,7 +44,7 @@ const Headline = styled.h1`
   font-weight: ${theme.fontWeight_bold};
   line-height: normal;
 
-  @media screen and (min-width: ${theme.m}) {
+  @media screen and (min-width: ${theme.l}) {
     font-size: 46px;
   }
 `;
@@ -49,7 +53,7 @@ const Text = styled.div`
   font-size: 17px;
   line-height: 1.47;
 
-  @media screen and (min-width: ${theme.m}) {
+  @media screen and (min-width: ${theme.l}) {
     font-size: 20px;
     line-height: 1.6;
   }

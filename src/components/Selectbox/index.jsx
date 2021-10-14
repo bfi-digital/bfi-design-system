@@ -18,10 +18,13 @@ const Label = styled.label`
 
 const Control = styled.div`
   position: relative;
-  max-width: 416px;
   width: 100%;
   display: flex;
   align-items: center;
+  
+  @media screen and (min-width: ${theme.m}) {
+    max-width: 416px;
+  }
 
   &:focus-within {
     &:before {

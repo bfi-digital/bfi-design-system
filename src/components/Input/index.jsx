@@ -74,7 +74,9 @@ const InputEl = styled.input`
   }
 
   .FormField-group & {
-    border-right: 0;
+    @media screen and (min-width: ${theme.m}) {
+      border-right: 0;
+    }
   }
 `;
 
