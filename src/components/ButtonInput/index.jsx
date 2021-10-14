@@ -12,11 +12,16 @@ const ButtonInputEl = styled.button`
   color: ${theme.white};
   background: ${theme.black};
   text-decoration: none;
-  padding: 10px ${theme.standardSpace}px;
+  padding: 13px ${theme.standardSpace}px 13px;
   z-index: 2;
   width: 100%;
   text-align: center;
   border: 0;
+  flex-grow: 0;
+
+  @media screen and (min-width: ${theme.m}) {
+    width: auto;
+  }
 
   svg {
     fill: ${theme.white};
@@ -28,7 +33,8 @@ const ButtonInputEl = styled.button`
     height: 5px;
     transition: height 0.3s;
     position: absolute;
-    bottom: -5px;
+    /* bottom: -5px; */
+    bottom: 0;
     left: 0;
     background: ${theme.primary};
     z-index: -1;
@@ -43,9 +49,10 @@ const ButtonInputEl = styled.button`
     }
 
     :after {
-      height: calc(100% + 5px);
+      height: 100%;
     }
   }
+
   &:focus {
     box-shadow: 0px 0px 0px 4px ${theme.focus};
     outline: none;
@@ -56,17 +63,32 @@ const ButtonInputEl = styled.button`
       height: 100%;
     }
   }
+
   &:active {
     background: ${theme.dark} !important;
     box-shadow: none;
     transform: translate(0, 5px);
+
     :after {
-      height: 1px;
+      height: 5px;
       bottom: -1px;
     }
   }
-  @media screen and (min-width: ${theme.m}) {
-    width: auto;
+
+  .FormField-group & {
+    
+    @media screen and (min-width: ${theme.m}) {
+      /* left: -2px; */
+    }
+
+    &:active {
+      box-shadow: none;
+      transform: translate(0, 0);
+
+      :after {
+        bottom: 0;
+      }
+    }
   }
 `;
 
@@ -80,7 +102,7 @@ const DisabledButtonInput = styled.div`
   font-size: ${theme.fontSize_m};
   line-height: ${theme.lineHeight_m};
   text-decoration: none;
-  padding: 10px ${theme.standardSpace}px;
+  padding: 13px ${theme.standardSpace}px 13px;
   z-index: 2;
   width: 100%;
   text-align: center;
