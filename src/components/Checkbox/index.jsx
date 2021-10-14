@@ -144,7 +144,7 @@ export const Checkbox = ({ id, name, label, value, onChange, checked }) => (
       checked={checked}
     />
     <Checkmark className="checkmark"></Checkmark>
-    <Label for={`Checkbox-${id}`}>
+    <Label htmlFor={`Checkbox-${id}`}>
       <span>{label}</span>
     </Label>
   </Outer>

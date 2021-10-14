@@ -27,6 +27,12 @@ const Container = styled.div`
   }
 `;
 
+const Content = styled.div`
+  @media screen and (min-width: ${theme.xl}) {
+    max-width: 54%;
+  }
+`;
+
 const Headline = styled.h1`
   margin: 0 0 25px;
   font-family: ${theme.headingFont};
@@ -39,7 +45,7 @@ const Headline = styled.h1`
   }
 `;
 
-const Content = styled.div`
+const Text = styled.div`
   font-size: 17px;
   line-height: 1.47;
 
@@ -56,10 +62,12 @@ const Additional = styled.div`
 export const UPCHero = ({ heading, text, children }) => (
   <Outer>
     <Container>
-      {heading && <Headline>{heading}</Headline>}
-      {text && <Content>{text}</Content>}
+      <Content>
+        {heading && <Headline>{heading}</Headline>}
+        {text && <Text>{text}</Text>}
 
-      {children && <Additional>{children}</Additional>}
+        {children && <Additional>{children}</Additional>}
+      </Content>
     </Container>
   </Outer>
 );

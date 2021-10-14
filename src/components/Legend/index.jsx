@@ -3,7 +3,7 @@ import styled from "styled-components"
 import PropTypes from "prop-types"
 import theme from "../_theme"
 
-const Outer = styled.legend`
+const LegendEl = styled.legend`
     position: relative;
     width: 100%;
     display: flex;
@@ -12,7 +12,6 @@ const Outer = styled.legend`
     font-size: 17px;
     font-weight: ${theme.fontWeight_semiBold};
     line-height: 1.29;
-    
     
     @media screen and (min-width: ${theme.l}){
         font-size: ${theme.large_fontSize_xl};
@@ -39,7 +38,7 @@ const Outer = styled.legend`
 export const Legend = ({
     title
 }) => 
-    <Outer><span>{ title }</span></Outer>
+    <LegendEl><span>{ title }</span></LegendEl>
 
 Legend.propTypes = {
     title: PropTypes.string.isRequired

@@ -16,6 +16,7 @@ const ButtonInputEl = styled.button`
   z-index: 2;
   width: 100%;
   text-align: center;
+  border: 0;
 
   svg {
     fill: ${theme.white};
@@ -99,7 +100,7 @@ export const ButtonInput = ({
   if (disabled)
     return (
       <DisabledButtonInput
-        title={title ? title : false}
+        title={title ? title : ''}
         disabled={disabled}
         type={buttonType}
         onClick={onClick}
@@ -110,7 +111,7 @@ export const ButtonInput = ({
     );
   return (
     <ButtonInputEl
-      title={title ? title : false}
+      title={title ? title : ''}
       disabled={disabled}
       type={buttonType}
       onClick={onClick}

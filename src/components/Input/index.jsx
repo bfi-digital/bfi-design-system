@@ -20,7 +20,9 @@ const InputEl = styled.input`
   padding: 13px 10px;
   padding-top: 12px;
   font-size: ${theme.fontSize_s};
+  font-weight: ${theme.fontWeight_semiBold};
   border: 2px solid ${theme.black};
+  background-color: ${theme.white};
 
   border-bottom: 5px solid ${theme.primary};
   transition: border 0.3s;
@@ -48,11 +50,25 @@ const InputEl = styled.input`
     font-weight: ${theme.fontWeight_semiBold};
     color: ${theme.black};
   }
+
+  &[disabled] {
+    background-color: ${theme.white};
+    border-color: ${theme.black};
+
+    &::placeholder,
+    ::placeholder,
+    &::-webkit-input-placeholder,
+    ::-webkit-input-placeholder {
+      font-weight: ${theme.fontWeight_semiBold};
+      color: ${theme.black};
+    }
+  }
 `;
 
 export const Input = ({
   label,
   required,
+  disabled,
   autoComplete,
   title,
   ariaLabel,
@@ -70,6 +86,7 @@ export const Input = ({
       {label}
       <InputEl
         required={required}
+        disabled={disabled}
         autoComplete={autoComplete}
         title={title}
         aria-label={ariaLabel}
@@ -88,6 +105,7 @@ export const Input = ({
 
 Input.propTypes = {
   required: PropTypes.bool,
+  disabled: PropTypes.bool,
   autoComplete: PropTypes.string,
   title: PropTypes.string,
   ariaLabel: PropTypes.string,
