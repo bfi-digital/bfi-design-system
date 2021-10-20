@@ -1372,14 +1372,14 @@ exports[`Storyshots 4 Components/All/Text Normal 1`] = `
 
 exports[`Storyshots CaptionedImage Normal 1`] = `
 <figure
-  className="CaptionedImage__Figure-sc-1oce98k-0 ghJUGx"
+  className="CaptionedImage__Figure-sc-1oce98k-0 geBhVy"
 >
   <img
     alt="Alt text"
     src="http://example.com"
   />
   <figcaption
-    className="CaptionedImage__FigCaptionWrapper-sc-1oce98k-1 kNbQOb"
+    className="CaptionedImage__FigCaptionWrapper-sc-1oce98k-1 dSsbsf"
     tabIndex="0"
   >
     <div
@@ -1396,14 +1396,14 @@ exports[`Storyshots IntroBlock Full 1`] = `
   className="IntroBlock__IntroBlockWrapper-sc-1hzzhy-0 hiAVp"
 >
   <figure
-    className="CaptionedImage__Figure-sc-1oce98k-0 ghJUGx"
+    className="CaptionedImage__Figure-sc-1oce98k-0 geBhVy"
   >
     <img
       alt="Alt text"
       src="http://example.com/img.jpg"
     />
     <figcaption
-      className="CaptionedImage__FigCaptionWrapper-sc-1oce98k-1 kNbQOb"
+      className="CaptionedImage__FigCaptionWrapper-sc-1oce98k-1 dSsbsf"
       tabIndex="0"
     >
       <div
@@ -1440,14 +1440,14 @@ exports[`Storyshots IntroBlock No Copyright 1`] = `
   className="IntroBlock__IntroBlockWrapper-sc-1hzzhy-0 hiAVp"
 >
   <figure
-    className="CaptionedImage__Figure-sc-1oce98k-0 ghJUGx"
+    className="CaptionedImage__Figure-sc-1oce98k-0 geBhVy"
   >
     <img
       alt="Alt text"
       src="http://example.com/img.jpg"
     />
     <figcaption
-      className="CaptionedImage__FigCaptionWrapper-sc-1oce98k-1 kNbQOb"
+      className="CaptionedImage__FigCaptionWrapper-sc-1oce98k-1 dSsbsf"
       tabIndex="0"
     >
       <div
