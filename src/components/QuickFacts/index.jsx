@@ -8,11 +8,33 @@ const Outer = styled.dl`
     margin-top: 0px;
     line-height: 150%;
     margin-bottom: ${theme.standardSpace*2}px;
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(
+            calc(
+                (
+                    (${theme.xl} - 100px - ${theme.horizontalPadding} * 2)
+                    * 0.34
+                    - 50px
+                )
+                / 2
+                + 1px
+            ),
+            max-content
+        )
+    );
 `
+// Above calculation:
+// We want the grid to have 2 columns if it's not in the sidebar,
+// so we set the auto-fit size to 1px greater than half the maximum sidebar size,
+// which is calc(34% - 50px) according to PageContainer,
+// whose parent size is ${theme.xl} - 100px according to PageContainer's wrapper,
+// and we take the padding off each side.
 
 const Label = styled.dt`
     font-size: ${theme.fontSize_s};
-
+    grid-column: 1;
 `
 
 const Value = styled.dd`
