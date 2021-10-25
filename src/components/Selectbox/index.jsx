@@ -22,7 +22,7 @@ const Control = styled.div`
   display: flex;
   align-items: center;
   
-  @media screen and (min-width: ${theme.m}) {
+  @media screen and (min-width: ${theme.l}) {
     max-width: 416px;
   }
 

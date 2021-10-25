@@ -19,6 +19,10 @@ const Outer = styled.div`
   background-color: ${(props) => themes[props.type].background};
   color: ${theme.white};
   font-size: 16px;
+
+  .FormField--group & {
+    margin-top: 10px;
+  }
 `;
 
 const Icon = styled.div`
