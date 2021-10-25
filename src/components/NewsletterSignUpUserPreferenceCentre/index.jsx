@@ -9,26 +9,43 @@ import { LinkSwitch as Link } from "../LinkSwitch"
 const Outer = styled.div`
     background: ${theme.lightest};
     margin: 0 auto;
-    margin-bottom: ${theme.standardSpace*2}px;
+    margin-bottom: ${theme.standardSpace}px;
     margin-top: ${theme.standardSpace}px;
     padding: 15px;
     display: block;
     text-align: left;
+
+    &:first-child {
+        margin-top: 0;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    .h3 {
+        @media screen and (min-width: ${theme.l}) {
+            max-width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
 
     p {
         margin-top: 0;
         margin-bottom: ${theme.standardSpace}px;
         @media screen and (min-width: ${theme.m}){
             margin-bottom: 25px;
-            max-width: 75%;
+            max-width: 100%;
         }
         @media screen and (min-width: ${theme.l}){
-            max-width: 100%;
+            max-width: 70%;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
 
     @media screen and (min-width: ${theme.m}){
-        padding: ${theme.standardSpace}px;
         padding: ${theme.standardSpace}px 125px;
     }
     @media screen and (min-width: ${theme.l}){
