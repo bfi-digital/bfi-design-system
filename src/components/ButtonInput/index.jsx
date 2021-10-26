@@ -19,7 +19,7 @@ const ButtonInputEl = styled.button`
   border: 0;
   flex-grow: 0;
 
-  @media screen and (min-width: ${theme.m}) {
+  @media screen and (min-width: ${theme.l}) {
     width: auto;
   }
 
@@ -106,7 +106,8 @@ const DisabledButtonInput = styled.div`
   z-index: 2;
   width: 100%;
   text-align: center;
-  @media screen and (min-width: ${theme.m}) {
+
+  @media screen and (min-width: ${theme.l}) {
     width: auto;
   }
 `;

@@ -8,9 +8,18 @@ const Outer = styled.div`
   padding-bottom: 25px;
   background-color: ${theme.lightest};
 
-  @media screen and (min-width: ${theme.l}) {
+  @media screen and (min-width: ${theme.m}) {
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+
+  @media screen and (min-width: ${theme.xl}) {
+    padding-bottom: 150px;
+  }
+
+  .FormField-group,
+  .FormField--group {
+    margin-bottom: 0;
   }
 `;
 
@@ -28,8 +37,13 @@ const Container = styled.div`
 `;
 
 const Content = styled.div`
+
   @media screen and (min-width: ${theme.m}) {
-    max-width: 80%;
+    max-width: 560px;
+  }
+
+  @media screen and (min-width: ${theme.l}) {
+    max-width: 70%;
   }
 
   @media screen and (min-width: ${theme.xl}) {
@@ -57,10 +71,18 @@ const Text = styled.div`
     font-size: 20px;
     line-height: 1.6;
   }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
 `;
 
 const Additional = styled.div`
   margin-top: 25px;
+
+  @media screen and (min-width: ${theme.l}) {
+    margin-top: 32px;
+  }
 `;
 
 export const UPCHero = ({ heading, text, children }) => (

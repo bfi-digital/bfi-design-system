@@ -9,7 +9,8 @@ const Outer = styled.div`
   margin-bottom: 25px;
 
   &.FormField--group {
-    @media screen and (min-width: ${theme.m}) {
+
+    @media screen and (min-width: ${theme.l}) {
       max-width: 420px;
     }
   }
@@ -20,11 +21,12 @@ const Outer = styled.div`
     align-items: flex-end;
     margin-bottom: 10px;
     
-    @media screen and (min-width: ${theme.m}) {
+    @media screen and (min-width: ${theme.l}) {
       flex-wrap: nowrap;
     }
   }
 `;
+
 export const FormField = ({ classes, children }) => (
   <Outer className={classes}>{children}</Outer>
 );

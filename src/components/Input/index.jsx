@@ -6,12 +6,12 @@ import theme from "../_theme";
 const Control = styled.div`
   width: 100%;
   
-  @media screen and (min-width: ${theme.m}) {
+  @media screen and (min-width: ${theme.l}) {
     max-width: 416px;
   }
 
   .FormField-group & {
-    @media screen and (max-width: ${theme.m}) {
+    @media screen and (max-width: ${theme.l}) {
       margin-bottom: 1px;
     }
   }
@@ -74,7 +74,7 @@ const InputEl = styled.input`
   }
 
   .FormField-group & {
-    @media screen and (min-width: ${theme.m}) {
+    @media screen and (min-width: ${theme.lg}) {
       border-right: 0;
     }
   }
