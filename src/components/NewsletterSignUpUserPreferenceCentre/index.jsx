@@ -11,7 +11,7 @@ const Outer = styled.div`
     margin: 0 auto;
     margin-bottom: ${theme.standardSpace}px;
     margin-top: ${theme.standardSpace}px;
-    padding: 15px;
+    padding: ${theme.standardSpace}px;
     display: block;
     text-align: left;
 
