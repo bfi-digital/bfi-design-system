@@ -72,9 +72,9 @@ const InputEl = styled.input`
       color: ${theme.black};
     }
   }
-
+  
   .FormField-group & {
-    @media screen and (min-width: ${theme.lg}) {
+    @media screen and (min-width: ${theme.l}) {
       border-right: 0;
     }
   }
