@@ -12,11 +12,11 @@ const Checkmark = styled.div`
   left: 10px;
   top: 10px;
   opacity: 0;
-  left: 14px;
-  top: 7px;
+  left: 10px;
+  top: 4px;
   z-index: 100;
-  width: 12px;
-  height: 22px;
+  width: 10px;
+  height: 17px;
   border: solid ${theme.white};
   border-width: 0 4px 4px 0;
   -webkit-transform: rotate(45deg) scale(0);
@@ -25,15 +25,27 @@ const Checkmark = styled.div`
   transition: transform 0.25s;
   transition-delay: 0s;
   pointer-events: none;
+
+  @media screen and (min-width: ${theme.l}) {
+    left: 13px;
+    top: 6px;
+    width: 10px;
+    height: 20px;
+  }
 `;
 
 const Input = styled.input`
-  height: 40px;
+  width: 24px;
+  height: 24px;
   left: 0;
   opacity: 0;
   position: absolute;
   top: 0;
-  width: 40px;
+
+  @media screen and (min-width: ${theme.l}) {
+    width: 32px;
+    height: 32px;
+  }
 
   &:checked + .checkmark {
     opacity: 1;
@@ -58,7 +70,7 @@ const Input = styled.input`
 
   &:checked ~ label::before {
       background-color: ${theme.primary} !important;
-      height: calc(100% + 4px);
+      height: 100%;
     }
   }
 
@@ -81,26 +93,40 @@ const Input = styled.input`
 
 const Label = styled.label`
   display: block;
-  padding: 0 0 0 55px;
+  padding: 0 0 0 43px;
   position: relative;
-  min-height: 35px;
+  min-height: 28px;
   display: flex;
   align-items: center;
+  font-size: 14px;
+  line-height: 18px;
+  
+  @media screen and (min-width: ${theme.l}) {
+    min-height: 35px;
+    padding: 0 0 0 50px;
+    font-size: 18px;
+    line-height: 24px;
+  }
 
   &:before {
     content: "";
     display: block;
-    width: 39px;
+    width: 28px;
     height: 5px;
     position: absolute;
     top: auto;
     right: auto;
-    bottom: -4px;
+    /* bottom: -4px; */
+    bottom: 0px;
     left: 0px;
     z-index: 1;
     background-color: ${theme.primary};
     transition: background-color 0.25s, height 0.25s;
     transform-origin: bottom;
+
+    @media screen and (min-width: ${theme.l}) {
+      width: 35px;
+    }
   }
 
   &:after {
@@ -108,11 +134,16 @@ const Label = styled.label`
     position: absolute;
     top: 0;
     left: 0;
-    width: 35px;
-    height: 35px;
+    width: 24px;
+    height: 24px;
     display: flex;
     background-color: ${theme.white};
     border: 2px solid ${theme.black};
+
+    @media screen and (min-width: ${theme.l}) {
+      width: 31px;
+      height: 31px;
+    }
   }
 
   span {

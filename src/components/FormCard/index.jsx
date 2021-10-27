@@ -6,12 +6,14 @@ import { Checkbox } from "../Checkbox";
 
 const Outer = styled.div`
   display: flex;
-  /* flex-wrap: wrap; */
   flex-direction: column;
-  /* align-items: flex-start; */
   height: 100%;
-  padding: 15px 25px 25px 25px;
+  padding: 15px 15px 25px 15px;
   background-color: ${theme.lightGrey};
+
+  @media screen and (min-width: ${theme.l}) {
+    padding: 15px 25px 25px 25px;
+  }
 `;
 
 const Badge = styled.div`
