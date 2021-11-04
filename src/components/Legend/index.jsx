@@ -30,6 +30,7 @@ const LegendEl = styled.legend`
 
   span {
     position: relative;
+    display: inline-block;
     padding: 16px 15px;
     background-color: ${theme.lightGrey};
   }
