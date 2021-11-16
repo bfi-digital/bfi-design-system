@@ -261,7 +261,7 @@ export const NewsletterSignUpUserPreferenceCentre = ({title, desc, changePrefere
 
             <CallToActionGroup>
                 <p>Already have an account?</p>
-                <CallToAction to={changePreferencesUrl}>Change my mail preferences</CallToAction>
+                <CallToAction to={changePreferencesUrl}>Change my email preferences</CallToAction>
             </CallToActionGroup>
         </Outer>
     )
