@@ -6,7 +6,7 @@ import PropTypes from "prop-types"
 const HeroH1 = styled.h1`
     // text-transform: uppercase;
     font-family: ${theme.bodyFont}; 
-    color: ${theme.black};
+    color: ${props => props.color || theme.black};
     font-weight: bold;
     font-size: 2.2rem;
 
@@ -144,19 +144,24 @@ const H5 = styled.h5`
     }
 `
 
+const classes = (...names) =>names.filter(Boolean).join(" ")
+
 export const Headline = ({
     level,
     text,
-    visuallyHidden
+    visuallyHidden,
+    className = null,
+    ...props
 }) => {
-    if (level === 0) return <HeroH1 className={visuallyHidden ? "visuallyHidden" : ""} aria-label={visuallyHidden ? text : ""}>{text}</HeroH1>
-    if (level === 1) return <H1 className={visuallyHidden ? "visuallyHidden" : ""} aria-label={visuallyHidden ? text : ""}>{text}</H1>
-    if (level === 2) return <H2 className={visuallyHidden ? "visuallyHidden" : ""} aria-label={visuallyHidden ? text : ""}>{text}</H2>
-    if (level === 3) return <H3 className={visuallyHidden ? "visuallyHidden" : ""} aria-label={visuallyHidden ? text : ""}>{text}</H3>
-    if (level === 4) return <H4 className={visuallyHidden ? "visuallyHidden" : ""} aria-label={visuallyHidden ? text : ""}>{text}</H4>
-    if (level === 5) return <H5 className={visuallyHidden ? "visuallyHidden" : ""} aria-label={visuallyHidden ? text : ""}>{text}</H5>
-    if (level === 6) return <H3Fake className={visuallyHidden ? "visuallyHidden h3" : "h3"} aria-label={visuallyHidden ? text : ""}>{text}</H3Fake>
-    if (level === 7) return <H4Fake className={visuallyHidden ? "visuallyHidden h4" : "h4"} aria-label={visuallyHidden ? text : ""}>{text}</H4Fake>
+    const cls = classes(className, visuallyHidden && "visuallyHidden")
+    if (level === 0) return <HeroH1 className={cls} aria-label={visuallyHidden ? text : ""} {...props}>{text}</HeroH1>
+    if (level === 1) return <H1 className={cls} aria-label={visuallyHidden ? text : ""}>{text}</H1>
+    if (level === 2) return <H2 className={cls} aria-label={visuallyHidden ? text : ""}>{text}</H2>
+    if (level === 3) return <H3 className={cls} aria-label={visuallyHidden ? text : ""}>{text}</H3>
+    if (level === 4) return <H4 className={cls} aria-label={visuallyHidden ? text : ""}>{text}</H4>
+    if (level === 5) return <H5 className={cls} aria-label={visuallyHidden ? text : ""}>{text}</H5>
+    if (level === 6) return <H3Fake className={classes(cls, "h3")} aria-label={visuallyHidden ? text : ""}>{text}</H3Fake>
+    if (level === 7) return <H4Fake className={classes(cls, "h4")} aria-label={visuallyHidden ? text : ""}>{text}</H4Fake>
     return null
 }
 

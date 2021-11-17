@@ -1,0 +1,40 @@
+import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+import { HeroBasic, HeroHeadline, Standfirst } from "../../../components/HeroBasic/index"
+import navItems, { quickLinksData } from "../../../components/Header/data"
+import { Headline } from "../../../components/Headline"
+
+<Meta title="2 Pattern Library/1 Structure/Hero Basic" component={HeroBasic} />
+
+# HeroBasic
+
+This is a much simpler version of the Hero component. It accepts an optional image URL as the background and allows
+any content to be embeded as children. It comes with a HeroHeadline component for adding a large title, and can be
+subclassed to allow any customisation needed for a specific page, and a Standfirst wrapper component.
+
+The image URL can be empty, in which case the component will just revert to a standard sized container.
+
+## Props 
+
+<Props of={HeroBasic} />
+
+## Examples 
+
+<Preview>
+    <Story name="Normal">
+        <HeroBasic 
+            image="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1920/1080/1/2020-03/Hero.jpg" 
+        >
+            <HeroHeadline>Watch a new film, rediscover your old favourites, and get inspired.</HeroHeadline>
+        </HeroBasic>
+    </Story>
+</Preview>
+
+
+<Preview>
+    <Story name="No Image">
+        <HeroBasic image={null}>
+            <HeroHeadline>Ghostbusters</HeroHeadline>
+            <Standfirst>Who ya gonna call?</Standfirst>
+        </HeroBasic>
+    </Story>
+</Preview>

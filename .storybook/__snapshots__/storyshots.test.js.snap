@@ -914,6 +914,54 @@ exports[`Storyshots 4 Components/All/Headline Level 3 1`] = `
 </h3>
 `;
 
+exports[`Storyshots 4 Components/All/HeroBasic No Image 1`] = `
+<header
+  className="HeroBasic__Hero-sc-1q83vkz-0 hflyay"
+>
+  <h1
+    aria-label=""
+    className="Headline__HeroH1-uipteu-0 cGlSyI"
+    color="inherit"
+  >
+    Here's some content
+  </h1>
+  <p
+    className="HeroBasic__Standfirst-sc-1q83vkz-1 dvydXp"
+  >
+    Here's a standfirst
+  </p>
+</header>
+`;
+
+exports[`Storyshots 4 Components/All/HeroBasic Normal 1`] = `
+<header
+  className="HeroBasic__Hero-sc-1q83vkz-0 hCGQeX"
+>
+  <h1
+    aria-label=""
+    className="Headline__HeroH1-uipteu-0 cGlSyI"
+    color="inherit"
+  >
+    Here's some content
+  </h1>
+  <p
+    className="HeroBasic__Standfirst-sc-1q83vkz-1 dvydXp"
+  >
+    Here's a standfirst
+  </p>
+</header>
+`;
+
+exports[`Storyshots 4 Components/All/Landmark Normal 1`] = `
+<main
+  className="Landmark-sc-1gbl5hq-0 llEzaj"
+>
+  <section>
+    Landmark content
+  </section>
+</main>
+`;
+
 exports[`Storyshots 4 Components/All/Lead paragraph Normal 1`] = `
 <div
   style={
