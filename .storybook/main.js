@@ -6,7 +6,7 @@ module.exports = {
         "@storybook/addon-a11y",
         "@storybook/addon-docs",
         "@storybook/addon-viewport/register",
-        "@storybook/addon-backgrounds/register",
+        "@storybook/addon-backgrounds",
         {
           name: "@storybook/addon-storysource",
           options: {

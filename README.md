@@ -2,9 +2,9 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/0c1b8f82-9bcd-4205-8824-c12b5537b75f/deploy-status)](https://app.netlify.com/sites/gerwig/deploys) [![CircleCI](https://circleci.com/gh/bfi-digital/bfi-design-system.svg?style=svg&circle-token=61b8e613e86458c621c8297aff09bd0a520ef8ad)](https://circleci.com/gh/bfi-digital/bfi-design-system)
 
-**CURRENTLY IN BETA. SOME THINGS MIGHT NOT WORK**
-
 The next-gen design system for the [British Film Institute](bfi.org.uk).
+
+Compatible with Node 12 & NPM 7.
 
 ## 🍿 Demo and docs
 
@@ -18,7 +18,7 @@ This is a living documentation powered by [Storybook](https://storybook.js.org/)
 npm install bfi-design-system
 
 // Install peer dependencies
-npm install react react-dom styled-components @reach/router
+npm install react react-dom styled-components
 ```
 
 Import the components you'd like to use into your app. For example:

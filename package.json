@@ -6,12 +6,16 @@
   "description": "Next-gen design system for the British Film Institute",
   "repository": "github:bfi-digital/bfi-design-system",
   "main": "dist/bundle.js",
+  "engines": {
+    "npm": ">=7.0.0"
+  },
   "scripts": {
     "build": "rollup -c",
-    "storybook": "start-storybook",
     "build-storybook": "build-storybook",
     "pretest": "eslint src/ --ext .jsx",
     "test": "jest",
+    "start": "start-storybook",
+    "storybook": "start-storybook",
     "prepare": "rollup -c",
     "lint": "eslint src/ --ext .jsx",
     "typecheck": "tsc",
