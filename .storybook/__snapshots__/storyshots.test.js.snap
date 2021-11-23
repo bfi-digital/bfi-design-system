@@ -916,17 +916,16 @@ exports[`Storyshots 4 Components/All/Headline Level 3 1`] = `
 
 exports[`Storyshots 4 Components/All/HeroBasic No Image 1`] = `
 <header
-  className="HeroBasic__Hero-sc-1q83vkz-0 hflyay"
+  className="HeroBasic__Hero-sc-1q83vkz-0 iaJqQQ"
 >
   <h1
     aria-label=""
-    className="Headline__HeroH1-uipteu-0 cGlSyI"
-    color="inherit"
+    className="Headline__HeroH1-uipteu-0 gDIaDW HeroBasic__SizedHeadline-sc-1q83vkz-1 jLbriD"
   >
     Here's some content
   </h1>
   <p
-    className="HeroBasic__Standfirst-sc-1q83vkz-1 dvydXp"
+    className="HeroBasic__Standfirst-sc-1q83vkz-2 dKkwSl"
   >
     Here's a standfirst
   </p>
@@ -935,17 +934,16 @@ exports[`Storyshots 4 Components/All/HeroBasic No Image 1`] = `
 
 exports[`Storyshots 4 Components/All/HeroBasic Normal 1`] = `
 <header
-  className="HeroBasic__Hero-sc-1q83vkz-0 hCGQeX"
+  className="HeroBasic__Hero-sc-1q83vkz-0 dmtslI"
 >
   <h1
     aria-label=""
-    className="Headline__HeroH1-uipteu-0 cGlSyI"
-    color="inherit"
+    className="Headline__HeroH1-uipteu-0 gDIaDW HeroBasic__SizedHeadline-sc-1q83vkz-1 jLbriD"
   >
     Here's some content
   </h1>
   <p
-    className="HeroBasic__Standfirst-sc-1q83vkz-1 dvydXp"
+    className="HeroBasic__Standfirst-sc-1q83vkz-2 dKkwSl"
   >
     Here's a standfirst
   </p>

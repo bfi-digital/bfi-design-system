@@ -6,7 +6,7 @@ import PropTypes from "prop-types"
 const HeroH1 = styled.h1`
     // text-transform: uppercase;
     font-family: ${theme.bodyFont}; 
-    color: ${props => props.color || theme.black};
+    color: ${theme.black};
     font-weight: bold;
     font-size: 2.2rem;
 
