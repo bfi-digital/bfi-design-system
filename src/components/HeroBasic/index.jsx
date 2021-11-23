@@ -20,7 +20,28 @@ const Hero = styled.header`
     flex-direction: column;
     justify-content: end;
     min-height: 500px;
-    max-height: 80vh;` : ""}
+    max-height: 80vh;
+
+    & > h1 {
+        color: inherit;
+        font-size: 2.6rem;
+        margin-top: 340px;
+
+        @media screen and (min-width: ${theme.m}) {
+            font-size: 3.1rem;
+            max-width: calc(${theme.m} / 1.25);
+        }
+
+        @media screen and (min-width: ${theme.l}) {
+            font-size: 3.4rem;
+        }
+
+        @media screen and (min-width: ${theme.xl}) {
+            font-size: 3.8rem;
+            max-width: calc(${theme.xl} / 2);
+        }
+    }
+    ` : ""}
 `
 
 export const HeroBasic = ({
@@ -33,26 +54,7 @@ export const HeroBasic = ({
     </Hero>)
 }
 
-const SizedHeadline = styled(Headline)`
-  color: inherit;
-  font-size: 2.6rem;
-  margin-top: 340px;
-
-  @media screen and (min-width: ${theme.m}) {
-    font-size: 3.1rem;
-    max-width: calc(${theme.m} / 1.25);
-  }
-  @media screen and (min-width: ${theme.l}) {
-    font-size: 3.4rem;
-  }
-
-  @media screen and (min-width: ${theme.xl}) {
-    font-size: 3.8rem;
-    max-width: calc(${theme.xl} / 2);
-  }
-`
-
-export const HeroHeadline = ({ children, ...args }) => <SizedHeadline level={0} text={children} {...args} />
+export const HeroHeadline = ({ children, ...args }) => <Headline level={0} text={children} {...args} />
 
 export const Standfirst = styled.p`
     font-size: ${theme.fontSize_m};

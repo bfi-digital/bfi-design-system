@@ -920,12 +920,12 @@ exports[`Storyshots 4 Components/All/HeroBasic No Image 1`] = `
 >
   <h1
     aria-label=""
-    className="Headline__HeroH1-uipteu-0 gDIaDW HeroBasic__SizedHeadline-sc-1q83vkz-1 jLbriD"
+    className="Headline__HeroH1-uipteu-0 gDIaDW"
   >
     Here's some content
   </h1>
   <p
-    className="HeroBasic__Standfirst-sc-1q83vkz-2 dKkwSl"
+    className="HeroBasic__Standfirst-sc-1q83vkz-1 jKvdOn"
   >
     Here's a standfirst
   </p>
@@ -934,16 +934,16 @@ exports[`Storyshots 4 Components/All/HeroBasic No Image 1`] = `
 
 exports[`Storyshots 4 Components/All/HeroBasic Normal 1`] = `
 <header
-  className="HeroBasic__Hero-sc-1q83vkz-0 dmtslI"
+  className="HeroBasic__Hero-sc-1q83vkz-0 eEHKgx"
 >
   <h1
     aria-label=""
-    className="Headline__HeroH1-uipteu-0 gDIaDW HeroBasic__SizedHeadline-sc-1q83vkz-1 jLbriD"
+    className="Headline__HeroH1-uipteu-0 gDIaDW"
   >
     Here's some content
   </h1>
   <p
-    className="HeroBasic__Standfirst-sc-1q83vkz-2 dKkwSl"
+    className="HeroBasic__Standfirst-sc-1q83vkz-1 jKvdOn"
   >
     Here's a standfirst
   </p>
