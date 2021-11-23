@@ -952,6 +952,109 @@ exports[`Storyshots 4 Components/All/HeroBasic Normal 1`] = `
 </header>
 `;
 
+exports[`Storyshots 4 Components/All/LFF IWC Banner LFF Example 1`] = `
+<div
+  className="LFFIWCBanner__Outer-sc-1kjs2n9-0 dIvJQk"
+>
+  <div
+    className="LFFIWCBanner__Content-sc-1kjs2n9-1 kiCBVH"
+  >
+    <p
+      className="LeadParagraph__Outer-sc-1bghl13-0 boLSbq lead_paragraph"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "The 2020 BFI London Film Festival will be the first ever edition of the Festival to be widely accessible across the UK, with 50 Virtual Festival Premieres to be enjoyed at home.",
+        }
+      }
+    />
+    <a
+      className="Button__PrimaryButton-sc-1bcggl7-0 eeAcNk"
+      href="http://bfi.org"
+      title={false}
+    >
+      Your guide to the festival
+    </a>
+  </div>
+  <div
+    className="LFFIWCBanner__IWC-sc-1kjs2n9-2 kZotLP"
+  >
+    <div
+      className="LFFIWCBanner__WatchContainer-sc-1kjs2n9-9 ljBIVU"
+    >
+      <img
+        alt=""
+        className="LFFIWCBanner__Watch-sc-1kjs2n9-10 bASrsy"
+      />
+      <img
+        alt=""
+        className="LFFIWCBanner__HourHand-sc-1kjs2n9-13 iofiOS"
+      />
+      <img
+        alt=""
+        className="LFFIWCBanner__MinHand-sc-1kjs2n9-12 hRIIoY"
+      />
+      <img
+        alt=""
+        className="LFFIWCBanner__SecondHand-sc-1kjs2n9-11 fMWhFk"
+      />
+    </div>
+    <div
+      className="LFFIWCBanner__CountdownContainer-sc-1kjs2n9-3 hTrWkv"
+    >
+      <div
+        className="LFFIWCBanner__CountdownContainerInner-sc-1kjs2n9-4 iHmzWv"
+      >
+        <div
+          className="LFFIWCBanner__TimeContainer-sc-1kjs2n9-6 jeKcfE"
+        >
+          <p
+            className="LFFIWCBanner__Time-sc-1kjs2n9-7 eMFKw"
+          />
+          <p
+            className="LFFIWCBanner__Time-sc-1kjs2n9-7 LFFIWCBanner__TimeTitle-sc-1kjs2n9-8 hXwODk"
+          >
+            Days
+          </p>
+        </div>
+        <div
+          className="LFFIWCBanner__TimeContainer-sc-1kjs2n9-6 jeKcfE"
+        >
+          <p
+            className="LFFIWCBanner__Time-sc-1kjs2n9-7 eMFKw"
+          />
+          <p
+            className="LFFIWCBanner__Time-sc-1kjs2n9-7 LFFIWCBanner__TimeTitle-sc-1kjs2n9-8 hXwODk"
+          >
+            Hours
+          </p>
+        </div>
+        <div
+          className="LFFIWCBanner__TimeContainer-sc-1kjs2n9-6 jeKcfE"
+        >
+          <p
+            className="LFFIWCBanner__Time-sc-1kjs2n9-7 eMFKw"
+          />
+          <p
+            className="LFFIWCBanner__Time-sc-1kjs2n9-7 LFFIWCBanner__TimeTitle-sc-1kjs2n9-8 hXwODk"
+          >
+            Mins
+          </p>
+        </div>
+        <a
+          href="https://www.iwc.com/gb/en/home.html"
+          title="Go to IWC's website"
+        >
+          <img
+            alt="IWC Schaffhausen"
+            className="LFFIWCBanner__LogoImg-sc-1kjs2n9-5 dWGwSp"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots 4 Components/All/Landmark Normal 1`] = `
 <main
   className="Landmark-sc-1gbl5hq-0 llEzaj"
