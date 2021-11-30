@@ -3,7 +3,7 @@ import { withA11y } from "@storybook/addon-a11y"
 import { LFFIWCBanner } from "./index"
 
 export default {
-    title: "4 Components/All/Programme Banner",
+    title: "4 Components/All/LFF IWC Banner",
     decorators: [withA11y]
 }
 

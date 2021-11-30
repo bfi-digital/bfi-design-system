@@ -597,32 +597,31 @@ exports[`Storyshots 4 Components/All/Downloadable File Single File 1`] = `
 `;
 
 exports[`Storyshots 4 Components/All/ErrorPage Error 404 1`] = `
-Array [
+<div
+  className="ErrorPage__Wrapper-sc-1xadvd1-0 ErrorPage__ErrorPageWrapper-sc-1xadvd1-1 bqUFOf"
+>
   <div
-    className="ErrorPage__PageBackground-sc-1xadvd1-0 CZWfa"
-  />,
-  <div
-    className="ErrorPage__ErrorContainer-sc-1xadvd1-1 iPshly"
+    className="ErrorPage__ErrorContainer-sc-1xadvd1-2 kNOAZT"
   >
     <div
-      className="ErrorPage__Content-sc-1xadvd1-6 fIGcRM"
+      className="ErrorPage__Content-sc-1xadvd1-7 glQjFW"
     >
       <h1
-        className="ErrorPage__Heading-sc-1xadvd1-2 bobxG"
+        className="ErrorPage__Heading-sc-1xadvd1-3 gGKxtI"
       >
         <span
-          className="ErrorPage__ErrorNumber-sc-1xadvd1-3 bWhtyO"
+          className="ErrorPage__ErrorNumber-sc-1xadvd1-4 iJOuQl"
         >
           404
         </span>
         <span
-          className="ErrorPage__ErrorTitle-sc-1xadvd1-4 igtsER"
+          className="ErrorPage__ErrorTitle-sc-1xadvd1-5 iNpVEs"
         >
           Page not found
         </span>
       </h1>
       <div
-        className="ErrorPage__ErrorSummary-sc-1xadvd1-5 dDFlMX"
+        className="ErrorPage__ErrorSummary-sc-1xadvd1-6 fxbPzr"
       >
         <p>
           Sorry, something went wrong and we cannot find the page you are looking for.
@@ -632,7 +631,7 @@ Array [
         </p>
       </div>
       <div
-        className="ErrorPage__CTAContainer-sc-1xadvd1-8 hrFkxy"
+        className="ErrorPage__CTAContainer-sc-1xadvd1-9 LFaRE"
       >
         <a
           className="Button__PrimaryButton-sc-1bcggl7-0 eeAcNk"
@@ -643,37 +642,36 @@ Array [
         </a>
       </div>
     </div>
-  </div>,
-]
+  </div>
+</div>
 `;
 
 exports[`Storyshots 4 Components/All/ErrorPage Error 500 1`] = `
-Array [
+<div
+  className="ErrorPage__Wrapper-sc-1xadvd1-0 ErrorPage__ErrorPageWrapper-sc-1xadvd1-1 bqUFOf"
+>
   <div
-    className="ErrorPage__PageBackground-sc-1xadvd1-0 CZWfa"
-  />,
-  <div
-    className="ErrorPage__ErrorContainer-sc-1xadvd1-1 iPshly"
+    className="ErrorPage__ErrorContainer-sc-1xadvd1-2 kNOAZT"
   >
     <div
-      className="ErrorPage__Content-sc-1xadvd1-6 fIGcRM"
+      className="ErrorPage__Content-sc-1xadvd1-7 glQjFW"
     >
       <h1
-        className="ErrorPage__Heading-sc-1xadvd1-2 bobxG"
+        className="ErrorPage__Heading-sc-1xadvd1-3 gGKxtI"
       >
         <span
-          className="ErrorPage__ErrorNumber-sc-1xadvd1-3 bWhtyO"
+          className="ErrorPage__ErrorNumber-sc-1xadvd1-4 iJOuQl"
         >
           500
         </span>
         <span
-          className="ErrorPage__ErrorTitle-sc-1xadvd1-4 igtsER"
+          className="ErrorPage__ErrorTitle-sc-1xadvd1-5 iNpVEs"
         >
           Internal Server Error
         </span>
       </h1>
       <div
-        className="ErrorPage__ErrorSummary-sc-1xadvd1-5 dDFlMX"
+        className="ErrorPage__ErrorSummary-sc-1xadvd1-6 fxbPzr"
       >
         <p>
           Sorry, this page doesn't seem to be working.
@@ -683,7 +681,7 @@ Array [
         </p>
       </div>
       <div
-        className="ErrorPage__CTAContainer-sc-1xadvd1-8 hrFkxy"
+        className="ErrorPage__CTAContainer-sc-1xadvd1-9 LFaRE"
       >
         <a
           className="Button__PrimaryButton-sc-1bcggl7-0 eeAcNk"
@@ -694,8 +692,8 @@ Array [
         </a>
       </div>
     </div>
-  </div>,
-]
+  </div>
+</div>
 `;
 
 exports[`Storyshots 4 Components/All/Feedback Form Example 1`] = `
@@ -914,6 +912,155 @@ exports[`Storyshots 4 Components/All/Headline Level 3 1`] = `
 >
   My example headline
 </h3>
+`;
+
+exports[`Storyshots 4 Components/All/HeroBasic No Image 1`] = `
+<header
+  className="HeroBasic__Hero-sc-1q83vkz-0 iaJqQQ"
+>
+  <h1
+    aria-label=""
+    className="Headline__HeroH1-uipteu-0 gDIaDW"
+  >
+    Here's some content
+  </h1>
+  <p
+    className="HeroBasic__Standfirst-sc-1q83vkz-1 jKvdOn"
+  >
+    Here's a standfirst
+  </p>
+</header>
+`;
+
+exports[`Storyshots 4 Components/All/HeroBasic Normal 1`] = `
+<header
+  className="HeroBasic__Hero-sc-1q83vkz-0 eEHKgx"
+>
+  <h1
+    aria-label=""
+    className="Headline__HeroH1-uipteu-0 gDIaDW"
+  >
+    Here's some content
+  </h1>
+  <p
+    className="HeroBasic__Standfirst-sc-1q83vkz-1 jKvdOn"
+  >
+    Here's a standfirst
+  </p>
+</header>
+`;
+
+exports[`Storyshots 4 Components/All/LFF IWC Banner LFF Example 1`] = `
+<div
+  className="LFFIWCBanner__Outer-sc-1kjs2n9-0 dIvJQk"
+>
+  <div
+    className="LFFIWCBanner__Content-sc-1kjs2n9-1 kiCBVH"
+  >
+    <p
+      className="LeadParagraph__Outer-sc-1bghl13-0 boLSbq lead_paragraph"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "The 2020 BFI London Film Festival will be the first ever edition of the Festival to be widely accessible across the UK, with 50 Virtual Festival Premieres to be enjoyed at home.",
+        }
+      }
+    />
+    <a
+      className="Button__PrimaryButton-sc-1bcggl7-0 eeAcNk"
+      href="http://bfi.org"
+      title={false}
+    >
+      Your guide to the festival
+    </a>
+  </div>
+  <div
+    className="LFFIWCBanner__IWC-sc-1kjs2n9-2 kZotLP"
+  >
+    <div
+      className="LFFIWCBanner__WatchContainer-sc-1kjs2n9-9 ljBIVU"
+    >
+      <img
+        alt=""
+        className="LFFIWCBanner__Watch-sc-1kjs2n9-10 bASrsy"
+      />
+      <img
+        alt=""
+        className="LFFIWCBanner__HourHand-sc-1kjs2n9-13 iofiOS"
+      />
+      <img
+        alt=""
+        className="LFFIWCBanner__MinHand-sc-1kjs2n9-12 hRIIoY"
+      />
+      <img
+        alt=""
+        className="LFFIWCBanner__SecondHand-sc-1kjs2n9-11 fMWhFk"
+      />
+    </div>
+    <div
+      className="LFFIWCBanner__CountdownContainer-sc-1kjs2n9-3 hTrWkv"
+    >
+      <div
+        className="LFFIWCBanner__CountdownContainerInner-sc-1kjs2n9-4 iHmzWv"
+      >
+        <div
+          className="LFFIWCBanner__TimeContainer-sc-1kjs2n9-6 jeKcfE"
+        >
+          <p
+            className="LFFIWCBanner__Time-sc-1kjs2n9-7 eMFKw"
+          />
+          <p
+            className="LFFIWCBanner__Time-sc-1kjs2n9-7 LFFIWCBanner__TimeTitle-sc-1kjs2n9-8 hXwODk"
+          >
+            Days
+          </p>
+        </div>
+        <div
+          className="LFFIWCBanner__TimeContainer-sc-1kjs2n9-6 jeKcfE"
+        >
+          <p
+            className="LFFIWCBanner__Time-sc-1kjs2n9-7 eMFKw"
+          />
+          <p
+            className="LFFIWCBanner__Time-sc-1kjs2n9-7 LFFIWCBanner__TimeTitle-sc-1kjs2n9-8 hXwODk"
+          >
+            Hours
+          </p>
+        </div>
+        <div
+          className="LFFIWCBanner__TimeContainer-sc-1kjs2n9-6 jeKcfE"
+        >
+          <p
+            className="LFFIWCBanner__Time-sc-1kjs2n9-7 eMFKw"
+          />
+          <p
+            className="LFFIWCBanner__Time-sc-1kjs2n9-7 LFFIWCBanner__TimeTitle-sc-1kjs2n9-8 hXwODk"
+          >
+            Mins
+          </p>
+        </div>
+        <a
+          href="https://www.iwc.com/gb/en/home.html"
+          title="Go to IWC's website"
+        >
+          <img
+            alt="IWC Schaffhausen"
+            className="LFFIWCBanner__LogoImg-sc-1kjs2n9-5 dWGwSp"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots 4 Components/All/Landmark Normal 1`] = `
+<main
+  className="Landmark-sc-1gbl5hq-0 llEzaj"
+>
+  <section>
+    Landmark content
+  </section>
+</main>
 `;
 
 exports[`Storyshots 4 Components/All/Lead paragraph Normal 1`] = `
@@ -1368,6 +1515,135 @@ exports[`Storyshots 4 Components/All/Text Normal 1`] = `
         Must go faster
       </li>
     </ul>
+  </div>
+</div>
+`;
+
+exports[`Storyshots CaptionedImage Normal 1`] = `
+<figure
+  className="CaptionedImage__Figure-sc-1oce98k-0 geBhVy"
+>
+  <img
+    alt="Alt text"
+    src="http://example.com"
+  />
+  <figcaption
+    className="CaptionedImage__FigCaptionWrapper-sc-1oce98k-1 dSsbsf"
+    tabIndex="0"
+  >
+    <div
+      className="CaptionedImage__FigCaptionContents-sc-1oce98k-2 ijFVQV"
+    >
+      Caption goes here
+    </div>
+  </figcaption>
+</figure>
+`;
+
+exports[`Storyshots IntroBlock Full 1`] = `
+<div
+  className="IntroBlock__IntroBlockWrapper-sc-1hzzhy-0 hiAVp"
+>
+  <figure
+    className="CaptionedImage__Figure-sc-1oce98k-0 geBhVy"
+  >
+    <img
+      alt="Alt text"
+      src="http://example.com/img.jpg"
+    />
+    <figcaption
+      className="CaptionedImage__FigCaptionWrapper-sc-1oce98k-1 dSsbsf"
+      tabIndex="0"
+    >
+      <div
+        className="CaptionedImage__FigCaptionContents-sc-1oce98k-2 ijFVQV"
+      >
+        Caption text is here
+        <cite>
+          Copyright text goes here
+        </cite>
+      </div>
+    </figcaption>
+  </figure>
+  <div>
+    <h1
+      aria-label=""
+      className="Headline__HeroH1-uipteu-0 Headline__H1-uipteu-1 cXoiEu"
+    >
+      Page title
+    </h1>
+    <p
+      className="LeadParagraph__Outer-sc-1bghl13-0 boLSbq lead_paragraph"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "Page standfirst text is here",
+        }
+      }
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots IntroBlock No Copyright 1`] = `
+<div
+  className="IntroBlock__IntroBlockWrapper-sc-1hzzhy-0 hiAVp"
+>
+  <figure
+    className="CaptionedImage__Figure-sc-1oce98k-0 geBhVy"
+  >
+    <img
+      alt="Alt text"
+      src="http://example.com/img.jpg"
+    />
+    <figcaption
+      className="CaptionedImage__FigCaptionWrapper-sc-1oce98k-1 dSsbsf"
+      tabIndex="0"
+    >
+      <div
+        className="CaptionedImage__FigCaptionContents-sc-1oce98k-2 ijFVQV"
+      >
+        Caption text is here
+      </div>
+    </figcaption>
+  </figure>
+  <div>
+    <h1
+      aria-label=""
+      className="Headline__HeroH1-uipteu-0 Headline__H1-uipteu-1 cXoiEu"
+    >
+      Page title
+    </h1>
+    <p
+      className="LeadParagraph__Outer-sc-1bghl13-0 boLSbq lead_paragraph"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "Page standfirst text is here",
+        }
+      }
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots IntroBlock No Image 1`] = `
+<div
+  className="IntroBlock__IntroBlockWrapper-sc-1hzzhy-0 hiAVp"
+>
+  <div>
+    <h1
+      aria-label=""
+      className="Headline__HeroH1-uipteu-0 Headline__H1-uipteu-1 cXoiEu"
+    >
+      Page title
+    </h1>
+    <p
+      className="LeadParagraph__Outer-sc-1bghl13-0 boLSbq lead_paragraph"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "Page standfirst text is here",
+        }
+      }
+    />
   </div>
 </div>
 `;

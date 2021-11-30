@@ -1,5 +1,5 @@
 import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
-import { ErrorPage } from "../../../components/ErrorPage/index"
+import { ErrorPage, ErrorPageWrapper } from "../../../components/ErrorPage/index"
 import travoltaLocal from "./images/travolta.gif"
 import kansasLocal from "./images/kansas.gif"
 
@@ -12,8 +12,8 @@ This component is used as the main body content for all error pages within BFI.o
 It displays the error number, as well as a string of content - this content is automatically displayed depending on the error code, it includes a fallback generic message, as well as an override to allow a custom message for the error page.
 
 The component includes the ability to provide an array of gifs - these will be displayed alongside the error message with a random gif selected from the array to display. Providing a place to show more of the friendly personality of the BFI, the idea for the gifs is to call on the place classic film has within modern internet culture, with memes such as confused Travolta from Pulp Fiction being so widespread, or the ability to use any film as a metaphor for the error/page missing message.
- 
-## Props 
+
+## Props
 
 <Props of={ErrorPage} />
 
@@ -21,7 +21,8 @@ The component includes the ability to provide an array of gifs - these will be d
 
 <Preview>
     <Story name="404 Page">
-        <ErrorPage error={404} gifs={[
+        <ErrorPageWrapper>
+            <ErrorPage error={404} gifs={[
             {
                 url: travoltaLocal,
                 alt: "Error image"
@@ -30,13 +31,15 @@ The component includes the ability to provide an array of gifs - these will be d
                 url: kansasLocal,
                 alt: "Error image"
             }
-        ]} />
+            ]} />
+        </ErrorPageWrapper>
     </Story>
 </Preview>
 
 <Preview>
     <Story name="500 Page">
-        <ErrorPage error={500} gifs={[
+        <ErrorPageWrapper>
+            <ErrorPage error={500} gifs={[
             {
                 url: travoltaLocal,
                 alt: "Error image"
@@ -45,13 +48,15 @@ The component includes the ability to provide an array of gifs - these will be d
                 url: kansasLocal,
                 alt: "Error image"
             }
-        ]} />
+            ]} />
+        </ErrorPageWrapper>
     </Story>
 </Preview>
 
 <Preview>
     <Story name="403 Page">
-        <ErrorPage error={403} gifs={[
+        <ErrorPageWrapper>
+            <ErrorPage error={403} gifs={[
             {
                 url: travoltaLocal,
                 alt: "Error image"
@@ -60,19 +65,23 @@ The component includes the ability to provide an array of gifs - these will be d
                 url: kansasLocal,
                 alt: "Error image"
             }
-        ]} />
+            ]} />
+        </ErrorPageWrapper>
     </Story>
 </Preview>
 
 <Preview>
     <Story name="400 Page">
-        <ErrorPage error={400} />
+        <ErrorPageWrapper>
+                <ErrorPage error={400} />
+            </ErrorPageWrapper>
     </Story>
 </Preview>
 
 <Preview>
     <Story name="503 Page">
-        <ErrorPage error={503} gifs={[
+        <ErrorPageWrapper>
+            <ErrorPage error={503} gifs={[
             {
                 url: travoltaLocal,
                 alt: "Error image"
@@ -81,13 +90,15 @@ The component includes the ability to provide an array of gifs - these will be d
                 url: kansasLocal,
                 alt: "Error image"
             }
-        ]} />
+            ]} />
+        </ErrorPageWrapper>
     </Story>
 </Preview>
 
 <Preview>
     <Story name="No number Page">
-        <ErrorPage gifs={[
+        <ErrorPageWrapper>
+            <ErrorPage gifs={[
             {
                 url: travoltaLocal,
                 alt: "Error image"
@@ -96,12 +107,15 @@ The component includes the ability to provide an array of gifs - these will be d
                 url: kansasLocal,
                 alt: "Error image"
             }
-        ]} />
+            ]} />
+        </ErrorPageWrapper>
     </Story>
 </Preview>
 
 <Preview>
     <Story name="Override error message">
-        <ErrorPage errorString="Overrided message" />
+        <ErrorPageWrapper>
+                <ErrorPage errorString="Overrided message" />
+            </ErrorPageWrapper>
     </Story>
 </Preview>

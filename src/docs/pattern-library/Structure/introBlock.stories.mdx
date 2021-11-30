@@ -1,0 +1,31 @@
+import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks'
+import { IntroBlock } from "../../../components/IntroBlock/index"
+import kansas from '../Structure/images/kansas.gif';
+
+<Meta title="2 Pattern Library/1 Structure/IntroBlock" component={IntroBlock} />
+
+# IntroBlock
+
+A block containing an optional image, title, and standfirst.
+
+## Examples
+
+<Preview>
+    <Story name="Normal">
+        <IntroBlock src={kansas} alt="Scene from Wizard of Oz" caption="Caption" title="My page" copyright="Paul photography" standfirst={
+            `Ullam quia aut facere minus dolorem quam sequi esse. Officia molestiae voluptatem et non cum modi. Saepe neque repellendus in.`}>
+        </IntroBlock>
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="No image">
+        <IntroBlock title="My page" standfirst={`Ullam quia aut facere minus dolorem quam sequi esse. Officia molestiae voluptatem et non cum modi. Saepe neque repellendus in.`}>
+        </IntroBlock>
+    </Story>
+</Preview>
+
+
+## Props
+
+<Props of={IntroBlock} />

@@ -1,0 +1,59 @@
+import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+import { Landmark } from '../../../components/Landmark';
+import { HeroBasic, HeroHeadline, Standfirst } from '../../../components/HeroBasic';
+import navItems, { quickLinksData as quickLinks } from "../../../components/Header/data"
+import { Header } from "../../../components/Header/index"
+import footerData from "../../../components/Footer/data"
+import {Footer} from "../../../components/Footer/index";
+
+<Meta title="2 Pattern Library/1 Structure/Landmark" component={Landmark} />
+
+# Landmark
+
+The Landmark component represents a high-level structural component of the page, usually the Main content section,
+but it could also be used as the main page header or footer.
+
+Landmark will fill 100% of the screen width and so can have a background colour applied to fill the whole
+screen width with that colour. Its direct children will have their box size set to the bleed width and their
+content padding set to the content width. This means any element direct child of the Landmark will automatically
+have the correct width sizes without any extra CSS being needed.
+
+The landmark will be rendered as a `main` element by default, but this can be changed using the `as` attribute,
+e.g `<Landmark as="footer">...</Landmark>`.
+
+Semantically, any direct children of Landmark should be a sectioning or heading element like article, aside,
+nav, section, or header.
+
+## Props 
+
+<Props of={Landmark} />
+
+## Examples 
+
+<Preview>
+    <Story name="Normal">
+        <Landmark>
+            <HeroBasic 
+                image="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1920/1080/1/2020-03/Hero.jpg" 
+            >
+                <HeroHeadline>Watch a new film, rediscover your old favourites, and get inspired.</HeroHeadline>
+            </HeroBasic>
+        </Landmark> 
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="With header & Footer">
+        <Header {...{ navItems, quickLinks}} />
+        <Landmark>
+            <HeroBasic image="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1920/1080/1/2020-03/Hero.jpg" >
+                <HeroHeadline>Judas and the Black Messiah (2021)</HeroHeadline>
+                <Standfirst>Daniel Kaluuya is electrifying as Fred Hampton, leader of the Chicago chapter of the Black Panther party, in Shaka King's visceral crime thriller and immersive slice of American history.</Standfirst>
+            </HeroBasic>
+            <section>
+                <p>More info here</p>
+            </section>
+        </Landmark> 
+        <Footer  menus={footerData} copyrightLinks={[]} copyrightText="BFI"/>
+    </Story>
+</Preview>
