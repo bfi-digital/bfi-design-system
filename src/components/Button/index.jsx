@@ -66,9 +66,20 @@ const PrimaryButton = styled(Link)`
     z-index: 2;
     width: 100%;
     text-align: center;
+    transition: color .3s;
+
+    &[contrast=dark] {
+        background: ${theme.black};
+        color: ${theme.white};
+    }
+
+    &[contrast=light] {
+        background: ${theme.white};
+        color: ${theme.black};
+    }
 
     svg {
-        fill: ${props => colorSchemes[props.colorScheme].text};
+        fill: currentColor;
     }
 
     :after {
@@ -85,10 +96,6 @@ const PrimaryButton = styled(Link)`
 
     &:hover, &:focus{
         color: ${theme.white};
-
-        svg {
-            fill: ${theme.white};
-        }
         
         :after {
             height: calc(100% + 5px);
@@ -211,10 +218,12 @@ Button.propTypes = {
     title: PropTypes.string,
     // If button links to player, add the pillar for this to theme it
     playerPillar: PropTypes.string,
-    disabled: PropTypes.bool
+    disabled: PropTypes.bool,
+    contrast: PropTypes.oneOf(['light', 'dark', 'auto'])
 }
 
 Button.defaultProps = {
     colorScheme: 0,
-    disabled: false
+    disabled: false,
+    contrast: 'auto'
 }

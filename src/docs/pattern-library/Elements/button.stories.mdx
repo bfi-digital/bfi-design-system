@@ -5,6 +5,9 @@ import { Button } from "../../../components/Button/index"
 
 # Button
 
+The button has multiple different themes that can be selected using the
+`colorScheme` attribute. Any theme's background and foreground colours
+can be inverted by setting the `contrast` property to `dark` or `light`.
 
 ## Examples
 
@@ -12,6 +15,14 @@ import { Button } from "../../../components/Button/index"
     <Story name="Primary">
         <div style={{padding: "20px"}}>
             <Button level={1} url="#1">Click me</Button>
+        </div>
+    </Story>
+</Preview>
+
+<Preview>
+    <Story name="Primary, light contrast">
+        <div style={{padding: "20px", background: "maroon"}}>
+            <Button level={1} url="#1" contrast="light">Click me</Button>
         </div>
     </Story>
 </Preview>

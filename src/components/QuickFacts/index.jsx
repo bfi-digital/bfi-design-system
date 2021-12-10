@@ -9,28 +9,13 @@ const Outer = styled.dl`
     line-height: 150%;
     margin-bottom: ${theme.standardSpace*2}px;
     display: grid;
-    grid-template-columns: repeat(
-        auto-fit,
-        minmax(
-            calc(
-                (
-                    (${theme.xl} - 100px - ${theme.horizontalPadding} * 2)
-                    * 0.34
-                    - 50px
-                )
-                / 2
-                + 1px
-            ),
-            max-content
-        )
-    );
+    grid-gap: 0 ${theme.standardSpace}px;
+    grid-template-columns: auto;
+
+    &[columns=2] {
+        grid-template-columns: auto 1fr;
+    }
 `
-// Above calculation:
-// We want the grid to have 2 columns if it's not in the sidebar,
-// so we set the auto-fit size to 1px greater than half the maximum sidebar size,
-// which is calc(34% - 50px) according to PageContainer,
-// whose parent size is ${theme.xl} - 100px according to PageContainer's wrapper,
-// and we take the padding off each side.
 
 const Label = styled.dt`
     font-size: ${theme.fontSize_s};
@@ -41,12 +26,18 @@ const Value = styled.dd`
     margin-left: 0px;
     margin-bottom: 20px;
     font-weight: ${props => props.labelled ? "bold" : "normal" };
+
+    &:first-child,
+    & + & {
+        grid-column: 1/-1;
+    }
 `
 
 export const QuickFacts = ({
-    facts
+    facts,
+    ...props
 }) =>
-    <Outer>
+    <Outer {...props}>
         {facts.map((fact) =>
             <Fragment key={fact.label}>
                 {fact.label && <Label>{fact.label}</Label>}
@@ -54,3 +45,17 @@ export const QuickFacts = ({
             </Fragment >
         )}
     </Outer>
+
+import PropTypes from 'prop-types';
+
+QuickFacts.propTypes = {
+    facts: PropTypes.arrayOf({
+        label: PropTypes.string,
+        value: PropTypes.string.isRequired
+    }).isRequired,
+    columns: PropTypes.oneOf([1, 2])
+}
+
+QuickFacts.defaultProps = {
+    columns: 1
+}

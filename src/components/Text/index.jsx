@@ -77,7 +77,7 @@ const Outer = styled.div`
         margin-bottom: 20px;
     }
 
-    a {
+    a:link {
         color: ${theme.black};
         text-decoration: none;
         font-weight: ${theme.fontWeight_semiBold};
@@ -102,23 +102,24 @@ const Outer = styled.div`
             outline: none;
             text-decoration: underline;
         }
+    }
+
+    a[name]::before {
+        content: "\\00a0";
+        position: relative;
+        top: -70px;
+        margin-left: -5px;
+        width: 0;
+        height: 0;
+        color: transparent;
+        overflow: hidden;
+        pointer-events: none;
         
-        &[name]::before {
-            content: "\\00a0";
-            position: relative;
-            top: -70px;
-            margin-left: -5px;
-            width: 0;
-            height: 0;
-            color: transparent;
-            overflow: hidden;
-            pointer-events: none;
-            
-            @media screen and (min-width: ${theme.m}){
-                top: -90px;
-            }
+        @media screen and (min-width: ${theme.m}){
+            top: -90px;
         }
     }
+
     p + ul, p + ol {
         margin-top: -5px;
     }
