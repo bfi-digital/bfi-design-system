@@ -1,7 +1,10 @@
 {
   "name": "bfi-design-system",
-  "version": "0.2.134",
-  "author": "FutureGov <dev@wearefuturegov.com> (https://wearefuturegov.com)",
+  "version": "0.2.135-rc.3",
+  "contributors": [
+    "FutureGov <dev@wearefuturegov.com> (https://wearefuturegov.com)",
+    "Paul Kiddle <paul.kiddle@bfi.org.uk> (https://mrkiddle.co.uk)"
+  ],
   "homepage": "https://gerwig.netlify.com",
   "description": "Next-gen design system for the British Film Institute",
   "repository": "github:bfi-digital/bfi-design-system",

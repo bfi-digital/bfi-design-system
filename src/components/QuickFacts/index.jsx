@@ -11,7 +11,7 @@ const Outer = styled.dl`
     display: grid;
     grid-gap: 0 ${theme.standardSpace}px;
     grid-template-columns: auto repeat(calc(min(var(--quick-facts-columns), 2) - 1), 1fr);
-    --quick-facts-columns: ${props=>props.columns || 1};
+    --quick-facts-columns: ${props=>props.columns};
 
     &[columns=2] {
         --quick-facts-columns: 2;
@@ -54,9 +54,9 @@ QuickFacts.propTypes = {
         label: PropTypes.string,
         value: PropTypes.string.isRequired
     }).isRequired,
-    columns: PropTypes.oneOf([1, 2])
+    columns: PropTypes.oneOf([1, 2, "inherit"])
 }
 
 QuickFacts.defaultProps = {
-    columns: 1
+    columns: "inherit"
 }
