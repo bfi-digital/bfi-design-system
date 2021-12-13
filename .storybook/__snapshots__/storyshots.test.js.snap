@@ -10,10 +10,10 @@ exports[`Storyshots 4 Components/All/Advertising Container Failed To Load Exampl
   }
 >
   <div
-    className="AdvertisingContainer__Outer-sc-1oly5nh-0 dxWicc advertising_container"
+    className="AdvertisingContainer__Outer-sc-1oly5nh-0 fNuoHv advertising_container"
   >
     <p
-      className="AdvertisingContainer__AdvertisingNotice-sc-1oly5nh-1 goXryU"
+      className="AdvertisingContainer__AdvertisingNotice-sc-1oly5nh-1 fNXLuz"
     >
       Advertisement
     </p>
@@ -35,10 +35,10 @@ exports[`Storyshots 4 Components/All/Advertising Container Mpu Example 1`] = `
   }
 >
   <div
-    className="AdvertisingContainer__Outer-sc-1oly5nh-0 dxWicc advertising_container"
+    className="AdvertisingContainer__Outer-sc-1oly5nh-0 fNuoHv advertising_container"
   >
     <p
-      className="AdvertisingContainer__AdvertisingNotice-sc-1oly5nh-1 goXryU"
+      className="AdvertisingContainer__AdvertisingNotice-sc-1oly5nh-1 fNXLuz"
     >
       Advertisement
     </p>
@@ -65,7 +65,7 @@ exports[`Storyshots 4 Components/All/Advertising Container Native Example 1`] = 
   }
 >
   <div
-    className="AdvertisingContainer__Outer-sc-1oly5nh-0 dxWicc advertising_container"
+    className="AdvertisingContainer__Outer-sc-1oly5nh-0 fNuoHv advertising_container"
   >
     <div
       style={
@@ -82,24 +82,24 @@ exports[`Storyshots 4 Components/All/Advertising Container Native Example 1`] = 
 
 exports[`Storyshots 4 Components/All/Article Keywords Normal 1`] = `
 <div
-  className="ArticleKeywords__Outer-sc-1i3vk64-0 fjWRJW"
+  className="ArticleKeywords__Outer-sc-1i3vk64-0 iCESxo"
 >
   <a
-    className="ArticleKeywords__FilterLink-sc-1i3vk64-1 fXCFYM"
+    className="ArticleKeywords__FilterLink-sc-1i3vk64-1 dkoSUU"
     href="#1"
     title="Show all Covid-19 articles"
   >
     Covid-19
   </a>
   <a
-    className="ArticleKeywords__FilterLink-sc-1i3vk64-1 fXCFYM"
+    className="ArticleKeywords__FilterLink-sc-1i3vk64-1 dkoSUU"
     href="#2"
     title="Show all BFI National Archive articles"
   >
     BFI National Archive
   </a>
   <a
-    className="ArticleKeywords__FilterLink-sc-1i3vk64-1 fXCFYM"
+    className="ArticleKeywords__FilterLink-sc-1i3vk64-1 dkoSUU"
     href="#3"
     title="Show all Video articles"
   >
@@ -110,15 +110,15 @@ exports[`Storyshots 4 Components/All/Article Keywords Normal 1`] = `
 
 exports[`Storyshots 4 Components/All/Blockquote With Citation 1`] = `
 <blockquote
-  className="Blockquote__Outer-iubc6-0 kNZZIq"
+  className="Blockquote__Outer-iubc6-0 cFaSqu"
 >
   <q
-    className="Blockquote__Quote-iubc6-1 kIpPo"
+    className="Blockquote__Quote-iubc6-1 cQrgkf"
   >
     Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.
   </q>
   <cite
-    className="Blockquote__Citation-iubc6-2 hsCNAO"
+    className="Blockquote__Citation-iubc6-2 ddgKb"
   >
     Ian Malcolm
   </cite>
@@ -127,10 +127,10 @@ exports[`Storyshots 4 Components/All/Blockquote With Citation 1`] = `
 
 exports[`Storyshots 4 Components/All/Blockquote Without Citation 1`] = `
 <blockquote
-  className="Blockquote__Outer-iubc6-0 kNZZIq"
+  className="Blockquote__Outer-iubc6-0 cFaSqu"
 >
   <q
-    className="Blockquote__Quote-iubc6-1 kIpPo"
+    className="Blockquote__Quote-iubc6-1 cQrgkf"
   >
     Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.
   </q>
@@ -140,13 +140,13 @@ exports[`Storyshots 4 Components/All/Blockquote Without Citation 1`] = `
 exports[`Storyshots 4 Components/All/Breadcrumbs Normal 1`] = `
 Array [
   <ol
-    className="Breadcrumbs__Outer-sc-17ixyjm-0 fmmcVi"
+    className="Breadcrumbs__Outer-sc-17ixyjm-0 kniyVe"
   >
     <li
-      className="Breadcrumbs__Crumb-sc-17ixyjm-2 fpazhl"
+      className="Breadcrumbs__Crumb-sc-17ixyjm-2 koQERK"
     >
       <a
-        className="Breadcrumbs__BreadcrumbLink-sc-17ixyjm-3 Bcgtm"
+        className="Breadcrumbs__BreadcrumbLink-sc-17ixyjm-3 ilJnGC"
         data-tracking="breadcrumb"
         href="#1"
       >
@@ -154,10 +154,10 @@ Array [
       </a>
     </li>
     <li
-      className="Breadcrumbs__Crumb-sc-17ixyjm-2 fpazhl"
+      className="Breadcrumbs__Crumb-sc-17ixyjm-2 koQERK"
     >
       <a
-        className="Breadcrumbs__BreadcrumbLink-sc-17ixyjm-3 Bcgtm"
+        className="Breadcrumbs__BreadcrumbLink-sc-17ixyjm-3 ilJnGC"
         data-tracking="breadcrumb"
         href="#2"
       >
@@ -165,19 +165,19 @@ Array [
       </a>
     </li>
     <li
-      className="Breadcrumbs__Crumb-sc-17ixyjm-2 fpazhl"
+      className="Breadcrumbs__Crumb-sc-17ixyjm-2 koQERK"
     >
       Find a fund to create films, TV or new formats of storytelling
     </li>
   </ol>,
   <ol
-    className="Breadcrumbs__MobileOuter-sc-17ixyjm-1 bvTzym"
+    className="Breadcrumbs__MobileOuter-sc-17ixyjm-1 ffQsty"
   >
     <li
-      className="Breadcrumbs__Crumb-sc-17ixyjm-2 fpazhl"
+      className="Breadcrumbs__Crumb-sc-17ixyjm-2 koQERK"
     >
       <a
-        className="Breadcrumbs__BreadcrumbLink-sc-17ixyjm-3 Bcgtm"
+        className="Breadcrumbs__BreadcrumbLink-sc-17ixyjm-3 ilJnGC"
         data-tracking="breadcrumb"
         href="#2"
       >
@@ -192,13 +192,13 @@ Array [
 exports[`Storyshots 4 Components/All/Breadcrumbs Wrapping 1`] = `
 Array [
   <ol
-    className="Breadcrumbs__Outer-sc-17ixyjm-0 fmmcVi"
+    className="Breadcrumbs__Outer-sc-17ixyjm-0 kniyVe"
   >
     <li
-      className="Breadcrumbs__Crumb-sc-17ixyjm-2 fpazhl"
+      className="Breadcrumbs__Crumb-sc-17ixyjm-2 koQERK"
     >
       <a
-        className="Breadcrumbs__BreadcrumbLink-sc-17ixyjm-3 Bcgtm"
+        className="Breadcrumbs__BreadcrumbLink-sc-17ixyjm-3 ilJnGC"
         data-tracking="breadcrumb"
         href="#4"
       >
@@ -206,10 +206,10 @@ Array [
       </a>
     </li>
     <li
-      className="Breadcrumbs__Crumb-sc-17ixyjm-2 fpazhl"
+      className="Breadcrumbs__Crumb-sc-17ixyjm-2 koQERK"
     >
       <a
-        className="Breadcrumbs__BreadcrumbLink-sc-17ixyjm-3 Bcgtm"
+        className="Breadcrumbs__BreadcrumbLink-sc-17ixyjm-3 ilJnGC"
         data-tracking="breadcrumb"
         href="#5"
       >
@@ -217,10 +217,10 @@ Array [
       </a>
     </li>
     <li
-      className="Breadcrumbs__Crumb-sc-17ixyjm-2 fpazhl"
+      className="Breadcrumbs__Crumb-sc-17ixyjm-2 koQERK"
     >
       <a
-        className="Breadcrumbs__BreadcrumbLink-sc-17ixyjm-3 Bcgtm"
+        className="Breadcrumbs__BreadcrumbLink-sc-17ixyjm-3 ilJnGC"
         data-tracking="breadcrumb"
         href="#6"
       >
@@ -228,19 +228,19 @@ Array [
       </a>
     </li>
     <li
-      className="Breadcrumbs__Crumb-sc-17ixyjm-2 fpazhl"
+      className="Breadcrumbs__Crumb-sc-17ixyjm-2 koQERK"
     >
       Development Fund
     </li>
   </ol>,
   <ol
-    className="Breadcrumbs__MobileOuter-sc-17ixyjm-1 bvTzym"
+    className="Breadcrumbs__MobileOuter-sc-17ixyjm-1 ffQsty"
   >
     <li
-      className="Breadcrumbs__Crumb-sc-17ixyjm-2 fpazhl"
+      className="Breadcrumbs__Crumb-sc-17ixyjm-2 koQERK"
     >
       <a
-        className="Breadcrumbs__BreadcrumbLink-sc-17ixyjm-3 Bcgtm"
+        className="Breadcrumbs__BreadcrumbLink-sc-17ixyjm-3 ilJnGC"
         data-tracking="breadcrumb"
         href="#6"
       >
@@ -261,7 +261,8 @@ exports[`Storyshots 4 Components/All/Button Primary 1`] = `
   }
 >
   <a
-    className="Button__PrimaryButton-sc-1bcggl7-0 eeAcNk"
+    className="Button__PrimaryButton-sc-1bcggl7-0 iGgyti"
+    contrast="auto"
     href="#1"
     title={false}
   >
@@ -279,7 +280,8 @@ exports[`Storyshots 4 Components/All/Button Secondary 1`] = `
   }
 >
   <a
-    className="Button__SecondaryButton-sc-1bcggl7-2 bxwUna"
+    className="Button__SecondaryButton-sc-1bcggl7-2 bcmbAu"
+    contrast="auto"
     href="#2"
     title={false}
   >
@@ -297,7 +299,8 @@ exports[`Storyshots 4 Components/All/Button Tertiary 1`] = `
   }
 >
   <a
-    className="Button__TertiaryButton-sc-1bcggl7-3 iYJlQy"
+    className="Button__TertiaryButton-sc-1bcggl7-3 kHTEVj"
+    contrast="auto"
     href="#3"
     title={false}
   >
@@ -315,10 +318,11 @@ exports[`Storyshots 4 Components/All/Call to Action Internal Link 1`] = `
   }
 >
   <div
-    className="CallToAction__Outer-sc-16s1pd-0 wNYxl call_to_action_block"
+    className="CallToAction__Outer-sc-16s1pd-0 gPPRhP call_to_action_block"
   >
     <a
-      className="Button__PrimaryButton-sc-1bcggl7-0 eeAcNk"
+      className="Button__PrimaryButton-sc-1bcggl7-0 iGgyti"
+      contrast="auto"
       href="/"
       title={false}
     >
@@ -337,10 +341,11 @@ exports[`Storyshots 4 Components/All/Call to Action Two Links 1`] = `
   }
 >
   <div
-    className="CallToAction__Outer-sc-16s1pd-0 wNYxl call_to_action_block"
+    className="CallToAction__Outer-sc-16s1pd-0 gPPRhP call_to_action_block"
   >
     <a
-      className="Button__PrimaryButton-sc-1bcggl7-0 eeAcNk"
+      className="Button__PrimaryButton-sc-1bcggl7-0 iGgyti"
+      contrast="auto"
       href="/"
       title={false}
     >
@@ -348,10 +353,11 @@ exports[`Storyshots 4 Components/All/Call to Action Two Links 1`] = `
     </a>
   </div>
   <div
-    className="CallToAction__Outer-sc-16s1pd-0 wNYxl call_to_action_block"
+    className="CallToAction__Outer-sc-16s1pd-0 gPPRhP call_to_action_block"
   >
     <a
-      className="Button__PrimaryButton-sc-1bcggl7-0 eeAcNk"
+      className="Button__PrimaryButton-sc-1bcggl7-0 iGgyti"
+      contrast="auto"
       href="/"
       title={false}
     >
@@ -363,26 +369,26 @@ exports[`Storyshots 4 Components/All/Call to Action Two Links 1`] = `
 
 exports[`Storyshots 4 Components/All/Divider Clear Float 1`] = `
 <hr
-  className="Divider__Break-sc-8d5zpt-0 fpxQJD"
+  className="Divider__Break-sc-8d5zpt-0 eraFCh"
 />
 `;
 
 exports[`Storyshots 4 Components/All/Divider No Spacing 1`] = `
 <hr
-  className="Divider__Break-sc-8d5zpt-0 bQCqhP"
+  className="Divider__Break-sc-8d5zpt-0 jAfpIN"
   spacing="none"
 />
 `;
 
 exports[`Storyshots 4 Components/All/Divider Normal 1`] = `
 <hr
-  className="Divider__Break-sc-8d5zpt-0 EusRW"
+  className="Divider__Break-sc-8d5zpt-0 kQMAkl"
 />
 `;
 
 exports[`Storyshots 4 Components/All/Divider Transparent 1`] = `
 <hr
-  className="Divider__Break-sc-8d5zpt-0 fUOKdS"
+  className="Divider__Break-sc-8d5zpt-0 cotulF"
 />
 `;
 
@@ -395,13 +401,13 @@ exports[`Storyshots 4 Components/All/Downloadable File Multiple Files 1`] = `
   }
 >
   <div
-    className="DownloadableFiles__Container-sc-86pcb9-0 cDofHR"
+    className="DownloadableFiles__Container-sc-86pcb9-0 dgjuPZ"
   >
     <div
-      className="FileDownload__Outer-v4wl69-0 iSPIBj"
+      className="FileDownload__Outer-v4wl69-0 ezjEYQ"
     >
       <a
-        className="FileDownload__Link-v4wl69-1 leuXbp"
+        className="FileDownload__Link-v4wl69-1 QAFzZ"
         download={true}
         href="https://www.bfi.org.uk/sites/bfi.org.uk/files/downloads/bfi-young-audiences-content-fund-production-application-guidelines-2019-10.pdf"
         onMouseEnter={[Function]}
@@ -437,20 +443,20 @@ exports[`Storyshots 4 Components/All/Downloadable File Multiple Files 1`] = `
           </g>
         </svg>
         <div
-          className="FileDownload__FileDetails-v4wl69-2 dOBeMn file-details"
+          className="FileDownload__FileDetails-v4wl69-2 dZnrDg file-details"
         >
           <span
-            className="FileDownload__Title-v4wl69-3 igmiXx file-title"
+            className="FileDownload__Title-v4wl69-3 bTEOpT file-title"
           >
             File title
           </span>
           <span
-            className="FileDownload__Type-v4wl69-4 dJvdio"
+            className="FileDownload__Type-v4wl69-4 iqMmwE"
           >
             PDF
           </span>
           <span
-            className="FileDownload__Size-v4wl69-5 jKJbPh"
+            className="FileDownload__Size-v4wl69-5 kiEMOl"
           >
             1.2 MB
           </span>
@@ -458,10 +464,10 @@ exports[`Storyshots 4 Components/All/Downloadable File Multiple Files 1`] = `
       </a>
     </div>
     <div
-      className="FileDownload__Outer-v4wl69-0 iSPIBj"
+      className="FileDownload__Outer-v4wl69-0 ezjEYQ"
     >
       <a
-        className="FileDownload__Link-v4wl69-1 leuXbp"
+        className="FileDownload__Link-v4wl69-1 QAFzZ"
         download={true}
         href="https://www.bfi.org.uk/sites/bfi.org.uk/files/downloads/bfi-young-audiences-content-fund-production-application-guidelines-2019-10.pdf"
         onMouseEnter={[Function]}
@@ -497,20 +503,20 @@ exports[`Storyshots 4 Components/All/Downloadable File Multiple Files 1`] = `
           </g>
         </svg>
         <div
-          className="FileDownload__FileDetails-v4wl69-2 dOBeMn file-details"
+          className="FileDownload__FileDetails-v4wl69-2 dZnrDg file-details"
         >
           <span
-            className="FileDownload__Title-v4wl69-3 igmiXx file-title"
+            className="FileDownload__Title-v4wl69-3 bTEOpT file-title"
           >
             Young Audiences Content Fund production application guidelines
           </span>
           <span
-            className="FileDownload__Type-v4wl69-4 dJvdio"
+            className="FileDownload__Type-v4wl69-4 iqMmwE"
           >
             PDF
           </span>
           <span
-            className="FileDownload__Size-v4wl69-5 jKJbPh"
+            className="FileDownload__Size-v4wl69-5 kiEMOl"
           >
             279.06 KB
           </span>
@@ -530,13 +536,13 @@ exports[`Storyshots 4 Components/All/Downloadable File Single File 1`] = `
   }
 >
   <div
-    className="DownloadableFiles__Container-sc-86pcb9-0 cDofHR"
+    className="DownloadableFiles__Container-sc-86pcb9-0 dgjuPZ"
   >
     <div
-      className="FileDownload__Outer-v4wl69-0 iSPIBj"
+      className="FileDownload__Outer-v4wl69-0 ezjEYQ"
     >
       <a
-        className="FileDownload__Link-v4wl69-1 leuXbp"
+        className="FileDownload__Link-v4wl69-1 QAFzZ"
         download={true}
         href="https://www.bfi.org.uk/sites/bfi.org.uk/files/downloads/bfi-young-audiences-content-fund-production-application-guidelines-2019-10.pdf"
         onMouseEnter={[Function]}
@@ -572,20 +578,20 @@ exports[`Storyshots 4 Components/All/Downloadable File Single File 1`] = `
           </g>
         </svg>
         <div
-          className="FileDownload__FileDetails-v4wl69-2 dOBeMn file-details"
+          className="FileDownload__FileDetails-v4wl69-2 dZnrDg file-details"
         >
           <span
-            className="FileDownload__Title-v4wl69-3 igmiXx file-title"
+            className="FileDownload__Title-v4wl69-3 bTEOpT file-title"
           >
             File title
           </span>
           <span
-            className="FileDownload__Type-v4wl69-4 dJvdio"
+            className="FileDownload__Type-v4wl69-4 iqMmwE"
           >
             PDF
           </span>
           <span
-            className="FileDownload__Size-v4wl69-5 jKJbPh"
+            className="FileDownload__Size-v4wl69-5 kiEMOl"
           >
             1.2 MB
           </span>
@@ -598,30 +604,30 @@ exports[`Storyshots 4 Components/All/Downloadable File Single File 1`] = `
 
 exports[`Storyshots 4 Components/All/ErrorPage Error 404 1`] = `
 <div
-  className="ErrorPage__Wrapper-sc-1xadvd1-0 ErrorPage__ErrorPageWrapper-sc-1xadvd1-1 bqUFOf"
+  className="ErrorPage__Wrapper-sc-1xadvd1-0 ErrorPage__ErrorPageWrapper-sc-1xadvd1-1 dlPnmh dqigsh"
 >
   <div
-    className="ErrorPage__ErrorContainer-sc-1xadvd1-2 kNOAZT"
+    className="ErrorPage__ErrorContainer-sc-1xadvd1-2 iEhtbK"
   >
     <div
-      className="ErrorPage__Content-sc-1xadvd1-7 glQjFW"
+      className="ErrorPage__Content-sc-1xadvd1-7 jnilcM"
     >
       <h1
-        className="ErrorPage__Heading-sc-1xadvd1-3 gGKxtI"
+        className="ErrorPage__Heading-sc-1xadvd1-3 kdzTJe"
       >
         <span
-          className="ErrorPage__ErrorNumber-sc-1xadvd1-4 iJOuQl"
+          className="ErrorPage__ErrorNumber-sc-1xadvd1-4 kkwPCD"
         >
           404
         </span>
         <span
-          className="ErrorPage__ErrorTitle-sc-1xadvd1-5 iNpVEs"
+          className="ErrorPage__ErrorTitle-sc-1xadvd1-5"
         >
           Page not found
         </span>
       </h1>
       <div
-        className="ErrorPage__ErrorSummary-sc-1xadvd1-6 fxbPzr"
+        className="ErrorPage__ErrorSummary-sc-1xadvd1-6"
       >
         <p>
           Sorry, something went wrong and we cannot find the page you are looking for.
@@ -631,10 +637,11 @@ exports[`Storyshots 4 Components/All/ErrorPage Error 404 1`] = `
         </p>
       </div>
       <div
-        className="ErrorPage__CTAContainer-sc-1xadvd1-9 LFaRE"
+        className="ErrorPage__CTAContainer-sc-1xadvd1-9 bDlfPZ"
       >
         <a
-          className="Button__PrimaryButton-sc-1bcggl7-0 eeAcNk"
+          className="Button__PrimaryButton-sc-1bcggl7-0 iGgyti"
+          contrast="auto"
           href="/"
           title={false}
         >
@@ -648,30 +655,30 @@ exports[`Storyshots 4 Components/All/ErrorPage Error 404 1`] = `
 
 exports[`Storyshots 4 Components/All/ErrorPage Error 500 1`] = `
 <div
-  className="ErrorPage__Wrapper-sc-1xadvd1-0 ErrorPage__ErrorPageWrapper-sc-1xadvd1-1 bqUFOf"
+  className="ErrorPage__Wrapper-sc-1xadvd1-0 ErrorPage__ErrorPageWrapper-sc-1xadvd1-1 dlPnmh dqigsh"
 >
   <div
-    className="ErrorPage__ErrorContainer-sc-1xadvd1-2 kNOAZT"
+    className="ErrorPage__ErrorContainer-sc-1xadvd1-2 iEhtbK"
   >
     <div
-      className="ErrorPage__Content-sc-1xadvd1-7 glQjFW"
+      className="ErrorPage__Content-sc-1xadvd1-7 jnilcM"
     >
       <h1
-        className="ErrorPage__Heading-sc-1xadvd1-3 gGKxtI"
+        className="ErrorPage__Heading-sc-1xadvd1-3 kdzTJe"
       >
         <span
-          className="ErrorPage__ErrorNumber-sc-1xadvd1-4 iJOuQl"
+          className="ErrorPage__ErrorNumber-sc-1xadvd1-4 kkwPCD"
         >
           500
         </span>
         <span
-          className="ErrorPage__ErrorTitle-sc-1xadvd1-5 iNpVEs"
+          className="ErrorPage__ErrorTitle-sc-1xadvd1-5"
         >
           Internal Server Error
         </span>
       </h1>
       <div
-        className="ErrorPage__ErrorSummary-sc-1xadvd1-6 fxbPzr"
+        className="ErrorPage__ErrorSummary-sc-1xadvd1-6"
       >
         <p>
           Sorry, this page doesn't seem to be working.
@@ -681,10 +688,11 @@ exports[`Storyshots 4 Components/All/ErrorPage Error 500 1`] = `
         </p>
       </div>
       <div
-        className="ErrorPage__CTAContainer-sc-1xadvd1-9 LFaRE"
+        className="ErrorPage__CTAContainer-sc-1xadvd1-9 bDlfPZ"
       >
         <a
-          className="Button__PrimaryButton-sc-1bcggl7-0 eeAcNk"
+          className="Button__PrimaryButton-sc-1bcggl7-0 iGgyti"
+          contrast="auto"
           href="/"
           title={false}
         >
@@ -705,10 +713,10 @@ exports[`Storyshots 4 Components/All/Feedback Form Example 1`] = `
   }
 >
   <div
-    className="FeedbackForm__Outer-sc-2r94a5-0 kqBsOd"
+    className="FeedbackForm__Outer-sc-2r94a5-0 pOhdB"
   >
     <button
-      className="FeedbackForm__FeedbackBar-sc-2r94a5-1 dyZYRt"
+      className="FeedbackForm__FeedbackBar-sc-2r94a5-1 dZoDHy"
       onClick={[Function]}
       title="Give us some feedback"
     >
@@ -730,27 +738,28 @@ exports[`Storyshots 4 Components/All/FilmShowing A Showing 1`] = `
   }
 >
   <div
-    className="FilmShowing__Outer-sc-1jbnzai-0 lleItk"
+    className="FilmShowing__Outer-sc-1jbnzai-0 kXTAXK"
   >
     <p
       aria-label=""
-      className="Headline__H4Fake-uipteu-6 hvLzxR h4"
+      className="Headline__H4Fake-uipteu-6 ehVjVG h4"
     >
       La La Land
     </p>
     <p
-      className="FilmShowing__Date-sc-1jbnzai-1 dejXg"
+      className="FilmShowing__Date-sc-1jbnzai-1 fVYWEC"
     >
       24th February
     </p>
     <ul
-      className="FilmShowing__Times-sc-1jbnzai-2 hpHOjB"
+      className="FilmShowing__Times-sc-1jbnzai-2 jMFhPK"
     >
       <li
-        className="FilmShowing__Time-sc-1jbnzai-3 bGoYUD"
+        className="FilmShowing__Time-sc-1jbnzai-3 elMiLS"
       >
         <a
-          className="Button__SecondaryButton-sc-1bcggl7-2 bxwUna"
+          className="Button__SecondaryButton-sc-1bcggl7-2 bcmbAu"
+          contrast="auto"
           href="#"
           time="3:30pm"
           title="Book this at BFI Southbank"
@@ -759,10 +768,11 @@ exports[`Storyshots 4 Components/All/FilmShowing A Showing 1`] = `
         </a>
       </li>
       <li
-        className="FilmShowing__Time-sc-1jbnzai-3 bGoYUD"
+        className="FilmShowing__Time-sc-1jbnzai-3 elMiLS"
       >
         <a
-          className="Button__SecondaryButton-sc-1bcggl7-2 bxwUna"
+          className="Button__SecondaryButton-sc-1bcggl7-2 bcmbAu"
+          contrast="auto"
           href="#"
           time="6:30pm"
           title="Book this at BFI Southbank"
@@ -771,10 +781,10 @@ exports[`Storyshots 4 Components/All/FilmShowing A Showing 1`] = `
         </a>
       </li>
       <li
-        className="FilmShowing__Time-sc-1jbnzai-3 bGoYUD"
+        className="FilmShowing__Time-sc-1jbnzai-3 elMiLS"
       >
         <span
-          className="FilmShowing__SoldOut-sc-1jbnzai-4 brqBWv"
+          className="FilmShowing__SoldOut-sc-1jbnzai-4 fxKcYw"
         >
           8:45pm
            - Sold out
@@ -794,36 +804,36 @@ exports[`Storyshots 4 Components/All/FilmShowing Sold Out 1`] = `
   }
 >
   <div
-    className="FilmShowing__Outer-sc-1jbnzai-0 lleItk"
+    className="FilmShowing__Outer-sc-1jbnzai-0 kXTAXK"
   >
     <p
       aria-label=""
-      className="Headline__H4Fake-uipteu-6 hvLzxR h4"
+      className="Headline__H4Fake-uipteu-6 ehVjVG h4"
     >
       La La Land
     </p>
     <p
-      className="FilmShowing__Date-sc-1jbnzai-1 dejXg"
+      className="FilmShowing__Date-sc-1jbnzai-1 fVYWEC"
     >
       24th February
     </p>
     <ul
-      className="FilmShowing__Times-sc-1jbnzai-2 hpHOjB"
+      className="FilmShowing__Times-sc-1jbnzai-2 jMFhPK"
     >
       <li
-        className="FilmShowing__Time-sc-1jbnzai-3 bGoYUD"
+        className="FilmShowing__Time-sc-1jbnzai-3 elMiLS"
       >
         <span
-          className="FilmShowing__SoldOut-sc-1jbnzai-4 brqBWv"
+          className="FilmShowing__SoldOut-sc-1jbnzai-4 fxKcYw"
         >
            - Sold out
         </span>
       </li>
       <li
-        className="FilmShowing__Time-sc-1jbnzai-3 bGoYUD"
+        className="FilmShowing__Time-sc-1jbnzai-3 elMiLS"
       >
         <span
-          className="FilmShowing__SoldOut-sc-1jbnzai-4 brqBWv"
+          className="FilmShowing__SoldOut-sc-1jbnzai-4 fxKcYw"
         >
            - Sold out
         </span>
@@ -835,10 +845,10 @@ exports[`Storyshots 4 Components/All/FilmShowing Sold Out 1`] = `
 
 exports[`Storyshots 4 Components/All/Filter-esque Links Normal 1`] = `
 <nav
-  className="FilterLinks__Outer-sc-5q1sf-0 jznYQl filter_links"
+  className="FilterLinks__Outer-sc-5q1sf-0 lhtBLw filter_links"
 >
   <a
-    className="FilterLinks__FilterLink-sc-5q1sf-1 dmXOAr"
+    className="FilterLinks__FilterLink-sc-5q1sf-1 bbDdBz"
     disabled={false}
     href="#1"
     title="Show all \\"Example link\\" articles"
@@ -846,7 +856,7 @@ exports[`Storyshots 4 Components/All/Filter-esque Links Normal 1`] = `
     Example link
   </a>
   <a
-    className="FilterLinks__FilterLink-sc-5q1sf-1 dmXOAr"
+    className="FilterLinks__FilterLink-sc-5q1sf-1 bbDdBz"
     disabled={false}
     href="#2"
     title="Show all \\"Where to stream\\" articles"
@@ -854,7 +864,7 @@ exports[`Storyshots 4 Components/All/Filter-esque Links Normal 1`] = `
     Where to stream
   </a>
   <a
-    className="FilterLinks__FilterLink-sc-5q1sf-1 dmXOAr"
+    className="FilterLinks__FilterLink-sc-5q1sf-1 bbDdBz"
     disabled={false}
     href="#3"
     title="Show all \\"Where to begin\\" articles"
@@ -862,7 +872,7 @@ exports[`Storyshots 4 Components/All/Filter-esque Links Normal 1`] = `
     Where to begin
   </a>
   <a
-    className="FilterLinks__FilterLink-sc-5q1sf-1 dmXOAr"
+    className="FilterLinks__FilterLink-sc-5q1sf-1 bbDdBz"
     disabled={false}
     href="#4"
     title="Show all \\"Five Things\\" articles"
@@ -881,7 +891,7 @@ exports[`Storyshots 4 Components/All/Filterable Articles Normal 1`] = `
 exports[`Storyshots 4 Components/All/Headline Hero H 1 1`] = `
 <h1
   aria-label=""
-  className="Headline__HeroH1-uipteu-0 gDIaDW"
+  className="Headline__HeroH1-uipteu-0 jLWBQa"
 >
   My example headline
 </h1>
@@ -890,7 +900,7 @@ exports[`Storyshots 4 Components/All/Headline Hero H 1 1`] = `
 exports[`Storyshots 4 Components/All/Headline Level 1 1`] = `
 <h1
   aria-label=""
-  className="Headline__HeroH1-uipteu-0 Headline__H1-uipteu-1 cXoiEu"
+  className="Headline__HeroH1-uipteu-0 Headline__H1-uipteu-1 jLWBQa kbSchV"
 >
   My example headline
 </h1>
@@ -899,7 +909,7 @@ exports[`Storyshots 4 Components/All/Headline Level 1 1`] = `
 exports[`Storyshots 4 Components/All/Headline Level 2 1`] = `
 <h2
   aria-label=""
-  className="Headline__H2-uipteu-2 eeUHts"
+  className="Headline__H2-uipteu-2 htpXUv"
 >
   My example headline
 </h2>
@@ -908,7 +918,7 @@ exports[`Storyshots 4 Components/All/Headline Level 2 1`] = `
 exports[`Storyshots 4 Components/All/Headline Level 3 1`] = `
 <h3
   aria-label=""
-  className="Headline__H3-uipteu-3 dStTNU"
+  className="Headline__H3-uipteu-3 eoFosD"
 >
   My example headline
 </h3>
@@ -916,16 +926,16 @@ exports[`Storyshots 4 Components/All/Headline Level 3 1`] = `
 
 exports[`Storyshots 4 Components/All/HeroBasic No Image 1`] = `
 <header
-  className="HeroBasic__Hero-sc-1q83vkz-0 iaJqQQ"
+  className="HeroBasic__Hero-sc-1q83vkz-0 johNAE"
 >
   <h1
     aria-label=""
-    className="Headline__HeroH1-uipteu-0 gDIaDW"
+    className="Headline__HeroH1-uipteu-0 jLWBQa"
   >
     Here's some content
   </h1>
   <p
-    className="HeroBasic__Standfirst-sc-1q83vkz-1 jKvdOn"
+    className="HeroBasic__Standfirst-sc-1q83vkz-1 igwYvL"
   >
     Here's a standfirst
   </p>
@@ -934,16 +944,16 @@ exports[`Storyshots 4 Components/All/HeroBasic No Image 1`] = `
 
 exports[`Storyshots 4 Components/All/HeroBasic Normal 1`] = `
 <header
-  className="HeroBasic__Hero-sc-1q83vkz-0 eEHKgx"
+  className="HeroBasic__Hero-sc-1q83vkz-0 bxamQQ"
 >
   <h1
     aria-label=""
-    className="Headline__HeroH1-uipteu-0 gDIaDW"
+    className="Headline__HeroH1-uipteu-0 jLWBQa"
   >
     Here's some content
   </h1>
   <p
-    className="HeroBasic__Standfirst-sc-1q83vkz-1 jKvdOn"
+    className="HeroBasic__Standfirst-sc-1q83vkz-1 igwYvL"
   >
     Here's a standfirst
   </p>
@@ -952,13 +962,13 @@ exports[`Storyshots 4 Components/All/HeroBasic Normal 1`] = `
 
 exports[`Storyshots 4 Components/All/LFF IWC Banner LFF Example 1`] = `
 <div
-  className="LFFIWCBanner__Outer-sc-1kjs2n9-0 dIvJQk"
+  className="LFFIWCBanner__Outer-sc-1kjs2n9-0 kKRnyK"
 >
   <div
-    className="LFFIWCBanner__Content-sc-1kjs2n9-1 kiCBVH"
+    className="LFFIWCBanner__Content-sc-1kjs2n9-1 hfkYhu"
   >
     <p
-      className="LeadParagraph__Outer-sc-1bghl13-0 boLSbq lead_paragraph"
+      className="LeadParagraph__Outer-sc-1bghl13-0 kbvWb lead_paragraph"
       dangerouslySetInnerHTML={
         Object {
           "__html": "The 2020 BFI London Film Festival will be the first ever edition of the Festival to be widely accessible across the UK, with 50 Virtual Festival Premieres to be enjoyed at home.",
@@ -966,7 +976,8 @@ exports[`Storyshots 4 Components/All/LFF IWC Banner LFF Example 1`] = `
       }
     />
     <a
-      className="Button__PrimaryButton-sc-1bcggl7-0 eeAcNk"
+      className="Button__PrimaryButton-sc-1bcggl7-0 iGgyti"
+      contrast="auto"
       href="http://bfi.org"
       title={false}
     >
@@ -974,66 +985,66 @@ exports[`Storyshots 4 Components/All/LFF IWC Banner LFF Example 1`] = `
     </a>
   </div>
   <div
-    className="LFFIWCBanner__IWC-sc-1kjs2n9-2 kZotLP"
+    className="LFFIWCBanner__IWC-sc-1kjs2n9-2 eHaTUP"
   >
     <div
-      className="LFFIWCBanner__WatchContainer-sc-1kjs2n9-9 ljBIVU"
+      className="LFFIWCBanner__WatchContainer-sc-1kjs2n9-9 fJREcS"
     >
       <img
         alt=""
-        className="LFFIWCBanner__Watch-sc-1kjs2n9-10 bASrsy"
+        className="LFFIWCBanner__Watch-sc-1kjs2n9-10 dPaeGL"
       />
       <img
         alt=""
-        className="LFFIWCBanner__HourHand-sc-1kjs2n9-13 iofiOS"
+        className="LFFIWCBanner__HourHand-sc-1kjs2n9-13 dYEpjH"
       />
       <img
         alt=""
-        className="LFFIWCBanner__MinHand-sc-1kjs2n9-12 hRIIoY"
+        className="LFFIWCBanner__MinHand-sc-1kjs2n9-12 bACFjQ"
       />
       <img
         alt=""
-        className="LFFIWCBanner__SecondHand-sc-1kjs2n9-11 fMWhFk"
+        className="LFFIWCBanner__SecondHand-sc-1kjs2n9-11 cUMCTZ"
       />
     </div>
     <div
-      className="LFFIWCBanner__CountdownContainer-sc-1kjs2n9-3 hTrWkv"
+      className="LFFIWCBanner__CountdownContainer-sc-1kjs2n9-3 kHKoPy"
     >
       <div
-        className="LFFIWCBanner__CountdownContainerInner-sc-1kjs2n9-4 iHmzWv"
+        className="LFFIWCBanner__CountdownContainerInner-sc-1kjs2n9-4 fNfeMU"
       >
         <div
-          className="LFFIWCBanner__TimeContainer-sc-1kjs2n9-6 jeKcfE"
+          className="LFFIWCBanner__TimeContainer-sc-1kjs2n9-6 jTzNGp"
         >
           <p
-            className="LFFIWCBanner__Time-sc-1kjs2n9-7 eMFKw"
+            className="LFFIWCBanner__Time-sc-1kjs2n9-7 eYzKiZ"
           />
           <p
-            className="LFFIWCBanner__Time-sc-1kjs2n9-7 LFFIWCBanner__TimeTitle-sc-1kjs2n9-8 hXwODk"
+            className="LFFIWCBanner__Time-sc-1kjs2n9-7 LFFIWCBanner__TimeTitle-sc-1kjs2n9-8 eYzKiZ iISiBC"
           >
             Days
           </p>
         </div>
         <div
-          className="LFFIWCBanner__TimeContainer-sc-1kjs2n9-6 jeKcfE"
+          className="LFFIWCBanner__TimeContainer-sc-1kjs2n9-6 jTzNGp"
         >
           <p
-            className="LFFIWCBanner__Time-sc-1kjs2n9-7 eMFKw"
+            className="LFFIWCBanner__Time-sc-1kjs2n9-7 eYzKiZ"
           />
           <p
-            className="LFFIWCBanner__Time-sc-1kjs2n9-7 LFFIWCBanner__TimeTitle-sc-1kjs2n9-8 hXwODk"
+            className="LFFIWCBanner__Time-sc-1kjs2n9-7 LFFIWCBanner__TimeTitle-sc-1kjs2n9-8 eYzKiZ iISiBC"
           >
             Hours
           </p>
         </div>
         <div
-          className="LFFIWCBanner__TimeContainer-sc-1kjs2n9-6 jeKcfE"
+          className="LFFIWCBanner__TimeContainer-sc-1kjs2n9-6 jTzNGp"
         >
           <p
-            className="LFFIWCBanner__Time-sc-1kjs2n9-7 eMFKw"
+            className="LFFIWCBanner__Time-sc-1kjs2n9-7 eYzKiZ"
           />
           <p
-            className="LFFIWCBanner__Time-sc-1kjs2n9-7 LFFIWCBanner__TimeTitle-sc-1kjs2n9-8 hXwODk"
+            className="LFFIWCBanner__Time-sc-1kjs2n9-7 LFFIWCBanner__TimeTitle-sc-1kjs2n9-8 eYzKiZ iISiBC"
           >
             Mins
           </p>
@@ -1044,7 +1055,7 @@ exports[`Storyshots 4 Components/All/LFF IWC Banner LFF Example 1`] = `
         >
           <img
             alt="IWC Schaffhausen"
-            className="LFFIWCBanner__LogoImg-sc-1kjs2n9-5 dWGwSp"
+            className="LFFIWCBanner__LogoImg-sc-1kjs2n9-5 yGTqZ"
           />
         </a>
       </div>
@@ -1055,7 +1066,7 @@ exports[`Storyshots 4 Components/All/LFF IWC Banner LFF Example 1`] = `
 
 exports[`Storyshots 4 Components/All/Landmark Normal 1`] = `
 <main
-  className="Landmark-sc-1gbl5hq-0 llEzaj"
+  className="Landmark-sc-1gbl5hq-0 llbsJG"
 >
   <section>
     Landmark content
@@ -1072,7 +1083,7 @@ exports[`Storyshots 4 Components/All/Lead paragraph Normal 1`] = `
   }
 >
   <p
-    className="LeadParagraph__Outer-sc-1bghl13-0 boLSbq lead_paragraph"
+    className="LeadParagraph__Outer-sc-1bghl13-0 kbvWb lead_paragraph"
     dangerouslySetInnerHTML={
       Object {
         "__html": "We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough, they won't want it anymore! We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough, they won't want it anymore!",
@@ -1091,11 +1102,11 @@ exports[`Storyshots 4 Components/All/Newsletter Sign Up Example 1`] = `
   }
 >
   <div
-    className="NewsletterSignUp__Outer-sc-149eopm-0 iutSYG"
+    className="NewsletterSignUp__Outer-sc-149eopm-0 chNycD"
   >
     <p
       aria-label=""
-      className="Headline__H3Fake-uipteu-4 gypECg h3"
+      className="Headline__H3Fake-uipteu-4 fHFuCY h3"
     >
       Get the latest from the BFI
     </p>
@@ -1104,13 +1115,13 @@ exports[`Storyshots 4 Components/All/Newsletter Sign Up Example 1`] = `
     </p>
     <form
       action="https://www.createsend.com/t/subscribeerror? description="
-      className="NewsletterSignUp__NewsletterForm-sc-149eopm-1 fmmqZb js-cm-form"
+      className="NewsletterSignUp__NewsletterForm-sc-149eopm-1 feRIXT js-cm-form"
       data-id="191722FC90141D02184CB1B62AB3DC26D57AD7AD0DF253BE15DD122C605B740244DFF1ADDEE1A8DA861127EDFD99BF281A7016BD9F175EAF91CB858CC76D303F"
       id="subForm"
       method="post"
     >
       <label
-        className="NewsletterSignUp__NewsletterLabel-sc-149eopm-2 hKlglB"
+        className="NewsletterSignUp__NewsletterLabel-sc-149eopm-2 laMXpx"
       >
         Email
         <input
@@ -1127,7 +1138,7 @@ exports[`Storyshots 4 Components/All/Newsletter Sign Up Example 1`] = `
         />
       </label>
       <button
-        className="NewsletterSignUp__SubmitButton-sc-149eopm-3 dfVZyp"
+        className="NewsletterSignUp__SubmitButton-sc-149eopm-3 ccbzLn"
         type="submit"
       >
         Sign up
@@ -1139,7 +1150,7 @@ exports[`Storyshots 4 Components/All/Newsletter Sign Up Example 1`] = `
 
 exports[`Storyshots 4 Components/All/Oembed Vimeo 1`] = `
 <div
-  className="Oembed__VideoContainer-sc-1urwub5-0 dPrnAp"
+  className="Oembed__VideoContainer-sc-1urwub5-0 jFUibP"
 >
   <iframe
     allow="autoplay; fullscreen"
@@ -1154,7 +1165,7 @@ exports[`Storyshots 4 Components/All/Oembed Vimeo 1`] = `
 
 exports[`Storyshots 4 Components/All/Oembed Youtube 1`] = `
 <div
-  className="Oembed__VideoContainer-sc-1urwub5-0 dPrnAp"
+  className="Oembed__VideoContainer-sc-1urwub5-0 jFUibP"
 >
   <iframe
     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -1169,10 +1180,10 @@ exports[`Storyshots 4 Components/All/Oembed Youtube 1`] = `
 
 exports[`Storyshots 4 Components/All/Programme Banner LFF Example 1`] = `
 <div
-  className="ProgrammeBannerTop__Outer-sc-188gsmt-0 cmyScT"
+  className="ProgrammeBannerTop__Outer-sc-188gsmt-0 ixjiDg"
 >
   <div
-    className="ProgrammeBannerTop__Banner-sc-188gsmt-2 lokfkm"
+    className="ProgrammeBannerTop__Banner-sc-188gsmt-2 eEWOki"
   />
 </div>
 `;
@@ -1189,111 +1200,111 @@ exports[`Storyshots 4 Components/All/StepByStep Primary 1`] = `
   }
 >
   <section
-    className="StepByStep__Outer-sc-13ccit5-0 kyopej"
+    className="StepByStep__Outer-sc-13ccit5-0 hKIkyu"
   >
     <h3
-      className="StepByStep__Headline-sc-13ccit5-1 iKeGFK"
+      className="StepByStep__Headline-sc-13ccit5-1 jLJfmI"
     >
       Applying for film funding
     </h3>
     <ol
-      className="StepByStep__Steps-sc-13ccit5-2 gtmhSG"
+      className="StepByStep__Steps-sc-13ccit5-2 jrSbJs"
     >
       <li
-        className="StepByStep__Step-sc-13ccit5-3 gEcOtB"
+        className="StepByStep__Step-sc-13ccit5-3 kXxFVr"
       >
         <button
           aria-expanded="false"
-          className="StepByStep__ShowButton-sc-13ccit5-5 fZrqAZ"
+          className="StepByStep__ShowButton-sc-13ccit5-5 VkjEn"
           onClick={[Function]}
         >
           <strong
-            className="StepByStep__StepTitle-sc-13ccit5-4 fntfjb"
+            className="StepByStep__StepTitle-sc-13ccit5-4 cXCkVg"
           >
             Is this fund right for you?
           </strong>
           <span
-            className="StepByStep__ShowButtonText-sc-13ccit5-6 kLeUyt"
+            className="StepByStep__ShowButtonText-sc-13ccit5-6 ZMiIp"
           >
             Show
           </span>
         </button>
       </li>
       <li
-        className="StepByStep__Step-sc-13ccit5-3 gEcOtB"
+        className="StepByStep__Step-sc-13ccit5-3 kXxFVr"
       >
         <button
           aria-expanded="false"
-          className="StepByStep__ShowButton-sc-13ccit5-5 fZrqAZ"
+          className="StepByStep__ShowButton-sc-13ccit5-5 VkjEn"
           onClick={[Function]}
         >
           <strong
-            className="StepByStep__StepTitle-sc-13ccit5-4 fntfjb"
+            className="StepByStep__StepTitle-sc-13ccit5-4 cXCkVg"
           >
             Prepare your supporting materials
           </strong>
           <span
-            className="StepByStep__ShowButtonText-sc-13ccit5-6 kLeUyt"
+            className="StepByStep__ShowButtonText-sc-13ccit5-6 ZMiIp"
           >
             Show
           </span>
         </button>
       </li>
       <li
-        className="StepByStep__Step-sc-13ccit5-3 gEcOtB"
+        className="StepByStep__Step-sc-13ccit5-3 kXxFVr"
       >
         <button
           aria-expanded="false"
-          className="StepByStep__ShowButton-sc-13ccit5-5 fZrqAZ"
+          className="StepByStep__ShowButton-sc-13ccit5-5 VkjEn"
           onClick={[Function]}
         >
           <strong
-            className="StepByStep__StepTitle-sc-13ccit5-4 fntfjb"
+            className="StepByStep__StepTitle-sc-13ccit5-4 cXCkVg"
           >
             Apply
           </strong>
           <span
-            className="StepByStep__ShowButtonText-sc-13ccit5-6 kLeUyt"
+            className="StepByStep__ShowButtonText-sc-13ccit5-6 ZMiIp"
           >
             Show
           </span>
         </button>
       </li>
       <li
-        className="StepByStep__Step-sc-13ccit5-3 gEcOtB"
+        className="StepByStep__Step-sc-13ccit5-3 kXxFVr"
       >
         <button
           aria-expanded="false"
-          className="StepByStep__ShowButton-sc-13ccit5-5 fZrqAZ"
+          className="StepByStep__ShowButton-sc-13ccit5-5 VkjEn"
           onClick={[Function]}
         >
           <strong
-            className="StepByStep__StepTitle-sc-13ccit5-4 fntfjb"
+            className="StepByStep__StepTitle-sc-13ccit5-4 cXCkVg"
           >
             Wait to hear from us
           </strong>
           <span
-            className="StepByStep__ShowButtonText-sc-13ccit5-6 kLeUyt"
+            className="StepByStep__ShowButtonText-sc-13ccit5-6 ZMiIp"
           >
             Show
           </span>
         </button>
       </li>
       <li
-        className="StepByStep__Step-sc-13ccit5-3 gEcOtB"
+        className="StepByStep__Step-sc-13ccit5-3 kXxFVr"
       >
         <button
           aria-expanded="false"
-          className="StepByStep__ShowButton-sc-13ccit5-5 fZrqAZ"
+          className="StepByStep__ShowButton-sc-13ccit5-5 VkjEn"
           onClick={[Function]}
         >
           <strong
-            className="StepByStep__StepTitle-sc-13ccit5-4 fntfjb"
+            className="StepByStep__StepTitle-sc-13ccit5-4 cXCkVg"
           >
             Your decision
           </strong>
           <span
-            className="StepByStep__ShowButtonText-sc-13ccit5-6 kLeUyt"
+            className="StepByStep__ShowButtonText-sc-13ccit5-6 ZMiIp"
           >
             Show
           </span>
@@ -1314,16 +1325,16 @@ exports[`Storyshots 4 Components/All/Tabs Primary 1`] = `
   }
 >
   <ul
-    className="Tabs__Outer-sc-1agjg5j-0 jEuVhc"
+    className="Tabs__Outer-sc-1agjg5j-0 tURvc"
     role="tablist"
   >
     <li
-      className="Tabs__Li-sc-1agjg5j-1 bvaAvO"
+      className="Tabs__Li-sc-1agjg5j-1 gkFfNU"
       role="presentation"
     >
       <button
         aria-selected={true}
-        className="Tabs__Button-sc-1agjg5j-2 iouJCf"
+        className="Tabs__Button-sc-1agjg5j-2 icAAex"
         id="tab1"
         onClick={[Function]}
         role="tab"
@@ -1332,12 +1343,12 @@ exports[`Storyshots 4 Components/All/Tabs Primary 1`] = `
       </button>
     </li>
     <li
-      className="Tabs__Li-sc-1agjg5j-1 hCzEyH"
+      className="Tabs__Li-sc-1agjg5j-1 hthrPc"
       role="presentation"
     >
       <button
         aria-selected={false}
-        className="Tabs__Button-sc-1agjg5j-2 eDAauM"
+        className="Tabs__Button-sc-1agjg5j-2 dSDEMV"
         id="tab2"
         onClick={[Function]}
         role="tab"
@@ -1346,12 +1357,12 @@ exports[`Storyshots 4 Components/All/Tabs Primary 1`] = `
       </button>
     </li>
     <li
-      className="Tabs__Li-sc-1agjg5j-1 hCzEyH"
+      className="Tabs__Li-sc-1agjg5j-1 hthrPc"
       role="presentation"
     >
       <button
         aria-selected={false}
-        className="Tabs__Button-sc-1agjg5j-2 eDAauM"
+        className="Tabs__Button-sc-1agjg5j-2 dSDEMV"
         id="tab3"
         onClick={[Function]}
         role="tab"
@@ -1389,7 +1400,7 @@ exports[`Storyshots 4 Components/All/Tabs Primary 1`] = `
 
 exports[`Storyshots 4 Components/All/Tag Primary 1`] = `
 <div
-  className="Tag__Outer-sc-52ct56-0 vnfCP tag"
+  className="Tag__Outer-sc-52ct56-0 jViibt tag"
 >
   Example tag
 </div>
@@ -1404,10 +1415,10 @@ exports[`Storyshots 4 Components/All/TemporaryAnnouncement Normal 1`] = `
   }
 >
   <hr
-    className="Divider__Break-sc-8d5zpt-0 EusRW"
+    className="Divider__Break-sc-8d5zpt-0 kQMAkl"
   />
   <div
-    className="TemporaryAnnouncement__Outer-aytkrc-0 diKmKL temporary_announcement"
+    className="TemporaryAnnouncement__Outer-aytkrc-0 hWWncq temporary_announcement"
   >
     <p>
       We gotta burn the rain forest, 
@@ -1455,7 +1466,7 @@ exports[`Storyshots 4 Components/All/TemporaryAnnouncement Normal 1`] = `
     </ul>
   </div>
   <hr
-    className="Divider__Break-sc-8d5zpt-0 EusRW"
+    className="Divider__Break-sc-8d5zpt-0 kQMAkl"
   />
 </div>
 `;
@@ -1469,7 +1480,7 @@ exports[`Storyshots 4 Components/All/Text Normal 1`] = `
   }
 >
   <div
-    className="Text__Outer-sc-1wo6lq-0 hHACLK text_block"
+    className="Text__Outer-sc-1wo6lq-0 huDRMO text_block"
   >
     <p>
       We gotta burn the rain forest, 
@@ -1521,18 +1532,18 @@ exports[`Storyshots 4 Components/All/Text Normal 1`] = `
 
 exports[`Storyshots CaptionedImage Normal 1`] = `
 <figure
-  className="CaptionedImage__Figure-sc-1oce98k-0 geBhVy"
+  className="CaptionedImage__Figure-sc-1oce98k-0 cZHKcM"
 >
   <img
     alt="Alt text"
     src="http://example.com"
   />
   <figcaption
-    className="CaptionedImage__FigCaptionWrapper-sc-1oce98k-1 dSsbsf"
+    className="CaptionedImage__FigCaptionWrapper-sc-1oce98k-1 dZucMq"
     tabIndex="0"
   >
     <div
-      className="CaptionedImage__FigCaptionContents-sc-1oce98k-2 ijFVQV"
+      className="CaptionedImage__FigCaptionContents-sc-1oce98k-2 cuEzLg"
     >
       Caption goes here
     </div>
@@ -1542,21 +1553,21 @@ exports[`Storyshots CaptionedImage Normal 1`] = `
 
 exports[`Storyshots IntroBlock Full 1`] = `
 <div
-  className="IntroBlock__IntroBlockWrapper-sc-1hzzhy-0 hiAVp"
+  className="IntroBlock__IntroBlockWrapper-sc-1hzzhy-0 eJtHl"
 >
   <figure
-    className="CaptionedImage__Figure-sc-1oce98k-0 geBhVy"
+    className="CaptionedImage__Figure-sc-1oce98k-0 cZHKcM"
   >
     <img
       alt="Alt text"
       src="http://example.com/img.jpg"
     />
     <figcaption
-      className="CaptionedImage__FigCaptionWrapper-sc-1oce98k-1 dSsbsf"
+      className="CaptionedImage__FigCaptionWrapper-sc-1oce98k-1 dZucMq"
       tabIndex="0"
     >
       <div
-        className="CaptionedImage__FigCaptionContents-sc-1oce98k-2 ijFVQV"
+        className="CaptionedImage__FigCaptionContents-sc-1oce98k-2 cuEzLg"
       >
         Caption text is here
         <cite>
@@ -1568,12 +1579,12 @@ exports[`Storyshots IntroBlock Full 1`] = `
   <div>
     <h1
       aria-label=""
-      className="Headline__HeroH1-uipteu-0 Headline__H1-uipteu-1 cXoiEu"
+      className="Headline__HeroH1-uipteu-0 Headline__H1-uipteu-1 jLWBQa kbSchV"
     >
       Page title
     </h1>
     <p
-      className="LeadParagraph__Outer-sc-1bghl13-0 boLSbq lead_paragraph"
+      className="LeadParagraph__Outer-sc-1bghl13-0 kbvWb lead_paragraph"
       dangerouslySetInnerHTML={
         Object {
           "__html": "Page standfirst text is here",
@@ -1586,21 +1597,21 @@ exports[`Storyshots IntroBlock Full 1`] = `
 
 exports[`Storyshots IntroBlock No Copyright 1`] = `
 <div
-  className="IntroBlock__IntroBlockWrapper-sc-1hzzhy-0 hiAVp"
+  className="IntroBlock__IntroBlockWrapper-sc-1hzzhy-0 eJtHl"
 >
   <figure
-    className="CaptionedImage__Figure-sc-1oce98k-0 geBhVy"
+    className="CaptionedImage__Figure-sc-1oce98k-0 cZHKcM"
   >
     <img
       alt="Alt text"
       src="http://example.com/img.jpg"
     />
     <figcaption
-      className="CaptionedImage__FigCaptionWrapper-sc-1oce98k-1 dSsbsf"
+      className="CaptionedImage__FigCaptionWrapper-sc-1oce98k-1 dZucMq"
       tabIndex="0"
     >
       <div
-        className="CaptionedImage__FigCaptionContents-sc-1oce98k-2 ijFVQV"
+        className="CaptionedImage__FigCaptionContents-sc-1oce98k-2 cuEzLg"
       >
         Caption text is here
       </div>
@@ -1609,12 +1620,12 @@ exports[`Storyshots IntroBlock No Copyright 1`] = `
   <div>
     <h1
       aria-label=""
-      className="Headline__HeroH1-uipteu-0 Headline__H1-uipteu-1 cXoiEu"
+      className="Headline__HeroH1-uipteu-0 Headline__H1-uipteu-1 jLWBQa kbSchV"
     >
       Page title
     </h1>
     <p
-      className="LeadParagraph__Outer-sc-1bghl13-0 boLSbq lead_paragraph"
+      className="LeadParagraph__Outer-sc-1bghl13-0 kbvWb lead_paragraph"
       dangerouslySetInnerHTML={
         Object {
           "__html": "Page standfirst text is here",
@@ -1627,17 +1638,17 @@ exports[`Storyshots IntroBlock No Copyright 1`] = `
 
 exports[`Storyshots IntroBlock No Image 1`] = `
 <div
-  className="IntroBlock__IntroBlockWrapper-sc-1hzzhy-0 hiAVp"
+  className="IntroBlock__IntroBlockWrapper-sc-1hzzhy-0 eJtHl"
 >
   <div>
     <h1
       aria-label=""
-      className="Headline__HeroH1-uipteu-0 Headline__H1-uipteu-1 cXoiEu"
+      className="Headline__HeroH1-uipteu-0 Headline__H1-uipteu-1 jLWBQa kbSchV"
     >
       Page title
     </h1>
     <p
-      className="LeadParagraph__Outer-sc-1bghl13-0 boLSbq lead_paragraph"
+      className="LeadParagraph__Outer-sc-1bghl13-0 kbvWb lead_paragraph"
       dangerouslySetInnerHTML={
         Object {
           "__html": "Page standfirst text is here",
