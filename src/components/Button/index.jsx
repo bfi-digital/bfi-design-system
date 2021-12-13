@@ -219,11 +219,11 @@ Button.propTypes = {
     // If button links to player, add the pillar for this to theme it
     playerPillar: PropTypes.string,
     disabled: PropTypes.bool,
-    contrast: PropTypes.oneOf(['light', 'dark', 'auto'])
+    contrast: PropTypes.oneOf(["light", "dark", "auto"])
 }
 
 Button.defaultProps = {
     colorScheme: 0,
     disabled: false,
-    contrast: 'auto'
+    contrast: "auto"
 }

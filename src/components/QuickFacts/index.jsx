@@ -11,7 +11,7 @@ const Outer = styled.dl`
     display: grid;
     grid-gap: 0 ${theme.standardSpace}px;
     grid-template-columns: auto repeat(calc(min(var(--quick-facts-columns), 2) - 1), 1fr);
-    --quick-facts-columns: ${props=>props.columns ?? 1};
+    --quick-facts-columns: ${props=>props.columns || 1};
 
     &[columns=2] {
         --quick-facts-columns: 2;
@@ -40,14 +40,14 @@ export const QuickFacts = ({
 }) =>
     <Outer {...props}>
         {facts.map((fact) =>
-            <Fragment key={fact.label || ''}>
+            <Fragment key={fact.label || ""}>
                 {fact.label && <Label>{fact.label}</Label>}
                 <Value labelled={fact.label}>{fact.value || fact}</Value>
             </Fragment >
         )}
     </Outer>
 
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types"
 
 QuickFacts.propTypes = {
     facts: PropTypes.arrayOf({
