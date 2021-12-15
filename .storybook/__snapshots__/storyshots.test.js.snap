@@ -926,7 +926,7 @@ exports[`Storyshots 4 Components/All/Headline Level 3 1`] = `
 
 exports[`Storyshots 4 Components/All/HeroBasic No Image 1`] = `
 <header
-  className="HeroBasic__Hero-sc-1q83vkz-0 johNAE"
+  className="HeroBasic__Hero-sc-1q83vkz-0 hSofJD"
 >
   <h1
     aria-label=""
@@ -944,7 +944,7 @@ exports[`Storyshots 4 Components/All/HeroBasic No Image 1`] = `
 
 exports[`Storyshots 4 Components/All/HeroBasic Normal 1`] = `
 <header
-  className="HeroBasic__Hero-sc-1q83vkz-0 bxamQQ"
+  className="HeroBasic__Hero-sc-1q83vkz-0 iJgRYR"
 >
   <h1
     aria-label=""

@@ -2,6 +2,7 @@ import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
 import { HeroBasic, HeroHeadline, Standfirst } from "../../../components/HeroBasic/index"
 import navItems, { quickLinksData } from "../../../components/Header/data"
 import { Headline } from "../../../components/Headline"
+import { Landmark } from "../../../components/Landmark"
 
 <Meta title="2 Pattern Library/1 Structure/Hero Basic" component={HeroBasic} />
 
@@ -21,11 +22,14 @@ The image URL can be empty, in which case the component will just revert to a st
 
 <Preview>
     <Story name="Normal">
-        <HeroBasic 
-            image="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1920/1080/1/2020-03/Hero.jpg" 
-        >
-            <HeroHeadline>Watch a new film, rediscover your old favourites, and get inspired.</HeroHeadline>
-        </HeroBasic>
+        <Landmark>
+            <HeroBasic 
+                image="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1920/1080/1/2020-03/Hero.jpg" 
+            >
+                <HeroHeadline>Judas and the black messiah (2021)</HeroHeadline>
+                <Standfirst>Information about the film goes here</Standfirst>
+            </HeroBasic>
+        </Landmark>
     </Story>
 </Preview>
 

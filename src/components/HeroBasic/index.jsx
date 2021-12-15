@@ -5,7 +5,7 @@ import PropTypes from "prop-types"
 import { Headline } from "../Headline"
 
 const Hero = styled.header`
-    padding: 40px;
+    padding: 0 40px 25px;
 
     ${el=>el.image ? `
     background:
@@ -19,13 +19,41 @@ const Hero = styled.header`
     display: flex;
     flex-direction: column;
     justify-content: end;
-    min-height: 500px;
-    max-height: 80vh;
+    margin-bottom: 25px;
+
+    /* Add optional padding before header that will shrink if it needs */
+    &::before {
+        content: '';
+        flex-basis: calc(56.25vw - 25px);
+        flex-shrink: 1;
+    }
+
+    @media screen and (min-width: ${theme.m}) {
+        min-height: 390px;
+        max-height: 80vh;
+
+        &::before {
+            flex-basis: 211px;
+        }
+    }
+
+    @media screen and (min-width: ${theme.l}) {
+        &::before {
+            flex-basis: 261px;
+        }
+    }
+
+    @media screen and (min-width: ${theme.l}) {
+        min-height: 500px;
+
+        &::before {
+            flex-basis: 311px;
+        }
+    }
 
     & > h1 {
         color: inherit;
         font-size: 2.6rem;
-        margin-top: 340px;
 
         @media screen and (min-width: ${theme.m}) {
             font-size: 3.1rem;
