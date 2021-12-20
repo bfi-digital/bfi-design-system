@@ -54,6 +54,7 @@ const Hero = styled.header`
     & > h1 {
         color: inherit;
         font-size: 2.6rem;
+        margin-bottom: 10px;
 
         @media screen and (min-width: ${theme.m}) {
             font-size: 3.1rem;
@@ -93,12 +94,11 @@ export const Standfirst = styled.p`
     @media screen and (min-width: ${theme.m}){
         font-size: ${theme.large_fontSize_m};
         line-height: ${theme.large_lineHeight_m};
-        max-width: calc(${theme.m} / 1.25);
+        max-width: 80%;
     }
 
     @media screen and (min-width: ${theme.xl}){
         font-size: ${theme.large_fontSize_xl};
-        max-width: calc(${theme.xl} / 2);
     }
 `
 

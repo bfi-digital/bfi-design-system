@@ -261,7 +261,7 @@ exports[`Storyshots 4 Components/All/Button Primary 1`] = `
   }
 >
   <a
-    className="Button__PrimaryButton-sc-1bcggl7-0 iGgyti"
+    className="Button__PrimaryButton-sc-1bcggl7-0 dJklOj"
     contrast="auto"
     href="#1"
     title={false}
@@ -321,7 +321,7 @@ exports[`Storyshots 4 Components/All/Call to Action Internal Link 1`] = `
     className="CallToAction__Outer-sc-16s1pd-0 gPPRhP call_to_action_block"
   >
     <a
-      className="Button__PrimaryButton-sc-1bcggl7-0 iGgyti"
+      className="Button__PrimaryButton-sc-1bcggl7-0 dJklOj"
       contrast="auto"
       href="/"
       title={false}
@@ -344,7 +344,7 @@ exports[`Storyshots 4 Components/All/Call to Action Two Links 1`] = `
     className="CallToAction__Outer-sc-16s1pd-0 gPPRhP call_to_action_block"
   >
     <a
-      className="Button__PrimaryButton-sc-1bcggl7-0 iGgyti"
+      className="Button__PrimaryButton-sc-1bcggl7-0 dJklOj"
       contrast="auto"
       href="/"
       title={false}
@@ -356,7 +356,7 @@ exports[`Storyshots 4 Components/All/Call to Action Two Links 1`] = `
     className="CallToAction__Outer-sc-16s1pd-0 gPPRhP call_to_action_block"
   >
     <a
-      className="Button__PrimaryButton-sc-1bcggl7-0 iGgyti"
+      className="Button__PrimaryButton-sc-1bcggl7-0 dJklOj"
       contrast="auto"
       href="/"
       title={false}
@@ -640,7 +640,7 @@ exports[`Storyshots 4 Components/All/ErrorPage Error 404 1`] = `
         className="ErrorPage__CTAContainer-sc-1xadvd1-9 bDlfPZ"
       >
         <a
-          className="Button__PrimaryButton-sc-1bcggl7-0 iGgyti"
+          className="Button__PrimaryButton-sc-1bcggl7-0 dJklOj"
           contrast="auto"
           href="/"
           title={false}
@@ -691,7 +691,7 @@ exports[`Storyshots 4 Components/All/ErrorPage Error 500 1`] = `
         className="ErrorPage__CTAContainer-sc-1xadvd1-9 bDlfPZ"
       >
         <a
-          className="Button__PrimaryButton-sc-1bcggl7-0 iGgyti"
+          className="Button__PrimaryButton-sc-1bcggl7-0 dJklOj"
           contrast="auto"
           href="/"
           title={false}
@@ -935,7 +935,7 @@ exports[`Storyshots 4 Components/All/HeroBasic No Image 1`] = `
     Here's some content
   </h1>
   <p
-    className="HeroBasic__Standfirst-sc-1q83vkz-1 igwYvL"
+    className="HeroBasic__Standfirst-sc-1q83vkz-1 kalHjG"
   >
     Here's a standfirst
   </p>
@@ -944,7 +944,7 @@ exports[`Storyshots 4 Components/All/HeroBasic No Image 1`] = `
 
 exports[`Storyshots 4 Components/All/HeroBasic Normal 1`] = `
 <header
-  className="HeroBasic__Hero-sc-1q83vkz-0 iJgRYR"
+  className="HeroBasic__Hero-sc-1q83vkz-0 iDmVIL"
 >
   <h1
     aria-label=""
@@ -953,7 +953,7 @@ exports[`Storyshots 4 Components/All/HeroBasic Normal 1`] = `
     Here's some content
   </h1>
   <p
-    className="HeroBasic__Standfirst-sc-1q83vkz-1 igwYvL"
+    className="HeroBasic__Standfirst-sc-1q83vkz-1 kalHjG"
   >
     Here's a standfirst
   </p>
@@ -976,7 +976,7 @@ exports[`Storyshots 4 Components/All/LFF IWC Banner LFF Example 1`] = `
       }
     />
     <a
-      className="Button__PrimaryButton-sc-1bcggl7-0 iGgyti"
+      className="Button__PrimaryButton-sc-1bcggl7-0 dJklOj"
       contrast="auto"
       href="http://bfi.org"
       title={false}
