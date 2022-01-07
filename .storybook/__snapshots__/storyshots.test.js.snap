@@ -110,15 +110,15 @@ exports[`Storyshots 4 Components/All/Article Keywords Normal 1`] = `
 
 exports[`Storyshots 4 Components/All/Blockquote With Citation 1`] = `
 <blockquote
-  className="Blockquote__Outer-iubc6-0 cFaSqu"
+  className="Blockquote__Outer-sc-iubc6-0 fEMXTv"
 >
   <q
-    className="Blockquote__Quote-iubc6-1 cQrgkf"
+    className="Blockquote__Quote-sc-iubc6-1 kjwcAO"
   >
     Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.
   </q>
   <cite
-    className="Blockquote__Citation-iubc6-2 ddgKb"
+    className="Blockquote__Citation-sc-iubc6-2 hXoFda"
   >
     Ian Malcolm
   </cite>
@@ -127,10 +127,10 @@ exports[`Storyshots 4 Components/All/Blockquote With Citation 1`] = `
 
 exports[`Storyshots 4 Components/All/Blockquote Without Citation 1`] = `
 <blockquote
-  className="Blockquote__Outer-iubc6-0 cFaSqu"
+  className="Blockquote__Outer-sc-iubc6-0 fEMXTv"
 >
   <q
-    className="Blockquote__Quote-iubc6-1 cQrgkf"
+    className="Blockquote__Quote-sc-iubc6-1 kjwcAO"
   >
     Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.
   </q>
@@ -404,10 +404,10 @@ exports[`Storyshots 4 Components/All/Downloadable File Multiple Files 1`] = `
     className="DownloadableFiles__Container-sc-86pcb9-0 dgjuPZ"
   >
     <div
-      className="FileDownload__Outer-v4wl69-0 ezjEYQ"
+      className="FileDownload__Outer-sc-v4wl69-0 duhLrR"
     >
       <a
-        className="FileDownload__Link-v4wl69-1 QAFzZ"
+        className="FileDownload__Link-sc-v4wl69-1 fYvnaA"
         download={true}
         href="https://www.bfi.org.uk/sites/bfi.org.uk/files/downloads/bfi-young-audiences-content-fund-production-application-guidelines-2019-10.pdf"
         onMouseEnter={[Function]}
@@ -443,20 +443,20 @@ exports[`Storyshots 4 Components/All/Downloadable File Multiple Files 1`] = `
           </g>
         </svg>
         <div
-          className="FileDownload__FileDetails-v4wl69-2 dZnrDg file-details"
+          className="FileDownload__FileDetails-sc-v4wl69-2 jSDGPZ file-details"
         >
           <span
-            className="FileDownload__Title-v4wl69-3 bTEOpT file-title"
+            className="FileDownload__Title-sc-v4wl69-3 fIMhPa file-title"
           >
             File title
           </span>
           <span
-            className="FileDownload__Type-v4wl69-4 iqMmwE"
+            className="FileDownload__Type-sc-v4wl69-4 dOUTHh"
           >
             PDF
           </span>
           <span
-            className="FileDownload__Size-v4wl69-5 kiEMOl"
+            className="FileDownload__Size-sc-v4wl69-5 iuVrWg"
           >
             1.2 MB
           </span>
@@ -464,10 +464,10 @@ exports[`Storyshots 4 Components/All/Downloadable File Multiple Files 1`] = `
       </a>
     </div>
     <div
-      className="FileDownload__Outer-v4wl69-0 ezjEYQ"
+      className="FileDownload__Outer-sc-v4wl69-0 duhLrR"
     >
       <a
-        className="FileDownload__Link-v4wl69-1 QAFzZ"
+        className="FileDownload__Link-sc-v4wl69-1 fYvnaA"
         download={true}
         href="https://www.bfi.org.uk/sites/bfi.org.uk/files/downloads/bfi-young-audiences-content-fund-production-application-guidelines-2019-10.pdf"
         onMouseEnter={[Function]}
@@ -503,20 +503,20 @@ exports[`Storyshots 4 Components/All/Downloadable File Multiple Files 1`] = `
           </g>
         </svg>
         <div
-          className="FileDownload__FileDetails-v4wl69-2 dZnrDg file-details"
+          className="FileDownload__FileDetails-sc-v4wl69-2 jSDGPZ file-details"
         >
           <span
-            className="FileDownload__Title-v4wl69-3 bTEOpT file-title"
+            className="FileDownload__Title-sc-v4wl69-3 fIMhPa file-title"
           >
             Young Audiences Content Fund production application guidelines
           </span>
           <span
-            className="FileDownload__Type-v4wl69-4 iqMmwE"
+            className="FileDownload__Type-sc-v4wl69-4 dOUTHh"
           >
             PDF
           </span>
           <span
-            className="FileDownload__Size-v4wl69-5 kiEMOl"
+            className="FileDownload__Size-sc-v4wl69-5 iuVrWg"
           >
             279.06 KB
           </span>
@@ -539,10 +539,10 @@ exports[`Storyshots 4 Components/All/Downloadable File Single File 1`] = `
     className="DownloadableFiles__Container-sc-86pcb9-0 dgjuPZ"
   >
     <div
-      className="FileDownload__Outer-v4wl69-0 ezjEYQ"
+      className="FileDownload__Outer-sc-v4wl69-0 duhLrR"
     >
       <a
-        className="FileDownload__Link-v4wl69-1 QAFzZ"
+        className="FileDownload__Link-sc-v4wl69-1 fYvnaA"
         download={true}
         href="https://www.bfi.org.uk/sites/bfi.org.uk/files/downloads/bfi-young-audiences-content-fund-production-application-guidelines-2019-10.pdf"
         onMouseEnter={[Function]}
@@ -578,20 +578,20 @@ exports[`Storyshots 4 Components/All/Downloadable File Single File 1`] = `
           </g>
         </svg>
         <div
-          className="FileDownload__FileDetails-v4wl69-2 dZnrDg file-details"
+          className="FileDownload__FileDetails-sc-v4wl69-2 jSDGPZ file-details"
         >
           <span
-            className="FileDownload__Title-v4wl69-3 bTEOpT file-title"
+            className="FileDownload__Title-sc-v4wl69-3 fIMhPa file-title"
           >
             File title
           </span>
           <span
-            className="FileDownload__Type-v4wl69-4 iqMmwE"
+            className="FileDownload__Type-sc-v4wl69-4 dOUTHh"
           >
             PDF
           </span>
           <span
-            className="FileDownload__Size-v4wl69-5 kiEMOl"
+            className="FileDownload__Size-sc-v4wl69-5 iuVrWg"
           >
             1.2 MB
           </span>
@@ -742,7 +742,7 @@ exports[`Storyshots 4 Components/All/FilmShowing A Showing 1`] = `
   >
     <p
       aria-label=""
-      className="Headline__H4Fake-uipteu-6 ehVjVG h4"
+      className="Headline__H4Fake-sc-uipteu-6 fioXkj h4"
     >
       La La Land
     </p>
@@ -808,7 +808,7 @@ exports[`Storyshots 4 Components/All/FilmShowing Sold Out 1`] = `
   >
     <p
       aria-label=""
-      className="Headline__H4Fake-uipteu-6 ehVjVG h4"
+      className="Headline__H4Fake-sc-uipteu-6 fioXkj h4"
     >
       La La Land
     </p>
@@ -891,7 +891,7 @@ exports[`Storyshots 4 Components/All/Filterable Articles Normal 1`] = `
 exports[`Storyshots 4 Components/All/Headline Hero H 1 1`] = `
 <h1
   aria-label=""
-  className="Headline__HeroH1-uipteu-0 jLWBQa"
+  className="Headline__HeroH1-sc-uipteu-0 cqTNDr"
 >
   My example headline
 </h1>
@@ -900,7 +900,7 @@ exports[`Storyshots 4 Components/All/Headline Hero H 1 1`] = `
 exports[`Storyshots 4 Components/All/Headline Level 1 1`] = `
 <h1
   aria-label=""
-  className="Headline__HeroH1-uipteu-0 Headline__H1-uipteu-1 jLWBQa kbSchV"
+  className="Headline__HeroH1-sc-uipteu-0 Headline__H1-sc-uipteu-1 cqTNDr RyXko"
 >
   My example headline
 </h1>
@@ -909,7 +909,7 @@ exports[`Storyshots 4 Components/All/Headline Level 1 1`] = `
 exports[`Storyshots 4 Components/All/Headline Level 2 1`] = `
 <h2
   aria-label=""
-  className="Headline__H2-uipteu-2 htpXUv"
+  className="Headline__H2-sc-uipteu-2 hTiGjS"
 >
   My example headline
 </h2>
@@ -918,7 +918,7 @@ exports[`Storyshots 4 Components/All/Headline Level 2 1`] = `
 exports[`Storyshots 4 Components/All/Headline Level 3 1`] = `
 <h3
   aria-label=""
-  className="Headline__H3-uipteu-3 eoFosD"
+  className="Headline__H3-sc-uipteu-3 rHNtm"
 >
   My example headline
 </h3>
@@ -930,7 +930,7 @@ exports[`Storyshots 4 Components/All/HeroBasic No Image 1`] = `
 >
   <h1
     aria-label=""
-    className="Headline__HeroH1-uipteu-0 jLWBQa"
+    className="Headline__HeroH1-sc-uipteu-0 cqTNDr"
   >
     Here's some content
   </h1>
@@ -948,7 +948,7 @@ exports[`Storyshots 4 Components/All/HeroBasic Normal 1`] = `
 >
   <h1
     aria-label=""
-    className="Headline__HeroH1-uipteu-0 jLWBQa"
+    className="Headline__HeroH1-sc-uipteu-0 cqTNDr"
   >
     Here's some content
   </h1>
@@ -1106,7 +1106,7 @@ exports[`Storyshots 4 Components/All/Newsletter Sign Up Example 1`] = `
   >
     <p
       aria-label=""
-      className="Headline__H3Fake-uipteu-4 fHFuCY h3"
+      className="Headline__H3Fake-sc-uipteu-4 hHwUcx h3"
     >
       Get the latest from the BFI
     </p>
@@ -1418,7 +1418,7 @@ exports[`Storyshots 4 Components/All/TemporaryAnnouncement Normal 1`] = `
     className="Divider__Break-sc-8d5zpt-0 kQMAkl"
   />
   <div
-    className="TemporaryAnnouncement__Outer-aytkrc-0 hWWncq temporary_announcement"
+    className="TemporaryAnnouncement__Outer-sc-aytkrc-0 fItxhz temporary_announcement"
   >
     <p>
       We gotta burn the rain forest, 
@@ -1579,7 +1579,7 @@ exports[`Storyshots IntroBlock Full 1`] = `
   <div>
     <h1
       aria-label=""
-      className="Headline__HeroH1-uipteu-0 Headline__H1-uipteu-1 jLWBQa kbSchV"
+      className="Headline__HeroH1-sc-uipteu-0 Headline__H1-sc-uipteu-1 cqTNDr RyXko"
     >
       Page title
     </h1>
@@ -1620,7 +1620,7 @@ exports[`Storyshots IntroBlock No Copyright 1`] = `
   <div>
     <h1
       aria-label=""
-      className="Headline__HeroH1-uipteu-0 Headline__H1-uipteu-1 jLWBQa kbSchV"
+      className="Headline__HeroH1-sc-uipteu-0 Headline__H1-sc-uipteu-1 cqTNDr RyXko"
     >
       Page title
     </h1>
@@ -1643,7 +1643,7 @@ exports[`Storyshots IntroBlock No Image 1`] = `
   <div>
     <h1
       aria-label=""
-      className="Headline__HeroH1-uipteu-0 Headline__H1-uipteu-1 jLWBQa kbSchV"
+      className="Headline__HeroH1-sc-uipteu-0 Headline__H1-sc-uipteu-1 cqTNDr RyXko"
     >
       Page title
     </h1>
