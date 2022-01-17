@@ -66,16 +66,15 @@
     "typescript": "^3.9.10"
   },
   "peerDependencies": {
-    "@reach/router": "^1.2.1",
     "react": "^17",
     "react-dom": "^17",
     "styled-components": "^5.0.0"
   },
   "dependencies": {
-    "@reach/dialog": "^0.8.6",
-    "@reach/visually-hidden": "^0.8.6",
+    "@reach/dialog": "^0.16.2",
+    "@reach/visually-hidden": "^0.16.0",
     "dayjs": "^1.10.7",
-    "html-react-parser": "^0.10.5",
+    "html-react-parser": "^1.4.5",
     "isomorphic-unfetch": "^3.1.0",
     "masonic": "^3.6.1",
     "moment-timezone": "^0.5.34",
