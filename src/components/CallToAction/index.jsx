@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 import theme from "../_theme"
 import { Button } from "../Button"
 
-export const Outer = styled.div`
+const Outer = styled.div`
     margin: 1.75em 0;
     text-align: ${props => props.center ? "center" : "left"};
     display: ${props => props.center ? "block" : "inline-block"};

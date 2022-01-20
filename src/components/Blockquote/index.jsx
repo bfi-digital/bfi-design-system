@@ -3,7 +3,7 @@ import styled from "styled-components"
 import theme from "../_theme"
 import PropTypes from "prop-types"
 
-export const Outer = styled.blockquote`
+const Outer = styled.blockquote`
     margin: 20px 0px;
     padding: 15px;
     padding-right: 0;

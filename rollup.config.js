@@ -23,18 +23,19 @@ export default {
         }
     },
     plugins: [
+        autoExternal(),
+        peerDepsExternal(),
         resolve({
+            moduleDirectories: [],
             extensions: extensions
         }),
         commonjs(),
         json(),
-        peerDepsExternal(),
-        autoExternal(),
         url(),
         babel({
             extensions: extensions,
             exclude: "node_modules/**"
         }),
     ],
-    external: ["prop-types"],
+    external: ["dayjs/plugin/isBetween", "prop-types"],
 }
