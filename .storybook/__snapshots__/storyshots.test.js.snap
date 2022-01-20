@@ -604,30 +604,30 @@ exports[`Storyshots 4 Components/All/Downloadable File Single File 1`] = `
 
 exports[`Storyshots 4 Components/All/ErrorPage Error 404 1`] = `
 <div
-  className="ErrorPage__Wrapper-sc-1xadvd1-0 ErrorPage__ErrorPageWrapper-sc-1xadvd1-1 dlPnmh dqigsh"
+  className="PageWrapper-sc-osi22x-0 ErrorPage__ErrorPageWrapper-sc-1xadvd1-0 bloLPz KagHA"
 >
   <div
-    className="ErrorPage__ErrorContainer-sc-1xadvd1-2 iEhtbK"
+    className="ErrorPage__ErrorContainer-sc-1xadvd1-1 kZePSR"
   >
     <div
-      className="ErrorPage__Content-sc-1xadvd1-7 jnilcM"
+      className="ErrorPage__Content-sc-1xadvd1-6 mGriV"
     >
       <h1
-        className="ErrorPage__Heading-sc-1xadvd1-3 kdzTJe"
+        className="ErrorPage__Heading-sc-1xadvd1-2 jxpVQz"
       >
         <span
-          className="ErrorPage__ErrorNumber-sc-1xadvd1-4 kkwPCD"
+          className="ErrorPage__ErrorNumber-sc-1xadvd1-3 bLCnDg"
         >
           404
         </span>
         <span
-          className="ErrorPage__ErrorTitle-sc-1xadvd1-5"
+          className="ErrorPage__ErrorTitle-sc-1xadvd1-4"
         >
           Page not found
         </span>
       </h1>
       <div
-        className="ErrorPage__ErrorSummary-sc-1xadvd1-6"
+        className="ErrorPage__ErrorSummary-sc-1xadvd1-5"
       >
         <p>
           Sorry, something went wrong and we cannot find the page you are looking for.
@@ -637,7 +637,7 @@ exports[`Storyshots 4 Components/All/ErrorPage Error 404 1`] = `
         </p>
       </div>
       <div
-        className="ErrorPage__CTAContainer-sc-1xadvd1-9 bDlfPZ"
+        className="ErrorPage__CTAContainer-sc-1xadvd1-8 fqRLjs"
       >
         <a
           className="Button__PrimaryButton-sc-1bcggl7-0 dJklOj"
@@ -655,30 +655,30 @@ exports[`Storyshots 4 Components/All/ErrorPage Error 404 1`] = `
 
 exports[`Storyshots 4 Components/All/ErrorPage Error 500 1`] = `
 <div
-  className="ErrorPage__Wrapper-sc-1xadvd1-0 ErrorPage__ErrorPageWrapper-sc-1xadvd1-1 dlPnmh dqigsh"
+  className="PageWrapper-sc-osi22x-0 ErrorPage__ErrorPageWrapper-sc-1xadvd1-0 bloLPz KagHA"
 >
   <div
-    className="ErrorPage__ErrorContainer-sc-1xadvd1-2 iEhtbK"
+    className="ErrorPage__ErrorContainer-sc-1xadvd1-1 kZePSR"
   >
     <div
-      className="ErrorPage__Content-sc-1xadvd1-7 jnilcM"
+      className="ErrorPage__Content-sc-1xadvd1-6 mGriV"
     >
       <h1
-        className="ErrorPage__Heading-sc-1xadvd1-3 kdzTJe"
+        className="ErrorPage__Heading-sc-1xadvd1-2 jxpVQz"
       >
         <span
-          className="ErrorPage__ErrorNumber-sc-1xadvd1-4 kkwPCD"
+          className="ErrorPage__ErrorNumber-sc-1xadvd1-3 bLCnDg"
         >
           500
         </span>
         <span
-          className="ErrorPage__ErrorTitle-sc-1xadvd1-5"
+          className="ErrorPage__ErrorTitle-sc-1xadvd1-4"
         >
           Internal Server Error
         </span>
       </h1>
       <div
-        className="ErrorPage__ErrorSummary-sc-1xadvd1-6"
+        className="ErrorPage__ErrorSummary-sc-1xadvd1-5"
       >
         <p>
           Sorry, this page doesn't seem to be working.
@@ -688,7 +688,7 @@ exports[`Storyshots 4 Components/All/ErrorPage Error 500 1`] = `
         </p>
       </div>
       <div
-        className="ErrorPage__CTAContainer-sc-1xadvd1-9 bDlfPZ"
+        className="ErrorPage__CTAContainer-sc-1xadvd1-8 fqRLjs"
       >
         <a
           className="Button__PrimaryButton-sc-1bcggl7-0 dJklOj"

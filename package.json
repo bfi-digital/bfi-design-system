@@ -1,6 +1,6 @@
 {
   "name": "bfi-design-system",
-  "version": "0.2.136",
+  "version": "0.2.137",
   "contributors": [
     "FutureGov <dev@wearefuturegov.com> (https://wearefuturegov.com)",
     "Paul Kiddle <paul.kiddle@bfi.org.uk> (https://mrkiddle.co.uk)"
@@ -90,8 +90,7 @@
   "jest": {
     "transformIgnorePatterns": [
       "<rootDir>/src/docs",
-      "<rootDir>/src/components/FilmGrid",
-      "<rootDir>/src/components/HeroShow"
+      "<rootDir>/src/components/FilmGrid"
     ],
     "moduleNameMapper": {
       "^.+\\.(mdx|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
