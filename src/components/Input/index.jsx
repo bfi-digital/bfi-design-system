@@ -3,7 +3,7 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 import theme from "../_theme";
 
-const Control = styled.div`
+export const Control = styled.div`
   width: 100%;
   
   @media screen and (min-width: ${theme.l}) {
@@ -17,13 +17,13 @@ const Control = styled.div`
   }
 `;
 
-const Label = styled.label`
+export const Label = styled.label`
   display: inline-block;
   font-weight: ${theme.fontWeight_semiBold};
   width: 100%;
 `;
 
-const InputEl = styled.input`
+export const InputEl = styled.input`
   display: block;
   margin-top: 5px;
   padding: 13px 10px;
@@ -94,7 +94,7 @@ export const Input = ({
   value,
   placeholder,
   style,
-  onChange,
+  onChange
 }) => (
   <Control>
     <Label>
@@ -143,3 +143,8 @@ Input.defaultProps = {
   email: "",
   value: "",
 };
+
+
+export const Textarea = styled(InputEl)`
+  max-width: 600px;
+`.withComponent('textarea');
