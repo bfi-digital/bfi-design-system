@@ -66,7 +66,7 @@ const Control = styled.div`
   }
 `;
 
-const Select = styled.select`
+export const Select = styled.select`
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
