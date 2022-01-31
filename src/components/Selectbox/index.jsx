@@ -3,13 +3,13 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 import theme from "../_theme";
 
-const Outer = styled.div`
+const Label = styled.label`
   position: relative;
   display: flex;
   flex-wrap: wrap;
 `;
 
-const Label = styled.label`
+const LabelText = styled.span`
   flex-basis: 100%;
   margin-bottom: 5px;
   font-size: 16px;
@@ -93,19 +93,26 @@ const Select = styled.select`
 
 const Option = styled.option``;
 
-export const Selectbox = ({ id, placeholder, items, label, value, onChange }) => (
-  <Outer>
-    <Label htmlFor={id}>{label}</Label>
+export const SelectWrapper = ({ label, children, ...params }) => (
+  <Label {...params}>
+    <LabelText>{label}</LabelText>
     <Control>
-      <Select id={id} onChange={onChange} value={value}>
-        {placeholder && <Option value="">{placeholder}</Option>}
-        {items.map((item) => (
-          <Option key={item.value} value={item.value}>{item.label}</Option>
-        ))}
-      </Select>
+      {children}
     </Control>
-  </Outer>
+  </Label>
+)
+
+export const Selectbox = ({ id, placeholder, items, label, value, onChange }) => (
+  <SelectWrapper label={label}>
+    <Select id={id} onChange={onChange} value={value}>
+      {placeholder && <Option value="">{placeholder}</Option>}
+      {items.map((item) => (
+        <Option key={item.value} value={item.value}>{item.label}</Option>
+      ))}
+    </Select>
+  </SelectWrapper>
 );
+
 
 Selectbox.propTypes = {
   items: PropTypes.array,
