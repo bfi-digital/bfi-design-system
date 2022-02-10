@@ -704,31 +704,6 @@ exports[`Storyshots 4 Components/All/ErrorPage Error 500 1`] = `
 </div>
 `;
 
-exports[`Storyshots 4 Components/All/Feedback Form Example 1`] = `
-<div
-  style={
-    Object {
-      "padding": "20px",
-    }
-  }
->
-  <div
-    className="FeedbackForm__Outer-sc-2r94a5-0 pOhdB"
-  >
-    <button
-      className="FeedbackForm__FeedbackBar-sc-2r94a5-1 dZoDHy"
-      onClick={[Function]}
-      title="Give us some feedback"
-    >
-      <strong>
-        Is something missing from this page?
-      </strong>
-       Your feedback helps us.
-    </button>
-  </div>
-</div>
-`;
-
 exports[`Storyshots 4 Components/All/FilmShowing A Showing 1`] = `
 <div
   style={

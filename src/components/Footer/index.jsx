@@ -4,7 +4,6 @@ import theme from "../_theme"
 import { LinkSwitch as Link } from "../LinkSwitch"
 import PropTypes from "prop-types"
 import parse from "html-react-parser"
-import { FeedbackForm } from "../FeedbackFormHelpscout"
 import { ImageSponsorLinks } from "../ImageSponsorLinks"
 
 import lotteryLocal from "./lottery-logo.svg"
@@ -282,15 +281,9 @@ export const Footer = ({
     menus,
     copyrightText,
     copyrightLinks,
-    sponsorImages,
-    feedbackFormSubmissionFunction,
+    sponsorImages
 }) =>
     <>
-        { feedbackFormSubmissionFunction &&
-            <Inner className="dont_restrict">
-                <FeedbackForm submissionFunction={feedbackFormSubmissionFunction}/>
-            </Inner>
-        }
         <Outer>
             <TopRow>
                 <Inner className="container">
