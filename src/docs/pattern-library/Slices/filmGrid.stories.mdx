@@ -26,7 +26,7 @@ import demoFilms from "../../../components/FilmGrid/data"
             padding: "5px",
             maxWidth: "1000px"
         }}>
-            <FilmGrid films={demoFilms} allFilmsUrl="http://google.com"/>
+            <FilmGrid films={demoFilms} link={{url: "http://example.com", title:"Example CTA"}}/>
         </div>
     </Story>
 </Preview>
@@ -60,7 +60,7 @@ import demoFilms from "../../../components/FilmGrid/data"
             padding: "5px",
             maxWidth: "1000px"
         }}>
-            <FilmGrid films={demoFilms.slice(0,3)} allFilmsUrl="http://google.com" />
+            <FilmGrid films={demoFilms.slice(0,3)} allFilmsUrl="http://example.com" />
         </div>
     </Story>
 </Preview>
