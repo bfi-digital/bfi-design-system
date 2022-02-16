@@ -88,9 +88,12 @@
     "react-typeform-embed": "^0.2.1"
   },
   "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}"
+    ],
     "transformIgnorePatterns": [
-      "<rootDir>/src/docs",
-      "<rootDir>/src/components/FilmGrid"
+      "<rootDir>/src/docs"
     ],
     "moduleNameMapper": {
       "^.+\\.(mdx|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",

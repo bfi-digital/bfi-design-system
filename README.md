@@ -4,7 +4,7 @@
 
 The next-gen design system for the [British Film Institute](bfi.org.uk).
 
-Compatible with Node 12 & NPM 7.
+Compatible with Node 16 & NPM 7.
 
 ## 🍿 Demo and docs
 
