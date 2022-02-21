@@ -6,6 +6,6 @@
   ],
   "plugins": [
     "babel-plugin-transform-react-remove-prop-types",
-    "styled-components"
+    "babel-plugin-styled-components"
   ]
 }
