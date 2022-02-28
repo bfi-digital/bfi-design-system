@@ -62,7 +62,7 @@
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "styled-components": "^5.3.3",
-    "typescript": "^3.9.10"
+    "typescript": "^4.5.5"
   },
   "peerDependencies": {
     "react": "^17",
@@ -90,7 +90,7 @@
     "collectCoverageFrom": [
       "src/**/*.{js,jsx}"
     ],
-    "testEnvironment":"jsdom",
+    "testEnvironment": "jsdom",
     "transformIgnorePatterns": [
       "<rootDir>/src/docs"
     ],
