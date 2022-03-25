@@ -9,3 +9,4 @@ rollup.config.js
 *.png
 *.svg
 src/docs
+coverage
