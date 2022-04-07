@@ -1,20 +1,20 @@
-import React from "react";
-import styled from "styled-components";
-import PropTypes from "prop-types";
-import theme from "../_theme";
+import React from "react"
+import styled from "styled-components"
+import PropTypes from "prop-types"
+import theme from "../_theme"
 
 const Label = styled.label`
   position: relative;
   display: flex;
   flex-wrap: wrap;
-`;
+`
 
 const LabelText = styled.span`
   flex-basis: 100%;
   margin-bottom: 5px;
   font-size: 16px;
   font-weight: ${theme.fontWeight_semiBold};
-`;
+`
 
 const Control = styled.div`
   position: relative;
@@ -64,7 +64,7 @@ const Control = styled.div`
     border-top: 15px solid ${theme.black};
     pointer-events: none;
   }
-`;
+`
 
 export const Select = styled.select`
   -webkit-appearance: none;
@@ -89,41 +89,41 @@ export const Select = styled.select`
     border-radius: 0;
     border: 2px solid ${theme.lightFocus};
   }
-`;
+`
 
-const Option = styled.option``;
+const Option = styled.option``
 
 export const SelectWrapper = ({ label, children, ...params }) => (
-  <Label {...params}>
-    <LabelText>{label}</LabelText>
-    <Control>
-      {children}
-    </Control>
-  </Label>
+    <Label {...params}>
+        <LabelText>{label}</LabelText>
+        <Control>
+            {children}
+        </Control>
+    </Label>
 )
 
 export const Selectbox = ({ id, placeholder, items, label, value, onChange }) => (
-  <SelectWrapper label={label}>
-    <Select id={id} onChange={onChange} value={value}>
-      {placeholder && <Option value="">{placeholder}</Option>}
-      {items.map((item) => (
-        <Option key={item.value} value={item.value}>{item.label}</Option>
-      ))}
-    </Select>
-  </SelectWrapper>
-);
+    <SelectWrapper label={label}>
+        <Select id={id} onChange={onChange} value={value}>
+            {placeholder && <Option value="">{placeholder}</Option>}
+            {items.map((item) => (
+                <Option key={item.value} value={item.value}>{item.label}</Option>
+            ))}
+        </Select>
+    </SelectWrapper>
+)
 
 
 Selectbox.propTypes = {
-  items: PropTypes.array,
-  label: PropTypes.string,
-  value: PropTypes.string,
-  id: PropTypes.string,
-  placeholder: PropTypes.string,
-  onChange: PropTypes.func,
-};
+    items: PropTypes.array,
+    label: PropTypes.string,
+    value: PropTypes.string,
+    id: PropTypes.string,
+    placeholder: PropTypes.string,
+    onChange: PropTypes.func,
+}
 
 Selectbox.defaultProps = {
-  items: [],
-  label: "",
-};
+    items: [],
+    label: "",
+}

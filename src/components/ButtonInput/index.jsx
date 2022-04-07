@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components";
-import PropTypes from "prop-types";
-import theme from "../_theme";
+import React from "react"
+import styled from "styled-components"
+import PropTypes from "prop-types"
+import theme from "../_theme"
 
 const ButtonInputEl = styled.button`
   display: inline-block;
@@ -18,7 +18,7 @@ const ButtonInputEl = styled.button`
   text-align: center;
   border: 0;
   flex-grow: 0;
-  ${props => props.loading && 'pointer-events: none;'}
+  ${props => props.loading && "pointer-events: none;"}
 
   @media screen and (min-width: ${theme.l}) {
     width: auto;
@@ -93,7 +93,7 @@ const ButtonInputEl = styled.button`
   }
 
 
-`;
+`
 
 const DisabledButtonInput = styled.div`
   background: ${theme.darkGrey};
@@ -113,7 +113,7 @@ const DisabledButtonInput = styled.div`
   @media screen and (min-width: ${theme.l}) {
     width: auto;
   }
-`;
+`
 
 const Loading = styled.div`
   position: absolute;
@@ -137,59 +137,59 @@ const Loading = styled.div`
       transform: rotate(360deg);
     }
   } 
-`;
+`
 
 const Label = styled.div`
-  ${props => props.loading && 'opacity: 0;'}
-`;
+  ${props => props.loading && "opacity: 0;"}
+`
 
 export const ButtonInput = ({
-  children,
-  title,
-  disabled,
-  buttonType,
-  onClick,
-  loading,
-  ...props
+    children,
+    title,
+    disabled,
+    buttonType,
+    onClick,
+    loading,
+    ...props
 }) => {
-  if (disabled)
+    if (disabled)
+        return (
+            <DisabledButtonInput
+                title={title ? title : ""}
+                disabled={disabled}
+                type={buttonType}
+                onClick={onClick}
+                {...props}
+            >
+                {loading && <Loading></Loading>}
+                <Label loading={loading}>{children}</Label>
+            </DisabledButtonInput>
+        )
     return (
-      <DisabledButtonInput
-        title={title ? title : ''}
-        disabled={disabled}
-        type={buttonType}
-        onClick={onClick}
-        {...props}
+        <ButtonInputEl
+            title={title ? title : ""}
+            disabled={disabled}
+            type={buttonType}
+            onClick={onClick}
+            {...props}
         >
-          {loading && <Loading></Loading>}
-          <Label loading={loading}>{children}</Label>
-      </DisabledButtonInput>
-    );
-    return (
-      <ButtonInputEl
-        title={title ? title : ''}
-        disabled={disabled}
-        type={buttonType}
-        onClick={onClick}
-        {...props}
-        >
-          {loading && <Loading></Loading>}
-          <Label loading={loading}>{children}</Label>
-    </ButtonInputEl>
-  );
-};
+            {loading && <Loading></Loading>}
+            <Label loading={loading}>{children}</Label>
+        </ButtonInputEl>
+    )
+}
 
 ButtonInput.propTypes = {
-  title: PropTypes.string,
-  buttonType: PropTypes.string,
-  disabled: PropTypes.bool,
-  loading: PropTypes.bool,
-  onClick: PropTypes.func,
+    title: PropTypes.string,
+    buttonType: PropTypes.string,
+    disabled: PropTypes.bool,
+    loading: PropTypes.bool,
+    onClick: PropTypes.func,
 
-};
+}
 
 ButtonInput.defaultProps = {
-  colorScheme: 0,
-  disabled: false,
-  loading: false,
-};
+    colorScheme: 0,
+    disabled: false,
+    loading: false,
+}
