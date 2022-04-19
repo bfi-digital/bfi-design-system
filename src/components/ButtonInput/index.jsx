@@ -139,7 +139,7 @@ const Loading = styled.div`
   } 
 `;
 
-const Label = styled.div`
+const Label = styled.span`
   ${props => props.loading && 'opacity: 0;'}
 `;
 
