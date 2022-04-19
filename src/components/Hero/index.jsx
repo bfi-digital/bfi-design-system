@@ -492,13 +492,13 @@ export const Hero = ({
                             }
                             {imageCaption &&
                                 <CaptionCreditIconWrapper>
-                                    <CaptionCreditIcon className={textDisplay? "add_caption": "remove_caption"} src={cameraIcon}
+                                    <CaptionCreditIcon className={textDisplay? "add_caption": "remove_caption"}
                                         onClick={()=>setTextDisplay(!textDisplay)}
                                         data-toggle={(copyright ?
                                             (imageCaption +" " + "\u00A9 " + copyright): imageCaption)}
-                                        alt="Image caption and credit"
                                         aria-label="Image caption and credit"
-                                        itemprop="copyrightHolder" />
+                                        itemprop="copyrightHolder">
+                                        </CaptionCreditIcon>
                                 </CaptionCreditIconWrapper>
                             }
                             {(image || videoOnDesktop) && (
