@@ -75,10 +75,13 @@ const Select = styled.select`
   background-color: ${theme.white};
   border: 2px solid ${theme.black};
   border-radius: 0;
-  padding-right: 62px;
   font-size: 17px;
   font-weight: ${theme.fontWeight_semiBold};
-
+  
+  @media screen and (min-width: ${theme.l}) {
+    padding-right: 62px;
+  }
+      
   &:hover {
     border: 2px solid ${theme.lightFocus};
   }
