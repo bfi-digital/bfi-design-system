@@ -1,6 +1,6 @@
 {
   "name": "bfi-design-system",
-  "version": "0.2.142",
+  "version": "0.2.143",
   "contributors": [
     "FutureGov <dev@wearefuturegov.com> (https://wearefuturegov.com)",
     "Paul Kiddle <paul.kiddle@bfi.org.uk> (https://mrkiddle.co.uk)"
@@ -44,7 +44,6 @@
     "@storybook/addon-viewport": "~6.4",
     "@storybook/react": "~6.4",
     "@types/styled-components": "^5.1.23",
-    "awesome-typescript-loader": "^5.2.1",
     "babel-loader": "^8.2.3",
     "babel-plugin-styled-components": "^2.0.3",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",

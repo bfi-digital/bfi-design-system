@@ -205,8 +205,10 @@ const ConditionalWrapper = ({ condition, wrapper, wrapper2, children }) =>
     condition ? wrapper(children) : wrapper2(children)
 
 export const FilmCard = ({
-    image480x270,
-    image48x27,
+    thumbnail,
+    image480x270 = thumbnail,
+    preloadImage,
+    image48x27 = preloadImage,
     name,
     channels,
     url,

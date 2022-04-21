@@ -24,8 +24,8 @@ const Outer = styled.div`
 `
 const ScrollerTrack = styled.div`
     padding: 10px;
-    display: flex;
     padding-left: 0;
+    display: flex;
     overflow-y: hidden;
     overflow-x: scroll;
     scroll-behavior: smooth;
@@ -38,7 +38,7 @@ const ScrollerTrack = styled.div`
             padding-left: 25px;
 
             &:first-of-type {
-                margin-left: -15px;
+                padding-left: 40px;
             }
             
             &:focus {
@@ -128,9 +128,7 @@ const RightScrollerFade = styled.div`
         width: 65px;
         height: calc(100% - 23px);
     }
-    @media screen and (min-width: 1100px){
-        right: -60px;
-    }
+
     @media screen and (min-width: ${theme.xl}){
         width: 75px;
     }
@@ -162,9 +160,6 @@ const LeftScrollerFade = styled(RightScrollerFade)`
             margin-right: 20px;
         }
     }
-    @media screen and (min-width: 1100px){
-        left: -60px;
-    }
 `
 const LastItem = styled.div`
     height: 1px;
@@ -174,8 +169,8 @@ const LastItem = styled.div`
 export const Scroller = ({
     withoutBreak,
     classes,
-    noOfChildren = 10,
-    children
+    children,
+    noOfChildren = children.length || 10
 }) => {
     const scrollRef = useRef(null)
     const [showLeft, setShowLeft] = useState(false)
