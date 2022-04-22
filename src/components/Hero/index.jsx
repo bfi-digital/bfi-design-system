@@ -473,6 +473,7 @@ export const Hero = ({
                             className={image1920x1080 ? "with_image" : "hero_without_image"}
                             titleLength={headline.length}
                             noTitleText={noTitleText}
+                            aria-label="banner"
                         >
                             { (videoMP4 || videoWEBM) &&
                                 <>

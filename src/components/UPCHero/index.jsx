@@ -3,7 +3,7 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 import theme from "../_theme";
 
-const Outer = styled.div`
+const Outer = styled.header`
   padding-top: 25px;
   padding-bottom: 25px;
   background-color: ${theme.lightest};
