@@ -288,12 +288,10 @@ export const NewsletterSignUpUserPreferenceCentre = ({
                     <input
                         required
                         autoComplete="Email"
-                        title="Your Email (required)"
-                        aria-label="Email"
                         id="fieldEmail"
                         maxLength="200"
                         type="email"
-                        placeholder="Your email..."
+                        placeholder="Enter username and domain name separated by an 'at' symbol, e.g name@example.com"
                         onChange={onChangeEmail}
                     />
                 </NewsletterLabel>
