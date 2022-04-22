@@ -184,7 +184,7 @@ const MobilePanel = ({
     const [ selected, setSelected ] = useState(false)
 
     return(
-        <Panel id="menu-panel" role="region" open={open}>
+        <Panel id="menu-panel" role="navigation" open={open}>
             {open &&
             <>
                 <RemoveScrollBar/>

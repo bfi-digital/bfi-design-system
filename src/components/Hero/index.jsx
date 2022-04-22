@@ -473,6 +473,7 @@ export const Hero = ({
                             className={image1920x1080 ? "with_image" : "hero_without_image"}
                             titleLength={headline.length}
                             noTitleText={noTitleText}
+                            aria-label="banner"
                         >
                             { (videoMP4 || videoWEBM) &&
                                 <>
@@ -492,13 +493,13 @@ export const Hero = ({
                             }
                             {imageCaption &&
                                 <CaptionCreditIconWrapper>
-                                    <CaptionCreditIcon className={textDisplay? "add_caption": "remove_caption"} src={cameraIcon}
+                                    <CaptionCreditIcon className={textDisplay? "add_caption": "remove_caption"}
                                         onClick={()=>setTextDisplay(!textDisplay)}
                                         data-toggle={(copyright ?
                                             (imageCaption +" " + "\u00A9 " + copyright): imageCaption)}
-                                        alt="Image caption and credit"
                                         aria-label="Image caption and credit"
-                                        itemprop="copyrightHolder" />
+                                        itemprop="copyrightHolder">
+                                        </CaptionCreditIcon>
                                 </CaptionCreditIconWrapper>
                             }
                             {(image || videoOnDesktop) && (

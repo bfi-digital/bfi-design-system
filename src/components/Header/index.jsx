@@ -43,7 +43,7 @@ const Outer = styled.header`
         }
         @media screen and (min-width: ${theme.l}){
             padding: 21px 15px;
-            font-size: ${theme.fontSize_s};
+            font-size: 16.8px; 
         }
     }
 

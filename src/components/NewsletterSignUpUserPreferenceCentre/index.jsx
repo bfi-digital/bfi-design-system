@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import styled from "styled-components";
-import theme from "../_theme";
-import PropTypes from "prop-types";
-import { Headline } from "../Headline";
-import { LinkSwitch as Link } from "../LinkSwitch";
+import React, { useState } from "react"
+import styled from "styled-components"
+import theme from "../_theme"
+import PropTypes from "prop-types"
+import { Headline } from "../Headline"
+import { LinkSwitch as Link } from "../LinkSwitch"
 
 const Outer = styled.div`
   background: ${theme.lightest};
@@ -50,7 +50,8 @@ const Outer = styled.div`
   @media screen and (min-width: ${theme.l}) {
     text-align: center;
   }
-`;
+`
+
 const NewsletterForm = styled.form`
   @media screen and (min-width: ${theme.l}) {
     display: flex;
@@ -62,8 +63,6 @@ const NewsletterForm = styled.form`
     justify-content: flex-start;
   }
 
-  @media screen and (min-width: ${theme.m}) {
-  }
   @media screen and (min-width: ${theme.l}) {
     justify-content: center;
   }
@@ -76,6 +75,7 @@ const NewsletterForm = styled.form`
       flex: 0 0 auto;
     }
   }
+
   input {
     display: block;
     margin-top: 5px;
@@ -83,7 +83,6 @@ const NewsletterForm = styled.form`
     padding-top: 12px;
     font-size: ${theme.fontSize_s};
     border: 2px solid ${theme.black};
-
     border-bottom: 5px solid ${theme.primary};
     transition: border 0.3s;
     width: 100%;
@@ -101,7 +100,8 @@ const NewsletterForm = styled.form`
       border-right: none;
     }
   }
-`;
+`
+
 const NewsletterLabel = styled.label`
   display: inline-block;
   font-weight: ${theme.fontWeight_semiBold};
@@ -110,7 +110,8 @@ const NewsletterLabel = styled.label`
   @media screen and (min-width: ${theme.l}) {
     width: auto;
   }
-`;
+`
+
 const SubmitButton = styled.button`
   display: inline-block;
   position: relative;
@@ -129,13 +130,13 @@ const SubmitButton = styled.button`
   width: 100%;
   border: 2px solid ${theme.black};
   margin-bottom: 4px;
-
   top: 1px;
 
   @media screen and (min-width: ${theme.l}) {
     white-space: nowrap;
     width: auto;
   }
+
   :after {
     content: "";
     width: calc(100% + 4px);
@@ -177,7 +178,7 @@ const SubmitButton = styled.button`
     width: auto;
     left: -2px;
   }
-`;
+`
 
 const CallToAction = styled(Link)`
   color: ${theme.black};
@@ -198,6 +199,7 @@ const CallToAction = styled(Link)`
     color: ${theme.white};
     background-size: 100% 100%;
   }
+
   &:focus {
     background-size: 100% 100%;
     color: ${theme.white};
@@ -208,11 +210,12 @@ const CallToAction = styled(Link)`
       ${theme.focus} 100%
     );
   }
+
   &:active {
     outline: none;
     text-decoration: underline;
   }
-`;
+`
 
 const CallToActionGroup = styled.div`
   display: flex;
@@ -225,7 +228,7 @@ const CallToActionGroup = styled.div`
     margin-top: 0px;
     margin-bottom: 10px;
   }
-`;
+`
 
 const Loading = styled.div`
   position: absolute;
@@ -249,75 +252,73 @@ const Loading = styled.div`
       transform: rotate(360deg);
     }
   }
-`;
+`
 
-const Label = styled.div`
+const Label = styled.span`
   ${(props) => props.loading && "opacity: 0;"}
-`;
+`
 
 export const NewsletterSignUpUserPreferenceCentre = ({
-  title,
-  desc,
-  changePreferencesUrl,
-  onSignUp,
-  loading
+    title,
+    desc,
+    changePreferencesUrl,
+    onSignUp,
+    loading
 }) => {
-  const [email, setEmail] = useState("");
+    const [email, setEmail] = useState("")
 
-  function handleSubmit(e) {
-    e.preventDefault();
-    if (typeof onSignUp === "function") {
-      onSignUp(email);
+    function handleSubmit(e) {
+        e.preventDefault()
+        if (typeof onSignUp === "function") {
+            onSignUp(email)
+        }
     }
-  }
 
-  function onChangeEmail(e) {
-    setEmail(e.target.value);
-  }
+    function onChangeEmail(e) {
+        setEmail(e.target.value)
+    }
 
-  return (
-    <Outer>
-      <Headline level={6} text={title} />
-      <p>{desc}</p>
-      <NewsletterForm onSubmit={handleSubmit} id="newsletter-signup-form">
-        <NewsletterLabel>
-          Email
-          <input
-            required
-            autoComplete="Email"
-            title="Your Email (required)"
-            aria-label="Email"
-            id="fieldEmail"
-            maxLength="200"
-            type="email"
-            placeholder="Your email..."
-            onChange={onChangeEmail}
-          />
-        </NewsletterLabel>
-        <SubmitButton type="submit">
-            {loading && <Loading></Loading>}
-            <Label loading={loading}>Sign up</Label>
-        </SubmitButton>
-      </NewsletterForm>
+    return (
+        <Outer>
+            <Headline level={3} text={title} />
+            <p>{desc}</p>
+            <NewsletterForm onSubmit={handleSubmit} id="newsletter-signup-form">
+                <NewsletterLabel>
+                    Email
+                    <input
+                        required
+                        autoComplete="Email"
+                        id="fieldEmail"
+                        maxLength="200"
+                        type="email"
+                        placeholder="Enter username and domain name separated by an 'at' symbol, e.g name@example.com"
+                        onChange={onChangeEmail}
+                    />
+                </NewsletterLabel>
+                <SubmitButton type="submit">
+                    {loading && <Loading></Loading>}
+                    <Label loading={loading}>Sign up</Label>
+                </SubmitButton>
+            </NewsletterForm>
 
-      <CallToActionGroup>
-        <p>Already have an account?</p>
-        <CallToAction to={changePreferencesUrl} loading={loading}>Change my email preferences</CallToAction>
-      </CallToActionGroup>
-    </Outer>
-  );
-};
+            <CallToActionGroup>
+                <p>Already have an account?</p>
+                <CallToAction to={changePreferencesUrl} loading={loading}>Change my email preferences</CallToAction>
+            </CallToActionGroup>
+        </Outer>
+    )
+}
 
 NewsletterSignUpUserPreferenceCentre.propTypes = {
-  title: PropTypes.string.isRequired,
-  desc: PropTypes.string.isRequired,
-  changePreferencesUrl: PropTypes.string.isRequired,
-  onSignUp: PropTypes.func,
-  loading: PropTypes.bool,
-};
+    title: PropTypes.string.isRequired,
+    desc: PropTypes.string.isRequired,
+    changePreferencesUrl: PropTypes.string.isRequired,
+    onSignUp: PropTypes.func,
+    loading: PropTypes.bool,
+}
 
 NewsletterSignUpUserPreferenceCentre.defaultProps = {
-  title: "",
-  desc: "",
-  loading: false,
-};
+    title: "",
+    desc: "",
+    loading: false,
+}

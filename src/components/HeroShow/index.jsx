@@ -479,13 +479,11 @@ export const HeroShow = ({
                                             <CaptionCreditIconWrapper>
                                                 <CaptionCreditIcon className={textDisplay? "add_caption": "remove_caption"}
                                                     onClick={()=>setTextDisplay(!textDisplay)}
-                                                    src={cameraIcon}
                                                     data-toggle={
                                                         imageCopyRight
                                                             ? imageCaption + " " + "\u00A9 " + imageCopyRight
                                                             : imageCaption
                                                     }
-                                                    alt="Image caption and credit"
                                                     aria-label="Image caption and credit"
                                                     itemprop="copyrightHolder"
                                                 />
