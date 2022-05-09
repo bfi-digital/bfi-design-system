@@ -4,7 +4,6 @@ import theme from "../_theme"
 import PropTypes from "prop-types"
 import { Dialog } from "@reach/dialog"
 import VisuallyHidden from "@reach/visually-hidden"
-import LazyImage from "react-lazy-progressive-image"
 
 const Figure = styled.figure`
     width: ${props => props.isSmall ? "40%" : "100%"};
@@ -185,7 +184,6 @@ const StyledImage = styled.img`
 
 export const Image = ({
     src,
-    placeholder,
     alt,
     side,
     isSmall,
@@ -201,34 +199,24 @@ export const Image = ({
     return(
         <>
             { side && <div style={{clear: "both"}} /> }
-            <LazyImage
-                src={src}
-                placeholder={placeholder}
-                visibilitySensorProps={{
-                    partialVisibility: true
-                }}
-            >
-                {(src, loading) => 
-                    <>
-                        <Figure className={"loading_" + loading} side={side} isSmall={isSmall} itemscope itemtype="http://schema.org/ImageObject">
-                            <ConditionalWrapper
-                                condition={isClickable}
-                                wrapper={children => <Button onClick={() => setOpenImage(true)}>{children}</Button>}
-                            >
-                                <StyledImage
-                                    itemprop="image"
-                                    isClickable={false}
-                                    src={src}
-                                    alt={alt ? alt : ""}
-                                    loading="lazy"
-                                />
-                            </ConditionalWrapper>                
-                            {caption && <Figcaption itemprop="caption description">{caption}</Figcaption>}
-                            {copyright && <Small itemprop="copyrightHolder">&copy; {copyright}</Small>}
-                        </Figure>
-                    </>
-                }
-            </LazyImage>
+            <>
+                <Figure side={side} isSmall={isSmall} itemscope itemtype="http://schema.org/ImageObject">
+                    <ConditionalWrapper
+                        condition={isClickable}
+                        wrapper={children => <Button onClick={() => setOpenImage(true)}>{children}</Button>}
+                    >
+                        <StyledImage
+                            itemprop="image"
+                            isClickable={false}
+                            src={src}
+                            alt={alt ? alt : ""}
+                            loading="lazy"
+                        />
+                    </ConditionalWrapper>                
+                    {caption && <Figcaption itemprop="caption description">{caption}</Figcaption>}
+                    {copyright && <Small itemprop="copyrightHolder">&copy; {copyright}</Small>}
+                </Figure>
+            </>
 
             {isClickable &&
                 <>
@@ -241,19 +229,12 @@ export const Image = ({
                         <VisuallyHidden>
                             <button onClick={() => setOpenImage(false)}>Close</button>
                         </VisuallyHidden>
-                        <LazyImage
+                        <BigImage
+                            itemprop="image"
                             src={src}
-                            placeholder={placeholder}
-                        >
-                            {src => 
-                                <BigImage
-                                    itemprop="image"
-                                    src={src}
-                                    alt={alt ? alt : ""}
-                                    loading="lazy"
-                                />
-                            }
-                        </LazyImage> 
+                            alt={alt ? alt : ""}
+                            loading="lazy"
+                        />
                           
                         {caption && <Figcaption itemprop="caption description" white={true}>{caption}</Figcaption>}
                         {copyright && <Small itemprop="copyrightHolder" white={true} >&copy; {copyright}</Small>}

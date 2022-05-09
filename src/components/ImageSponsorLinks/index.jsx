@@ -2,7 +2,6 @@ import React from "react"
 import theme from "../_theme"
 import PropTypes from "prop-types"
 import styled from "styled-components"
-import LazyImage from "react-lazy-progressive-image"
 
 const Outer = styled.figure`
     display: block;
@@ -75,18 +74,11 @@ export const ImageSponsorLinks = ({
                         condition={image.link}
                         wrapper={children => <Link href={image.link} title={image.alt}>{children}</Link>}
                     >
-                        <LazyImage
+                        <Image
                             src={image.url}
-                            placeholder={image.placeholder ? image.placeholder : image.url}
-                        >
-                            {src => 
-                                <Image
-                                    src={src}
-                                    alt={image.alt ? image.alt : ""}
-                                    loading="lazy"
-                                />
-                            }
-                        </LazyImage>
+                            alt={image.alt ? image.alt : ""}
+                            loading="lazy"
+                        />
                     </ConditionalWrapper>
                 </ImageContainer>
             )}

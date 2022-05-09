@@ -4,8 +4,6 @@ import theme from "../_theme"
 import { LinkSwitch as Link } from "../LinkSwitch"
 import { Tag } from "../Tag"
 import placeholderImage from "./placeholder.png"
-import placeholderImageSmall from "./placeholder-small.png"
-import LazyImage from "react-lazy-progressive-image"
 
 const Outer = styled.li`
     margin-bottom: 20px;
@@ -137,7 +135,6 @@ const Channels = styled.div`
 `
 export const SidebarFilmCard = ({
     image480x270,
-    image48x27,
     name,
     channels,
     url,
@@ -154,15 +151,7 @@ export const SidebarFilmCard = ({
                 </Channels>
             </Content>
             <PageImageContainer>
-                <LazyImage
-                    src={image480x270 ? image480x270 : placeholderImage}
-                    placeholder={image48x27 ? image48x27 : placeholderImageSmall}
-                >
-                    {src => 
-                        <PageImage className="image" imageSrc={src} alt={imageAltText ? imageAltText : ""} />
-                    }
-                </LazyImage>
+                <PageImage className="image" imageSrc={image480x270 ? image480x270 : placeholderImage} alt={imageAltText ? imageAltText : ""} />
             </PageImageContainer>
         </CallToAction>
     </Outer>
-

@@ -2,7 +2,6 @@ import React from "react"
 import styled from "styled-components"
 import theme from "../_theme"
 import { LinkSwitch as Link } from "../LinkSwitch"
-import LazyImage from "react-lazy-progressive-image"
 
 const Outer = styled.li`
     margin-bottom: 20px;
@@ -137,7 +136,6 @@ const Heading = styled.p`
 export const PageLink = ({
     title,
     image,
-    placeholder,
     url
 }) =>
     <Outer>
@@ -146,16 +144,8 @@ export const PageLink = ({
             
             <PageImageContainer withImage={image}>
                 { image && 
-                    <LazyImage
-                        src={image}
-                        placeholder={placeholder}
-                    >
-                        {src => 
-                            <PageImage className="image" imageSrc={src} />
-                        }
-                    </LazyImage>
+                            <PageImage className="image" imageSrc={image} />
                 }
             </PageImageContainer>
         </CallToAction>
     </Outer>
-

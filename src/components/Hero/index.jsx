@@ -3,7 +3,6 @@ import { Headline } from "../Headline"
 import styled from "styled-components"
 import theme from "../_theme"
 import PropTypes from "prop-types"
-import LazyImage from "react-lazy-progressive-image"
 import { LeadParagraph } from "../LeadParagraph"
 import { Wrapper } from "../PageContainer"
 import cameraIcon from "./camera_icon.svg"
@@ -419,7 +418,6 @@ const PlayButton = styled.button`
 `
 export const Hero = ({
     image1920x1080,
-    image192x108,
     headline,
     standfirst,
     withHeader,
@@ -458,23 +456,14 @@ export const Hero = ({
    
     return(
         <>
-            <LazyImage
-                src={image1920x1080}
-                placeholder={image192x108 ? image192x108 : image1920x1080}
-                visibilitySensorProps={{
-                    partialVisibility: true
-                }}
+            <Outer 
+                image={image1920x1080} 
+                withHeader={withHeader}
+                className={image1920x1080 ? "with_image" : "hero_without_image"}
+                titleLength={headline.length}
+                noTitleText={noTitleText}
             >
-                {src => 
-                    <>
-                        <Outer 
-                            image={src} 
-                            withHeader={withHeader}
-                            className={image1920x1080 ? "with_image" : "hero_without_image"}
-                            titleLength={headline.length}
-                            noTitleText={noTitleText}
-                        >
-                            { (videoMP4 || videoWEBM) &&
+                { (videoMP4 || videoWEBM) &&
                                 <>
                                     <VideoContainer>
                                         <VideoInner noTitleText={noTitleText}>
@@ -486,11 +475,11 @@ export const Hero = ({
                                     </VideoContainer>
                                     <PlayButton className="playButton" onClick={() => setIsPaused(isPaused => !isPaused)} backgroundImage={isPaused ? pauseIcon : playIcon} alt={isPaused ? "Pause" : "Play"} title={isPaused ? "Pause" : "Play"}></PlayButton>
                                 </>
-                            }
-                            {image1920x1080 && 
+                }
+                {image1920x1080 && 
                                 <InnerGradient withHeader={withHeader} noTitleText={noTitleText} withVideo={(videoMP4 || videoWEBM)} /> 
-                            }
-                            {imageCaption &&
+                }
+                {imageCaption &&
                                 <CaptionCreditIconWrapper>
                                     <CaptionCreditIcon className={textDisplay? "add_caption": "remove_caption"} src={cameraIcon}
                                         onClick={()=>setTextDisplay(!textDisplay)}
@@ -500,40 +489,37 @@ export const Hero = ({
                                         aria-label="Image caption and credit"
                                         itemprop="copyrightHolder" />
                                 </CaptionCreditIconWrapper>
-                            }
-                            {(image || videoOnDesktop) && (
-                                <Container>
-                                    {headline && <Headline level={0} text={headline} visuallyHidden={noTitleText} />}
-                                    <ChildContainerDesktop className={image1920x1080 ? "child_with_image" : "child_without_image"}>
-                                        {standfirst &&  <StandFirst className="lead_paragraph">{parse(standfirst)}</StandFirst> }
-                                        {children}
-                                    </ChildContainerDesktop>
-                                    {copyright && <Copyright>{copyright}</Copyright>}
-                                </Container>
-                            )}
-                        </Outer>
-                        {!image && videoAndMobile && (
-                            <Container>
-                                {headline && <Headline level={0} text={headline} visuallyHidden={noTitleText} />}
-                                <ChildContainerDesktop className={image1920x1080 ? "child_with_image" : "child_without_image"}>
-                                    {standfirst && <StandFirst className="lead_paragraph">{parse(standfirst)}</StandFirst>}
-                                    {children}
-                                </ChildContainerDesktop>
-                                {copyright && <Copyright>{copyright}</Copyright>}
-                            </Container>
-                        )}
+                }
+                {(image || videoOnDesktop) && (
+                    <Container>
+                        {headline && <Headline level={0} text={headline} visuallyHidden={noTitleText} />}
+                        <ChildContainerDesktop className={image1920x1080 ? "child_with_image" : "child_without_image"}>
+                            {standfirst &&  <StandFirst className="lead_paragraph">{parse(standfirst)}</StandFirst> }
+                            {children}
+                        </ChildContainerDesktop>
+                        {copyright && <Copyright>{copyright}</Copyright>}
+                    </Container>
+                )}
+            </Outer>
+            {!image && videoAndMobile && (
+                <Container>
+                    {headline && <Headline level={0} text={headline} visuallyHidden={noTitleText} />}
+                    <ChildContainerDesktop className={image1920x1080 ? "child_with_image" : "child_without_image"}>
+                        {standfirst && <StandFirst className="lead_paragraph">{parse(standfirst)}</StandFirst>}
+                        {children}
+                    </ChildContainerDesktop>
+                    {copyright && <Copyright>{copyright}</Copyright>}
+                </Container>
+            )}
                         
-                        {image1920x1080 && (children || standfirst) && 
+            {image1920x1080 && (children || standfirst) && 
                             <ChildContainerMobile>
                                 <Wrapper>
                                     {standfirst && <LeadParagraph text={standfirst}/>}
                                     {children}
                                 </Wrapper>
                             </ChildContainerMobile>
-                        }
-                    </>
-                }
-            </LazyImage>
+            }
         </>
     )
 }

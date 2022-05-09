@@ -5,7 +5,6 @@ import theme from "../../_theme"
 import { LinkSwitch as Link } from "../../LinkSwitch"
 import { Headline } from "../../Headline"
 import parse from "html-react-parser"
-import LazyImage from "react-lazy-progressive-image"
 
 const Outer = styled.div`
     position: relative;
@@ -185,7 +184,6 @@ export const ArticleCardHighlighted = ({
     title,
     url,
     image480x270,
-    image48x27,
     standfirst,
     category,
     author,
@@ -210,15 +208,7 @@ export const ArticleCardHighlighted = ({
         </Content>
 
         <PageImageContainer>
-            <LazyImage
-                src={image480x270}
-                placeholder={image48x27 ? image48x27 : image480x270}
-                visibilitySensorProps={{
-                    partialVisibility: true
-                }}
-            >
-                {src => <PageImage className="image" imageSrc={src} alt="" />}
-            </LazyImage>
+            <PageImage className="image" imageSrc={image480x270} alt="" />
         </PageImageContainer>
 
         <CallToAction 
@@ -230,4 +220,3 @@ export const ArticleCardHighlighted = ({
             <span>{title}</span>
         </CallToAction>    
     </Outer>
-

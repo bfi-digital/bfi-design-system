@@ -3,9 +3,7 @@ import styled from "styled-components"
 import theme from "../../_theme"
 import { LinkSwitch } from "../../LinkSwitch"
 import { Tag } from "../../Tag"
-import LazyImage from "react-lazy-progressive-image"
 import placeholderImage from "./placeholder.png"
-import placeholderImageSmall from "./placeholder-small.png"
 
 const Outer = styled(LinkSwitch)`
     display: block;
@@ -207,8 +205,6 @@ const ConditionalWrapper = ({ condition, wrapper, wrapper2, children }) =>
 export const FilmCard = ({
     thumbnail,
     image480x270 = thumbnail,
-    preloadImage,
-    image48x27 = preloadImage,
     name,
     channels,
     url,
@@ -223,15 +219,7 @@ export const FilmCard = ({
     >
         { highlightBannerText && <HighlightBanner className="highlight_banner">{highlightBannerText}</HighlightBanner> }
         <ImageContainer>
-            <LazyImage
-                src={image480x270 != "" ? image480x270 : placeholderImage}
-                placeholder={image480x270 != "" ? image48x27 : placeholderImageSmall}
-                visibilitySensorProps={{
-                    partialVisibility: true
-                }}
-            >
-                {src => <Image src={src} alt="" loading="lazy" />}
-            </LazyImage>
+            <Image src={image480x270 != "" ? image480x270 : placeholderImage} alt="" loading="lazy" />
             { description && <DescriptionBG className="filmcard_description_background" /> }
             { description && <Description className="filmcard_description">{description}</Description> }
         </ImageContainer>

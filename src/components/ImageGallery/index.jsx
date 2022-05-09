@@ -3,7 +3,6 @@ import styled, { createGlobalStyle } from "styled-components"
 import theme from "../_theme"
 import { Dialog } from "@reach/dialog"
 import PropTypes from "prop-types"
-import LazyImage from "react-lazy-progressive-image"
 import { Masonry } from "masonic"
 
 const DialogStyles = createGlobalStyle`
@@ -152,21 +151,14 @@ const Image = styled.img`
 
 const Thumbnail = ({index: key, data: {img, setOpenImage}}) => (
     <Button key={key} onClick={() => setOpenImage(key+1)} title="View image larger">
-        <LazyImage
+        <Image
             key={key}
+            itemprop="image"
             src={img.thumb ? img.thumb : img.url}
-            placeholder={img.placeholder ? img.placeholder : img.url}
-        >
-            {src =>
-                <Image
-                    itemprop="image"
-                    src={src}
-                    alt={img.alt ? img.alt : ""}
-                    loading="lazy"
-                    data-orientation={img.orientation}
-                />
-            }
-        </LazyImage>
+            alt={img.alt ? img.alt : ""}
+            loading="lazy"
+            data-orientation={img.orientation}
+        />
     </Button>
 )
 
@@ -309,19 +301,12 @@ export const ImageGallery = ({
                     onDismiss={() => setOpenImage(0)}
                 >
                     <LeftButton title="Previous image" onClick={() => moveLeft(true)}>&lsaquo;</LeftButton>
-                    <LazyImage
+                    <BigImage
+                        itemprop="image"
                         src={images[openImage == 0 ? openImage : (openImage-1)].url}
-                        placeholder={images[openImage == 0 ? openImage : (openImage-1)].thumb ? images[openImage == 0 ? openImage : (openImage-1)].thumb : images[openImage == 0 ? openImage : (openImage-1)].url}
-                    >
-                        {src => 
-                            <BigImage
-                                itemprop="image"
-                                src={src}
-                                alt={images[openImage == 0 ? openImage : (openImage-1)].alt}
-                                loading="lazy"
-                            /> 
-                        }
-                    </LazyImage>
+                        alt={images[openImage == 0 ? openImage : (openImage-1)].alt}
+                        loading="lazy"
+                    /> 
                     
                     {images[openImage == 0 ? openImage : (openImage-1)].caption &&
                         <Caption itemprop="caption description" white={true}>{images[openImage == 0 ? openImage : (openImage-1)].caption}</Caption>

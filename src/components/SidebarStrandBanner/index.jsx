@@ -1,7 +1,6 @@
 import React from "react"
 import theme from "../_theme"
 import styled from "styled-components"
-import LazyImage from "react-lazy-progressive-image"
 import { LinkSwitch as Link } from "../LinkSwitch"
 
 const strandColors = [
@@ -62,18 +61,11 @@ export const SidebarStrandBanner = ({
         <Title>Part of {strand.title}</Title>
         <Sponsor>{strand.sponsors && `Supported by ${strand.sponsors[0].title}`}</Sponsor>
         {strand.image && 
-            <LazyImage
-                src={strand.image}
-                placeholder={strand.placeholder}
-            >
-                {(src) => 
                     <StyledImage
                         itemprop="image"
-                        src={src}
+                        src={strand.image}
                         alt=""
                         loading="lazy"
                     />
-                }
-            </LazyImage>
         }
     </Outer>

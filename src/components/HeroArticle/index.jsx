@@ -2,7 +2,6 @@ import React from "react"
 import styled from "styled-components"
 import theme from "../_theme"
 import PropTypes from "prop-types"
-import LazyImage from "react-lazy-progressive-image"
 import { Headline } from "../Headline"
 import parse from "html-react-parser"
 import { Tag } from "../Tag"
@@ -120,8 +119,7 @@ const Small = styled.small`
 `
 
 export const HeroArticle = ({
-    image1920x1080,
-    image192x108,    
+    image1920x1080,  
     imageAltText,
     imageCopyright,
     imageCaption,
@@ -181,26 +179,17 @@ export const HeroArticle = ({
             {(image1920x1080) && 
                 <ImageContainer>
                     {image1920x1080 &&
-                        <LazyImage
-                            src={image1920x1080}
-                            placeholder={image192x108}
-                            visibilitySensorProps={{
-                                partialVisibility: true
-                            }}
-                        >
-                            {src => 
                                 <>
                                     <StyledImage
                                         itemprop="image"
-                                        src={src}
+                                        src={image1920x1080}
                                         alt={imageAltText ? imageAltText : ""}
+                                        loading="lazy"
                                     />
                                     {imageCaption &&
                                       imageCopyright? <Small itemprop="copyrightHolder">{imageCaption} &copy; {imageCopyright}</Small>
                                         :<Small itemprop="copyrightHolder">{imageCaption}</Small>}
                                 </>
-                            }
-                        </LazyImage>
                     }
                     {brandLogoInfo && 
                         <BrandLogo className="with_image">

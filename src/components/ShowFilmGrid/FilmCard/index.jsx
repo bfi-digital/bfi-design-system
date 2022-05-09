@@ -2,10 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import theme from "../../_theme"
 import { LinkSwitch } from "../../LinkSwitch"
-// import { Tag } from "../../Tag"
-import LazyImage from "react-lazy-progressive-image"
 import placeholderImage from "./placeholder.png"
-import placeholderImageSmall from "./placeholder-small.png"
 
 
 const strandColors = [
@@ -191,11 +188,6 @@ const Title = styled.p`
     font-weight: ${theme.fontWeight_semiBold};
 `
 
-// const Channels = styled.div`
-//     margin: 0;
-//     padding: 0;
-// `
-
 const HighlightBanner = styled.div`
     position: absolute;
     top: 0;
@@ -245,9 +237,7 @@ const ConditionalWrapper = ({ condition, wrapper, wrapper2, children }) =>
 
 export const FilmCard = ({
     image480x270,
-    image48x27,
     name,
-    // channels,
     url,
     highlightBannerText,
     description,
@@ -262,22 +252,9 @@ export const FilmCard = ({
     >
         { highlightBannerText && <HighlightBanner className="highlight_banner" strandColorScheme={strandColorScheme}>{highlightBannerText}</HighlightBanner> }
         <ImageContainer strandColorScheme={strandColorScheme}>
-            <LazyImage
-                src={image480x270 != "" ? image480x270 : placeholderImage}
-                placeholder={image480x270 != "" ? image48x27 : placeholderImageSmall}
-                visibilitySensorProps={{
-                    partialVisibility: true
-                }}
-            >
-                {src => <Image src={src} alt="" loading="lazy" />}
-            </LazyImage>
+            <Image src={image480x270 != "" ? image480x270 : placeholderImage} alt="" loading="lazy" />
             { description && <DescriptionBG className="filmcard_description_background" /> }
             { description && <Description className="filmcard_description">{description}</Description> }
         </ImageContainer>
         <Title className="filmcard_title">{name}</Title>
-        {/* <Channels>
-            {channels.map(channel =>
-                <Tag key={channel}>{channel}</Tag>
-            )}
-        </Channels> */}
     </ConditionalWrapper>

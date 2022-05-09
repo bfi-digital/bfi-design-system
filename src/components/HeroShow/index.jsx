@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react"
 import styled from "styled-components"
 import theme from "../_theme"
 import PropTypes from "prop-types"
-import LazyImage from "react-lazy-progressive-image"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import { Headline } from "../Headline"
 import parse from "html-react-parser"
@@ -390,7 +389,6 @@ const CaptionCreditIcon = styled.button`
 
 export const HeroShow = ({
     image1920x1080,
-    image192x108,
     imageAltText,
     title,
     standfirst,
@@ -461,39 +459,30 @@ export const HeroShow = ({
                 ) : (
                     image1920x1080 && (
                         <ImageContainer>
-                            <LazyImage
-                                src={image1920x1080}
-                                placeholder={image192x108}
-                                visibilitySensorProps={{
-                                    partialVisibility: true,
-                                }}
-                            >
-                                {(src) => (
-                                    <>
-                                        <StyledImage
-                                            itemprop="image"
-                                            src={src}
-                                            alt={imageAltText ? imageAltText : ""}
+                            <>
+                                <StyledImage
+                                    itemprop="image"
+                                    src={image1920x1080}
+                                    alt={imageAltText ? imageAltText : ""}
+                                    loading="lazy"
+                                />
+                                {imageCaption && (
+                                    <CaptionCreditIconWrapper>
+                                        <CaptionCreditIcon className={textDisplay? "add_caption": "remove_caption"}
+                                            onClick={()=>setTextDisplay(!textDisplay)}
+                                            src={cameraIcon}
+                                            data-toggle={
+                                                imageCopyRight
+                                                    ? imageCaption + " " + "\u00A9 " + imageCopyRight
+                                                    : imageCaption
+                                            }
+                                            alt="Image caption and credit"
+                                            aria-label="Image caption and credit"
+                                            itemprop="copyrightHolder"
                                         />
-                                        {imageCaption && (
-                                            <CaptionCreditIconWrapper>
-                                                <CaptionCreditIcon className={textDisplay? "add_caption": "remove_caption"}
-                                                    onClick={()=>setTextDisplay(!textDisplay)}
-                                                    src={cameraIcon}
-                                                    data-toggle={
-                                                        imageCopyRight
-                                                            ? imageCaption + " " + "\u00A9 " + imageCopyRight
-                                                            : imageCaption
-                                                    }
-                                                    alt="Image caption and credit"
-                                                    aria-label="Image caption and credit"
-                                                    itemprop="copyrightHolder"
-                                                />
-                                            </CaptionCreditIconWrapper>
-                                        )}
-                                    </>
+                                    </CaptionCreditIconWrapper>
                                 )}
-                            </LazyImage>
+                            </>
                         </ImageContainer>
                     )
                 )}

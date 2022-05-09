@@ -3,7 +3,6 @@ import styled from "styled-components"
 import theme from "../../_theme"
 import { LinkSwitch as Link } from "../../LinkSwitch"
 import { Headline } from "../../Headline"
-import LazyImage from "react-lazy-progressive-image"
 import heart from "./heart.svg"
 import heartFilled from "./heart-filled.svg"
 
@@ -349,7 +348,6 @@ export const EventCard = ({
     title,
     url,
     image480x270,
-    image48x27,
     dateTime,
     external,
     inScroller,
@@ -368,19 +366,14 @@ export const EventCard = ({
     return(
         <ConditionalWrapper
             condition={inScroller}
-            wrapper={children => <InsideScroller pageWithSidebar={pageWithSidebar} withImage={image480x270 && image48x27} strandColorScheme={strandColorScheme} className="scrollcard">{children}</InsideScroller>}
-            wrapper2={children => <Outer withImage={image480x270 && image48x27} strandColorScheme={strandColorScheme}>{children}</Outer>}
+            wrapper={children => <InsideScroller pageWithSidebar={pageWithSidebar} withImage={image480x270} strandColorScheme={strandColorScheme} className="scrollcard">{children}</InsideScroller>}
+            wrapper2={children => <Outer withImage={image480x270} strandColorScheme={strandColorScheme}>{children}</Outer>}
         >
-            {strandTitle && <HighlightTag withImage={image480x270 && image48x27} strandColorScheme={strandColorScheme}>{strandTitle}</HighlightTag>}
+            {strandTitle && <HighlightTag withImage={image480x270} strandColorScheme={strandColorScheme}>{strandTitle}</HighlightTag>}
 
-            {image480x270 && image48x27 &&
+            {image480x270 &&
                 <PageImageContainer>
-                    <LazyImage
-                        src={image480x270}
-                        placeholder={image48x27 ? image48x27 : image480x270}
-                    >
-                        {src => <PageImage className="image" imageSrc={src} alt="" />}
-                    </LazyImage>
+                    <PageImage className="image" imageSrc={image480x270} alt="" />
                     { description && <DescriptionBG className="filmcard_description_background" /> }
                     { description && <Description className="filmcard_description">{description.substr(0,90)}</Description> }
                 </PageImageContainer>
@@ -418,4 +411,3 @@ export const EventCard = ({
         </ConditionalWrapper>
     )
 }
-

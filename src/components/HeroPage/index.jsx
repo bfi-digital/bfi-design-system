@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react"
 import styled from "styled-components"
 import theme from "../_theme"
 import PropTypes from "prop-types"
-import LazyImage from "react-lazy-progressive-image"
 import { Headline } from "../Headline"
 import { Breadcrumbs } from "../Breadcrumbs"
 import cameraIcon from "./camera_icon.svg"
@@ -319,7 +318,6 @@ const CaptionCreditIcon = styled.button`
 `
 export const HeroPage = ({
     image1920x1080,
-    image192x108,
     imageAltText,
     copyright,
     imageCaption,
@@ -352,21 +350,14 @@ export const HeroPage = ({
                 </Meta>
                 {image1920x1080 &&
                 <ImageContainer>
-                    <LazyImage
-                        src={image1920x1080}
-                        placeholder={image192x108}
-                        visibilitySensorProps={{
-                            partialVisibility: true
-                        }}
-                    >
-                        {src => 
-                            <>
-                                <StyledImage
-                                    itemprop="image"
-                                    src={src}
-                                    alt={imageAltText ? imageAltText : ""}
-                                />
-                                {imageCaption &&
+                    <>
+                        <StyledImage
+                            itemprop="image"
+                            src={image1920x1080}
+                            alt={imageAltText ? imageAltText : ""}
+                            loading="lazy"
+                        />
+                        {imageCaption &&
                                     <CaptionCreditIconWrapper>
                                         <CaptionCreditIcon className={textDisplay? "add_caption": "remove_caption"}
                                             onClick={()=>setTextDisplay(!textDisplay)}
@@ -376,10 +367,8 @@ export const HeroPage = ({
                                             aria-label="Image caption and credit"
                                             itemprop="copyrightHolder" />
                                     </CaptionCreditIconWrapper>
-                                }
-                            </>
                         }
-                    </LazyImage>
+                    </>
                 </ImageContainer>
                 }
             </Outer>

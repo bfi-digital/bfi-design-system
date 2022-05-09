@@ -5,7 +5,6 @@ import PropTypes from "prop-types"
 import { Headline } from "../Headline"
 import { Button } from "../Button"
 import { LinkSwitch as Link } from "../LinkSwitch"
-import LazyImage from "react-lazy-progressive-image"
 
 const Outer = styled.div`
     background: ${theme.lightest};
@@ -121,7 +120,6 @@ const StyledLink = styled(Link)`
 
 export const FilmCardSingle = ({
     image960x540,
-    image96x54,
     title,
     type,
     director,
@@ -161,12 +159,7 @@ export const FilmCardSingle = ({
             }
         </Content>
         {image960x540 &&
-            <LazyImage
-                src={image960x540}
-                placeholder={image96x54 ? image96x54 : image960x540}
-            >
-                {src => <Image imageSrc={src} />}
-            </LazyImage>
+            <Image imageSrc={image960x540} />
         }
     </Outer>
 
