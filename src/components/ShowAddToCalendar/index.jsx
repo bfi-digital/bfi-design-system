@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import theme from "../_theme"
-import AddToCalendar from "react-add-to-calendar"
+// import AddToCalendar from "react-add-to-calendar"
 import FontAwesome from "react-fontawesome"
 
 const Outer = styled.button`
@@ -88,14 +88,17 @@ export const ShowAddToCalendar = ({
         startTime: dateTimeStart,
         endTime: dateTimeEnd
     }
-    let icon = { "caret": "right" }
-    let calendarItems = [
-        { apple: "Apple Calendar" },
-        { google: "Google" },
-    ]
+    // let icon = { "caret": "right" }
+    // let calendarItems = [
+    //     { apple: "Apple Calendar" },
+    //     { google: "Google" },
+    // ]
     const onButtonClick = () => {
-        var link = document.getElementById("calendar_button")
-        link.childNodes[1].childNodes[0].childNodes[0].click()
+        // var link = document.getElementById("calendar_button")
+        // link.childNodes[1].childNodes[0].childNodes[0].click()
+        console.log(
+            calendarEvent,
+        )
     }
      
     return(
@@ -104,14 +107,14 @@ export const ShowAddToCalendar = ({
                 className="react-add-to-calendar__icon--left"
                 name="calendar-plus-o"
             />
-            <AddToCalendar 
+            {/* <AddToCalendar 
                 event={calendarEvent} 
                 listItems={calendarItems} 
                 buttonTemplate={icon} 
                 displayItemIcons={true} 
                 buttonClassOpen="open"
                 buttonLabel="Add to calendar"
-            />
+            /> */}
         </Outer>
     )
 }
