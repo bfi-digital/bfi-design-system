@@ -32,6 +32,7 @@ export const Wrapper = styled.div`
         }
     }
     article {
+        flex: 1 1 auto;
         max-width: 100%;
         &.landing_page {
             .text_block, .lead_paragraph {
@@ -83,9 +84,6 @@ export const Wrapper = styled.div`
 `
 
 export const MainContentWrapper = styled.article`
-    /* flex: 1; */
-    /* flex: 0 1 100%; */
-    flex: 1 1 0;
     width: 100%;
     
     &.child_page h2:first-child {
