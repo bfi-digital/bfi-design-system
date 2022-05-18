@@ -58,7 +58,17 @@ export const Oembed = ({
     return (
         isVideo ?
             <VideoContainer>
-                {parse(oembedObject.html.replace("></iframe>", " title=\"" + (oembedObject.title ? (oembedObject.title + " video") : "Video player") + "\"></iframe>"))}          
+                {parse(
+                    oembedObject.html.replace("></iframe>", " title=\"" + (oembedObject.title ? (oembedObject.title + " video") : "Video player") + "\"></iframe>"),
+                    {
+                        replace(el) {
+                            if(el.type === "script") {
+                                el.attribs.defer = "defer"
+                                return el
+                            }
+                        }
+                    }
+                )}          
             </VideoContainer>
             :
             <Container>
