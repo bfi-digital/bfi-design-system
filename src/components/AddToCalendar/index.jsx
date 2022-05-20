@@ -1,4 +1,6 @@
+import theme from "../_theme"
 import React from "react"
+import styled from "styled-components"
 
 // Information:
 // https://github.com/InteractionDesignFoundation/add-event-to-calendar-docs
@@ -14,7 +16,68 @@ function formatDate(date) {
     return date.toISOString().replaceAll(/[-.:]/g, "").substr(0, 15) + "Z"
 }
 
-export default function AddToCalendar({ title, description, start, end, location, source }){
+const MenuItem = styled.a`
+	display: block;
+
+	&:link,
+	&:any-link {
+		color: black;
+		font-size: 14px;
+		font-weight: bold;
+		text-decoration: none;
+		padding: 5px 10px;
+	}
+
+	&:hover,
+	&:focus {
+		background: ${theme.lightFocus};
+	}
+`
+
+const Menu = styled.menu`
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+	background: white;
+
+	& > li {
+		list-style: none;
+	}
+`
+
+const Details = styled.details`
+	display: inline-block;
+
+	// Relative position to contain the absolutely positioned menu
+	position: relative;
+
+	& > menu {
+		// Absolute position so it doesn't change parent size when expanded
+		position: absolute;
+		width: 100%;
+	}
+
+	& > summary {
+		color: ${theme.primary};
+		font-weight: bold;
+		font-size: 16px;
+		padding: 10px;
+		cursor: pointer;
+
+		&::marker { content: ""; }
+	}
+
+	&:focus-within, &:hover, &[open] {
+		outline: 3px solid ${theme.focus};
+	}
+`
+
+const closeDetails = e=>e.currentTarget.open=e.currentTarget.contains(e.relatedTarget)
+
+export default function AddToCalendar({ title, description, start, end, location, source, ...etc }){
+    const id = source?.href || title+start
+    const url = source?.href || "https://bfi.org.uk/"
     const googleParams = new URLSearchParams([
         ...Object.entries({
             action: "TEMPLATE",
@@ -23,8 +86,8 @@ export default function AddToCalendar({ title, description, start, end, location
             details: description,
             location
         }),
-        ["sprop", `website:${source.href}`],
-        ["sprop", `source:${source.title}`]
+        ["sprop", `website:${url}`],
+        ["sprop", `source:${source?.title||url}`]
     ])
     const googleUrl = `https://calendar.google.com/calendar/render?${googleParams}`
 
@@ -35,8 +98,8 @@ export default function AddToCalendar({ title, description, start, end, location
         ET: formatDate(end),
         DESC: description,
         in_loc: location,
-        url: source.href,
-        uid: source.href
+        url,
+        uid: id
     })
     const yahooUrl = `https://calendar.yahoo.com/?${yahooParams}`
 
@@ -57,8 +120,8 @@ export default function AddToCalendar({ title, description, start, end, location
 		PRODID:BFI
 		VERSION:2.0
 		BEGIN:VEVENT
-		UID:${source.href}
-		URL:${source.href}
+		UID:${id}
+		URL:${url}
 		DTSTAMP:${formatDate(new Date())}
 		DTSTART:${formatDate(start)}
 		DTEND:${formatDate(end)}
@@ -72,14 +135,14 @@ export default function AddToCalendar({ title, description, start, end, location
 
     const filename = `${title}.ics`
 
-    return <details>
+    return <Details {...etc} onBlur={closeDetails}>
         <summary>Add to calendar</summary>
-        <menu>
-            <li><a href={googleUrl}>Google</a></li>
-            <li><a href={icalLink} download={filename}>Apple</a></li>
-            <li><a href={yahooUrl}>Yahoo</a></li>
-            <li><a href={outlookUrl}>Outlook</a></li>
-            <li><a href={icalLink} download={filename}>Download .ics</a></li>
-        </menu>
-    </details>
+        <Menu>
+            <li><MenuItem href={googleUrl}>Google</MenuItem></li>
+            <li><MenuItem href={icalLink} download={filename}>Apple</MenuItem></li>
+            <li><MenuItem href={yahooUrl}>Yahoo</MenuItem></li>
+            <li><MenuItem href={outlookUrl}>Outlook</MenuItem></li>
+            <li><MenuItem href={icalLink} download={filename}>Download .ics</MenuItem></li>
+        </Menu>
+    </Details>
 }
