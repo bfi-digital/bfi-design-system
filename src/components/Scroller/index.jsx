@@ -31,15 +31,15 @@ const ScrollerTrack = styled.div`
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
 
+    a:first-of-type {
+        margin-left: 40px;
+    }
+
     &.film_grid {
         a {
             scroll-snap-align: start;
             scroll-snap-stop: bold;
             padding-left: 25px;
-
-            &:first-of-type {
-                padding-left: 40px;
-            }
             
             &:focus {
                 box-shadow: none;
