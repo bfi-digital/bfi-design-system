@@ -1,6 +1,11 @@
 import theme from "../_theme"
 import React from "react"
 import styled from "styled-components"
+import Calendar from "./calendar-plus.jsx"
+import Triangle from "./triangle"
+
+// const calendar = new URL('./calendar-plus.svg', import.meta.url);
+// const triangle = new URL('./triangle.svg', import.meta.url);
 
 // Information:
 // https://github.com/InteractionDesignFoundation/add-event-to-calendar-docs
@@ -64,8 +69,9 @@ const Details = styled.details`
 		font-size: 16px;
 		padding: 10px;
 		cursor: pointer;
-
-		&::marker { content: ""; }
+		display: flex;
+		padding: 10px;
+		gap: 10px;
 	}
 
 	&:focus-within, &:hover, &[open] {
@@ -136,7 +142,11 @@ export default function AddToCalendar({ title, description, start, end, location
     const filename = `${title}.ics`
 
     return <Details {...etc} onBlur={closeDetails}>
-        <summary>Add to calendar</summary>
+        <summary>
+            <Calendar style={{height: "22px", fill: "currentColor"}} aria-hidden="true"/>
+			Add to calendar
+            <Triangle style={{ height: "12px", fill: "currentColor", alignSelf: "center" }} aria-hidden="true"/>
+        </summary>
         <Menu>
             <li><MenuItem href={googleUrl}>Google</MenuItem></li>
             <li><MenuItem href={icalLink} download={filename}>Apple</MenuItem></li>
