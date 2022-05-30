@@ -8,7 +8,7 @@ dayjs.extend(isBetween)
 import "moment-timezone"
 import { Headline } from "../Headline"
 import { Button } from "../Button"
-import { ShowAddToCalendar } from "../ShowAddToCalendar"
+import AddToCalendar from "../AddToCalendar"
 
 const Outer = styled.div`
   font-size: ${theme.fontSize_s};
@@ -161,7 +161,7 @@ export const ShowPerformanceList = ({
                                                     )}
                                                 </strong>
                                             </p>
-                                            <ShowAddToCalendar
+                                            <AddToCalendar
                                                 title={showTitle}
                                                 description={showDescription}
                                                 location={
@@ -169,13 +169,13 @@ export const ShowPerformanceList = ({
                                                         ? "BFI Southbank, Belvedere Rd, Bishop's, London SE1 8XT"
                                                         : performance.ctaURL
                                                 }
-                                                dateTimeStart={performance.dateTimeStart}
-                                                dateTimeEnd={
-                                                    performance.dateTimeEnd
+                                                start={new Date(performance.dateTimeStart)}
+                                                end={
+                                                    new Date(performance.dateTimeEnd
                                                         ? performance.dateTimeEnd
                                                         : new Date(performance.dateTimeEnd).setHours(
                                                             new Date(performance.dateTimeEnd).getHours() + 2
-                                                        )
+                                                        ))
                                                 }
                                             />
                                         </>

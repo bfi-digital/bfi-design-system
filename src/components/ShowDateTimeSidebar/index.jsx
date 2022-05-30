@@ -3,7 +3,7 @@ import styled from "styled-components"
 import theme from "../_theme"
 import Moment from "react-moment"
 import "moment-timezone"
-import { ShowAddToCalendar } from "../ShowAddToCalendar"
+import AddToCalendar from "../AddToCalendar"
 
 const Outer = styled.div`
     font-size: 1.2rem;
@@ -77,12 +77,12 @@ export const ShowDateTimeSidebar = ({
             }
 
             {datesAreOnSameDay && 
-                <ShowAddToCalendar 
+                <AddToCalendar 
                     title={title} 
                     description={description} 
                     location={singlePerformance.platform} 
-                    dateTimeStart={singlePerformance.dateTimeStart} 
-                    dateTimeEnd={singlePerformance.dateTimeEnd ? singlePerformance.dateTimeEnd : processedStartDateTime.setHours(processedStartDateTime.getHours() + 2)} 
+                    start={singlePerformance.dateTimeStart} 
+                    end={singlePerformance.dateTimeEnd ? singlePerformance.dateTimeEnd : processedStartDateTime.setHours(processedStartDateTime.getHours() + 2)} 
                 />
             }
         </Outer>
