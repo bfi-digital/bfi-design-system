@@ -82,7 +82,6 @@
     "moment-timezone": "^0.5.34",
     "prop-types": "^15.8.1",
     "react-anchor-link-smooth-scroll": "^1.0.12",
-    "react-fontawesome": "^1.7.1",
     "react-load-script": "0.0.6",
     "react-moment": "^1.1.1",
     "react-remove-scroll-bar": "^2.2.0"
