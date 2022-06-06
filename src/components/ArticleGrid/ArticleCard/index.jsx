@@ -3,6 +3,7 @@ import styled from "styled-components"
 import theme from "../../_theme"
 import { LinkSwitch as Link } from "../../LinkSwitch"
 import { Headline } from "../../Headline"
+import getAttribution, { hasAttribution } from "../authorText"
 
 const Outer = styled.div`
     position: relative;
@@ -182,7 +183,7 @@ export const ArticleCard = ({
         </PageImageContainer>
         <Headline level={6} text={title} />
         <Meta>
-            {author && <Author>By {author}</Author>}
+            {hasAttribution(author) && <Author>{getAttribution(author)}</Author>}
         </Meta>
 
         <CallToAction 

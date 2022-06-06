@@ -5,7 +5,7 @@ export default [
         image48x27: "https://www.bfi.org.uk/sites/bfi.org.uk/files/styles/api_original/public/news/demoiselles-de-rochefort-les-1966-001-gene-kelly-1000x750.jpg?itok=fSF3NzTc",
         imageAltText: "Example image",
         standfirst: "As BFI Southbank hosts a two-month celebration of some of the great dance movies, writers from across the BFI pick out a favourite on-screen&nbsp;dancing moment that always gets their toes tapping.",
-        author: "Josephine Botting, Jóse de Esteban, Jez Stewart, John Oliver & others",
+        author: ["Josephine Botting", "Jóse de Esteban", "Jez Stewart", "John Oliver"],
         date: "9 February 2017",
         url: "https://www.bfi.org.uk/news-opinion/news-bfi/lists/36-amazing-dance-scenes",
         uuid: "06347a64-5abd-59de-a6b9-be0d4a9e31e1111",
