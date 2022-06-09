@@ -8,4 +8,4 @@ export default {
 }
 
 export const normal = () =>
-    <CaptionedImage src="http://example.com" alt="Alt text">Caption goes here</CaptionedImage>
+    <CaptionedImage src="https://via.placeholder.com/500x250" alt="Alt text">Caption goes here</CaptionedImage>

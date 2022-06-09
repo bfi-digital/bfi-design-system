@@ -8,10 +8,10 @@ export default {
 }
 
 export const full = () =>
-    <IntroBlock src="http://example.com/img.jpg" alt="Alt text" caption="Caption text is here" title="Page title" standfirst="Page standfirst text is here" copyright="Copyright text goes here" />
+    <IntroBlock src="https://via.placeholder.com/500x250" alt="Alt text" caption="Caption text is here" title="Page title" standfirst="Page standfirst text is here" copyright="Copyright text goes here" />
 
 export const noCopyright = () =>
-    <IntroBlock src="http://example.com/img.jpg" alt="Alt text" caption="Caption text is here" title="Page title" standfirst="Page standfirst text is here" />
+    <IntroBlock src="https://via.placeholder.com/500x250" alt="Alt text" caption="Caption text is here" title="Page title" standfirst="Page standfirst text is here" />
 
 export const noImage = () =>
     <IntroBlock title="Page title" standfirst="Page standfirst text is here" />
