@@ -65,3 +65,7 @@ export * from "./components/Selectbox"
 
 // Page scaffolds
 export * from "./components/PageContainer"
+
+
+// Theme
+export * as theme from './components/_theme';
