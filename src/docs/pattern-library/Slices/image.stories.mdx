@@ -1,4 +1,4 @@
-import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+import { Meta, Story, ArgsTable, Canvas } from "@storybook/addon-docs"
 import { Image } from "../../../components/Image/index"
 import { Text } from "../../../components/Text/index"
 
@@ -9,7 +9,7 @@ import { Text } from "../../../components/Text/index"
  
 ## Examples
 
-<Preview>
+<Canvas>
     <Story name="Image full width">
         <div style={{padding: "20px"}}>
             <Image
@@ -34,9 +34,9 @@ import { Text } from "../../../components/Text/index"
             </Text>
         </div>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="Image right side and big">
         <div style={{padding: "20px"}}>
             <Image
@@ -62,9 +62,9 @@ import { Text } from "../../../components/Text/index"
             </Text>
         </div>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="Image right side and small and clickable">
         <div style={{padding: "20px"}}>
             <Image
@@ -92,9 +92,9 @@ import { Text } from "../../../components/Text/index"
             </Text>
         </div>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="Image left side and small with copyright">
         <div style={{padding: "20px"}}>
             <Image
@@ -123,8 +123,8 @@ import { Text } from "../../../components/Text/index"
             </Text>
         </div>
     </Story>
-</Preview>
+</Canvas>
 
 ## Props 
 
-<Props of={Image} />
+<ArgsTable of={Image} />

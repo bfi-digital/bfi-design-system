@@ -1,4 +1,4 @@
-import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+import { Meta, Story, ArgsTable, Canvas } from "@storybook/addon-docs"
 import { PageLinks } from "../../../components/PageLinks/index"
 import three, { two } from "../../../components/PageLinks/data"
 
@@ -10,48 +10,48 @@ import three, { two } from "../../../components/PageLinks/data"
  
 ## Examples
 
-<Preview>
+<Canvas>
     <Story name="Three Links">
         <div style={{padding: "20px"}}>
             <PageLinks links={three} />
         </div>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="Three Links with images">
         <div style={{padding: "20px"}}>
             <PageLinks links={three} withImages={true} />
         </div>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="Four Links">
         <div style={{padding: "20px"}}>
             <PageLinks links={[...two, ...two]} />
         </div>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="Five Links without gap">
         <div style={{padding: "20px"}}>
             <PageLinks links={two} />
             <PageLinks links={three} />
         </div>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="Six Links">
         <div style={{padding: "20px"}}>
             <PageLinks links={[...three, ...three]} />
         </div>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="Nine Links">
         <div style={{padding: "20px"}}>
             <PageLinks links={[
@@ -59,9 +59,9 @@ import three, { two } from "../../../components/PageLinks/data"
             ]} />
         </div>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="Twelve Links">
         <div style={{padding: "20px"}}>
             <PageLinks links={[
@@ -69,7 +69,7 @@ import three, { two } from "../../../components/PageLinks/data"
             ]} />
         </div>
     </Story>
-</Preview>
+</Canvas>
 
 
 
@@ -77,4 +77,4 @@ import three, { two } from "../../../components/PageLinks/data"
 
 ## Props 
 
-<Props of={PageLinks} />
+<ArgsTable of={PageLinks} />

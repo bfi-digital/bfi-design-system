@@ -1,4 +1,4 @@
-import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks'
+import { Meta, Story, ArgsTable, Canvas } from "@storybook/addon-docs"
 import { FilterableArticles } from "../../../components/FilterableArticles/index"
 import demoArticles from "../../../components/ArticleGrid/data"
 
@@ -12,12 +12,12 @@ Importantly there needs to be a function passed to this component called `loadMo
 
 ## Props 
 
-<Props of={FilterableArticles} />
+<ArgsTable of={FilterableArticles} />
 
 
 ## Examples
 
-<Preview>
+<Canvas>
     <Story name="All articles">
         <FilterableArticles
             articles={[...demoArticles, ...demoArticles, ...demoArticles.slice(0, 2)]}
@@ -56,9 +56,9 @@ Importantly there needs to be a function passed to this component called `loadMo
             loadMoreLoading={true}
         />
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="Limited articles with filters">
         <FilterableArticles
             articles={demoArticles.slice(0,2)}
@@ -96,9 +96,9 @@ Importantly there needs to be a function passed to this component called `loadMo
             limit={3}
         />
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="Limited articles with grey background">
         <FilterableArticles
             articles={demoArticles.slice(0,3)}
@@ -111,9 +111,9 @@ Importantly there needs to be a function passed to this component called `loadMo
             optionalCTATitle="See more"
         />
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="No articles found">
         <FilterableArticles
             filters={[
@@ -150,9 +150,9 @@ Importantly there needs to be a function passed to this component called `loadMo
             loadMore={true}
         />
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="Loading">
         <FilterableArticles
             loading
@@ -161,9 +161,9 @@ Importantly there needs to be a function passed to this component called `loadMo
             optionalCTALink="/"
         />
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="Loading with limit">
         <FilterableArticles
             loading
@@ -173,4 +173,4 @@ Importantly there needs to be a function passed to this component called `loadMo
             optionalCTALink="/"
         />
     </Story>
-</Preview>
+</Canvas>

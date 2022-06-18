@@ -1,9 +1,8 @@
-import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+import { Meta, Story, ArgsTable, Canvas } from "@storybook/addon-docs"
 import { Grid , GridCard } from "../../../components/Grid/index"
 import { FilmCard } from "../../../components/FilmGrid/FilmCard"
 
 import filmData from "../../../components/FilmGrid/data.js"
-const demoFilms = [];
 
 <Meta title="2 Pattern Library/4 Slices/Generic Grid" component={Grid} />
 
@@ -12,7 +11,7 @@ const demoFilms = [];
  
 ## Examples
 
-<Preview>
+<Canvas>
     <Story name="Grid with film cards">
         <div style={{
             margin: "50px",
@@ -26,9 +25,9 @@ const demoFilms = [];
             </Grid>
         </div>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="Grid, not scrolling">
         <div style={{
             margin: "50px",
@@ -43,8 +42,8 @@ const demoFilms = [];
             </Grid>
         </div>
     </Story>
-</Preview>
+</Canvas>
 
 ## Props of each file
 
-<Props of={Grid} />
+<ArgsTable of={Grid} />

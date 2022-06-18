@@ -1,4 +1,4 @@
-import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+import { Meta, Story, ArgsTable, Canvas } from "@storybook/addon-docs"
 import { DownloadableFiles } from "../../../components/DownloadableFiles/index"
 import { FileDownload } from "../../../components/DownloadableFiles/FileDownload/index"
 import demoFiles, { one, empty } from "../../../components/DownloadableFiles/data"
@@ -10,7 +10,7 @@ import demoFiles, { one, empty } from "../../../components/DownloadableFiles/dat
  
 ## Examples
 
-<Preview>
+<Canvas>
     <Story name="Single File Download">
         <div style={{padding: "20px"}}>
             <DownloadableFiles
@@ -18,9 +18,9 @@ import demoFiles, { one, empty } from "../../../components/DownloadableFiles/dat
             />
         </div>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="Multiple File Downloads">
         <div style={{padding: "20px"}}>
             <DownloadableFiles
@@ -28,9 +28,9 @@ import demoFiles, { one, empty } from "../../../components/DownloadableFiles/dat
             />
         </div>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="Empty test">
         <div style={{padding: "20px"}}>
             <DownloadableFiles
@@ -38,8 +38,8 @@ import demoFiles, { one, empty } from "../../../components/DownloadableFiles/dat
             />
         </div>
     </Story>
-</Preview>
+</Canvas>
 
 ## Props of each file
 
-<Props of={FileDownload} />
+<ArgsTable of={FileDownload} />

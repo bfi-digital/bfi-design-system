@@ -1,4 +1,4 @@
-import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+import { Meta, Story, ArgsTable, Canvas } from "@storybook/addon-docs"
 import { ArticleGrid } from "../../../components/ArticleGrid/index"
 import demoArticles from "../../../components/ArticleGrid/data"
 
@@ -9,7 +9,7 @@ import demoArticles from "../../../components/ArticleGrid/data"
  
 ## Examples
 
-<Preview>
+<Canvas>
     <Story name="Multiple Articles with first highlighted">
         <div style={{
             padding: "10px",
@@ -19,9 +19,9 @@ import demoArticles from "../../../components/ArticleGrid/data"
             <ArticleGrid articles={[...demoArticles, ...demoArticles, ...demoArticles, ...demoArticles, ...demoArticles, ...demoArticles, ...demoArticles.slice(0, 2)]} firstHighlighted />
         </div>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="Multiple Articles without first highlighted">
         <div style={{
             padding: "10px",
@@ -31,9 +31,9 @@ import demoArticles from "../../../components/ArticleGrid/data"
             <ArticleGrid articles={[...demoArticles, ...demoArticles, ...demoArticles, ...demoArticles, ...demoArticles, ...demoArticles, ...demoArticles]} />
         </div>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="Multiple Articles limited to 3 with load more">
         <div style={{
             padding: "10px",
@@ -43,9 +43,9 @@ import demoArticles from "../../../components/ArticleGrid/data"
             <ArticleGrid limitArticles articles={[...demoArticles, ...demoArticles]} />
         </div>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="Multiple Articles with first highlighted no grey background">
         <div style={{
             padding: "10px",
@@ -57,9 +57,9 @@ import demoArticles from "../../../components/ArticleGrid/data"
             </ArticleGrid>
         </div>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="Three Articles with title and CTA">
         <div style={{
             padding: "10px",
@@ -69,9 +69,9 @@ import demoArticles from "../../../components/ArticleGrid/data"
             <ArticleGrid articles={[...demoArticles]} optionalTitle="Latest articles" optionalCTALink="http://google.com" optionalCTATitle="View all articles" />
         </div>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="1 Article">
         <div style={{
             padding: "10px",
@@ -81,9 +81,9 @@ import demoArticles from "../../../components/ArticleGrid/data"
             <ArticleGrid articles={[demoArticles[0]]} />
         </div>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="2 Articles">
         <div style={{
             padding: "10px",
@@ -93,9 +93,9 @@ import demoArticles from "../../../components/ArticleGrid/data"
             <ArticleGrid articles={demoArticles.slice(0, 2)} />
         </div>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="3 Articles">
         <div style={{
             padding: "10px",
@@ -105,9 +105,9 @@ import demoArticles from "../../../components/ArticleGrid/data"
             <ArticleGrid articles={demoArticles.slice(0, 3)} />
         </div>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="4 Articles">
         <div style={{
             padding: "10px",
@@ -117,9 +117,9 @@ import demoArticles from "../../../components/ArticleGrid/data"
             <ArticleGrid articles={[...demoArticles.slice(0, 4)]} />
         </div>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="5 Articles">
         <div style={{
             padding: "10px",
@@ -129,9 +129,9 @@ import demoArticles from "../../../components/ArticleGrid/data"
             <ArticleGrid articles={[...demoArticles.slice(0, 5)]} />
         </div>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="6 Articles">
         <div style={{
             padding: "10px",
@@ -141,9 +141,9 @@ import demoArticles from "../../../components/ArticleGrid/data"
             <ArticleGrid articles={[...demoArticles.slice(0, 6)]} />
         </div>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="Loading">
         <div style={{
             padding: "10px",
@@ -153,9 +153,9 @@ import demoArticles from "../../../components/ArticleGrid/data"
             <ArticleGrid articles={false} />
         </div>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="Loading with limit">
         <div style={{
             padding: "10px",
@@ -165,10 +165,10 @@ import demoArticles from "../../../components/ArticleGrid/data"
             <ArticleGrid articles={false} skeletons={3} />
         </div>
     </Story>
-</Preview>
+</Canvas>
 
 
-<Preview>
+<Canvas>
     <Story name="Example of loading state">
         <div style={{
             padding: "10px",
@@ -180,8 +180,8 @@ import demoArticles from "../../../components/ArticleGrid/data"
             </ArticleGrid>
         </div>
     </Story>
-</Preview>
+</Canvas>
 
 ## Props 
 
-<Props of={ArticleGrid} />
+<ArgsTable of={ArticleGrid} />

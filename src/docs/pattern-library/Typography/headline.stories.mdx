@@ -1,4 +1,4 @@
-import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+import { Meta, Story, ArgsTable, Canvas } from "@storybook/addon-docs"
 import { Headline } from "../../../components/Headline/index"
 
 <Meta title="2 Pattern Library/2 Typography/Headline" component={Headline} />
@@ -25,55 +25,55 @@ There are also options of the H3 and H4 without HTML markup, this is so that the
 
 ## Props 
 
-<Props of={Headline} />
+<ArgsTable of={Headline} />
 
 ## Examples 
 
-<Preview>
+<Canvas>
     <Story name="Level 0 - Hero H1">
         <Headline level={0} text="Example headline level 1 on top of heros" />
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="Level 1 - H1">
         <Headline level={1} text="Example headline level 1 for regular pages" />
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="Level 2 - H2">
         <Headline level={2} text="Example headline level 2" />
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="Level 3 - H3">
         <Headline level={3} text="Example headline level 3" />
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="Level 6 H3 without the HTML markup">
         <Headline level={6} text="Example headline level 4 without the HTML markup" />
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="Level 4 - H4">
         <Headline level={4} text="Example headline level 4" />
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="Level 7 H4 without the HTML markup">
         <Headline level={7} text="Example headline level 4 without the HTML markup" />
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="Level 5 - H5">
         <Headline level={5} text="Example headline level 5" />
     </Story>
-</Preview>
+</Canvas>
 

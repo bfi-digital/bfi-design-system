@@ -1,4 +1,4 @@
-import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+import { Meta, Story, ArgsTable, Canvas } from "@storybook/addon-docs"
 import { SidebarStrandBanner } from "../../../components/SidebarStrandBanner/index"
 import strandExample, { strand2 } from "../../../components/SidebarStrandBanner/data"
 
@@ -14,19 +14,19 @@ The Strandbanner includes a colour scheme, image, text and link. It can also hav
  
 ## Examples
 
-<Preview>
+<Canvas>
     <Story name="Example">
         <div style={{padding: "20px", maxWidth: "350px"}}>
             <SidebarStrandBanner strand={strandExample} />
         </div>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="Example 2">
         <div style={{padding: "20px", maxWidth: "350px"}}>
             <SidebarStrandBanner strand={strand2} />
         </div>
     </Story>
-</Preview>
+</Canvas>
 

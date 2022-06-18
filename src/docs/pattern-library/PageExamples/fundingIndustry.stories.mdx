@@ -1,4 +1,4 @@
-import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks'
+import { Meta, Story, ArgsTable, Canvas } from "@storybook/addon-docs"
 import { Wrapper, MainContent, Sidebar, Actions, PlayButton, OriginalArticleDate } from "../../../components/PageContainer"
 
 import navItems, { quickLinksData } from "../../../components/Header/data"
@@ -37,7 +37,7 @@ import { StepByStep } from "../../../components/StepByStep"
 
 ## Pages
 
-<Preview>
+<Canvas>
     <Story name="1 Landing Page">
         <>
             <Header navItems={navItems} quickLinks={quickLinksData} overlay={true} />
@@ -132,9 +132,9 @@ import { StepByStep } from "../../../components/StepByStep"
             />
         </>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="2 Service List Page Example">
         <>
             <Header navItems={navItems} quickLinks={quickLinksData}  />
@@ -220,9 +220,9 @@ import { StepByStep } from "../../../components/StepByStep"
             />
         </>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="3 Sub Service List Example">
         <>
             <Header navItems={navItems} quickLinks={quickLinksData}  />
@@ -292,9 +292,9 @@ import { StepByStep } from "../../../components/StepByStep"
             />
         </>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="4 Funding Example">
         <>
             <Header navItems={navItems} quickLinks={quickLinksData} />
@@ -382,4 +382,4 @@ import { StepByStep } from "../../../components/StepByStep"
             />
         </>
     </Story>
-</Preview>
+</Canvas>

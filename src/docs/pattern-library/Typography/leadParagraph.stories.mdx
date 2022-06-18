@@ -1,4 +1,4 @@
-import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+import { Meta, Story, ArgsTable, Canvas } from "@storybook/addon-docs"
 import { LeadParagraph } from "../../../components/LeadParagraph/index"
 
 <Meta title="2 Pattern Library/2 Typography/LeadParagraph" component={LeadParagraph} />
@@ -11,11 +11,11 @@ This is a very simple slice with just a textarea field.
 
 ## Props 
 
-<Props of={LeadParagraph} />
+<ArgsTable of={LeadParagraph} />
 
 ## Example
  
-<Preview>
+<Canvas>
     <Story name="Normal">
         <div style={{padding: "20px"}}>
             <LeadParagraph
@@ -23,4 +23,4 @@ This is a very simple slice with just a textarea field.
             />
         </div>
     </Story>
-</Preview>
+</Canvas>

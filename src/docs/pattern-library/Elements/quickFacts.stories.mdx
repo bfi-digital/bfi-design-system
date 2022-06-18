@@ -1,4 +1,4 @@
-import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks'
+import { Meta, Story, ArgsTable, Canvas } from "@storybook/addon-docs"
 import { QuickFacts } from "../../../components/QuickFacts/index"
 
 <Meta title="2 Pattern Library/3 Elements/QuickFacts" component={QuickFacts} />
@@ -17,18 +17,18 @@ the custom property `--quick-facts-columns` to `2`.
 
 ## Examples
 
-<Preview>
+<Canvas>
     <Story name="One column">
         <QuickFacts facts={[{ value: 'USA, 1992' }, { label: 'Label one', value: 'fact 1' }, { label: 'More information', value: 'thank you very much' }]}/>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="Two column">
         <QuickFacts facts={[{ value: 'USA, 1992, more information here to demonstrate two-column span' }, { label: 'Label one', value: 'fact 1' }, { label: 'More information', value: 'thank you very much' } ]} columns="2" />
     </Story>
-</Preview>
+</Canvas>
 
 ## Props
 
-<Props of={QuickFacts} />
+<ArgsTable of={QuickFacts} />

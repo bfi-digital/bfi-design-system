@@ -1,4 +1,4 @@
-import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+import { Meta, Story, ArgsTable, Canvas } from "@storybook/addon-docs"
 import { ShowPerformanceList } from "../../../components/ShowPerformanceList/index"
 import demoPerformances from "../../../components/ShowPerformanceList/data"
 
@@ -18,7 +18,7 @@ If a performance is running on a single day rather than over the course of multi
 
 ## Examples 
 
-<Preview>
+<Canvas>
     <Story name="LFF 2020 Example">
         <div style={{
             padding: "5px",
@@ -31,9 +31,9 @@ If a performance is running on a single day rather than over the course of multi
             />
         </div>
     </Story>
-</Preview>
+</Canvas>
 
 
 ## Props 
 
-<Props of={ShowPerformanceList} />
+<ArgsTable of={ShowPerformanceList} />

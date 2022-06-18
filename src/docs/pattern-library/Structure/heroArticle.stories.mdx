@@ -1,4 +1,4 @@
-import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+import { Meta, Story, ArgsTable, Canvas } from "@storybook/addon-docs"
 import { HeroArticle } from "../../../components/HeroArticle/index"
 import SandSlogoWhite from "./images/s-and-s-white.png"
 import SandSlogoBlack from "./images/s-and-s-black.png"
@@ -25,11 +25,11 @@ Articles can be branded within the CMS. If they are added to a brand they become
  
 ## Props 
 
-<Props of={HeroArticle} />
+<ArgsTable of={HeroArticle} />
 
 ## Examples 
 
-<Preview>
+<Canvas>
     <Story name="Feature example">
         <HeroArticle 
             image1920x1080="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1920/1080/1/2020-03/Hero.jpg"
@@ -73,9 +73,9 @@ Articles can be branded within the CMS. If they are added to a brand they become
             ]}
         />
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="Feature example updated date">
         <HeroArticle 
             image1920x1080="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1920/1080/1/2020-03/Hero.jpg"
@@ -129,9 +129,9 @@ Articles can be branded within the CMS. If they are added to a brand they become
             ]}
         />
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="List example">
         <HeroArticle 
             title="Five things to watch this weekend – 24-26 April"
@@ -148,9 +148,9 @@ Articles can be branded within the CMS. If they are added to a brand they become
             ]}
         />
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="Recommends example">
         <HeroArticle 
             title="BFI Recommends: Carol"
@@ -174,9 +174,9 @@ Articles can be branded within the CMS. If they are added to a brand they become
             ]}
         />
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="Recommends example no author">
         <HeroArticle 
             title="BFI Recommends: Carol"
@@ -197,9 +197,9 @@ Articles can be branded within the CMS. If they are added to a brand they become
             ]}
         />
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="Sight &amp; Sound Feature example">
         <HeroArticle 
             image1920x1080="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1920/1080/1/2020-03/Hero.jpg"
@@ -252,9 +252,9 @@ Articles can be branded within the CMS. If they are added to a brand they become
             ]}
         />
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="Sight &amp; Sound Feature example no hero image">
         <HeroArticle 
             title="Britain on Lockdown: How online videos have shaped the crisis"
@@ -303,4 +303,4 @@ Articles can be branded within the CMS. If they are added to a brand they become
             ]}
         />
     </Story>
-</Preview>
+</Canvas>

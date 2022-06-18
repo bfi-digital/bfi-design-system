@@ -1,4 +1,4 @@
-import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+import { Meta, Story, ArgsTable, Canvas } from "@storybook/addon-docs"
 import { Footer } from "../../../components/Footer/index"
 import data from "../../../components/Footer/data"
 
@@ -14,11 +14,11 @@ Finally the copyright and important other links are provided at the bottom allow
  
 ## Props 
 
-<Props of={Footer} />
+<ArgsTable of={Footer} />
 
 ## Examples
 
-<Preview>
+<Canvas>
     <Story name="Footer">
         <Footer
             menus={data}
@@ -43,4 +43,4 @@ Finally the copyright and important other links are provided at the bottom allow
             copyrightText="©2020 British Film Institute. All rights reserved. Registered charity 287780"
         />
     </Story>
-</Preview>
+</Canvas>

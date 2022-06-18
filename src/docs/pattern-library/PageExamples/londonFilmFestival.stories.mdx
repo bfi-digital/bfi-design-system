@@ -1,4 +1,4 @@
-import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks'
+import { Meta, Story, ArgsTable, Canvas } from "@storybook/addon-docs"
 import { Wrapper, MainContent, MainContentWrapper, Sidebar, Actions, PlayButton, OriginalArticleDate } from "../../../components/PageContainer"
 
 import navItems, { quickLinksData } from "../../../components/Header/data"
@@ -57,7 +57,7 @@ import iwcLogo from "./images/logo.png"
 
 ## Pages
 
-<Preview>
+<Canvas>
     <Story name="1 Landing Page">
         <>
             <Header navItems={navItems} quickLinks={quickLinksData} overlay={true} />
@@ -99,9 +99,9 @@ import iwcLogo from "./images/logo.png"
             />
         </>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="2.1 Show - film - 1 performance - specific time">
         <>
             <Header navItems={navItems} quickLinks={quickLinksData} />
@@ -218,9 +218,9 @@ import iwcLogo from "./images/logo.png"
             />
         </>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="2.2 Show - film - 1 performance - full festival">
         <>
             <Header navItems={navItems} quickLinks={quickLinksData} />
@@ -330,10 +330,10 @@ import iwcLogo from "./images/logo.png"
             />
         </>
     </Story>
-</Preview>
+</Canvas>
 
 
-<Preview>
+<Canvas>
     <Story name="2.3 Show - film - multi performances">
         <>
             <Header navItems={navItems} quickLinks={quickLinksData} />
@@ -431,10 +431,10 @@ import iwcLogo from "./images/logo.png"
             />
         </>
     </Story>
-</Preview>
+</Canvas>
 
 
-<Preview>
+<Canvas>
     <Story name="2.4 Show - film - multi performances with video">
         <>
             <Header navItems={navItems} quickLinks={quickLinksData} />
@@ -538,10 +538,10 @@ import iwcLogo from "./images/logo.png"
             />
         </>
     </Story>
-</Preview>
+</Canvas>
 
 
-<Preview>
+<Canvas>
     <Story name="3.1 Programme - view all strands">
         <>
             <Header navItems={navItems} quickLinks={quickLinksData} />
@@ -593,9 +593,9 @@ import iwcLogo from "./images/logo.png"
             />
         </>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="3.2 Programme - view all films">
         <>
             <Header navItems={navItems} quickLinks={quickLinksData} />
@@ -632,9 +632,9 @@ import iwcLogo from "./images/logo.png"
             />
         </>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="3.3 Programme - view all events">
         <>
             <Header navItems={navItems} quickLinks={quickLinksData} />
@@ -671,4 +671,4 @@ import iwcLogo from "./images/logo.png"
             />
         </>
     </Story>
-</Preview>
+</Canvas>
