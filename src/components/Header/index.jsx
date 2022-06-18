@@ -203,7 +203,11 @@ export const Header = ({
     }, [])
 
 
-    useEffect(() => handleScroll(), [])
+    useEffect(() => {
+        if (ref.current) {
+            handleScroll()
+        }
+    }, [ref])
 
     return(
         <>
