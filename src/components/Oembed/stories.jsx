@@ -1,10 +1,8 @@
 import * as React from "react"
-import { withA11y } from "@storybook/addon-a11y"
 import { Oembed } from "./index"
 
 export default {
-    title: "4 Components/All/Oembed",
-    decorators: [withA11y]
+    title: "4 Components/All/Oembed"
 }
 
 const vimeoExampleData = [

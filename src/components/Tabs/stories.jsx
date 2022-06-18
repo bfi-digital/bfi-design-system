@@ -1,10 +1,8 @@
 import React, { useState } from "react"
-import { withA11y } from "@storybook/addon-a11y"
 import { TabList, Tab, TabPanel } from "./index"
 
 export default {
-    title: "4 Components/All/Tabs",
-    decorators: [withA11y]
+    title: "4 Components/All/Tabs"
 }
 
 const Tabs = () => {

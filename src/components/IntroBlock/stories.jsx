@@ -1,10 +1,8 @@
 import React from "react"
-import { withA11y } from "@storybook/addon-a11y"
 import { IntroBlock } from "./index"
 
 export default {
-    title: "IntroBlock",
-    decorators: [withA11y]
+    title: "IntroBlock"
 }
 
 export const full = () =>

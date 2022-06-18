@@ -1,11 +1,9 @@
 import * as React from "react"
-import { withA11y } from "@storybook/addon-a11y"
 import { Header } from "./index"
 import navItems, { quickLinksData } from "./data"
 
 export default {
     title: "4 Components/All/Header",
-    decorators: [withA11y],
     parameters: {
         backgrounds: [
             { name: "black", value: "#000000", default: true },

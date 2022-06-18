@@ -1,11 +1,9 @@
 import * as React from "react"
-import { withA11y } from "@storybook/addon-a11y"
 import { Breadcrumbs } from "./index"
 import data, {longData} from "./data"
 
 export default {
-    title: "4 Components/All/Breadcrumbs",
-    decorators: [withA11y],
+    title: "4 Components/All/Breadcrumbs"
 }
 
 export const normal = () =>

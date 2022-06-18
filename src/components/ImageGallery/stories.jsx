@@ -1,11 +1,9 @@
 import * as React from "react"
-import { withA11y } from "@storybook/addon-a11y"
 import { ImageGallery } from "./index"
 import {Wrapper} from "../PageContainer"
 
 export default {
-    title: "4 Components/All/ImageGallery",
-    decorators: [withA11y]
+    title: "4 Components/All/ImageGallery"
 }
 
 const landscapeImages = [

@@ -1,10 +1,8 @@
 import React from "react"
-import { withA11y } from "@storybook/addon-a11y"
 import { ErrorPage, ErrorPageWrapper } from "./index"
 
 export default {
-    title: "4 Components/All/ErrorPage",
-    decorators: [withA11y]
+    title: "4 Components/All/ErrorPage"
 }
 
 export const error404 = () =>

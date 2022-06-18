@@ -1,10 +1,8 @@
 import * as React from "react"
-import { withA11y } from "@storybook/addon-a11y"
 import { Blockquote } from "./index"
 
 export default {
-    title: "4 Components/All/Blockquote",
-    decorators: [withA11y]
+    title: "4 Components/All/Blockquote"
 }
 
 export const withCitation = () =>
