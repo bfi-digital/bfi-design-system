@@ -8072,7 +8072,7 @@ exports[`Storyshots CaptionedImage Normal 1`] = `
 >
   <img
     alt="Alt text"
-    src="http://example.com"
+    src="https://via.placeholder.com/500x250"
   />
   <figcaption
     className="CaptionedImage__FigCaptionWrapper-sc-1oce98k-1 gexRBc"
@@ -8096,7 +8096,7 @@ exports[`Storyshots IntroBlock Full 1`] = `
   >
     <img
       alt="Alt text"
-      src="http://example.com/img.jpg"
+      src="https://via.placeholder.com/500x250"
     />
     <figcaption
       className="CaptionedImage__FigCaptionWrapper-sc-1oce98k-1 gexRBc"
@@ -8140,7 +8140,7 @@ exports[`Storyshots IntroBlock No Copyright 1`] = `
   >
     <img
       alt="Alt text"
-      src="http://example.com/img.jpg"
+      src="https://via.placeholder.com/500x250"
     />
     <figcaption
       className="CaptionedImage__FigCaptionWrapper-sc-1oce98k-1 gexRBc"
