@@ -1,4 +1,4 @@
-import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+import { Meta, Story, ArgsTable, Canvas } from "@storybook/addon-docs"
 import { FilmCardSingle } from "../../../components/FilmCardSingle/index"
 
 <Meta title="2 Pattern Library/4 Slices/Film Card Single" component={FilmCardSingle} />
@@ -10,13 +10,13 @@ import { FilmCardSingle } from "../../../components/FilmCardSingle/index"
 
 ## Props
 
-<Props of={FilmCardSingle} />
+<ArgsTable of={FilmCardSingle} />
 
 
  
 ## Examples
 
-<Preview>
+<Canvas>
     <Story name="Film in list">
         <div style={{
             padding: "5px",
@@ -36,9 +36,9 @@ import { FilmCardSingle } from "../../../components/FilmCardSingle/index"
             />            
         </div>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="Film not in list">
         <div style={{
             padding: "5px",
@@ -55,10 +55,10 @@ import { FilmCardSingle } from "../../../components/FilmCardSingle/index"
             />          
         </div>
     </Story>
-</Preview>
+</Canvas>
 
 
-<Preview>
+<Canvas>
     <Story name="Film no links">
         <div style={{
             padding: "5px",
@@ -75,9 +75,9 @@ import { FilmCardSingle } from "../../../components/FilmCardSingle/index"
             />       
         </div>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="Film in list high number">
         <div style={{
             padding: "5px",
@@ -96,4 +96,4 @@ import { FilmCardSingle } from "../../../components/FilmCardSingle/index"
                 southbankUrl="https://player.bfi.org.uk/subscription/film/watch-le-mepris-1963-online"            />       
         </div>
     </Story>
-</Preview>
+</Canvas>

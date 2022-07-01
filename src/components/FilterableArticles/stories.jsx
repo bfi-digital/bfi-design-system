@@ -1,9 +1,7 @@
 import * as React from "react"
-import { withA11y } from "@storybook/addon-a11y"
 
 export default {
-    title: "4 Components/All/Filterable Articles",
-    decorators: [withA11y]
+    title: "4 Components/All/Filterable Articles"
 }
 
 export const normal = () =>

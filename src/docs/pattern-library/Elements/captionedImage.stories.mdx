@@ -1,4 +1,4 @@
-import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks'
+import { Meta, Story, ArgsTable, Canvas } from "@storybook/addon-docs"
 import { CaptionedImage } from "../../../components/CaptionedImage/index"
 import kansas from '../Structure/images/kansas.gif';
 
@@ -10,15 +10,15 @@ An image with a togglable caption.
 
 ## Examples
 
-<Preview>
+<Canvas>
     <Story name="Normal">
         <CaptionedImage src={kansas} alt="Scene from Wizard of Oz">
             This is the image caption.
         </CaptionedImage>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="More text">
         <CaptionedImage src={kansas} alt="Scene from Wizard of Oz">
             This is the image caption, it is a bit larger.
@@ -28,9 +28,9 @@ An image with a togglable caption.
             atque voluptatem qui consequatur vero enim.
         </CaptionedImage>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="Resized">
         <div style={{width: "200px"}}>
             <CaptionedImage src={kansas} alt="Scene from Wizard of Oz" style={{width: "100%"}}>
@@ -42,8 +42,8 @@ An image with a togglable caption.
             </CaptionedImage>
         </div>
     </Story>
-</Preview>
+</Canvas>
 
 ## Props
 
-<Props of={CaptionedImage} />
+<ArgsTable of={CaptionedImage} />

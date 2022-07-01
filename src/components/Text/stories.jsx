@@ -1,10 +1,8 @@
 import React from "react"
-import { withA11y } from "@storybook/addon-a11y"
 import { Text } from "./index"
 
 export default {
-    title: "4 Components/All/Text",
-    decorators: [withA11y],
+    title: "4 Components/All/Text"
 }
 
 export const normal = () =>

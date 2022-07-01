@@ -1,4 +1,4 @@
-import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks'
+import { Meta, Story, ArgsTable, Canvas } from "@storybook/addon-docs"
 import { Button } from "../../../components/Button/index"
 
 <Meta title="2 Pattern Library/3 Elements/Button" component={Button} />
@@ -11,38 +11,38 @@ can be inverted by setting the `contrast` property to `dark` or `light`.
 
 ## Examples
 
-<Preview>
+<Canvas>
     <Story name="Primary">
         <div style={{padding: "20px"}}>
             <Button level={1} url="#1">Click me</Button>
         </div>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="Primary, light contrast">
         <div style={{padding: "20px", background: "maroon"}}>
             <Button level={1} url="#1" contrast="light">Click me</Button>
         </div>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="Secondary">
         <div style={{padding: "20px"}}>
             <Button level={2} url="#2">Click me</Button>
         </div>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="Tertiary">
         <div style={{padding: "20px"}}>
             <Button level={3} url="#3">Click me</Button>
         </div>
     </Story>
-</Preview>
+</Canvas>
 
 ## Props 
 
-<Props of={Button} />
+<ArgsTable of={Button} />

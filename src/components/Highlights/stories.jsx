@@ -1,11 +1,9 @@
 import React from "react"
-import { withA11y } from "@storybook/addon-a11y"
 import { Highlights } from "./index"
 import demoShowings from "./data"
 
 export default {
-    title: "4 Components/All/Highlights",
-    decorators: [withA11y],
+    title: "4 Components/All/Highlights"
 }
 
 export const normal = () =>

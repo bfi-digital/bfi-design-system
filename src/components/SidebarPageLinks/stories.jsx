@@ -1,11 +1,9 @@
 import * as React from "react"
-import { withA11y } from "@storybook/addon-a11y"
 import { SidebarPageLinks } from "./index"
 import four, { three } from "./data"
 
 export default {
-    title: "4 Components/All/SidebarPageLinks",
-    decorators: [withA11y]
+    title: "4 Components/All/SidebarPageLinks"
 }
 
 export const Example = () =>

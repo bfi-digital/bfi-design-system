@@ -1,4 +1,4 @@
-import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+import { Meta, Story, ArgsTable, Canvas } from "@storybook/addon-docs"
 import { LFFIWCBanner } from "../../../components/LFFIWCBanner/index"
 
 
@@ -24,7 +24,7 @@ Alongside this component is a section with a lead paragraph and a call to action
 
 ## Examples 
 
-<Preview>
+<Canvas>
     <Story name="LFF 2020 Example">
         <div style={{
             padding: "5px",
@@ -49,10 +49,10 @@ Alongside this component is a section with a lead paragraph and a call to action
             <LFFIWCBanner festivalDate="03/16/2020" watchImg={watchImg} secondImg={secondImg} hourImg={hourImg} minImg={minImg} iwcLogo={iwcLogo} />
         </div>
     </Story>
-</Preview>
+</Canvas>
 
 
 
 ## Props 
 
-<Props of={LFFIWCBanner} />
+<ArgsTable of={LFFIWCBanner} />

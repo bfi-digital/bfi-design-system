@@ -1,4 +1,4 @@
-import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+import { Meta, Story, ArgsTable, Canvas } from "@storybook/addon-docs"
 import { PromoBanner } from "../../../components/PromoBanner/index"
 import minPadding from "./images/minumum-padding.png"
 
@@ -19,12 +19,12 @@ See this example for reference. In this example the iamge would need to include 
  
 ## Props 
 
-<Props of={PromoBanner} />
+<ArgsTable of={PromoBanner} />
 
 ## Examples
 
 
-<Preview>
+<Canvas>
     <Story name="PromoBanner standard">
         <div style={{padding: "20px"}}>
             <PromoBanner 
@@ -40,9 +40,9 @@ See this example for reference. In this example the iamge would need to include 
             />
         </div>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="PromoBanner reversed">
         <div style={{padding: "20px"}}>
             <PromoBanner 
@@ -57,9 +57,9 @@ See this example for reference. In this example the iamge would need to include 
             />
         </div>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="PromoBanner only title">
         <div style={{padding: "20px"}}>
             <PromoBanner 
@@ -70,9 +70,9 @@ See this example for reference. In this example the iamge would need to include 
             />
         </div>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="PromoBanner together">
         <div style={{padding: "20px"}}>
             <PromoBanner 
@@ -98,9 +98,9 @@ See this example for reference. In this example the iamge would need to include 
             />
         </div>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="PromoBanner no image colour scheme 2">
         <div style={{padding: "20px"}}>
             <PromoBanner 
@@ -112,9 +112,9 @@ See this example for reference. In this example the iamge would need to include 
             />
         </div>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="PromoBanner no image colour scheme 3">
         <div style={{padding: "20px"}}>
             <PromoBanner 
@@ -126,9 +126,9 @@ See this example for reference. In this example the iamge would need to include 
             />
         </div>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="PromoBanner no image colour scheme 4">
         <div style={{padding: "20px"}}>
             <PromoBanner 
@@ -140,9 +140,9 @@ See this example for reference. In this example the iamge would need to include 
             />
         </div>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="PromoBanner with video and second image">
         <div style={{padding: "20px"}}>
             <PromoBanner 
@@ -159,9 +159,9 @@ See this example for reference. In this example the iamge would need to include 
             />
         </div>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="PromoBanner with video reversed">
         <div style={{padding: "20px"}}>
             <PromoBanner 
@@ -173,9 +173,9 @@ See this example for reference. In this example the iamge would need to include 
             />
         </div>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="PromoBanner with second image prefix">
         <div style={{padding: "20px"}}>
             <PromoBanner 
@@ -191,5 +191,5 @@ See this example for reference. In this example the iamge would need to include 
             />
         </div>
     </Story>
-</Preview>
+</Canvas>
 

@@ -4,7 +4,7 @@
 
 The next-gen design system for the [British Film Institute](bfi.org.uk).
 
-Compatible with Node 16 & NPM 7.
+Compatible with Node 16 & NPM 8.
 
 ## 🍿 Demo and docs
 
@@ -71,4 +71,3 @@ We use `eslint` and [`jsx-a11y`](https://www.npmjs.com/package/eslint-plugin-jsx
 
 * Add more add-ons to the Storybook playground
 * Typescript support?
-* Update the `styled-components` dependency to ~5.0.0

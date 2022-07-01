@@ -1,10 +1,8 @@
 import * as React from "react"
-import { withA11y } from "@storybook/addon-a11y"
 import { Button } from "./index"
 
 export default {
-    title: "4 Components/All/Button",
-    decorators: [withA11y]
+    title: "4 Components/All/Button"
 }
 
 export const primary = () =>

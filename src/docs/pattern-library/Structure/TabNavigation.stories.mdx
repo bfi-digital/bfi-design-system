@@ -1,4 +1,4 @@
-import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+import { Meta, Story, ArgsTable, Canvas } from "@storybook/addon-docs"
 import { TabNavigation } from "../../../components/TabNavigation/index"
 import { demoTabs1, demoTabs2, demoTabs3 } from "../../../components/TabNavigation/data"
 
@@ -10,7 +10,7 @@ import { demoTabs1, demoTabs2, demoTabs3 } from "../../../components/TabNavigati
 
 ## Examples 
 
-<Preview>
+<Canvas>
     <Story name="LFF 2020 Strand Example 1">
         <div style={{
             padding: "5px",
@@ -35,8 +35,8 @@ import { demoTabs1, demoTabs2, demoTabs3 } from "../../../components/TabNavigati
             <TabNavigation tabs={demoTabs3} />
         </div>
     </Story>
-</Preview>
+</Canvas>
 
 ## Props 
 
-<Props of={TabNavigation} />
+<ArgsTable of={TabNavigation} />

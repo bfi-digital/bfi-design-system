@@ -1,4 +1,4 @@
-import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+import { Meta, Story, ArgsTable, Canvas } from "@storybook/addon-docs"
 import { SidebarFilmLinks } from "../../../components/SidebarFilmLinks/index"
 import demoFilms from "../../../components/SidebarFilmLinks/data"
 
@@ -9,23 +9,23 @@ import demoFilms from "../../../components/SidebarFilmLinks/data"
  
 ## Props 
 
-<Props of={SidebarFilmLinks} />
+<ArgsTable of={SidebarFilmLinks} />
 
 
 ## Examples
 
-<Preview>
+<Canvas>
     <Story name="Sidebar Film Links with title">
         <div style={{padding: "20px", maxWidth: "350px"}}>
             <SidebarFilmLinks films={demoFilms} blockTitle="Watch these films" />
         </div>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="Sidebar Film Links without title">
         <div style={{padding: "20px", maxWidth: "350px"}}>
             <SidebarFilmLinks films={demoFilms} />
         </div>
     </Story>
-</Preview>
+</Canvas>

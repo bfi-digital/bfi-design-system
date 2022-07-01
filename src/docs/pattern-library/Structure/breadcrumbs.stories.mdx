@@ -1,4 +1,4 @@
-import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks'
+import { Meta, Story, ArgsTable, Canvas } from "@storybook/addon-docs"
 import { Breadcrumbs } from "../../../components/Breadcrumbs/index"
 import data, {longData as data2, shortData as data3} from "../../../components/Breadcrumbs/data"
 
@@ -14,26 +14,26 @@ On mobile devices the breadcrumbs collapse down to link only to the previous pag
 
 ## Examples
 
-<Preview>
+<Canvas>
     <Story name="Normal">
         <Breadcrumbs breadcrumbs={data} />
     </Story>
-</Preview>
+</Canvas>
 
 Breadcrumbs are limited to 8 columns of width on larger screens or 70% of the width of the container. If they are long like in the example below they do not ever fill the full width of the container - this is so they are lower in the visual hierarchy than the content immediately below them, on smaller screen sizes they fill the width.
 
-<Preview>
+<Canvas>
     <Story name="Long data">
         <Breadcrumbs breadcrumbs={data2} />
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="Short data">
         <Breadcrumbs breadcrumbs={data3} />
     </Story>
-</Preview>
+</Canvas>
 
 ## Props 
 
-<Props of={Breadcrumbs} />
+<ArgsTable of={Breadcrumbs} />

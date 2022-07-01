@@ -1,10 +1,8 @@
 import * as React from "react"
-import { withA11y } from "@storybook/addon-a11y"
 import { Selectbox } from "./index"
 
 export default {
-    title: "4 Components/All/Selectbox",
-    decorators: [withA11y]
+    title: "4 Components/All/Selectbox"
 }
 
 const items = [

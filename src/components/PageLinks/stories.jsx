@@ -1,11 +1,9 @@
 import * as React from "react"
-import { withA11y } from "@storybook/addon-a11y"
 import { PageLinks } from "./index"
 import three, { two } from "./data"
 
 export default {
-    title: "4 Components/All/PageLinks",
-    decorators: [withA11y],
+    title: "4 Components/All/PageLinks"
 }
 
 export const ThreeLinks = () =>

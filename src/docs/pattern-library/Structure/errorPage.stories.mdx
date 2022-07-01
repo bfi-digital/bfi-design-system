@@ -1,4 +1,4 @@
-import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+import { Meta, Story, ArgsTable, Canvas } from "@storybook/addon-docs"
 import { ErrorPage, ErrorPageWrapper } from "../../../components/ErrorPage/index"
 import travoltaLocal from "./images/travolta.gif"
 import kansasLocal from "./images/kansas.gif"
@@ -15,11 +15,11 @@ The component includes the ability to provide an array of gifs - these will be d
 
 ## Props
 
-<Props of={ErrorPage} />
+<ArgsTable of={ErrorPage} />
 
 ## Examples
 
-<Preview>
+<Canvas>
     <Story name="404 Page">
         <ErrorPageWrapper>
             <ErrorPage error={404} gifs={[
@@ -34,9 +34,9 @@ The component includes the ability to provide an array of gifs - these will be d
             ]} />
         </ErrorPageWrapper>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="500 Page">
         <ErrorPageWrapper>
             <ErrorPage error={500} gifs={[
@@ -51,9 +51,9 @@ The component includes the ability to provide an array of gifs - these will be d
             ]} />
         </ErrorPageWrapper>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="403 Page">
         <ErrorPageWrapper>
             <ErrorPage error={403} gifs={[
@@ -68,17 +68,17 @@ The component includes the ability to provide an array of gifs - these will be d
             ]} />
         </ErrorPageWrapper>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="400 Page">
         <ErrorPageWrapper>
                 <ErrorPage error={400} />
             </ErrorPageWrapper>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="503 Page">
         <ErrorPageWrapper>
             <ErrorPage error={503} gifs={[
@@ -93,9 +93,9 @@ The component includes the ability to provide an array of gifs - these will be d
             ]} />
         </ErrorPageWrapper>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="No number Page">
         <ErrorPageWrapper>
             <ErrorPage gifs={[
@@ -110,12 +110,12 @@ The component includes the ability to provide an array of gifs - these will be d
             ]} />
         </ErrorPageWrapper>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="Override error message">
         <ErrorPageWrapper>
                 <ErrorPage errorString="Overrided message" />
             </ErrorPageWrapper>
     </Story>
-</Preview>
+</Canvas>

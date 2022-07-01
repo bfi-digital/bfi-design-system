@@ -1,12 +1,10 @@
 import * as React from "react"
-import { withA11y } from "@storybook/addon-a11y"
 import { Hero } from "./index"
 import { Header } from "../Header"
 import navItems, { quickLinksData } from "../Header/data.js"
  
 export default {
-    title: "4 Components/All/Hero",
-    decorators: [withA11y],
+    title: "4 Components/All/Hero"
 }
 
 export const normal = () =>

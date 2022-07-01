@@ -1,4 +1,4 @@
-import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks'
+import { Meta, Story, ArgsTable, Canvas } from "@storybook/addon-docs"
 import { Wrapper, MainContent, MainContentWrapper, Sidebar, Actions, PlayButton, OriginalArticleDate } from "../../../components/PageContainer"
 
 import navItems, { quickLinksData } from "../../../components/Header/data"
@@ -34,7 +34,7 @@ import { QuickFacts } from "../../../components/QuickFacts"
 
 ## Pages
 
-<Preview>
+<Canvas>
     <Story name="1 Landing Page">
         <>
             <Header navItems={navItems} quickLinks={quickLinksData} overlay={true} />
@@ -185,9 +185,9 @@ import { QuickFacts } from "../../../components/QuickFacts"
             />
         </>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="2 Article Example">
         <>
             <Header navItems={navItems} quickLinks={quickLinksData}  />
@@ -333,12 +333,12 @@ import { QuickFacts } from "../../../components/QuickFacts"
             />
         </>
     </Story>
-</Preview>
+</Canvas>
 
 
 
 
-<Preview>
+<Canvas>
     <Story name="3 Film Page Example">
         <>
             <Header navItems={navItems} quickLinks={quickLinksData} />
@@ -538,11 +538,11 @@ import { QuickFacts } from "../../../components/QuickFacts"
             />
         </>
     </Story>
-</Preview>
+</Canvas>
 
 
 
-<Preview>
+<Canvas>
     <Story name="3.2 Film Page Example no image">
         <>
             <Header navItems={navItems} quickLinks={quickLinksData} overlay={true} />
@@ -736,4 +736,4 @@ import { QuickFacts } from "../../../components/QuickFacts"
             />
         </>
     </Story>
-</Preview>
+</Canvas>

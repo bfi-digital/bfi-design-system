@@ -1,4 +1,4 @@
-import { Meta, Story, Props, Preview } from "@storybook/addon-docs/blocks"
+import { Meta, Story, ArgsTable, Canvas } from "@storybook/addon-docs"
 import { Text } from "../../../components/Text/index"
 
 <Meta title="2 Pattern Library/2 Typography/Text" component={Text} />
@@ -15,11 +15,11 @@ This component can also be used to style tables which you can see in various sta
 
 ## Props 
 
-<Props of={Text} />
+<ArgsTable of={Text} />
 
 ## Examples
 
-<Preview>
+<Canvas>
     <Story name="Normal">
         <div style={{padding: "20px"}}>
             <Text>
@@ -39,9 +39,9 @@ This component can also be used to style tables which you can see in various sta
             </Text>
         </div>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="Small Table no heading row">
         <div style={{padding: "20px"}}>
             <Text>
@@ -80,9 +80,9 @@ This component can also be used to style tables which you can see in various sta
             </Text>
         </div>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="Small Table heading row">
         <div style={{padding: "20px"}}>
             <Text>
@@ -127,9 +127,9 @@ This component can also be used to style tables which you can see in various sta
             </Text>
         </div>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="Small Table both heading rows">
         <div style={{padding: "20px"}}>
             <Text>
@@ -174,9 +174,9 @@ This component can also be used to style tables which you can see in various sta
             </Text>
         </div>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="Small Table side heading row with caption">
         <div style={{padding: "20px"}}>
             <Text>
@@ -216,9 +216,9 @@ This component can also be used to style tables which you can see in various sta
             </Text>
         </div>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="Large Table example in small page">
         <div style={{padding: "20px", maxWidth: "620px"}}>
             <Text>
@@ -523,4 +523,4 @@ This component can also be used to style tables which you can see in various sta
             </Text>
         </div>
     </Story>
-</Preview>
+</Canvas>

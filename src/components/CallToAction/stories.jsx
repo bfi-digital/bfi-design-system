@@ -1,10 +1,8 @@
 import * as React from "react"
-import {withA11y} from "@storybook/addon-a11y"
 import {CallToAction} from "./index"
 
 export default {
-    title: "4 Components/All/Call to Action",
-    decorators: [withA11y]
+    title: "4 Components/All/Call to Action"
 }
 
 export const internalLink = () =>

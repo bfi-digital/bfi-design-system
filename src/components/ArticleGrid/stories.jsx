@@ -1,11 +1,9 @@
 import React from "react"
-import { withA11y } from "@storybook/addon-a11y"
 import { ArticleGrid } from "./index"
 import demoArticles from "./data"
 
 export default {
-    title: "4 Components/All/ArticleGrid",
-    decorators: [withA11y],
+    title: "4 Components/All/ArticleGrid"
 }
 
 export const multipleArticlesWithHighlight = () =>

@@ -1,4 +1,4 @@
-import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+import { Meta, Story, ArgsTable, Canvas } from "@storybook/addon-docs"
 import { Blockquote } from "../../../components/Blockquote/index"
 
 <Meta title="2 Pattern Library/2 Typography/Blockquote" component={Blockquote} />
@@ -11,23 +11,23 @@ Quotes should be used to cite something someone has said, in this case its great
 
 ## Props 
 
-<Props of={Blockquote} />
+<ArgsTable of={Blockquote} />
 
 ## Examples 
 
-<Preview>
+<Canvas>
     <Story name="With Citation">
         <Blockquote 
             quote="Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should." 
             citation="Ian Malcolm"
         />
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="Without Citation">
         <Blockquote 
             quote="Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should." 
         />
     </Story>
-</Preview>
+</Canvas>

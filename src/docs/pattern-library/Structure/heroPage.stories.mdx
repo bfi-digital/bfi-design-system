@@ -1,4 +1,4 @@
-import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+import { Meta, Story, ArgsTable, Canvas } from "@storybook/addon-docs"
 import { HeroPage } from "../../../components/HeroPage/index"
 import { Header } from "../../../components/Header/index"
 import navItems, { quickLinksData } from "../../../components/Header/data"
@@ -22,11 +22,11 @@ The image can also have a credit or caption added to it which will include an ac
 
 ## Props 
 
-<Props of={HeroPage} />
+<ArgsTable of={HeroPage} />
 
 ## Examples 
 
-<Preview>
+<Canvas>
     <Story name="Page example without image">
         <div style={{
             padding: "10px",
@@ -41,10 +41,10 @@ The image can also have a credit or caption added to it which will include an ac
             />
         </div>
     </Story>
-</Preview>
+</Canvas>
 
 
-<Preview>
+<Canvas>
     <Story name="Page example without image or breadcrumbs">
         <div style={{
             padding: "10px",
@@ -58,9 +58,9 @@ The image can also have a credit or caption added to it which will include an ac
             />
         </div>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="Page example with image">
         <div style={{
             padding: "10px",
@@ -77,9 +77,9 @@ The image can also have a credit or caption added to it which will include an ac
             />
         </div>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="Page example with image no breadcrumbs">
         <div style={{
             padding: "10px",
@@ -95,9 +95,9 @@ The image can also have a credit or caption added to it which will include an ac
             />
         </div>
     </Story>
-</Preview>
+</Canvas>
 
-<Preview>
+<Canvas>
     <Story name="Page example with image and credit">
         <div style={{
             padding: "10px",
@@ -117,4 +117,4 @@ The image can also have a credit or caption added to it which will include an ac
             />
         </div>
     </Story>
-</Preview>
+</Canvas>

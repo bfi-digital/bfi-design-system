@@ -1,4 +1,4 @@
-import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+import { Meta, Story, ArgsTable, Canvas } from "@storybook/addon-docs"
 import { HeroShow } from "../../../components/HeroShow/index"
 import {longData as crumbs} from "../../../components/Breadcrumbs/data"
 import { Actions } from "../../../components/PageContainer"
@@ -18,11 +18,11 @@ A show can also have a video used to replace the featured image, this can be use
 
 ## Props 
 
-<Props of={HeroShow} />
+<ArgsTable of={HeroShow} />
 
 ## Examples 
 
-<Preview>
+<Canvas>
     <Story name="Film with 1 performance - specific time">
         <div style={{
             padding: "10px",
@@ -83,4 +83,4 @@ A show can also have a video used to replace the featured image, this can be use
             </HeroShow>
         </div>
     </Story>
-</Preview>
+</Canvas>
