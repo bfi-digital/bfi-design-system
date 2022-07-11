@@ -81,8 +81,8 @@ export const ShowDateTimeSidebar = ({
                     title={title} 
                     description={description} 
                     location={singlePerformance.platform} 
-                    start={singlePerformance.dateTimeStart} 
-                    end={singlePerformance.dateTimeEnd ? singlePerformance.dateTimeEnd : processedStartDateTime.setHours(processedStartDateTime.getHours() + 2)} 
+                    start={new Date(singlePerformance.dateTimeStart)} 
+                    end={new Date(singlePerformance.dateTimeEnd || processedStartDateTime.setHours(processedStartDateTime.getHours() + 2))}
                 />
             }
         </Outer>
