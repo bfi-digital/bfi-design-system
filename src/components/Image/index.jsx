@@ -3,7 +3,6 @@ import styled, { createGlobalStyle } from "styled-components"
 import theme from "../_theme"
 import PropTypes from "prop-types"
 import { Dialog } from "@reach/dialog"
-import VisuallyHidden from "@reach/visually-hidden"
 
 const Figure = styled.figure`
     width: ${props => props.isSmall ? "40%" : "100%"};
@@ -136,6 +135,15 @@ const DialogStyles = createGlobalStyle`
         position: relative;
     }
 `
+const VisuallyHiddenButton = styled.button`
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+`
 const BigImage = styled.img`
     width: auto;
     max-width: 100%;
@@ -226,9 +234,7 @@ export const Image = ({
                         isOpen={openImage} 
                         onDismiss={() => setOpenImage(false)}
                     >
-                        <VisuallyHidden>
-                            <button onClick={() => setOpenImage(false)}>Close</button>
-                        </VisuallyHidden>
+                        <VisuallyHiddenButton onClick={() => setOpenImage(false)}>Close</VisuallyHiddenButton>
                         <BigImage
                             itemprop="image"
                             src={src}
