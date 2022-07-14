@@ -89,12 +89,14 @@ export default function AddToCalendar({ title, description, start, end, location
             action: "TEMPLATE",
             text: title,
             dates: `${formatDate(start)}/${formatDate(end)}`,
-            details: description,
-            location
+            details: description
         }),
         ["sprop", `website:${url}`],
         ["sprop", `source:${source?.title||url}`]
     ])
+    if(location) {
+        googleParams.set("location", location)
+    }
     const googleUrl = `https://calendar.google.com/calendar/render?${googleParams}`
 
     const yahooParams = new URLSearchParams({
@@ -103,10 +105,11 @@ export default function AddToCalendar({ title, description, start, end, location
         ST: formatDate(start),
         ET: formatDate(end),
         DESC: description,
-        in_loc: location,
-        url,
-        uid: id
+        url
     })
+    if(location) {
+        yahooParams.set("in_loc", location)
+    }
     const yahooUrl = `https://calendar.yahoo.com/?${yahooParams}`
 
 
