@@ -1,0 +1,133 @@
+import { ArgsTable, Canvas, Meta, Story } from '@storybook/addon-docs'
+import { withDesign } from 'storybook-addon-designs'
+import { Dialog, DialogOpener, DialogContents } from '.'
+
+{/* Temporary while the Image component awaits refactoring */}
+export const Image = ({ alt, src, ...props }) => (
+  <figure {...props} style={{ backgroundColor: '#E8DDFF', margin: 0, width: 'fit-content' }}>
+    <img alt={alt} src={src} style={{display: 'block'}} />
+  </figure>
+)
+
+export const ModalImage = (args) => (
+  <Dialog {...args}>
+    <DialogOpener>
+      <Image src="https://dummyimage.com/420x266/ccc/999" alt="" />
+    </DialogOpener>
+    <DialogContents>
+      <Image src="https://dummyimage.com/840x532/ccc/999" alt="" />
+    </DialogContents>
+  </Dialog>
+)
+
+export const ModalText = (args) => (
+  <Dialog {...args}>
+    <DialogOpener>
+      <button type="button">View Ts &amp; Cs</button>
+    </DialogOpener>
+    <DialogContents>
+      <div style={{ padding: '0 20px', width: '600px' }}>
+        <h3>Terms &amp; Conditions</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam debitis hic vitae dolorem ipsa, consequuntur repellendus assumenda delectus obcaecati quisquam nisi nulla laudantium perspiciatis maxime eligendi exercitationem facere quidem mollitia.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam debitis hic vitae dolorem ipsa, consequuntur repellendus assumenda delectus obcaecati quisquam nisi nulla laudantium perspiciatis maxime eligendi exercitationem facere quidem mollitia.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam debitis hic vitae dolorem ipsa, consequuntur repellendus assumenda delectus obcaecati quisquam nisi nulla laudantium perspiciatis maxime eligendi exercitationem facere quidem mollitia.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam debitis hic vitae dolorem ipsa, consequuntur repellendus assumenda delectus obcaecati quisquam nisi nulla laudantium perspiciatis maxime eligendi exercitationem facere quidem mollitia.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam debitis hic vitae dolorem ipsa, consequuntur repellendus assumenda delectus obcaecati quisquam nisi nulla laudantium perspiciatis maxime eligendi exercitationem facere quidem mollitia.</p>
+      </div>
+    </DialogContents>
+  </Dialog>
+)
+
+export const ModelessText = (args) => (
+  <Dialog {...args}>
+    <DialogOpener>
+      <button type="button">Pop-over&hellip;</button>
+    </DialogOpener>
+    <DialogContents>
+      <div style={{ padding: '0 20px' }}>
+        <p>&hellip;for a chat, a cuppa tea and a slice of cake</p>
+      </div>
+    </DialogContents>
+  </Dialog>
+)
+
+<Meta
+  title="5 Refactored Components/Dialog"
+  component={Dialog}
+  decorators={[
+    withDesign,
+    (Story) => (
+      <div style={{ margin: '1rem' }}>
+        <Story />
+      </div>
+    )
+  ]}
+  parameters={{
+    design: {
+      type: 'figma',
+      url: 'https://www.figma.com/file/hDgQZKS36RdE2ZaSzpPK8r/Dialog'
+    }
+  }}
+  argTypes={{
+    modeless: {
+      description: 'If `true`, dialog will be rendered modeless, i.e. still allowing interaction with content outside of the dialog',
+      control: 'boolean',
+      table: {
+        defaultValue: { summary: `undefined` }
+      }
+    }
+  }}
+/>
+
+# Dialog
+Create a modal lightbox or textual pop-over
+
+## Technical notes
+- Each `<Dialog />` maintains its own opened/closed state
+- Anything can be defined as a `<DialogOpener />`, and simply becomes expanded upon rather than wrapped. This not only reduces unnecessary markup but means that any pre-existing `onClick` or `onKeyDown` handlers will still carry out their duties in addition to actioning the `<Dialog />`, and any pre-existing `className` will be appended to.
+- Whatever is passed to `<DialogContents />`, will be the content that is shown when the dialog is opened and hidden when the dialog is closed.
+
+### Image lightbox modal
+
+<Canvas>
+  <Story
+    name="Modal Image"
+    args={{
+      modeless: false
+    }}
+  >
+    {ModalImage.bind({})}
+  </Story>
+</Canvas>
+
+<ArgsTable story="Modal Image" />
+
+### Modal text
+
+<Canvas>
+  <Story
+    name="Modal Text"
+    args={{
+      modeless: false
+    }}
+  >
+    {ModalText.bind({})}
+  </Story>
+</Canvas>
+
+<ArgsTable story="Modal Text" />
+
+### Modeless text
+
+<Canvas>
+  <Story
+    name="Modeless Text"
+    args={{
+      modeless: true
+    }}
+  >
+    {ModelessText.bind({})}
+  </Story>
+</Canvas>
+
+<ArgsTable story="Modeless Text" />
