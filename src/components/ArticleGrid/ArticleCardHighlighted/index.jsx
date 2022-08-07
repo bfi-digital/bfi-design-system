@@ -5,6 +5,7 @@ import theme from "../../_theme"
 import { LinkSwitch as Link } from "../../LinkSwitch"
 import { Headline } from "../../Headline"
 import parse from "html-react-parser"
+import getAttribution, { hasAttribution } from "../authorText"
 
 const Outer = styled.div`
     position: relative;
@@ -203,7 +204,7 @@ export const ArticleCardHighlighted = ({
             }
 
             <Meta>
-                {author && <Author>By {author}</Author>}
+                {hasAttribution(author) && <Author>{getAttribution(author)}</Author>}
             </Meta>
         </Content>
 

@@ -152,8 +152,7 @@ exports[`Storyshots 4 Components/All/ArticleGrid Multiple Articles With Highligh
             <p
               className="ArticleCardHighlighted__Author-sc-b1o9ij-2 bEINWt"
             >
-              By 
-              Josephine Botting, Jóse de Esteban, Jez Stewart, John Oliver & others
+              By Josephine Botting, Jóse de Esteban and others
             </p>
           </div>
         </div>
@@ -198,8 +197,7 @@ exports[`Storyshots 4 Components/All/ArticleGrid Multiple Articles With Highligh
           <p
             className="ArticleCard__Author-sc-4zqznd-2 gBudNF"
           >
-            By 
-            Hayley Scanlon
+            By Hayley Scanlon
           </p>
         </div>
         <a
@@ -240,8 +238,7 @@ exports[`Storyshots 4 Components/All/ArticleGrid Multiple Articles With Highligh
           <p
             className="ArticleCard__Author-sc-4zqznd-2 gBudNF"
           >
-            By 
-            Ros Cranston
+            By Ros Cranston
           </p>
         </div>
         <a
@@ -281,8 +278,7 @@ exports[`Storyshots 4 Components/All/ArticleGrid Multiple Articles With Highligh
           <p
             className="ArticleCard__Author-sc-4zqznd-2 gBudNF"
           >
-            By 
-            Jasper Sharp
+            By Jasper Sharp
           </p>
         </div>
         <a
@@ -318,8 +314,7 @@ exports[`Storyshots 4 Components/All/ArticleGrid Multiple Articles With Highligh
           <p
             className="ArticleCard__Author-sc-4zqznd-2 gBudNF"
           >
-            By 
-            Josh Slater-Williams
+            By Josh Slater-Williams
           </p>
         </div>
         <a
@@ -355,8 +350,7 @@ exports[`Storyshots 4 Components/All/ArticleGrid Multiple Articles With Highligh
           <p
             className="ArticleCard__Author-sc-4zqznd-2 gBudNF"
           >
-            By 
-            Nick Bradshaw
+            By Nick Bradshaw
           </p>
         </div>
         <a
@@ -427,8 +421,7 @@ exports[`Storyshots 4 Components/All/ArticleGrid Multiple Articles With Highligh
           <p
             className="ArticleCard__Author-sc-4zqznd-2 gBudNF"
           >
-            By 
-            Josephine Botting, Jóse de Esteban, Jez Stewart, John Oliver & others
+            By Josephine Botting, Jóse de Esteban and others
           </p>
         </div>
         <a
@@ -464,8 +457,7 @@ exports[`Storyshots 4 Components/All/ArticleGrid Multiple Articles With Highligh
           <p
             className="ArticleCard__Author-sc-4zqznd-2 gBudNF"
           >
-            By 
-            Hayley Scanlon
+            By Hayley Scanlon
           </p>
         </div>
         <a
@@ -506,8 +498,7 @@ exports[`Storyshots 4 Components/All/ArticleGrid Multiple Articles With Highligh
           <p
             className="ArticleCard__Author-sc-4zqznd-2 gBudNF"
           >
-            By 
-            Ros Cranston
+            By Ros Cranston
           </p>
         </div>
         <a
@@ -547,8 +538,7 @@ exports[`Storyshots 4 Components/All/ArticleGrid Multiple Articles With Highligh
           <p
             className="ArticleCard__Author-sc-4zqznd-2 gBudNF"
           >
-            By 
-            Jasper Sharp
+            By Jasper Sharp
           </p>
         </div>
         <a
@@ -584,8 +574,7 @@ exports[`Storyshots 4 Components/All/ArticleGrid Multiple Articles With Highligh
           <p
             className="ArticleCard__Author-sc-4zqznd-2 gBudNF"
           >
-            By 
-            Josh Slater-Williams
+            By Josh Slater-Williams
           </p>
         </div>
         <a
@@ -621,8 +610,7 @@ exports[`Storyshots 4 Components/All/ArticleGrid Multiple Articles With Highligh
           <p
             className="ArticleCard__Author-sc-4zqznd-2 gBudNF"
           >
-            By 
-            Nick Bradshaw
+            By Nick Bradshaw
           </p>
         </div>
         <a
@@ -693,8 +681,7 @@ exports[`Storyshots 4 Components/All/ArticleGrid Multiple Articles With Highligh
           <p
             className="ArticleCard__Author-sc-4zqznd-2 gBudNF"
           >
-            By 
-            Josephine Botting, Jóse de Esteban, Jez Stewart, John Oliver & others
+            By Josephine Botting, Jóse de Esteban and others
           </p>
         </div>
         <a
@@ -730,8 +717,7 @@ exports[`Storyshots 4 Components/All/ArticleGrid Multiple Articles With Highligh
           <p
             className="ArticleCard__Author-sc-4zqznd-2 gBudNF"
           >
-            By 
-            Hayley Scanlon
+            By Hayley Scanlon
           </p>
         </div>
         <a
@@ -772,8 +758,7 @@ exports[`Storyshots 4 Components/All/ArticleGrid Multiple Articles With Highligh
           <p
             className="ArticleCard__Author-sc-4zqznd-2 gBudNF"
           >
-            By 
-            Ros Cranston
+            By Ros Cranston
           </p>
         </div>
         <a
@@ -813,8 +798,7 @@ exports[`Storyshots 4 Components/All/ArticleGrid Multiple Articles With Highligh
           <p
             className="ArticleCard__Author-sc-4zqznd-2 gBudNF"
           >
-            By 
-            Jasper Sharp
+            By Jasper Sharp
           </p>
         </div>
         <a
@@ -850,8 +834,7 @@ exports[`Storyshots 4 Components/All/ArticleGrid Multiple Articles With Highligh
           <p
             className="ArticleCard__Author-sc-4zqznd-2 gBudNF"
           >
-            By 
-            Josh Slater-Williams
+            By Josh Slater-Williams
           </p>
         </div>
         <a
@@ -887,8 +870,7 @@ exports[`Storyshots 4 Components/All/ArticleGrid Multiple Articles With Highligh
           <p
             className="ArticleCard__Author-sc-4zqznd-2 gBudNF"
           >
-            By 
-            Nick Bradshaw
+            By Nick Bradshaw
           </p>
         </div>
         <a
@@ -959,8 +941,7 @@ exports[`Storyshots 4 Components/All/ArticleGrid Multiple Articles With Highligh
           <p
             className="ArticleCard__Author-sc-4zqznd-2 gBudNF"
           >
-            By 
-            Josephine Botting, Jóse de Esteban, Jez Stewart, John Oliver & others
+            By Josephine Botting, Jóse de Esteban and others
           </p>
         </div>
         <a
@@ -996,8 +977,7 @@ exports[`Storyshots 4 Components/All/ArticleGrid Multiple Articles With Highligh
           <p
             className="ArticleCard__Author-sc-4zqznd-2 gBudNF"
           >
-            By 
-            Hayley Scanlon
+            By Hayley Scanlon
           </p>
         </div>
         <a
@@ -1038,8 +1018,7 @@ exports[`Storyshots 4 Components/All/ArticleGrid Multiple Articles With Highligh
           <p
             className="ArticleCard__Author-sc-4zqznd-2 gBudNF"
           >
-            By 
-            Ros Cranston
+            By Ros Cranston
           </p>
         </div>
         <a
@@ -1079,8 +1058,7 @@ exports[`Storyshots 4 Components/All/ArticleGrid Multiple Articles With Highligh
           <p
             className="ArticleCard__Author-sc-4zqznd-2 gBudNF"
           >
-            By 
-            Jasper Sharp
+            By Jasper Sharp
           </p>
         </div>
         <a
@@ -1116,8 +1094,7 @@ exports[`Storyshots 4 Components/All/ArticleGrid Multiple Articles With Highligh
           <p
             className="ArticleCard__Author-sc-4zqznd-2 gBudNF"
           >
-            By 
-            Josh Slater-Williams
+            By Josh Slater-Williams
           </p>
         </div>
         <a
@@ -1153,8 +1130,7 @@ exports[`Storyshots 4 Components/All/ArticleGrid Multiple Articles With Highligh
           <p
             className="ArticleCard__Author-sc-4zqznd-2 gBudNF"
           >
-            By 
-            Nick Bradshaw
+            By Nick Bradshaw
           </p>
         </div>
         <a
@@ -1225,8 +1201,7 @@ exports[`Storyshots 4 Components/All/ArticleGrid Multiple Articles With Highligh
           <p
             className="ArticleCard__Author-sc-4zqznd-2 gBudNF"
           >
-            By 
-            Josephine Botting, Jóse de Esteban, Jez Stewart, John Oliver & others
+            By Josephine Botting, Jóse de Esteban and others
           </p>
         </div>
         <a
@@ -1262,8 +1237,7 @@ exports[`Storyshots 4 Components/All/ArticleGrid Multiple Articles With Highligh
           <p
             className="ArticleCard__Author-sc-4zqznd-2 gBudNF"
           >
-            By 
-            Hayley Scanlon
+            By Hayley Scanlon
           </p>
         </div>
         <a
@@ -1304,8 +1278,7 @@ exports[`Storyshots 4 Components/All/ArticleGrid Multiple Articles With Highligh
           <p
             className="ArticleCard__Author-sc-4zqznd-2 gBudNF"
           >
-            By 
-            Ros Cranston
+            By Ros Cranston
           </p>
         </div>
         <a
@@ -1345,8 +1318,7 @@ exports[`Storyshots 4 Components/All/ArticleGrid Multiple Articles With Highligh
           <p
             className="ArticleCard__Author-sc-4zqznd-2 gBudNF"
           >
-            By 
-            Jasper Sharp
+            By Jasper Sharp
           </p>
         </div>
         <a
@@ -1382,8 +1354,7 @@ exports[`Storyshots 4 Components/All/ArticleGrid Multiple Articles With Highligh
           <p
             className="ArticleCard__Author-sc-4zqznd-2 gBudNF"
           >
-            By 
-            Josh Slater-Williams
+            By Josh Slater-Williams
           </p>
         </div>
         <a
@@ -1419,8 +1390,7 @@ exports[`Storyshots 4 Components/All/ArticleGrid Multiple Articles With Highligh
           <p
             className="ArticleCard__Author-sc-4zqznd-2 gBudNF"
           >
-            By 
-            Nick Bradshaw
+            By Nick Bradshaw
           </p>
         </div>
         <a
@@ -1491,8 +1461,7 @@ exports[`Storyshots 4 Components/All/ArticleGrid Multiple Articles With Highligh
           <p
             className="ArticleCard__Author-sc-4zqznd-2 gBudNF"
           >
-            By 
-            Josephine Botting, Jóse de Esteban, Jez Stewart, John Oliver & others
+            By Josephine Botting, Jóse de Esteban and others
           </p>
         </div>
         <a
@@ -1528,8 +1497,7 @@ exports[`Storyshots 4 Components/All/ArticleGrid Multiple Articles With Highligh
           <p
             className="ArticleCard__Author-sc-4zqznd-2 gBudNF"
           >
-            By 
-            Hayley Scanlon
+            By Hayley Scanlon
           </p>
         </div>
         <a
@@ -1570,8 +1538,7 @@ exports[`Storyshots 4 Components/All/ArticleGrid Multiple Articles With Highligh
           <p
             className="ArticleCard__Author-sc-4zqznd-2 gBudNF"
           >
-            By 
-            Ros Cranston
+            By Ros Cranston
           </p>
         </div>
         <a
@@ -1611,8 +1578,7 @@ exports[`Storyshots 4 Components/All/ArticleGrid Multiple Articles With Highligh
           <p
             className="ArticleCard__Author-sc-4zqznd-2 gBudNF"
           >
-            By 
-            Jasper Sharp
+            By Jasper Sharp
           </p>
         </div>
         <a
@@ -1648,8 +1614,7 @@ exports[`Storyshots 4 Components/All/ArticleGrid Multiple Articles With Highligh
           <p
             className="ArticleCard__Author-sc-4zqznd-2 gBudNF"
           >
-            By 
-            Josh Slater-Williams
+            By Josh Slater-Williams
           </p>
         </div>
         <a
@@ -1685,8 +1650,7 @@ exports[`Storyshots 4 Components/All/ArticleGrid Multiple Articles With Highligh
           <p
             className="ArticleCard__Author-sc-4zqznd-2 gBudNF"
           >
-            By 
-            Nick Bradshaw
+            By Nick Bradshaw
           </p>
         </div>
         <a
@@ -1757,8 +1721,7 @@ exports[`Storyshots 4 Components/All/ArticleGrid Multiple Articles With Highligh
           <p
             className="ArticleCard__Author-sc-4zqznd-2 gBudNF"
           >
-            By 
-            Josephine Botting, Jóse de Esteban, Jez Stewart, John Oliver & others
+            By Josephine Botting, Jóse de Esteban and others
           </p>
         </div>
         <a
@@ -1794,8 +1757,7 @@ exports[`Storyshots 4 Components/All/ArticleGrid Multiple Articles With Highligh
           <p
             className="ArticleCard__Author-sc-4zqznd-2 gBudNF"
           >
-            By 
-            Hayley Scanlon
+            By Hayley Scanlon
           </p>
         </div>
         <a
@@ -1836,8 +1798,7 @@ exports[`Storyshots 4 Components/All/ArticleGrid Multiple Articles With Highligh
           <p
             className="ArticleCard__Author-sc-4zqznd-2 gBudNF"
           >
-            By 
-            Ros Cranston
+            By Ros Cranston
           </p>
         </div>
         <a
@@ -1877,8 +1838,7 @@ exports[`Storyshots 4 Components/All/ArticleGrid Multiple Articles With Highligh
           <p
             className="ArticleCard__Author-sc-4zqznd-2 gBudNF"
           >
-            By 
-            Jasper Sharp
+            By Jasper Sharp
           </p>
         </div>
         <a
@@ -1914,8 +1874,7 @@ exports[`Storyshots 4 Components/All/ArticleGrid Multiple Articles With Highligh
           <p
             className="ArticleCard__Author-sc-4zqznd-2 gBudNF"
           >
-            By 
-            Josh Slater-Williams
+            By Josh Slater-Williams
           </p>
         </div>
         <a
@@ -1951,8 +1910,7 @@ exports[`Storyshots 4 Components/All/ArticleGrid Multiple Articles With Highligh
           <p
             className="ArticleCard__Author-sc-4zqznd-2 gBudNF"
           >
-            By 
-            Nick Bradshaw
+            By Nick Bradshaw
           </p>
         </div>
         <a
@@ -6895,7 +6853,7 @@ exports[`Storyshots 4 Components/All/PromoBanner Normal 1`] = `
       <img
         alt=""
         className="PromoBanner__SecondImage-sc-1lnz0jc-5 eVNXrx"
-        src="http://placehold.it/150x40"
+        src="https://via.placeholder.com/150x40"
       />
       <h2
         aria-label=""
@@ -6918,7 +6876,7 @@ exports[`Storyshots 4 Components/All/PromoBanner Normal 1`] = `
       </a>
     </div>
     <div
-      className="PromoBanner__Image-sc-1lnz0jc-4 eCmOFz"
+      className="PromoBanner__Image-sc-1lnz0jc-4 dBoPXP"
     />
   </section>
 </div>
@@ -6962,7 +6920,7 @@ exports[`Storyshots 4 Components/All/PromoBanner Reversed Image 1`] = `
       </a>
     </div>
     <div
-      className="PromoBanner__Image-sc-1lnz0jc-4 dHPigc"
+      className="PromoBanner__Image-sc-1lnz0jc-4 cmtlnE"
       reversed={true}
     />
   </section>
@@ -7006,7 +6964,7 @@ exports[`Storyshots 4 Components/All/PromoBanner Second Image With Prefix 1`] = 
         <img
           alt=""
           className="PromoBanner__SecondImage-sc-1lnz0jc-5 fSSfCN"
-          src="http://placehold.it/150x40"
+          src="https://via.placeholder.com/150x40"
         />
       </div>
       <a
@@ -7019,7 +6977,7 @@ exports[`Storyshots 4 Components/All/PromoBanner Second Image With Prefix 1`] = 
       </a>
     </div>
     <div
-      className="PromoBanner__Image-sc-1lnz0jc-4 eCmOFz"
+      className="PromoBanner__Image-sc-1lnz0jc-4 dBoPXP"
     />
   </section>
 </div>
