@@ -5,7 +5,6 @@ import navItems, { quickLinksData } from "../Header/data"
 import {longData as crumbs} from "../Breadcrumbs/data"
 import footerMenus from "../Footer/data"
 import demoArticles from "../ArticleGrid/data"
-import demoFilms from "../FilmGrid/data"
 
 import { AdvertisingContainer } from "../AdvertisingContainer"
 import { ArticleGrid } from "../ArticleGrid"
@@ -18,7 +17,6 @@ import { Divider } from "../Divider"
 import { DownloadableFiles } from "../DownloadableFiles"
 import { ErrorPage } from "../ErrorPage"
 import { FilmCardSingle } from "../FilmCardSingle"
-import { FilmGrid } from "../FilmGrid"
 import { FilmShowing } from "../FilmShowing"
 import { FilmShowingGrid } from "../FilmShowingGrid"
 import { FilterableArticles } from "../FilterableArticles"
@@ -193,7 +191,6 @@ export const discoveryPage = () =>
                     level={2} 
                     text="Now showing"
                 />
-                <FilmGrid films={demoFilms} />
 
                 <Divider istransparent={true} />
 
@@ -884,39 +881,7 @@ export const everyComponent = () =>
                     level={2} 
                     text="Checkout these films"
                 />
-                <FilmGrid films={[
-                    {
-                        name: "La La Land",
-                        image480x270: "http://placehold.it/480x270",
-                        imageAltText: "Example image",
-                        channels: [
-                            "Southbank"
-                        ],
-                        url: "#",
-                        uuid: "1"
-                    },
-                    {
-                        name: "The Lighthouse",
-                        image480x270: "",
-                        imageAltText: "Example image",
-                        channels: [
-                            "BFI Player",
-                            "Southbank"
-                        ],
-                        url: "#",
-                        uuid: "2"
-                    },
-                    {
-                        name: "Santa Claus Conquers the Martians",
-                        image480x270: "http://placehold.it/480x270",
-                        imageAltText: "Example image",
-                        channels: [
-                            "BFI Player"
-                        ],
-                        url: "#",
-                        uuid: "3"
-                    }
-                ]} />
+              
                 <PromoBanner 
                     colorScheme={1}
                     headline="Sight & Sound"
@@ -1315,7 +1280,6 @@ export const normalPage = () =>
                 <Text> 
                     So you two dig up, dig up dinosaurs? Hey, you know how I&apos;m, like, always trying to save the planet? Here&apos;s my chance. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? Yeah, but your scientists were so preoccupied with whether or not they could, they didn&apos;t stop to think if they should.
                 </Text>
-                <FilmGrid films={demoFilms} />
             </MainContent>
             <Sidebar>
                 <SidebarPageLinks links={pageLinksData} blockTitle="Related pages" />
@@ -2701,39 +2665,6 @@ export const everyComponentWithSidebar = () =>
                     level={2} 
                     text="Checkout these films"
                 />
-                <FilmGrid films={[
-                    {
-                        uuid: "1234",
-                        name: "La La Land",
-                        image480x270: "http://placehold.it/480x270",
-                        imageAltText: "Example image",
-                        channels: [
-                            "Southbank"
-                        ],
-                        url: "#"
-                    },
-                    {
-                        uuid: "12345",
-                        name: "The Lighthouse",
-                        image480x270: "",
-                        imageAltText: "Example image",
-                        channels: [
-                            "BFI Player",
-                            "Southbank"
-                        ],
-                        url: "#"
-                    },
-                    {
-                        uuid: "1234567",
-                        name: "Santa Claus Conquers the Martians",
-                        image480x270: "http://placehold.it/480x270",
-                        imageAltText: "Example image",
-                        channels: [
-                            "BFI Player"
-                        ],
-                        url: "#"
-                    }
-                ]} />
                 <Headline 
                     level={4} 
                     text="With these times"

@@ -112,7 +112,6 @@
       "src/components/PageLinks/stories.jsx": "<rootDir>/__mocks__/fileMock.js",
       "src/components/ArticleGrid/stories.jsx": "<rootDir>/__mocks__/fileMock.js",
       "src/components/FilmCardSingle/stories.jsx": "<rootDir>/__mocks__/fileMock.js",
-      "src/components/FilmGrid/stories.jsx": "<rootDir>/__mocks__/fileMock.js",
       "src/components/Footer/stories.jsx": "<rootDir>/__mocks__/fileMock.js",
       "src/components/Header/stories.jsx": "<rootDir>/__mocks__/fileMock.js",
       "src/components/Hero/stories.jsx": "<rootDir>/__mocks__/fileMock.js",
