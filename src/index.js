@@ -69,4 +69,4 @@ export * from "./components/PageContainer"
 
 
 // Theme
-export * as theme from './components/_theme';
+export { default as theme } from './components/_theme';
