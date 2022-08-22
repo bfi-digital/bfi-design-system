@@ -263,5 +263,9 @@ Text.propTypes = {
     /** 
 	 * Block of html from the WYSIWYG
 	 **/
-    children: PropTypes.string
+    children: PropTypes.oneOfType([
+        PropTypes.arrayOf(PropTypes.node),
+        PropTypes.node,
+        PropTypes.string
+    ])
 }

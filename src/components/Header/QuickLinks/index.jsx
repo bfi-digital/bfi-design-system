@@ -10,11 +10,11 @@ const Wrapper = styled.div`
     }
 `
 const QuickLink = styled(Link)`
-    color: ${props => props.isTransparent ? (!props.isSticky ? theme.white : theme.primary) : theme.primary};
+    color: ${props => props.$isTransparent ? (!props.$isSticky ? theme.white : theme.primary) : theme.primary};
     font-weight: ${theme.fontWeight_bold};
     text-decoration: none;
     padding: 21px 15px;
-    text-shadow: ${props => props.isTransparent ?(!props.isSticky ? "0px 0px 10px rgba(0,0,0,0.3)" : "none") : "none"};
+    text-shadow: ${props => props.$isTransparent ?(!props.$isSticky ? "0px 0px 10px rgba(0,0,0,0.3)" : "none") : "none"};
     position: relative;
     transition: opacity 0.3s ease-in-out;
 
@@ -23,7 +23,7 @@ const QuickLink = styled(Link)`
         position: absolute;
         width: 0;
         height: 2px;
-        background-color: ${props => props.isTransparent ? (!props.isSticky ? theme.white : theme.dark) : theme.dark};
+        background-color: ${props => props.$isTransparent ? (!props.$isSticky ? theme.white : theme.dark) : theme.dark};
         opacity: 0.8;
         visibility: hidden;
         transition: all 0.3s ease-in-out;
@@ -49,7 +49,7 @@ const QuickLink = styled(Link)`
     }
 
     &:hover {
-        color: ${props => props.isTransparent ? (!props.isSticky ? theme.white : theme.dark) : theme.dark};
+        color: ${props => props.$isTransparent ? (!props.isSticky ? theme.white : theme.dark) : theme.dark};
         opacity: 0.8;
         &:before {
             visibility: visible;
@@ -72,13 +72,13 @@ const QuickLinks = ({links, isOverlaid, isSticky}) => {
         links ?
             <Wrapper>
                 {links[0] &&
-                    <QuickLink to={links[0].url} data-tracking="quick-links-navigation"  isTransparent={isOverlaid} isSticky={isSticky}>{links[0].title}</QuickLink>
+                    <QuickLink to={links[0].url} data-tracking="quick-links-navigation"  $isTransparent={isOverlaid} $isSticky={isSticky}>{links[0].title}</QuickLink>
                 }
                 {links[1] &&
-                    <QuickLink to={links[1].url} data-tracking="quick-links-navigation"  isTransparent={isOverlaid} isSticky={isSticky}>{links[1].title}</QuickLink>
+                    <QuickLink to={links[1].url} data-tracking="quick-links-navigation"  $isTransparent={isOverlaid} $isSticky={isSticky}>{links[1].title}</QuickLink>
                 }
                 {links[2] &&
-                    <QuickLink to={links[2].url} data-tracking="quick-links-navigation"  isTransparent={isOverlaid} isSticky={isSticky}>{links[2].title}</QuickLink>
+                    <QuickLink to={links[2].url} data-tracking="quick-links-navigation"  $isTransparent={isOverlaid} $isSticky={isSticky}>{links[2].title}</QuickLink>
                 }
             </Wrapper>
             :

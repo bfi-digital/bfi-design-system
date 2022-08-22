@@ -29,19 +29,19 @@ const List = styled.ul`
 const ItemLink = styled(Link)`
     display: block;
     padding: 21px 15px;
-    color: ${props => props.isWhite ? (props.isSticky ? theme.black : theme.white) : theme.black};
+    color: ${props => props.$isWhite ? (props.$isSticky ? theme.black : theme.white) : theme.black};
     text-decoration: none;
     position: relative;
     margin-right: 15px;
-    text-shadow: ${props => props.isWhite ?(props.isSticky ? "none" : "0px 0px 10px rgba(0,0,0,0.3)") : "none"};
+    text-shadow: ${props => props.$isWhite ?(props.$isSticky ? "none" : "0px 0px 10px rgba(0,0,0,0.3)") : "none"};
 
     &:after{
         position: absolute;
         display: block;
         content: "";
         height: 2px;
-        background-color: ${props => props.isWhite ? (props.isSticky ? theme.black : theme.white) : theme.black};
-        width: ${props => props.active ? "calc(100% - 30px)" : "0"};
+        background-color: ${props => props.$isWhite ? (props.$isSticky ? theme.black : theme.white) : theme.black};
+        width: ${props => props.$active ? "calc(100% - 30px)" : "0"};
         left: 15px;
         right: 15px;
         bottom: 15px;
@@ -51,24 +51,24 @@ const ItemLink = styled(Link)`
             left: 8px;
             right: 8px;
             bottom: 8px;
-            width: ${props => props.active ? "calc(100% - 16px)" : "0"};
+            width: ${props => props.$active ? "calc(100% - 16px)" : "0"};
         }
         @media screen and (min-width: ${theme.m_sub}){
             left: 13px;
             right: 13px;
             bottom: 11px;
-            width: ${props => props.active ? "calc(100% - 26px)" : "0"};
+            width: ${props => props.$active ? "calc(100% - 26px)" : "0"};
         }
         @media screen and (min-width: ${theme.l}){
             bottom: 17px;
             left: 15px;
             right: 15px;
-            width: ${props => props.active ? "calc(100% - 30px)" : "0"};
+            width: ${props => props.$active ? "calc(100% - 30px)" : "0"};
         }
     }
     &:hover {
         &:after {
-            opacity: ${props => props.active ? "1" : "0.8"};
+            opacity: ${props => props.$active ? "1" : "0.8"};
             visibility: visible;
             width: calc(100% - 30px);
             @media screen and (max-width: ${theme.m_sub}) and (min-width: ${theme.m}){
@@ -96,7 +96,7 @@ const ItemLink = styled(Link)`
         height: 0; 
         border-left: 8px solid transparent;
         border-right: 8px solid transparent;
-        border-bottom: 8px solid ${props => props.hovered ? (props => props.isWhite ? (props.isSticky ? theme.lightGrey : theme.white) : theme.lightGrey) : "transparent"};
+        border-bottom: 8px solid ${props => props.$hovered ? (props => props.isWhite ? (props.isSticky ? theme.lightGrey : theme.white) : theme.lightGrey) : "transparent"};
         z-index: 999;
     }
     &:first-child {
@@ -403,12 +403,11 @@ const Nav = ({
                                 aria-haspopup="true"
                                 aria-expanded={selected === i}
                                 to={navItem.url} 
-                                external={navItem.external}
-                                active={navItem.active}
-                                hovered={selected === i}
+                                $active={navItem.active}
+                                $hovered={selected === i}
                                 // role="menuitem"
-                                isWhite={isOverlaid}
-                                isSticky={isSticky}
+                                $isWhite={isOverlaid}
+                                $isSticky={isSticky}
                                 data-tracking="header-navigation"
                             >
                                 {navItem.title}
