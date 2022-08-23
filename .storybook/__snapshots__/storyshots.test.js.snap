@@ -264,7 +264,6 @@ exports[`Storyshots 4 Components/All/Button Primary 1`] = `
     className="Button__PrimaryButton-sc-1bcggl7-0 jUxpNd"
     contrast="auto"
     href="#1"
-    title={false}
   >
     Click me
   </a>
@@ -283,7 +282,6 @@ exports[`Storyshots 4 Components/All/Button Secondary 1`] = `
     className="Button__SecondaryButton-sc-1bcggl7-2 hZUIyQ"
     contrast="auto"
     href="#2"
-    title={false}
   >
     Click me
   </a>
@@ -302,7 +300,6 @@ exports[`Storyshots 4 Components/All/Button Tertiary 1`] = `
     className="Button__TertiaryButton-sc-1bcggl7-3 eXwWqZ"
     contrast="auto"
     href="#3"
-    title={false}
   >
     Click me
   </a>
@@ -324,7 +321,6 @@ exports[`Storyshots 4 Components/All/Call to Action Internal Link 1`] = `
       className="Button__PrimaryButton-sc-1bcggl7-0 jUxpNd"
       contrast="auto"
       href="/"
-      title={false}
     >
       Internal Link
     </a>
@@ -347,7 +343,6 @@ exports[`Storyshots 4 Components/All/Call to Action Two Links 1`] = `
       className="Button__PrimaryButton-sc-1bcggl7-0 jUxpNd"
       contrast="auto"
       href="/"
-      title={false}
     >
       Internal Link
     </a>
@@ -359,7 +354,6 @@ exports[`Storyshots 4 Components/All/Call to Action Two Links 1`] = `
       className="Button__PrimaryButton-sc-1bcggl7-0 jUxpNd"
       contrast="auto"
       href="/"
-      title={false}
     >
       Internal Link
     </a>
@@ -643,7 +637,6 @@ exports[`Storyshots 4 Components/All/ErrorPage Error 404 1`] = `
           className="Button__PrimaryButton-sc-1bcggl7-0 jUxpNd"
           contrast="auto"
           href="/"
-          title={false}
         >
           Return to home
         </a>
@@ -694,7 +687,6 @@ exports[`Storyshots 4 Components/All/ErrorPage Error 500 1`] = `
           className="Button__PrimaryButton-sc-1bcggl7-0 jUxpNd"
           contrast="auto"
           href="/"
-          title={false}
         >
           Return to home
         </a>
@@ -986,7 +978,6 @@ exports[`Storyshots 4 Components/All/LFF IWC Banner LFF Example 1`] = `
       className="Button__PrimaryButton-sc-1bcggl7-0 jUxpNd"
       contrast="auto"
       href="http://bfi.org"
-      title={false}
     >
       Your guide to the festival
     </a>

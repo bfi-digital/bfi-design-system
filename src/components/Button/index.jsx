@@ -204,15 +204,15 @@ export const Button = ({
     disabled,
     ...props
 }) => {
-    if(disabled) return <DisabledButton title={title ? title : false} colorScheme={colorScheme} disabled={disabled} {...props}>{children}</DisabledButton>
-    if(level === 3) return <TertiaryButton title={title ? title : false} colorScheme={colorScheme} {...props}>{children}</TertiaryButton>
-    if(level === 2) return <SecondaryButton title={title ? title : false} colorScheme={colorScheme} {...props}>{children}</SecondaryButton>
-    return <PrimaryButton title={title ? title : false} colorScheme={playerPillar === "rentals" ? 2 : playerPillar === "subscription" ? 3 : playerPillar === "free" ? 4 : playerPillar === "blackSubscription" ? 5 : colorScheme} {...props}>{children}</PrimaryButton>
+    title = title || undefined
+    if(disabled) return <DisabledButton title={title} colorScheme={colorScheme} disabled={disabled} {...props}>{children}</DisabledButton>
+    if(level === 3) return <TertiaryButton title={title} colorScheme={colorScheme} {...props}>{children}</TertiaryButton>
+    if(level === 2) return <SecondaryButton title={title} colorScheme={colorScheme} {...props}>{children}</SecondaryButton>
+    return <PrimaryButton title={title} colorScheme={playerPillar === "rentals" ? 2 : playerPillar === "subscription" ? 3 : playerPillar === "free" ? 4 : playerPillar === "blackSubscription" ? 5 : colorScheme} {...props}>{children}</PrimaryButton>
 }
 
 Button.propTypes = {
     url: PropTypes.string,
-    external: PropTypes.bool,
     // A number between 1 and 3
     level: PropTypes.number,
     colorScheme: PropTypes.number,

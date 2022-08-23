@@ -95,7 +95,7 @@ FilterableArticles.propTypes = {
     /**
      * An optional function that is to be called when the 'load more' button is pressed. If omitted, the load more button is not shown.
      */
-    loadMore: PropTypes.func,
+    loadMore: PropTypes.oneOf([PropTypes.func, false]),
     /**
      * A boolean to determine if the articles are currently loading
      */
