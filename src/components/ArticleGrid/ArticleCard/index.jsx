@@ -188,7 +188,6 @@ export const ArticleCard = ({
 
         <CallToAction 
             to={url}
-            external={external} 
             className={external ? "external_link" : ""}
             title={"Read " + title}
         >

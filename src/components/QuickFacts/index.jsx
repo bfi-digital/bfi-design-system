@@ -50,10 +50,10 @@ export const QuickFacts = ({
 import PropTypes from "prop-types"
 
 QuickFacts.propTypes = {
-    facts: PropTypes.arrayOf({
+    facts: PropTypes.arrayOf(PropTypes.shape({
         label: PropTypes.string,
         value: PropTypes.string.isRequired
-    }).isRequired,
+    })).isRequired,
     columns: PropTypes.oneOf([1, 2, "inherit"])
 }
 
