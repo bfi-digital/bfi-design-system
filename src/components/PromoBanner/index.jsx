@@ -2,7 +2,6 @@ import React from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 import theme from "../_theme"
-import parse from "html-react-parser"
 
 import { Headline } from "../Headline"
 import { Button } from "../Button"
@@ -74,11 +73,11 @@ const Outer = styled.section`
         box-shadow: 9999px 0 0 ${props => colorSchemes[props.colorScheme].background};
         border-left: 9999px solid ${props => colorSchemes[props.colorScheme].background};
         z-index: -1;
-        display: ${props => props.pageWithSidebar ? "none" : "default"}
+        display: default;
     }
 
     @media screen and (min-width: ${theme.m}){
-        flex-direction: ${props => props.pageWithSidebar ? "column" : "row"};
+        flex-direction: row;
         margin-bottom: ${theme.standardSpace*2}px;
         margin-top: ${theme.standardSpace*2}px;
 
@@ -196,62 +195,16 @@ const Image = styled.div`
     margin-left: -20px;
 
     @media screen and (min-width: ${theme.m}){
-        order: ${props => props.reversed || props.pageWithSidebar ? "-1" : "1"};
-        width: ${props => props.pageWithSidebar ? "100%" : "50%"};
-        height: ${props => props.pageWithSidebar ? "250px" : "auto"};
-        margin-right: ${props => props.pageWithSidebar ? "0" : props.reversed ? "0px" : "-20px"};
-        margin-left: ${props => props.pageWithSidebar ? "0" : props.reversed ? "-20px" : "20px"};
-    }
-    @media screen and (min-width: ${theme.l}){
-        margin-right: 0px;
-        margin-left: 0px;
-    }
-`
-
-const SecondImage = styled.img`
-    margin-bottom: ${props => props.marginBottom ? "15px" : "0"};
-    max-width: 100%;
-    height: auto;
-`
-const VideoInner = styled.div`
-    width: 100%;
-    height: 100%;
-    padding-bottom: 56.25%;
-    position: relative;
-`
-const Video = styled.div`
-    order: -1;
-    background-size: cover;
-    background-position: center center;
-    width: 100%;
-
-    @media screen and (min-width: ${theme.m}){
         order: ${props => props.reversed ? "-1" : "1"};
-        max-width: ${props => props.pageWithSidebar ? "100%" : "75%"};
-        height: auto;
-        margin-right: ${props => props.pageWithSidebar ? "0" : props.reversed ? "0" : "-20px"};
-        margin-left: ${props => props.pageWithSidebar ? "0" : props.reversed ? "-20px" : "-20px"};
+        width: 50%;
+        height: "auto";
+        margin-right: ${props => props.reversed ? "0px" : "-20px"};
+        margin-left: ${props => props.reversed ? "-20px" : "20px"};
     }
     @media screen and (min-width: ${theme.l}){
         margin-right: 0px;
         margin-left: 0px;
-        max-width: ${props => props.pageWithSidebar ? "100%" : "66%"};
     }
-    iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-`
-const Prefix = styled.p`
-    font-size: ${theme.small_fontSize_m};
-    margin-top: 0;
-    margin-bottom: 5px;
-`
-const PrefixContainer = styled.div`
-    margin-bottom: 25px;
 `
 
 function slugify(string) {
@@ -275,89 +228,40 @@ export const PromoBanner = ({
     callToActionUrl, 
     callToActionTitle,
     image,
-    reversed,
+    reversed = false,
     colorScheme,
-    backgroundColor,
-    secondImage,
-    secondImageAlt,
-    secondImagePrefix,
-    external,
-    oembedObject,
-    pageWithSidebar = false
+    external
 }) => {
 
-    if(oembedObject){
-        if (oembedObject.html.includes("youtube") && !oembedObject.html.includes("cc_load_policy=1")) {
-            oembedObject.html = oembedObject.html.replace(
-                "?feature=oembed",
-                "?feature=oembed&cc_load_policy=1"
-            )
-        }
-        if (oembedObject.html.includes("vimeo") && !oembedObject.html.includes("texttrack")) {
-            const parts = oembedObject.html.split(" ")
-            parts[1] = parts[1].replace(/"/g, "") + "?texttrack=en"
-            parts[1] = "src="+ "\""+parts[1].slice(4)+"\""
-            oembedObject.html = parts.join(" ")
-        }
-    }
     return (
         <Outer 
             className={external ? "external_link promoBanner" : "promoBanner"}
             reversed={reversed} 
-            colorScheme={colorScheme} 
-            backgroundColor={backgroundColor}
-            pageWithSidebar={pageWithSidebar}
+            colorScheme={colorScheme}
             id={slugify(headline)}
         >
-            <Inner className={image ? "with_image" : "without_image"} reversed={reversed} pageWithSidebar={pageWithSidebar}>
-                {secondImage && !secondImagePrefix && 
-                <SecondImage 
-                    marginBottom
-                    src={secondImage} 
-                    alt={secondImageAlt ? secondImageAlt : ""}
-                />
-                }
+            <Inner className={image ? "with_image" : "without_image"} reversed={reversed}>
                 <Headline level={2} text={headline}/>
-                {description && <Description className={image || oembedObject ? "with_image" : "without_image"}>{description}</Description>} 
-                {secondImage && secondImagePrefix && 
-                <PrefixContainer>
-                    <Prefix>{secondImagePrefix}</Prefix>
-                    <SecondImage 
-                        src={secondImage} 
-                        alt={secondImageAlt ? secondImageAlt : ""}
-                    />
-                </PrefixContainer>
-                }
-                {callToActionUrl && (image || oembedObject) && 
+                {description && <Description className={image ? "with_image" : "without_image"}>{description}</Description>} 
+                {callToActionUrl && image && 
                 <Button to={callToActionUrl} colorScheme={colorSchemes[colorScheme].buttonColor} title={headline}>
                     {callToActionTitle}
                 </Button>
                 }
             </Inner> 
-            { oembedObject ?
-                <Video reversed={reversed} pageWithSidebar={pageWithSidebar}>
-                    <VideoInner>
-                        {parse(oembedObject.html.replace("></iframe>", " title=\"" + (oembedObject.title ? (oembedObject.title + " video") : "Video player") + "\"></iframe>"))}
-                    </VideoInner>
-                </Video>
-                :
-                <>
-                    {image ? 
-                        <Image
-                            reversed={reversed}
-                            image={image} 
-                            pageWithSidebar={pageWithSidebar}
-                        /> 
-                        : 
-                        <RightButton>
-                            {callToActionUrl && 
-                            <Button to={callToActionUrl} colorScheme={colorSchemes[colorScheme].buttonColor}>
-                                {callToActionTitle}
-                            </Button>
-                            }
-                        </RightButton>
+            {image ? 
+                <Image
+                    reversed={reversed}
+                    image={image}
+                /> 
+                : 
+                <RightButton>
+                    {callToActionUrl && 
+                    <Button to={callToActionUrl} colorScheme={colorSchemes[colorScheme].buttonColor}>
+                        {callToActionTitle}
+                    </Button>
                     }
-                </>
+                </RightButton>
             }
         </Outer>
     )
@@ -390,31 +294,7 @@ PromoBanner.propTypes = {
     **/
     colorScheme: PropTypes.number,
     /** 
-    * Pass in a colour to override the colour scheme's background color. Optional
-    **/
-    backgroundColor: PropTypes.string,    
-    /** 
-    * Source URL for optional second image, any size
-    **/
-    secondImage: PropTypes.string,
-    /** 
-    * Alt text for opitonal second image
-    **/
-    secondImageAltText: PropTypes.string,
-    /** 
-    * An optional prefix for the second image - if this is set then the second image will apear below the content, if its not the second image will appaear above the title
-    **/
-    secondImagePrefix: PropTypes.string,
-    /** 
     * Boolean for whether link is external. Default is false
     **/
-    external: PropTypes.bool,
-    /** 
-    * Optional video embed which will override the image
-    **/
-    oembedObject: PropTypes.string,
-    /** 
-    * Boolean to define if this is on a page with a sidebar or not. Default is false
-    **/
-    pageWithSidebar: PropTypes.bool
+    external: PropTypes.bool
 }

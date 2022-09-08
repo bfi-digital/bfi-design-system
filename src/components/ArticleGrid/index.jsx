@@ -196,7 +196,7 @@ export const ArticleGrid = ({
                                 <>
                                     <ArticleCardHighlighted key={articles[0].uuid} pageWithSidebar={pageWithSidebar} {...articles[0]}/>
                                     {articles.length > 1 &&
-                                        articles.slice(1).map(article =>
+                                        articles.slice(1).map(article => 
                                             <ArticleCard key={article.uuid} pageWithSidebar={pageWithSidebar} lessColumns={articles.length === 2 || articles.length === 4} {...article}/>    
                                         )
                                     }

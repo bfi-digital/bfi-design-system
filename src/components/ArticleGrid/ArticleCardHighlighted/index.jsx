@@ -214,7 +214,6 @@ export const ArticleCardHighlighted = ({
 
         <CallToAction 
             to={url}
-            external={external} 
             className={external ? "external_link" : ""}
             title={"Read " + title}
         >

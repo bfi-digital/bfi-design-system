@@ -151,8 +151,10 @@ export const Headline = ({
     text,
     visuallyHidden,
     className = null,
+    children,
     ...props
 }) => {
+    text = children ?? text
     const cls = classes(className, visuallyHidden && "visuallyHidden")
     if (level === 0) return <HeroH1 className={cls} aria-label={visuallyHidden ? text : ""} {...props}>{text}</HeroH1>
     if (level === 1) return <H1 className={cls} aria-label={visuallyHidden ? text : ""}>{text}</H1>

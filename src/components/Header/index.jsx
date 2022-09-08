@@ -14,7 +14,7 @@ import logoWhite from "./logo-white.svg"
 const Outer = styled.header`
     background: ${theme.white};
     border-bottom: 1px solid ${theme.grey};
-    margin-bottom: ${props => props.isTransparent ? "-175px" : "0px"};
+    margin-bottom: ${props => props.$isTransparent ? "-175px" : "0px"};
     position: relative;
     z-index: 999;
     min-height: 45px;
@@ -23,8 +23,8 @@ const Outer = styled.header`
     top: 0px;
 
     @media screen and (min-width: ${theme.m}){
-        background: ${props => props.isTransparent ? (!props.isSticky ? "transparent" : theme.white) : theme.white};
-        border-bottom: 1px solid ${props => props.isTransparent ? (!props.isSticky ? "transparent" : theme.grey) : theme.grey};
+        background: ${props => props.$isTransparent ? (!props.$isSticky ? "transparent" : theme.white) : theme.white};
+        border-bottom: 1px solid ${props => props.$isTransparent ? (!props.$isSticky ? "transparent" : theme.grey) : theme.grey};
     }
     @media screen and (min-width: ${theme.l}){
         min-height: 50px;
@@ -120,7 +120,7 @@ const TopSection = styled.div`
     display: none;
     @media screen and (min-width: ${theme.m}){
         display: block;
-        background: ${props => props.isTransparent ? (!props.isSticky ? "transparent" : theme.white) : theme.white};
+        background: ${props => props.$isTransparent ? (!props.$isSticky ? "transparent" : theme.white) : theme.white};
         padding-top: 15px;
     }
 `
@@ -186,7 +186,7 @@ export const Header = ({
     overlay
 }) => {
     const [open, setOpen] = useState(false)
-    const [selected, setSelected] = useState(false)
+    const [selected, setSelected] = useState(-1)
     const [isSticky, setSticky] = useState(overlay ? false : true)
     const ref = useRef(null)
 
@@ -215,8 +215,8 @@ export const Header = ({
             {/* Remove this conditional if wanting to add in branding to the header */}
             { overlay &&
                 <TopSection 
-                    isTransparent={overlay}
-                    isSticky={isSticky}
+                    $isTransparent={overlay}
+                    $isSticky={isSticky}
                 >
                     <Inner>
                         <LogoLink to="/">
@@ -230,8 +230,8 @@ export const Header = ({
                 onMouseLeave={() => {
                     setSelected(false)
                 }}
-                isTransparent={overlay}
-                isSticky={isSticky}
+                $isTransparent={overlay}
+                $isSticky={isSticky}
             >
                 <Inner>
                     <MenuButton 

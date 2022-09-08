@@ -170,9 +170,10 @@ export const ArticleCard = ({
     author,
     type,
     lessColumns,
-    external
+    external,
+    ...props
 }) =>
-    <Outer className="articleCard" pageWithSidebar={pageWithSidebar} withCategory={category ? true : false} lessColumns={lessColumns}>
+    <Outer {...props} className="articleCard" pageWithSidebar={pageWithSidebar} withCategory={category ? true : false} lessColumns={lessColumns}>
         {category ? 
             <CategoryTag>{category}</CategoryTag> 
             :
@@ -188,7 +189,6 @@ export const ArticleCard = ({
 
         <CallToAction 
             to={url}
-            external={external} 
             className={external ? "external_link" : ""}
             title={"Read " + title}
         >
