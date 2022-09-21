@@ -21,6 +21,11 @@ export const Wrapper = styled.div`
         max-width: calc(${theme.xl} - 100px);
     }
 
+    & > article {
+        flex: 1 1 auto;
+        max-width: 100%;
+    }
+
     article.child_page {
         max-width: 100%;
 
@@ -31,18 +36,14 @@ export const Wrapper = styled.div`
             margin-top: 0; 
         }
     }
-    article {
-        flex: 1 1 auto;
-        max-width: 100%;
-        &.landing_page {
-            .text_block, .lead_paragraph {
 
-                @media screen and (min-width: ${theme.m}){
-                    max-width: calc(${theme.l} - 400px);
-                }
-                @media screen and (min-width: ${theme.xl}){
-                    max-width: calc(${theme.xl} - 600px);
-                }
+    article.landing_page {
+        .text_block, .lead_paragraph {
+            @media screen and (min-width: ${theme.m}){
+                max-width: calc(${theme.l} - 400px);
+            }
+            @media screen and (min-width: ${theme.xl}){
+                max-width: calc(${theme.xl} - 600px);
             }
         }
     }

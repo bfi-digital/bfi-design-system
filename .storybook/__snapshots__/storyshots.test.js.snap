@@ -3,7 +3,7 @@
 exports[`Storyshots 4 Components/All/Advertising Container Failed To Load Example 1`] = `
 <div
   style={
-    Object {
+    {
       "margin": "20px",
       "width": "600px",
     }
@@ -27,7 +27,7 @@ exports[`Storyshots 4 Components/All/Advertising Container Failed To Load Exampl
 exports[`Storyshots 4 Components/All/Advertising Container Mpu Example 1`] = `
 <div
   style={
-    Object {
+    {
       "height": "270px",
       "margin": "20px",
       "width": "320px",
@@ -44,7 +44,7 @@ exports[`Storyshots 4 Components/All/Advertising Container Mpu Example 1`] = `
     </p>
     <div
       style={
-        Object {
+        {
           "background": "grey",
           "height": "250px",
           "width": "300px",
@@ -58,7 +58,7 @@ exports[`Storyshots 4 Components/All/Advertising Container Mpu Example 1`] = `
 exports[`Storyshots 4 Components/All/Advertising Container Native Example 1`] = `
 <div
   style={
-    Object {
+    {
       "margin": "20px",
       "width": "600px",
     }
@@ -69,7 +69,7 @@ exports[`Storyshots 4 Components/All/Advertising Container Native Example 1`] = 
   >
     <div
       style={
-        Object {
+        {
           "background": "grey",
           "height": "400px",
           "width": "580px",
@@ -138,7 +138,7 @@ exports[`Storyshots 4 Components/All/Blockquote Without Citation 1`] = `
 `;
 
 exports[`Storyshots 4 Components/All/Breadcrumbs Normal 1`] = `
-Array [
+[
   <ol
     className="Breadcrumbs__Outer-sc-17ixyjm-0 eQqOGw"
   >
@@ -190,7 +190,7 @@ Array [
 `;
 
 exports[`Storyshots 4 Components/All/Breadcrumbs Wrapping 1`] = `
-Array [
+[
   <ol
     className="Breadcrumbs__Outer-sc-17ixyjm-0 eQqOGw"
   >
@@ -255,7 +255,7 @@ Array [
 exports[`Storyshots 4 Components/All/Button Primary 1`] = `
 <div
   style={
-    Object {
+    {
       "padding": "20px",
     }
   }
@@ -273,7 +273,7 @@ exports[`Storyshots 4 Components/All/Button Primary 1`] = `
 exports[`Storyshots 4 Components/All/Button Secondary 1`] = `
 <div
   style={
-    Object {
+    {
       "padding": "20px",
     }
   }
@@ -291,7 +291,7 @@ exports[`Storyshots 4 Components/All/Button Secondary 1`] = `
 exports[`Storyshots 4 Components/All/Button Tertiary 1`] = `
 <div
   style={
-    Object {
+    {
       "padding": "20px",
     }
   }
@@ -309,7 +309,7 @@ exports[`Storyshots 4 Components/All/Button Tertiary 1`] = `
 exports[`Storyshots 4 Components/All/Call to Action Internal Link 1`] = `
 <div
   style={
-    Object {
+    {
       "padding": "20px",
     }
   }
@@ -331,7 +331,7 @@ exports[`Storyshots 4 Components/All/Call to Action Internal Link 1`] = `
 exports[`Storyshots 4 Components/All/Call to Action Two Links 1`] = `
 <div
   style={
-    Object {
+    {
       "padding": "20px",
     }
   }
@@ -389,7 +389,7 @@ exports[`Storyshots 4 Components/All/Divider Transparent 1`] = `
 exports[`Storyshots 4 Components/All/Downloadable File Multiple Files 1`] = `
 <div
   style={
-    Object {
+    {
       "padding": "20px",
     }
   }
@@ -524,7 +524,7 @@ exports[`Storyshots 4 Components/All/Downloadable File Multiple Files 1`] = `
 exports[`Storyshots 4 Components/All/Downloadable File Single File 1`] = `
 <div
   style={
-    Object {
+    {
       "padding": "20px",
     }
   }
@@ -699,7 +699,7 @@ exports[`Storyshots 4 Components/All/ErrorPage Error 500 1`] = `
 exports[`Storyshots 4 Components/All/FilmShowing A Showing 1`] = `
 <div
   style={
-    Object {
+    {
       "padding": "20px",
     }
   }
@@ -765,7 +765,7 @@ exports[`Storyshots 4 Components/All/FilmShowing A Showing 1`] = `
 exports[`Storyshots 4 Components/All/FilmShowing Sold Out 1`] = `
 <div
   style={
-    Object {
+    {
       "padding": "20px",
     }
   }
@@ -818,7 +818,7 @@ exports[`Storyshots 4 Components/All/Filter-esque Links Normal 1`] = `
     className="FilterLinks__FilterLink-sc-5q1sf-1 blenit"
     disabled={false}
     href="#1"
-    title="Show all \\"Example link\\" articles"
+    title="Show all "Example link" articles"
   >
     Example link
   </a>
@@ -826,7 +826,7 @@ exports[`Storyshots 4 Components/All/Filter-esque Links Normal 1`] = `
     className="FilterLinks__FilterLink-sc-5q1sf-1 blenit"
     disabled={false}
     href="#2"
-    title="Show all \\"Where to stream\\" articles"
+    title="Show all "Where to stream" articles"
   >
     Where to stream
   </a>
@@ -834,7 +834,7 @@ exports[`Storyshots 4 Components/All/Filter-esque Links Normal 1`] = `
     className="FilterLinks__FilterLink-sc-5q1sf-1 blenit"
     disabled={false}
     href="#3"
-    title="Show all \\"Where to begin\\" articles"
+    title="Show all "Where to begin" articles"
   >
     Where to begin
   </a>
@@ -842,7 +842,7 @@ exports[`Storyshots 4 Components/All/Filter-esque Links Normal 1`] = `
     className="FilterLinks__FilterLink-sc-5q1sf-1 blenit"
     disabled={false}
     href="#4"
-    title="Show all \\"Five Things\\" articles"
+    title="Show all "Five Things" articles"
   >
     Five Things
   </a>
@@ -930,7 +930,7 @@ exports[`Storyshots 4 Components/All/HeroBasic Normal 1`] = `
 exports[`Storyshots 4 Components/All/Input Normal 1`] = `
 <div
   style={
-    Object {
+    {
       "padding": "20px",
     }
   }
@@ -969,7 +969,7 @@ exports[`Storyshots 4 Components/All/LFF IWC Banner LFF Example 1`] = `
     <p
       className="LeadParagraph__Outer-sc-1bghl13-0 ejwnJR lead_paragraph"
       dangerouslySetInnerHTML={
-        Object {
+        {
           "__html": "The 2020 BFI London Film Festival will be the first ever edition of the Festival to be widely accessible across the UK, with 50 Virtual Festival Premieres to be enjoyed at home.",
         }
       }
@@ -1075,7 +1075,7 @@ exports[`Storyshots 4 Components/All/Landmark Normal 1`] = `
 exports[`Storyshots 4 Components/All/Lead paragraph Normal 1`] = `
 <div
   style={
-    Object {
+    {
       "padding": "20px",
     }
   }
@@ -1083,7 +1083,7 @@ exports[`Storyshots 4 Components/All/Lead paragraph Normal 1`] = `
   <p
     className="LeadParagraph__Outer-sc-1bghl13-0 ejwnJR lead_paragraph"
     dangerouslySetInnerHTML={
-      Object {
+      {
         "__html": "We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough, they won't want it anymore! We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough, they won't want it anymore!",
       }
     }
@@ -1094,7 +1094,7 @@ exports[`Storyshots 4 Components/All/Lead paragraph Normal 1`] = `
 exports[`Storyshots 4 Components/All/Newsletter Sign Up Example 1`] = `
 <div
   style={
-    Object {
+    {
       "padding": "20px",
     }
   }
@@ -1191,7 +1191,7 @@ exports[`Storyshots 4 Components/All/Programme Banner No Image Example 1`] = `""
 exports[`Storyshots 4 Components/All/Selectbox Normal 1`] = `
 <div
   style={
-    Object {
+    {
       "padding": "20px",
     }
   }
@@ -1309,7 +1309,7 @@ exports[`Storyshots 4 Components/All/Selectbox Normal 1`] = `
 exports[`Storyshots 4 Components/All/StepByStep Primary 1`] = `
 <div
   style={
-    Object {
+    {
       "maxWidth": "350px",
       "padding": "20px",
     }
@@ -1434,7 +1434,7 @@ exports[`Storyshots 4 Components/All/StepByStep Primary 1`] = `
 exports[`Storyshots 4 Components/All/Tabs Primary 1`] = `
 <div
   style={
-    Object {
+    {
       "maxWidth": "650px",
       "padding": "20px",
     }
@@ -1525,7 +1525,7 @@ exports[`Storyshots 4 Components/All/Tag Primary 1`] = `
 exports[`Storyshots 4 Components/All/TemporaryAnnouncement Normal 1`] = `
 <div
   style={
-    Object {
+    {
       "padding": "20px",
     }
   }
@@ -1590,7 +1590,7 @@ exports[`Storyshots 4 Components/All/TemporaryAnnouncement Normal 1`] = `
 exports[`Storyshots 4 Components/All/Text Normal 1`] = `
 <div
   style={
-    Object {
+    {
       "padding": "20px",
     }
   }
@@ -1702,7 +1702,7 @@ exports[`Storyshots IntroBlock Full 1`] = `
     <p
       className="LeadParagraph__Outer-sc-1bghl13-0 ejwnJR lead_paragraph"
       dangerouslySetInnerHTML={
-        Object {
+        {
           "__html": "Page standfirst text is here",
         }
       }
@@ -1743,7 +1743,7 @@ exports[`Storyshots IntroBlock No Copyright 1`] = `
     <p
       className="LeadParagraph__Outer-sc-1bghl13-0 ejwnJR lead_paragraph"
       dangerouslySetInnerHTML={
-        Object {
+        {
           "__html": "Page standfirst text is here",
         }
       }
@@ -1766,7 +1766,7 @@ exports[`Storyshots IntroBlock No Image 1`] = `
     <p
       className="LeadParagraph__Outer-sc-1bghl13-0 ejwnJR lead_paragraph"
       dangerouslySetInnerHTML={
-        Object {
+        {
           "__html": "Page standfirst text is here",
         }
       }
