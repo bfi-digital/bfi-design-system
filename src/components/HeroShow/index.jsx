@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useEffect } from "react"
 import styled from "styled-components"
 import theme from "../_theme"
 import PropTypes from "prop-types"
@@ -6,7 +6,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll"
 import { Headline } from "../Headline"
 import parse from "html-react-parser"
 import { Wrapper } from "../PageContainer"
-import cameraIcon from "./camera_icon.svg"
+import { CaptionedImage, CaptionToggle } from "../CaptionedImage"
 
 const StyledWrapper = styled(Wrapper)`
   max-width: calc(${theme.xl} + 125px) !important;
@@ -151,10 +151,6 @@ const ImageContainer = styled.div`
   position: relative;
   width: 100%;
 
-  img {
-    margin-bottom: -5px;
-  }
-
   @media screen and (max-width: ${theme.m}) {
     background: ${theme.black};
     position: relative;
@@ -165,20 +161,8 @@ const ImageContainer = styled.div`
     height: fit-content;
     align-self: center;
   }
-  @media screen and (min-width: ${theme.l}) {
-  }
 `
 
-const StyledImage = styled.img`
-  width: 100%;
-  height: auto;
-  @media screen and (min-width: ${theme.m}) {
-    flex: 0 0 50%;
-  }
-  @media screen and (min-width: ${theme.xl}) {
-    flex: 0 0 65%;
-  }
-`
 const ButtonContainer = styled.div`
   margin-top: auto;
 
@@ -260,6 +244,7 @@ const Video = styled.div`
   background-size: cover;
   background-position: center center;
   width: 100%;
+  align-self: center;
 
   @media screen and (min-width: ${theme.m}) {
     height: auto;
@@ -299,93 +284,6 @@ const StandFirst = styled.p`
     }
 `
 
-const CaptionCreditIconWrapper = styled.div`
-  position: absolute;
-  width: 100%;
-  display: none;
-
-  @media screen and (min-width: ${theme.m}) {
-    bottom: 15px;
-    max-width: 100%;
-    right: 15px;
-    display: block;
-  }
-
-  @media screen and (min-width: ${theme.s}) and (max-width: ${theme.l}) {
-    right: 20px;
-    bottom: 20px;
-    display: block;
-  }
-
-  @media screen and (max-width: ${theme.s}) {
-    right: 20px;
-    bottom: 20px;
-    display: block;
-    max-width: calc(100% - 55px);
-  }
-`
-const CaptionCreditIcon = styled.button`
-    border: none;
-    border-radius: 100%;
-    width: 30px;
-    height: 30px;
-    float: right;
-    cursor: pointer;
-    position: relative;
-    opacity: 0.8;
-    background: url(${cameraIcon});
-    background-size: 100%;
-  
-    &:focus {
-        border: solid 3px ${theme.focus};
-        outline: none; 
-    }
-
-    &.add_caption {
-        &:focus {
-            opacity: 1;
-            color: transparent;
-            text-shadow: 0 0 0 #000;
-        
-            &::after {
-                position: absolute;
-                bottom: calc(100% + 5px);
-                right: calc(100% - 30px);
-                display: block;
-                padding: 10px 15px;
-                width: max-content;
-                max-width: 1000px;
-                text-align: left;
-                background: ${theme.lightest};
-                content: attr(data-toggle);
-                z-index: 9998;
-                -webkit-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.4);
-                -moz-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.4);
-                box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.4);
-                font-size: ${theme.small_fontSize_m};
-    
-                @media screen and (max-width: ${theme.s}){
-                    max-width:260px;
-                }
-    
-                @media screen and (max-width: ${theme.l}) and (min-width: 400px){
-                    max-width:350px;
-                }
-    
-                @media screen and (min-width: ${theme.m}) and (max-width: ${theme.l}){
-                    max-width: 700px;
-                }
-            }
-        }
-    }
-
-    &.remove_caption{
-        outline: none;
-        color: transparent;
-        text-shadow: 0 0 0 #000;
-   }
-`
-
 export const HeroShow = ({
     image1920x1080,
     imageAltText,
@@ -399,7 +297,6 @@ export const HeroShow = ({
     children,
     totalPerformances,
 }) => {
-    const [textDisplay, setTextDisplay] = useState(false)
     useEffect(() => {
         document.addEventListener("click", event => {
             if (event.target.matches("button")) {
@@ -458,30 +355,15 @@ export const HeroShow = ({
                 ) : (
                     image1920x1080 && (
                         <ImageContainer>
-                            <>
-                                <StyledImage
-                                    itemprop="image"
-                                    src={image1920x1080}
-                                    alt={imageAltText ? imageAltText : ""}
-                                    loading="lazy"
-                                />
-                                {imageCaption && (
-                                    <CaptionCreditIconWrapper>
-                                        <CaptionCreditIcon className={textDisplay? "add_caption": "remove_caption"}
-                                            onClick={()=>setTextDisplay(!textDisplay)}
-                                            src={cameraIcon}
-                                            data-toggle={
-                                                imageCopyRight
-                                                    ? imageCaption + " " + "\u00A9 " + imageCopyRight
-                                                    : imageCaption
-                                            }
-                                            alt="Image caption and credit"
-                                            aria-label="Image caption and credit"
-                                            itemprop="copyrightHolder"
-                                        />
-                                    </CaptionCreditIconWrapper>
+                            <CaptionedImage src={image1920x1080} alt={imageAltText}>
+                                {(imageCaption || imageCopyRight) && (
+                                    <CaptionToggle>
+                                        { imageCaption }
+                                        { (imageCaption && imageCopyRight) && <br /> }
+                                        { imageCopyRight && <cite>{`\u00A9 ${imageCopyRight}`}</cite> }
+                                    </CaptionToggle>
                                 )}
-                            </>
+                            </CaptionedImage>
                         </ImageContainer>
                     )
                 )}
@@ -492,31 +374,43 @@ export const HeroShow = ({
 
 HeroShow.propTypes = {
     /**
-   * Urls to the image for the article hero.
-   **/
+    * URL to the image for the article hero
+    **/
     image1920x1080: PropTypes.string,
     /**
-   * Alt text for hero image.
-   **/
+    * Alt text for hero image
+    **/
     imageAltText: PropTypes.string,
     /**
-   * Optional copyright text for the hero image.
-   **/
-    imageCopyright: PropTypes.string,
-    /**
-   * The text for the title which will be used as the H1 for this page/post
-   **/
+    * The text for the title which will be used as the H1 for this page/post
+    **/
     title: PropTypes.string,
     /**
-   * A summary of the article.
-   **/
+    * A summary of the article
+    **/
     standfirst: PropTypes.string,
     /**
-   * The breadcrumb array
-   **/
-    crumbs: PropTypes.array,
+    * An optional date/time string used to specify that there is only 1 performance
+    **/
+    dateTimeStart: PropTypes.string,
     /**
-   * An optional definition to define if this is a service list page or a regular page
-   **/
-    isServiceListPage: PropTypes.bool,
+    * An optional config object containing embed details for players such as YouTube, Vimeo, etc
+    **/
+    oembedObject: PropTypes.object,
+    /**
+    * Optional. Possible values are "event" or undefined (default, represents a screening)
+    **/
+    showType: PropTypes.string,
+    /**
+    * Optional copyright text for the hero image
+    **/
+    imageCopyRight: PropTypes.string,
+    /**
+    * A brief description of what can be seen in the image
+    **/
+    imageCaption: PropTypes.string,
+    /**
+    * The total number of performances for the show
+    **/
+    totalPerformances: PropTypes.number
 }

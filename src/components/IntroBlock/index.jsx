@@ -1,34 +1,44 @@
-import styled from "styled-components"
-import {Headline} from "../Headline"
-import { LeadParagraph } from "../LeadParagraph"
 import React from "react"
-import {CaptionedImage} from "../CaptionedImage"
+import styled from "styled-components"
+import { Headline } from "../Headline"
+import { LeadParagraph } from "../LeadParagraph"
+import { CaptionedImage, CaptionToggle } from "../CaptionedImage"
+import theme from "../_theme"
 
 /**
  * A component with a title, standfirst and image with caption.
  * For introducing readers to the article or topic
  */
-const IntroBlockWrapper = styled.div/* less */ `
-  & {
-    display: flex;
-    margin: 0 -25px;
-    flex-wrap: wrap-reverse;
+const IntroBlockWrapper = styled.div`
+    display: grid;
+    gap: 25px;
     align-items: center;
 
-    & > * {
-      flex: 1 0 50%;
-      object-fit: contain;
-      padding: 0 25px;
-      min-width: 400px;
+    article {
+        grid-row: 1;
     }
-  }
+
+    @media screen and (min-width: ${theme.s}) {
+        grid-template-columns: minmax(min-content,max-content) 50%;
+
+        article {
+            grid-row: auto;
+        }
+    }
 `
 
 function IntroImage({ src, alt = "", caption, copyright }) {
     return (
         <CaptionedImage src={src} alt={alt}>
-            {caption}
-            {copyright && <cite>{copyright}</cite>}
+            <>
+                {(caption || copyright) && (
+                    <CaptionToggle>
+                        { caption }
+                        { (caption && copyright) && <br /> }
+                        { copyright && <cite>{`\u00A9 ${copyright}`}</cite> }
+                    </CaptionToggle>
+                )}
+            </>
         </CaptionedImage>
     )
 }
@@ -42,11 +52,11 @@ export function IntroBlock({ title, standfirst, ...imgArgs }) {
     )
 }
 
-function IntroText({ title, standfirst }) {
+function IntroText({ title, standfirst = "" }) {
     return (
-        <div>
+        <article>
             <Headline level={1} text={title} />
-            <LeadParagraph text={standfirst || ""} />
-        </div>
+            <LeadParagraph text={standfirst} />
+        </article>
     )
 }

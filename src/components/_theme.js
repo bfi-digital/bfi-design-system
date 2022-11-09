@@ -1,3 +1,5 @@
+export const toRem = (pixelValue) => `${pixelValue / 16}rem`
+
 export default {
     headingFont: "HelveticaNeueLTPro-Bd, \"HelveticaNeue\", \"Helvetica Neue\", Helvetica, \"Open Sans\", Arial, \"Lucida Grande\", sans-serif",
     bodyFont: "\"Open Sans\", \"HelveticaNeue\", \"Helvetica Neue\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
@@ -52,18 +54,18 @@ export default {
     fontWeight_semiBold: "600",
     fontWeight_bold: "700",
 
-    fontSize_s: "1.05rem",
+    fontSize_s: toRem(16.8),
     lineHeight_s: "1.5",
 
-    small_fontSize_m: "0.8rem",
-    fontSize_m: "1.14rem",
+    small_fontSize_m: toRem(12.8),
+    fontSize_m: toRem(18.24),
     lineHeight_m: "1.6",
-    large_fontSize_m: "1.4rem",
+    large_fontSize_m: toRem(22.4),
     large_lineHeight_m: "1.6",
 
-    fontSize_xl: "1.25rem",
+    fontSize_xl: toRem(20),
     lineHeight_xl: "1.6",
-    large_fontSize_xl: "1.6rem",
+    large_fontSize_xl: toRem(25.6),
     large_lineHeight_xl: "1.6",
     
 }

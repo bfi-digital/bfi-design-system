@@ -1,31 +1,137 @@
-import { Meta, Story, ArgsTable, Canvas } from "@storybook/addon-docs"
-import { IntroBlock } from "../../../components/IntroBlock/index"
-import kansas from '../Structure/images/kansas.gif';
+import { ArgsTable, Canvas, Meta, Story } from '@storybook/addon-docs'
+import { IntroBlock } from '../../../components/IntroBlock'
 
-<Meta title="2 Pattern Library/1 Structure/IntroBlock" component={IntroBlock} />
+export const Template = (args) => <IntroBlock {...args} />
 
-# IntroBlock
+<Meta
+  title="2 Pattern Library/1 Structure/IntroBlock 🆕"
+  component={IntroBlock}
+  decorators={[
+    (Story) => (
+      <div style={{ margin: '1rem' }}>
+        <Story />
+      </div>
+    )
+  ]}
+  argTypes={{
+    title: {
+      description: 'Page title (level 1)',
+      type: {
+        required: true
+      },
+      control: 'text'
+    },
+    standfirst: {
+      description: 'Page standfirst text',
+      control: 'text'
+    },
+    src: {
+      description: 'A path to the image you want to embed',
+      control: 'text'
+    },
+    alt: {
+      description: 'A detailed description of what can be seen in the image',
+      control: 'text'
+    },
+    caption: {
+      description: 'A brief description of what can be seen in the image',
+      control: 'text'
+    },
+    copyright: {
+      description: 'A string giving the copyright attribution for the image',
+      control: 'text'
+    }
+  }}
+/>
 
-A block containing an optional image, title, and standfirst.
+# `<IntroBlock />`
 
-## Examples
+For introducing readers to an article or topic, this component features a title, standfirst and optional image with caption toggle.
+
+### Complete
 
 <Canvas>
-    <Story name="Normal">
-        <IntroBlock src={kansas} alt="Scene from Wizard of Oz" caption="Caption" title="My page" copyright="Paul photography" standfirst={
-            `Ullam quia aut facere minus dolorem quam sequi esse. Officia molestiae voluptatem et non cum modi. Saepe neque repellendus in.`}>
-        </IntroBlock>
-    </Story>
+  <Story
+    name="Complete"
+    args={{
+      title: 'Ammonite',
+      standfirst: 'Ammonite is a 2020 romantic drama film written and directed by Francis Lee. The film is loosely inspired by the life of British palaeontologist Mary Anning, played by Kate Winslet. The film centres on a speculative romantic relationship between Anning and Charlotte Murchison, played by Saoirse Ronan.',
+      src: 'https://player.bfi.org.uk/sites/default/files/styles/landscape_640x360/public/hero-images/ammonite1.jpg',
+      alt: 'Kate Winslet and Saoirse Ronan share a warm embrace on a beach while the sun glistens upon the sea, in a scene from the film Ammonite. © Strawhouse Films/Francis Lee',
+      caption: 'Kate Winslet and Saoirse Ronan in Ammonite.',
+      copyright: 'Strawhouse Films/Francis Lee'
+    }}
+  >
+    {Template.bind({})}
+  </Story>
 </Canvas>
+
+<ArgsTable story="Complete" />
+
+### Without a standfirst
 
 <Canvas>
-    <Story name="No image">
-        <IntroBlock title="My page" standfirst={`Ullam quia aut facere minus dolorem quam sequi esse. Officia molestiae voluptatem et non cum modi. Saepe neque repellendus in.`}>
-        </IntroBlock>
-    </Story>
+  <Story
+    name="No Standfirst"
+    args={{
+      title: 'Ammonite',
+      src: 'https://player.bfi.org.uk/sites/default/files/styles/landscape_640x360/public/hero-images/ammonite1.jpg',
+      alt: 'Kate Winslet and Saoirse Ronan share a warm embrace on a beach while the sun glistens upon the sea, in a scene from the film Ammonite. © Strawhouse Films/Francis Lee',
+      caption: 'Kate Winslet and Saoirse Ronan in Ammonite.',
+      copyright: 'Strawhouse Films/Francis Lee'
+    }}
+    parameters={{
+      controls: {
+        exclude: ['standfirst']
+      }
+    }}
+  >
+    {Template.bind({})}
+  </Story>
 </Canvas>
 
+<ArgsTable story="No Standfirst" />
 
-## Props
+### Without an image caption
 
-<ArgsTable of={IntroBlock} />
+<Canvas>
+  <Story
+    name="No Caption"
+    args={{
+      title: 'Ammonite',
+      standfirst: 'Ammonite is a 2020 romantic drama film written and directed by Francis Lee. The film is loosely inspired by the life of British palaeontologist Mary Anning, played by Kate Winslet. The film centres on a speculative romantic relationship between Anning and Charlotte Murchison, played by Saoirse Ronan.',
+      src: 'https://player.bfi.org.uk/sites/default/files/styles/landscape_640x360/public/hero-images/ammonite1.jpg',
+      alt: 'Kate Winslet and Saoirse Ronan share a warm embrace on a beach while the sun glistens upon the sea, in a scene from the film Ammonite. © Strawhouse Films/Francis Lee'
+    }}
+    parameters={{
+      controls: {
+        exclude: ['caption', 'copyright']
+      }
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<ArgsTable story="No Caption" />
+
+### Without an image
+
+<Canvas>
+  <Story
+    name="No Image"
+    args={{
+      title: 'Ammonite',
+      standfirst: 'Ammonite is a 2020 romantic drama film written and directed by Francis Lee. The film is loosely inspired by the life of British palaeontologist Mary Anning, played by Kate Winslet. The film centres on a speculative romantic relationship between Anning and Charlotte Murchison, played by Saoirse Ronan.'
+    }}
+    parameters={{
+      controls: {
+        exclude: ['src', 'alt', 'caption', 'copyright']
+      }
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<ArgsTable story="No Image" />

@@ -95,7 +95,7 @@
   "jest": {
     "collectCoverage": true,
     "collectCoverageFrom": [
-      "src/**/*.{js,jsx}"
+      "src/**/*.[jt]s?(x)"
     ],
     "testEnvironment": "jsdom",
     "transform": {
