@@ -1,12 +1,12 @@
 import { ArgsTable, Canvas, Meta, Story } from '@storybook/addon-docs'
-import { HeroArticle } from "../../../components/HeroArticle"
-import SandSlogoWhite from "./images/s-and-s-white.png"
-import SandSlogoBlack from "./images/s-and-s-black.png"
+import { HeroArticle } from "../HeroArticle"
+import SandSlogoWhite from "../../docs/pattern-library/Structure/images/s-and-s-white.png"
+import SandSlogoBlack from "../../docs/pattern-library/Structure/images/s-and-s-black.png"
 
 export const Template = (args) => <HeroArticle {...args} />
 
 <Meta
-  title="2 Pattern Library/1 Structure/Hero Article 🆕"
+  title="4 Components/All/Hero Article 🆕"
   component={HeroArticle}
   decorators={[
     (Story) => (
@@ -79,45 +79,8 @@ export const Template = (args) => <HeroArticle {...args} />
 
 # `<HeroArticle />`
 
-This hero is used on all articles within the BFI site. It is designed differently 
-to the rest of the site to distinguish the users journey and highlight that they 
-are currently reading an article. Therefore this hero has a different emphasis, 
-it is centred, unlike any other hero within the site, with a focus on reading the 
-title and summary of the article first and foremaost, with the featured image 
-coming secondary. Alongside this difference there is also additional information 
-such as a link to the article category tag, the date the article was last updated 
-and a list of any and all authors of the article (they don't have to include an 
-author as in [this example](http://localhost:55768/?path=/story/2-pattern-library-1-structure-hero-article-🆕--recommends-example-no-author).
-
-### Featured image
-
-The article includes a stand out full width featured image. This stands out 
-particularly when compared to the body of the article which can be narrower with 
-a sidebar. As can be seen in the [primary example](/?path=/story/2-pattern-library-1-structure-hero-article-🆕--feature-example). 
-The image will also be used as a share image in the meta data for the page.
-
-The image is optional and can not be included where not needed, for example in a 
-list where one image may not clearly show the content of the page. 
-[See this example](/?path=/story/2-pattern-library-1-structure-hero-article-🆕--list-example).
-
-### Articles with updated dates
-
-There is an indicator to users if the article has been updated since it was first 
-published [in this example](/?path=/story/2-pattern-library-1-structure-hero-article-🆕--feature-example-with-updated-date) - we 
-only display the updated date on the hero as that is the most important thing for 
-the user in this case, however the original published date is also added to the 
-bottom of the article content so that there is context for the user.
-
-### Article brand
-
-Articles can be branded within the CMS. If they are added to a brand they become 
-part of this collection and are stored within that brands URL. They are also 
-given a logo to clearly show the brand as in [this example without an image](/?path=/story/2-pattern-library-1-structure-hero-article-🆕--recommends-example), 
-or [this example with a featured image](/?path=/story/2-pattern-library-1-structure-hero-article-🆕--sight-sound-feature-example)
- 
-## Props
-
-<ArgsTable of={HeroArticle} />
+Create a hero that distinguishes the user journey and informs them that they are 
+reading an article
 
 ### Feature example
 
@@ -125,40 +88,40 @@ or [this example with a featured image](/?path=/story/2-pattern-library-1-struct
   <Story
     name="Feature example"
     args={{
-      image1920x1080: 'https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1920/1080/1/2020-03/Hero.jpg',
+      image1920x1080: 'https://dummyimage.com/1920x1080/ccc/999',
       imageAltText: 'Alt text for the image',
-      imageCopyright: 'HELP MUSICIANS, directed by Thomas Guthrie',
-      title: 'Britain on Lockdown: How online videos have shaped the crisis',
-      standfirst: 'As the BFI National Archive calls on the British public to help map the digital video response to coronavirus across the UK, our curators begin a regular new series highlighting the online videos that have made an impact during the lockdown period.',
+      imageCopyright: `British Film Institute ${(new Date()).getFullYear()}`,
+      title: 'Lorem ipsum dolor sit amet',
+      standfirst: 'Nulla quis sagittis ex. Donec ut fringilla dui. Sed eget velit id ipsum luctus sollicitudin eu nec turpis. Integer rutrum justo in quam dignissim interdum.',
       category: 'Article category',
       date: '28 April 2020',
       authors: [
         {
-            name: "Ros Cranston",
+            name: "Fay Kydee",
             url: "#"
         },
         {
-            name: "William Fowler",
+            name: "May Dupp",
             url: "#"
         },
         {
-            name: "Steve Foxon",
+            name: "Joe King",
             url: "#"
         },
         {
-            name: "Will Massa",
+            name: "Anne Billy Fa'Bull",
             url: "#"
         },
         {
-            name: "Patrick Russell",
+            name: "Paul Ling Y'Leg",
             url: "#"
         },
         {
-            name: "Jez Stewart",
+            name: "Mike Bill-Eve",
             url: "#"
         },
         {
-            name: "James Taylor",
+            name: "Frau Du'Lent",
             url: "#"
         }
       ]
@@ -181,41 +144,41 @@ or [this example with a featured image](/?path=/story/2-pattern-library-1-struct
   <Story
     name="Feature example with updated date"
     args={{
-      image1920x1080: 'https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1920/1080/1/2020-03/Hero.jpg',
+      image1920x1080: 'https://dummyimage.com/1920x1080/ccc/999',
       imageAltText: 'Alt text for the image',
-      imageCopyright: 'HELP MUSICIANS, directed by Thomas Guthrie',
-      title: 'Britain on Lockdown: How online videos have shaped the crisis',
-      standfirst: 'As the BFI National Archive calls on the British public to help map the digital video response to coronavirus across the UK, our curators begin a regular new series highlighting the online videos that have made an impact during the lockdown period.',
+      imageCopyright: `British Film Institute ${(new Date()).getFullYear()}`,
+      title: 'Lorem ipsum dolor sit amet',
+      standfirst: 'Nulla quis sagittis ex. Donec ut fringilla dui. Sed eget velit id ipsum luctus sollicitudin eu nec turpis. Integer rutrum justo in quam dignissim interdum.',
       category: 'Article category',
       date: '28 April 2020',
       updatedDate: '11 June 2020',
       authors: [
         {
-            name: "Ros Cranston",
+            name: "Fay Kydee",
             url: "#"
         },
         {
-            name: "William Fowler",
+            name: "May Dupp",
             url: "#"
         },
         {
-            name: "Steve Foxon",
+            name: "Joe King",
             url: "#"
         },
         {
-            name: "Will Massa",
+            name: "Anne Billy Fa'Bull",
             url: "#"
         },
         {
-            name: "Patrick Russell",
+            name: "Paul Ling Y'Leg",
             url: "#"
         },
         {
-            name: "Jez Stewart",
+            name: "Mike Bill-Eve",
             url: "#"
         },
         {
-            name: "James Taylor",
+            name: "Frau Du'Lent",
             url: "#"
         }
       ],
@@ -247,14 +210,14 @@ or [this example with a featured image](/?path=/story/2-pattern-library-1-struct
   <Story
     name="List example"
     args={{
-      title: 'Five things to watch this weekend - 24-26 April',
-      standfirst: 'British classics, French New Wave masterpieces and a grungy shocker - what are you watching this weekend?',
+      title: 'Lorem ipsum dolor sit amet',
+      standfirst: 'Nulla quis sagittis ex. Donec ut fringilla dui. Sed eget velit id ipsum luctus sollicitudin eu nec turpis. Integer rutrum justo in quam dignissim interdum.',
       category: 'What to watch',
       date: '24 April 2020',
       updatedDate: '24 April 2020',
       authors: [
         {
-            name: "Samuel Wigley",
+            name: "Arthur Ghott",
             url: "#"
         }
       ]
@@ -277,13 +240,13 @@ or [this example with a featured image](/?path=/story/2-pattern-library-1-struct
   <Story
     name="Recommends example"
     args={{
-      title: 'BFI Recommends: Carol',
-      standfirst: `The perfect adaptation: Todd Haynes' exquisite film of Patricia Highsmith's novel The Price of Salt is the latest in our daily series of recommendations, chosen by Emma Smart.`,
+      title: 'BFI Recommends: Lorem Ipsum',
+      standfirst: `Nulla quis sagittis ex. Donec ut fringilla dui. Sed eget velit id ipsum luctus sollicitudin eu nec turpis. Integer rutrum justo in quam dignissim interdum.`,
       category: 'BFI Recommends',
       date: '1 May 2020',
       authors: [
         {
-            name: "Emma Smart",
+            name: "Imogen Ayshun",
             url: "#"
         }
       ],
@@ -315,8 +278,8 @@ or [this example with a featured image](/?path=/story/2-pattern-library-1-struct
   <Story
     name="Recommends example no author"
     args={{
-      title: 'BFI Recommends: Carol',
-      standfirst: `The perfect adaptation: Todd Haynes' exquisite film of Patricia Highsmith's novel The Price of Salt is the latest in our daily series of recommendations, chosen by Emma Smart.`,
+      title: 'BFI Recommends: Lorem Ipsum',
+      standfirst: `Nulla quis sagittis ex. Donec ut fringilla dui. Sed eget velit id ipsum luctus sollicitudin eu nec turpis. Integer rutrum justo in quam dignissim interdum.`,
       category: 'BFI Recommends',
       date: '1 May 2020',
       authors: [],
@@ -348,40 +311,40 @@ or [this example with a featured image](/?path=/story/2-pattern-library-1-struct
   <Story
     name="Sight & Sound Feature example"
     args={{
-      image1920x1080: 'https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1920/1080/1/2020-03/Hero.jpg',
+      image1920x1080: 'https://dummyimage.com/1920x1080/ccc/999',
       imageAltText: 'Alt text for the image',
-      imageCopyright: 'HELP MUSICIANS, directed by Thomas Guthrie',
-      title: 'Britain on Lockdown: How online videos have shaped the crisis',
-      standfirst: 'As the BFI National Archive calls on the British public to help map the digital video response to coronavirus across the UK, our curators begin a regular new series highlighting the online videos that have made an impact during the lockdown period.',
+      imageCopyright: `British Film Institute ${(new Date()).getFullYear()}`,
+      title: 'Lorem ipsum dolor sit amet',
+      standfirst: 'Nulla quis sagittis ex. Donec ut fringilla dui. Sed eget velit id ipsum luctus sollicitudin eu nec turpis. Integer rutrum justo in quam dignissim interdum.',
       category: 'Article category',
       date: '28 April 2020',
       authors: [
         {
-            name: "Ros Cranston",
+            name: "Fay Kydee",
             url: "#"
         },
         {
-            name: "William Fowler",
+            name: "May Dupp",
             url: "#"
         },
         {
-            name: "Steve Foxon",
+            name: "Joe King",
             url: "#"
         },
         {
-            name: "Will Massa",
+            name: "Anne Billy Fa'Bull",
             url: "#"
         },
         {
-            name: "Patrick Russell",
+            name: "Paul Ling Y'Leg",
             url: "#"
         },
         {
-            name: "Jez Stewart",
+            name: "Mike Bill-Eve",
             url: "#"
         },
         {
-            name: "James Taylor",
+            name: "Frau Du'Lent",
             url: "#"
         }
       ],
@@ -413,37 +376,37 @@ or [this example with a featured image](/?path=/story/2-pattern-library-1-struct
   <Story
     name="Sight & Sound Feature example no hero image"
     args={{
-      title: 'Britain on Lockdown: How online videos have shaped the crisis',
-      standfirst: 'As the BFI National Archive calls on the British public to help map the digital video response to coronavirus across the UK, our curators begin a regular new series highlighting the online videos that have made an impact during the lockdown period.',
+      title: 'Lorem ipsum dolor sit amet',
+      standfirst: 'Nulla quis sagittis ex. Donec ut fringilla dui. Sed eget velit id ipsum luctus sollicitudin eu nec turpis. Integer rutrum justo in quam dignissim interdum.',
       category: 'Article category',
       date: '28 April 2020',
       authors: [
         {
-            name: "Ros Cranston",
+            name: "Fay Kydee",
             url: "#"
         },
         {
-            name: "William Fowler",
+            name: "May Dupp",
             url: "#"
         },
         {
-            name: "Steve Foxon",
+            name: "Joe King",
             url: "#"
         },
         {
-            name: "Will Massa",
+            name: "Anne Billy Fa'Bull",
             url: "#"
         },
         {
-            name: "Patrick Russell",
+            name: "Paul Ling Y'Leg",
             url: "#"
         },
         {
-            name: "Jez Stewart",
+            name: "Mike Bill-Eve",
             url: "#"
         },
         {
-            name: "James Taylor",
+            name: "Frau Du'Lent",
             url: "#"
         }
       ],

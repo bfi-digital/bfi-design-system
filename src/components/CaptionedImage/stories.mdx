@@ -1,6 +1,6 @@
 import { ArgsTable, Canvas, Meta, Story } from '@storybook/addon-docs'
 import { withDesign } from 'storybook-addon-designs'
-import { CaptionedImage, CaptionBelow, CaptionToggle } from '../../../components/CaptionedImage'
+import { CaptionedImage, CaptionBelow, CaptionToggle } from '.'
 
 export const ImageOnly = (args) => <CaptionedImage {...args} />
 
@@ -17,7 +17,7 @@ export const ImageCaptionToggle = ({ caption, ...args }) => (
 )
 
 <Meta
-  title="2 Pattern Library/3 Elements/CaptionedImage 🆕"
+  title="4 Components/All/CaptionedImage 🆕"
   component={CaptionedImage}
   decorators={[
     withDesign,
@@ -47,7 +47,6 @@ export const ImageCaptionToggle = ({ caption, ...args }) => (
 />
 
 # `<CaptionedImage />`
-
 Create a lazy-loaded image with optional caption
 
 ### Image only
@@ -56,8 +55,8 @@ Create a lazy-loaded image with optional caption
   <Story
     name="Image Only"
     args={{
-      src: 'https://player.bfi.org.uk/sites/default/files/styles/landscape_640x360/public/hero-images/ammonite1.jpg',
-      alt: 'Kate Winslet and Saoirse Ronan share a warm embrace on a beach while the sun glistens upon the sea, in a scene from the film Ammonite. © Strawhouse Films/Francis Lee'
+      src: 'https://dummyimage.com/420x266/ccc/999',
+      alt: `A mid-grey placeholder image with dimensions 420 x 266 shown in dark-grey text. © British Film Institute ${(new Date()).getFullYear()}`
     }}
     parameters={{
       controls: {
@@ -77,9 +76,9 @@ Create a lazy-loaded image with optional caption
   <Story
     name="Image Caption Below"
     args={{
-      src: 'https://player.bfi.org.uk/sites/default/files/styles/landscape_640x360/public/hero-images/ammonite1.jpg',
-      alt: 'Kate Winslet and Saoirse Ronan share a warm embrace on a beach while the sun glistens upon the sea, in a scene from the film Ammonite. © Strawhouse Films/Francis Lee',
-      caption: 'Kate Winslet and Saoirse Ronan in Ammonite. <br /><cite>© Strawhouse Films/Francis Lee</cite>'
+      src: 'https://dummyimage.com/420x266/ccc/999',
+      alt: `A mid-grey placeholder image with dimensions 420 x 266 shown in dark-grey text. © British Film Institute ${(new Date()).getFullYear()}`,
+      caption: `A placeholder image. <br /><cite>© British Film Institute ${(new Date()).getFullYear()}</cite>`
     }}
     parameters={{
       design: {
@@ -100,9 +99,9 @@ Create a lazy-loaded image with optional caption
   <Story
     name="Image Caption Toggle"
     args={{
-      src: 'https://player.bfi.org.uk/sites/default/files/styles/landscape_640x360/public/hero-images/ammonite1.jpg',
-      alt: 'Kate Winslet and Saoirse Ronan share a warm embrace on a beach while the sun glistens upon the sea, in a scene from the film Ammonite. © Strawhouse Films/Francis Lee',
-      caption: 'Kate Winslet and Saoirse Ronan in Ammonite. <br /><cite>© Strawhouse Films/Francis Lee</cite>'
+      src: 'https://dummyimage.com/420x266/ccc/999',
+      alt: `A mid-grey placeholder image with dimensions 420 x 266 shown in dark-grey text. © British Film Institute ${(new Date()).getFullYear()}`,
+      caption: `A placeholder image. <br /><cite>© British Film Institute ${(new Date()).getFullYear()}</cite>`
     }}
     parameters={{
       design: {

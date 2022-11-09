@@ -5,42 +5,23 @@ import theme from "../_theme"
 import PropTypes from "prop-types"
 import { LeadParagraph } from "../LeadParagraph"
 import { Wrapper } from "../PageContainer"
-import cameraIcon from "./camera_icon.svg"
 import playIcon from "./play_icon.svg"
 import pauseIcon from "./pause_icon.svg"
 import parse from "html-react-parser"
 import useMobile from "../../hooks/mediaHook"
+import { CaptionedImage, CaptionToggle } from "../CaptionedImage"
 
 const Outer = styled.section`
-    margin: 0 auto;
-    background: ${theme.black};
+    margin: ${props => props.withHeader ? "175px" : "0px"} auto 0;
     width: 100%;
     max-width: calc(${theme.xl} + 125px);
     position: relative;
     height: auto;
-    /* min-height: ${props => props.noTitleText ? "none" : "40vh"}; */
     padding-top: calc(56.25% - 25px);
     padding-bottom: 25px;
-    background-image: url("${props => props.image}");
-    background-size: ${props => props.noTitleText ? "contain" : "cover"};
-    background-repeat: no-repeat;
-    background-position: ${props => props.noTitleText ? "center" : "top center"};
     display: flex;
     align-items: flex-end;
-    margin-top: ${props => props.withHeader ? "175px" : "0px"};
     overflow: hidden;
-    
-    &:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: -9998px;
-        right: 0;
-        box-shadow: 9999px 0 0 ${theme.lightGrey};
-        border-left: 9999px solid ${theme.lightGrey};
-        z-index: -1;
-    }
 
     a {
         color: ${theme.black} !important;
@@ -56,6 +37,12 @@ const Outer = styled.section`
     }
 
     &.with_image {
+
+        &.without_video {
+            padding-bottom: 0;
+            padding-top: 0;
+        }
+
         h1 {
             color: ${theme.white};
             text-shadow: 0px 0px 30px ${theme.black}D1;
@@ -73,6 +60,7 @@ const Outer = styled.section`
                 font-size: ${props => props.titleLength > 65 ? "2.8rem" : (props.titleLength > 45 ? "3.2rem" : "3.8rem")};
             }
         }
+
         p {
             color: ${theme.white};
             margin-top: -15px;
@@ -139,7 +127,6 @@ const Outer = styled.section`
     @media screen and (min-width: ${theme.xl}){
         min-height: 500px;
         padding-bottom: 40px;
-        background-size: cover;
         padding-top: ${props => props.noTitleText ? "775px" : (props.withHeader ? "425px" : "311px")};
 
         h1{
@@ -153,10 +140,54 @@ const Outer = styled.section`
             opacity: 0.25;
         }
     }
+
+    figcaption {
+        z-index: 2;
+
+        @media screen and (min-width: ${theme.m}) {
+            --distance-from-edge: 30px;
+        }
+    }
 `
+
+const HeroImage = styled(CaptionedImage)`
+    --hero-padding-bottom: 25px;
+    --hero-padding-top: calc(56.25% - 25px);
+    --hero-min-height: 100%;
+    padding-bottom: var(--hero-padding-bottom);
+    padding-top: var(--hero-padding-top);
+    width: 100%;
+    min-height: var(--hero-min-height);
+    position: static;
+
+    @media screen and (min-width: ${theme.m}) {
+        --hero-padding-top: ${props => props.noTitleText ? "calc(56.25% - 25px)" : (props.withHeader ? "275px" : "211px")};
+        --hero-min-height: 390px;
+    }
+
+    @media screen and (min-width: ${theme.l}) {
+        --hero-padding-top: ${props => props.noTitleText ? "calc(56.25% - 25px)" : (props.withHeader ? "375px" : "261px")};
+    }
+
+    @media screen and (min-width: ${theme.xl}) {
+        --hero-padding-bottom: 40px;
+        --hero-padding-top: ${props => props.noTitleText ? "775px" : (props.withHeader ? "425px" : "311px")};
+        --hero-min-height: 500px;
+    }
+
+    img {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        object-fit: cover;
+    }
+`
+
 const InnerGradient = styled.div`
     width: 100%;
-    height: ${props => props.videoMP4 && props.noTitleText ? "33%" : "100%"};
+    height: ${props => props.withVideo && props.noTitleText ? "33%" : "100%"};
     position: absolute;
     top: 0;
     left: 0;
@@ -208,21 +239,6 @@ const Container = styled.div`
     }
 `
 
-const Copyright = styled.p`
-    color: ${theme.white};
-    text-shadow: 0px 0px 30px ${theme.black}D1;
-    font-size: ${theme.small_fontSize_m};
-    position: absolute;
-    bottom: 5px;
-    display: none;
-
-    @media screen and (min-width: ${theme.m}){
-        right: ${theme.horizontalPadding};
-        bottom: 5px;
-    }
-
-`
-
 const ChildContainerDesktop = styled.div`
     &.child_with_image {
         display: none;
@@ -246,90 +262,7 @@ const ChildContainerMobile = styled.div`
         display: none;
     }
 `
-const CaptionCreditIconWrapper = styled.div`
-    position: absolute;
-    width: 100%;
-    display: none;
 
-    @media screen and (min-width: ${theme.m}){
-        bottom: 30px;
-        right: 30px;
-        display: block;
-    }
-
-    @media screen and (max-width: ${theme.s}){
-        right: 10px;
-        bottom: 10px;
-        display: block;
-    }
-
-    @media screen and (max-width: ${theme.l}) and (min-width: 400px){
-        right: 10px;
-        bottom: 10px;
-        display: block;
-    }
-`
-const CaptionCreditIcon = styled.button` 
-    border: none;
-    border-radius: 100%;
-    width: 30px;
-    height: 30px;
-    float: right;
-    cursor: pointer;
-    position: relative;
-    opacity: 0.8;
-    background: url(${cameraIcon});
-    background-size: 100%;
-    
-    &:focus {
-        border: solid 3px ${theme.focus};
-        outline: none; 
-    }
-
-    &.add_caption {
-        &:focus {
-            opacity: 1;
-            color: transparent;
-            text-shadow: 0 0 0 #000;
-        
-            &::after {
-                position: absolute;
-                bottom: calc(100% + 5px);
-                right: calc(100% - 30px);
-                display: block;
-                padding: 10px 15px;
-                width: max-content;
-                max-width: 1000px;
-                text-align: left;
-                background: ${theme.lightest};
-                content: attr(data-toggle);
-                z-index: 9998;
-                -webkit-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.4);
-                -moz-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.4);
-                box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.4);
-                font-size: ${theme.small_fontSize_m};
-    
-                @media screen and (max-width: ${theme.s}){
-                    max-width:260px;
-                }
-    
-                @media screen and (max-width: ${theme.l}) and (min-width: 400px){
-                    max-width:350px;
-                }
-    
-                @media screen and (min-width: ${theme.m}) and (max-width: ${theme.l}){
-                    max-width: 700px;
-                }
-            }
-        }
-    }
-
-    &.remove_caption{
-        outline: none;
-        color: transparent;
-        text-shadow: 0 0 0 #000;
-   }
-`
 const VideoContainer = styled.figure`
     position: absolute;
     top: 0;
@@ -347,9 +280,6 @@ const VideoInner = styled.div`
     transform: translateY(-50%);
 `
 const Video = styled.video`
-    background-size: cover;
-    background-position: center center;
-    width: 100%;
     margin: 0;
     position: absolute;
     top: 0;
@@ -416,26 +346,56 @@ const PlayButton = styled.button`
         border: solid 3px ${theme.focus};
     }
 `
-export const Hero = ({
-    image1920x1080,
-    headline,
-    standfirst,
-    withHeader,
-    copyright,
-    imageCaption,
-    children,
-    noTitleText,
-    videoMP4,
-    videoWEBM
-}) => {
+
+const HeroContent = ({ headline, noTitleText, image1920x1080, standfirst, children }) => (
+    <>
+        {(headline || standfirst || children) && (
+            <Container>
+                {headline && <Headline level={0} text={headline} visuallyHidden={noTitleText} />}
+                {(standfirst || children) && (
+                    <ChildContainerDesktop className={image1920x1080 ? "child_with_image" : "child_without_image"}>
+                        {standfirst && <StandFirst className="lead_paragraph">{parse(standfirst)}</StandFirst> }
+                        {children}
+                    </ChildContainerDesktop>
+                )}
+            </Container>
+        )}
+    </>
+)
+
+const HeroCaption = ({ imageCaption, copyright }) => (
+    <>
+        {(imageCaption || copyright) && (
+            <CaptionToggle>
+                { imageCaption }
+                { (imageCaption && copyright) && <br /> }
+                { copyright && <cite>{`\u00A9 ${copyright}`}</cite> }
+            </CaptionToggle>
+        )}
+    </>
+)
+
+export const Hero = (props) => {
+    const {
+        image1920x1080,
+        headline = "",
+        standfirst,
+        withHeader,
+        copyright,
+        imageCaption,
+        children,
+        noTitleText,
+        videoMP4,
+        videoWEBM
+    } = props
     const [isPaused, setIsPaused] = useState(true)
-    const [textDisplay, setTextDisplay] = useState(false)
     const [video, setVideo] = useState(false)
     const [image, setImage] = useState(true)
     const mobile = useMobile("768px", false)
     const videoOnDesktop = video && !mobile
     const videoAndMobile = video && mobile
     const vidRef = useRef(null)
+    const withVideo = videoMP4 || videoWEBM
 
     useEffect(() => {
         document.addEventListener("click", event => {
@@ -443,7 +403,7 @@ export const Hero = ({
                 event.target.focus()
             }
         })
-        if (videoMP4 || videoWEBM) {
+        if (withVideo) {
             setVideo(true)
             setImage(false)
             if(isPaused) {
@@ -456,69 +416,47 @@ export const Hero = ({
    
     return(
         <>
-            <Outer 
-                image={image1920x1080} 
+            <Outer
                 withHeader={withHeader}
-                className={image1920x1080 ? "with_image" : "hero_without_image"}
+                className={`${image1920x1080 ? "with_image" : "hero_without_image"} ${withVideo ? "with_video" : "without_video"}`}
                 titleLength={headline.length}
                 noTitleText={noTitleText}
             >
-                { (videoMP4 || videoWEBM) &&
-                                <>
-                                    <VideoContainer>
-                                        <VideoInner noTitleText={noTitleText}>
-                                            <Video playsInline autoPlay muted loop ref={vidRef} noTitleText={noTitleText}>
-                                                <source src={videoMP4} type="video/mp4" />
-                                                <source src={videoWEBM} type="video/webm; codecs=vp9,vorbis" />
-                                            </Video>
-                                        </VideoInner>
-                                    </VideoContainer>
-                                    <PlayButton className="playButton" onClick={() => setIsPaused(isPaused => !isPaused)} backgroundImage={isPaused ? pauseIcon : playIcon} alt={isPaused ? "Pause" : "Play"} title={isPaused ? "Pause" : "Play"}></PlayButton>
-                                </>
+                { withVideo &&
+                    <>
+                        <VideoContainer>
+                            <VideoInner noTitleText={noTitleText}>
+                                <Video playsInline autoPlay muted loop ref={vidRef} noTitleText={noTitleText}>
+                                    <source src={videoMP4} type="video/mp4" />
+                                    <source src={videoWEBM} type="video/webm; codecs=vp9,vorbis" />
+                                </Video>
+                            </VideoInner>
+                            <HeroCaption imageCaption={imageCaption} copyright={copyright} />
+                        </VideoContainer>
+                        <PlayButton className="playButton" onClick={() => setIsPaused(isPaused => !isPaused)} backgroundImage={isPaused ? pauseIcon : playIcon} alt={isPaused ? "Pause" : "Play"} title={isPaused ? "Pause" : "Play"}></PlayButton>
+                    </>
                 }
-                {image1920x1080 && 
-                                <InnerGradient withHeader={withHeader} noTitleText={noTitleText} withVideo={(videoMP4 || videoWEBM)} /> 
-                }
-                {imageCaption &&
-                                <CaptionCreditIconWrapper>
-                                    <CaptionCreditIcon className={textDisplay? "add_caption": "remove_caption"} src={cameraIcon}
-                                        onClick={()=>setTextDisplay(!textDisplay)}
-                                        data-toggle={(copyright ?
-                                            (imageCaption +" " + "\u00A9 " + copyright): imageCaption)}
-                                        alt="Image caption and credit"
-                                        aria-label="Image caption and credit"
-                                        itemprop="copyrightHolder" />
-                                </CaptionCreditIconWrapper>
-                }
-                {(image || videoOnDesktop) && (
-                    <Container>
-                        {headline && <Headline level={0} text={headline} visuallyHidden={noTitleText} />}
-                        <ChildContainerDesktop className={image1920x1080 ? "child_with_image" : "child_without_image"}>
-                            {standfirst &&  <StandFirst className="lead_paragraph">{parse(standfirst)}</StandFirst> }
-                            {children}
-                        </ChildContainerDesktop>
-                        {copyright && <Copyright>{copyright}</Copyright>}
-                    </Container>
+                {(image && image1920x1080) && (
+                    <HeroImage src={image1920x1080} withHeader={withHeader} noTitleText={noTitleText}>
+                        <HeroContent {...props} />
+                        <HeroCaption imageCaption={imageCaption} copyright={copyright} />
+                    </HeroImage>
                 )}
+
+                <InnerGradient withHeader={withHeader} noTitleText={noTitleText} withVideo={withVideo} />
+
+                {(!image && videoOnDesktop) && <HeroContent {...props} />}
             </Outer>
-            {!image && videoAndMobile && (
-                <Container>
-                    {headline && <Headline level={0} text={headline} visuallyHidden={noTitleText} />}
-                    <ChildContainerDesktop className={image1920x1080 ? "child_with_image" : "child_without_image"}>
-                        {standfirst && <StandFirst className="lead_paragraph">{parse(standfirst)}</StandFirst>}
+
+            {(!image && videoAndMobile) && <HeroContent {...props} />}
+
+            {(image1920x1080 && (children || standfirst)) && 
+                <ChildContainerMobile>
+                    <Wrapper>
+                        {standfirst && <LeadParagraph text={standfirst}/>}
                         {children}
-                    </ChildContainerDesktop>
-                    {copyright && <Copyright>{copyright}</Copyright>}
-                </Container>
-            )}
-                        
-            {image1920x1080 && (children || standfirst) && 
-                            <ChildContainerMobile>
-                                <Wrapper>
-                                    {standfirst && <LeadParagraph text={standfirst}/>}
-                                    {children}
-                                </Wrapper>
-                            </ChildContainerMobile>
+                    </Wrapper>
+                </ChildContainerMobile>
             }
         </>
     )
@@ -526,7 +464,7 @@ export const Hero = ({
 
 Hero.propTypes = {
     /** 
-    * Urls to the image for the hero. 
+    * URL to the image for the hero. 
     **/
     image1920x1080: PropTypes.string,
     /** 
@@ -534,11 +472,19 @@ Hero.propTypes = {
     **/
     headline: PropTypes.string,
     /** 
-    * A boolean to tell the hero whether it has a header over the top of it, so that content in the hero never overlaps the header. Defaults to false.
+    * Standfirst text for the page/post
+    **/
+    standfirst: PropTypes.string,
+    /** 
+    * A boolean to tell the hero whether it has a header overlaid on top of it, so that content in the hero never overlaps the header. Defaults to false.
     **/
     withHeader: PropTypes.bool,
     /** 
-    * A string giving the copyright attribution of the background image
+    * A brief description of what can be seen in the image
+    **/
+    imageCaption: PropTypes.string,
+    /** 
+    * A string giving the copyright attribution for the image
     **/
     copyright: PropTypes.string,
     /**
@@ -546,11 +492,11 @@ Hero.propTypes = {
      */
     noTitleText: PropTypes.bool,
     /** 
-    * Optional video embed which will sit on top of the image needs to be an mp4
+    * URL to an optional mp4 video embed
     **/
     videoMP4: PropTypes.string,
     /** 
-    * Optional 2nd video embed which be used as a backup source as a webm
+    * URL to an optional webm backup video embed
     **/
     videoWEBM: PropTypes.string,
 }

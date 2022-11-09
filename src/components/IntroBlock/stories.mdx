@@ -1,0 +1,136 @@
+import { ArgsTable, Canvas, Meta, Story } from '@storybook/addon-docs'
+import { IntroBlock } from '.'
+
+export const Template = (args) => <IntroBlock {...args} />
+
+<Meta
+  title="4 Components/All/IntroBlock 🆕"
+  component={IntroBlock}
+  decorators={[
+    (Story) => (
+      <div style={{ margin: '1rem' }}>
+        <Story />
+      </div>
+    )
+  ]}
+  argTypes={{
+    title: {
+      description: 'Page title (level 1)',
+      type: {
+        required: true
+      },
+      control: 'text'
+    },
+    standfirst: {
+      description: 'Page standfirst text',
+      control: 'text'
+    },
+    src: {
+      description: 'A path to the image you want to embed',
+      control: 'text'
+    },
+    alt: {
+      description: 'A detailed description of what can be seen in the image',
+      control: 'text'
+    },
+    caption: {
+      description: 'A brief description of what can be seen in the image',
+      control: 'text'
+    },
+    copyright: {
+      description: 'A string giving the copyright attribution for the image',
+      control: 'text'
+    }
+  }}
+/>
+
+# `<IntroBlock />`
+For introducing readers to an article or topic, this component features a title, standfirst and optional image with caption toggle.
+
+### Complete
+
+<Canvas>
+  <Story
+    name="Complete"
+    args={{
+      title: 'Lorem ipsum',
+      standfirst: 'Nulla quis sagittis ex. Donec ut fringilla dui. Sed eget velit id ipsum luctus sollicitudin eu nec turpis. Integer rutrum justo in quam dignissim interdum.',
+      src: 'https://dummyimage.com/420x266/ccc/999',
+      alt: `A mid-grey placeholder image with dimensions 420 x 266 shown in dark-grey text. © British Film Institute ${(new Date()).getFullYear()}`,
+      caption: 'A placeholder image.',
+      copyright: `British Film Institute ${(new Date()).getFullYear()}`
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<ArgsTable story="Complete" />
+
+### Without a standfirst
+
+<Canvas>
+  <Story
+    name="No Standfirst"
+    args={{
+      title: 'Lorem ipsum',
+      src: 'https://dummyimage.com/420x266/ccc/999',
+      alt: `A mid-grey placeholder image with dimensions 420 x 266 shown in dark-grey text. © British Film Institute ${(new Date()).getFullYear()}`,
+      caption: `A placeholder image.`,
+      copyright: `British Film Institute ${(new Date()).getFullYear()}`
+    }}
+    parameters={{
+      controls: {
+        exclude: ['standfirst']
+      }
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<ArgsTable story="No Standfirst" />
+
+### Without an image caption
+
+<Canvas>
+  <Story
+    name="No Caption"
+    args={{
+      title: 'Lorem ipsum',
+      standfirst: 'Nulla quis sagittis ex. Donec ut fringilla dui. Sed eget velit id ipsum luctus sollicitudin eu nec turpis. Integer rutrum justo in quam dignissim interdum.',
+      src: 'https://dummyimage.com/420x266/ccc/999',
+      alt: `A mid-grey placeholder image with dimensions 420 x 266 shown in dark-grey text. © British Film Institute ${(new Date()).getFullYear()}`
+    }}
+    parameters={{
+      controls: {
+        exclude: ['caption', 'copyright']
+      }
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<ArgsTable story="No Caption" />
+
+### Without an image
+
+<Canvas>
+  <Story
+    name="No Image"
+    args={{
+      title: 'Lorem ipsum',
+      standfirst: 'Nulla quis sagittis ex. Donec ut fringilla dui. Sed eget velit id ipsum luctus sollicitudin eu nec turpis. Integer rutrum justo in quam dignissim interdum.'
+    }}
+    parameters={{
+      controls: {
+        exclude: ['src', 'alt', 'caption', 'copyright']
+      }
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<ArgsTable story="No Image" />

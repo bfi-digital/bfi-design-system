@@ -1,10 +1,10 @@
 import { ArgsTable, Canvas, Meta, Story } from '@storybook/addon-docs'
 import { withDesign } from 'storybook-addon-designs'
-import { Hero } from "../../../components/Hero"
-import { Header } from "../../../components/Header"
-import navItems, { quickLinksData } from "../../../components/Header/data"
-import localMP4Video from "./videos/file_example_MP4_480_1_5MG.mp4"
-import localWEBMVideo from "./videos/file_example_WEBM_480_900KB.webm"
+import { Hero } from '.'
+import { Header } from '../Header'
+import navItems, { quickLinksData } from '../Header/data.js'
+import localMP4Video from "../../docs/pattern-library/Structure/videos/file_example_MP4_480_1_5MG.mp4"
+import localWEBMVideo from "../../docs/pattern-library/Structure/videos/file_example_WEBM_480_900KB.webm"
 
 export const Template = (args) => <Hero {...args} />
 
@@ -23,7 +23,7 @@ export const TemplateWithHeaderOverlaid = (args) => (
 )
 
 <Meta
-  title="2 Pattern Library/1 Structure/Hero 🆕"
+  title="4 Components/All/Hero 🆕"
   component={Hero}
   decorators={[
     withDesign,
@@ -80,42 +80,7 @@ export const TemplateWithHeaderOverlaid = (args) => (
 />
 
 # `<Hero />`
-
-When users come to your page, they'll feel some kind of reaction. Whether it's 
-positive or negative, that reaction is determined in large part by what they see. 
-Because vision is perhaps the strongest human sense, a Hero image is one of the 
-fastest ways to grab the user's attention. A Hero image should be more than just 
-a pretty picture, it is a powerful communication tool and so it should be relevant 
-to the content of the page/post.
-
-### How the Hero works
-
-The Hero uses the featured image for a background, and has a white H1 for the 
-title overlaid on it. There is a gradient starting at 65% of black at the bottom 
-and going to 0% in the middle and back up to 65% at the top - to allow for colour 
-contrast accessibility for both the title at the bottom and the overlaid header 
-at the top.
-
-### Hero with video
-
-The hero can optionally have a video added to it. As seen in 
-[this example with a title](/?path=/story/2-pattern-library-1-structure-hero-🆕--with-video), or 
-[this one without](/?path=/story/2-pattern-library-1-structure-hero-🆕--with-video-headline-hidden).
-
-The Hero still has an image attached which is used before the video is loaded 
-this is recommended to be a screenshot of the video. The video has an accessible 
-pause/play button which can only be seen by tabbing to it or hovering on the video.
-
-### Choosing or creating a video
-
-The video should be a ratio of 16:9 and should be a smaller file preferably less 
-than 16 MB. The video will be automatically muted so it should have no sound, it 
-should also not contain any text or elements that are required to see to understand 
-the page for accessbility reasons - it should be purely decorative.
-
-## Props
-
-<ArgsTable of={Hero} />
+Create an attention grabbing hero image or video with optional headline, standfirst & caption
 
 ### With image, headline & caption (Standard)
 
@@ -123,10 +88,10 @@ the page for accessbility reasons - it should be purely decorative.
   <Story
     name="Standard"
     args={{
-      image1920x1080: 'https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1920/1080/1/2020-03/Hero.jpg',
-      headline: 'Watch a new film, rediscover your old favourites, and get inspired.',
-      imageCaption: 'This is a caption',
-      copyright: 'Tim Apple'
+      image1920x1080: 'https://dummyimage.com/1920x1080/ccc/999',
+      headline: 'Lorem ipsum dolor sit amet',
+      imageCaption: 'A placeholder image.',
+      copyright: `British Film Institute ${(new Date()).getFullYear()}`
     }}
     parameters={{
       controls: {
@@ -146,11 +111,11 @@ the page for accessbility reasons - it should be purely decorative.
   <Story
     name="With standfirst"
     args={{
-      image1920x1080: 'https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1920/1080/1/2020-03/Hero.jpg',
-      headline: 'Watch a new film, rediscover your old favourites, and get inspired.',
-      imageCaption: 'This is a caption',
-      copyright: 'Tim Apple',
-      standfirst: 'Nulla quis sagittis ex. Donec ut fringilla dui. Sed eget velit id ipsum luctus sollicitudin eu nec turpis. Integer rutrum justo in quam dignissim interdum.'
+      image1920x1080: 'https://dummyimage.com/1920x1080/ccc/999',
+      headline: 'Lorem ipsum dolor sit amet',
+      standfirst: 'Nulla quis sagittis ex. Donec ut fringilla dui. Sed eget velit id ipsum luctus sollicitudin eu nec turpis. Integer rutrum justo in quam dignissim interdum.',
+      imageCaption: 'A placeholder image.',
+      copyright: `British Film Institute ${(new Date()).getFullYear()}`
     }}
     parameters={{
       controls: {
@@ -170,10 +135,10 @@ the page for accessbility reasons - it should be purely decorative.
   <Story
     name="Short headline"
     args={{
-      image1920x1080: 'https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1920/1080/1/2020-03/Hero.jpg',
-      headline: 'Watch a new film',
-      imageCaption: 'This is a caption',
-      copyright: 'Tim Apple'
+      image1920x1080: 'https://dummyimage.com/1920x1080/ccc/999',
+      headline: 'Lorem',
+      imageCaption: 'A placeholder image.',
+      copyright: `British Film Institute ${(new Date()).getFullYear()}`
     }}
     parameters={{
       controls: {
@@ -193,10 +158,10 @@ the page for accessbility reasons - it should be purely decorative.
   <Story
     name="Long headline"
     args={{
-      image1920x1080: 'https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1920/1080/1/2020-03/Hero.jpg',
-      headline: 'Watch a new film, rediscover your old favourites, and get inspired. Watch a new film, rediscover your old favourites, and get inspired.',
-      imageCaption: 'This is a caption',
-      copyright: 'Tim Apple'
+      image1920x1080: 'https://dummyimage.com/1920x1080/ccc/999',
+      headline: 'Nulla quis sagittis ex. Donec ut fringilla dui. Sed eget velit id ipsum luctus sollicitudin eu nec turpis. Integer rutrum justo in quam dignissim interdum.',
+      imageCaption: 'A placeholder image.',
+      copyright: `British Film Institute ${(new Date()).getFullYear()}`
     }}
     parameters={{
       controls: {
@@ -210,21 +175,62 @@ the page for accessbility reasons - it should be purely decorative.
 
 <ArgsTable story="Long headline" />
 
+### With copyright only
+
+<Canvas>
+  <Story
+    name="With copyright only"
+    args={{
+      image1920x1080: 'https://dummyimage.com/1920x1080/ccc/999',
+      headline: 'Lorem ipsum dolor sit amet',
+      copyright: `British Film Institute ${(new Date()).getFullYear()}`
+    }}
+    parameters={{
+      controls: {
+        exclude: ['imageCaption', 'standfirst', 'withHeader', 'noTitleText', 'videoMP4', 'videoWEBM']
+      }
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<ArgsTable story="With copyright only" />
+
+### Without caption or copyright
+
+<Canvas>
+  <Story
+    name="Without caption or copyright"
+    args={{
+      image1920x1080: 'https://dummyimage.com/1920x1080/ccc/999',
+      headline: 'Lorem ipsum dolor sit amet'
+    }}
+    parameters={{
+      controls: {
+        exclude: ['imageCaption', 'copyright', 'standfirst', 'withHeader', 'noTitleText', 'videoMP4', 'videoWEBM']
+      }
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<ArgsTable story="Without caption or copyright" />
+
 ### With headline hidden
 
 <Canvas>
   <Story
     name="With headline hidden"
     args={{
-      image1920x1080: 'https://core-cms.bfi.org.uk/sites/default/files/styles/responsive/public/960/540/1/2020-08/bfi-london-film-festival-2020-artwork.jpg',
-      headline: 'Watch a new film, rediscover your old favourites, and get inspired.',
-      imageCaption: 'This is a caption',
-      copyright: 'Tim Apple',
+      image1920x1080: 'https://dummyimage.com/1920x1080/ccc/999',
+      headline: 'Lorem ipsum dolor sit amet',
       noTitleText: true
     }}
     parameters={{
       controls: {
-        exclude: ['standfirst', 'withHeader', 'videoMP4', 'videoWEBM']
+        exclude: ['imageCaption', 'copyright', 'standfirst', 'withHeader', 'videoMP4', 'videoWEBM']
       }
     }}
   >
@@ -238,12 +244,12 @@ the page for accessbility reasons - it should be purely decorative.
 
 <Canvas>
   <Story
-    name="With header not overlaid"
+    name="With header"
     args={{
-      image1920x1080: 'https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1920/1080/1/2020-03/Hero.jpg',
-      headline: 'Watch a new film, rediscover your old favourites, and get inspired.',
-      imageCaption: 'This is a caption',
-      copyright: 'Tim Apple'
+      image1920x1080: 'https://dummyimage.com/1920x1080/ccc/999',
+      headline: 'Lorem ipsum dolor sit amet',
+      imageCaption: 'A placeholder image.',
+      copyright: `British Film Institute ${(new Date()).getFullYear()}`
     }}
     parameters={{
       controls: {
@@ -255,7 +261,7 @@ the page for accessbility reasons - it should be purely decorative.
   </Story>
 </Canvas>
 
-<ArgsTable story="With header not overlaid" />
+<ArgsTable story="With header" />
 
 ### With header (overlaid)
 
@@ -263,11 +269,11 @@ the page for accessbility reasons - it should be purely decorative.
   <Story
     name="With header overlaid"
     args={{
-      image1920x1080: 'https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1920/1080/1/2020-03/Hero.jpg',
-      headline: 'Watch a new film, rediscover your old favourites, and get inspired.',
-      imageCaption: 'This is a caption',
-      copyright: 'Tim Apple',
-      withHeader: true
+      image1920x1080: 'https://dummyimage.com/1920x1080/ccc/999',
+      headline: 'Lorem ipsum dolor sit amet',
+      imageCaption: 'A placeholder image.',
+      copyright: `British Film Institute ${(new Date()).getFullYear()}`,
+      withHeader
     }}
     parameters={{
       controls: {
@@ -287,12 +293,12 @@ the page for accessbility reasons - it should be purely decorative.
   <Story
     name="With video"
     args={{
-      headline: 'Watch a new film, rediscover your old favourites, and get inspired.',
-      imageCaption: 'This is a caption',
-      copyright: 'Tim Apple',
+      headline: 'Lorem ipsum dolor sit amet',
+      imageCaption: 'A placeholder image.',
+      copyright: `British Film Institute ${(new Date()).getFullYear()}`,
       videoMP4: localMP4Video,
       videoWEBM: localWEBMVideo,
-      withHeader: true
+      withHeader
     }}
     parameters={{
       controls: {
@@ -312,13 +318,13 @@ the page for accessbility reasons - it should be purely decorative.
   <Story
     name="With video & headline hidden"
     args={{
-      headline: 'Watch a new film, rediscover your old favourites, and get inspired.',
-      imageCaption: 'This is a caption',
-      copyright: 'Tim Apple',
+      headline: 'Lorem ipsum dolor sit amet',
+      imageCaption: 'A placeholder image.',
+      copyright: `British Film Institute ${(new Date()).getFullYear()}`,
       videoMP4: localMP4Video,
       videoWEBM: localWEBMVideo,
       noTitleText: true,
-      withHeader: true
+      withHeader
     }}
     parameters={{
       controls: {
