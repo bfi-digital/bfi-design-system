@@ -7,6 +7,7 @@ import parse from "html-react-parser"
 import { Tag } from "../Tag"
 import { Text } from "../Text"
 import { LinkSwitch as Link } from "../LinkSwitch"
+import { CaptionedImage, CaptionBelow } from "../CaptionedImage"
 
 const Outer = styled.div`
     margin: 0 auto;
@@ -103,21 +104,6 @@ const StandFirst = styled.p`
     }
 `
 
-const StyledImage = styled.img`
-    width: 100%;
-    height: auto;
-`
-const Small = styled.small`
-    text-align: center;
-    color: ${props => props.white ? theme.white : theme.darkGrey};
-    font-size: ${theme.small_fontSize_m};
-    margin: 0 auto;
-    display: block;
-    &:hover {
-        cursor: default;
-    }
-`
-
 export const HeroArticle = ({
     image1920x1080,  
     imageAltText,
@@ -179,17 +165,13 @@ export const HeroArticle = ({
             {(image1920x1080) && 
                 <ImageContainer>
                     {image1920x1080 &&
-                                <>
-                                    <StyledImage
-                                        itemprop="image"
-                                        src={image1920x1080}
-                                        alt={imageAltText ? imageAltText : ""}
-                                        loading="lazy"
-                                    />
-                                    {imageCaption &&
-                                      imageCopyright? <Small itemprop="copyrightHolder">{imageCaption} &copy; {imageCopyright}</Small>
-                                        :<Small itemprop="copyrightHolder">{imageCaption}</Small>}
-                                </>
+                        <CaptionedImage src={image1920x1080} alt={imageAltText}>
+                            <CaptionBelow>
+                                { imageCaption }
+                                { (imageCaption && imageCopyright) && <br /> }
+                                { imageCopyright && <cite>{`\u00A9 ${imageCopyright}`}</cite> }
+                            </CaptionBelow>
+                        </CaptionedImage>
                     }
                     {brandLogoInfo && 
                         <BrandLogo className="with_image">
@@ -204,37 +186,45 @@ export const HeroArticle = ({
 
 HeroArticle.propTypes = {
     /** 
-    * Urls to the image for the article hero. 
+    * URL to the image for the article hero
     **/
     image1920x1080: PropTypes.string,
     /** 
-    * Alt text for hero image.
+    * Alt text for hero image
     **/
     imageAltText: PropTypes.string,
     /** 
-    * Optional copyright text for the hero image.
+    * Optional copyright text for the hero image
     **/
     imageCopyright: PropTypes.string,
+    /** 
+    * A brief description of what can be seen in the image
+    **/
+    imageCaption: PropTypes.string,
     /** 
     * The text for the title which will be used as the H1 for this page/post
     **/
     title: PropTypes.string,
     /** 
-    * A summary of the article.
+    * A summary of the article
     **/
     standfirst: PropTypes.string,
     /** 
-    * The category of the article.
+    * The category of the article
     **/
     category: PropTypes.string,
     /** 
-    * The link to the filtered list of this category.
+    * The link to the filtered list of this category
     **/
     categoryLink: PropTypes.string,
     /** 
-    * The date the article was posted.
+    * The date the article was posted
     **/
     date: PropTypes.string,
+    /** 
+    * The date the article was updated
+    **/
+    updatedDate: PropTypes.string,
     /** 
     * An array of the authors of this article, each author contains their name and url
     **/
@@ -242,5 +232,9 @@ HeroArticle.propTypes = {
     /** 
     * The brand assigned to this article
     **/
-    brand: PropTypes.string
+    brand: PropTypes.string,
+    /** 
+    * An array of logo objects associated with the brand of this article
+    **/
+    brandLogos: PropTypes.array
 }

@@ -1,21 +1,15 @@
 import { ArgsTable, Canvas, Meta, Story } from '@storybook/addon-docs'
 import { withDesign } from 'storybook-addon-designs'
 import { Dialog, DialogOpener, DialogContents } from '.'
-
-{/* Temporary while the Image component awaits refactoring */}
-export const Image = ({ alt, src, ...props }) => (
-  <figure {...props} style={{ backgroundColor: '#E8DDFF', margin: 0, width: 'fit-content' }}>
-    <img alt={alt} src={src} style={{display: 'block'}} />
-  </figure>
-)
+import { CaptionedImage, CaptionToggle } from '../CaptionedImage'
 
 export const ModalImage = (args) => (
   <Dialog {...args}>
     <DialogOpener>
-      <Image src="https://dummyimage.com/420x266/ccc/999" alt="" />
+      <CaptionedImage src="https://dummyimage.com/420x266/ccc/999" alt="" />
     </DialogOpener>
     <DialogContents>
-      <Image src="https://dummyimage.com/840x532/ccc/999" alt="" />
+      <CaptionedImage src="https://dummyimage.com/840x532/ccc/999" alt="" />
     </DialogContents>
   </Dialog>
 )
@@ -52,7 +46,7 @@ export const ModelessText = (args) => (
 )
 
 <Meta
-  title="5 Refactored Components/Dialog"
+  title="4 Components/All/Dialog 🆕"
   component={Dialog}
   decorators={[
     withDesign,
@@ -71,21 +65,13 @@ export const ModelessText = (args) => (
   argTypes={{
     modeless: {
       description: 'If `true`, dialog will be rendered modeless, i.e. still allowing interaction with content outside of the dialog',
-      control: 'boolean',
-      table: {
-        defaultValue: { summary: `undefined` }
-      }
+      control: 'boolean'
     }
   }}
 />
 
-# Dialog
+# `<Dialog />`
 Create a modal lightbox or textual pop-over
-
-## Technical notes
-- Each `<Dialog />` maintains its own opened/closed state
-- Anything can be defined as a `<DialogOpener />`, and simply becomes expanded upon rather than wrapped. This not only reduces unnecessary markup but means that any pre-existing `onClick` or `onKeyDown` handlers will still carry out their duties in addition to actioning the `<Dialog />`, and any pre-existing `className` will be appended to.
-- Whatever is passed to `<DialogContents />`, will be the content that is shown when the dialog is opened and hidden when the dialog is closed.
 
 ### Image lightbox modal
 

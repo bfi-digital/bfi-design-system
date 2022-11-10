@@ -1,12 +1,12 @@
 import { ArgsTable, Canvas, Meta, Story } from '@storybook/addon-docs'
 import { withDesign } from 'storybook-addon-designs'
-import { HeroPage } from "../../../components/HeroPage"
-import { longData as crumbs } from "../../../components/Breadcrumbs/data"
+import { HeroPage } from "../HeroPage"
+import { longData as crumbs } from "../Breadcrumbs/data"
 
 export const Template = (args) => <HeroPage {...args} />
 
 <Meta
-  title="2 Pattern Library/1 Structure/Hero Page 🆕"
+  title="4 Components/All/Hero Page 🆕"
   component={HeroPage}
   decorators={[
     withDesign,
@@ -63,33 +63,7 @@ export const Template = (args) => <HeroPage {...args} />
 
 # `<HeroPage />`
 
-This hero is specifically used on Service List pages. These pages are used as a 
-centre point for a service and provide links out to other information or lists of 
-possible service offers. This hero is used to help this pivotal pages stand out.
-
-### Service List Pages without images
-
-The featured image is optional, if it is not included the hero will display as a 
-full width banner containing the title and the page summary text with a light 
-coloured background - [see this example](/?path=/story/2-pattern-library-1-structure-hero-page-🆕--page-example-without-an-image). 
-This helps the user understand what the page/service is and especially works 
-well when the service may need to list out a variety of links. 
-
-### Service List Pages with images
-
-If an image is included the design of the hero changes slightly. In order to 
-differentiate this page from something as stricking as a landing page hero with 
-its large full width image, the image is therefore smaller and placed alongside 
-the title and page summary. it retains the same background colour, however this 
-just stands to highlight the image rather than fill the page as it does without 
-an image. [See this example](/?path=/story/2-pattern-library-1-structure-hero-page-🆕--page-example-with-image-and-breadcrumbs)
-
-The image can also have a credit or caption added to it which will include an 
-accessible title tool tip as [seen here](/?path=/story/2-pattern-library-1-structure-hero-page-🆕--page-example-with-image-and-caption).
-
-## Props
-
-<ArgsTable of={HeroPage} />
+Create a hero that is specifically used on Service List pages
 
 ### Page example without an image
 
@@ -97,8 +71,8 @@ accessible title tool tip as [seen here](/?path=/story/2-pattern-library-1-struc
   <Story
     name="Page example without an image"
     args={{
-      title: 'Development Fund',
-      standfirst: `We want to support work that takes risks and does something different. This means we fund projects that can't find other, commercial finance at development stage.`,
+      title: 'Lorem ipsum dolor sit amet',
+      standfirst: 'Nulla quis sagittis ex. Donec ut fringilla dui. Sed eget velit id ipsum luctus sollicitudin eu nec turpis. Integer rutrum justo in quam dignissim interdum.',
       breadcrumbs: crumbs,
       isServiceListPage: true
     }}
@@ -120,8 +94,8 @@ accessible title tool tip as [seen here](/?path=/story/2-pattern-library-1-struc
   <Story
     name="Page example without image or breadcrumbs"
     args={{
-      title: 'Development Fund',
-      standfirst: `We want to support work that takes risks and does something different. This means we fund projects that can't find other, commercial finance at development stage.`,
+      title: 'Lorem ipsum dolor sit amet',
+      standfirst: 'Nulla quis sagittis ex. Donec ut fringilla dui. Sed eget velit id ipsum luctus sollicitudin eu nec turpis. Integer rutrum justo in quam dignissim interdum.',
       isServiceListPage: true
     }}
     parameters={{
@@ -142,10 +116,10 @@ accessible title tool tip as [seen here](/?path=/story/2-pattern-library-1-struc
   <Story
     name="Page example with image and breadcrumbs"
     args={{
-      title: 'Development Fund',
-      standfirst: `We want to support work that takes risks and does something different. This means we fund projects that can't find other, commercial finance at development stage.`,
+      title: 'Lorem ipsum dolor sit amet',
+      standfirst: 'Nulla quis sagittis ex. Donec ut fringilla dui. Sed eget velit id ipsum luctus sollicitudin eu nec turpis. Integer rutrum justo in quam dignissim interdum.',
       breadcrumbs: crumbs,
-      image1920x1080: 'https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1920/1080/1/2020-03/Hero.jpg',
+      image1920x1080: 'https://dummyimage.com/1920x1080/ccc/999',
       imageAltText: 'Alt text for the image'
     }}
     parameters={{
@@ -166,9 +140,9 @@ accessible title tool tip as [seen here](/?path=/story/2-pattern-library-1-struc
   <Story
     name="Page example with image and no breadcrumbs"
     args={{
-      title: 'Development Fund',
-      standfirst: `We want to support work that takes risks and does something different. This means we fund projects that can't find other, commercial finance at development stage.`,
-      image1920x1080: 'https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1920/1080/1/2020-03/Hero.jpg',
+      title: 'Lorem ipsum dolor sit amet',
+      standfirst: 'Nulla quis sagittis ex. Donec ut fringilla dui. Sed eget velit id ipsum luctus sollicitudin eu nec turpis. Integer rutrum justo in quam dignissim interdum.',
+      image1920x1080: 'https://dummyimage.com/1920x1080/ccc/999',
       imageAltText: 'Alt text for the image'
     }}
     parameters={{
@@ -189,13 +163,13 @@ accessible title tool tip as [seen here](/?path=/story/2-pattern-library-1-struc
   <Story
     name="Page example with image and caption"
     args={{
-      title: 'Development Fund',
-      standfirst: `We want to support work that takes risks and does something different. This means we fund projects that can't find other, commercial finance at development stage.`,
-      image1920x1080: 'https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1920/1080/1/2020-03/Hero.jpg',
+      title: 'Lorem ipsum dolor sit amet',
+      standfirst: 'Nulla quis sagittis ex. Donec ut fringilla dui. Sed eget velit id ipsum luctus sollicitudin eu nec turpis. Integer rutrum justo in quam dignissim interdum.',
+      image1920x1080: 'https://dummyimage.com/1920x1080/ccc/999',
       imageAltText: 'Alt text for the image',
       breadcrumbs: crumbs,
-      imageCaption: 'This is a caption',
-      copyright: 'Tim Apple'
+      imageCaption: 'A placeholder image.',
+      copyright: `British Film Institute ${(new Date()).getFullYear()}`
     }}
     parameters={{
       controls: {
