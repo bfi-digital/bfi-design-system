@@ -223,6 +223,7 @@ function slugify(string) {
 }
 
 export const PromoBanner = ({
+    logo,
     headline,
     description,
     callToActionUrl, 
@@ -241,6 +242,7 @@ export const PromoBanner = ({
             id={slugify(headline)}
         >
             <Inner className={image ? "with_image" : "without_image"} reversed={reversed}>
+                {logo ? <img src={logo} alt=""/> : null }
                 <Headline level={2} text={headline}/>
                 {description && <Description className={image ? "with_image" : "without_image"}>{description}</Description>} 
                 {callToActionUrl && image && 
@@ -269,6 +271,10 @@ export const PromoBanner = ({
     
 
 PromoBanner.propTypes = {
+    /** 
+    * Source URL for the logo, any size
+    **/
+    logo: PropTypes.string,
     /** 
     * Headline of the banner
     **/
