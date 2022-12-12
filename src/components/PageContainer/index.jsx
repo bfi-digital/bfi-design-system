@@ -110,7 +110,7 @@ export const MainContentWrapper = styled.article`
             margin-top: 0px;
         }
     }
-    h2:first-child {
+    & > h2:first-child {
         margin-block-start: 0;
         margin-block-end: ${theme.standardSpace}px;
     }
