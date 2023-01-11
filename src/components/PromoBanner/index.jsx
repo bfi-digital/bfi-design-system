@@ -171,6 +171,12 @@ const RightButton = styled.div`
     }
 `
 
+const SecondImage = styled.img`
+    margin-bottom: ${props => props.marginBottom ? "15px" : "0"};
+    max-width: 100%;
+    height: auto;
+`
+
 const Description = styled.p`
     margin-top: 0px;
     white-space: pre-line;
@@ -197,7 +203,7 @@ const Image = styled.div`
     @media screen and (min-width: ${theme.m}){
         order: ${props => props.reversed ? "-1" : "1"};
         width: 50%;
-        height: "auto";
+        height: auto;
         margin-right: ${props => props.reversed ? "0px" : "-20px"};
         margin-left: ${props => props.reversed ? "-20px" : "20px"};
     }
@@ -230,7 +236,9 @@ export const PromoBanner = ({
     image,
     reversed = false,
     colorScheme,
-    external
+    external,
+    secondImage,
+    secondImageAltText
 }) => {
 
     return (
@@ -241,6 +249,13 @@ export const PromoBanner = ({
             id={slugify(headline)}
         >
             <Inner className={image ? "with_image" : "without_image"} reversed={reversed}>
+                {secondImage && 
+                    <SecondImage 
+                        marginBottom
+                        src={secondImage} 
+                        alt={secondImageAltText ? secondImageAltText : ""}
+                    />
+                }
                 <Headline level={2} text={headline}/>
                 {description && <Description className={image ? "with_image" : "without_image"}>{description}</Description>} 
                 {callToActionUrl && image && 
@@ -296,5 +311,13 @@ PromoBanner.propTypes = {
     /** 
     * Boolean for whether link is external. Default is false
     **/
-    external: PropTypes.bool
+    external: PropTypes.bool,
+    /** 
+    * Source URL for optional second image, any size
+    **/
+    secondImage: PropTypes.string,
+    /** 
+    * Alt text for opitonal second image
+    **/
+    secondImageAltText: PropTypes.string,
 }
