@@ -14,7 +14,7 @@ This is a living documentation powered by [Storybook](https://storybook.js.org/)
 
 ## 🎬 Using the design system
 
-```
+```{bash}
 npm install bfi-design-system
 
 // Install peer dependencies
@@ -23,7 +23,7 @@ npm install react react-dom styled-components
 
 Import the components you'd like to use into your app. For example:
 
-```
+```{bash}
 import React from "react"
 import { Card } from "bfi-design-system"
 
@@ -44,14 +44,14 @@ If you want, you can also include this repo in another app as if it were an `npm
 
 ### How to publish a new version to NPM
 
-1. Ensure all tests pass with `npm test`
-2. If the snapshot tests are out of date due to changes in the components then ensure all is working and update them with `npx jest --updateSnapshot`
-2. Increment the next version number in the `package.json` file.
-3. `npm publish`. This will:
+1. Ensure all tests pass with `npm test`.
+2. If the snapshot tests are out of date due to changes in the components then ensure all is working and update them with `npx jest --updateSnapshot`.
+3. Increment the next version number in the `package.json` file.
+4. `npm publish`. This will:
     - Run the tests
     - Bundle and transpile the code
     - Create and publish a tarball to NPM
-4. If you are wanting to utilise the updated design system, for example in the BFI [`web frontend`](https://github.com/bfi-digital/bfi-web-frontend) you will then need to update the version number of the design system in the `package.json` file within that repo.
+5. If you are wanting to utilise the updated design system, for example in the BFI [`web frontend`](https://github.com/bfi-digital/bfi-web-frontend) you will then need to update the version number of the design system in the `package.json` file within that repo.
 
 ## 🧪 Testing
 
@@ -69,5 +69,5 @@ We use `eslint` and [`jsx-a11y`](https://www.npmjs.com/package/eslint-plugin-jsx
 
 ## To-do list
 
-* Add more add-ons to the Storybook playground
-* Typescript support?
+- Add more add-ons to the Storybook playground
+- Typescript support?
