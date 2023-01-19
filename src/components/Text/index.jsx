@@ -10,18 +10,18 @@ const Outer = styled.div`
     margin-bottom: 20px;
 
     h2 {
-        font-family: ${theme.bodyFont}; 
+        font-family: ${theme.bodyFont};
         color: ${theme.black};
         font-weight: bold;
         font-size: 1.4375rem;
         margin-block-start: 1.75em;
         margin-block-end: 0.5em;
         line-height: 1.3;
-        @media screen and (min-width: ${theme.l}){
+        @media screen and (min-width: ${theme.l}) {
             font-size: 1.6875rem;
             margin-block-start: 2em;
         }
-        @media screen and (min-width: ${theme.xl}){
+        @media screen and (min-width: ${theme.xl}) {
             margin-block-start: 2.25em;
             font-size: 2rem;
         }
@@ -34,7 +34,7 @@ const Outer = styled.div`
         margin-block-start: 1.5em;
         margin-block-end: 0.5em;
         line-height: 1.3;
-        @media screen and (min-width: ${theme.xl}){
+        @media screen and (min-width: ${theme.xl}) {
             font-size: 1.6875rem;
         }
     }
@@ -46,10 +46,10 @@ const Outer = styled.div`
         font-size: ${theme.fontSize_s};
         margin-bottom: 10px;
         line-height: 1.3;
-        @media screen and (min-width: ${theme.m}){
+        @media screen and (min-width: ${theme.m}) {
             font-size: ${theme.fontSize_m};
         }
-        @media screen and (min-width: ${theme.xl}){
+        @media screen and (min-width: ${theme.xl}) {
             font-size: 1.563rem;
         }
     }
@@ -60,20 +60,20 @@ const Outer = styled.div`
         font-weight: ${theme.fontWeight_semiBold};
         font-size: 0.875rem;
         line-height: 1.3;
-        @media screen and (min-width: ${theme.m}){
+        @media screen and (min-width: ${theme.m}) {
             font-size: ${theme.fontSize_s};
         }
-        @media screen and (min-width: ${theme.xl}){
+        @media screen and (min-width: ${theme.xl}) {
             font-size: ${theme.fontSize_m};
         }
     }
 
 
-    p:first-of-type{
+    p:first-of-type {
         margin-top: 0px;
     }
 
-    ol, ul{
+    ol, ul {
         margin-bottom: 20px;
     }
 
@@ -88,17 +88,17 @@ const Outer = styled.div`
         background-position: 0 100%;
         transition: all 0.15s ease-in-out;
 
-        &:hover{
+        &:hover {
             color: ${theme.white};
             background-size: 100% 100%;
         }
-        &:focus{
+        &:focus {
             background-size: 100% 100%;
             color: ${theme.white};
             outline: none;
             background-image: linear-gradient(120deg, ${theme.focus} 0%, ${theme.focus} 100%);
         }
-        &:active{
+        &:active {
             outline: none;
             text-decoration: underline;
         }
@@ -114,8 +114,8 @@ const Outer = styled.div`
         color: transparent;
         overflow: hidden;
         pointer-events: none;
-        
-        @media screen and (min-width: ${theme.m}){
+
+        @media screen and (min-width: ${theme.m}) {
             top: -90px;
         }
     }
@@ -124,16 +124,15 @@ const Outer = styled.div`
         margin-top: -5px;
     }
 
-    ul{
+    ul {
         margin-top: 0;
         margin-bottom: 0;
         padding-left: 10px;
-        display: inline-block;
         list-style: none;
-        li{
+        li {
             margin-left: -5px;
             margin-bottom: 10px;
-            &:before{
+            &:before {
                 content: "•";
                 color: ${theme.dark};
                 margin-right: 15px;
@@ -141,12 +140,11 @@ const Outer = styled.div`
         }
     }
 
-    ol{
+    ol {
         margin-top: 0;
         margin-bottom: 0;
         padding-left: 25px;
-        display: inline-block;
-        li{
+        li {
             padding-left: 10px;
             margin-bottom: 10px;
         }
@@ -174,15 +172,15 @@ const Outer = styled.div`
         }
     }
 
-    
-    @media screen and (min-width: ${theme.m}){
+
+    @media screen and (min-width: ${theme.m}) {
         max-width: calc(${theme.l} - 200px);
     }
-    @media screen and (min-width: ${theme.l}){
+    @media screen and (min-width: ${theme.l}) {
         font-size: ${theme.fontSize_m};
         line-height: ${theme.lineHeight_m};
     }
-    @media screen and (min-width: ${theme.xl}){
+    @media screen and (min-width: ${theme.xl}) {
         font-size: ${theme.fontSize_xl};
         max-width: calc(${theme.xl} - 400px);
     }
@@ -194,9 +192,9 @@ const Outer = styled.div`
     // TABLE STYLES
 
 
-    table { 
-        width: 750px; 
-        border-collapse: collapse; 
+    table {
+        width: 750px;
+        border-collapse: collapse;
         margin: 50px auto;
         max-width: 100%;
         overflow: scroll;
@@ -205,47 +203,47 @@ const Outer = styled.div`
             color: ${theme.darkGrey};
             margin-bottom: 5px;
         }
-        @media only screen and (max-width: ${theme.m}){
+        @media only screen and (max-width: ${theme.m}) {
             caption {
                 width: 100%;
                 display: block;
             }
         }
     }
-    
-    tr:nth-of-type(even) { 
-        background: ${theme.lightGrey}; 
+
+    tr:nth-of-type(even) {
+        background: ${theme.lightGrey};
     }
-    
-    td, th { 
-        padding: 10px; 
-        border: 1px solid ${theme.grey}; 
-        text-align: left; 
+
+    td, th {
+        padding: 10px;
+        border: 1px solid ${theme.grey};
+        text-align: left;
         font-size: 18px;
     }
     th {
-        background: ${theme.lightest}; 
+        background: ${theme.lightest};
     }
-    
 
-    @media only screen and (max-width: ${theme.m}){
-        table { 
-            width: 100%; 
+
+    @media only screen and (max-width: ${theme.m}) {
+        table {
+            width: 100%;
         }
-    
-        table, thead, tbody, th, td, tr { 
-            display: block; 
+
+        table, thead, tbody, th, td, tr {
+            display: block;
         }
-        
-        thead tr { 
+
+        thead tr {
             position: absolute;
             top: -9998px;
             left: -9998px;
         }
-        
+
         tr { border: 1px solid ${theme.grey}; }
-        
-        td, th { 
+
+        td, th {
             border: none;
             position: relative;
         }
@@ -260,8 +258,8 @@ export const Text = ({
     </Outer>
 
 Text.propTypes = {
-    /** 
-	 * Block of html from the WYSIWYG
+    /**
+	 * Block of html from the WYSIWYG.
 	 **/
     children: PropTypes.oneOfType([
         PropTypes.arrayOf(PropTypes.node),
