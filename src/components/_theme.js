@@ -47,7 +47,7 @@ export default {
     // sizes & spacings
     horizontalPadding: "20px",
 
-    standardSpace: "25",
+    standardSpace: 25,
 
     fontWeight_semiBold: "600",
     fontWeight_bold: "700",
