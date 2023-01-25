@@ -39,7 +39,6 @@ const Outer = styled.div`
   &.with_image {
     @media screen and (min-width: ${theme.m}) {
       display: flex;
-      margin-bottom: ${theme.standardSpace * 1.5}px;
       background: ${theme.black};
       position: relative;
       &:before {

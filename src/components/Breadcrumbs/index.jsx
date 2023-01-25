@@ -75,11 +75,12 @@ const BreadcrumbLink = styled(Link)`
 `
 
 export const Breadcrumbs = ({
-    breadcrumbs
+    breadcrumbs,
+    ...props
 }) =>
     (breadcrumbs && breadcrumbs.length > 0) ?
         <>
-            <Outer>
+            <Outer {...props}>
                 {breadcrumbs.map((crumb) =>
                     <Crumb key={crumb.url ? crumb.url : crumb.title}>
                         {crumb.url ? <BreadcrumbLink to={crumb.url} data-tracking="breadcrumb">{crumb.title}</BreadcrumbLink> : crumb.title}
@@ -87,7 +88,7 @@ export const Breadcrumbs = ({
                 )}
             </Outer>
             {breadcrumbs.length > 1 &&
-                <MobileOuter>
+                <MobileOuter {...props}>
                     <Crumb key={breadcrumbs[breadcrumbs.length - 2].url ? breadcrumbs[breadcrumbs.length - 2].url : breadcrumbs[breadcrumbs.length - 2].title}>
                         <BreadcrumbLink to={breadcrumbs[breadcrumbs.length - 2].url} data-tracking="breadcrumb">&#60;&nbsp; {breadcrumbs[breadcrumbs.length - 2].title}</BreadcrumbLink>
                     </Crumb>
