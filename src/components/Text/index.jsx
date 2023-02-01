@@ -138,6 +138,10 @@ const Outer = styled.div`
                 margin-right: 15px;
             }
         }
+        ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
     }
 
     ol {
@@ -147,6 +151,9 @@ const Outer = styled.div`
         li {
             padding-left: 10px;
             margin-bottom: 10px;
+        }
+        ol {
+            margin-top: 10px
         }
     }
 
