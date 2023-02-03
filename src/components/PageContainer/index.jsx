@@ -11,6 +11,11 @@ export const Wrapper = styled.div`
 
     @media screen and (min-width: ${theme.m}){
         display: flex;
+        flex-wrap: wrap;
+        -webkit-flex-direction: row;
+        -moz-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
     }
     @media screen and (min-width: ${theme.xl}){
         max-width: calc(${theme.xl} - 100px);
@@ -23,9 +28,6 @@ export const Wrapper = styled.div`
 
     article.child_page {
         max-width: 100%;
-        @media screen and (min-width: ${theme.m}){
-            padding-right: 25px;
-        }
 
         & h2:first-child {
             margin-block-start: ${theme.standardSpace}px;
