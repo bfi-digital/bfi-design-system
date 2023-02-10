@@ -11,7 +11,7 @@ export const normal = () =>
         maxWidth: "1400px"
     }}>
         <HeroArticle 
-            image1920x1080="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1920/1080/1/2020-03/Hero.jpg"
+            image1920x1080="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/2020-03/Hero.jpg/1920x1080-cropped/Hero.jpg"
             imageAltText="Alt text for the image"
             imageCaption="BFI Southbank"
             imageCopyright="HELP MUSICIANS, directed by Thomas Guthrie"

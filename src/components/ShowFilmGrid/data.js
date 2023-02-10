@@ -1,8 +1,8 @@
 export default [
     {
         name: "Raging Bull",
-        image480x270: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/480/270/1/2020-05/image.jpeg",
-        image48x27: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/48/27/1/2020-05/image.jpeg",
+        image480x270: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/2020-05/image.jpeg/480x270-cropped/image.jpeg",
+        image48x27: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/2020-05/image.jpeg/48x27-cropped/image.jpeg",
         imageAltText: "Example image",
         channels: [
         ],
@@ -103,8 +103,8 @@ export default [
 export const loveDemo = [
     {
         name: "Raging Bull",
-        image480x270: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/480/270/1/2020-05/image.jpeg",
-        image48x27: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/48/27/1/2020-05/image.jpeg",
+        image480x270: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/2020-05/image.jpeg/480x270-cropped/image.jpeg",
+        image48x27: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/2020-05/image.jpeg/48x27-cropped/image.jpeg",
         imageAltText: "Example image",
         channels: [
         ],
@@ -167,8 +167,8 @@ export const loveDemo = [
 export const debateDemo = [
     {
         name: "Raging Bull",
-        image480x270: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/480/270/1/2020-05/image.jpeg",
-        image48x27: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/48/27/1/2020-05/image.jpeg",
+        image480x270: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/2020-05/image.jpeg/480x270-cropped/image.jpeg",
+        image48x27: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/2020-05/image.jpeg/48x27-cropped/image.jpeg",
         imageAltText: "Example image",
         channels: [
         ],

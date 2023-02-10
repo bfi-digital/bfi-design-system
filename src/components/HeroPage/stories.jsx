@@ -11,7 +11,7 @@ export const normal = () =>
         maxWidth: "1400px"
     }}>
         <HeroPage 
-            image1920x1080="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1920/1080/1/2020-03/Hero.jpg"
+            image1920x1080="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/2020-03/Hero.jpg/1920x1080-cropped/Hero.jpg"
             imageAltText="Alt text for the image"
             imageCaption="BFI SouthbankAs the BFI National Archive calls on the British public to help map the digital video response to coronavirus across the UK, our curators begin a regular new series highlighting the online videos that have made an impact during the lockdown period."
             imageCopyRight="HELP MUSICIANS, directed by Thomas Guthrie"

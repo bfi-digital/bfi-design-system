@@ -7,7 +7,7 @@ export default {
 
 export const normal = () =>
     <HeroBasic 
-        image="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1920/1080/1/2020-03/Hero.jpg"
+        image="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/2020-03/Hero.jpg/1920x1080-cropped/Hero.jpg"
     >
         <HeroHeadline>Here&apos;s some content</HeroHeadline>
         <Standfirst>Here&apos;s a standfirst</Standfirst>
