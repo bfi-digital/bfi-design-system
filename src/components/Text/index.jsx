@@ -68,13 +68,8 @@ const Outer = styled.div`
         }
     }
 
-
     p:first-of-type {
         margin-top: 0px;
-    }
-
-    ol, ul {
-        margin-bottom: 20px;
     }
 
     a:link {
@@ -124,35 +119,15 @@ const Outer = styled.div`
         margin-top: -5px;
     }
 
-    ul {
+    ol, ul {
         margin-top: 0;
-        margin-bottom: 0;
-        padding-left: 10px;
-        list-style: none;
-        li {
-            margin-left: -5px;
-            margin-bottom: 10px;
-            &:before {
-                content: "•";
-                color: ${theme.dark};
-                margin-right: 15px;
-            }
-        }
-        ul {
-            margin-left: 20px;
-            margin-top: 10px;
-        }
-    }
-
-    ol {
-        margin-top: 0;
-        margin-bottom: 0;
-        padding-left: 25px;
+        margin-bottom: 20px;
+        padding-left: 20px;
         li {
             padding-left: 10px;
             margin-bottom: 10px;
         }
-        ol {
+        ol, ul {
             margin-top: 10px
         }
     }
@@ -179,7 +154,6 @@ const Outer = styled.div`
         }
     }
 
-
     @media screen and (min-width: ${theme.m}) {
         max-width: calc(${theme.l} - 200px);
     }
@@ -194,10 +168,7 @@ const Outer = styled.div`
 
 
 
-
-
     // TABLE STYLES
-
 
     table {
         width: 750px;
