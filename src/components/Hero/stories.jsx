@@ -9,7 +9,7 @@ export default {
 
 export const normal = () =>
     <Hero 
-        image1920x1080="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1920/1080/1/2020-03/Hero.jpg"
+        image1920x1080="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/2020-03/Hero.jpg/1920x1080-cropped/Hero.jpg"
         headline="Watch a new film, rediscover your old favourites, and get inspired."
         copyright="HELP MUSICIANS, directed by Thomas Guthrie"
         imageCaption="BFI Southbank Watch a new film, rediscover your old favourites, and get inspired BFI Southbank Watch a new film, rediscover your old favourites, and get inspired"
@@ -21,7 +21,7 @@ export const withHeader = () =>
         <Header navItems={navItems} quickLinks={quickLinksData} overlay={true} />
         <Hero 
             withHeader
-            image1920x1080="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1920/1080/1/2020-03/Hero.jpg"
+            image1920x1080="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/2020-03/Hero.jpg/1920x1080-cropped/Hero.jpg"
             headline="Watch a new film, rediscover your old favourites, and get inspired."
         />
     </>

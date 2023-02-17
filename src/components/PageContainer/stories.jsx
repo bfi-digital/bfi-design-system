@@ -142,7 +142,7 @@ export const discoveryPage = () =>
         <Header navItems={navItems} quickLinks={quickLinksData} overlay={true} />
         <Hero
             withHeader
-            image1920x1080="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1920/1080/1/2020-03/Hero.jpg"
+            image1920x1080="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/2020-03/Hero.jpg/1920x1080-cropped/Hero.jpg"
             headline="Discover the world of cinema with the BFI"
         />
         <Wrapper>
@@ -339,7 +339,7 @@ export const industryPage = () =>
         <Header navItems={navItems} quickLinks={quickLinksData} overlay={true} />
         <Hero
             withHeader
-            image1920x1080="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1410/500/1/2020-03/industry.jpg"
+            image1920x1080="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/2020-03/industry.jpg/1410x500-cropped/industry.jpg"
             headline="We support filmmakers and champion films that push boundaries."
         />
         <Wrapper>
@@ -455,7 +455,7 @@ export const educationPage = () =>
         <Header navItems={navItems} quickLinks={quickLinksData} overlay={true} />
         <Hero
             withHeader
-            image1920x1080="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1440/670/1/2020-03/education.jpg"
+            image1920x1080="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/2020-03/education.jpg/1440x670-cropped/education.jpg"
             headline="Learn, teach and research about films, through films"
         />
         <Wrapper>
@@ -605,8 +605,8 @@ export const serviceListPageExampleWithImage = () =>
                     standfirst="The BFI national archive holds a magnificent collection of film and television, from the birth of cinema to today. "
                     isServiceListPage={true}
                     breadcrumbs={crumbs}
-                    image1920x1080="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1920/1080/1/2020-03/Hero.jpg"
-                    image192x108="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/192/108/1/2020-03/Hero.jpg"
+                    image1920x1080="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/2020-03/Hero.jpg/1920x1080-cropped/Hero.jpg"
+                    image192x108="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/2020-03/Hero.jpg/192x108-cropped/Hero.jpg"
                 />
                 <PageLinks links={[
                     {
@@ -820,57 +820,57 @@ export const everyComponent = () =>
                 <ImageGallery 
                     images={[
                         {
-                            url: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1500/0/0/2020-03/girl-sweetvoiced_headtilted_04.jpg",
-                            thumb: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/500/0/0/2020-03/girl-sweetvoiced_headtilted_04.jpg",
-                            placeholder: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/50/0/0/2020-03/girl-sweetvoiced_headtilted_04.jpg",
+                            url: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/2020-03/girl-sweetvoiced_headtilted_04.jpg/1500x0/girl-sweetvoiced_headtilted_04.jpg",
+                            thumb: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/2020-03/girl-sweetvoiced_headtilted_04.jpg/500x0/girl-sweetvoiced_headtilted_04.jpg",
+                            placeholder: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/2020-03/girl-sweetvoiced_headtilted_04.jpg/50x0/girl-sweetvoiced_headtilted_04.jpg",
                             alt: "Example image",
                             caption: "Example image"
                         },
                         {
-                            url: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1500/0/0/2020-03/kiko's-saints_inside_04.jpg",
-                            thumb: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/500/0/0/2020-03/kiko's-saints_inside_04.jpg",
-                            placeholder: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/50/0/0/2020-03/kiko's-saints_inside_04.jpg",                            
+                            url: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/2020-03/kiko's-saints_inside_04.jpg/1500x0/kiko's-saints_inside_04.jpg",
+                            thumb: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/2020-03/kiko's-saints_inside_04.jpg/500x0/kiko's-saints_inside_04.jpg",
+                            placeholder: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/2020-03/kiko's-saints_inside_04.jpg/50x0/kiko's-saints_inside_04.jpg",                            
                             alt: "Example image 2"
                         },
                         {
-                            url: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1500/0/0/2020-03/sequin-in-a-blue-room_blurryface_01.jpg",
-                            thumb: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/500/0/0/2020-03/sequin-in-a-blue-room_blurryface_01.jpg",
-                            placeholder: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/50/0/0/2020-03/sequin-in-a-blue-room_blurryface_01.jpg",                            
+                            url: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/2020-03/sequin-in-a-blue-room_blurryface_01.jpg/1500x0/sequin-in-a-blue-room_blurryface_01.jpg",
+                            thumb: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/2020-03/sequin-in-a-blue-room_blurryface_01.jpg/500x0/sequin-in-a-blue-room_blurryface_01.jpg",
+                            placeholder: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/2020-03/sequin-in-a-blue-room_blurryface_01.jpg/50x0/sequin-in-a-blue-room_blurryface_01.jpg",                            
                             alt: "Example image 3",
                             caption: "Example image 3"
                         },
                         {
-                            url: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1500/0/0/2020-04/sheer-qorma_heads_02.jpg",
-                            thumb: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/500/0/0/2020-04/sheer-qorma_heads_02.jpg",
-                            placeholder: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/50/0/0/2020-04/sheer-qorma_heads_02.jpg",                            
+                            url: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/2020-04/sheer-qorma_heads_02.jpg/1500x0/sheer-qorma_heads_02.jpg",
+                            thumb: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/2020-04/sheer-qorma_heads_02.jpg/500x0/sheer-qorma_heads_02.jpg",
+                            placeholder: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/2020-04/sheer-qorma_heads_02.jpg/50x0/sheer-qorma_heads_02.jpg",                            
                             alt: "Example image 4",
                             caption: "Example image 4"
                         },
                         {
-                            url: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1500/0/0/2020-04/sweet-mother_party_01.jpg",
-                            thumb: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/500/0/0/2020-04/sweet-mother_party_01.jpg",
-                            placeholder: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/50/0/0/2020-04/sweet-mother_party_01.jpg",                            
+                            url: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/2020-04/sweet-mother_party_01.jpg/1500x0/sweet-mother_party_01.jpg",
+                            thumb: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/2020-04/sweet-mother_party_01.jpg/500x0/sweet-mother_party_01.jpg",
+                            placeholder: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/2020-04/sweet-mother_party_01.jpg/50x0/sweet-mother_party_01.jpg",                            
                             alt: "Example image 4",
                             caption: "Example image 4"
                         },
                         {
-                            url: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1500/0/0/2020-04/shear-avory-to-be-continued_phone_04.jpg",
-                            thumb: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/500/0/0/2020-04/shear-avory-to-be-continued_phone_04.jpg",
-                            placeholder: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/50/0/0/2020-04/shear-avory-to-be-continued_phone_04.jpg",                            
+                            url: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/2020-04/shear-avory-to-be-continued_phone_04.jpg/1500x0/shear-avory-to-be-continued_phone_04.jpg",
+                            thumb: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/2020-04/shear-avory-to-be-continued_phone_04.jpg/500x0/shear-avory-to-be-continued_phone_04.jpg",
+                            placeholder: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/2020-04/shear-avory-to-be-continued_phone_04.jpg/50x0/shear-avory-to-be-continued_phone_04.jpg",                            
                             alt: "Example image 5",
                             caption: "Example image 5"
                         },
                         {
-                            url: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1500/0/0/2020-04/westworld-season-two-2018-evan-rachel-wood-james-marsden.jpeg",
-                            thumb: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/500/0/0/2020-04/westworld-season-two-2018-evan-rachel-wood-james-marsden.jpeg",
-                            placeholder: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/50/0/0/2020-04/westworld-season-two-2018-evan-rachel-wood-james-marsden.jpeg",
+                            url: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/2020-04/westworld-season-two-2018-evan-rachel-wood-james-marsden.jpeg/1500x0/westworld-season-two-2018-evan-rachel-wood-james-marsden.jpeg",
+                            thumb: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/2020-04/westworld-season-two-2018-evan-rachel-wood-james-marsden.jpeg/500x0/westworld-season-two-2018-evan-rachel-wood-james-marsden.jpeg",
+                            placeholder: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/2020-04/westworld-season-two-2018-evan-rachel-wood-james-marsden.jpeg/50x0/westworld-season-two-2018-evan-rachel-wood-james-marsden.jpeg",
                             alt: "Example image",
                             caption: "Example image"
                         },
                         {
-                            url: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1500/0/0/2020-04/bacurau-2019-005-udo-kier-with-ladle-in-field-ORIGINAL.jpeg",
-                            thumb: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/500/0/0/2020-04/bacurau-2019-005-udo-kier-with-ladle-in-field-ORIGINAL.jpeg",
-                            placeholder: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/50/0/0/2020-04/bacurau-2019-005-udo-kier-with-ladle-in-field-ORIGINAL.jpeg",
+                            url: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/2020-04/bacurau-2019-005-udo-kier-with-ladle-in-field-ORIGINAL.jpeg/1500x0/bacurau-2019-005-udo-kier-with-ladle-in-field-ORIGINAL.jpeg",
+                            thumb: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/2020-04/bacurau-2019-005-udo-kier-with-ladle-in-field-ORIGINAL.jpeg/500x0/bacurau-2019-005-udo-kier-with-ladle-in-field-ORIGINAL.jpeg",
+                            placeholder: "https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/2020-04/bacurau-2019-005-udo-kier-with-ladle-in-field-ORIGINAL.jpeg/50x0/bacurau-2019-005-udo-kier-with-ladle-in-field-ORIGINAL.jpeg",
                             alt: "Example image",
                             caption: "Example image"
                         }
@@ -1356,7 +1356,7 @@ export const normalPageWithHeroImage = () =>
                 title="Headline goes here"
                 standfirst="God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs. Do you have any idea how long it takes those cups to decompose. Yes, Yes, without the oops! Yes, Yes, without the oops! Drive us out of here!"
                 breadcrumbs={crumbs}
-                image1920x1080="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1920/1080/1/2020-03/Hero.jpg"
+                image1920x1080="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/2020-03/Hero.jpg/1920x1080-cropped/Hero.jpg"
                 imageAltText="Alt text for the image"
                 imageCopyright="HELP MUSICIANS, directed by Thomas Guthrie"
             />
@@ -1543,7 +1543,7 @@ export const ArticleFeatureExample = () =>
     <>
         <Header navItems={navItems} quickLinks={quickLinksData}  />
         <HeroArticle 
-            image1920x1080="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1920/1080/1/2020-03/Hero.jpg"
+            image1920x1080="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/2020-03/Hero.jpg/1920x1080-cropped/Hero.jpg"
             imageAltText="Alt text for the image"
             imageCopyright="HELP MUSICIANS, directed by Thomas Guthrie"
             title="Britain on Lockdown: How online videos have shaped the crisis"
@@ -2091,7 +2091,7 @@ export const ArticleSightAndSoundExample = () =>
     <>
         <Header navItems={navItems} quickLinks={quickLinksData}  />
         <HeroArticle 
-            image1920x1080="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/1920/1080/1/2020-03/Hero.jpg"
+            image1920x1080="https://staging.core-cms.bfi.digital/sites/default/files/styles/responsive/public/2020-03/Hero.jpg/1920x1080-cropped/Hero.jpg"
             imageAltText="Alt text for the image"
             imageCopyright="HELP MUSICIANS, directed by Thomas Guthrie"
             title="Britain on Lockdown: How online videos have shaped the crisis"
