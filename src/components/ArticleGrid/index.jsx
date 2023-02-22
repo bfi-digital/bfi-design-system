@@ -160,6 +160,7 @@ export const ArticleGrid = ({
     firstHighlighted,
     children,
     skeletons = 6,
+    loadMore,
     loadMoreLoading,
     limitArticles
 }) => {
@@ -182,7 +183,7 @@ export const ArticleGrid = ({
                         }
                     </Articles>
                     {currentNumber < articles.length &&
-                        <CentredButton href="#4" onClick={() => setCurrentNumber(currentNumber+3)}>Load more</CentredButton>
+                        <CentredButton href="#4" onClick={(e) => {setCurrentNumber(currentNumber+3); loadMore(e) } }>Load more</CentredButton>
                     }
                 </>
                 :
