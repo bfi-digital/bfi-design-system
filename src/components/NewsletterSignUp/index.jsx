@@ -283,7 +283,8 @@ export const NewsletterSignUp = ({newsletterOption, form, inputName, title, desc
                         placeholder="Your email..."
                     />
                 </NewsletterLabel>
-                <SubmitButton type="submit">Sign up</SubmitButton>
+              <input type="hidden" name="cm-fo-ejrqj" value="signupslice"/>
+              <SubmitButton type="submit">Sign up</SubmitButton>
             </NewsletterForm>
             <Script
                 url="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"
