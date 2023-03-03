@@ -1,3 +1,7 @@
+# Archived!
+
+This repo has now been merged with the [web frontend](https://github.com/bfi-digital/bfi-web-frontend/)
+
 # 📽 BFI Design System
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/0c1b8f82-9bcd-4205-8824-c12b5537b75f/deploy-status)](https://app.netlify.com/sites/gerwig/deploys) [![CircleCI](https://circleci.com/gh/bfi-digital/bfi-design-system.svg?style=svg&circle-token=61b8e613e86458c621c8297aff09bd0a520ef8ad)](https://circleci.com/gh/bfi-digital/bfi-design-system)
